@@ -76,6 +76,21 @@ files to `brain/data/candidates/`. The public site is not changed by this step.
 The GitHub Action `process-inbox.yml` can run the same job manually or every
 Sunday at 03:17 UTC once the project is pushed to GitHub.
 
+## GitHub Actions
+
+`validate.yml` runs the local safety checks on every push:
+
+```bash
+npm run brain:example-inbox
+npm run brain:python-check
+npm run brain:audit
+npm run check
+npm run build
+```
+
+`deploy-pages.yml` builds the static site for GitHub Pages. In GitHub, enable
+Pages with `Settings -> Pages -> Build and deployment -> Source -> GitHub Actions`.
+
 ## Database
 
 Apply `brain/supabase/migrations/0001_graph_schema.sql`, then import the approved
