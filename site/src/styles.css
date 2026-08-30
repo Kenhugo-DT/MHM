@@ -315,6 +315,10 @@ button {
   background: rgba(214, 184, 93, 0.13);
 }
 
+.mobile-controls-toggle {
+  display: none;
+}
+
 .map-legend {
   position: fixed;
   z-index: 8;
@@ -399,6 +403,32 @@ button {
 .panel-heading > svg {
   flex: 0 0 auto;
   color: var(--faint);
+}
+
+.panel-heading-actions {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--faint);
+}
+
+.panel-heading-actions button {
+  width: 31px;
+  height: 31px;
+  display: grid;
+  place-items: center;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  color: var(--muted);
+  background: rgba(17, 16, 13, 0.54);
+  cursor: pointer;
+}
+
+.panel-heading-actions button:hover,
+.panel-heading-actions button:focus-visible {
+  border-color: var(--border);
+  color: var(--text);
 }
 
 .starter-grid {
@@ -532,6 +562,30 @@ button {
 
 .route-list button > svg {
   color: var(--faint);
+}
+
+.start-panel-trigger {
+  position: fixed;
+  z-index: 9;
+  left: 22px;
+  bottom: 34px;
+  min-height: 42px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 13px;
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  color: var(--muted);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  cursor: pointer;
+}
+
+.start-panel-trigger:hover,
+.start-panel-trigger:focus-visible {
+  color: var(--text);
+  border-color: rgba(214, 184, 93, 0.42);
 }
 
 .detail-panel {
@@ -852,10 +906,15 @@ button {
 
 @media (max-width: 760px) {
   .topbar {
-    top: 9px;
+    top: calc(9px + env(safe-area-inset-top, 0px));
     left: 9px;
     right: 9px;
     grid-template-columns: 1fr auto;
+  }
+
+  .topbar.controls-collapsed {
+    right: auto;
+    width: min(360px, calc(100vw - 18px));
   }
 
   .brand {
@@ -864,6 +923,7 @@ button {
 
   .mode-switch {
     order: 3;
+    grid-column: 1 / -1;
   }
 
   .search-control {
@@ -875,7 +935,20 @@ button {
     order: 2;
   }
 
-  .top-actions button:first-child {
+  .mobile-controls-toggle {
+    display: grid;
+  }
+
+  .top-actions .fit-action {
+    display: none;
+  }
+
+  .topbar.controls-collapsed .mode-switch,
+  .topbar.controls-collapsed .search-control {
+    display: none;
+  }
+
+  .topbar.controls-collapsed .random-action {
     display: none;
   }
 
@@ -886,6 +959,10 @@ button {
     overflow-x: auto;
   }
 
+  .map-legend.controls-collapsed {
+    display: none;
+  }
+
   .map-legend button {
     flex: 0 0 auto;
   }
@@ -893,20 +970,40 @@ button {
   .start-panel {
     left: 10px;
     right: 10px;
-    bottom: 10px;
+    bottom: calc(10px + env(safe-area-inset-bottom, 0px));
     width: auto;
-    max-height: 58vh;
-    padding: 17px;
+    max-height: min(48vh, 430px);
+    padding: 15px;
+  }
+
+  .panel-heading {
+    margin-bottom: 12px;
   }
 
   .panel-heading h1 {
-    font-size: 2.35rem;
+    font-size: 2.05rem;
+  }
+
+  .starter-grid button {
+    min-height: 54px;
+  }
+
+  .route-section {
+    margin-top: 12px;
+    padding-top: 11px;
+  }
+
+  .start-panel-trigger {
+    left: 10px;
+    bottom: calc(10px + env(safe-area-inset-bottom, 0px));
+    min-height: 42px;
+    padding: 0 12px;
   }
 
   .detail-panel {
     left: 10px;
     right: 10px;
-    bottom: 10px;
+    bottom: calc(10px + env(safe-area-inset-bottom, 0px));
     width: auto;
     max-height: 60vh;
     padding: 18px;
@@ -943,8 +1040,16 @@ button {
     display: none;
   }
 
+  .topbar.controls-collapsed {
+    width: min(300px, calc(100vw - 18px));
+  }
+
   .top-actions button {
     width: 39px;
+  }
+
+  .topbar.controls-collapsed .top-actions button {
+    width: 38px;
   }
 
   .starter-grid {

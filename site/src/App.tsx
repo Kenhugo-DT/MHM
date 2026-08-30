@@ -62,6 +62,15 @@ function initialMode(): MapMode {
     : "artists";
 }
 
+function isMobileViewport(): boolean {
+  if (typeof window === "undefined") return false;
+  return window.matchMedia("(max-width: 760px)").matches;
+}
+
+function initialShowStartPanel(): boolean {
+  return !isMobileViewport();
+}
+
 function shuffle<T>(items: T[]): T[] {
   const next = [...items];
   for (let index = next.length - 1; index > 0; index -= 1) {
@@ -131,6 +140,8 @@ export default function App() {
   const [wikiContext, setWikiContext] = useState<WikiActionContext>();
   const [wikiContextLoading, setWikiContextLoading] = useState(false);
   const [showFullDetail, setShowFullDetail] = useState(false);
+  const [showStartPanel, setShowStartPanel] = useState(initialShowStartPanel);
+  const [showMobileControls, setShowMobileControls] = useState(false);
   const [detailNodes, setDetailNodes] = useState<GraphNode[]>([]);
   const [detailEdges, setDetailEdges] = useState<GraphEdge[]>([]);
   const [searchQuery, setSearchQuery] = useState("");
@@ -218,6 +229,8 @@ export default function App() {
       const nextMode = node.type === "genre" ? mode : modeForType(node.type);
       if (nextMode !== mode) setMode(nextMode);
       setSelected(node);
+      setShowStartPanel(false);
+      setShowMobileControls(false);
       setSearchQuery("");
       setSearchResults([]);
       setActiveRoute(route);
@@ -373,12 +386,26 @@ export default function App() {
     setActiveRoute(undefined);
     setDetailNodes([]);
     setDetailEdges([]);
+    setShowStartPanel(!isMobileViewport());
+    setShowMobileControls(false);
     setStarterNodes(shuffle(nodes.filter((node) => node.starter)).slice(0, 6));
     const params = new URLSearchParams(window.location.search);
     params.set("map", mode);
     params.delete("node");
     window.history.replaceState(null, "", `${window.location.pathname}?${params}`);
     mapRef.current?.fit();
+  }
+
+  function closeDetails() {
+    setSelected(undefined);
+    setActiveRoute(undefined);
+    setDetailNodes([]);
+    setDetailEdges([]);
+    setShowStartPanel(false);
+    const params = new URLSearchParams(window.location.search);
+    params.set("map", mode);
+    params.delete("node");
+    window.history.replaceState(null, "", `${window.location.pathname}?${params}`);
   }
 
   function randomNode() {
@@ -437,7 +464,10 @@ export default function App() {
         />
       </Suspense>
 
-      <header className="topbar" aria-label="Map controls">
+      <header
+        className={`topbar ${showMobileControls ? "controls-expanded" : "controls-collapsed"}`}
+        aria-label="Map controls"
+      >
         <button
           className="brand"
           type="button"
@@ -491,19 +521,45 @@ export default function App() {
         </div>
 
         <div className="top-actions">
-          <button type="button" onClick={() => mapRef.current?.fit()} title="Fit map">
+          <button
+            className="mobile-controls-toggle"
+            type="button"
+            onClick={() => setShowMobileControls((current) => !current)}
+            title={showMobileControls ? "Hide controls" : "Show controls"}
+            aria-label={showMobileControls ? "Hide controls" : "Show controls"}
+          >
+            {showMobileControls ? (
+              <ChevronUp aria-hidden="true" size={18} />
+            ) : (
+              <ChevronDown aria-hidden="true" size={18} />
+            )}
+          </button>
+          <button
+            className="fit-action"
+            type="button"
+            onClick={() => mapRef.current?.fit()}
+            title="Fit map"
+          >
             <Focus aria-hidden="true" size={18} />
           </button>
-          <button type="button" onClick={randomNode} title="Random node">
+          <button
+            className="random-action"
+            type="button"
+            onClick={randomNode}
+            title="Random node"
+          >
             <Shuffle aria-hidden="true" size={18} />
           </button>
-          <button type="button" onClick={resetMap} title="Home">
+          <button className="home-action" type="button" onClick={resetMap} title="Home">
             <Home aria-hidden="true" size={18} />
           </button>
         </div>
       </header>
 
-      <section className="map-legend" aria-label="Visible node types">
+      <section
+        className={`map-legend ${showMobileControls ? "controls-expanded" : "controls-collapsed"}`}
+        aria-label="Visible node types"
+      >
         {[...MODE_TYPES[mode]].map((type) => (
           <button
             key={type}
@@ -517,14 +573,24 @@ export default function App() {
         ))}
       </section>
 
-      {!selected && !loading && !error && (
+      {!selected && !loading && !error && showStartPanel && (
         <section className="start-panel">
           <div className="panel-heading">
             <div>
               <p>MUSIC HISTORY MAP</p>
               <h1>Start somewhere</h1>
             </div>
-            <MapIcon aria-hidden="true" size={24} />
+            <div className="panel-heading-actions">
+              <MapIcon aria-hidden="true" size={24} />
+              <button
+                type="button"
+                onClick={() => setShowStartPanel(false)}
+                title="Close start panel"
+                aria-label="Close start panel"
+              >
+                <X aria-hidden="true" size={18} />
+              </button>
+            </div>
           </div>
 
           <div className="starter-grid">
@@ -574,6 +640,17 @@ export default function App() {
         </section>
       )}
 
+      {!selected && !loading && !error && !showStartPanel && (
+        <button
+          className="start-panel-trigger"
+          type="button"
+          onClick={() => setShowStartPanel(true)}
+        >
+          <MapIcon aria-hidden="true" size={17} />
+          Explore
+        </button>
+      )}
+
       {loading && (
         <div className="loading-state">
           <LoaderCircle aria-hidden="true" className="spin" size={20} />
@@ -593,11 +670,7 @@ export default function App() {
           <button
             className="close-button"
             type="button"
-            onClick={() => {
-              setSelected(undefined);
-              setActiveRoute(undefined);
-              resetMap();
-            }}
+            onClick={closeDetails}
             title="Close details"
           >
             <X aria-hidden="true" size={19} />
