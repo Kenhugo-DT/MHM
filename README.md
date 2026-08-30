@@ -58,8 +58,10 @@ The application automatically uses local data unless `VITE_SUPABASE_URL` and
 `brain/data/approved/graph.json` and the browser copy to
 `site/public/data/graph.json`.
 
-`brain/AGENT.md` is the instruction file for the research agent. It keeps the
-agent focused on graph candidates instead of direct publishing.
+`.github/agents/music-history-map-research.agent.md` is the GitHub/Copilot
+agent profile. `brain/AGENT.md` is the full instruction file it reads before
+research runs, keeping the agent focused on graph candidates instead of direct
+publishing.
 
 ## Research Inbox
 
