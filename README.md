@@ -30,6 +30,7 @@ become map nodes.
 - Supabase Storage for approved, licensed images
 - Python for MusicBrainz, Wikidata and Wikipedia collection
 - GitHub Actions for review candidates and GitHub Pages deployment
+- Supabase brain tables for private research requests, run logs and candidate review
 
 The browser never calls MusicBrainz directly. It reads a prepared graph from
 Supabase or the local fallback. The graph itself stays lightweight: nodes store
@@ -75,6 +76,15 @@ npm run brain:process-inbox
 That command reads queued inbox requests, collects source data and writes review
 files to `brain/data/candidates/`. The public site is not changed by this step.
 
+When Supabase is configured, use the hosted brain queue instead:
+
+```bash
+npm run brain:sync-inbox
+npm run brain:process-db-inbox
+```
+
+Setup details live in `brain/supabase/README.md`.
+
 The GitHub Action `process-inbox.yml` can run the same job manually or every
 Sunday at 03:17 UTC once the project is pushed to GitHub.
 
@@ -95,9 +105,10 @@ Pages with `Settings -> Pages -> Build and deployment -> Source -> GitHub Action
 
 ## Database
 
-Apply `brain/supabase/migrations/0001_graph_schema.sql`, then import the approved
-local graph with `brain/pipeline/import_graph.py`. Keep the Supabase service-role
-key out of the browser and out of version control.
+Apply `brain/supabase/migrations/0001_graph_schema.sql`, then
+`brain/supabase/migrations/0002_research_brain_schema.sql`. Import the approved
+local graph with `brain/pipeline/import_graph.py`. Keep the Supabase secret key
+out of the browser and out of version control.
 
 For new Supabase projects, use a publishable `sb_publishable_...` key in the
 browser and a separate `sb_secret_...` key for trusted imports. Never place a

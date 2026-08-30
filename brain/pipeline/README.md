@@ -18,6 +18,12 @@ set MUSICBRAINZ_CONTACT=you@example.com
 .venv/Scripts/python brain/pipeline/sync.py
 ```
 
+From the repository root, the shortcut command is:
+
+```bash
+npm run brain:install-python
+```
+
 Review the candidate output in `brain/data/candidates/` before turning it into
 entities and relations. AI may help classify, summarize and flag duplicates, but
 every published fact must retain at least one source reference.
@@ -32,6 +38,7 @@ or suggesting related items.
 ```bash
 npm run brain:process-inbox -- --dry-run
 npm run brain:process-inbox
+npm run brain:process-db-inbox
 ```
 
 Dry-run validates queued requests and prints the seed plan without network
@@ -40,6 +47,9 @@ a compact run summary to `brain/data/runs/`.
 
 Use `--mark-processed` only when you want the local inbox file updated from
 `queued` to `processed`.
+
+Use `brain:process-db-inbox` when Supabase should be the source of queued work
+and the destination for run logs and review candidates.
 
 ## Environment variables
 

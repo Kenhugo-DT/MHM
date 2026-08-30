@@ -16,8 +16,10 @@ approved graph files named there.
 Critical guardrails:
 
 - Never publish directly to the live site unless explicitly asked by Ken.
-- Write new research suggestions to `brain/data/candidates/` with review status.
-- Process only queued requests from `brain/data/inbox/research-requests.json`.
+- Write new research suggestions to `brain/data/candidates/` or the private
+  Supabase `research_candidates` table with review status.
+- Process only queued requests from `brain/data/inbox/research-requests.json`
+  or the private Supabase `research_requests` table.
 - Respect `shared/graph-schema/blocked-entities.json` without exception.
 - Only create nodes for bands, guitarists, artists, guitars, guitar brands and
   music genres.

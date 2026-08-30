@@ -20,9 +20,19 @@ jobs:
           cache: pip
           cache-dependency-path: brain/pipeline/requirements.txt
       - run: pip install -r brain/pipeline/requirements.txt
-      - run: python brain/pipeline/process_inbox.py
+      - name: Process inbox
+        shell: bash
+        run: |
+          if [ -n "$SUPABASE_URL" ] && [ -n "$SUPABASE_SECRET_KEY" ]; then
+            python brain/pipeline/process_inbox.py --source supabase --publish-candidates-to-supabase
+          else
+            echo "Supabase is not configured. Falling back to the local inbox file."
+            python brain/pipeline/process_inbox.py
+          fi
         env:
           MUSICBRAINZ_CONTACT: ${{ secrets.MUSICBRAINZ_CONTACT }}
+          SUPABASE_URL: ${{ vars.SUPABASE_URL }}
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
       - uses: actions/upload-artifact@v4
         with:
           name: inbox-candidates

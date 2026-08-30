@@ -2,6 +2,11 @@
   "version": 1,
   "terminalCommands": [
     {
+      "label": "Install Python deps",
+      "command": "npm run brain:install-python",
+      "purpose": "Install Python packages needed for Wikipedia, MusicBrainz and Supabase brain scripts."
+    },
+    {
       "label": "Example inbox dry-run",
       "command": "npm run brain:example-inbox",
       "purpose": "Validate the example inbox and show the seed plan without network collection."
@@ -15,6 +20,26 @@
       "label": "Graph audit",
       "command": "npm run brain:audit",
       "purpose": "Check the approved graph for broken links, duplicate ids, unsupported types and blocked entities."
+    },
+    {
+      "label": "Sync inbox to Supabase",
+      "command": "npm run brain:sync-inbox",
+      "purpose": "Upload queued local research requests into the private Supabase brain."
+    },
+    {
+      "label": "List Supabase requests",
+      "command": "npm run brain:list-requests",
+      "purpose": "Show queued research requests stored in Supabase."
+    },
+    {
+      "label": "Add Supabase request",
+      "command": "npm run brain:add-request -- --id expand-ostein-sunde --title \"Expand Øystein Sunde\" --scope artist_network --priority 80 --instructions \"Find music-related graph connections around Øystein Sunde, Gitarkameratene, Norwegian vise, folk and country guitar traditions.\" --seed \"Øystein Sunde:guitarist\" --seed \"Gitarkameratene:band\"",
+      "purpose": "Queue one new research request directly in the private Supabase brain."
+    },
+    {
+      "label": "Process Supabase inbox",
+      "command": "npm run brain:process-db-inbox",
+      "purpose": "Run the research pipeline from the Supabase queue and write candidates back to Supabase."
     },
     {
       "label": "TypeScript check",

@@ -15,10 +15,21 @@ Valid request statuses:
 
 - `queued`
 - `paused`
+- `processing`
 - `processed`
+- `failed`
 - `rejected`
 
 Only `queued` requests are processed.
+
+When Supabase is configured, the same request shape can live in the private
+`research_requests` table. Use these commands from the repository root:
+
+```bash
+npm run brain:sync-inbox
+npm run brain:list-requests
+npm run brain:process-db-inbox
+```
 
 Allowed seed kinds:
 

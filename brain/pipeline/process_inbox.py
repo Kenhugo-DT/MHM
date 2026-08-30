@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
 import tempfile
 from dataclasses import asdict
@@ -28,7 +29,7 @@ ALLOWED_KINDS = {
 
 
 def now_stamp() -> str:
-    return datetime.now(UTC).strftime("%Y%m%dT%H%M%SZ")
+    return datetime.now(UTC).strftime("%Y%m%d-%H%M%S")
 
 
 def iso_now() -> str:
@@ -87,6 +88,34 @@ def validate_request(request: dict[str, Any]) -> list[str]:
             errors.append(f"{request_id} seed {index + 1} has unsupported kind: {kind}.")
 
     return errors
+
+
+def load_supabase_helpers() -> dict[str, Any]:
+    try:
+        from supabase_brain import (
+            finish_run,
+            load_queued_requests,
+            mark_requests,
+            require_client,
+            start_run,
+            upsert_candidates,
+            upsert_inbox_requests,
+        )
+    except ModuleNotFoundError as error:
+        raise SystemExit(
+            f"Missing Python package '{error.name}'. Install with: "
+            "python -m pip install -r brain/pipeline/requirements.txt"
+        ) from error
+
+    return {
+        "finish_run": finish_run,
+        "load_queued_requests": load_queued_requests,
+        "mark_requests": mark_requests,
+        "require_client": require_client,
+        "start_run": start_run,
+        "upsert_candidates": upsert_candidates,
+        "upsert_inbox_requests": upsert_inbox_requests,
+    }
 
 
 def queued_requests(inbox: dict[str, Any], limit: int | None) -> tuple[list[dict[str, Any]], list[str]]:
@@ -148,9 +177,48 @@ def main() -> None:
     parser.add_argument("--limit", type=int, default=0)
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--mark-processed", action="store_true")
+    parser.add_argument(
+        "--source",
+        choices=["file", "supabase"],
+        default=os.getenv("BRAIN_INBOX_SOURCE", "file"),
+        help="Read queued requests from a local file or from Supabase.",
+    )
+    parser.add_argument(
+        "--sync-local-inbox-to-supabase",
+        action="store_true",
+        help="Upload the local inbox to Supabase before processing.",
+    )
+    parser.add_argument(
+        "--publish-candidates-to-supabase",
+        action="store_true",
+        help="Write run logs and candidate payloads to Supabase.",
+    )
     args = parser.parse_args()
 
-    inbox = load_inbox(args.inbox)
+    db_client = None
+    publish_to_supabase = args.publish_candidates_to_supabase or args.source == "supabase"
+
+    if args.source == "supabase" or args.sync_local_inbox_to_supabase or publish_to_supabase:
+        supabase_helpers = load_supabase_helpers()
+        db_client = supabase_helpers["require_client"]()
+    else:
+        supabase_helpers = {}
+
+    if args.sync_local_inbox_to_supabase:
+        local_inbox = load_inbox(args.inbox)
+        synced = supabase_helpers["upsert_inbox_requests"](db_client, local_inbox)
+        print(f"Synced {synced} local inbox requests to Supabase.")
+
+    if args.source == "supabase":
+        inbox = {
+            "version": 1,
+            "requests": supabase_helpers["load_queued_requests"](db_client, args.limit or None),
+        }
+        inbox_label = "supabase:research_requests"
+    else:
+        inbox = load_inbox(args.inbox)
+        inbox_label = display_path(args.inbox)
+
     requests, errors = queued_requests(inbox, args.limit or None)
     seeds = seeds_from_requests(requests)
     request_ids = [request["id"] for request in requests]
@@ -160,7 +228,7 @@ def main() -> None:
         "version": 1,
         "runId": run_id,
         "createdAt": iso_now(),
-        "inbox": display_path(args.inbox),
+        "inbox": inbox_label,
         "dryRun": args.dry_run,
         "queuedRequestCount": len(requests),
         "seedCount": len(seeds),
@@ -191,15 +259,40 @@ def main() -> None:
 
     from sync import collect
 
-    collected = collect(temp_seed_path)
+    if db_client and publish_to_supabase:
+        supabase_helpers["mark_requests"](db_client, request_ids, "processing")
+        supabase_helpers["start_run"](db_client, summary)
+
+    try:
+        collected = collect(temp_seed_path)
+    except Exception as error:
+        if db_client and publish_to_supabase:
+            failed_summary = {**summary, "error": str(error)}
+            supabase_helpers["finish_run"](
+                db_client,
+                run_id,
+                "failed",
+                failed_summary,
+                candidate_count=0,
+                error=str(error),
+            )
+            supabase_helpers["mark_requests"](
+                db_client,
+                request_ids,
+                "failed",
+                error=str(error),
+            )
+        raise
+
     output_path = args.output_dir / f"{run_id}.json"
+    candidate_payloads = [asdict(candidate) for candidate in collected]
     payload = {
         **summary,
         "dryRun": False,
         "candidateCount": len(collected),
         "requests": requests,
         "seeds": seeds,
-        "candidates": [asdict(candidate) for candidate in collected],
+        "candidates": candidate_payloads,
         "nextStep": "Review candidates, then manually promote approved nodes and edges to the approved graph.",
     }
     output_path.write_text(
@@ -213,11 +306,38 @@ def main() -> None:
         encoding="utf-8",
     )
 
-    if args.mark_processed:
+    if args.mark_processed and args.source == "file":
         updated = mark_processed(inbox, set(request_ids), output_path)
         args.inbox.write_text(
             json.dumps(updated, ensure_ascii=False, indent=2) + "\n",
             encoding="utf-8",
+        )
+
+    if db_client and publish_to_supabase:
+        supabase_candidate_count = supabase_helpers["upsert_candidates"](
+            db_client,
+            run_id,
+            requests,
+            candidate_payloads,
+        )
+        supabase_payload = {
+            **payload,
+            "supabaseCandidateCount": supabase_candidate_count,
+        }
+        supabase_helpers["finish_run"](
+            db_client,
+            run_id,
+            "completed",
+            supabase_payload,
+            candidate_count=supabase_candidate_count,
+        )
+        supabase_helpers["mark_requests"](
+            db_client,
+            request_ids,
+            "processed",
+            processed_at=iso_now(),
+            candidate_output=display_path(output_path),
+            error=None,
         )
 
     print(f"Wrote {len(collected)} candidate groups to {output_path}.")

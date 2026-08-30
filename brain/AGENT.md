@@ -55,11 +55,13 @@ not receive more than roughly one request per second.
 
 ## Candidate Rules
 
-Read project-owner requests from `brain/data/inbox/research-requests.json`.
-Only process requests with `status: "queued"`.
+Read project-owner requests from `brain/data/inbox/research-requests.json` or
+from the private Supabase `research_requests` table when the run uses
+`--source supabase`. Only process requests with `status: "queued"`.
 
-Write research output to `brain/data/candidates/`. Use `status: "review"` for
-new suggestions. Do not edit the approved graph unless explicitly asked.
+Write research output to `brain/data/candidates/` and, when Supabase publishing
+is enabled, to the private `research_candidates` table. Use `status: "review"`
+for new suggestions. Do not edit the approved graph unless explicitly asked.
 
 Candidate nodes should include:
 
