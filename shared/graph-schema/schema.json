@@ -1,0 +1,127 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://guitars-history-map.local/shared/graph-schema/schema.json",
+  "title": "Guitars History Map Graph",
+  "type": "object",
+  "required": ["version", "generatedAt", "nodes", "edges"],
+  "additionalProperties": false,
+  "properties": {
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "generatedAt": {
+      "type": "string"
+    },
+    "nodes": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/node"
+      }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/edge"
+      }
+    }
+  },
+  "$defs": {
+    "nodeType": {
+      "enum": ["band", "guitarist", "artist", "guitar", "guitar_brand", "genre"]
+    },
+    "relationType": {
+      "enum": [
+        "member_of",
+        "collaboration",
+        "influenced_by",
+        "associated_genre",
+        "plays",
+        "made_by",
+        "signature_instrument",
+        "related"
+      ]
+    },
+    "sourceReference": {
+      "type": "object",
+      "required": ["label", "url"],
+      "additionalProperties": true,
+      "properties": {
+        "label": { "type": "string", "minLength": 1 },
+        "url": { "type": "string", "minLength": 1 },
+        "provider": {
+          "enum": ["wikipedia", "wikidata", "musicbrainz", "wikimedia", "other"]
+        },
+        "retrievedAt": { "type": "string" }
+      }
+    },
+    "imageReference": {
+      "type": "object",
+      "required": ["url", "alt"],
+      "additionalProperties": true,
+      "properties": {
+        "url": { "type": "string", "minLength": 1 },
+        "thumbnailUrl": { "type": "string" },
+        "alt": { "type": "string", "minLength": 1 },
+        "creator": { "type": "string" },
+        "license": { "type": "string" },
+        "licenseUrl": { "type": "string" },
+        "sourceUrl": { "type": "string" }
+      }
+    },
+    "node": {
+      "type": "object",
+      "required": ["id", "label", "type", "roles", "summary", "metadata", "x", "y", "zone", "sources"],
+      "additionalProperties": true,
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+        "label": { "type": "string", "minLength": 1 },
+        "type": { "$ref": "#/$defs/nodeType" },
+        "roles": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "summary": { "type": "string" },
+        "metadata": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "aliases": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "x": { "type": "number" },
+        "y": { "type": "number" },
+        "zone": { "type": "string", "minLength": 1 },
+        "starter": { "type": "boolean" },
+        "image": { "$ref": "#/$defs/imageReference" },
+        "sources": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/sourceReference" }
+        }
+      }
+    },
+    "edge": {
+      "type": "object",
+      "required": ["id", "source", "target", "type", "label", "strength", "context", "sources"],
+      "additionalProperties": true,
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "source": { "type": "string", "minLength": 1 },
+        "target": { "type": "string", "minLength": 1 },
+        "type": { "$ref": "#/$defs/relationType" },
+        "label": { "type": "string", "minLength": 1 },
+        "strength": { "type": "number", "minimum": 0, "maximum": 1 },
+        "context": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "year": { "type": "integer" },
+        "sources": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/sourceReference" }
+        }
+      }
+    }
+  }
+}

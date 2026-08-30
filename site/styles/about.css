@@ -1,0 +1,157 @@
+section.about {
+    background-color: var(--tertiery);
+    background-image: url(../images/aboutbakgrunn.png);
+    background-size: cover;
+    background-repeat: none;
+}
+
+
+section.about h3 {
+    color: var(--accent);
+    font-size: 3.8rem;
+    margin-bottom: 16px;
+    text-align: center;
+
+}
+
+ section.about div.figure {
+    height: 700px;
+    justify-content: right;
+    max-width: 900px;
+}
+
+section.about figure img {
+    height: 700px;
+    border-radius: 54px;
+    justify-content: right;
+    max-width: 900px; 
+}
+
+section.about p {
+    justify-content: left;
+    color: var(--white);
+    margin-top: 56px;
+    margin-left: 16px;
+    font-size: 1.8rem;
+    text-align: left;
+    /* had text-align: center; here*/
+    flex-direction: row;
+
+
+}
+
+
+
+/* forgot to declare this div class*/
+section.about div.about-guitars {
+    display: block; 
+    /*blocks makes it a lot easier to tame*/
+    max-width: 60%; 
+    min-width: 1600px; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+
+/* declared a class for this specific image just to test and show, makes it a bit easier to narrow down*/
+section.about img.about-guitars-image {
+    display: block;
+    margin-top: 32px;
+    margin-left: 16px;
+    margin-right: 16px;
+    float: right;
+    /* float works nicely with block, and the text or whatever other content will wrap around 
+    the object instead of drawing on top of it, or under it, which you could also make happen with blocks*/
+}
+
+
+section.about div.guitar-brands 
+{
+/*   background-color: var(--secondary); */
+    background-color: #22201bAA;
+    max-height: 164px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 24px;
+    width: 80%;
+    max-width: 1600px;
+    min-width: 900px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 8px;
+}
+
+section.about div.guitar-brands a img 
+{
+    max-height: 150px; 
+    transition-duration: 0.2s;
+}
+ 
+section.about div.guitar-brands a img:hover
+{
+    opacity: 50%;
+    transition-duration: 0.2s;
+}
+
+
+
+
+
+
+
+
+
+section.electric div.about-electric {
+    padding-top: 256px;
+    background-color: var(--secondary);
+    padding-bottom: 64px;
+}
+
+section.electric div.about-electric h3 {
+    margin-bottom: 16px;
+    flex-direction: row;
+    text-align: center;
+    font-size: 4.0rem;
+    color: var(--white);
+
+}
+
+section.electric div.about-electric p {
+    
+    flex-direction: row;
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--accent);
+}
+
+
+/*! just a marker between electric and acoustic */
+
+
+section.acoustic div.about-acoustic {
+    background-color: var(--secondary);
+}
+
+section.acoustic div.about-acoustic h3 {    
+    margin-bottom: 16px;
+    padding-top: 64px;
+    flex-direction: row;
+    text-align: center;
+    font-size: 4.0rem;
+    color: var(--white);
+
+}
+
+section.acoustic div.about-acoustic p {
+    padding-bottom: 16px;
+    flex-direction: row;
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--accent);
+}
+
+    
+

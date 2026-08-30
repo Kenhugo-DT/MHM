@@ -1,0 +1,33 @@
+{
+  "name": "guitars-interactive-map",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --config site/vite.config.ts",
+    "build": "tsc -b site/tsconfig.json && vite build --config site/vite.config.ts",
+    "preview": "vite preview --config site/vite.config.ts",
+    "migrate:data": "node brain/scripts/migrate-graph-data.mjs",
+    "check": "tsc -b site/tsconfig.json --pretty false",
+    "brain:collect": "node brain/scripts/run-python.mjs brain/pipeline/sync.py",
+    "brain:example-inbox": "node brain/scripts/run-python.mjs brain/pipeline/process_inbox.py --inbox brain/data/inbox/research-requests.example.json --dry-run",
+    "brain:process-inbox": "node brain/scripts/run-python.mjs brain/pipeline/process_inbox.py",
+    "brain:python-check": "node brain/scripts/run-python.mjs -m py_compile brain/pipeline/sync.py brain/pipeline/import_graph.py brain/pipeline/process_inbox.py",
+    "brain:import": "node brain/scripts/run-python.mjs brain/pipeline/import_graph.py",
+    "brain:audit": "node brain/scripts/audit-graph.mjs"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.108.2",
+    "lucide-react": "^1.21.0",
+    "pixi.js": "^8.19.0",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.3",
+    "typescript": "^6.0.3",
+    "vite": "^8.1.0"
+  }
+}

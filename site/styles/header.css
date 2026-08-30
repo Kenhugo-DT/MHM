@@ -1,0 +1,42 @@
+header{
+    background-color: var(--primary);
+    color: var(--white);
+    height: 90px;
+    padding-inline: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header figure {
+    height: 80px;
+    rotate: 45deg;
+}
+
+header figure img {
+    height: 100%
+}
+
+header nav {
+    display: flex;
+    gap: 32px;
+ 
+}
+
+header nav a {
+    color: var(--white);
+    border: 2px solid var(--accent);
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 8px;
+    box-shadow: 2px 2px 3px var(--tertiery);
+    transition: 0.3s ease;
+}
+
+header nav a:hover {
+scale: 107%;
+}
+
+header nav a:active {
+    scale: 95%;
+}

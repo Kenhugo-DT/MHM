@@ -1,0 +1,26 @@
+footer {
+    background-color: var(--primary);
+    height: 80px;
+    padding-inline: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer div.contact-info {
+    color: var(--white);
+}
+
+
+footer nav button {
+    background-color: var(--secondary);
+    color: var(--accent);
+    border: 2px solid var(--accent);
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 8px;
+    box-shadow: 2px 2px 3px var(--tertiery);
+    transition: 0.3s ease;
+    
+}
+

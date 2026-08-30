@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "id": "nirvana",
+      "labels": ["Nirvana"],
+      "reason": "Excluded by the project owner from this guitar map universe."
+    },
+    {
+      "id": "kurt-cobain",
+      "labels": ["Kurt Cobain", "Cobain"],
+      "reason": "Excluded by the project owner from this guitar map universe."
+    }
+  ]
+}

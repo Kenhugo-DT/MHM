@@ -1,0 +1,35 @@
+@import"./about.css";
+@import"./buttons.css";
+@import"./divider.css";
+@import"./footer.css";
+@import"./galleries.css"; 
+@import"./header.css";
+@import"./hero.css";
+
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI';
+}
+
+
+:root {
+    --primary: #171612;
+    --secondary: #22201b;
+    --tertiery: #39342D;
+    --accent: #665525;
+
+    --black: #0F0E0E;
+    --white: #cabbb1;
+    --grey: #2B2622;
+}
+
+
+a:link ,a:active, a:visited
+{
+    text-decoration: none;
+    color: #665525;
+}

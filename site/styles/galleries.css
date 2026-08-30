@@ -1,0 +1,222 @@
+section.first-gallery {
+background-image: url(../images/ElGalleryBackground.png);
+}
+
+
+section.first-gallery div.first-gallery-grid {
+    
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-inline: auto;
+    max-width: 80%;
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr;  */
+    grid-template-columns: repeat(5, minmax(50px, 1fr)); /* this is the shorthand of the code above */
+    /* grid-template-rows: repeat(2, 200px); */
+    grid-template-rows: repeat(4, 200px); /* this is the shorthand of the code above */
+    /* grid-auto-flow: dense; */
+    gap: 8px;
+    /* grid-template-areas:
+    "four two six seven"
+    "one eight three five"
+    ; */
+    grid-template-areas:
+    "two three four six five"
+    "two  three four six five"
+    "one nine eight seven five"
+    "one nine eight seven five"
+}
+
+a.img_link
+{
+    display: block;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #121212;
+    opacity: 0%;
+    transition-duration: 0.2s;
+}
+
+a.img_link:hover
+{
+    opacity: 30%;
+    transition-duration: 0.2s;
+}
+
+
+section.first-gallery div.first-box-one {
+    background-image: url(../images/gallery/EL\ BBK.jpg);
+    background-size: cover;
+    background-position: 25% 50%;
+    border-radius: 8px;
+    grid-area: one;
+
+}
+
+section.first-gallery div.first-box-two {
+    background-image: url(../images/gallery/EL\ DG.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 8px;
+    grid-area: two;
+}
+
+section.first-gallery div.first-box-three {
+    background-image: url(../images/gallery/EL\ EVH.jpg);
+    background-size: cover;
+    background-position: 30% 50%;
+    border-radius: 8px;
+    grid-area: three;
+}
+
+section.first-gallery div.first-box-four {
+    background-image: url(../images/gallery/EL\ FZ.jpg);
+    background-size: cover;
+    background-position: 50% 35%;
+    border-radius: 8px;
+    grid-area: four;
+}
+
+section.first-gallery div.first-box-five {
+    background-image: url(../images/gallery/EL\ JH.jpg);
+    background-size: cover;
+    background-position: 45% 50%;
+    border-radius: 8px;
+    grid-area: five;
+}
+
+section.first-gallery div.first-box-six {
+    background-image: url(../images/gallery/EL\ JM.png);
+    background-size: cover;
+    background-position: 50% 20%;
+    border-radius: 8px;
+    grid-area: six;
+}
+
+section.first-gallery div.first-box-seven {
+    background-image: url(../images/gallery/EL\ MK.jpg);
+    background-size: cover;
+    background-position: 50% 25%;
+    border-radius: 8px;
+    grid-area: seven;
+}
+
+section.first-gallery div.first-box-eight{
+    background-image: url(../images/gallery/EL\ RR.png);
+    background-size: cover;
+    background-position: 50% 25%;
+    border-radius: 8px;
+    grid-area: eight;
+}
+
+section.first-gallery div.first-box-nine{
+    background-image: url(../images/gallery/EL\ SRV.jpg);
+    background-size: cover;
+    background-position: 25% 50%;
+    border-radius: 8px;
+    grid-area: nine;
+}
+
+
+/*! mark between electric and acoustic gallery*/
+
+section.second-gallery {
+    background-image: url(../images/AcGalleryBackground.png);
+    padding-bottom: 5%;
+}
+
+
+section.second-gallery div.second-gallery-grid {
+    padding-top: 5%;
+    margin-inline: auto;
+    max-width: 80%;
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr;  */
+    grid-template-columns: repeat(5, minmax(50px, 1fr)); /* this is the shorthand of the code above */
+    /* grid-template-rows: repeat(2, 200px); */
+    grid-template-rows: repeat(4, 200px); /* this is the shorthand of the code above */
+    /* grid-auto-flow: dense; */
+    gap: 8px;
+    /* grid-template-areas:
+    "four two six seven"
+    "one eight three five"
+    ; */
+    grid-template-areas:
+    "two eight  six four nine"
+    "two  eight  six four nine"
+    "one one three five seven"
+    "one one three five seven"
+}
+
+section.second-gallery div.second-box-one {
+    background-image: url(../images/gallery/AC\ BD.jpg);
+    background-size: cover;
+    border-radius: 8px;
+    background-position: 50% 20%;
+    grid-area: one;
+}
+
+section.second-gallery div.second-box-two {
+    background-image: url(../images/gallery/AC\ CA.jpg);  
+    background-size: cover;
+    background-position: 50% 20%; 
+    border-radius: 8px; 
+    grid-area: two;
+}
+
+section.second-gallery div.second-box-three {
+    background-image: url(../images/gallery/AC\ ES.jpg);
+    background-size: cover;
+    background-position: 60% 50%;
+    border-radius: 8px;
+    grid-area: three;
+}
+
+section.second-gallery div.second-box-four {
+    background-image: url(../images/gallery/AC\ JC.jpg);
+    background-size: cover;
+    background-position: 20% 50%;
+    border-radius: 8px;
+    grid-area: four;
+}
+
+section.second-gallery div.second-box-five {
+    background-image: url(../images/gallery/AC\ JM.jpg);
+    background-size: cover;
+    background-position: 40% 50%;
+    border-radius: 8px;
+    grid-area: five;
+}
+
+section.second-gallery div.second-box-six {
+    background-image: url(../images/gallery/AC\ LB.jpg);
+    background-size: cover;
+    background-position: 40% 10%;
+    border-radius: 8px;
+    grid-area: six;
+}
+
+section.second-gallery div.second-box-seven {
+    background-image: url(../images/gallery/AC\ TS.jpg);
+    background-size: cover;
+    background-position: 10% 10%;
+    border-radius: 8px;
+    grid-area: seven;
+}
+
+section.second-gallery div.second-box-eight{
+    background-image: url(../images/gallery/AC\ WN.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 8px;
+    grid-area: eight;
+}
+
+section.second-gallery div.second-box-nine{
+    background-image: url(../images/gallery/AC\ ØS.jpg);
+    background-size: cover;
+    background-position: 30% 60%;
+    border-radius: 8px;
+    grid-area: nine;
+}

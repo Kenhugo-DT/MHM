@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.env
+.env.local
+*.tsbuildinfo
+brain/pipeline/output/
+brain/data/candidates/*.json
+!brain/data/candidates/.gitkeep
+brain/data/runs/
+__pycache__/
+.pytest_cache/

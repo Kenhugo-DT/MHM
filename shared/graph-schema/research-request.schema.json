@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://guitars-history-map.local/shared/graph-schema/research-request.schema.json",
+  "title": "Guitar History Map Research Inbox",
+  "type": "object",
+  "required": ["version", "requests"],
+  "additionalProperties": false,
+  "properties": {
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "requests": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/request"
+      }
+    },
+    "terminalCommands": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/terminalCommand"
+      }
+    }
+  },
+  "$defs": {
+    "terminalCommand": {
+      "type": "object",
+      "required": ["label", "command", "purpose"],
+      "additionalProperties": false,
+      "properties": {
+        "label": { "type": "string", "minLength": 1 },
+        "command": { "type": "string", "minLength": 1 },
+        "purpose": { "type": "string", "minLength": 1 }
+      }
+    },
+    "nodeType": {
+      "enum": ["band", "guitarist", "artist", "guitar", "guitar_brand", "genre"]
+    },
+    "seed": {
+      "type": "object",
+      "required": ["name", "kind"],
+      "additionalProperties": false,
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "kind": { "$ref": "#/$defs/nodeType" }
+      }
+    },
+    "request": {
+      "type": "object",
+      "required": ["id", "title", "status", "priority", "scope", "instructions", "seeds"],
+      "additionalProperties": true,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9-]*$"
+        },
+        "title": { "type": "string", "minLength": 1 },
+        "status": {
+          "enum": ["queued", "paused", "processed", "rejected"]
+        },
+        "priority": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "scope": {
+          "enum": ["artist_network", "guitar_history", "genre_cluster", "route", "open_research"]
+        },
+        "createdAt": { "type": "string" },
+        "instructions": { "type": "string", "minLength": 1 },
+        "seeds": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/seed" }
+        },
+        "limits": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "maxSeeds": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 50
+            },
+            "maxCandidates": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 200
+            }
+          }
+        },
+        "notes": { "type": "string" }
+      }
+    }
+  }
+}

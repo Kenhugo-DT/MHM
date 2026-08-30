@@ -1,0 +1,48 @@
+section.hero {
+    min-height: calc(100vh - 90px);
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: top;
+    gap: 64px;
+    border-radius: 0;
+    margin-inline: 0;
+    margin-top: 0;
+    background-image: url(../images/GitarHeroBakgrunn2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section.hero div.hero-text {
+    display: grid;
+    gap: 16px;
+    align-items: center;
+    margin-top: 64px;
+
+}
+
+section.hero h1 {
+    color: var(--white);
+    font-size: 4.8rem;
+    
+}
+
+section.hero div.hero-text p {
+    color: var(--white);
+    font-size: 2.4rem;
+}
+
+main button a {
+    background-color: var(--secondary);
+}
+
+section.hero div.hero-ff {
+    color: var(--white);
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 300px;
+}

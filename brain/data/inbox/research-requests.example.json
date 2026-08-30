@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "terminalCommands": [
+    {
+      "label": "Example inbox dry-run",
+      "command": "npm run brain:example-inbox",
+      "purpose": "Validate the example inbox and show the seed plan without network collection."
+    },
+    {
+      "label": "Python syntax",
+      "command": "npm run brain:python-check",
+      "purpose": "Check the Python pipeline files for syntax errors."
+    },
+    {
+      "label": "Graph audit",
+      "command": "npm run brain:audit",
+      "purpose": "Check the approved graph for broken links, duplicate ids, unsupported types and blocked entities."
+    },
+    {
+      "label": "TypeScript check",
+      "command": "npm run check",
+      "purpose": "Check the React and TypeScript app without building the final files."
+    },
+    {
+      "label": "Production build",
+      "command": "npm run build",
+      "purpose": "Build the static site output for GitHub Pages."
+    }
+  ],
+  "requests": [
+    {
+      "id": "expand-ostein-sunde-network",
+      "title": "Expand Øystein Sunde connections",
+      "status": "queued",
+      "priority": 80,
+      "scope": "artist_network",
+      "createdAt": "2026-08-30T00:00:00.000Z",
+      "instructions": "Find music-related connections around Øystein Sunde, Gitarkameratene, Norwegian vise, folk, country and guitar tradition.",
+      "seeds": [
+        { "name": "Øystein Sunde", "kind": "guitarist" },
+        { "name": "Gitarkameratene", "kind": "band" },
+        { "name": "Norwegian folk music", "kind": "genre" }
+      ],
+      "limits": {
+        "maxSeeds": 8,
+        "maxCandidates": 40
+      }
+    },
+    {
+      "id": "expand-british-blues-rock",
+      "title": "Expand British blues rock route",
+      "status": "queued",
+      "priority": 65,
+      "scope": "route",
+      "createdAt": "2026-08-30T00:00:00.000Z",
+      "instructions": "Find guitarists, bands, genres and guitars that explain the route from blues into British blues rock and hard rock.",
+      "seeds": [
+        { "name": "Eric Clapton", "kind": "guitarist" },
+        { "name": "Cream", "kind": "band" },
+        { "name": "British blues", "kind": "genre" }
+      ],
+      "limits": {
+        "maxSeeds": 10,
+        "maxCandidates": 50
+      }
+    }
+  ]
+}
