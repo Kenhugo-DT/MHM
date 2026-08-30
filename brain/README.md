@@ -1,7 +1,7 @@
 # Brain
 
-This directory is the private research and curation side of the Guitar History
-Map. It can collect candidates, audit the graph and later import approved data
+This directory is the private research and curation side of Music History Map.
+It can collect candidates, audit the graph and later import approved data
 to a database. The public React app lives in `site/`.
 
 The brain should propose changes. It should not silently publish them.

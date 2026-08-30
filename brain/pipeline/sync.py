@@ -63,7 +63,7 @@ class MusicBrainzClient:
         if not contact:
             raise ValueError("MUSICBRAINZ_CONTACT must contain an email address or project URL.")
         self.session = requests.Session()
-        self.session.headers["User-Agent"] = f"GuitarsHistoryMap/0.1 ({contact})"
+        self.session.headers["User-Agent"] = f"MusicHistoryMap/0.1 ({contact})"
         self.last_request = 0.0
 
     def _get(self, path: str, params: dict[str, Any]) -> dict[str, Any]:
@@ -93,7 +93,7 @@ class WikidataClient:
 
     def __init__(self) -> None:
         self.session = requests.Session()
-        self.session.headers["User-Agent"] = "GuitarsHistoryMap/0.1"
+        self.session.headers["User-Agent"] = "MusicHistoryMap/0.1"
 
     def search(self, name: str) -> dict[str, Any] | None:
         response = self.session.get(
@@ -166,8 +166,8 @@ class WikipediaClient:
 
     def __init__(self, blocked_terms: set[str]) -> None:
         self.session = requests.Session()
-        self.session.headers["User-Agent"] = "GuitarsHistoryMap/0.1"
-        self.session.headers["Api-User-Agent"] = "GuitarsHistoryMap/0.1"
+        self.session.headers["User-Agent"] = "MusicHistoryMap/0.1"
+        self.session.headers["Api-User-Agent"] = "MusicHistoryMap/0.1"
         self.blocked_terms = blocked_terms
 
     @staticmethod

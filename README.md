@@ -1,7 +1,7 @@
-# Guitars: Interactive History Map
+# MHM: Music History Map
 
-An English-language interactive map of guitar history. Names keep their original
-Unicode characters, including `æ`, `ø` and `å`.
+An English-language interactive music history map with a guitar-forward focus.
+Names keep their original Unicode characters, including `æ`, `ø` and `å`.
 
 ## Graph scope
 

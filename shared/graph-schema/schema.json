@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://guitars-history-map.local/shared/graph-schema/schema.json",
-  "title": "Guitars History Map Graph",
+  "$id": "https://music-history-map.local/shared/graph-schema/schema.json",
+  "title": "Music History Map Graph",
   "type": "object",
   "required": ["version", "generatedAt", "nodes", "edges"],
   "additionalProperties": false,

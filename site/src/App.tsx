@@ -1,6 +1,8 @@
 import {
+  ChevronDown,
   ChevronLeft,
   ChevronRight,
+  ChevronUp,
   ExternalLink,
   Focus,
   Home,
@@ -81,6 +83,42 @@ function candidateColor(kind: WikiCandidateKind): string {
   return kind === "unknown" ? "#756d64" : colorToCss(NODE_COLORS[kind]);
 }
 
+interface DetailTextSection {
+  title: string;
+  sentences: string[];
+}
+
+function splitSentences(text: string): string[] {
+  const normalized = text.replace(/\s+/g, " ").trim();
+  if (!normalized) return [];
+  return (
+    normalized.match(/[^.!?]+(?:[.!?]+|$)/g) ?? [normalized]
+  )
+    .map((sentence) => sentence.trim())
+    .filter(Boolean);
+}
+
+function buildDetailTextSections(text: string): DetailTextSection[] {
+  const sentences = splitSentences(text);
+  const sections: DetailTextSection[] = [];
+
+  const sectionSpecs = [
+    { title: "Overview", sentences: sentences.slice(0, 2) },
+    { title: "Context", sentences: sentences.slice(2, 4) },
+    { title: "Further reading", sentences: sentences.slice(4) },
+  ];
+
+  for (const section of sectionSpecs) {
+    if (section.sentences.length === 0) continue;
+    sections.push({
+      title: section.title,
+      sentences: section.sentences,
+    });
+  }
+
+  return sections;
+}
+
 export default function App() {
   const mapRef = useRef<GraphMapHandle>(null);
   const [mode, setMode] = useState<MapMode>(initialMode);
@@ -92,6 +130,7 @@ export default function App() {
   const [wikiDetail, setWikiDetail] = useState<WikiDetail>();
   const [wikiContext, setWikiContext] = useState<WikiActionContext>();
   const [wikiContextLoading, setWikiContextLoading] = useState(false);
+  const [showFullDetail, setShowFullDetail] = useState(false);
   const [detailNodes, setDetailNodes] = useState<GraphNode[]>([]);
   const [detailEdges, setDetailEdges] = useState<GraphEdge[]>([]);
   const [searchQuery, setSearchQuery] = useState("");
@@ -279,6 +318,17 @@ export default function App() {
   }, [selected, wikiDetail]);
 
   const detailSummary = wikiDetail?.extract || selected?.summary || "";
+  const detailTextSections = useMemo(
+    () => buildDetailTextSections(detailSummary),
+    [detailSummary],
+  );
+  const visibleDetailTextSections = showFullDetail
+    ? detailTextSections
+    : detailTextSections.slice(0, 2);
+  const hiddenDetailTextCount = Math.max(
+    0,
+    detailTextSections.length - visibleDetailTextSections.length,
+  );
 
   const detailSources = useMemo(() => {
     if (!selected) return [];
@@ -300,6 +350,10 @@ export default function App() {
     },
     [selectNode],
   );
+
+  useEffect(() => {
+    setShowFullDetail(false);
+  }, [selected?.id]);
 
   function changeMode(nextMode: MapMode) {
     if (nextMode === mode) return;
@@ -384,9 +438,18 @@ export default function App() {
       </Suspense>
 
       <header className="topbar" aria-label="Map controls">
-        <button className="brand" type="button" onClick={resetMap} title="Map home">
+        <button
+          className="brand"
+          type="button"
+          onClick={resetMap}
+          title="Music History Map home"
+          aria-label="Music History Map home"
+        >
           <img src={logoUrl} alt="" />
-          <span>GUITARS</span>
+          <span className="brand-copy">
+            <strong>MHM</strong>
+            <small>Music History Map</small>
+          </span>
         </button>
 
         <div className="mode-switch" aria-label="Map mode">
@@ -458,7 +521,7 @@ export default function App() {
         <section className="start-panel">
           <div className="panel-heading">
             <div>
-              <p>INTERACTIVE HISTORY MAP</p>
+              <p>MUSIC HISTORY MAP</p>
               <h1>Start somewhere</h1>
             </div>
             <MapIcon aria-hidden="true" size={24} />
@@ -562,7 +625,37 @@ export default function App() {
             {NODE_LABELS[selected.type]}
           </p>
           <h2>{selected.label}</h2>
-          <p className="detail-summary">{detailSummary}</p>
+          <div className="detail-summary" aria-label={`${selected.label} overview`}>
+            {visibleDetailTextSections.length > 0 ? (
+              visibleDetailTextSections.map((section, index) => (
+                <section className="summary-chunk" key={`${section.title}-${index}`}>
+                  <h3>{section.title}</h3>
+                  {section.sentences.map((sentence) => (
+                    <p key={sentence}>{sentence}</p>
+                  ))}
+                </section>
+              ))
+            ) : (
+              <p className="empty-copy">No summary available yet.</p>
+            )}
+            {hiddenDetailTextCount > 0 && (
+              <button
+                className="summary-toggle"
+                type="button"
+                onClick={() => setShowFullDetail((current) => !current)}
+              >
+                {showFullDetail ? (
+                  <>
+                    Show less <ChevronUp aria-hidden="true" size={16} />
+                  </>
+                ) : (
+                  <>
+                    Read more <ChevronDown aria-hidden="true" size={16} />
+                  </>
+                )}
+              </button>
+            )}
+          </div>
 
           {selected.metadata.length > 0 && (
             <div className="metadata-list">

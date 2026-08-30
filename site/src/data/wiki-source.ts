@@ -7,7 +7,7 @@ export interface WikiSource {
 }
 
 export const WIKI_API_HEADERS = {
-  "Api-User-Agent": "GuitarsHistoryMap/0.1 (static web app; contact via project repository)",
+  "Api-User-Agent": "MusicHistoryMap/0.1 (static web app; contact via project repository)",
 };
 
 export function sourceToWikiSource(source: SourceReference): WikiSource | undefined {

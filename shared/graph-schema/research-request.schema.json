@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://guitars-history-map.local/shared/graph-schema/research-request.schema.json",
-  "title": "Guitar History Map Research Inbox",
+  "$id": "https://music-history-map.local/shared/graph-schema/research-request.schema.json",
+  "title": "Music History Map Research Inbox",
   "type": "object",
   "required": ["version", "requests"],
   "additionalProperties": false,

@@ -624,6 +624,6 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
       };
     }, [ready]);
 
-    return <div ref={hostRef} className="graph-map" aria-label="Interactive guitar history map" />;
+    return <div ref={hostRef} className="graph-map" aria-label="Interactive Music History Map" />;
   },
 );

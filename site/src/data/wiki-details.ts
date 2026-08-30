@@ -29,14 +29,14 @@ interface WikipediaPage {
   };
 }
 
-const CACHE_NAME = "guitars-wiki-details-v1";
+const CACHE_NAME = "mhm-wiki-details-v1";
 const CACHE_TTL_MS = 1000 * 60 * 60 * 24 * 30;
 const inMemoryCache = new Map<string, CachedWikiDetail>();
 const inFlightRequests = new Map<string, Promise<WikiDetail | undefined>>();
 
 function cacheKey(source: WikiSource): string {
   const encodedTitle = encodeURIComponent(source.title.replace(/ /g, "_"));
-  return `https://guitars-history-map.local/wiki-cache/${source.language}/${encodedTitle}`;
+  return `https://music-history-map.local/wiki-cache/${source.language}/${encodedTitle}`;
 }
 
 function isFresh(cached: CachedWikiDetail): boolean {
