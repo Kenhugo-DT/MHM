@@ -117,6 +117,18 @@ def fetch_requests(
     return list(response.data or [])
 
 
+def fetch_candidates(
+    client: Client,
+    status: str = "review",
+    limit: int = 20,
+) -> list[dict[str, Any]]:
+    query = client.table("research_candidates").select("*")
+    if status != "all":
+        query = query.eq("status", status)
+    response = query.order("created_at", desc=True).limit(limit).execute()
+    return list(response.data or [])
+
+
 def load_queued_requests(client: Client, limit: int | None = None) -> list[dict[str, Any]]:
     rows = fetch_requests(client, status="queued", limit=limit or 100)
     return [row_to_request(row) for row in rows]

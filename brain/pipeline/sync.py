@@ -30,6 +30,7 @@ class Candidate:
     wikidata: dict[str, Any] | None
     wikipedia: dict[str, Any] | None
     music_candidates: list[dict[str, Any]]
+    source_errors: list[dict[str, str]]
     status: str = "review"
 
 
@@ -306,15 +307,39 @@ def collect(seed_file: Path) -> list[Candidate]:
             print(f"Skipping blocked entity seed: {name}")
             continue
         print(f"Collecting source candidates for {name}...")
-        wikipedia_page = wikipedia.page(name)
+        source_errors: list[dict[str, str]] = []
+        musicbrainz_match = None
+        wikidata_match = None
+        wikipedia_page = None
+
+        if musicbrainz:
+            try:
+                musicbrainz_match = musicbrainz.search(name, kind)
+            except Exception as error:
+                source_errors.append({"source": "musicbrainz", "message": str(error)})
+                print(f"MusicBrainz lookup failed for {name}: {error}")
+
+        try:
+            wikidata_match = wikidata.search(name)
+        except Exception as error:
+            source_errors.append({"source": "wikidata", "message": str(error)})
+            print(f"Wikidata lookup failed for {name}: {error}")
+
+        try:
+            wikipedia_page = wikipedia.page(name)
+        except Exception as error:
+            source_errors.append({"source": "wikipedia", "message": str(error)})
+            print(f"Wikipedia lookup failed for {name}: {error}")
+
         candidates.append(
             Candidate(
                 name=name,
                 requested_kind=kind,
-                musicbrainz=musicbrainz.search(name, kind) if musicbrainz else None,
-                wikidata=wikidata.search(name),
+                musicbrainz=musicbrainz_match,
+                wikidata=wikidata_match,
                 wikipedia=wikipedia_page,
                 music_candidates=wikipedia.music_candidates(wikipedia_page),
+                source_errors=source_errors,
             )
         )
 

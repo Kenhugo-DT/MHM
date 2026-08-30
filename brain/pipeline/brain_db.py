@@ -29,6 +29,7 @@ ALLOWED_KINDS = {
 def load_supabase_helpers():
     try:
         from supabase_brain import (
+            fetch_candidates,
             fetch_requests,
             request_to_row,
             require_client,
@@ -42,6 +43,7 @@ def load_supabase_helpers():
         ) from error
 
     return {
+        "fetch_candidates": fetch_candidates,
         "fetch_requests": fetch_requests,
         "request_to_row": request_to_row,
         "require_client": require_client,
@@ -92,6 +94,35 @@ def command_list_requests(args: argparse.Namespace) -> None:
             "count": len(rows),
             "status": args.status,
             "requests": [helpers["row_to_request"](row) for row in rows],
+        }
+    )
+
+
+def candidate_summary(row: dict[str, Any]) -> dict[str, Any]:
+    payload = row.get("payload") or {}
+    return {
+        "id": row.get("id"),
+        "runId": row.get("run_id"),
+        "requestId": row.get("request_id"),
+        "seedName": row.get("seed_name"),
+        "requestedKind": row.get("requested_kind"),
+        "status": row.get("status"),
+        "musicCandidateCount": len(payload.get("music_candidates") or []),
+        "wikipediaTitle": (payload.get("wikipedia") or {}).get("title"),
+        "wikidataId": (payload.get("wikidata") or {}).get("id"),
+        "createdAt": row.get("created_at"),
+    }
+
+
+def command_list_candidates(args: argparse.Namespace) -> None:
+    helpers = load_supabase_helpers()
+    client = helpers["require_client"]()
+    rows = helpers["fetch_candidates"](client, status=args.status, limit=args.limit)
+    print_json(
+        {
+            "count": len(rows),
+            "status": args.status,
+            "candidates": [candidate_summary(row) for row in rows],
         }
     )
 
@@ -148,6 +179,14 @@ def build_parser() -> argparse.ArgumentParser:
     list_requests.add_argument("--status", default="queued")
     list_requests.add_argument("--limit", type=int, default=20)
     list_requests.set_defaults(func=command_list_requests)
+
+    list_candidates = subparsers.add_parser(
+        "list-candidates",
+        help="List review candidates stored in Supabase.",
+    )
+    list_candidates.add_argument("--status", default="review")
+    list_candidates.add_argument("--limit", type=int, default=20)
+    list_candidates.set_defaults(func=command_list_candidates)
 
     add_request = subparsers.add_parser(
         "add-request",

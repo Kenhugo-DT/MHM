@@ -111,6 +111,12 @@ Process queued database requests:
 npm run brain:process-db-inbox
 ```
 
+List review candidates:
+
+```bash
+npm run brain:list-candidates
+```
+
 Alternative file-first flow:
 
 ```bash

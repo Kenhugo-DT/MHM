@@ -35,6 +35,11 @@ for (const candidate of candidates) {
   }
 
   const result = spawnSync(candidate.command, [...candidate.args, scriptPath, ...scriptArgs], {
+    env: {
+      ...process.env,
+      PYTHONUTF8: process.env.PYTHONUTF8 ?? "1",
+      PYTHONIOENCODING: process.env.PYTHONIOENCODING ?? "utf-8",
+    },
     stdio: "inherit",
     shell: false,
   });

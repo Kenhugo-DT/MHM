@@ -29,6 +29,7 @@ npm run brain:process-inbox
 npm run brain:process-db-inbox
 npm run brain:sync-inbox
 npm run brain:list-requests
+npm run brain:list-candidates
 npm run brain:collect
 npm run brain:import
 ```
@@ -49,6 +50,8 @@ queued requests and writes candidate run files to `brain/data/candidates/`.
 and candidate proposals back to Supabase.
 
 `brain:sync-inbox` uploads the local inbox file into Supabase.
+
+`brain:list-candidates` shows review candidates written by Supabase brain runs.
 
 `brain:import` needs `SUPABASE_URL` and `SUPABASE_SECRET_KEY`. Never expose the
 secret key to the browser.
