@@ -11,6 +11,8 @@ import {
   Search,
   Shuffle,
   X,
+  ZoomIn,
+  ZoomOut,
 } from "lucide-react";
 import {
   lazy,
@@ -541,6 +543,22 @@ export default function App() {
             title="Fit map"
           >
             <Focus aria-hidden="true" size={18} />
+          </button>
+          <button
+            className="zoom-out-action"
+            type="button"
+            onClick={() => mapRef.current?.zoomBy(0.82)}
+            title="Zoom out"
+          >
+            <ZoomOut aria-hidden="true" size={18} />
+          </button>
+          <button
+            className="zoom-in-action"
+            type="button"
+            onClick={() => mapRef.current?.zoomBy(1.22)}
+            title="Zoom in"
+          >
+            <ZoomIn aria-hidden="true" size={18} />
           </button>
           <button
             className="random-action"

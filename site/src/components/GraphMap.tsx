@@ -27,6 +27,7 @@ import type {
 export interface GraphMapHandle {
   fit(): void;
   focus(nodeId: string): void;
+  zoomBy(factor: number): void;
 }
 
 interface GraphMapProps {
@@ -46,8 +47,15 @@ interface Camera {
 }
 
 const MIN_ZOOM = 0.24;
+const MOBILE_MIN_ZOOM = 0.2;
 const MAX_ZOOM = 1.55;
 const EMPTY_ROUTE_NODE_IDS: string[] = [];
+const MOVE_THRESHOLD = 7;
+
+const MOBILE_HOME_CAMERA: Record<MapMode, Camera> = {
+  artists: { x: -180, y: -180, zoom: 0.68 },
+  guitars: { x: 640, y: 20, zoom: 0.64 },
+};
 
 function edgeKey(source: string, target: string): string {
   return [source, target].sort().join("|");
@@ -161,16 +169,68 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
       x: 0,
       y: 0,
     });
+    const pointersRef = useRef(new Map<number, { x: number; y: number }>());
+    const pinchRef = useRef({
+      active: false,
+      distance: 0,
+      centerX: 0,
+      centerY: 0,
+    });
+    const labelItemsRef = useRef<
+      Array<{
+        label: Text;
+        node: GraphNode;
+        alwaysLabel: boolean;
+        hovered: boolean;
+      }>
+    >([]);
     const [ready, setReady] = useState(false);
 
     nodesRef.current = nodes;
     onSelectRef.current = onSelect;
     visibleTypesRef.current = visibleTypes;
 
+    function isCompactMap() {
+      const host = hostRef.current;
+      return (
+        (host?.clientWidth ?? window.innerWidth) <= 760 ||
+        window.matchMedia("(pointer: coarse)").matches
+      );
+    }
+
+    function minZoom() {
+      return isCompactMap() ? MOBILE_MIN_ZOOM : MIN_ZOOM;
+    }
+
+    function clampZoom(zoom: number) {
+      return Math.max(minZoom(), Math.min(MAX_ZOOM, zoom));
+    }
+
+    function syncLabelReadability(camera = cameraRef.current) {
+      const compact = isCompactMap();
+      const targetScreenScale = compact ? 0.86 : 1;
+      const labelScale = compact
+        ? Math.min(2.45, Math.max(1, targetScreenScale / camera.zoom))
+        : 1;
+
+      labelItemsRef.current.forEach((item) => {
+        item.label.scale.set(labelScale);
+        item.label.position.y = Math.max(nodeRadius(item.node) + 12, 18 / camera.zoom);
+
+        if (item.hovered) {
+          item.label.alpha = 1;
+          return;
+        }
+
+        item.label.alpha = item.alwaysLabel ? 0.95 : 0;
+      });
+    }
+
     function applyCamera(camera = cameraRef.current) {
       const app = appRef.current;
       const world = worldRef.current;
       if (!app || !world) return;
+      syncLabelReadability(camera);
       world.position.set(app.screen.width / 2, app.screen.height / 2);
       world.pivot.set(camera.x, camera.y);
       world.scale.set(camera.zoom);
@@ -231,6 +291,15 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
       const list = visibleNodes();
       if (!app || !list.length) return;
 
+      if (isCompactMap()) {
+        cameraRef.current = {
+          ...MOBILE_HOME_CAMERA[mode],
+          zoom: clampZoom(MOBILE_HOME_CAMERA[mode].zoom),
+        };
+        applyCamera();
+        return;
+      }
+
       const zones = MAP_ZONES.filter((zone) => zone.mode === mode);
       const minX = Math.min(
         ...list.map((node) => node.x),
@@ -252,7 +321,7 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
       const availableWidth = Math.max(500, app.screen.width - (app.screen.width > 900 ? 400 : 80));
       const availableHeight = Math.max(400, app.screen.height - 180);
       const zoom = Math.max(
-        MIN_ZOOM,
+        minZoom(),
         Math.min(MAX_ZOOM, availableWidth / (maxX - minX + 260), availableHeight / (maxY - minY + 260)),
       );
 
@@ -270,12 +339,54 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
       cameraRef.current = {
         x: node.x + (window.innerWidth > 980 ? 190 : 0),
         y: node.y,
-        zoom: window.innerWidth > 700 ? 0.92 : 0.72,
+        zoom: clampZoom(window.innerWidth > 700 ? 0.92 : 0.86),
       };
       applyCamera();
     }
 
-    useImperativeHandle(ref, () => ({ fit: fitMap, focus: focusNode }));
+    function zoomFromClientPoint(
+      fromClientX: number,
+      fromClientY: number,
+      toClientX: number,
+      toClientY: number,
+      nextZoom: number,
+    ) {
+      const app = appRef.current;
+      const host = hostRef.current;
+      if (!app || !host) return;
+
+      const camera = cameraRef.current;
+      const rect = host.getBoundingClientRect();
+      const fromScreenX = fromClientX - rect.left - app.screen.width / 2;
+      const fromScreenY = fromClientY - rect.top - app.screen.height / 2;
+      const toScreenX = toClientX - rect.left - app.screen.width / 2;
+      const toScreenY = toClientY - rect.top - app.screen.height / 2;
+      const beforeX = fromScreenX / camera.zoom + camera.x;
+      const beforeY = fromScreenY / camera.zoom + camera.y;
+      const zoom = clampZoom(nextZoom);
+
+      cameraRef.current.zoom = zoom;
+      cameraRef.current.x = beforeX - toScreenX / zoom;
+      cameraRef.current.y = beforeY - toScreenY / zoom;
+      scheduleCameraApply();
+    }
+
+    function zoomBy(factor: number) {
+      const host = hostRef.current;
+      if (!host) return;
+      const rect = host.getBoundingClientRect();
+      const centerX = rect.left + rect.width / 2;
+      const centerY = rect.top + rect.height / 2;
+      zoomFromClientPoint(
+        centerX,
+        centerY,
+        centerX,
+        centerY,
+        cameraRef.current.zoom * factor,
+      );
+    }
+
+    useImperativeHandle(ref, () => ({ fit: fitMap, focus: focusNode, zoomBy }));
 
     useEffect(() => {
       const host = hostRef.current;
@@ -351,6 +462,7 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
 
       destroyChildren(world);
       selectionLayerRef.current = null;
+      labelItemsRef.current = [];
 
       const shownNodes = nodes.filter((node) => visibleTypes.has(node.type));
       const shownIds = new Set(shownNodes.map((node) => node.id));
@@ -420,11 +532,12 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
         drawNodeShape(shape, node, false);
         nodeContainer.addChild(shape);
 
-        const alwaysLabel =
+        const alwaysLabel = Boolean(
           node.type === "genre" ||
-          node.type === "band" ||
-          node.type === "guitar_brand" ||
-          node.starter;
+            node.type === "band" ||
+            node.type === "guitar_brand" ||
+            node.starter,
+        );
         const label = new Text({
           text: node.label,
           style: {
@@ -441,16 +554,26 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
         label.position.set(0, nodeRadius(node) + 12);
         label.alpha = alwaysLabel ? 0.95 : 0;
         nodeContainer.addChild(label);
+        const labelItem = {
+          label,
+          node,
+          alwaysLabel,
+          hovered: false,
+        };
+        labelItemsRef.current.push(labelItem);
 
         nodeContainer.on("pointerover", () => {
+          labelItem.hovered = true;
           label.alpha = 1;
           label.style.fill = colorToCss(NODE_COLORS[node.type]);
           shape.alpha = 1;
+          syncLabelReadability();
           renderFrame();
         });
         nodeContainer.on("pointerout", () => {
-          label.alpha = alwaysLabel ? 0.95 : 0;
+          labelItem.hovered = false;
           label.style.fill = "#e6d9cc";
+          syncLabelReadability();
           renderFrame();
         });
         world.addChild(nodeContainer);
@@ -553,8 +676,61 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
       const host = hostRef.current;
       if (!host || !ready) return;
 
+      const safePreventDefault = (event: Event) => {
+        if (event.cancelable) event.preventDefault();
+      };
+
+      const pinchPair = () => {
+        const [first, second] = [...pointersRef.current.values()];
+        if (!first || !second) return undefined;
+        return { first, second };
+      };
+
+      const startPinch = () => {
+        const pair = pinchPair();
+        if (!pair) return;
+        const centerX = (pair.first.x + pair.second.x) / 2;
+        const centerY = (pair.first.y + pair.second.y) / 2;
+        pinchRef.current = {
+          active: true,
+          distance: Math.max(1, Math.hypot(pair.second.x - pair.first.x, pair.second.y - pair.first.y)),
+          centerX,
+          centerY,
+        };
+        dragRef.current.moved = true;
+      };
+
+      const capturePointer = (pointerId: number) => {
+        try {
+          host.setPointerCapture(pointerId);
+        } catch {
+          // Some browsers reject capture for synthetic or already-ended pointers.
+        }
+      };
+
+      const releasePointer = (pointerId: number) => {
+        try {
+          host.releasePointerCapture(pointerId);
+        } catch {
+          // The pointer may already be released by the browser.
+        }
+      };
+
       const pointerDown = (event: PointerEvent) => {
-        if (event.button !== 0) return;
+        if (event.pointerType === "mouse" && event.button !== 0) return;
+        safePreventDefault(event);
+        capturePointer(event.pointerId);
+        pointersRef.current.set(event.pointerId, {
+          x: event.clientX,
+          y: event.clientY,
+        });
+
+        if (pointersRef.current.size >= 2) {
+          startPinch();
+          host.dataset.dragging = "true";
+          return;
+        }
+
         dragRef.current = {
           active: true,
           moved: false,
@@ -566,11 +742,46 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
       };
 
       const pointerMove = (event: PointerEvent) => {
+        if (!pointersRef.current.has(event.pointerId)) return;
+        safePreventDefault(event);
+        pointersRef.current.set(event.pointerId, {
+          x: event.clientX,
+          y: event.clientY,
+        });
+
+        if (pointersRef.current.size >= 2) {
+          const pair = pinchPair();
+          if (!pair) return;
+          if (!pinchRef.current.active) startPinch();
+
+          const centerX = (pair.first.x + pair.second.x) / 2;
+          const centerY = (pair.first.y + pair.second.y) / 2;
+          const distance = Math.max(1, Math.hypot(pair.second.x - pair.first.x, pair.second.y - pair.first.y));
+          const nextZoom = cameraRef.current.zoom * (distance / pinchRef.current.distance);
+
+          zoomFromClientPoint(
+            pinchRef.current.centerX,
+            pinchRef.current.centerY,
+            centerX,
+            centerY,
+            nextZoom,
+          );
+
+          pinchRef.current = {
+            active: true,
+            distance,
+            centerX,
+            centerY,
+          };
+          dragRef.current.moved = true;
+          return;
+        }
+
         const drag = dragRef.current;
         if (!drag.active || drag.pointerId !== event.pointerId) return;
         const dx = event.clientX - drag.x;
         const dy = event.clientY - drag.y;
-        if (Math.abs(dx) + Math.abs(dy) > 2) drag.moved = true;
+        if (Math.hypot(dx, dy) > MOVE_THRESHOLD) drag.moved = true;
         cameraRef.current.x -= dx / cameraRef.current.zoom;
         cameraRef.current.y -= dy / cameraRef.current.zoom;
         drag.x = event.clientX;
@@ -579,6 +790,31 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
       };
 
       const pointerUp = (event: PointerEvent) => {
+        const wasPinching = pinchRef.current.active || pointersRef.current.size > 1;
+        pointersRef.current.delete(event.pointerId);
+        releasePointer(event.pointerId);
+
+        if (wasPinching) {
+          pinchRef.current.active = false;
+          dragRef.current.active = false;
+          host.dataset.dragging = "false";
+
+          if (pointersRef.current.size === 1) {
+            const [remaining] = [...pointersRef.current.entries()];
+            if (remaining) {
+              const [pointerId, point] = remaining;
+              dragRef.current = {
+                active: true,
+                moved: true,
+                pointerId,
+                x: point.x,
+                y: point.y,
+              };
+            }
+          }
+          return;
+        }
+
         const drag = dragRef.current;
         if (!drag.active || drag.pointerId !== event.pointerId) return;
         if (!drag.moved) {
@@ -593,31 +829,30 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
         event.preventDefault();
         const app = appRef.current;
         if (!app) return;
-
-        const rect = host.getBoundingClientRect();
-        const screenX = event.clientX - rect.left - app.screen.width / 2;
-        const screenY = event.clientY - rect.top - app.screen.height / 2;
-        const beforeX = screenX / cameraRef.current.zoom + cameraRef.current.x;
-        const beforeY = screenY / cameraRef.current.zoom + cameraRef.current.y;
         const nextZoom = Math.max(
-          MIN_ZOOM,
+          minZoom(),
           Math.min(MAX_ZOOM, cameraRef.current.zoom * Math.exp(-event.deltaY * 0.0012)),
         );
-        cameraRef.current.zoom = nextZoom;
-        cameraRef.current.x = beforeX - screenX / nextZoom;
-        cameraRef.current.y = beforeY - screenY / nextZoom;
-        scheduleCameraApply();
+        zoomFromClientPoint(
+          event.clientX,
+          event.clientY,
+          event.clientX,
+          event.clientY,
+          nextZoom,
+        );
       };
 
       host.addEventListener("pointerdown", pointerDown);
-      host.addEventListener("pointermove", pointerMove);
+      window.addEventListener("pointermove", pointerMove);
       window.addEventListener("pointerup", pointerUp);
       window.addEventListener("pointercancel", pointerUp);
       host.addEventListener("wheel", wheel, { passive: false });
 
       return () => {
+        pointersRef.current.clear();
+        pinchRef.current.active = false;
         host.removeEventListener("pointerdown", pointerDown);
-        host.removeEventListener("pointermove", pointerMove);
+        window.removeEventListener("pointermove", pointerMove);
         window.removeEventListener("pointerup", pointerUp);
         window.removeEventListener("pointercancel", pointerUp);
         host.removeEventListener("wheel", wheel);
