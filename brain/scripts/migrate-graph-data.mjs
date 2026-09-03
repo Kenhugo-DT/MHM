@@ -11,12 +11,17 @@ const legacyDataPath = path.join(scriptDir, "graph-data.js");
 const legacyAppPath = path.join(scriptDir, "app.js");
 const browserOutputPath = path.join(repoRoot, "site", "public", "data", "graph.json");
 const approvedOutputPath = path.join(brainRoot, "data", "approved", "graph.json");
+const promotionsPath = path.join(brainRoot, "data", "approved", "promotions.json");
 const blockedEntitiesPath = path.join(repoRoot, "shared", "graph-schema", "blocked-entities.json");
 
 const blockedEntities = JSON.parse(fs.readFileSync(blockedEntitiesPath, "utf8"));
 const excludedEntityIds = new Set(
   blockedEntities.entities.map((entity) => String(entity.id).toLocaleLowerCase("en")),
 );
+const excludedTerms = blockedEntities.entities.flatMap((entity) => [
+  entity.id,
+  ...(entity.labels ?? []),
+]);
 
 const sandbox = { window: {} };
 vm.runInNewContext(fs.readFileSync(legacyDataPath, "utf8"), sandbox);
@@ -52,6 +57,7 @@ const typeMap = {
   maker: "guitar_brand",
   guitar: "guitar",
 };
+const allowedPromotionTypes = new Set(["band", "guitarist", "artist", "guitar", "guitar_brand", "genre"]);
 
 function nodeType(node) {
   if (node.type === "artist" && artistOnly.has(node.id)) return "artist";
@@ -110,6 +116,17 @@ function normalizeSources(sources = []) {
   }));
 }
 
+function normalizeBlockedTerm(text) {
+  return String(text).toLocaleLowerCase("en").replace(/_/g, " ").trim();
+}
+
+function hasBlockedTerm(...values) {
+  const normalizedValues = values.map(normalizeBlockedTerm).filter(Boolean);
+  return normalizedValues.some((value) =>
+    excludedTerms.some((term) => value.includes(normalizeBlockedTerm(term))),
+  );
+}
+
 const nodes = keptLegacyNodes.map((node) => {
   const [x, y] = positions[node.id] ?? [node.x, node.y];
   const type = nodeType(node);
@@ -125,8 +142,43 @@ const nodes = keptLegacyNodes.map((node) => {
     zone: zoneFor(x, y, type),
     starter: Boolean(node.starter),
     sources: normalizeSources(node.sources),
+    };
+  });
+
+function loadPromotions() {
+  if (!fs.existsSync(promotionsPath)) {
+    return { nodes: [], edges: [] };
+  }
+
+  const payload = JSON.parse(fs.readFileSync(promotionsPath, "utf8"));
+  return {
+    nodes: Array.isArray(payload.nodes) ? payload.nodes : [],
+    edges: Array.isArray(payload.edges) ? payload.edges : [],
   };
-});
+}
+
+const promotionData = loadPromotions();
+const nodeIds = new Set(nodes.map((node) => node.id));
+
+for (const node of promotionData.nodes) {
+  if (
+    !node?.id ||
+    nodeIds.has(node.id) ||
+    !allowedPromotionTypes.has(node.type) ||
+    excludedEntityIds.has(String(node.id).toLocaleLowerCase("en")) ||
+    hasBlockedTerm(node.id, node.label)
+  ) {
+    continue;
+  }
+
+  nodes.push({
+    ...node,
+    roles: Array.isArray(node.roles) && node.roles.length ? node.roles : [node.type],
+    metadata: Array.isArray(node.metadata) ? node.metadata : [],
+    sources: normalizeSources(node.sources ?? []),
+  });
+  nodeIds.add(node.id);
+}
 
 const edges = graphEdges
   .filter((edge) => keptIds.has(edge.from) && keptIds.has(edge.to))
@@ -144,6 +196,34 @@ const edges = graphEdges
       sources: normalizeSources(edge.sources),
     };
   });
+
+const edgeIds = new Set(edges.map((edge) => edge.id));
+const edgeKeys = new Set(
+  edges.map((edge) => [edge.source, edge.target, edge.type, edge.label].join("|")),
+);
+
+for (const edge of promotionData.edges) {
+  const edgeKey = [edge.source, edge.target, edge.type, edge.label].join("|");
+  if (
+    !edge?.id ||
+    edgeIds.has(edge.id) ||
+    edgeKeys.has(edgeKey) ||
+    !nodeIds.has(edge.source) ||
+    !nodeIds.has(edge.target) ||
+    hasBlockedTerm(edge.id, edge.source, edge.target, edge.label, ...(edge.context ?? []))
+  ) {
+    continue;
+  }
+
+  edges.push({
+    ...edge,
+    strength: edge.strength ?? 0.5,
+    context: Array.isArray(edge.context) ? edge.context : [],
+    sources: normalizeSources(edge.sources ?? []),
+  });
+  edgeIds.add(edge.id);
+  edgeKeys.add(edgeKey);
+}
 
 const releaseNodes = graphNodes.filter((node) => node.type === "release");
 for (const release of releaseNodes) {

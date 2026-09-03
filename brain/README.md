@@ -34,6 +34,9 @@ npm run brain:collect
 npm run brain:agent:status
 npm run brain:agent:dry-run
 npm run brain:agent
+npm run brain:promote:dry-run
+npm run brain:promote
+npm run brain:promote:apply
 npm run brain:import
 ```
 
@@ -67,6 +70,11 @@ frontier request when the queue is empty, then processes up to two queued
 requests through the normal candidate pipeline. With Supabase configured, it
 uses the private database queue and writes candidates back to Supabase.
 
+`brain:promote:dry-run` previews approved candidate packages as concrete graph
+nodes and edges. `brain:promote` writes a review patch file. `brain:promote:apply`
+writes approved promotions to `brain/data/approved/promotions.json` and marks
+the Supabase candidate rows as `imported`.
+
 `brain:import` needs `SUPABASE_URL` and `SUPABASE_SECRET_KEY`. Never expose the
 secret key to the browser.
 
@@ -78,7 +86,8 @@ The npm scripts look for `python3`, `python` or `py -3`. You can also set
 1. Add requests to `brain/data/inbox/research-requests.json`.
 2. Run `npm run brain:process-inbox`, or let GitHub Actions run it weekly.
 3. Review generated files in `brain/data/candidates/`.
-4. Manually promote approved facts into the approved graph.
+4. Promote approved facts with `npm run brain:promote:dry-run`, then
+   `npm run brain:promote:apply`.
 5. Run `npm run migrate:data`, `npm run brain:audit` and `npm run build`.
 
 ## Supabase Brain Flow
@@ -89,6 +98,9 @@ The npm scripts look for `python3`, `python` or `py -3`. You can also set
 4. Run `npm run brain:import` to load the approved graph.
 5. Add work with `npm run brain:add-request -- --id my-request --title "My request" --instructions "..." --seed "Name:guitarist"`.
 6. Run `npm run brain:agent`.
+7. Approve good rows in Supabase `research_candidates`.
+8. Run `npm run brain:promote:apply`, `npm run migrate:data`, then
+   `npm run brain:import`.
 
 Full setup notes live in `brain/supabase/README.md`.
 
@@ -103,8 +115,8 @@ findings to Supabase `research_candidates` and local run output. It never edits
 the approved graph or publishes to the site by itself.
 
 GitHub Actions can run the scout from `.github/workflows/research-agent.yml`.
-That workflow can be started manually and is also scheduled for Wednesdays at
-02:23 UTC.
+That workflow can be started manually and is also scheduled for Mondays and
+Thursdays at 09:05 UTC.
 
 ## Environment
 

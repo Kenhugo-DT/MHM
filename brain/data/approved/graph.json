@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-03T13:13:24.482Z",
+  "generatedAt": "2026-09-03T13:33:44.122Z",
   "nodes": [
     {
       "id": "blues",
@@ -4558,6 +4558,174 @@
           "provider": "wikipedia"
         }
       ]
+    },
+    {
+      "id": "acid-king-band",
+      "label": "Acid King (band)",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "A band surfaced by the MHM research brain from Wikipedia signals around Doom metal.",
+      "metadata": [
+        "Band",
+        "Research brain"
+      ],
+      "x": 822.8,
+      "y": 231.5,
+      "zone": "hard-rock-metal",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Acid_King_%28band%29",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "anathema-band",
+      "label": "Anathema (band)",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "A band surfaced by the MHM research brain from Wikipedia signals around Doom metal.",
+      "metadata": [
+        "Band",
+        "Research brain"
+      ],
+      "x": 714.9,
+      "y": 209.6,
+      "zone": "hard-rock-metal",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Anathema_%28band%29",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "autopsy-band",
+      "label": "Autopsy (band)",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "A band surfaced by the MHM research brain from Wikipedia signals around Doom metal.",
+      "metadata": [
+        "Band",
+        "Research brain"
+      ],
+      "x": 1064,
+      "y": -145.7,
+      "zone": "hard-rock-metal",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Autopsy_%28band%29",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "bang-american-band",
+      "label": "Bang (American band)",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "A band surfaced by the MHM research brain from Wikipedia signals around Doom metal.",
+      "metadata": [
+        "Band",
+        "Research brain"
+      ],
+      "x": 1195.8,
+      "y": -70.7,
+      "zone": "hard-rock-metal",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Bang_%28American_band%29",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "asap-band",
+      "label": "ASAP (band)",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "A band surfaced by the MHM research brain from Wikipedia signals around Iron Maiden.",
+      "metadata": [
+        "Band",
+        "Research brain"
+      ],
+      "x": 1134.6,
+      "y": 7.9,
+      "zone": "hard-rock-metal",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/ASAP_%28band%29",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "anthrax-american-band",
+      "label": "Anthrax (American band)",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "A band surfaced by the MHM research brain from Wikipedia signals around Black Sabbath.",
+      "metadata": [
+        "Band",
+        "Research brain"
+      ],
+      "x": 918.7,
+      "y": 372.6,
+      "zone": "hard-rock-metal",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Anthrax_%28American_band%29",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "badlands-american-band",
+      "label": "Badlands (American band)",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "A band surfaced by the MHM research brain from Wikipedia signals around Black Sabbath.",
+      "metadata": [
+        "Band",
+        "Research brain"
+      ],
+      "x": 1169.8,
+      "y": 61.8,
+      "zone": "hard-rock-metal",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Badlands_%28American_band%29",
+          "provider": "wikipedia"
+        }
+      ]
     }
   ],
   "edges": [
@@ -7818,6 +7986,132 @@
       "strength": 0.56,
       "context": [],
       "sources": []
+    },
+    {
+      "id": "brain-doom-metal-acid-king-band-associated_genre",
+      "source": "doom-metal",
+      "target": "acid-king-band",
+      "type": "associated_genre",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Acid King (band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Doom_metal",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-doom-metal-anathema-band-associated_genre",
+      "source": "doom-metal",
+      "target": "anathema-band",
+      "type": "associated_genre",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Anathema (band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Doom_metal",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-doom-metal-autopsy-band-associated_genre",
+      "source": "doom-metal",
+      "target": "autopsy-band",
+      "type": "associated_genre",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Autopsy (band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Doom_metal",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-doom-metal-bang-american-band-associated_genre",
+      "source": "doom-metal",
+      "target": "bang-american-band",
+      "type": "associated_genre",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Bang (American band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Doom_metal",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-iron-maiden-asap-band-related",
+      "source": "iron-maiden",
+      "target": "asap-band",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: ASAP (band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Iron_Maiden",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-black-sabbath-anthrax-american-band-related",
+      "source": "black-sabbath",
+      "target": "anthrax-american-band",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Anthrax (American band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Black_Sabbath",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-black-sabbath-badlands-american-band-related",
+      "source": "black-sabbath",
+      "target": "badlands-american-band",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Badlands (American band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Black_Sabbath",
+          "provider": "wikipedia"
+        }
+      ]
     },
     {
       "id": "release-dark-side-of-the-moon-david-gilmour-pink-floyd",

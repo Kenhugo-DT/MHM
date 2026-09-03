@@ -117,6 +117,22 @@ List review candidates:
 npm run brain:list-candidates
 ```
 
+Preview approved candidates as graph additions:
+
+```bash
+npm run brain:promote:dry-run
+```
+
+Promote approved candidates into the versioned graph additions:
+
+```bash
+npm run brain:promote:apply
+npm run migrate:data
+npm run brain:audit
+npm run build
+npm run brain:import
+```
+
 Alternative file-first flow:
 
 ```bash
@@ -143,5 +159,8 @@ Candidate proposals appear in:
 - local `brain/data/candidates/` when the job runs locally
 - GitHub Action artifacts when the job runs in GitHub Actions
 
-Approved facts still need a human review before they are promoted into
-`brain/data/approved/graph.json` and published to the public map.
+Approved facts still need a human review before they are promoted. The promote
+step writes durable additions to `brain/data/approved/promotions.json`;
+`migrate:data` rebuilds `brain/data/approved/graph.json` and
+`site/public/data/graph.json`; `brain:import` publishes the same graph to the
+public Supabase tables.

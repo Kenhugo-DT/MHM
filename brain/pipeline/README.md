@@ -47,6 +47,9 @@ npm run brain:process-db-inbox
 npm run brain:agent:status
 npm run brain:agent:dry-run
 npm run brain:agent
+npm run brain:promote:dry-run
+npm run brain:promote
+npm run brain:promote:apply
 ```
 
 Dry-run validates queued requests and prints the seed plan without network
@@ -62,6 +65,12 @@ and the destination for run logs and review candidates.
 Use `brain:agent` when you want the scout to behave like the private worker: read
 the map, find or create queued work, collect source candidates and write the
 result back for review.
+
+Use `brain:promote:dry-run` after candidate rows are approved. It previews the
+concrete graph nodes and edges that would be created. `brain:promote` writes a
+review patch, while `brain:promote:apply` writes to
+`brain/data/approved/promotions.json` and marks Supabase candidates as
+`imported`.
 
 ## Environment variables
 
