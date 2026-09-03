@@ -18,7 +18,10 @@
     "brain:list-requests": "node brain/scripts/run-python.mjs brain/pipeline/brain_db.py list-requests",
     "brain:list-candidates": "node brain/scripts/run-python.mjs brain/pipeline/brain_db.py list-candidates",
     "brain:add-request": "node brain/scripts/run-python.mjs brain/pipeline/brain_db.py add-request",
-    "brain:python-check": "node brain/scripts/run-python.mjs -m py_compile brain/pipeline/sync.py brain/pipeline/import_graph.py brain/pipeline/process_inbox.py brain/pipeline/supabase_brain.py brain/pipeline/brain_db.py",
+    "brain:agent": "node brain/scripts/run-python.mjs brain/pipeline/scout_agent.py --source auto --auto-queue-frontier --process",
+    "brain:agent:dry-run": "node brain/scripts/run-python.mjs brain/pipeline/scout_agent.py --source auto --auto-queue-frontier --dry-run",
+    "brain:agent:status": "node brain/scripts/run-python.mjs brain/pipeline/scout_agent.py --source auto",
+    "brain:python-check": "node brain/scripts/run-python.mjs -m py_compile brain/pipeline/sync.py brain/pipeline/import_graph.py brain/pipeline/process_inbox.py brain/pipeline/supabase_brain.py brain/pipeline/brain_db.py brain/pipeline/scout_agent.py",
     "brain:import": "node brain/scripts/run-python.mjs brain/pipeline/import_graph.py",
     "brain:audit": "node brain/scripts/audit-graph.mjs"
   },

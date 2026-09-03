@@ -5,6 +5,11 @@ This directory contains the private editorial side of the graph.
 `sync.py` collects candidates from MusicBrainz, Wikidata and Wikipedia. It respects
 MusicBrainz rate limiting and writes review data locally. It never publishes data.
 
+`scout_agent.py` is the orchestration layer. It reads the current approved graph,
+checks the request queue, can create one frontier request when the queue is empty,
+and then runs the normal inbox processor. It never promotes candidates into the
+approved graph.
+
 `import_graph.py` imports an approved graph into Supabase with a service-role key.
 Use a current `sb_secret_...` key. It must only be used in a trusted local
 environment or GitHub Actions.
@@ -39,6 +44,9 @@ or suggesting related items.
 npm run brain:process-inbox -- --dry-run
 npm run brain:process-inbox
 npm run brain:process-db-inbox
+npm run brain:agent:status
+npm run brain:agent:dry-run
+npm run brain:agent
 ```
 
 Dry-run validates queued requests and prints the seed plan without network
@@ -50,6 +58,10 @@ Use `--mark-processed` only when you want the local inbox file updated from
 
 Use `brain:process-db-inbox` when Supabase should be the source of queued work
 and the destination for run logs and review candidates.
+
+Use `brain:agent` when you want the scout to behave like the private worker: read
+the map, find or create queued work, collect source candidates and write the
+result back for review.
 
 ## Environment variables
 

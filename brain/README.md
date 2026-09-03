@@ -31,6 +31,9 @@ npm run brain:sync-inbox
 npm run brain:list-requests
 npm run brain:list-candidates
 npm run brain:collect
+npm run brain:agent:status
+npm run brain:agent:dry-run
+npm run brain:agent
 npm run brain:import
 ```
 
@@ -53,6 +56,17 @@ and candidate proposals back to Supabase.
 
 `brain:list-candidates` shows review candidates written by Supabase brain runs.
 
+`brain:agent:status` lets the scout inspect the current brain queue and graph
+without creating or processing anything.
+
+`brain:agent:dry-run` shows what the scout would do. If the queue is empty, it
+prints the frontier request it would create from the current approved graph.
+
+`brain:agent` is the practical research agent. It reads queued work, creates one
+frontier request when the queue is empty, then processes up to two queued
+requests through the normal candidate pipeline. With Supabase configured, it
+uses the private database queue and writes candidates back to Supabase.
+
 `brain:import` needs `SUPABASE_URL` and `SUPABASE_SECRET_KEY`. Never expose the
 secret key to the browser.
 
@@ -74,9 +88,23 @@ The npm scripts look for `python3`, `python` or `py -3`. You can also set
 3. Add local `.env` and `.env.local` values from the examples.
 4. Run `npm run brain:import` to load the approved graph.
 5. Add work with `npm run brain:add-request -- --id my-request --title "My request" --instructions "..." --seed "Name:guitarist"`.
-6. Run `npm run brain:process-db-inbox`.
+6. Run `npm run brain:agent`.
 
 Full setup notes live in `brain/supabase/README.md`.
+
+## Scout Agent
+
+The scout agent is not the public site. It is the private worker that reads the
+current map, processes research requests and writes review candidates.
+
+You communicate with it by adding rows to Supabase `research_requests`, by using
+`npm run brain:add-request`, or by adding local inbox items. The agent writes its
+findings to Supabase `research_candidates` and local run output. It never edits
+the approved graph or publishes to the site by itself.
+
+GitHub Actions can run the scout from `.github/workflows/research-agent.yml`.
+That workflow can be started manually and is also scheduled for Wednesdays at
+02:23 UTC.
 
 ## Environment
 

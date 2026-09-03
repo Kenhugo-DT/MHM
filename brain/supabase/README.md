@@ -108,7 +108,7 @@ npm run brain:list-requests
 Process queued database requests:
 
 ```bash
-npm run brain:process-db-inbox
+npm run brain:agent
 ```
 
 List review candidates:
@@ -121,12 +121,19 @@ Alternative file-first flow:
 
 ```bash
 npm run brain:sync-inbox
-npm run brain:process-db-inbox
+npm run brain:agent
 ```
 
 `brain:sync-inbox` uploads `brain/data/inbox/research-requests.json` into
-Supabase, then `brain:process-db-inbox` lets the pipeline read queued requests
-from Supabase.
+Supabase, then `brain:agent` lets the scout read queued requests from Supabase,
+collect candidates and write results back to the private brain.
+
+To inspect without changing anything:
+
+```bash
+npm run brain:agent:status
+npm run brain:agent:dry-run
+```
 
 ## 8. Review Results
 
