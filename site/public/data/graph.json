@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-30T13:17:19.444Z",
+  "generatedAt": "2026-09-03T13:13:24.482Z",
   "nodes": [
     {
       "id": "blues",
@@ -2868,31 +2868,6 @@
       ]
     },
     {
-      "id": "tom-morello",
-      "label": "Tom Morello",
-      "type": "guitarist",
-      "roles": [
-        "guitarist",
-        "artist"
-      ],
-      "summary": "A guitarist who turned riffs, toggle-switch noise, effects and DJ-like gestures into political alternative metal language.",
-      "metadata": [
-        "Guitarist",
-        "Rage Against the Machine"
-      ],
-      "x": 560,
-      "y": 610,
-      "zone": "hard-rock-metal",
-      "starter": true,
-      "sources": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Tom_Morello",
-          "provider": "wikipedia"
-        }
-      ]
-    },
-    {
       "id": "slash",
       "label": "Slash",
       "type": "guitarist",
@@ -3260,11 +3235,11 @@
         "guitarist",
         "artist"
       ],
-      "summary": "U2's guitarist, known for delay-driven rhythmic patterns and atmospheric post-punk guitar architecture.",
+      "summary": "A guitarist known for delay-driven rhythmic patterns and atmospheric post-punk guitar architecture.",
       "metadata": [
         "Guitarist",
-        "U2",
-        "Delay"
+        "Delay",
+        "Post-punk"
       ],
       "x": 120,
       "y": 430,
@@ -3560,7 +3535,7 @@
       "roles": [
         "band"
       ],
-      "summary": "A band combining rap, punk, funk and metal weight around Tom Morello's highly percussive guitar language.",
+      "summary": "A band combining rap, punk, funk and metal weight into a hard-edged alternative metal sound.",
       "metadata": [
         "Band",
         "Alternative metal",
@@ -3820,31 +3795,6 @@
         {
           "label": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Radiohead",
-          "provider": "wikipedia"
-        }
-      ]
-    },
-    {
-      "id": "u2",
-      "label": "U2",
-      "type": "band",
-      "roles": [
-        "band"
-      ],
-      "summary": "A post-punk and alternative rock band whose sound is strongly tied to The Edge's delay-based guitar patterns.",
-      "metadata": [
-        "Band",
-        "Post-punk",
-        "Alternative rock"
-      ],
-      "x": 230,
-      "y": 430,
-      "zone": "folk-country-vise",
-      "starter": true,
-      "sources": [
-        {
-          "label": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/U2",
           "provider": "wikipedia"
         }
       ]
@@ -6850,37 +6800,7 @@
       "sources": []
     },
     {
-      "id": "legacy-223-tom-morello-rage-against-the-machine",
-      "source": "tom-morello",
-      "target": "rage-against-the-machine",
-      "type": "member_of",
-      "label": "guitarist",
-      "strength": 0.96,
-      "context": [],
-      "sources": []
-    },
-    {
-      "id": "legacy-224-tom-morello-alternative-rock",
-      "source": "tom-morello",
-      "target": "alternative-rock",
-      "type": "associated_genre",
-      "label": "riff and effects language",
-      "strength": 0.72,
-      "context": [],
-      "sources": []
-    },
-    {
-      "id": "legacy-225-tom-morello-hard-rock",
-      "source": "tom-morello",
-      "target": "hard-rock",
-      "type": "associated_genre",
-      "label": "riff weight",
-      "strength": 0.58,
-      "context": [],
-      "sources": []
-    },
-    {
-      "id": "legacy-226-rage-against-the-machine-alternative-rock",
+      "id": "legacy-223-rage-against-the-machine-alternative-rock",
       "source": "rage-against-the-machine",
       "target": "alternative-rock",
       "type": "associated_genre",
@@ -6890,7 +6810,7 @@
       "sources": []
     },
     {
-      "id": "legacy-227-slash-guns-n-roses",
+      "id": "legacy-224-slash-guns-n-roses",
       "source": "slash",
       "target": "guns-n-roses",
       "type": "member_of",
@@ -6900,7 +6820,7 @@
       "sources": []
     },
     {
-      "id": "legacy-228-slash-gibson-les-paul",
+      "id": "legacy-225-slash-gibson-les-paul",
       "source": "slash",
       "target": "gibson-les-paul",
       "type": "signature_instrument",
@@ -6910,7 +6830,7 @@
       "sources": []
     },
     {
-      "id": "legacy-229-slash-blues-rock",
+      "id": "legacy-226-slash-blues-rock",
       "source": "slash",
       "target": "blues-rock",
       "type": "associated_genre",
@@ -6920,7 +6840,7 @@
       "sources": []
     },
     {
-      "id": "legacy-230-guns-n-roses-hard-rock",
+      "id": "legacy-227-guns-n-roses-hard-rock",
       "source": "guns-n-roses",
       "target": "hard-rock",
       "type": "associated_genre",
@@ -6930,7 +6850,7 @@
       "sources": []
     },
     {
-      "id": "legacy-231-angus-young-acdc",
+      "id": "legacy-228-angus-young-acdc",
       "source": "angus-young",
       "target": "acdc",
       "type": "member_of",
@@ -6940,7 +6860,7 @@
       "sources": []
     },
     {
-      "id": "legacy-232-angus-young-gibson-sg",
+      "id": "legacy-229-angus-young-gibson-sg",
       "source": "angus-young",
       "target": "gibson-sg",
       "type": "signature_instrument",
@@ -6950,7 +6870,7 @@
       "sources": []
     },
     {
-      "id": "legacy-233-malcolm-young-acdc",
+      "id": "legacy-230-malcolm-young-acdc",
       "source": "malcolm-young",
       "target": "acdc",
       "type": "member_of",
@@ -6960,7 +6880,7 @@
       "sources": []
     },
     {
-      "id": "legacy-234-acdc-hard-rock",
+      "id": "legacy-231-acdc-hard-rock",
       "source": "acdc",
       "target": "hard-rock",
       "type": "associated_genre",
@@ -6970,7 +6890,7 @@
       "sources": []
     },
     {
-      "id": "legacy-235-acdc-blues-rock",
+      "id": "legacy-232-acdc-blues-rock",
       "source": "acdc",
       "target": "blues-rock",
       "type": "influenced_by",
@@ -6980,7 +6900,7 @@
       "sources": []
     },
     {
-      "id": "legacy-236-dave-mustaine-megadeth",
+      "id": "legacy-233-dave-mustaine-megadeth",
       "source": "dave-mustaine",
       "target": "megadeth",
       "type": "member_of",
@@ -6990,7 +6910,7 @@
       "sources": []
     },
     {
-      "id": "legacy-237-megadeth-thrash-metal",
+      "id": "legacy-234-megadeth-thrash-metal",
       "source": "megadeth",
       "target": "thrash-metal",
       "type": "associated_genre",
@@ -7000,7 +6920,7 @@
       "sources": []
     },
     {
-      "id": "legacy-238-dave-mustaine-thrash-metal",
+      "id": "legacy-235-dave-mustaine-thrash-metal",
       "source": "dave-mustaine",
       "target": "thrash-metal",
       "type": "associated_genre",
@@ -7010,7 +6930,7 @@
       "sources": []
     },
     {
-      "id": "legacy-239-dave-mustaine-gibson-flying-v",
+      "id": "legacy-236-dave-mustaine-gibson-flying-v",
       "source": "dave-mustaine",
       "target": "gibson-flying-v",
       "type": "plays",
@@ -7020,7 +6940,7 @@
       "sources": []
     },
     {
-      "id": "legacy-240-dimebag-darrell-pantera",
+      "id": "legacy-237-dimebag-darrell-pantera",
       "source": "dimebag-darrell",
       "target": "pantera",
       "type": "member_of",
@@ -7030,7 +6950,7 @@
       "sources": []
     },
     {
-      "id": "legacy-241-pantera-heavy-metal",
+      "id": "legacy-238-pantera-heavy-metal",
       "source": "pantera",
       "target": "heavy-metal",
       "type": "associated_genre",
@@ -7040,7 +6960,7 @@
       "sources": []
     },
     {
-      "id": "legacy-242-pantera-thrash-metal",
+      "id": "legacy-239-pantera-thrash-metal",
       "source": "pantera",
       "target": "thrash-metal",
       "type": "associated_genre",
@@ -7050,7 +6970,7 @@
       "sources": []
     },
     {
-      "id": "legacy-243-dimebag-darrell-heavy-metal",
+      "id": "legacy-240-dimebag-darrell-heavy-metal",
       "source": "dimebag-darrell",
       "target": "heavy-metal",
       "type": "associated_genre",
@@ -7060,7 +6980,7 @@
       "sources": []
     },
     {
-      "id": "legacy-244-zakk-wylde-ozzy-osbourne",
+      "id": "legacy-241-zakk-wylde-ozzy-osbourne",
       "source": "zakk-wylde",
       "target": "ozzy-osbourne",
       "type": "member_of",
@@ -7070,7 +6990,7 @@
       "sources": []
     },
     {
-      "id": "legacy-245-zakk-wylde-gibson-les-paul",
+      "id": "legacy-242-zakk-wylde-gibson-les-paul",
       "source": "zakk-wylde",
       "target": "gibson-les-paul",
       "type": "signature_instrument",
@@ -7080,7 +7000,7 @@
       "sources": []
     },
     {
-      "id": "legacy-246-zakk-wylde-heavy-metal",
+      "id": "legacy-243-zakk-wylde-heavy-metal",
       "source": "zakk-wylde",
       "target": "heavy-metal",
       "type": "associated_genre",
@@ -7090,7 +7010,7 @@
       "sources": []
     },
     {
-      "id": "legacy-247-iron-maiden-heavy-metal",
+      "id": "legacy-244-iron-maiden-heavy-metal",
       "source": "iron-maiden",
       "target": "heavy-metal",
       "type": "associated_genre",
@@ -7100,7 +7020,7 @@
       "sources": []
     },
     {
-      "id": "legacy-248-judas-priest-heavy-metal",
+      "id": "legacy-245-judas-priest-heavy-metal",
       "source": "judas-priest",
       "target": "heavy-metal",
       "type": "associated_genre",
@@ -7110,7 +7030,7 @@
       "sources": []
     },
     {
-      "id": "legacy-249-judas-priest-gibson-flying-v",
+      "id": "legacy-246-judas-priest-gibson-flying-v",
       "source": "judas-priest",
       "target": "gibson-flying-v",
       "type": "plays",
@@ -7120,7 +7040,7 @@
       "sources": []
     },
     {
-      "id": "legacy-250-wes-montgomery-jazz",
+      "id": "legacy-247-wes-montgomery-jazz",
       "source": "wes-montgomery",
       "target": "jazz",
       "type": "associated_genre",
@@ -7130,7 +7050,7 @@
       "sources": []
     },
     {
-      "id": "legacy-251-wes-montgomery-jazz-fusion",
+      "id": "legacy-248-wes-montgomery-jazz-fusion",
       "source": "wes-montgomery",
       "target": "jazz-fusion",
       "type": "influenced_by",
@@ -7140,7 +7060,7 @@
       "sources": []
     },
     {
-      "id": "legacy-252-joe-pass-jazz",
+      "id": "legacy-249-joe-pass-jazz",
       "source": "joe-pass",
       "target": "jazz",
       "type": "associated_genre",
@@ -7150,7 +7070,7 @@
       "sources": []
     },
     {
-      "id": "legacy-253-django-reinhardt-jazz",
+      "id": "legacy-250-django-reinhardt-jazz",
       "source": "django-reinhardt",
       "target": "jazz",
       "type": "associated_genre",
@@ -7160,7 +7080,7 @@
       "sources": []
     },
     {
-      "id": "legacy-254-paco-de-lucia-flamenco",
+      "id": "legacy-251-paco-de-lucia-flamenco",
       "source": "paco-de-lucia",
       "target": "flamenco",
       "type": "associated_genre",
@@ -7170,7 +7090,7 @@
       "sources": []
     },
     {
-      "id": "legacy-255-john-mclaughlin-jazz-fusion",
+      "id": "legacy-252-john-mclaughlin-jazz-fusion",
       "source": "john-mclaughlin",
       "target": "jazz-fusion",
       "type": "associated_genre",
@@ -7180,7 +7100,7 @@
       "sources": []
     },
     {
-      "id": "legacy-256-john-mclaughlin-jazz",
+      "id": "legacy-253-john-mclaughlin-jazz",
       "source": "john-mclaughlin",
       "target": "jazz",
       "type": "associated_genre",
@@ -7190,7 +7110,7 @@
       "sources": []
     },
     {
-      "id": "legacy-257-john-mclaughlin-progressive-rock",
+      "id": "legacy-254-john-mclaughlin-progressive-rock",
       "source": "john-mclaughlin",
       "target": "progressive-rock",
       "type": "associated_genre",
@@ -7200,7 +7120,7 @@
       "sources": []
     },
     {
-      "id": "legacy-258-robert-fripp-king-crimson",
+      "id": "legacy-255-robert-fripp-king-crimson",
       "source": "robert-fripp",
       "target": "king-crimson",
       "type": "member_of",
@@ -7210,7 +7130,7 @@
       "sources": []
     },
     {
-      "id": "legacy-259-king-crimson-progressive-rock",
+      "id": "legacy-256-king-crimson-progressive-rock",
       "source": "king-crimson",
       "target": "progressive-rock",
       "type": "associated_genre",
@@ -7220,7 +7140,7 @@
       "sources": []
     },
     {
-      "id": "legacy-260-king-crimson-art-rock",
+      "id": "legacy-257-king-crimson-art-rock",
       "source": "king-crimson",
       "target": "art-rock",
       "type": "associated_genre",
@@ -7230,7 +7150,7 @@
       "sources": []
     },
     {
-      "id": "legacy-261-steve-howe-yes",
+      "id": "legacy-258-steve-howe-yes",
       "source": "steve-howe",
       "target": "yes",
       "type": "member_of",
@@ -7240,7 +7160,7 @@
       "sources": []
     },
     {
-      "id": "legacy-262-yes-progressive-rock",
+      "id": "legacy-259-yes-progressive-rock",
       "source": "yes",
       "target": "progressive-rock",
       "type": "associated_genre",
@@ -7250,7 +7170,7 @@
       "sources": []
     },
     {
-      "id": "legacy-263-alex-lifeson-rush",
+      "id": "legacy-260-alex-lifeson-rush",
       "source": "alex-lifeson",
       "target": "rush",
       "type": "member_of",
@@ -7260,7 +7180,7 @@
       "sources": []
     },
     {
-      "id": "legacy-264-rush-progressive-rock",
+      "id": "legacy-261-rush-progressive-rock",
       "source": "rush",
       "target": "progressive-rock",
       "type": "associated_genre",
@@ -7270,7 +7190,7 @@
       "sources": []
     },
     {
-      "id": "legacy-265-rush-hard-rock",
+      "id": "legacy-262-rush-hard-rock",
       "source": "rush",
       "target": "hard-rock",
       "type": "associated_genre",
@@ -7280,7 +7200,7 @@
       "sources": []
     },
     {
-      "id": "legacy-266-alex-lifeson-gibson-es-335",
+      "id": "legacy-263-alex-lifeson-gibson-es-335",
       "source": "alex-lifeson",
       "target": "gibson-es-335",
       "type": "signature_instrument",
@@ -7290,37 +7210,7 @@
       "sources": []
     },
     {
-      "id": "legacy-267-the-edge-u2",
-      "source": "the-edge",
-      "target": "u2",
-      "type": "member_of",
-      "label": "guitarist",
-      "strength": 0.96,
-      "context": [],
-      "sources": []
-    },
-    {
-      "id": "legacy-268-u2-post-punk",
-      "source": "u2",
-      "target": "post-punk",
-      "type": "associated_genre",
-      "label": "early identity",
-      "strength": 0.76,
-      "context": [],
-      "sources": []
-    },
-    {
-      "id": "legacy-269-u2-alternative-rock",
-      "source": "u2",
-      "target": "alternative-rock",
-      "type": "associated_genre",
-      "label": "arena alternative branch",
-      "strength": 0.68,
-      "context": [],
-      "sources": []
-    },
-    {
-      "id": "legacy-270-the-edge-gibson-explorer",
+      "id": "legacy-264-the-edge-gibson-explorer",
       "source": "the-edge",
       "target": "gibson-explorer",
       "type": "plays",
@@ -7330,7 +7220,7 @@
       "sources": []
     },
     {
-      "id": "legacy-271-jonny-greenwood-radiohead",
+      "id": "legacy-265-jonny-greenwood-radiohead",
       "source": "jonny-greenwood",
       "target": "radiohead",
       "type": "member_of",
@@ -7340,7 +7230,7 @@
       "sources": []
     },
     {
-      "id": "legacy-272-radiohead-alternative-rock",
+      "id": "legacy-266-radiohead-alternative-rock",
       "source": "radiohead",
       "target": "alternative-rock",
       "type": "associated_genre",
@@ -7350,7 +7240,7 @@
       "sources": []
     },
     {
-      "id": "legacy-273-radiohead-art-rock",
+      "id": "legacy-267-radiohead-art-rock",
       "source": "radiohead",
       "target": "art-rock",
       "type": "associated_genre",
@@ -7360,7 +7250,7 @@
       "sources": []
     },
     {
-      "id": "legacy-274-jonny-greenwood-fender-telecaster",
+      "id": "legacy-268-jonny-greenwood-fender-telecaster",
       "source": "jonny-greenwood",
       "target": "fender-telecaster",
       "type": "plays",
@@ -7370,7 +7260,7 @@
       "sources": []
     },
     {
-      "id": "legacy-275-lillebjorn-nilsen-gitarkameratene",
+      "id": "legacy-269-lillebjorn-nilsen-gitarkameratene",
       "source": "lillebjorn-nilsen",
       "target": "gitarkameratene",
       "type": "member_of",
@@ -7380,7 +7270,7 @@
       "sources": []
     },
     {
-      "id": "legacy-276-jan-eggum-gitarkameratene",
+      "id": "legacy-270-jan-eggum-gitarkameratene",
       "source": "jan-eggum",
       "target": "gitarkameratene",
       "type": "member_of",
@@ -7390,7 +7280,7 @@
       "sources": []
     },
     {
-      "id": "legacy-277-halvdan-sivertsen-gitarkameratene",
+      "id": "legacy-271-halvdan-sivertsen-gitarkameratene",
       "source": "halvdan-sivertsen",
       "target": "gitarkameratene",
       "type": "member_of",
@@ -7400,7 +7290,7 @@
       "sources": []
     },
     {
-      "id": "legacy-278-lillebjorn-nilsen-norwegian-vise",
+      "id": "legacy-272-lillebjorn-nilsen-norwegian-vise",
       "source": "lillebjorn-nilsen",
       "target": "norwegian-vise",
       "type": "associated_genre",
@@ -7410,7 +7300,7 @@
       "sources": []
     },
     {
-      "id": "legacy-279-jan-eggum-singer-songwriter",
+      "id": "legacy-273-jan-eggum-singer-songwriter",
       "source": "jan-eggum",
       "target": "singer-songwriter",
       "type": "associated_genre",
@@ -7420,7 +7310,7 @@
       "sources": []
     },
     {
-      "id": "legacy-280-jan-eggum-norwegian-vise",
+      "id": "legacy-274-jan-eggum-norwegian-vise",
       "source": "jan-eggum",
       "target": "norwegian-vise",
       "type": "associated_genre",
@@ -7430,7 +7320,7 @@
       "sources": []
     },
     {
-      "id": "legacy-281-halvdan-sivertsen-norwegian-vise",
+      "id": "legacy-275-halvdan-sivertsen-norwegian-vise",
       "source": "halvdan-sivertsen",
       "target": "norwegian-vise",
       "type": "associated_genre",
@@ -7440,7 +7330,7 @@
       "sources": []
     },
     {
-      "id": "legacy-282-alf-cranner-norwegian-vise",
+      "id": "legacy-276-alf-cranner-norwegian-vise",
       "source": "alf-cranner",
       "target": "norwegian-vise",
       "type": "associated_genre",
@@ -7450,7 +7340,7 @@
       "sources": []
     },
     {
-      "id": "legacy-283-alf-cranner-folk",
+      "id": "legacy-277-alf-cranner-folk",
       "source": "alf-cranner",
       "target": "folk",
       "type": "associated_genre",
@@ -7460,7 +7350,7 @@
       "sources": []
     },
     {
-      "id": "legacy-284-gitarkameratene-singer-songwriter",
+      "id": "legacy-278-gitarkameratene-singer-songwriter",
       "source": "gitarkameratene",
       "target": "singer-songwriter",
       "type": "associated_genre",
@@ -7470,7 +7360,7 @@
       "sources": []
     },
     {
-      "id": "legacy-285-fender-fender-esquire",
+      "id": "legacy-279-fender-fender-esquire",
       "source": "fender",
       "target": "fender-esquire",
       "type": "made_by",
@@ -7480,7 +7370,7 @@
       "sources": []
     },
     {
-      "id": "legacy-286-fender-fender-mustang",
+      "id": "legacy-280-fender-fender-mustang",
       "source": "fender",
       "target": "fender-mustang",
       "type": "made_by",
@@ -7490,7 +7380,7 @@
       "sources": []
     },
     {
-      "id": "legacy-287-gibson-gibson-es-335",
+      "id": "legacy-281-gibson-gibson-es-335",
       "source": "gibson",
       "target": "gibson-es-335",
       "type": "made_by",
@@ -7500,7 +7390,7 @@
       "sources": []
     },
     {
-      "id": "legacy-288-gibson-gibson-explorer",
+      "id": "legacy-282-gibson-gibson-explorer",
       "source": "gibson",
       "target": "gibson-explorer",
       "type": "made_by",
@@ -7510,7 +7400,7 @@
       "sources": []
     },
     {
-      "id": "legacy-289-gibson-gibson-firebird",
+      "id": "legacy-283-gibson-gibson-firebird",
       "source": "gibson",
       "target": "gibson-firebird",
       "type": "made_by",
@@ -7520,7 +7410,7 @@
       "sources": []
     },
     {
-      "id": "legacy-290-gibson-gibson-eds-1275",
+      "id": "legacy-284-gibson-gibson-eds-1275",
       "source": "gibson",
       "target": "gibson-eds-1275",
       "type": "made_by",
@@ -7530,7 +7420,7 @@
       "sources": []
     },
     {
-      "id": "legacy-291-ibanez-ibanez-jem",
+      "id": "legacy-285-ibanez-ibanez-jem",
       "source": "ibanez",
       "target": "ibanez-jem",
       "type": "made_by",
@@ -7540,7 +7430,7 @@
       "sources": []
     },
     {
-      "id": "legacy-292-ibanez-ibanez-rg",
+      "id": "legacy-286-ibanez-ibanez-rg",
       "source": "ibanez",
       "target": "ibanez-rg",
       "type": "made_by",
@@ -7550,7 +7440,7 @@
       "sources": []
     },
     {
-      "id": "legacy-293-ibanez-ibanez-js",
+      "id": "legacy-287-ibanez-ibanez-js",
       "source": "ibanez",
       "target": "ibanez-js",
       "type": "made_by",
@@ -7560,7 +7450,7 @@
       "sources": []
     },
     {
-      "id": "legacy-294-prs-prs-custom-24",
+      "id": "legacy-288-prs-prs-custom-24",
       "source": "prs",
       "target": "prs-custom-24",
       "type": "made_by",
@@ -7570,7 +7460,7 @@
       "sources": []
     },
     {
-      "id": "legacy-295-prs-prs-santana",
+      "id": "legacy-289-prs-prs-santana",
       "source": "prs",
       "target": "prs-santana",
       "type": "made_by",
@@ -7580,7 +7470,7 @@
       "sources": []
     },
     {
-      "id": "legacy-296-jackson-jackson-rhoads",
+      "id": "legacy-290-jackson-jackson-rhoads",
       "source": "jackson",
       "target": "jackson-rhoads",
       "type": "made_by",
@@ -7590,7 +7480,7 @@
       "sources": []
     },
     {
-      "id": "legacy-297-jackson-jackson-soloist",
+      "id": "legacy-291-jackson-jackson-soloist",
       "source": "jackson",
       "target": "jackson-soloist",
       "type": "made_by",
@@ -7600,7 +7490,7 @@
       "sources": []
     },
     {
-      "id": "legacy-298-charvel-charvel-san-dimas",
+      "id": "legacy-292-charvel-charvel-san-dimas",
       "source": "charvel",
       "target": "charvel-san-dimas",
       "type": "made_by",
@@ -7610,7 +7500,7 @@
       "sources": []
     },
     {
-      "id": "legacy-299-music-man-music-man-axis",
+      "id": "legacy-293-music-man-music-man-axis",
       "source": "music-man",
       "target": "music-man-axis",
       "type": "made_by",
@@ -7620,7 +7510,7 @@
       "sources": []
     },
     {
-      "id": "legacy-300-yamaha-yamaha-sg",
+      "id": "legacy-294-yamaha-yamaha-sg",
       "source": "yamaha",
       "target": "yamaha-sg",
       "type": "made_by",
@@ -7630,7 +7520,7 @@
       "sources": []
     },
     {
-      "id": "legacy-301-taylor-taylor-814ce",
+      "id": "legacy-295-taylor-taylor-814ce",
       "source": "taylor",
       "target": "taylor-814ce",
       "type": "made_by",
@@ -7640,7 +7530,7 @@
       "sources": []
     },
     {
-      "id": "legacy-302-guild-guild-f-512",
+      "id": "legacy-296-guild-guild-f-512",
       "source": "guild",
       "target": "guild-f-512",
       "type": "made_by",
@@ -7650,7 +7540,7 @@
       "sources": []
     },
     {
-      "id": "legacy-303-national-national-resonator",
+      "id": "legacy-297-national-national-resonator",
       "source": "national",
       "target": "national-resonator",
       "type": "made_by",
@@ -7660,7 +7550,7 @@
       "sources": []
     },
     {
-      "id": "legacy-304-danelectro-danelectro-3021",
+      "id": "legacy-298-danelectro-danelectro-3021",
       "source": "danelectro",
       "target": "danelectro-3021",
       "type": "made_by",
@@ -7670,7 +7560,7 @@
       "sources": []
     },
     {
-      "id": "legacy-305-gibson-es-335-blues-rock",
+      "id": "legacy-299-gibson-es-335-blues-rock",
       "source": "gibson-es-335",
       "target": "blues-rock",
       "type": "associated_genre",
@@ -7680,7 +7570,7 @@
       "sources": []
     },
     {
-      "id": "legacy-306-gibson-es-335-jazz",
+      "id": "legacy-300-gibson-es-335-jazz",
       "source": "gibson-es-335",
       "target": "jazz",
       "type": "associated_genre",
@@ -7690,7 +7580,7 @@
       "sources": []
     },
     {
-      "id": "legacy-307-gibson-explorer-heavy-metal",
+      "id": "legacy-301-gibson-explorer-heavy-metal",
       "source": "gibson-explorer",
       "target": "heavy-metal",
       "type": "associated_genre",
@@ -7700,7 +7590,7 @@
       "sources": []
     },
     {
-      "id": "legacy-308-gibson-firebird-blues-rock",
+      "id": "legacy-302-gibson-firebird-blues-rock",
       "source": "gibson-firebird",
       "target": "blues-rock",
       "type": "associated_genre",
@@ -7710,7 +7600,7 @@
       "sources": []
     },
     {
-      "id": "legacy-309-gibson-eds-1275-hard-rock",
+      "id": "legacy-303-gibson-eds-1275-hard-rock",
       "source": "gibson-eds-1275",
       "target": "hard-rock",
       "type": "associated_genre",
@@ -7720,7 +7610,7 @@
       "sources": []
     },
     {
-      "id": "legacy-310-gibson-eds-1275-progressive-rock",
+      "id": "legacy-304-gibson-eds-1275-progressive-rock",
       "source": "gibson-eds-1275",
       "target": "progressive-rock",
       "type": "associated_genre",
@@ -7730,7 +7620,7 @@
       "sources": []
     },
     {
-      "id": "legacy-311-fender-esquire-rock-and-roll",
+      "id": "legacy-305-fender-esquire-rock-and-roll",
       "source": "fender-esquire",
       "target": "rock-and-roll",
       "type": "associated_genre",
@@ -7740,7 +7630,7 @@
       "sources": []
     },
     {
-      "id": "legacy-312-fender-esquire-country",
+      "id": "legacy-306-fender-esquire-country",
       "source": "fender-esquire",
       "target": "country",
       "type": "associated_genre",
@@ -7750,7 +7640,7 @@
       "sources": []
     },
     {
-      "id": "legacy-313-fender-mustang-alternative-rock",
+      "id": "legacy-307-fender-mustang-alternative-rock",
       "source": "fender-mustang",
       "target": "alternative-rock",
       "type": "associated_genre",
@@ -7760,7 +7650,7 @@
       "sources": []
     },
     {
-      "id": "legacy-314-fender-mustang-indie-rock",
+      "id": "legacy-308-fender-mustang-indie-rock",
       "source": "fender-mustang",
       "target": "indie-rock",
       "type": "associated_genre",
@@ -7770,7 +7660,7 @@
       "sources": []
     },
     {
-      "id": "legacy-315-prs-custom-24-rock",
+      "id": "legacy-309-prs-custom-24-rock",
       "source": "prs-custom-24",
       "target": "rock",
       "type": "associated_genre",
@@ -7780,7 +7670,7 @@
       "sources": []
     },
     {
-      "id": "legacy-316-prs-custom-24-hard-rock",
+      "id": "legacy-310-prs-custom-24-hard-rock",
       "source": "prs-custom-24",
       "target": "hard-rock",
       "type": "associated_genre",
@@ -7790,7 +7680,7 @@
       "sources": []
     },
     {
-      "id": "legacy-317-prs-santana-blues-rock",
+      "id": "legacy-311-prs-santana-blues-rock",
       "source": "prs-santana",
       "target": "blues-rock",
       "type": "associated_genre",
@@ -7800,7 +7690,7 @@
       "sources": []
     },
     {
-      "id": "legacy-318-prs-santana-jazz-fusion",
+      "id": "legacy-312-prs-santana-jazz-fusion",
       "source": "prs-santana",
       "target": "jazz-fusion",
       "type": "associated_genre",
@@ -7810,7 +7700,7 @@
       "sources": []
     },
     {
-      "id": "legacy-319-ibanez-rg-progressive-metal",
+      "id": "legacy-313-ibanez-rg-progressive-metal",
       "source": "ibanez-rg",
       "target": "progressive-metal",
       "type": "associated_genre",
@@ -7820,7 +7710,7 @@
       "sources": []
     },
     {
-      "id": "legacy-320-ibanez-rg-heavy-metal",
+      "id": "legacy-314-ibanez-rg-heavy-metal",
       "source": "ibanez-rg",
       "target": "heavy-metal",
       "type": "associated_genre",
@@ -7830,7 +7720,7 @@
       "sources": []
     },
     {
-      "id": "legacy-321-ibanez-js-rock",
+      "id": "legacy-315-ibanez-js-rock",
       "source": "ibanez-js",
       "target": "rock",
       "type": "associated_genre",
@@ -7840,7 +7730,7 @@
       "sources": []
     },
     {
-      "id": "legacy-322-jackson-rhoads-heavy-metal",
+      "id": "legacy-316-jackson-rhoads-heavy-metal",
       "source": "jackson-rhoads",
       "target": "heavy-metal",
       "type": "associated_genre",
@@ -7850,7 +7740,7 @@
       "sources": []
     },
     {
-      "id": "legacy-323-jackson-soloist-thrash-metal",
+      "id": "legacy-317-jackson-soloist-thrash-metal",
       "source": "jackson-soloist",
       "target": "thrash-metal",
       "type": "associated_genre",
@@ -7860,7 +7750,7 @@
       "sources": []
     },
     {
-      "id": "legacy-324-charvel-san-dimas-hard-rock",
+      "id": "legacy-318-charvel-san-dimas-hard-rock",
       "source": "charvel-san-dimas",
       "target": "hard-rock",
       "type": "associated_genre",
@@ -7870,7 +7760,7 @@
       "sources": []
     },
     {
-      "id": "legacy-325-music-man-axis-hard-rock",
+      "id": "legacy-319-music-man-axis-hard-rock",
       "source": "music-man-axis",
       "target": "hard-rock",
       "type": "associated_genre",
@@ -7880,7 +7770,7 @@
       "sources": []
     },
     {
-      "id": "legacy-326-music-man-axis-eddie-van-halen",
+      "id": "legacy-320-music-man-axis-eddie-van-halen",
       "source": "music-man-axis",
       "target": "eddie-van-halen",
       "type": "signature_instrument",
@@ -7890,7 +7780,7 @@
       "sources": []
     },
     {
-      "id": "legacy-327-yamaha-sg-jazz-fusion",
+      "id": "legacy-321-yamaha-sg-jazz-fusion",
       "source": "yamaha-sg",
       "target": "jazz-fusion",
       "type": "associated_genre",
@@ -7900,7 +7790,7 @@
       "sources": []
     },
     {
-      "id": "legacy-328-taylor-814ce-singer-songwriter",
+      "id": "legacy-322-taylor-814ce-singer-songwriter",
       "source": "taylor-814ce",
       "target": "singer-songwriter",
       "type": "associated_genre",
@@ -7910,7 +7800,7 @@
       "sources": []
     },
     {
-      "id": "legacy-329-guild-f-512-folk",
+      "id": "legacy-323-guild-f-512-folk",
       "source": "guild-f-512",
       "target": "folk",
       "type": "associated_genre",
@@ -7920,7 +7810,7 @@
       "sources": []
     },
     {
-      "id": "legacy-330-danelectro-3021-indie-rock",
+      "id": "legacy-324-danelectro-3021-indie-rock",
       "source": "danelectro-3021",
       "target": "indie-rock",
       "type": "associated_genre",

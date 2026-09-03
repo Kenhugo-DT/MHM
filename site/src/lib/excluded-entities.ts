@@ -12,11 +12,13 @@ const EXCLUDED_ENTITY_TERMS = BLOCKED_ENTITIES.flatMap((entity) => [
   ...entity.labels,
 ]);
 
-export const EXCLUDED_ENTITY_IDS = new Set(BLOCKED_ENTITIES.map((entity) => entity.id));
-
 function normalizeBlockedText(text: string): string {
   return text.toLocaleLowerCase("en").replace(/_/g, " ").trim();
 }
+
+export const EXCLUDED_ENTITY_IDS = new Set(
+  BLOCKED_ENTITIES.map((entity) => normalizeBlockedText(entity.id)),
+);
 
 export function isBlockedEntityText(text: string): boolean {
   const normalized = normalizeBlockedText(text);
@@ -24,13 +26,13 @@ export function isBlockedEntityText(text: string): boolean {
 }
 
 export function isIncludedNode(node: GraphNode): boolean {
-  return !EXCLUDED_ENTITY_IDS.has(node.id);
+  return !EXCLUDED_ENTITY_IDS.has(normalizeBlockedText(node.id));
 }
 
 export function isIncludedEdge(edge: GraphEdge): boolean {
   return (
-    !EXCLUDED_ENTITY_IDS.has(edge.source) &&
-    !EXCLUDED_ENTITY_IDS.has(edge.target)
+    !EXCLUDED_ENTITY_IDS.has(normalizeBlockedText(edge.source)) &&
+    !EXCLUDED_ENTITY_IDS.has(normalizeBlockedText(edge.target))
   );
 }
 

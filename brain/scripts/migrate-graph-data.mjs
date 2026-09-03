@@ -14,7 +14,9 @@ const approvedOutputPath = path.join(brainRoot, "data", "approved", "graph.json"
 const blockedEntitiesPath = path.join(repoRoot, "shared", "graph-schema", "blocked-entities.json");
 
 const blockedEntities = JSON.parse(fs.readFileSync(blockedEntitiesPath, "utf8"));
-const excludedEntityIds = new Set(blockedEntities.entities.map((entity) => entity.id));
+const excludedEntityIds = new Set(
+  blockedEntities.entities.map((entity) => String(entity.id).toLocaleLowerCase("en")),
+);
 
 const sandbox = { window: {} };
 vm.runInNewContext(fs.readFileSync(legacyDataPath, "utf8"), sandbox);
@@ -94,7 +96,9 @@ const graphNodes = [...legacy.nodes, ...extraNodes];
 const graphEdges = [...legacy.edges, ...extraEdges];
 
 const keptLegacyNodes = graphNodes.filter(
-  (node) => supportedTypes.has(node.type) && !excludedEntityIds.has(node.id),
+  (node) =>
+    supportedTypes.has(node.type) &&
+    !excludedEntityIds.has(String(node.id).toLocaleLowerCase("en")),
 );
 const keptIds = new Set(keptLegacyNodes.map((node) => node.id));
 const nodeById = new Map(graphNodes.map((node) => [node.id, node]));
