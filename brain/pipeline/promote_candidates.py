@@ -108,6 +108,11 @@ GENERIC_TOPIC_TERMS = {
     "tribute band",
 }
 
+DISAMBIGUATION_PATTERN = re.compile(
+    r"\s*\((?=[^)]*(?:artist|band|drummer|guitarist|music group|musician|singer))[^)]*\)\s*$",
+    re.IGNORECASE,
+)
+
 
 def iso_now() -> str:
     return datetime.now(UTC).isoformat().replace("+00:00", "Z")
@@ -148,6 +153,53 @@ def slugify(value: str) -> str:
     ascii_value = normalized.encode("ascii", "ignore").decode("ascii")
     slug = re.sub(r"[^a-z0-9]+", "-", ascii_value.lower()).strip("-")
     return slug or "research-candidate"
+
+
+def canonical_title(value: str) -> str:
+    return DISAMBIGUATION_PATTERN.sub("", value).strip() or value.strip()
+
+
+def display_title(value: str) -> str:
+    canonical = canonical_title(value)
+    return canonical if canonical != value.strip() else value.strip()
+
+
+def title_keys(value: str) -> set[str]:
+    return {
+        normalize_text(value),
+        normalize_text(canonical_title(value)),
+    }
+
+
+def add_node_to_indexes(
+    node: dict[str, Any],
+    node_by_id: dict[str, dict[str, Any]],
+    label_index: dict[str, str],
+) -> None:
+    node_id = str(node.get("id", ""))
+    if not node_id:
+        return
+
+    node_by_id[node_id] = node
+    for value in [node.get("label"), *node.get("aliases", [])]:
+        if not value:
+            continue
+        for key in title_keys(str(value)):
+            label_index.setdefault(key, node_id)
+
+
+def node_id_for_title(
+    title: str,
+    node_by_id: dict[str, dict[str, Any]],
+    label_index: dict[str, str],
+) -> str:
+    for key in title_keys(title):
+        indexed_id = label_index.get(key)
+        if indexed_id and indexed_id in node_by_id:
+            return indexed_id
+
+    canonical_id = slugify(canonical_title(title))
+    return canonical_id if canonical_id else slugify(title)
 
 
 def load_blocked_terms() -> set[str]:
@@ -256,30 +308,42 @@ def existing_graph() -> dict[str, Any]:
     return load_json(graph_path(), {"version": 1, "nodes": [], "edges": []})
 
 
-def existing_maps(graph: dict[str, Any], promotions: dict[str, Any]) -> tuple[dict[str, dict[str, Any]], set[str]]:
-    node_by_id = {node["id"]: node for node in graph.get("nodes", []) if node.get("id")}
+def existing_maps(
+    graph: dict[str, Any],
+    promotions: dict[str, Any],
+) -> tuple[dict[str, dict[str, Any]], dict[str, str], set[str]]:
+    node_by_id: dict[str, dict[str, Any]] = {}
+    label_index: dict[str, str] = {}
+    for node in graph.get("nodes", []):
+        if node.get("id"):
+            add_node_to_indexes(node, node_by_id, label_index)
     for node in promotions.get("nodes", []):
         if node.get("id"):
-            node_by_id.setdefault(node["id"], node)
+            add_node_to_indexes(node, node_by_id, label_index)
     edge_keys = {
         edge_key(edge)
         for edge in [*graph.get("edges", []), *promotions.get("edges", [])]
         if edge.get("source") and edge.get("target")
     }
-    return node_by_id, edge_keys
+    return node_by_id, label_index, edge_keys
 
 
 def kind_roles(kind: str) -> list[str]:
     return ["guitarist", "artist"] if kind == "guitarist" else [kind]
 
 
-def seed_node(payload: dict[str, Any], node_by_id: dict[str, dict[str, Any]], blocked_terms: set[str]) -> dict[str, Any] | None:
+def seed_node(
+    payload: dict[str, Any],
+    node_by_id: dict[str, dict[str, Any]],
+    label_index: dict[str, str],
+    blocked_terms: set[str],
+) -> dict[str, Any] | None:
     name = payload.get("name") or payload.get("seed_name")
     kind = payload.get("requested_kind")
     if not name or kind not in ALLOWED_KINDS or is_blocked(name, blocked_terms):
         return None
 
-    node_id = slugify(str(name))
+    node_id = node_id_for_title(str(name), node_by_id, label_index)
     if node_id in node_by_id:
         return None
 
@@ -287,7 +351,7 @@ def seed_node(payload: dict[str, Any], node_by_id: dict[str, dict[str, Any]], bl
     x, y = ZONE_CENTERS.get(zone, (0, 0))
     return {
         "id": node_id,
-        "label": str(name),
+        "label": display_title(str(name)),
         "type": kind,
         "roles": kind_roles(kind),
         "summary": compact_summary(
@@ -380,11 +444,12 @@ def promoted_candidate_node(
     seed_payload: dict[str, Any],
     seed: dict[str, Any] | None,
     node_by_id: dict[str, dict[str, Any]],
+    label_index: dict[str, str],
     occupied: set[tuple[int, int]],
     offset_index: int,
 ) -> dict[str, Any] | None:
     title = str(candidate["title"]).strip()
-    node_id = slugify(title)
+    node_id = node_id_for_title(title, node_by_id, label_index)
     if node_id in node_by_id:
         return None
 
@@ -395,7 +460,7 @@ def promoted_candidate_node(
 
     return {
         "id": node_id,
-        "label": title,
+        "label": display_title(title),
         "type": kind,
         "roles": kind_roles(kind),
         "summary": f"A {NODE_LABELS[kind].lower()} surfaced by the MHM research brain from Wikipedia signals around {seed_name}.",
@@ -531,7 +596,7 @@ def build_patch(
         PROMOTIONS_PATH,
         {"version": 1, "generatedAt": None, "candidateRows": [], "nodes": [], "edges": []},
     )
-    node_by_id, existing_edge_keys = existing_maps(graph, promotions)
+    node_by_id, label_index, existing_edge_keys = existing_maps(graph, promotions)
     blocked_terms = load_blocked_terms()
     occupied = {
         (round(float(node.get("x", 0)) / 70), round(float(node.get("y", 0)) / 70))
@@ -552,11 +617,11 @@ def build_patch(
 
         payload = row.get("payload") or {}
         seed_label = str(payload.get("name") or row.get("seed_name") or "").strip()
-        seed_id = slugify(seed_label)
-        created_seed = seed_node(payload, node_by_id, blocked_terms)
+        seed_id = node_id_for_title(seed_label, node_by_id, label_index)
+        created_seed = seed_node(payload, node_by_id, label_index, blocked_terms)
         if created_seed:
             nodes.append(created_seed)
-            node_by_id[created_seed["id"]] = created_seed
+            add_node_to_indexes(created_seed, node_by_id, label_index)
             seed_id = created_seed["id"]
 
         seed = node_by_id.get(seed_id)
@@ -573,19 +638,20 @@ def build_patch(
             if not candidate_is_publishable(candidate, blocked_terms):
                 continue
 
-            target_id = slugify(str(candidate["title"]))
+            target_id = node_id_for_title(str(candidate["title"]), node_by_id, label_index)
             target_node = node_by_id.get(target_id)
             new_node = promoted_candidate_node(
                 candidate,
                 payload,
                 seed,
                 node_by_id,
+                label_index,
                 occupied,
                 len(nodes),
             )
             if new_node:
                 nodes.append(new_node)
-                node_by_id[new_node["id"]] = new_node
+                add_node_to_indexes(new_node, node_by_id, label_index)
                 target_node = new_node
                 per_seed_count += 1
 
