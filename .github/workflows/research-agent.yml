@@ -3,8 +3,8 @@ name: MHM research scout agent
 on:
   workflow_dispatch:
   schedule:
-    # Wednesdays at 02:23 UTC. The agent writes review candidates only.
-    - cron: "23 2 * * 3"
+    # Mondays and Thursdays at 09:05 UTC. The agent writes review candidates only.
+    - cron: "5 9 * * 1,4"
 
 permissions:
   contents: read
