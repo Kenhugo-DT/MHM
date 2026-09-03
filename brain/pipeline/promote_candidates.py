@@ -113,6 +113,42 @@ DISAMBIGUATION_PATTERN = re.compile(
     re.IGNORECASE,
 )
 
+HARD_ROCK_METAL_TERMS = {
+    "accept",
+    "acdc",
+    "annihilator",
+    "anthrax",
+    "artillery",
+    "as i lay dying",
+    "black sabbath",
+    "body count",
+    "caliban",
+    "carcass",
+    "dio",
+    "doom",
+    "george lynch",
+    "halford",
+    "hard rock",
+    "heavy metal",
+    "iron maiden",
+    "judas priest",
+    "kiss",
+    "metal",
+    "sabbath",
+    "sebastian bach",
+    "skid row",
+    "sneap",
+    "thrash",
+}
+
+PROG_TERMS = {
+    "dream theater",
+    "mike portnoy",
+    "portnoy",
+    "prog",
+    "progressive",
+}
+
 
 def iso_now() -> str:
     return datetime.now(UTC).isoformat().replace("+00:00", "Z")
@@ -371,7 +407,9 @@ def zone_for(title: str, kind: str, seed: dict[str, Any] | None) -> str:
     text = normalize_text(title)
     if kind in {"guitar", "guitar_brand"}:
         return "guitar-workshop"
-    if any(term in text for term in ["metal", "doom", "thrash", "sabbath", "maiden", "priest"]):
+    if any(term in text for term in PROG_TERMS):
+        return "psychedelia-prog" if "metal" not in text else "hard-rock-metal"
+    if any(term in text for term in HARD_ROCK_METAL_TERMS):
         return "hard-rock-metal"
     if any(term in text for term in ["folk", "country", "vise", "bluegrass", "sunde"]):
         return "folk-country-vise"

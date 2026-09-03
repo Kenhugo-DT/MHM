@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-03T13:31:30.267122Z",
+  "generatedAt": "2026-09-03T19:55:50.966828Z",
   "source": "MHM research brain promotions",
   "candidateRows": [
     {
@@ -58,6 +58,69 @@
       "requestId": "expand-ostein-sunde",
       "seedName": "Øystein Sunde",
       "requestedKind": "guitarist"
+    },
+    {
+      "id": "3c9548e6-d55d-4ae9-b25b-79eeda5f0133",
+      "runId": "inbox-20260903-140652-fix-skid-row-band-20260903",
+      "requestId": "fix-skid-row-band-20260903",
+      "seedName": "Skid Row (American band)",
+      "requestedKind": "band"
+    },
+    {
+      "id": "b9a6fe02-edc5-4271-9123-22a3f5b424c8",
+      "runId": "inbox-20260903-140652-fix-skid-row-band-20260903",
+      "requestId": "fix-skid-row-band-20260903",
+      "seedName": "Sebastian Bach",
+      "requestedKind": "artist"
+    },
+    {
+      "id": "8ef9e432-74ee-4ec2-8844-fedb89568112",
+      "runId": "inbox-20260903-140328-pre-weekend-metal-prog-20260903",
+      "requestId": "pre-weekend-metal-prog-20260903",
+      "seedName": "Andy Sneap",
+      "requestedKind": "guitarist"
+    },
+    {
+      "id": "c0d11b27-721f-49ec-bd24-a5529929f55d",
+      "runId": "inbox-20260903-140328-pre-weekend-metal-prog-20260903",
+      "requestId": "pre-weekend-metal-prog-20260903",
+      "seedName": "Judas Priest",
+      "requestedKind": "band"
+    },
+    {
+      "id": "8508b24b-00cb-4e1b-b2ed-bc8f673e2d3b",
+      "runId": "inbox-20260903-140328-pre-weekend-metal-prog-20260903",
+      "requestId": "pre-weekend-metal-prog-20260903",
+      "seedName": "Rob Halford",
+      "requestedKind": "artist"
+    },
+    {
+      "id": "a83aff7e-9543-4b2d-934c-9662c3a2f341",
+      "runId": "inbox-20260903-140328-pre-weekend-metal-prog-20260903",
+      "requestId": "pre-weekend-metal-prog-20260903",
+      "seedName": "Dream Theater",
+      "requestedKind": "band"
+    },
+    {
+      "id": "c5ae7bb1-b0f3-42c9-95dc-58690516e4c5",
+      "runId": "inbox-20260903-140328-pre-weekend-metal-prog-20260903",
+      "requestId": "pre-weekend-metal-prog-20260903",
+      "seedName": "Progressive metal",
+      "requestedKind": "genre"
+    },
+    {
+      "id": "6feaab27-4c55-420e-9c50-23100401b220",
+      "runId": "inbox-20260903-140328-pre-weekend-metal-prog-20260903",
+      "requestId": "pre-weekend-metal-prog-20260903",
+      "seedName": "Mike Portnoy",
+      "requestedKind": "artist"
+    },
+    {
+      "id": "bb6ee574-6d38-434a-9e0d-2b2867ad6f74",
+      "runId": "inbox-20260903-140328-pre-weekend-metal-prog-20260903",
+      "requestId": "pre-weekend-metal-prog-20260903",
+      "seedName": "Annihilator",
+      "requestedKind": "band"
     }
   ],
   "nodes": [
@@ -228,6 +291,629 @@
           "provider": "wikipedia"
         }
       ]
+    },
+    {
+      "id": "skid-row",
+      "label": "Skid Row",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "Skid Row is an American heavy metal band formed in 1986 in Toms River, New Jersey. Their current lineup comprises bassist Rachel Bolan, guitarists Dave Sabo and Scotti Hill, and drummer Rob Hammersmith.",
+      "metadata": [
+        "Band",
+        "Research brain"
+      ],
+      "x": 760,
+      "y": 240,
+      "zone": "hard-rock-metal",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Skid_Row_(American_band)",
+          "provider": "wikipedia"
+        },
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q7535029",
+          "provider": "wikidata"
+        }
+      ]
+    },
+    {
+      "id": "kiss",
+      "label": "Kiss",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "A band surfaced by the MHM research brain from Wikipedia signals around Skid Row (American band).",
+      "metadata": [
+        "Band",
+        "Research brain"
+      ],
+      "x": 775.3,
+      "y": 20.5,
+      "zone": "hard-rock-metal",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Kiss_%28band%29",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "sebastian-bach",
+      "label": "Sebastian Bach",
+      "type": "artist",
+      "roles": [
+        "artist"
+      ],
+      "summary": "Sebastian Philip Bierk (born April 3, 1968), known professionally as Sebastian Bach, is a Canadian singer who achieved mainstream success as the frontman of the hard rock band Skid Row from 1987 to 1996. He continues his career as a solo artist and since 2026, as the lead singer of Twisted Sister.",
+      "metadata": [
+        "Artist",
+        "Research brain"
+      ],
+      "x": 760,
+      "y": 240,
+      "zone": "hard-rock-metal",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Sebastian_Bach",
+          "provider": "wikipedia"
+        },
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q363490",
+          "provider": "wikidata"
+        },
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/24f1766e-9635-4d58-a4d4-9413f9f98a4c",
+          "provider": "musicbrainz"
+        }
+      ]
+    },
+    {
+      "id": "dio",
+      "label": "Dio",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "A band surfaced by the MHM research brain from Wikipedia signals around Sebastian Bach.",
+      "metadata": [
+        "Band",
+        "Research brain"
+      ],
+      "x": 1029.6,
+      "y": 49.7,
+      "zone": "hard-rock-metal",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Dio_%28band%29",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "george-lynch",
+      "label": "George Lynch",
+      "type": "artist",
+      "roles": [
+        "artist"
+      ],
+      "summary": "A artist surfaced by the MHM research brain from Wikipedia signals around Sebastian Bach.",
+      "metadata": [
+        "Artist",
+        "Research brain"
+      ],
+      "x": 824.2,
+      "y": 604.4,
+      "zone": "hard-rock-metal",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/George_Lynch_%28musician%29",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "andy-sneap",
+      "label": "Andy Sneap",
+      "type": "guitarist",
+      "roles": [
+        "guitarist",
+        "artist"
+      ],
+      "summary": "Andy Sneap (born 18 July 1969) is an English guitarist, record producer, and composer with over 100 albums to his name, most of which have been produced at his Backstage Recording studios in rural Derbyshire. Some of the most critically acclaimed mixing-work on albums include Deliverance by Opeth and Disarm the Descent by Killswitch Engage; for which he earned a Swedish Grammis and a US Grammy nomination,...",
+      "metadata": [
+        "Guitarist",
+        "Research brain"
+      ],
+      "x": 760,
+      "y": 240,
+      "zone": "hard-rock-metal",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Andy_Sneap",
+          "provider": "wikipedia"
+        },
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q527726",
+          "provider": "wikidata"
+        }
+      ]
+    },
+    {
+      "id": "accept",
+      "label": "Accept",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "A band surfaced by the MHM research brain from Wikipedia signals around Andy Sneap.",
+      "metadata": [
+        "Band",
+        "Research brain"
+      ],
+      "x": 999.4,
+      "y": 223.3,
+      "zone": "hard-rock-metal",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Accept_%28band%29",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "annihilator",
+      "label": "Annihilator",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "A band surfaced by the MHM research brain from Wikipedia signals around Andy Sneap.",
+      "metadata": [
+        "Band",
+        "Research brain"
+      ],
+      "x": 854.6,
+      "y": 486.5,
+      "zone": "hard-rock-metal",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Annihilator_%28band%29",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "artillery",
+      "label": "Artillery",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "A band surfaced by the MHM research brain from Wikipedia signals around Andy Sneap.",
+      "metadata": [
+        "Band",
+        "Research brain"
+      ],
+      "x": 491.6,
+      "y": 65.7,
+      "zone": "hard-rock-metal",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Artillery_%28band%29",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "as-i-lay-dying",
+      "label": "As I Lay Dying",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "A band surfaced by the MHM research brain from Wikipedia signals around Andy Sneap.",
+      "metadata": [
+        "Band",
+        "Research brain"
+      ],
+      "x": 694.0,
+      "y": 640.6,
+      "zone": "hard-rock-metal",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/As_I_Lay_Dying_%28band%29",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "caliban",
+      "label": "Caliban",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "A band surfaced by the MHM research brain from Wikipedia signals around Andy Sneap.",
+      "metadata": [
+        "Band",
+        "Research brain"
+      ],
+      "x": 824.4,
+      "y": 50.7,
+      "zone": "hard-rock-metal",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Caliban_%28band%29",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "carcass",
+      "label": "Carcass",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "A band surfaced by the MHM research brain from Wikipedia signals around Andy Sneap.",
+      "metadata": [
+        "Band",
+        "Research brain"
+      ],
+      "x": 914.8,
+      "y": 443.9,
+      "zone": "hard-rock-metal",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Carcass_%28band%29",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "andy-taylor",
+      "label": "Andy Taylor",
+      "type": "guitarist",
+      "roles": [
+        "guitarist",
+        "artist"
+      ],
+      "summary": "A guitarist surfaced by the MHM research brain from Wikipedia signals around Judas Priest.",
+      "metadata": [
+        "Guitarist",
+        "Research brain"
+      ],
+      "x": 1165.1,
+      "y": 565.1,
+      "zone": "hard-rock-metal",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Andy_Taylor_%28guitarist%29",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "body-count",
+      "label": "Body Count",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "A band surfaced by the MHM research brain from Wikipedia signals around Judas Priest.",
+      "metadata": [
+        "Band",
+        "Research brain"
+      ],
+      "x": 983.0,
+      "y": 30.8,
+      "zone": "hard-rock-metal",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Body_Count_%28band%29",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "rob-halford",
+      "label": "Rob Halford",
+      "type": "artist",
+      "roles": [
+        "artist"
+      ],
+      "summary": "Robert John Arthur Halford (born 25 August 1951) is an English heavy metal singer. He is the lead vocalist of Judas Priest, which he joined in 1973, and has received accolades such as the 2010 Grammy Award for Best Metal Performance.",
+      "metadata": [
+        "Artist",
+        "Research brain"
+      ],
+      "x": 760,
+      "y": 240,
+      "zone": "hard-rock-metal",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Rob_Halford",
+          "provider": "wikipedia"
+        },
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q271576",
+          "provider": "wikidata"
+        }
+      ]
+    },
+    {
+      "id": "fight",
+      "label": "Fight",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "A band surfaced by the MHM research brain from Wikipedia signals around Rob Halford.",
+      "metadata": [
+        "Band",
+        "Research brain"
+      ],
+      "x": 954.1,
+      "y": 299.4,
+      "zone": "hard-rock-metal",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Fight_%28band%29",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "halford",
+      "label": "Halford",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "A band surfaced by the MHM research brain from Wikipedia signals around Rob Halford.",
+      "metadata": [
+        "Band",
+        "Research brain"
+      ],
+      "x": 1018.4,
+      "y": 289.2,
+      "zone": "hard-rock-metal",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Halford_%28band%29",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "dream-theater",
+      "label": "Dream Theater",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "Dream Theater is an American progressive metal band formed in 1985 in Boston, Massachusetts. The band comprises John Petrucci (guitar), John Myung (bass), Mike Portnoy (drums), James LaBrie (vocals), and Jordan Rudess (keyboards).",
+      "metadata": [
+        "Band",
+        "Research brain"
+      ],
+      "x": 40,
+      "y": -640,
+      "zone": "psychedelia-prog",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Dream_Theater",
+          "provider": "wikipedia"
+        },
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q162586",
+          "provider": "wikidata"
+        },
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/28503ab7-8bf2-4666-a7bd-2644bfc7cb1d",
+          "provider": "musicbrainz"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "label": "3",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "A band surfaced by the MHM research brain from Wikipedia signals around Dream Theater.",
+      "metadata": [
+        "Band",
+        "Research brain"
+      ],
+      "x": -238.4,
+      "y": -459.2,
+      "zone": "psychedelia-prog",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/3_%28American_band%29",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "bandcamp",
+      "label": "Bandcamp",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "A band surfaced by the MHM research brain from Wikipedia signals around Dream Theater.",
+      "metadata": [
+        "Band",
+        "Research brain"
+      ],
+      "x": 411.3,
+      "y": -705.5,
+      "zone": "psychedelia-prog",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Bandcamp",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "atheist",
+      "label": "Atheist",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "A band surfaced by the MHM research brain from Wikipedia signals around Progressive metal.",
+      "metadata": [
+        "Band",
+        "Research brain"
+      ],
+      "x": 772.1,
+      "y": 429.3,
+      "zone": "hard-rock-metal",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Atheist_%28band%29",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "mike-portnoy",
+      "label": "Mike Portnoy",
+      "type": "artist",
+      "roles": [
+        "artist"
+      ],
+      "summary": "Michael Stephen Portnoy (born April 20, 1967) is an American musician best known as the drummer, backing vocalist, and co-founder of the progressive metal band Dream Theater. In September 2010, Portnoy announced his departure from Dream Theater after 25 years, with Mike Mangini succeeding him as the band’s drummer.",
+      "metadata": [
+        "Artist",
+        "Research brain"
+      ],
+      "x": 40,
+      "y": -640,
+      "zone": "psychedelia-prog",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Mike_Portnoy",
+          "provider": "wikipedia"
+        },
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q221468",
+          "provider": "wikidata"
+        },
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/b5f0d80b-d773-44dc-b136-36163e526589",
+          "provider": "musicbrainz"
+        }
+      ]
+    },
+    {
+      "id": "beardfish",
+      "label": "Beardfish",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "A band surfaced by the MHM research brain from Wikipedia signals around Mike Portnoy.",
+      "metadata": [
+        "Band",
+        "Research brain"
+      ],
+      "x": 117.5,
+      "y": -910.1,
+      "zone": "psychedelia-prog",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Beardfish_%28band%29",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "disturbed",
+      "label": "Disturbed",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "A band surfaced by the MHM research brain from Wikipedia signals around Mike Portnoy.",
+      "metadata": [
+        "Band",
+        "Research brain"
+      ],
+      "x": 110.5,
+      "y": -308.4,
+      "zone": "psychedelia-prog",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Disturbed_%28band%29",
+          "provider": "wikipedia"
+        }
+      ]
     }
   ],
   "edges": [
@@ -353,6 +1039,492 @@
         {
           "label": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Black_Sabbath",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-skid-row-kiss-related",
+      "source": "skid-row",
+      "target": "kiss",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Kiss (band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Skid_Row_(American_band)",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-sebastian-bach-dio-related",
+      "source": "sebastian-bach",
+      "target": "dio",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Dio (band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Sebastian_Bach",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-sebastian-bach-george-lynch-related",
+      "source": "sebastian-bach",
+      "target": "george-lynch",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: George Lynch (musician)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Sebastian_Bach",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-andy-sneap-accept-related",
+      "source": "andy-sneap",
+      "target": "accept",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Accept (band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Andy_Sneap",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-andy-sneap-annihilator-related",
+      "source": "andy-sneap",
+      "target": "annihilator",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Annihilator (band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Andy_Sneap",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-andy-sneap-anthrax-american-band-related",
+      "source": "andy-sneap",
+      "target": "anthrax-american-band",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Anthrax (American band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Andy_Sneap",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-andy-sneap-artillery-related",
+      "source": "andy-sneap",
+      "target": "artillery",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Artillery (band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Andy_Sneap",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-andy-sneap-as-i-lay-dying-related",
+      "source": "andy-sneap",
+      "target": "as-i-lay-dying",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: As I Lay Dying (band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Andy_Sneap",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-andy-sneap-caliban-related",
+      "source": "andy-sneap",
+      "target": "caliban",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Caliban (band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Andy_Sneap",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-andy-sneap-carcass-related",
+      "source": "andy-sneap",
+      "target": "carcass",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Carcass (band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Andy_Sneap",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-judas-priest-accept-related",
+      "source": "judas-priest",
+      "target": "accept",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Accept (band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Judas_Priest",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-judas-priest-andy-taylor-related",
+      "source": "judas-priest",
+      "target": "andy-taylor",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Andy Taylor (guitarist)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Judas_Priest",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-judas-priest-annihilator-related",
+      "source": "judas-priest",
+      "target": "annihilator",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Annihilator (band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Judas_Priest",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-judas-priest-anthrax-american-band-related",
+      "source": "judas-priest",
+      "target": "anthrax-american-band",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Anthrax (American band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Judas_Priest",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-judas-priest-body-count-related",
+      "source": "judas-priest",
+      "target": "body-count",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Body Count (band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Judas_Priest",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-rob-halford-andy-taylor-related",
+      "source": "rob-halford",
+      "target": "andy-taylor",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Andy Taylor (guitarist)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Rob_Halford",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-rob-halford-cream-related",
+      "source": "rob-halford",
+      "target": "cream",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Cream (band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Rob_Halford",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-rob-halford-fight-related",
+      "source": "rob-halford",
+      "target": "fight",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Fight (band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Rob_Halford",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-rob-halford-halford-related",
+      "source": "rob-halford",
+      "target": "halford",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Halford (band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Rob_Halford",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-dream-theater-3-related",
+      "source": "dream-theater",
+      "target": "3",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: 3 (American band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Dream_Theater",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-dream-theater-bandcamp-related",
+      "source": "dream-theater",
+      "target": "bandcamp",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Bandcamp"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Dream_Theater",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-progressive-metal-anthrax-american-band-associated_genre",
+      "source": "progressive-metal",
+      "target": "anthrax-american-band",
+      "type": "associated_genre",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Anthrax (American band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Progressive_metal",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-progressive-metal-atheist-associated_genre",
+      "source": "progressive-metal",
+      "target": "atheist",
+      "type": "associated_genre",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Atheist (band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Progressive_metal",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-mike-portnoy-3-related",
+      "source": "mike-portnoy",
+      "target": "3",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: 3 (American band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Mike_Portnoy",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-mike-portnoy-anathema-band-related",
+      "source": "mike-portnoy",
+      "target": "anathema-band",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Anathema (band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Mike_Portnoy",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-mike-portnoy-beardfish-related",
+      "source": "mike-portnoy",
+      "target": "beardfish",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Beardfish (band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Mike_Portnoy",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-mike-portnoy-disturbed-related",
+      "source": "mike-portnoy",
+      "target": "disturbed",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Disturbed (band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Mike_Portnoy",
           "provider": "wikipedia"
         }
       ]
