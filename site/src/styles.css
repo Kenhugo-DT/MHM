@@ -405,6 +405,14 @@ button {
   line-height: 0.94;
 }
 
+.start-intro {
+  max-width: 38rem;
+  margin: -3px 0 18px;
+  color: #b9ada0;
+  font-size: 0.86rem;
+  line-height: 1.48;
+}
+
 .panel-heading > svg {
   flex: 0 0 auto;
   color: var(--faint);
@@ -987,11 +995,17 @@ button {
   }
 
   .panel-heading {
-    margin-bottom: 12px;
+    margin-bottom: 11px;
   }
 
   .panel-heading h1 {
     font-size: 2.05rem;
+  }
+
+  .start-intro {
+    margin-bottom: 13px;
+    font-size: 0.8rem;
+    line-height: 1.42;
   }
 
   .starter-grid button {

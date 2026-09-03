@@ -611,6 +611,13 @@ export default function App() {
             </div>
           </div>
 
+          <p className="start-intro">
+            Music history is rarely a straight line. MHM lets you explore artists,
+            bands, guitarists, guitars, brands and genres as one connected map.
+            Pick a name, follow a thread, and drift through the links between
+            sound, influence, collaboration and culture.
+          </p>
+
           <div className="starter-grid">
             {starterNodes.map((node) => (
               <button key={node.id} type="button" onClick={() => void selectNode(node)}>
