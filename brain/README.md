@@ -131,3 +131,14 @@ Trusted local or GitHub Action variables:
 - `SUPABASE_URL`
 - `SUPABASE_SECRET_KEY`
 - `OPENAI_API_KEY` for a future editorial AI pass
+
+## Future Brain Modes
+
+Hold advanced map organization until the graph is closer to 300 nodes. When the
+graph is large enough, explore alternate layout modes:
+
+- Genre view: cluster and route the map by musical style.
+- Timeline view: place older history toward the left and newer history toward
+  the right.
+- Ultimate Chaos view: preserve the dense discovery-board feeling while keeping
+  enough local structure that users can still navigate.
