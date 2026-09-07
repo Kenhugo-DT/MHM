@@ -115,8 +115,9 @@ findings to Supabase `research_candidates` and local run output. It never edits
 the approved graph or publishes to the site by itself.
 
 GitHub Actions can run the scout from `.github/workflows/research-agent.yml`.
-That workflow can be started manually and is also scheduled for Mondays and
-Thursdays at 09:05 UTC.
+That workflow can be started manually. For recurring runs, use the Supabase
+Scheduler in `brain/supabase/scheduler/`; it triggers the same workflow through
+GitHub's manual dispatch API instead of relying on GitHub's scheduled trigger.
 
 ## Environment
 

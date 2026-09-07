@@ -164,3 +164,11 @@ step writes durable additions to `brain/data/approved/promotions.json`;
 `migrate:data` rebuilds `brain/data/approved/graph.json` and
 `site/public/data/graph.json`; `brain:import` publishes the same graph to the
 public Supabase tables.
+
+## 9. Schedule The Scout Agent
+
+Use `brain/supabase/scheduler/` to let Supabase Cron wake the GitHub workflow.
+
+This avoids relying on GitHub's own scheduled workflow trigger. Supabase stores
+the GitHub token in Vault, calls GitHub's `workflow_dispatch` API on Mondays and
+Thursdays at 09:05 UTC, and the workflow runs the existing scout agent.

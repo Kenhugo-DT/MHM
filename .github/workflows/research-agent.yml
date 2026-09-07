@@ -2,9 +2,19 @@ name: MHM research scout agent
 
 on:
   workflow_dispatch:
-  schedule:
-    # Mondays and Thursdays at 09:05 UTC. The agent writes review candidates only.
-    - cron: "5 9 * * 1,4"
+    inputs:
+      source:
+        description: "Where this run was triggered from."
+        required: false
+        default: "manual"
+      limit:
+        description: "Maximum queued/frontier requests to process."
+        required: false
+        default: "2"
+      note:
+        description: "Optional run note."
+        required: false
+        default: ""
 
 permissions:
   contents: read
@@ -25,9 +35,21 @@ jobs:
           cache-dependency-path: brain/pipeline/requirements.txt
       - run: npm ci
       - run: pip install -r brain/pipeline/requirements.txt
-      - name: Run scout agent
-        run: npm run brain:agent -- --limit 2
+      - name: Show trigger details
+        run: |
+          echo "Source: ${AGENT_TRIGGER_SOURCE:-manual}" >> "$GITHUB_STEP_SUMMARY"
+          echo "Limit: ${AGENT_LIMIT:-2}" >> "$GITHUB_STEP_SUMMARY"
+          if [ -n "${AGENT_TRIGGER_NOTE:-}" ]; then
+            echo "Note: ${AGENT_TRIGGER_NOTE}" >> "$GITHUB_STEP_SUMMARY"
+          fi
         env:
+          AGENT_TRIGGER_SOURCE: ${{ github.event.inputs.source || 'manual' }}
+          AGENT_LIMIT: ${{ github.event.inputs.limit || '2' }}
+          AGENT_TRIGGER_NOTE: ${{ github.event.inputs.note || '' }}
+      - name: Run scout agent
+        run: npm run brain:agent -- --limit "${AGENT_LIMIT:-2}"
+        env:
+          AGENT_LIMIT: ${{ github.event.inputs.limit || '2' }}
           MUSICBRAINZ_CONTACT: ${{ secrets.MUSICBRAINZ_CONTACT }}
           SUPABASE_URL: ${{ vars.SUPABASE_URL }}
           SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
