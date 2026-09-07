@@ -1,0 +1,28 @@
+# Copy this file to brain/data/inbox/quick-request.txt.
+# Then edit the copy and run:
+# npm run brain:queue-request:dry-run
+# npm run brain:queue-request
+
+Title: Weekend prog metal expansion
+Scope: artist_network
+Priority: 75
+Max seeds: 10
+Max candidates: 60
+
+Instructions:
+Find music-related graph connections around these artists, bands and genres.
+Prioritize direct band memberships, collaborations, shared scenes, genre
+connections and historically useful bridge nodes. Keep album and song titles as
+connection evidence only, not as standalone map nodes.
+
+Seeds:
+Andy Sneap:guitarist
+Judas Priest:band
+Rob Halford:artist
+Dream Theater:band
+Progressive metal:genre
+Mike Portnoy:artist
+Annihilator:band
+Skid Row:band
+Sebastian Bach:artist
+End

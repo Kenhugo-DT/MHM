@@ -30,6 +30,8 @@ npm run brain:process-db-inbox
 npm run brain:sync-inbox
 npm run brain:list-requests
 npm run brain:list-candidates
+npm run brain:queue-request:dry-run
+npm run brain:queue-request
 npm run brain:collect
 npm run brain:agent:status
 npm run brain:agent:dry-run
@@ -58,6 +60,12 @@ and candidate proposals back to Supabase.
 `brain:sync-inbox` uploads the local inbox file into Supabase.
 
 `brain:list-candidates` shows review candidates written by Supabase brain runs.
+
+`brain:queue-request:dry-run` reads `brain/data/inbox/quick-request.txt` and
+previews the request that would be queued. `brain:queue-request` writes the same
+human-written request to Supabase. Copy
+`brain/data/inbox/quick-request.example.txt` first; the working
+`quick-request.txt` file is ignored by git.
 
 `brain:agent:status` lets the scout inspect the current brain queue and graph
 without creating or processing anything.

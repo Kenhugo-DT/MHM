@@ -7,5 +7,6 @@ brain/pipeline/output/
 brain/data/candidates/*.json
 !brain/data/candidates/.gitkeep
 brain/data/runs/
+brain/data/inbox/quick-request.txt
 __pycache__/
 .pytest_cache/

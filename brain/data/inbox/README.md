@@ -1,12 +1,35 @@
 # Research Inbox
 
-Write project-owner research requests in `research-requests.json`.
+Write project-owner research requests as either plain text or JSON.
 
-The inbox is for things that should be investigated, not for approved graph
-data. A request becomes candidate output only after `npm run brain:process-inbox`
-has run.
+The inbox is for things that should be investigated, not for approved graph data.
+A request becomes candidate output only after the agent or inbox processor has
+run.
 
-Use `research-requests.example.json` as a template.
+## Quick Requests
+
+Use `quick-request.txt` for owner-written one-off requests. It is ignored by git
+so drafts do not clutter the repository.
+
+Start from:
+
+```text
+brain/data/inbox/quick-request.example.txt
+```
+
+Then run:
+
+```bash
+npm run brain:queue-request:dry-run
+npm run brain:queue-request
+```
+
+The script converts the plain text request into the structured Supabase
+`research_requests` format.
+
+## JSON Requests
+
+Use `research-requests.example.json` as the structured template.
 
 The example file also keeps the common terminal checks in `terminalCommands`, so
 you do not have to hunt for them later.

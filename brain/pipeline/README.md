@@ -47,6 +47,8 @@ npm run brain:process-db-inbox
 npm run brain:agent:status
 npm run brain:agent:dry-run
 npm run brain:agent
+npm run brain:queue-request:dry-run
+npm run brain:queue-request
 npm run brain:promote:dry-run
 npm run brain:promote
 npm run brain:promote:apply
@@ -61,6 +63,12 @@ Use `--mark-processed` only when you want the local inbox file updated from
 
 Use `brain:process-db-inbox` when Supabase should be the source of queued work
 and the destination for run logs and review candidates.
+
+Use `brain:queue-request:dry-run` and `brain:queue-request` when you want to
+write a request as plain text instead of JSON or a long terminal command. Copy
+`brain/data/inbox/quick-request.example.txt` to
+`brain/data/inbox/quick-request.txt`, edit the title, instructions and seed
+lines, preview it, then queue it to Supabase.
 
 Use `brain:agent` when you want the scout to behave like the private worker: read
 the map, find or create queued work, collect source candidates and write the
