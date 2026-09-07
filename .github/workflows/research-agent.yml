@@ -5,8 +5,6 @@ on:
   schedule:
     # Mondays and Thursdays at 09:05 UTC. The agent writes review candidates only.
     - cron: "5 9 * * 1,4"
-    # Temporary schedule smoke test: Monday 2026-09-07 at 10:10 UTC.
-    - cron: "10 10 * * 1"
 
 permissions:
   contents: read
@@ -27,14 +25,7 @@ jobs:
           cache-dependency-path: brain/pipeline/requirements.txt
       - run: npm ci
       - run: pip install -r brain/pipeline/requirements.txt
-      - name: Check scout agent status
-        if: github.event_name == 'schedule' && github.event.schedule == '10 10 * * 1'
-        run: npm run brain:agent:status -- --source supabase
-        env:
-          SUPABASE_URL: ${{ vars.SUPABASE_URL }}
-          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
       - name: Run scout agent
-        if: github.event_name != 'schedule' || github.event.schedule != '10 10 * * 1'
         run: npm run brain:agent -- --limit 2
         env:
           MUSICBRAINZ_CONTACT: ${{ secrets.MUSICBRAINZ_CONTACT }}
