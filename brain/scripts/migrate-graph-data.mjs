@@ -3,6 +3,7 @@ import path from "node:path";
 import vm from "node:vm";
 import { fileURLToPath } from "node:url";
 import { extraEdges, extraNodes } from "./graph-expansion.mjs";
+import { organizeGraphLayout } from "./organize-graph-layout.mjs";
 
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
 const brainRoot = path.resolve(scriptDir, "..");
@@ -253,6 +254,8 @@ for (const release of releaseNodes) {
     }
   }
 }
+
+organizeGraphLayout(nodes, edges);
 
 const dataset = {
   version: 1,

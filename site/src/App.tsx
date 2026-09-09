@@ -395,7 +395,7 @@ export default function App() {
     params.set("map", mode);
     params.delete("node");
     window.history.replaceState(null, "", `${window.location.pathname}?${params}`);
-    mapRef.current?.fit();
+    mapRef.current?.home();
   }
 
   function closeDetails() {

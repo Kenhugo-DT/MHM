@@ -27,6 +27,7 @@ import type {
 export interface GraphMapHandle {
   fit(): void;
   focus(nodeId: string): void;
+  home(): void;
   zoomBy(factor: number): void;
 }
 
@@ -55,6 +56,11 @@ const MOVE_THRESHOLD = 7;
 const MOBILE_HOME_CAMERA: Record<MapMode, Camera> = {
   artists: { x: -180, y: -180, zoom: 0.68 },
   guitars: { x: 640, y: 20, zoom: 0.64 },
+};
+
+const DESKTOP_HOME_CAMERA: Record<MapMode, Camera> = {
+  artists: { x: 210, y: 170, zoom: 0.56 },
+  guitars: { x: 1530, y: 70, zoom: 0.44 },
 };
 
 function edgeKey(source: string, target: string): string {
@@ -333,6 +339,15 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
       applyCamera();
     }
 
+    function homeMap() {
+      const home = isCompactMap() ? MOBILE_HOME_CAMERA[mode] : DESKTOP_HOME_CAMERA[mode];
+      cameraRef.current = {
+        ...home,
+        zoom: clampZoom(home.zoom),
+      };
+      applyCamera();
+    }
+
     function focusNode(nodeId: string) {
       const node = nodesRef.current.find((candidate) => candidate.id === nodeId);
       if (!node) return;
@@ -386,7 +401,7 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
       );
     }
 
-    useImperativeHandle(ref, () => ({ fit: fitMap, focus: focusNode, zoomBy }));
+    useImperativeHandle(ref, () => ({ fit: fitMap, focus: focusNode, home: homeMap, zoomBy }));
 
     useEffect(() => {
       const host = hostRef.current;
@@ -584,7 +599,7 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
       selectionLayerRef.current = selectionLayer;
 
       applyCamera();
-      fitMap();
+      homeMap();
     }, [
       edges,
       mode,

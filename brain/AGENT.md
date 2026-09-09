@@ -118,6 +118,7 @@ Place candidates close to related entities and within the relevant zone:
 - Rock circuit near the center.
 - Psychedelia and prog upper center.
 - Hard rock and metal to the right.
+- Punk, hardcore and alternative rock below the central/right rock circuit.
 - Guitars and guitar brands in the workshop/right-side area.
 
 The public map should feel like an organized schematic, not a random force graph.

@@ -41,12 +41,13 @@ NODE_LABELS = {
 }
 
 ZONE_CENTERS = {
-    "roots-blues": (-980, 20),
-    "rock-circuit": (-240, -80),
-    "psychedelia-prog": (40, -640),
-    "hard-rock-metal": (760, 240),
-    "folk-country-vise": (-640, 820),
-    "guitar-workshop": (1180, 140),
+    "roots-blues": (-1280, -70),
+    "rock-circuit": (-300, -40),
+    "psychedelia-prog": (90, -850),
+    "hard-rock-metal": (1420, 80),
+    "punk-alt": (1180, 1230),
+    "folk-country-vise": (-980, 900),
+    "guitar-workshop": (3220, 80),
     "guitar-genres": (-640, 120),
 }
 
@@ -118,15 +119,21 @@ HARD_ROCK_METAL_TERMS = {
     "acdc",
     "annihilator",
     "anthrax",
+    "apocalyptica",
     "artillery",
     "as i lay dying",
+    "avenged sevenfold",
+    "bathory",
     "black sabbath",
     "body count",
     "caliban",
     "carcass",
+    "death metal",
     "dio",
     "doom",
+    "edguy",
     "george lynch",
+    "gojira",
     "halford",
     "hard rock",
     "heavy metal",
@@ -134,19 +141,45 @@ HARD_ROCK_METAL_TERMS = {
     "judas priest",
     "kiss",
     "metal",
+    "metallica",
+    "megadeth",
+    "pantera",
+    "power metal",
+    "primal fear",
+    "savatage",
     "sabbath",
     "sebastian bach",
     "skid row",
+    "speed metal",
     "sneap",
     "thrash",
 }
 
+PUNK_ALT_TERMS = {
+    "alternative",
+    "bad religion",
+    "black flag",
+    "hardcore punk",
+    "horror punk",
+    "indie rock",
+    "misfits",
+    "post-punk",
+    "punk",
+    "ramones",
+    "shoegaze",
+    "suicidal tendencies",
+    "the good the bad and the zugly",
+}
+
 PROG_TERMS = {
     "dream theater",
+    "frank zappa",
     "mike portnoy",
     "portnoy",
     "prog",
     "progressive",
+    "psychedelic",
+    "space rock",
 }
 
 
@@ -407,6 +440,8 @@ def zone_for(title: str, kind: str, seed: dict[str, Any] | None) -> str:
     text = normalize_text(title)
     if kind in {"guitar", "guitar_brand"}:
         return "guitar-workshop"
+    if any(term in text for term in PUNK_ALT_TERMS):
+        return "punk-alt"
     if any(term in text for term in PROG_TERMS):
         return "psychedelia-prog" if "metal" not in text else "hard-rock-metal"
     if any(term in text for term in HARD_ROCK_METAL_TERMS):
