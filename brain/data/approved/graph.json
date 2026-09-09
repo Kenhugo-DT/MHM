@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-09T12:49:09.873Z",
+  "generatedAt": "2026-09-09T14:32:43.961Z",
   "nodes": [
     {
       "id": "blues",
@@ -7525,6 +7525,1301 @@
           "provider": "wikipedia"
         }
       ]
+    },
+    {
+      "id": "apocalyptica",
+      "label": "Apocalyptica",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "Apocalyptica is a Finnish symphonic metal band from Helsinki, formed in 1993. The band is currently composed of three classically trained cellists Eicca Toppinen, Paavo Lötjönen, and Perttu Kivilaakso.",
+      "metadata": [
+        "Band",
+        "Research brain"
+      ],
+      "x": -240,
+      "y": -80,
+      "zone": "rock-circuit",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Apocalyptica",
+          "provider": "wikipedia"
+        },
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q484421",
+          "provider": "wikidata"
+        }
+      ]
+    },
+    {
+      "id": "allison",
+      "label": "Allison",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "A band surfaced by the MHM research brain from Wikipedia signals around Apocalyptica.",
+      "metadata": [
+        "Band",
+        "Research brain"
+      ],
+      "x": -122.5,
+      "y": 156.4,
+      "zone": "rock-circuit",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Allison_%28band%29",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "bush",
+      "label": "Bush",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "A band surfaced by the MHM research brain from Wikipedia signals around Apocalyptica.",
+      "metadata": [
+        "Band",
+        "Research brain"
+      ],
+      "x": -536,
+      "y": -20.1,
+      "zone": "rock-circuit",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Bush_%28British_band%29",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "flyleaf",
+      "label": "Flyleaf",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "A band surfaced by the MHM research brain from Wikipedia signals around Apocalyptica.",
+      "metadata": [
+        "Band",
+        "Research brain"
+      ],
+      "x": 99.3,
+      "y": -57.6,
+      "zone": "rock-circuit",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Flyleaf_%28band%29",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "fuel",
+      "label": "Fuel",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "A band surfaced by the MHM research brain from Wikipedia signals around Apocalyptica.",
+      "metadata": [
+        "Band",
+        "Research brain"
+      ],
+      "x": 116.9,
+      "y": -86.2,
+      "zone": "rock-circuit",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Fuel_%28band%29",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "avantasia",
+      "label": "Avantasia",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "Avantasia is a German supergroup metal opera project created by Tobias Sammet, vocalist of the band Edguy. It has been characterized as a rock opera, as it features the contributions of various vocalists and musicians and it consists of concept albums.",
+      "metadata": [
+        "Band",
+        "Research brain"
+      ],
+      "x": -240,
+      "y": -80,
+      "zone": "rock-circuit",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Avantasia",
+          "provider": "wikipedia"
+        },
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q158641",
+          "provider": "wikidata"
+        }
+      ]
+    },
+    {
+      "id": "ark",
+      "label": "Ark",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "A band surfaced by the MHM research brain from Wikipedia signals around Avantasia.",
+      "metadata": [
+        "Band",
+        "Research brain"
+      ],
+      "x": 2,
+      "y": -80.9,
+      "zone": "rock-circuit",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Ark_%28Norwegian_band%29",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "bodine",
+      "label": "Bodine",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "A band surfaced by the MHM research brain from Wikipedia signals around Avantasia.",
+      "metadata": [
+        "Band",
+        "Research brain"
+      ],
+      "x": -52.2,
+      "y": 234.2,
+      "zone": "rock-circuit",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Bodine_%28band%29",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "conception",
+      "label": "Conception",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "A band surfaced by the MHM research brain from Wikipedia signals around Avantasia.",
+      "metadata": [
+        "Band",
+        "Research brain"
+      ],
+      "x": -526.8,
+      "y": 122.4,
+      "zone": "rock-circuit",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Conception_%28band%29",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "h-e-a-t",
+      "label": "H.E.A.T",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "A band surfaced by the MHM research brain from Wikipedia signals around Avantasia.",
+      "metadata": [
+        "Band",
+        "Research brain"
+      ],
+      "x": 133.1,
+      "y": -190.1,
+      "zone": "rock-circuit",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/H.E.A.T_%28band%29",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "hard-rain",
+      "label": "Hard Rain",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "A band surfaced by the MHM research brain from Wikipedia signals around Avantasia.",
+      "metadata": [
+        "Band",
+        "Research brain"
+      ],
+      "x": 9.1,
+      "y": -117.9,
+      "zone": "rock-circuit",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Hard_Rain_%28band%29",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "heavens-gate",
+      "label": "Heavens Gate",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "A band surfaced by the MHM research brain from Wikipedia signals around Avantasia.",
+      "metadata": [
+        "Band",
+        "Research brain"
+      ],
+      "x": -425.9,
+      "y": 88.7,
+      "zone": "rock-circuit",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Heavens_Gate_%28band%29",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "ralf-scheepers",
+      "label": "Ralf Scheepers",
+      "type": "artist",
+      "roles": [
+        "artist"
+      ],
+      "summary": "Ralf Scheepers (born 5 February 1965) is a German singer and the lead vocalist for the heavy metal band Primal Fear. He has also sung in Gamma Ray and Tyran' Pace.",
+      "metadata": [
+        "Artist",
+        "Research brain"
+      ],
+      "x": -240,
+      "y": -80,
+      "zone": "rock-circuit",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Ralf_Scheepers",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "magnus-karlsson",
+      "label": "Magnus Karlsson",
+      "type": "artist",
+      "roles": [
+        "artist"
+      ],
+      "summary": "A artist surfaced by the MHM research brain from Wikipedia signals around Ralf Scheepers.",
+      "metadata": [
+        "Artist",
+        "Research brain"
+      ],
+      "x": -375.4,
+      "y": -435.1,
+      "zone": "rock-circuit",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Magnus_Karlsson_%28musician%29",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "masterplan",
+      "label": "Masterplan",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "A band surfaced by the MHM research brain from Wikipedia signals around Ralf Scheepers.",
+      "metadata": [
+        "Band",
+        "Research brain"
+      ],
+      "x": -613.7,
+      "y": -198.3,
+      "zone": "rock-circuit",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Masterplan_%28band%29",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "phenomena",
+      "label": "Phenomena",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "A band surfaced by the MHM research brain from Wikipedia signals around Ralf Scheepers.",
+      "metadata": [
+        "Band",
+        "Research brain"
+      ],
+      "x": 16.4,
+      "y": 83.3,
+      "zone": "rock-circuit",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Phenomena_%28band%29",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "primal-fear",
+      "label": "Primal Fear",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "A band surfaced by the MHM research brain from Wikipedia signals around Ralf Scheepers.",
+      "metadata": [
+        "Band",
+        "Research brain"
+      ],
+      "x": -100.3,
+      "y": 141.7,
+      "zone": "rock-circuit",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Primal_Fear_%28band%29",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "sinner",
+      "label": "Sinner",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "A band surfaced by the MHM research brain from Wikipedia signals around Ralf Scheepers.",
+      "metadata": [
+        "Band",
+        "Research brain"
+      ],
+      "x": 41,
+      "y": -326.8,
+      "zone": "rock-circuit",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Sinner_%28band%29",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "therion",
+      "label": "Therion",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "A band surfaced by the MHM research brain from Wikipedia signals around Ralf Scheepers.",
+      "metadata": [
+        "Band",
+        "Research brain"
+      ],
+      "x": -566.2,
+      "y": 96.6,
+      "zone": "rock-circuit",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Therion_%28band%29",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "edguy",
+      "label": "Edguy",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "Edguy is a German power metal band formed in Fulda in 1992.",
+      "metadata": [
+        "Band",
+        "Research brain"
+      ],
+      "x": -240,
+      "y": -80,
+      "zone": "rock-circuit",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Edguy",
+          "provider": "wikipedia"
+        },
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q158932",
+          "provider": "wikidata"
+        }
+      ]
+    },
+    {
+      "id": "scorpions",
+      "label": "Scorpions",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "A band surfaced by the MHM research brain from Wikipedia signals around Edguy.",
+      "metadata": [
+        "Band",
+        "Research brain"
+      ],
+      "x": -68.3,
+      "y": -156.5,
+      "zone": "rock-circuit",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Scorpions_%28band%29",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "orden-ogan",
+      "label": "Orden Ogan",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "Orden Ogan is a German power metal band with folk metal elements. The band was formed in 1996 by Sebastian Grütling (drums) and Sebastian Levermann (lead vocals and guitar).",
+      "metadata": [
+        "Band",
+        "Research brain"
+      ],
+      "x": -240,
+      "y": -80,
+      "zone": "rock-circuit",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Orden_Ogan",
+          "provider": "wikipedia"
+        },
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q824241",
+          "provider": "wikidata"
+        },
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/af7d515d-de4c-4275-a9b4-08b631361f54",
+          "provider": "musicbrainz"
+        }
+      ]
+    },
+    {
+      "id": "at-vance",
+      "label": "At Vance",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "At Vance is a neoclassical/power metal band formed in Germany. They were formed by vocalist Oliver Hartmann (ex-Centers) and guitarist Olaf Lenk (ex-Velvet Viper) in 1998.",
+      "metadata": [
+        "Band",
+        "Research brain"
+      ],
+      "x": -240,
+      "y": -80,
+      "zone": "rock-circuit",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/At_Vance",
+          "provider": "wikipedia"
+        },
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q700881",
+          "provider": "wikidata"
+        }
+      ]
+    },
+    {
+      "id": "angel-dust",
+      "label": "Angel Dust",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "A band surfaced by the MHM research brain from Wikipedia signals around At Vance.",
+      "metadata": [
+        "Band",
+        "Research brain"
+      ],
+      "x": 114.8,
+      "y": 141,
+      "zone": "rock-circuit",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Angel_Dust_%28German_band%29",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "mark-cross",
+      "label": "Mark Cross",
+      "type": "artist",
+      "roles": [
+        "artist"
+      ],
+      "summary": "A artist surfaced by the MHM research brain from Wikipedia signals around At Vance.",
+      "metadata": [
+        "Artist",
+        "Research brain"
+      ],
+      "x": -534.5,
+      "y": -318.5,
+      "zone": "rock-circuit",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Mark_Cross_%28musician%29",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "tobias-sammet",
+      "label": "Tobias Sammet",
+      "type": "artist",
+      "roles": [
+        "artist"
+      ],
+      "summary": "Tobias Sammet (born 21 November 1977) is a German musician, songwriter, and music producer. He is the singer and primary songwriter of the power metal band Edguy, and the founder of the metal opera project Avantasia.",
+      "metadata": [
+        "Artist",
+        "Research brain"
+      ],
+      "x": -240,
+      "y": -80,
+      "zone": "rock-circuit",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Tobias_Sammet",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "speed-metal",
+      "label": "Speed Metal",
+      "type": "genre",
+      "roles": [
+        "genre"
+      ],
+      "summary": "Speed metal is a subgenre of heavy metal music that originated in the late 1970s from new wave of British heavy metal (NWOBHM) roots. It is described by AllMusic as \"extremely fast, abrasive, and technically demanding\" music.",
+      "metadata": [
+        "Genre",
+        "Research brain"
+      ],
+      "x": 760,
+      "y": 240,
+      "zone": "hard-rock-metal",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Speed_metal",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "bandana-thrash",
+      "label": "Bandana thrash",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "A band surfaced by the MHM research brain from Wikipedia signals around Speed Metal.",
+      "metadata": [
+        "Band",
+        "Research brain"
+      ],
+      "x": 812.6,
+      "y": 549.6,
+      "zone": "hard-rock-metal",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Bandana_thrash",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "bathory",
+      "label": "Bathory",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "A band surfaced by the MHM research brain from Wikipedia signals around Speed Metal.",
+      "metadata": [
+        "Band",
+        "Research brain"
+      ],
+      "x": 468,
+      "y": 145.1,
+      "zone": "hard-rock-metal",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Bathory_%28band%29",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "space-rock",
+      "label": "Space Rock",
+      "type": "genre",
+      "roles": [
+        "genre"
+      ],
+      "summary": "Space rock is a music genre characterized by loose and lengthy song structures centered on instrumental textures that typically produce a hypnotic, otherworldly sound. It may feature distorted and reverberation-laden guitars, minimal drumming, languid vocals, synthesizers, and lyrical themes of outer space and science fiction.",
+      "metadata": [
+        "Genre",
+        "Research brain"
+      ],
+      "x": -240,
+      "y": -80,
+      "zone": "rock-circuit",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Space_rock",
+          "provider": "wikipedia"
+        },
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q236913",
+          "provider": "wikidata"
+        }
+      ]
+    },
+    {
+      "id": "ingo-schwichtenberg",
+      "label": "Ingo Schwichtenberg",
+      "type": "artist",
+      "roles": [
+        "artist"
+      ],
+      "summary": "Ingo \"Mr. Smile\" Schwichtenberg (18 May 1965 – 8 March 1995) was a German drummer and one of the founding members of the power metal band Helloween.",
+      "metadata": [
+        "Artist",
+        "Research brain"
+      ],
+      "x": -240,
+      "y": -80,
+      "zone": "rock-circuit",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Ingo_Schwichtenberg",
+          "provider": "wikipedia"
+        },
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q649198",
+          "provider": "wikidata"
+        },
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/c5c03ade-85ca-484c-a77d-25cbccd7f6d4",
+          "provider": "musicbrainz"
+        }
+      ]
+    },
+    {
+      "id": "jon-oliva",
+      "label": "Jon Oliva",
+      "type": "artist",
+      "roles": [
+        "artist"
+      ],
+      "summary": "John Nicholas \"Jon\" Oliva (born July 22, 1959) is an American singer and musician. He is best known as the co-founder, keyboardist and lead vocalist of the heavy metal band Savatage, which he co-founded with his younger brother Criss Oliva.",
+      "metadata": [
+        "Artist",
+        "Research brain"
+      ],
+      "x": -240,
+      "y": -80,
+      "zone": "rock-circuit",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Jon_Oliva",
+          "provider": "wikipedia"
+        },
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q918492",
+          "provider": "wikidata"
+        },
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/21841be8-4246-4b7d-b3ab-f9b4e065a3fd",
+          "provider": "musicbrainz"
+        }
+      ]
+    },
+    {
+      "id": "elvenking",
+      "label": "Elvenking",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "A band surfaced by the MHM research brain from Wikipedia signals around Jon Oliva.",
+      "metadata": [
+        "Band",
+        "Research brain"
+      ],
+      "x": -483.3,
+      "y": 168.9,
+      "zone": "rock-circuit",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Elvenking_%28band%29",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "free",
+      "label": "Free",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "A band surfaced by the MHM research brain from Wikipedia signals around Jon Oliva.",
+      "metadata": [
+        "Band",
+        "Research brain"
+      ],
+      "x": 183,
+      "y": -189.6,
+      "zone": "rock-circuit",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Free_%28band%29",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "jack-frost",
+      "label": "Jack Frost",
+      "type": "artist",
+      "roles": [
+        "artist"
+      ],
+      "summary": "A artist surfaced by the MHM research brain from Wikipedia signals around Jon Oliva.",
+      "metadata": [
+        "Artist",
+        "Research brain"
+      ],
+      "x": 124,
+      "y": 102,
+      "zone": "rock-circuit",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Jack_Frost_%28musician%29",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "midnight",
+      "label": "Midnight",
+      "type": "artist",
+      "roles": [
+        "artist"
+      ],
+      "summary": "A artist surfaced by the MHM research brain from Wikipedia signals around Jon Oliva.",
+      "metadata": [
+        "Artist",
+        "Research brain"
+      ],
+      "x": 13.8,
+      "y": -177.9,
+      "zone": "rock-circuit",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Midnight_%28musician%29",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "michael-weikath",
+      "label": "Michael Weikath",
+      "type": "artist",
+      "roles": [
+        "artist"
+      ],
+      "summary": "Michael Ingo Joachim \"Weiki\" Weikath (born 7 August 1962) is a German musician, best known as a founding member and one of the guitarists of pioneering power metal band Helloween.",
+      "metadata": [
+        "Artist",
+        "Research brain"
+      ],
+      "x": -240,
+      "y": -80,
+      "zone": "rock-circuit",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Michael_Weikath",
+          "provider": "wikipedia"
+        },
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q372797",
+          "provider": "wikidata"
+        },
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/04a8692f-b0fb-423a-81cb-83f59e0be6d3",
+          "provider": "musicbrainz"
+        }
+      ]
+    },
+    {
+      "id": "ufo",
+      "label": "UFO",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "A band surfaced by the MHM research brain from Wikipedia signals around Michael Weikath.",
+      "metadata": [
+        "Band",
+        "Research brain"
+      ],
+      "x": -33,
+      "y": -399.8,
+      "zone": "rock-circuit",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/UFO_%28band%29",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "angel-witch",
+      "label": "Angel Witch",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "Angel Witch are a British heavy metal band which formed in London in 1976, recognised as one of the pioneering groups of the new wave of British heavy metal (NWOBHM). Originally established as Lucifer by guitarist and vocalist Kevin Heybourne, the band evolved through various line-ups before settling on the name Angel Witch in 1978, with Heybourne as the constant driving force.",
+      "metadata": [
+        "Band",
+        "Research brain"
+      ],
+      "x": -240,
+      "y": -80,
+      "zone": "rock-circuit",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Angel_Witch",
+          "provider": "wikipedia"
+        },
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q531934",
+          "provider": "wikidata"
+        },
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/8e8bce36-51e0-4d10-8be4-19a8931b73b1",
+          "provider": "musicbrainz"
+        }
+      ]
+    },
+    {
+      "id": "candlemass",
+      "label": "Candlemass",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "A band surfaced by the MHM research brain from Wikipedia signals around Angel Witch.",
+      "metadata": [
+        "Band",
+        "Research brain"
+      ],
+      "x": -174.4,
+      "y": 314.6,
+      "zone": "rock-circuit",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Candlemass_%28band%29",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "death",
+      "label": "Death",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "A band surfaced by the MHM research brain from Wikipedia signals around Angel Witch.",
+      "metadata": [
+        "Band",
+        "Research brain"
+      ],
+      "x": -220.9,
+      "y": -358.3,
+      "zone": "hard-rock-metal",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Death_%28metal_band%29",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "savatage",
+      "label": "Savatage",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "Savatage () is an American heavy metal band founded by brothers Jon and Criss Oliva in 1979 in Tarpon Springs, Florida. The band was first called Avatar, but, shortly before the release of their debut album Sirens (1983), they changed their name to Savatage, as Avatar was already taken by at least one other band.",
+      "metadata": [
+        "Band",
+        "Research brain"
+      ],
+      "x": -240,
+      "y": -80,
+      "zone": "rock-circuit",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Savatage",
+          "provider": "wikipedia"
+        },
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q830598",
+          "provider": "wikidata"
+        },
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/ac15222f-fb8a-4d2b-b4da-bde1c19f0a9f",
+          "provider": "musicbrainz"
+        }
+      ]
+    },
+    {
+      "id": "asia",
+      "label": "Asia",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "A band surfaced by the MHM research brain from Wikipedia signals around Savatage.",
+      "metadata": [
+        "Band",
+        "Research brain"
+      ],
+      "x": 229.2,
+      "y": -147.4,
+      "zone": "rock-circuit",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Asia_%28band%29",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "criss-oliva",
+      "label": "Criss Oliva",
+      "type": "artist",
+      "roles": [
+        "artist"
+      ],
+      "summary": "Christopher Michael Oliva (April 3, 1963 – October 17, 1993) was an American musician who was the lead guitarist and co-founder of the heavy metal band Savatage. During his lifetime, he released seven studio albums and one EP with the band.",
+      "metadata": [
+        "Artist",
+        "Research brain"
+      ],
+      "x": -240,
+      "y": -80,
+      "zone": "rock-circuit",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Criss_Oliva",
+          "provider": "wikipedia"
+        },
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q869758",
+          "provider": "wikidata"
+        },
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/a05619aa-1d5c-4e86-86aa-2a9f4fab8c4c",
+          "provider": "musicbrainz"
+        }
+      ]
+    },
+    {
+      "id": "charvel-guitars",
+      "label": "Charvel Guitars",
+      "type": "guitar",
+      "roles": [
+        "guitar"
+      ],
+      "summary": "A guitar surfaced by the MHM research brain from Wikipedia signals around Criss Oliva.",
+      "metadata": [
+        "Guitar",
+        "Research brain"
+      ],
+      "x": -150.6,
+      "y": 318.1,
+      "zone": "guitar-workshop",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Charvel_Guitars",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "jackson-guitars",
+      "label": "Jackson Guitars",
+      "type": "guitar",
+      "roles": [
+        "guitar"
+      ],
+      "summary": "A guitar surfaced by the MHM research brain from Wikipedia signals around Criss Oliva.",
+      "metadata": [
+        "Guitar",
+        "Research brain"
+      ],
+      "x": -65.6,
+      "y": -378.8,
+      "zone": "guitar-workshop",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Jackson_Guitars",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "joe-perry",
+      "label": "Joe Perry",
+      "type": "artist",
+      "roles": [
+        "artist"
+      ],
+      "summary": "A artist surfaced by the MHM research brain from Wikipedia signals around Criss Oliva.",
+      "metadata": [
+        "Artist",
+        "Research brain"
+      ],
+      "x": -484.8,
+      "y": -241.1,
+      "zone": "rock-circuit",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Joe_Perry_%28musician%29",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "lead-guitar",
+      "label": "Lead guitar",
+      "type": "guitar",
+      "roles": [
+        "guitar"
+      ],
+      "summary": "A guitar surfaced by the MHM research brain from Wikipedia signals around Criss Oliva.",
+      "metadata": [
+        "Guitar",
+        "Research brain"
+      ],
+      "x": 84.6,
+      "y": -133.9,
+      "zone": "guitar-workshop",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Lead_guitar",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "overkill",
+      "label": "Overkill",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "A band surfaced by the MHM research brain from Wikipedia signals around Criss Oliva.",
+      "metadata": [
+        "Band",
+        "Research brain"
+      ],
+      "x": -171.2,
+      "y": -456.8,
+      "zone": "rock-circuit",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Overkill_%28band%29",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "testament",
+      "label": "Testament",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "A band surfaced by the MHM research brain from Wikipedia signals around Criss Oliva.",
+      "metadata": [
+        "Band",
+        "Research brain"
+      ],
+      "x": -475.5,
+      "y": 261.7,
+      "zone": "rock-circuit",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Testament_%28band%29",
+          "provider": "wikipedia"
+        }
+      ]
     }
   ],
   "edges": [
@@ -13140,6 +14435,1122 @@
         {
           "label": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Joe_Pass",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-apocalyptica-allison-related",
+      "source": "apocalyptica",
+      "target": "allison",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Allison (band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Apocalyptica",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-apocalyptica-bush-related",
+      "source": "apocalyptica",
+      "target": "bush",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Bush (British band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Apocalyptica",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-apocalyptica-flyleaf-related",
+      "source": "apocalyptica",
+      "target": "flyleaf",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Flyleaf (band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Apocalyptica",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-apocalyptica-fuel-related",
+      "source": "apocalyptica",
+      "target": "fuel",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Fuel (band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Apocalyptica",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-apocalyptica-gojira-related",
+      "source": "apocalyptica",
+      "target": "gojira",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Gojira (band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Apocalyptica",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-avantasia-aina-related",
+      "source": "avantasia",
+      "target": "aina",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Aina (German band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Avantasia",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-avantasia-angra-related",
+      "source": "avantasia",
+      "target": "angra",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Angra (band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Avantasia",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-avantasia-ark-related",
+      "source": "avantasia",
+      "target": "ark",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Ark (Norwegian band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Avantasia",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-avantasia-bodine-related",
+      "source": "avantasia",
+      "target": "bodine",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Bodine (band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Avantasia",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-avantasia-conception-related",
+      "source": "avantasia",
+      "target": "conception",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Conception (band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Avantasia",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-avantasia-gamma-ray-related",
+      "source": "avantasia",
+      "target": "gamma-ray",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Gamma Ray (band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Avantasia",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-avantasia-h-e-a-t-related",
+      "source": "avantasia",
+      "target": "h-e-a-t",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: H.E.A.T (band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Avantasia",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-avantasia-hard-rain-related",
+      "source": "avantasia",
+      "target": "hard-rain",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Hard Rain (band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Avantasia",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-avantasia-heavens-gate-related",
+      "source": "avantasia",
+      "target": "heavens-gate",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Heavens Gate (band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Avantasia",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-ralf-scheepers-angra-related",
+      "source": "ralf-scheepers",
+      "target": "angra",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Angra (band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Ralf_Scheepers",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-ralf-scheepers-gamma-ray-related",
+      "source": "ralf-scheepers",
+      "target": "gamma-ray",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Gamma Ray (Band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Ralf_Scheepers",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-ralf-scheepers-magnus-karlsson-related",
+      "source": "ralf-scheepers",
+      "target": "magnus-karlsson",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Magnus Karlsson (musician)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Ralf_Scheepers",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-ralf-scheepers-masterplan-related",
+      "source": "ralf-scheepers",
+      "target": "masterplan",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Masterplan (band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Ralf_Scheepers",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-ralf-scheepers-phenomena-related",
+      "source": "ralf-scheepers",
+      "target": "phenomena",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Phenomena (band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Ralf_Scheepers",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-ralf-scheepers-primal-fear-related",
+      "source": "ralf-scheepers",
+      "target": "primal-fear",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Primal Fear (band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Ralf_Scheepers",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-ralf-scheepers-sinner-related",
+      "source": "ralf-scheepers",
+      "target": "sinner",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Sinner (band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Ralf_Scheepers",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-ralf-scheepers-therion-related",
+      "source": "ralf-scheepers",
+      "target": "therion",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Therion (band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Ralf_Scheepers",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-edguy-scorpions-related",
+      "source": "edguy",
+      "target": "scorpions",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Scorpions (band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Edguy",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-edguy-slash-related",
+      "source": "edguy",
+      "target": "slash",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Slash (musician)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Edguy",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-at-vance-angel-dust-related",
+      "source": "at-vance",
+      "target": "angel-dust",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Angel Dust (German band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/At_Vance",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-at-vance-annihilator-related",
+      "source": "at-vance",
+      "target": "annihilator",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Annihilator (band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/At_Vance",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-at-vance-mark-cross-related",
+      "source": "at-vance",
+      "target": "mark-cross",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Mark Cross (musician)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/At_Vance",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-tobias-sammet-aina-related",
+      "source": "tobias-sammet",
+      "target": "aina",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Aina (German band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Tobias_Sammet",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-tobias-sammet-queen-related",
+      "source": "tobias-sammet",
+      "target": "queen",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Queen (band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Tobias_Sammet",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-speed-metal-anvil-associated_genre",
+      "source": "speed-metal",
+      "target": "anvil",
+      "type": "associated_genre",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Anvil (band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Speed_metal",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-speed-metal-bandana-thrash-associated_genre",
+      "source": "speed-metal",
+      "target": "bandana-thrash",
+      "type": "associated_genre",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Bandana thrash"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Speed_metal",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-speed-metal-bathory-associated_genre",
+      "source": "speed-metal",
+      "target": "bathory",
+      "type": "associated_genre",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Bathory (band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Speed_metal",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-ingo-schwichtenberg-gamma-ray-related",
+      "source": "ingo-schwichtenberg",
+      "target": "gamma-ray",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Gamma Ray (band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Ingo_Schwichtenberg",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-ingo-schwichtenberg-mark-cross-related",
+      "source": "ingo-schwichtenberg",
+      "target": "mark-cross",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Mark Cross (musician)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Ingo_Schwichtenberg",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-jon-oliva-dio-related",
+      "source": "jon-oliva",
+      "target": "dio",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Dio (band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Jon_Oliva",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-jon-oliva-elvenking-related",
+      "source": "jon-oliva",
+      "target": "elvenking",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Elvenking (band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Jon_Oliva",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-jon-oliva-free-related",
+      "source": "jon-oliva",
+      "target": "free",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Free (band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Jon_Oliva",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-jon-oliva-jack-frost-related",
+      "source": "jon-oliva",
+      "target": "jack-frost",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Jack Frost (musician)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Jon_Oliva",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-jon-oliva-kiss-related",
+      "source": "jon-oliva",
+      "target": "kiss",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Kiss (band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Jon_Oliva",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-jon-oliva-midnight-related",
+      "source": "jon-oliva",
+      "target": "midnight",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Midnight (musician)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Jon_Oliva",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-michael-weikath-fender-stratocaster-plays",
+      "source": "michael-weikath",
+      "target": "fender-stratocaster",
+      "type": "plays",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Fender Stratocaster"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Michael_Weikath",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-michael-weikath-gibson-les-paul-plays",
+      "source": "michael-weikath",
+      "target": "gibson-les-paul",
+      "type": "plays",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Gibson Les Paul"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Michael_Weikath",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-michael-weikath-mark-cross-related",
+      "source": "michael-weikath",
+      "target": "mark-cross",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Mark Cross (musician)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Michael_Weikath",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-michael-weikath-scorpions-related",
+      "source": "michael-weikath",
+      "target": "scorpions",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Scorpions (band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Michael_Weikath",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-michael-weikath-ufo-related",
+      "source": "michael-weikath",
+      "target": "ufo",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: UFO (band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Michael_Weikath",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-angel-witch-anthrax-american-band-related",
+      "source": "angel-witch",
+      "target": "anthrax-american-band",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Anthrax (American band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Angel_Witch",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-angel-witch-candlemass-related",
+      "source": "angel-witch",
+      "target": "candlemass",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Candlemass (band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Angel_Witch",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-angel-witch-death-related",
+      "source": "angel-witch",
+      "target": "death",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Death (metal band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Angel_Witch",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-savatage-accept-related",
+      "source": "savatage",
+      "target": "accept",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Accept (band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Savatage",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-savatage-anacrusis-related",
+      "source": "savatage",
+      "target": "anacrusis",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Anacrusis (band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Savatage",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-savatage-annihilator-related",
+      "source": "savatage",
+      "target": "annihilator",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Annihilator (band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Savatage",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-savatage-artillery-related",
+      "source": "savatage",
+      "target": "artillery",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Artillery (band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Savatage",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-savatage-asia-related",
+      "source": "savatage",
+      "target": "asia",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Asia (band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Savatage",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-savatage-candlemass-related",
+      "source": "savatage",
+      "target": "candlemass",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Candlemass (band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Savatage",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-criss-oliva-charvel-guitars-plays",
+      "source": "criss-oliva",
+      "target": "charvel-guitars",
+      "type": "plays",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Charvel Guitars"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Criss_Oliva",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-criss-oliva-george-lynch-related",
+      "source": "criss-oliva",
+      "target": "george-lynch",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: George Lynch (musician)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Criss_Oliva",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-criss-oliva-jack-frost-related",
+      "source": "criss-oliva",
+      "target": "jack-frost",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Jack Frost (musician)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Criss_Oliva",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-criss-oliva-jackson-guitars-plays",
+      "source": "criss-oliva",
+      "target": "jackson-guitars",
+      "type": "plays",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Jackson Guitars"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Criss_Oliva",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-criss-oliva-joe-perry-related",
+      "source": "criss-oliva",
+      "target": "joe-perry",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Joe Perry (musician)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Criss_Oliva",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-criss-oliva-lead-guitar-plays",
+      "source": "criss-oliva",
+      "target": "lead-guitar",
+      "type": "plays",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Lead guitar"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Criss_Oliva",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-criss-oliva-overkill-related",
+      "source": "criss-oliva",
+      "target": "overkill",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Overkill (band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Criss_Oliva",
+          "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "brain-criss-oliva-testament-related",
+      "source": "criss-oliva",
+      "target": "testament",
+      "type": "related",
+      "label": "Wikipedia link signal",
+      "strength": 0.46,
+      "context": [
+        "Wikipedia link: Testament (band)"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Criss_Oliva",
           "provider": "wikipedia"
         }
       ]
