@@ -2,17 +2,18 @@
 id: the-who
 label: The Who
 type: band
-zone: rock-circuit
+zone: psychedelia-prog
 roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [art rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -628
 layoutY: -166
 starter: true
+curatorTags: [Art rock, Rock, art rock]
 ---
 # The Who
 

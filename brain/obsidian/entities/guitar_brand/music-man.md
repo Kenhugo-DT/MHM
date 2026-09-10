@@ -13,6 +13,7 @@ layoutPinned: false
 layoutX: 3651
 layoutY: -93
 starter: false
+curatorTags: [guitar brand, manufacturer, guitar]
 ---
 # Music Man
 

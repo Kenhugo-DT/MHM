@@ -7,12 +7,13 @@ roles: [artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -538
 layoutY: 615
 starter: false
+curatorTags: [rock, artist, classic rock]
 ---
 # Craig Jones
 

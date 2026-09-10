@@ -2,17 +2,18 @@
 id: the-yardbirds
 label: The Yardbirds
 type: band
-zone: rock-circuit
+zone: roots-blues
 roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [blues rock, blues]
 secondaryZones: []
 layoutPinned: false
 layoutX: -628
 layoutY: 798
 starter: false
+curatorTags: [Rock, blues rock, blues]
 ---
 # The Yardbirds
 

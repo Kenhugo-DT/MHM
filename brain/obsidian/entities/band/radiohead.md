@@ -2,17 +2,18 @@
 id: radiohead
 label: Radiohead
 type: band
-zone: folk-country-vise
+zone: psychedelia-prog
 roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [alternative rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1569
 layoutY: 1428
 starter: true
+curatorTags: [Alternative rock, Art rock, alternative rock]
 ---
 # Radiohead
 

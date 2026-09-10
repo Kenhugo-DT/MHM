@@ -2,17 +2,18 @@
 id: george-harrison
 label: George Harrison
 type: guitarist
-zone: psychedelia-prog
+zone: rock-circuit
 roles: [guitarist, artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -15
 layoutY: -1076
 starter: false
+curatorTags: [rock, guitarist, classic rock]
 ---
 # George Harrison
 

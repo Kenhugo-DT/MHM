@@ -2,17 +2,18 @@
 id: shoegaze
 label: Shoegaze
 type: genre
-zone: folk-country-vise
+zone: punk-alt
 roles: [genre]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [Shoegaze]
 secondaryZones: []
 layoutPinned: false
 layoutX: -737
 layoutY: 1315
 starter: false
+curatorTags: [alternative rock, country, folk]
 ---
 # Shoegaze
 

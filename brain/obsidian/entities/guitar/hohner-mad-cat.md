@@ -13,6 +13,7 @@ layoutPinned: false
 layoutX: 2977
 layoutY: 204
 starter: false
+curatorTags: [electric guitar, signature guitar, guitar]
 ---
 # Hohner Mad Cat
 

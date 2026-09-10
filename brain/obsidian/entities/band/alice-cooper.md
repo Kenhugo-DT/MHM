@@ -7,12 +7,13 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [hard rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 759
 layoutY: 1351
 starter: false
+curatorTags: [Hard rock, Horror punk, hard rock]
 ---
 # Alice Cooper
 

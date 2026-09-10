@@ -13,6 +13,7 @@ layoutPinned: false
 layoutX: 3408
 layoutY: 338
 starter: false
+curatorTags: [electric guitar, signature guitar, guitar]
 ---
 # Ibanez JEM
 

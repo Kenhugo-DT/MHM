@@ -7,12 +7,13 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [hard rock, speed metal]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1873
 layoutY: -49
 starter: false
+curatorTags: [hard rock, Speed Metal, speed metal]
 ---
 # Bandana thrash
 

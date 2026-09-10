@@ -7,12 +7,13 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [hard rock, power metal]
 secondaryZones: []
 layoutPinned: false
 layoutX: 931
 layoutY: -230
 starter: false
+curatorTags: [hard rock, power metal, band]
 ---
 # Edguy
 

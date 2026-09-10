@@ -13,6 +13,7 @@ layoutPinned: false
 layoutX: 2841
 layoutY: 436
 starter: true
+curatorTags: [Electric blues, electric guitar, electric blues]
 ---
 # Gibson ES-355 Lucille
 

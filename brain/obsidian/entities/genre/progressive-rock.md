@@ -7,12 +7,13 @@ roles: [genre]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [Progressive rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -25
 layoutY: -775
 starter: true
+curatorTags: [art rock, progressive metal, progressive rock]
 ---
 # Progressive rock
 

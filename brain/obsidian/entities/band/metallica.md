@@ -7,12 +7,13 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [hard rock, heavy metal]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1493
 layoutY: 315
 starter: true
+curatorTags: [hard rock, Heavy metal, heavy metal]
 ---
 # Metallica
 

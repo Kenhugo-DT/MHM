@@ -13,6 +13,7 @@ layoutPinned: false
 layoutX: 3101
 layoutY: 118
 starter: true
+curatorTags: [Blues rock, electric guitar, Jazz]
 ---
 # Gibson ES-335
 

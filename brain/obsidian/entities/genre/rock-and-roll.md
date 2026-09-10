@@ -7,12 +7,13 @@ roles: [genre]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [Rock and roll]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1125
 layoutY: 208
 starter: false
+curatorTags: [blues, blues rock, rock and roll]
 ---
 # Rock and roll
 

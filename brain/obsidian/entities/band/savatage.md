@@ -7,12 +7,13 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [hard rock, heavy metal]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1146
 layoutY: -387
 starter: false
+curatorTags: [hard rock, heavy metal, band]
 ---
 # Savatage
 

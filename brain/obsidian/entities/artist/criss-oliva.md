@@ -7,12 +7,13 @@ roles: [artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [hard rock, heavy metal]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1022
 layoutY: -7
 starter: false
+curatorTags: [hard rock, heavy metal, artist]
 ---
 # Criss Oliva
 

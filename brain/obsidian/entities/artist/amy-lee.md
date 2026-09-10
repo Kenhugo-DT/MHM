@@ -2,17 +2,18 @@
 id: amy-lee
 label: Amy Lee
 type: artist
-zone: hard-rock-metal
+zone: rock-circuit
 roles: [artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [hard rock, rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1567
 layoutY: -314
 starter: false
+curatorTags: [hard rock, rock, artist]
 ---
 # Amy Lee
 

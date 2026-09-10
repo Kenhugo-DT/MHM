@@ -7,12 +7,13 @@ roles: [artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -52
 layoutY: 319
 starter: false
+curatorTags: [rock, artist, classic rock]
 ---
 # Bruce Hall
 

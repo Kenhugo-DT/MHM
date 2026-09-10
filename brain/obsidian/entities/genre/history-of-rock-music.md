@@ -7,12 +7,13 @@ roles: [genre]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [History of rock music]
 secondaryZones: []
 layoutPinned: false
 layoutX: -203
 layoutY: -759
 starter: false
+curatorTags: [hard rock, psychedelic rock, progressive]
 ---
 # History of rock music
 

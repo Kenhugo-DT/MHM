@@ -7,12 +7,13 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [hard rock, rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 802
 layoutY: 219
 starter: false
+curatorTags: [hard rock, band, rock]
 ---
 # Kiss
 

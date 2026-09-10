@@ -2,17 +2,18 @@
 id: progressive-metal
 label: Progressive metal
 type: genre
-zone: hard-rock-metal
+zone: psychedelia-prog
 roles: [genre]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [Progressive metal]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1934
 layoutY: 204
 starter: false
+curatorTags: [hard rock, heavy metal, progressive metal]
 ---
 # Progressive metal
 

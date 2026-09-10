@@ -7,12 +7,13 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [hardcore punk, thrash metal]
 secondaryZones: []
 layoutPinned: false
 layoutX: 607
 layoutY: 1608
 starter: false
+curatorTags: [crossover thrash, hardcore punk, venice scene]
 ---
 # Suicidal Tendencies
 

@@ -7,12 +7,13 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -539
 layoutY: 487
 starter: false
+curatorTags: [rock, band, classic rock]
 ---
 # Free
 

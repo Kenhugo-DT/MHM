@@ -7,12 +7,13 @@ roles: [guitarist, artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [blues rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -992
 layoutY: 109
 starter: false
+curatorTags: [Blues, Rock and roll, blues rock]
 ---
 # Sister Rosetta Tharpe
 

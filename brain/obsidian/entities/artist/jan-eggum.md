@@ -7,12 +7,13 @@ roles: [artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [country]
 secondaryZones: []
 layoutPinned: false
 layoutX: -372
 layoutY: 1195
 starter: false
+curatorTags: [Norwegian vise, Singer-songwriter, country]
 ---
 # Jan Eggum
 

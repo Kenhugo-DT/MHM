@@ -7,12 +7,13 @@ roles: [artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -201
 layoutY: 491
 starter: false
+curatorTags: [rock, artist, classic rock]
 ---
 # Drake
 

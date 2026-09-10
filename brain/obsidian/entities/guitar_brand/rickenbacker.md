@@ -13,6 +13,7 @@ layoutPinned: false
 layoutX: 3727
 layoutY: 218
 starter: false
+curatorTags: [guitar brand, manufacturer, rock]
 ---
 # Rickenbacker
 

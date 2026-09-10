@@ -2,17 +2,18 @@
 id: andy-bell
 label: Andy Bell
 type: artist
-zone: folk-country-vise
+zone: punk-alt
 roles: [artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [country]
 secondaryZones: []
 layoutPinned: false
 layoutX: -491
 layoutY: 1164
 starter: false
+curatorTags: [Shoegaze, artist, country]
 ---
 # Andy Bell
 

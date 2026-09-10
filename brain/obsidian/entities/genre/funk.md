@@ -7,12 +7,13 @@ roles: [genre]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [Funk]
 secondaryZones: []
 layoutPinned: false
 layoutX: 308
 layoutY: 133
 starter: false
+curatorTags: [rock, jazz fusion, classic rock]
 ---
 # Funk
 

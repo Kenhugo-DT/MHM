@@ -7,12 +7,13 @@ roles: [genre]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [Glam rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -7
 layoutY: -302
 starter: false
+curatorTags: [rock, glam rock, hard rock]
 ---
 # Glam rock
 

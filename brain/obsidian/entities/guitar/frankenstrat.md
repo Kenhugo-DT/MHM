@@ -13,6 +13,7 @@ layoutPinned: false
 layoutX: 2672
 layoutY: -262
 starter: true
+curatorTags: [electric guitar, hard rock, rock]
 ---
 # Frankenstrat
 

@@ -2,17 +2,18 @@
 id: jazz-fusion
 label: Jazz fusion
 type: genre
-zone: folk-country-vise
+zone: rock-circuit
 roles: [genre]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [Jazz fusion]
 secondaryZones: []
 layoutPinned: false
 layoutX: -916
 layoutY: 1459
 starter: false
+curatorTags: [country, folk, jazz fusion]
 ---
 # Jazz fusion
 

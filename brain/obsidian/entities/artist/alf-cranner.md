@@ -7,12 +7,13 @@ roles: [artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [country]
 secondaryZones: []
 layoutPinned: false
 layoutX: -789
 layoutY: 1734
 starter: false
+curatorTags: [Folk, Norwegian vise, country]
 ---
 # Alf Cranner
 

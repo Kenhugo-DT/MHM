@@ -47,6 +47,7 @@ for (const filePath of entityFiles(vaultRoot)) {
     eraStart,
     eraPeak,
     primaryGenres: coerceStringArray(frontmatter.primaryGenres),
+    curatorTags: coerceStringArray(frontmatter.curatorTags),
     secondaryZones: coerceStringArray(frontmatter.secondaryZones),
     layoutHints: {
       pinned: Boolean(frontmatter.layoutPinned),

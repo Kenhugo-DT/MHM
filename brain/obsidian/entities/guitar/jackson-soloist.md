@@ -13,6 +13,7 @@ layoutPinned: false
 layoutX: 2941
 layoutY: -291
 starter: false
+curatorTags: [electric guitar, Thrash metal, hard rock]
 ---
 # Jackson Soloist
 

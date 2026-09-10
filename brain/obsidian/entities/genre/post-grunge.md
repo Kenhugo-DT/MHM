@@ -2,17 +2,18 @@
 id: post-grunge
 label: post-grunge
 type: genre
-zone: rock-circuit
+zone: punk-alt
 roles: [genre]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [post-grunge]
 secondaryZones: []
 layoutPinned: false
 layoutX: 304
 layoutY: 10
 starter: false
+curatorTags: [alternative rock, rock, classic rock]
 ---
 # post-grunge
 

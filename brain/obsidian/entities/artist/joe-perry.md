@@ -7,12 +7,13 @@ roles: [artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -388
 layoutY: 347
 starter: false
+curatorTags: [rock, artist, classic rock]
 ---
 # Joe Perry
 

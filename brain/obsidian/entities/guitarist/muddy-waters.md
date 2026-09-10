@@ -7,12 +7,13 @@ roles: [guitarist, artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [blues rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1268
 layoutY: 267
 starter: true
+curatorTags: [Blues, Electric blues, blues rock]
 ---
 # Muddy Waters
 

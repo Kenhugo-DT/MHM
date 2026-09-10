@@ -7,12 +7,13 @@ roles: [guitarist, artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [blues rock, electric blues]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1102
 layoutY: 55
 starter: false
+curatorTags: [Electric blues, blues rock, electric blues]
 ---
 # Eric Clapton
 

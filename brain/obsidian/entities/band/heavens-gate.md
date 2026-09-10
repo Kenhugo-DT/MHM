@@ -7,12 +7,13 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -548
 layoutY: 69
 starter: false
+curatorTags: [rock, band, classic rock]
 ---
 # Heavens Gate
 

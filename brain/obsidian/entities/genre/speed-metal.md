@@ -7,12 +7,13 @@ roles: [genre]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [Speed Metal]
 secondaryZones: []
 layoutPinned: false
 layoutX: 2010
 layoutY: 43
 starter: false
+curatorTags: [hard rock, heavy metal, speed metal]
 ---
 # Speed Metal
 

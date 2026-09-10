@@ -13,6 +13,7 @@ layoutPinned: false
 layoutX: 1031
 layoutY: 1597
 starter: false
+curatorTags: [band, alternative, punk]
 ---
 # Blondie
 

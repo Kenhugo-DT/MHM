@@ -7,12 +7,13 @@ roles: [guitarist, artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [electric blues, blues]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1169
 layoutY: -48
 starter: false
+curatorTags: [Electric blues, electric blues, blues]
 ---
 # Albert King
 

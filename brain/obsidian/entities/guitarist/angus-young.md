@@ -2,17 +2,18 @@
 id: angus-young
 label: Angus Young
 type: guitarist
-zone: hard-rock-metal
+zone: roots-blues
 roles: [guitarist, artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [blues rock, hard rock, blues]
 secondaryZones: []
 layoutPinned: false
 layoutX: 993
 layoutY: -516
 starter: true
+curatorTags: [blues rock, hard rock, blues]
 ---
 # Angus Young
 

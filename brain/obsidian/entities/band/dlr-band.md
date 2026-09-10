@@ -7,12 +7,13 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [hard rock, rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 2025
 layoutY: 624
 starter: false
+curatorTags: [hard rock, band, rock]
 ---
 # DLR Band
 

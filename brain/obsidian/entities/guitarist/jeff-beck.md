@@ -2,17 +2,18 @@
 id: jeff-beck
 label: Jeff Beck
 type: guitarist
-zone: rock-circuit
+zone: roots-blues
 roles: [guitarist, artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [blues rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -254
 layoutY: 129
 starter: true
+curatorTags: [Blues rock, Jazz fusion, blues rock]
 ---
 # Jeff Beck
 

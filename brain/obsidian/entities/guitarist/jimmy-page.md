@@ -7,12 +7,13 @@ roles: [guitarist, artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [hard rock, blues]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1035
 layoutY: -312
 starter: true
+curatorTags: [hard rock, guitarist, blues]
 ---
 # Jimmy Page
 

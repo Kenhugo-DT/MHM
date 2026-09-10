@@ -2,17 +2,18 @@
 id: bush
 label: Bush
 type: band
-zone: rock-circuit
+zone: punk-alt
 roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [post-grunge, grunge]
 secondaryZones: []
 layoutPinned: false
 layoutX: 51
 layoutY: 434
 starter: false
+curatorTags: [post-grunge, band, grunge]
 ---
 # Bush
 

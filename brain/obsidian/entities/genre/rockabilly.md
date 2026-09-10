@@ -7,12 +7,13 @@ roles: [genre]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [Rockabilly]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1207
 layoutY: -385
 starter: false
+curatorTags: [blues, blues rock, rock and roll]
 ---
 # Rockabilly
 

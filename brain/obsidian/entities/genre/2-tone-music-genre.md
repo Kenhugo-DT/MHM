@@ -7,12 +7,13 @@ roles: [genre]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: ["2 Tone (music genre)"]
 secondaryZones: []
 layoutPinned: false
 layoutX: 985
 layoutY: 1706
 starter: false
+curatorTags: [alternative rock, alternative, punk]
 ---
 # 2 Tone (music genre)
 

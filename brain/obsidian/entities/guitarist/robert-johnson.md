@@ -7,12 +7,13 @@ roles: [guitarist, artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [blues rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1648
 layoutY: -40
 starter: true
+curatorTags: [Blues, Blues rock, blues rock]
 ---
 # Robert Johnson
 

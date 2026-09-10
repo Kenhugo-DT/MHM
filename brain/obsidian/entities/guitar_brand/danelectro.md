@@ -13,6 +13,7 @@ layoutPinned: false
 layoutX: 3479
 layoutY: -501
 starter: false
+curatorTags: [guitar brand, manufacturer, rock]
 ---
 # Danelectro
 

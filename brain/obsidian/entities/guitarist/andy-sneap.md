@@ -7,12 +7,13 @@ roles: [guitarist, artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [hard rock, rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 592
 layoutY: -516
 starter: false
+curatorTags: [hard rock, guitarist, rock]
 ---
 # Andy Sneap
 

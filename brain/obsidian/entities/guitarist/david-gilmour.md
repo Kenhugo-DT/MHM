@@ -7,12 +7,13 @@ roles: [guitarist, artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [progressive rock, rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 250
 layoutY: -939
 starter: true
+curatorTags: [progressive rock, guitarist, rock]
 ---
 # David Gilmour
 

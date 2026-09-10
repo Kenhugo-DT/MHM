@@ -7,12 +7,13 @@ roles: [artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [hard rock, death metal]
 secondaryZones: []
 layoutPinned: false
 layoutX: 592
 layoutY: -328
 starter: false
+curatorTags: [hard rock, death metal, artist]
 ---
 # Alexi Laiho
 

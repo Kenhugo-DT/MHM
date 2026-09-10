@@ -7,12 +7,13 @@ roles: [artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -150
 layoutY: 214
 starter: false
+curatorTags: [rock, artist, classic rock]
 ---
 # Jack Frost
 

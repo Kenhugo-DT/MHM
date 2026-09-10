@@ -2,7 +2,7 @@
 id: john-mclaughlin
 label: John McLaughlin
 type: guitarist
-zone: folk-country-vise
+zone: psychedelia-prog
 roles: [guitarist, artist]
 aliases: []
 eraStart: 
@@ -13,6 +13,7 @@ layoutPinned: false
 layoutX: -683
 layoutY: 1623
 starter: false
+curatorTags: [Jazz, Jazz fusion, Progressive rock]
 ---
 # John McLaughlin
 

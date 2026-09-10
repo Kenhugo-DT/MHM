@@ -7,12 +7,13 @@ roles: [guitarist, artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [blues rock, rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -230
 layoutY: 23
 starter: true
+curatorTags: [Blues rock, blues rock, rock]
 ---
 # Keith Richards
 

@@ -7,12 +7,13 @@ roles: [artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [swamp rock, rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -548
 layoutY: 183
 starter: false
+curatorTags: [swamp rock, rock, artist]
 ---
 # John Fogerty
 

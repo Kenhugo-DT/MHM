@@ -48,6 +48,7 @@ for (const node of nodes) {
     eraStart: editable.eraStart ?? node.eraStart ?? "",
     eraPeak: editable.eraPeak ?? node.eraPeak ?? "",
     primaryGenres: editable.primaryGenres ?? node.primaryGenres ?? [],
+    curatorTags: editable.curatorTags ?? node.curatorTags ?? [],
     secondaryZones: editable.secondaryZones ?? hints.secondaryZones ?? node.secondaryZones ?? [],
     layoutPinned: editable.layoutPinned ?? hints.pinned ?? false,
     layoutX: editable.layoutX ?? hints.x ?? node.x,

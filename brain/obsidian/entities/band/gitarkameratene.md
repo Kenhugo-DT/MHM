@@ -7,12 +7,13 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [country]
 secondaryZones: []
 layoutPinned: false
 layoutX: -553
 layoutY: 1665
 starter: false
+curatorTags: [Norwegian vise, Singer-songwriter, country]
 ---
 # Gitarkameratene
 

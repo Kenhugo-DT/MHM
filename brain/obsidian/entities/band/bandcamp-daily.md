@@ -2,17 +2,18 @@
 id: bandcamp-daily
 label: Bandcamp Daily
 type: band
-zone: folk-country-vise
+zone: punk-alt
 roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [country]
 secondaryZones: []
 layoutPinned: false
 layoutX: -455
 layoutY: 1477
 starter: false
+curatorTags: [Shoegaze, band, country]
 ---
 # Bandcamp Daily
 

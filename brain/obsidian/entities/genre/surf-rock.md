@@ -2,17 +2,18 @@
 id: surf-rock
 label: Surf rock
 type: genre
-zone: psychedelia-prog
+zone: rock-circuit
 roles: [genre]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [Surf rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 576
 layoutY: -907
 starter: false
+curatorTags: [progressive rock, rock and roll, rock]
 ---
 # Surf rock
 

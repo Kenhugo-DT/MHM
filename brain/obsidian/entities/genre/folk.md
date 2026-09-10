@@ -7,12 +7,13 @@ roles: [genre]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [Folk]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1092
 layoutY: 1822
 starter: true
+curatorTags: [country, folk]
 ---
 # Folk
 

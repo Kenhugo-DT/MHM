@@ -13,6 +13,7 @@ layoutPinned: false
 layoutX: 2860
 layoutY: 294
 starter: false
+curatorTags: [acoustic guitar, guitar, instrument]
 ---
 # Electric-acoustic guitar
 

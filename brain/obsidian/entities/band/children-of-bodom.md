@@ -7,12 +7,13 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [hard rock, death metal]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1198
 layoutY: 258
 starter: false
+curatorTags: [hard rock, death metal, band]
 ---
 # Children of Bodom
 

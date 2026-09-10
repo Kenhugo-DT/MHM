@@ -13,6 +13,7 @@ layoutPinned: false
 layoutX: 3440
 layoutY: -224
 starter: true
+curatorTags: [Electric blues, electric guitar, Rock]
 ---
 # Fender Stratocaster
 

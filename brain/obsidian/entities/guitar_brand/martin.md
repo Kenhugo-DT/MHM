@@ -13,6 +13,7 @@ layoutPinned: false
 layoutX: 2720
 layoutY: -132
 starter: true
+curatorTags: [guitar brand, manufacturer, country]
 ---
 # C.F. Martin & Co.
 

@@ -2,17 +2,18 @@
 id: blur
 label: Blur
 type: band
-zone: folk-country-vise
+zone: punk-alt
 roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [country]
 secondaryZones: []
 layoutPinned: false
 layoutX: -914
 layoutY: 1178
 starter: false
+curatorTags: [Shoegaze, band, country]
 ---
 # Blur
 

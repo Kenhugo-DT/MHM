@@ -13,6 +13,7 @@ layoutPinned: false
 layoutX: 3505
 layoutY: 163
 starter: true
+curatorTags: [guitar brand, manufacturer, rock]
 ---
 # Ibanez
 

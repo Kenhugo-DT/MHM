@@ -2,17 +2,18 @@
 id: ronnie-van-zant
 label: Ronnie Van Zant
 type: artist
-zone: rock-circuit
+zone: roots-blues
 roles: [artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [southern rock, rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -171
 layoutY: 55
 starter: false
+curatorTags: [southern rock, artist, rock]
 ---
 # Ronnie Van Zant
 

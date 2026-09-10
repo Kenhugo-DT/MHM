@@ -2,17 +2,18 @@
 id: cold
 label: Cold
 type: band
-zone: rock-circuit
+zone: punk-alt
 roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [post-grunge, grunge]
 secondaryZones: []
 layoutPinned: false
 layoutX: 308
 layoutY: 299
 starter: false
+curatorTags: [post-grunge, band, grunge]
 ---
 # Cold
 

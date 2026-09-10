@@ -2,17 +2,18 @@
 id: little-richard
 label: Little Richard
 type: artist
-zone: rock-circuit
+zone: folk-country-vise
 roles: [artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [country, rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -316
 layoutY: 632
 starter: false
+curatorTags: [country, artist, rock]
 ---
 # Little Richard
 

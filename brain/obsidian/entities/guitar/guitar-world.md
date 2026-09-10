@@ -13,6 +13,7 @@ layoutPinned: false
 layoutX: 2806
 layoutY: -245
 starter: false
+curatorTags: [electric guitar, guitar, instrument]
 ---
 # Guitar World
 

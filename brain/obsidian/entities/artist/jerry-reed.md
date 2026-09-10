@@ -2,17 +2,18 @@
 id: jerry-reed
 label: Jerry Reed
 type: artist
-zone: rock-circuit
+zone: folk-country-vise
 roles: [artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [country rock, country]
 secondaryZones: []
 layoutPinned: false
 layoutX: -87
 layoutY: 124
 starter: false
+curatorTags: [country rock, country, artist]
 ---
 # Jerry Reed
 

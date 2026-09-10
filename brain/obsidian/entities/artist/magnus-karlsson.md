@@ -7,12 +7,13 @@ roles: [artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -628
 layoutY: 269
 starter: false
+curatorTags: [rock, artist, classic rock]
 ---
 # Magnus Karlsson
 

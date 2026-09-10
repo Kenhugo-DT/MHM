@@ -7,12 +7,13 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [hard rock, thrash metal]
 secondaryZones: []
 layoutPinned: false
 layoutX: 2419
 layoutY: 180
 starter: false
+curatorTags: [hard rock, Thrash metal, thrash metal]
 ---
 # Anonymus
 

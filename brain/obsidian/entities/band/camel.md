@@ -7,12 +7,13 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [country, folk]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1163
 layoutY: 1672
 starter: false
+curatorTags: [country, folk, band]
 ---
 # Camel
 

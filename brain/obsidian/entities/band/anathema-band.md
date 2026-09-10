@@ -7,12 +7,13 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [gothic metal, hard rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 968
 layoutY: -130
 starter: false
+curatorTags: [gothic metal, hard rock, Doom metal]
 ---
 # Anathema (band)
 

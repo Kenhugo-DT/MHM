@@ -2,17 +2,18 @@
 id: lindsey-buckingham
 label: Lindsey Buckingham
 type: guitarist
-zone: folk-country-vise
+zone: rock-circuit
 roles: [guitarist, artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [pop rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -332
 layoutY: 1439
 starter: false
+curatorTags: [Rock, Singer-songwriter, pop rock]
 ---
 # Lindsey Buckingham
 

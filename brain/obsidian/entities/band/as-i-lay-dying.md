@@ -7,12 +7,13 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [hard rock, rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1274
 layoutY: 143
 starter: false
+curatorTags: [hard rock, band, rock]
 ---
 # As I Lay Dying
 

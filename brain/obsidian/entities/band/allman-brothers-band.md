@@ -7,12 +7,13 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [blues rock, southern rock, blues]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1468
 layoutY: -416
 starter: true
+curatorTags: [blues rock, southern rock, blues]
 ---
 # The Allman Brothers Band
 

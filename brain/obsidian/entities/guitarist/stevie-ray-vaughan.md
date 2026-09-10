@@ -7,12 +7,13 @@ roles: [guitarist, artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [blues rock, electric blues]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1572
 layoutY: 63
 starter: true
+curatorTags: [Electric blues, blues rock, electric blues]
 ---
 # Stevie Ray Vaughan
 

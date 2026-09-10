@@ -7,12 +7,13 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [horror punk, punk rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 906
 layoutY: 1335
 starter: false
+curatorTags: [horror punk, punk rock, alternative]
 ---
 # AFI
 

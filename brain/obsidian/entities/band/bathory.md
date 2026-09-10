@@ -7,12 +7,13 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [hard rock, speed metal]
 secondaryZones: []
 layoutPinned: false
 layoutX: 2085
 layoutY: 260
 starter: false
+curatorTags: [hard rock, Speed Metal, speed metal]
 ---
 # Bathory
 

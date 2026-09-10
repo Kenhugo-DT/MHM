@@ -13,6 +13,7 @@ layoutPinned: false
 layoutX: 610
 layoutY: 1421
 starter: false
+curatorTags: [band, alternative, punk]
 ---
 # Black President
 

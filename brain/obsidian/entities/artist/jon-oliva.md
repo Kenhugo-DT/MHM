@@ -7,12 +7,13 @@ roles: [artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [hard rock, heavy metal]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1066
 layoutY: 79
 starter: false
+curatorTags: [hard rock, heavy metal, artist]
 ---
 # Jon Oliva
 

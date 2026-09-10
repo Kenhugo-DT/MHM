@@ -13,6 +13,7 @@ layoutPinned: false
 layoutX: 2885
 layoutY: 48
 starter: false
+curatorTags: [electric guitar, country, folk]
 ---
 # Banjo
 

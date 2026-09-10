@@ -13,6 +13,7 @@ layoutPinned: false
 layoutX: 3362
 layoutY: -383
 starter: false
+curatorTags: [guitar brand, manufacturer, rock]
 ---
 # ESP
 

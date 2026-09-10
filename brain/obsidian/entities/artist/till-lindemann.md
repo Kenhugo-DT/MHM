@@ -2,17 +2,18 @@
 id: till-lindemann
 label: Till Lindemann
 type: artist
-zone: rock-circuit
+zone: folk-country-vise
 roles: [artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [country, rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -526
 layoutY: -23
 starter: false
+curatorTags: [country, artist, rock]
 ---
 # Till Lindemann
 

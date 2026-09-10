@@ -7,12 +7,13 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 171
 layoutY: 364
 starter: false
+curatorTags: [rock, band, classic rock]
 ---
 # Machine Men
 

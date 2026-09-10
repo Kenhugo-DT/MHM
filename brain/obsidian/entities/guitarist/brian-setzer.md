@@ -7,12 +7,13 @@ roles: [guitarist, artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [blues rock, blues]
 secondaryZones: []
 layoutPinned: false
 layoutX: -924
 layoutY: -148
 starter: false
+curatorTags: [Rockabilly, blues rock, blues]
 ---
 # Brian Setzer
 

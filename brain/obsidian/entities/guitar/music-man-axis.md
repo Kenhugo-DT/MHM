@@ -13,6 +13,7 @@ layoutPinned: false
 layoutX: 3788
 layoutY: -203
 starter: false
+curatorTags: [electric guitar, Hard rock, hard rock]
 ---
 # Music Man Axis
 

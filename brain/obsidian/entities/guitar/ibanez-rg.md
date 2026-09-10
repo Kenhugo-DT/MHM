@@ -13,6 +13,7 @@ layoutPinned: false
 layoutX: 3366
 layoutY: 197
 starter: true
+curatorTags: [electric guitar, Heavy metal, Progressive metal]
 ---
 # Ibanez RG
 

@@ -29,6 +29,7 @@
     "brain:promote:apply": "node brain/scripts/run-python.mjs brain/pipeline/promote_candidates.py --source auto --apply",
     "brain:obsidian:export": "node brain/scripts/export-obsidian-vault.mjs",
     "brain:obsidian:import": "node brain/scripts/import-obsidian-vault.mjs",
+    "brain:notes:seed-tags": "node brain/scripts/seed-obsidian-tags.mjs",
     "brain:learn": "node brain/scripts/learn-from-obsidian.mjs",
     "brain:python-check": "node brain/scripts/run-python.mjs -m py_compile brain/pipeline/sync.py brain/pipeline/import_graph.py brain/pipeline/process_inbox.py brain/pipeline/supabase_brain.py brain/pipeline/brain_db.py brain/pipeline/scout_agent.py brain/pipeline/promote_candidates.py brain/pipeline/queue_request.py",
     "brain:import": "node brain/scripts/run-python.mjs brain/pipeline/import_graph.py",

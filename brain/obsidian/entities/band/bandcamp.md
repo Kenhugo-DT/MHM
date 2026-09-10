@@ -2,17 +2,18 @@
 id: bandcamp
 label: Bandcamp
 type: band
-zone: psychedelia-prog
+zone: punk-alt
 roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [shoegaze]
 secondaryZones: []
 layoutPinned: false
 layoutX: -121
 layoutY: -904
 starter: false
+curatorTags: [Shoegaze, band, shoegaze]
 ---
 # Bandcamp
 

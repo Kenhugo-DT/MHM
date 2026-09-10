@@ -7,12 +7,13 @@ roles: [genre]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [Dutch rock music]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1389
 layoutY: 56
 starter: false
+curatorTags: [hard rock, metal, rock]
 ---
 # Dutch rock music
 

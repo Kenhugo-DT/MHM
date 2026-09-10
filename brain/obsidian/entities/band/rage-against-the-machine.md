@@ -2,17 +2,18 @@
 id: rage-against-the-machine
 label: Rage Against the Machine
 type: band
-zone: hard-rock-metal
+zone: punk-alt
 roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [alternative rock, hard rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 921
 layoutY: -348
 starter: false
+curatorTags: [Alternative rock, alternative rock, hard rock]
 ---
 # Rage Against the Machine
 

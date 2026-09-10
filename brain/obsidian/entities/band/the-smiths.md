@@ -7,12 +7,13 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [alternative rock, punk rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1491
 layoutY: 1538
 starter: false
+curatorTags: [Punk rock, alternative rock, punk rock]
 ---
 # The Smiths
 

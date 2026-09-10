@@ -2,17 +2,18 @@
 id: acdc
 label: AC/DC
 type: band
-zone: hard-rock-metal
+zone: roots-blues
 roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [blues rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 592
 layoutY: -54
 starter: true
+curatorTags: [Blues rock, Hard rock, blues rock]
 ---
 # AC/DC
 

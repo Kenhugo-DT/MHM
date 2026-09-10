@@ -2,17 +2,18 @@
 id: industrial-rock
 label: industrial rock
 type: genre
-zone: rock-circuit
+zone: punk-alt
 roles: [genre]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [industrial rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 154
 layoutY: -295
 starter: false
+curatorTags: [rock, classic rock, alternative]
 ---
 # industrial rock
 

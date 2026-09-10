@@ -7,12 +7,13 @@ roles: [artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [country, folk]
 secondaryZones: []
 layoutPinned: false
 layoutX: -888
 layoutY: 1310
 starter: false
+curatorTags: [Norwegian vise, country, folk]
 ---
 # Lillebjørn Nilsen
 

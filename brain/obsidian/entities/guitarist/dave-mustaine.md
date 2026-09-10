@@ -7,12 +7,13 @@ roles: [guitarist, artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [hard rock, thrash metal]
 secondaryZones: []
 layoutPinned: false
 layoutX: 2472
 layoutY: -209
 starter: true
+curatorTags: [hard rock, Thrash metal, thrash metal]
 ---
 # Dave Mustaine
 

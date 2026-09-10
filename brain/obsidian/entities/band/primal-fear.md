@@ -7,12 +7,13 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [hard rock, rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1020
 layoutY: -427
 starter: false
+curatorTags: [hard rock, band, rock]
 ---
 # Primal Fear
 

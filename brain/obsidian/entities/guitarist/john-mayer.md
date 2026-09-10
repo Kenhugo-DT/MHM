@@ -7,12 +7,13 @@ roles: [guitarist, artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [electric blues, blues]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1513
 layoutY: 178
 starter: false
+curatorTags: [Electric blues, electric blues, blues]
 ---
 # John Mayer
 

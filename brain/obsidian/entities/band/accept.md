@@ -7,12 +7,13 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [power metal, hard rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1672
 layoutY: 463
 starter: false
+curatorTags: [power metal, hard rock, Thrash metal]
 ---
 # Accept
 

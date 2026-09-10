@@ -7,12 +7,13 @@ roles: [guitarist, artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -182
 layoutY: 361
 starter: true
+curatorTags: [rock, guitarist, classic rock]
 ---
 # Brian May
 

@@ -7,12 +7,13 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [power metal, hard rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1798
 layoutY: 387
 starter: false
+curatorTags: [power metal, hard rock, band]
 ---
 # Avian
 

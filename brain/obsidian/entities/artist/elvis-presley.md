@@ -7,12 +7,13 @@ roles: [artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [country rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1165
 layoutY: -200
 starter: false
+curatorTags: [Country, Rock and roll, country rock]
 ---
 # Elvis Presley
 

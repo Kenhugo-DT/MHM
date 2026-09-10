@@ -7,12 +7,13 @@ roles: [guitarist, artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [country, folk]
 secondaryZones: []
 layoutPinned: false
 layoutX: -606
 layoutY: 1388
 starter: true
+curatorTags: [Norwegian vise, country, folk]
 ---
 # Øystein Sunde
 

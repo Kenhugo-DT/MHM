@@ -2,17 +2,18 @@
 id: slash
 label: Slash
 type: guitarist
-zone: hard-rock-metal
+zone: roots-blues
 roles: [guitarist, artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [blues rock, hard rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1140
 layoutY: -258
 starter: true
+curatorTags: [Blues rock, blues rock, hard rock]
 ---
 # Slash
 

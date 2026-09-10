@@ -13,6 +13,7 @@ layoutPinned: false
 layoutX: 3227
 layoutY: -24
 starter: false
+curatorTags: [guitar brand, manufacturer, guitar]
 ---
 # Charvel
 

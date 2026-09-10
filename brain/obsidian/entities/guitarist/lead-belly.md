@@ -7,12 +7,13 @@ roles: [guitarist, artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [blues]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1573
 layoutY: -192
 starter: false
+curatorTags: [Blues, Folk, blues]
 ---
 # Lead Belly
 

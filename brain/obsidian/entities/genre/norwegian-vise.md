@@ -7,12 +7,13 @@ roles: [genre]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [Norwegian vise]
 secondaryZones: []
 layoutPinned: false
 layoutX: -742
 layoutY: 1482
 starter: false
+curatorTags: [country, folk]
 ---
 # Norwegian vise
 

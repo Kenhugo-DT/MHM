@@ -7,12 +7,13 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [hard rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 592
 layoutY: 309
 starter: true
+curatorTags: [hard rock, Blues, Hard rock]
 ---
 # Led Zeppelin
 

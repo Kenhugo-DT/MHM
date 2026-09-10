@@ -7,12 +7,13 @@ roles: [genre]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [Punk rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1656
 layoutY: 1549
 starter: false
+curatorTags: [punk rock, alternative, punk]
 ---
 # Punk rock
 

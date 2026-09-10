@@ -7,12 +7,13 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [progressive metal]
 secondaryZones: []
 layoutPinned: false
 layoutX: -325
 layoutY: -628
 starter: false
+curatorTags: [progressive metal, band, progressive]
 ---
 # Dream Theater
 

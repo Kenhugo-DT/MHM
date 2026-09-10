@@ -2,17 +2,18 @@
 id: finntroll
 label: Finntroll
 type: band
-zone: rock-circuit
+zone: hard-rock-metal
 roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [folk, rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 247
 layoutY: 484
 starter: false
+curatorTags: [band, folk, rock]
 ---
 # Finntroll
 

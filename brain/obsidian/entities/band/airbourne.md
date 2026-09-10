@@ -7,12 +7,13 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [hard rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 762
 layoutY: -353
 starter: false
+curatorTags: [hard rock, Hard rock, band]
 ---
 # Airbourne
 

@@ -7,12 +7,13 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [hard rock, thrash metal]
 secondaryZones: []
 layoutPinned: false
 layoutX: 2505
 layoutY: 60
 starter: false
+curatorTags: [hard rock, Thrash metal, thrash metal]
 ---
 # Annihilator
 

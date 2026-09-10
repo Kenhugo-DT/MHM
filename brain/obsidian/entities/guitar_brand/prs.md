@@ -13,6 +13,7 @@ layoutPinned: false
 layoutX: 3100
 layoutY: -483
 starter: true
+curatorTags: [guitar brand, manufacturer, guitar]
 ---
 # PRS
 

@@ -13,6 +13,7 @@ layoutPinned: false
 layoutX: 2959
 layoutY: -444
 starter: true
+curatorTags: [Country, electric guitar, signature guitar]
 ---
 # Trigger
 

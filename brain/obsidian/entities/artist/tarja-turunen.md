@@ -7,12 +7,13 @@ roles: [artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [hard rock, heavy metal]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1163
 layoutY: 103
 starter: false
+curatorTags: [hard rock, heavy metal, artist]
 ---
 # Tarja Turunen
 

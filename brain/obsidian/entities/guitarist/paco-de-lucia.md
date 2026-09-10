@@ -7,12 +7,13 @@ roles: [guitarist, artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [country, folk]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1301
 layoutY: 1434
 starter: false
+curatorTags: [Flamenco, country, folk]
 ---
 # Paco de Lucía
 

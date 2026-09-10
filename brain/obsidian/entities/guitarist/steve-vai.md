@@ -7,12 +7,13 @@ roles: [guitarist, artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [progressive metal]
 secondaryZones: []
 layoutPinned: false
 layoutX: -280
 layoutY: -1022
 starter: true
+curatorTags: [Progressive metal, progressive metal, guitarist]
 ---
 # Steve Vai
 

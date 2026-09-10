@@ -7,12 +7,13 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [hard rock, rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1341
 layoutY: -87
 starter: false
+curatorTags: [hard rock, band, rock]
 ---
 # Caliban
 

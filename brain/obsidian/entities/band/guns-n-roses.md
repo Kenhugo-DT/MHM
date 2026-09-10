@@ -7,12 +7,13 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [hard rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1062
 layoutY: 499
 starter: true
+curatorTags: [hard rock, Hard rock, band]
 ---
 # Guns N' Roses
 

@@ -7,12 +7,13 @@ roles: [artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [country, folk]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1223
 layoutY: 1542
 starter: true
+curatorTags: [Country, country, folk]
 ---
 # Willie Nelson
 

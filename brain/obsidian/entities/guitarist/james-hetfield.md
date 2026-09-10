@@ -7,12 +7,13 @@ roles: [guitarist, artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [hard rock, heavy metal]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1271
 layoutY: -417
 starter: false
+curatorTags: [hard rock, heavy metal, guitarist]
 ---
 # James Hetfield
 

@@ -7,12 +7,13 @@ roles: [guitarist, artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [hard rock, heavy metal]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1461
 layoutY: 187
 starter: false
+curatorTags: [hard rock, Heavy metal, heavy metal]
 ---
 # Dimebag Darrell
 

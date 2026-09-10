@@ -2,17 +2,18 @@
 id: bob-dylan
 label: Bob Dylan
 type: artist
-zone: folk-country-vise
+zone: roots-blues
 roles: [artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [blues rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1245
 layoutY: 1837
 starter: true
+curatorTags: [Folk, Rock, blues rock]
 ---
 # Bob Dylan
 

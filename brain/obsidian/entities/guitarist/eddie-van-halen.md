@@ -7,12 +7,13 @@ roles: [guitarist, artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [hard rock, rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 690
 layoutY: -516
 starter: true
+curatorTags: [hard rock, guitarist, rock]
 ---
 # Eddie Van Halen
 

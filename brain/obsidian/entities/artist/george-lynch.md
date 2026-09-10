@@ -7,12 +7,13 @@ roles: [artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [hard rock, rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1374
 layoutY: -360
 starter: false
+curatorTags: [hard rock, artist, rock]
 ---
 # George Lynch
 

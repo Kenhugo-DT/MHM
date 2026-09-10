@@ -7,12 +7,13 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [hard rock, heavy metal]
 secondaryZones: []
 layoutPinned: false
 layoutX: 985
 layoutY: 284
 starter: false
+curatorTags: [hard rock, heavy metal, band]
 ---
 # Skid Row
 

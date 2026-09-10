@@ -7,12 +7,13 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [hard rock, rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 969
 layoutY: 117
 starter: false
+curatorTags: [hard rock, band, rock]
 ---
 # ASAP (band)
 

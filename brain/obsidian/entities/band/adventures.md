@@ -2,17 +2,18 @@
 id: adventures
 label: Adventures
 type: band
-zone: folk-country-vise
+zone: punk-alt
 roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [country]
 secondaryZones: []
 layoutPinned: false
 layoutX: -768
 layoutY: 1164
 starter: false
+curatorTags: [Shoegaze, band, country]
 ---
 # Adventures
 

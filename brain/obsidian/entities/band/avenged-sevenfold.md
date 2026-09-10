@@ -7,12 +7,13 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [hard rock, heavy metal]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1254
 layoutY: -294
 starter: false
+curatorTags: [hard rock, heavy metal, band]
 ---
 # Avenged Sevenfold
 

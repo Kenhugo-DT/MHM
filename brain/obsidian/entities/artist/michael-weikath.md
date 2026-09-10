@@ -7,12 +7,13 @@ roles: [artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [hard rock, power metal]
 secondaryZones: []
 layoutPinned: false
 layoutX: 813
 layoutY: -194
 starter: false
+curatorTags: [hard rock, power metal, artist]
 ---
 # Michael Weikath
 

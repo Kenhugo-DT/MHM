@@ -7,12 +7,13 @@ roles: [guitarist, artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [country, folk]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1435
 layoutY: 1388
 starter: false
+curatorTags: [Country, country, folk]
 ---
 # Chet Atkins
 

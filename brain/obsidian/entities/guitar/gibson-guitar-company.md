@@ -13,6 +13,7 @@ layoutPinned: false
 layoutX: 2775
 layoutY: -524
 starter: false
+curatorTags: [electric guitar, guitar, instrument]
 ---
 # Gibson (guitar company)
 

@@ -7,12 +7,13 @@ roles: [genre]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [Flamenco]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1323
 layoutY: 1704
 starter: false
+curatorTags: [country, folk]
 ---
 # Flamenco
 

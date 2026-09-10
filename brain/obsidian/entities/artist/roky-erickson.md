@@ -2,17 +2,18 @@
 id: roky-erickson
 label: Roky Erickson
 type: artist
-zone: folk-country-vise
+zone: psychedelia-prog
 roles: [artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [psychedelic rock, country]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1346
 layoutY: 1551
 starter: false
+curatorTags: [psychedelic rock, artist, country]
 ---
 # Roky Erickson
 

@@ -7,12 +7,13 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [hard rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 2309
 layoutY: 83
 starter: false
+curatorTags: [hard rock, Speed Metal, Thrash metal]
 ---
 # Anvil
 

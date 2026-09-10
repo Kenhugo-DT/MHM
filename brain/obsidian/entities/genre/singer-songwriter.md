@@ -7,12 +7,13 @@ roles: [genre]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [Singer-songwriter]
 secondaryZones: []
 layoutPinned: false
 layoutX: -472
 layoutY: 1314
 starter: true
+curatorTags: [country, folk, rock]
 ---
 # Singer-songwriter
 

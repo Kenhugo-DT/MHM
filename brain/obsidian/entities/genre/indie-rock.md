@@ -2,17 +2,18 @@
 id: indie-rock
 label: Indie rock
 type: genre
-zone: folk-country-vise
+zone: punk-alt
 roles: [genre]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [Indie rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1072
 layoutY: 1537
 starter: false
+curatorTags: [alternative rock, country, folk]
 ---
 # Indie rock
 

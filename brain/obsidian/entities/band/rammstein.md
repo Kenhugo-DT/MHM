@@ -7,12 +7,13 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [hardcore punk]
 secondaryZones: []
 layoutPinned: false
 layoutX: 851
 layoutY: 1803
 starter: false
+curatorTags: [hardcore punk, band, alternative]
 ---
 # Rammstein
 

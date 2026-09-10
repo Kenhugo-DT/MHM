@@ -2,17 +2,18 @@
 id: misfits
 label: Misfits
 type: band
-zone: rock-circuit
+zone: punk-alt
 roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [horror punk, punk rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -154
 layoutY: 844
 starter: false
+curatorTags: [horror punk, punk rock, punk roots]
 ---
 # Misfits
 

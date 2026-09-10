@@ -7,12 +7,13 @@ roles: [artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -442
 layoutY: 130
 starter: false
+curatorTags: [rock, artist, classic rock]
 ---
 # Midnight
 

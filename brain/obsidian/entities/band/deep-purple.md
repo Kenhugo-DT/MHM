@@ -7,12 +7,13 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [hard rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 786
 layoutY: -516
 starter: true
+curatorTags: [hard rock, Hard rock, Heavy metal]
 ---
 # Deep Purple
 

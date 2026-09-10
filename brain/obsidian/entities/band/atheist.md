@@ -7,12 +7,13 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [progressive metal]
 secondaryZones: []
 layoutPinned: false
 layoutX: -475
 layoutY: -710
 starter: false
+curatorTags: [Progressive metal, progressive metal, band]
 ---
 # Atheist
 

@@ -16,6 +16,7 @@ export const EDITABLE_FIELDS = new Set([
   "eraStart",
   "eraPeak",
   "primaryGenres",
+  "curatorTags",
   "secondaryZones",
   "layoutPinned",
   "layoutX",

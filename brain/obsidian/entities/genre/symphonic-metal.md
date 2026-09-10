@@ -7,12 +7,13 @@ roles: [genre]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [symphonic metal]
 secondaryZones: []
 layoutPinned: false
 layoutX: 2180
 layoutY: -21
 starter: false
+curatorTags: [hard rock, heavy metal, metal]
 ---
 # symphonic metal
 

@@ -7,12 +7,13 @@ roles: [guitarist, artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [blues rock, blues]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1277
 layoutY: -250
 starter: false
+curatorTags: [Blues rock, blues rock, blues]
 ---
 # Peter Green
 

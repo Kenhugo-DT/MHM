@@ -7,12 +7,13 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [hard rock, thrash metal]
 secondaryZones: []
 layoutPinned: false
 layoutX: 2206
 layoutY: -182
 starter: false
+curatorTags: [hard rock, Thrash metal, thrash metal]
 ---
 # Absu
 

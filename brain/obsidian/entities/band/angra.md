@@ -7,12 +7,13 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [power metal, hard rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1635
 layoutY: 322
 starter: false
+curatorTags: [power metal, hard rock, band]
 ---
 # Angra
 

@@ -7,12 +7,13 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [hard rock, power metal]
 secondaryZones: []
 layoutPinned: false
 layoutX: 859
 layoutY: 340
 starter: false
+curatorTags: [hard rock, power metal, band]
 ---
 # At Vance
 

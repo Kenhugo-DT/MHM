@@ -13,6 +13,7 @@ layoutPinned: false
 layoutX: 878
 layoutY: 1595
 starter: false
+curatorTags: [artist, alternative, punk]
 ---
 # Brian Baker
 

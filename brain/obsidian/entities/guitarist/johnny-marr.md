@@ -2,17 +2,18 @@
 id: johnny-marr
 label: Johnny Marr
 type: guitarist
-zone: folk-country-vise
+zone: punk-alt
 roles: [guitarist, artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [alternative rock, country]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1194
 layoutY: 1181
 starter: false
+curatorTags: [alternative rock, guitarist, country]
 ---
 # Johnny Marr
 

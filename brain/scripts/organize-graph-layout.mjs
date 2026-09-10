@@ -283,6 +283,7 @@ function textForNode(node, edgeTextByNode) {
     ...(node.metadata ?? []),
     ...(node.aliases ?? []),
     ...(node.primaryGenres ?? []),
+    ...(node.curatorTags ?? []),
     ...(edgeTextByNode.get(node.id) ?? []),
   ].join(" "));
 }

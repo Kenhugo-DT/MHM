@@ -7,12 +7,13 @@ roles: [guitarist, artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [progressive rock, country]
 secondaryZones: []
 layoutPinned: false
 layoutX: 118
 layoutY: -1043
 starter: false
+curatorTags: [progressive rock, guitarist, country]
 ---
 # Steve Howe
 

@@ -2,17 +2,18 @@
 id: jukka-nevalainen
 label: Jukka Nevalainen
 type: artist
-zone: rock-circuit
+zone: hard-rock-metal
 roles: [artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [hard rock, rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -346
 layoutY: 144
 starter: false
+curatorTags: [hard rock, artist, rock]
 ---
 # Jukka Nevalainen
 

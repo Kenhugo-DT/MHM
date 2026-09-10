@@ -13,6 +13,7 @@ layoutPinned: false
 layoutX: 2672
 layoutY: -23
 starter: false
+curatorTags: [Blues rock, electric guitar, blues rock]
 ---
 # Gibson Firebird
 

@@ -7,12 +7,13 @@ roles: [guitarist, artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [psychedelic rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 240
 layoutY: -1062
 starter: true
+curatorTags: [Psychedelic rock, psychedelic rock, guitarist]
 ---
 # Jimi Hendrix
 

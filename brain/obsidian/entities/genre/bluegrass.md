@@ -7,12 +7,13 @@ roles: [genre]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [Bluegrass]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1513
 layoutY: 1251
 starter: false
+curatorTags: [country, folk]
 ---
 # Bluegrass
 

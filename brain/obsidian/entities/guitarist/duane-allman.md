@@ -7,12 +7,13 @@ roles: [guitarist, artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [blues rock, southern rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -912
 layoutY: -271
 starter: true
+curatorTags: [Southern rock, blues rock, southern rock]
 ---
 # Duane Allman
 

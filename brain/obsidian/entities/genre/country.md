@@ -7,12 +7,13 @@ roles: [genre]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [Country]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1333
 layoutY: 1274
 starter: false
+curatorTags: [country, folk, southern rock]
 ---
 # Country
 

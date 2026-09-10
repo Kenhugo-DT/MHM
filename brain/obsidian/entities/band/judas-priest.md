@@ -7,12 +7,13 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [hard rock, heavy metal]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1525
 layoutY: 457
 starter: false
+curatorTags: [hard rock, Heavy metal, heavy metal]
 ---
 # Judas Priest
 

@@ -7,12 +7,13 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [progressive rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 133
 layoutY: -877
 starter: true
+curatorTags: [Progressive rock, Psychedelic rock, progressive rock]
 ---
 # Pink Floyd
 

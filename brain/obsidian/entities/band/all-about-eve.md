@@ -2,17 +2,18 @@
 id: all-about-eve
 label: All About Eve
 type: band
-zone: rock-circuit
+zone: punk-alt
 roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [gothic rock, rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -51
 layoutY: 24
 starter: false
+curatorTags: [gothic rock, band, rock]
 ---
 # All About Eve
 

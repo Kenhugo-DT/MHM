@@ -7,12 +7,13 @@ roles: [guitarist, artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 287
 layoutY: 302
 starter: true
+curatorTags: [Funk, Rock, rock]
 ---
 # Prince
 

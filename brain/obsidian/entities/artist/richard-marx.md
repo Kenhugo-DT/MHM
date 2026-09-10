@@ -2,17 +2,18 @@
 id: richard-marx
 label: Richard Marx
 type: artist
-zone: hard-rock-metal
+zone: folk-country-vise
 roles: [artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [hard rock, rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1544
 layoutY: 402
 starter: false
+curatorTags: [hard rock, artist, rock]
 ---
 # Richard Marx
 

@@ -7,12 +7,13 @@ roles: [genre]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [Post-punk]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1325
 layoutY: 1521
 starter: false
+curatorTags: [alternative rock, punk rock, alternative]
 ---
 # Post-punk
 

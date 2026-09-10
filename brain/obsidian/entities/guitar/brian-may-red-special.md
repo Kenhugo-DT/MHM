@@ -13,6 +13,7 @@ layoutPinned: false
 layoutX: 2676
 layoutY: -407
 starter: true
+curatorTags: [electric guitar, Glam rock, glam rock]
 ---
 # Brian May Red Special
 

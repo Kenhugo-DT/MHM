@@ -7,12 +7,13 @@ roles: [genre]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [gothic metal]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1347
 layoutY: 273
 starter: false
+curatorTags: [hard rock, gothic rock, heavy metal]
 ---
 # gothic metal
 

@@ -13,6 +13,7 @@ layoutPinned: false
 layoutX: 3304
 layoutY: -242
 starter: false
+curatorTags: [electric guitar, alternative rock, grunge]
 ---
 # Fender Jaguar
 

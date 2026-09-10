@@ -13,6 +13,7 @@ layoutPinned: false
 layoutX: 2826
 layoutY: -388
 starter: false
+curatorTags: [electric guitar, guitar, instrument]
 ---
 # Lead guitar
 

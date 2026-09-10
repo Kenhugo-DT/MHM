@@ -7,12 +7,13 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [hard rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 744
 layoutY: -163
 starter: false
+curatorTags: [hard rock, Hard rock, band]
 ---
 # Argent
 

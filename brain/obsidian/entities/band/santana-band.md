@@ -7,12 +7,13 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [blues rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1405
 layoutY: -213
 starter: false
+curatorTags: [Blues rock, Jazz fusion, blues rock]
 ---
 # Santana
 

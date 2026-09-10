@@ -7,12 +7,13 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [hard rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 2034
 layoutY: -120
 starter: false
+curatorTags: [hard rock, symphonic metal, band]
 ---
 # Almora
 

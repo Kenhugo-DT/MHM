@@ -13,6 +13,7 @@ layoutPinned: false
 layoutX: -106
 layoutY: -628
 starter: false
+curatorTags: [band, progressive, psychedelic]
 ---
 # Beardfish
 

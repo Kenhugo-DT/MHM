@@ -203,6 +203,9 @@ function applyObsidianOverrides(nodes) {
     if (Array.isArray(override.primaryGenres) && override.primaryGenres.length) {
       node.primaryGenres = override.primaryGenres;
     }
+    if (Array.isArray(override.curatorTags) && override.curatorTags.length) {
+      node.curatorTags = mergeUniqueStrings(node.curatorTags ?? [], override.curatorTags);
+    }
 
     const layoutHints = override.layoutHints ?? {};
     node.layoutHints = {

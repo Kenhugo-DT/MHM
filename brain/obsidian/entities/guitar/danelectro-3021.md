@@ -13,6 +13,7 @@ layoutPinned: false
 layoutX: 3140
 layoutY: -627
 starter: false
+curatorTags: [electric guitar, Indie rock, indie rock]
 ---
 # Danelectro 3021
 

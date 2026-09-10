@@ -7,12 +7,13 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -261
 layoutY: 422
 starter: false
+curatorTags: [rock, band, classic rock]
 ---
 # TOTO
 

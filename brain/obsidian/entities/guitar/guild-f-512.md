@@ -13,6 +13,7 @@ layoutPinned: false
 layoutX: 3112
 layoutY: 267
 starter: false
+curatorTags: [acoustic guitar, Folk, folk]
 ---
 # Guild F-512
 

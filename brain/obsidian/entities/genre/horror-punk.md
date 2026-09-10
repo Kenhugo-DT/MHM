@@ -7,12 +7,13 @@ roles: [genre]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [Horror punk]
 secondaryZones: []
 layoutPinned: false
 layoutX: 746
 layoutY: 1516
 starter: false
+curatorTags: [horror punk, punk rock, alternative]
 ---
 # Horror punk
 

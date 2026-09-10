@@ -13,6 +13,7 @@ layoutPinned: false
 layoutX: 3040
 layoutY: -186
 starter: false
+curatorTags: [guitar brand, manufacturer, blues]
 ---
 # National
 

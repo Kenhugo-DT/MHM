@@ -2,17 +2,18 @@
 id: jazz
 label: Jazz
 type: genre
-zone: folk-country-vise
+zone: psychedelia-prog
 roles: [genre]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [Jazz]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1038
 layoutY: 1328
 starter: false
+curatorTags: [country, folk, jazz fusion]
 ---
 # Jazz
 

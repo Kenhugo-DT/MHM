@@ -7,12 +7,13 @@ roles: [genre]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [Thrash metal]
 secondaryZones: []
 layoutPinned: false
 layoutX: 2363
 layoutY: -74
 starter: true
+curatorTags: [hard rock, heavy metal, thrash metal]
 ---
 # Thrash metal
 

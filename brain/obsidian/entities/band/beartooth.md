@@ -13,6 +13,7 @@ layoutPinned: false
 layoutX: 765
 layoutY: 1688
 starter: false
+curatorTags: [band, alternative, punk]
 ---
 # Beartooth
 

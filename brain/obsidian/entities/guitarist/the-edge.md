@@ -2,17 +2,18 @@
 id: the-edge
 label: The Edge
 type: guitarist
-zone: folk-country-vise
+zone: punk-alt
 roles: [guitarist, artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [country, folk]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1460
 layoutY: 1509
 starter: false
+curatorTags: [guitarist, country, folk]
 ---
 # The Edge
 

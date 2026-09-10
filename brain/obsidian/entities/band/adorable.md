@@ -2,17 +2,18 @@
 id: adorable
 label: Adorable
 type: band
-zone: folk-country-vise
+zone: punk-alt
 roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [country]
 secondaryZones: []
 layoutPinned: false
 layoutX: -590
 layoutY: 1524
 starter: false
+curatorTags: [Shoegaze, band, country]
 ---
 # Adorable
 

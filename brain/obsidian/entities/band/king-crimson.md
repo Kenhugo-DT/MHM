@@ -7,12 +7,13 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [art rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 215
 layoutY: -628
 starter: true
+curatorTags: [Art rock, Progressive rock, art rock]
 ---
 # King Crimson
 

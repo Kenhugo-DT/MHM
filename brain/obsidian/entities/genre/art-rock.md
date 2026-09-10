@@ -7,12 +7,13 @@ roles: [genre]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [Art rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -397
 layoutY: -915
 starter: false
+curatorTags: [art rock, progressive rock, progressive]
 ---
 # Art rock
 

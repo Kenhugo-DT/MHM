@@ -2,17 +2,18 @@
 id: reo-speedwagon
 label: REO Speedwagon
 type: band
-zone: hard-rock-metal
+zone: rock-circuit
 roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [hard rock, rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1472
 layoutY: 513
 starter: false
+curatorTags: [hard rock, rock, band]
 ---
 # REO Speedwagon
 

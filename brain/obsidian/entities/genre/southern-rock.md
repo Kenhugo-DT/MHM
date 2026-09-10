@@ -7,12 +7,13 @@ roles: [genre]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [Southern rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1053
 layoutY: -289
 starter: false
+curatorTags: [blues, blues rock, country rock]
 ---
 # Southern rock
 

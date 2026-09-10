@@ -13,6 +13,7 @@ layoutPinned: false
 layoutX: 255
 layoutY: -803
 starter: false
+curatorTags: [band, progressive, psychedelic]
 ---
 # Disturbed
 

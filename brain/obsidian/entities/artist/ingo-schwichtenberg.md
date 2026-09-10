@@ -7,12 +7,13 @@ roles: [artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [hard rock, power metal]
 secondaryZones: []
 layoutPinned: false
 layoutX: 795
 layoutY: 1
 starter: false
+curatorTags: [hard rock, power metal, artist]
 ---
 # Ingo Schwichtenberg
 

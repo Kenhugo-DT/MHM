@@ -7,12 +7,13 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [blues rock, blues]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1056
 layoutY: -119
 starter: false
+curatorTags: [Rockabilly, blues rock, blues]
 ---
 # Stray Cats
 

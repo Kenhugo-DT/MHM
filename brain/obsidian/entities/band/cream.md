@@ -2,17 +2,18 @@
 id: cream
 label: Cream
 type: band
-zone: hard-rock-metal
+zone: roots-blues
 roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [blues rock, hard rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 592
 layoutY: 438
 starter: false
+curatorTags: [Hard rock, blues rock, hard rock]
 ---
 # Cream
 

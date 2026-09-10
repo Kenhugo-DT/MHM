@@ -7,12 +7,13 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [gothic metal, hard rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1235
 layoutY: 395
 starter: false
+curatorTags: [gothic metal, hard rock, band]
 ---
 # Bauhaus
 

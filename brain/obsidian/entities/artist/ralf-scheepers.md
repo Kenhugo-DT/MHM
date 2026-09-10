@@ -7,12 +7,13 @@ roles: [artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [hard rock, heavy metal]
 secondaryZones: []
 layoutPinned: false
 layoutX: 969
 layoutY: 408
 starter: false
+curatorTags: [hard rock, heavy metal, artist]
 ---
 # Ralf Scheepers
 

@@ -7,12 +7,13 @@ roles: [guitarist, artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [blues rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1447
 layoutY: 292
 starter: false
+curatorTags: [Blues rock, Electric blues, blues rock]
 ---
 # Freddie King
 

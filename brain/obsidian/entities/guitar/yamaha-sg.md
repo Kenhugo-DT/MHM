@@ -13,6 +13,7 @@ layoutPinned: false
 layoutX: 3788
 layoutY: -54
 starter: false
+curatorTags: [electric guitar, Jazz fusion, jazz fusion]
 ---
 # Yamaha SG
 

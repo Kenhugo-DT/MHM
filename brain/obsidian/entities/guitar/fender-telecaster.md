@@ -13,6 +13,7 @@ layoutPinned: false
 layoutX: 3507
 layoutY: -355
 starter: true
+curatorTags: [Country, electric guitar, Funk]
 ---
 # Fender Telecaster
 

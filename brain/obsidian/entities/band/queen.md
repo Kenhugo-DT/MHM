@@ -2,7 +2,7 @@
 id: queen
 label: Queen
 type: band
-zone: psychedelia-prog
+zone: rock-circuit
 roles: [band]
 aliases: []
 eraStart: 
@@ -13,6 +13,7 @@ layoutPinned: false
 layoutX: 13
 layoutY: -953
 starter: true
+curatorTags: [Glam rock, Hard rock, Progressive rock]
 ---
 # Queen
 

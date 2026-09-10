@@ -7,12 +7,13 @@ roles: [artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -628
 layoutY: 2
 starter: false
+curatorTags: [rock, artist, classic rock]
 ---
 # Steve Perry
 

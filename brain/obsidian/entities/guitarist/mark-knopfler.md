@@ -7,12 +7,13 @@ roles: [guitarist, artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -451
 layoutY: -330
 starter: true
+curatorTags: [rock, guitarist, classic rock]
 ---
 # Mark Knopfler
 

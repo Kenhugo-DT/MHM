@@ -2,17 +2,18 @@
 id: joe-satriani
 label: Joe Satriani
 type: guitarist
-zone: hard-rock-metal
+zone: rock-circuit
 roles: [guitarist, artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [hard rock, rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 592
 layoutY: 47
 starter: false
+curatorTags: [Rock, hard rock, rock]
 ---
 # Joe Satriani
 

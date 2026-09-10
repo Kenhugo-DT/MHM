@@ -7,12 +7,13 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [hard rock, death metal, heavy metal]
 secondaryZones: []
 layoutPinned: false
 layoutX: 676
 layoutY: 248
 starter: false
+curatorTags: [hard rock, death metal, heavy metal]
 ---
 # Angel Witch
 

@@ -13,6 +13,7 @@ layoutPinned: false
 layoutX: 2964
 layoutY: -71
 starter: true
+curatorTags: [electric guitar, Hard rock, blues rock]
 ---
 # Gibson Les Paul
 

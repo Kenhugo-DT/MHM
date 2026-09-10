@@ -2,17 +2,18 @@
 id: bleed
 label: Bleed
 type: band
-zone: folk-country-vise
+zone: punk-alt
 roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [country]
 secondaryZones: []
 layoutPinned: false
 layoutX: -619
 layoutY: 1203
 starter: false
+curatorTags: [Shoegaze, band, country]
 ---
 # Bleed
 

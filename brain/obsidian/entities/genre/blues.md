@@ -7,12 +7,13 @@ roles: [genre]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [Blues]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1648
 layoutY: -327
 starter: true
+curatorTags: [blues, blues rock, electric blues]
 ---
 # Blues
 

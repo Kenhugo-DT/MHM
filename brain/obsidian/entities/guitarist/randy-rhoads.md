@@ -7,12 +7,13 @@ roles: [guitarist, artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [hard rock, heavy metal]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1498
 layoutY: 80
 starter: false
+curatorTags: [hard rock, Heavy metal, heavy metal]
 ---
 # Randy Rhoads
 

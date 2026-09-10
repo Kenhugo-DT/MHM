@@ -7,12 +7,13 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [hardcore punk, punk rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 946
 layoutY: 1477
 starter: false
+curatorTags: [hardcore punk, punk rock, california punk]
 ---
 # Black Flag
 

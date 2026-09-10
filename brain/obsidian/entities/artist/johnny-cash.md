@@ -7,12 +7,13 @@ roles: [artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [country, folk]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1178
 layoutY: 1427
 starter: false
+curatorTags: [Country, country, folk]
 ---
 # Johnny Cash
 

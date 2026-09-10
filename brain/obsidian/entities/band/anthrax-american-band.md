@@ -7,12 +7,13 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [hard rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1958
 layoutY: 368
 starter: false
+curatorTags: [hard rock, Hard rock, Progressive metal]
 ---
 # Anthrax (American band)
 

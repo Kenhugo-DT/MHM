@@ -2,17 +2,18 @@
 id: dick-dale
 label: Dick Dale
 type: guitarist
-zone: psychedelia-prog
+zone: rock-circuit
 roles: [guitarist, artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 475
 layoutY: -725
 starter: false
+curatorTags: [Surf rock, rock, guitarist]
 ---
 # Dick Dale
 

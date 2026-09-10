@@ -13,6 +13,7 @@ layoutPinned: false
 layoutX: 2672
 layoutY: 122
 starter: false
+curatorTags: [electric guitar, Hard rock, Progressive rock]
 ---
 # Gibson EDS-1275
 

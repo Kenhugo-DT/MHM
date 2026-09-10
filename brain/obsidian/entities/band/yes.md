@@ -7,12 +7,13 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [progressive rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 127
 layoutY: -735
 starter: true
+curatorTags: [Progressive rock, progressive rock, band]
 ---
 # Yes
 

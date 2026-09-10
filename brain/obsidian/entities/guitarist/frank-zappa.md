@@ -2,17 +2,18 @@
 id: frank-zappa
 label: Frank Zappa
 type: guitarist
-zone: folk-country-vise
+zone: psychedelia-prog
 roles: [guitarist, artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [jazz fusion]
 secondaryZones: []
 layoutPinned: false
 layoutX: -932
 layoutY: 1610
 starter: false
+curatorTags: [Jazz fusion, Rock, jazz fusion]
 ---
 # Frank Zappa
 

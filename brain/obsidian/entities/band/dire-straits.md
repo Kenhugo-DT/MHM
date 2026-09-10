@@ -7,12 +7,13 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -535
 layoutY: -80
 starter: false
+curatorTags: [Rock, rock, band]
 ---
 # Dire Straits
 

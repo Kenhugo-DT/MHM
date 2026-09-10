@@ -7,12 +7,13 @@ roles: [genre]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [Space Rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 393
 layoutY: -1043
 starter: false
+curatorTags: [space rock, progressive, psychedelic]
 ---
 # Space Rock
 

@@ -2,17 +2,18 @@
 id: chuck-berry
 label: Chuck Berry
 type: guitarist
-zone: roots-blues
+zone: rock-circuit
 roles: [guitarist, artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
+primaryGenres: [rock and roll, rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -968
 layoutY: -15
 starter: true
+curatorTags: [Rock and roll, rock and roll, rock]
 ---
 # Chuck Berry
 
