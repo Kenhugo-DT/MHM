@@ -149,5 +149,8 @@ graph is large enough, explore alternate layout modes:
 - Genre view: cluster and route the map by musical style.
 - Timeline view: place older history toward the left and newer history toward
   the right.
+- Focus constellation view: when a user selects or searches for one entity,
+  animate connected nodes into a temporary mind-map around that entity while the
+  rest of the map fades back.
 - Ultimate Chaos view: preserve the dense discovery-board feeling while keeping
   enough local structure that users can still navigate.

@@ -245,13 +245,6 @@ const LANE_ORDER = {
   band: 2,
 };
 
-const LANE_Y = {
-  0: 92,
-  1: 245,
-  2: 430,
-  3: 610,
-};
-
 const ERA_HINTS = [
   [/robert johnson|lead belly|sister rosetta|muddy waters|b\.b\. king|bb king|chuck berry|rockabilly|blues|folk|country/, 1935],
   [/beatles|yardbirds|cream|hendrix|pink floyd|black sabbath|led zeppelin|deep purple|rolling stones|the who|santana|hard rock|heavy metal|prog|psychedelic/, 1968],
@@ -366,25 +359,196 @@ function compareNodes(edgeTextByNode) {
   };
 }
 
-function pointFor(zone, index, node) {
-  const layout = ZONE_LAYOUTS[zone] ?? ZONE_LAYOUTS["rock-circuit"];
-  const columns = Math.max(1, layout.columns);
-  const column = index % columns;
-  const row = Math.floor(index / columns);
-  const lane = LANE_ORDER[node.type] ?? 3;
-  const jitter = hashValue(`${zone}:${node.id}`);
-  const jitterX = ((jitter % 21) - 10) * 1.6;
-  const jitterY = (((jitter >>> 8) % 17) - 8) * 1.3;
-  const leftPadding = 82;
+function clamp(value, min, max) {
+  return Math.max(min, Math.min(max, value));
+}
 
+function innerBounds(zone) {
+  const layout = ZONE_LAYOUTS[zone] ?? ZONE_LAYOUTS["rock-circuit"];
   return {
-    x: Math.round(layout.x + leftPadding + column * layout.colGap + jitterX),
-    y: Math.round(layout.y + (LANE_Y[lane] ?? LANE_Y[3]) + row * layout.rowGap + jitterY),
+    minX: layout.x + 92,
+    maxX: layout.x + layout.width - 92,
+    minY: layout.y + 104,
+    maxY: layout.y + layout.height - 88,
   };
+}
+
+function pointFor(zone, x, y) {
+  const bounds = innerBounds(zone);
+  return {
+    x: Math.round(clamp(x, bounds.minX, bounds.maxX)),
+    y: Math.round(clamp(y, bounds.minY, bounds.maxY)),
+  };
+}
+
+function connectionMaps(nodes, edges) {
+  const byId = new Map(nodes.map((node) => [node.id, node]));
+  const genreLinks = new Map(nodes.map((node) => [node.id, []]));
+
+  for (const edge of edges) {
+    const source = byId.get(edge.source);
+    const target = byId.get(edge.target);
+    if (!source || !target) continue;
+
+    if (source.type === "genre" && target.type !== "genre") {
+      genreLinks.get(target.id)?.push(source.id);
+    } else if (target.type === "genre" && source.type !== "genre") {
+      genreLinks.get(source.id)?.push(target.id);
+    }
+  }
+
+  return { genreLinks };
+}
+
+function makeAnchors(zone, hubs, edgeTextByNode) {
+  const layout = ZONE_LAYOUTS[zone] ?? ZONE_LAYOUTS["rock-circuit"];
+  const bounds = innerBounds(zone);
+  const anchorBounds = {
+    minX: bounds.minX + Math.min(180, layout.width * 0.13),
+    maxX: bounds.maxX - Math.min(180, layout.width * 0.13),
+    minY: bounds.minY + Math.min(130, layout.height * 0.12),
+    maxY: bounds.maxY - Math.min(170, layout.height * 0.15),
+  };
+  const sorted = [...hubs].sort(compareNodes(edgeTextByNode));
+  const anchors = new Map();
+  const spreadY = Math.min(360, layout.height * 0.34);
+  const baseY = bounds.minY + layout.height * 0.28;
+  const phase = (hashValue(zone) % 90) / 90;
+
+  sorted.forEach((hub, index) => {
+    const t = sorted.length === 1 ? 0.5 : (index + 0.62) / (sorted.length + 0.24);
+    const wobble = Math.sin((t + phase) * Math.PI * 2.2) * spreadY * 0.36;
+    const stepDown = (index % 4) * 44;
+    const jitter = hashValue(`${zone}:${hub.id}:anchor`);
+    anchors.set(
+      hub.id,
+      pointFor(
+        zone,
+        anchorBounds.minX + t * (anchorBounds.maxX - anchorBounds.minX) + ((jitter % 71) - 35),
+        clamp(
+          baseY + wobble + stepDown + (((jitter >>> 8) % 39) - 19),
+          anchorBounds.minY,
+          anchorBounds.maxY,
+        ),
+      ),
+    );
+  });
+
+  return anchors;
+}
+
+function fallbackAnchor(zone, index, total) {
+  const bounds = innerBounds(zone);
+  const t = total <= 1 ? 0.5 : index / (total - 1);
+  return pointFor(
+    zone,
+    bounds.minX + t * (bounds.maxX - bounds.minX),
+    bounds.minY + (bounds.maxY - bounds.minY) * (0.42 + (index % 3) * 0.12),
+  );
+}
+
+function chooseHub(node, hubs, genreLinks, edgeTextByNode) {
+  if (!hubs.length) return undefined;
+
+  const hubIds = new Set(hubs.map((hub) => hub.id));
+  const directGenre = (genreLinks.get(node.id) ?? []).find((id) => hubIds.has(id));
+  if (directGenre) return directGenre;
+
+  const text = textForNode(node, edgeTextByNode);
+  let best = hubs[hashValue(node.id) % hubs.length];
+  let bestScore = -1;
+
+  for (const hub of hubs) {
+    const score = scoreZone(`${text} ${normalize(hub.label)}`, node.zone) + (text.includes(normalize(hub.label)) ? 8 : 0);
+    if (score > bestScore) {
+      best = hub;
+      bestScore = score;
+    }
+  }
+
+  return best.id;
+}
+
+function placeAroundAnchor(zone, anchor, node, index, total) {
+  const bounds = innerBounds(zone);
+  const hash = hashValue(`${zone}:${node.id}:organic`);
+  const goldenAngle = 2.399963229728653;
+  const ringSize = zone === "hard-rock-metal" ? 8 : 7;
+  const ring = Math.floor(index / ringSize);
+  const localIndex = index % ringSize;
+  const angle = localIndex * goldenAngle + ring * 0.58 + (hash % 360) * Math.PI / 180;
+  const density = Math.max(0, total - 5);
+  const rawRadius = 95 + ring * 72 + Math.min(82, density * 2.2) + ((hash >>> 7) % 28);
+  const maxRadius = Math.max(
+    92,
+    Math.min(
+      anchor.x - bounds.minX,
+      bounds.maxX - anchor.x,
+      anchor.y - bounds.minY,
+      bounds.maxY - anchor.y,
+    ) * 0.86,
+  );
+  const radius = Math.min(rawRadius, maxRadius);
+  const typeDrift = node.type === "band" ? 34 : node.type === "artist" ? 8 : -10;
+  const xScale = zone === "hard-rock-metal" ? 1.08 : zone === "psychedelia-prog" ? 1.12 : 1;
+  const yScale = zone === "punk-alt" ? 0.88 : 1;
+
+  return pointFor(
+    zone,
+    anchor.x + Math.cos(angle) * radius * xScale,
+    anchor.y + Math.sin(angle) * radius * yScale + typeDrift,
+  );
+}
+
+function collisionRadius(node) {
+  if (node.type === "genre") return 92;
+  if (node.type === "band") return 74;
+  if (node.type === "guitar" || node.type === "guitar_brand") return 76;
+  return 62;
+}
+
+function relaxZone(zone, zoneNodes) {
+  const bounds = innerBounds(zone);
+
+  for (let pass = 0; pass < 42; pass += 1) {
+    for (let a = 0; a < zoneNodes.length; a += 1) {
+      for (let b = a + 1; b < zoneNodes.length; b += 1) {
+        const first = zoneNodes[a];
+        const second = zoneNodes[b];
+        const minDistance = collisionRadius(first) + collisionRadius(second);
+        let dx = second.x - first.x;
+        let dy = second.y - first.y;
+        let distance = Math.hypot(dx, dy);
+
+        if (distance >= minDistance) continue;
+
+        if (distance < 0.001) {
+          const angle = (hashValue(`${first.id}:${second.id}`) % 360) * Math.PI / 180;
+          dx = Math.cos(angle);
+          dy = Math.sin(angle);
+          distance = 1;
+        }
+
+        const push = (minDistance - distance) * 0.23;
+        const nx = dx / distance;
+        const ny = dy / distance;
+        first.x = clamp(first.x - nx * push, bounds.minX, bounds.maxX);
+        first.y = clamp(first.y - ny * push, bounds.minY, bounds.maxY);
+        second.x = clamp(second.x + nx * push, bounds.minX, bounds.maxX);
+        second.y = clamp(second.y + ny * push, bounds.minY, bounds.maxY);
+      }
+    }
+  }
+
+  zoneNodes.forEach((node) => {
+    node.x = Math.round(node.x);
+    node.y = Math.round(node.y);
+  });
 }
 
 export function organizeGraphLayout(nodes, edges) {
   const edgeTextByNode = buildEdgeText(nodes, edges);
+  const { genreLinks } = connectionMaps(nodes, edges);
   const grouped = new Map();
 
   for (const node of nodes) {
@@ -396,21 +560,47 @@ export function organizeGraphLayout(nodes, edges) {
 
   for (const [zone, zoneNodes] of grouped) {
     zoneNodes.sort(compareNodes(edgeTextByNode));
-    const lanes = new Map();
+    const hubType = zone === "guitar-workshop" ? "guitar_brand" : "genre";
+    let hubs = zoneNodes.filter((node) => node.type === hubType);
 
-    for (const node of zoneNodes) {
-      const lane = LANE_ORDER[node.type] ?? 3;
-      if (!lanes.has(lane)) lanes.set(lane, []);
-      lanes.get(lane).push(node);
+    if (!hubs.length && zone !== "guitar-workshop") {
+      hubs = zoneNodes.filter((node) => node.type === "band").slice(0, 4);
     }
 
-    for (const laneNodes of lanes.values()) {
-      laneNodes.forEach((node, index) => {
-        const point = pointFor(zone, index, node);
+    const anchors = makeAnchors(zone, hubs, edgeTextByNode);
+    const buckets = new Map();
+
+    hubs.forEach((hub, index) => {
+      const anchor = anchors.get(hub.id) ?? fallbackAnchor(zone, index, hubs.length);
+      hub.x = anchor.x;
+      hub.y = anchor.y;
+      buckets.set(hub.id, []);
+    });
+
+    const looseNodes = zoneNodes.filter((node) => !anchors.has(node.id));
+    looseNodes.forEach((node, index) => {
+      const hubId = chooseHub(node, hubs, genreLinks, edgeTextByNode);
+      if (!hubId) {
+        const point = fallbackAnchor(zone, index, looseNodes.length);
+        node.x = point.x;
+        node.y = point.y;
+        return;
+      }
+      if (!buckets.has(hubId)) buckets.set(hubId, []);
+      buckets.get(hubId).push(node);
+    });
+
+    for (const [hubId, bucket] of buckets) {
+      const anchor = anchors.get(hubId) ?? fallbackAnchor(zone, 0, 1);
+      bucket.sort(compareNodes(edgeTextByNode));
+      bucket.forEach((node, index) => {
+        const point = placeAroundAnchor(zone, anchor, node, index, bucket.length);
         node.x = point.x;
         node.y = point.y;
       });
     }
+
+    relaxZone(zone, zoneNodes);
   }
 
   return nodes;
