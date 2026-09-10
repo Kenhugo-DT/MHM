@@ -278,13 +278,22 @@ function textForNode(node, edgeTextByNode) {
     node.type,
     node.zone,
     node.summary,
+    node.eraStart,
+    node.eraPeak,
     ...(node.metadata ?? []),
     ...(node.aliases ?? []),
+    ...(node.primaryGenres ?? []),
     ...(edgeTextByNode.get(node.id) ?? []),
   ].join(" "));
 }
 
-function inferEra(text) {
+function inferEra(node, text, learningModel) {
+  const learned = learningModel?.nodes?.[node.id];
+  if (Number.isFinite(node.eraStart)) return node.eraStart;
+  if (Number.isFinite(learned?.eraStart)) return learned.eraStart;
+  if (Number.isFinite(node.eraPeak)) return node.eraPeak;
+  if (Number.isFinite(learned?.eraPeak)) return learned.eraPeak;
+
   const directYears = [...text.matchAll(/\b(19[2-9]\d|20[0-2]\d)\b/g)]
     .map((match) => Number(match[1]))
     .filter((year) => year >= 1920 && year <= 2026);
@@ -298,20 +307,31 @@ function inferEra(text) {
   return 1988;
 }
 
-function scoreZone(text, zone) {
+function scoreZone(text, zone, learningModel) {
   const terms = ZONE_TERMS[zone] ?? [];
-  return terms.reduce((score, term) => {
+  let score = terms.reduce((total, term) => {
     const normalized = normalize(term);
-    if (!normalized) return score;
-    if (text.includes(normalized)) return score + Math.max(2, normalized.split(" ").length + 1);
-    return score;
+    if (!normalized) return total;
+    if (text.includes(normalized)) return total + Math.max(2, normalized.split(" ").length + 1);
+    return total;
   }, 0);
+
+  for (const item of learningModel?.zones?.[zone]?.learnedTerms ?? []) {
+    const normalized = normalize(item.term);
+    if (!normalized || !text.includes(normalized)) continue;
+    score += Math.min(6, Math.max(0.5, Number(item.weight) * 0.35));
+  }
+
+  return score;
 }
 
-function zoneForNode(node, edgeTextByNode) {
+function zoneForNode(node, edgeTextByNode, learningModel) {
   if (node.type === "guitar" || node.type === "guitar_brand") return "guitar-workshop";
   if (node.layoutHints?.preferredZone && ZONE_LAYOUTS[node.layoutHints.preferredZone]) {
     return node.layoutHints.preferredZone;
+  }
+  if (learningModel?.nodes?.[node.id]?.zone && ZONE_LAYOUTS[learningModel.nodes[node.id].zone]) {
+    return learningModel.nodes[node.id].zone;
   }
 
   const text = textForNode(node, edgeTextByNode);
@@ -319,7 +339,7 @@ function zoneForNode(node, edgeTextByNode) {
   let bestScore = -1;
 
   for (const zone of ZONE_PRIORITY.filter((candidate) => candidate !== "guitar-workshop")) {
-    const score = scoreZone(text, zone) + (node.zone === zone ? 1 : 0);
+    const score = scoreZone(text, zone, learningModel) + (node.zone === zone ? 1 : 0);
     if (score > bestScore) {
       bestZone = zone;
       bestScore = score;
@@ -350,12 +370,14 @@ function buildEdgeText(nodes, edges) {
   return edgeTextByNode;
 }
 
-function compareNodes(edgeTextByNode) {
+function compareNodes(edgeTextByNode, learningModel) {
   return (a, b) => {
     const laneDiff = (LANE_ORDER[a.type] ?? 3) - (LANE_ORDER[b.type] ?? 3);
     if (laneDiff !== 0) return laneDiff;
 
-    const eraDiff = inferEra(textForNode(a, edgeTextByNode)) - inferEra(textForNode(b, edgeTextByNode));
+    const eraDiff =
+      inferEra(a, textForNode(a, edgeTextByNode), learningModel) -
+      inferEra(b, textForNode(b, edgeTextByNode), learningModel);
     if (eraDiff !== 0) return eraDiff;
 
     return a.label.localeCompare(b.label, "en", { sensitivity: "base" });
@@ -409,7 +431,7 @@ function connectionMaps(nodes, edges) {
   return { genreLinks };
 }
 
-function makeAnchors(zone, hubs, edgeTextByNode) {
+function makeAnchors(zone, hubs, edgeTextByNode, learningModel) {
   const layout = ZONE_LAYOUTS[zone] ?? ZONE_LAYOUTS["rock-circuit"];
   const bounds = innerBounds(zone);
   const anchorBounds = {
@@ -418,7 +440,7 @@ function makeAnchors(zone, hubs, edgeTextByNode) {
     minY: bounds.minY + Math.min(130, layout.height * 0.12),
     maxY: bounds.maxY - Math.min(170, layout.height * 0.15),
   };
-  const sorted = [...hubs].sort(compareNodes(edgeTextByNode));
+  const sorted = [...hubs].sort(compareNodes(edgeTextByNode, learningModel));
   const anchors = new Map();
   const spreadY = Math.min(360, layout.height * 0.34);
   const baseY = bounds.minY + layout.height * 0.28;
@@ -456,7 +478,7 @@ function fallbackAnchor(zone, index, total) {
   );
 }
 
-function chooseHub(node, hubs, genreLinks, edgeTextByNode) {
+function chooseHub(node, hubs, genreLinks, edgeTextByNode, learningModel) {
   if (!hubs.length) return undefined;
 
   const hubIds = new Set(hubs.map((hub) => hub.id));
@@ -468,7 +490,9 @@ function chooseHub(node, hubs, genreLinks, edgeTextByNode) {
   let bestScore = -1;
 
   for (const hub of hubs) {
-    const score = scoreZone(`${text} ${normalize(hub.label)}`, node.zone) + (text.includes(normalize(hub.label)) ? 8 : 0);
+    const score =
+      scoreZone(`${text} ${normalize(hub.label)}`, node.zone, learningModel) +
+      (text.includes(normalize(hub.label)) ? 8 : 0);
     if (score > bestScore) {
       best = hub;
       bestScore = score;
@@ -566,20 +590,20 @@ function relaxZone(zone, zoneNodes) {
   });
 }
 
-export function organizeGraphLayout(nodes, edges) {
+export function organizeGraphLayout(nodes, edges, learningModel = undefined) {
   const edgeTextByNode = buildEdgeText(nodes, edges);
   const { genreLinks } = connectionMaps(nodes, edges);
   const grouped = new Map();
 
   for (const node of nodes) {
-    const zone = zoneForNode(node, edgeTextByNode);
+    const zone = zoneForNode(node, edgeTextByNode, learningModel);
     node.zone = zone;
     if (!grouped.has(zone)) grouped.set(zone, []);
     grouped.get(zone).push(node);
   }
 
   for (const [zone, zoneNodes] of grouped) {
-    zoneNodes.sort(compareNodes(edgeTextByNode));
+    zoneNodes.sort(compareNodes(edgeTextByNode, learningModel));
     const hubType = zone === "guitar-workshop" ? "guitar_brand" : "genre";
     let hubs = zoneNodes.filter((node) => node.type === hubType);
 
@@ -587,7 +611,7 @@ export function organizeGraphLayout(nodes, edges) {
       hubs = zoneNodes.filter((node) => node.type === "band").slice(0, 4);
     }
 
-    const anchors = makeAnchors(zone, hubs, edgeTextByNode);
+    const anchors = makeAnchors(zone, hubs, edgeTextByNode, learningModel);
     const buckets = new Map();
 
     hubs.forEach((hub, index) => {
@@ -607,7 +631,7 @@ export function organizeGraphLayout(nodes, edges) {
         return;
       }
 
-      const hubId = chooseHub(node, hubs, genreLinks, edgeTextByNode);
+      const hubId = chooseHub(node, hubs, genreLinks, edgeTextByNode, learningModel);
       if (!hubId) {
         const point = fallbackAnchor(zone, index, looseNodes.length);
         node.x = point.x;
@@ -620,7 +644,7 @@ export function organizeGraphLayout(nodes, edges) {
 
     for (const [hubId, bucket] of buckets) {
       const anchor = anchors.get(hubId) ?? fallbackAnchor(zone, 0, 1);
-      bucket.sort(compareNodes(edgeTextByNode));
+      bucket.sort(compareNodes(edgeTextByNode, learningModel));
       bucket.forEach((node, index) => {
         const point = placeAroundAnchor(zone, anchor, node, index, bucket.length);
         node.x = point.x;

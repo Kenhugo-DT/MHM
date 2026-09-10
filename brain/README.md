@@ -43,6 +43,7 @@ npm run brain:promote
 npm run brain:promote:apply
 npm run brain:obsidian:export
 npm run brain:obsidian:import
+npm run brain:learn
 npm run brain:import
 ```
 
@@ -96,6 +97,10 @@ or curate the brain visually. `brain:obsidian:import` reads safe frontmatter
 fields back into `brain/data/approved/obsidian-overrides.json`; `migrate:data`
 then applies those fields before regenerating the public graph JSON.
 
+`brain:learn` reads the approved graph plus Obsidian frontmatter and writes
+`brain/data/approved/learning-model.json`. The layout engine uses that model for
+learned zone terms, era sorting, bridge signals and pinned human curation.
+
 The npm scripts look for `python3`, `python` or `py -3`. You can also set
 `PYTHON` to an exact Python executable path.
 
@@ -129,11 +134,31 @@ Full setup notes live in `brain/supabase/README.md`.
 3. Edit safe frontmatter fields such as `zone`, `eraStart`, `eraPeak`,
    `primaryGenres`, `secondaryZones`, `layoutPinned`, `layoutX` and `layoutY`.
 4. Run `npm run brain:obsidian:import`.
-5. Run `npm run migrate:data`, `npm run brain:audit` and `npm run build`.
+5. Run `npm run brain:learn`.
+6. Run `npm run migrate:data`, `npm run brain:audit` and `npm run build`.
 
 Use Obsidian for organization and curation, not for raw scraping. The research
 agent still proposes facts, Supabase still handles the review queue, and the
 site still reads generated JSON.
+
+## Learning Layer
+
+The current learning layer is deterministic and review-friendly. It learns from
+the approved graph and from human Obsidian edits, then stores the result in a
+small JSON model. It does not invent facts and it does not publish by itself.
+
+The model currently learns:
+
+- stronger terms for each map zone
+- node-level era hints
+- genre links
+- secondary/bridge zones
+- hub and bridge scores
+- pinned layout coordinates
+
+This gives the map memory. If a curator repeatedly moves or classifies entities
+in Obsidian, the generated layout starts treating those choices as project
+knowledge.
 
 ## Scout Agent
 

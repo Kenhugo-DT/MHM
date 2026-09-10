@@ -14,6 +14,7 @@ const browserOutputPath = path.join(repoRoot, "site", "public", "data", "graph.j
 const approvedOutputPath = path.join(brainRoot, "data", "approved", "graph.json");
 const promotionsPath = path.join(brainRoot, "data", "approved", "promotions.json");
 const obsidianOverridesPath = path.join(brainRoot, "data", "approved", "obsidian-overrides.json");
+const learningModelPath = path.join(brainRoot, "data", "approved", "learning-model.json");
 const blockedEntitiesPath = path.join(repoRoot, "shared", "graph-schema", "blocked-entities.json");
 
 const blockedEntities = JSON.parse(fs.readFileSync(blockedEntitiesPath, "utf8"));
@@ -169,6 +170,14 @@ function loadObsidianOverrides() {
   return new Map(overrides.filter((node) => node?.id).map((node) => [node.id, node]));
 }
 
+function loadLearningModel() {
+  if (!fs.existsSync(learningModelPath)) {
+    return undefined;
+  }
+
+  return JSON.parse(fs.readFileSync(learningModelPath, "utf8"));
+}
+
 function mergeUniqueStrings(first = [], second = []) {
   return [...new Set([...first, ...second].map((item) => String(item).trim()).filter(Boolean))];
 }
@@ -305,7 +314,7 @@ for (const release of releaseNodes) {
 }
 
 applyObsidianOverrides(nodes);
-organizeGraphLayout(nodes, edges);
+organizeGraphLayout(nodes, edges, loadLearningModel());
 
 for (const node of nodes) {
   delete node.layoutHints;

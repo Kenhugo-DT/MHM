@@ -73,8 +73,13 @@ graph build:
 
 ```bash
 npm run brain:obsidian:import
+npm run brain:learn
 npm run migrate:data
 ```
+
+`brain:learn` creates `brain/data/approved/learning-model.json` from the graph
+and Obsidian frontmatter. The layout engine reads that model during
+`migrate:data`, so repeated human curation becomes durable map behavior.
 
 `.github/agents/music-history-map-research.agent.md` is the GitHub/Copilot
 agent profile. `brain/AGENT.md` is the full instruction file it reads before

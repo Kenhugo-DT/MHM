@@ -19,6 +19,7 @@ Exports the current approved graph into Obsidian notes.
 
 ```bash
 npm run brain:obsidian:import
+npm run brain:learn
 npm run migrate:data
 npm run brain:audit
 ```
@@ -26,6 +27,10 @@ npm run brain:audit
 Imports editable Obsidian metadata back into
 `brain/data/approved/obsidian-overrides.json`, regenerates the map JSON and
 checks the graph.
+
+`brain:learn` turns the approved graph and Obsidian frontmatter into
+`brain/data/approved/learning-model.json`. This is the first persistent learning
+layer for the map.
 
 ## Editable Fields
 
@@ -42,6 +47,9 @@ These frontmatter fields are safe to edit:
 - `aliases`
 
 Use `layoutPinned: true` only when a node should keep its exact position.
+
+The learning model also reacts to repeated curator choices in `zone`,
+`eraStart`, `eraPeak`, `primaryGenres` and `secondaryZones`.
 
 ## Do Not Edit Blindly
 
