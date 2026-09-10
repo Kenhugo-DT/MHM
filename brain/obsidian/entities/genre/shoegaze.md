@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [Shoegaze]
+curatorTags: [alternative rock, alternative, punk]
 secondaryZones: []
 layoutPinned: false
 layoutX: -737
 layoutY: 1315
 starter: false
-curatorTags: [alternative rock, country, folk]
 ---
 # Shoegaze
 

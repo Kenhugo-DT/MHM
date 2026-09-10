@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [psychedelic rock]
+curatorTags: [Psychedelic rock, Rock, psychedelic rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 347
 layoutY: -688
 starter: true
-curatorTags: [Psychedelic rock, Rock, psychedelic rock]
 ---
 # The Beatles
 

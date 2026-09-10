@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [hard rock, heavy metal]
+curatorTags: [hard rock, heavy metal, guitarist]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1254
 layoutY: 11
 starter: true
-curatorTags: [hard rock, heavy metal, guitarist]
 ---
 # Tony Iommi
 

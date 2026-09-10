@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [Grunge]
+curatorTags: [hard rock, punk rock, alternative]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1493
 layoutY: -117
 starter: true
-curatorTags: [hard rock, punk rock, grunge]
 ---
 # Grunge
 

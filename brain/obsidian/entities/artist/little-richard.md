@@ -7,13 +7,13 @@ roles: [artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: [country, rock]
+primaryGenres: [country rock, country, folk]
+curatorTags: [country rock, country, folk]
 secondaryZones: []
 layoutPinned: false
 layoutX: -316
 layoutY: 632
 starter: false
-curatorTags: [country, artist, rock]
 ---
 # Little Richard
 

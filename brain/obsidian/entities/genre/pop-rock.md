@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [pop rock]
+curatorTags: [rock, rock and roll, classic rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 295
 layoutY: -163
 starter: false
-curatorTags: [rock, rock and roll, classic rock]
 ---
 # pop rock
 

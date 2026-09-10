@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [blues rock, pop rock, blues]
+curatorTags: [blues rock, pop rock, blues]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1526
 layoutY: -66
 starter: true
-curatorTags: [blues rock, pop rock, blues]
 ---
 # Fleetwood Mac
 

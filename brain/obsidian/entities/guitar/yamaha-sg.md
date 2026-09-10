@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: []
+curatorTags: [electric guitar, Jazz fusion, jazz fusion]
 secondaryZones: []
 layoutPinned: false
 layoutX: 3788
 layoutY: -54
 starter: false
-curatorTags: [electric guitar, Jazz fusion, jazz fusion]
 ---
 # Yamaha SG
 

@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: []
+curatorTags: [electric guitar, signature guitar, guitar]
 secondaryZones: []
 layoutPinned: false
 layoutX: 3408
 layoutY: 338
 starter: false
-curatorTags: [electric guitar, signature guitar, guitar]
 ---
 # Ibanez JEM
 

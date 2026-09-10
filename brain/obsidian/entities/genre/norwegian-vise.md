@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [Norwegian vise]
+curatorTags: [country, folk]
 secondaryZones: []
 layoutPinned: false
 layoutX: -742
 layoutY: 1482
 starter: false
-curatorTags: [country, folk]
 ---
 # Norwegian vise
 

@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [hard rock, rock]
+curatorTags: [hard rock, band, rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 969
 layoutY: 117
 starter: false
-curatorTags: [hard rock, band, rock]
 ---
 # ASAP (band)
 

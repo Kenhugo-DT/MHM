@@ -7,13 +7,13 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: [power metal, hard rock]
+primaryGenres: [glam metal, power metal, hard rock]
+curatorTags: [glam metal, power metal, hard rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1672
 layoutY: 463
 starter: false
-curatorTags: [power metal, hard rock, Thrash metal]
 ---
 # Accept
 
@@ -25,9 +25,12 @@ A band surfaced by the MHM research brain from Wikipedia signals around Andy Sne
 
 - [[andy-sneap|Andy Sneap]] - Wikipedia link signal (Wikipedia link: Accept (band))
 - [[dave-mustaine|Dave Mustaine]] - Wikipedia link signal (Wikipedia link: Accept (band))
+- [[glam-metal|glam metal]] - Wikipedia link signal (Wikipedia link: Accept (band))
+- [[guns-n-roses|Guns N' Roses]] - Wikipedia link signal (Wikipedia link: Accept (band))
 - [[judas-priest|Judas Priest]] - Wikipedia link signal (Wikipedia link: Accept (band))
 - [[megadeth|Megadeth]] - Wikipedia link signal (Wikipedia link: Accept (band))
 - [[metallica|Metallica]] - Wikipedia link signal (Wikipedia link: Accept (band))
+- [[michael-kiske|Michael Kiske]] - Wikipedia link signal (Wikipedia link: Accept (band))
 - [[power-metal|power metal]] - Wikipedia link signal (Wikipedia link: Accept (band))
 - [[savatage|Savatage]] - Wikipedia link signal (Wikipedia link: Accept (band))
 - [[thrash-metal|Thrash metal]] - Wikipedia link signal (Wikipedia link: Accept (band))

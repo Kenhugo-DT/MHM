@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [blues rock, hard rock]
+curatorTags: [Hard rock, blues rock, hard rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 592
 layoutY: 438
 starter: false
-curatorTags: [Hard rock, blues rock, hard rock]
 ---
 # Cream
 
@@ -26,6 +26,7 @@ A blues-rock trio that helped push louder improvisational rock guitar into the l
 - [[eddie-van-halen|Eddie Van Halen]] - Wikipedia link signal (Wikipedia link: Cream (band))
 - [[eric-clapton|Eric Clapton]] - member
 - [[hard-rock|Hard rock]] - loud trio bridge
+- [[n-w-a|N.W.A]] - Wikipedia link signal (Wikipedia link: Cream (band))
 - [[rob-halford|Rob Halford]] - Wikipedia link signal (Wikipedia link: Cream (band))
 
 ## Sources

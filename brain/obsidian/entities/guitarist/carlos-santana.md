@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [blues rock, jazz fusion, blues]
+curatorTags: [blues rock, jazz fusion, blues]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1355
 layoutY: -344
 starter: true
-curatorTags: [blues rock, jazz fusion, blues]
 ---
 # Carlos Santana
 

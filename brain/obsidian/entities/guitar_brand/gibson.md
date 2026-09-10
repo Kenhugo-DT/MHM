@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: []
+curatorTags: [guitar brand, blues rock, manufacturer]
 secondaryZones: []
 layoutPinned: false
 layoutX: 2990
 layoutY: 60
 starter: true
-curatorTags: [guitar brand, blues rock, manufacturer]
 ---
 # Gibson
 

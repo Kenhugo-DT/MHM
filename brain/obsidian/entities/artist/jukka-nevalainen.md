@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [hard rock, rock]
+curatorTags: [hard rock, artist, rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -346
 layoutY: 144
 starter: false
-curatorTags: [hard rock, artist, rock]
 ---
 # Jukka Nevalainen
 

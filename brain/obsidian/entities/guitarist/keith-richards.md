@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [blues rock, rock]
+curatorTags: [Blues rock, blues rock, rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -230
 layoutY: 23
 starter: true
-curatorTags: [Blues rock, blues rock, rock]
 ---
 # Keith Richards
 

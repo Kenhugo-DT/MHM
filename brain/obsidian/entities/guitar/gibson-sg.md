@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: []
+curatorTags: [electric guitar, Heavy metal, hard rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 3151
 layoutY: 410
 starter: true
-curatorTags: [electric guitar, Heavy metal, hard rock]
 ---
 # Gibson SG
 

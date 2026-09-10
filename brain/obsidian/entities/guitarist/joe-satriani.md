@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [hard rock, rock]
+curatorTags: [Rock, hard rock, rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 592
 layoutY: 47
 starter: false
-curatorTags: [Rock, hard rock, rock]
 ---
 # Joe Satriani
 

@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [blues rock]
+curatorTags: [Blues, Electric blues, blues rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1268
 layoutY: 267
 starter: true
-curatorTags: [Blues, Electric blues, blues rock]
 ---
 # Muddy Waters
 

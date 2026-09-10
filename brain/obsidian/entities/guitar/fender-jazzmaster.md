@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: []
+curatorTags: [electric guitar, country, jazz]
 secondaryZones: []
 layoutPinned: false
 layoutX: 3700
 layoutY: -323
 starter: false
-curatorTags: [electric guitar, country, jazz]
 ---
 # Fender Jazzmaster
 

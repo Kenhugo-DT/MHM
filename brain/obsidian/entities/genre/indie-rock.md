@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [Indie rock]
+curatorTags: [alternative rock, indie rock, alternative]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1072
 layoutY: 1537
 starter: false
-curatorTags: [alternative rock, country, folk]
 ---
 # Indie rock
 

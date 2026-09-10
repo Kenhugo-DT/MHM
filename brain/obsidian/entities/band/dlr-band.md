@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [hard rock, rock]
+curatorTags: [hard rock, band, rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 2025
 layoutY: 624
 starter: false
-curatorTags: [hard rock, band, rock]
 ---
 # DLR Band
 

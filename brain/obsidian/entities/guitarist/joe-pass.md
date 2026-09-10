@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [country, folk]
+curatorTags: [Jazz, country, folk]
 secondaryZones: []
 layoutPinned: false
 layoutX: -915
 layoutY: 1733
 starter: false
-curatorTags: [Jazz, country, folk]
 ---
 # Joe Pass
 

@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [hard rock]
+curatorTags: [hard rock, Hard rock, band]
 secondaryZones: []
 layoutPinned: false
 layoutX: 701
 layoutY: -222
 starter: false
-curatorTags: [hard rock, Hard rock, band]
 ---
 # Van Halen
 

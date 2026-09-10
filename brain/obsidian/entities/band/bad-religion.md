@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [punk rock, hardcore punk]
+curatorTags: [punk rock, hardcore punk, melodic punk]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1674
 layoutY: 1714
 starter: false
-curatorTags: [punk rock, hardcore punk, melodic punk]
 ---
 # Bad Religion
 

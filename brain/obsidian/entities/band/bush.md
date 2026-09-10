@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [post-grunge, grunge]
+curatorTags: [post-grunge, band, grunge]
 secondaryZones: []
 layoutPinned: false
 layoutX: 51
 layoutY: 434
 starter: false
-curatorTags: [post-grunge, band, grunge]
 ---
 # Bush
 

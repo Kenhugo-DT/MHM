@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [hardcore punk, thrash metal]
+curatorTags: [crossover thrash, hardcore punk, venice scene]
 secondaryZones: []
 layoutPinned: false
 layoutX: 607
 layoutY: 1608
 starter: false
-curatorTags: [crossover thrash, hardcore punk, venice scene]
 ---
 # Suicidal Tendencies
 

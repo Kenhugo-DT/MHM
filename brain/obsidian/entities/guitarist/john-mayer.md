@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [electric blues, blues]
+curatorTags: [Electric blues, electric blues, blues]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1513
 layoutY: 178
 starter: false
-curatorTags: [Electric blues, electric blues, blues]
 ---
 # John Mayer
 

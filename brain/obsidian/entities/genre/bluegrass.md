@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [Bluegrass]
+curatorTags: [country, folk]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1513
 layoutY: 1251
 starter: false
-curatorTags: [country, folk]
 ---
 # Bluegrass
 

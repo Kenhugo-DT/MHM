@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [hard rock, rock]
+curatorTags: [hard rock, band, rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 802
 layoutY: 219
 starter: false
-curatorTags: [hard rock, band, rock]
 ---
 # Kiss
 
@@ -23,6 +23,7 @@ A band surfaced by the MHM research brain from Wikipedia signals around Skid Row
 
 ## Connections
 
+- [[iced-earth|Iced Earth]] - Wikipedia link signal (Wikipedia link: Kiss (band))
 - [[jon-oliva|Jon Oliva]] - Wikipedia link signal (Wikipedia link: Kiss (band))
 - [[skid-row|Skid Row]] - Wikipedia link signal (Wikipedia link: Kiss (band))
 

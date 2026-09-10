@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [blues rock]
+curatorTags: [Blues rock, Rock, blues rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1374
 layoutY: 182
 starter: true
-curatorTags: [Blues rock, Rock, blues rock]
 ---
 # The Rolling Stones
 

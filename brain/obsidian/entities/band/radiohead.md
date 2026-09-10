@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [alternative rock]
+curatorTags: [Alternative rock, Art rock, alternative rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1569
 layoutY: 1428
 starter: true
-curatorTags: [Alternative rock, Art rock, alternative rock]
 ---
 # Radiohead
 

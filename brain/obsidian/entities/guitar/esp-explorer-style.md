@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: []
+curatorTags: [electric guitar, hard rock, heavy metal]
 secondaryZones: []
 layoutPinned: false
 layoutX: 3221
 layoutY: 169
 starter: false
-curatorTags: [electric guitar, hard rock, heavy metal]
 ---
 # ESP Explorer style
 

@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [country, folk]
+curatorTags: [Flamenco, country, folk]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1301
 layoutY: 1434
 starter: false
-curatorTags: [Flamenco, country, folk]
 ---
 # Paco de Lucía
 

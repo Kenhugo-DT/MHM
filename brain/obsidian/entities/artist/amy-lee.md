@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [hard rock, rock]
+curatorTags: [hard rock, rock, artist]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1567
 layoutY: -314
 starter: false
-curatorTags: [hard rock, rock, artist]
 ---
 # Amy Lee
 

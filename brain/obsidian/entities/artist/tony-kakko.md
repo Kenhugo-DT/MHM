@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [rock]
+curatorTags: [rock, artist, classic rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -33
 layoutY: 175
 starter: false
-curatorTags: [rock, artist, classic rock]
 ---
 # Tony Kakko
 

@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: []
+curatorTags: [electric guitar, guitar, instrument]
 secondaryZones: []
 layoutPinned: false
 layoutX: 3314
 layoutY: 66
 starter: false
-curatorTags: [electric guitar, guitar, instrument]
 ---
 # Charvel Guitars
 

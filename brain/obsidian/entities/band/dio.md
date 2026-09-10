@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [hard rock, rock]
+curatorTags: [hard rock, band, rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 592
 layoutY: -441
 starter: false
-curatorTags: [hard rock, band, rock]
 ---
 # Dio
 
@@ -26,6 +26,8 @@ A band surfaced by the MHM research brain from Wikipedia signals around Sebastia
 - [[jon-oliva|Jon Oliva]] - Wikipedia link signal (Wikipedia link: Dio (band))
 - [[marko-hietala|Marko Hietala]] - Wikipedia link signal (Wikipedia link: Dio (band))
 - [[sebastian-bach|Sebastian Bach]] - Wikipedia link signal (Wikipedia link: Dio (band))
+- [[tenacious-d|Tenacious D]] - Wikipedia link signal (Wikipedia link: Dio (band))
+- [[tim-ripper-owens|Tim Ripper Owens]] - Wikipedia link signal (Wikipedia link: Dio (band))
 
 ## Sources
 

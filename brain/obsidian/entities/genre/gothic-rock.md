@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [gothic rock]
+curatorTags: [alternative, punk, post-punk]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1338
 layoutY: 1609
 starter: false
-curatorTags: [alternative, punk, post-punk]
 ---
 # gothic rock
 

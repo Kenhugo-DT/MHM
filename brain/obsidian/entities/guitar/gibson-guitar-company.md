@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: []
+curatorTags: [electric guitar, guitar, instrument]
 secondaryZones: []
 layoutPinned: false
 layoutX: 2775
 layoutY: -524
 starter: false
-curatorTags: [electric guitar, guitar, instrument]
 ---
 # Gibson (guitar company)
 

@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [rock]
+curatorTags: [rock, band, classic rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -134
 layoutY: -55
 starter: false
-curatorTags: [rock, band, classic rock]
 ---
 # Phenomena
 

@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [hard rock, heavy metal]
+curatorTags: [hard rock, heavy metal, band]
 secondaryZones: []
 layoutPinned: false
 layoutX: 985
 layoutY: 284
 starter: false
-curatorTags: [hard rock, heavy metal, band]
 ---
 # Skid Row
 

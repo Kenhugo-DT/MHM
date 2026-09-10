@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [Psychedelic rock]
+curatorTags: [psychedelic rock, progressive, psychedelic]
 secondaryZones: []
 layoutPinned: false
 layoutX: 402
 layoutY: -861
 starter: false
-curatorTags: [psychedelic rock, progressive, psychedelic]
 ---
 # Psychedelic rock
 

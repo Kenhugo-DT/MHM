@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [hard rock, doom metal]
+curatorTags: [hard rock, Doom metal, doom metal]
 secondaryZones: []
 layoutPinned: false
 layoutX: 926
 layoutY: -3
 starter: false
-curatorTags: [hard rock, Doom metal, doom metal]
 ---
 # Autopsy (band)
 

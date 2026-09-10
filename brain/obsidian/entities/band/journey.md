@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [rock]
+curatorTags: [rock, band, classic rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -543
 layoutY: 826
 starter: false
-curatorTags: [rock, band, classic rock]
 ---
 # Journey
 

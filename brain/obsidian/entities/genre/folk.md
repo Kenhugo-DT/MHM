@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [Folk]
+curatorTags: [country, folk]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1092
 layoutY: 1822
 starter: true
-curatorTags: [country, folk]
 ---
 # Folk
 

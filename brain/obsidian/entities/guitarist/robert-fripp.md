@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [art rock, progressive rock]
+curatorTags: [art rock, progressive rock, guitarist]
 secondaryZones: []
 layoutPinned: false
 layoutX: -528
 layoutY: -835
 starter: true
-curatorTags: [art rock, progressive rock, guitarist]
 ---
 # Robert Fripp
 

@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [rock]
+curatorTags: [rock, artist, classic rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -292
 layoutY: 381
 starter: false
-curatorTags: [rock, artist, classic rock]
 ---
 # Mark Cross
 

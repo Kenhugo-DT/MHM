@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [country]
+curatorTags: [Norwegian vise, Singer-songwriter, country]
 secondaryZones: []
 layoutPinned: false
 layoutX: -372
 layoutY: 1195
 starter: false
-curatorTags: [Norwegian vise, Singer-songwriter, country]
 ---
 # Jan Eggum
 

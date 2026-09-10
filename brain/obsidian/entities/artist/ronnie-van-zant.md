@@ -7,13 +7,13 @@ roles: [artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: [southern rock, rock]
+primaryGenres: [southern rock, blues]
+curatorTags: [southern rock, blues, artist]
 secondaryZones: []
 layoutPinned: false
 layoutX: -171
 layoutY: 55
 starter: false
-curatorTags: [southern rock, artist, rock]
 ---
 # Ronnie Van Zant
 

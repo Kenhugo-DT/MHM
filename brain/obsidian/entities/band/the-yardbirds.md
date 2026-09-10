@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [blues rock, blues]
+curatorTags: [Rock, blues rock, blues]
 secondaryZones: []
 layoutPinned: false
 layoutX: -628
 layoutY: 798
 starter: false
-curatorTags: [Rock, blues rock, blues]
 ---
 # The Yardbirds
 

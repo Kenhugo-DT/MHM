@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: []
+curatorTags: [electric guitar, rock, guitar]
 secondaryZones: []
 layoutPinned: false
 layoutX: 3591
 layoutY: 284
 starter: true
-curatorTags: [electric guitar, rock, guitar]
 ---
 # Rickenbacker 360/12
 

@@ -240,6 +240,16 @@ def title_keys(value: str) -> set[str]:
     }
 
 
+def loose_title_key(value: str) -> str:
+    return re.sub(r"^(the|a|an)\s+", "", normalize_text(canonical_title(value)))
+
+
+def same_loose_title(first: str, second: str) -> bool:
+    first_key = loose_title_key(first)
+    second_key = loose_title_key(second)
+    return bool(first_key and second_key and first_key == second_key)
+
+
 def add_node_to_indexes(
     node: dict[str, Any],
     node_by_id: dict[str, dict[str, Any]],
@@ -709,6 +719,8 @@ def build_patch(
             if per_seed_count >= max_per_seed:
                 break
             if not candidate_is_publishable(candidate, blocked_terms):
+                continue
+            if same_loose_title(seed_label, str(candidate.get("title", ""))):
                 continue
 
             target_id = node_id_for_title(str(candidate["title"]), node_by_id, label_index)

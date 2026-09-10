@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [hard rock, heavy metal]
+curatorTags: [hard rock, heavy metal, artist]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1052
 layoutY: -231
 starter: false
-curatorTags: [hard rock, heavy metal, artist]
 ---
 # Rob Halford
 

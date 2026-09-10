@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: []
+curatorTags: [acoustic guitar, Country, Folk]
 secondaryZones: []
 layoutPinned: false
 layoutX: 2709
 layoutY: 287
 starter: true
-curatorTags: [acoustic guitar, Country, Folk]
 ---
 # Martin D-28
 

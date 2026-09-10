@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [Electric blues]
+curatorTags: [blues, blues rock, electric blues]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1252
 layoutY: 77
 starter: true
-curatorTags: [blues, blues rock, electric blues]
 ---
 # Electric blues
 

@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: []
+curatorTags: [acoustic guitar, guitar, instrument]
 secondaryZones: []
 layoutPinned: false
 layoutX: 2860
 layoutY: 294
 starter: false
-curatorTags: [acoustic guitar, guitar, instrument]
 ---
 # Electric-acoustic guitar
 

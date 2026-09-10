@@ -7,13 +7,13 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: [folk, rock]
+primaryGenres: [hard rock, folk]
+curatorTags: [hard rock, band, folk]
 secondaryZones: []
 layoutPinned: false
 layoutX: 247
 layoutY: 484
 starter: false
-curatorTags: [band, folk, rock]
 ---
 # Finntroll
 

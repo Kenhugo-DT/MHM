@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [pop rock]
+curatorTags: [Rock, Singer-songwriter, pop rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -332
 layoutY: 1439
 starter: false
-curatorTags: [Rock, Singer-songwriter, pop rock]
 ---
 # Lindsey Buckingham
 

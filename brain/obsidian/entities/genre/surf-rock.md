@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [Surf rock]
+curatorTags: [rock, progressive rock, rock and roll]
 secondaryZones: []
 layoutPinned: false
 layoutX: 576
 layoutY: -907
 starter: false
-curatorTags: [progressive rock, rock and roll, rock]
 ---
 # Surf rock
 

@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [punk rock]
+curatorTags: [punk rock, punk roots, new york punk]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1555
 layoutY: 1405
 starter: false
-curatorTags: [punk rock, punk roots, new york punk]
 ---
 # Ramones
 

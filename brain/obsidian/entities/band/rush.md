@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [hard rock]
+curatorTags: [Hard rock, Progressive rock, hard rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -147
 layoutY: -1049
 starter: true
-curatorTags: [Hard rock, Progressive rock, hard rock]
 ---
 # Rush
 

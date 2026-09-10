@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [post-grunge, grunge]
+curatorTags: [post-grunge, band, grunge]
 secondaryZones: []
 layoutPinned: false
 layoutX: 308
 layoutY: 299
 starter: false
-curatorTags: [post-grunge, band, grunge]
 ---
 # Cold
 

@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [rock]
+curatorTags: [rock, guitarist, classic rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -15
 layoutY: -1076
 starter: false
-curatorTags: [rock, guitarist, classic rock]
 ---
 # George Harrison
 

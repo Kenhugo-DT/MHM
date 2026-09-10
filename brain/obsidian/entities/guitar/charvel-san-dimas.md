@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: []
+curatorTags: [electric guitar, Hard rock, hard rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 3245
 layoutY: -519
 starter: false
-curatorTags: [electric guitar, Hard rock, hard rock]
 ---
 # Charvel San Dimas
 

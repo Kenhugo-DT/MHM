@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [punk rock, hardcore punk]
+curatorTags: [punk rock, hardcore punk, la punk]
 secondaryZones: []
 layoutPinned: false
 layoutX: 850
 layoutY: 1831
 starter: false
-curatorTags: [punk rock, hardcore punk, la punk]
 ---
 # Germs
 

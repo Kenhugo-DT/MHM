@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: []
+curatorTags: [electric guitar, Heavy metal, blues rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 2802
 layoutY: 163
 starter: false
-curatorTags: [electric guitar, Heavy metal, blues rock]
 ---
 # Gibson Flying V
 

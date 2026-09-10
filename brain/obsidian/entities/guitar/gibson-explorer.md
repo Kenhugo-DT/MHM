@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: []
+curatorTags: [electric guitar, Heavy metal, hard rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 2777
 layoutY: 15
 starter: false
-curatorTags: [electric guitar, Heavy metal, hard rock]
 ---
 # Gibson Explorer
 

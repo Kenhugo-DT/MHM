@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [Heavy metal]
+curatorTags: [hard rock, doom metal, heavy metal]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1616
 layoutY: 158
 starter: true
-curatorTags: [hard rock, doom metal, heavy metal]
 ---
 # Heavy metal
 

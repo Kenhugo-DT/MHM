@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [country, folk]
+curatorTags: [guitarist, country, folk]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1460
 layoutY: 1509
 starter: false
-curatorTags: [guitarist, country, folk]
 ---
 # The Edge
 

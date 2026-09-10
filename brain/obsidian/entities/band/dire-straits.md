@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [rock]
+curatorTags: [Rock, rock, band]
 secondaryZones: []
 layoutPinned: false
 layoutX: -535
 layoutY: -80
 starter: false
-curatorTags: [Rock, rock, band]
 ---
 # Dire Straits
 

@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [hard rock, rock]
+curatorTags: [hard rock, band, rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 806
 layoutY: -288
 starter: false
-curatorTags: [hard rock, band, rock]
 ---
 # Ghost
 
@@ -23,6 +23,7 @@ A band surfaced by the MHM research brain from Wikipedia signals around Kvelerta
 
 ## Connections
 
+- [[bandwagon-effect|Bandwagon effect]] - Wikipedia link signal (Wikipedia link: Bandwagon effect)
 - [[kvelertak|Kvelertak]] - Wikipedia link signal (Wikipedia link: Ghost (Swedish band))
 
 ## Sources

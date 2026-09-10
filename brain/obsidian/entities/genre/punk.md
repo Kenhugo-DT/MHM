@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [Punk rock]
+curatorTags: [punk rock, alternative, punk]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1656
 layoutY: 1549
 starter: false
-curatorTags: [punk rock, alternative, punk]
 ---
 # Punk rock
 
@@ -23,6 +23,8 @@ Direct, sharp and often minimal guitar music that reacted against excess and pus
 
 ## Connections
 
+- [[2-tone-music-genre|2 Tone (music genre)]] - Wikipedia link signal (Wikipedia link: 2 Tone (music genre))
+- [[7-seconds|7 Seconds]] - Wikipedia link signal (Wikipedia link: 7 Seconds (band))
 - [[grunge|Grunge]] - roughens into
 - [[post-punk|Post-punk]] - after punk
 - [[rock|Rock]] - reacts into

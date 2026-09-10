@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [hard rock, heavy metal]
+curatorTags: [hard rock, Heavy metal, heavy metal]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1686
 layoutY: -53
 starter: true
-curatorTags: [hard rock, Heavy metal, heavy metal]
 ---
 # Iron Maiden
 

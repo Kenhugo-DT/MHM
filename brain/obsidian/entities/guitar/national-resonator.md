@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: []
+curatorTags: [acoustic guitar, blues, guitar]
 secondaryZones: []
 layoutPinned: false
 layoutX: 3179
 layoutY: -133
 starter: false
-curatorTags: [acoustic guitar, blues, guitar]
 ---
 # National resonator
 

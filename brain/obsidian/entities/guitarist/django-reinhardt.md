@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [country, folk]
+curatorTags: [Jazz, country, folk]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1028
 layoutY: 1684
 starter: false
-curatorTags: [Jazz, country, folk]
 ---
 # Django Reinhardt
 

@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [hard rock, rock]
+curatorTags: [hard rock, band, rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1079
 layoutY: 381
 starter: false
-curatorTags: [hard rock, band, rock]
 ---
 # Creed
 
@@ -23,6 +23,7 @@ A band surfaced by the MHM research brain from Wikipedia signals around Van Hale
 
 ## Connections
 
+- [[scott-weiland|Scott Weiland]] - Wikipedia link signal (Wikipedia link: Creed (band))
 - [[van-halen|Van Halen]] - Wikipedia link signal (Wikipedia link: Creed (band))
 
 ## Sources

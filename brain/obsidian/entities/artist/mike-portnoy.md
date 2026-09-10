@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [progressive metal]
+curatorTags: [progressive metal, artist, progressive]
 secondaryZones: []
 layoutPinned: false
 layoutX: -353
 layoutY: -766
 starter: false
-curatorTags: [progressive metal, artist, progressive]
 ---
 # Mike Portnoy
 

@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [horror punk, punk rock]
+curatorTags: [horror punk, punk rock, punk roots]
 secondaryZones: []
 layoutPinned: false
 layoutX: -154
 layoutY: 844
 starter: false
-curatorTags: [horror punk, punk rock, punk roots]
 ---
 # Misfits
 

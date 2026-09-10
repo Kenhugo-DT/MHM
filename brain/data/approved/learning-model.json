@@ -1,33 +1,33 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-10T12:00:41.340Z",
+  "generatedAt": "2026-09-10T13:08:18.572Z",
   "source": "graph + Obsidian frontmatter",
   "samples": {
-    "graphNodes": 394,
-    "graphEdges": 557,
-    "obsidianNotes": 394,
+    "graphNodes": 572,
+    "graphEdges": 764,
+    "obsidianNotes": 572,
     "pinnedNotes": 0,
     "notesWithEra": 0,
-    "notesWithPrimaryGenres": 325,
-    "notesWithCuratorTags": 394
+    "notesWithPrimaryGenres": 480,
+    "notesWithCuratorTags": 572
   },
   "zones": {
     "roots-blues": {
-      "nodeCount": 37,
+      "nodeCount": 39,
       "pinnedCount": 0,
       "centroid": {
-        "x": -1201,
-        "y": -56
+        "x": -1259,
+        "y": -43
       },
       "eraMedian": 1948,
       "learnedTerms": [
         {
           "term": "blues",
-          "weight": 84
+          "weight": 76
         },
         {
           "term": "blues rock",
-          "weight": 74
+          "weight": 60
         },
         {
           "term": "electric",
@@ -38,35 +38,39 @@
           "weight": 22
         },
         {
-          "term": "hard",
-          "weight": 16
-        },
-        {
-          "term": "hard rock",
-          "weight": 16
-        },
-        {
           "term": "southern",
-          "weight": 14
+          "weight": 16
         },
         {
           "term": "southern rock",
-          "weight": 14
+          "weight": 16
         },
         {
-          "term": "ac dc",
+          "term": "brain",
+          "weight": 10
+        },
+        {
+          "term": "country",
+          "weight": 10
+        },
+        {
+          "term": "research",
+          "weight": 10
+        },
+        {
+          "term": "research brain",
+          "weight": 10
+        },
+        {
+          "term": "roots",
+          "weight": 10
+        },
+        {
+          "term": "hard",
           "weight": 8
         },
         {
-          "term": "fusion",
-          "weight": 8
-        },
-        {
-          "term": "jazz",
-          "weight": 8
-        },
-        {
-          "term": "jazz fusion",
+          "term": "hard rock",
           "weight": 8
         },
         {
@@ -78,19 +82,19 @@
           "weight": 8
         },
         {
-          "term": "yardbirds",
-          "weight": 8
-        },
-        {
-          "term": "british",
+          "term": "country rock",
           "weight": 6
         },
         {
-          "term": "british blues",
+          "term": "fusion",
           "weight": 6
         },
         {
-          "term": "folk",
+          "term": "jazz",
+          "weight": 6
+        },
+        {
+          "term": "jazz fusion",
           "weight": 6
         },
         {
@@ -102,7 +106,7 @@
           "weight": 6
         },
         {
-          "term": "roots",
+          "term": "roots rock",
           "weight": 6
         },
         {
@@ -110,7 +114,11 @@
           "weight": 4
         },
         {
-          "term": "acdc",
+          "term": "38 special",
+          "weight": 4
+        },
+        {
+          "term": "ac dc",
           "weight": 4
         },
         {
@@ -118,27 +126,11 @@
           "weight": 4
         },
         {
-          "term": "angus",
+          "term": "british",
           "weight": 4
         },
         {
-          "term": "angus young",
-          "weight": 4
-        },
-        {
-          "term": "beck",
-          "weight": 4
-        },
-        {
-          "term": "bob",
-          "weight": 4
-        },
-        {
-          "term": "bob dylan",
-          "weight": 4
-        },
-        {
-          "term": "brain",
+          "term": "british blues",
           "weight": 4
         },
         {
@@ -150,22 +142,6 @@
           "weight": 4
         },
         {
-          "term": "country",
-          "weight": 4
-        },
-        {
-          "term": "country rock",
-          "weight": 4
-        },
-        {
-          "term": "cream",
-          "weight": 4
-        },
-        {
-          "term": "dylan",
-          "weight": 4
-        },
-        {
           "term": "fleetwood",
           "weight": 4
         },
@@ -174,19 +150,11 @@
           "weight": 4
         },
         {
-          "term": "gibson",
+          "term": "folk",
           "weight": 4
         },
         {
-          "term": "gibson sg",
-          "weight": 4
-        },
-        {
-          "term": "guns",
-          "weight": 4
-        },
-        {
-          "term": "guns n roses",
+          "term": "funk",
           "weight": 4
         },
         {
@@ -194,51 +162,7 @@
           "weight": 4
         },
         {
-          "term": "jeff",
-          "weight": 4
-        },
-        {
-          "term": "jeff beck",
-          "weight": 4
-        },
-        {
-          "term": "les",
-          "weight": 4
-        },
-        {
-          "term": "les paul",
-          "weight": 4
-        },
-        {
           "term": "mac",
-          "weight": 4
-        },
-        {
-          "term": "paul",
-          "weight": 4
-        },
-        {
-          "term": "research",
-          "weight": 4
-        },
-        {
-          "term": "research brain",
-          "weight": 4
-        },
-        {
-          "term": "riffs",
-          "weight": 4
-        },
-        {
-          "term": "ronnie",
-          "weight": 4
-        },
-        {
-          "term": "ronnie van zant",
-          "weight": 4
-        },
-        {
-          "term": "roses",
           "weight": 4
         },
         {
@@ -246,28 +170,28 @@
           "weight": 4
         },
         {
-          "term": "slash",
-          "weight": 4
-        },
-        {
           "term": "slide",
           "weight": 4
         },
         {
-          "term": "the yardbirds",
+          "term": "special",
           "weight": 4
         },
         {
-          "term": "van",
+          "term": "swamp",
           "weight": 4
         },
         {
-          "term": "young",
+          "term": "swamp rock",
           "weight": 4
         },
         {
-          "term": "zant",
+          "term": "yardbirds",
           "weight": 4
+        },
+        {
+          "term": "acdc",
+          "weight": 2
         },
         {
           "term": "albert",
@@ -290,11 +214,23 @@
           "weight": 2
         },
         {
+          "term": "angus",
+          "weight": 2
+        },
+        {
+          "term": "angus young",
+          "weight": 2
+        },
+        {
           "term": "b b king",
           "weight": 2
         },
         {
           "term": "bb king",
+          "weight": 2
+        },
+        {
+          "term": "beck",
           "weight": 2
         },
         {
@@ -307,6 +243,14 @@
         },
         {
           "term": "blues influence",
+          "weight": 2
+        },
+        {
+          "term": "bob",
+          "weight": 2
+        },
+        {
+          "term": "bob dylan",
           "weight": 2
         },
         {
@@ -340,37 +284,93 @@
         {
           "term": "cats",
           "weight": 2
+        },
+        {
+          "term": "clapton",
+          "weight": 2
+        },
+        {
+          "term": "cream",
+          "weight": 2
+        },
+        {
+          "term": "delta",
+          "weight": 2
+        },
+        {
+          "term": "delta blues",
+          "weight": 2
+        },
+        {
+          "term": "derek",
+          "weight": 2
+        },
+        {
+          "term": "derek trucks",
+          "weight": 2
+        },
+        {
+          "term": "dickey",
+          "weight": 2
+        },
+        {
+          "term": "dickey betts",
+          "weight": 2
+        },
+        {
+          "term": "duane",
+          "weight": 2
+        },
+        {
+          "term": "duane allman",
+          "weight": 2
+        },
+        {
+          "term": "dylan",
+          "weight": 2
+        },
+        {
+          "term": "elvis",
+          "weight": 2
+        },
+        {
+          "term": "elvis presley",
+          "weight": 2
+        },
+        {
+          "term": "eric",
+          "weight": 2
         }
       ]
     },
     "rock-circuit": {
-      "nodeCount": 95,
+      "nodeCount": 192,
       "pinnedCount": 0,
       "centroid": {
-        "x": -274,
-        "y": 270
+        "x": -212,
+        "y": 261
       },
       "eraMedian": 1975,
       "learnedTerms": [
         {
           "term": "brain",
-          "weight": 160
+          "weight": 360
         },
         {
           "term": "research",
-          "weight": 160
+          "weight": 360
         },
         {
           "term": "research brain",
-          "weight": 160
+          "weight": 360
         },
         {
           "term": "classic",
-          "weight": 158
+          "weight": 336
         },
         {
           "term": "classic rock",
-          "weight": 158
+          "weight": 336
         },
         {
           "term": "hard",
@@ -381,27 +381,23 @@
           "weight": 17
         },
         {
+          "term": "funk",
+          "weight": 14
+        },
+        {
+          "term": "american",
+          "weight": 10
+        },
+        {
+          "term": "jazz",
+          "weight": 8
+        },
+        {
           "term": "rock and roll",
-          "weight": 12
+          "weight": 8
         },
         {
           "term": "roll",
-          "weight": 12
-        },
-        {
-          "term": "instrumental",
-          "weight": 8
-        },
-        {
-          "term": "instrumental rock",
-          "weight": 8
-        },
-        {
-          "term": "surf",
-          "weight": 8
-        },
-        {
-          "term": "surf rock",
           "weight": 8
         },
         {
@@ -409,111 +405,55 @@
           "weight": 7
         },
         {
-          "term": "progressive rock",
-          "weight": 7
-        },
-        {
-          "term": "fingerstyle",
+          "term": "american rock music duos",
           "weight": 6
         },
         {
-          "term": "fusion",
+          "term": "bruce",
           "weight": 6
         },
         {
-          "term": "jazz",
+          "term": "duos",
           "weight": 6
         },
         {
-          "term": "jazz fusion",
+          "term": "jeff",
           "weight": 6
         },
         {
-          "term": "joe",
+          "term": "shock",
           "weight": 6
         },
         {
-          "term": "lee",
+          "term": "shock rock",
           "weight": 6
         },
         {
-          "term": "pop",
+          "term": "steve",
           "weight": 6
-        },
-        {
-          "term": "pop rock",
-          "weight": 6
-        },
-        {
-          "term": "glam",
-          "weight": 5
-        },
-        {
-          "term": "glam rock",
-          "weight": 5
-        },
-        {
-          "term": "queen",
-          "weight": 5
-        },
-        {
-          "term": "amy",
-          "weight": 4
-        },
-        {
-          "term": "amy lee",
-          "weight": 4
         },
         {
           "term": "art",
           "weight": 4
         },
         {
-          "term": "beatles",
+          "term": "arthur",
           "weight": 4
         },
         {
-          "term": "berry",
+          "term": "big",
           "weight": 4
         },
         {
-          "term": "buckingham",
+          "term": "billy",
           "weight": 4
         },
         {
-          "term": "chuck",
+          "term": "fingerstyle",
           "weight": 4
         },
         {
-          "term": "chuck berry",
-          "weight": 4
-        },
-        {
-          "term": "country",
-          "weight": 4
-        },
-        {
-          "term": "dale",
-          "weight": 4
-        },
-        {
-          "term": "dick",
-          "weight": 4
-        },
-        {
-          "term": "dick dale",
-          "weight": 4
-        },
-        {
-          "term": "folk",
-          "weight": 4
-        },
-        {
-          "term": "form",
-          "weight": 4
-        },
-        {
-          "term": "funk",
+          "term": "fusion",
           "weight": 4
         },
         {
@@ -521,31 +461,27 @@
           "weight": 4
         },
         {
-          "term": "george harrison",
+          "term": "harris",
           "weight": 4
         },
         {
-          "term": "harrison",
+          "term": "instrumental",
           "weight": 4
         },
         {
-          "term": "hybrid",
+          "term": "instrumental rock",
           "weight": 4
         },
         {
-          "term": "hybrid form",
+          "term": "jazz fusion",
           "weight": 4
         },
         {
-          "term": "joe satriani",
+          "term": "joe",
           "weight": 4
         },
         {
-          "term": "lindsey",
-          "weight": 4
-        },
-        {
-          "term": "lindsey buckingham",
+          "term": "lee",
           "weight": 4
         },
         {
@@ -553,39 +489,111 @@
           "weight": 4
         },
         {
+          "term": "michael",
+          "weight": 4
+        },
+        {
+          "term": "michael schenker",
+          "weight": 4
+        },
+        {
+          "term": "nita",
+          "weight": 4
+        },
+        {
+          "term": "nita strauss",
+          "weight": 4
+        },
+        {
           "term": "perry",
           "weight": 4
         },
         {
-          "term": "reo",
+          "term": "pop",
           "weight": 4
         },
         {
-          "term": "reo speedwagon",
+          "term": "pop rock",
           "weight": 4
         },
         {
-          "term": "reverb",
+          "term": "psychedelic",
           "weight": 4
         },
         {
-          "term": "satriani",
+          "term": "schenker",
           "weight": 4
         },
         {
-          "term": "singer songwriter",
+          "term": "steve harris",
           "weight": 4
         },
         {
-          "term": "speedwagon",
+          "term": "stone",
           "weight": 4
         },
         {
-          "term": "the beatles",
+          "term": "strauss",
           "weight": 4
+        },
+        {
+          "term": "surf",
+          "weight": 4
+        },
+        {
+          "term": "surf rock",
+          "weight": 4
+        },
+        {
+          "term": "tenacious",
+          "weight": 4
+        },
+        {
+          "term": "tenacious d",
+          "weight": 4
+        },
+        {
+          "term": "glam",
+          "weight": 3
+        },
+        {
+          "term": "glam rock",
+          "weight": 3
+        },
+        {
+          "term": "progressive rock",
+          "weight": 3
+        },
+        {
+          "term": "queen",
+          "weight": 3
         },
         {
           "term": "1970s",
+          "weight": 2
+        },
+        {
+          "term": "311",
+          "weight": 2
+        },
+        {
+          "term": "999",
+          "weight": 2
+        },
+        {
+          "term": "adam",
+          "weight": 2
+        },
+        {
+          "term": "adam hamilton",
+          "weight": 2
+        },
+        {
+          "term": "adrian",
+          "weight": 2
+        },
+        {
+          "term": "adrian smith",
           "weight": 2
         },
         {
@@ -597,7 +605,15 @@
           "weight": 2
         },
         {
+          "term": "air",
+          "weight": 2
+        },
+        {
           "term": "allison",
+          "weight": 2
+        },
+        {
+          "term": "alogia",
           "weight": 2
         },
         {
@@ -613,7 +629,31 @@
           "weight": 2
         },
         {
+          "term": "american football",
+          "weight": 2
+        },
+        {
+          "term": "american rock music supergroups",
+          "weight": 2
+        },
+        {
+          "term": "amy",
+          "weight": 2
+        },
+        {
+          "term": "amy lee",
+          "weight": 2
+        },
+        {
           "term": "ancient",
+          "weight": 2
+        },
+        {
+          "term": "andrew",
+          "weight": 2
+        },
+        {
+          "term": "andrew watt",
           "weight": 2
         },
         {
@@ -629,198 +669,94 @@
           "weight": 2
         },
         {
-          "term": "aria",
-          "weight": 2
-        },
-        {
-          "term": "ark",
-          "weight": 2
-        },
-        {
-          "term": "art of dying",
-          "weight": 2
-        },
-        {
-          "term": "art rock",
-          "weight": 2
-        },
-        {
-          "term": "arven",
-          "weight": 2
-        },
-        {
-          "term": "asia",
-          "weight": 2
-        },
-        {
-          "term": "auri",
-          "weight": 2
-        },
-        {
-          "term": "avalon",
-          "weight": 2
-        },
-        {
-          "term": "biohazard",
-          "weight": 2
-        },
-        {
-          "term": "blues",
-          "weight": 2
-        },
-        {
-          "term": "blues rock",
+          "term": "arcade",
           "weight": 2
         }
       ]
     },
     "psychedelia-prog": {
-      "nodeCount": 31,
+      "nodeCount": 43,
       "pinnedCount": 0,
       "centroid": {
-        "x": -83,
-        "y": -750
+        "x": 204,
+        "y": -871
       },
-      "eraMedian": 1967,
+      "eraMedian": 1969,
       "learnedTerms": [
         {
           "term": "progressive",
-          "weight": 44
-        },
-        {
-          "term": "progressive rock",
-          "weight": 27
-        },
-        {
-          "term": "art",
-          "weight": 20
-        },
-        {
-          "term": "art rock",
-          "weight": 20
+          "weight": 56
         },
         {
           "term": "psychedelic",
-          "weight": 19
+          "weight": 33
         },
         {
           "term": "brain",
-          "weight": 17
+          "weight": 29
         },
         {
           "term": "research",
-          "weight": 17
+          "weight": 29
         },
         {
           "term": "research brain",
-          "weight": 17
+          "weight": 29
         },
         {
-          "term": "fusion",
-          "weight": 15
+          "term": "progressive rock",
+          "weight": 25
         },
         {
-          "term": "jazz",
-          "weight": 15
+          "term": "art",
+          "weight": 14
         },
         {
-          "term": "jazz fusion",
-          "weight": 15
-        },
-        {
-          "term": "country",
+          "term": "art rock",
           "weight": 14
         },
         {
           "term": "metal",
-          "weight": 14
+          "weight": 12
         },
         {
           "term": "progressive metal",
-          "weight": 14
+          "weight": 12
         },
         {
           "term": "psychedelic rock",
-          "weight": 14
+          "weight": 12
         },
         {
           "term": "hard",
-          "weight": 10
+          "weight": 8
         },
         {
           "term": "hard rock",
-          "weight": 10
+          "weight": 8
         },
         {
-          "term": "radiohead",
-          "weight": 8
+          "term": "fusion",
+          "weight": 7
+        },
+        {
+          "term": "jazz",
+          "weight": 7
+        },
+        {
+          "term": "jazz fusion",
+          "weight": 7
+        },
+        {
+          "term": "country",
+          "weight": 6
         },
         {
           "term": "1960s",
           "weight": 4
         },
         {
-          "term": "alternative",
-          "weight": 4
-        },
-        {
-          "term": "alternative rock",
-          "weight": 4
-        },
-        {
-          "term": "bandleader",
-          "weight": 4
-        },
-        {
-          "term": "chords",
-          "weight": 4
-        },
-        {
-          "term": "composer",
-          "weight": 4
-        },
-        {
           "term": "crimson",
-          "weight": 4
-        },
-        {
-          "term": "erickson",
-          "weight": 4
-        },
-        {
-          "term": "folk",
-          "weight": 4
-        },
-        {
-          "term": "frank",
-          "weight": 4
-        },
-        {
-          "term": "frank zappa",
-          "weight": 4
-        },
-        {
-          "term": "greenwood",
-          "weight": 4
-        },
-        {
-          "term": "heavy",
-          "weight": 4
-        },
-        {
-          "term": "heavy metal",
-          "weight": 4
-        },
-        {
-          "term": "improvisation",
-          "weight": 4
-        },
-        {
-          "term": "jonny",
-          "weight": 4
-        },
-        {
-          "term": "jonny greenwood",
           "weight": 4
         },
         {
@@ -832,23 +768,7 @@
           "weight": 4
         },
         {
-          "term": "montgomery",
-          "weight": 4
-        },
-        {
-          "term": "power",
-          "weight": 4
-        },
-        {
-          "term": "power chords",
-          "weight": 4
-        },
-        {
-          "term": "roky",
-          "weight": 4
-        },
-        {
-          "term": "roky erickson",
+          "term": "radiohead",
           "weight": 4
         },
         {
@@ -860,40 +780,8 @@
           "weight": 4
         },
         {
-          "term": "the who",
-          "weight": 4
-        },
-        {
-          "term": "wes",
-          "weight": 4
-        },
-        {
-          "term": "wes montgomery",
-          "weight": 4
-        },
-        {
-          "term": "who",
-          "weight": 4
-        },
-        {
           "term": "yes",
           "weight": 4
-        },
-        {
-          "term": "zappa",
-          "weight": 4
-        },
-        {
-          "term": "john",
-          "weight": 3
-        },
-        {
-          "term": "john mclaughlin",
-          "weight": 3
-        },
-        {
-          "term": "mclaughlin",
-          "weight": 3
         },
         {
           "term": "album",
@@ -912,11 +800,31 @@
           "weight": 2
         },
         {
+          "term": "alternative",
+          "weight": 2
+        },
+        {
+          "term": "alternative rock",
+          "weight": 2
+        },
+        {
           "term": "atheist",
           "weight": 2
         },
         {
+          "term": "bandleader",
+          "weight": 2
+        },
+        {
           "term": "beatles",
+          "weight": 2
+        },
+        {
+          "term": "chords",
+          "weight": 2
+        },
+        {
+          "term": "composer",
           "weight": 2
         },
         {
@@ -940,6 +848,10 @@
           "weight": 2
         },
         {
+          "term": "erickson",
+          "weight": 2
+        },
+        {
           "term": "experimental",
           "weight": 2
         },
@@ -952,11 +864,39 @@
           "weight": 2
         },
         {
+          "term": "frank",
+          "weight": 2
+        },
+        {
+          "term": "frank zappa",
+          "weight": 2
+        },
+        {
           "term": "fripp",
           "weight": 2
         },
         {
+          "term": "gangsta",
+          "weight": 2
+        },
+        {
+          "term": "gangsta rap",
+          "weight": 2
+        },
+        {
           "term": "gilmour",
+          "weight": 2
+        },
+        {
+          "term": "greenwood",
+          "weight": 2
+        },
+        {
+          "term": "heavy",
+          "weight": 2
+        },
+        {
+          "term": "heavy metal",
           "weight": 2
         },
         {
@@ -984,6 +924,10 @@
           "weight": 2
         },
         {
+          "term": "improvisation",
+          "weight": 2
+        },
+        {
           "term": "jem",
           "weight": 2
         },
@@ -996,55 +940,119 @@
           "weight": 2
         },
         {
+          "term": "jonny",
+          "weight": 2
+        },
+        {
+          "term": "jonny greenwood",
+          "weight": 2
+        },
+        {
           "term": "lifeson",
           "weight": 2
         },
         {
           "term": "mike",
           "weight": 2
+        },
+        {
+          "term": "mike portnoy",
+          "weight": 2
+        },
+        {
+          "term": "montgomery",
+          "weight": 2
+        },
+        {
+          "term": "pink",
+          "weight": 2
+        },
+        {
+          "term": "pink floyd",
+          "weight": 2
+        },
+        {
+          "term": "portnoy",
+          "weight": 2
+        },
+        {
+          "term": "power",
+          "weight": 2
+        },
+        {
+          "term": "power chords",
+          "weight": 2
+        },
+        {
+          "term": "rap",
+          "weight": 2
+        },
+        {
+          "term": "robert",
+          "weight": 2
+        },
+        {
+          "term": "robert fripp",
+          "weight": 2
+        },
+        {
+          "term": "roky",
+          "weight": 2
+        },
+        {
+          "term": "roky erickson",
+          "weight": 2
         }
       ]
     },
     "hard-rock-metal": {
-      "nodeCount": 106,
+      "nodeCount": 126,
       "pinnedCount": 0,
       "centroid": {
-        "x": 1711,
-        "y": 45
+        "x": 2100,
+        "y": -27
       },
       "eraMedian": 1977,
       "learnedTerms": [
         {
           "term": "hard",
-          "weight": 214
+          "weight": 256
         },
         {
           "term": "hard rock",
-          "weight": 214
+          "weight": 256
         },
         {
           "term": "brain",
-          "weight": 166
+          "weight": 204
         },
         {
           "term": "research",
-          "weight": 166
+          "weight": 204
         },
         {
           "term": "research brain",
-          "weight": 166
+          "weight": 204
         },
         {
           "term": "metal",
-          "weight": 132
+          "weight": 164
         },
         {
           "term": "heavy",
-          "weight": 64
+          "weight": 80
         },
         {
           "term": "heavy metal",
-          "weight": 64
+          "weight": 80
+        },
+        {
+          "term": "power",
+          "weight": 28
+        },
+        {
+          "term": "power metal",
+          "weight": 28
         },
         {
           "term": "thrash",
@@ -1055,12 +1063,12 @@
           "weight": 24
         },
         {
-          "term": "power",
-          "weight": 22
+          "term": "glam",
+          "weight": 16
         },
         {
-          "term": "power metal",
-          "weight": 22
+          "term": "glam metal",
+          "weight": 14
         },
         {
           "term": "doom",
@@ -1079,11 +1087,19 @@
           "weight": 10
         },
         {
+          "term": "american",
+          "weight": 8
+        },
+        {
           "term": "death",
           "weight": 8
         },
         {
           "term": "death metal",
+          "weight": 8
+        },
+        {
+          "term": "punk",
           "weight": 8
         },
         {
@@ -1093,10 +1109,6 @@
         {
           "term": "symphonic metal",
           "weight": 8
-        },
-        {
-          "term": "american",
-          "weight": 6
         },
         {
           "term": "blues",
@@ -1111,7 +1123,19 @@
           "weight": 6
         },
         {
+          "term": "alice",
+          "weight": 4
+        },
+        {
+          "term": "alice cooper",
+          "weight": 4
+        },
+        {
           "term": "andy",
+          "weight": 4
+        },
+        {
+          "term": "cooper",
           "weight": 4
         },
         {
@@ -1127,11 +1151,7 @@
           "weight": 4
         },
         {
-          "term": "finntroll",
-          "weight": 4
-        },
-        {
-          "term": "folk",
+          "term": "glam rock",
           "weight": 4
         },
         {
@@ -1143,11 +1163,15 @@
           "weight": 4
         },
         {
-          "term": "jukka",
+          "term": "horror",
           "weight": 4
         },
         {
-          "term": "jukka nevalainen",
+          "term": "horror punk",
+          "weight": 4
+        },
+        {
+          "term": "iron",
           "weight": 4
         },
         {
@@ -1155,11 +1179,7 @@
           "weight": 4
         },
         {
-          "term": "nevalainen",
-          "weight": 4
-        },
-        {
-          "term": "nightwish",
+          "term": "michael",
           "weight": 4
         },
         {
@@ -1199,6 +1219,10 @@
           "weight": 4
         },
         {
+          "term": "satchel",
+          "weight": 4
+        },
+        {
           "term": "taylor",
           "weight": 4
         },
@@ -1231,6 +1255,10 @@
           "weight": 2
         },
         {
+          "term": "aerosmith",
+          "weight": 2
+        },
+        {
           "term": "airbourne",
           "weight": 2
         },
@@ -1252,6 +1280,18 @@
         },
         {
           "term": "almora",
+          "weight": 2
+        },
+        {
+          "term": "alternative",
+          "weight": 2
+        },
+        {
+          "term": "alternative metal",
+          "weight": 2
+        },
+        {
+          "term": "american rock music supergroups",
           "weight": 2
         },
         {
@@ -1293,164 +1333,176 @@
         {
           "term": "angkor",
           "weight": 2
-        },
-        {
-          "term": "angkor wat",
-          "weight": 2
-        },
-        {
-          "term": "angra",
-          "weight": 2
-        },
-        {
-          "term": "annihilator",
-          "weight": 2
-        },
-        {
-          "term": "anonymus",
-          "weight": 2
-        },
-        {
-          "term": "anthrax",
-          "weight": 2
-        },
-        {
-          "term": "anthrax american band",
-          "weight": 2
-        },
-        {
-          "term": "anvil",
-          "weight": 2
-        },
-        {
-          "term": "apocalyptica",
-          "weight": 2
-        },
-        {
-          "term": "arctica",
-          "weight": 2
-        },
-        {
-          "term": "argent",
-          "weight": 2
         }
       ]
     },
     "punk-alt": {
-      "nodeCount": 41,
+      "nodeCount": 76,
       "pinnedCount": 0,
       "centroid": {
-        "x": 554,
-        "y": 1384
+        "x": 1203,
+        "y": 1513
       },
-      "eraMedian": 1980,
+      "eraMedian": 1977,
       "learnedTerms": [
         {
           "term": "brain",
-          "weight": 84
+          "weight": 148
         },
         {
           "term": "research",
-          "weight": 84
+          "weight": 148
         },
         {
           "term": "research brain",
-          "weight": 84
+          "weight": 148
         },
         {
           "term": "punk",
-          "weight": 52
-        },
-        {
-          "term": "alternative",
-          "weight": 48
-        },
-        {
-          "term": "country",
-          "weight": 40
-        },
-        {
-          "term": "shoegaze",
-          "weight": 32
-        },
-        {
-          "term": "alternative rock",
-          "weight": 28
+          "weight": 140
         },
         {
           "term": "punk rock",
-          "weight": 28
+          "weight": 68
         },
         {
-          "term": "post",
-          "weight": 22
-        },
-        {
-          "term": "grunge",
-          "weight": 16
+          "term": "alternative",
+          "weight": 54
         },
         {
           "term": "hardcore",
-          "weight": 14
+          "weight": 46
         },
         {
           "term": "hardcore punk",
-          "weight": 14
+          "weight": 40
         },
         {
-          "term": "folk",
-          "weight": 12
+          "term": "post",
+          "weight": 28
         },
         {
-          "term": "horror",
-          "weight": 12
-        },
-        {
-          "term": "horror punk",
-          "weight": 12
-        },
-        {
-          "term": "post grunge",
-          "weight": 12
-        },
-        {
-          "term": "hard",
-          "weight": 10
-        },
-        {
-          "term": "hard rock",
-          "weight": 10
-        },
-        {
-          "term": "bandcamp",
-          "weight": 8
-        },
-        {
-          "term": "classic",
-          "weight": 8
-        },
-        {
-          "term": "classic rock",
-          "weight": 8
+          "term": "alternative rock",
+          "weight": 20
         },
         {
           "term": "post punk",
-          "weight": 8
+          "weight": 20
+        },
+        {
+          "term": "roots",
+          "weight": 20
+        },
+        {
+          "term": "california",
+          "weight": 18
+        },
+        {
+          "term": "california punk",
+          "weight": 18
+        },
+        {
+          "term": "country",
+          "weight": 16
+        },
+        {
+          "term": "horror",
+          "weight": 16
+        },
+        {
+          "term": "horror punk",
+          "weight": 16
+        },
+        {
+          "term": "punk roots",
+          "weight": 16
+        },
+        {
+          "term": "shoegaze",
+          "weight": 16
+        },
+        {
+          "term": "skate",
+          "weight": 16
+        },
+        {
+          "term": "skate punk",
+          "weight": 16
         },
         {
           "term": "gothic",
-          "weight": 6
+          "weight": 14
+        },
+        {
+          "term": "pop",
+          "weight": 13
+        },
+        {
+          "term": "garage",
+          "weight": 12
+        },
+        {
+          "term": "pop punk",
+          "weight": 12
+        },
+        {
+          "term": "proto",
+          "weight": 12
+        },
+        {
+          "term": "proto punk",
+          "weight": 12
         },
         {
           "term": "gothic rock",
+          "weight": 10
+        },
+        {
+          "term": "melodic",
+          "weight": 10
+        },
+        {
+          "term": "uk punk",
+          "weight": 10
+        },
+        {
+          "term": "bay",
+          "weight": 8
+        },
+        {
+          "term": "east",
+          "weight": 8
+        },
+        {
+          "term": "east bay punk",
+          "weight": 8
+        },
+        {
+          "term": "garage rock",
+          "weight": 8
+        },
+        {
+          "term": "grunge",
+          "weight": 8
+        },
+        {
+          "term": "bad",
           "weight": 6
         },
         {
-          "term": "indie",
+          "term": "dc punk",
           "weight": 6
         },
         {
-          "term": "indie rock",
+          "term": "ivy",
+          "weight": 6
+        },
+        {
+          "term": "lineage",
+          "weight": 6
+        },
+        {
+          "term": "melodic punk",
           "weight": 6
         },
         {
@@ -1458,11 +1510,39 @@
           "weight": 6
         },
         {
-          "term": "punk roots",
+          "term": "misfits",
           "weight": 6
         },
         {
-          "term": "roots",
+          "term": "new",
+          "weight": 6
+        },
+        {
+          "term": "new york punk",
+          "weight": 6
+        },
+        {
+          "term": "operation",
+          "weight": 6
+        },
+        {
+          "term": "post grunge",
+          "weight": 6
+        },
+        {
+          "term": "rancid",
+          "weight": 6
+        },
+        {
+          "term": "ska",
+          "weight": 6
+        },
+        {
+          "term": "ska punk",
+          "weight": 6
+        },
+        {
+          "term": "york",
           "weight": 6
         },
         {
@@ -1470,23 +1550,7 @@
           "weight": 4
         },
         {
-          "term": "1990s",
-          "weight": 4
-        },
-        {
-          "term": "about",
-          "weight": 4
-        },
-        {
-          "term": "adorable",
-          "weight": 4
-        },
-        {
-          "term": "adventures",
-          "weight": 4
-        },
-        {
-          "term": "against",
+          "term": "2 tone music genre",
           "weight": 4
         },
         {
@@ -1494,55 +1558,43 @@
           "weight": 4
         },
         {
-          "term": "all about eve",
-          "weight": 4
-        },
-        {
           "term": "alternative metal",
           "weight": 4
         },
         {
-          "term": "andy",
+          "term": "bandcamp",
           "weight": 4
         },
         {
-          "term": "andy bell",
+          "term": "cramps",
           "weight": 4
         },
         {
-          "term": "bad",
+          "term": "damned",
           "weight": 4
         },
         {
-          "term": "bandcamp daily",
+          "term": "day",
           "weight": 4
         },
         {
-          "term": "bell",
+          "term": "deathrock",
           "weight": 4
         },
         {
-          "term": "bleed",
+          "term": "detroit",
           "weight": 4
         },
         {
-          "term": "blur",
+          "term": "detroit rock",
           "weight": 4
         },
         {
-          "term": "bush",
+          "term": "division",
           "weight": 4
         },
         {
-          "term": "cold",
-          "weight": 4
-        },
-        {
-          "term": "daily",
-          "weight": 4
-        },
-        {
-          "term": "delay",
+          "term": "dolls",
           "weight": 4
         },
         {
@@ -1550,11 +1602,35 @@
           "weight": 4
         },
         {
-          "term": "effects",
+          "term": "garage punk",
           "weight": 4
         },
         {
-          "term": "eve",
+          "term": "glam",
+          "weight": 4
+        },
+        {
+          "term": "glam rock",
+          "weight": 4
+        },
+        {
+          "term": "gothic influence",
+          "weight": 4
+        },
+        {
+          "term": "green",
+          "weight": 4
+        },
+        {
+          "term": "green day",
+          "weight": 4
+        },
+        {
+          "term": "hard",
+          "weight": 4
+        },
+        {
+          "term": "hard rock",
           "weight": 4
         },
         {
@@ -1562,139 +1638,55 @@
           "weight": 4
         },
         {
-          "term": "independent rock",
+          "term": "indie",
           "weight": 4
         },
         {
-          "term": "industrial",
+          "term": "indie rock",
           "weight": 4
         },
         {
-          "term": "industrial rock",
+          "term": "influence",
           "weight": 4
         },
         {
-          "term": "johnny",
+          "term": "joy",
           "weight": 4
         },
         {
-          "term": "johnny marr",
+          "term": "joy division",
           "weight": 4
         },
         {
-          "term": "machine",
+          "term": "mainstream",
           "weight": 4
         },
         {
-          "term": "marr",
+          "term": "mainstream punk",
           "weight": 4
-        },
-        {
-          "term": "misfits",
-          "weight": 4
-        },
-        {
-          "term": "rage",
-          "weight": 4
-        },
-        {
-          "term": "rage against the machine",
-          "weight": 4
-        },
-        {
-          "term": "rap",
-          "weight": 4
-        },
-        {
-          "term": "rap rock",
-          "weight": 4
-        },
-        {
-          "term": "texture",
-          "weight": 4
-        },
-        {
-          "term": "the edge",
-          "weight": 4
-        },
-        {
-          "term": "black",
-          "weight": 3
-        },
-        {
-          "term": "2 tone music genre",
-          "weight": 2
-        },
-        {
-          "term": "afi",
-          "weight": 2
-        },
-        {
-          "term": "aftermath",
-          "weight": 2
-        },
-        {
-          "term": "alice",
-          "weight": 2
-        },
-        {
-          "term": "alice cooper",
-          "weight": 2
-        },
-        {
-          "term": "art",
-          "weight": 2
-        },
-        {
-          "term": "art rock",
-          "weight": 2
-        },
-        {
-          "term": "bad religion",
-          "weight": 2
-        },
-        {
-          "term": "battery",
-          "weight": 2
-        },
-        {
-          "term": "black flag",
-          "weight": 2
-        },
-        {
-          "term": "calabrese",
-          "weight": 2
         }
       ]
     },
     "folk-country-vise": {
-      "nodeCount": 24,
+      "nodeCount": 25,
       "pinnedCount": 0,
       "centroid": {
-        "x": -792,
-        "y": 1427
+        "x": -819,
+        "y": 1438
       },
       "eraMedian": 1963,
       "learnedTerms": [
         {
           "term": "country",
-          "weight": 52
+          "weight": 50
         },
         {
           "term": "folk",
-          "weight": 36
+          "weight": 46
         },
         {
           "term": "brain",
-          "weight": 20
-        },
-        {
-          "term": "research",
-          "weight": 20
-        },
-        {
-          "term": "research brain",
-          "weight": 20
+          "weight": 14
         },
         {
           "term": "norwegian",
@@ -1705,15 +1697,23 @@
           "weight": 14
         },
         {
+          "term": "research",
+          "weight": 14
+        },
+        {
+          "term": "research brain",
+          "weight": 14
+        },
+        {
           "term": "vise",
           "weight": 14
         },
         {
-          "term": "gitarkameratene",
+          "term": "country rock",
           "weight": 8
         },
         {
-          "term": "richard",
+          "term": "gitarkameratene",
           "weight": 8
         },
         {
@@ -1725,19 +1725,7 @@
           "weight": 6
         },
         {
-          "term": "country rock",
-          "weight": 4
-        },
-        {
           "term": "flamenco",
-          "weight": 4
-        },
-        {
-          "term": "hard",
-          "weight": 4
-        },
-        {
-          "term": "hard rock",
           "weight": 4
         },
         {
@@ -1745,51 +1733,15 @@
           "weight": 4
         },
         {
-          "term": "jerry",
-          "weight": 4
-        },
-        {
-          "term": "jerry reed",
-          "weight": 4
-        },
-        {
-          "term": "lindemann",
-          "weight": 4
-        },
-        {
-          "term": "little",
-          "weight": 4
-        },
-        {
-          "term": "little richard",
-          "weight": 4
-        },
-        {
-          "term": "marx",
-          "weight": 4
-        },
-        {
           "term": "norwegian song",
           "weight": 4
         },
         {
-          "term": "reed",
-          "weight": 4
-        },
-        {
-          "term": "richard marx",
+          "term": "richard",
           "weight": 4
         },
         {
           "term": "song",
-          "weight": 4
-        },
-        {
-          "term": "till",
-          "weight": 4
-        },
-        {
-          "term": "till lindemann",
           "weight": 4
         },
         {
@@ -1885,11 +1837,27 @@
           "weight": 2
         },
         {
+          "term": "hard",
+          "weight": 2
+        },
+        {
+          "term": "hard rock",
+          "weight": 2
+        },
+        {
           "term": "jan",
           "weight": 2
         },
         {
           "term": "jan eggum",
+          "weight": 2
+        },
+        {
+          "term": "jerry",
+          "weight": 2
+        },
+        {
+          "term": "jerry reed",
           "weight": 2
         },
         {
@@ -1925,7 +1893,23 @@
           "weight": 2
         },
         {
+          "term": "lindemann",
+          "weight": 2
+        },
+        {
+          "term": "little",
+          "weight": 2
+        },
+        {
+          "term": "little richard",
+          "weight": 2
+        },
+        {
           "term": "lucia",
+          "weight": 2
+        },
+        {
+          "term": "marx",
           "weight": 2
         },
         {
@@ -1973,6 +1957,10 @@
           "weight": 2
         },
         {
+          "term": "reed",
+          "weight": 2
+        },
+        {
           "term": "reinhardt",
           "weight": 2
         },
@@ -1982,6 +1970,10 @@
         },
         {
           "term": "rhythm guitar",
+          "weight": 2
+        },
+        {
+          "term": "richard marx",
           "weight": 2
         },
         {
@@ -1995,25 +1987,49 @@
         {
           "term": "sivertsen",
           "weight": 2
+        },
+        {
+          "term": "songcraft",
+          "weight": 2
+        },
+        {
+          "term": "southern",
+          "weight": 2
         }
       ]
     },
     "guitar-workshop": {
-      "nodeCount": 60,
+      "nodeCount": 71,
       "pinnedCount": 0,
       "centroid": {
-        "x": 3180,
-        "y": -84
+        "x": 3198,
+        "y": -96
       },
       "eraMedian": 1958,
       "learnedTerms": [
         {
           "term": "electric",
-          "weight": 48
+          "weight": 58
         },
         {
           "term": "electric guitar",
-          "weight": 38
+          "weight": 48
+        },
+        {
+          "term": "instrument",
+          "weight": 18
+        },
+        {
+          "term": "brain",
+          "weight": 17
+        },
+        {
+          "term": "research",
+          "weight": 17
+        },
+        {
+          "term": "research brain",
+          "weight": 17
         },
         {
           "term": "brand",
@@ -2033,7 +2049,7 @@
         },
         {
           "term": "acoustic",
-          "weight": 11
+          "weight": 12
         },
         {
           "term": "country",
@@ -2064,12 +2080,12 @@
           "weight": 9
         },
         {
-          "term": "instrument",
+          "term": "signature",
           "weight": 8
         },
         {
-          "term": "signature",
-          "weight": 8
+          "term": "acoustic guitar",
+          "weight": 7
         },
         {
           "term": "fender",
@@ -2084,15 +2100,7 @@
           "weight": 7
         },
         {
-          "term": "acoustic guitar",
-          "weight": 6
-        },
-        {
           "term": "blues rock",
-          "weight": 6
-        },
-        {
-          "term": "brain",
           "weight": 6
         },
         {
@@ -2105,14 +2113,6 @@
         },
         {
           "term": "jazz",
-          "weight": 6
-        },
-        {
-          "term": "research",
-          "weight": 6
-        },
-        {
-          "term": "research brain",
           "weight": 6
         },
         {
@@ -2172,6 +2172,10 @@
           "weight": 3
         },
         {
+          "term": "esp",
+          "weight": 3
+        },
+        {
           "term": "martin",
           "weight": 3
         },
@@ -2213,10 +2217,6 @@
         },
         {
           "term": "electric blues",
-          "weight": 2
-        },
-        {
-          "term": "esp",
           "weight": 2
         },
         {
@@ -2344,6 +2344,44 @@
       "linkedGenres": [],
       "bridgeScore": 0,
       "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "311": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "connectionCount": 3,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.25,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "999": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
       "layoutHints": {
         "pinned": false
       }
@@ -2511,30 +2549,28 @@
         "alternative",
         "punk"
       ],
-      "connectionCount": 4,
+      "connectionCount": 6,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0.333,
+      "hubScore": 0.5,
       "layoutHints": {
         "pinned": false
       }
     },
     "grunge": {
       "zone": "punk-alt",
-      "secondaryZones": [
-        "hard-rock-metal"
-      ],
+      "secondaryZones": [],
       "primaryGenres": [
         "Grunge"
       ],
       "curatorTags": [
         "hard rock",
         "punk rock",
-        "grunge"
+        "alternative"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
-      "bridgeScore": 0.22,
+      "bridgeScore": 0,
       "hubScore": 0.083,
       "layoutHints": {
         "pinned": false
@@ -2616,20 +2652,18 @@
     },
     "jazz-fusion": {
       "zone": "rock-circuit",
-      "secondaryZones": [
-        "folk-country-vise"
-      ],
+      "secondaryZones": [],
       "primaryGenres": [
         "Jazz fusion"
       ],
       "curatorTags": [
-        "country",
-        "folk",
-        "jazz fusion"
+        "rock",
+        "jazz fusion",
+        "classic rock"
       ],
       "connectionCount": 10,
       "linkedGenres": [],
-      "bridgeScore": 0.22,
+      "bridgeScore": 0,
       "hubScore": 0.833,
       "layoutHints": {
         "pinned": false
@@ -2856,7 +2890,6 @@
     "frank-zappa": {
       "zone": "psychedelia-prog",
       "secondaryZones": [
-        "folk-country-vise",
         "rock-circuit"
       ],
       "primaryGenres": [
@@ -2872,7 +2905,7 @@
         "jazz-fusion",
         "rock"
       ],
-      "bridgeScore": 0.6,
+      "bridgeScore": 0.38,
       "hubScore": 0.333,
       "layoutHints": {
         "pinned": false
@@ -2880,9 +2913,7 @@
     },
     "johnny-marr": {
       "zone": "punk-alt",
-      "secondaryZones": [
-        "folk-country-vise"
-      ],
+      "secondaryZones": [],
       "primaryGenres": [
         "alternative rock",
         "country"
@@ -2894,7 +2925,7 @@
       ],
       "connectionCount": 3,
       "linkedGenres": [],
-      "bridgeScore": 0.22,
+      "bridgeScore": 0,
       "hubScore": 0.25,
       "layoutHints": {
         "pinned": false
@@ -2964,9 +2995,7 @@
     },
     "george-harrison": {
       "zone": "rock-circuit",
-      "secondaryZones": [
-        "psychedelia-prog"
-      ],
+      "secondaryZones": [],
       "primaryGenres": [
         "rock"
       ],
@@ -2977,7 +3006,7 @@
       ],
       "connectionCount": 3,
       "linkedGenres": [],
-      "bridgeScore": 0.22,
+      "bridgeScore": 0,
       "hubScore": 0.25,
       "layoutHints": {
         "pinned": false
@@ -3149,13 +3178,13 @@
         "Rock",
         "rock"
       ],
-      "connectionCount": 4,
+      "connectionCount": 5,
       "linkedGenres": [
         "funk",
         "rock"
       ],
       "bridgeScore": 0.16,
-      "hubScore": 0.333,
+      "hubScore": 0.417,
       "layoutHints": {
         "pinned": false
       }
@@ -3396,12 +3425,12 @@
         "blues rock",
         "hard rock"
       ],
-      "connectionCount": 4,
+      "connectionCount": 5,
       "linkedGenres": [
         "hard-rock"
       ],
       "bridgeScore": 0.3,
-      "hubScore": 0.333,
+      "hubScore": 0.417,
       "layoutHints": {
         "pinned": false
       }
@@ -3546,7 +3575,7 @@
         "electric guitar",
         "Rock"
       ],
-      "connectionCount": 15,
+      "connectionCount": 16,
       "linkedGenres": [
         "rock",
         "electric-blues"
@@ -3627,12 +3656,12 @@
         "Hard rock",
         "blues rock"
       ],
-      "connectionCount": 11,
+      "connectionCount": 13,
       "linkedGenres": [
         "hard-rock"
       ],
       "bridgeScore": 0.3,
-      "hubScore": 0.917,
+      "hubScore": 1,
       "layoutHints": {
         "pinned": false
       }
@@ -3942,20 +3971,18 @@
     },
     "surf-rock": {
       "zone": "rock-circuit",
-      "secondaryZones": [
-        "psychedelia-prog"
-      ],
+      "secondaryZones": [],
       "primaryGenres": [
         "Surf rock"
       ],
       "curatorTags": [
+        "rock",
         "progressive rock",
-        "rock and roll",
-        "rock"
+        "rock and roll"
       ],
       "connectionCount": 3,
       "linkedGenres": [],
-      "bridgeScore": 0.22,
+      "bridgeScore": 0,
       "hubScore": 0.25,
       "layoutHints": {
         "pinned": false
@@ -3972,10 +3999,10 @@
         "blues rock",
         "country rock"
       ],
-      "connectionCount": 5,
+      "connectionCount": 6,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0.417,
+      "hubScore": 0.5,
       "layoutHints": {
         "pinned": false
       }
@@ -4039,20 +4066,18 @@
     },
     "indie-rock": {
       "zone": "punk-alt",
-      "secondaryZones": [
-        "folk-country-vise"
-      ],
+      "secondaryZones": [],
       "primaryGenres": [
         "Indie rock"
       ],
       "curatorTags": [
         "alternative rock",
-        "country",
-        "folk"
+        "indie rock",
+        "alternative"
       ],
       "connectionCount": 3,
       "linkedGenres": [],
-      "bridgeScore": 0.22,
+      "bridgeScore": 0,
       "hubScore": 0.25,
       "layoutHints": {
         "pinned": false
@@ -4069,30 +4094,28 @@
         "punk rock",
         "alternative"
       ],
-      "connectionCount": 2,
+      "connectionCount": 4,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0.167,
+      "hubScore": 0.333,
       "layoutHints": {
         "pinned": false
       }
     },
     "shoegaze": {
       "zone": "punk-alt",
-      "secondaryZones": [
-        "folk-country-vise"
-      ],
+      "secondaryZones": [],
       "primaryGenres": [
         "Shoegaze"
       ],
       "curatorTags": [
         "alternative rock",
-        "country",
-        "folk"
+        "alternative",
+        "punk"
       ],
       "connectionCount": 8,
       "linkedGenres": [],
-      "bridgeScore": 0.22,
+      "bridgeScore": 0,
       "hubScore": 0.667,
       "layoutHints": {
         "pinned": false
@@ -4138,9 +4161,7 @@
     },
     "progressive-metal": {
       "zone": "psychedelia-prog",
-      "secondaryZones": [
-        "hard-rock-metal"
-      ],
+      "secondaryZones": [],
       "primaryGenres": [
         "Progressive metal"
       ],
@@ -4151,7 +4172,7 @@
       ],
       "connectionCount": 6,
       "linkedGenres": [],
-      "bridgeScore": 0.22,
+      "bridgeScore": 0,
       "hubScore": 0.5,
       "layoutHints": {
         "pinned": false
@@ -4196,20 +4217,18 @@
     },
     "jazz": {
       "zone": "psychedelia-prog",
-      "secondaryZones": [
-        "folk-country-vise"
-      ],
+      "secondaryZones": [],
       "primaryGenres": [
         "Jazz"
       ],
       "curatorTags": [
-        "country",
-        "folk",
-        "jazz fusion"
+        "jazz fusion",
+        "progressive",
+        "psychedelic"
       ],
       "connectionCount": 6,
       "linkedGenres": [],
-      "bridgeScore": 0.22,
+      "bridgeScore": 0,
       "hubScore": 0.5,
       "layoutHints": {
         "pinned": false
@@ -4504,8 +4523,7 @@
     "jeff-beck": {
       "zone": "roots-blues",
       "secondaryZones": [
-        "rock-circuit",
-        "folk-country-vise"
+        "rock-circuit"
       ],
       "primaryGenres": [
         "blues rock"
@@ -4520,7 +4538,7 @@
         "blues-rock",
         "jazz-fusion"
       ],
-      "bridgeScore": 0.6,
+      "bridgeScore": 0.38,
       "hubScore": 0.333,
       "layoutHints": {
         "pinned": false
@@ -4610,9 +4628,7 @@
     },
     "dick-dale": {
       "zone": "rock-circuit",
-      "secondaryZones": [
-        "psychedelia-prog"
-      ],
+      "secondaryZones": [],
       "primaryGenres": [
         "rock"
       ],
@@ -4625,7 +4641,7 @@
       "linkedGenres": [
         "surf-rock"
       ],
-      "bridgeScore": 0.3,
+      "bridgeScore": 0.08,
       "hubScore": 0.167,
       "layoutHints": {
         "pinned": false
@@ -4654,9 +4670,7 @@
     },
     "steve-vai": {
       "zone": "psychedelia-prog",
-      "secondaryZones": [
-        "hard-rock-metal"
-      ],
+      "secondaryZones": [],
       "primaryGenres": [
         "progressive metal"
       ],
@@ -4669,7 +4683,7 @@
       "linkedGenres": [
         "progressive-metal"
       ],
-      "bridgeScore": 0.3,
+      "bridgeScore": 0.08,
       "hubScore": 0.333,
       "layoutHints": {
         "pinned": false
@@ -4677,9 +4691,7 @@
     },
     "joe-satriani": {
       "zone": "rock-circuit",
-      "secondaryZones": [
-        "hard-rock-metal"
-      ],
+      "secondaryZones": [],
       "primaryGenres": [
         "hard rock",
         "rock"
@@ -4693,7 +4705,7 @@
       "linkedGenres": [
         "rock"
       ],
-      "bridgeScore": 0.3,
+      "bridgeScore": 0.08,
       "hubScore": 0.25,
       "layoutHints": {
         "pinned": false
@@ -4723,9 +4735,7 @@
     },
     "slash": {
       "zone": "roots-blues",
-      "secondaryZones": [
-        "hard-rock-metal"
-      ],
+      "secondaryZones": [],
       "primaryGenres": [
         "blues rock",
         "hard rock"
@@ -4739,7 +4749,7 @@
       "linkedGenres": [
         "blues-rock"
       ],
-      "bridgeScore": 0.3,
+      "bridgeScore": 0.08,
       "hubScore": 0.333,
       "layoutHints": {
         "pinned": false
@@ -4747,9 +4757,7 @@
     },
     "angus-young": {
       "zone": "roots-blues",
-      "secondaryZones": [
-        "hard-rock-metal"
-      ],
+      "secondaryZones": [],
       "primaryGenres": [
         "blues rock",
         "hard rock",
@@ -4762,7 +4770,7 @@
       ],
       "connectionCount": 2,
       "linkedGenres": [],
-      "bridgeScore": 0.22,
+      "bridgeScore": 0,
       "hubScore": 0.167,
       "layoutHints": {
         "pinned": false
@@ -4857,7 +4865,7 @@
     "wes-montgomery": {
       "zone": "psychedelia-prog",
       "secondaryZones": [
-        "folk-country-vise"
+        "rock-circuit"
       ],
       "primaryGenres": [
         "jazz fusion"
@@ -4880,7 +4888,9 @@
     },
     "joe-pass": {
       "zone": "folk-country-vise",
-      "secondaryZones": [],
+      "secondaryZones": [
+        "psychedelia-prog"
+      ],
       "primaryGenres": [
         "country",
         "folk"
@@ -4894,7 +4904,7 @@
       "linkedGenres": [
         "jazz"
       ],
-      "bridgeScore": 0.08,
+      "bridgeScore": 0.3,
       "hubScore": 0.25,
       "layoutHints": {
         "pinned": false
@@ -4902,7 +4912,9 @@
     },
     "django-reinhardt": {
       "zone": "folk-country-vise",
-      "secondaryZones": [],
+      "secondaryZones": [
+        "psychedelia-prog"
+      ],
       "primaryGenres": [
         "country",
         "folk"
@@ -4916,7 +4928,7 @@
       "linkedGenres": [
         "jazz"
       ],
-      "bridgeScore": 0.08,
+      "bridgeScore": 0.3,
       "hubScore": 0.333,
       "layoutHints": {
         "pinned": false
@@ -4947,7 +4959,7 @@
     "john-mclaughlin": {
       "zone": "psychedelia-prog",
       "secondaryZones": [
-        "folk-country-vise"
+        "rock-circuit"
       ],
       "primaryGenres": [],
       "curatorTags": [
@@ -5029,9 +5041,7 @@
     },
     "the-edge": {
       "zone": "punk-alt",
-      "secondaryZones": [
-        "folk-country-vise"
-      ],
+      "secondaryZones": [],
       "primaryGenres": [
         "country",
         "folk"
@@ -5043,7 +5053,7 @@
       ],
       "connectionCount": 1,
       "linkedGenres": [],
-      "bridgeScore": 0.22,
+      "bridgeScore": 0,
       "hubScore": 0.083,
       "layoutHints": {
         "pinned": false
@@ -5051,9 +5061,7 @@
     },
     "jonny-greenwood": {
       "zone": "psychedelia-prog",
-      "secondaryZones": [
-        "folk-country-vise"
-      ],
+      "secondaryZones": [],
       "primaryGenres": [
         "art rock",
         "country"
@@ -5065,7 +5073,7 @@
       ],
       "connectionCount": 2,
       "linkedGenres": [],
-      "bridgeScore": 0.22,
+      "bridgeScore": 0,
       "hubScore": 0.167,
       "layoutHints": {
         "pinned": false
@@ -5210,8 +5218,8 @@
     "queen": {
       "zone": "rock-circuit",
       "secondaryZones": [
-        "psychedelia-prog",
-        "hard-rock-metal"
+        "hard-rock-metal",
+        "psychedelia-prog"
       ],
       "primaryGenres": [],
       "curatorTags": [
@@ -5288,21 +5296,19 @@
         "Hard rock",
         "band"
       ],
-      "connectionCount": 2,
+      "connectionCount": 5,
       "linkedGenres": [
         "hard-rock"
       ],
       "bridgeScore": 0.08,
-      "hubScore": 0.167,
+      "hubScore": 0.417,
       "layoutHints": {
         "pinned": false
       }
     },
     "rage-against-the-machine": {
       "zone": "punk-alt",
-      "secondaryZones": [
-        "hard-rock-metal"
-      ],
+      "secondaryZones": [],
       "primaryGenres": [
         "alternative rock",
         "hard rock"
@@ -5316,7 +5322,7 @@
       "linkedGenres": [
         "alternative-rock"
       ],
-      "bridgeScore": 0.3,
+      "bridgeScore": 0.08,
       "hubScore": 0.083,
       "layoutHints": {
         "pinned": false
@@ -5368,21 +5374,25 @@
     },
     "allman-brothers-band": {
       "zone": "roots-blues",
-      "secondaryZones": [],
+      "secondaryZones": [
+        "folk-country-vise"
+      ],
       "primaryGenres": [
+        "country rock",
         "blues rock",
-        "southern rock",
-        "blues"
+        "southern rock"
       ],
       "curatorTags": [
+        "country rock",
         "blues rock",
-        "southern rock",
-        "blues"
+        "southern rock"
       ],
-      "connectionCount": 4,
-      "linkedGenres": [],
-      "bridgeScore": 0,
-      "hubScore": 0.333,
+      "connectionCount": 5,
+      "linkedGenres": [
+        "country-rock"
+      ],
+      "bridgeScore": 0.3,
+      "hubScore": 0.417,
       "layoutHints": {
         "pinned": false
       }
@@ -5478,7 +5488,7 @@
     "santana-band": {
       "zone": "roots-blues",
       "secondaryZones": [
-        "folk-country-vise"
+        "rock-circuit"
       ],
       "primaryGenres": [
         "blues rock"
@@ -5524,7 +5534,6 @@
     "radiohead": {
       "zone": "psychedelia-prog",
       "secondaryZones": [
-        "folk-country-vise",
         "punk-alt"
       ],
       "primaryGenres": [
@@ -5540,7 +5549,7 @@
         "alternative-rock",
         "art-rock"
       ],
-      "bridgeScore": 0.6,
+      "bridgeScore": 0.38,
       "hubScore": 0.25,
       "layoutHints": {
         "pinned": false
@@ -5785,7 +5794,7 @@
       "zone": "guitar-workshop",
       "secondaryZones": [
         "roots-blues",
-        "folk-country-vise"
+        "psychedelia-prog"
       ],
       "eraStart": 1958,
       "eraPeak": 1958,
@@ -5901,8 +5910,7 @@
     "fender-mustang": {
       "zone": "guitar-workshop",
       "secondaryZones": [
-        "punk-alt",
-        "folk-country-vise"
+        "punk-alt"
       ],
       "primaryGenres": [],
       "curatorTags": [
@@ -5915,7 +5923,7 @@
         "alternative-rock",
         "indie-rock"
       ],
-      "bridgeScore": 0.6,
+      "bridgeScore": 0.38,
       "hubScore": 0.25,
       "layoutHints": {
         "pinned": false
@@ -5948,7 +5956,7 @@
       "zone": "guitar-workshop",
       "secondaryZones": [
         "roots-blues",
-        "folk-country-vise"
+        "rock-circuit"
       ],
       "primaryGenres": [],
       "curatorTags": [
@@ -5970,6 +5978,7 @@
     "ibanez-rg": {
       "zone": "guitar-workshop",
       "secondaryZones": [
+        "psychedelia-prog",
         "hard-rock-metal"
       ],
       "primaryGenres": [],
@@ -5983,7 +5992,7 @@
         "progressive-metal",
         "heavy-metal"
       ],
-      "bridgeScore": 0.38,
+      "bridgeScore": 0.6,
       "hubScore": 0.25,
       "layoutHints": {
         "pinned": false
@@ -6097,7 +6106,7 @@
     "yamaha-sg": {
       "zone": "guitar-workshop",
       "secondaryZones": [
-        "folk-country-vise"
+        "rock-circuit"
       ],
       "primaryGenres": [],
       "curatorTags": [
@@ -6160,7 +6169,7 @@
     "danelectro-3021": {
       "zone": "guitar-workshop",
       "secondaryZones": [
-        "folk-country-vise"
+        "punk-alt"
       ],
       "primaryGenres": [],
       "curatorTags": [
@@ -6289,22 +6298,26 @@
     },
     "anthrax-american-band": {
       "zone": "hard-rock-metal",
-      "secondaryZones": [],
+      "secondaryZones": [
+        "psychedelia-prog",
+        "punk-alt"
+      ],
       "primaryGenres": [
         "hard rock"
       ],
       "curatorTags": [
         "hard rock",
-        "Hard rock",
-        "Progressive metal"
+        "alternative metal",
+        "Hard rock"
       ],
-      "connectionCount": 13,
+      "connectionCount": 16,
       "linkedGenres": [
         "progressive-metal",
         "thrash-metal",
-        "hard-rock"
+        "hard-rock",
+        "alternative-metal"
       ],
-      "bridgeScore": 0.24,
+      "bridgeScore": 0.76,
       "hubScore": 1,
       "layoutHints": {
         "pinned": false
@@ -6364,10 +6377,10 @@
         "band",
         "rock"
       ],
-      "connectionCount": 2,
+      "connectionCount": 3,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0.167,
+      "hubScore": 0.25,
       "layoutHints": {
         "pinned": false
       }
@@ -6406,10 +6419,10 @@
         "band",
         "rock"
       ],
-      "connectionCount": 3,
+      "connectionCount": 5,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0.25,
+      "hubScore": 0.417,
       "layoutHints": {
         "pinned": false
       }
@@ -6426,10 +6439,10 @@
         "artist",
         "rock"
       ],
-      "connectionCount": 2,
+      "connectionCount": 3,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0.167,
+      "hubScore": 0.25,
       "layoutHints": {
         "pinned": false
       }
@@ -6460,21 +6473,23 @@
       "zone": "hard-rock-metal",
       "secondaryZones": [],
       "primaryGenres": [
+        "glam metal",
         "power metal",
         "hard rock"
       ],
       "curatorTags": [
+        "glam metal",
         "power metal",
-        "hard rock",
-        "Thrash metal"
+        "hard rock"
       ],
-      "connectionCount": 8,
+      "connectionCount": 11,
       "linkedGenres": [
         "power-metal",
-        "thrash-metal"
+        "thrash-metal",
+        "glam-metal"
       ],
-      "bridgeScore": 0.16,
-      "hubScore": 0.667,
+      "bridgeScore": 0.24,
+      "hubScore": 0.917,
       "layoutHints": {
         "pinned": false
       }
@@ -6491,12 +6506,12 @@
         "Thrash metal",
         "thrash metal"
       ],
-      "connectionCount": 6,
+      "connectionCount": 8,
       "linkedGenres": [
         "thrash-metal"
       ],
       "bridgeScore": 0.08,
-      "hubScore": 0.5,
+      "hubScore": 0.667,
       "layoutHints": {
         "pinned": false
       }
@@ -6533,10 +6548,10 @@
         "band",
         "rock"
       ],
-      "connectionCount": 3,
+      "connectionCount": 4,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0.25,
+      "hubScore": 0.333,
       "layoutHints": {
         "pinned": false
       }
@@ -6603,20 +6618,23 @@
     },
     "body-count": {
       "zone": "hard-rock-metal",
-      "secondaryZones": [],
+      "secondaryZones": [
+        "psychedelia-prog"
+      ],
       "primaryGenres": [
-        "hard rock",
-        "rock"
+        "hard rock"
       ],
       "curatorTags": [
         "hard rock",
-        "band",
-        "rock"
+        "Gangsta rap",
+        "band"
       ],
-      "connectionCount": 2,
-      "linkedGenres": [],
-      "bridgeScore": 0,
-      "hubScore": 0.167,
+      "connectionCount": 4,
+      "linkedGenres": [
+        "gangsta-rap"
+      ],
+      "bridgeScore": 0.3,
+      "hubScore": 0.333,
       "layoutHints": {
         "pinned": false
       }
@@ -6655,10 +6673,10 @@
         "band",
         "rock"
       ],
-      "connectionCount": 1,
+      "connectionCount": 3,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0.083,
+      "hubScore": 0.25,
       "layoutHints": {
         "pinned": false
       }
@@ -6675,10 +6693,10 @@
         "band",
         "rock"
       ],
-      "connectionCount": 1,
+      "connectionCount": 2,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0.083,
+      "hubScore": 0.167,
       "layoutHints": {
         "pinned": false
       }
@@ -6706,10 +6724,7 @@
     },
     "bandcamp": {
       "zone": "punk-alt",
-      "secondaryZones": [
-        "psychedelia-prog",
-        "folk-country-vise"
-      ],
+      "secondaryZones": [],
       "primaryGenres": [
         "shoegaze"
       ],
@@ -6718,21 +6733,19 @@
         "band",
         "shoegaze"
       ],
-      "connectionCount": 2,
+      "connectionCount": 4,
       "linkedGenres": [
         "shoegaze"
       ],
-      "bridgeScore": 0.52,
-      "hubScore": 0.167,
+      "bridgeScore": 0.08,
+      "hubScore": 0.333,
       "layoutHints": {
         "pinned": false
       }
     },
     "atheist": {
       "zone": "psychedelia-prog",
-      "secondaryZones": [
-        "hard-rock-metal"
-      ],
+      "secondaryZones": [],
       "primaryGenres": [
         "progressive metal"
       ],
@@ -6741,12 +6754,12 @@
         "progressive metal",
         "band"
       ],
-      "connectionCount": 1,
+      "connectionCount": 2,
       "linkedGenres": [
         "progressive-metal"
       ],
-      "bridgeScore": 0.3,
-      "hubScore": 0.083,
+      "bridgeScore": 0.08,
+      "hubScore": 0.167,
       "layoutHints": {
         "pinned": false
       }
@@ -6798,19 +6811,17 @@
         "progressive",
         "psychedelic"
       ],
-      "connectionCount": 2,
+      "connectionCount": 3,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0.167,
+      "hubScore": 0.25,
       "layoutHints": {
         "pinned": false
       }
     },
     "jukka-nevalainen": {
       "zone": "hard-rock-metal",
-      "secondaryZones": [
-        "rock-circuit"
-      ],
+      "secondaryZones": [],
       "eraStart": 1978,
       "eraPeak": 1978,
       "primaryGenres": [
@@ -6824,7 +6835,7 @@
       ],
       "connectionCount": 2,
       "linkedGenres": [],
-      "bridgeScore": 0.22,
+      "bridgeScore": 0,
       "hubScore": 0.167,
       "layoutHints": {
         "pinned": false
@@ -6998,10 +7009,10 @@
         "band",
         "rock"
       ],
-      "connectionCount": 4,
+      "connectionCount": 6,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0.333,
+      "hubScore": 0.5,
       "layoutHints": {
         "pinned": false
       }
@@ -7236,12 +7247,12 @@
         "hard rock",
         "band"
       ],
-      "connectionCount": 5,
+      "connectionCount": 7,
       "linkedGenres": [
         "power-metal"
       ],
       "bridgeScore": 0.08,
-      "hubScore": 0.417,
+      "hubScore": 0.583,
       "layoutHints": {
         "pinned": false
       }
@@ -7301,10 +7312,10 @@
         "band",
         "classic rock"
       ],
-      "connectionCount": 3,
+      "connectionCount": 4,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0.25,
+      "hubScore": 0.333,
       "layoutHints": {
         "pinned": false
       }
@@ -7387,9 +7398,7 @@
     },
     "roky-erickson": {
       "zone": "psychedelia-prog",
-      "secondaryZones": [
-        "folk-country-vise"
-      ],
+      "secondaryZones": [],
       "eraStart": 1947,
       "eraPeak": 2019,
       "primaryGenres": [
@@ -7403,7 +7412,7 @@
       ],
       "connectionCount": 0,
       "linkedGenres": [],
-      "bridgeScore": 0.22,
+      "bridgeScore": 0,
       "hubScore": 0,
       "layoutHints": {
         "pinned": false
@@ -7430,21 +7439,19 @@
     },
     "finntroll": {
       "zone": "hard-rock-metal",
-      "secondaryZones": [
-        "rock-circuit"
-      ],
+      "secondaryZones": [],
       "primaryGenres": [
-        "folk",
-        "rock"
+        "hard rock",
+        "folk"
       ],
       "curatorTags": [
+        "hard rock",
         "band",
-        "folk",
-        "rock"
+        "folk"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
-      "bridgeScore": 0.22,
+      "bridgeScore": 0,
       "hubScore": 0.083,
       "layoutHints": {
         "pinned": false
@@ -7500,10 +7507,10 @@
         "guitar",
         "instrument"
       ],
-      "connectionCount": 1,
+      "connectionCount": 3,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0.083,
+      "hubScore": 0.25,
       "layoutHints": {
         "pinned": false
       }
@@ -7567,9 +7574,7 @@
     },
     "nightwish": {
       "zone": "hard-rock-metal",
-      "secondaryZones": [
-        "rock-circuit"
-      ],
+      "secondaryZones": [],
       "eraStart": 1996,
       "eraPeak": 1996,
       "primaryGenres": [
@@ -7583,7 +7588,7 @@
       ],
       "connectionCount": 3,
       "linkedGenres": [],
-      "bridgeScore": 0.22,
+      "bridgeScore": 0,
       "hubScore": 0.25,
       "layoutHints": {
         "pinned": false
@@ -7640,10 +7645,10 @@
         "band",
         "classic rock"
       ],
-      "connectionCount": 1,
+      "connectionCount": 2,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0.083,
+      "hubScore": 0.167,
       "layoutHints": {
         "pinned": false
       }
@@ -7659,10 +7664,10 @@
         "band",
         "classic rock"
       ],
-      "connectionCount": 1,
+      "connectionCount": 2,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0.083,
+      "hubScore": 0.167,
       "layoutHints": {
         "pinned": false
       }
@@ -7717,12 +7722,12 @@
         "hard rock",
         "band"
       ],
-      "connectionCount": 1,
+      "connectionCount": 2,
       "linkedGenres": [
         "gothic-metal"
       ],
       "bridgeScore": 0.08,
-      "hubScore": 0.083,
+      "hubScore": 0.167,
       "layoutHints": {
         "pinned": false
       }
@@ -7761,12 +7766,13 @@
         "punk rock",
         "alternative"
       ],
-      "connectionCount": 3,
+      "connectionCount": 9,
       "linkedGenres": [
-        "horror-punk"
+        "horror-punk",
+        "hardcore-punk"
       ],
-      "bridgeScore": 0.08,
-      "hubScore": 0.25,
+      "bridgeScore": 0.16,
+      "hubScore": 0.75,
       "layoutHints": {
         "pinned": false
       }
@@ -7783,10 +7789,10 @@
         "punk rock",
         "california punk"
       ],
-      "connectionCount": 2,
+      "connectionCount": 6,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0.167,
+      "hubScore": 0.5,
       "layoutHints": {
         "pinned": false
       }
@@ -7800,10 +7806,10 @@
         "alternative",
         "punk"
       ],
-      "connectionCount": 3,
+      "connectionCount": 4,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0.25,
+      "hubScore": 0.333,
       "layoutHints": {
         "pinned": false
       }
@@ -7817,10 +7823,10 @@
         "alternative",
         "punk"
       ],
-      "connectionCount": 1,
+      "connectionCount": 2,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0.083,
+      "hubScore": 0.167,
       "layoutHints": {
         "pinned": false
       }
@@ -7898,10 +7904,10 @@
         "band",
         "rock"
       ],
-      "connectionCount": 1,
+      "connectionCount": 2,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0.083,
+      "hubScore": 0.167,
       "layoutHints": {
         "pinned": false
       }
@@ -7976,10 +7982,10 @@
         "alternative",
         "punk"
       ],
-      "connectionCount": 1,
+      "connectionCount": 3,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0.083,
+      "hubScore": 0.25,
       "layoutHints": {
         "pinned": false
       }
@@ -8043,25 +8049,27 @@
       }
     },
     "alice-cooper": {
-      "zone": "punk-alt",
+      "zone": "hard-rock-metal",
       "secondaryZones": [
-        "hard-rock-metal"
+        "punk-alt"
       ],
       "primaryGenres": [
+        "glam metal",
         "hard rock"
       ],
       "curatorTags": [
-        "Hard rock",
-        "Horror punk",
-        "hard rock"
+        "glam metal",
+        "hard rock",
+        "Hard rock"
       ],
-      "connectionCount": 3,
+      "connectionCount": 7,
       "linkedGenres": [
         "horror-punk",
-        "hard-rock"
+        "hard-rock",
+        "glam-metal"
       ],
-      "bridgeScore": 0.38,
-      "hubScore": 0.25,
+      "bridgeScore": 0.46,
+      "hubScore": 0.583,
       "layoutHints": {
         "pinned": false
       }
@@ -8099,10 +8107,10 @@
         "band",
         "rock"
       ],
-      "connectionCount": 1,
+      "connectionCount": 2,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0.083,
+      "hubScore": 0.167,
       "layoutHints": {
         "pinned": false
       }
@@ -8281,9 +8289,7 @@
     },
     "misfits": {
       "zone": "punk-alt",
-      "secondaryZones": [
-        "rock-circuit"
-      ],
+      "secondaryZones": [],
       "primaryGenres": [
         "horror punk",
         "punk rock"
@@ -8295,7 +8301,7 @@
       ],
       "connectionCount": 0,
       "linkedGenres": [],
-      "bridgeScore": 0.22,
+      "bridgeScore": 0,
       "hubScore": 0,
       "layoutHints": {
         "pinned": false
@@ -8303,9 +8309,7 @@
     },
     "adorable": {
       "zone": "punk-alt",
-      "secondaryZones": [
-        "folk-country-vise"
-      ],
+      "secondaryZones": [],
       "primaryGenres": [
         "country"
       ],
@@ -8318,7 +8322,7 @@
       "linkedGenres": [
         "shoegaze"
       ],
-      "bridgeScore": 0.3,
+      "bridgeScore": 0.08,
       "hubScore": 0.083,
       "layoutHints": {
         "pinned": false
@@ -8326,9 +8330,7 @@
     },
     "adventures": {
       "zone": "punk-alt",
-      "secondaryZones": [
-        "folk-country-vise"
-      ],
+      "secondaryZones": [],
       "primaryGenres": [
         "country"
       ],
@@ -8341,7 +8343,7 @@
       "linkedGenres": [
         "shoegaze"
       ],
-      "bridgeScore": 0.3,
+      "bridgeScore": 0.08,
       "hubScore": 0.083,
       "layoutHints": {
         "pinned": false
@@ -8349,9 +8351,7 @@
     },
     "andy-bell": {
       "zone": "punk-alt",
-      "secondaryZones": [
-        "folk-country-vise"
-      ],
+      "secondaryZones": [],
       "primaryGenres": [
         "country"
       ],
@@ -8360,21 +8360,19 @@
         "artist",
         "country"
       ],
-      "connectionCount": 1,
+      "connectionCount": 4,
       "linkedGenres": [
         "shoegaze"
       ],
-      "bridgeScore": 0.3,
-      "hubScore": 0.083,
+      "bridgeScore": 0.08,
+      "hubScore": 0.333,
       "layoutHints": {
         "pinned": false
       }
     },
     "bandcamp-daily": {
       "zone": "punk-alt",
-      "secondaryZones": [
-        "folk-country-vise"
-      ],
+      "secondaryZones": [],
       "primaryGenres": [
         "country"
       ],
@@ -8387,7 +8385,7 @@
       "linkedGenres": [
         "shoegaze"
       ],
-      "bridgeScore": 0.3,
+      "bridgeScore": 0.08,
       "hubScore": 0.083,
       "layoutHints": {
         "pinned": false
@@ -8395,9 +8393,7 @@
     },
     "bleed": {
       "zone": "punk-alt",
-      "secondaryZones": [
-        "folk-country-vise"
-      ],
+      "secondaryZones": [],
       "primaryGenres": [
         "country"
       ],
@@ -8410,7 +8406,7 @@
       "linkedGenres": [
         "shoegaze"
       ],
-      "bridgeScore": 0.3,
+      "bridgeScore": 0.08,
       "hubScore": 0.083,
       "layoutHints": {
         "pinned": false
@@ -8418,9 +8414,7 @@
     },
     "blur": {
       "zone": "punk-alt",
-      "secondaryZones": [
-        "folk-country-vise"
-      ],
+      "secondaryZones": [],
       "primaryGenres": [
         "country"
       ],
@@ -8429,12 +8423,12 @@
         "band",
         "country"
       ],
-      "connectionCount": 1,
+      "connectionCount": 2,
       "linkedGenres": [
         "shoegaze"
       ],
-      "bridgeScore": 0.3,
-      "hubScore": 0.083,
+      "bridgeScore": 0.08,
+      "hubScore": 0.167,
       "layoutHints": {
         "pinned": false
       }
@@ -8556,9 +8550,7 @@
     },
     "bush": {
       "zone": "punk-alt",
-      "secondaryZones": [
-        "rock-circuit"
-      ],
+      "secondaryZones": [],
       "primaryGenres": [
         "post-grunge",
         "grunge"
@@ -8572,7 +8564,7 @@
       "linkedGenres": [
         "post-grunge"
       ],
-      "bridgeScore": 0.3,
+      "bridgeScore": 0.08,
       "hubScore": 0.167,
       "layoutHints": {
         "pinned": false
@@ -8647,10 +8639,10 @@
         "band",
         "classic rock"
       ],
-      "connectionCount": 1,
+      "connectionCount": 2,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0.083,
+      "hubScore": 0.167,
       "layoutHints": {
         "pinned": false
       }
@@ -9053,22 +9045,24 @@
     },
     "bandana-thrash": {
       "zone": "hard-rock-metal",
-      "secondaryZones": [],
+      "secondaryZones": [
+        "punk-alt"
+      ],
       "primaryGenres": [
-        "hard rock",
-        "speed metal"
+        "hard rock"
       ],
       "curatorTags": [
         "hard rock",
-        "Speed Metal",
-        "speed metal"
+        "skate punk",
+        "Speed Metal"
       ],
-      "connectionCount": 1,
+      "connectionCount": 2,
       "linkedGenres": [
-        "speed-metal"
+        "speed-metal",
+        "skate-punk"
       ],
-      "bridgeScore": 0.08,
-      "hubScore": 0.083,
+      "bridgeScore": 0.38,
+      "hubScore": 0.167,
       "layoutHints": {
         "pinned": false
       }
@@ -9370,10 +9364,10 @@
         "band",
         "classic rock"
       ],
-      "connectionCount": 2,
+      "connectionCount": 3,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0.167,
+      "hubScore": 0.25,
       "layoutHints": {
         "pinned": false
       }
@@ -9445,10 +9439,10 @@
         "artist",
         "classic rock"
       ],
-      "connectionCount": 1,
+      "connectionCount": 2,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0.083,
+      "hubScore": 0.167,
       "layoutHints": {
         "pinned": false
       }
@@ -9732,13 +9726,13 @@
       ],
       "curatorTags": [
         "alternative rock",
-        "alternative",
-        "punk"
+        "punk rock",
+        "alternative"
       ],
-      "connectionCount": 1,
+      "connectionCount": 3,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0.083,
+      "hubScore": 0.25,
       "layoutHints": {
         "pinned": false
       }
@@ -9764,9 +9758,7 @@
     },
     "all-about-eve": {
       "zone": "punk-alt",
-      "secondaryZones": [
-        "rock-circuit"
-      ],
+      "secondaryZones": [],
       "primaryGenres": [
         "gothic rock",
         "rock"
@@ -9780,7 +9772,7 @@
       "linkedGenres": [
         "gothic-rock"
       ],
-      "bridgeScore": 0.3,
+      "bridgeScore": 0.08,
       "hubScore": 0.083,
       "layoutHints": {
         "pinned": false
@@ -9788,20 +9780,18 @@
     },
     "industrial-rock": {
       "zone": "punk-alt",
-      "secondaryZones": [
-        "rock-circuit"
-      ],
+      "secondaryZones": [],
       "primaryGenres": [
         "industrial rock"
       ],
       "curatorTags": [
-        "rock",
-        "classic rock",
-        "alternative"
+        "alternative",
+        "punk",
+        "rock"
       ],
       "connectionCount": 0,
       "linkedGenres": [],
-      "bridgeScore": 0.22,
+      "bridgeScore": 0,
       "hubScore": 0,
       "layoutHints": {
         "pinned": false
@@ -9809,9 +9799,7 @@
     },
     "amy-lee": {
       "zone": "rock-circuit",
-      "secondaryZones": [
-        "hard-rock-metal"
-      ],
+      "secondaryZones": [],
       "eraStart": 1981,
       "eraPeak": 1981,
       "primaryGenres": [
@@ -9825,7 +9813,7 @@
       ],
       "connectionCount": 1,
       "linkedGenres": [],
-      "bridgeScore": 0.22,
+      "bridgeScore": 0,
       "hubScore": 0.083,
       "layoutHints": {
         "pinned": false
@@ -9875,20 +9863,18 @@
     },
     "post-grunge": {
       "zone": "punk-alt",
-      "secondaryZones": [
-        "rock-circuit"
-      ],
+      "secondaryZones": [],
       "primaryGenres": [
         "post-grunge"
       ],
       "curatorTags": [
         "alternative rock",
-        "rock",
-        "classic rock"
+        "alternative",
+        "punk"
       ],
       "connectionCount": 2,
       "linkedGenres": [],
-      "bridgeScore": 0.22,
+      "bridgeScore": 0,
       "hubScore": 0.167,
       "layoutHints": {
         "pinned": false
@@ -9896,9 +9882,7 @@
     },
     "cold": {
       "zone": "punk-alt",
-      "secondaryZones": [
-        "rock-circuit"
-      ],
+      "secondaryZones": [],
       "primaryGenres": [
         "post-grunge",
         "grunge"
@@ -9912,7 +9896,7 @@
       "linkedGenres": [
         "post-grunge"
       ],
-      "bridgeScore": 0.3,
+      "bridgeScore": 0.08,
       "hubScore": 0.083,
       "layoutHints": {
         "pinned": false
@@ -9920,23 +9904,22 @@
     },
     "till-lindemann": {
       "zone": "folk-country-vise",
-      "secondaryZones": [
-        "rock-circuit"
-      ],
+      "secondaryZones": [],
       "eraStart": 1963,
       "eraPeak": 1963,
       "primaryGenres": [
+        "country rock",
         "country",
-        "rock"
+        "folk"
       ],
       "curatorTags": [
+        "country rock",
         "country",
-        "artist",
-        "rock"
+        "folk"
       ],
       "connectionCount": 3,
       "linkedGenres": [],
-      "bridgeScore": 0.22,
+      "bridgeScore": 0,
       "hubScore": 0.25,
       "layoutHints": {
         "pinned": false
@@ -9982,23 +9965,22 @@
     },
     "richard-marx": {
       "zone": "folk-country-vise",
-      "secondaryZones": [
-        "hard-rock-metal"
-      ],
+      "secondaryZones": [],
       "eraStart": 1963,
       "eraPeak": 1963,
       "primaryGenres": [
         "hard rock",
-        "rock"
+        "country",
+        "folk"
       ],
       "curatorTags": [
         "hard rock",
-        "artist",
-        "rock"
+        "country",
+        "folk"
       ],
       "connectionCount": 0,
       "linkedGenres": [],
-      "bridgeScore": 0.22,
+      "bridgeScore": 0,
       "hubScore": 0,
       "layoutHints": {
         "pinned": false
@@ -10077,10 +10059,10 @@
         "band",
         "rock"
       ],
-      "connectionCount": 1,
+      "connectionCount": 2,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0.083,
+      "hubScore": 0.167,
       "layoutHints": {
         "pinned": false
       }
@@ -10147,9 +10129,7 @@
     },
     "reo-speedwagon": {
       "zone": "rock-circuit",
-      "secondaryZones": [
-        "hard-rock-metal"
-      ],
+      "secondaryZones": [],
       "eraStart": 1967,
       "eraPeak": 1967,
       "primaryGenres": [
@@ -10163,7 +10143,7 @@
       ],
       "connectionCount": 5,
       "linkedGenres": [],
-      "bridgeScore": 0.22,
+      "bridgeScore": 0,
       "hubScore": 0.417,
       "layoutHints": {
         "pinned": false
@@ -10218,10 +10198,10 @@
         "artist",
         "classic rock"
       ],
-      "connectionCount": 1,
+      "connectionCount": 2,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0.083,
+      "hubScore": 0.167,
       "layoutHints": {
         "pinned": false
       }
@@ -10315,10 +10295,10 @@
         "band",
         "classic rock"
       ],
-      "connectionCount": 0,
+      "connectionCount": 1,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0,
+      "hubScore": 0.083,
       "layoutHints": {
         "pinned": false
       }
@@ -10347,23 +10327,22 @@
     },
     "jerry-reed": {
       "zone": "folk-country-vise",
-      "secondaryZones": [
-        "rock-circuit"
-      ],
+      "secondaryZones": [],
       "eraStart": 1937,
       "eraPeak": 2008,
       "primaryGenres": [
         "country rock",
-        "country"
+        "country",
+        "folk"
       ],
       "curatorTags": [
         "country rock",
         "country",
-        "artist"
+        "folk"
       ],
       "connectionCount": 0,
       "linkedGenres": [],
-      "bridgeScore": 0.22,
+      "bridgeScore": 0,
       "hubScore": 0,
       "layoutHints": {
         "pinned": false
@@ -10393,23 +10372,22 @@
     },
     "little-richard": {
       "zone": "folk-country-vise",
-      "secondaryZones": [
-        "rock-circuit"
-      ],
+      "secondaryZones": [],
       "eraStart": 1932,
       "eraPeak": 2020,
       "primaryGenres": [
+        "country rock",
         "country",
-        "rock"
+        "folk"
       ],
       "curatorTags": [
+        "country rock",
         "country",
-        "artist",
-        "rock"
+        "folk"
       ],
       "connectionCount": 0,
       "linkedGenres": [],
-      "bridgeScore": 0.22,
+      "bridgeScore": 0,
       "hubScore": 0,
       "layoutHints": {
         "pinned": false
@@ -10417,23 +10395,21 @@
     },
     "ronnie-van-zant": {
       "zone": "roots-blues",
-      "secondaryZones": [
-        "rock-circuit"
-      ],
+      "secondaryZones": [],
       "eraStart": 1948,
       "eraPeak": 1977,
       "primaryGenres": [
         "southern rock",
-        "rock"
+        "blues"
       ],
       "curatorTags": [
         "southern rock",
-        "artist",
-        "rock"
+        "blues",
+        "artist"
       ],
       "connectionCount": 0,
       "linkedGenres": [],
-      "bridgeScore": 0.22,
+      "bridgeScore": 0,
       "hubScore": 0,
       "layoutHints": {
         "pinned": false
@@ -10456,6 +10432,3538 @@
       "linkedGenres": [],
       "bridgeScore": 0,
       "hubScore": 0,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "dead-kennedys": {
+      "zone": "punk-alt",
+      "secondaryZones": [],
+      "eraStart": 1978,
+      "eraPeak": 1978,
+      "primaryGenres": [
+        "hardcore punk",
+        "punk rock"
+      ],
+      "curatorTags": [
+        "hardcore punk",
+        "political punk",
+        "california punk"
+      ],
+      "connectionCount": 2,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "ceremony": {
+      "zone": "punk-alt",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [
+        "band",
+        "alternative",
+        "punk"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "7-seconds": {
+      "zone": "punk-alt",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "hardcore punk",
+        "punk rock"
+      ],
+      "curatorTags": [
+        "hardcore punk",
+        "Punk rock",
+        "punk rock"
+      ],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "punk",
+        "hardcore-punk"
+      ],
+      "bridgeScore": 0.16,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "circle-jerks": {
+      "zone": "punk-alt",
+      "secondaryZones": [],
+      "eraStart": 1979,
+      "eraPeak": 1979,
+      "primaryGenres": [
+        "hardcore punk",
+        "punk rock"
+      ],
+      "curatorTags": [
+        "hardcore punk",
+        "california punk",
+        "punk roots"
+      ],
+      "connectionCount": 6,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.5,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "bill-stevenson": {
+      "zone": "psychedelia-prog",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [
+        "artist",
+        "progressive",
+        "psychedelic"
+      ],
+      "connectionCount": 2,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "classical-guitar": {
+      "zone": "guitar-workshop",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [
+        "electric guitar",
+        "guitar",
+        "instrument"
+      ],
+      "connectionCount": 2,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "d-o-a": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "dc3": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "the-damned": {
+      "zone": "punk-alt",
+      "secondaryZones": [
+        "rock-circuit"
+      ],
+      "primaryGenres": [
+        "punk rock",
+        "gothic rock"
+      ],
+      "curatorTags": [
+        "uk punk",
+        "gothic rock",
+        "punk roots"
+      ],
+      "connectionCount": 0,
+      "linkedGenres": [],
+      "bridgeScore": 0.22,
+      "hubScore": 0,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "bad-brains": {
+      "zone": "punk-alt",
+      "secondaryZones": [],
+      "eraStart": 1976,
+      "eraPeak": 1976,
+      "primaryGenres": [
+        "hardcore punk",
+        "reggae"
+      ],
+      "curatorTags": [
+        "hardcore punk",
+        "dc punk",
+        "reggae fusion"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "minor-threat": {
+      "zone": "punk-alt",
+      "secondaryZones": [],
+      "eraStart": 1980,
+      "eraPeak": 1980,
+      "primaryGenres": [
+        "hardcore punk"
+      ],
+      "curatorTags": [
+        "hardcore punk",
+        "straight edge",
+        "dc punk"
+      ],
+      "connectionCount": 9,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.75,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "big-boys": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "dr-know": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "guitarist",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "egg-hunt": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "embrace": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "jeff-nelson": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "artist",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "our-band-could-be-your-life": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "sex-pistols": {
+      "zone": "punk-alt",
+      "secondaryZones": [],
+      "eraStart": 1975,
+      "eraPeak": 1975,
+      "primaryGenres": [
+        "punk rock"
+      ],
+      "curatorTags": [
+        "punk rock",
+        "uk punk",
+        "punk roots"
+      ],
+      "connectionCount": 0,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "new-york-dolls": {
+      "zone": "punk-alt",
+      "secondaryZones": [
+        "rock-circuit"
+      ],
+      "eraStart": 1971,
+      "eraPeak": 1974,
+      "primaryGenres": [
+        "proto-punk",
+        "glam rock"
+      ],
+      "curatorTags": [
+        "proto-punk",
+        "glam rock",
+        "new york punk"
+      ],
+      "connectionCount": 2,
+      "linkedGenres": [],
+      "bridgeScore": 0.22,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "baker-s-biographical-dictionary-of-musicians": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "artist",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "the-clash": {
+      "zone": "punk-alt",
+      "secondaryZones": [],
+      "eraStart": 1976,
+      "eraPeak": 1976,
+      "primaryGenres": [
+        "punk rock",
+        "post-punk"
+      ],
+      "curatorTags": [
+        "punk rock",
+        "uk punk",
+        "political punk"
+      ],
+      "connectionCount": 5,
+      "linkedGenres": [
+        "2-tone-music-genre"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.417,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "bruce-springsteen-the-e-street-band": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "bruce-thomas": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "artist",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "mc5": {
+      "zone": "punk-alt",
+      "secondaryZones": [
+        "rock-circuit"
+      ],
+      "eraStart": 1963,
+      "eraPeak": 1963,
+      "primaryGenres": [
+        "proto-punk",
+        "garage rock"
+      ],
+      "curatorTags": [
+        "proto-punk",
+        "garage rock",
+        "detroit rock"
+      ],
+      "connectionCount": 0,
+      "linkedGenres": [],
+      "bridgeScore": 0.22,
+      "hubScore": 0,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "the-stooges": {
+      "zone": "punk-alt",
+      "secondaryZones": [
+        "rock-circuit"
+      ],
+      "eraStart": 1967,
+      "eraPeak": 1967,
+      "primaryGenres": [
+        "proto-punk",
+        "garage rock"
+      ],
+      "curatorTags": [
+        "proto-punk",
+        "garage rock",
+        "punk roots"
+      ],
+      "connectionCount": 0,
+      "linkedGenres": [],
+      "bridgeScore": 0.22,
+      "hubScore": 0,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "descendents": {
+      "zone": "punk-alt",
+      "secondaryZones": [],
+      "eraStart": 1977,
+      "eraPeak": 1979,
+      "primaryGenres": [
+        "punk rock",
+        "pop-punk"
+      ],
+      "curatorTags": [
+        "melodic punk",
+        "pop-punk",
+        "california punk"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "acoustic-guitar": {
+      "zone": "guitar-workshop",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [
+        "acoustic guitar",
+        "guitar",
+        "instrument"
+      ],
+      "connectionCount": 3,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.25,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "green-day": {
+      "zone": "punk-alt",
+      "secondaryZones": [
+        "rock-circuit"
+      ],
+      "eraStart": 1987,
+      "eraPeak": 1990,
+      "primaryGenres": [
+        "pop-punk",
+        "punk rock"
+      ],
+      "curatorTags": [
+        "pop-punk",
+        "east bay punk",
+        "mainstream punk"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0.22,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "the-offspring": {
+      "zone": "punk-alt",
+      "secondaryZones": [
+        "rock-circuit"
+      ],
+      "eraStart": 1984,
+      "eraPeak": 1984,
+      "primaryGenres": [
+        "punk rock",
+        "skate punk"
+      ],
+      "curatorTags": [
+        "skate punk",
+        "pop-punk",
+        "california punk"
+      ],
+      "connectionCount": 4,
+      "linkedGenres": [],
+      "bridgeScore": 0.22,
+      "hubScore": 0.333,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "adolescents": {
+      "zone": "punk-alt",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "hardcore punk"
+      ],
+      "curatorTags": [
+        "hardcore punk",
+        "skate punk",
+        "band"
+      ],
+      "connectionCount": 4,
+      "linkedGenres": [
+        "hardcore-punk",
+        "skate-punk"
+      ],
+      "bridgeScore": 0.16,
+      "hubScore": 0.333,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "agent-orange": {
+      "zone": "punk-alt",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "hardcore punk"
+      ],
+      "curatorTags": [
+        "hardcore punk",
+        "band",
+        "alternative"
+      ],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "hardcore-punk"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "siouxsie-and-the-banshees": {
+      "zone": "punk-alt",
+      "secondaryZones": [],
+      "eraStart": 1976,
+      "eraPeak": 1976,
+      "primaryGenres": [
+        "post-punk",
+        "gothic rock"
+      ],
+      "curatorTags": [
+        "post-punk",
+        "gothic rock",
+        "uk punk"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "air": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "23-skidoo": {
+      "zone": "punk-alt",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "post-punk"
+      ],
+      "curatorTags": [
+        "Post-punk",
+        "band",
+        "post-punk"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "post-punk"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "abc": {
+      "zone": "punk-alt",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "post-punk"
+      ],
+      "curatorTags": [
+        "Post-punk",
+        "band",
+        "post-punk"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "post-punk"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "pop-punk": {
+      "zone": "punk-alt",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "pop-punk"
+      ],
+      "curatorTags": [
+        "punk rock",
+        "alternative",
+        "punk"
+      ],
+      "connectionCount": 0,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "operation-ivy": {
+      "zone": "punk-alt",
+      "secondaryZones": [
+        "rock-circuit"
+      ],
+      "eraStart": 1952,
+      "eraPeak": 1952,
+      "primaryGenres": [
+        "ska punk",
+        "punk rock"
+      ],
+      "curatorTags": [
+        "ska punk",
+        "east bay punk",
+        "rancid roots"
+      ],
+      "connectionCount": 0,
+      "linkedGenres": [],
+      "bridgeScore": 0.22,
+      "hubScore": 0,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "rancid": {
+      "zone": "punk-alt",
+      "secondaryZones": [],
+      "eraStart": 1992,
+      "eraPeak": 2000,
+      "primaryGenres": [
+        "punk rock",
+        "ska punk"
+      ],
+      "curatorTags": [
+        "punk rock",
+        "ska punk",
+        "operation ivy lineage"
+      ],
+      "connectionCount": 0,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "nofx": {
+      "zone": "punk-alt",
+      "secondaryZones": [],
+      "eraStart": 1983,
+      "eraPeak": 1985,
+      "primaryGenres": [
+        "skate punk",
+        "punk rock"
+      ],
+      "curatorTags": [
+        "skate punk",
+        "melodic punk",
+        "california punk"
+      ],
+      "connectionCount": 3,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.25,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "samhain": {
+      "zone": "punk-alt",
+      "secondaryZones": [
+        "rock-circuit"
+      ],
+      "primaryGenres": [
+        "horror punk",
+        "deathrock"
+      ],
+      "curatorTags": [
+        "horror punk",
+        "deathrock",
+        "misfits lineage"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0.22,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "bando-sport": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "the-cramps": {
+      "zone": "punk-alt",
+      "secondaryZones": [
+        "rock-circuit"
+      ],
+      "eraStart": 1976,
+      "eraPeak": 2009,
+      "primaryGenres": [
+        "psychobilly",
+        "horror punk"
+      ],
+      "curatorTags": [
+        "psychobilly",
+        "horror punk",
+        "garage punk"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0.22,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "hardcore-punk": {
+      "zone": "punk-alt",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "hardcore punk"
+      ],
+      "curatorTags": [
+        "punk rock",
+        "alternative",
+        "punk"
+      ],
+      "connectionCount": 7,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.583,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "agression": {
+      "zone": "punk-alt",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "hardcore punk"
+      ],
+      "curatorTags": [
+        "hardcore punk",
+        "skate punk",
+        "band"
+      ],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "hardcore-punk",
+        "skate-punk"
+      ],
+      "bridgeScore": 0.16,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "al-thawra": {
+      "zone": "punk-alt",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "hardcore punk"
+      ],
+      "curatorTags": [
+        "hardcore punk",
+        "band",
+        "alternative"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "hardcore-punk"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "all-out-war": {
+      "zone": "punk-alt",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "hardcore punk"
+      ],
+      "curatorTags": [
+        "hardcore punk",
+        "band",
+        "alternative"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "hardcore-punk"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "pennywise": {
+      "zone": "punk-alt",
+      "secondaryZones": [
+        "hard-rock-metal"
+      ],
+      "eraStart": 1986,
+      "eraPeak": 1986,
+      "primaryGenres": [
+        "skate punk",
+        "punk rock"
+      ],
+      "curatorTags": [
+        "skate punk",
+        "melodic hardcore",
+        "california punk"
+      ],
+      "connectionCount": 0,
+      "linkedGenres": [],
+      "bridgeScore": 0.22,
+      "hubScore": 0,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "joy-division": {
+      "zone": "punk-alt",
+      "secondaryZones": [
+        "psychedelia-prog"
+      ],
+      "eraStart": 1976,
+      "eraPeak": 1976,
+      "primaryGenres": [
+        "post-punk"
+      ],
+      "curatorTags": [
+        "post-punk",
+        "gothic influence",
+        "manchester"
+      ],
+      "connectionCount": 3,
+      "linkedGenres": [],
+      "bridgeScore": 0.22,
+      "hubScore": 0.25,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "adrian-smith": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "artist",
+        "classic rock"
+      ],
+      "connectionCount": 5,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.417,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "skate-punk": {
+      "zone": "punk-alt",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "skate punk"
+      ],
+      "curatorTags": [
+        "hardcore punk",
+        "punk rock",
+        "alternative"
+      ],
+      "connectionCount": 3,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.25,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "fugazi": {
+      "zone": "punk-alt",
+      "secondaryZones": [],
+      "eraStart": 1986,
+      "eraPeak": 1986,
+      "primaryGenres": [
+        "post-hardcore",
+        "post-punk"
+      ],
+      "curatorTags": [
+        "post-hardcore",
+        "dc punk",
+        "independent punk"
+      ],
+      "connectionCount": 8,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.667,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "american-football": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "ataxia": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "beefeater": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "botch": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "braid": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "iggy-pop": {
+      "zone": "punk-alt",
+      "secondaryZones": [],
+      "eraStart": 1947,
+      "eraPeak": 1947,
+      "primaryGenres": [],
+      "curatorTags": [
+        "artist",
+        "alternative",
+        "punk"
+      ],
+      "connectionCount": 0,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "swamp-rock": {
+      "zone": "roots-blues",
+      "secondaryZones": [
+        "psychedelia-prog"
+      ],
+      "primaryGenres": [
+        "swamp rock"
+      ],
+      "curatorTags": [
+        "blues",
+        "country",
+        "funk"
+      ],
+      "connectionCount": 0,
+      "linkedGenres": [],
+      "bridgeScore": 0.22,
+      "hubScore": 0,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "roots-rock": {
+      "zone": "psychedelia-prog",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "roots rock"
+      ],
+      "curatorTags": [
+        "progressive rock",
+        "progressive",
+        "psychedelic"
+      ],
+      "connectionCount": 2,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "38-special": {
+      "zone": "roots-blues",
+      "secondaryZones": [
+        "rock-circuit",
+        "psychedelia-prog"
+      ],
+      "primaryGenres": [
+        "roots rock",
+        "southern rock"
+      ],
+      "curatorTags": [
+        "roots rock",
+        "Southern rock",
+        "southern rock"
+      ],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "roots-rock",
+        "southern-rock"
+      ],
+      "bridgeScore": 0.6,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "american-primitive-guitar": {
+      "zone": "guitar-workshop",
+      "secondaryZones": [
+        "psychedelia-prog"
+      ],
+      "primaryGenres": [],
+      "curatorTags": [
+        "roots rock",
+        "electric guitar",
+        "rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "roots-rock"
+      ],
+      "bridgeScore": 0.3,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "country-rock": {
+      "zone": "folk-country-vise",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "country rock"
+      ],
+      "curatorTags": [
+        "country",
+        "folk",
+        "rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "n-w-a": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "eraStart": 1987,
+      "eraPeak": 1987,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "connectionCount": 2,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "chicago": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "connectionCount": 4,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.333,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "public-enemy": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "eraStart": 1985,
+      "eraPeak": 1985,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "connectionCount": 7,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.583,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "bandleader": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "bass-guitars": {
+      "zone": "guitar-workshop",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [
+        "electric guitar",
+        "guitar",
+        "instrument"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "blue-magic": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "thug-life": {
+      "zone": "psychedelia-prog",
+      "secondaryZones": [],
+      "eraStart": 2001,
+      "eraPeak": 2025,
+      "primaryGenres": [],
+      "curatorTags": [
+        "band",
+        "progressive",
+        "psychedelic"
+      ],
+      "connectionCount": 0,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "digital-underground": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "eraStart": 1987,
+      "eraPeak": 1987,
+      "primaryGenres": [
+        "rock",
+        "funk"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "funk"
+      ],
+      "connectionCount": 3,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.25,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "george-clinton": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock",
+        "funk"
+      ],
+      "curatorTags": [
+        "rock",
+        "artist",
+        "funk"
+      ],
+      "connectionCount": 2,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "eminem": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "eraStart": 1972,
+      "eraPeak": 1972,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "artist",
+        "classic rock"
+      ],
+      "connectionCount": 0,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "outsidaz": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "connectionCount": 0,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "gangsta-rap": {
+      "zone": "psychedelia-prog",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "Gangsta rap"
+      ],
+      "curatorTags": [
+        "progressive",
+        "psychedelic"
+      ],
+      "connectionCount": 2,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "c-i-a": {
+      "zone": "rock-circuit",
+      "secondaryZones": [
+        "psychedelia-prog"
+      ],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "Gangsta rap",
+        "rock",
+        "band"
+      ],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "gangsta-rap"
+      ],
+      "bridgeScore": 0.3,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "g-funk": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "G-funk"
+      ],
+      "curatorTags": [
+        "rock",
+        "classic rock",
+        "funk"
+      ],
+      "connectionCount": 0,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "dr-dre": {
+      "zone": "psychedelia-prog",
+      "secondaryZones": [],
+      "eraStart": 1965,
+      "eraPeak": 1965,
+      "primaryGenres": [],
+      "curatorTags": [
+        "artist",
+        "progressive",
+        "psychedelic"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "babyface": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "artist",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "eazy-e": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "eraStart": 1964,
+      "eraPeak": 1995,
+      "primaryGenres": [
+        "rock",
+        "funk"
+      ],
+      "curatorTags": [
+        "rock",
+        "artist",
+        "funk"
+      ],
+      "connectionCount": 3,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.25,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "glenn-hughes": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "artist",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "d12": {
+      "zone": "psychedelia-prog",
+      "secondaryZones": [],
+      "eraStart": 1996,
+      "eraPeak": 1996,
+      "primaryGenres": [],
+      "curatorTags": [
+        "band",
+        "progressive",
+        "psychedelic"
+      ],
+      "connectionCount": 2,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "my-band": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "tupac-shakur": {
+      "zone": "psychedelia-prog",
+      "secondaryZones": [],
+      "eraStart": 1971,
+      "eraPeak": 1996,
+      "primaryGenres": [],
+      "curatorTags": [
+        "artist",
+        "progressive",
+        "psychedelic"
+      ],
+      "connectionCount": 0,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "west-coast-hip-hop": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "West Coast hip-hop"
+      ],
+      "curatorTags": [
+        "rock",
+        "classic rock",
+        "funk"
+      ],
+      "connectionCount": 0,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "ice-cube": {
+      "zone": "psychedelia-prog",
+      "secondaryZones": [],
+      "eraStart": 1969,
+      "eraPeak": 1990,
+      "primaryGenres": [],
+      "curatorTags": [
+        "artist",
+        "progressive",
+        "psychedelic"
+      ],
+      "connectionCount": 2,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "in-flames": {
+      "zone": "hard-rock-metal",
+      "secondaryZones": [],
+      "eraStart": 1990,
+      "eraPeak": 1990,
+      "primaryGenres": [
+        "hard rock",
+        "heavy metal"
+      ],
+      "curatorTags": [
+        "hard rock",
+        "heavy metal",
+        "band"
+      ],
+      "connectionCount": 6,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.5,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "armageddon": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "darkest-hour": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "dawn": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "distant": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "glittertind": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "connectionCount": 0,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "bruce-dickinson": {
+      "zone": "hard-rock-metal",
+      "secondaryZones": [],
+      "eraStart": 1958,
+      "eraPeak": 1993,
+      "primaryGenres": [
+        "hard rock",
+        "heavy metal"
+      ],
+      "curatorTags": [
+        "hard rock",
+        "heavy metal",
+        "artist"
+      ],
+      "connectionCount": 6,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.5,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "arthur-brown": {
+      "zone": "rock-circuit",
+      "secondaryZones": [
+        "psychedelia-prog"
+      ],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "Shock Rock",
+        "rock",
+        "artist"
+      ],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "shock-rock"
+      ],
+      "bridgeScore": 0.3,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "as-lions": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "catherine-wheel": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "iced-earth": {
+      "zone": "hard-rock-metal",
+      "secondaryZones": [],
+      "eraStart": 1984,
+      "eraPeak": 1984,
+      "primaryGenres": [
+        "hard rock",
+        "heavy metal"
+      ],
+      "curatorTags": [
+        "hard rock",
+        "heavy metal",
+        "band"
+      ],
+      "connectionCount": 5,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.417,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "demons-wizards": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "dennis-hayes": {
+      "zone": "psychedelia-prog",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [
+        "artist",
+        "progressive",
+        "psychedelic"
+      ],
+      "connectionCount": 2,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "into-eternity": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "bandwagon-effect": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "steve-harris": {
+      "zone": "rock-circuit",
+      "secondaryZones": [
+        "psychedelia-prog"
+      ],
+      "eraStart": 1948,
+      "eraPeak": 1965,
+      "primaryGenres": [
+        "rock",
+        "jazz"
+      ],
+      "curatorTags": [
+        "rock",
+        "artist",
+        "jazz"
+      ],
+      "connectionCount": 3,
+      "linkedGenres": [],
+      "bridgeScore": 0.22,
+      "hubScore": 0.25,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "archive": {
+      "zone": "psychedelia-prog",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [
+        "band",
+        "progressive",
+        "psychedelic"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "shy": {
+      "zone": "psychedelia-prog",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [
+        "band",
+        "progressive",
+        "psychedelic"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "michael-schenker": {
+      "zone": "rock-circuit",
+      "secondaryZones": [
+        "hard-rock-metal"
+      ],
+      "eraStart": 1955,
+      "eraPeak": 1955,
+      "primaryGenres": [
+        "hard rock",
+        "rock"
+      ],
+      "curatorTags": [
+        "hard rock",
+        "rock",
+        "guitarist"
+      ],
+      "connectionCount": 5,
+      "linkedGenres": [],
+      "bridgeScore": 0.22,
+      "hubScore": 0.417,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "arcade": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "contraband": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "dave-murray": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "guitarist",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "janick-gers": {
+      "zone": "hard-rock-metal",
+      "secondaryZones": [],
+      "eraStart": 1957,
+      "eraPeak": 1990,
+      "primaryGenres": [
+        "hard rock",
+        "heavy metal"
+      ],
+      "curatorTags": [
+        "hard rock",
+        "heavy metal",
+        "guitarist"
+      ],
+      "connectionCount": 6,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.5,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "gillan": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "gogmagog": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "tim-ripper-owens": {
+      "zone": "hard-rock-metal",
+      "secondaryZones": [],
+      "eraStart": 1967,
+      "eraPeak": 1967,
+      "primaryGenres": [
+        "hard rock",
+        "heavy metal"
+      ],
+      "curatorTags": [
+        "hard rock",
+        "heavy metal",
+        "artist"
+      ],
+      "connectionCount": 10,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.833,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "alogia": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "chi-cheng": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "artist",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "concerto-suite-for-electric-guitar-and-orchestra-in-e-flat-minor-op-1": {
+      "zone": "guitar-workshop",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [
+        "electric guitar",
+        "guitar",
+        "instrument"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "david-rosenthal": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "artist",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "hail": {
+      "zone": "hard-rock-metal",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "hard rock",
+        "heavy metal"
+      ],
+      "curatorTags": [
+        "hard rock",
+        "heavy metal",
+        "band"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "michael-kiske": {
+      "zone": "hard-rock-metal",
+      "secondaryZones": [],
+      "eraStart": 1968,
+      "eraPeak": 1968,
+      "primaryGenres": [
+        "hard rock",
+        "power metal"
+      ],
+      "curatorTags": [
+        "hard rock",
+        "power metal",
+        "artist"
+      ],
+      "connectionCount": 11,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.917,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "dgm": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "dennis-ward": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "artist",
+        "classic rock"
+      ],
+      "connectionCount": 2,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "hardline": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "unisonic": {
+      "zone": "hard-rock-metal",
+      "secondaryZones": [],
+      "eraStart": 2012,
+      "eraPeak": 2012,
+      "primaryGenres": [
+        "hard rock",
+        "rock"
+      ],
+      "curatorTags": [
+        "hard rock",
+        "band",
+        "rock"
+      ],
+      "connectionCount": 0,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "hollywood-vampires": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "connectionCount": 2,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "aerosmith": {
+      "zone": "hard-rock-metal",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "hard rock",
+        "rock"
+      ],
+      "curatorTags": [
+        "hard rock",
+        "band",
+        "rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "gloryhammer": {
+      "zone": "hard-rock-metal",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "hard rock",
+        "power metal"
+      ],
+      "curatorTags": [
+        "hard rock",
+        "power metal",
+        "band"
+      ],
+      "connectionCount": 4,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.333,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "arion": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "civil-war": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "dominum": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "wind-rose": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "nita-strauss": {
+      "zone": "rock-circuit",
+      "secondaryZones": [
+        "psychedelia-prog"
+      ],
+      "eraStart": 1986,
+      "eraPeak": 1986,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "guitarist",
+        "classic rock"
+      ],
+      "connectionCount": 8,
+      "linkedGenres": [],
+      "bridgeScore": 0.22,
+      "hubScore": 0.667,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "courtney-cox": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "artist",
+        "classic rock"
+      ],
+      "connectionCount": 2,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "dorothy": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "femme-fatale": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "connectionCount": 2,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "grim-reaper": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "guitar-player": {
+      "zone": "guitar-workshop",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [
+        "electric guitar",
+        "guitar",
+        "instrument"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "guitar-solo": {
+      "zone": "guitar-workshop",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [
+        "electric guitar",
+        "guitar",
+        "instrument"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "buckethead": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "eraStart": 1969,
+      "eraPeak": 1969,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "guitarist",
+        "classic rock"
+      ],
+      "connectionCount": 0,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "alternative-metal": {
+      "zone": "punk-alt",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "alternative metal"
+      ],
+      "curatorTags": [
+        "alternative rock",
+        "heavy metal",
+        "alternative"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "shock-rock": {
+      "zone": "rock-circuit",
+      "secondaryZones": [
+        "psychedelia-prog"
+      ],
+      "eraStart": 1966,
+      "eraPeak": 1966,
+      "primaryGenres": [
+        "Shock Rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "progressive",
+        "psychedelic"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0.22,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "stone-temple-pilots": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "eraStart": 1989,
+      "eraPeak": 2013,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "connectionCount": 0,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "scott-weiland": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "eraStart": 1967,
+      "eraPeak": 2008,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "artist",
+        "classic rock"
+      ],
+      "connectionCount": 2,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "filter": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "velvet-revolver": {
+      "zone": "hard-rock-metal",
+      "secondaryZones": [
+        "rock-circuit"
+      ],
+      "eraStart": 2002,
+      "eraPeak": 2008,
+      "primaryGenres": [
+        "hard rock"
+      ],
+      "curatorTags": [
+        "hard rock",
+        "American rock music supergroups",
+        "band"
+      ],
+      "connectionCount": 4,
+      "linkedGenres": [
+        "american-rock-music-supergroups"
+      ],
+      "bridgeScore": 0.3,
+      "hubScore": 0.333,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "american-rock-music-supergroups": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "American rock music supergroups"
+      ],
+      "curatorTags": [
+        "rock",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "brain": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "artist",
+        "classic rock"
+      ],
+      "connectionCount": 2,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "carrie": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "the-iron-maidens": {
+      "zone": "hard-rock-metal",
+      "secondaryZones": [],
+      "eraStart": 2001,
+      "eraPeak": 2001,
+      "primaryGenres": [
+        "hard rock",
+        "heavy metal"
+      ],
+      "curatorTags": [
+        "hard rock",
+        "heavy metal",
+        "band"
+      ],
+      "connectionCount": 4,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.333,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "electric-guitar": {
+      "zone": "guitar-workshop",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [
+        "electric guitar",
+        "guitar",
+        "instrument"
+      ],
+      "connectionCount": 2,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "phil-campbell": {
+      "zone": "hard-rock-metal",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "hard rock",
+        "rock"
+      ],
+      "curatorTags": [
+        "hard rock",
+        "artist",
+        "rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "chester-bennington": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "eraStart": 1976,
+      "eraPeak": 2017,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "artist",
+        "classic rock"
+      ],
+      "connectionCount": 3,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.25,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "emily-armstrong": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "artist",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "guitar-heaven-the-greatest-guitar-classics-of-all-time": {
+      "zone": "guitar-workshop",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [
+        "electric guitar",
+        "guitar",
+        "instrument"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "steel-panther": {
+      "zone": "hard-rock-metal",
+      "secondaryZones": [],
+      "eraStart": 1997,
+      "eraPeak": 2000,
+      "primaryGenres": [
+        "hard rock",
+        "glam metal"
+      ],
+      "curatorTags": [
+        "hard rock",
+        "glam metal",
+        "band"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "equinox": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "tenacious-d": {
+      "zone": "rock-circuit",
+      "secondaryZones": [
+        "hard-rock-metal"
+      ],
+      "eraStart": 1994,
+      "eraPeak": 1994,
+      "primaryGenres": [
+        "hard rock",
+        "rock"
+      ],
+      "curatorTags": [
+        "American rock music duos",
+        "hard rock",
+        "rock"
+      ],
+      "connectionCount": 4,
+      "linkedGenres": [
+        "american-rock-music-duos"
+      ],
+      "bridgeScore": 0.3,
+      "hubScore": 0.333,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "american-rock-music-duos": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "American rock music duos"
+      ],
+      "curatorTags": [
+        "rock",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "satchel": {
+      "zone": "hard-rock-metal",
+      "secondaryZones": [
+        "psychedelia-prog"
+      ],
+      "eraStart": 1970,
+      "eraPeak": 1970,
+      "primaryGenres": [
+        "glam metal",
+        "hard rock"
+      ],
+      "curatorTags": [
+        "glam metal",
+        "guitarist",
+        "hard rock"
+      ],
+      "connectionCount": 7,
+      "linkedGenres": [],
+      "bridgeScore": 0.22,
+      "hubScore": 0.583,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "jeff-duncan": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "artist",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "jeff-martin": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "artist",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "kevin-gilbert": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "artist",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "kramer-guitars": {
+      "zone": "guitar-workshop",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [
+        "electric guitar",
+        "guitar",
+        "instrument"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "mr-big": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "musicians-institute": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "artist",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "jack-black": {
+      "zone": "psychedelia-prog",
+      "secondaryZones": [],
+      "eraStart": 1969,
+      "eraPeak": 1969,
+      "primaryGenres": [],
+      "curatorTags": [
+        "artist",
+        "progressive",
+        "psychedelic"
+      ],
+      "connectionCount": 0,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "glam-metal": {
+      "zone": "hard-rock-metal",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "glam metal"
+      ],
+      "curatorTags": [
+        "hard rock",
+        "glam rock",
+        "heavy metal"
+      ],
+      "connectionCount": 2,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "axl-rose": {
+      "zone": "hard-rock-metal",
+      "secondaryZones": [],
+      "eraStart": 1962,
+      "eraPeak": 1962,
+      "primaryGenres": [
+        "hard rock",
+        "rock"
+      ],
+      "curatorTags": [
+        "hard rock",
+        "artist",
+        "rock"
+      ],
+      "connectionCount": 7,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.583,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "adam-hamilton": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "artist",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "arthur-porter": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "artist",
+        "classic rock"
+      ],
+      "connectionCount": 2,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "billy-davis": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "guitarist",
+        "classic rock"
+      ],
+      "connectionCount": 2,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "billy-williamson": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "guitarist",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "charles-sutton": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "artist",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "chris-holmes": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "guitarist",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "linkin-park": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "eraStart": 1996,
+      "eraPeak": 1996,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "duff-mckagan": {
+      "zone": "hard-rock-metal",
+      "secondaryZones": [],
+      "eraStart": 1964,
+      "eraPeak": 1964,
+      "primaryGenres": [
+        "hard rock",
+        "rock"
+      ],
+      "curatorTags": [
+        "hard rock",
+        "artist",
+        "rock"
+      ],
+      "connectionCount": 3,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.25,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "andrew-watt": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "artist",
+        "classic rock"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "kai-hansen": {
+      "zone": "hard-rock-metal",
+      "secondaryZones": [],
+      "eraStart": 1963,
+      "eraPeak": 1989,
+      "primaryGenres": [
+        "hard rock",
+        "power metal"
+      ],
+      "curatorTags": [
+        "hard rock",
+        "power metal",
+        "guitarist"
+      ],
+      "connectionCount": 10,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.833,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "esp-guitars": {
+      "zone": "guitar-workshop",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [
+        "electric guitar",
+        "guitar",
+        "instrument"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
       "layoutHints": {
         "pinned": false
       }

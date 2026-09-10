@@ -7,13 +7,13 @@ roles: [artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: [country, rock]
+primaryGenres: [country rock, country, folk]
+curatorTags: [country rock, country, folk]
 secondaryZones: []
 layoutPinned: false
 layoutX: -526
 layoutY: -23
 starter: false
-curatorTags: [country, artist, rock]
 ---
 # Till Lindemann
 

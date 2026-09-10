@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [hard rock, rock]
+curatorTags: [hard rock, band, rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 592
 layoutY: -170
 starter: false
-curatorTags: [hard rock, band, rock]
 ---
 # Artillery
 

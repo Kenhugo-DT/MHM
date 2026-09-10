@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [rock]
+curatorTags: [rock, band, classic rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -168
 layoutY: -335
 starter: false
-curatorTags: [rock, band, classic rock]
 ---
 # Flyleaf
 

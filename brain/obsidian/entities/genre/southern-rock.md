@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [Southern rock]
+curatorTags: [blues, blues rock, country rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1053
 layoutY: -289
 starter: false
-curatorTags: [blues, blues rock, country rock]
 ---
 # Southern rock
 
@@ -23,6 +23,7 @@ A guitar-heavy meeting point between blues rock, country, boogie and American So
 
 ## Connections
 
+- [[38-special|.38 Special]] - Wikipedia link signal (Wikipedia link: 38 Special (band))
 - [[blues-rock|Blues rock]] - roots source
 - [[country|Country]] - regional overlap
 - [[dickey-betts|Dickey Betts]] - melodic twin-guitar line

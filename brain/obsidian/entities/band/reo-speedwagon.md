@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [hard rock, rock]
+curatorTags: [hard rock, rock, band]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1472
 layoutY: 513
 starter: false
-curatorTags: [hard rock, rock, band]
 ---
 # REO Speedwagon
 

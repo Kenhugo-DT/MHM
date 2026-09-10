@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [hard rock]
+curatorTags: [hard rock, alternative metal, Hard rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1958
 layoutY: 368
 starter: false
-curatorTags: [hard rock, Hard rock, Progressive metal]
 ---
 # Anthrax (American band)
 
@@ -23,6 +23,7 @@ A band surfaced by the MHM research brain from Wikipedia signals around Black Sa
 
 ## Connections
 
+- [[alternative-metal|alternative metal]] - Wikipedia link signal (Wikipedia link: Anthrax (American band))
 - [[andy-sneap|Andy Sneap]] - Wikipedia link signal (Wikipedia link: Anthrax (American band))
 - [[angel-witch|Angel Witch]] - Wikipedia link signal (Wikipedia link: Anthrax (American band))
 - [[avenged-sevenfold|Avenged Sevenfold]] - Wikipedia link signal (Wikipedia link: Anthrax (American band))
@@ -33,7 +34,9 @@ A band surfaced by the MHM research brain from Wikipedia signals around Black Sa
 - [[eddie-van-halen|Eddie Van Halen]] - Wikipedia link signal (Wikipedia link: Anthrax (American band))
 - [[hard-rock|Hard rock]] - Wikipedia link signal (Wikipedia link: Anthrax (American band))
 - [[judas-priest|Judas Priest]] - Wikipedia link signal (Wikipedia link: Anthrax (American band))
+- [[michael-schenker|Michael Schenker]] - Wikipedia link signal (Wikipedia link: Anthrax (American band))
 - [[progressive-metal|Progressive metal]] - Wikipedia link signal (Wikipedia link: Anthrax (American band))
+- [[public-enemy|Public Enemy]] - Wikipedia link signal (Wikipedia link: Anthrax (American band))
 - [[suicidal-tendencies|Suicidal Tendencies]] - Wikipedia link signal (Wikipedia link: Anthrax (American band))
 - [[thrash-metal|Thrash metal]] - Wikipedia link signal (Wikipedia link: Anthrax (American band))
 

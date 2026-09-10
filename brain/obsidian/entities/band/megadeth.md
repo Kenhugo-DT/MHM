@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [hard rock, thrash metal]
+curatorTags: [hard rock, Thrash metal, thrash metal]
 secondaryZones: []
 layoutPinned: false
 layoutX: 2528
 layoutY: -86
 starter: true
-curatorTags: [hard rock, Thrash metal, thrash metal]
 ---
 # Megadeth
 

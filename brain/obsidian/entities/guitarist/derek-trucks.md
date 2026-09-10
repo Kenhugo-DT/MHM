@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [blues rock, southern rock]
+curatorTags: [Blues rock, blues rock, southern rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1507
 layoutY: -293
 starter: false
-curatorTags: [Blues rock, blues rock, southern rock]
 ---
 # Derek Trucks
 

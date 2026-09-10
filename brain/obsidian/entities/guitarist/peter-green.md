@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [blues rock, blues]
+curatorTags: [Blues rock, blues rock, blues]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1277
 layoutY: -250
 starter: false
-curatorTags: [Blues rock, blues rock, blues]
 ---
 # Peter Green
 

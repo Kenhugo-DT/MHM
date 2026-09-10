@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [power metal]
+curatorTags: [hard rock, heavy metal, speed metal]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1765
 layoutY: 227
 starter: false
-curatorTags: [hard rock, heavy metal, speed metal]
 ---
 # power metal
 

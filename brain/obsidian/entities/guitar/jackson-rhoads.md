@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: []
+curatorTags: [electric guitar, Heavy metal, heavy metal]
 secondaryZones: []
 layoutPinned: false
 layoutX: 3215
 layoutY: -385
 starter: true
-curatorTags: [electric guitar, Heavy metal, heavy metal]
 ---
 # Jackson Rhoads
 

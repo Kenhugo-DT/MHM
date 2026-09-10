@@ -1,0 +1,34 @@
+---
+id: alogia
+label: Alogia
+type: band
+zone: rock-circuit
+roles: [band]
+aliases: []
+eraStart: 
+eraPeak: 
+primaryGenres: [rock]
+curatorTags: [rock, band, classic rock]
+secondaryZones: []
+layoutPinned: false
+layoutX: 202
+layoutY: 2
+starter: false
+---
+# Alogia
+
+## Summary
+
+A band surfaced by the MHM research brain from Wikipedia signals around Tim Ripper Owens.
+
+## Connections
+
+- [[tim-ripper-owens|Tim Ripper Owens]] - Wikipedia link signal (Wikipedia link: Alogia (band))
+
+## Sources
+
+- [Wikipedia](https://en.wikipedia.org/wiki/Alogia_%28band%29)
+
+## Curator Notes
+
+Use this section for human notes. Machine-readable organization belongs in the frontmatter above.

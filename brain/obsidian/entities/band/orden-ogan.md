@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [hard rock, power metal]
+curatorTags: [hard rock, power metal, band]
 secondaryZones: []
 layoutPinned: false
 layoutX: 722
 layoutY: 373
 starter: false
-curatorTags: [hard rock, power metal, band]
 ---
 # Orden Ogan
 

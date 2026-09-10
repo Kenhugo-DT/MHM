@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [gothic metal, hard rock]
+curatorTags: [gothic metal, hard rock, band]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1235
 layoutY: 395
 starter: false
-curatorTags: [gothic metal, hard rock, band]
 ---
 # Bauhaus
 
@@ -24,6 +24,7 @@ A band surfaced by the MHM research brain from Wikipedia signals around gothic m
 ## Connections
 
 - [[gothic-metal|gothic metal]] - Wikipedia link signal (Wikipedia link: Bauhaus (band))
+- [[joy-division|Joy Division]] - Wikipedia link signal (Wikipedia link: Bauhaus (band))
 
 ## Sources
 

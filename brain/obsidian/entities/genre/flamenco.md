@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [Flamenco]
+curatorTags: [country, folk]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1323
 layoutY: 1704
 starter: false
-curatorTags: [country, folk]
 ---
 # Flamenco
 

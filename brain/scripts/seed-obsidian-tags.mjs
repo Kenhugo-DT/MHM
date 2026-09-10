@@ -161,6 +161,66 @@ const MANUAL_HINTS = {
     primaryGenres: ["punk rock", "hardcore punk"],
     curatorTags: ["punk rock", "hardcore punk", "melodic punk"],
   },
+  "the-stooges": {
+    zone: "punk-alt",
+    primaryGenres: ["proto-punk", "garage rock"],
+    curatorTags: ["proto-punk", "garage rock", "punk roots"],
+  },
+  "new-york-dolls": {
+    zone: "punk-alt",
+    primaryGenres: ["proto-punk", "glam rock"],
+    curatorTags: ["proto-punk", "glam rock", "new york punk"],
+  },
+  "mc5": {
+    zone: "punk-alt",
+    primaryGenres: ["proto-punk", "garage rock"],
+    curatorTags: ["proto-punk", "garage rock", "detroit rock"],
+  },
+  "sex-pistols": {
+    zone: "punk-alt",
+    primaryGenres: ["punk rock"],
+    curatorTags: ["punk rock", "uk punk", "punk roots"],
+  },
+  "the-clash": {
+    zone: "punk-alt",
+    primaryGenres: ["punk rock", "post-punk"],
+    curatorTags: ["punk rock", "uk punk", "political punk"],
+  },
+  "the-damned": {
+    zone: "punk-alt",
+    primaryGenres: ["punk rock", "gothic rock"],
+    curatorTags: ["uk punk", "gothic rock", "punk roots"],
+  },
+  "dead-kennedys": {
+    zone: "punk-alt",
+    primaryGenres: ["hardcore punk", "punk rock"],
+    curatorTags: ["hardcore punk", "political punk", "california punk"],
+  },
+  "minor-threat": {
+    zone: "punk-alt",
+    primaryGenres: ["hardcore punk"],
+    curatorTags: ["hardcore punk", "straight edge", "dc punk"],
+  },
+  "bad-brains": {
+    zone: "punk-alt",
+    primaryGenres: ["hardcore punk", "reggae"],
+    curatorTags: ["hardcore punk", "dc punk", "reggae fusion"],
+  },
+  "circle-jerks": {
+    zone: "punk-alt",
+    primaryGenres: ["hardcore punk", "punk rock"],
+    curatorTags: ["hardcore punk", "california punk", "punk roots"],
+  },
+  "fugazi": {
+    zone: "punk-alt",
+    primaryGenres: ["post-hardcore", "post-punk"],
+    curatorTags: ["post-hardcore", "dc punk", "independent punk"],
+  },
+  "descendents": {
+    zone: "punk-alt",
+    primaryGenres: ["punk rock", "pop-punk"],
+    curatorTags: ["melodic punk", "pop-punk", "california punk"],
+  },
   "black-flag": {
     zone: "punk-alt",
     primaryGenres: ["hardcore punk", "punk rock"],
@@ -175,6 +235,56 @@ const MANUAL_HINTS = {
     zone: "punk-alt",
     primaryGenres: ["punk rock", "hardcore punk"],
     curatorTags: ["punk rock", "hardcore punk", "la punk"],
+  },
+  "the-cramps": {
+    zone: "punk-alt",
+    primaryGenres: ["psychobilly", "horror punk"],
+    curatorTags: ["psychobilly", "horror punk", "garage punk"],
+  },
+  "samhain": {
+    zone: "punk-alt",
+    primaryGenres: ["horror punk", "deathrock"],
+    curatorTags: ["horror punk", "deathrock", "misfits lineage"],
+  },
+  "joy-division": {
+    zone: "punk-alt",
+    primaryGenres: ["post-punk"],
+    curatorTags: ["post-punk", "gothic influence", "manchester"],
+  },
+  "siouxsie-and-the-banshees": {
+    zone: "punk-alt",
+    primaryGenres: ["post-punk", "gothic rock"],
+    curatorTags: ["post-punk", "gothic rock", "uk punk"],
+  },
+  "nofx": {
+    zone: "punk-alt",
+    primaryGenres: ["skate punk", "punk rock"],
+    curatorTags: ["skate punk", "melodic punk", "california punk"],
+  },
+  "rancid": {
+    zone: "punk-alt",
+    primaryGenres: ["punk rock", "ska punk"],
+    curatorTags: ["punk rock", "ska punk", "operation ivy lineage"],
+  },
+  "operation-ivy": {
+    zone: "punk-alt",
+    primaryGenres: ["ska punk", "punk rock"],
+    curatorTags: ["ska punk", "east bay punk", "rancid roots"],
+  },
+  "pennywise": {
+    zone: "punk-alt",
+    primaryGenres: ["skate punk", "punk rock"],
+    curatorTags: ["skate punk", "melodic hardcore", "california punk"],
+  },
+  "green-day": {
+    zone: "punk-alt",
+    primaryGenres: ["pop-punk", "punk rock"],
+    curatorTags: ["pop-punk", "east bay punk", "mainstream punk"],
+  },
+  "the-offspring": {
+    zone: "punk-alt",
+    primaryGenres: ["punk rock", "skate punk"],
+    curatorTags: ["skate punk", "pop-punk", "california punk"],
   },
   "suicidal-tendencies": {
     zone: "punk-alt",

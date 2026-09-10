@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [shoegaze]
+curatorTags: [Shoegaze, band, shoegaze]
 secondaryZones: []
 layoutPinned: false
 layoutX: -121
 layoutY: -904
 starter: false
-curatorTags: [Shoegaze, band, shoegaze]
 ---
 # Bandcamp
 
@@ -24,6 +24,8 @@ A band surfaced by the MHM research brain from Wikipedia signals around Dream Th
 ## Connections
 
 - [[dream-theater|Dream Theater]] - Wikipedia link signal (Wikipedia link: Bandcamp)
+- [[fugazi|Fugazi]] - Wikipedia link signal (Wikipedia link: Bandcamp)
+- [[public-enemy|Public Enemy]] - Wikipedia link signal (Wikipedia link: Bandcamp)
 - [[shoegaze|Shoegaze]] - Wikipedia link signal (Wikipedia link: Bandcamp)
 
 ## Sources

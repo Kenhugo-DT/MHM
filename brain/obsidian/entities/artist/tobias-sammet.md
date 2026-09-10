@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [hard rock, power metal]
+curatorTags: [hard rock, power metal, artist]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1095
 layoutY: -516
 starter: false
-curatorTags: [hard rock, power metal, artist]
 ---
 # Tobias Sammet
 

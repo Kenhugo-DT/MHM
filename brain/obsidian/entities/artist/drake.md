@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [rock]
+curatorTags: [rock, artist, classic rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -201
 layoutY: 491
 starter: false
-curatorTags: [rock, artist, classic rock]
 ---
 # Drake
 
@@ -23,6 +23,7 @@ A artist surfaced by the MHM research brain from Wikipedia signals around REO Sp
 
 ## Connections
 
+- [[d12|D12]] - Wikipedia link signal (Wikipedia link: Drake (musician))
 - [[reo-speedwagon|REO Speedwagon]] - Wikipedia link signal (Wikipedia link: Drake (musician))
 
 ## Sources

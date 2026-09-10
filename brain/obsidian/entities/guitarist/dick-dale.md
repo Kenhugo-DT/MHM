@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [rock]
+curatorTags: [Surf rock, rock, guitarist]
 secondaryZones: []
 layoutPinned: false
 layoutX: 475
 layoutY: -725
 starter: false
-curatorTags: [Surf rock, rock, guitarist]
 ---
 # Dick Dale
 

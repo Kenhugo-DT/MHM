@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [power metal, hard rock]
+curatorTags: [power metal, hard rock, band]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1798
 layoutY: 387
 starter: false
-curatorTags: [power metal, hard rock, band]
 ---
 # Avian
 

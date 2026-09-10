@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: []
+curatorTags: [Alternative rock, electric guitar, Indie rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 3587
 layoutY: -226
 starter: false
-curatorTags: [Alternative rock, electric guitar, Indie rock]
 ---
 # Fender Mustang
 

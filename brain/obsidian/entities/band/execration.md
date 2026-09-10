@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [rock]
+curatorTags: [rock, band, classic rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -273
 layoutY: -88
 starter: false
-curatorTags: [rock, band, classic rock]
 ---
 # Execration
 

@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [rock]
+curatorTags: [rock, band, classic rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 199
 layoutY: 23
 starter: false
-curatorTags: [rock, band, classic rock]
 ---
 # Allison
 

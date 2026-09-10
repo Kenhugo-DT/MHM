@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [Blues]
+curatorTags: [blues, blues rock, electric blues]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1648
 layoutY: -327
 starter: true
-curatorTags: [blues, blues rock, electric blues]
 ---
 # Blues
 

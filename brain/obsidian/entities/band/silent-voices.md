@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [rock]
+curatorTags: [rock, band, classic rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -490
 layoutY: -211
 starter: false
-curatorTags: [rock, band, classic rock]
 ---
 # Silent Voices
 

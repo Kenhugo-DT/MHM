@@ -7,13 +7,13 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: [hard rock, rock]
+primaryGenres: [hard rock]
+curatorTags: [hard rock, Gangsta rap, band]
 secondaryZones: []
 layoutPinned: false
 layoutX: 592
 layoutY: 159
 starter: false
-curatorTags: [hard rock, band, rock]
 ---
 # Body Count
 
@@ -24,7 +24,9 @@ A band surfaced by the MHM research brain from Wikipedia signals around Judas Pr
 ## Connections
 
 - [[amy-lee|Amy Lee]] - Wikipedia link signal (Wikipedia link: Body Count (band))
+- [[gangsta-rap|Gangsta rap]] - Wikipedia link signal (Wikipedia link: Body Count (band))
 - [[judas-priest|Judas Priest]] - Wikipedia link signal (Wikipedia link: Body Count (band))
+- [[tenacious-d|Tenacious D]] - Wikipedia link signal (Wikipedia link: Body Count (band))
 
 ## Sources
 

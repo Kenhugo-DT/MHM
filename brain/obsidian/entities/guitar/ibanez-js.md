@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: []
+curatorTags: [electric guitar, Rock, signature guitar]
 secondaryZones: []
 layoutPinned: false
 layoutX: 3354
 layoutY: -100
 starter: false
-curatorTags: [electric guitar, Rock, signature guitar]
 ---
 # Ibanez JS
 

@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: []
+curatorTags: [acoustic guitar, Singer-songwriter, country]
 secondaryZones: []
 layoutPinned: false
 layoutX: 3443
 layoutY: 25
 starter: false
-curatorTags: [acoustic guitar, Singer-songwriter, country]
 ---
 # Taylor 814ce
 

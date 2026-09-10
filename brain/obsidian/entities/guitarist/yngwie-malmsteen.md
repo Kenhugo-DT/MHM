@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [hard rock, heavy metal]
+curatorTags: [hard rock, Heavy metal, heavy metal]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1575
 layoutY: 5
 starter: false
-curatorTags: [hard rock, Heavy metal, heavy metal]
 ---
 # Yngwie Malmsteen
 

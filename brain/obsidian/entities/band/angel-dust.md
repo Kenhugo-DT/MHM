@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [rock]
+curatorTags: [rock, band, classic rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -600
 layoutY: -304
 starter: false
-curatorTags: [rock, band, classic rock]
 ---
 # Angel Dust
 

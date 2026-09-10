@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [rock]
+curatorTags: [rock, band, classic rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -517
 layoutY: 341
 starter: false
-curatorTags: [rock, band, classic rock]
 ---
 # Sinner
 

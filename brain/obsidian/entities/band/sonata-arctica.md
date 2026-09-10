@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [hard rock, power metal]
+curatorTags: [hard rock, power metal, band]
 secondaryZones: []
 layoutPinned: false
 layoutX: 678
 layoutY: -418
 starter: false
-curatorTags: [hard rock, power metal, band]
 ---
 # Sonata Arctica
 

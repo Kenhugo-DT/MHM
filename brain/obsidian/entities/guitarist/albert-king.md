@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [electric blues, blues]
+curatorTags: [Electric blues, electric blues, blues]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1169
 layoutY: -48
 starter: false
-curatorTags: [Electric blues, electric blues, blues]
 ---
 # Albert King
 

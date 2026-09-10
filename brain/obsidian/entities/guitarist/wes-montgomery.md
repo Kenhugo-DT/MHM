@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [jazz fusion]
+curatorTags: [Jazz, Jazz fusion, jazz fusion]
 secondaryZones: []
 layoutPinned: false
 layoutX: -810
 layoutY: 1614
 starter: true
-curatorTags: [Jazz, Jazz fusion, jazz fusion]
 ---
 # Wes Montgomery
 

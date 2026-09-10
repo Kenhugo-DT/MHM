@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: []
+curatorTags: [electric guitar, Hard rock, blues rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 2964
 layoutY: -71
 starter: true
-curatorTags: [electric guitar, Hard rock, blues rock]
 ---
 # Gibson Les Paul
 
@@ -29,7 +29,9 @@ A carved-top solid-body electric strongly associated with sustain, humbuckers an
 - [[gibson|Gibson]] - made
 - [[hard-rock|Hard rock]] - sustain and humbuckers
 - [[jimmy-page|Jimmy Page]] - classic tone
+- [[kai-hansen|Kai Hansen]] - Wikipedia link signal (Wikipedia link: Gibson Les Paul)
 - [[michael-weikath|Michael Weikath]] - Wikipedia link signal (Wikipedia link: Gibson Les Paul)
+- [[minor-threat|Minor Threat]] - Wikipedia link signal (Wikipedia link: Gibson Les Paul)
 - [[peter-green|Peter Green]] - iconic instrument
 - [[randy-rhoads|Randy Rhoads]] - lead guitar link
 - [[slash|Slash]] - signature instrument

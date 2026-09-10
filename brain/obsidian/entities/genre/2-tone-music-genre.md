@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: ["2 Tone (music genre)"]
+curatorTags: [alternative rock, punk rock, alternative]
 secondaryZones: []
 layoutPinned: false
 layoutX: 985
 layoutY: 1706
 starter: false
-curatorTags: [alternative rock, alternative, punk]
 ---
 # 2 Tone (music genre)
 
@@ -24,6 +24,8 @@ A genre surfaced by the MHM research brain from Wikipedia signals around alterna
 ## Connections
 
 - [[alternative-rock|Alternative rock]] - Wikipedia link signal (Wikipedia link: 2 Tone (music genre))
+- [[punk|Punk rock]] - Wikipedia link signal (Wikipedia link: 2 Tone (music genre))
+- [[the-clash|The Clash]] - Wikipedia link signal (Wikipedia link: 2 Tone (music genre))
 
 ## Sources
 

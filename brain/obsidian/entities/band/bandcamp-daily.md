@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [country]
+curatorTags: [Shoegaze, band, country]
 secondaryZones: []
 layoutPinned: false
 layoutX: -455
 layoutY: 1477
 starter: false
-curatorTags: [Shoegaze, band, country]
 ---
 # Bandcamp Daily
 

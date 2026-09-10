@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [country, folk]
+curatorTags: [country, folk, band]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1476
 layoutY: 1643
 starter: false
-curatorTags: [country, folk, band]
 ---
 # Billy Arnold
 

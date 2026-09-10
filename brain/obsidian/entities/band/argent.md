@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [hard rock]
+curatorTags: [hard rock, Hard rock, band]
 secondaryZones: []
 layoutPinned: false
 layoutX: 744
 layoutY: -163
 starter: false
-curatorTags: [hard rock, Hard rock, band]
 ---
 # Argent
 

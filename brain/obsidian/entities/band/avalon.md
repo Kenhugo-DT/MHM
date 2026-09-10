@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [rock]
+curatorTags: [rock, band, classic rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -628
 layoutY: 655
 starter: false
-curatorTags: [rock, band, classic rock]
 ---
 # Avalon
 
@@ -23,6 +23,7 @@ A band surfaced by the MHM research brain from Wikipedia signals around Tony Kak
 
 ## Connections
 
+- [[michael-kiske|Michael Kiske]] - Wikipedia link signal (Wikipedia link: Avalon (Finnish band))
 - [[tony-kakko|Tony Kakko]] - Wikipedia link signal (Wikipedia link: Avalon (Finnish band))
 
 ## Sources

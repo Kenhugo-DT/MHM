@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [rock]
+curatorTags: [rock, band, classic rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 109
 layoutY: -182
 starter: false
-curatorTags: [rock, band, classic rock]
 ---
 # Aina
 
@@ -25,6 +25,7 @@ A band surfaced by the MHM research brain from Wikipedia signals around Marko Hi
 
 - [[avantasia|Avantasia]] - Wikipedia link signal (Wikipedia link: Aina (German band))
 - [[marko-hietala|Marko Hietala]] - Wikipedia link signal (Wikipedia link: Aina (German band))
+- [[michael-kiske|Michael Kiske]] - Wikipedia link signal (Wikipedia link: Aina (German band))
 - [[tobias-sammet|Tobias Sammet]] - Wikipedia link signal (Wikipedia link: Aina (German band))
 
 ## Sources

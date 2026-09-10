@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: []
+curatorTags: [Electric blues, electric guitar, Rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 3440
 layoutY: -224
 starter: true
-curatorTags: [Electric blues, electric guitar, Rock]
 ---
 # Fender Stratocaster
 
@@ -29,6 +29,7 @@ A contoured solid-body electric with three pickups and tremolo system, tied to H
 - [[dick-dale|Dick Dale]] - surf guitar voice
 - [[electric-blues|Electric blues]] - blues lead voice
 - [[fender|Fender]] - made
+- [[janick-gers|Janick Gers]] - Wikipedia link signal (Wikipedia link: Fender Stratocaster)
 - [[jeff-beck|Jeff Beck]] - signature electric voice
 - [[jimi-hendrix|Jimi Hendrix]] - iconic instrument
 - [[john-mayer|John Mayer]] - blues/pop instrument

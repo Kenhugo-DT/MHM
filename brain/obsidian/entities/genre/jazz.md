@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [Jazz]
+curatorTags: [jazz fusion, progressive, psychedelic]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1038
 layoutY: 1328
 starter: false
-curatorTags: [country, folk, jazz fusion]
 ---
 # Jazz
 

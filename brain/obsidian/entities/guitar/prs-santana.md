@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: []
+curatorTags: [Blues rock, electric guitar, Jazz fusion]
 secondaryZones: []
 layoutPinned: false
 layoutX: 3365
 layoutY: -597
 starter: false
-curatorTags: [Blues rock, electric guitar, Jazz fusion]
 ---
 # PRS Santana
 

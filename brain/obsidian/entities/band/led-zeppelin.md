@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [hard rock]
+curatorTags: [hard rock, Blues, Hard rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 592
 layoutY: 309
 starter: true
-curatorTags: [hard rock, Blues, Hard rock]
 ---
 # Led Zeppelin
 

@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [electric blues, blues]
+curatorTags: [Electric blues, electric blues, blues]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1258
 layoutY: -129
 starter: true
-curatorTags: [Electric blues, electric blues, blues]
 ---
 # B.B. King
 

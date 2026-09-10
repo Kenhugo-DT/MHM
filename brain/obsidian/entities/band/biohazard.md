@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [rock]
+curatorTags: [rock, band, classic rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -167
 layoutY: -336
 starter: false
-curatorTags: [rock, band, classic rock]
 ---
 # Biohazard
 

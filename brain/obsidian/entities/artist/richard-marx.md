@@ -7,13 +7,13 @@ roles: [artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: [hard rock, rock]
+primaryGenres: [hard rock, country, folk]
+curatorTags: [hard rock, country, folk]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1544
 layoutY: 402
 starter: false
-curatorTags: [hard rock, artist, rock]
 ---
 # Richard Marx
 

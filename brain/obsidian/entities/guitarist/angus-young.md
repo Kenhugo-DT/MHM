@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [blues rock, hard rock, blues]
+curatorTags: [blues rock, hard rock, blues]
 secondaryZones: []
 layoutPinned: false
 layoutX: 993
 layoutY: -516
 starter: true
-curatorTags: [blues rock, hard rock, blues]
 ---
 # Angus Young
 

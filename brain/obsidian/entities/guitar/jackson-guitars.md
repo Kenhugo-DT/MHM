@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: []
+curatorTags: [electric guitar, guitar, instrument]
 secondaryZones: []
 layoutPinned: false
 layoutX: 3162
 layoutY: -255
 starter: false
-curatorTags: [electric guitar, guitar, instrument]
 ---
 # Jackson Guitars
 

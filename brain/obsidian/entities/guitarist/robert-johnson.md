@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [blues rock]
+curatorTags: [Blues, Blues rock, blues rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1648
 layoutY: -40
 starter: true
-curatorTags: [Blues, Blues rock, blues rock]
 ---
 # Robert Johnson
 

@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [hard rock, heavy metal]
+curatorTags: [hard rock, heavy metal, artist]
 secondaryZones: []
 layoutPinned: false
 layoutX: 2206
 layoutY: -100
 starter: false
-curatorTags: [hard rock, heavy metal, artist]
 ---
 # Corey Taylor
 

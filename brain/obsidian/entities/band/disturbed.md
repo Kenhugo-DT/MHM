@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: []
+curatorTags: [band, progressive, psychedelic]
 secondaryZones: []
 layoutPinned: false
 layoutX: 255
 layoutY: -803
 starter: false
-curatorTags: [band, progressive, psychedelic]
 ---
 # Disturbed
 
@@ -23,6 +23,7 @@ A band surfaced by the MHM research brain from Wikipedia signals around Mike Por
 
 ## Connections
 
+- [[chester-bennington|Chester Bennington]] - Wikipedia link signal (Wikipedia link: Disturbed (band))
 - [[corey-taylor|Corey Taylor]] - Wikipedia link signal (Wikipedia link: Disturbed (band))
 - [[mike-portnoy|Mike Portnoy]] - Wikipedia link signal (Wikipedia link: Disturbed (band))
 

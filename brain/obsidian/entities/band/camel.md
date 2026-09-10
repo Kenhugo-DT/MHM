@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [country, folk]
+curatorTags: [country, folk, band]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1163
 layoutY: 1672
 starter: false
-curatorTags: [country, folk, band]
 ---
 # Camel
 

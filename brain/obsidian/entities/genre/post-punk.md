@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [Post-punk]
+curatorTags: [alternative rock, punk rock, alternative]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1325
 layoutY: 1521
 starter: false
-curatorTags: [alternative rock, punk rock, alternative]
 ---
 # Post-punk
 
@@ -23,6 +23,8 @@ A sharper, exploratory aftermath of punk where guitar could become angular, atmo
 
 ## Connections
 
+- [[23-skidoo|23 Skidoo]] - Wikipedia link signal (Wikipedia link: 23 Skidoo (band))
+- [[abc|ABC]] - Wikipedia link signal (Wikipedia link: ABC (band))
 - [[alternative-rock|Alternative rock]] - feeds
 - [[punk|Punk rock]] - after punk
 

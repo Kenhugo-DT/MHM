@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: []
+curatorTags: [electric guitar, Hard rock, Rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 3064
 layoutY: -347
 starter: true
-curatorTags: [electric guitar, Hard rock, Rock]
 ---
 # PRS Custom 24
 

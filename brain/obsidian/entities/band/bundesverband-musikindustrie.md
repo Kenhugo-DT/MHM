@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [rock]
+curatorTags: [rock, band, classic rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -516
 layoutY: 715
 starter: false
-curatorTags: [rock, band, classic rock]
 ---
 # Bundesverband Musikindustrie
 

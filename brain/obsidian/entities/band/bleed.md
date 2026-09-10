@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [country]
+curatorTags: [Shoegaze, band, country]
 secondaryZones: []
 layoutPinned: false
 layoutX: -619
 layoutY: 1203
 starter: false
-curatorTags: [Shoegaze, band, country]
 ---
 # Bleed
 

@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [country]
+curatorTags: [Norwegian vise, Singer-songwriter, country]
 secondaryZones: []
 layoutPinned: false
 layoutX: -553
 layoutY: 1665
 starter: false
-curatorTags: [Norwegian vise, Singer-songwriter, country]
 ---
 # Gitarkameratene
 

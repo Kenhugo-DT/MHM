@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [country, folk]
+curatorTags: [Country, country, folk]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1178
 layoutY: 1427
 starter: false
-curatorTags: [Country, country, folk]
 ---
 # Johnny Cash
 

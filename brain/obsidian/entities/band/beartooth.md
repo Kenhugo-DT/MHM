@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: []
+curatorTags: [band, alternative, punk]
 secondaryZones: []
 layoutPinned: false
 layoutX: 765
 layoutY: 1688
 starter: false
-curatorTags: [band, alternative, punk]
 ---
 # Beartooth
 

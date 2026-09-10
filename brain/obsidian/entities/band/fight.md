@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [hard rock, rock]
+curatorTags: [hard rock, band, rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1079
 layoutY: 198
 starter: false
-curatorTags: [hard rock, band, rock]
 ---
 # Fight
 
@@ -24,6 +24,8 @@ A band surfaced by the MHM research brain from Wikipedia signals around Rob Half
 ## Connections
 
 - [[rob-halford|Rob Halford]] - Wikipedia link signal (Wikipedia link: Fight (band))
+- [[satchel|Satchel]] - Wikipedia link signal (Wikipedia link: Fight (band))
+- [[tim-ripper-owens|Tim Ripper Owens]] - Wikipedia link signal (Wikipedia link: Fight (band))
 
 ## Sources
 

@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [rock]
+curatorTags: [rock, band, classic rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -457
 layoutY: 844
 starter: false
-curatorTags: [rock, band, classic rock]
 ---
 # Auri
 

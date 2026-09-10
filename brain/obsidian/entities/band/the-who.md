@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [art rock]
+curatorTags: [Art rock, Rock, art rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -628
 layoutY: -166
 starter: true
-curatorTags: [Art rock, Rock, art rock]
 ---
 # The Who
 

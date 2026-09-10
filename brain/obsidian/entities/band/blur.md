@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [country]
+curatorTags: [Shoegaze, band, country]
 secondaryZones: []
 layoutPinned: false
 layoutX: -914
 layoutY: 1178
 starter: false
-curatorTags: [Shoegaze, band, country]
 ---
 # Blur
 
@@ -23,6 +23,7 @@ A band surfaced by the MHM research brain from Wikipedia signals around Shoegaze
 
 ## Connections
 
+- [[fugazi|Fugazi]] - Wikipedia link signal (Wikipedia link: Blur (band))
 - [[shoegaze|Shoegaze]] - Wikipedia link signal (Wikipedia link: Blur (band))
 
 ## Sources

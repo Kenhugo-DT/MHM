@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [hard rock, rock]
+curatorTags: [hard rock, band, rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1311
 layoutY: -333
 starter: false
-curatorTags: [hard rock, band, rock]
 ---
 # Extreme
 

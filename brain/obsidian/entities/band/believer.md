@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [hard rock]
+curatorTags: [hard rock, symphonic metal, band]
 secondaryZones: []
 layoutPinned: false
 layoutX: 2175
 layoutY: 144
 starter: false
-curatorTags: [hard rock, symphonic metal, band]
 ---
 # Believer
 

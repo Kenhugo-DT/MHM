@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [southern rock, blues]
+curatorTags: [Southern rock, southern rock, blues]
 secondaryZones: []
 layoutPinned: false
 layoutX: -975
 layoutY: -416
 starter: false
-curatorTags: [Southern rock, southern rock, blues]
 ---
 # Dickey Betts
 

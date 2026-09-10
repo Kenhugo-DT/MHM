@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [hard rock, thrash metal]
+curatorTags: [hard rock, Thrash metal, thrash metal]
 secondaryZones: []
 layoutPinned: false
 layoutX: 2505
 layoutY: 60
 starter: false
-curatorTags: [hard rock, Thrash metal, thrash metal]
 ---
 # Annihilator
 
@@ -27,8 +27,10 @@ A band surfaced by the MHM research brain from Wikipedia signals around Andy Sne
 - [[andy-sneap|Andy Sneap]] - Wikipedia link signal (Wikipedia link: Annihilator (band))
 - [[at-vance|At Vance]] - Wikipedia link signal (Wikipedia link: Annihilator (band))
 - [[judas-priest|Judas Priest]] - Wikipedia link signal (Wikipedia link: Annihilator (band))
+- [[michael-schenker|Michael Schenker]] - Wikipedia link signal (Wikipedia link: Annihilator (band))
 - [[savatage|Savatage]] - Wikipedia link signal (Wikipedia link: Annihilator (band))
 - [[thrash-metal|Thrash metal]] - Wikipedia link signal (Wikipedia link: Annihilator (band))
+- [[tim-ripper-owens|Tim Ripper Owens]] - Wikipedia link signal (Wikipedia link: Annihilator (band))
 
 ## Sources
 

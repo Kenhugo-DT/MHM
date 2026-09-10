@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: []
+curatorTags: [guitar brand, manufacturer, country]
 secondaryZones: []
 layoutPinned: false
 layoutX: 3579
 layoutY: 35
 starter: false
-curatorTags: [guitar brand, manufacturer, country]
 ---
 # Taylor
 

@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [hard rock]
+curatorTags: [hard rock, Heavy metal, Thrash metal]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1381
 layoutY: 429
 starter: false
-curatorTags: [hard rock, Heavy metal, Thrash metal]
 ---
 # Pantera
 

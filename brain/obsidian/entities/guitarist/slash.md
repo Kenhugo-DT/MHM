@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [blues rock, hard rock]
+curatorTags: [Blues rock, blues rock, hard rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1140
 layoutY: -258
 starter: true
-curatorTags: [Blues rock, blues rock, hard rock]
 ---
 # Slash
 

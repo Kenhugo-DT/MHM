@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [Horror punk]
+curatorTags: [horror punk, punk rock, alternative]
 secondaryZones: []
 layoutPinned: false
 layoutX: 746
 layoutY: 1516
 starter: false
-curatorTags: [horror punk, punk rock, alternative]
 ---
 # Horror punk
 

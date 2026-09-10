@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [rock]
+curatorTags: [rock, band, classic rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 13
 layoutY: 572
 starter: false
-curatorTags: [rock, band, classic rock]
 ---
 # Foreigner
 
@@ -23,7 +23,7 @@ Foreigner may refer to:
 
 ## Connections
 
-No documented connections yet.
+- [[michael-kiske|Michael Kiske]] - Wikipedia link signal (Wikipedia link: Foreigner (band))
 
 ## Sources
 

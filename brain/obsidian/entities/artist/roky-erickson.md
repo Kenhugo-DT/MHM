@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [psychedelic rock, country]
+curatorTags: [psychedelic rock, artist, country]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1346
 layoutY: 1551
 starter: false
-curatorTags: [psychedelic rock, artist, country]
 ---
 # Roky Erickson
 

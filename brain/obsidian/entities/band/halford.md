@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [hard rock, rock]
+curatorTags: [hard rock, band, rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 847
 layoutY: -99
 starter: false
-curatorTags: [hard rock, band, rock]
 ---
 # Halford
 
@@ -24,6 +24,7 @@ A band surfaced by the MHM research brain from Wikipedia signals around Rob Half
 ## Connections
 
 - [[rob-halford|Rob Halford]] - Wikipedia link signal (Wikipedia link: Halford (band))
+- [[tim-ripper-owens|Tim Ripper Owens]] - Wikipedia link signal (Wikipedia link: Halford (band))
 
 ## Sources
 

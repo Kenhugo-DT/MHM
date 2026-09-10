@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: []
+curatorTags: [guitar brand, manufacturer, guitar]
 secondaryZones: []
 layoutPinned: false
 layoutX: 3227
 layoutY: -24
 starter: false
-curatorTags: [guitar brand, manufacturer, guitar]
 ---
 # Charvel
 

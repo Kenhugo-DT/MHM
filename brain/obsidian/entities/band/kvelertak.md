@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [hard rock, punk rock]
+curatorTags: [norwegian rock, metal, punk energy]
 secondaryZones: []
 layoutPinned: false
 layoutX: 706
 layoutY: 117
 starter: false
-curatorTags: [norwegian rock, metal, punk energy]
 ---
 # Kvelertak
 

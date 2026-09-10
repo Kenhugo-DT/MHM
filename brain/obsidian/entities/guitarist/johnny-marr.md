@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [alternative rock, country]
+curatorTags: [alternative rock, guitarist, country]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1194
 layoutY: 1181
 starter: false
-curatorTags: [alternative rock, guitarist, country]
 ---
 # Johnny Marr
 

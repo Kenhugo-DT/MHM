@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [rock]
+curatorTags: [rock, band, classic rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -22
 layoutY: 38
 starter: false
-curatorTags: [rock, band, classic rock]
 ---
 # Diablo
 

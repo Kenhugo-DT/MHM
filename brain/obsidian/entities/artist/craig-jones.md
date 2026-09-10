@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [rock]
+curatorTags: [rock, artist, classic rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -538
 layoutY: 615
 starter: false
-curatorTags: [rock, artist, classic rock]
 ---
 # Craig Jones
 

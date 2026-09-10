@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [rock]
+curatorTags: [rock, band, classic rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 125
 layoutY: 560
 starter: false
-curatorTags: [rock, band, classic rock]
 ---
 # Ark
 
@@ -24,6 +24,7 @@ A band surfaced by the MHM research brain from Wikipedia signals around Avantasi
 ## Connections
 
 - [[avantasia|Avantasia]] - Wikipedia link signal (Wikipedia link: Ark (Norwegian band))
+- [[steve-harris|Steve Harris]] - Wikipedia link signal (Wikipedia link: Ark (British band))
 
 ## Sources
 

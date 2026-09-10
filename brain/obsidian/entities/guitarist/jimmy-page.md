@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [hard rock, blues]
+curatorTags: [hard rock, guitarist, blues]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1035
 layoutY: -312
 starter: true
-curatorTags: [hard rock, guitarist, blues]
 ---
 # Jimmy Page
 

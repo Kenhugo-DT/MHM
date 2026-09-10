@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [hard rock, rock]
+curatorTags: [hard rock, band, rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1274
 layoutY: 143
 starter: false
-curatorTags: [hard rock, band, rock]
 ---
 # As I Lay Dying
 
@@ -25,6 +25,7 @@ A band surfaced by the MHM research brain from Wikipedia signals around Andy Sne
 
 - [[andy-sneap|Andy Sneap]] - Wikipedia link signal (Wikipedia link: As I Lay Dying (band))
 - [[children-of-bodom|Children of Bodom]] - Wikipedia link signal (Wikipedia link: As I Lay Dying (band))
+- [[in-flames|In Flames]] - Wikipedia link signal (Wikipedia link: As I Lay Dying (band))
 - [[suicidal-tendencies|Suicidal Tendencies]] - Wikipedia link signal (Wikipedia link: As I Lay Dying (band))
 
 ## Sources

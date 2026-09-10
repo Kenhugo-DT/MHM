@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [hard rock, doom metal]
+curatorTags: [hard rock, Doom metal, doom metal]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1495
 layoutY: -282
 starter: false
-curatorTags: [hard rock, Doom metal, doom metal]
 ---
 # Acid King (band)
 

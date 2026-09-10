@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: []
+curatorTags: [electric guitar, guitar, instrument]
 secondaryZones: []
 layoutPinned: false
 layoutX: 2826
 layoutY: -388
 starter: false
-curatorTags: [electric guitar, guitar, instrument]
 ---
 # Lead guitar
 

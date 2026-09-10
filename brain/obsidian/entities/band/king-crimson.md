@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [art rock]
+curatorTags: [Art rock, Progressive rock, art rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 215
 layoutY: -628
 starter: true
-curatorTags: [Art rock, Progressive rock, art rock]
 ---
 # King Crimson
 

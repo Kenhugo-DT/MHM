@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [hard rock]
+curatorTags: [hard rock, Hard rock, band]
 secondaryZones: []
 layoutPinned: false
 layoutX: 762
 layoutY: -353
 starter: false
-curatorTags: [hard rock, Hard rock, band]
 ---
 # Airbourne
 

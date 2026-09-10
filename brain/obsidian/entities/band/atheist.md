@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [progressive metal]
+curatorTags: [Progressive metal, progressive metal, band]
 secondaryZones: []
 layoutPinned: false
 layoutX: -475
 layoutY: -710
 starter: false
-curatorTags: [Progressive metal, progressive metal, band]
 ---
 # Atheist
 
@@ -24,6 +24,7 @@ A band surfaced by the MHM research brain from Wikipedia signals around Progress
 ## Connections
 
 - [[progressive-metal|Progressive metal]] - Wikipedia link signal (Wikipedia link: Atheist (band))
+- [[velvet-revolver|Velvet Revolver]] - Wikipedia link signal (Wikipedia link: Atheist (band))
 
 ## Sources
 

@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [hardcore punk]
+curatorTags: [hardcore punk, band, alternative]
 secondaryZones: []
 layoutPinned: false
 layoutX: 741
 layoutY: 1284
 starter: false
-curatorTags: [hardcore punk, band, alternative]
 ---
 # Battery
 

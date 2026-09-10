@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [Progressive metal]
+curatorTags: [hard rock, heavy metal, progressive metal]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1934
 layoutY: 204
 starter: false
-curatorTags: [hard rock, heavy metal, progressive metal]
 ---
 # Progressive metal
 

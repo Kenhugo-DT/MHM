@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [rock]
+curatorTags: [rock, band, classic rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -270
 layoutY: 835
 starter: false
-curatorTags: [rock, band, classic rock]
 ---
 # Stone Sour
 

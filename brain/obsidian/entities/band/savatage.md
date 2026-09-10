@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [hard rock, heavy metal]
+curatorTags: [hard rock, heavy metal, band]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1146
 layoutY: -387
 starter: false
-curatorTags: [hard rock, heavy metal, band]
 ---
 # Savatage
 

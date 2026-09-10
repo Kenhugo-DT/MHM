@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: []
+curatorTags: [guitar brand, manufacturer, jazz]
 secondaryZones: []
 layoutPinned: false
 layoutX: 3715
 layoutY: 72
 starter: false
-curatorTags: [guitar brand, manufacturer, jazz]
 ---
 # Yamaha
 

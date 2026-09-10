@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: []
+curatorTags: [electric guitar, country, folk]
 secondaryZones: []
 layoutPinned: false
 layoutX: 2885
 layoutY: 48
 starter: false
-curatorTags: [electric guitar, country, folk]
 ---
 # Banjo
 

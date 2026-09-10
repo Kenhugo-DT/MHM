@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [blues rock]
+curatorTags: [Blues rock, Electric blues, blues rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1447
 layoutY: 292
 starter: false
-curatorTags: [Blues rock, Electric blues, blues rock]
 ---
 # Freddie King
 

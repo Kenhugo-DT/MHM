@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [hard rock, rock]
+curatorTags: [hard rock, band, rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 855
 layoutY: 478
 starter: false
-curatorTags: [hard rock, band, rock]
 ---
 # Gamma Ray
 
@@ -25,6 +25,8 @@ A band surfaced by the MHM research brain from Wikipedia signals around Sonata A
 
 - [[avantasia|Avantasia]] - Wikipedia link signal (Wikipedia link: Gamma Ray (band))
 - [[ingo-schwichtenberg|Ingo Schwichtenberg]] - Wikipedia link signal (Wikipedia link: Gamma Ray (band))
+- [[kai-hansen|Kai Hansen]] - Wikipedia link signal (Wikipedia link: Gamma Ray (band))
+- [[michael-kiske|Michael Kiske]] - Wikipedia link signal (Wikipedia link: Gamma Ray (band))
 - [[ralf-scheepers|Ralf Scheepers]] - Wikipedia link signal (Wikipedia link: Gamma Ray (Band))
 - [[sonata-arctica|Sonata Arctica]] - Wikipedia link signal (Wikipedia link: Gamma Ray (band))
 

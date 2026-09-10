@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [rock]
+curatorTags: [Rock, rock, guitarist]
 secondaryZones: []
 layoutPinned: false
 layoutX: -327
 layoutY: 32
 starter: false
-curatorTags: [Rock, rock, guitarist]
 ---
 # Pete Townshend
 

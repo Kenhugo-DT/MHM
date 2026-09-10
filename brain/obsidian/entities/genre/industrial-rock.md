@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [industrial rock]
+curatorTags: [alternative, punk, rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 154
 layoutY: -295
 starter: false
-curatorTags: [rock, classic rock, alternative]
 ---
 # industrial rock
 

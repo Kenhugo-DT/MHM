@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [blues rock]
+curatorTags: [Folk, Rock, blues rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1245
 layoutY: 1837
 starter: true
-curatorTags: [Folk, Rock, blues rock]
 ---
 # Bob Dylan
 

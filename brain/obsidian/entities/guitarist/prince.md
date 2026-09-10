@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [rock]
+curatorTags: [Funk, Rock, rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 287
 layoutY: 302
 starter: true
-curatorTags: [Funk, Rock, rock]
 ---
 # Prince
 
@@ -23,6 +23,7 @@ A multi-instrumentalist whose guitar work fused funk, rock, pop and soul with th
 
 ## Connections
 
+- [[digital-underground|Digital Underground]] - Wikipedia link signal (Wikipedia link: Prince (musician))
 - [[fender-telecaster|Fender Telecaster]] - Tele-style language
 - [[funk|Funk]] - groove core
 - [[hohner-mad-cat|Hohner Mad Cat]] - signature stage guitar

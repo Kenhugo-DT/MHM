@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: []
+curatorTags: [acoustic guitar, Folk, country]
 secondaryZones: []
 layoutPinned: false
 layoutX: 2994
 layoutY: 356
 starter: false
-curatorTags: [acoustic guitar, Folk, country]
 ---
 # Gibson J-45
 

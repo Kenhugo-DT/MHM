@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [rock]
+curatorTags: [rock, artist, classic rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -52
 layoutY: 319
 starter: false
-curatorTags: [rock, artist, classic rock]
 ---
 # Bruce Hall
 

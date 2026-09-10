@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [Space Rock]
+curatorTags: [space rock, progressive, psychedelic]
 secondaryZones: []
 layoutPinned: false
 layoutX: 393
 layoutY: -1043
 starter: false
-curatorTags: [space rock, progressive, psychedelic]
 ---
 # Space Rock
 

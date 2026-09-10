@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: []
+curatorTags: [guitar brand, country rock, manufacturer]
 secondaryZones: []
 layoutPinned: false
 layoutX: 2848
 layoutY: -112
 starter: false
-curatorTags: [guitar brand, country rock, manufacturer]
 ---
 # Gretsch
 

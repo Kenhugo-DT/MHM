@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [hard rock]
+curatorTags: [hard rock, Speed Metal, Thrash metal]
 secondaryZones: []
 layoutPinned: false
 layoutX: 2309
 layoutY: 83
 starter: false
-curatorTags: [hard rock, Speed Metal, Thrash metal]
 ---
 # Anvil
 

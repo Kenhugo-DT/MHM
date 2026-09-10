@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: []
+curatorTags: [electric guitar, guitar, instrument]
 secondaryZones: []
 layoutPinned: false
 layoutX: 2806
 layoutY: -245
 starter: false
-curatorTags: [electric guitar, guitar, instrument]
 ---
 # Guitar World
 
@@ -24,6 +24,8 @@ A guitar surfaced by the MHM research brain from Wikipedia signals around Alexi 
 ## Connections
 
 - [[alexi-laiho|Alexi Laiho]] - Wikipedia link signal (Wikipedia link: Guitar World)
+- [[iced-earth|Iced Earth]] - Wikipedia link signal (Wikipedia link: Guitar World)
+- [[nita-strauss|Nita Strauss]] - Wikipedia link signal (Wikipedia link: Guitar World)
 
 ## Sources
 

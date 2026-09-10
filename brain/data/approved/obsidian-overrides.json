@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-10T12:00:35.730Z",
+  "generatedAt": "2026-09-10T13:07:17.106Z",
   "source": "brain/obsidian",
   "nodes": [
     {
@@ -18,14 +18,39 @@
       ],
       "curatorTags": [
         "alternative rock",
-        "alternative",
-        "punk"
+        "punk rock",
+        "alternative"
       ],
       "secondaryZones": [],
       "layoutHints": {
         "pinned": false,
         "x": 985,
         "y": 1706
+      }
+    },
+    {
+      "id": "23-skidoo",
+      "label": "23 Skidoo",
+      "type": "band",
+      "zone": "punk-alt",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "post-punk"
+      ],
+      "curatorTags": [
+        "Post-punk",
+        "band",
+        "post-punk"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 1600,
+        "y": 1284
       }
     },
     {
@@ -52,6 +77,108 @@
       }
     },
     {
+      "id": "311",
+      "label": "311",
+      "type": "band",
+      "zone": "rock-circuit",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -524,
+        "y": 87
+      }
+    },
+    {
+      "id": "38-special",
+      "label": ".38 Special",
+      "type": "band",
+      "zone": "roots-blues",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "roots rock",
+        "southern rock"
+      ],
+      "curatorTags": [
+        "roots rock",
+        "Southern rock",
+        "southern rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -70,
+        "y": 932
+      }
+    },
+    {
+      "id": "7-seconds",
+      "label": "7 Seconds",
+      "type": "band",
+      "zone": "punk-alt",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "hardcore punk",
+        "punk rock"
+      ],
+      "curatorTags": [
+        "hardcore punk",
+        "Punk rock",
+        "punk rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 1928,
+        "y": 1440
+      }
+    },
+    {
+      "id": "999",
+      "label": "999",
+      "type": "band",
+      "zone": "rock-circuit",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -188,
+        "y": 886
+      }
+    },
+    {
       "id": "a-wake-in-providence",
       "label": "A Wake in Providence",
       "type": "band",
@@ -74,6 +201,31 @@
         "pinned": false,
         "x": 2081,
         "y": -260
+      }
+    },
+    {
+      "id": "abc",
+      "label": "ABC",
+      "type": "band",
+      "zone": "punk-alt",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "post-punk"
+      ],
+      "curatorTags": [
+        "Post-punk",
+        "band",
+        "post-punk"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 1778,
+        "y": 1472
       }
     },
     {
@@ -113,13 +265,14 @@
       "aliases": [],
       "starter": false,
       "primaryGenres": [
+        "glam metal",
         "power metal",
         "hard rock"
       ],
       "curatorTags": [
+        "glam metal",
         "power metal",
-        "hard rock",
-        "Thrash metal"
+        "hard rock"
       ],
       "secondaryZones": [],
       "layoutHints": {
@@ -180,6 +333,79 @@
       }
     },
     {
+      "id": "acoustic-guitar",
+      "label": "Acoustic guitar",
+      "type": "guitar",
+      "zone": "guitar-workshop",
+      "roles": [
+        "guitar"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [],
+      "curatorTags": [
+        "acoustic guitar",
+        "guitar",
+        "instrument"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 2964,
+        "y": -534
+      }
+    },
+    {
+      "id": "adam-hamilton",
+      "label": "Adam Hamilton",
+      "type": "artist",
+      "zone": "rock-circuit",
+      "roles": [
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "artist",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -435,
+        "y": -224
+      }
+    },
+    {
+      "id": "adolescents",
+      "label": "Adolescents",
+      "type": "band",
+      "zone": "punk-alt",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "hardcore punk"
+      ],
+      "curatorTags": [
+        "hardcore punk",
+        "skate punk",
+        "band"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 1257,
+        "y": 1748
+      }
+    },
+    {
       "id": "adorable",
       "label": "Adorable",
       "type": "band",
@@ -205,6 +431,31 @@
       }
     },
     {
+      "id": "adrian-smith",
+      "label": "Adrian Smith",
+      "type": "artist",
+      "zone": "rock-circuit",
+      "roles": [
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "artist",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -562,
+        "y": -30
+      }
+    },
+    {
       "id": "adventures",
       "label": "Adventures",
       "type": "band",
@@ -227,6 +478,32 @@
         "pinned": false,
         "x": -768,
         "y": 1164
+      }
+    },
+    {
+      "id": "aerosmith",
+      "label": "Aerosmith",
+      "type": "band",
+      "zone": "hard-rock-metal",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "hard rock",
+        "rock"
+      ],
+      "curatorTags": [
+        "hard rock",
+        "band",
+        "rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 2473,
+        "y": -15
       }
     },
     {
@@ -281,6 +558,56 @@
       }
     },
     {
+      "id": "agent-orange",
+      "label": "Agent Orange",
+      "type": "band",
+      "zone": "punk-alt",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "hardcore punk"
+      ],
+      "curatorTags": [
+        "hardcore punk",
+        "band",
+        "alternative"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 1517,
+        "y": 1468
+      }
+    },
+    {
+      "id": "agression",
+      "label": "Agression",
+      "type": "band",
+      "zone": "punk-alt",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "hardcore punk"
+      ],
+      "curatorTags": [
+        "hardcore punk",
+        "skate punk",
+        "band"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 963,
+        "y": 1376
+      }
+    },
+    {
       "id": "aina",
       "label": "Aina",
       "type": "band",
@@ -306,6 +633,31 @@
       }
     },
     {
+      "id": "air",
+      "label": "Air",
+      "type": "band",
+      "zone": "rock-circuit",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 92,
+        "y": -336
+      }
+    },
+    {
       "id": "airbourne",
       "label": "Airbourne",
       "type": "band",
@@ -328,6 +680,31 @@
         "pinned": false,
         "x": 762,
         "y": -353
+      }
+    },
+    {
+      "id": "al-thawra",
+      "label": "Al-Thawra",
+      "type": "band",
+      "zone": "punk-alt",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "hardcore punk"
+      ],
+      "curatorTags": [
+        "hardcore punk",
+        "band",
+        "alternative"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 1317,
+        "y": 1284
       }
     },
     {
@@ -439,19 +816,20 @@
       "id": "alice-cooper",
       "label": "Alice Cooper",
       "type": "band",
-      "zone": "punk-alt",
+      "zone": "hard-rock-metal",
       "roles": [
         "band"
       ],
       "aliases": [],
       "starter": false,
       "primaryGenres": [
+        "glam metal",
         "hard rock"
       ],
       "curatorTags": [
-        "Hard rock",
-        "Horror punk",
-        "hard rock"
+        "glam metal",
+        "hard rock",
+        "Hard rock"
       ],
       "secondaryZones": [],
       "layoutHints": {
@@ -484,6 +862,31 @@
         "pinned": false,
         "x": -51,
         "y": 24
+      }
+    },
+    {
+      "id": "all-out-war",
+      "label": "All Out War",
+      "type": "band",
+      "zone": "punk-alt",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "hardcore punk"
+      ],
+      "curatorTags": [
+        "hardcore punk",
+        "band",
+        "alternative"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 881,
+        "y": 1491
       }
     },
     {
@@ -548,14 +951,14 @@
       "aliases": [],
       "starter": true,
       "primaryGenres": [
+        "country rock",
         "blues rock",
-        "southern rock",
-        "blues"
+        "southern rock"
       ],
       "curatorTags": [
+        "country rock",
         "blues rock",
-        "southern rock",
-        "blues"
+        "southern rock"
       ],
       "secondaryZones": [],
       "layoutHints": {
@@ -590,6 +993,31 @@
       }
     },
     {
+      "id": "alogia",
+      "label": "Alogia",
+      "type": "band",
+      "zone": "rock-circuit",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 202,
+        "y": 2
+      }
+    },
+    {
       "id": "altaria",
       "label": "Altaria",
       "type": "band",
@@ -615,6 +1043,31 @@
       }
     },
     {
+      "id": "alternative-metal",
+      "label": "alternative metal",
+      "type": "genre",
+      "zone": "punk-alt",
+      "roles": [
+        "genre"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "alternative metal"
+      ],
+      "curatorTags": [
+        "alternative rock",
+        "heavy metal",
+        "alternative"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 897,
+        "y": 1852
+      }
+    },
+    {
       "id": "alternative-rock",
       "label": "Alternative rock",
       "type": "genre",
@@ -637,6 +1090,102 @@
         "pinned": false,
         "x": 1190,
         "y": 1646
+      }
+    },
+    {
+      "id": "american-football",
+      "label": "American Football",
+      "type": "band",
+      "zone": "rock-circuit",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 243,
+        "y": -214
+      }
+    },
+    {
+      "id": "american-primitive-guitar",
+      "label": "American primitive guitar",
+      "type": "guitar",
+      "zone": "guitar-workshop",
+      "roles": [
+        "guitar"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [],
+      "curatorTags": [
+        "roots rock",
+        "electric guitar",
+        "rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 3083,
+        "y": -327
+      }
+    },
+    {
+      "id": "american-rock-music-duos",
+      "label": "American rock music duos",
+      "type": "genre",
+      "zone": "rock-circuit",
+      "roles": [
+        "genre"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "American rock music duos"
+      ],
+      "curatorTags": [
+        "rock",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 17,
+        "y": -336
+      }
+    },
+    {
+      "id": "american-rock-music-supergroups",
+      "label": "American rock music supergroups",
+      "type": "genre",
+      "zone": "rock-circuit",
+      "roles": [
+        "genre"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "American rock music supergroups"
+      ],
+      "curatorTags": [
+        "rock",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 207,
+        "y": -336
       }
     },
     {
@@ -740,6 +1289,31 @@
         "pinned": false,
         "x": -308,
         "y": 846
+      }
+    },
+    {
+      "id": "andrew-watt",
+      "label": "Andrew Watt",
+      "type": "artist",
+      "zone": "rock-circuit",
+      "roles": [
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "artist",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 36,
+        "y": 110
       }
     },
     {
@@ -1020,8 +1594,8 @@
       ],
       "curatorTags": [
         "hard rock",
-        "Hard rock",
-        "Progressive metal"
+        "alternative metal",
+        "Hard rock"
       ],
       "secondaryZones": [],
       "layoutHints": {
@@ -1107,6 +1681,54 @@
       }
     },
     {
+      "id": "arcade",
+      "label": "Arcade",
+      "type": "band",
+      "zone": "rock-circuit",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -74,
+        "y": -336
+      }
+    },
+    {
+      "id": "archive",
+      "label": "Archive",
+      "type": "band",
+      "zone": "psychedelia-prog",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [],
+      "curatorTags": [
+        "band",
+        "progressive",
+        "psychedelic"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -28,
+        "y": -933
+      }
+    },
+    {
       "id": "argent",
       "label": "Argent",
       "type": "band",
@@ -1157,6 +1779,31 @@
       }
     },
     {
+      "id": "arion",
+      "label": "Arion",
+      "type": "band",
+      "zone": "rock-circuit",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 308,
+        "y": -21
+      }
+    },
+    {
       "id": "ark",
       "label": "Ark",
       "type": "band",
@@ -1179,6 +1826,31 @@
         "pinned": false,
         "x": 125,
         "y": 560
+      }
+    },
+    {
+      "id": "armageddon",
+      "label": "Armageddon",
+      "type": "band",
+      "zone": "rock-circuit",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -487,
+        "y": 391
       }
     },
     {
@@ -1229,6 +1901,56 @@
         "pinned": false,
         "x": -397,
         "y": -915
+      }
+    },
+    {
+      "id": "arthur-brown",
+      "label": "Arthur Brown",
+      "type": "artist",
+      "zone": "rock-circuit",
+      "roles": [
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "Shock Rock",
+        "rock",
+        "artist"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 244,
+        "y": 932
+      }
+    },
+    {
+      "id": "arthur-porter",
+      "label": "Arthur Porter",
+      "type": "artist",
+      "zone": "rock-circuit",
+      "roles": [
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "artist",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -70,
+        "y": 656
       }
     },
     {
@@ -1309,6 +2031,31 @@
       }
     },
     {
+      "id": "as-lions",
+      "label": "As Lions",
+      "type": "band",
+      "zone": "rock-circuit",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 308,
+        "y": 245
+      }
+    },
+    {
       "id": "asap-band",
       "label": "ASAP (band)",
       "type": "band",
@@ -1383,6 +2130,31 @@
         "pinned": false,
         "x": 859,
         "y": 340
+      }
+    },
+    {
+      "id": "ataxia",
+      "label": "Ataxia",
+      "type": "band",
+      "zone": "rock-circuit",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -545,
+        "y": -232
       }
     },
     {
@@ -1617,6 +2389,83 @@
       }
     },
     {
+      "id": "axl-rose",
+      "label": "Axl Rose",
+      "type": "artist",
+      "zone": "hard-rock-metal",
+      "roles": [
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "hard rock",
+        "rock"
+      ],
+      "curatorTags": [
+        "hard rock",
+        "artist",
+        "rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 2285,
+        "y": -5
+      }
+    },
+    {
+      "id": "babyface",
+      "label": "Babyface",
+      "type": "artist",
+      "zone": "rock-circuit",
+      "roles": [
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "artist",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -262,
+        "y": 816
+      }
+    },
+    {
+      "id": "bad-brains",
+      "label": "Bad Brains",
+      "type": "band",
+      "zone": "punk-alt",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "hardcore punk",
+        "reggae"
+      ],
+      "curatorTags": [
+        "hardcore punk",
+        "dc punk",
+        "reggae fusion"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 1537,
+        "y": 1740
+      }
+    },
+    {
       "id": "bad-religion",
       "label": "Bad Religion",
       "type": "band",
@@ -1669,6 +2518,31 @@
       }
     },
     {
+      "id": "baker-s-biographical-dictionary-of-musicians",
+      "label": "Baker's Biographical Dictionary of Musicians",
+      "type": "artist",
+      "zone": "rock-circuit",
+      "roles": [
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "artist",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -9,
+        "y": 674
+      }
+    },
+    {
       "id": "bandana-thrash",
       "label": "Bandana thrash",
       "type": "band",
@@ -1679,13 +2553,12 @@
       "aliases": [],
       "starter": false,
       "primaryGenres": [
-        "hard rock",
-        "speed metal"
+        "hard rock"
       ],
       "curatorTags": [
         "hard rock",
-        "Speed Metal",
-        "speed metal"
+        "skate punk",
+        "Speed Metal"
       ],
       "secondaryZones": [],
       "layoutHints": {
@@ -1745,6 +2618,81 @@
       }
     },
     {
+      "id": "bandleader",
+      "label": "Bandleader",
+      "type": "band",
+      "zone": "rock-circuit",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -140,
+        "y": 824
+      }
+    },
+    {
+      "id": "bando-sport",
+      "label": "Bando (sport)",
+      "type": "band",
+      "zone": "rock-circuit",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -571,
+        "y": 290
+      }
+    },
+    {
+      "id": "bandwagon-effect",
+      "label": "Bandwagon effect",
+      "type": "band",
+      "zone": "rock-circuit",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -628,
+        "y": 458
+      }
+    },
+    {
       "id": "bang-american-band",
       "label": "Bang (American band)",
       "type": "band",
@@ -1791,6 +2739,29 @@
         "pinned": false,
         "x": 2885,
         "y": 48
+      }
+    },
+    {
+      "id": "bass-guitars",
+      "label": "Bass guitars",
+      "type": "guitar",
+      "zone": "guitar-workshop",
+      "roles": [
+        "guitar"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [],
+      "curatorTags": [
+        "electric guitar",
+        "guitar",
+        "instrument"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 2672,
+        "y": -165
       }
     },
     {
@@ -1944,6 +2915,31 @@
       }
     },
     {
+      "id": "beefeater",
+      "label": "Beefeater",
+      "type": "band",
+      "zone": "rock-circuit",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -363,
+        "y": 804
+      }
+    },
+    {
       "id": "believer",
       "label": "Believer",
       "type": "band",
@@ -1966,6 +2962,54 @@
         "pinned": false,
         "x": 2175,
         "y": 144
+      }
+    },
+    {
+      "id": "big-boys",
+      "label": "Big Boys",
+      "type": "band",
+      "zone": "rock-circuit",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -628,
+        "y": 261
+      }
+    },
+    {
+      "id": "bill-stevenson",
+      "label": "Bill Stevenson",
+      "type": "artist",
+      "zone": "psychedelia-prog",
+      "roles": [
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [],
+      "curatorTags": [
+        "artist",
+        "progressive",
+        "psychedelic"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 111,
+        "y": -973
       }
     },
     {
@@ -1992,6 +3036,58 @@
         "pinned": false,
         "x": -1476,
         "y": 1643
+      }
+    },
+    {
+      "id": "billy-davis",
+      "label": "Billy Davis",
+      "type": "guitarist",
+      "zone": "rock-circuit",
+      "roles": [
+        "guitarist",
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "guitarist",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 229,
+        "y": -106
+      }
+    },
+    {
+      "id": "billy-williamson",
+      "label": "Billy Williamson",
+      "type": "guitarist",
+      "zone": "rock-circuit",
+      "roles": [
+        "guitarist",
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "guitarist",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -136,
+        "y": -214
       }
     },
     {
@@ -2140,6 +3236,31 @@
         "pinned": false,
         "x": 1031,
         "y": 1597
+      }
+    },
+    {
+      "id": "blue-magic",
+      "label": "Blue Magic",
+      "type": "band",
+      "zone": "rock-circuit",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 308,
+        "y": 876
       }
     },
     {
@@ -2302,19 +3423,93 @@
       "aliases": [],
       "starter": false,
       "primaryGenres": [
-        "hard rock",
-        "rock"
+        "hard rock"
       ],
       "curatorTags": [
         "hard rock",
-        "band",
-        "rock"
+        "Gangsta rap",
+        "band"
       ],
       "secondaryZones": [],
       "layoutHints": {
         "pinned": false,
         "x": 592,
         "y": 159
+      }
+    },
+    {
+      "id": "botch",
+      "label": "Botch",
+      "type": "band",
+      "zone": "rock-circuit",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -338,
+        "y": -165
+      }
+    },
+    {
+      "id": "braid",
+      "label": "Braid",
+      "type": "band",
+      "zone": "rock-circuit",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 245,
+        "y": 336
+      }
+    },
+    {
+      "id": "brain",
+      "label": "Brain",
+      "type": "artist",
+      "zone": "rock-circuit",
+      "roles": [
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "artist",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -628,
+        "y": 714
       }
     },
     {
@@ -2417,6 +3612,32 @@
       }
     },
     {
+      "id": "bruce-dickinson",
+      "label": "Bruce Dickinson",
+      "type": "artist",
+      "zone": "hard-rock-metal",
+      "roles": [
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "hard rock",
+        "heavy metal"
+      ],
+      "curatorTags": [
+        "hard rock",
+        "heavy metal",
+        "artist"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 2265,
+        "y": -141
+      }
+    },
+    {
       "id": "bruce-hall",
       "label": "Bruce Hall",
       "type": "artist",
@@ -2439,6 +3660,82 @@
         "pinned": false,
         "x": -52,
         "y": 319
+      }
+    },
+    {
+      "id": "bruce-springsteen-the-e-street-band",
+      "label": "Bruce Springsteen & the E Street Band",
+      "type": "band",
+      "zone": "rock-circuit",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 66,
+        "y": 771
+      }
+    },
+    {
+      "id": "bruce-thomas",
+      "label": "Bruce Thomas",
+      "type": "artist",
+      "zone": "rock-circuit",
+      "roles": [
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "artist",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -442,
+        "y": 137
+      }
+    },
+    {
+      "id": "buckethead",
+      "label": "Buckethead",
+      "type": "guitarist",
+      "zone": "rock-circuit",
+      "roles": [
+        "guitarist",
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "guitarist",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -628,
+        "y": -308
       }
     },
     {
@@ -2517,6 +3814,31 @@
         "pinned": false,
         "x": 51,
         "y": 434
+      }
+    },
+    {
+      "id": "c-i-a",
+      "label": "C.I.A.",
+      "type": "band",
+      "zone": "rock-circuit",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "Gangsta rap",
+        "rock",
+        "band"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -473,
+        "y": 284
       }
     },
     {
@@ -2676,6 +3998,104 @@
       }
     },
     {
+      "id": "carrie",
+      "label": "Carrie",
+      "type": "band",
+      "zone": "rock-circuit",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -133,
+        "y": 81
+      }
+    },
+    {
+      "id": "catherine-wheel",
+      "label": "Catherine Wheel",
+      "type": "band",
+      "zone": "rock-circuit",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -148,
+        "y": -336
+      }
+    },
+    {
+      "id": "ceremony",
+      "label": "Ceremony",
+      "type": "band",
+      "zone": "punk-alt",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [],
+      "curatorTags": [
+        "band",
+        "alternative",
+        "punk"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 1540,
+        "y": 1365
+      }
+    },
+    {
+      "id": "charles-sutton",
+      "label": "Charles Sutton",
+      "type": "artist",
+      "zone": "rock-circuit",
+      "roles": [
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "artist",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -263,
+        "y": 712
+      }
+    },
+    {
       "id": "charon",
       "label": "Charon",
       "type": "band",
@@ -2770,6 +4190,31 @@
       }
     },
     {
+      "id": "chester-bennington",
+      "label": "Chester Bennington",
+      "type": "artist",
+      "zone": "rock-circuit",
+      "roles": [
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "artist",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 89,
+        "y": 280
+      }
+    },
+    {
       "id": "chet-atkins",
       "label": "Chet Atkins",
       "type": "guitarist",
@@ -2822,6 +4267,56 @@
       }
     },
     {
+      "id": "chi-cheng",
+      "label": "Chi Cheng",
+      "type": "artist",
+      "zone": "rock-circuit",
+      "roles": [
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "artist",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 308,
+        "y": 435
+      }
+    },
+    {
+      "id": "chicago",
+      "label": "Chicago",
+      "type": "band",
+      "zone": "rock-circuit",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -347,
+        "y": 629
+      }
+    },
+    {
       "id": "children-of-bodom",
       "label": "Children of Bodom",
       "type": "band",
@@ -2845,6 +4340,32 @@
         "pinned": false,
         "x": 1198,
         "y": 258
+      }
+    },
+    {
+      "id": "chris-holmes",
+      "label": "Chris Holmes",
+      "type": "guitarist",
+      "zone": "rock-circuit",
+      "roles": [
+        "guitarist",
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "guitarist",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -498,
+        "y": -336
       }
     },
     {
@@ -2872,6 +4393,80 @@
         "pinned": false,
         "x": -968,
         "y": -15
+      }
+    },
+    {
+      "id": "circle-jerks",
+      "label": "Circle Jerks",
+      "type": "band",
+      "zone": "punk-alt",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "hardcore punk",
+        "punk rock"
+      ],
+      "curatorTags": [
+        "hardcore punk",
+        "california punk",
+        "punk roots"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 1618,
+        "y": 1765
+      }
+    },
+    {
+      "id": "civil-war",
+      "label": "Civil War",
+      "type": "band",
+      "zone": "rock-circuit",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -28,
+        "y": 741
+      }
+    },
+    {
+      "id": "classical-guitar",
+      "label": "Classical guitar",
+      "type": "guitar",
+      "zone": "guitar-workshop",
+      "roles": [
+        "guitar"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [],
+      "curatorTags": [
+        "electric guitar",
+        "guitar",
+        "instrument"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 2854,
+        "y": 503
       }
     },
     {
@@ -2951,6 +4546,54 @@
       }
     },
     {
+      "id": "concerto-suite-for-electric-guitar-and-orchestra-in-e-flat-minor-op-1",
+      "label": "Concerto Suite for Electric Guitar and Orchestra in E-flat minor, Op. 1",
+      "type": "guitar",
+      "zone": "guitar-workshop",
+      "roles": [
+        "guitar"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [],
+      "curatorTags": [
+        "electric guitar",
+        "guitar",
+        "instrument"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 3278,
+        "y": 273
+      }
+    },
+    {
+      "id": "contraband",
+      "label": "Contraband",
+      "type": "band",
+      "zone": "rock-circuit",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -85,
+        "y": 437
+      }
+    },
+    {
       "id": "corey-taylor",
       "label": "Corey Taylor",
       "type": "artist",
@@ -2999,6 +4642,56 @@
         "pinned": false,
         "x": -1333,
         "y": 1274
+      }
+    },
+    {
+      "id": "country-rock",
+      "label": "country rock",
+      "type": "genre",
+      "zone": "folk-country-vise",
+      "roles": [
+        "genre"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "country rock"
+      ],
+      "curatorTags": [
+        "country",
+        "folk",
+        "rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -1170,
+        "y": 1684
+      }
+    },
+    {
+      "id": "courtney-cox",
+      "label": "Courtney Cox",
+      "type": "artist",
+      "zone": "rock-circuit",
+      "roles": [
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "artist",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -313,
+        "y": -243
       }
     },
     {
@@ -3130,6 +4823,54 @@
       }
     },
     {
+      "id": "d-o-a",
+      "label": "D.O.A.",
+      "type": "band",
+      "zone": "rock-circuit",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 308,
+        "y": 663
+      }
+    },
+    {
+      "id": "d12",
+      "label": "D12",
+      "type": "band",
+      "zone": "psychedelia-prog",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [],
+      "curatorTags": [
+        "band",
+        "progressive",
+        "psychedelic"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 390,
+        "y": -628
+      }
+    },
+    {
       "id": "danelectro",
       "label": "Danelectro",
       "type": "guitar_brand",
@@ -3176,6 +4917,31 @@
       }
     },
     {
+      "id": "darkest-hour",
+      "label": "Darkest Hour",
+      "type": "band",
+      "zone": "rock-circuit",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 70,
+        "y": -106
+      }
+    },
+    {
       "id": "daughtry",
       "label": "Daughtry",
       "type": "band",
@@ -3198,6 +4964,32 @@
         "pinned": false,
         "x": 129,
         "y": 471
+      }
+    },
+    {
+      "id": "dave-murray",
+      "label": "Dave Murray",
+      "type": "guitarist",
+      "zone": "rock-circuit",
+      "roles": [
+        "guitarist",
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "guitarist",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -628,
+        "y": 677
       }
     },
     {
@@ -3255,6 +5047,107 @@
       }
     },
     {
+      "id": "david-rosenthal",
+      "label": "David Rosenthal",
+      "type": "artist",
+      "zone": "rock-circuit",
+      "roles": [
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "artist",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -467,
+        "y": 28
+      }
+    },
+    {
+      "id": "dawn",
+      "label": "Dawn",
+      "type": "band",
+      "zone": "rock-circuit",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -463,
+        "y": -290
+      }
+    },
+    {
+      "id": "dc3",
+      "label": "DC3",
+      "type": "band",
+      "zone": "rock-circuit",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 308,
+        "y": 131
+      }
+    },
+    {
+      "id": "dead-kennedys",
+      "label": "Dead Kennedys",
+      "type": "band",
+      "zone": "punk-alt",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "hardcore punk",
+        "punk rock"
+      ],
+      "curatorTags": [
+        "hardcore punk",
+        "political punk",
+        "california punk"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 1143,
+        "y": 1444
+      }
+    },
+    {
       "id": "death",
       "label": "Death",
       "type": "band",
@@ -3306,6 +5199,79 @@
       }
     },
     {
+      "id": "demons-wizards",
+      "label": "Demons & Wizards",
+      "type": "band",
+      "zone": "rock-circuit",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -7,
+        "y": 221
+      }
+    },
+    {
+      "id": "dennis-hayes",
+      "label": "Dennis Hayes",
+      "type": "artist",
+      "zone": "psychedelia-prog",
+      "roles": [
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [],
+      "curatorTags": [
+        "artist",
+        "progressive",
+        "psychedelic"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 204,
+        "y": -802
+      }
+    },
+    {
+      "id": "dennis-ward",
+      "label": "Dennis Ward",
+      "type": "artist",
+      "zone": "rock-circuit",
+      "roles": [
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "artist",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -507,
+        "y": -94
+      }
+    },
+    {
       "id": "derek-trucks",
       "label": "Derek Trucks",
       "type": "guitarist",
@@ -3330,6 +5296,57 @@
         "pinned": false,
         "x": -1507,
         "y": -293
+      }
+    },
+    {
+      "id": "descendents",
+      "label": "Descendents",
+      "type": "band",
+      "zone": "punk-alt",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "punk rock",
+        "pop-punk"
+      ],
+      "curatorTags": [
+        "melodic punk",
+        "pop-punk",
+        "california punk"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 1673,
+        "y": 1385
+      }
+    },
+    {
+      "id": "dgm",
+      "label": "DGM",
+      "type": "band",
+      "zone": "rock-circuit",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 70,
+        "y": 532
       }
     },
     {
@@ -3411,6 +5428,32 @@
       }
     },
     {
+      "id": "digital-underground",
+      "label": "Digital Underground",
+      "type": "band",
+      "zone": "rock-circuit",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock",
+        "funk"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "funk"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -628,
+        "y": 821
+      }
+    },
+    {
       "id": "dimebag-darrell",
       "label": "Dimebag Darrell",
       "type": "guitarist",
@@ -3486,6 +5529,31 @@
         "pinned": false,
         "x": -535,
         "y": -80
+      }
+    },
+    {
+      "id": "distant",
+      "label": "Distant",
+      "type": "band",
+      "zone": "rock-circuit",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 153,
+        "y": 660
       }
     },
     {
@@ -3565,6 +5633,31 @@
       }
     },
     {
+      "id": "dominum",
+      "label": "Dominum",
+      "type": "band",
+      "zone": "rock-circuit",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -308,
+        "y": 843
+      }
+    },
+    {
       "id": "doom-metal",
       "label": "Doom metal",
       "type": "genre",
@@ -3587,6 +5680,80 @@
         "pinned": false,
         "x": 1213,
         "y": -144
+      }
+    },
+    {
+      "id": "dorothy",
+      "label": "Dorothy",
+      "type": "band",
+      "zone": "rock-circuit",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -10,
+        "y": 478
+      }
+    },
+    {
+      "id": "dr-dre",
+      "label": "Dr. Dre",
+      "type": "artist",
+      "zone": "psychedelia-prog",
+      "roles": [
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [],
+      "curatorTags": [
+        "artist",
+        "progressive",
+        "psychedelic"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -118,
+        "y": -848
+      }
+    },
+    {
+      "id": "dr-know",
+      "label": "Dr. Know",
+      "type": "guitarist",
+      "zone": "rock-circuit",
+      "roles": [
+        "guitarist",
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "guitarist",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -261,
+        "y": -210
       }
     },
     {
@@ -3667,6 +5834,32 @@
       }
     },
     {
+      "id": "duff-mckagan",
+      "label": "Duff McKagan",
+      "type": "artist",
+      "zone": "hard-rock-metal",
+      "roles": [
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "hard rock",
+        "rock"
+      ],
+      "curatorTags": [
+        "hard rock",
+        "artist",
+        "rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 2588,
+        "y": 503
+      }
+    },
+    {
       "id": "dutch-rock-music",
       "label": "Dutch rock music",
       "type": "genre",
@@ -3714,6 +5907,32 @@
         "pinned": false,
         "x": -628,
         "y": 517
+      }
+    },
+    {
+      "id": "eazy-e",
+      "label": "Eazy-E",
+      "type": "artist",
+      "zone": "rock-circuit",
+      "roles": [
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock",
+        "funk"
+      ],
+      "curatorTags": [
+        "rock",
+        "artist",
+        "funk"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -420,
+        "y": 364
       }
     },
     {
@@ -3796,6 +6015,31 @@
       }
     },
     {
+      "id": "egg-hunt",
+      "label": "Egg Hunt",
+      "type": "band",
+      "zone": "rock-circuit",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -121,
+        "y": -132
+      }
+    },
+    {
       "id": "electric-acoustic-guitar",
       "label": "Electric-acoustic guitar",
       "type": "guitar",
@@ -3841,6 +6085,29 @@
         "pinned": false,
         "x": -1252,
         "y": 77
+      }
+    },
+    {
+      "id": "electric-guitar",
+      "label": "Electric guitar",
+      "type": "guitar",
+      "zone": "guitar-workshop",
+      "roles": [
+        "guitar"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [],
+      "curatorTags": [
+        "electric guitar",
+        "guitar",
+        "instrument"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 3079,
+        "y": -186
       }
     },
     {
@@ -3894,6 +6161,31 @@
       }
     },
     {
+      "id": "embrace",
+      "label": "Embrace",
+      "type": "band",
+      "zone": "rock-circuit",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -628,
+        "y": -133
+      }
+    },
+    {
       "id": "emigrate",
       "label": "Emigrate",
       "type": "band",
@@ -3919,6 +6211,56 @@
       }
     },
     {
+      "id": "emily-armstrong",
+      "label": "Emily Armstrong",
+      "type": "artist",
+      "zone": "rock-circuit",
+      "roles": [
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "artist",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -176,
+        "y": 734
+      }
+    },
+    {
+      "id": "eminem",
+      "label": "Eminem",
+      "type": "artist",
+      "zone": "rock-circuit",
+      "roles": [
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "artist",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 308,
+        "y": 770
+      }
+    },
+    {
       "id": "epica",
       "label": "Epica",
       "type": "band",
@@ -3941,6 +6283,31 @@
         "pinned": false,
         "x": -217,
         "y": 481
+      }
+    },
+    {
+      "id": "equinox",
+      "label": "Equinox",
+      "type": "band",
+      "zone": "rock-circuit",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -121,
+        "y": 262
       }
     },
     {
@@ -4017,6 +6384,29 @@
       }
     },
     {
+      "id": "esp-guitars",
+      "label": "ESP Guitars",
+      "type": "guitar",
+      "zone": "guitar-workshop",
+      "roles": [
+        "guitar"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [],
+      "curatorTags": [
+        "electric guitar",
+        "guitar",
+        "instrument"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 3458,
+        "y": -237
+      }
+    },
+    {
       "id": "execration",
       "label": "Execration",
       "type": "band",
@@ -4065,6 +6455,31 @@
         "pinned": false,
         "x": 1311,
         "y": -333
+      }
+    },
+    {
+      "id": "femme-fatale",
+      "label": "Femme Fatale",
+      "type": "band",
+      "zone": "rock-circuit",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -628,
+        "y": 117
       }
     },
     {
@@ -4255,6 +6670,31 @@
       }
     },
     {
+      "id": "filter",
+      "label": "Filter",
+      "type": "band",
+      "zone": "rock-circuit",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -382,
+        "y": -336
+      }
+    },
+    {
       "id": "finntroll",
       "label": "Finntroll",
       "type": "band",
@@ -4265,13 +6705,13 @@
       "aliases": [],
       "starter": false,
       "primaryGenres": [
-        "folk",
-        "rock"
+        "hard rock",
+        "folk"
       ],
       "curatorTags": [
+        "hard rock",
         "band",
-        "folk",
-        "rock"
+        "folk"
       ],
       "secondaryZones": [],
       "layoutHints": {
@@ -4531,6 +6971,32 @@
       }
     },
     {
+      "id": "fugazi",
+      "label": "Fugazi",
+      "type": "band",
+      "zone": "punk-alt",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "post-hardcore",
+        "post-punk"
+      ],
+      "curatorTags": [
+        "post-hardcore",
+        "dc punk",
+        "independent punk"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 1051,
+        "y": 1852
+      }
+    },
+    {
       "id": "funk",
       "label": "Funk",
       "type": "genre",
@@ -4553,6 +7019,31 @@
         "pinned": false,
         "x": 308,
         "y": 133
+      }
+    },
+    {
+      "id": "g-funk",
+      "label": "G-funk",
+      "type": "genre",
+      "zone": "rock-circuit",
+      "roles": [
+        "genre"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "G-funk"
+      ],
+      "curatorTags": [
+        "rock",
+        "classic rock",
+        "funk"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 308,
+        "y": 44
       }
     },
     {
@@ -4607,6 +7098,30 @@
       }
     },
     {
+      "id": "gangsta-rap",
+      "label": "Gangsta rap",
+      "type": "genre",
+      "zone": "psychedelia-prog",
+      "roles": [
+        "genre"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "Gangsta rap"
+      ],
+      "curatorTags": [
+        "progressive",
+        "psychedelic"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -178,
+        "y": -945
+      }
+    },
+    {
       "id": "genesis",
       "label": "Genesis",
       "type": "band",
@@ -4629,6 +7144,32 @@
         "pinned": false,
         "x": -386,
         "y": 198
+      }
+    },
+    {
+      "id": "george-clinton",
+      "label": "George Clinton",
+      "type": "artist",
+      "zone": "rock-circuit",
+      "roles": [
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock",
+        "funk"
+      ],
+      "curatorTags": [
+        "rock",
+        "artist",
+        "funk"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 26,
+        "y": -144
       }
     },
     {
@@ -4989,6 +7530,31 @@
       }
     },
     {
+      "id": "gillan",
+      "label": "Gillan",
+      "type": "band",
+      "zone": "rock-circuit",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -283,
+        "y": 488
+      }
+    },
+    {
       "id": "gitarkameratene",
       "label": "Gitarkameratene",
       "type": "band",
@@ -5014,6 +7580,31 @@
       }
     },
     {
+      "id": "glam-metal",
+      "label": "glam metal",
+      "type": "genre",
+      "zone": "hard-rock-metal",
+      "roles": [
+        "genre"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "glam metal"
+      ],
+      "curatorTags": [
+        "hard rock",
+        "glam rock",
+        "heavy metal"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 1296,
+        "y": 142
+      }
+    },
+    {
       "id": "glam-rock",
       "label": "Glam rock",
       "type": "genre",
@@ -5036,6 +7627,107 @@
         "pinned": false,
         "x": -7,
         "y": -302
+      }
+    },
+    {
+      "id": "glenn-hughes",
+      "label": "Glenn Hughes",
+      "type": "artist",
+      "zone": "rock-circuit",
+      "roles": [
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "artist",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -285,
+        "y": 384
+      }
+    },
+    {
+      "id": "glittertind",
+      "label": "Glittertind",
+      "type": "band",
+      "zone": "rock-circuit",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 159,
+        "y": 281
+      }
+    },
+    {
+      "id": "gloryhammer",
+      "label": "Gloryhammer",
+      "type": "band",
+      "zone": "hard-rock-metal",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "hard rock",
+        "power metal"
+      ],
+      "curatorTags": [
+        "hard rock",
+        "power metal",
+        "band"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 2588,
+        "y": 311
+      }
+    },
+    {
+      "id": "gogmagog",
+      "label": "Gogmagog",
+      "type": "band",
+      "zone": "rock-circuit",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -276,
+        "y": 932
       }
     },
     {
@@ -5115,6 +7807,32 @@
       }
     },
     {
+      "id": "green-day",
+      "label": "Green Day",
+      "type": "band",
+      "zone": "punk-alt",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "pop-punk",
+        "punk rock"
+      ],
+      "curatorTags": [
+        "pop-punk",
+        "east bay punk",
+        "mainstream punk"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -404,
+        "y": 544
+      }
+    },
+    {
       "id": "gretsch",
       "label": "Gretsch",
       "type": "guitar_brand",
@@ -5161,6 +7879,31 @@
       }
     },
     {
+      "id": "grim-reaper",
+      "label": "Grim Reaper",
+      "type": "band",
+      "zone": "rock-circuit",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 233,
+        "y": 207
+      }
+    },
+    {
       "id": "grunge",
       "label": "Grunge",
       "type": "genre",
@@ -5176,7 +7919,7 @@
       "curatorTags": [
         "hard rock",
         "punk rock",
-        "grunge"
+        "alternative"
       ],
       "secondaryZones": [],
       "layoutHints": {
@@ -5229,6 +7972,75 @@
         "pinned": false,
         "x": 3112,
         "y": 267
+      }
+    },
+    {
+      "id": "guitar-heaven-the-greatest-guitar-classics-of-all-time",
+      "label": "Guitar Heaven: The Greatest Guitar Classics of All Time",
+      "type": "guitar",
+      "zone": "guitar-workshop",
+      "roles": [
+        "guitar"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [],
+      "curatorTags": [
+        "electric guitar",
+        "guitar",
+        "instrument"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 3208,
+        "y": 395
+      }
+    },
+    {
+      "id": "guitar-player",
+      "label": "Guitar Player",
+      "type": "guitar",
+      "zone": "guitar-workshop",
+      "roles": [
+        "guitar"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [],
+      "curatorTags": [
+        "electric guitar",
+        "guitar",
+        "instrument"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 3169,
+        "y": 208
+      }
+    },
+    {
+      "id": "guitar-solo",
+      "label": "Guitar solo",
+      "type": "guitar",
+      "zone": "guitar-workshop",
+      "roles": [
+        "guitar"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [],
+      "curatorTags": [
+        "electric guitar",
+        "guitar",
+        "instrument"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 2953,
+        "y": -261
       }
     },
     {
@@ -5302,6 +8114,32 @@
         "pinned": false,
         "x": -628,
         "y": 389
+      }
+    },
+    {
+      "id": "hail",
+      "label": "Hail!",
+      "type": "band",
+      "zone": "hard-rock-metal",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "hard rock",
+        "heavy metal"
+      ],
+      "curatorTags": [
+        "hard rock",
+        "heavy metal",
+        "band"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 2286,
+        "y": -253
       }
     },
     {
@@ -5404,6 +8242,56 @@
         "pinned": false,
         "x": 719,
         "y": -106
+      }
+    },
+    {
+      "id": "hardcore-punk",
+      "label": "hardcore punk",
+      "type": "genre",
+      "zone": "punk-alt",
+      "roles": [
+        "genre"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "hardcore punk"
+      ],
+      "curatorTags": [
+        "punk rock",
+        "alternative",
+        "punk"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 1155,
+        "y": 1284
+      }
+    },
+    {
+      "id": "hardline",
+      "label": "Hardline",
+      "type": "band",
+      "zone": "rock-circuit",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 128,
+        "y": 135
       }
     },
     {
@@ -5527,6 +8415,31 @@
         "pinned": false,
         "x": 2977,
         "y": 204
+      }
+    },
+    {
+      "id": "hollywood-vampires",
+      "label": "Hollywood Vampires",
+      "type": "band",
+      "zone": "rock-circuit",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -266,
+        "y": 18
       }
     },
     {
@@ -5672,6 +8585,104 @@
       }
     },
     {
+      "id": "ice-cube",
+      "label": "Ice Cube",
+      "type": "artist",
+      "zone": "psychedelia-prog",
+      "roles": [
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [],
+      "curatorTags": [
+        "artist",
+        "progressive",
+        "psychedelic"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 451,
+        "y": -722
+      }
+    },
+    {
+      "id": "iced-earth",
+      "label": "Iced Earth",
+      "type": "band",
+      "zone": "hard-rock-metal",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "hard rock",
+        "heavy metal"
+      ],
+      "curatorTags": [
+        "hard rock",
+        "heavy metal",
+        "band"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 2588,
+        "y": 633
+      }
+    },
+    {
+      "id": "iggy-pop",
+      "label": "Iggy Pop",
+      "type": "artist",
+      "zone": "punk-alt",
+      "roles": [
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [],
+      "curatorTags": [
+        "artist",
+        "alternative",
+        "punk"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 1077,
+        "y": 1359
+      }
+    },
+    {
+      "id": "in-flames",
+      "label": "In Flames",
+      "type": "band",
+      "zone": "hard-rock-metal",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "hard rock",
+        "heavy metal"
+      ],
+      "curatorTags": [
+        "hard rock",
+        "heavy metal",
+        "band"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 2588,
+        "y": 117
+      }
+    },
+    {
       "id": "indie-rock",
       "label": "Indie rock",
       "type": "genre",
@@ -5686,8 +8697,8 @@
       ],
       "curatorTags": [
         "alternative rock",
-        "country",
-        "folk"
+        "indie rock",
+        "alternative"
       ],
       "secondaryZones": [],
       "layoutHints": {
@@ -5710,9 +8721,9 @@
         "industrial rock"
       ],
       "curatorTags": [
-        "rock",
-        "classic rock",
-        "alternative"
+        "alternative",
+        "punk",
+        "rock"
       ],
       "secondaryZones": [],
       "layoutHints": {
@@ -5748,6 +8759,31 @@
       }
     },
     {
+      "id": "into-eternity",
+      "label": "Into Eternity",
+      "type": "band",
+      "zone": "rock-circuit",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -151,
+        "y": 518
+      }
+    },
+    {
       "id": "iron-maiden",
       "label": "Iron Maiden",
       "type": "band",
@@ -5771,6 +8807,29 @@
         "pinned": false,
         "x": 1686,
         "y": -53
+      }
+    },
+    {
+      "id": "jack-black",
+      "label": "Jack Black",
+      "type": "artist",
+      "zone": "psychedelia-prog",
+      "roles": [
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [],
+      "curatorTags": [
+        "artist",
+        "progressive",
+        "psychedelic"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 61,
+        "y": -1076
       }
     },
     {
@@ -5943,6 +9002,33 @@
       }
     },
     {
+      "id": "janick-gers",
+      "label": "Janick Gers",
+      "type": "guitarist",
+      "zone": "hard-rock-metal",
+      "roles": [
+        "guitarist",
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "hard rock",
+        "heavy metal"
+      ],
+      "curatorTags": [
+        "hard rock",
+        "heavy metal",
+        "guitarist"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 2155,
+        "y": -286
+      }
+    },
+    {
       "id": "jazz",
       "label": "Jazz",
       "type": "genre",
@@ -5956,9 +9042,9 @@
         "Jazz"
       ],
       "curatorTags": [
-        "country",
-        "folk",
-        "jazz fusion"
+        "jazz fusion",
+        "progressive",
+        "psychedelic"
       ],
       "secondaryZones": [],
       "layoutHints": {
@@ -5981,9 +9067,9 @@
         "Jazz fusion"
       ],
       "curatorTags": [
-        "country",
-        "folk",
-        "jazz fusion"
+        "rock",
+        "jazz fusion",
+        "classic rock"
       ],
       "secondaryZones": [],
       "layoutHints": {
@@ -6016,6 +9102,81 @@
         "pinned": false,
         "x": -254,
         "y": 129
+      }
+    },
+    {
+      "id": "jeff-duncan",
+      "label": "Jeff Duncan",
+      "type": "artist",
+      "zone": "rock-circuit",
+      "roles": [
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "artist",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -628,
+        "y": -254
+      }
+    },
+    {
+      "id": "jeff-martin",
+      "label": "Jeff Martin",
+      "type": "artist",
+      "zone": "rock-circuit",
+      "roles": [
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "artist",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -628,
+        "y": 68
+      }
+    },
+    {
+      "id": "jeff-nelson",
+      "label": "Jeff Nelson",
+      "type": "artist",
+      "zone": "rock-circuit",
+      "roles": [
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "artist",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 256,
+        "y": 679
       }
     },
     {
@@ -6056,12 +9217,13 @@
       "starter": false,
       "primaryGenres": [
         "country rock",
-        "country"
+        "country",
+        "folk"
       ],
       "curatorTags": [
         "country rock",
         "country",
-        "artist"
+        "folk"
       ],
       "secondaryZones": [],
       "layoutHints": {
@@ -6411,6 +9573,31 @@
       }
     },
     {
+      "id": "joy-division",
+      "label": "Joy Division",
+      "type": "band",
+      "zone": "punk-alt",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "post-punk"
+      ],
+      "curatorTags": [
+        "post-punk",
+        "gothic influence",
+        "manchester"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 59,
+        "y": -725
+      }
+    },
+    {
       "id": "judas-priest",
       "label": "Judas Priest",
       "type": "band",
@@ -6463,6 +9650,33 @@
       }
     },
     {
+      "id": "kai-hansen",
+      "label": "Kai Hansen",
+      "type": "guitarist",
+      "zone": "hard-rock-metal",
+      "roles": [
+        "guitarist",
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "hard rock",
+        "power metal"
+      ],
+      "curatorTags": [
+        "hard rock",
+        "power metal",
+        "guitarist"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 2209,
+        "y": 281
+      }
+    },
+    {
       "id": "keith-richards",
       "label": "Keith Richards",
       "type": "guitarist",
@@ -6487,6 +9701,31 @@
         "pinned": false,
         "x": -230,
         "y": 23
+      }
+    },
+    {
+      "id": "kevin-gilbert",
+      "label": "Kevin Gilbert",
+      "type": "artist",
+      "zone": "rock-circuit",
+      "roles": [
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "artist",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -315,
+        "y": -46
       }
     },
     {
@@ -6538,6 +9777,29 @@
         "pinned": false,
         "x": 802,
         "y": 219
+      }
+    },
+    {
+      "id": "kramer-guitars",
+      "label": "Kramer Guitars",
+      "type": "guitar",
+      "zone": "guitar-workshop",
+      "roles": [
+        "guitar"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [],
+      "curatorTags": [
+        "electric guitar",
+        "guitar",
+        "instrument"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 3210,
+        "y": -248
       }
     },
     {
@@ -6718,6 +9980,31 @@
       }
     },
     {
+      "id": "linkin-park",
+      "label": "Linkin Park",
+      "type": "band",
+      "zone": "rock-circuit",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -497,
+        "y": -158
+      }
+    },
+    {
       "id": "little-richard",
       "label": "Little Richard",
       "type": "artist",
@@ -6728,13 +10015,14 @@
       "aliases": [],
       "starter": false,
       "primaryGenres": [
+        "country rock",
         "country",
-        "rock"
+        "folk"
       ],
       "curatorTags": [
+        "country rock",
         "country",
-        "artist",
-        "rock"
+        "folk"
       ],
       "secondaryZones": [],
       "layoutHints": {
@@ -6969,6 +10257,32 @@
       }
     },
     {
+      "id": "mc5",
+      "label": "MC5",
+      "type": "band",
+      "zone": "punk-alt",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "proto-punk",
+        "garage rock"
+      ],
+      "curatorTags": [
+        "proto-punk",
+        "garage rock",
+        "detroit rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -444,
+        "y": -99
+      }
+    },
+    {
       "id": "megadeth",
       "label": "Megadeth",
       "type": "band",
@@ -7018,6 +10332,59 @@
         "pinned": false,
         "x": 1493,
         "y": 315
+      }
+    },
+    {
+      "id": "michael-kiske",
+      "label": "Michael Kiske",
+      "type": "artist",
+      "zone": "hard-rock-metal",
+      "roles": [
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "hard rock",
+        "power metal"
+      ],
+      "curatorTags": [
+        "hard rock",
+        "power metal",
+        "artist"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 2588,
+        "y": -479
+      }
+    },
+    {
+      "id": "michael-schenker",
+      "label": "Michael Schenker",
+      "type": "guitarist",
+      "zone": "rock-circuit",
+      "roles": [
+        "guitarist",
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "hard rock",
+        "rock"
+      ],
+      "curatorTags": [
+        "hard rock",
+        "rock",
+        "guitarist"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 2239,
+        "y": 75
       }
     },
     {
@@ -7097,6 +10464,31 @@
       }
     },
     {
+      "id": "minor-threat",
+      "label": "Minor Threat",
+      "type": "band",
+      "zone": "punk-alt",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "hardcore punk"
+      ],
+      "curatorTags": [
+        "hardcore punk",
+        "straight edge",
+        "dc punk"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 1646,
+        "y": 1507
+      }
+    },
+    {
       "id": "misfits",
       "label": "Misfits",
       "type": "band",
@@ -7120,6 +10512,31 @@
         "pinned": false,
         "x": -154,
         "y": 844
+      }
+    },
+    {
+      "id": "mr-big",
+      "label": "Mr. Big",
+      "type": "band",
+      "zone": "rock-circuit",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 50,
+        "y": -43
       }
     },
     {
@@ -7195,6 +10612,81 @@
       }
     },
     {
+      "id": "musicians-institute",
+      "label": "Musicians Institute",
+      "type": "artist",
+      "zone": "rock-circuit",
+      "roles": [
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "artist",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -154,
+        "y": 588
+      }
+    },
+    {
+      "id": "my-band",
+      "label": "My Band",
+      "type": "band",
+      "zone": "rock-circuit",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -387,
+        "y": -62
+      }
+    },
+    {
+      "id": "n-w-a",
+      "label": "N.W.A",
+      "type": "band",
+      "zone": "rock-circuit",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -365,
+        "y": 405
+      }
+    },
+    {
       "id": "national",
       "label": "National",
       "type": "guitar_brand",
@@ -7241,6 +10733,32 @@
       }
     },
     {
+      "id": "new-york-dolls",
+      "label": "New York Dolls",
+      "type": "band",
+      "zone": "punk-alt",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "proto-punk",
+        "glam rock"
+      ],
+      "curatorTags": [
+        "proto-punk",
+        "glam rock",
+        "new york punk"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 41,
+        "y": 932
+      }
+    },
+    {
       "id": "nightwish",
       "label": "Nightwish",
       "type": "band",
@@ -7264,6 +10782,58 @@
         "pinned": false,
         "x": 57,
         "y": 274
+      }
+    },
+    {
+      "id": "nita-strauss",
+      "label": "Nita Strauss",
+      "type": "guitarist",
+      "zone": "rock-circuit",
+      "roles": [
+        "guitarist",
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "guitarist",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 666,
+        "y": -817
+      }
+    },
+    {
+      "id": "nofx",
+      "label": "NOFX",
+      "type": "band",
+      "zone": "punk-alt",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "skate punk",
+        "punk rock"
+      ],
+      "curatorTags": [
+        "skate punk",
+        "melodic punk",
+        "california punk"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 1459,
+        "y": 1553
       }
     },
     {
@@ -7341,6 +10911,32 @@
       }
     },
     {
+      "id": "operation-ivy",
+      "label": "Operation Ivy",
+      "type": "band",
+      "zone": "punk-alt",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "ska punk",
+        "punk rock"
+      ],
+      "curatorTags": [
+        "ska punk",
+        "east bay punk",
+        "rancid roots"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -176,
+        "y": 932
+      }
+    },
+    {
       "id": "orden-ogan",
       "label": "Orden Ogan",
       "type": "band",
@@ -7364,6 +10960,56 @@
         "pinned": false,
         "x": 722,
         "y": 373
+      }
+    },
+    {
+      "id": "our-band-could-be-your-life",
+      "label": "Our Band Could Be Your Life",
+      "type": "band",
+      "zone": "rock-circuit",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -628,
+        "y": 30
+      }
+    },
+    {
+      "id": "outsidaz",
+      "label": "Outsidaz",
+      "type": "band",
+      "zone": "rock-circuit",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -193,
+        "y": 153
       }
     },
     {
@@ -7522,6 +11168,32 @@
       }
     },
     {
+      "id": "pennywise",
+      "label": "Pennywise",
+      "type": "band",
+      "zone": "punk-alt",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "skate punk",
+        "punk rock"
+      ],
+      "curatorTags": [
+        "skate punk",
+        "melodic hardcore",
+        "california punk"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 2386,
+        "y": -42
+      }
+    },
+    {
       "id": "pete-townshend",
       "label": "Pete Townshend",
       "type": "guitarist",
@@ -7600,6 +11272,32 @@
       }
     },
     {
+      "id": "phil-campbell",
+      "label": "Phil Campbell",
+      "type": "artist",
+      "zone": "hard-rock-metal",
+      "roles": [
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "hard rock",
+        "rock"
+      ],
+      "curatorTags": [
+        "hard rock",
+        "artist",
+        "rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 2162,
+        "y": 654
+      }
+    },
+    {
       "id": "pink-floyd",
       "label": "Pink Floyd",
       "type": "band",
@@ -7622,6 +11320,31 @@
         "pinned": false,
         "x": 133,
         "y": -877
+      }
+    },
+    {
+      "id": "pop-punk",
+      "label": "pop-punk",
+      "type": "genre",
+      "zone": "punk-alt",
+      "roles": [
+        "genre"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "pop-punk"
+      ],
+      "curatorTags": [
+        "punk rock",
+        "alternative",
+        "punk"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 1784,
+        "y": 1587
       }
     },
     {
@@ -7664,8 +11387,8 @@
       ],
       "curatorTags": [
         "alternative rock",
-        "rock",
-        "classic rock"
+        "alternative",
+        "punk"
       ],
       "secondaryZones": [],
       "layoutHints": {
@@ -7946,6 +11669,31 @@
       }
     },
     {
+      "id": "public-enemy",
+      "label": "Public Enemy",
+      "type": "band",
+      "zone": "rock-circuit",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -434,
+        "y": 649
+      }
+    },
+    {
       "id": "punk",
       "label": "Punk rock",
       "type": "genre",
@@ -8121,6 +11869,32 @@
       }
     },
     {
+      "id": "rancid",
+      "label": "Rancid",
+      "type": "band",
+      "zone": "punk-alt",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "punk rock",
+        "ska punk"
+      ],
+      "curatorTags": [
+        "punk rock",
+        "ska punk",
+        "operation ivy lineage"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 1361,
+        "y": 1474
+      }
+    },
+    {
       "id": "randy-rhoads",
       "label": "Randy Rhoads",
       "type": "guitarist",
@@ -8185,12 +11959,13 @@
       "starter": false,
       "primaryGenres": [
         "hard rock",
-        "rock"
+        "country",
+        "folk"
       ],
       "curatorTags": [
         "hard rock",
-        "artist",
-        "rock"
+        "country",
+        "folk"
       ],
       "secondaryZones": [],
       "layoutHints": {
@@ -8464,18 +12239,43 @@
       "starter": false,
       "primaryGenres": [
         "southern rock",
-        "rock"
+        "blues"
       ],
       "curatorTags": [
         "southern rock",
-        "artist",
-        "rock"
+        "blues",
+        "artist"
       ],
       "secondaryZones": [],
       "layoutHints": {
         "pinned": false,
         "x": -171,
         "y": 55
+      }
+    },
+    {
+      "id": "roots-rock",
+      "label": "roots rock",
+      "type": "genre",
+      "zone": "psychedelia-prog",
+      "roles": [
+        "genre"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "roots rock"
+      ],
+      "curatorTags": [
+        "progressive rock",
+        "progressive",
+        "psychedelic"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -500,
+        "y": -662
       }
     },
     {
@@ -8504,6 +12304,32 @@
       }
     },
     {
+      "id": "samhain",
+      "label": "Samhain",
+      "type": "band",
+      "zone": "punk-alt",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "horror punk",
+        "deathrock"
+      ],
+      "curatorTags": [
+        "horror punk",
+        "deathrock",
+        "misfits lineage"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 256,
+        "y": 577
+      }
+    },
+    {
       "id": "santana-band",
       "label": "Santana",
       "type": "band",
@@ -8526,6 +12352,33 @@
         "pinned": false,
         "x": -1405,
         "y": -213
+      }
+    },
+    {
+      "id": "satchel",
+      "label": "Satchel",
+      "type": "guitarist",
+      "zone": "hard-rock-metal",
+      "roles": [
+        "guitarist",
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "glam metal",
+        "hard rock"
+      ],
+      "curatorTags": [
+        "glam metal",
+        "guitarist",
+        "hard rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 277,
+        "y": -1076
       }
     },
     {
@@ -8577,6 +12430,31 @@
         "pinned": false,
         "x": -296,
         "y": 615
+      }
+    },
+    {
+      "id": "scott-weiland",
+      "label": "Scott Weiland",
+      "type": "artist",
+      "zone": "rock-circuit",
+      "roles": [
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "artist",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 80,
+        "y": 466
       }
     },
     {
@@ -8656,6 +12534,31 @@
       }
     },
     {
+      "id": "sex-pistols",
+      "label": "Sex Pistols",
+      "type": "band",
+      "zone": "punk-alt",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "punk rock"
+      ],
+      "curatorTags": [
+        "punk rock",
+        "uk punk",
+        "punk roots"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 1461,
+        "y": 1284
+      }
+    },
+    {
       "id": "shinedown",
       "label": "Shinedown",
       "type": "band",
@@ -8681,6 +12584,31 @@
       }
     },
     {
+      "id": "shock-rock",
+      "label": "Shock Rock",
+      "type": "genre",
+      "zone": "rock-circuit",
+      "roles": [
+        "genre"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "Shock Rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "progressive",
+        "psychedelic"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -182,
+        "y": -628
+      }
+    },
+    {
       "id": "shoegaze",
       "label": "Shoegaze",
       "type": "genre",
@@ -8695,14 +12623,37 @@
       ],
       "curatorTags": [
         "alternative rock",
-        "country",
-        "folk"
+        "alternative",
+        "punk"
       ],
       "secondaryZones": [],
       "layoutHints": {
         "pinned": false,
         "x": -737,
         "y": 1315
+      }
+    },
+    {
+      "id": "shy",
+      "label": "Shy",
+      "type": "band",
+      "zone": "psychedelia-prog",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [],
+      "curatorTags": [
+        "band",
+        "progressive",
+        "psychedelic"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -21,
+        "y": -628
       }
     },
     {
@@ -8781,6 +12732,32 @@
       }
     },
     {
+      "id": "siouxsie-and-the-banshees",
+      "label": "Siouxsie and the Banshees",
+      "type": "band",
+      "zone": "punk-alt",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "post-punk",
+        "gothic rock"
+      ],
+      "curatorTags": [
+        "post-punk",
+        "gothic rock",
+        "uk punk"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 1231,
+        "y": 1513
+      }
+    },
+    {
       "id": "sister-rosetta-tharpe",
       "label": "Sister Rosetta Tharpe",
       "type": "guitarist",
@@ -8804,6 +12781,31 @@
         "pinned": false,
         "x": -992,
         "y": 109
+      }
+    },
+    {
+      "id": "skate-punk",
+      "label": "skate punk",
+      "type": "genre",
+      "zone": "punk-alt",
+      "roles": [
+        "genre"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "skate punk"
+      ],
+      "curatorTags": [
+        "hardcore punk",
+        "punk rock",
+        "alternative"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 1928,
+        "y": 1578
       }
     },
     {
@@ -8961,6 +12963,58 @@
       }
     },
     {
+      "id": "steel-panther",
+      "label": "Steel Panther",
+      "type": "band",
+      "zone": "hard-rock-metal",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "hard rock",
+        "glam metal"
+      ],
+      "curatorTags": [
+        "hard rock",
+        "glam metal",
+        "band"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 2467,
+        "y": 199
+      }
+    },
+    {
+      "id": "steve-harris",
+      "label": "Steve Harris",
+      "type": "artist",
+      "zone": "rock-circuit",
+      "roles": [
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock",
+        "jazz"
+      ],
+      "curatorTags": [
+        "rock",
+        "artist",
+        "jazz"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -214,
+        "y": -786
+      }
+    },
+    {
       "id": "steve-howe",
       "label": "Steve Howe",
       "type": "guitarist",
@@ -9091,6 +13145,31 @@
       }
     },
     {
+      "id": "stone-temple-pilots",
+      "label": "Stone Temple Pilots",
+      "type": "band",
+      "zone": "rock-circuit",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -60,
+        "y": -248
+      }
+    },
+    {
       "id": "stray-cats",
       "label": "Stray Cats",
       "type": "band",
@@ -9156,15 +13235,40 @@
         "Surf rock"
       ],
       "curatorTags": [
+        "rock",
         "progressive rock",
-        "rock and roll",
-        "rock"
+        "rock and roll"
       ],
       "secondaryZones": [],
       "layoutHints": {
         "pinned": false,
         "x": 576,
         "y": -907
+      }
+    },
+    {
+      "id": "swamp-rock",
+      "label": "swamp rock",
+      "type": "genre",
+      "zone": "roots-blues",
+      "roles": [
+        "genre"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "swamp rock"
+      ],
+      "curatorTags": [
+        "blues",
+        "country",
+        "funk"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -332,
+        "y": -695
       }
     },
     {
@@ -9290,6 +13394,32 @@
       }
     },
     {
+      "id": "tenacious-d",
+      "label": "Tenacious D",
+      "type": "band",
+      "zone": "rock-circuit",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "hard rock",
+        "rock"
+      ],
+      "curatorTags": [
+        "American rock music duos",
+        "hard rock",
+        "rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 2239,
+        "y": 469
+      }
+    },
+    {
       "id": "testament",
       "label": "Testament",
       "type": "band",
@@ -9337,6 +13467,84 @@
         "pinned": false,
         "x": 347,
         "y": -688
+      }
+    },
+    {
+      "id": "the-clash",
+      "label": "The Clash",
+      "type": "band",
+      "zone": "punk-alt",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "punk rock",
+        "post-punk"
+      ],
+      "curatorTags": [
+        "punk rock",
+        "uk punk",
+        "political punk"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 1137,
+        "y": 1769
+      }
+    },
+    {
+      "id": "the-cramps",
+      "label": "The Cramps",
+      "type": "band",
+      "zone": "punk-alt",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "psychobilly",
+        "horror punk"
+      ],
+      "curatorTags": [
+        "psychobilly",
+        "horror punk",
+        "garage punk"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -465,
+        "y": 932
+      }
+    },
+    {
+      "id": "the-damned",
+      "label": "The Damned",
+      "type": "band",
+      "zone": "punk-alt",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "punk rock",
+        "gothic rock"
+      ],
+      "curatorTags": [
+        "uk punk",
+        "gothic rock",
+        "punk roots"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -441,
+        "y": 855
       }
     },
     {
@@ -9393,6 +13601,58 @@
       }
     },
     {
+      "id": "the-iron-maidens",
+      "label": "The Iron Maidens",
+      "type": "band",
+      "zone": "hard-rock-metal",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "hard rock",
+        "heavy metal"
+      ],
+      "curatorTags": [
+        "hard rock",
+        "heavy metal",
+        "band"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 2588,
+        "y": -253
+      }
+    },
+    {
+      "id": "the-offspring",
+      "label": "The Offspring",
+      "type": "band",
+      "zone": "punk-alt",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "punk rock",
+        "skate punk"
+      ],
+      "curatorTags": [
+        "skate punk",
+        "pop-punk",
+        "california punk"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -192,
+        "y": 340
+      }
+    },
+    {
       "id": "the-rolling-stones",
       "label": "The Rolling Stones",
       "type": "band",
@@ -9441,6 +13701,32 @@
         "pinned": false,
         "x": 1491,
         "y": 1538
+      }
+    },
+    {
+      "id": "the-stooges",
+      "label": "The Stooges",
+      "type": "band",
+      "zone": "punk-alt",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "proto-punk",
+        "garage rock"
+      ],
+      "curatorTags": [
+        "proto-punk",
+        "garage rock",
+        "punk roots"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -628,
+        "y": -89
       }
     },
     {
@@ -9545,6 +13831,29 @@
       }
     },
     {
+      "id": "thug-life",
+      "label": "Thug Life",
+      "type": "band",
+      "zone": "psychedelia-prog",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [],
+      "curatorTags": [
+        "band",
+        "progressive",
+        "psychedelic"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 538,
+        "y": -628
+      }
+    },
+    {
       "id": "till-lindemann",
       "label": "Till Lindemann",
       "type": "artist",
@@ -9555,19 +13864,46 @@
       "aliases": [],
       "starter": false,
       "primaryGenres": [
+        "country rock",
         "country",
-        "rock"
+        "folk"
       ],
       "curatorTags": [
+        "country rock",
         "country",
-        "artist",
-        "rock"
+        "folk"
       ],
       "secondaryZones": [],
       "layoutHints": {
         "pinned": false,
         "x": -526,
         "y": -23
+      }
+    },
+    {
+      "id": "tim-ripper-owens",
+      "label": "Tim Ripper Owens",
+      "type": "artist",
+      "zone": "hard-rock-metal",
+      "roles": [
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "hard rock",
+        "heavy metal"
+      ],
+      "curatorTags": [
+        "hard rock",
+        "heavy metal",
+        "artist"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 2527,
+        "y": 23
       }
     },
     {
@@ -9697,6 +14033,29 @@
       }
     },
     {
+      "id": "tupac-shakur",
+      "label": "Tupac Shakur",
+      "type": "artist",
+      "zone": "psychedelia-prog",
+      "roles": [
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [],
+      "curatorTags": [
+        "artist",
+        "progressive",
+        "psychedelic"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 162,
+        "y": -1076
+      }
+    },
+    {
       "id": "ufo",
       "label": "UFO",
       "type": "band",
@@ -9722,6 +14081,32 @@
       }
     },
     {
+      "id": "unisonic",
+      "label": "Unisonic",
+      "type": "band",
+      "zone": "hard-rock-metal",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "hard rock",
+        "rock"
+      ],
+      "curatorTags": [
+        "hard rock",
+        "band",
+        "rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 1939,
+        "y": -85
+      }
+    },
+    {
       "id": "van-halen",
       "label": "Van Halen",
       "type": "band",
@@ -9744,6 +14129,31 @@
         "pinned": false,
         "x": 701,
         "y": -222
+      }
+    },
+    {
+      "id": "velvet-revolver",
+      "label": "Velvet Revolver",
+      "type": "band",
+      "zone": "hard-rock-metal",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "hard rock"
+      ],
+      "curatorTags": [
+        "hard rock",
+        "American rock music supergroups",
+        "band"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 2193,
+        "y": -425
       }
     },
     {
@@ -9773,6 +14183,31 @@
       }
     },
     {
+      "id": "west-coast-hip-hop",
+      "label": "West Coast hip-hop",
+      "type": "genre",
+      "zone": "rock-circuit",
+      "roles": [
+        "genre"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "West Coast hip-hop"
+      ],
+      "curatorTags": [
+        "rock",
+        "classic rock",
+        "funk"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 308,
+        "y": -229
+      }
+    },
+    {
       "id": "willie-nelson",
       "label": "Willie Nelson",
       "type": "artist",
@@ -9796,6 +14231,31 @@
         "pinned": false,
         "x": -1223,
         "y": 1542
+      }
+    },
+    {
+      "id": "wind-rose",
+      "label": "Wind Rose",
+      "type": "band",
+      "zone": "rock-circuit",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [
+        "rock"
+      ],
+      "curatorTags": [
+        "rock",
+        "band",
+        "classic rock"
+      ],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -311,
+        "y": 119
       }
     },
     {

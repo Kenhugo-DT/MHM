@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [hard rock]
+curatorTags: [hard rock, Hard rock, band]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1062
 layoutY: 499
 starter: true
-curatorTags: [hard rock, Hard rock, band]
 ---
 # Guns N' Roses
 
@@ -23,6 +23,9 @@ A hard rock band whose late-1980s sound put Slash's Les Paul tone and bluesy lea
 
 ## Connections
 
+- [[accept|Accept]] - Wikipedia link signal (Wikipedia link: Accept (band))
+- [[aerosmith|Aerosmith]] - Wikipedia link signal (Wikipedia link: Aerosmith (band))
+- [[afi|AFI]] - Wikipedia link signal (Wikipedia link: AFI (band))
 - [[hard-rock|Hard rock]] - central band
 - [[slash|Slash]] - guitarist
 

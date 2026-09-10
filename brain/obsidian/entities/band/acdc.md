@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [blues rock]
+curatorTags: [Blues rock, Hard rock, blues rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 592
 layoutY: -54
 starter: true
-curatorTags: [Blues rock, Hard rock, blues rock]
 ---
 # AC/DC
 

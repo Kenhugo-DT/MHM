@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [hard rock, rock]
+curatorTags: [hard rock, band, rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 714
 layoutY: 512
 starter: false
-curatorTags: [hard rock, band, rock]
 ---
 # All That Remains
 
@@ -23,6 +23,7 @@ A band surfaced by the MHM research brain from Wikipedia signals around Megadeth
 
 ## Connections
 
+- [[in-flames|In Flames]] - Wikipedia link signal (Wikipedia link: All That Remains (band))
 - [[megadeth|Megadeth]] - Wikipedia link signal (Wikipedia link: All That Remains (band))
 
 ## Sources

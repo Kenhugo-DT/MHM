@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [rock and roll, rock]
+curatorTags: [rock and roll, rock, artist]
 secondaryZones: []
 layoutPinned: false
 layoutX: 116
 layoutY: 173
 starter: false
-curatorTags: [rock and roll, rock, artist]
 ---
 # Jerry Lee Lewis
 

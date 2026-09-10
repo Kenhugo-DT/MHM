@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [country]
+curatorTags: [Shoegaze, band, country]
 secondaryZones: []
 layoutPinned: false
 layoutX: -590
 layoutY: 1524
 starter: false
-curatorTags: [Shoegaze, band, country]
 ---
 # Adorable
 

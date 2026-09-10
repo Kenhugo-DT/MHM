@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: []
+curatorTags: [Glam rock, Hard rock, Progressive rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 13
 layoutY: -953
 starter: true
-curatorTags: [Glam rock, Hard rock, Progressive rock]
 ---
 # Queen
 

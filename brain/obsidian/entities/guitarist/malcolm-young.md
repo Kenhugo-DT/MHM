@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [hard rock, rock]
+curatorTags: [hard rock, guitarist, rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 592
 layoutY: -270
 starter: false
-curatorTags: [hard rock, guitarist, rock]
 ---
 # Malcolm Young
 

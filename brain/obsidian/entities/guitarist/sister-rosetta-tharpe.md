@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [blues rock]
+curatorTags: [Blues, Rock and roll, blues rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -992
 layoutY: 109
 starter: false
-curatorTags: [Blues, Rock and roll, blues rock]
 ---
 # Sister Rosetta Tharpe
 

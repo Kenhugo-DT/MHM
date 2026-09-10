@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [rock]
+curatorTags: [rock, band, classic rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -628
 layoutY: 389
 starter: false
-curatorTags: [rock, band, classic rock]
 ---
 # H.E.A.T
 

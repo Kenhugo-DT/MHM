@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [punk rock, hardcore punk]
+curatorTags: [norwegian punk, hardcore punk, punk rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1095
 layoutY: 1464
 starter: false
-curatorTags: [norwegian punk, hardcore punk, punk rock]
 ---
 # The Good the Bad and the Zugly
 

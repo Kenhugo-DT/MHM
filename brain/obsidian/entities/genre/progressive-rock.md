@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [Progressive rock]
+curatorTags: [art rock, progressive metal, progressive rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -25
 layoutY: -775
 starter: true
-curatorTags: [art rock, progressive metal, progressive rock]
 ---
 # Progressive rock
 

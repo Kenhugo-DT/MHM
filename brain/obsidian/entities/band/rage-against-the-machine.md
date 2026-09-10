@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [alternative rock, hard rock]
+curatorTags: [Alternative rock, alternative rock, hard rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 921
 layoutY: -348
 starter: false
-curatorTags: [Alternative rock, alternative rock, hard rock]
 ---
 # Rage Against the Machine
 

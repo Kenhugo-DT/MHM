@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [horror punk]
+curatorTags: [Horror punk, horror punk, band]
 secondaryZones: []
 layoutPinned: false
 layoutX: 942
 layoutY: 1715
 starter: false
-curatorTags: [Horror punk, horror punk, band]
 ---
 # Calabrese
 

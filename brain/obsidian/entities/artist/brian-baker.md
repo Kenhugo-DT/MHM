@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: []
+curatorTags: [artist, alternative, punk]
 secondaryZones: []
 layoutPinned: false
 layoutX: 878
 layoutY: 1595
 starter: false
-curatorTags: [artist, alternative, punk]
 ---
 # Brian Baker
 
@@ -24,6 +24,7 @@ A artist surfaced by the MHM research brain from Wikipedia signals around Bad Re
 ## Connections
 
 - [[bad-religion|Bad Religion]] - Wikipedia link signal (Wikipedia link: Brian Baker (musician))
+- [[minor-threat|Minor Threat]] - Wikipedia link signal (Wikipedia link: Brian Baker (musician))
 
 ## Sources
 

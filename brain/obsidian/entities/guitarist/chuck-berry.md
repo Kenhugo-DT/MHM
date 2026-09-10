@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [rock and roll, rock]
+curatorTags: [Rock and roll, rock and roll, rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -968
 layoutY: -15
 starter: true
-curatorTags: [Rock and roll, rock and roll, rock]
 ---
 # Chuck Berry
 

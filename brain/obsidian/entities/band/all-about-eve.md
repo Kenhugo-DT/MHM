@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [gothic rock, rock]
+curatorTags: [gothic rock, band, rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -51
 layoutY: 24
 starter: false
-curatorTags: [gothic rock, band, rock]
 ---
 # All About Eve
 

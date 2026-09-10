@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [hard rock, thrash metal]
+curatorTags: [hard rock, Thrash metal, thrash metal]
 secondaryZones: []
 layoutPinned: false
 layoutX: 2341
 layoutY: -241
 starter: false
-curatorTags: [hard rock, Thrash metal, thrash metal]
 ---
 # Anacrusis
 

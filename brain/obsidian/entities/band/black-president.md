@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: []
+curatorTags: [band, alternative, punk]
 secondaryZones: []
 layoutPinned: false
 layoutX: 610
 layoutY: 1421
 starter: false
-curatorTags: [band, alternative, punk]
 ---
 # Black President
 
@@ -24,6 +24,7 @@ A band surfaced by the MHM research brain from Wikipedia signals around Bad Reli
 ## Connections
 
 - [[bad-religion|Bad Religion]] - Wikipedia link signal (Wikipedia link: Black President (band))
+- [[circle-jerks|Circle Jerks]] - Wikipedia link signal (Wikipedia link: Black President (band))
 - [[corey-taylor|Corey Taylor]] - Wikipedia link signal (Wikipedia link: Black President (band))
 - [[stone-sour|Stone Sour]] - Wikipedia link signal (Wikipedia link: Black President (band))
 

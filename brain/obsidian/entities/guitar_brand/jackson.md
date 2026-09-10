@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: []
+curatorTags: [guitar brand, hard rock, manufacturer]
 secondaryZones: []
 layoutPinned: false
 layoutX: 2993
 layoutY: -588
 starter: true
-curatorTags: [guitar brand, hard rock, manufacturer]
 ---
 # Jackson
 

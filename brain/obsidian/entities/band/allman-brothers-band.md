@@ -7,13 +7,13 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: [blues rock, southern rock, blues]
+primaryGenres: [country rock, blues rock, southern rock]
+curatorTags: [country rock, blues rock, southern rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1468
 layoutY: -416
 starter: true
-curatorTags: [blues rock, southern rock, blues]
 ---
 # The Allman Brothers Band
 
@@ -23,6 +23,7 @@ A Southern rock band known for twin guitars, blues roots, long improvisations an
 
 ## Connections
 
+- [[country-rock|country rock]] - Wikipedia link signal (Wikipedia link: Allman Brothers Band)
 - [[derek-trucks|Derek Trucks]] - member
 - [[dickey-betts|Dickey Betts]] - member
 - [[django-reinhardt|Django Reinhardt]] - Wikipedia link signal (Wikipedia link: Allman Brothers Band)

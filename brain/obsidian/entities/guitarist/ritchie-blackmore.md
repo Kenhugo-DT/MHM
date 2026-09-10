@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [hard rock, heavy metal]
+curatorTags: [hard rock, heavy metal, guitarist]
 secondaryZones: []
 layoutPinned: false
 layoutX: 900
 layoutY: 209
 starter: true
-curatorTags: [hard rock, heavy metal, guitarist]
 ---
 # Ritchie Blackmore
 

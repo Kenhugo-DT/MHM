@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [country, folk]
+curatorTags: [Country, country, folk]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1435
 layoutY: 1388
 starter: false
-curatorTags: [Country, country, folk]
 ---
 # Chet Atkins
 

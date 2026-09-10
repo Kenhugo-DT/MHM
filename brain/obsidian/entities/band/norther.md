@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [rock]
+curatorTags: [rock, band, classic rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -336
 layoutY: 494
 starter: false
-curatorTags: [rock, band, classic rock]
 ---
 # Norther
 

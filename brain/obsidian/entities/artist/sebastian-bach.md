@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [hard rock, rock]
+curatorTags: [hard rock, artist, rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 906
 layoutY: -516
 starter: false
-curatorTags: [hard rock, artist, rock]
 ---
 # Sebastian Bach
 

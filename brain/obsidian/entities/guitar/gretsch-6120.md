@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: []
+curatorTags: [electric guitar, signature guitar, rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 3259
 layoutY: 305
 starter: false
-curatorTags: [electric guitar, signature guitar, rock]
 ---
 # Gretsch 6120
 

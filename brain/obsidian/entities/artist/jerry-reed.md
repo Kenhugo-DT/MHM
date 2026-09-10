@@ -7,13 +7,13 @@ roles: [artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: [country rock, country]
+primaryGenres: [country rock, country, folk]
+curatorTags: [country rock, country, folk]
 secondaryZones: []
 layoutPinned: false
 layoutX: -87
 layoutY: 124
 starter: false
-curatorTags: [country rock, country, artist]
 ---
 # Jerry Reed
 

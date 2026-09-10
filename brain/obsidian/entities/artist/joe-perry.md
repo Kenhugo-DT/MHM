@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [rock]
+curatorTags: [rock, artist, classic rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -388
 layoutY: 347
 starter: false
-curatorTags: [rock, artist, classic rock]
 ---
 # Joe Perry
 
@@ -24,6 +24,7 @@ A artist surfaced by the MHM research brain from Wikipedia signals around Criss 
 ## Connections
 
 - [[criss-oliva|Criss Oliva]] - Wikipedia link signal (Wikipedia link: Joe Perry (musician))
+- [[hollywood-vampires|Hollywood Vampires]] - Wikipedia link signal (Wikipedia link: Joe Perry (musician))
 
 ## Sources
 

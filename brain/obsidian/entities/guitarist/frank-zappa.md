@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [jazz fusion]
+curatorTags: [Jazz fusion, Rock, jazz fusion]
 secondaryZones: []
 layoutPinned: false
 layoutX: -932
 layoutY: 1610
 starter: false
-curatorTags: [Jazz fusion, Rock, jazz fusion]
 ---
 # Frank Zappa
 

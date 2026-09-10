@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [country]
+curatorTags: [Shoegaze, band, country]
 secondaryZones: []
 layoutPinned: false
 layoutX: -768
 layoutY: 1164
 starter: false
-curatorTags: [Shoegaze, band, country]
 ---
 # Adventures
 

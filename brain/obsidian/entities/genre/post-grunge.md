@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [post-grunge]
+curatorTags: [alternative rock, alternative, punk]
 secondaryZones: []
 layoutPinned: false
 layoutX: 304
 layoutY: 10
 starter: false
-curatorTags: [alternative rock, rock, classic rock]
 ---
 # post-grunge
 

@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [blues rock, electric blues]
+curatorTags: [Electric blues, blues rock, electric blues]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1450
 layoutY: 72
 starter: true
-curatorTags: [Electric blues, blues rock, electric blues]
 ---
 # Buddy Guy
 

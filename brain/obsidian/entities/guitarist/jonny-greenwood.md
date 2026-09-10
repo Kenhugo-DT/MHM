@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [art rock, country]
+curatorTags: [art rock, guitarist, country]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1186
 layoutY: 1305
 starter: false
-curatorTags: [art rock, guitarist, country]
 ---
 # Jonny Greenwood
 

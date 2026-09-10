@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [hard rock, progressive rock]
+curatorTags: [hard rock, progressive rock, guitarist]
 secondaryZones: []
 layoutPinned: false
 layoutX: -250
 layoutY: -903
 starter: false
-curatorTags: [hard rock, progressive rock, guitarist]
 ---
 # Alex Lifeson
 

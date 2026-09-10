@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [rock]
+curatorTags: [rock, band, classic rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 78
 layoutY: -45
 starter: false
-curatorTags: [rock, band, classic rock]
 ---
 # Arven
 

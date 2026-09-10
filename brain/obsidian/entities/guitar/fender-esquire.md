@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: []
+curatorTags: [Country, electric guitar, Rock and roll]
 secondaryZones: []
 layoutPinned: false
 layoutX: 3621
 layoutY: -450
 starter: false
-curatorTags: [Country, electric guitar, Rock and roll]
 ---
 # Fender Esquire
 

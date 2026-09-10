@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [hard rock, heavy metal]
+curatorTags: [hard rock, Heavy metal, heavy metal]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1626
 layoutY: -174
 starter: false
-curatorTags: [hard rock, Heavy metal, heavy metal]
 ---
 # Zakk Wylde
 

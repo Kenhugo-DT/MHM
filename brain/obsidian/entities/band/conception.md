@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [rock]
+curatorTags: [rock, band, classic rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -443
 layoutY: 595
 starter: false
-curatorTags: [rock, band, classic rock]
 ---
 # Conception
 

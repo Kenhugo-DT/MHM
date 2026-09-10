@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [Country]
+curatorTags: [country, folk, southern rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1333
 layoutY: 1274
 starter: false
-curatorTags: [country, folk, southern rock]
 ---
 # Country
 

@@ -8,12 +8,12 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [Jazz fusion]
+curatorTags: [rock, jazz fusion, classic rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -916
 layoutY: 1459
 starter: false
-curatorTags: [country, folk, jazz fusion]
 ---
 # Jazz fusion
 
