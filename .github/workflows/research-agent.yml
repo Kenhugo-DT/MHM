@@ -47,7 +47,7 @@ jobs:
           AGENT_LIMIT: ${{ github.event.inputs.limit || '2' }}
           AGENT_TRIGGER_NOTE: ${{ github.event.inputs.note || '' }}
       - name: Run scout agent
-        run: npm run brain:agent -- --limit "${AGENT_LIMIT:-2}"
+        run: npm run brain:agent -- --source supabase --limit "${AGENT_LIMIT:-2}"
         env:
           AGENT_LIMIT: ${{ github.event.inputs.limit || '2' }}
           MUSICBRAINZ_CONTACT: ${{ secrets.MUSICBRAINZ_CONTACT }}
