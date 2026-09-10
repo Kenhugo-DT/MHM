@@ -310,6 +310,9 @@ function scoreZone(text, zone) {
 
 function zoneForNode(node, edgeTextByNode) {
   if (node.type === "guitar" || node.type === "guitar_brand") return "guitar-workshop";
+  if (node.layoutHints?.preferredZone && ZONE_LAYOUTS[node.layoutHints.preferredZone]) {
+    return node.layoutHints.preferredZone;
+  }
 
   const text = textForNode(node, edgeTextByNode);
   let bestZone = "rock-circuit";
@@ -379,6 +382,12 @@ function pointFor(zone, x, y) {
     x: Math.round(clamp(x, bounds.minX, bounds.maxX)),
     y: Math.round(clamp(y, bounds.minY, bounds.maxY)),
   };
+}
+
+function pinnedPoint(node, zone) {
+  if (!node.layoutHints?.pinned) return undefined;
+  if (!Number.isFinite(node.layoutHints.x) || !Number.isFinite(node.layoutHints.y)) return undefined;
+  return pointFor(zone, node.layoutHints.x, node.layoutHints.y);
 }
 
 function connectionMaps(nodes, edges) {
@@ -532,10 +541,21 @@ function relaxZone(zone, zoneNodes) {
         const push = (minDistance - distance) * 0.23;
         const nx = dx / distance;
         const ny = dy / distance;
-        first.x = clamp(first.x - nx * push, bounds.minX, bounds.maxX);
-        first.y = clamp(first.y - ny * push, bounds.minY, bounds.maxY);
-        second.x = clamp(second.x + nx * push, bounds.minX, bounds.maxX);
-        second.y = clamp(second.y + ny * push, bounds.minY, bounds.maxY);
+        const firstPinned = Boolean(pinnedPoint(first, zone));
+        const secondPinned = Boolean(pinnedPoint(second, zone));
+
+        if (!firstPinned && !secondPinned) {
+          first.x = clamp(first.x - nx * push, bounds.minX, bounds.maxX);
+          first.y = clamp(first.y - ny * push, bounds.minY, bounds.maxY);
+          second.x = clamp(second.x + nx * push, bounds.minX, bounds.maxX);
+          second.y = clamp(second.y + ny * push, bounds.minY, bounds.maxY);
+        } else if (!firstPinned) {
+          first.x = clamp(first.x - nx * push * 1.8, bounds.minX, bounds.maxX);
+          first.y = clamp(first.y - ny * push * 1.8, bounds.minY, bounds.maxY);
+        } else if (!secondPinned) {
+          second.x = clamp(second.x + nx * push * 1.8, bounds.minX, bounds.maxX);
+          second.y = clamp(second.y + ny * push * 1.8, bounds.minY, bounds.maxY);
+        }
       }
     }
   }
@@ -571,14 +591,22 @@ export function organizeGraphLayout(nodes, edges) {
     const buckets = new Map();
 
     hubs.forEach((hub, index) => {
-      const anchor = anchors.get(hub.id) ?? fallbackAnchor(zone, index, hubs.length);
+      const anchor = pinnedPoint(hub, zone) ?? anchors.get(hub.id) ?? fallbackAnchor(zone, index, hubs.length);
       hub.x = anchor.x;
       hub.y = anchor.y;
+      anchors.set(hub.id, anchor);
       buckets.set(hub.id, []);
     });
 
     const looseNodes = zoneNodes.filter((node) => !anchors.has(node.id));
     looseNodes.forEach((node, index) => {
+      const pinned = pinnedPoint(node, zone);
+      if (pinned) {
+        node.x = pinned.x;
+        node.y = pinned.y;
+        return;
+      }
+
       const hubId = chooseHub(node, hubs, genreLinks, edgeTextByNode);
       if (!hubId) {
         const point = fallbackAnchor(zone, index, looseNodes.length);

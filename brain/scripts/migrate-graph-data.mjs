@@ -13,6 +13,7 @@ const legacyAppPath = path.join(scriptDir, "app.js");
 const browserOutputPath = path.join(repoRoot, "site", "public", "data", "graph.json");
 const approvedOutputPath = path.join(brainRoot, "data", "approved", "graph.json");
 const promotionsPath = path.join(brainRoot, "data", "approved", "promotions.json");
+const obsidianOverridesPath = path.join(brainRoot, "data", "approved", "obsidian-overrides.json");
 const blockedEntitiesPath = path.join(repoRoot, "shared", "graph-schema", "blocked-entities.json");
 
 const blockedEntities = JSON.parse(fs.readFileSync(blockedEntitiesPath, "utf8"));
@@ -158,6 +159,54 @@ function loadPromotions() {
   };
 }
 
+function loadObsidianOverrides() {
+  if (!fs.existsSync(obsidianOverridesPath)) {
+    return new Map();
+  }
+
+  const payload = JSON.parse(fs.readFileSync(obsidianOverridesPath, "utf8"));
+  const overrides = Array.isArray(payload.nodes) ? payload.nodes : [];
+  return new Map(overrides.filter((node) => node?.id).map((node) => [node.id, node]));
+}
+
+function mergeUniqueStrings(first = [], second = []) {
+  return [...new Set([...first, ...second].map((item) => String(item).trim()).filter(Boolean))];
+}
+
+function applyObsidianOverrides(nodes) {
+  const overrides = loadObsidianOverrides();
+  if (!overrides.size) return;
+
+  for (const node of nodes) {
+    const override = overrides.get(node.id);
+    if (!override) continue;
+
+    if (override.label) node.label = override.label;
+    if (allowedPromotionTypes.has(override.type)) node.type = override.type;
+    if (override.zone) node.zone = override.zone;
+    if (Array.isArray(override.roles) && override.roles.length) node.roles = override.roles;
+    if (Array.isArray(override.aliases) && override.aliases.length) {
+      node.aliases = mergeUniqueStrings(node.aliases ?? [], override.aliases);
+    }
+    if (typeof override.starter === "boolean") node.starter = override.starter;
+    if (Number.isFinite(override.eraStart)) node.eraStart = override.eraStart;
+    if (Number.isFinite(override.eraPeak)) node.eraPeak = override.eraPeak;
+    if (Array.isArray(override.primaryGenres) && override.primaryGenres.length) {
+      node.primaryGenres = override.primaryGenres;
+    }
+
+    const layoutHints = override.layoutHints ?? {};
+    node.layoutHints = {
+      ...(node.layoutHints ?? {}),
+      preferredZone: override.zone ?? node.layoutHints?.preferredZone,
+      secondaryZones: Array.isArray(override.secondaryZones) ? override.secondaryZones : node.layoutHints?.secondaryZones,
+      pinned: Boolean(layoutHints.pinned),
+      x: Number.isFinite(layoutHints.x) ? layoutHints.x : undefined,
+      y: Number.isFinite(layoutHints.y) ? layoutHints.y : undefined,
+    };
+  }
+}
+
 const promotionData = loadPromotions();
 const nodeIds = new Set(nodes.map((node) => node.id));
 
@@ -255,7 +304,12 @@ for (const release of releaseNodes) {
   }
 }
 
+applyObsidianOverrides(nodes);
 organizeGraphLayout(nodes, edges);
+
+for (const node of nodes) {
+  delete node.layoutHints;
+}
 
 const dataset = {
   version: 1,

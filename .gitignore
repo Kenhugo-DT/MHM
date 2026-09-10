@@ -9,5 +9,7 @@ brain/data/candidates/*.json
 brain/data/runs/
 brain/data/inbox/quick-request.txt
 instruksjoner.md
+brain/obsidian/.obsidian/workspace*.json
+brain/obsidian/.obsidian/cache/
 __pycache__/
 .pytest_cache/

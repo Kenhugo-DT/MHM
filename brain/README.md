@@ -15,6 +15,8 @@ The brain should propose changes. It should not silently publish them.
 - `data/candidates/` stores proposed additions for review.
 - `data/rejected/` stores rejected or out-of-scope suggestions.
 - `data/runs/` is local run output and is ignored by git.
+- `obsidian/` is an Obsidian vault generated from the graph for curation,
+  era notes, zone hints and future layout-brain work.
 - `supabase/` contains database migrations and setup notes for the hosted brain.
 
 ## Commands
@@ -39,6 +41,8 @@ npm run brain:agent
 npm run brain:promote:dry-run
 npm run brain:promote
 npm run brain:promote:apply
+npm run brain:obsidian:export
+npm run brain:obsidian:import
 npm run brain:import
 ```
 
@@ -86,6 +90,12 @@ the Supabase candidate rows as `imported`.
 `brain:import` needs `SUPABASE_URL` and `SUPABASE_SECRET_KEY`. Never expose the
 secret key to the browser.
 
+`brain:obsidian:export` writes one Markdown note per graph node into
+`brain/obsidian/`. Open that folder as an Obsidian vault when you want to inspect
+or curate the brain visually. `brain:obsidian:import` reads safe frontmatter
+fields back into `brain/data/approved/obsidian-overrides.json`; `migrate:data`
+then applies those fields before regenerating the public graph JSON.
+
 The npm scripts look for `python3`, `python` or `py -3`. You can also set
 `PYTHON` to an exact Python executable path.
 
@@ -111,6 +121,19 @@ The npm scripts look for `python3`, `python` or `py -3`. You can also set
    `npm run brain:import`.
 
 Full setup notes live in `brain/supabase/README.md`.
+
+## Obsidian Brain Flow
+
+1. Run `npm run brain:obsidian:export`.
+2. Open `brain/obsidian/` as an Obsidian vault.
+3. Edit safe frontmatter fields such as `zone`, `eraStart`, `eraPeak`,
+   `primaryGenres`, `secondaryZones`, `layoutPinned`, `layoutX` and `layoutY`.
+4. Run `npm run brain:obsidian:import`.
+5. Run `npm run migrate:data`, `npm run brain:audit` and `npm run build`.
+
+Use Obsidian for organization and curation, not for raw scraping. The research
+agent still proposes facts, Supabase still handles the review queue, and the
+site still reads generated JSON.
 
 ## Scout Agent
 

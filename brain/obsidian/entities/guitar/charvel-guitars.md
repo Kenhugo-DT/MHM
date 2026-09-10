@@ -1,0 +1,33 @@
+---
+id: charvel-guitars
+label: Charvel Guitars
+type: guitar
+zone: guitar-workshop
+roles: [guitar]
+aliases: []
+eraStart: 
+eraPeak: 
+primaryGenres: []
+secondaryZones: []
+layoutPinned: false
+layoutX: 3314
+layoutY: 66
+starter: false
+---
+# Charvel Guitars
+
+## Summary
+
+A guitar surfaced by the MHM research brain from Wikipedia signals around Criss Oliva.
+
+## Connections
+
+- [[criss-oliva|Criss Oliva]] - Wikipedia link signal (Wikipedia link: Charvel Guitars)
+
+## Sources
+
+- [Wikipedia](https://en.wikipedia.org/wiki/Charvel_Guitars)
+
+## Curator Notes
+
+Use this section for human notes. Machine-readable organization belongs in the frontmatter above.

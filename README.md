@@ -31,6 +31,7 @@ become map nodes.
 - Python for MusicBrainz, Wikidata and Wikipedia collection
 - GitHub Actions for review candidates and GitHub Pages deployment
 - Supabase brain tables for private research requests, run logs and candidate review
+- Obsidian vault for readable graph curation, era metadata and layout hints
 
 The browser never calls MusicBrainz directly. It reads a prepared graph from
 Supabase or the local fallback. The graph itself stays lightweight: nodes store
@@ -58,6 +59,22 @@ The application automatically uses local data unless `VITE_SUPABASE_URL` and
 `npm run migrate:data` writes the approved graph to
 `brain/data/approved/graph.json` and the browser copy to
 `site/public/data/graph.json`.
+
+`brain/obsidian/` can be opened directly as an Obsidian vault. Generate or
+refresh the notes with:
+
+```bash
+npm run brain:obsidian:export
+```
+
+After editing safe frontmatter fields such as `zone`, `eraStart`, `eraPeak`,
+`secondaryZones` or pinned layout coordinates, import those hints back into the
+graph build:
+
+```bash
+npm run brain:obsidian:import
+npm run migrate:data
+```
 
 `.github/agents/music-history-map-research.agent.md` is the GitHub/Copilot
 agent profile. `brain/AGENT.md` is the full instruction file it reads before
