@@ -24,6 +24,7 @@ ALLOWED_KINDS = {
     "guitar_brand",
     "genre",
 }
+ALLOWED_CANDIDATE_STATUSES = {"review", "approved", "imported", "rejected"}
 
 
 def load_supabase_helpers():
@@ -127,6 +128,35 @@ def command_list_candidates(args: argparse.Namespace) -> None:
     )
 
 
+def command_set_candidate_status(args: argparse.Namespace) -> None:
+    if args.status not in ALLOWED_CANDIDATE_STATUSES:
+        raise SystemExit(
+            "Candidate status must be one of: "
+            + ", ".join(sorted(ALLOWED_CANDIDATE_STATUSES))
+        )
+
+    helpers = load_supabase_helpers()
+    client = helpers["require_client"]()
+    payload = {"status": args.status}
+    if args.reason:
+        payload["reason"] = args.reason
+
+    response = (
+        client.table("research_candidates")
+        .update(payload)
+        .in_("id", args.id)
+        .execute()
+    )
+    print_json(
+        {
+            "updated": len(response.data or []),
+            "status": args.status,
+            "ids": args.id,
+            "reason": args.reason,
+        }
+    )
+
+
 def command_add_request(args: argparse.Namespace) -> None:
     if args.scope not in ALLOWED_SCOPES:
         raise SystemExit(f"Unsupported scope: {args.scope}")
@@ -187,6 +217,15 @@ def build_parser() -> argparse.ArgumentParser:
     list_candidates.add_argument("--status", default="review")
     list_candidates.add_argument("--limit", type=int, default=20)
     list_candidates.set_defaults(func=command_list_candidates)
+
+    set_candidate_status = subparsers.add_parser(
+        "set-candidate-status",
+        help="Update one or more Supabase candidate review statuses.",
+    )
+    set_candidate_status.add_argument("--id", action="append", required=True)
+    set_candidate_status.add_argument("--status", required=True)
+    set_candidate_status.add_argument("--reason")
+    set_candidate_status.set_defaults(func=command_set_candidate_status)
 
     add_request = subparsers.add_parser(
         "add-request",

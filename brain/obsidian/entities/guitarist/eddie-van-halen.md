@@ -22,6 +22,8 @@ A technical and sonic innovator whose tapping, harmonics, tremolo work and self-
 
 ## Connections
 
+- [[anthrax-american-band|Anthrax (American band)]] - Wikipedia link signal (Wikipedia link: Anthrax (American band))
+- [[cream|Cream]] - Wikipedia link signal (Wikipedia link: Cream (band))
 - [[frankenstrat|Frankenstrat]] - built and played
 - [[music-man-axis|Music Man Axis]] - signature-era design link
 - [[van-halen|Van Halen]] - guitarist

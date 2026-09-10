@@ -22,6 +22,7 @@ A blues-rock trio that helped push louder improvisational rock guitar into the l
 
 ## Connections
 
+- [[eddie-van-halen|Eddie Van Halen]] - Wikipedia link signal (Wikipedia link: Cream (band))
 - [[eric-clapton|Eric Clapton]] - member
 - [[hard-rock|Hard rock]] - loud trio bridge
 - [[rob-halford|Rob Halford]] - Wikipedia link signal (Wikipedia link: Cream (band))

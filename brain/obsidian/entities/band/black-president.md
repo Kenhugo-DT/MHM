@@ -23,6 +23,8 @@ A band surfaced by the MHM research brain from Wikipedia signals around Bad Reli
 ## Connections
 
 - [[bad-religion|Bad Religion]] - Wikipedia link signal (Wikipedia link: Black President (band))
+- [[corey-taylor|Corey Taylor]] - Wikipedia link signal (Wikipedia link: Black President (band))
+- [[stone-sour|Stone Sour]] - Wikipedia link signal (Wikipedia link: Black President (band))
 
 ## Sources
 

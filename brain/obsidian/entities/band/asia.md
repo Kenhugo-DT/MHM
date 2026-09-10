@@ -22,6 +22,7 @@ A band surfaced by the MHM research brain from Wikipedia signals around Savatage
 
 ## Connections
 
+- [[reo-speedwagon|REO Speedwagon]] - Wikipedia link signal (Wikipedia link: Asia (band))
 - [[savatage|Savatage]] - Wikipedia link signal (Wikipedia link: Asia (band))
 
 ## Sources

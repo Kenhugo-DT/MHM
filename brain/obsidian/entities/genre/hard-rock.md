@@ -23,6 +23,10 @@ Louder blues-rock DNA with heavier riffs, thicker amps and an arena-sized guitar
 ## Connections
 
 - [[acdc|AC/DC]] - riff engine
+- [[airbourne|Airbourne]] - Wikipedia link signal (Wikipedia link: Airbourne (band))
+- [[alice-cooper|Alice Cooper]] - Wikipedia link signal (Wikipedia link: Alice Cooper (band))
+- [[anthrax-american-band|Anthrax (American band)]] - Wikipedia link signal (Wikipedia link: Anthrax (American band))
+- [[argent|Argent]] - Wikipedia link signal (Wikipedia link: Argent (band))
 - [[charvel-san-dimas|Charvel San Dimas]] - superstrat hot rod
 - [[cream|Cream]] - loud trio bridge
 - [[deep-purple|Deep Purple]] - central band
@@ -31,6 +35,7 @@ Louder blues-rock DNA with heavier riffs, thicker amps and an arena-sized guitar
 - [[glam-rock|Glam rock]] - stage volume overlap
 - [[guns-n-roses|Guns N' Roses]] - central band
 - [[heavy-metal|Heavy metal]] - heavier edge
+- [[history-of-rock-music|History of rock music]] - Wikipedia category signal (Wikipedia category: History of rock music)
 - [[led-zeppelin|Led Zeppelin]] - central band
 - [[music-man-axis|Music Man Axis]] - post-superstrat hard rock
 - [[prs-custom-24|PRS Custom 24]] - modern humbucker voice

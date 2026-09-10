@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-10T07:32:20.972Z",
+  "generatedAt": "2026-09-10T10:23:07.919Z",
   "source": "graph + Obsidian frontmatter",
   "samples": {
-    "graphNodes": 348,
-    "graphEdges": 519,
-    "obsidianNotes": 348,
+    "graphNodes": 394,
+    "graphEdges": 557,
+    "obsidianNotes": 394,
     "pinnedNotes": 0,
     "notesWithEra": 0,
     "notesWithPrimaryGenres": 0
@@ -342,29 +342,45 @@
       ]
     },
     "rock-circuit": {
-      "nodeCount": 69,
+      "nodeCount": 101,
       "pinnedCount": 0,
       "centroid": {
-        "x": -273,
-        "y": 246
+        "x": -274,
+        "y": 236
       },
-      "eraMedian": 1978,
+      "eraMedian": 1963,
       "learnedTerms": [
         {
           "term": "brain",
-          "weight": 57
+          "weight": 89
         },
         {
           "term": "research",
-          "weight": 57
+          "weight": 89
         },
         {
           "term": "research brain",
-          "weight": 57
+          "weight": 89
         },
         {
           "term": "blues",
           "weight": 3
+        },
+        {
+          "term": "grunge",
+          "weight": 3
+        },
+        {
+          "term": "post",
+          "weight": 3
+        },
+        {
+          "term": "post grunge",
+          "weight": 3
+        },
+        {
+          "term": "art",
+          "weight": 2
         },
         {
           "term": "blues rock",
@@ -375,7 +391,19 @@
           "weight": 2
         },
         {
+          "term": "jerry",
+          "weight": 2
+        },
+        {
+          "term": "lindemann",
+          "weight": 2
+        },
+        {
           "term": "mark",
+          "weight": 2
+        },
+        {
+          "term": "perry",
           "weight": 2
         },
         {
@@ -395,11 +423,23 @@
           "weight": 1
         },
         {
+          "term": "about",
+          "weight": 1
+        },
+        {
           "term": "agathodaimon",
           "weight": 1
         },
         {
           "term": "aina",
+          "weight": 1
+        },
+        {
+          "term": "all",
+          "weight": 1
+        },
+        {
+          "term": "all about eve",
           "weight": 1
         },
         {
@@ -427,11 +467,15 @@
           "weight": 1
         },
         {
+          "term": "aria",
+          "weight": 1
+        },
+        {
           "term": "ark",
           "weight": 1
         },
         {
-          "term": "art",
+          "term": "art of dying",
           "weight": 1
         },
         {
@@ -459,6 +503,10 @@
           "weight": 1
         },
         {
+          "term": "biohazard",
+          "weight": 1
+        },
+        {
           "term": "bodine",
           "weight": 1
         },
@@ -476,6 +524,14 @@
         },
         {
           "term": "british blues",
+          "weight": 1
+        },
+        {
+          "term": "bruce",
+          "weight": 1
+        },
+        {
+          "term": "bruce hall",
           "weight": 1
         },
         {
@@ -499,11 +555,47 @@
           "weight": 1
         },
         {
+          "term": "chevelle",
+          "weight": 1
+        },
+        {
           "term": "chords",
           "weight": 1
         },
         {
+          "term": "clearwater",
+          "weight": 1
+        },
+        {
+          "term": "code",
+          "weight": 1
+        },
+        {
+          "term": "code orange",
+          "weight": 1
+        },
+        {
+          "term": "cold",
+          "weight": 1
+        },
+        {
           "term": "conception",
+          "weight": 1
+        },
+        {
+          "term": "craig",
+          "weight": 1
+        },
+        {
+          "term": "craig jones",
+          "weight": 1
+        },
+        {
+          "term": "creedence",
+          "weight": 1
+        },
+        {
+          "term": "creedence clearwater revival",
           "weight": 1
         },
         {
@@ -512,6 +604,10 @@
         },
         {
           "term": "culture",
+          "weight": 1
+        },
+        {
+          "term": "daughtry",
           "weight": 1
         },
         {
@@ -527,7 +623,19 @@
           "weight": 1
         },
         {
+          "term": "drake",
+          "weight": 1
+        },
+        {
           "term": "dust",
+          "weight": 1
+        },
+        {
+          "term": "dying",
+          "weight": 1
+        },
+        {
+          "term": "eagles",
           "weight": 1
         },
         {
@@ -535,7 +643,15 @@
           "weight": 1
         },
         {
+          "term": "emigrate",
+          "weight": 1
+        },
+        {
           "term": "epica",
+          "weight": 1
+        },
+        {
+          "term": "eve",
           "weight": 1
         },
         {
@@ -552,122 +668,6 @@
         },
         {
           "term": "flyleaf",
-          "weight": 1
-        },
-        {
-          "term": "free",
-          "weight": 1
-        },
-        {
-          "term": "frost",
-          "weight": 1
-        },
-        {
-          "term": "fuel",
-          "weight": 1
-        },
-        {
-          "term": "fusion",
-          "weight": 1
-        },
-        {
-          "term": "gandalf",
-          "weight": 1
-        },
-        {
-          "term": "gate",
-          "weight": 1
-        },
-        {
-          "term": "glam",
-          "weight": 1
-        },
-        {
-          "term": "glam rock",
-          "weight": 1
-        },
-        {
-          "term": "guitar culture",
-          "weight": 1
-        },
-        {
-          "term": "h e a t",
-          "weight": 1
-        },
-        {
-          "term": "hard",
-          "weight": 1
-        },
-        {
-          "term": "hard rain",
-          "weight": 1
-        },
-        {
-          "term": "heavenly",
-          "weight": 1
-        },
-        {
-          "term": "heavens",
-          "weight": 1
-        },
-        {
-          "term": "heavens gate",
-          "weight": 1
-        },
-        {
-          "term": "hypocrisy",
-          "weight": 1
-        },
-        {
-          "term": "jack",
-          "weight": 1
-        },
-        {
-          "term": "jack frost",
-          "weight": 1
-        },
-        {
-          "term": "jazz",
-          "weight": 1
-        },
-        {
-          "term": "jazz fusion",
-          "weight": 1
-        },
-        {
-          "term": "jeff",
-          "weight": 1
-        },
-        {
-          "term": "jeff beck",
-          "weight": 1
-        },
-        {
-          "term": "joe",
-          "weight": 1
-        },
-        {
-          "term": "joe perry",
-          "weight": 1
-        },
-        {
-          "term": "jukka",
-          "weight": 1
-        },
-        {
-          "term": "jukka nevalainen",
-          "weight": 1
-        },
-        {
-          "term": "kakko",
-          "weight": 1
-        },
-        {
-          "term": "karlsson",
-          "weight": 1
-        },
-        {
-          "term": "keith",
           "weight": 1
         }
       ]
@@ -1004,25 +1004,25 @@
       ]
     },
     "hard-rock-metal": {
-      "nodeCount": 104,
+      "nodeCount": 114,
       "pinnedCount": 0,
       "centroid": {
-        "x": 1709,
-        "y": 25
+        "x": 1698,
+        "y": 64
       },
       "eraMedian": 1977,
       "learnedTerms": [
         {
           "term": "brain",
-          "weight": 70
+          "weight": 80
         },
         {
           "term": "research",
-          "weight": 70
+          "weight": 80
         },
         {
           "term": "research brain",
-          "weight": 70
+          "weight": 80
         },
         {
           "term": "metal",
@@ -1041,16 +1041,16 @@
           "weight": 13
         },
         {
-          "term": "thrash metal",
+          "term": "hard",
           "weight": 12
         },
         {
-          "term": "hard",
-          "weight": 9
+          "term": "hard rock",
+          "weight": 12
         },
         {
-          "term": "hard rock",
-          "weight": 9
+          "term": "thrash metal",
+          "weight": 12
         },
         {
           "term": "doom",
@@ -1118,6 +1118,10 @@
         },
         {
           "term": "deep purple",
+          "weight": 2
+        },
+        {
+          "term": "eddie",
           "weight": 2
         },
         {
@@ -1205,6 +1209,10 @@
           "weight": 2
         },
         {
+          "term": "taylor",
+          "weight": 2
+        },
+        {
           "term": "van",
           "weight": 2
         },
@@ -1242,6 +1250,10 @@
         },
         {
           "term": "against",
+          "weight": 1
+        },
+        {
+          "term": "airbourne",
           "weight": 1
         },
         {
@@ -1285,6 +1297,14 @@
           "weight": 1
         },
         {
+          "term": "amy",
+          "weight": 1
+        },
+        {
+          "term": "amy lee",
+          "weight": 1
+        },
+        {
           "term": "anacrusis",
           "weight": 1
         },
@@ -1311,49 +1331,29 @@
         {
           "term": "angel witch",
           "weight": 1
-        },
-        {
-          "term": "angkor",
-          "weight": 1
-        },
-        {
-          "term": "angkor wat",
-          "weight": 1
-        },
-        {
-          "term": "angra",
-          "weight": 1
-        },
-        {
-          "term": "angus",
-          "weight": 1
-        },
-        {
-          "term": "angus young",
-          "weight": 1
         }
       ]
     },
     "punk-alt": {
-      "nodeCount": 18,
+      "nodeCount": 22,
       "pinnedCount": 0,
       "centroid": {
-        "x": 946,
-        "y": 1549
+        "x": 879,
+        "y": 1558
       },
       "eraMedian": 1980,
       "learnedTerms": [
         {
           "term": "brain",
-          "weight": 14
+          "weight": 18
         },
         {
           "term": "research",
-          "weight": 14
+          "weight": 18
         },
         {
           "term": "research brain",
-          "weight": 14
+          "weight": 18
         },
         {
           "term": "punk",
@@ -1396,6 +1396,10 @@
           "weight": 2
         },
         {
+          "term": "2 tone music genre",
+          "weight": 1
+        },
+        {
           "term": "afi",
           "weight": 1
         },
@@ -1417,6 +1421,10 @@
         },
         {
           "term": "baker",
+          "weight": 1
+        },
+        {
+          "term": "battery",
           "weight": 1
         },
         {
@@ -1464,6 +1472,22 @@
           "weight": 1
         },
         {
+          "term": "gothic",
+          "weight": 1
+        },
+        {
+          "term": "gothic rock",
+          "weight": 1
+        },
+        {
+          "term": "hard",
+          "weight": 1
+        },
+        {
+          "term": "hard rock",
+          "weight": 1
+        },
+        {
           "term": "late",
           "weight": 1
         },
@@ -1481,6 +1505,10 @@
         },
         {
           "term": "president",
+          "weight": 1
+        },
+        {
+          "term": "rammstein",
           "weight": 1
         },
         {
@@ -1516,6 +1544,10 @@
           "weight": 1
         },
         {
+          "term": "tone",
+          "weight": 1
+        },
+        {
           "term": "zugly",
           "weight": 1
         }
@@ -1525,8 +1557,8 @@
       "nodeCount": 40,
       "pinnedCount": 0,
       "centroid": {
-        "x": -816,
-        "y": 1455
+        "x": -859,
+        "y": 1465
       },
       "eraMedian": 1947,
       "learnedTerms": [
@@ -2273,7 +2305,7 @@
       "zone": "hard-rock-metal",
       "secondaryZones": [],
       "primaryGenres": [],
-      "connectionCount": 17,
+      "connectionCount": 22,
       "linkedGenres": [],
       "bridgeScore": 0,
       "hubScore": 1,
@@ -2509,10 +2541,10 @@
       "zone": "hard-rock-metal",
       "secondaryZones": [],
       "primaryGenres": [],
-      "connectionCount": 3,
+      "connectionCount": 5,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0.25,
+      "hubScore": 0.417,
       "layoutHints": {
         "pinned": false
       }
@@ -2777,12 +2809,12 @@
       "zone": "hard-rock-metal",
       "secondaryZones": [],
       "primaryGenres": [],
-      "connectionCount": 2,
+      "connectionCount": 6,
       "linkedGenres": [
         "hard-rock"
       ],
       "bridgeScore": 0.08,
-      "hubScore": 0.167,
+      "hubScore": 0.5,
       "layoutHints": {
         "pinned": false
       }
@@ -2862,12 +2894,12 @@
       "zone": "hard-rock-metal",
       "secondaryZones": [],
       "primaryGenres": [],
-      "connectionCount": 3,
+      "connectionCount": 4,
       "linkedGenres": [
         "hard-rock"
       ],
       "bridgeScore": 0.08,
-      "hubScore": 0.25,
+      "hubScore": 0.333,
       "layoutHints": {
         "pinned": false
       }
@@ -3309,10 +3341,10 @@
       "zone": "punk-alt",
       "secondaryZones": [],
       "primaryGenres": [],
-      "connectionCount": 7,
+      "connectionCount": 8,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0.583,
+      "hubScore": 0.667,
       "layoutHints": {
         "pinned": false
       }
@@ -4838,13 +4870,14 @@
       "zone": "hard-rock-metal",
       "secondaryZones": [],
       "primaryGenres": [],
-      "connectionCount": 10,
+      "connectionCount": 13,
       "linkedGenres": [
         "progressive-metal",
-        "thrash-metal"
+        "thrash-metal",
+        "hard-rock"
       ],
-      "bridgeScore": 0.16,
-      "hubScore": 0.833,
+      "bridgeScore": 0.24,
+      "hubScore": 1,
       "layoutHints": {
         "pinned": false
       }
@@ -5032,10 +5065,10 @@
       "zone": "hard-rock-metal",
       "secondaryZones": [],
       "primaryGenres": [],
-      "connectionCount": 1,
+      "connectionCount": 2,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0.083,
+      "hubScore": 0.167,
       "layoutHints": {
         "pinned": false
       }
@@ -5154,10 +5187,10 @@
       "zone": "psychedelia-prog",
       "secondaryZones": [],
       "primaryGenres": [],
-      "connectionCount": 1,
+      "connectionCount": 2,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0.083,
+      "hubScore": 0.167,
       "layoutHints": {
         "pinned": false
       }
@@ -5546,10 +5579,10 @@
       "zone": "psychedelia-prog",
       "secondaryZones": [],
       "primaryGenres": [],
-      "connectionCount": 1,
+      "connectionCount": 2,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0.083,
+      "hubScore": 0.167,
       "layoutHints": {
         "pinned": false
       }
@@ -5786,10 +5819,10 @@
       "zone": "punk-alt",
       "secondaryZones": [],
       "primaryGenres": [],
-      "connectionCount": 1,
+      "connectionCount": 3,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0.083,
+      "hubScore": 0.25,
       "layoutHints": {
         "pinned": false
       }
@@ -5946,14 +5979,17 @@
     },
     "alice-cooper": {
       "zone": "punk-alt",
-      "secondaryZones": [],
-      "primaryGenres": [],
-      "connectionCount": 2,
-      "linkedGenres": [
-        "horror-punk"
+      "secondaryZones": [
+        "hard-rock-metal"
       ],
-      "bridgeScore": 0.08,
-      "hubScore": 0.167,
+      "primaryGenres": [],
+      "connectionCount": 3,
+      "linkedGenres": [
+        "horror-punk",
+        "hard-rock"
+      ],
+      "bridgeScore": 0.38,
+      "hubScore": 0.25,
       "layoutHints": {
         "pinned": false
       }
@@ -6085,10 +6121,10 @@
       "zone": "hard-rock-metal",
       "secondaryZones": [],
       "primaryGenres": [],
-      "connectionCount": 1,
+      "connectionCount": 2,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0.083,
+      "hubScore": 0.167,
       "layoutHints": {
         "pinned": false
       }
@@ -6267,10 +6303,12 @@
       "zone": "rock-circuit",
       "secondaryZones": [],
       "primaryGenres": [],
-      "connectionCount": 1,
-      "linkedGenres": [],
-      "bridgeScore": 0,
-      "hubScore": 0.083,
+      "connectionCount": 2,
+      "linkedGenres": [
+        "post-grunge"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.167,
       "layoutHints": {
         "pinned": false
       }
@@ -6279,10 +6317,10 @@
       "zone": "rock-circuit",
       "secondaryZones": [],
       "primaryGenres": [],
-      "connectionCount": 1,
+      "connectionCount": 2,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0.083,
+      "hubScore": 0.167,
       "layoutHints": {
         "pinned": false
       }
@@ -6771,10 +6809,10 @@
       "zone": "rock-circuit",
       "secondaryZones": [],
       "primaryGenres": [],
-      "connectionCount": 1,
+      "connectionCount": 2,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0.083,
+      "hubScore": 0.167,
       "layoutHints": {
         "pinned": false
       }
@@ -6861,6 +6899,600 @@
       "linkedGenres": [],
       "bridgeScore": 0,
       "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "rammstein": {
+      "zone": "punk-alt",
+      "secondaryZones": [],
+      "eraStart": 1994,
+      "eraPeak": 1994,
+      "primaryGenres": [],
+      "connectionCount": 2,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "aria": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "connectionCount": 2,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "battery": {
+      "zone": "punk-alt",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "corey-taylor": {
+      "zone": "hard-rock-metal",
+      "secondaryZones": [],
+      "eraStart": 1973,
+      "eraPeak": 1973,
+      "primaryGenres": [],
+      "connectionCount": 7,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.583,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "biohazard": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "code-orange": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "craig-jones": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "stone-sour": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "eraStart": 1992,
+      "eraPeak": 1997,
+      "primaryGenres": [],
+      "connectionCount": 4,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.333,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "art-of-dying": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "chevelle": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "genesis": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "2-tone-music-genre": {
+      "zone": "punk-alt",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "gothic-rock": {
+      "zone": "punk-alt",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "all-about-eve": {
+      "zone": "rock-circuit",
+      "secondaryZones": [
+        "punk-alt"
+      ],
+      "primaryGenres": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "gothic-rock"
+      ],
+      "bridgeScore": 0.3,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "industrial-rock": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "connectionCount": 0,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "amy-lee": {
+      "zone": "hard-rock-metal",
+      "secondaryZones": [],
+      "eraStart": 1981,
+      "eraPeak": 1981,
+      "primaryGenres": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "seether": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "eraStart": 1999,
+      "eraPeak": 2002,
+      "primaryGenres": [],
+      "connectionCount": 0,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "shinedown": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "eraStart": 2001,
+      "eraPeak": 2001,
+      "primaryGenres": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "post-grunge": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "connectionCount": 2,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "cold": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "post-grunge"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "till-lindemann": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "eraStart": 1963,
+      "eraPeak": 1963,
+      "primaryGenres": [],
+      "connectionCount": 3,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.25,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "emigrate": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "lindemann": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "richard-marx": {
+      "zone": "hard-rock-metal",
+      "secondaryZones": [],
+      "eraStart": 1963,
+      "eraPeak": 1963,
+      "primaryGenres": [],
+      "connectionCount": 0,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "airbourne": {
+      "zone": "hard-rock-metal",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "hard-rock"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "argent": {
+      "zone": "hard-rock-metal",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "hard-rock"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "pop-rock": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "connectionCount": 0,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "creed": {
+      "zone": "hard-rock-metal",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "dlr-band": {
+      "zone": "hard-rock-metal",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "eddie-martinez": {
+      "zone": "hard-rock-metal",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "extreme": {
+      "zone": "hard-rock-metal",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "reo-speedwagon": {
+      "zone": "hard-rock-metal",
+      "secondaryZones": [],
+      "eraStart": 1967,
+      "eraPeak": 1967,
+      "primaryGenres": [],
+      "connectionCount": 5,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.417,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "bruce-hall": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "daughtry": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "drake": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "eagles": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "toto": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "connectionCount": 0,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "journey": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "connectionCount": 0,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "steve-perry": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "eraStart": 1949,
+      "eraPeak": 1987,
+      "primaryGenres": [],
+      "connectionCount": 0,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "foreigner": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "connectionCount": 0,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "john-fogerty": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "eraStart": 1945,
+      "eraPeak": 1945,
+      "primaryGenres": [],
+      "connectionCount": 0,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "jerry-reed": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "eraStart": 1937,
+      "eraPeak": 2008,
+      "primaryGenres": [],
+      "connectionCount": 0,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "jerry-lee-lewis": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "eraStart": 1935,
+      "eraPeak": 2022,
+      "primaryGenres": [],
+      "connectionCount": 0,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "little-richard": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "eraStart": 1932,
+      "eraPeak": 2020,
+      "primaryGenres": [],
+      "connectionCount": 0,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "ronnie-van-zant": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "eraStart": 1948,
+      "eraPeak": 1977,
+      "primaryGenres": [],
+      "connectionCount": 0,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "creedence-clearwater-revival": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "eraStart": 1959,
+      "eraPeak": 1959,
+      "primaryGenres": [],
+      "connectionCount": 0,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0,
       "layoutHints": {
         "pinned": false
       }

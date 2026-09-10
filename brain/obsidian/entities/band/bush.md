@@ -23,6 +23,7 @@ A band surfaced by the MHM research brain from Wikipedia signals around Apocalyp
 ## Connections
 
 - [[apocalyptica|Apocalyptica]] - Wikipedia link signal (Wikipedia link: Bush (British band))
+- [[post-grunge|post-grunge]] - Wikipedia link signal (Wikipedia link: Bush (British band))
 
 ## Sources
 

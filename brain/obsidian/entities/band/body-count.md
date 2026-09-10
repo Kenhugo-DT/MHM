@@ -22,6 +22,7 @@ A band surfaced by the MHM research brain from Wikipedia signals around Judas Pr
 
 ## Connections
 
+- [[amy-lee|Amy Lee]] - Wikipedia link signal (Wikipedia link: Body Count (band))
 - [[judas-priest|Judas Priest]] - Wikipedia link signal (Wikipedia link: Body Count (band))
 
 ## Sources

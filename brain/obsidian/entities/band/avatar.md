@@ -23,6 +23,7 @@ A band surfaced by the MHM research brain from Wikipedia signals around Avenged 
 ## Connections
 
 - [[avenged-sevenfold|Avenged Sevenfold]] - Wikipedia link signal (Wikipedia link: Avatar (Swedish band))
+- [[corey-taylor|Corey Taylor]] - Wikipedia link signal (Wikipedia link: Avatar (band))
 
 ## Sources
 

@@ -22,6 +22,7 @@ A genre surfaced by the MHM research brain from Wikipedia signals around Psyched
 
 ## Connections
 
+- [[hard-rock|Hard rock]] - Wikipedia category signal (Wikipedia category: History of rock music)
 - [[psychedelic-rock|Psychedelic rock]] - Wikipedia category signal (Wikipedia category: History of rock music)
 
 ## Sources

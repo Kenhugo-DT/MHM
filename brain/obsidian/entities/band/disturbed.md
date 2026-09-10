@@ -22,6 +22,7 @@ A band surfaced by the MHM research brain from Wikipedia signals around Mike Por
 
 ## Connections
 
+- [[corey-taylor|Corey Taylor]] - Wikipedia link signal (Wikipedia link: Disturbed (band))
 - [[mike-portnoy|Mike Portnoy]] - Wikipedia link signal (Wikipedia link: Disturbed (band))
 
 ## Sources

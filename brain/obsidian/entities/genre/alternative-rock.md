@@ -22,6 +22,7 @@ A broad post-1970s rock field where punk, indie, art rock and heavier guitar sou
 
 ## Connections
 
+- [[2-tone-music-genre|2 Tone (music genre)]] - Wikipedia link signal (Wikipedia link: 2 Tone (music genre))
 - [[fender-mustang|Fender Mustang]] - offset underground use
 - [[indie-rock|Indie rock]] - scene overlap
 - [[post-punk|Post-punk]] - feeds

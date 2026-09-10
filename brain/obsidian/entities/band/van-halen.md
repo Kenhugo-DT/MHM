@@ -22,7 +22,11 @@ A Los Angeles hard rock band that made Eddie Van Halen's guitar innovations part
 
 ## Connections
 
+- [[creed|Creed]] - Wikipedia link signal (Wikipedia link: Creed (band))
+- [[dlr-band|DLR Band]] - Wikipedia link signal (Wikipedia link: DLR Band)
+- [[eddie-martinez|Eddie Martinez]] - Wikipedia link signal (Wikipedia link: Eddie Martinez (musician))
 - [[eddie-van-halen|Eddie Van Halen]] - guitarist
+- [[extreme|Extreme]] - Wikipedia link signal (Wikipedia link: Extreme (band))
 - [[hard-rock|Hard rock]] - arena hard rock
 
 ## Sources

@@ -17,6 +17,7 @@
     "brain:sync-inbox": "node brain/scripts/run-python.mjs brain/pipeline/brain_db.py sync-inbox",
     "brain:list-requests": "node brain/scripts/run-python.mjs brain/pipeline/brain_db.py list-requests",
     "brain:list-candidates": "node brain/scripts/run-python.mjs brain/pipeline/brain_db.py list-candidates",
+    "brain:set-candidate-status": "node brain/scripts/run-python.mjs brain/pipeline/brain_db.py set-candidate-status",
     "brain:add-request": "node brain/scripts/run-python.mjs brain/pipeline/brain_db.py add-request",
     "brain:queue-request": "node brain/scripts/run-python.mjs brain/pipeline/queue_request.py --publish",
     "brain:queue-request:dry-run": "node brain/scripts/run-python.mjs brain/pipeline/queue_request.py --dry-run",

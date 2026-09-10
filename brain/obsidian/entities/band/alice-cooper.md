@@ -23,6 +23,7 @@ A band surfaced by the MHM research brain from Wikipedia signals around Horror p
 ## Connections
 
 - [[dave-mustaine|Dave Mustaine]] - Wikipedia link signal (Wikipedia link: Alice Cooper (band))
+- [[hard-rock|Hard rock]] - Wikipedia link signal (Wikipedia link: Alice Cooper (band))
 - [[horror-punk|Horror punk]] - Wikipedia link signal (Wikipedia link: Alice Cooper (band))
 
 ## Sources
