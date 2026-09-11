@@ -26,6 +26,7 @@ const STOP_WORDS = new Set([
   "band",
   "bands",
   "by",
+  "brain",
   "for",
   "from",
   "genre",
@@ -42,6 +43,8 @@ const STOP_WORDS = new Set([
   "of",
   "on",
   "or",
+  "research",
+  "research brain",
   "rock",
   "singer",
   "songwriter",
@@ -129,6 +132,10 @@ function graphMaps(graph) {
 
     degree.set(source.id, (degree.get(source.id) ?? 0) + 1);
     degree.set(target.id, (degree.get(target.id) ?? 0) + 1);
+    if (source.zone && target.zone && source.zone !== target.zone) {
+      zonesByNode.get(source.id)?.add(target.zone);
+      zonesByNode.get(target.id)?.add(source.zone);
+    }
 
     if (source.type === "genre" && target.type !== "genre") {
       genreLinks.get(target.id)?.add(source.id);

@@ -1,60 +1,60 @@
 const ZONE_LAYOUTS = {
   "roots-blues": {
     label: "ROOTS / BLUES",
-    x: -1740,
+    x: -1800,
     y: -520,
-    width: 920,
-    height: 900,
+    width: 1080,
+    height: 930,
     columns: 4,
     colGap: 205,
     rowGap: 118,
   },
   "rock-circuit": {
     label: "ROCK CIRCUIT",
-    x: -720,
+    x: -840,
     y: -440,
-    width: 1120,
-    height: 1460,
+    width: 1500,
+    height: 1560,
     columns: 5,
     colGap: 205,
     rowGap: 98,
   },
   "psychedelia-prog": {
     label: "PSYCHEDELIA / PROG",
-    x: -660,
+    x: -700,
     y: -1180,
-    width: 1500,
-    height: 640,
+    width: 1650,
+    height: 720,
     columns: 6,
     colGap: 220,
     rowGap: 116,
   },
   "hard-rock-metal": {
     label: "HARD ROCK / METAL",
-    x: 500,
+    x: 420,
     y: -620,
-    width: 2180,
-    height: 1740,
+    width: 2380,
+    height: 1760,
     columns: 8,
     colGap: 235,
     rowGap: 98,
   },
   "punk-alt": {
     label: "PUNK / ALTERNATIVE",
-    x: 400,
-    y: 1180,
-    width: 1620,
-    height: 760,
+    x: 80,
+    y: 980,
+    width: 2100,
+    height: 920,
     columns: 6,
     colGap: 225,
     rowGap: 112,
   },
   "folk-country-vise": {
     label: "FOLK / COUNTRY / VISE",
-    x: -1740,
-    y: 1060,
-    width: 1500,
-    height: 900,
+    x: -1780,
+    y: 880,
+    width: 1800,
+    height: 980,
     columns: 5,
     colGap: 225,
     rowGap: 118,
@@ -399,8 +399,48 @@ function innerBounds(zone) {
   };
 }
 
+function zoneCenter(zone) {
+  const layout = ZONE_LAYOUTS[zone] ?? ZONE_LAYOUTS["rock-circuit"];
+  return {
+    x: layout.x + layout.width / 2,
+    y: layout.y + layout.height / 2,
+  };
+}
+
+function bridgeScoreForNode(node, connectedZones, learningModel) {
+  const learned = learningModel?.nodes?.[node.id];
+  const learnedBridge = Number.isFinite(learned?.bridgeScore) ? learned.bridgeScore : 0;
+  const secondaryCount = Array.isArray(learned?.secondaryZones) ? learned.secondaryZones.length : 0;
+  const connectedCount = [...(connectedZones.get(node.id) ?? new Map()).keys()]
+    .filter((zone) => zone && zone !== node.zone).length;
+  return Math.min(1, learnedBridge + secondaryCount * 0.08 + connectedCount * 0.1);
+}
+
+function looseBounds(zone, node, connectedZones, learningModel) {
+  const base = innerBounds(zone);
+  const score = node ? bridgeScoreForNode(node, connectedZones, learningModel) : 0;
+  const layout = ZONE_LAYOUTS[zone] ?? ZONE_LAYOUTS["rock-circuit"];
+  const baseBleed = zone === "guitar-workshop" ? 80 : 150;
+  const bleed = Math.min(Math.max(layout.width, layout.height) * 0.22, baseBleed + score * 330);
+
+  return {
+    minX: base.minX - bleed,
+    maxX: base.maxX + bleed,
+    minY: base.minY - bleed,
+    maxY: base.maxY + bleed,
+  };
+}
+
 function pointFor(zone, x, y) {
   const bounds = innerBounds(zone);
+  return {
+    x: Math.round(clamp(x, bounds.minX, bounds.maxX)),
+    y: Math.round(clamp(y, bounds.minY, bounds.maxY)),
+  };
+}
+
+function loosePointFor(zone, node, x, y, connectedZones, learningModel) {
+  const bounds = looseBounds(zone, node, connectedZones, learningModel);
   return {
     x: Math.round(clamp(x, bounds.minX, bounds.maxX)),
     y: Math.round(clamp(y, bounds.minY, bounds.maxY)),
@@ -416,11 +456,17 @@ function pinnedPoint(node, zone) {
 function connectionMaps(nodes, edges) {
   const byId = new Map(nodes.map((node) => [node.id, node]));
   const genreLinks = new Map(nodes.map((node) => [node.id, []]));
+  const connectedZones = new Map(nodes.map((node) => [node.id, new Map()]));
 
   for (const edge of edges) {
     const source = byId.get(edge.source);
     const target = byId.get(edge.target);
     if (!source || !target) continue;
+
+    if (source.zone && target.zone && source.zone !== target.zone) {
+      connectedZones.get(source.id)?.set(target.zone, (connectedZones.get(source.id)?.get(target.zone) ?? 0) + 1);
+      connectedZones.get(target.id)?.set(source.zone, (connectedZones.get(target.id)?.get(source.zone) ?? 0) + 1);
+    }
 
     if (source.type === "genre" && target.type !== "genre") {
       genreLinks.get(target.id)?.push(source.id);
@@ -429,7 +475,7 @@ function connectionMaps(nodes, edges) {
     }
   }
 
-  return { genreLinks };
+  return { genreLinks, connectedZones };
 }
 
 function makeAnchors(zone, hubs, edgeTextByNode, learningModel) {
@@ -591,6 +637,131 @@ function relaxZone(zone, zoneNodes) {
   });
 }
 
+function driftBridgeNodes(nodes, edges, learningModel, connectedZones) {
+  const nodeById = new Map(nodes.map((node) => [node.id, node]));
+
+  for (const node of nodes) {
+    if (pinnedPoint(node, node.zone)) continue;
+    const learned = learningModel?.nodes?.[node.id] ?? {};
+    const targetWeights = new Map();
+
+    for (const zone of learned.secondaryZones ?? []) {
+      if (ZONE_LAYOUTS[zone] && zone !== node.zone) {
+        targetWeights.set(zone, (targetWeights.get(zone) ?? 0) + 1.2);
+      }
+    }
+
+    for (const [zone, count] of connectedZones.get(node.id) ?? []) {
+      if (ZONE_LAYOUTS[zone] && zone !== node.zone) {
+        targetWeights.set(zone, (targetWeights.get(zone) ?? 0) + Math.min(1.8, count * 0.5));
+      }
+    }
+
+    let targetX = node.x;
+    let targetY = node.y;
+    let weight = 1;
+
+    for (const [zone, zoneWeight] of targetWeights) {
+      const center = zoneCenter(zone);
+      targetX += center.x * zoneWeight;
+      targetY += center.y * zoneWeight;
+      weight += zoneWeight;
+    }
+
+    for (const edge of edges) {
+      if (edge.source !== node.id && edge.target !== node.id) continue;
+      const other = nodeById.get(edge.source === node.id ? edge.target : edge.source);
+      if (!other || other.zone === node.zone) continue;
+      const edgeWeight = Math.max(0.2, Math.min(1, Number(edge.strength) || 0.45)) * 0.85;
+      targetX += other.x * edgeWeight;
+      targetY += other.y * edgeWeight;
+      weight += edgeWeight;
+    }
+
+    if (weight <= 1) continue;
+
+    targetX /= weight;
+    targetY /= weight;
+    const bridgeScore = bridgeScoreForNode(node, connectedZones, learningModel);
+    const typeMultiplier = node.type === "genre" ? 0.7 : node.type === "band" ? 1 : 0.86;
+    const pull = Math.min(0.46, (0.14 + bridgeScore * 0.32) * typeMultiplier);
+    const point = loosePointFor(
+      node.zone,
+      node,
+      node.x + (targetX - node.x) * pull,
+      node.y + (targetY - node.y) * pull,
+      connectedZones,
+      learningModel,
+    );
+
+    node.x = point.x;
+    node.y = point.y;
+  }
+}
+
+function relaxAll(nodes, connectedZones, learningModel) {
+  for (let pass = 0; pass < 28; pass += 1) {
+    for (let a = 0; a < nodes.length; a += 1) {
+      for (let b = a + 1; b < nodes.length; b += 1) {
+        const first = nodes[a];
+        const second = nodes[b];
+        const sameZone = first.zone === second.zone;
+        const minDistance =
+          (collisionRadius(first) + collisionRadius(second)) *
+          (sameZone ? 0.92 : 0.66);
+        let dx = second.x - first.x;
+        let dy = second.y - first.y;
+        let distance = Math.hypot(dx, dy);
+
+        if (distance >= minDistance) continue;
+
+        if (distance < 0.001) {
+          const angle = (hashValue(`${first.id}:${second.id}:global`) % 360) * Math.PI / 180;
+          dx = Math.cos(angle);
+          dy = Math.sin(angle);
+          distance = 1;
+        }
+
+        const push = (minDistance - distance) * (sameZone ? 0.11 : 0.08);
+        const nx = dx / distance;
+        const ny = dy / distance;
+        const firstPinned = Boolean(pinnedPoint(first, first.zone));
+        const secondPinned = Boolean(pinnedPoint(second, second.zone));
+
+        if (!firstPinned) {
+          const point = loosePointFor(
+            first.zone,
+            first,
+            first.x - nx * push,
+            first.y - ny * push,
+            connectedZones,
+            learningModel,
+          );
+          first.x = point.x;
+          first.y = point.y;
+        }
+        if (!secondPinned) {
+          const point = loosePointFor(
+            second.zone,
+            second,
+            second.x + nx * push,
+            second.y + ny * push,
+            connectedZones,
+            learningModel,
+          );
+          second.x = point.x;
+          second.y = point.y;
+        }
+      }
+    }
+  }
+
+  nodes.forEach((node) => {
+    node.x = Math.round(node.x);
+    node.y = Math.round(node.y);
+  });
+}
+
 export function organizeGraphLayout(nodes, edges, learningModel = undefined) {
   const edgeTextByNode = buildEdgeText(nodes, edges);
   const { genreLinks } = connectionMaps(nodes, edges);
@@ -655,6 +826,10 @@ export function organizeGraphLayout(nodes, edges, learningModel = undefined) {
 
     relaxZone(zone, zoneNodes);
   }
+
+  const { connectedZones } = connectionMaps(nodes, edges);
+  driftBridgeNodes(nodes, edges, learningModel, connectedZones);
+  relaxAll(nodes, connectedZones, learningModel);
 
   return nodes;
 }
