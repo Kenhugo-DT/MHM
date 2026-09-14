@@ -23,7 +23,6 @@ The New York Dolls were an American rock band formed in New York City in 1971, w
 
 ## Connections
 
-- [[baker-s-biographical-dictionary-of-musicians|Baker's Biographical Dictionary of Musicians]] - Wikipedia link signal (Wikipedia link: Baker's Biographical Dictionary of Musicians)
 - [[blondie|Blondie]] - Wikipedia link signal (Wikipedia link: Blondie (band))
 
 ## Sources

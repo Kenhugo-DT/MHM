@@ -142,14 +142,26 @@ function publicSummary(summary = "") {
 }
 
 function normalizeBlockedTerm(text) {
-  return String(text).toLocaleLowerCase("en").replace(/_/g, " ").trim();
+  return String(text).toLocaleLowerCase("en").replace(/[_-]/g, " ").trim();
 }
 
 function hasBlockedTerm(...values) {
   const normalizedValues = values.map(normalizeBlockedTerm).filter(Boolean);
   return normalizedValues.some((value) =>
-    excludedTerms.some((term) => value.includes(normalizeBlockedTerm(term))),
+    excludedTerms.some((term) => value === normalizeBlockedTerm(term)),
   );
+}
+
+function publicTags(tags = []) {
+  return [...new Set(
+    tags
+      .map((item) => String(item).trim())
+      .filter((item) => (
+        item &&
+        !hiddenMetadata.has(item.toLocaleLowerCase("en")) &&
+        !hasBlockedTerm(item)
+      )),
+  )];
 }
 
 const nodes = keptLegacyNodes.map((node) => {
@@ -226,7 +238,7 @@ function applyObsidianOverrides(nodes) {
       node.primaryGenres = override.primaryGenres;
     }
     if (Array.isArray(override.curatorTags) && override.curatorTags.length) {
-      node.curatorTags = mergeUniqueStrings(node.curatorTags ?? [], override.curatorTags);
+      node.curatorTags = publicTags(mergeUniqueStrings(node.curatorTags ?? [], override.curatorTags));
     }
 
     const layoutHints = override.layoutHints ?? {};
@@ -343,6 +355,8 @@ applyObsidianOverrides(nodes);
 organizeGraphLayout(nodes, edges, loadLearningModel());
 
 for (const node of nodes) {
+  node.metadata = publicMetadata(node.metadata ?? []);
+  node.curatorTags = publicTags(node.curatorTags ?? []);
   delete node.layoutHints;
 }
 

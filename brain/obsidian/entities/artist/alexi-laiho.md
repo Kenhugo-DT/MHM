@@ -25,7 +25,6 @@ Alexi Laiho (Finnish: [ˈɑleksi ˈlɑi̯ho]; born Markku Uula Aleksi Laiho; 8 A
 
 - [[annihilator|Annihilator]] - Wikipedia link signal (Wikipedia link: Annihilator (band))
 - [[fender-stratocaster|Fender Stratocaster]] - Wikipedia link signal (Wikipedia link: Fender Stratocaster)
-- [[guitar-world|Guitar World]] - Wikipedia link signal (Wikipedia link: Guitar World)
 - [[hypocrisy|Hypocrisy]] - Wikipedia link signal (Wikipedia link: Hypocrisy (band))
 - [[norther|Norther]] - Wikipedia link signal (Wikipedia link: Norther (band))
 - [[pain|Pain]] - Wikipedia link signal (Wikipedia link: Pain (Swedish band))

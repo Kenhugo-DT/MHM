@@ -8,7 +8,7 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [hard rock]
-curatorTags: [hard rock, American rock music supergroups, band]
+curatorTags: [hard rock, band]
 secondaryZones: []
 layoutPinned: false
 layoutX: 2193
@@ -23,7 +23,6 @@ Velvet Revolver was an American hard rock supergroup consisting of Guns N' Roses
 
 ## Connections
 
-- [[american-rock-music-supergroups|American rock music supergroups]] - Wikipedia category signal (Wikipedia category: American rock music supergroups)
 - [[atheist|Atheist]] - Wikipedia link signal (Wikipedia link: Atheist (band))
 - [[brain|Brain]] - Wikipedia link signal (Wikipedia link: Brain (musician))
 - [[carrie|Carrie]] - Wikipedia link signal (Wikipedia link: Carrie (band))

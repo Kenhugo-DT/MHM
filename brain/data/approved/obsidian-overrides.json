@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-14T10:59:31.548Z",
+  "generatedAt": "2026-09-14T12:12:20.596Z",
   "source": "brain/obsidian",
   "nodes": [
     {
@@ -1156,30 +1156,6 @@
       "layoutHints": {
         "pinned": false,
         "x": 17,
-        "y": -336
-      }
-    },
-    {
-      "id": "american-rock-music-supergroups",
-      "label": "American rock music supergroups",
-      "type": "genre",
-      "zone": "rock-circuit",
-      "roles": [
-        "genre"
-      ],
-      "aliases": [],
-      "starter": false,
-      "primaryGenres": [
-        "American rock music supergroups"
-      ],
-      "curatorTags": [
-        "rock",
-        "classic rock"
-      ],
-      "secondaryZones": [],
-      "layoutHints": {
-        "pinned": false,
-        "x": 207,
         "y": -336
       }
     },
@@ -2497,31 +2473,6 @@
       }
     },
     {
-      "id": "baker-s-biographical-dictionary-of-musicians",
-      "label": "Baker's Biographical Dictionary of Musicians",
-      "type": "artist",
-      "zone": "rock-circuit",
-      "roles": [
-        "artist"
-      ],
-      "aliases": [],
-      "starter": false,
-      "primaryGenres": [
-        "rock"
-      ],
-      "curatorTags": [
-        "artist",
-        "classic rock",
-        "rock"
-      ],
-      "secondaryZones": [],
-      "layoutHints": {
-        "pinned": false,
-        "x": -9,
-        "y": 674
-      }
-    },
-    {
       "id": "bandana-thrash",
       "label": "Bandana thrash",
       "type": "band",
@@ -3691,31 +3642,6 @@
         "pinned": false,
         "x": -1450,
         "y": 72
-      }
-    },
-    {
-      "id": "bundesverband-musikindustrie",
-      "label": "Bundesverband Musikindustrie",
-      "type": "band",
-      "zone": "rock-circuit",
-      "roles": [
-        "band"
-      ],
-      "aliases": [],
-      "starter": false,
-      "primaryGenres": [
-        "rock"
-      ],
-      "curatorTags": [
-        "band",
-        "classic rock",
-        "rock"
-      ],
-      "secondaryZones": [],
-      "layoutHints": {
-        "pinned": false,
-        "x": -516,
-        "y": 715
       }
     },
     {
@@ -7917,29 +7843,6 @@
       }
     },
     {
-      "id": "guitar-player",
-      "label": "Guitar Player",
-      "type": "guitar",
-      "zone": "guitar-workshop",
-      "roles": [
-        "guitar"
-      ],
-      "aliases": [],
-      "starter": false,
-      "primaryGenres": [],
-      "curatorTags": [
-        "electric guitar",
-        "guitar",
-        "instrument"
-      ],
-      "secondaryZones": [],
-      "layoutHints": {
-        "pinned": false,
-        "x": 3169,
-        "y": 208
-      }
-    },
-    {
       "id": "guitar-solo",
       "label": "Guitar solo",
       "type": "guitar",
@@ -7960,29 +7863,6 @@
         "pinned": false,
         "x": 2953,
         "y": -261
-      }
-    },
-    {
-      "id": "guitar-world",
-      "label": "Guitar World",
-      "type": "guitar",
-      "zone": "guitar-workshop",
-      "roles": [
-        "guitar"
-      ],
-      "aliases": [],
-      "starter": false,
-      "primaryGenres": [],
-      "curatorTags": [
-        "electric guitar",
-        "guitar",
-        "instrument"
-      ],
-      "secondaryZones": [],
-      "layoutHints": {
-        "pinned": false,
-        "x": 2806,
-        "y": -245
       }
     },
     {
@@ -9765,29 +9645,6 @@
       }
     },
     {
-      "id": "lead-guitar",
-      "label": "Lead guitar",
-      "type": "guitar",
-      "zone": "guitar-workshop",
-      "roles": [
-        "guitar"
-      ],
-      "aliases": [],
-      "starter": false,
-      "primaryGenres": [],
-      "curatorTags": [
-        "electric guitar",
-        "guitar",
-        "instrument"
-      ],
-      "secondaryZones": [],
-      "layoutHints": {
-        "pinned": false,
-        "x": 2826,
-        "y": -388
-      }
-    },
-    {
       "id": "led-zeppelin",
       "label": "Led Zeppelin",
       "type": "band",
@@ -10514,31 +10371,6 @@
         "pinned": false,
         "x": 3788,
         "y": -203
-      }
-    },
-    {
-      "id": "musicians-institute",
-      "label": "Musicians Institute",
-      "type": "artist",
-      "zone": "rock-circuit",
-      "roles": [
-        "artist"
-      ],
-      "aliases": [],
-      "starter": false,
-      "primaryGenres": [
-        "rock"
-      ],
-      "curatorTags": [
-        "artist",
-        "classic rock",
-        "rock"
-      ],
-      "secondaryZones": [],
-      "layoutHints": {
-        "pinned": false,
-        "x": -154,
-        "y": 588
       }
     },
     {
@@ -14045,7 +13877,6 @@
       ],
       "curatorTags": [
         "hard rock",
-        "American rock music supergroups",
         "band"
       ],
       "secondaryZones": [],

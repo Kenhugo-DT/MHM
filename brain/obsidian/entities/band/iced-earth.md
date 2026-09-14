@@ -25,7 +25,6 @@ Iced Earth is an American heavy metal band currently composed of only bandleader
 
 - [[demons-wizards|Demons & Wizards]] - Wikipedia link signal (Wikipedia link: Demons & Wizards (band))
 - [[dennis-hayes|Dennis Hayes]] - Wikipedia link signal (Wikipedia link: Dennis Hayes (musician))
-- [[guitar-world|Guitar World]] - Wikipedia link signal (Wikipedia link: Guitar World)
 - [[into-eternity|Into Eternity]] - Wikipedia link signal (Wikipedia link: Into Eternity (band))
 - [[kiss|Kiss]] - Wikipedia link signal (Wikipedia link: Kiss (band))
 

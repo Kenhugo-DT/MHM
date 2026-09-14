@@ -1,7 +1,7 @@
 # Graph Index
 
-Generated entity notes: 570
-Documented connections: 759
+Generated entity notes: 563
+Documented connections: 749
 
 ## artist
 
@@ -16,7 +16,6 @@ Documented connections: 759
 - [[arthur-porter|Arthur Porter]]
 - [[axl-rose|Axl Rose]]
 - [[babyface|Babyface]]
-- [[baker-s-biographical-dictionary-of-musicians|Baker's Biographical Dictionary of Musicians]]
 - [[bill-stevenson|Bill Stevenson]]
 - [[bob-dylan|Bob Dylan]]
 - [[brain|Brain]]
@@ -72,7 +71,6 @@ Documented connections: 759
 - [[michael-weikath|Michael Weikath]]
 - [[midnight|Midnight]]
 - [[mike-portnoy|Mike Portnoy]]
-- [[musicians-institute|Musicians Institute]]
 - [[phil-campbell|Phil Campbell]]
 - [[ralf-scheepers|Ralf Scheepers]]
 - [[richard-marx|Richard Marx]]
@@ -194,7 +192,6 @@ Documented connections: 759
 - [[botch|Botch]]
 - [[braid|Braid]]
 - [[bruce-springsteen-the-e-street-band|Bruce Springsteen & the E Street Band]]
-- [[bundesverband-musikindustrie|Bundesverband Musikindustrie]]
 - [[bush|Bush]]
 - [[c-i-a|C.I.A.]]
 - [[calabrese|Calabrese]]
@@ -384,7 +381,6 @@ Documented connections: 759
 - [[alternative-metal|alternative metal]]
 - [[alternative-rock|Alternative rock]]
 - [[american-rock-music-duos|American rock music duos]]
-- [[american-rock-music-supergroups|American rock music supergroups]]
 - [[art-rock|Art rock]]
 - [[bluegrass|Bluegrass]]
 - [[blues|Blues]]
@@ -476,9 +472,7 @@ Documented connections: 759
 - [[gretsch-6120|Gretsch 6120]]
 - [[guild-f-512|Guild F-512]]
 - [[guitar-heaven-the-greatest-guitar-classics-of-all-time|Guitar Heaven: The Greatest Guitar Classics of All Time]]
-- [[guitar-player|Guitar Player]]
 - [[guitar-solo|Guitar solo]]
-- [[guitar-world|Guitar World]]
 - [[hohner-mad-cat|Hohner Mad Cat]]
 - [[ibanez-jem|Ibanez JEM]]
 - [[ibanez-js|Ibanez JS]]
@@ -487,7 +481,6 @@ Documented connections: 759
 - [[jackson-rhoads|Jackson Rhoads]]
 - [[jackson-soloist|Jackson Soloist]]
 - [[kramer-guitars|Kramer Guitars]]
-- [[lead-guitar|Lead guitar]]
 - [[martin-d28|Martin D-28]]
 - [[music-man-axis|Music Man Axis]]
 - [[national-resonator|National resonator]]

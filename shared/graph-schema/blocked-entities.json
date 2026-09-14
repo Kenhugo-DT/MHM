@@ -25,6 +25,41 @@
       "id": "bandcamp",
       "labels": ["Bandcamp", "Bandcamp Daily"],
       "reason": "Music distribution/editorial platform, not an allowed artist, band, guitarist, guitar, brand or genre node."
+    },
+    {
+      "id": "guitar-world",
+      "labels": ["Guitar World"],
+      "reason": "Music magazine/media outlet, not an allowed map node."
+    },
+    {
+      "id": "guitar-player",
+      "labels": ["Guitar Player"],
+      "reason": "Music magazine/media outlet, not an allowed map node."
+    },
+    {
+      "id": "baker-s-biographical-dictionary-of-musicians",
+      "labels": ["Baker's Biographical Dictionary of Musicians"],
+      "reason": "Reference work, not an allowed map node."
+    },
+    {
+      "id": "bundesverband-musikindustrie",
+      "labels": ["Bundesverband Musikindustrie"],
+      "reason": "Industry organization, not an allowed map node."
+    },
+    {
+      "id": "lead-guitar",
+      "labels": ["Lead guitar"],
+      "reason": "Musical role/technique, not a guitar model, artist, band or genre node."
+    },
+    {
+      "id": "american-rock-music-supergroups",
+      "labels": ["American rock music supergroups"],
+      "reason": "Category-style grouping, not a concrete music genre node."
+    },
+    {
+      "id": "musicians-institute",
+      "labels": ["Musicians Institute"],
+      "reason": "Educational institution, not an allowed map node."
     }
   ]
 }

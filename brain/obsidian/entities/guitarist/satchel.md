@@ -29,7 +29,6 @@ Russell John Parrish (born November 24, 1970), better known as Satchel, is an Am
 - [[kevin-gilbert|Kevin Gilbert]] - Wikipedia link signal (Wikipedia link: Kevin Gilbert (musician))
 - [[kramer-guitars|Kramer Guitars]] - Wikipedia link signal (Wikipedia link: Kramer Guitars)
 - [[mr-big|Mr. Big]] - Wikipedia link signal (Wikipedia link: Mr. Big (American band))
-- [[musicians-institute|Musicians Institute]] - Wikipedia link signal (Wikipedia link: Musicians Institute)
 
 ## Sources
 

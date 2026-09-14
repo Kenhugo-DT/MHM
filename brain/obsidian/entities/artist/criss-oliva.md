@@ -28,7 +28,6 @@ Christopher Michael Oliva (April 3, 1963 – October 17, 1993) was an American m
 - [[jack-frost|Jack Frost]] - Wikipedia link signal (Wikipedia link: Jack Frost (musician))
 - [[jackson-guitars|Jackson Guitars]] - Wikipedia link signal (Wikipedia link: Jackson Guitars)
 - [[joe-perry|Joe Perry]] - Wikipedia link signal (Wikipedia link: Joe Perry (musician))
-- [[lead-guitar|Lead guitar]] - Wikipedia link signal (Wikipedia link: Lead guitar)
 - [[overkill|Overkill]] - Wikipedia link signal (Wikipedia link: Overkill (band))
 - [[testament|Testament]] - Wikipedia link signal (Wikipedia link: Testament (band))
 

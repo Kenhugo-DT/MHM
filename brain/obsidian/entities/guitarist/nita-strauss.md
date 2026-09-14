@@ -28,9 +28,7 @@ Vinita Sandhya Strauss (born December 7, 1986) is an American rock musician. She
 - [[dorothy|Dorothy]] - Wikipedia link signal (Wikipedia link: Dorothy (band))
 - [[femme-fatale|Femme Fatale]] - Wikipedia link signal (Wikipedia link: Femme Fatale (American band))
 - [[grim-reaper|Grim Reaper]] - Wikipedia link signal (Wikipedia link: Grim Reaper (band))
-- [[guitar-player|Guitar Player]] - Wikipedia link signal (Wikipedia link: Guitar Player)
 - [[guitar-solo|Guitar solo]] - Wikipedia link signal (Wikipedia link: Guitar solo)
-- [[guitar-world|Guitar World]] - Wikipedia link signal (Wikipedia link: Guitar World)
 
 ## Sources
 

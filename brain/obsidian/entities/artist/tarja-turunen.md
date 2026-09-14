@@ -24,7 +24,6 @@ Tarja Soile Susanna Turunen-Cabuli (born 17 August 1977), known professionally a
 ## Connections
 
 - [[auri|Auri]] - Wikipedia link signal (Wikipedia link: Auri (band))
-- [[bundesverband-musikindustrie|Bundesverband Musikindustrie]] - Wikipedia link signal (Wikipedia link: Bundesverband Musikindustrie)
 - [[epica|Epica]] - Wikipedia link signal (Wikipedia link: Epica (band))
 
 ## Sources

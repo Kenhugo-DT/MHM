@@ -1,22 +1,22 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-14T10:59:31.866Z",
+  "generatedAt": "2026-09-14T12:12:25.228Z",
   "source": "graph + Obsidian frontmatter",
   "samples": {
-    "graphNodes": 570,
-    "graphEdges": 759,
-    "obsidianNotes": 570,
+    "graphNodes": 563,
+    "graphEdges": 749,
+    "obsidianNotes": 563,
     "pinnedNotes": 0,
     "notesWithEra": 0,
-    "notesWithPrimaryGenres": 481,
-    "notesWithCuratorTags": 570
+    "notesWithPrimaryGenres": 477,
+    "notesWithCuratorTags": 563
   },
   "zones": {
     "roots-blues": {
       "nodeCount": 39,
       "pinnedCount": 0,
       "centroid": {
-        "x": -852,
+        "x": -866,
         "y": -70
       },
       "eraMedian": 1948,
@@ -344,25 +344,21 @@
       ]
     },
     "rock-circuit": {
-      "nodeCount": 175,
+      "nodeCount": 171,
       "pinnedCount": 0,
       "centroid": {
-        "x": -172,
-        "y": 284
+        "x": -147,
+        "y": 297
       },
       "eraMedian": 1975,
       "learnedTerms": [
         {
           "term": "classic",
-          "weight": 318
+          "weight": 310
         },
         {
           "term": "classic rock",
-          "weight": 318
-        },
-        {
-          "term": "american",
-          "weight": 8
+          "weight": 310
         },
         {
           "term": "rock and roll",
@@ -371,6 +367,10 @@
         {
           "term": "roll",
           "weight": 8
+        },
+        {
+          "term": "american",
+          "weight": 6
         },
         {
           "term": "bruce",
@@ -565,10 +565,6 @@
           "weight": 2
         },
         {
-          "term": "american rock music supergroups",
-          "weight": 2
-        },
-        {
           "term": "amy",
           "weight": 2
         },
@@ -665,11 +661,15 @@
           "weight": 2
         },
         {
-          "term": "baker",
+          "term": "bando",
           "weight": 2
         },
         {
-          "term": "baker s biographical dictionary of musicians",
+          "term": "bando sport",
+          "weight": 2
+        },
+        {
+          "term": "bandwagon",
           "weight": 2
         }
       ]
@@ -678,8 +678,8 @@
       "nodeCount": 37,
       "pinnedCount": 0,
       "centroid": {
-        "x": 207,
-        "y": -739
+        "x": 236,
+        "y": -742
       },
       "eraMedian": 1969,
       "learnedTerms": [
@@ -1009,8 +1009,8 @@
       "nodeCount": 125,
       "pinnedCount": 0,
       "centroid": {
-        "x": 2619,
-        "y": 32
+        "x": 2595,
+        "y": 30
       },
       "eraMedian": 1977,
       "learnedTerms": [
@@ -1075,10 +1075,6 @@
           "weight": 10
         },
         {
-          "term": "american",
-          "weight": 8
-        },
-        {
           "term": "death",
           "weight": 8
         },
@@ -1093,6 +1089,10 @@
         {
           "term": "symphonic metal",
           "weight": 8
+        },
+        {
+          "term": "american",
+          "weight": 6
         },
         {
           "term": "blues",
@@ -1267,10 +1267,6 @@
           "weight": 2
         },
         {
-          "term": "american rock music supergroups",
-          "weight": 2
-        },
-        {
           "term": "amplified",
           "weight": 2
         },
@@ -1333,6 +1329,10 @@
         {
           "term": "anthrax american band",
           "weight": 2
+        },
+        {
+          "term": "anvil",
+          "weight": 2
         }
       ]
     },
@@ -1340,8 +1340,8 @@
       "nodeCount": 74,
       "pinnedCount": 0,
       "centroid": {
-        "x": 1411,
-        "y": 1453
+        "x": 1413,
+        "y": 1442
       },
       "eraMedian": 1977,
       "learnedTerms": [
@@ -1671,8 +1671,8 @@
       "nodeCount": 25,
       "pinnedCount": 0,
       "centroid": {
-        "x": -610,
-        "y": 1166
+        "x": -591,
+        "y": 1174
       },
       "eraMedian": 1963,
       "learnedTerms": [
@@ -1999,25 +1999,25 @@
       ]
     },
     "guitar-workshop": {
-      "nodeCount": 71,
+      "nodeCount": 68,
       "pinnedCount": 0,
       "centroid": {
-        "x": 3608,
-        "y": 2
+        "x": 3584,
+        "y": -10
       },
       "eraMedian": 1958,
       "learnedTerms": [
         {
           "term": "electric",
-          "weight": 58
+          "weight": 55
         },
         {
           "term": "electric guitar",
-          "weight": 48
+          "weight": 45
         },
         {
           "term": "instrument",
-          "weight": 20
+          "weight": 17
         },
         {
           "term": "brand",
@@ -2334,7 +2334,7 @@
       "pinnedCount": 0,
       "centroid": {
         "x": 3716,
-        "y": 1414
+        "y": 1397
       },
       "eraMedian": 1985,
       "learnedTerms": [
@@ -7695,27 +7695,6 @@
         "artist",
         "hard rock"
       ],
-      "connectionCount": 3,
-      "linkedGenres": [],
-      "bridgeScore": 0.22,
-      "hubScore": 0.25,
-      "layoutHints": {
-        "pinned": false
-      }
-    },
-    "bundesverband-musikindustrie": {
-      "zone": "rock-circuit",
-      "secondaryZones": [
-        "hard-rock-metal"
-      ],
-      "primaryGenres": [
-        "rock"
-      ],
-      "curatorTags": [
-        "band",
-        "classic rock",
-        "rock"
-      ],
       "connectionCount": 2,
       "linkedGenres": [],
       "bridgeScore": 0.22,
@@ -8040,30 +8019,10 @@
         "artist",
         "hard rock"
       ],
-      "connectionCount": 6,
+      "connectionCount": 5,
       "linkedGenres": [],
       "bridgeScore": 0.44,
-      "hubScore": 0.5,
-      "layoutHints": {
-        "pinned": false
-      }
-    },
-    "guitar-world": {
-      "zone": "guitar-workshop",
-      "secondaryZones": [
-        "hard-rock-metal",
-        "rock-circuit"
-      ],
-      "primaryGenres": [],
-      "curatorTags": [
-        "electric guitar",
-        "guitar",
-        "instrument"
-      ],
-      "connectionCount": 3,
-      "linkedGenres": [],
-      "bridgeScore": 0.44,
-      "hubScore": 0.25,
+      "hubScore": 0.417,
       "layoutHints": {
         "pinned": false
       }
@@ -8146,10 +8105,10 @@
         "hard rock",
         "metal"
       ],
-      "connectionCount": 3,
+      "connectionCount": 2,
       "linkedGenres": [],
       "bridgeScore": 0.22,
-      "hubScore": 0.25,
+      "hubScore": 0.167,
       "layoutHints": {
         "pinned": false
       }
@@ -10021,10 +9980,10 @@
         "artist",
         "hard rock"
       ],
-      "connectionCount": 8,
+      "connectionCount": 7,
       "linkedGenres": [],
       "bridgeScore": 0.44,
-      "hubScore": 0.667,
+      "hubScore": 0.583,
       "layoutHints": {
         "pinned": false
       }
@@ -10084,25 +10043,6 @@
       "linkedGenres": [],
       "bridgeScore": 0.22,
       "hubScore": 0.167,
-      "layoutHints": {
-        "pinned": false
-      }
-    },
-    "lead-guitar": {
-      "zone": "guitar-workshop",
-      "secondaryZones": [
-        "hard-rock-metal"
-      ],
-      "primaryGenres": [],
-      "curatorTags": [
-        "electric guitar",
-        "guitar",
-        "instrument"
-      ],
-      "connectionCount": 1,
-      "linkedGenres": [],
-      "bridgeScore": 0.22,
-      "hubScore": 0.083,
       "layoutHints": {
         "pinned": false
       }
@@ -11493,9 +11433,7 @@
     },
     "new-york-dolls": {
       "zone": "punk-alt",
-      "secondaryZones": [
-        "rock-circuit"
-      ],
+      "secondaryZones": [],
       "eraStart": 1971,
       "eraPeak": 1974,
       "primaryGenres": [
@@ -11507,30 +11445,9 @@
         "glam rock",
         "new york punk"
       ],
-      "connectionCount": 2,
-      "linkedGenres": [],
-      "bridgeScore": 0.22,
-      "hubScore": 0.167,
-      "layoutHints": {
-        "pinned": false
-      }
-    },
-    "baker-s-biographical-dictionary-of-musicians": {
-      "zone": "rock-circuit",
-      "secondaryZones": [
-        "punk-alt"
-      ],
-      "primaryGenres": [
-        "rock"
-      ],
-      "curatorTags": [
-        "artist",
-        "classic rock",
-        "rock"
-      ],
       "connectionCount": 1,
       "linkedGenres": [],
-      "bridgeScore": 0.22,
+      "bridgeScore": 0,
       "hubScore": 0.083,
       "layoutHints": {
         "pinned": false
@@ -13151,8 +13068,7 @@
       "zone": "hard-rock-metal",
       "secondaryZones": [
         "rock-circuit",
-        "psychedelia-prog",
-        "guitar-workshop"
+        "psychedelia-prog"
       ],
       "eraStart": 1984,
       "eraPeak": 1984,
@@ -13165,10 +13081,10 @@
         "band",
         "hard rock"
       ],
-      "connectionCount": 5,
+      "connectionCount": 4,
       "linkedGenres": [],
-      "bridgeScore": 0.66,
-      "hubScore": 0.417,
+      "bridgeScore": 0.44,
+      "hubScore": 0.333,
       "layoutHints": {
         "pinned": false
       }
@@ -13866,10 +13782,10 @@
         "guitarist",
         "classic rock"
       ],
-      "connectionCount": 8,
+      "connectionCount": 6,
       "linkedGenres": [],
       "bridgeScore": 0.44,
-      "hubScore": 0.667,
+      "hubScore": 0.5,
       "layoutHints": {
         "pinned": false
       }
@@ -13949,25 +13865,6 @@
       "connectionCount": 1,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0.083,
-      "layoutHints": {
-        "pinned": false
-      }
-    },
-    "guitar-player": {
-      "zone": "guitar-workshop",
-      "secondaryZones": [
-        "rock-circuit"
-      ],
-      "primaryGenres": [],
-      "curatorTags": [
-        "electric guitar",
-        "guitar",
-        "instrument"
-      ],
-      "connectionCount": 1,
-      "linkedGenres": [],
-      "bridgeScore": 0.22,
       "hubScore": 0.083,
       "layoutHints": {
         "pinned": false
@@ -14120,8 +14017,8 @@
     "velvet-revolver": {
       "zone": "hard-rock-metal",
       "secondaryZones": [
-        "rock-circuit",
-        "psychedelia-prog"
+        "psychedelia-prog",
+        "rock-circuit"
       ],
       "eraStart": 2002,
       "eraPeak": 2008,
@@ -14130,35 +14027,12 @@
       ],
       "curatorTags": [
         "hard rock",
-        "American rock music supergroups",
         "band"
       ],
-      "connectionCount": 4,
-      "linkedGenres": [
-        "american-rock-music-supergroups"
-      ],
-      "bridgeScore": 0.52,
-      "hubScore": 0.333,
-      "layoutHints": {
-        "pinned": false
-      }
-    },
-    "american-rock-music-supergroups": {
-      "zone": "rock-circuit",
-      "secondaryZones": [
-        "hard-rock-metal"
-      ],
-      "primaryGenres": [
-        "American rock music supergroups"
-      ],
-      "curatorTags": [
-        "rock",
-        "classic rock"
-      ],
-      "connectionCount": 1,
+      "connectionCount": 3,
       "linkedGenres": [],
-      "bridgeScore": 0.22,
-      "hubScore": 0.083,
+      "bridgeScore": 0.44,
+      "hubScore": 0.25,
       "layoutHints": {
         "pinned": false
       }
@@ -14437,10 +14311,10 @@
         "guitarist",
         "hard rock"
       ],
-      "connectionCount": 7,
+      "connectionCount": 6,
       "linkedGenres": [],
       "bridgeScore": 0.44,
-      "hubScore": 0.583,
+      "hubScore": 0.5,
       "layoutHints": {
         "pinned": false
       }
@@ -14537,27 +14411,6 @@
       ],
       "curatorTags": [
         "band",
-        "classic rock",
-        "rock"
-      ],
-      "connectionCount": 1,
-      "linkedGenres": [],
-      "bridgeScore": 0.22,
-      "hubScore": 0.083,
-      "layoutHints": {
-        "pinned": false
-      }
-    },
-    "musicians-institute": {
-      "zone": "rock-circuit",
-      "secondaryZones": [
-        "hard-rock-metal"
-      ],
-      "primaryGenres": [
-        "rock"
-      ],
-      "curatorTags": [
-        "artist",
         "classic rock",
         "rock"
       ],

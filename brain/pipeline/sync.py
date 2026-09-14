@@ -21,6 +21,57 @@ load_dotenv(REPO_ROOT / ".env")
 load_dotenv(BRAIN_ROOT / ".env")
 load_dotenv(Path(__file__).with_name(".env"))
 
+OUT_OF_SCOPE_TITLE_TERMS = {
+    "allmusic",
+    "award",
+    "awards",
+    "bandcamp",
+    "billboard",
+    "biographical dictionary",
+    "charts",
+    "concert",
+    "database",
+    "discogs",
+    "encyclopedia",
+    "festival",
+    "grammy",
+    "guitar player",
+    "guitar world",
+    "hall of fame",
+    "kerrang",
+    "magazine",
+    "media",
+    "musicbrainz",
+    "newspaper",
+    "pitchfork",
+    "platform",
+    "publication",
+    "publisher",
+    "radio station",
+    "rate your music",
+    "record company",
+    "record label",
+    "record store",
+    "spotify",
+    "streaming",
+    "television",
+    "venue",
+    "website",
+    "youtube",
+}
+
+OUT_OF_SCOPE_EXACT_TERMS = {
+    "bandcamp daily",
+    "baker's biographical dictionary of musicians",
+    "bundesverband musikindustrie",
+    "guitar player",
+    "guitar world",
+    "lead guitar",
+    "musicians institute",
+    "revolver",
+    "rolling stone",
+}
+
 
 @dataclass
 class Candidate:
@@ -57,6 +108,14 @@ def load_blocked_terms() -> set[str]:
 def is_blocked_name(name: str, blocked_terms: set[str]) -> bool:
     normalized = normalize_text(name)
     return any(term in normalized for term in blocked_terms)
+
+
+def is_out_of_scope_title(title: str) -> bool:
+    normalized = normalize_text(title.replace("Category:", ""))
+    return (
+        normalized in OUT_OF_SCOPE_EXACT_TERMS
+        or any(term in normalized for term in OUT_OF_SCOPE_TITLE_TERMS)
+    )
 
 
 class MusicBrainzClient:
@@ -185,6 +244,7 @@ class WikipediaClient:
             self._includes_any(normalized, self.boring_terms)
             or self._includes_any(normalized, self.release_terms)
             or self._includes_any(normalized, self.blocked_terms)
+            or is_out_of_scope_title(title)
             or normalized.startswith("list of ")
             or (len(normalized) >= 4 and normalized[:4].isdigit())
         )

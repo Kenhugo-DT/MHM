@@ -109,6 +109,57 @@ GENERIC_TOPIC_TERMS = {
     "tribute band",
 }
 
+OUT_OF_SCOPE_TITLE_TERMS = {
+    "allmusic",
+    "award",
+    "awards",
+    "bandcamp",
+    "billboard",
+    "biographical dictionary",
+    "charts",
+    "concert",
+    "database",
+    "discogs",
+    "encyclopedia",
+    "festival",
+    "grammy",
+    "guitar player",
+    "guitar world",
+    "hall of fame",
+    "kerrang",
+    "magazine",
+    "media",
+    "musicbrainz",
+    "newspaper",
+    "pitchfork",
+    "platform",
+    "publication",
+    "publisher",
+    "radio station",
+    "rate your music",
+    "record company",
+    "record label",
+    "record store",
+    "spotify",
+    "streaming",
+    "television",
+    "venue",
+    "website",
+    "youtube",
+}
+
+OUT_OF_SCOPE_EXACT_TERMS = {
+    "bandcamp daily",
+    "baker's biographical dictionary of musicians",
+    "bundesverband musikindustrie",
+    "guitar player",
+    "guitar world",
+    "lead guitar",
+    "musicians institute",
+    "revolver",
+    "rolling stone",
+}
+
 DISAMBIGUATION_PATTERN = re.compile(
     r"\s*\((?=[^)]*(?:artist|band|drummer|guitarist|music group|musician|singer))[^)]*\)\s*$",
     re.IGNORECASE,
@@ -295,6 +346,32 @@ def load_blocked_terms() -> set[str]:
 def is_blocked(text: str, blocked_terms: set[str]) -> bool:
     normalized = normalize_text(text)
     return any(term in normalized for term in blocked_terms)
+
+
+def out_of_scope_reason(title: str, kind: str, source: str = "") -> str | None:
+    normalized = normalize_text(canonical_title(title))
+    if not normalized:
+        return "empty title"
+    if normalized in OUT_OF_SCOPE_EXACT_TERMS:
+        return "out-of-scope reference/platform topic"
+    if any(term in normalized for term in OUT_OF_SCOPE_TITLE_TERMS):
+        return "out-of-scope platform/media/list/reference topic"
+    if normalized.startswith("list of "):
+        return "list page"
+    if len(normalized) >= 4 and normalized[:4].isdigit():
+        return "year/date page"
+    if any(term in normalized for term in RELEASE_TERMS | BORING_TERMS):
+        return "release, maintenance or generic encyclopedia topic"
+    if normalized in GENERIC_TOPIC_TERMS or normalized.endswith(" genres"):
+        return "generic topic, not a concrete map entity"
+    if source == "category":
+        if kind != "genre":
+            return "category candidates may only become genre nodes"
+        if any(term in normalized for term in CATEGORY_COLLECTION_TERMS):
+            return "category collection page"
+        if " by " in normalized or " from " in normalized:
+            return "category grouping page"
+    return None
 
 
 def graph_path() -> Path:
@@ -503,27 +580,17 @@ def placed_point(
 
 
 def candidate_is_publishable(candidate: dict[str, Any], blocked_terms: set[str]) -> bool:
+    return candidate_rejection_reason(candidate, blocked_terms) is None
+
+
+def candidate_rejection_reason(candidate: dict[str, Any], blocked_terms: set[str]) -> str | None:
     title = str(candidate.get("title", "")).strip()
     kind = str(candidate.get("kind", "unknown")).strip()
     source = str(candidate.get("source", "")).strip()
-    normalized = normalize_text(title)
 
     if not title or kind not in ALLOWED_KINDS or is_blocked(title, blocked_terms):
-        return False
-    if normalized.startswith("list of ") or (len(normalized) >= 4 and normalized[:4].isdigit()):
-        return False
-    if any(term in normalized for term in RELEASE_TERMS | BORING_TERMS):
-        return False
-    if normalized in GENERIC_TOPIC_TERMS or normalized.endswith(" genres"):
-        return False
-    if source == "category":
-        if kind != "genre":
-            return False
-        if any(term in normalized for term in CATEGORY_COLLECTION_TERMS):
-            return False
-        if " by " in normalized or " from " in normalized:
-            return False
-    return True
+        return "blocked, empty or unsupported kind"
+    return out_of_scope_reason(title, kind, source)
 
 
 def promoted_candidate_node(
@@ -725,7 +792,13 @@ def build_patch(
                 break
             if per_seed_count >= max_per_seed:
                 break
-            if not candidate_is_publishable(candidate, blocked_terms):
+            rejection_reason = candidate_rejection_reason(candidate, blocked_terms)
+            if rejection_reason:
+                skipped.append({
+                    "id": row_id,
+                    "candidate": str(candidate.get("title", "")),
+                    "reason": rejection_reason,
+                })
                 continue
             if same_loose_title(seed_label, str(candidate.get("title", ""))):
                 continue

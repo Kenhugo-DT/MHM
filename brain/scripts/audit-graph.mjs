@@ -37,12 +37,12 @@ const allowedRelationTypes = new Set([
 ]);
 
 function normalize(text) {
-  return String(text).toLocaleLowerCase("en").replace(/_/g, " ").trim();
+  return String(text).toLocaleLowerCase("en").replace(/[_-]/g, " ").trim();
 }
 
 function hasBlockedTerm(text) {
   const normalized = normalize(text);
-  return blockedTerms.some((term) => normalized.includes(normalize(term)));
+  return blockedTerms.some((term) => normalized === normalize(term));
 }
 
 function countBy(items, key) {

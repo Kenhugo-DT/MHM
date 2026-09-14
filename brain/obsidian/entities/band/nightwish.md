@@ -25,7 +25,6 @@ Nightwish is a Finnish symphonic metal band from Kitee. The band was formed in 1
 
 - [[aqua|Aqua]] - Wikipedia link signal (Wikipedia link: Aqua (band))
 - [[auri|Auri]] - Wikipedia link signal (Wikipedia link: Auri (band))
-- [[bundesverband-musikindustrie|Bundesverband Musikindustrie]] - Wikipedia link signal (Wikipedia link: Bundesverband Musikindustrie)
 
 ## Sources
 
