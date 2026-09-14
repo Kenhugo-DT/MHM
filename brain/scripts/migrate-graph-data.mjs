@@ -61,6 +61,7 @@ const typeMap = {
   guitar: "guitar",
 };
 const allowedPromotionTypes = new Set(["band", "guitarist", "artist", "guitar", "guitar_brand", "genre"]);
+const hiddenMetadata = new Set(["research brain"]);
 
 function nodeType(node) {
   if (node.type === "artist" && artistOnly.has(node.id)) return "artist";
@@ -119,6 +120,27 @@ function normalizeSources(sources = []) {
   }));
 }
 
+function publicMetadata(metadata = []) {
+  return [...new Set(
+    metadata
+      .map((item) => String(item).trim())
+      .filter((item) => item && !hiddenMetadata.has(item.toLocaleLowerCase("en"))),
+  )];
+}
+
+function articleFor(label) {
+  return /^[aeiou]/i.test(label) ? "An" : "A";
+}
+
+function publicSummary(summary = "") {
+  return String(summary)
+    .replace(
+      /\bA ([a-z_ -]+?) surfaced by the MHM research brain from Wikipedia signals around ([^.]+)\./gi,
+      (_, kind, seed) => `${articleFor(kind)} ${kind} connected to documented Wikipedia signals around ${seed}.`,
+    )
+    .replace(/\bA ([a-z_ -]+?) added from approved MHM research\./gi, "A $1 added from approved research.");
+}
+
 function normalizeBlockedTerm(text) {
   return String(text).toLocaleLowerCase("en").replace(/_/g, " ").trim();
 }
@@ -138,8 +160,8 @@ const nodes = keptLegacyNodes.map((node) => {
     label: node.label,
     type,
     roles: type === "guitarist" ? ["guitarist", "artist"] : [type],
-    summary: node.summary ?? "",
-    metadata: node.meta ?? [],
+    summary: publicSummary(node.summary ?? ""),
+    metadata: publicMetadata(node.meta ?? []),
     x,
     y,
     zone: zoneFor(x, y, type),
@@ -236,7 +258,8 @@ for (const node of promotionData.nodes) {
   nodes.push({
     ...node,
     roles: Array.isArray(node.roles) && node.roles.length ? node.roles : [node.type],
-    metadata: Array.isArray(node.metadata) ? node.metadata : [],
+    summary: publicSummary(node.summary ?? ""),
+    metadata: publicMetadata(Array.isArray(node.metadata) ? node.metadata : []),
     sources: normalizeSources(node.sources ?? []),
   });
   nodeIds.add(node.id);

@@ -1,7 +1,7 @@
 # Graph Index
 
-Generated entity notes: 572
-Documented connections: 764
+Generated entity notes: 570
+Documented connections: 759
 
 ## artist
 
@@ -168,8 +168,6 @@ Documented connections: 764
 - [[bad-religion|Bad Religion]]
 - [[badlands-american-band|Badlands (American band)]]
 - [[bandana-thrash|Bandana thrash]]
-- [[bandcamp|Bandcamp]]
-- [[bandcamp-daily|Bandcamp Daily]]
 - [[bandleader|Bandleader]]
 - [[bando-sport|Bando (sport)]]
 - [[bandwagon-effect|Bandwagon effect]]

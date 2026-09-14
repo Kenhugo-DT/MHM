@@ -19,7 +19,7 @@ starter: false
 
 ## Summary
 
-A guitar surfaced by the MHM research brain from Wikipedia signals around Nita Strauss.
+A guitar connected to documented Wikipedia signals around Nita Strauss.
 
 ## Connections
 

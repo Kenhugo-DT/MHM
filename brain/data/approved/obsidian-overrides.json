@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-14T10:49:06.289Z",
+  "generatedAt": "2026-09-14T10:59:31.548Z",
   "source": "brain/obsidian",
   "nodes": [
     {
@@ -2544,56 +2544,6 @@
         "pinned": false,
         "x": 1873,
         "y": -49
-      }
-    },
-    {
-      "id": "bandcamp",
-      "label": "Bandcamp",
-      "type": "band",
-      "zone": "hip-hop-rap",
-      "roles": [
-        "band"
-      ],
-      "aliases": [],
-      "starter": false,
-      "primaryGenres": [
-        "shoegaze"
-      ],
-      "curatorTags": [
-        "Shoegaze",
-        "band",
-        "shoegaze"
-      ],
-      "secondaryZones": [],
-      "layoutHints": {
-        "pinned": false,
-        "x": -121,
-        "y": -904
-      }
-    },
-    {
-      "id": "bandcamp-daily",
-      "label": "Bandcamp Daily",
-      "type": "band",
-      "zone": "punk-alt",
-      "roles": [
-        "band"
-      ],
-      "aliases": [],
-      "starter": false,
-      "primaryGenres": [
-        "shoegaze"
-      ],
-      "curatorTags": [
-        "Shoegaze",
-        "band",
-        "shoegaze"
-      ],
-      "secondaryZones": [],
-      "layoutHints": {
-        "pinned": false,
-        "x": -455,
-        "y": 1477
       }
     },
     {

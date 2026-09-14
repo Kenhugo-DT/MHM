@@ -19,7 +19,7 @@ starter: false
 
 ## Summary
 
-A band surfaced by the MHM research brain from Wikipedia signals around The Offspring.
+A band connected to documented Wikipedia signals around The Offspring.
 
 ## Connections
 

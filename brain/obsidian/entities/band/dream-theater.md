@@ -24,7 +24,6 @@ Dream Theater is an American progressive metal band formed in 1985 in Boston, Ma
 ## Connections
 
 - [[3|3]] - Wikipedia link signal (Wikipedia link: 3 (American band))
-- [[bandcamp|Bandcamp]] - Wikipedia link signal (Wikipedia link: Bandcamp)
 
 ## Sources
 

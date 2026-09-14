@@ -24,7 +24,6 @@ Public Enemy is an American hip-hop group formed in Roosevelt, New York, in 1985
 ## Connections
 
 - [[anthrax-american-band|Anthrax (American band)]] - Wikipedia link signal (Wikipedia link: Anthrax (American band))
-- [[bandcamp|Bandcamp]] - Wikipedia link signal (Wikipedia link: Bandcamp)
 - [[bandleader|Bandleader]] - Wikipedia link signal (Wikipedia link: Bandleader)
 - [[bass-guitars|Bass guitars]] - Wikipedia link signal (Wikipedia link: Bass guitars)
 - [[blue-magic|Blue Magic]] - Wikipedia link signal (Wikipedia link: Blue Magic (band))

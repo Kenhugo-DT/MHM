@@ -94,6 +94,12 @@ function candidateColor(kind: WikiCandidateKind): string {
   return kind === "unknown" ? "#756d64" : colorToCss(NODE_COLORS[kind]);
 }
 
+const HIDDEN_METADATA = new Set(["research brain"]);
+
+function publicMetadata(metadata: string[]): string[] {
+  return metadata.filter((item) => !HIDDEN_METADATA.has(item.toLocaleLowerCase("en")));
+}
+
 interface DetailTextSection {
   title: string;
   sentences: string[];
@@ -344,6 +350,7 @@ export default function App() {
     0,
     detailTextSections.length - visibleDetailTextSections.length,
   );
+  const selectedMetadata = selected ? publicMetadata(selected.metadata) : [];
 
   const detailSources = useMemo(() => {
     if (!selected) return [];
@@ -755,9 +762,9 @@ export default function App() {
             )}
           </div>
 
-          {selected.metadata.length > 0 && (
+          {selectedMetadata.length > 0 && (
             <div className="metadata-list">
-              {selected.metadata.map((item) => (
+              {selectedMetadata.map((item) => (
                 <span key={item}>{item}</span>
               ))}
             </div>

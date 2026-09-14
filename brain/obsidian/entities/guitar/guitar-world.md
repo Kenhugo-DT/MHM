@@ -19,7 +19,7 @@ starter: false
 
 ## Summary
 
-A guitar surfaced by the MHM research brain from Wikipedia signals around Alexi Laiho.
+A guitar connected to documented Wikipedia signals around Alexi Laiho.
 
 ## Connections
 

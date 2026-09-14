@@ -19,7 +19,7 @@ starter: false
 
 ## Summary
 
-A guitar surfaced by the MHM research brain from Wikipedia signals around roots rock.
+A guitar connected to documented Wikipedia signals around roots rock.
 
 ## Connections
 

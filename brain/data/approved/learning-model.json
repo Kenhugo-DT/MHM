@@ -1,23 +1,23 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-14T10:49:11.640Z",
+  "generatedAt": "2026-09-14T10:59:31.866Z",
   "source": "graph + Obsidian frontmatter",
   "samples": {
-    "graphNodes": 572,
-    "graphEdges": 764,
-    "obsidianNotes": 572,
+    "graphNodes": 570,
+    "graphEdges": 759,
+    "obsidianNotes": 570,
     "pinnedNotes": 0,
     "notesWithEra": 0,
-    "notesWithPrimaryGenres": 483,
-    "notesWithCuratorTags": 572
+    "notesWithPrimaryGenres": 481,
+    "notesWithCuratorTags": 570
   },
   "zones": {
     "roots-blues": {
       "nodeCount": 39,
       "pinnedCount": 0,
       "centroid": {
-        "x": -847,
-        "y": -50
+        "x": -852,
+        "y": -70
       },
       "eraMedian": 1948,
       "learnedTerms": [
@@ -347,18 +347,18 @@
       "nodeCount": 175,
       "pinnedCount": 0,
       "centroid": {
-        "x": -133,
-        "y": 268
+        "x": -172,
+        "y": 284
       },
       "eraMedian": 1975,
       "learnedTerms": [
         {
           "term": "classic",
-          "weight": 324
+          "weight": 318
         },
         {
           "term": "classic rock",
-          "weight": 324
+          "weight": 318
         },
         {
           "term": "american",
@@ -401,31 +401,11 @@
           "weight": 4
         },
         {
-          "term": "baker",
-          "weight": 4
-        },
-        {
-          "term": "baker s biographical dictionary of musicians",
-          "weight": 4
-        },
-        {
           "term": "big",
           "weight": 4
         },
         {
           "term": "billy",
-          "weight": 4
-        },
-        {
-          "term": "biographical",
-          "weight": 4
-        },
-        {
-          "term": "buckethead",
-          "weight": 4
-        },
-        {
-          "term": "dictionary",
           "weight": 4
         },
         {
@@ -458,10 +438,6 @@
         },
         {
           "term": "joe",
-          "weight": 4
-        },
-        {
-          "term": "journey",
           "weight": 4
         },
         {
@@ -671,6 +647,30 @@
         {
           "term": "as lions",
           "weight": 2
+        },
+        {
+          "term": "asia",
+          "weight": 2
+        },
+        {
+          "term": "ataxia",
+          "weight": 2
+        },
+        {
+          "term": "auri",
+          "weight": 2
+        },
+        {
+          "term": "avalon",
+          "weight": 2
+        },
+        {
+          "term": "baker",
+          "weight": 2
+        },
+        {
+          "term": "baker s biographical dictionary of musicians",
+          "weight": 2
         }
       ]
     },
@@ -678,8 +678,8 @@
       "nodeCount": 37,
       "pinnedCount": 0,
       "centroid": {
-        "x": 267,
-        "y": -734
+        "x": 207,
+        "y": -739
       },
       "eraMedian": 1969,
       "learnedTerms": [
@@ -1009,8 +1009,8 @@
       "nodeCount": 125,
       "pinnedCount": 0,
       "centroid": {
-        "x": 2613,
-        "y": 38
+        "x": 2619,
+        "y": 32
       },
       "eraMedian": 1977,
       "learnedTerms": [
@@ -1337,11 +1337,11 @@
       ]
     },
     "punk-alt": {
-      "nodeCount": 75,
+      "nodeCount": 74,
       "pinnedCount": 0,
       "centroid": {
-        "x": 1430,
-        "y": 1436
+        "x": 1411,
+        "y": 1453
       },
       "eraMedian": 1977,
       "learnedTerms": [
@@ -1390,10 +1390,6 @@
           "weight": 14
         },
         {
-          "term": "shoegaze",
-          "weight": 14
-        },
-        {
           "term": "horror",
           "weight": 12
         },
@@ -1403,6 +1399,10 @@
         },
         {
           "term": "punk roots",
+          "weight": 12
+        },
+        {
+          "term": "shoegaze",
           "weight": 12
         },
         {
@@ -1671,8 +1671,8 @@
       "nodeCount": 25,
       "pinnedCount": 0,
       "centroid": {
-        "x": -591,
-        "y": 1162
+        "x": -610,
+        "y": 1166
       },
       "eraMedian": 1963,
       "learnedTerms": [
@@ -2002,7 +2002,7 @@
       "nodeCount": 71,
       "pinnedCount": 0,
       "centroid": {
-        "x": 3614,
+        "x": 3608,
         "y": 2
       },
       "eraMedian": 1958,
@@ -2330,11 +2330,11 @@
       ]
     },
     "hip-hop-rap": {
-      "nodeCount": 25,
+      "nodeCount": 24,
       "pinnedCount": 0,
       "centroid": {
-        "x": 3588,
-        "y": 1379
+        "x": 3716,
+        "y": 1414
       },
       "eraMedian": 1985,
       "learnedTerms": [
@@ -2460,10 +2460,6 @@
         },
         {
           "term": "babyface",
-          "weight": 2
-        },
-        {
-          "term": "bandcamp",
           "weight": 2
         },
         {
@@ -2632,10 +2628,6 @@
         },
         {
           "term": "shakur",
-          "weight": 2
-        },
-        {
-          "term": "shoegaze",
           "weight": 2
         },
         {
@@ -4576,9 +4568,7 @@
     },
     "shoegaze": {
       "zone": "punk-alt",
-      "secondaryZones": [
-        "hip-hop-rap"
-      ],
+      "secondaryZones": [],
       "primaryGenres": [
         "Shoegaze"
       ],
@@ -4587,10 +4577,10 @@
         "alternative",
         "punk"
       ],
-      "connectionCount": 8,
+      "connectionCount": 6,
       "linkedGenres": [],
-      "bridgeScore": 0.22,
-      "hubScore": 0.667,
+      "bridgeScore": 0,
+      "hubScore": 0.5,
       "layoutHints": {
         "pinned": false
       }
@@ -7230,9 +7220,7 @@
     },
     "dream-theater": {
       "zone": "psychedelia-prog",
-      "secondaryZones": [
-        "hip-hop-rap"
-      ],
+      "secondaryZones": [],
       "eraStart": 1985,
       "eraPeak": 1985,
       "primaryGenres": [
@@ -7243,34 +7231,10 @@
         "band",
         "progressive"
       ],
-      "connectionCount": 2,
+      "connectionCount": 1,
       "linkedGenres": [],
-      "bridgeScore": 0.22,
-      "hubScore": 0.167,
-      "layoutHints": {
-        "pinned": false
-      }
-    },
-    "bandcamp": {
-      "zone": "hip-hop-rap",
-      "secondaryZones": [
-        "psychedelia-prog",
-        "punk-alt"
-      ],
-      "primaryGenres": [
-        "shoegaze"
-      ],
-      "curatorTags": [
-        "Shoegaze",
-        "band",
-        "shoegaze"
-      ],
-      "connectionCount": 4,
-      "linkedGenres": [
-        "shoegaze"
-      ],
-      "bridgeScore": 0.52,
-      "hubScore": 0.333,
+      "bridgeScore": 0,
+      "hubScore": 0.083,
       "layoutHints": {
         "pinned": false
       }
@@ -8980,27 +8944,6 @@
       ],
       "bridgeScore": 0.3,
       "hubScore": 0.333,
-      "layoutHints": {
-        "pinned": false
-      }
-    },
-    "bandcamp-daily": {
-      "zone": "punk-alt",
-      "secondaryZones": [],
-      "primaryGenres": [
-        "shoegaze"
-      ],
-      "curatorTags": [
-        "Shoegaze",
-        "band",
-        "shoegaze"
-      ],
-      "connectionCount": 1,
-      "linkedGenres": [
-        "shoegaze"
-      ],
-      "bridgeScore": 0.08,
-      "hubScore": 0.083,
       "layoutHints": {
         "pinned": false
       }
@@ -10974,9 +10917,7 @@
     },
     "journey": {
       "zone": "rock-circuit",
-      "secondaryZones": [
-        "hip-hop-rap"
-      ],
+      "secondaryZones": [],
       "primaryGenres": [
         "rock"
       ],
@@ -10987,7 +10928,7 @@
       ],
       "connectionCount": 0,
       "linkedGenres": [],
-      "bridgeScore": 0.22,
+      "bridgeScore": 0,
       "hubScore": 0,
       "layoutHints": {
         "pinned": false
@@ -11553,7 +11494,7 @@
     "new-york-dolls": {
       "zone": "punk-alt",
       "secondaryZones": [
-        "hip-hop-rap"
+        "rock-circuit"
       ],
       "eraStart": 1971,
       "eraPeak": 1974,
@@ -11577,7 +11518,6 @@
     "baker-s-biographical-dictionary-of-musicians": {
       "zone": "rock-circuit",
       "secondaryZones": [
-        "hip-hop-rap",
         "punk-alt"
       ],
       "primaryGenres": [
@@ -11590,7 +11530,7 @@
       ],
       "connectionCount": 1,
       "linkedGenres": [],
-      "bridgeScore": 0.44,
+      "bridgeScore": 0.22,
       "hubScore": 0.083,
       "layoutHints": {
         "pinned": false
@@ -12256,8 +12196,7 @@
     "fugazi": {
       "zone": "punk-alt",
       "secondaryZones": [
-        "rock-circuit",
-        "hip-hop-rap"
+        "rock-circuit"
       ],
       "eraStart": 1986,
       "eraPeak": 1986,
@@ -12270,10 +12209,10 @@
         "dc punk",
         "independent punk"
       ],
-      "connectionCount": 8,
+      "connectionCount": 7,
       "linkedGenres": [],
-      "bridgeScore": 0.44,
-      "hubScore": 0.667,
+      "bridgeScore": 0.22,
+      "hubScore": 0.583,
       "layoutHints": {
         "pinned": false
       }
@@ -12570,10 +12509,10 @@
         "east coast hip-hop",
         "rap"
       ],
-      "connectionCount": 7,
+      "connectionCount": 6,
       "linkedGenres": [],
       "bridgeScore": 0.44,
-      "hubScore": 0.583,
+      "hubScore": 0.5,
       "layoutHints": {
         "pinned": false
       }
@@ -14055,9 +13994,7 @@
     },
     "buckethead": {
       "zone": "rock-circuit",
-      "secondaryZones": [
-        "hip-hop-rap"
-      ],
+      "secondaryZones": [],
       "eraStart": 1969,
       "eraPeak": 1969,
       "primaryGenres": [
@@ -14070,7 +14007,7 @@
       ],
       "connectionCount": 0,
       "linkedGenres": [],
-      "bridgeScore": 0.22,
+      "bridgeScore": 0,
       "hubScore": 0,
       "layoutHints": {
         "pinned": false

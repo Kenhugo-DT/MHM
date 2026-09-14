@@ -19,7 +19,7 @@ starter: false
 
 ## Summary
 
-A genre surfaced by the MHM research brain from Wikipedia signals around Psychedelic rock.
+A genre connected to documented Wikipedia signals around Psychedelic rock.
 
 ## Connections
 

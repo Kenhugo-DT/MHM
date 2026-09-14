@@ -411,6 +411,10 @@ def kind_roles(kind: str) -> list[str]:
     return ["guitarist", "artist"] if kind == "guitarist" else [kind]
 
 
+def article_for(label: str) -> str:
+    return "An" if label[:1].lower() in {"a", "e", "i", "o", "u"} else "A"
+
+
 def seed_node(
     payload: dict[str, Any],
     node_by_id: dict[str, dict[str, Any]],
@@ -437,7 +441,7 @@ def seed_node(
             (payload.get("wikipedia") or {}).get("extract"),
             f"A {NODE_LABELS[kind].lower()} added from approved MHM research.",
         ),
-        "metadata": [NODE_LABELS[kind], "Research brain"],
+        "metadata": [NODE_LABELS[kind]],
         "x": x,
         "y": y,
         "zone": zone,
@@ -546,8 +550,11 @@ def promoted_candidate_node(
         "label": display_title(title),
         "type": kind,
         "roles": kind_roles(kind),
-        "summary": f"A {NODE_LABELS[kind].lower()} surfaced by the MHM research brain from Wikipedia signals around {seed_name}.",
-        "metadata": [NODE_LABELS[kind], "Research brain"],
+        "summary": (
+            f"{article_for(NODE_LABELS[kind].lower())} {NODE_LABELS[kind].lower()} "
+            f"connected to documented Wikipedia signals around {seed_name}."
+        ),
+        "metadata": [NODE_LABELS[kind]],
         "x": x,
         "y": y,
         "zone": zone,

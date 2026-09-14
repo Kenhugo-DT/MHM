@@ -19,7 +19,7 @@ starter: false
 
 ## Summary
 
-A band surfaced by the MHM research brain from Wikipedia signals around Judas Priest.
+A band connected to documented Wikipedia signals around Judas Priest.
 
 ## Connections
 

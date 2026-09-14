@@ -19,7 +19,7 @@ starter: false
 
 ## Summary
 
-A artist surfaced by the MHM research brain from Wikipedia signals around Eazy-E.
+An artist connected to documented Wikipedia signals around Eazy-E.
 
 ## Connections
 

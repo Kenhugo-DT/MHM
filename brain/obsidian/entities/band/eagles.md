@@ -19,7 +19,7 @@ starter: false
 
 ## Summary
 
-A band surfaced by the MHM research brain from Wikipedia signals around REO Speedwagon.
+A band connected to documented Wikipedia signals around REO Speedwagon.
 
 ## Connections
 

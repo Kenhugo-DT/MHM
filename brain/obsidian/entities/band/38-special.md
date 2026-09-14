@@ -19,7 +19,7 @@ starter: false
 
 ## Summary
 
-A band surfaced by the MHM research brain from Wikipedia signals around roots rock.
+A band connected to documented Wikipedia signals around roots rock.
 
 ## Connections
 

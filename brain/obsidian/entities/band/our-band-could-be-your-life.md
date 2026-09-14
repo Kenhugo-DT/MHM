@@ -19,7 +19,7 @@ starter: false
 
 ## Summary
 
-A band surfaced by the MHM research brain from Wikipedia signals around Minor Threat.
+A band connected to documented Wikipedia signals around Minor Threat.
 
 ## Connections
 

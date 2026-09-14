@@ -19,7 +19,7 @@ starter: false
 
 ## Summary
 
-A guitarist surfaced by the MHM research brain from Wikipedia signals around Axl Rose.
+A guitarist connected to documented Wikipedia signals around Axl Rose.
 
 ## Connections
 

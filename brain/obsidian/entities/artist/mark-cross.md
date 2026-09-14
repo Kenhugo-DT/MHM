@@ -19,7 +19,7 @@ starter: false
 
 ## Summary
 
-A artist surfaced by the MHM research brain from Wikipedia signals around At Vance.
+An artist connected to documented Wikipedia signals around At Vance.
 
 ## Connections
 

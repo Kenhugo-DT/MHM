@@ -19,7 +19,7 @@ starter: false
 
 ## Summary
 
-A guitarist surfaced by the MHM research brain from Wikipedia signals around Judas Priest.
+A guitarist connected to documented Wikipedia signals around Judas Priest.
 
 ## Connections
 

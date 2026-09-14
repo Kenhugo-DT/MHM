@@ -25,7 +25,6 @@ Fugazi (; foo-GAH-zee) is an American post-hardcore band formed in Washington, D
 
 - [[american-football|American Football]] - Wikipedia link signal (Wikipedia link: American Football (band))
 - [[ataxia|Ataxia]] - Wikipedia link signal (Wikipedia link: Ataxia (band))
-- [[bandcamp|Bandcamp]] - Wikipedia link signal (Wikipedia link: Bandcamp)
 - [[beefeater|Beefeater]] - Wikipedia link signal (Wikipedia link: Beefeater (band))
 - [[black-flag|Black Flag]] - Wikipedia link signal (Wikipedia link: Black Flag (band))
 - [[blur|Blur]] - Wikipedia link signal (Wikipedia link: Blur (band))

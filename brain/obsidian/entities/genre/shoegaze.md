@@ -27,8 +27,6 @@ A guitar texture movement built from volume, effects, blurred chords and dense l
 - [[adventures|Adventures]] - Wikipedia link signal (Wikipedia link: Adventures (band))
 - [[alternative-rock|Alternative rock]] - textural branch
 - [[andy-bell|Andy Bell]] - Wikipedia link signal (Wikipedia link: Andy Bell (Welsh musician))
-- [[bandcamp|Bandcamp]] - Wikipedia link signal (Wikipedia link: Bandcamp)
-- [[bandcamp-daily|Bandcamp Daily]] - Wikipedia link signal (Wikipedia link: Bandcamp Daily)
 - [[bleed|Bleed]] - Wikipedia link signal (Wikipedia link: Bleed (band))
 - [[blur|Blur]] - Wikipedia link signal (Wikipedia link: Blur (band))
 

@@ -20,6 +20,11 @@
       "id": "tom-morello",
       "labels": ["Tom Morello", "Morello"],
       "reason": "Excluded by the project owner from this guitar map universe."
+    },
+    {
+      "id": "bandcamp",
+      "labels": ["Bandcamp", "Bandcamp Daily"],
+      "reason": "Music distribution/editorial platform, not an allowed artist, band, guitarist, guitar, brand or genre node."
     }
   ]
 }

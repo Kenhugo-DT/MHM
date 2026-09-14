@@ -19,7 +19,7 @@ starter: false
 
 ## Summary
 
-A band surfaced by the MHM research brain from Wikipedia signals around Velvet Revolver.
+A band connected to documented Wikipedia signals around Velvet Revolver.
 
 ## Connections
 

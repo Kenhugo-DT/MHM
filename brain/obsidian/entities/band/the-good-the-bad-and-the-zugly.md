@@ -19,7 +19,7 @@ starter: false
 
 ## Summary
 
-A band added from approved MHM research.
+A band added from approved research.
 
 ## Connections
 
