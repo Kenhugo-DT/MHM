@@ -7,6 +7,7 @@ import json
 from pathlib import Path
 from typing import Any
 
+from candidate_quality import review_candidate_payload
 from process_inbox import INBOX_PATH, iso_now, load_inbox, validate_request
 
 ALLOWED_SCOPES = {
@@ -101,6 +102,7 @@ def command_list_requests(args: argparse.Namespace) -> None:
 
 def candidate_summary(row: dict[str, Any]) -> dict[str, Any]:
     payload = row.get("payload") or {}
+    review = payload.get("review") or review_candidate_payload(payload)
     return {
         "id": row.get("id"),
         "runId": row.get("run_id"),
@@ -109,6 +111,14 @@ def candidate_summary(row: dict[str, Any]) -> dict[str, Any]:
         "requestedKind": row.get("requested_kind"),
         "status": row.get("status"),
         "musicCandidateCount": len(payload.get("music_candidates") or []),
+        "reviewLevel": review.get("level"),
+        "reviewScore": review.get("score"),
+        "reviewSummary": review.get("summary"),
+        "reviewFlags": [
+            f"{item.get('severity')}:{item.get('code')}:{item.get('target') or '-'}"
+            for item in review.get("flags", [])
+        ],
+        "candidateStats": review.get("candidateStats"),
         "wikipediaTitle": (payload.get("wikipedia") or {}).get("title"),
         "wikidataId": (payload.get("wikidata") or {}).get("id"),
         "createdAt": row.get("created_at"),

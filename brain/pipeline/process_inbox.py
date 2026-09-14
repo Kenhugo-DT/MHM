@@ -12,6 +12,8 @@ from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
 
+from candidate_quality import review_candidate_payload
+
 BRAIN_ROOT = Path(__file__).resolve().parents[1]
 REPO_ROOT = BRAIN_ROOT.parent
 INBOX_PATH = BRAIN_ROOT / "data" / "inbox" / "research-requests.json"
@@ -286,6 +288,8 @@ def main() -> None:
 
     output_path = args.output_dir / f"{run_id}.json"
     candidate_payloads = [asdict(candidate) for candidate in collected]
+    for candidate_payload in candidate_payloads:
+        candidate_payload["review"] = review_candidate_payload(candidate_payload)
     payload = {
         **summary,
         "dryRun": False,

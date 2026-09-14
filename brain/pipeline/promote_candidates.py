@@ -12,6 +12,7 @@ from pathlib import Path
 from typing import Any
 from urllib.parse import quote
 
+from candidate_quality import review_candidate_payload
 from process_inbox import CANDIDATES_DIR
 
 BRAIN_ROOT = Path(__file__).resolve().parents[1]
@@ -773,6 +774,14 @@ def build_patch(
             continue
 
         payload = row.get("payload") or {}
+        review = review_candidate_payload(payload, blocked_terms)
+        if review.get("level") == "reject":
+            skipped.append({
+                "id": row_id,
+                "reason": str(review.get("summary") or "candidate package rejected by sanity check"),
+            })
+            continue
+
         seed_label = str(payload.get("name") or row.get("seed_name") or "").strip()
         seed_id = node_id_for_title(seed_label, node_by_id, label_index)
         created_seed = seed_node(payload, node_by_id, label_index, blocked_terms)

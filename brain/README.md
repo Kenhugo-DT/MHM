@@ -32,6 +32,7 @@ npm run brain:process-db-inbox
 npm run brain:sync-inbox
 npm run brain:list-requests
 npm run brain:list-candidates
+npm run brain:review-candidates
 npm run brain:queue-request:dry-run
 npm run brain:queue-request
 npm run brain:collect
@@ -65,6 +66,8 @@ and candidate proposals back to Supabase.
 `brain:sync-inbox` uploads the local inbox file into Supabase.
 
 `brain:list-candidates` shows review candidates written by Supabase brain runs.
+`brain:review-candidates` lists a larger review batch and includes the sanity
+level, score, summary and flags that help catch bad rows before approval.
 
 `brain:queue-request:dry-run` reads `brain/data/inbox/quick-request.txt` and
 previews the request that would be queued. `brain:queue-request` writes the same
@@ -121,7 +124,8 @@ The npm scripts look for `python3`, `python` or `py -3`. You can also set
 4. Run `npm run brain:import` to load the approved graph.
 5. Add work with `npm run brain:add-request -- --id my-request --title "My request" --instructions "..." --seed "Name:guitarist"`.
 6. Run `npm run brain:agent`.
-7. Approve good rows in Supabase `research_candidates`.
+7. Run `npm run brain:review-candidates`, then approve good rows in Supabase
+   `research_candidates`.
 8. Run `npm run brain:promote:apply`, `npm run migrate:data`, then
    `npm run brain:import`.
 

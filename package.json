@@ -17,6 +17,7 @@
     "brain:sync-inbox": "node brain/scripts/run-python.mjs brain/pipeline/brain_db.py sync-inbox",
     "brain:list-requests": "node brain/scripts/run-python.mjs brain/pipeline/brain_db.py list-requests",
     "brain:list-candidates": "node brain/scripts/run-python.mjs brain/pipeline/brain_db.py list-candidates",
+    "brain:review-candidates": "node brain/scripts/run-python.mjs brain/pipeline/brain_db.py list-candidates --status review --limit 50",
     "brain:set-candidate-status": "node brain/scripts/run-python.mjs brain/pipeline/brain_db.py set-candidate-status",
     "brain:add-request": "node brain/scripts/run-python.mjs brain/pipeline/brain_db.py add-request",
     "brain:queue-request": "node brain/scripts/run-python.mjs brain/pipeline/queue_request.py --publish",
@@ -31,7 +32,7 @@
     "brain:obsidian:import": "node brain/scripts/import-obsidian-vault.mjs",
     "brain:notes:seed-tags": "node brain/scripts/seed-obsidian-tags.mjs",
     "brain:learn": "node brain/scripts/learn-from-obsidian.mjs",
-    "brain:python-check": "node brain/scripts/run-python.mjs -m py_compile brain/pipeline/sync.py brain/pipeline/import_graph.py brain/pipeline/process_inbox.py brain/pipeline/supabase_brain.py brain/pipeline/brain_db.py brain/pipeline/scout_agent.py brain/pipeline/promote_candidates.py brain/pipeline/queue_request.py",
+    "brain:python-check": "node brain/scripts/run-python.mjs -m py_compile brain/pipeline/sync.py brain/pipeline/import_graph.py brain/pipeline/process_inbox.py brain/pipeline/supabase_brain.py brain/pipeline/brain_db.py brain/pipeline/scout_agent.py brain/pipeline/promote_candidates.py brain/pipeline/queue_request.py brain/pipeline/candidate_quality.py",
     "brain:import": "node brain/scripts/run-python.mjs brain/pipeline/import_graph.py",
     "brain:audit": "node brain/scripts/audit-graph.mjs"
   },
