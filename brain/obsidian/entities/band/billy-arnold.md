@@ -8,7 +8,7 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [country, folk]
-curatorTags: [country, folk, band]
+curatorTags: [band, country, folk]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1476

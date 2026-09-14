@@ -8,7 +8,7 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [symphonic metal]
-curatorTags: [hard rock, heavy metal, metal]
+curatorTags: [heavy metal, hard rock, metal]
 secondaryZones: []
 layoutPinned: false
 layoutX: 2180

@@ -7,8 +7,8 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: [blues rock, blues]
-curatorTags: [Rockabilly, blues rock, blues]
+primaryGenres: [rockabilly]
+curatorTags: [Rockabilly, band, rockabilly]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1056

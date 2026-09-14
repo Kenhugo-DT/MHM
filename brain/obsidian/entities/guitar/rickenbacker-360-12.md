@@ -8,7 +8,7 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: []
-curatorTags: [electric guitar, rock, guitar]
+curatorTags: [electric guitar, guitar, instrument]
 secondaryZones: []
 layoutPinned: false
 layoutX: 3591

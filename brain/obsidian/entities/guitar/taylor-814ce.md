@@ -8,7 +8,7 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: []
-curatorTags: [acoustic guitar, Singer-songwriter, country]
+curatorTags: [acoustic guitar, Singer-songwriter, guitar]
 secondaryZones: []
 layoutPinned: false
 layoutX: 3443

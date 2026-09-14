@@ -8,7 +8,7 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [rock]
-curatorTags: [rock, band, classic rock]
+curatorTags: [band, classic rock, rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -433

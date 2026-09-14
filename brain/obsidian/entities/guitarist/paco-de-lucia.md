@@ -7,8 +7,8 @@ roles: [guitarist, artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: [country, folk]
-curatorTags: [Flamenco, country, folk]
+primaryGenres: [country]
+curatorTags: [Flamenco, guitarist, country]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1301

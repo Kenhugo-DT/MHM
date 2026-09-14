@@ -7,8 +7,8 @@ roles: [artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: [hard rock, country, folk]
-curatorTags: [hard rock, country, folk]
+primaryGenres: [country, folk]
+curatorTags: [artist, country, folk]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1544

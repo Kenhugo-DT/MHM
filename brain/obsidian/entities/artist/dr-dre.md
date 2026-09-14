@@ -2,13 +2,13 @@
 id: dr-dre
 label: Dr. Dre
 type: artist
-zone: psychedelia-prog
+zone: hip-hop-rap
 roles: [artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
-curatorTags: [artist, progressive, psychedelic]
+primaryGenres: [g-funk, west coast hip-hop]
+curatorTags: [g-funk, west coast hip-hop, producer]
 secondaryZones: []
 layoutPinned: false
 layoutX: -118

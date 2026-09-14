@@ -8,7 +8,7 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [swamp rock]
-curatorTags: [blues, country, funk]
+curatorTags: [blues, roots, country]
 secondaryZones: []
 layoutPinned: false
 layoutX: -332

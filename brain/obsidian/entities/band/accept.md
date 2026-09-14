@@ -7,8 +7,8 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: [glam metal, power metal, hard rock]
-curatorTags: [glam metal, power metal, hard rock]
+primaryGenres: [glam metal, power metal]
+curatorTags: [glam metal, power metal, Thrash metal]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1672

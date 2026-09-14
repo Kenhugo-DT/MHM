@@ -2,13 +2,13 @@
 id: west-coast-hip-hop
 label: West Coast hip-hop
 type: genre
-zone: rock-circuit
+zone: hip-hop-rap
 roles: [genre]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: [West Coast hip-hop]
-curatorTags: [rock, classic rock, funk]
+primaryGenres: [west coast hip-hop]
+curatorTags: [west coast hip-hop, hip-hop, california rap]
 secondaryZones: []
 layoutPinned: false
 layoutX: 308

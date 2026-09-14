@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-11T10:25:27.623Z",
+  "generatedAt": "2026-09-14T10:49:11.640Z",
   "source": "graph + Obsidian frontmatter",
   "samples": {
     "graphNodes": 572,
@@ -8,7 +8,7 @@
     "obsidianNotes": 572,
     "pinnedNotes": 0,
     "notesWithEra": 0,
-    "notesWithPrimaryGenres": 480,
+    "notesWithPrimaryGenres": 483,
     "notesWithCuratorTags": 572
   },
   "zones": {
@@ -16,18 +16,18 @@
       "nodeCount": 39,
       "pinnedCount": 0,
       "centroid": {
-        "x": -864,
-        "y": -58
+        "x": -847,
+        "y": -50
       },
       "eraMedian": 1948,
       "learnedTerms": [
         {
           "term": "blues",
-          "weight": 74
+          "weight": 66
         },
         {
           "term": "blues rock",
-          "weight": 60
+          "weight": 52
         },
         {
           "term": "electric",
@@ -46,15 +46,11 @@
           "weight": 14
         },
         {
+          "term": "roots",
+          "weight": 12
+        },
+        {
           "term": "country",
-          "weight": 8
-        },
-        {
-          "term": "hard",
-          "weight": 8
-        },
-        {
-          "term": "hard rock",
           "weight": 8
         },
         {
@@ -66,15 +62,19 @@
           "weight": 8
         },
         {
-          "term": "roots",
-          "weight": 8
-        },
-        {
           "term": "country rock",
           "weight": 6
         },
         {
           "term": "fusion",
+          "weight": 6
+        },
+        {
+          "term": "hard",
+          "weight": 6
+        },
+        {
+          "term": "hard rock",
           "weight": 6
         },
         {
@@ -334,43 +334,31 @@
           "weight": 2
         },
         {
-          "term": "funk",
+          "term": "gibson",
           "weight": 2
         },
         {
-          "term": "gibson",
+          "term": "gibson sg",
           "weight": 2
         }
       ]
     },
     "rock-circuit": {
-      "nodeCount": 192,
+      "nodeCount": 175,
       "pinnedCount": 0,
       "centroid": {
-        "x": -166,
-        "y": 264
+        "x": -133,
+        "y": 268
       },
       "eraMedian": 1975,
       "learnedTerms": [
         {
           "term": "classic",
-          "weight": 334
+          "weight": 324
         },
         {
           "term": "classic rock",
-          "weight": 334
-        },
-        {
-          "term": "hard",
-          "weight": 15
-        },
-        {
-          "term": "funk",
-          "weight": 14
-        },
-        {
-          "term": "hard rock",
-          "weight": 13
+          "weight": 324
         },
         {
           "term": "american",
@@ -397,7 +385,7 @@
           "weight": 6
         },
         {
-          "term": "progressive",
+          "term": "hard",
           "weight": 5
         },
         {
@@ -413,11 +401,31 @@
           "weight": 4
         },
         {
+          "term": "baker",
+          "weight": 4
+        },
+        {
+          "term": "baker s biographical dictionary of musicians",
+          "weight": 4
+        },
+        {
           "term": "big",
           "weight": 4
         },
         {
           "term": "billy",
+          "weight": 4
+        },
+        {
+          "term": "biographical",
+          "weight": 4
+        },
+        {
+          "term": "buckethead",
+          "weight": 4
+        },
+        {
+          "term": "dictionary",
           "weight": 4
         },
         {
@@ -429,11 +437,11 @@
           "weight": 4
         },
         {
-          "term": "fusion",
+          "term": "funk",
           "weight": 4
         },
         {
-          "term": "george",
+          "term": "fusion",
           "weight": 4
         },
         {
@@ -450,6 +458,10 @@
         },
         {
           "term": "joe",
+          "weight": 4
+        },
+        {
+          "term": "journey",
           "weight": 4
         },
         {
@@ -505,7 +517,7 @@
           "weight": 3
         },
         {
-          "term": "progressive rock",
+          "term": "hard rock",
           "weight": 3
         },
         {
@@ -659,37 +671,25 @@
         {
           "term": "as lions",
           "weight": 2
-        },
-        {
-          "term": "asia",
-          "weight": 2
-        },
-        {
-          "term": "ataxia",
-          "weight": 2
-        },
-        {
-          "term": "auri",
-          "weight": 2
         }
       ]
     },
     "psychedelia-prog": {
-      "nodeCount": 43,
+      "nodeCount": 37,
       "pinnedCount": 0,
       "centroid": {
-        "x": 363,
-        "y": -762
+        "x": 267,
+        "y": -734
       },
       "eraMedian": 1969,
       "learnedTerms": [
         {
           "term": "progressive",
-          "weight": 56
+          "weight": 49
         },
         {
           "term": "psychedelic",
-          "weight": 33
+          "weight": 26
         },
         {
           "term": "progressive rock",
@@ -716,14 +716,6 @@
           "weight": 12
         },
         {
-          "term": "hard",
-          "weight": 8
-        },
-        {
-          "term": "hard rock",
-          "weight": 8
-        },
-        {
           "term": "fusion",
           "weight": 7
         },
@@ -736,7 +728,11 @@
           "weight": 7
         },
         {
-          "term": "country",
+          "term": "hard",
+          "weight": 6
+        },
+        {
+          "term": "hard rock",
           "weight": 6
         },
         {
@@ -816,6 +812,10 @@
           "weight": 2
         },
         {
+          "term": "country",
+          "weight": 2
+        },
+        {
           "term": "david",
           "weight": 2
         },
@@ -861,14 +861,6 @@
         },
         {
           "term": "fripp",
-          "weight": 2
-        },
-        {
-          "term": "gangsta",
-          "weight": 2
-        },
-        {
-          "term": "gangsta rap",
           "weight": 2
         },
         {
@@ -972,10 +964,6 @@
           "weight": 2
         },
         {
-          "term": "rap",
-          "weight": 2
-        },
-        {
           "term": "robert",
           "weight": 2
         },
@@ -1002,29 +990,41 @@
         {
           "term": "space",
           "weight": 2
+        },
+        {
+          "term": "space rock",
+          "weight": 2
+        },
+        {
+          "term": "steve howe",
+          "weight": 2
+        },
+        {
+          "term": "steve vai",
+          "weight": 2
         }
       ]
     },
     "hard-rock-metal": {
-      "nodeCount": 126,
+      "nodeCount": 125,
       "pinnedCount": 0,
       "centroid": {
-        "x": 2591,
-        "y": 11
+        "x": 2613,
+        "y": 38
       },
       "eraMedian": 1977,
       "learnedTerms": [
         {
+          "term": "metal",
+          "weight": 218
+        },
+        {
           "term": "hard",
-          "weight": 252
+          "weight": 194
         },
         {
           "term": "hard rock",
-          "weight": 252
-        },
-        {
-          "term": "metal",
-          "weight": 160
+          "weight": 194
         },
         {
           "term": "heavy",
@@ -1124,6 +1124,10 @@
         },
         {
           "term": "eddie",
+          "weight": 4
+        },
+        {
+          "term": "folk",
           "weight": 4
         },
         {
@@ -1329,19 +1333,15 @@
         {
           "term": "anthrax american band",
           "weight": 2
-        },
-        {
-          "term": "anvil",
-          "weight": 2
         }
       ]
     },
     "punk-alt": {
-      "nodeCount": 76,
+      "nodeCount": 75,
       "pinnedCount": 0,
       "centroid": {
-        "x": 1401,
-        "y": 1453
+        "x": 1430,
+        "y": 1436
       },
       "eraMedian": 1977,
       "learnedTerms": [
@@ -1355,7 +1355,7 @@
         },
         {
           "term": "alternative",
-          "weight": 54
+          "weight": 56
         },
         {
           "term": "hardcore",
@@ -1378,14 +1378,6 @@
           "weight": 18
         },
         {
-          "term": "country",
-          "weight": 16
-        },
-        {
-          "term": "shoegaze",
-          "weight": 16
-        },
-        {
           "term": "california",
           "weight": 14
         },
@@ -1395,6 +1387,10 @@
         },
         {
           "term": "roots",
+          "weight": 14
+        },
+        {
+          "term": "shoegaze",
           "weight": 14
         },
         {
@@ -1466,6 +1462,10 @@
           "weight": 6
         },
         {
+          "term": "political",
+          "weight": 6
+        },
+        {
           "term": "post grunge",
           "weight": 6
         },
@@ -1494,10 +1494,6 @@
           "weight": 4
         },
         {
-          "term": "bandcamp",
-          "weight": 4
-        },
-        {
           "term": "bay",
           "weight": 4
         },
@@ -1515,14 +1511,6 @@
         },
         {
           "term": "garage rock",
-          "weight": 4
-        },
-        {
-          "term": "hard",
-          "weight": 4
-        },
-        {
-          "term": "hard rock",
           "weight": 4
         },
         {
@@ -1559,10 +1547,6 @@
         },
         {
           "term": "operation",
-          "weight": 4
-        },
-        {
-          "term": "political",
           "weight": 4
         },
         {
@@ -1664,6 +1648,22 @@
         {
           "term": "andy",
           "weight": 2
+        },
+        {
+          "term": "andy bell",
+          "weight": 2
+        },
+        {
+          "term": "art",
+          "weight": 2
+        },
+        {
+          "term": "art rock",
+          "weight": 2
+        },
+        {
+          "term": "bad brains",
+          "weight": 2
         }
       ]
     },
@@ -1671,45 +1671,37 @@
       "nodeCount": 25,
       "pinnedCount": 0,
       "centroid": {
-        "x": -604,
-        "y": 1190
+        "x": -591,
+        "y": 1162
       },
       "eraMedian": 1963,
       "learnedTerms": [
         {
           "term": "country",
-          "weight": 50
+          "weight": 38
         },
         {
           "term": "folk",
-          "weight": 46
+          "weight": 30
         },
         {
           "term": "norwegian",
-          "weight": 14
+          "weight": 12
         },
         {
           "term": "norwegian vise",
-          "weight": 14
+          "weight": 12
         },
         {
           "term": "vise",
-          "weight": 14
-        },
-        {
-          "term": "country rock",
-          "weight": 8
-        },
-        {
-          "term": "gitarkameratene",
-          "weight": 8
+          "weight": 12
         },
         {
           "term": "acoustic",
           "weight": 6
         },
         {
-          "term": "singer songwriter",
+          "term": "gitarkameratene",
           "weight": 6
         },
         {
@@ -1721,16 +1713,20 @@
           "weight": 4
         },
         {
-          "term": "norwegian song",
-          "weight": 4
-        },
-        {
           "term": "richard",
           "weight": 4
         },
         {
-          "term": "song",
+          "term": "singer songwriter",
           "weight": 4
+        },
+        {
+          "term": "norwegian song",
+          "weight": 3
+        },
+        {
+          "term": "song",
+          "weight": 3
         },
         {
           "term": "acoustic tradition",
@@ -1793,6 +1789,10 @@
           "weight": 2
         },
         {
+          "term": "country rock",
+          "weight": 2
+        },
+        {
           "term": "cranner",
           "weight": 2
         },
@@ -1805,15 +1805,7 @@
           "weight": 2
         },
         {
-          "term": "eggum",
-          "weight": 2
-        },
-        {
           "term": "fingerstyle",
-          "weight": 2
-        },
-        {
-          "term": "group",
           "weight": 2
         },
         {
@@ -1822,22 +1814,6 @@
         },
         {
           "term": "halvdan sivertsen",
-          "weight": 2
-        },
-        {
-          "term": "hard",
-          "weight": 2
-        },
-        {
-          "term": "hard rock",
-          "weight": 2
-        },
-        {
-          "term": "jan",
-          "weight": 2
-        },
-        {
-          "term": "jan eggum",
           "weight": 2
         },
         {
@@ -1995,6 +1971,30 @@
         {
           "term": "spanish guitar",
           "weight": 2
+        },
+        {
+          "term": "sunde",
+          "weight": 2
+        },
+        {
+          "term": "till",
+          "weight": 2
+        },
+        {
+          "term": "till lindemann",
+          "weight": 2
+        },
+        {
+          "term": "tradition",
+          "weight": 2
+        },
+        {
+          "term": "trigger",
+          "weight": 2
+        },
+        {
+          "term": "willie",
+          "weight": 2
         }
       ]
     },
@@ -2002,8 +2002,8 @@
       "nodeCount": 71,
       "pinnedCount": 0,
       "centroid": {
-        "x": 3580,
-        "y": -1
+        "x": 3614,
+        "y": 2
       },
       "eraMedian": 1958,
       "learnedTerms": [
@@ -2017,7 +2017,7 @@
         },
         {
           "term": "instrument",
-          "weight": 18
+          "weight": 20
         },
         {
           "term": "brand",
@@ -2040,23 +2040,19 @@
           "weight": 12
         },
         {
-          "term": "country",
-          "weight": 11
-        },
-        {
           "term": "gibson",
           "weight": 11
         },
         {
+          "term": "blues",
+          "weight": 10
+        },
+        {
           "term": "hard",
-          "weight": 11
+          "weight": 10
         },
         {
           "term": "hard rock",
-          "weight": 11
-        },
-        {
-          "term": "blues",
           "weight": 10
         },
         {
@@ -2066,6 +2062,10 @@
         {
           "term": "metal",
           "weight": 9
+        },
+        {
+          "term": "country",
+          "weight": 8
         },
         {
           "term": "signature",
@@ -2097,10 +2097,6 @@
         },
         {
           "term": "heavy metal",
-          "weight": 6
-        },
-        {
-          "term": "jazz",
           "weight": 6
         },
         {
@@ -2137,6 +2133,10 @@
         },
         {
           "term": "jackson",
+          "weight": 4
+        },
+        {
+          "term": "jazz",
           "weight": 4
         },
         {
@@ -2328,6 +2328,337 @@
           "weight": 1
         }
       ]
+    },
+    "hip-hop-rap": {
+      "nodeCount": 25,
+      "pinnedCount": 0,
+      "centroid": {
+        "x": 3588,
+        "y": 1379
+      },
+      "eraMedian": 1985,
+      "learnedTerms": [
+        {
+          "term": "hip",
+          "weight": 46
+        },
+        {
+          "term": "hop",
+          "weight": 46
+        },
+        {
+          "term": "rap",
+          "weight": 40
+        },
+        {
+          "term": "hip hop",
+          "weight": 34
+        },
+        {
+          "term": "coast",
+          "weight": 22
+        },
+        {
+          "term": "west",
+          "weight": 18
+        },
+        {
+          "term": "west coast hip hop",
+          "weight": 16
+        },
+        {
+          "term": "gangsta",
+          "weight": 14
+        },
+        {
+          "term": "gangsta rap",
+          "weight": 14
+        },
+        {
+          "term": "connection",
+          "weight": 10
+        },
+        {
+          "term": "funk",
+          "weight": 8
+        },
+        {
+          "term": "collective",
+          "weight": 6
+        },
+        {
+          "term": "eminem",
+          "weight": 6
+        },
+        {
+          "term": "n w a",
+          "weight": 6
+        },
+        {
+          "term": "rap collective",
+          "weight": 6
+        },
+        {
+          "term": "tupac",
+          "weight": 6
+        },
+        {
+          "term": "detroit",
+          "weight": 4
+        },
+        {
+          "term": "detroit hip hop",
+          "weight": 4
+        },
+        {
+          "term": "dre",
+          "weight": 4
+        },
+        {
+          "term": "east",
+          "weight": 4
+        },
+        {
+          "term": "east coast hip hop",
+          "weight": 4
+        },
+        {
+          "term": "eminem connection",
+          "weight": 4
+        },
+        {
+          "term": "g funk",
+          "weight": 4
+        },
+        {
+          "term": "ice",
+          "weight": 4
+        },
+        {
+          "term": "life",
+          "weight": 4
+        },
+        {
+          "term": "thug",
+          "weight": 4
+        },
+        {
+          "term": "thug life",
+          "weight": 4
+        },
+        {
+          "term": "tupac connection",
+          "weight": 4
+        },
+        {
+          "term": "alternative",
+          "weight": 2
+        },
+        {
+          "term": "alternative hip hop",
+          "weight": 2
+        },
+        {
+          "term": "babyface",
+          "weight": 2
+        },
+        {
+          "term": "bandcamp",
+          "weight": 2
+        },
+        {
+          "term": "bandleader",
+          "weight": 2
+        },
+        {
+          "term": "blue",
+          "weight": 2
+        },
+        {
+          "term": "blue magic",
+          "weight": 2
+        },
+        {
+          "term": "body",
+          "weight": 2
+        },
+        {
+          "term": "body count",
+          "weight": 2
+        },
+        {
+          "term": "bridge",
+          "weight": 2
+        },
+        {
+          "term": "c i a",
+          "weight": 2
+        },
+        {
+          "term": "california",
+          "weight": 2
+        },
+        {
+          "term": "california rap",
+          "weight": 2
+        },
+        {
+          "term": "chicago",
+          "weight": 2
+        },
+        {
+          "term": "clinton",
+          "weight": 2
+        },
+        {
+          "term": "compton",
+          "weight": 2
+        },
+        {
+          "term": "count",
+          "weight": 2
+        },
+        {
+          "term": "cube",
+          "weight": 2
+        },
+        {
+          "term": "d12",
+          "weight": 2
+        },
+        {
+          "term": "digital",
+          "weight": 2
+        },
+        {
+          "term": "digital underground",
+          "weight": 2
+        },
+        {
+          "term": "dr dre",
+          "weight": 2
+        },
+        {
+          "term": "dr dre connection",
+          "weight": 2
+        },
+        {
+          "term": "drake",
+          "weight": 2
+        },
+        {
+          "term": "eazy",
+          "weight": 2
+        },
+        {
+          "term": "eazy e",
+          "weight": 2
+        },
+        {
+          "term": "enemy",
+          "weight": 2
+        },
+        {
+          "term": "george",
+          "weight": 2
+        },
+        {
+          "term": "george clinton",
+          "weight": 2
+        },
+        {
+          "term": "glenn",
+          "weight": 2
+        },
+        {
+          "term": "glenn hughes",
+          "weight": 2
+        },
+        {
+          "term": "hip hop metal bridge",
+          "weight": 2
+        },
+        {
+          "term": "hughes",
+          "weight": 2
+        },
+        {
+          "term": "ice cube",
+          "weight": 2
+        },
+        {
+          "term": "ice t",
+          "weight": 2
+        },
+        {
+          "term": "magic",
+          "weight": 2
+        },
+        {
+          "term": "metal",
+          "weight": 2
+        },
+        {
+          "term": "my band",
+          "weight": 2
+        },
+        {
+          "term": "outsidaz",
+          "weight": 2
+        },
+        {
+          "term": "political",
+          "weight": 2
+        },
+        {
+          "term": "political hip hop",
+          "weight": 2
+        },
+        {
+          "term": "producer",
+          "weight": 2
+        },
+        {
+          "term": "public",
+          "weight": 2
+        },
+        {
+          "term": "public enemy",
+          "weight": 2
+        },
+        {
+          "term": "rap metal",
+          "weight": 2
+        },
+        {
+          "term": "shakur",
+          "weight": 2
+        },
+        {
+          "term": "shoegaze",
+          "weight": 2
+        },
+        {
+          "term": "thrash",
+          "weight": 2
+        },
+        {
+          "term": "thrash metal",
+          "weight": 2
+        },
+        {
+          "term": "tupac shakur",
+          "weight": 2
+        },
+        {
+          "term": "underground",
+          "weight": 2
+        },
+        {
+          "term": "west coast",
+          "weight": 2
+        }
+      ]
     }
   },
   "nodes": {
@@ -2357,9 +2688,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 3,
       "linkedGenres": [],
@@ -2378,9 +2709,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -2443,8 +2774,8 @@
       ],
       "curatorTags": [
         "blues",
-        "blues rock",
-        "rock and roll"
+        "rock and roll",
+        "roots"
       ],
       "connectionCount": 8,
       "linkedGenres": [],
@@ -2597,9 +2928,9 @@
         "Grunge"
       ],
       "curatorTags": [
-        "hard rock",
         "punk rock",
-        "alternative"
+        "alternative",
+        "punk"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -2659,8 +2990,8 @@
         "Norwegian vise"
       ],
       "curatorTags": [
-        "country",
-        "folk"
+        "folk",
+        "country"
       ],
       "connectionCount": 7,
       "linkedGenres": [],
@@ -2916,9 +3247,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "guitarist",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 2,
       "linkedGenres": [],
@@ -2983,12 +3314,12 @@
       ],
       "primaryGenres": [
         "alternative rock",
-        "country"
+        "rock"
       ],
       "curatorTags": [
         "alternative rock",
         "guitarist",
-        "country"
+        "rock"
       ],
       "connectionCount": 3,
       "linkedGenres": [],
@@ -3004,13 +3335,12 @@
         "guitar-workshop"
       ],
       "primaryGenres": [
-        "hard rock",
         "heavy metal"
       ],
       "curatorTags": [
-        "hard rock",
         "Heavy metal",
-        "heavy metal"
+        "heavy metal",
+        "guitarist"
       ],
       "connectionCount": 4,
       "linkedGenres": [
@@ -3028,13 +3358,13 @@
         "guitar-workshop"
       ],
       "primaryGenres": [
-        "hard rock",
-        "heavy metal"
+        "heavy metal",
+        "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "heavy metal",
-        "guitarist"
+        "guitarist",
+        "hard rock"
       ],
       "connectionCount": 2,
       "linkedGenres": [],
@@ -3121,13 +3451,12 @@
         "guitar-workshop"
       ],
       "primaryGenres": [
-        "country",
-        "folk"
+        "country"
       ],
       "curatorTags": [
         "Country",
         "country",
-        "folk"
+        "artist"
       ],
       "connectionCount": 2,
       "linkedGenres": [
@@ -3145,13 +3474,12 @@
         "guitar-workshop"
       ],
       "primaryGenres": [
-        "country",
-        "folk"
+        "country"
       ],
       "curatorTags": [
         "Country",
         "country",
-        "folk"
+        "artist"
       ],
       "connectionCount": 2,
       "linkedGenres": [
@@ -3169,13 +3497,12 @@
         "guitar-workshop"
       ],
       "primaryGenres": [
-        "country",
-        "folk"
+        "country"
       ],
       "curatorTags": [
         "Country",
         "country",
-        "folk"
+        "guitarist"
       ],
       "connectionCount": 2,
       "linkedGenres": [
@@ -3217,13 +3544,12 @@
         "guitar-workshop"
       ],
       "primaryGenres": [
-        "country",
-        "folk"
+        "country"
       ],
       "curatorTags": [
         "Norwegian vise",
-        "country",
-        "folk"
+        "guitarist",
+        "country"
       ],
       "connectionCount": 3,
       "linkedGenres": [
@@ -3241,13 +3567,13 @@
         "guitar-workshop"
       ],
       "primaryGenres": [
-        "hard rock",
-        "heavy metal"
+        "heavy metal",
+        "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "heavy metal",
-        "guitarist"
+        "guitarist",
+        "hard rock"
       ],
       "connectionCount": 2,
       "linkedGenres": [],
@@ -3260,7 +3586,8 @@
     "prince": {
       "zone": "rock-circuit",
       "secondaryZones": [
-        "guitar-workshop"
+        "guitar-workshop",
+        "hip-hop-rap"
       ],
       "primaryGenres": [
         "rock"
@@ -3275,7 +3602,7 @@
         "funk",
         "rock"
       ],
-      "bridgeScore": 0.38,
+      "bridgeScore": 0.6,
       "hubScore": 0.417,
       "layoutHints": {
         "pinned": false
@@ -3355,13 +3682,12 @@
       "zone": "hard-rock-metal",
       "secondaryZones": [],
       "primaryGenres": [
-        "hard rock",
         "heavy metal"
       ],
       "curatorTags": [
-        "hard rock",
         "Heavy metal",
-        "heavy metal"
+        "heavy metal",
+        "band"
       ],
       "connectionCount": 4,
       "linkedGenres": [
@@ -3441,13 +3767,12 @@
       "zone": "hard-rock-metal",
       "secondaryZones": [],
       "primaryGenres": [
-        "hard rock",
         "heavy metal"
       ],
       "curatorTags": [
-        "hard rock",
         "Heavy metal",
-        "heavy metal"
+        "heavy metal",
+        "band"
       ],
       "connectionCount": 3,
       "linkedGenres": [
@@ -3465,13 +3790,12 @@
         "punk-alt"
       ],
       "primaryGenres": [
-        "hard rock",
         "heavy metal"
       ],
       "curatorTags": [
-        "hard rock",
         "Heavy metal",
-        "heavy metal"
+        "heavy metal",
+        "band"
       ],
       "connectionCount": 4,
       "linkedGenres": [
@@ -3486,13 +3810,11 @@
     "gitarkameratene": {
       "zone": "folk-country-vise",
       "secondaryZones": [],
-      "primaryGenres": [
-        "country"
-      ],
+      "primaryGenres": [],
       "curatorTags": [
         "Norwegian vise",
         "Singer-songwriter",
-        "country"
+        "band"
       ],
       "connectionCount": 6,
       "linkedGenres": [
@@ -3509,7 +3831,7 @@
       "zone": "roots-blues",
       "secondaryZones": [
         "hard-rock-metal",
-        "rock-circuit"
+        "hip-hop-rap"
       ],
       "primaryGenres": [
         "blues rock",
@@ -3562,7 +3884,7 @@
       "curatorTags": [
         "guitar brand",
         "manufacturer",
-        "jazz"
+        "guitar"
       ],
       "connectionCount": 6,
       "linkedGenres": [],
@@ -3733,8 +4055,8 @@
       "primaryGenres": [],
       "curatorTags": [
         "electric guitar",
-        "country",
-        "jazz"
+        "guitar",
+        "instrument"
       ],
       "connectionCount": 2,
       "linkedGenres": [],
@@ -3914,8 +4236,8 @@
       "primaryGenres": [],
       "curatorTags": [
         "electric guitar",
-        "rock",
-        "guitar"
+        "guitar",
+        "instrument"
       ],
       "connectionCount": 3,
       "linkedGenres": [],
@@ -3936,7 +4258,7 @@
       "curatorTags": [
         "electric guitar",
         "signature guitar",
-        "rock"
+        "rockabilly"
       ],
       "connectionCount": 4,
       "linkedGenres": [],
@@ -3992,8 +4314,8 @@
       "primaryGenres": [],
       "curatorTags": [
         "electric guitar",
-        "hard rock",
-        "heavy metal"
+        "heavy metal",
+        "guitar"
       ],
       "connectionCount": 2,
       "linkedGenres": [],
@@ -4092,8 +4414,8 @@
       ],
       "curatorTags": [
         "blues",
-        "blues rock",
-        "rock and roll"
+        "rock and roll",
+        "roots rock"
       ],
       "connectionCount": 4,
       "linkedGenres": [],
@@ -4113,8 +4435,8 @@
       ],
       "curatorTags": [
         "rock",
-        "progressive rock",
-        "rock and roll"
+        "rock and roll",
+        "classic rock"
       ],
       "connectionCount": 3,
       "linkedGenres": [],
@@ -4254,7 +4576,9 @@
     },
     "shoegaze": {
       "zone": "punk-alt",
-      "secondaryZones": [],
+      "secondaryZones": [
+        "hip-hop-rap"
+      ],
       "primaryGenres": [
         "Shoegaze"
       ],
@@ -4265,7 +4589,7 @@
       ],
       "connectionCount": 8,
       "linkedGenres": [],
-      "bridgeScore": 0,
+      "bridgeScore": 0.22,
       "hubScore": 0.667,
       "layoutHints": {
         "pinned": false
@@ -4280,9 +4604,9 @@
         "Thrash metal"
       ],
       "curatorTags": [
-        "hard rock",
         "heavy metal",
-        "thrash metal"
+        "thrash metal",
+        "hard rock"
       ],
       "connectionCount": 13,
       "linkedGenres": [],
@@ -4299,9 +4623,9 @@
         "Doom metal"
       ],
       "curatorTags": [
-        "hard rock",
         "doom metal",
-        "heavy metal"
+        "heavy metal",
+        "hard rock"
       ],
       "connectionCount": 5,
       "linkedGenres": [],
@@ -4321,9 +4645,9 @@
         "Progressive metal"
       ],
       "curatorTags": [
-        "hard rock",
         "heavy metal",
-        "progressive metal"
+        "progressive metal",
+        "progressive rock"
       ],
       "connectionCount": 6,
       "linkedGenres": [],
@@ -4361,8 +4685,8 @@
         "Singer-songwriter"
       ],
       "curatorTags": [
-        "country",
         "folk",
+        "country",
         "rock"
       ],
       "connectionCount": 6,
@@ -4403,8 +4727,8 @@
         "Flamenco"
       ],
       "curatorTags": [
-        "country",
-        "folk"
+        "folk",
+        "country"
       ],
       "connectionCount": 2,
       "linkedGenres": [],
@@ -4581,13 +4905,12 @@
         "guitar-workshop"
       ],
       "primaryGenres": [
-        "southern rock",
-        "blues"
+        "southern rock"
       ],
       "curatorTags": [
         "Southern rock",
         "southern rock",
-        "blues"
+        "guitarist"
       ],
       "connectionCount": 3,
       "linkedGenres": [
@@ -4755,9 +5078,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "guitarist",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 2,
       "linkedGenres": [],
@@ -4795,13 +5118,12 @@
         "guitar-workshop"
       ],
       "primaryGenres": [
-        "blues rock",
-        "blues"
+        "rockabilly"
       ],
       "curatorTags": [
         "Rockabilly",
-        "blues rock",
-        "blues"
+        "guitarist",
+        "rockabilly"
       ],
       "connectionCount": 3,
       "linkedGenres": [
@@ -4890,13 +5212,12 @@
         "guitar-workshop"
       ],
       "primaryGenres": [
-        "hard rock",
         "rock"
       ],
       "curatorTags": [
         "Rock",
-        "hard rock",
-        "rock"
+        "rock",
+        "guitarist"
       ],
       "connectionCount": 3,
       "linkedGenres": [
@@ -4914,13 +5235,12 @@
         "guitar-workshop"
       ],
       "primaryGenres": [
-        "hard rock",
         "heavy metal"
       ],
       "curatorTags": [
-        "hard rock",
         "Heavy metal",
-        "heavy metal"
+        "heavy metal",
+        "guitarist"
       ],
       "connectionCount": 2,
       "linkedGenres": [
@@ -4964,13 +5284,12 @@
       ],
       "primaryGenres": [
         "blues rock",
-        "hard rock",
         "blues"
       ],
       "curatorTags": [
         "blues rock",
-        "hard rock",
-        "blues"
+        "blues",
+        "guitarist"
       ],
       "connectionCount": 2,
       "linkedGenres": [],
@@ -5008,13 +5327,12 @@
         "guitar-workshop"
       ],
       "primaryGenres": [
-        "hard rock",
         "thrash metal"
       ],
       "curatorTags": [
-        "hard rock",
         "Thrash metal",
-        "thrash metal"
+        "thrash metal",
+        "guitarist"
       ],
       "connectionCount": 7,
       "linkedGenres": [
@@ -5030,13 +5348,12 @@
       "zone": "hard-rock-metal",
       "secondaryZones": [],
       "primaryGenres": [
-        "hard rock",
         "heavy metal"
       ],
       "curatorTags": [
-        "hard rock",
         "Heavy metal",
-        "heavy metal"
+        "heavy metal",
+        "guitarist"
       ],
       "connectionCount": 2,
       "linkedGenres": [
@@ -5054,13 +5371,12 @@
         "guitar-workshop"
       ],
       "primaryGenres": [
-        "hard rock",
         "heavy metal"
       ],
       "curatorTags": [
-        "hard rock",
         "Heavy metal",
-        "heavy metal"
+        "heavy metal",
+        "guitarist"
       ],
       "connectionCount": 3,
       "linkedGenres": [
@@ -5103,13 +5419,12 @@
         "guitar-workshop"
       ],
       "primaryGenres": [
-        "country",
-        "folk"
+        "jazz"
       ],
       "curatorTags": [
         "Jazz",
-        "country",
-        "folk"
+        "guitarist",
+        "jazz"
       ],
       "connectionCount": 3,
       "linkedGenres": [
@@ -5128,13 +5443,12 @@
         "roots-blues"
       ],
       "primaryGenres": [
-        "country",
-        "folk"
+        "jazz"
       ],
       "curatorTags": [
         "Jazz",
-        "country",
-        "folk"
+        "guitarist",
+        "jazz"
       ],
       "connectionCount": 4,
       "linkedGenres": [
@@ -5150,13 +5464,12 @@
       "zone": "folk-country-vise",
       "secondaryZones": [],
       "primaryGenres": [
-        "country",
-        "folk"
+        "country"
       ],
       "curatorTags": [
         "Flamenco",
-        "country",
-        "folk"
+        "guitarist",
+        "country"
       ],
       "connectionCount": 1,
       "linkedGenres": [
@@ -5259,13 +5572,12 @@
         "guitar-workshop"
       ],
       "primaryGenres": [
-        "country",
-        "folk"
+        "post-punk"
       ],
       "curatorTags": [
         "guitarist",
-        "country",
-        "folk"
+        "post-punk",
+        "alternative"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -5282,12 +5594,12 @@
       ],
       "primaryGenres": [
         "art rock",
-        "country"
+        "rock"
       ],
       "curatorTags": [
         "art rock",
         "guitarist",
-        "country"
+        "rock"
       ],
       "connectionCount": 2,
       "linkedGenres": [],
@@ -5301,13 +5613,12 @@
       "zone": "folk-country-vise",
       "secondaryZones": [],
       "primaryGenres": [
-        "country",
-        "folk"
+        "country"
       ],
       "curatorTags": [
         "Norwegian vise",
-        "country",
-        "folk"
+        "artist",
+        "country"
       ],
       "connectionCount": 2,
       "linkedGenres": [
@@ -5322,13 +5633,11 @@
     "jan-eggum": {
       "zone": "folk-country-vise",
       "secondaryZones": [],
-      "primaryGenres": [
-        "country"
-      ],
+      "primaryGenres": [],
       "curatorTags": [
         "Norwegian vise",
         "Singer-songwriter",
-        "country"
+        "artist"
       ],
       "connectionCount": 3,
       "linkedGenres": [
@@ -5345,13 +5654,12 @@
       "zone": "folk-country-vise",
       "secondaryZones": [],
       "primaryGenres": [
-        "country",
         "folk"
       ],
       "curatorTags": [
         "Norwegian vise",
-        "country",
-        "folk"
+        "folk",
+        "artist"
       ],
       "connectionCount": 2,
       "linkedGenres": [
@@ -5367,12 +5675,12 @@
       "zone": "folk-country-vise",
       "secondaryZones": [],
       "primaryGenres": [
-        "country"
+        "folk"
       ],
       "curatorTags": [
         "Folk",
         "Norwegian vise",
-        "country"
+        "folk"
       ],
       "connectionCount": 2,
       "linkedGenres": [
@@ -5531,13 +5839,13 @@
       "zone": "punk-alt",
       "secondaryZones": [],
       "primaryGenres": [
-        "alternative rock",
-        "hard rock"
+        "rap rock",
+        "alternative metal"
       ],
       "curatorTags": [
-        "Alternative rock",
-        "alternative rock",
-        "hard rock"
+        "rap rock",
+        "political rock",
+        "hip-hop bridge"
       ],
       "connectionCount": 1,
       "linkedGenres": [
@@ -5553,13 +5861,12 @@
       "zone": "hard-rock-metal",
       "secondaryZones": [],
       "primaryGenres": [
-        "hard rock",
         "thrash metal"
       ],
       "curatorTags": [
-        "hard rock",
         "Thrash metal",
-        "thrash metal"
+        "thrash metal",
+        "band"
       ],
       "connectionCount": 5,
       "linkedGenres": [
@@ -5575,12 +5882,12 @@
       "zone": "hard-rock-metal",
       "secondaryZones": [],
       "primaryGenres": [
-        "hard rock"
+        "heavy metal"
       ],
       "curatorTags": [
-        "hard rock",
         "Heavy metal",
-        "Thrash metal"
+        "Thrash metal",
+        "heavy metal"
       ],
       "connectionCount": 3,
       "linkedGenres": [
@@ -5736,13 +6043,12 @@
       "zone": "roots-blues",
       "secondaryZones": [],
       "primaryGenres": [
-        "blues rock",
-        "blues"
+        "rockabilly"
       ],
       "curatorTags": [
         "Rockabilly",
-        "blues rock",
-        "blues"
+        "band",
+        "rockabilly"
       ],
       "connectionCount": 2,
       "linkedGenres": [
@@ -5782,13 +6088,12 @@
       "zone": "hard-rock-metal",
       "secondaryZones": [],
       "primaryGenres": [
-        "hard rock",
         "heavy metal"
       ],
       "curatorTags": [
-        "hard rock",
         "Heavy metal",
-        "heavy metal"
+        "heavy metal",
+        "band"
       ],
       "connectionCount": 2,
       "linkedGenres": [
@@ -5803,22 +6108,22 @@
     "judas-priest": {
       "zone": "hard-rock-metal",
       "secondaryZones": [
-        "guitar-workshop"
+        "guitar-workshop",
+        "hip-hop-rap"
       ],
       "primaryGenres": [
-        "hard rock",
         "heavy metal"
       ],
       "curatorTags": [
-        "hard rock",
         "Heavy metal",
-        "heavy metal"
+        "heavy metal",
+        "band"
       ],
       "connectionCount": 7,
       "linkedGenres": [
         "heavy-metal"
       ],
-      "bridgeScore": 0.3,
+      "bridgeScore": 0.52,
       "hubScore": 0.583,
       "layoutHints": {
         "pinned": false
@@ -5933,7 +6238,7 @@
       "curatorTags": [
         "guitar brand",
         "manufacturer",
-        "country"
+        "guitar"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -6359,7 +6664,7 @@
       "curatorTags": [
         "acoustic guitar",
         "Singer-songwriter",
-        "country"
+        "guitar"
       ],
       "connectionCount": 2,
       "linkedGenres": [
@@ -6417,13 +6722,12 @@
       "zone": "hard-rock-metal",
       "secondaryZones": [],
       "primaryGenres": [
-        "hard rock",
         "doom metal"
       ],
       "curatorTags": [
-        "hard rock",
         "Doom metal",
-        "doom metal"
+        "doom metal",
+        "band"
       ],
       "connectionCount": 1,
       "linkedGenres": [
@@ -6442,12 +6746,12 @@
       ],
       "primaryGenres": [
         "gothic metal",
-        "hard rock"
+        "doom metal"
       ],
       "curatorTags": [
         "gothic metal",
-        "hard rock",
-        "Doom metal"
+        "Doom metal",
+        "doom metal"
       ],
       "connectionCount": 3,
       "linkedGenres": [
@@ -6464,13 +6768,12 @@
       "zone": "hard-rock-metal",
       "secondaryZones": [],
       "primaryGenres": [
-        "hard rock",
         "doom metal"
       ],
       "curatorTags": [
-        "hard rock",
         "Doom metal",
-        "doom metal"
+        "doom metal",
+        "band"
       ],
       "connectionCount": 2,
       "linkedGenres": [
@@ -6486,13 +6789,12 @@
       "zone": "hard-rock-metal",
       "secondaryZones": [],
       "primaryGenres": [
-        "hard rock",
         "doom metal"
       ],
       "curatorTags": [
-        "hard rock",
         "Doom metal",
-        "doom metal"
+        "doom metal",
+        "band"
       ],
       "connectionCount": 1,
       "linkedGenres": [
@@ -6508,13 +6810,12 @@
       "zone": "hard-rock-metal",
       "secondaryZones": [],
       "primaryGenres": [
-        "hard rock",
-        "rock"
+        "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "band",
-        "rock"
+        "hard rock",
+        "metal"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -6529,6 +6830,7 @@
       "secondaryZones": [
         "psychedelia-prog",
         "punk-alt",
+        "hip-hop-rap",
         "rock-circuit"
       ],
       "primaryGenres": [
@@ -6546,7 +6848,7 @@
         "hard-rock",
         "alternative-metal"
       ],
-      "bridgeScore": 0.98,
+      "bridgeScore": 1,
       "hubScore": 1,
       "layoutHints": {
         "pinned": false
@@ -6556,13 +6858,12 @@
       "zone": "hard-rock-metal",
       "secondaryZones": [],
       "primaryGenres": [
-        "hard rock",
-        "rock"
+        "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "band",
-        "rock"
+        "hard rock",
+        "metal"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -6578,13 +6879,13 @@
       "eraStart": 1986,
       "eraPeak": 1986,
       "primaryGenres": [
-        "hard rock",
-        "heavy metal"
+        "heavy metal",
+        "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "heavy metal",
-        "band"
+        "band",
+        "hard rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -6598,13 +6899,12 @@
       "zone": "hard-rock-metal",
       "secondaryZones": [],
       "primaryGenres": [
-        "hard rock",
-        "rock"
+        "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "band",
-        "rock"
+        "hard rock",
+        "metal"
       ],
       "connectionCount": 3,
       "linkedGenres": [],
@@ -6642,13 +6942,12 @@
         "rock-circuit"
       ],
       "primaryGenres": [
-        "hard rock",
-        "rock"
+        "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "band",
-        "rock"
+        "hard rock",
+        "metal"
       ],
       "connectionCount": 5,
       "linkedGenres": [],
@@ -6662,13 +6961,12 @@
       "zone": "hard-rock-metal",
       "secondaryZones": [],
       "primaryGenres": [
-        "hard rock",
-        "rock"
+        "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "artist",
-        "rock"
+        "hard rock",
+        "metal"
       ],
       "connectionCount": 3,
       "linkedGenres": [],
@@ -6684,13 +6982,12 @@
       "eraStart": 1969,
       "eraPeak": 1969,
       "primaryGenres": [
-        "hard rock",
-        "rock"
+        "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "guitarist",
-        "rock"
+        "hard rock",
+        "metal"
       ],
       "connectionCount": 7,
       "linkedGenres": [],
@@ -6705,13 +7002,12 @@
       "secondaryZones": [],
       "primaryGenres": [
         "glam metal",
-        "power metal",
-        "hard rock"
+        "power metal"
       ],
       "curatorTags": [
         "glam metal",
         "power metal",
-        "hard rock"
+        "Thrash metal"
       ],
       "connectionCount": 11,
       "linkedGenres": [
@@ -6731,13 +7027,12 @@
         "rock-circuit"
       ],
       "primaryGenres": [
-        "hard rock",
         "thrash metal"
       ],
       "curatorTags": [
-        "hard rock",
         "Thrash metal",
-        "thrash metal"
+        "thrash metal",
+        "band"
       ],
       "connectionCount": 8,
       "linkedGenres": [
@@ -6753,13 +7048,12 @@
       "zone": "hard-rock-metal",
       "secondaryZones": [],
       "primaryGenres": [
-        "hard rock",
-        "rock"
+        "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "band",
-        "rock"
+        "hard rock",
+        "metal"
       ],
       "connectionCount": 2,
       "linkedGenres": [],
@@ -6775,13 +7069,12 @@
         "punk-alt"
       ],
       "primaryGenres": [
-        "hard rock",
-        "rock"
+        "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "band",
-        "rock"
+        "hard rock",
+        "metal"
       ],
       "connectionCount": 4,
       "linkedGenres": [],
@@ -6795,13 +7088,12 @@
       "zone": "hard-rock-metal",
       "secondaryZones": [],
       "primaryGenres": [
-        "hard rock",
-        "rock"
+        "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "band",
-        "rock"
+        "hard rock",
+        "metal"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -6815,13 +7107,12 @@
       "zone": "hard-rock-metal",
       "secondaryZones": [],
       "primaryGenres": [
-        "hard rock",
-        "rock"
+        "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "band",
-        "rock"
+        "hard rock",
+        "metal"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -6835,13 +7126,12 @@
       "zone": "hard-rock-metal",
       "secondaryZones": [],
       "primaryGenres": [
-        "hard rock",
-        "rock"
+        "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "guitarist",
-        "rock"
+        "hard rock",
+        "metal"
       ],
       "connectionCount": 2,
       "linkedGenres": [],
@@ -6852,18 +7142,19 @@
       }
     },
     "body-count": {
-      "zone": "hard-rock-metal",
+      "zone": "hip-hop-rap",
       "secondaryZones": [
-        "rock-circuit",
-        "psychedelia-prog"
+        "hard-rock-metal",
+        "rock-circuit"
       ],
       "primaryGenres": [
-        "hard rock"
+        "rap metal",
+        "thrash metal"
       ],
       "curatorTags": [
-        "hard rock",
-        "Gangsta rap",
-        "band"
+        "rap metal",
+        "hip-hop metal bridge",
+        "ice-t"
       ],
       "connectionCount": 4,
       "linkedGenres": [
@@ -6883,13 +7174,13 @@
       "eraStart": 1951,
       "eraPeak": 1973,
       "primaryGenres": [
-        "hard rock",
-        "heavy metal"
+        "heavy metal",
+        "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "heavy metal",
-        "artist"
+        "artist",
+        "hard rock"
       ],
       "connectionCount": 4,
       "linkedGenres": [],
@@ -6903,13 +7194,12 @@
       "zone": "hard-rock-metal",
       "secondaryZones": [],
       "primaryGenres": [
-        "hard rock",
-        "rock"
+        "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "band",
-        "rock"
+        "hard rock",
+        "metal"
       ],
       "connectionCount": 3,
       "linkedGenres": [],
@@ -6923,13 +7213,12 @@
       "zone": "hard-rock-metal",
       "secondaryZones": [],
       "primaryGenres": [
-        "hard rock",
-        "rock"
+        "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "band",
-        "rock"
+        "hard rock",
+        "metal"
       ],
       "connectionCount": 2,
       "linkedGenres": [],
@@ -6942,7 +7231,7 @@
     "dream-theater": {
       "zone": "psychedelia-prog",
       "secondaryZones": [
-        "punk-alt"
+        "hip-hop-rap"
       ],
       "eraStart": 1985,
       "eraPeak": 1985,
@@ -6963,10 +7252,10 @@
       }
     },
     "bandcamp": {
-      "zone": "punk-alt",
+      "zone": "hip-hop-rap",
       "secondaryZones": [
         "psychedelia-prog",
-        "rock-circuit"
+        "punk-alt"
       ],
       "primaryGenres": [
         "shoegaze"
@@ -7077,13 +7366,12 @@
       "eraStart": 1978,
       "eraPeak": 1978,
       "primaryGenres": [
-        "hard rock",
-        "rock"
+        "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "artist",
-        "rock"
+        "hard rock",
+        "metal"
       ],
       "connectionCount": 2,
       "linkedGenres": [],
@@ -7102,9 +7390,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 4,
       "linkedGenres": [],
@@ -7123,9 +7411,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -7143,13 +7431,13 @@
       "eraStart": 1993,
       "eraPeak": 2019,
       "primaryGenres": [
-        "hard rock",
-        "death metal"
+        "death metal",
+        "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "death metal",
-        "band"
+        "band",
+        "hard rock"
       ],
       "connectionCount": 6,
       "linkedGenres": [],
@@ -7168,9 +7456,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -7189,9 +7477,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -7210,9 +7498,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -7253,9 +7541,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -7269,13 +7557,12 @@
       "zone": "hard-rock-metal",
       "secondaryZones": [],
       "primaryGenres": [
-        "hard rock",
-        "rock"
+        "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "band",
-        "rock"
+        "hard rock",
+        "metal"
       ],
       "connectionCount": 6,
       "linkedGenres": [],
@@ -7294,9 +7581,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 2,
       "linkedGenres": [],
@@ -7315,9 +7602,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -7334,8 +7621,8 @@
         "symphonic metal"
       ],
       "curatorTags": [
-        "hard rock",
         "heavy metal",
+        "hard rock",
         "metal"
       ],
       "connectionCount": 4,
@@ -7372,9 +7659,9 @@
         "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "symphonic metal",
-        "band"
+        "band",
+        "hard rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [
@@ -7393,9 +7680,9 @@
         "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "symphonic metal",
-        "band"
+        "band",
+        "hard rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [
@@ -7414,9 +7701,9 @@
         "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "symphonic metal",
-        "band"
+        "band",
+        "hard rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [
@@ -7436,13 +7723,13 @@
       "eraStart": 1977,
       "eraPeak": 1977,
       "primaryGenres": [
-        "hard rock",
-        "heavy metal"
+        "heavy metal",
+        "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "heavy metal",
-        "artist"
+        "artist",
+        "hard rock"
       ],
       "connectionCount": 3,
       "linkedGenres": [],
@@ -7461,9 +7748,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 2,
       "linkedGenres": [],
@@ -7482,9 +7769,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 2,
       "linkedGenres": [],
@@ -7501,9 +7788,9 @@
         "power metal"
       ],
       "curatorTags": [
-        "hard rock",
         "heavy metal",
-        "speed metal"
+        "speed metal",
+        "hard rock"
       ],
       "connectionCount": 3,
       "linkedGenres": [],
@@ -7522,8 +7809,8 @@
       ],
       "curatorTags": [
         "power metal",
-        "hard rock",
-        "band"
+        "band",
+        "hard rock"
       ],
       "connectionCount": 7,
       "linkedGenres": [
@@ -7544,8 +7831,8 @@
       ],
       "curatorTags": [
         "power metal",
-        "hard rock",
-        "band"
+        "band",
+        "hard rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [
@@ -7565,13 +7852,13 @@
       "eraStart": 1966,
       "eraPeak": 1966,
       "primaryGenres": [
-        "hard rock",
-        "heavy metal"
+        "heavy metal",
+        "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "heavy metal",
-        "artist"
+        "artist",
+        "hard rock"
       ],
       "connectionCount": 7,
       "linkedGenres": [],
@@ -7590,9 +7877,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 4,
       "linkedGenres": [],
@@ -7611,9 +7898,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -7632,9 +7919,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 2,
       "linkedGenres": [],
@@ -7653,9 +7940,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -7674,9 +7961,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -7693,12 +7980,12 @@
       "eraPeak": 2019,
       "primaryGenres": [
         "psychedelic rock",
-        "country"
+        "rock"
       ],
       "curatorTags": [
         "psychedelic rock",
         "artist",
-        "country"
+        "rock"
       ],
       "connectionCount": 0,
       "linkedGenres": [],
@@ -7735,13 +8022,13 @@
         "rock-circuit"
       ],
       "primaryGenres": [
-        "hard rock",
-        "folk"
+        "folk",
+        "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "band",
-        "folk"
+        "folk",
+        "hard rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -7760,9 +8047,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -7781,13 +8068,13 @@
       "eraStart": 1979,
       "eraPeak": 2020,
       "primaryGenres": [
-        "hard rock",
-        "death metal"
+        "death metal",
+        "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "death metal",
-        "artist"
+        "artist",
+        "hard rock"
       ],
       "connectionCount": 6,
       "linkedGenres": [],
@@ -7826,9 +8113,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -7847,9 +8134,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -7868,9 +8155,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -7888,13 +8175,12 @@
       "eraStart": 1996,
       "eraPeak": 1996,
       "primaryGenres": [
-        "hard rock",
-        "rock"
+        "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "band",
-        "rock"
+        "hard rock",
+        "metal"
       ],
       "connectionCount": 3,
       "linkedGenres": [],
@@ -7913,9 +8199,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -7934,9 +8220,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "artist",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 6,
       "linkedGenres": [],
@@ -7955,9 +8241,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 2,
       "linkedGenres": [],
@@ -7976,9 +8262,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 2,
       "linkedGenres": [],
@@ -7995,9 +8281,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -8014,9 +8300,9 @@
         "gothic metal"
       ],
       "curatorTags": [
-        "hard rock",
         "gothic rock",
-        "heavy metal"
+        "heavy metal",
+        "hard rock"
       ],
       "connectionCount": 2,
       "linkedGenres": [],
@@ -8037,8 +8323,8 @@
       ],
       "curatorTags": [
         "gothic metal",
-        "hard rock",
-        "band"
+        "band",
+        "hard rock"
       ],
       "connectionCount": 2,
       "linkedGenres": [
@@ -8208,9 +8494,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -8226,13 +8512,12 @@
         "rock-circuit"
       ],
       "primaryGenres": [
-        "hard rock",
-        "rock"
+        "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "band",
-        "rock"
+        "hard rock",
+        "metal"
       ],
       "connectionCount": 2,
       "linkedGenres": [],
@@ -8246,13 +8531,12 @@
       "zone": "hard-rock-metal",
       "secondaryZones": [],
       "primaryGenres": [
-        "hard rock",
-        "rock"
+        "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "band",
-        "rock"
+        "hard rock",
+        "metal"
       ],
       "connectionCount": 2,
       "linkedGenres": [],
@@ -8434,13 +8718,12 @@
       "zone": "hard-rock-metal",
       "secondaryZones": [],
       "primaryGenres": [
-        "hard rock",
-        "rock"
+        "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "band",
-        "rock"
+        "hard rock",
+        "metal"
       ],
       "connectionCount": 2,
       "linkedGenres": [],
@@ -8454,13 +8737,12 @@
       "zone": "hard-rock-metal",
       "secondaryZones": [],
       "primaryGenres": [
-        "hard rock",
         "thrash metal"
       ],
       "curatorTags": [
-        "hard rock",
         "Thrash metal",
-        "thrash metal"
+        "thrash metal",
+        "band"
       ],
       "connectionCount": 1,
       "linkedGenres": [
@@ -8476,13 +8758,12 @@
       "zone": "hard-rock-metal",
       "secondaryZones": [],
       "primaryGenres": [
-        "hard rock",
         "thrash metal"
       ],
       "curatorTags": [
-        "hard rock",
         "Thrash metal",
-        "thrash metal"
+        "thrash metal",
+        "band"
       ],
       "connectionCount": 2,
       "linkedGenres": [
@@ -8498,13 +8779,12 @@
       "zone": "hard-rock-metal",
       "secondaryZones": [],
       "primaryGenres": [
-        "hard rock",
         "thrash metal"
       ],
       "curatorTags": [
-        "hard rock",
         "Thrash metal",
-        "thrash metal"
+        "thrash metal",
+        "band"
       ],
       "connectionCount": 1,
       "linkedGenres": [
@@ -8520,13 +8800,12 @@
       "zone": "hard-rock-metal",
       "secondaryZones": [],
       "primaryGenres": [
-        "hard rock",
         "thrash metal"
       ],
       "curatorTags": [
-        "hard rock",
         "Thrash metal",
-        "thrash metal"
+        "thrash metal",
+        "band"
       ],
       "connectionCount": 1,
       "linkedGenres": [
@@ -8542,12 +8821,12 @@
       "zone": "hard-rock-metal",
       "secondaryZones": [],
       "primaryGenres": [
-        "hard rock"
+        "speed metal"
       ],
       "curatorTags": [
-        "hard rock",
         "Speed Metal",
-        "Thrash metal"
+        "Thrash metal",
+        "speed metal"
       ],
       "connectionCount": 2,
       "linkedGenres": [
@@ -8566,13 +8845,13 @@
       "eraStart": 1999,
       "eraPeak": 1999,
       "primaryGenres": [
-        "hard rock",
-        "heavy metal"
+        "heavy metal",
+        "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "heavy metal",
-        "band"
+        "band",
+        "hard rock"
       ],
       "connectionCount": 3,
       "linkedGenres": [],
@@ -8586,13 +8865,12 @@
       "zone": "hard-rock-metal",
       "secondaryZones": [],
       "primaryGenres": [
-        "hard rock",
-        "rock"
+        "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "band",
-        "rock"
+        "hard rock",
+        "metal"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -8606,13 +8884,12 @@
       "zone": "hard-rock-metal",
       "secondaryZones": [],
       "primaryGenres": [
-        "hard rock",
-        "rock"
+        "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "band",
-        "rock"
+        "hard rock",
+        "metal"
       ],
       "connectionCount": 2,
       "linkedGenres": [],
@@ -8646,12 +8923,12 @@
       "zone": "punk-alt",
       "secondaryZones": [],
       "primaryGenres": [
-        "country"
+        "shoegaze"
       ],
       "curatorTags": [
         "Shoegaze",
         "band",
-        "country"
+        "shoegaze"
       ],
       "connectionCount": 1,
       "linkedGenres": [
@@ -8667,12 +8944,12 @@
       "zone": "punk-alt",
       "secondaryZones": [],
       "primaryGenres": [
-        "country"
+        "shoegaze"
       ],
       "curatorTags": [
         "Shoegaze",
         "band",
-        "country"
+        "shoegaze"
       ],
       "connectionCount": 1,
       "linkedGenres": [
@@ -8690,12 +8967,12 @@
         "hard-rock-metal"
       ],
       "primaryGenres": [
-        "country"
+        "shoegaze"
       ],
       "curatorTags": [
         "Shoegaze",
         "artist",
-        "country"
+        "shoegaze"
       ],
       "connectionCount": 4,
       "linkedGenres": [
@@ -8711,12 +8988,12 @@
       "zone": "punk-alt",
       "secondaryZones": [],
       "primaryGenres": [
-        "country"
+        "shoegaze"
       ],
       "curatorTags": [
         "Shoegaze",
         "band",
-        "country"
+        "shoegaze"
       ],
       "connectionCount": 1,
       "linkedGenres": [
@@ -8732,12 +9009,12 @@
       "zone": "punk-alt",
       "secondaryZones": [],
       "primaryGenres": [
-        "country"
+        "shoegaze"
       ],
       "curatorTags": [
         "Shoegaze",
         "band",
-        "country"
+        "shoegaze"
       ],
       "connectionCount": 1,
       "linkedGenres": [
@@ -8753,12 +9030,12 @@
       "zone": "punk-alt",
       "secondaryZones": [],
       "primaryGenres": [
-        "country"
+        "shoegaze"
       ],
       "curatorTags": [
         "Shoegaze",
         "band",
-        "country"
+        "shoegaze"
       ],
       "connectionCount": 2,
       "linkedGenres": [
@@ -8778,9 +9055,9 @@
         "folk"
       ],
       "curatorTags": [
+        "band",
         "country",
-        "folk",
-        "band"
+        "folk"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -8798,9 +9075,9 @@
         "folk"
       ],
       "curatorTags": [
+        "band",
         "country",
-        "folk",
-        "band"
+        "folk"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -8857,13 +9134,12 @@
       "eraStart": 1993,
       "eraPeak": 1993,
       "primaryGenres": [
-        "hard rock",
-        "rock"
+        "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "band",
-        "rock"
+        "hard rock",
+        "metal"
       ],
       "connectionCount": 5,
       "linkedGenres": [],
@@ -8882,9 +9158,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -8927,9 +9203,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 2,
       "linkedGenres": [],
@@ -8948,9 +9224,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -8966,13 +9242,13 @@
         "rock-circuit"
       ],
       "primaryGenres": [
-        "hard rock",
-        "rock"
+        "rock",
+        "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "band",
-        "rock"
+        "rock",
+        "hard rock"
       ],
       "connectionCount": 9,
       "linkedGenres": [],
@@ -8991,9 +9267,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 2,
       "linkedGenres": [],
@@ -9012,9 +9288,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -9033,9 +9309,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -9054,9 +9330,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -9075,9 +9351,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -9096,9 +9372,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -9116,13 +9392,13 @@
       "eraStart": 1965,
       "eraPeak": 1965,
       "primaryGenres": [
-        "hard rock",
-        "heavy metal"
+        "heavy metal",
+        "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "heavy metal",
-        "artist"
+        "artist",
+        "hard rock"
       ],
       "connectionCount": 8,
       "linkedGenres": [],
@@ -9141,9 +9417,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "artist",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -9162,9 +9438,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -9183,9 +9459,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -9199,13 +9475,12 @@
       "zone": "hard-rock-metal",
       "secondaryZones": [],
       "primaryGenres": [
-        "hard rock",
-        "rock"
+        "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "band",
-        "rock"
+        "hard rock",
+        "metal"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -9224,9 +9499,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -9245,9 +9520,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -9266,13 +9541,13 @@
       "eraStart": 1992,
       "eraPeak": 1992,
       "primaryGenres": [
-        "hard rock",
-        "power metal"
+        "power metal",
+        "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "power metal",
-        "band"
+        "band",
+        "hard rock"
       ],
       "connectionCount": 2,
       "linkedGenres": [],
@@ -9291,9 +9566,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 2,
       "linkedGenres": [],
@@ -9309,13 +9584,13 @@
       "eraStart": 1996,
       "eraPeak": 1996,
       "primaryGenres": [
-        "hard rock",
-        "power metal"
+        "power metal",
+        "folk"
       ],
       "curatorTags": [
-        "hard rock",
         "power metal",
-        "band"
+        "band",
+        "folk"
       ],
       "connectionCount": 0,
       "linkedGenres": [],
@@ -9333,13 +9608,13 @@
       "eraStart": 1998,
       "eraPeak": 1998,
       "primaryGenres": [
-        "hard rock",
-        "power metal"
+        "power metal",
+        "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "power metal",
-        "band"
+        "band",
+        "hard rock"
       ],
       "connectionCount": 3,
       "linkedGenres": [],
@@ -9358,9 +9633,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -9379,9 +9654,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "artist",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 3,
       "linkedGenres": [],
@@ -9399,13 +9674,13 @@
       "eraStart": 1977,
       "eraPeak": 1977,
       "primaryGenres": [
-        "hard rock",
-        "power metal"
+        "power metal",
+        "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "power metal",
-        "artist"
+        "artist",
+        "hard rock"
       ],
       "connectionCount": 2,
       "linkedGenres": [],
@@ -9422,9 +9697,9 @@
         "Speed Metal"
       ],
       "curatorTags": [
-        "hard rock",
         "heavy metal",
-        "speed metal"
+        "speed metal",
+        "hard rock"
       ],
       "connectionCount": 3,
       "linkedGenres": [],
@@ -9440,12 +9715,12 @@
         "punk-alt"
       ],
       "primaryGenres": [
-        "hard rock"
+        "speed metal"
       ],
       "curatorTags": [
-        "hard rock",
         "skate punk",
-        "Speed Metal"
+        "Speed Metal",
+        "speed metal"
       ],
       "connectionCount": 2,
       "linkedGenres": [
@@ -9462,13 +9737,12 @@
       "zone": "hard-rock-metal",
       "secondaryZones": [],
       "primaryGenres": [
-        "hard rock",
         "speed metal"
       ],
       "curatorTags": [
-        "hard rock",
         "Speed Metal",
-        "speed metal"
+        "speed metal",
+        "band"
       ],
       "connectionCount": 1,
       "linkedGenres": [
@@ -9507,13 +9781,13 @@
       "eraStart": 1965,
       "eraPeak": 1995,
       "primaryGenres": [
-        "hard rock",
-        "power metal"
+        "power metal",
+        "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "power metal",
-        "artist"
+        "artist",
+        "hard rock"
       ],
       "connectionCount": 2,
       "linkedGenres": [],
@@ -9531,13 +9805,13 @@
       "eraStart": 1959,
       "eraPeak": 1959,
       "primaryGenres": [
-        "hard rock",
-        "heavy metal"
+        "heavy metal",
+        "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "heavy metal",
-        "artist"
+        "artist",
+        "hard rock"
       ],
       "connectionCount": 6,
       "linkedGenres": [],
@@ -9556,9 +9830,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -9577,9 +9851,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -9598,9 +9872,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "artist",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 2,
       "linkedGenres": [],
@@ -9619,9 +9893,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "artist",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -9640,13 +9914,13 @@
       "eraStart": 1962,
       "eraPeak": 1962,
       "primaryGenres": [
-        "hard rock",
-        "power metal"
+        "power metal",
+        "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "power metal",
-        "artist"
+        "artist",
+        "hard rock"
       ],
       "connectionCount": 5,
       "linkedGenres": [],
@@ -9665,9 +9939,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -9685,14 +9959,13 @@
       "eraStart": 1976,
       "eraPeak": 1978,
       "primaryGenres": [
-        "hard rock",
         "death metal",
         "heavy metal"
       ],
       "curatorTags": [
-        "hard rock",
         "death metal",
-        "heavy metal"
+        "heavy metal",
+        "band"
       ],
       "connectionCount": 3,
       "linkedGenres": [],
@@ -9711,9 +9984,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 2,
       "linkedGenres": [],
@@ -9727,13 +10000,13 @@
       "zone": "hard-rock-metal",
       "secondaryZones": [],
       "primaryGenres": [
-        "hard rock",
-        "death metal"
+        "death metal",
+        "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "death metal",
-        "band"
+        "band",
+        "hard rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -9751,13 +10024,13 @@
       "eraStart": 1979,
       "eraPeak": 1983,
       "primaryGenres": [
-        "hard rock",
-        "heavy metal"
+        "heavy metal",
+        "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "heavy metal",
-        "band"
+        "band",
+        "hard rock"
       ],
       "connectionCount": 6,
       "linkedGenres": [],
@@ -9776,9 +10049,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 3,
       "linkedGenres": [],
@@ -9797,13 +10070,13 @@
       "eraStart": 1963,
       "eraPeak": 1993,
       "primaryGenres": [
-        "hard rock",
-        "heavy metal"
+        "heavy metal",
+        "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "heavy metal",
-        "artist"
+        "artist",
+        "hard rock"
       ],
       "connectionCount": 8,
       "linkedGenres": [],
@@ -9860,9 +10133,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "artist",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 2,
       "linkedGenres": [],
@@ -9900,9 +10173,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -9921,9 +10194,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -9966,9 +10239,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 2,
       "linkedGenres": [],
@@ -10007,13 +10280,13 @@
       "eraStart": 1973,
       "eraPeak": 1973,
       "primaryGenres": [
-        "hard rock",
-        "heavy metal"
+        "heavy metal",
+        "rock"
       ],
       "curatorTags": [
-        "hard rock",
         "heavy metal",
-        "artist"
+        "artist",
+        "rock"
       ],
       "connectionCount": 7,
       "linkedGenres": [],
@@ -10032,9 +10305,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -10053,9 +10326,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -10074,9 +10347,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "artist",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -10116,9 +10389,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -10135,9 +10408,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -10154,9 +10427,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -10248,18 +10521,17 @@
     "amy-lee": {
       "zone": "rock-circuit",
       "secondaryZones": [
-        "hard-rock-metal"
+        "hip-hop-rap"
       ],
       "eraStart": 1981,
       "eraPeak": 1981,
       "primaryGenres": [
-        "hard rock",
         "rock"
       ],
       "curatorTags": [
-        "hard rock",
         "rock",
-        "artist"
+        "artist",
+        "classic rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -10360,12 +10632,11 @@
       "eraStart": 1963,
       "eraPeak": 1963,
       "primaryGenres": [
-        "country rock",
         "country",
         "folk"
       ],
       "curatorTags": [
-        "country rock",
+        "artist",
         "country",
         "folk"
       ],
@@ -10386,9 +10657,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -10407,9 +10678,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -10425,12 +10696,11 @@
       "eraStart": 1963,
       "eraPeak": 1963,
       "primaryGenres": [
-        "hard rock",
         "country",
         "folk"
       ],
       "curatorTags": [
-        "hard rock",
+        "artist",
         "country",
         "folk"
       ],
@@ -10509,13 +10779,12 @@
         "rock-circuit"
       ],
       "primaryGenres": [
-        "hard rock",
-        "rock"
+        "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "band",
-        "rock"
+        "hard rock",
+        "metal"
       ],
       "connectionCount": 2,
       "linkedGenres": [],
@@ -10529,13 +10798,12 @@
       "zone": "hard-rock-metal",
       "secondaryZones": [],
       "primaryGenres": [
-        "hard rock",
-        "rock"
+        "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "band",
-        "rock"
+        "hard rock",
+        "metal"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -10549,13 +10817,12 @@
       "zone": "hard-rock-metal",
       "secondaryZones": [],
       "primaryGenres": [
-        "hard rock",
-        "rock"
+        "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "artist",
-        "rock"
+        "hard rock",
+        "metal"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -10569,13 +10836,12 @@
       "zone": "hard-rock-metal",
       "secondaryZones": [],
       "primaryGenres": [
-        "hard rock",
-        "rock"
+        "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "band",
-        "rock"
+        "hard rock",
+        "metal"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -10587,21 +10853,22 @@
     },
     "reo-speedwagon": {
       "zone": "rock-circuit",
-      "secondaryZones": [],
+      "secondaryZones": [
+        "hip-hop-rap"
+      ],
       "eraStart": 1967,
       "eraPeak": 1967,
       "primaryGenres": [
-        "hard rock",
         "rock"
       ],
       "curatorTags": [
-        "hard rock",
         "rock",
-        "band"
+        "band",
+        "classic rock"
       ],
       "connectionCount": 5,
       "linkedGenres": [],
-      "bridgeScore": 0,
+      "bridgeScore": 0.22,
       "hubScore": 0.417,
       "layoutHints": {
         "pinned": false
@@ -10614,9 +10881,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "artist",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -10633,9 +10900,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -10646,17 +10913,18 @@
       }
     },
     "drake": {
-      "zone": "rock-circuit",
+      "zone": "hip-hop-rap",
       "secondaryZones": [
-        "psychedelia-prog"
+        "rock-circuit"
       ],
       "primaryGenres": [
-        "rock"
+        "hip-hop",
+        "rap"
       ],
       "curatorTags": [
-        "rock",
         "artist",
-        "classic rock"
+        "hip-hop",
+        "rap"
       ],
       "connectionCount": 2,
       "linkedGenres": [],
@@ -10673,9 +10941,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -10692,9 +10960,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 0,
       "linkedGenres": [],
@@ -10706,18 +10974,20 @@
     },
     "journey": {
       "zone": "rock-circuit",
-      "secondaryZones": [],
+      "secondaryZones": [
+        "hip-hop-rap"
+      ],
       "primaryGenres": [
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 0,
       "linkedGenres": [],
-      "bridgeScore": 0,
+      "bridgeScore": 0.22,
       "hubScore": 0,
       "layoutHints": {
         "pinned": false
@@ -10753,9 +11023,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -10793,13 +11063,12 @@
       "eraStart": 1937,
       "eraPeak": 2008,
       "primaryGenres": [
-        "country rock",
         "country",
         "folk"
       ],
       "curatorTags": [
-        "country rock",
         "country",
+        "artist",
         "folk"
       ],
       "connectionCount": 0,
@@ -10838,12 +11107,11 @@
       "eraStart": 1932,
       "eraPeak": 2020,
       "primaryGenres": [
-        "country rock",
         "country",
         "folk"
       ],
       "curatorTags": [
-        "country rock",
+        "artist",
         "country",
         "folk"
       ],
@@ -10862,12 +11130,12 @@
       "eraPeak": 1977,
       "primaryGenres": [
         "southern rock",
-        "blues"
+        "rock"
       ],
       "curatorTags": [
         "southern rock",
-        "blues",
-        "artist"
+        "artist",
+        "rock"
       ],
       "connectionCount": 0,
       "linkedGenres": [],
@@ -11034,9 +11302,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -11055,9 +11323,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -11144,9 +11412,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -11165,9 +11433,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "guitarist",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -11186,9 +11454,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -11207,9 +11475,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -11228,9 +11496,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "artist",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -11249,9 +11517,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -11285,7 +11553,7 @@
     "new-york-dolls": {
       "zone": "punk-alt",
       "secondaryZones": [
-        "rock-circuit"
+        "hip-hop-rap"
       ],
       "eraStart": 1971,
       "eraPeak": 1974,
@@ -11309,19 +11577,20 @@
     "baker-s-biographical-dictionary-of-musicians": {
       "zone": "rock-circuit",
       "secondaryZones": [
+        "hip-hop-rap",
         "punk-alt"
       ],
       "primaryGenres": [
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "artist",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
-      "bridgeScore": 0.22,
+      "bridgeScore": 0.44,
       "hubScore": 0.083,
       "layoutHints": {
         "pinned": false
@@ -11362,9 +11631,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -11383,9 +11652,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "artist",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -11606,9 +11875,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -11778,9 +12047,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -11951,9 +12220,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "artist",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 5,
       "linkedGenres": [],
@@ -11987,7 +12256,8 @@
     "fugazi": {
       "zone": "punk-alt",
       "secondaryZones": [
-        "rock-circuit"
+        "rock-circuit",
+        "hip-hop-rap"
       ],
       "eraStart": 1986,
       "eraPeak": 1986,
@@ -12002,7 +12272,7 @@
       ],
       "connectionCount": 8,
       "linkedGenres": [],
-      "bridgeScore": 0.22,
+      "bridgeScore": 0.44,
       "hubScore": 0.667,
       "layoutHints": {
         "pinned": false
@@ -12017,9 +12287,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -12038,9 +12308,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -12059,9 +12329,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -12080,9 +12350,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -12101,9 +12371,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -12140,8 +12410,8 @@
       ],
       "curatorTags": [
         "blues",
-        "country",
-        "funk"
+        "roots",
+        "country"
       ],
       "connectionCount": 0,
       "linkedGenres": [],
@@ -12241,19 +12511,20 @@
       }
     },
     "n-w-a": {
-      "zone": "rock-circuit",
+      "zone": "hip-hop-rap",
       "secondaryZones": [
         "roots-blues"
       ],
       "eraStart": 1987,
       "eraPeak": 1987,
       "primaryGenres": [
-        "rock"
+        "gangsta rap",
+        "west coast hip-hop"
       ],
       "curatorTags": [
-        "rock",
-        "band",
-        "classic rock"
+        "gangsta rap",
+        "west coast hip-hop",
+        "compton"
       ],
       "connectionCount": 2,
       "linkedGenres": [],
@@ -12264,61 +12535,60 @@
       }
     },
     "chicago": {
-      "zone": "rock-circuit",
-      "secondaryZones": [
-        "psychedelia-prog"
-      ],
+      "zone": "hip-hop-rap",
+      "secondaryZones": [],
       "primaryGenres": [
-        "rock"
+        "hip-hop",
+        "rap"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "hip-hop",
+        "rap"
       ],
       "connectionCount": 4,
       "linkedGenres": [],
-      "bridgeScore": 0.22,
+      "bridgeScore": 0,
       "hubScore": 0.333,
       "layoutHints": {
         "pinned": false
       }
     },
     "public-enemy": {
-      "zone": "rock-circuit",
+      "zone": "hip-hop-rap",
       "secondaryZones": [
         "hard-rock-metal",
-        "punk-alt",
         "guitar-workshop"
       ],
       "eraStart": 1985,
       "eraPeak": 1985,
       "primaryGenres": [
-        "rock"
+        "hip-hop"
       ],
       "curatorTags": [
-        "rock",
-        "band",
-        "classic rock"
+        "political hip-hop",
+        "east coast hip-hop",
+        "rap"
       ],
       "connectionCount": 7,
       "linkedGenres": [],
-      "bridgeScore": 0.66,
+      "bridgeScore": 0.44,
       "hubScore": 0.583,
       "layoutHints": {
         "pinned": false
       }
     },
     "bandleader": {
-      "zone": "rock-circuit",
+      "zone": "hip-hop-rap",
       "secondaryZones": [],
       "primaryGenres": [
-        "rock"
+        "hip-hop",
+        "rap"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "hip-hop",
+        "rap"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -12331,7 +12601,7 @@
     "bass-guitars": {
       "zone": "guitar-workshop",
       "secondaryZones": [
-        "rock-circuit"
+        "hip-hop-rap"
       ],
       "primaryGenres": [],
       "curatorTags": [
@@ -12348,15 +12618,16 @@
       }
     },
     "blue-magic": {
-      "zone": "rock-circuit",
+      "zone": "hip-hop-rap",
       "secondaryZones": [],
       "primaryGenres": [
-        "rock"
+        "hip-hop",
+        "rap"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "hip-hop",
+        "rap"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -12367,15 +12638,18 @@
       }
     },
     "thug-life": {
-      "zone": "psychedelia-prog",
+      "zone": "hip-hop-rap",
       "secondaryZones": [],
       "eraStart": 2001,
       "eraPeak": 2025,
-      "primaryGenres": [],
+      "primaryGenres": [
+        "hip-hop",
+        "gangsta rap"
+      ],
       "curatorTags": [
-        "band",
-        "progressive",
-        "psychedelic"
+        "west coast hip-hop",
+        "tupac connection",
+        "rap collective"
       ],
       "connectionCount": 0,
       "linkedGenres": [],
@@ -12386,38 +12660,40 @@
       }
     },
     "digital-underground": {
-      "zone": "rock-circuit",
-      "secondaryZones": [],
+      "zone": "hip-hop-rap",
+      "secondaryZones": [
+        "rock-circuit"
+      ],
       "eraStart": 1987,
       "eraPeak": 1987,
       "primaryGenres": [
-        "rock",
+        "hip-hop",
         "funk"
       ],
       "curatorTags": [
-        "rock",
-        "band",
-        "funk"
+        "alternative hip-hop",
+        "funk",
+        "tupac connection"
       ],
       "connectionCount": 3,
       "linkedGenres": [],
-      "bridgeScore": 0,
+      "bridgeScore": 0.22,
       "hubScore": 0.25,
       "layoutHints": {
         "pinned": false
       }
     },
     "george-clinton": {
-      "zone": "rock-circuit",
+      "zone": "hip-hop-rap",
       "secondaryZones": [],
       "primaryGenres": [
-        "rock",
-        "funk"
+        "funk",
+        "hip-hop"
       ],
       "curatorTags": [
-        "rock",
         "artist",
-        "funk"
+        "funk",
+        "hip-hop"
       ],
       "connectionCount": 2,
       "linkedGenres": [],
@@ -12428,17 +12704,17 @@
       }
     },
     "eminem": {
-      "zone": "rock-circuit",
+      "zone": "hip-hop-rap",
       "secondaryZones": [],
       "eraStart": 1972,
       "eraPeak": 1972,
       "primaryGenres": [
-        "rock"
+        "hip-hop"
       ],
       "curatorTags": [
-        "rock",
-        "artist",
-        "classic rock"
+        "rap",
+        "detroit hip-hop",
+        "dr. dre connection"
       ],
       "connectionCount": 0,
       "linkedGenres": [],
@@ -12449,15 +12725,15 @@
       }
     },
     "outsidaz": {
-      "zone": "rock-circuit",
+      "zone": "hip-hop-rap",
       "secondaryZones": [],
       "primaryGenres": [
-        "rock"
+        "hip-hop"
       ],
       "curatorTags": [
-        "rock",
-        "band",
-        "classic rock"
+        "east coast hip-hop",
+        "rap collective",
+        "eminem connection"
       ],
       "connectionCount": 0,
       "linkedGenres": [],
@@ -12468,58 +12744,55 @@
       }
     },
     "gangsta-rap": {
-      "zone": "psychedelia-prog",
-      "secondaryZones": [
-        "hard-rock-metal",
-        "rock-circuit"
-      ],
+      "zone": "hip-hop-rap",
+      "secondaryZones": [],
       "primaryGenres": [
-        "Gangsta rap"
+        "gangsta rap"
       ],
       "curatorTags": [
-        "progressive",
-        "psychedelic"
+        "gangsta rap",
+        "hip-hop",
+        "west coast"
       ],
       "connectionCount": 2,
       "linkedGenres": [],
-      "bridgeScore": 0.44,
+      "bridgeScore": 0,
       "hubScore": 0.167,
       "layoutHints": {
         "pinned": false
       }
     },
     "c-i-a": {
-      "zone": "rock-circuit",
-      "secondaryZones": [
-        "psychedelia-prog"
-      ],
+      "zone": "hip-hop-rap",
+      "secondaryZones": [],
       "primaryGenres": [
-        "rock"
+        "gangsta rap",
+        "rap"
       ],
       "curatorTags": [
         "Gangsta rap",
-        "rock",
-        "band"
+        "gangsta rap",
+        "rap"
       ],
       "connectionCount": 2,
       "linkedGenres": [
         "gangsta-rap"
       ],
-      "bridgeScore": 0.3,
+      "bridgeScore": 0.08,
       "hubScore": 0.167,
       "layoutHints": {
         "pinned": false
       }
     },
     "g-funk": {
-      "zone": "rock-circuit",
+      "zone": "hip-hop-rap",
       "secondaryZones": [],
       "primaryGenres": [
-        "G-funk"
+        "g-funk"
       ],
       "curatorTags": [
-        "rock",
-        "classic rock",
+        "g-funk",
+        "west coast hip-hop",
         "funk"
       ],
       "connectionCount": 0,
@@ -12531,60 +12804,60 @@
       }
     },
     "dr-dre": {
-      "zone": "psychedelia-prog",
-      "secondaryZones": [
-        "rock-circuit"
-      ],
+      "zone": "hip-hop-rap",
+      "secondaryZones": [],
       "eraStart": 1965,
       "eraPeak": 1965,
-      "primaryGenres": [],
+      "primaryGenres": [
+        "g-funk",
+        "west coast hip-hop"
+      ],
       "curatorTags": [
-        "artist",
-        "progressive",
-        "psychedelic"
+        "g-funk",
+        "west coast hip-hop",
+        "producer"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
-      "bridgeScore": 0.22,
+      "bridgeScore": 0,
       "hubScore": 0.083,
       "layoutHints": {
         "pinned": false
       }
     },
     "babyface": {
-      "zone": "rock-circuit",
-      "secondaryZones": [
-        "psychedelia-prog"
-      ],
+      "zone": "hip-hop-rap",
+      "secondaryZones": [],
       "primaryGenres": [
-        "rock"
+        "hip-hop",
+        "rap"
       ],
       "curatorTags": [
-        "rock",
         "artist",
-        "classic rock"
+        "hip-hop",
+        "rap"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
-      "bridgeScore": 0.22,
+      "bridgeScore": 0,
       "hubScore": 0.083,
       "layoutHints": {
         "pinned": false
       }
     },
     "eazy-e": {
-      "zone": "rock-circuit",
+      "zone": "hip-hop-rap",
       "secondaryZones": [],
       "eraStart": 1964,
       "eraPeak": 1995,
       "primaryGenres": [
-        "rock",
-        "funk"
+        "gangsta rap",
+        "west coast hip-hop"
       ],
       "curatorTags": [
-        "rock",
-        "artist",
-        "funk"
+        "gangsta rap",
+        "west coast hip-hop",
+        "n.w.a"
       ],
       "connectionCount": 3,
       "linkedGenres": [],
@@ -12595,15 +12868,16 @@
       }
     },
     "glenn-hughes": {
-      "zone": "rock-circuit",
+      "zone": "hip-hop-rap",
       "secondaryZones": [],
       "primaryGenres": [
-        "rock"
+        "hip-hop",
+        "rap"
       ],
       "curatorTags": [
-        "rock",
         "artist",
-        "classic rock"
+        "hip-hop",
+        "rap"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -12614,57 +12888,59 @@
       }
     },
     "d12": {
-      "zone": "psychedelia-prog",
-      "secondaryZones": [
-        "rock-circuit"
-      ],
+      "zone": "hip-hop-rap",
+      "secondaryZones": [],
       "eraStart": 1996,
       "eraPeak": 1996,
-      "primaryGenres": [],
+      "primaryGenres": [
+        "hip-hop"
+      ],
       "curatorTags": [
-        "band",
-        "progressive",
-        "psychedelic"
+        "detroit hip-hop",
+        "rap collective",
+        "eminem connection"
       ],
       "connectionCount": 2,
       "linkedGenres": [],
-      "bridgeScore": 0.22,
+      "bridgeScore": 0,
       "hubScore": 0.167,
       "layoutHints": {
         "pinned": false
       }
     },
     "my-band": {
-      "zone": "rock-circuit",
-      "secondaryZones": [
-        "psychedelia-prog"
-      ],
+      "zone": "hip-hop-rap",
+      "secondaryZones": [],
       "primaryGenres": [
-        "rock"
+        "hip-hop",
+        "rap"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "hip-hop",
+        "rap"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
-      "bridgeScore": 0.22,
+      "bridgeScore": 0,
       "hubScore": 0.083,
       "layoutHints": {
         "pinned": false
       }
     },
     "tupac-shakur": {
-      "zone": "psychedelia-prog",
+      "zone": "hip-hop-rap",
       "secondaryZones": [],
       "eraStart": 1971,
       "eraPeak": 1996,
-      "primaryGenres": [],
+      "primaryGenres": [
+        "hip-hop",
+        "west coast hip-hop"
+      ],
       "curatorTags": [
-        "artist",
-        "progressive",
-        "psychedelic"
+        "west coast hip-hop",
+        "rap",
+        "thug life"
       ],
       "connectionCount": 0,
       "linkedGenres": [],
@@ -12675,15 +12951,15 @@
       }
     },
     "west-coast-hip-hop": {
-      "zone": "rock-circuit",
+      "zone": "hip-hop-rap",
       "secondaryZones": [],
       "primaryGenres": [
-        "West Coast hip-hop"
+        "west coast hip-hop"
       ],
       "curatorTags": [
-        "rock",
-        "classic rock",
-        "funk"
+        "west coast hip-hop",
+        "hip-hop",
+        "california rap"
       ],
       "connectionCount": 0,
       "linkedGenres": [],
@@ -12694,21 +12970,22 @@
       }
     },
     "ice-cube": {
-      "zone": "psychedelia-prog",
-      "secondaryZones": [
-        "rock-circuit"
-      ],
+      "zone": "hip-hop-rap",
+      "secondaryZones": [],
       "eraStart": 1969,
       "eraPeak": 1990,
-      "primaryGenres": [],
+      "primaryGenres": [
+        "gangsta rap",
+        "west coast hip-hop"
+      ],
       "curatorTags": [
-        "artist",
-        "progressive",
-        "psychedelic"
+        "gangsta rap",
+        "west coast hip-hop",
+        "n.w.a"
       ],
       "connectionCount": 2,
       "linkedGenres": [],
-      "bridgeScore": 0.22,
+      "bridgeScore": 0,
       "hubScore": 0.167,
       "layoutHints": {
         "pinned": false
@@ -12722,13 +12999,13 @@
       "eraStart": 1990,
       "eraPeak": 1990,
       "primaryGenres": [
-        "hard rock",
-        "heavy metal"
+        "heavy metal",
+        "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "heavy metal",
-        "band"
+        "band",
+        "hard rock"
       ],
       "connectionCount": 6,
       "linkedGenres": [],
@@ -12747,9 +13024,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -12768,9 +13045,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -12789,9 +13066,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -12810,9 +13087,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -12829,9 +13106,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 0,
       "linkedGenres": [],
@@ -12850,13 +13127,13 @@
       "eraStart": 1958,
       "eraPeak": 1993,
       "primaryGenres": [
-        "hard rock",
-        "heavy metal"
+        "heavy metal",
+        "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "heavy metal",
-        "artist"
+        "artist",
+        "hard rock"
       ],
       "connectionCount": 6,
       "linkedGenres": [],
@@ -12898,9 +13175,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -12919,9 +13196,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -12941,13 +13218,13 @@
       "eraStart": 1984,
       "eraPeak": 1984,
       "primaryGenres": [
-        "hard rock",
-        "heavy metal"
+        "heavy metal",
+        "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "heavy metal",
-        "band"
+        "band",
+        "hard rock"
       ],
       "connectionCount": 5,
       "linkedGenres": [],
@@ -12966,9 +13243,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -13006,9 +13283,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -13027,9 +13304,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -13109,13 +13386,12 @@
       "eraStart": 1955,
       "eraPeak": 1955,
       "primaryGenres": [
-        "hard rock",
         "rock"
       ],
       "curatorTags": [
-        "hard rock",
         "rock",
-        "guitarist"
+        "guitarist",
+        "classic rock"
       ],
       "connectionCount": 5,
       "linkedGenres": [],
@@ -13132,9 +13408,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -13151,9 +13427,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -13172,9 +13448,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "guitarist",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -13194,13 +13470,13 @@
       "eraStart": 1957,
       "eraPeak": 1990,
       "primaryGenres": [
-        "hard rock",
-        "heavy metal"
+        "heavy metal",
+        "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "heavy metal",
-        "guitarist"
+        "guitarist",
+        "hard rock"
       ],
       "connectionCount": 6,
       "linkedGenres": [],
@@ -13219,9 +13495,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -13240,9 +13516,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -13262,13 +13538,13 @@
       "eraStart": 1967,
       "eraPeak": 1967,
       "primaryGenres": [
-        "hard rock",
-        "heavy metal"
+        "heavy metal",
+        "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "heavy metal",
-        "artist"
+        "artist",
+        "hard rock"
       ],
       "connectionCount": 10,
       "linkedGenres": [],
@@ -13287,9 +13563,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -13308,9 +13584,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "artist",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -13348,9 +13624,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "artist",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -13364,13 +13640,13 @@
       "zone": "hard-rock-metal",
       "secondaryZones": [],
       "primaryGenres": [
-        "hard rock",
-        "heavy metal"
+        "heavy metal",
+        "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "heavy metal",
-        "band"
+        "band",
+        "hard rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -13413,9 +13689,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -13434,9 +13710,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "artist",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 2,
       "linkedGenres": [],
@@ -13455,9 +13731,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -13498,9 +13774,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 2,
       "linkedGenres": [],
@@ -13514,13 +13790,12 @@
       "zone": "hard-rock-metal",
       "secondaryZones": [],
       "primaryGenres": [
-        "hard rock",
-        "rock"
+        "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "band",
-        "rock"
+        "hard rock",
+        "metal"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -13536,13 +13811,13 @@
         "rock-circuit"
       ],
       "primaryGenres": [
-        "hard rock",
-        "power metal"
+        "power metal",
+        "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "power metal",
-        "band"
+        "band",
+        "hard rock"
       ],
       "connectionCount": 4,
       "linkedGenres": [],
@@ -13561,9 +13836,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -13582,9 +13857,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -13603,9 +13878,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -13624,9 +13899,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -13669,9 +13944,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "artist",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 2,
       "linkedGenres": [],
@@ -13688,9 +13963,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -13709,9 +13984,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 2,
       "linkedGenres": [],
@@ -13728,9 +14003,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -13780,20 +14055,22 @@
     },
     "buckethead": {
       "zone": "rock-circuit",
-      "secondaryZones": [],
+      "secondaryZones": [
+        "hip-hop-rap"
+      ],
       "eraStart": 1969,
       "eraPeak": 1969,
       "primaryGenres": [
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "guitarist",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 0,
       "linkedGenres": [],
-      "bridgeScore": 0,
+      "bridgeScore": 0.22,
       "hubScore": 0,
       "layoutHints": {
         "pinned": false
@@ -13830,8 +14107,7 @@
       ],
       "curatorTags": [
         "rock",
-        "progressive",
-        "psychedelic"
+        "classic rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -13892,9 +14168,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -13959,9 +14235,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "artist",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 2,
       "linkedGenres": [],
@@ -13980,9 +14256,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -14001,13 +14277,13 @@
       "eraStart": 2001,
       "eraPeak": 2001,
       "primaryGenres": [
-        "hard rock",
-        "heavy metal"
+        "heavy metal",
+        "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "heavy metal",
-        "band"
+        "band",
+        "hard rock"
       ],
       "connectionCount": 4,
       "linkedGenres": [],
@@ -14040,13 +14316,12 @@
       "zone": "hard-rock-metal",
       "secondaryZones": [],
       "primaryGenres": [
-        "hard rock",
-        "rock"
+        "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "artist",
-        "rock"
+        "hard rock",
+        "metal"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -14087,9 +14362,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "artist",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -14126,13 +14401,13 @@
       "eraStart": 1997,
       "eraPeak": 2000,
       "primaryGenres": [
-        "hard rock",
-        "glam metal"
+        "glam metal",
+        "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "glam metal",
-        "band"
+        "band",
+        "hard rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -14151,9 +14426,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -14167,24 +14442,24 @@
       "zone": "rock-circuit",
       "secondaryZones": [
         "guitar-workshop",
+        "hip-hop-rap",
         "hard-rock-metal"
       ],
       "eraStart": 1994,
       "eraPeak": 1994,
       "primaryGenres": [
-        "hard rock",
         "rock"
       ],
       "curatorTags": [
         "American rock music duos",
-        "hard rock",
-        "rock"
+        "rock",
+        "band"
       ],
       "connectionCount": 4,
       "linkedGenres": [
         "american-rock-music-duos"
       ],
-      "bridgeScore": 0.52,
+      "bridgeScore": 0.74,
       "hubScore": 0.333,
       "layoutHints": {
         "pinned": false
@@ -14242,9 +14517,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "artist",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -14263,9 +14538,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "artist",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -14284,9 +14559,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "artist",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -14324,9 +14599,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "band",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -14345,9 +14620,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "artist",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -14383,9 +14658,9 @@
         "glam metal"
       ],
       "curatorTags": [
-        "hard rock",
         "glam rock",
-        "heavy metal"
+        "heavy metal",
+        "hard rock"
       ],
       "connectionCount": 2,
       "linkedGenres": [],
@@ -14428,9 +14703,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "artist",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -14449,9 +14724,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "artist",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 2,
       "linkedGenres": [],
@@ -14470,9 +14745,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "guitarist",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 2,
       "linkedGenres": [],
@@ -14491,9 +14766,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "guitarist",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -14512,9 +14787,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "artist",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -14533,9 +14808,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "guitarist",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -14601,9 +14876,9 @@
         "rock"
       ],
       "curatorTags": [
-        "rock",
         "artist",
-        "classic rock"
+        "classic rock",
+        "rock"
       ],
       "connectionCount": 1,
       "linkedGenres": [],
@@ -14622,13 +14897,13 @@
       "eraStart": 1963,
       "eraPeak": 1989,
       "primaryGenres": [
-        "hard rock",
-        "power metal"
+        "power metal",
+        "hard rock"
       ],
       "curatorTags": [
-        "hard rock",
         "power metal",
-        "guitarist"
+        "guitarist",
+        "hard rock"
       ],
       "connectionCount": 10,
       "linkedGenres": [],

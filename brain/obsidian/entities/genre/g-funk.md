@@ -2,13 +2,13 @@
 id: g-funk
 label: G-funk
 type: genre
-zone: rock-circuit
+zone: hip-hop-rap
 roles: [genre]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: [G-funk]
-curatorTags: [rock, classic rock, funk]
+primaryGenres: [g-funk]
+curatorTags: [g-funk, west coast hip-hop, funk]
 secondaryZones: []
 layoutPinned: false
 layoutX: 308

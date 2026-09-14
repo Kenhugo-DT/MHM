@@ -8,7 +8,7 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [Rock and roll]
-curatorTags: [blues, blues rock, rock and roll]
+curatorTags: [blues, rock and roll, roots]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1125

@@ -7,8 +7,8 @@ roles: [artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: [country]
-curatorTags: [Shoegaze, artist, country]
+primaryGenres: [shoegaze]
+curatorTags: [Shoegaze, artist, shoegaze]
 secondaryZones: []
 layoutPinned: false
 layoutX: -491

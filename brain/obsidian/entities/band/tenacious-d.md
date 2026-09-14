@@ -7,8 +7,8 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: [hard rock, rock]
-curatorTags: [American rock music duos, hard rock, rock]
+primaryGenres: [rock]
+curatorTags: [American rock music duos, rock, band]
 secondaryZones: []
 layoutPinned: false
 layoutX: 2239

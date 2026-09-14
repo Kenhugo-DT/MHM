@@ -2,13 +2,13 @@
 id: chicago
 label: Chicago
 type: band
-zone: rock-circuit
+zone: hip-hop-rap
 roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: [rock]
-curatorTags: [rock, band, classic rock]
+primaryGenres: [hip-hop, rap]
+curatorTags: [band, hip-hop, rap]
 secondaryZones: []
 layoutPinned: false
 layoutX: -347

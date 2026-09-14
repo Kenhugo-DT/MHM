@@ -8,7 +8,7 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [Speed Metal]
-curatorTags: [hard rock, heavy metal, speed metal]
+curatorTags: [heavy metal, speed metal, hard rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 2010

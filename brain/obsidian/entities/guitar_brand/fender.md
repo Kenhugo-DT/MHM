@@ -8,7 +8,7 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: []
-curatorTags: [guitar brand, manufacturer, jazz]
+curatorTags: [guitar brand, manufacturer, guitar]
 secondaryZones: []
 layoutPinned: false
 layoutX: 3507

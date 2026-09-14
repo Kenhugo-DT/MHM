@@ -8,7 +8,7 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [Norwegian vise]
-curatorTags: [country, folk]
+curatorTags: [folk, country]
 secondaryZones: []
 layoutPinned: false
 layoutX: -742

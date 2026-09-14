@@ -8,7 +8,7 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: []
-curatorTags: [electric guitar, hard rock, heavy metal]
+curatorTags: [electric guitar, heavy metal, guitar]
 secondaryZones: []
 layoutPinned: false
 layoutX: 3221

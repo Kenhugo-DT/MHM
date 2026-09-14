@@ -80,6 +80,16 @@ export const MAP_ZONES: MapZone[] = [
     color: 0xbd7049,
   },
   {
+    id: "hip-hop-rap",
+    label: "HIP-HOP / RAP",
+    mode: "artists",
+    x: 2680,
+    y: 920,
+    width: 1740,
+    height: 1180,
+    color: 0xc78a63,
+  },
+  {
     id: "folk-country-vise",
     label: "FOLK / COUNTRY / VISE",
     mode: "artists",

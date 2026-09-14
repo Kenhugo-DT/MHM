@@ -15,6 +15,9 @@ on:
         description: "Optional run note."
         required: false
         default: ""
+  schedule:
+    # Mondays and Thursdays at 09:05 UTC.
+    - cron: "5 9 * * 1,4"
 
 permissions:
   contents: read
@@ -47,7 +50,7 @@ jobs:
           AGENT_LIMIT: ${{ github.event.inputs.limit || '2' }}
           AGENT_TRIGGER_NOTE: ${{ github.event.inputs.note || '' }}
       - name: Run scout agent
-        run: npm run brain:agent -- --source supabase --limit "${AGENT_LIMIT:-2}"
+        run: npm run brain:agent -- --source supabase --auto-queue-frontier --process --limit "${AGENT_LIMIT:-2}"
         env:
           AGENT_LIMIT: ${{ github.event.inputs.limit || '2' }}
           MUSICBRAINZ_CONTACT: ${{ secrets.MUSICBRAINZ_CONTACT }}

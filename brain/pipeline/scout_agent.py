@@ -56,6 +56,7 @@ ZONE_HINTS = {
     "rock-circuit": "rock, blues-rock and classic band connections",
     "psychedelia-prog": "psychedelia, art rock and progressive guitar history",
     "hard-rock-metal": "hard rock, metal, riff culture and heavier guitar history",
+    "hip-hop-rap": "hip-hop, rap, funk-rap, rap rock and crossovers into punk, metal and guitar-driven music",
     "folk-country-vise": "folk, country, singer-songwriter and Norwegian vise traditions",
     "guitar-workshop": "guitar models, makers and instrument history",
     "guitar-genres": "genres connected to guitar models and brands",

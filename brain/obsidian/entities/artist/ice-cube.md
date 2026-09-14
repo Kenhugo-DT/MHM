@@ -2,13 +2,13 @@
 id: ice-cube
 label: Ice Cube
 type: artist
-zone: psychedelia-prog
+zone: hip-hop-rap
 roles: [artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
-curatorTags: [artist, progressive, psychedelic]
+primaryGenres: [gangsta rap, west coast hip-hop]
+curatorTags: [gangsta rap, west coast hip-hop, n.w.a]
 secondaryZones: []
 layoutPinned: false
 layoutX: 451

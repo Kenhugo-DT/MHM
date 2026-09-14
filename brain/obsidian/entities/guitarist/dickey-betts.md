@@ -7,8 +7,8 @@ roles: [guitarist, artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: [southern rock, blues]
-curatorTags: [Southern rock, southern rock, blues]
+primaryGenres: [southern rock]
+curatorTags: [Southern rock, southern rock, guitarist]
 secondaryZones: []
 layoutPinned: false
 layoutX: -975

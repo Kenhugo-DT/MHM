@@ -2,13 +2,13 @@
 id: drake
 label: Drake
 type: artist
-zone: rock-circuit
+zone: hip-hop-rap
 roles: [artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: [rock]
-curatorTags: [rock, artist, classic rock]
+primaryGenres: [hip-hop, rap]
+curatorTags: [artist, hip-hop, rap]
 secondaryZones: []
 layoutPinned: false
 layoutX: -201

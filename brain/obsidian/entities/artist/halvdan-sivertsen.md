@@ -7,8 +7,8 @@ roles: [artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: [country, folk]
-curatorTags: [Norwegian vise, country, folk]
+primaryGenres: [folk]
+curatorTags: [Norwegian vise, folk, artist]
 secondaryZones: []
 layoutPinned: false
 layoutX: -665

@@ -7,8 +7,8 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: [country]
-curatorTags: [Shoegaze, band, country]
+primaryGenres: [shoegaze]
+curatorTags: [Shoegaze, band, shoegaze]
 secondaryZones: []
 layoutPinned: false
 layoutX: -914

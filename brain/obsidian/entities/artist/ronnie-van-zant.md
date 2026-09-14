@@ -7,8 +7,8 @@ roles: [artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: [southern rock, blues]
-curatorTags: [southern rock, blues, artist]
+primaryGenres: [southern rock, rock]
+curatorTags: [southern rock, artist, rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -171

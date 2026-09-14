@@ -8,7 +8,7 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [Singer-songwriter]
-curatorTags: [country, folk, rock]
+curatorTags: [folk, country, rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -472

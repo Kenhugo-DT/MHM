@@ -8,7 +8,7 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [glam metal]
-curatorTags: [hard rock, glam rock, heavy metal]
+curatorTags: [glam rock, heavy metal, hard rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1296

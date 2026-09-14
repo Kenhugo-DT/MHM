@@ -2,13 +2,13 @@
 id: thug-life
 label: Thug Life
 type: band
-zone: psychedelia-prog
+zone: hip-hop-rap
 roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
-curatorTags: [band, progressive, psychedelic]
+primaryGenres: [hip-hop, gangsta rap]
+curatorTags: [west coast hip-hop, tupac connection, rap collective]
 secondaryZones: []
 layoutPinned: false
 layoutX: 538

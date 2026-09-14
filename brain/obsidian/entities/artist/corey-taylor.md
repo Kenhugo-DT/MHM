@@ -7,8 +7,8 @@ roles: [artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: [hard rock, heavy metal]
-curatorTags: [hard rock, heavy metal, artist]
+primaryGenres: [heavy metal, rock]
+curatorTags: [heavy metal, artist, rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 2206

@@ -2,13 +2,13 @@
 id: digital-underground
 label: Digital Underground
 type: band
-zone: rock-circuit
+zone: hip-hop-rap
 roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: [rock, funk]
-curatorTags: [rock, band, funk]
+primaryGenres: [hip-hop, funk]
+curatorTags: [alternative hip-hop, funk, tupac connection]
 secondaryZones: []
 layoutPinned: false
 layoutX: -628

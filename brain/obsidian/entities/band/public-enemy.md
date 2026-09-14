@@ -2,13 +2,13 @@
 id: public-enemy
 label: Public Enemy
 type: band
-zone: rock-circuit
+zone: hip-hop-rap
 roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: [rock]
-curatorTags: [rock, band, classic rock]
+primaryGenres: [hip-hop]
+curatorTags: [political hip-hop, east coast hip-hop, rap]
 secondaryZones: []
 layoutPinned: false
 layoutX: -434

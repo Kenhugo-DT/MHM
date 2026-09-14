@@ -20,6 +20,7 @@ const ZONE_TAGS = {
   "psychedelia-prog": ["psychedelic", "progressive"],
   "hard-rock-metal": ["hard rock", "metal"],
   "punk-alt": ["punk", "alternative"],
+  "hip-hop-rap": ["hip-hop", "rap"],
   "folk-country-vise": ["folk", "country"],
   "guitar-workshop": ["guitar", "instrument"],
 };
@@ -82,6 +83,30 @@ const ZONE_KEYWORDS = {
     "shoegaze",
     "grunge",
   ],
+  "hip-hop-rap": [
+    "hip hop",
+    "hip-hop",
+    "rap",
+    "gansta rap",
+    "gangsta rap",
+    "g-funk",
+    "west coast hip-hop",
+    "west coast hip hop",
+    "public enemy",
+    "digital underground",
+    "thug life",
+    "n.w.a",
+    "nwa",
+    "dr. dre",
+    "dr dre",
+    "ice cube",
+    "eazy-e",
+    "eazy e",
+    "eminem",
+    "tupac",
+    "outsidaz",
+    "d12",
+  ],
   "folk-country-vise": [
     "folk",
     "country",
@@ -100,6 +125,12 @@ const TAG_KEYWORDS = [
   "punk rock",
   "hardcore punk",
   "post-punk",
+  "west coast hip-hop",
+  "gansta rap",
+  "gangsta rap",
+  "g-funk",
+  "hip-hop",
+  "rap",
   "alternative rock",
   "post-grunge",
   "industrial rock",
@@ -301,6 +332,86 @@ const MANUAL_HINTS = {
     primaryGenres: ["hard rock", "punk rock"],
     curatorTags: ["norwegian rock", "metal", "punk energy"],
   },
+  "west-coast-hip-hop": {
+    zone: "hip-hop-rap",
+    primaryGenres: ["west coast hip-hop"],
+    curatorTags: ["west coast hip-hop", "hip-hop", "california rap"],
+  },
+  "gangsta-rap": {
+    zone: "hip-hop-rap",
+    primaryGenres: ["gangsta rap"],
+    curatorTags: ["gangsta rap", "hip-hop", "west coast"],
+  },
+  "g-funk": {
+    zone: "hip-hop-rap",
+    primaryGenres: ["g-funk"],
+    curatorTags: ["g-funk", "west coast hip-hop", "funk"],
+  },
+  "n-w-a": {
+    zone: "hip-hop-rap",
+    primaryGenres: ["gangsta rap", "west coast hip-hop"],
+    curatorTags: ["gangsta rap", "west coast hip-hop", "compton"],
+  },
+  "public-enemy": {
+    zone: "hip-hop-rap",
+    primaryGenres: ["hip-hop"],
+    curatorTags: ["political hip-hop", "east coast hip-hop", "rap"],
+  },
+  "digital-underground": {
+    zone: "hip-hop-rap",
+    primaryGenres: ["hip-hop", "funk"],
+    curatorTags: ["alternative hip-hop", "funk", "tupac connection"],
+  },
+  "thug-life": {
+    zone: "hip-hop-rap",
+    primaryGenres: ["hip-hop", "gangsta rap"],
+    curatorTags: ["west coast hip-hop", "tupac connection", "rap collective"],
+  },
+  "tupac-shakur": {
+    zone: "hip-hop-rap",
+    primaryGenres: ["hip-hop", "west coast hip-hop"],
+    curatorTags: ["west coast hip-hop", "rap", "thug life"],
+  },
+  "dr-dre": {
+    zone: "hip-hop-rap",
+    primaryGenres: ["g-funk", "west coast hip-hop"],
+    curatorTags: ["g-funk", "west coast hip-hop", "producer"],
+  },
+  "ice-cube": {
+    zone: "hip-hop-rap",
+    primaryGenres: ["gangsta rap", "west coast hip-hop"],
+    curatorTags: ["gangsta rap", "west coast hip-hop", "n.w.a"],
+  },
+  "eazy-e": {
+    zone: "hip-hop-rap",
+    primaryGenres: ["gangsta rap", "west coast hip-hop"],
+    curatorTags: ["gangsta rap", "west coast hip-hop", "n.w.a"],
+  },
+  "eminem": {
+    zone: "hip-hop-rap",
+    primaryGenres: ["hip-hop"],
+    curatorTags: ["rap", "detroit hip-hop", "dr. dre connection"],
+  },
+  "d12": {
+    zone: "hip-hop-rap",
+    primaryGenres: ["hip-hop"],
+    curatorTags: ["detroit hip-hop", "rap collective", "eminem connection"],
+  },
+  "outsidaz": {
+    zone: "hip-hop-rap",
+    primaryGenres: ["hip-hop"],
+    curatorTags: ["east coast hip-hop", "rap collective", "eminem connection"],
+  },
+  "body-count": {
+    zone: "hip-hop-rap",
+    primaryGenres: ["rap metal", "thrash metal"],
+    curatorTags: ["rap metal", "hip-hop metal bridge", "ice-t"],
+  },
+  "rage-against-the-machine": {
+    zone: "punk-alt",
+    primaryGenres: ["rap rock", "alternative metal"],
+    curatorTags: ["rap rock", "political rock", "hip-hop bridge"],
+  },
 };
 
 function normalize(value) {
@@ -322,19 +433,32 @@ function pushWeighted(scores, value, amount = 1) {
   scores.set(key, (scores.get(key) ?? 0) + amount);
 }
 
+function matchesTerm(text, term) {
+  const normalized = normalize(term);
+  if (!normalized) return false;
+  if (normalized.includes(" ")) return text.includes(normalized);
+  return text.split(" ").includes(normalized);
+}
+
+function hasZoneEvidence(text, zone) {
+  return (ZONE_KEYWORDS[zone] ?? []).some((term) => matchesTerm(text, term));
+}
+
 function scoreZone(text, currentZone) {
   const scores = new Map();
-  if (currentZone) pushWeighted(scores, currentZone, 1);
+  if (currentZone && (currentZone !== "hip-hop-rap" || hasZoneEvidence(text, "hip-hop-rap"))) {
+    pushWeighted(scores, currentZone, 1);
+  }
 
   for (const [zone, terms] of Object.entries(ZONE_KEYWORDS)) {
     for (const term of terms) {
-      if (text.includes(normalize(term))) {
+      if (matchesTerm(text, term)) {
         pushWeighted(scores, zone, term.includes(" ") ? 4 : 2);
       }
     }
   }
 
-  return [...scores.entries()].sort((a, b) => b[1] - a[1])[0]?.[0] ?? currentZone ?? "rock-circuit";
+  return [...scores.entries()].sort((a, b) => b[1] - a[1])[0]?.[0] ?? "rock-circuit";
 }
 
 function graphContext(graph) {
@@ -367,19 +491,15 @@ function tagScores(node, frontmatter, genreLabels, neighborLabels) {
     node.id,
     node.label,
     node.type,
-    node.zone,
     node.summary,
     ...(node.metadata ?? []),
     ...(node.aliases ?? []),
-    ...coerceStringArray(frontmatter.primaryGenres),
-    ...coerceStringArray(frontmatter.curatorTags),
     ...genreLabels,
     ...neighborLabels,
   ].join(" "));
 
   for (const tag of TAG_KEYWORDS) {
-    const normalized = normalize(tag);
-    if (text.includes(normalized)) {
+    if (matchesTerm(text, tag)) {
       pushWeighted(scores, tag, tag.includes(" ") ? 4 : 2);
     }
   }

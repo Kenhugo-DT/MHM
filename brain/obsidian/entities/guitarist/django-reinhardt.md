@@ -7,8 +7,8 @@ roles: [guitarist, artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: [country, folk]
-curatorTags: [Jazz, country, folk]
+primaryGenres: [jazz]
+curatorTags: [Jazz, guitarist, jazz]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1028

@@ -2,13 +2,13 @@
 id: eazy-e
 label: Eazy-E
 type: artist
-zone: rock-circuit
+zone: hip-hop-rap
 roles: [artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: [rock, funk]
-curatorTags: [rock, artist, funk]
+primaryGenres: [gangsta rap, west coast hip-hop]
+curatorTags: [gangsta rap, west coast hip-hop, n.w.a]
 secondaryZones: []
 layoutPinned: false
 layoutX: -420

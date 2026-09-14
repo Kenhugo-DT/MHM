@@ -7,8 +7,8 @@ roles: [artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: [psychedelic rock, country]
-curatorTags: [psychedelic rock, artist, country]
+primaryGenres: [psychedelic rock, rock]
+curatorTags: [psychedelic rock, artist, rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1346

@@ -2,13 +2,13 @@
 id: n-w-a
 label: N.W.A
 type: band
-zone: rock-circuit
+zone: hip-hop-rap
 roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: [rock]
-curatorTags: [rock, band, classic rock]
+primaryGenres: [gangsta rap, west coast hip-hop]
+curatorTags: [gangsta rap, west coast hip-hop, compton]
 secondaryZones: []
 layoutPinned: false
 layoutX: -365

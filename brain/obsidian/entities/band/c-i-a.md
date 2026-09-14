@@ -2,13 +2,13 @@
 id: c-i-a
 label: C.I.A.
 type: band
-zone: rock-circuit
+zone: hip-hop-rap
 roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: [rock]
-curatorTags: [Gangsta rap, rock, band]
+primaryGenres: [gangsta rap, rap]
+curatorTags: [Gangsta rap, gangsta rap, rap]
 secondaryZones: []
 layoutPinned: false
 layoutX: -473

@@ -8,7 +8,7 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [gothic metal, hard rock]
-curatorTags: [gothic metal, hard rock, band]
+curatorTags: [gothic metal, band, hard rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1235

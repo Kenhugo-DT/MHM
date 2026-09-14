@@ -7,8 +7,8 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: [country]
-curatorTags: [Norwegian vise, Singer-songwriter, country]
+primaryGenres: []
+curatorTags: [Norwegian vise, Singer-songwriter, band]
 secondaryZones: []
 layoutPinned: false
 layoutX: -553

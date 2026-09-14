@@ -2,7 +2,7 @@
 id: bandcamp
 label: Bandcamp
 type: band
-zone: punk-alt
+zone: hip-hop-rap
 roles: [band]
 aliases: []
 eraStart: 

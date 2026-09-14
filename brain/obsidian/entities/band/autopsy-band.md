@@ -7,8 +7,8 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: [hard rock, doom metal]
-curatorTags: [hard rock, Doom metal, doom metal]
+primaryGenres: [doom metal]
+curatorTags: [Doom metal, doom metal, band]
 secondaryZones: []
 layoutPinned: false
 layoutX: 926

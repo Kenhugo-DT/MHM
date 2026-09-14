@@ -2,13 +2,13 @@
 id: outsidaz
 label: Outsidaz
 type: band
-zone: rock-circuit
+zone: hip-hop-rap
 roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: [rock]
-curatorTags: [rock, band, classic rock]
+primaryGenres: [hip-hop]
+curatorTags: [east coast hip-hop, rap collective, eminem connection]
 secondaryZones: []
 layoutPinned: false
 layoutX: -193

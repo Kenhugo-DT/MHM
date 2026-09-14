@@ -7,8 +7,8 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: [alternative rock, hard rock]
-curatorTags: [Alternative rock, alternative rock, hard rock]
+primaryGenres: [rap rock, alternative metal]
+curatorTags: [rap rock, political rock, hip-hop bridge]
 secondaryZones: []
 layoutPinned: false
 layoutX: 921

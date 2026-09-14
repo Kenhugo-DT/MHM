@@ -2,13 +2,13 @@
 id: eminem
 label: Eminem
 type: artist
-zone: rock-circuit
+zone: hip-hop-rap
 roles: [artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: [rock]
-curatorTags: [rock, artist, classic rock]
+primaryGenres: [hip-hop]
+curatorTags: [rap, detroit hip-hop, dr. dre connection]
 secondaryZones: []
 layoutPinned: false
 layoutX: 308

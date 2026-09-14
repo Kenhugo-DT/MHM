@@ -8,7 +8,7 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [Shock Rock]
-curatorTags: [rock, progressive, psychedelic]
+curatorTags: [rock, classic rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: -182

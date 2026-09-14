@@ -7,8 +7,8 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: [hard rock, power metal]
-curatorTags: [hard rock, power metal, band]
+primaryGenres: [power metal, folk]
+curatorTags: [power metal, band, folk]
 secondaryZones: []
 layoutPinned: false
 layoutX: 722

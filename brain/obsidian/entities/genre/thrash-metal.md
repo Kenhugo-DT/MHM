@@ -8,7 +8,7 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [Thrash metal]
-curatorTags: [hard rock, heavy metal, thrash metal]
+curatorTags: [heavy metal, thrash metal, hard rock]
 secondaryZones: []
 layoutPinned: false
 layoutX: 2363

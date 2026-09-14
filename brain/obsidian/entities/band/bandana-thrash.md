@@ -7,8 +7,8 @@ roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: [hard rock]
-curatorTags: [hard rock, skate punk, Speed Metal]
+primaryGenres: [speed metal]
+curatorTags: [skate punk, Speed Metal, speed metal]
 secondaryZones: []
 layoutPinned: false
 layoutX: 1873

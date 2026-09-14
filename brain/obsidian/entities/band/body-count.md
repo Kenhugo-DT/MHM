@@ -2,13 +2,13 @@
 id: body-count
 label: Body Count
 type: band
-zone: hard-rock-metal
+zone: hip-hop-rap
 roles: [band]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: [hard rock]
-curatorTags: [hard rock, Gangsta rap, band]
+primaryGenres: [rap metal, thrash metal]
+curatorTags: [rap metal, hip-hop metal bridge, ice-t]
 secondaryZones: []
 layoutPinned: false
 layoutX: 592

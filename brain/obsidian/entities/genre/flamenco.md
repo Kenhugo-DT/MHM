@@ -8,7 +8,7 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [Flamenco]
-curatorTags: [country, folk]
+curatorTags: [folk, country]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1323

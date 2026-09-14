@@ -2,13 +2,13 @@
 id: gangsta-rap
 label: Gangsta rap
 type: genre
-zone: psychedelia-prog
+zone: hip-hop-rap
 roles: [genre]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: [Gangsta rap]
-curatorTags: [progressive, psychedelic]
+primaryGenres: [gangsta rap]
+curatorTags: [gangsta rap, hip-hop, west coast]
 secondaryZones: []
 layoutPinned: false
 layoutX: -178

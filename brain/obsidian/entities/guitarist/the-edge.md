@@ -7,8 +7,8 @@ roles: [guitarist, artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: [country, folk]
-curatorTags: [guitarist, country, folk]
+primaryGenres: [post-punk]
+curatorTags: [guitarist, post-punk, alternative]
 secondaryZones: []
 layoutPinned: false
 layoutX: -1460

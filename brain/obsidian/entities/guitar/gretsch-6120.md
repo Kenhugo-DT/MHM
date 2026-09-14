@@ -8,7 +8,7 @@ aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: []
-curatorTags: [electric guitar, signature guitar, rock]
+curatorTags: [electric guitar, signature guitar, rockabilly]
 secondaryZones: []
 layoutPinned: false
 layoutX: 3259

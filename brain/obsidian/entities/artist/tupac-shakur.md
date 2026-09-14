@@ -2,13 +2,13 @@
 id: tupac-shakur
 label: Tupac Shakur
 type: artist
-zone: psychedelia-prog
+zone: hip-hop-rap
 roles: [artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: []
-curatorTags: [artist, progressive, psychedelic]
+primaryGenres: [hip-hop, west coast hip-hop]
+curatorTags: [west coast hip-hop, rap, thug life]
 secondaryZones: []
 layoutPinned: false
 layoutX: 162

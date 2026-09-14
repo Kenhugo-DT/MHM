@@ -2,13 +2,13 @@
 id: george-clinton
 label: George Clinton
 type: artist
-zone: rock-circuit
+zone: hip-hop-rap
 roles: [artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: [rock, funk]
-curatorTags: [rock, artist, funk]
+primaryGenres: [funk, hip-hop]
+curatorTags: [artist, funk, hip-hop]
 secondaryZones: []
 layoutPinned: false
 layoutX: 26

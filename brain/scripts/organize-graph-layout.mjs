@@ -49,6 +49,16 @@ const ZONE_LAYOUTS = {
     colGap: 225,
     rowGap: 112,
   },
+  "hip-hop-rap": {
+    label: "HIP-HOP / RAP",
+    x: 2680,
+    y: 920,
+    width: 1740,
+    height: 1180,
+    columns: 5,
+    colGap: 225,
+    rowGap: 112,
+  },
   "folk-country-vise": {
     label: "FOLK / COUNTRY / VISE",
     x: -2140,
@@ -76,6 +86,7 @@ const ZONE_PRIORITY = [
   "roots-blues",
   "folk-country-vise",
   "punk-alt",
+  "hip-hop-rap",
   "hard-rock-metal",
   "psychedelia-prog",
   "rock-circuit",
@@ -151,6 +162,34 @@ const ZONE_TERMS = {
     "shoegaze",
     "suicidal tendencies",
     "the good the bad and the zugly",
+  ],
+  "hip-hop-rap": [
+    "d12",
+    "digital underground",
+    "dr dre",
+    "dr. dre",
+    "eazy e",
+    "eazy-e",
+    "eminem",
+    "g funk",
+    "g-funk",
+    "gansta rap",
+    "gangsta",
+    "gangsta rap",
+    "hip hop",
+    "hip-hop",
+    "ice cube",
+    "n w a",
+    "n.w.a",
+    "nwa",
+    "outsidaz",
+    "public enemy",
+    "rap",
+    "thug life",
+    "tupac",
+    "tupac shakur",
+    "west coast hip hop",
+    "west coast hip-hop",
   ],
   "hard-rock-metal": [
     "accept",
@@ -249,6 +288,7 @@ const ERA_HINTS = [
   [/robert johnson|lead belly|sister rosetta|muddy waters|b\.b\. king|bb king|chuck berry|rockabilly|blues|folk|country/, 1935],
   [/beatles|yardbirds|cream|hendrix|pink floyd|black sabbath|led zeppelin|deep purple|rolling stones|the who|santana|hard rock|heavy metal|prog|psychedelic/, 1968],
   [/punk|ramones|misfits|judas priest|iron maiden|van halen|ac\/dc|metallica|megadeth|thrash|doom|post-punk|new wave/, 1982],
+  [/hip hop|hip-hop|rap|gangsta|g-funk|n\.w\.a|nwa|public enemy|tupac|dr\. dre|eminem/, 1992],
   [/grunge|alternative|dream theater|progressive metal|pantera|black metal|death metal|power metal|symphonic|gothic/, 1994],
   [/kvelertak|gojira|beartooth|atreyu|all that remains|a wake in providence|caliban/, 2010],
 ];
@@ -269,6 +309,13 @@ function hashValue(value) {
     hash = Math.imul(hash, 16777619);
   }
   return hash >>> 0;
+}
+
+function matchesTerm(text, term) {
+  const normalized = normalize(term);
+  if (!normalized) return false;
+  if (normalized.includes(" ")) return text.includes(normalized);
+  return text.split(" ").includes(normalized);
 }
 
 function textForNode(node, edgeTextByNode) {
@@ -313,13 +360,13 @@ function scoreZone(text, zone, learningModel) {
   let score = terms.reduce((total, term) => {
     const normalized = normalize(term);
     if (!normalized) return total;
-    if (text.includes(normalized)) return total + Math.max(2, normalized.split(" ").length + 1);
+    if (matchesTerm(text, term)) return total + Math.max(2, normalized.split(" ").length + 1);
     return total;
   }, 0);
 
   for (const item of learningModel?.zones?.[zone]?.learnedTerms ?? []) {
     const normalized = normalize(item.term);
-    if (!normalized || !text.includes(normalized)) continue;
+    if (!normalized || !matchesTerm(text, item.term)) continue;
     score += Math.min(6, Math.max(0.5, Number(item.weight) * 0.35));
   }
 
