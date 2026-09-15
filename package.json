@@ -32,6 +32,7 @@
     "brain:obsidian:import": "node brain/scripts/import-obsidian-vault.mjs",
     "brain:notes:seed-tags": "node brain/scripts/seed-obsidian-tags.mjs",
     "brain:learn": "node brain/scripts/learn-from-obsidian.mjs",
+    "brain:organize": "node brain/scripts/analyze-organization.mjs",
     "brain:python-check": "node brain/scripts/run-python.mjs -m py_compile brain/pipeline/sync.py brain/pipeline/import_graph.py brain/pipeline/process_inbox.py brain/pipeline/supabase_brain.py brain/pipeline/brain_db.py brain/pipeline/scout_agent.py brain/pipeline/promote_candidates.py brain/pipeline/queue_request.py brain/pipeline/candidate_quality.py",
     "brain:import": "node brain/scripts/run-python.mjs brain/pipeline/import_graph.py",
     "brain:audit": "node brain/scripts/audit-graph.mjs"

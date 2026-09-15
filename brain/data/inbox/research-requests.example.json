@@ -57,6 +57,11 @@
       "purpose": "Show what the scout would do, including a frontier request if the queue is empty."
     },
     {
+      "label": "Organization brain",
+      "command": "npm run brain:organize",
+      "purpose": "Analyze weak zones, bridge nodes, layout pressure and frontier requests for the scout agent."
+    },
+    {
       "label": "Run scout agent",
       "command": "npm run brain:agent",
       "purpose": "Run the private research scout: process queued work, or create one graph-frontier request and process it."

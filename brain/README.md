@@ -45,6 +45,7 @@ npm run brain:promote:apply
 npm run brain:obsidian:export
 npm run brain:obsidian:import
 npm run brain:learn
+npm run brain:organize
 npm run brain:import
 ```
 
@@ -103,6 +104,13 @@ then applies those fields before regenerating the public graph JSON.
 `brain:learn` reads the approved graph plus Obsidian frontmatter and writes
 `brain/data/approved/learning-model.json`. The layout engine uses that model for
 learned zone terms, era sorting, bridge signals and pinned human curation.
+
+`brain:organize` reads the approved graph and learning model, then writes
+`brain/data/approved/organization-model.json`. It also writes a local report and
+frontier-request draft to `brain/data/runs/`. This is the first organization
+brain layer: it scores weak zones, under-connected hubs, bridge nodes, overlap
+risk and source quality. The scout agent uses this model first when it needs to
+create its own frontier request.
 
 The npm scripts look for `python3`, `python` or `py -3`. You can also set
 `PYTHON` to an exact Python executable path.
@@ -163,6 +171,11 @@ The model currently learns:
 This gives the map memory. If a curator repeatedly moves or classifies entities
 in Obsidian, the generated layout starts treating those choices as project
 knowledge.
+
+After learning, run `npm run brain:organize` to turn that memory into actionable
+organization signals. The organization model does not move the public map by
+itself. It tells the scout what needs research and gives future layout modes a
+safe way to reason about hubs, bridges and zones.
 
 ## Scout Agent
 

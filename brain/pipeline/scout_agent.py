@@ -27,6 +27,7 @@ REPO_ROOT = BRAIN_ROOT.parent
 APPROVED_GRAPH_PATH = BRAIN_ROOT / "data" / "approved" / "graph.json"
 BROWSER_GRAPH_PATH = REPO_ROOT / "site" / "public" / "data" / "graph.json"
 BLOCKED_ENTITIES_PATH = REPO_ROOT / "shared" / "graph-schema" / "blocked-entities.json"
+ORGANIZATION_MODEL_PATH = BRAIN_ROOT / "data" / "approved" / "organization-model.json"
 RUNS_DIR = BRAIN_ROOT / "data" / "runs"
 
 load_dotenv(REPO_ROOT / ".env")
@@ -40,6 +41,24 @@ ALLOWED_KINDS = {
     "guitar",
     "guitar_brand",
     "genre",
+}
+
+BLOCKED_SEED_LABELS = {"bandcamp", "bandcamp daily"}
+CATEGORYISH_GENRE_TERMS = {
+    "duos",
+    "trios",
+    "quartets",
+    "groups",
+    "musicians",
+    "artists",
+    "bands",
+    "singers",
+    "songwriters",
+    "people",
+    "albums",
+    "songs",
+    "record labels",
+    "companies",
 }
 
 TYPE_PRIORITY = {
@@ -125,6 +144,17 @@ def seed_key(seed: dict[str, Any]) -> tuple[str, str]:
     return (normalize_text(seed.get("name", "")), str(seed.get("kind", "")))
 
 
+def is_actionable_seed(name: Any, kind: Any) -> bool:
+    label = normalize_text(name)
+    if not label or label in BLOCKED_SEED_LABELS:
+        return False
+    if kind == "genre":
+        if label.startswith("history of "):
+            return False
+        return not any(term in label for term in CATEGORYISH_GENRE_TERMS)
+    return True
+
+
 def existing_seed_keys(requests: list[dict[str, Any]]) -> set[tuple[str, str]]:
     keys: set[tuple[str, str]] = set()
     for request in requests:
@@ -181,6 +211,8 @@ def select_frontier_seeds(
         kind = request_kind_for_node(node)
         label = str(node.get("label", "")).strip()
         if kind not in ALLOWED_KINDS or not label:
+            continue
+        if not is_actionable_seed(label, kind):
             continue
         if seed_key({"name": label, "kind": kind}) in existing_keys:
             continue
@@ -302,6 +334,51 @@ def build_frontier_request(graph: dict[str, Any], seeds: list[dict[str, str]]) -
         },
         "notes": "Created by brain/pipeline/scout_agent.py when no queued work was available.",
     }
+
+
+def load_organization_model() -> dict[str, Any] | None:
+    if not ORGANIZATION_MODEL_PATH.exists():
+        return None
+    return load_json(ORGANIZATION_MODEL_PATH)
+
+
+def organization_frontier_request(
+    existing_ids: set[Any],
+    existing_keys: set[tuple[str, str]],
+) -> dict[str, Any] | None:
+    model = load_organization_model()
+    if not model:
+        return None
+
+    for request in model.get("recommendedResearchRequests", []):
+        request_id = request.get("id")
+        if not request_id or request_id in existing_ids:
+            continue
+
+        seeds = [
+            seed
+            for seed in request.get("seeds", [])
+            if isinstance(seed, dict)
+            and seed.get("name")
+            and seed.get("kind") in ALLOWED_KINDS
+            and is_actionable_seed(seed.get("name"), seed.get("kind"))
+            and seed_key(seed) not in existing_keys
+        ]
+        if not seeds:
+            continue
+
+        return {
+            **request,
+            "status": "queued",
+            "createdAt": iso_now(),
+            "seeds": seeds,
+            "notes": (
+                f"{request.get('notes', '').strip()} "
+                "Queued from brain/data/approved/organization-model.json."
+            ).strip(),
+        }
+
+    return None
 
 
 def load_supabase_helpers() -> dict[str, Any]:
@@ -454,14 +531,22 @@ def main() -> None:
     created_request: dict[str, Any] | None = None
 
     if not queued and args.auto_queue_frontier:
-        seeds = select_frontier_seeds(
-            graph,
-            blocked_terms,
-            existing_seed_keys(all_requests),
-            max(1, args.frontier_seeds),
-        )
-        if seeds:
-            planned_request = build_frontier_request(graph, seeds)
+        keys = existing_seed_keys(all_requests)
+        planned_request = organization_frontier_request(existing_ids, keys)
+        if planned_request:
+            summary["frontierSource"] = "organization-model"
+        else:
+            seeds = select_frontier_seeds(
+                graph,
+                blocked_terms,
+                keys,
+                max(1, args.frontier_seeds),
+            )
+            planned_request = build_frontier_request(graph, seeds) if seeds else None
+            if planned_request:
+                summary["frontierSource"] = "thin-node-frontier"
+
+        if planned_request:
             if planned_request["id"] in existing_ids:
                 summary["frontierStatus"] = "already-exists"
                 summary["frontierRequestId"] = planned_request["id"]
