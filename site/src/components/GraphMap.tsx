@@ -5,6 +5,7 @@ import {
   Rectangle,
   Text,
 } from "pixi.js";
+import { Viewport } from "pixi-viewport";
 import {
   forwardRef,
   useEffect,
@@ -51,7 +52,6 @@ const MIN_ZOOM = 0.24;
 const MOBILE_MIN_ZOOM = 0.2;
 const MAX_ZOOM = 1.55;
 const EMPTY_ROUTE_NODE_IDS: string[] = [];
-const MOVE_THRESHOLD = 7;
 
 const MOBILE_HOME_CAMERA: Record<MapMode, Camera> = {
   artists: { x: -180, y: -180, zoom: 0.68 },
@@ -161,27 +161,14 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
   ) {
     const hostRef = useRef<HTMLDivElement>(null);
     const appRef = useRef<Application | null>(null);
-    const worldRef = useRef<Container | null>(null);
+    const viewportRef = useRef<Viewport | null>(null);
+    const worldRef = useRef<Viewport | null>(null);
     const selectionLayerRef = useRef<Container | null>(null);
     const cameraFrameRef = useRef<number | null>(null);
     const cameraRef = useRef<Camera>({ x: 0, y: 0, zoom: 0.42 });
     const nodesRef = useRef(nodes);
     const onSelectRef = useRef(onSelect);
     const visibleTypesRef = useRef(visibleTypes);
-    const dragRef = useRef({
-      active: false,
-      moved: false,
-      pointerId: -1,
-      x: 0,
-      y: 0,
-    });
-    const pointersRef = useRef(new Map<number, { x: number; y: number }>());
-    const pinchRef = useRef({
-      active: false,
-      distance: 0,
-      centerX: 0,
-      centerY: 0,
-    });
     const labelItemsRef = useRef<
       Array<{
         label: Text;
@@ -234,12 +221,12 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
 
     function applyCamera(camera = cameraRef.current) {
       const app = appRef.current;
-      const world = worldRef.current;
-      if (!app || !world) return;
+      const viewport = viewportRef.current;
+      if (!app || !viewport) return;
       syncLabelReadability(camera);
-      world.position.set(app.screen.width / 2, app.screen.height / 2);
-      world.pivot.set(camera.x, camera.y);
-      world.scale.set(camera.zoom);
+      viewport.resize(app.screen.width, app.screen.height);
+      viewport.setZoom(camera.zoom, false);
+      viewport.moveCenter(camera.x, camera.y);
       app.render();
     }
 
@@ -259,27 +246,28 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
       return nodesRef.current.filter((node) => visibleTypes.has(node.type));
     }
 
-    function pickNodeAt(clientX: number, clientY: number) {
-      const app = appRef.current;
-      const host = hostRef.current;
-      if (!app || !host) return undefined;
+    function syncCameraFromViewport() {
+      const viewport = viewportRef.current;
+      if (!viewport) return;
+      cameraRef.current = {
+        x: viewport.center.x,
+        y: viewport.center.y,
+        zoom: viewport.scale.x,
+      };
+      syncLabelReadability();
+    }
 
-      const camera = cameraRef.current;
-      const rect = host.getBoundingClientRect();
-      const x = clientX - rect.left;
-      const y = clientY - rect.top;
+    function pickNodeAtWorld(x: number, y: number) {
       let closest: { node: GraphNode; distance: number } | undefined;
 
       nodesRef.current.forEach((node) => {
         if (!visibleTypesRef.current.has(node.type)) return;
 
-        const nodeX = app.screen.width / 2 + (node.x - camera.x) * camera.zoom;
-        const nodeY = app.screen.height / 2 + (node.y - camera.y) * camera.zoom;
-        const dx = x - nodeX;
-        const dy = y - nodeY;
-        const radius = Math.max(14, nodeRadius(node) * camera.zoom + 10);
+        const dx = x - node.x;
+        const dy = y - node.y;
+        const radius = Math.max(22, nodeRadius(node) + 12 / cameraRef.current.zoom);
         const onMarker = Math.hypot(dx, dy) <= radius;
-        const onLabel = Math.abs(dx) <= 78 && dy >= 4 && dy <= 44;
+        const onLabel = Math.abs(dx) <= 90 / cameraRef.current.zoom && dy >= 4 && dy <= 52 / cameraRef.current.zoom;
 
         if (!onMarker && !onLabel) return;
 
@@ -359,46 +347,12 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
       applyCamera();
     }
 
-    function zoomFromClientPoint(
-      fromClientX: number,
-      fromClientY: number,
-      toClientX: number,
-      toClientY: number,
-      nextZoom: number,
-    ) {
-      const app = appRef.current;
-      const host = hostRef.current;
-      if (!app || !host) return;
-
-      const camera = cameraRef.current;
-      const rect = host.getBoundingClientRect();
-      const fromScreenX = fromClientX - rect.left - app.screen.width / 2;
-      const fromScreenY = fromClientY - rect.top - app.screen.height / 2;
-      const toScreenX = toClientX - rect.left - app.screen.width / 2;
-      const toScreenY = toClientY - rect.top - app.screen.height / 2;
-      const beforeX = fromScreenX / camera.zoom + camera.x;
-      const beforeY = fromScreenY / camera.zoom + camera.y;
-      const zoom = clampZoom(nextZoom);
-
-      cameraRef.current.zoom = zoom;
-      cameraRef.current.x = beforeX - toScreenX / zoom;
-      cameraRef.current.y = beforeY - toScreenY / zoom;
-      scheduleCameraApply();
-    }
-
     function zoomBy(factor: number) {
-      const host = hostRef.current;
-      if (!host) return;
-      const rect = host.getBoundingClientRect();
-      const centerX = rect.left + rect.width / 2;
-      const centerY = rect.top + rect.height / 2;
-      zoomFromClientPoint(
-        centerX,
-        centerY,
-        centerX,
-        centerY,
-        cameraRef.current.zoom * factor,
-      );
+      cameraRef.current = {
+        ...cameraRef.current,
+        zoom: clampZoom(cameraRef.current.zoom * factor),
+      };
+      scheduleCameraApply();
     }
 
     useImperativeHandle(ref, () => ({ fit: fitMap, focus: focusNode, home: homeMap, zoomBy }));
@@ -409,12 +363,13 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
 
       let disposed = false;
       let initialized = false;
+      let tickViewport: (() => void) | undefined;
       const app = new Application();
 
       void app
         .init({
           resizeTo: host,
-          autoStart: false,
+          autoStart: true,
           preference: "webgl",
           powerPreference: "high-performance",
           antialias: false,
@@ -430,12 +385,45 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
           }
 
           host.appendChild(app.canvas);
-          const world = new Container();
-          app.stage.addChild(world);
-          app.stage.eventMode = "static";
-          app.stage.hitArea = new Rectangle(0, 0, app.screen.width, app.screen.height);
+          const viewport = new Viewport({
+            screenWidth: app.screen.width,
+            screenHeight: app.screen.height,
+            events: app.renderer.events,
+            passiveWheel: false,
+            stopPropagation: true,
+            noTicker: true,
+            forceHitArea: new Rectangle(-100000, -100000, 200000, 200000),
+          });
+          tickViewport = () => viewport.update(app.ticker.elapsedMS);
+          app.ticker.add(tickViewport);
+          viewport
+            .drag({ mouseButtons: "left" })
+            .pinch()
+            .wheel({ percent: 0.08, smooth: 4 })
+            .decelerate({ friction: 0.92 })
+            .clampZoom({ minScale: minZoom(), maxScale: MAX_ZOOM });
+          viewport.on("clicked", (event) => {
+            const node = pickNodeAtWorld(event.world.x, event.world.y);
+            if (node) onSelectRef.current(node);
+          });
+          viewport.on("moved", syncCameraFromViewport);
+          viewport.on("zoomed", syncCameraFromViewport);
+          viewport.on("drag-start", () => {
+            host.dataset.dragging = "true";
+          });
+          viewport.on("drag-end", () => {
+            host.dataset.dragging = "false";
+          });
+          viewport.on("pinch-start", () => {
+            host.dataset.dragging = "true";
+          });
+          viewport.on("pinch-end", () => {
+            host.dataset.dragging = "false";
+          });
+          app.stage.addChild(viewport);
           appRef.current = app;
-          worldRef.current = world;
+          viewportRef.current = viewport;
+          worldRef.current = viewport;
           setReady(true);
         });
 
@@ -443,10 +431,15 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
         disposed = true;
         setReady(false);
         appRef.current = null;
+        viewportRef.current = null;
         worldRef.current = null;
         if (cameraFrameRef.current !== null) {
           window.cancelAnimationFrame(cameraFrameRef.current);
           cameraFrameRef.current = null;
+        }
+        if (tickViewport) {
+          app.ticker.remove(tickViewport);
+          tickViewport = undefined;
         }
         if (initialized) {
           app.destroy(true, { children: true });
@@ -460,7 +453,8 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
       if (!app) return;
 
       const onResize = () => {
-        app.stage.hitArea = new Rectangle(0, 0, app.screen.width, app.screen.height);
+        viewportRef.current?.resize(app.screen.width, app.screen.height);
+        viewportRef.current?.clampZoom({ minScale: minZoom(), maxScale: MAX_ZOOM });
         applyCamera();
       };
       app.renderer.on("resize", onResize);
@@ -484,11 +478,22 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
       const nodeById = new Map(shownNodes.map((node) => [node.id, node]));
 
       const grid = new Graphics();
-      for (let x = -1600; x <= 1800; x += 100) {
-        grid.moveTo(x, -1100).lineTo(x, 1400);
+      const graphMinX = Math.min(...shownNodes.map((node) => node.x), -1800) - 900;
+      const graphMaxX = Math.max(...shownNodes.map((node) => node.x), 3800) + 900;
+      const graphMinY = Math.min(...shownNodes.map((node) => node.y), -1400) - 900;
+      const graphMaxY = Math.max(...shownNodes.map((node) => node.y), 1700) + 900;
+      viewportRef.current?.resize(
+        app.screen.width,
+        app.screen.height,
+        graphMaxX - graphMinX,
+        graphMaxY - graphMinY,
+      );
+
+      for (let x = Math.floor(graphMinX / 100) * 100; x <= graphMaxX; x += 100) {
+        grid.moveTo(x, graphMinY).lineTo(x, graphMaxY);
       }
-      for (let y = -1100; y <= 1400; y += 100) {
-        grid.moveTo(-1600, y).lineTo(1800, y);
+      for (let y = Math.floor(graphMinY / 100) * 100; y <= graphMaxY; y += 100) {
+        grid.moveTo(graphMinX, y).lineTo(graphMaxX, y);
       }
       grid.stroke({ color: 0xcabbb1, alpha: 0.045, width: 1 });
       world.addChild(grid);
@@ -686,193 +691,6 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
       if (selectedId) focusNode(selectedId);
       else renderFrame();
     }, [edges, nodes, ready, routeNodeIds, selectedId, visibleTypes]);
-
-    useEffect(() => {
-      const host = hostRef.current;
-      if (!host || !ready) return;
-
-      const safePreventDefault = (event: Event) => {
-        if (event.cancelable) event.preventDefault();
-      };
-
-      const pinchPair = () => {
-        const [first, second] = [...pointersRef.current.values()];
-        if (!first || !second) return undefined;
-        return { first, second };
-      };
-
-      const startPinch = () => {
-        const pair = pinchPair();
-        if (!pair) return;
-        const centerX = (pair.first.x + pair.second.x) / 2;
-        const centerY = (pair.first.y + pair.second.y) / 2;
-        pinchRef.current = {
-          active: true,
-          distance: Math.max(1, Math.hypot(pair.second.x - pair.first.x, pair.second.y - pair.first.y)),
-          centerX,
-          centerY,
-        };
-        dragRef.current.moved = true;
-      };
-
-      const capturePointer = (pointerId: number) => {
-        try {
-          host.setPointerCapture(pointerId);
-        } catch {
-          // Some browsers reject capture for synthetic or already-ended pointers.
-        }
-      };
-
-      const releasePointer = (pointerId: number) => {
-        try {
-          host.releasePointerCapture(pointerId);
-        } catch {
-          // The pointer may already be released by the browser.
-        }
-      };
-
-      const pointerDown = (event: PointerEvent) => {
-        if (event.pointerType === "mouse" && event.button !== 0) return;
-        safePreventDefault(event);
-        capturePointer(event.pointerId);
-        pointersRef.current.set(event.pointerId, {
-          x: event.clientX,
-          y: event.clientY,
-        });
-
-        if (pointersRef.current.size >= 2) {
-          startPinch();
-          host.dataset.dragging = "true";
-          return;
-        }
-
-        dragRef.current = {
-          active: true,
-          moved: false,
-          pointerId: event.pointerId,
-          x: event.clientX,
-          y: event.clientY,
-        };
-        host.dataset.dragging = "true";
-      };
-
-      const pointerMove = (event: PointerEvent) => {
-        if (!pointersRef.current.has(event.pointerId)) return;
-        safePreventDefault(event);
-        pointersRef.current.set(event.pointerId, {
-          x: event.clientX,
-          y: event.clientY,
-        });
-
-        if (pointersRef.current.size >= 2) {
-          const pair = pinchPair();
-          if (!pair) return;
-          if (!pinchRef.current.active) startPinch();
-
-          const centerX = (pair.first.x + pair.second.x) / 2;
-          const centerY = (pair.first.y + pair.second.y) / 2;
-          const distance = Math.max(1, Math.hypot(pair.second.x - pair.first.x, pair.second.y - pair.first.y));
-          const nextZoom = cameraRef.current.zoom * (distance / pinchRef.current.distance);
-
-          zoomFromClientPoint(
-            pinchRef.current.centerX,
-            pinchRef.current.centerY,
-            centerX,
-            centerY,
-            nextZoom,
-          );
-
-          pinchRef.current = {
-            active: true,
-            distance,
-            centerX,
-            centerY,
-          };
-          dragRef.current.moved = true;
-          return;
-        }
-
-        const drag = dragRef.current;
-        if (!drag.active || drag.pointerId !== event.pointerId) return;
-        const dx = event.clientX - drag.x;
-        const dy = event.clientY - drag.y;
-        if (Math.hypot(dx, dy) > MOVE_THRESHOLD) drag.moved = true;
-        cameraRef.current.x -= dx / cameraRef.current.zoom;
-        cameraRef.current.y -= dy / cameraRef.current.zoom;
-        drag.x = event.clientX;
-        drag.y = event.clientY;
-        scheduleCameraApply();
-      };
-
-      const pointerUp = (event: PointerEvent) => {
-        const wasPinching = pinchRef.current.active || pointersRef.current.size > 1;
-        pointersRef.current.delete(event.pointerId);
-        releasePointer(event.pointerId);
-
-        if (wasPinching) {
-          pinchRef.current.active = false;
-          dragRef.current.active = false;
-          host.dataset.dragging = "false";
-
-          if (pointersRef.current.size === 1) {
-            const [remaining] = [...pointersRef.current.entries()];
-            if (remaining) {
-              const [pointerId, point] = remaining;
-              dragRef.current = {
-                active: true,
-                moved: true,
-                pointerId,
-                x: point.x,
-                y: point.y,
-              };
-            }
-          }
-          return;
-        }
-
-        const drag = dragRef.current;
-        if (!drag.active || drag.pointerId !== event.pointerId) return;
-        if (!drag.moved) {
-          const node = pickNodeAt(event.clientX, event.clientY);
-          if (node) onSelectRef.current(node);
-        }
-        dragRef.current.active = false;
-        host.dataset.dragging = "false";
-      };
-
-      const wheel = (event: WheelEvent) => {
-        event.preventDefault();
-        const app = appRef.current;
-        if (!app) return;
-        const nextZoom = Math.max(
-          minZoom(),
-          Math.min(MAX_ZOOM, cameraRef.current.zoom * Math.exp(-event.deltaY * 0.0012)),
-        );
-        zoomFromClientPoint(
-          event.clientX,
-          event.clientY,
-          event.clientX,
-          event.clientY,
-          nextZoom,
-        );
-      };
-
-      host.addEventListener("pointerdown", pointerDown);
-      window.addEventListener("pointermove", pointerMove);
-      window.addEventListener("pointerup", pointerUp);
-      window.addEventListener("pointercancel", pointerUp);
-      host.addEventListener("wheel", wheel, { passive: false });
-
-      return () => {
-        pointersRef.current.clear();
-        pinchRef.current.active = false;
-        host.removeEventListener("pointerdown", pointerDown);
-        window.removeEventListener("pointermove", pointerMove);
-        window.removeEventListener("pointerup", pointerUp);
-        window.removeEventListener("pointercancel", pointerUp);
-        host.removeEventListener("wheel", wheel);
-      };
-    }, [ready]);
 
     return <div ref={hostRef} className="graph-map" aria-label="Interactive Music History Map" />;
   },
