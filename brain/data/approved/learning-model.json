@@ -1,11 +1,14 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-14T12:12:25.228Z",
-  "source": "graph + Obsidian frontmatter",
+  "generatedAt": "2026-09-15T12:27:31.451Z",
+  "source": "graph + Obsidian frontmatter + curator feedback",
   "samples": {
     "graphNodes": 563,
     "graphEdges": 749,
     "obsidianNotes": 563,
+    "feedbackNodes": 6,
+    "feedbackZones": 4,
+    "feedbackRules": 3,
     "pinnedNotes": 0,
     "notesWithEra": 0,
     "notesWithPrimaryGenres": 477,
@@ -22,48 +25,72 @@
       "eraMedian": 1948,
       "learnedTerms": [
         {
+          "term": "blues rock",
+          "weight": 248
+        },
+        {
           "term": "blues",
+          "weight": 182
+        },
+        {
+          "term": "electric blues",
+          "weight": 94
+        },
+        {
+          "term": "southern rock",
           "weight": 66
         },
         {
-          "term": "blues rock",
-          "weight": 52
+          "term": "rock and roll",
+          "weight": 28
+        },
+        {
+          "term": "country rock",
+          "weight": 26
+        },
+        {
+          "term": "hard rock",
+          "weight": 26
+        },
+        {
+          "term": "rockabilly",
+          "weight": 26
         },
         {
           "term": "electric",
           "weight": 22
         },
         {
-          "term": "electric blues",
+          "term": "jazz fusion",
           "weight": 22
+        },
+        {
+          "term": "roots",
+          "weight": 20
+        },
+        {
+          "term": "country",
+          "weight": 16
+        },
+        {
+          "term": "roots rock",
+          "weight": 16
         },
         {
           "term": "southern",
           "weight": 14
         },
         {
-          "term": "southern rock",
-          "weight": 14
-        },
-        {
-          "term": "roots",
+          "term": "folk",
           "weight": 12
         },
         {
-          "term": "country",
-          "weight": 8
-        },
-        {
-          "term": "rock and roll",
-          "weight": 8
+          "term": "pop rock",
+          "weight": 10
         },
         {
           "term": "roll",
           "weight": 8
-        },
-        {
-          "term": "country rock",
-          "weight": 6
         },
         {
           "term": "fusion",
@@ -74,15 +101,7 @@
           "weight": 6
         },
         {
-          "term": "hard rock",
-          "weight": 6
-        },
-        {
           "term": "jazz",
-          "weight": 6
-        },
-        {
-          "term": "jazz fusion",
           "weight": 6
         },
         {
@@ -90,7 +109,7 @@
           "weight": 6
         },
         {
-          "term": "rockabilly",
+          "term": "swamp rock",
           "weight": 6
         },
         {
@@ -130,19 +149,11 @@
           "weight": 4
         },
         {
-          "term": "folk",
-          "weight": 4
-        },
-        {
           "term": "influence",
           "weight": 4
         },
         {
           "term": "mac",
-          "weight": 4
-        },
-        {
-          "term": "roots rock",
           "weight": 4
         },
         {
@@ -332,14 +343,6 @@
         {
           "term": "freddie king",
           "weight": 2
-        },
-        {
-          "term": "gibson",
-          "weight": 2
-        },
-        {
-          "term": "gibson sg",
-          "weight": 2
         }
       ]
     },
@@ -353,15 +356,63 @@
       "eraMedian": 1975,
       "learnedTerms": [
         {
+          "term": "classic rock",
+          "weight": 938
+        },
+        {
           "term": "classic",
           "weight": 310
         },
         {
-          "term": "classic rock",
-          "weight": 310
+          "term": "rock and roll",
+          "weight": 40
         },
         {
-          "term": "rock and roll",
+          "term": "glam rock",
+          "weight": 23
+        },
+        {
+          "term": "blues rock",
+          "weight": 18
+        },
+        {
+          "term": "jazz fusion",
+          "weight": 16
+        },
+        {
+          "term": "pop rock",
+          "weight": 16
+        },
+        {
+          "term": "jazz",
+          "weight": 14
+        },
+        {
+          "term": "american rock music duos",
+          "weight": 12
+        },
+        {
+          "term": "funk",
+          "weight": 12
+        },
+        {
+          "term": "shock rock",
+          "weight": 12
+        },
+        {
+          "term": "surf rock",
+          "weight": 12
+        },
+        {
+          "term": "hard rock",
+          "weight": 11
+        },
+        {
+          "term": "swamp rock",
+          "weight": 10
+        },
+        {
+          "term": "hard rock bridge",
           "weight": 8
         },
         {
@@ -369,7 +420,15 @@
           "weight": 8
         },
         {
+          "term": "alternative rock",
+          "weight": 6
+        },
+        {
           "term": "american",
+          "weight": 6
+        },
+        {
+          "term": "art rock",
           "weight": 6
         },
         {
@@ -377,11 +436,11 @@
           "weight": 6
         },
         {
-          "term": "jazz",
+          "term": "jeff",
           "weight": 6
         },
         {
-          "term": "jeff",
+          "term": "singer songwriter",
           "weight": 6
         },
         {
@@ -389,8 +448,8 @@
           "weight": 5
         },
         {
-          "term": "american rock music duos",
-          "weight": 4
+          "term": "progressive rock",
+          "weight": 5
         },
         {
           "term": "art",
@@ -417,10 +476,6 @@
           "weight": 4
         },
         {
-          "term": "funk",
-          "weight": 4
-        },
-        {
           "term": "fusion",
           "weight": 4
         },
@@ -430,10 +485,6 @@
         },
         {
           "term": "instrumental rock",
-          "weight": 4
-        },
-        {
-          "term": "jazz fusion",
           "weight": 4
         },
         {
@@ -457,15 +508,7 @@
           "weight": 4
         },
         {
-          "term": "pop rock",
-          "weight": 4
-        },
-        {
           "term": "shock",
-          "weight": 4
-        },
-        {
-          "term": "shock rock",
           "weight": 4
         },
         {
@@ -481,23 +524,31 @@
           "weight": 4
         },
         {
-          "term": "surf rock",
-          "weight": 4
-        },
-        {
           "term": "glam",
           "weight": 3
         },
         {
-          "term": "glam rock",
+          "term": "hard rock metal",
           "weight": 3
         },
         {
-          "term": "hard rock",
+          "term": "psychedelia prog",
+          "weight": 3
+        },
+        {
+          "term": "punk alt",
           "weight": 3
         },
         {
           "term": "queen",
+          "weight": 3
+        },
+        {
+          "term": "rock is the connective tissue it should overlap with roots blues hard rock metal prog psychedelia and punk instead of becoming a sealed box",
+          "weight": 3
+        },
+        {
+          "term": "roots blues",
           "weight": 3
         },
         {
@@ -554,10 +605,6 @@
         },
         {
           "term": "alternative",
-          "weight": 2
-        },
-        {
-          "term": "alternative rock",
           "weight": 2
         },
         {
@@ -625,51 +672,7 @@
           "weight": 2
         },
         {
-          "term": "art rock",
-          "weight": 2
-        },
-        {
           "term": "arthur brown",
-          "weight": 2
-        },
-        {
-          "term": "arthur porter",
-          "weight": 2
-        },
-        {
-          "term": "arven",
-          "weight": 2
-        },
-        {
-          "term": "as lions",
-          "weight": 2
-        },
-        {
-          "term": "asia",
-          "weight": 2
-        },
-        {
-          "term": "ataxia",
-          "weight": 2
-        },
-        {
-          "term": "auri",
-          "weight": 2
-        },
-        {
-          "term": "avalon",
-          "weight": 2
-        },
-        {
-          "term": "bando",
-          "weight": 2
-        },
-        {
-          "term": "bando sport",
-          "weight": 2
-        },
-        {
-          "term": "bandwagon",
           "weight": 2
         }
       ]
@@ -685,22 +688,42 @@
       "learnedTerms": [
         {
           "term": "progressive",
-          "weight": 49
-        },
-        {
-          "term": "psychedelic",
-          "weight": 26
+          "weight": 113
         },
         {
           "term": "progressive rock",
-          "weight": 25
+          "weight": 105
         },
         {
-          "term": "art",
-          "weight": 14
+          "term": "psychedelic",
+          "weight": 74
         },
         {
           "term": "art rock",
+          "weight": 62
+        },
+        {
+          "term": "progressive metal",
+          "weight": 56
+        },
+        {
+          "term": "psychedelic rock",
+          "weight": 52
+        },
+        {
+          "term": "jazz fusion",
+          "weight": 31
+        },
+        {
+          "term": "hard rock",
+          "weight": 26
+        },
+        {
+          "term": "jazz",
+          "weight": 19
+        },
+        {
+          "term": "art",
           "weight": 14
         },
         {
@@ -708,23 +731,19 @@
           "weight": 12
         },
         {
-          "term": "progressive metal",
-          "weight": 12
+          "term": "alternative rock",
+          "weight": 10
         },
         {
-          "term": "psychedelic rock",
-          "weight": 12
+          "term": "country",
+          "weight": 10
+        },
+        {
+          "term": "space rock",
+          "weight": 10
         },
         {
           "term": "fusion",
-          "weight": 7
-        },
-        {
-          "term": "jazz",
-          "weight": 7
-        },
-        {
-          "term": "jazz fusion",
           "weight": 7
         },
         {
@@ -732,7 +751,15 @@
           "weight": 6
         },
         {
-          "term": "hard rock",
+          "term": "heavy metal",
+          "weight": 6
+        },
+        {
+          "term": "history of rock music",
+          "weight": 6
+        },
+        {
+          "term": "roots rock",
           "weight": 6
         },
         {
@@ -788,10 +815,6 @@
           "weight": 2
         },
         {
-          "term": "alternative rock",
-          "weight": 2
-        },
-        {
           "term": "atheist",
           "weight": 2
         },
@@ -809,10 +832,6 @@
         },
         {
           "term": "composer",
-          "weight": 2
-        },
-        {
-          "term": "country",
           "weight": 2
         },
         {
@@ -876,19 +895,11 @@
           "weight": 2
         },
         {
-          "term": "heavy metal",
-          "weight": 2
-        },
-        {
           "term": "hendrix",
           "weight": 2
         },
         {
           "term": "history",
-          "weight": 2
-        },
-        {
-          "term": "history of rock music",
           "weight": 2
         },
         {
@@ -984,15 +995,7 @@
           "weight": 2
         },
         {
-          "term": "roots rock",
-          "weight": 2
-        },
-        {
           "term": "space",
-          "weight": 2
-        },
-        {
-          "term": "space rock",
           "weight": 2
         },
         {
@@ -1015,47 +1018,75 @@
       "eraMedian": 1977,
       "learnedTerms": [
         {
+          "term": "hard rock",
+          "weight": 942
+        },
+        {
+          "term": "heavy metal",
+          "weight": 376
+        },
+        {
           "term": "metal",
-          "weight": 218
+          "weight": 346
         },
         {
           "term": "hard",
           "weight": 194
         },
         {
-          "term": "hard rock",
-          "weight": 194
+          "term": "power metal",
+          "weight": 144
+        },
+        {
+          "term": "thrash metal",
+          "weight": 108
         },
         {
           "term": "heavy",
           "weight": 80
         },
         {
-          "term": "heavy metal",
-          "weight": 80
+          "term": "doom metal",
+          "weight": 68
+        },
+        {
+          "term": "glam metal",
+          "weight": 46
+        },
+        {
+          "term": "speed metal",
+          "weight": 46
+        },
+        {
+          "term": "death metal",
+          "weight": 40
         },
         {
           "term": "power",
           "weight": 28
         },
         {
-          "term": "power metal",
-          "weight": 28
+          "term": "gothic metal",
+          "weight": 26
         },
         {
           "term": "thrash",
           "weight": 26
         },
         {
-          "term": "thrash metal",
+          "term": "symphonic metal",
           "weight": 24
         },
         {
-          "term": "doom",
-          "weight": 12
+          "term": "folk",
+          "weight": 20
         },
         {
-          "term": "doom metal",
+          "term": "blues",
+          "weight": 18
+        },
+        {
+          "term": "doom",
           "weight": 12
         },
         {
@@ -1063,15 +1094,19 @@
           "weight": 12
         },
         {
+          "term": "glam rock",
+          "weight": 12
+        },
+        {
           "term": "speed",
           "weight": 12
         },
         {
-          "term": "glam metal",
+          "term": "blues rock",
           "weight": 10
         },
         {
-          "term": "speed metal",
+          "term": "riff culture",
           "weight": 10
         },
         {
@@ -1079,7 +1114,7 @@
           "weight": 8
         },
         {
-          "term": "death metal",
+          "term": "hard rock bridge",
           "weight": 8
         },
         {
@@ -1087,15 +1122,15 @@
           "weight": 8
         },
         {
-          "term": "symphonic metal",
-          "weight": 8
+          "term": "alternative metal",
+          "weight": 6
         },
         {
           "term": "american",
           "weight": 6
         },
         {
-          "term": "blues",
+          "term": "dutch rock music",
           "weight": 6
         },
         {
@@ -1103,7 +1138,11 @@
           "weight": 6
         },
         {
-          "term": "gothic metal",
+          "term": "gothic rock",
+          "weight": 6
+        },
+        {
+          "term": "norwegian rock",
           "weight": 6
         },
         {
@@ -1111,7 +1150,27 @@
           "weight": 6
         },
         {
+          "term": "punk energy",
+          "weight": 6
+        },
+        {
+          "term": "punk rock",
+          "weight": 6
+        },
+        {
+          "term": "skate punk",
+          "weight": 6
+        },
+        {
           "term": "andy",
+          "weight": 4
+        },
+        {
+          "term": "blues rock lineage",
+          "weight": 4
+        },
+        {
+          "term": "classic rock",
           "weight": 4
         },
         {
@@ -1123,15 +1182,11 @@
           "weight": 4
         },
         {
+          "term": "doom metal root",
+          "weight": 4
+        },
+        {
           "term": "eddie",
-          "weight": 4
-        },
-        {
-          "term": "folk",
-          "weight": 4
-        },
-        {
-          "term": "glam rock",
           "weight": 4
         },
         {
@@ -1143,11 +1198,19 @@
           "weight": 4
         },
         {
+          "term": "important overlap point between blues rock classic rock and hard rock",
+          "weight": 4
+        },
+        {
           "term": "iron",
           "weight": 4
         },
         {
           "term": "megadeth",
+          "weight": 4
+        },
+        {
+          "term": "metal origin",
           "weight": 4
         },
         {
@@ -1191,12 +1254,32 @@
           "weight": 4
         },
         {
+          "term": "should behave as a bridge between hard rock doom metal and heavy metal rather than sitting in a closed metal box",
+          "weight": 4
+        },
+        {
           "term": "taylor",
           "weight": 4
         },
         {
           "term": "van",
           "weight": 4
+        },
+        {
+          "term": "hard rock and metal should be dense but not isolated black sabbath led zeppelin deep purple van halen ac dc and punk metal crossover nodes should bleed across borders",
+          "weight": 3
+        },
+        {
+          "term": "psychedelia prog",
+          "weight": 3
+        },
+        {
+          "term": "punk alt",
+          "weight": 3
+        },
+        {
+          "term": "rock circuit",
+          "weight": 3
         },
         {
           "term": "a wake in providence",
@@ -1253,86 +1336,6 @@
         {
           "term": "all that remains",
           "weight": 2
-        },
-        {
-          "term": "almora",
-          "weight": 2
-        },
-        {
-          "term": "alternative",
-          "weight": 2
-        },
-        {
-          "term": "alternative metal",
-          "weight": 2
-        },
-        {
-          "term": "amplified",
-          "weight": 2
-        },
-        {
-          "term": "amplified rock",
-          "weight": 2
-        },
-        {
-          "term": "anacrusis",
-          "weight": 2
-        },
-        {
-          "term": "anathema",
-          "weight": 2
-        },
-        {
-          "term": "anathema band",
-          "weight": 2
-        },
-        {
-          "term": "andy sneap",
-          "weight": 2
-        },
-        {
-          "term": "andy taylor",
-          "weight": 2
-        },
-        {
-          "term": "angel",
-          "weight": 2
-        },
-        {
-          "term": "angel witch",
-          "weight": 2
-        },
-        {
-          "term": "angkor",
-          "weight": 2
-        },
-        {
-          "term": "angkor wat",
-          "weight": 2
-        },
-        {
-          "term": "angra",
-          "weight": 2
-        },
-        {
-          "term": "annihilator",
-          "weight": 2
-        },
-        {
-          "term": "anonymus",
-          "weight": 2
-        },
-        {
-          "term": "anthrax",
-          "weight": 2
-        },
-        {
-          "term": "anthrax american band",
-          "weight": 2
-        },
-        {
-          "term": "anvil",
-          "weight": 2
         }
       ]
     },
@@ -1346,35 +1349,99 @@
       "eraMedian": 1977,
       "learnedTerms": [
         {
-          "term": "punk",
-          "weight": 118
+          "term": "punk rock",
+          "weight": 234
         },
         {
-          "term": "punk rock",
-          "weight": 58
+          "term": "hardcore punk",
+          "weight": 192
+        },
+        {
+          "term": "punk",
+          "weight": 174
         },
         {
           "term": "alternative",
+          "weight": 164
+        },
+        {
+          "term": "post punk",
+          "weight": 82
+        },
+        {
+          "term": "alternative rock",
+          "weight": 76
+        },
+        {
+          "term": "horror punk",
+          "weight": 68
+        },
+        {
+          "term": "shoegaze",
           "weight": 56
+        },
+        {
+          "term": "skate punk",
+          "weight": 48
         },
         {
           "term": "hardcore",
           "weight": 44
         },
         {
-          "term": "hardcore punk",
-          "weight": 40
+          "term": "california punk",
+          "weight": 42
+        },
+        {
+          "term": "gothic rock",
+          "weight": 36
+        },
+        {
+          "term": "punk roots",
+          "weight": 36
+        },
+        {
+          "term": "pop punk",
+          "weight": 32
+        },
+        {
+          "term": "proto punk",
+          "weight": 30
+        },
+        {
+          "term": "grunge",
+          "weight": 28
         },
         {
           "term": "post",
           "weight": 26
         },
         {
-          "term": "alternative rock",
+          "term": "post grunge",
+          "weight": 26
+        },
+        {
+          "term": "indie rock",
+          "weight": 24
+        },
+        {
+          "term": "uk punk",
+          "weight": 24
+        },
+        {
+          "term": "garage rock",
           "weight": 20
         },
         {
-          "term": "post punk",
+          "term": "ska punk",
+          "weight": 20
+        },
+        {
+          "term": "dc punk",
+          "weight": 18
+        },
+        {
+          "term": "melodic punk",
           "weight": 18
         },
         {
@@ -1382,27 +1449,27 @@
           "weight": 14
         },
         {
-          "term": "california punk",
+          "term": "roots",
           "weight": 14
         },
         {
-          "term": "roots",
-          "weight": 14
+          "term": "alternative metal",
+          "weight": 12
+        },
+        {
+          "term": "east bay punk",
+          "weight": 12
         },
         {
           "term": "horror",
           "weight": 12
         },
         {
-          "term": "horror punk",
+          "term": "new york punk",
           "weight": 12
         },
         {
-          "term": "punk roots",
-          "weight": 12
-        },
-        {
-          "term": "shoegaze",
+          "term": "political punk",
           "weight": 12
         },
         {
@@ -1410,11 +1477,27 @@
           "weight": 12
         },
         {
-          "term": "skate punk",
-          "weight": 12
+          "term": "deathrock",
+          "weight": 10
+        },
+        {
+          "term": "glam rock",
+          "weight": 10
         },
         {
           "term": "gothic",
+          "weight": 10
+        },
+        {
+          "term": "post hardcore",
+          "weight": 10
+        },
+        {
+          "term": "psychobilly",
+          "weight": 10
+        },
+        {
+          "term": "rap rock",
           "weight": 10
         },
         {
@@ -1422,11 +1505,11 @@
           "weight": 9
         },
         {
-          "term": "gothic rock",
+          "term": "2 tone music genre",
           "weight": 8
         },
         {
-          "term": "grunge",
+          "term": "early punk anchor",
           "weight": 8
         },
         {
@@ -1434,19 +1517,19 @@
           "weight": 8
         },
         {
-          "term": "pop punk",
-          "weight": 8
-        },
-        {
-          "term": "uk punk",
-          "weight": 8
+          "term": "art rock",
+          "weight": 6
         },
         {
           "term": "bad",
           "weight": 6
         },
         {
-          "term": "dc punk",
+          "term": "crossover thrash",
+          "weight": 6
+        },
+        {
+          "term": "detroit rock",
           "weight": 6
         },
         {
@@ -1454,7 +1537,43 @@
           "weight": 6
         },
         {
-          "term": "melodic punk",
+          "term": "garage punk",
+          "weight": 6
+        },
+        {
+          "term": "gothic influence",
+          "weight": 6
+        },
+        {
+          "term": "heavy metal",
+          "weight": 6
+        },
+        {
+          "term": "hip hop bridge",
+          "weight": 6
+        },
+        {
+          "term": "independent punk",
+          "weight": 6
+        },
+        {
+          "term": "industrial rock",
+          "weight": 6
+        },
+        {
+          "term": "la punk",
+          "weight": 6
+        },
+        {
+          "term": "mainstream punk",
+          "weight": 6
+        },
+        {
+          "term": "manchester",
+          "weight": 6
+        },
+        {
+          "term": "melodic hardcore",
           "weight": 6
         },
         {
@@ -1462,11 +1581,23 @@
           "weight": 6
         },
         {
+          "term": "misfits lineage",
+          "weight": 6
+        },
+        {
+          "term": "norwegian punk",
+          "weight": 6
+        },
+        {
+          "term": "operation ivy lineage",
+          "weight": 6
+        },
+        {
           "term": "political",
           "weight": 6
         },
         {
-          "term": "post grunge",
+          "term": "political rock",
           "weight": 6
         },
         {
@@ -1474,7 +1605,27 @@
           "weight": 6
         },
         {
-          "term": "proto punk",
+          "term": "rancid roots",
+          "weight": 6
+        },
+        {
+          "term": "reggae",
+          "weight": 6
+        },
+        {
+          "term": "reggae fusion",
+          "weight": 6
+        },
+        {
+          "term": "straight edge",
+          "weight": 6
+        },
+        {
+          "term": "thrash metal",
+          "weight": 6
+        },
+        {
+          "term": "venice scene",
           "weight": 6
         },
         {
@@ -1482,15 +1633,7 @@
           "weight": 4
         },
         {
-          "term": "2 tone music genre",
-          "weight": 4
-        },
-        {
           "term": "all",
-          "weight": 4
-        },
-        {
-          "term": "alternative metal",
           "weight": 4
         },
         {
@@ -1498,11 +1641,11 @@
           "weight": 4
         },
         {
-          "term": "east",
+          "term": "core punk and horror punk anchor keep near ramones sex pistols horror punk and hardcore punk rather than generic rock",
           "weight": 4
         },
         {
-          "term": "east bay punk",
+          "term": "east",
           "weight": 4
         },
         {
@@ -1510,7 +1653,7 @@
           "weight": 4
         },
         {
-          "term": "garage rock",
+          "term": "horror punk anchor",
           "weight": 4
         },
         {
@@ -1522,148 +1665,8 @@
           "weight": 4
         },
         {
-          "term": "indie rock",
-          "weight": 4
-        },
-        {
           "term": "ivy",
           "weight": 4
-        },
-        {
-          "term": "lineage",
-          "weight": 4
-        },
-        {
-          "term": "misfits",
-          "weight": 4
-        },
-        {
-          "term": "new",
-          "weight": 4
-        },
-        {
-          "term": "new york punk",
-          "weight": 4
-        },
-        {
-          "term": "operation",
-          "weight": 4
-        },
-        {
-          "term": "political punk",
-          "weight": 4
-        },
-        {
-          "term": "rancid",
-          "weight": 4
-        },
-        {
-          "term": "ska",
-          "weight": 4
-        },
-        {
-          "term": "ska punk",
-          "weight": 4
-        },
-        {
-          "term": "tone",
-          "weight": 4
-        },
-        {
-          "term": "york",
-          "weight": 4
-        },
-        {
-          "term": "black",
-          "weight": 3
-        },
-        {
-          "term": "1990s",
-          "weight": 2
-        },
-        {
-          "term": "23 skidoo",
-          "weight": 2
-        },
-        {
-          "term": "7 seconds",
-          "weight": 2
-        },
-        {
-          "term": "abc",
-          "weight": 2
-        },
-        {
-          "term": "about",
-          "weight": 2
-        },
-        {
-          "term": "adolescents",
-          "weight": 2
-        },
-        {
-          "term": "adorable",
-          "weight": 2
-        },
-        {
-          "term": "adventures",
-          "weight": 2
-        },
-        {
-          "term": "afi",
-          "weight": 2
-        },
-        {
-          "term": "aftermath",
-          "weight": 2
-        },
-        {
-          "term": "against",
-          "weight": 2
-        },
-        {
-          "term": "agent",
-          "weight": 2
-        },
-        {
-          "term": "agent orange",
-          "weight": 2
-        },
-        {
-          "term": "agression",
-          "weight": 2
-        },
-        {
-          "term": "al thawra",
-          "weight": 2
-        },
-        {
-          "term": "all about eve",
-          "weight": 2
-        },
-        {
-          "term": "all out war",
-          "weight": 2
-        },
-        {
-          "term": "andy",
-          "weight": 2
-        },
-        {
-          "term": "andy bell",
-          "weight": 2
-        },
-        {
-          "term": "art",
-          "weight": 2
-        },
-        {
-          "term": "art rock",
-          "weight": 2
-        },
-        {
-          "term": "bad brains",
-          "weight": 2
         }
       ]
     },
@@ -1678,18 +1681,30 @@
       "learnedTerms": [
         {
           "term": "country",
-          "weight": 38
+          "weight": 166
         },
         {
           "term": "folk",
-          "weight": 30
-        },
-        {
-          "term": "norwegian",
-          "weight": 12
+          "weight": 126
         },
         {
           "term": "norwegian vise",
+          "weight": 40
+        },
+        {
+          "term": "jazz",
+          "weight": 20
+        },
+        {
+          "term": "singer songwriter",
+          "weight": 16
+        },
+        {
+          "term": "flamenco",
+          "weight": 12
+        },
+        {
+          "term": "norwegian",
           "weight": 12
         },
         {
@@ -1701,23 +1716,23 @@
           "weight": 6
         },
         {
+          "term": "bluegrass",
+          "weight": 6
+        },
+        {
+          "term": "country rock",
+          "weight": 6
+        },
+        {
           "term": "gitarkameratene",
           "weight": 6
         },
         {
-          "term": "flamenco",
-          "weight": 4
-        },
-        {
-          "term": "jazz",
-          "weight": 4
+          "term": "southern rock",
+          "weight": 6
         },
         {
           "term": "richard",
-          "weight": 4
-        },
-        {
-          "term": "singer songwriter",
           "weight": 4
         },
         {
@@ -1761,10 +1776,6 @@
           "weight": 2
         },
         {
-          "term": "bluegrass",
-          "weight": 2
-        },
-        {
           "term": "camel",
           "weight": 2
         },
@@ -1786,10 +1797,6 @@
         },
         {
           "term": "chord melody",
-          "weight": 2
-        },
-        {
-          "term": "country rock",
           "weight": 2
         },
         {
@@ -1961,10 +1968,6 @@
           "weight": 2
         },
         {
-          "term": "southern rock",
-          "weight": 2
-        },
-        {
           "term": "spanish",
           "weight": 2
         },
@@ -2008,23 +2011,59 @@
       "eraMedian": 1958,
       "learnedTerms": [
         {
+          "term": "electric guitar",
+          "weight": 225
+        },
+        {
+          "term": "guitar brand",
+          "weight": 80
+        },
+        {
+          "term": "manufacturer",
+          "weight": 80
+        },
+        {
+          "term": "instrument",
+          "weight": 77
+        },
+        {
           "term": "electric",
           "weight": 55
         },
         {
-          "term": "electric guitar",
-          "weight": 45
+          "term": "hard rock",
+          "weight": 50
         },
         {
-          "term": "instrument",
-          "weight": 17
+          "term": "country",
+          "weight": 36
+        },
+        {
+          "term": "acoustic guitar",
+          "weight": 35
+        },
+        {
+          "term": "blues rock",
+          "weight": 30
+        },
+        {
+          "term": "heavy metal",
+          "weight": 30
+        },
+        {
+          "term": "folk",
+          "weight": 25
+        },
+        {
+          "term": "signature guitar",
+          "weight": 25
+        },
+        {
+          "term": "blues",
+          "weight": 18
         },
         {
           "term": "brand",
-          "weight": 16
-        },
-        {
-          "term": "guitar brand",
           "weight": 16
         },
         {
@@ -2032,11 +2071,11 @@
           "weight": 16
         },
         {
-          "term": "manufacturer",
-          "weight": 16
+          "term": "acoustic",
+          "weight": 12
         },
         {
-          "term": "acoustic",
+          "term": "jazz",
           "weight": 12
         },
         {
@@ -2044,7 +2083,11 @@
           "weight": 11
         },
         {
-          "term": "blues",
+          "term": "alternative rock",
+          "weight": 10
+        },
+        {
+          "term": "electric blues",
           "weight": 10
         },
         {
@@ -2052,7 +2095,11 @@
           "weight": 10
         },
         {
-          "term": "hard rock",
+          "term": "indie rock",
+          "weight": 10
+        },
+        {
+          "term": "jazz fusion",
           "weight": 10
         },
         {
@@ -2064,16 +2111,8 @@
           "weight": 9
         },
         {
-          "term": "country",
-          "weight": 8
-        },
-        {
           "term": "signature",
           "weight": 8
-        },
-        {
-          "term": "acoustic guitar",
-          "weight": 7
         },
         {
           "term": "fender",
@@ -2088,15 +2127,7 @@
           "weight": 7
         },
         {
-          "term": "blues rock",
-          "weight": 6
-        },
-        {
           "term": "heavy",
-          "weight": 6
-        },
-        {
-          "term": "heavy metal",
           "weight": 6
         },
         {
@@ -2104,15 +2135,51 @@
           "weight": 6
         },
         {
-          "term": "folk",
+          "term": "country rock",
           "weight": 5
         },
         {
-          "term": "signature guitar",
+          "term": "funk",
+          "weight": 5
+        },
+        {
+          "term": "glam rock",
+          "weight": 5
+        },
+        {
+          "term": "grunge",
+          "weight": 5
+        },
+        {
+          "term": "progressive metal",
+          "weight": 5
+        },
+        {
+          "term": "progressive rock",
+          "weight": 5
+        },
+        {
+          "term": "rock and roll",
+          "weight": 5
+        },
+        {
+          "term": "rockabilly",
+          "weight": 5
+        },
+        {
+          "term": "roots rock",
+          "weight": 5
+        },
+        {
+          "term": "singer songwriter",
           "weight": 5
         },
         {
           "term": "string",
+          "weight": 5
+        },
+        {
+          "term": "thrash metal",
           "weight": 5
         },
         {
@@ -2133,10 +2200,6 @@
         },
         {
           "term": "jackson",
-          "weight": 4
-        },
-        {
-          "term": "jazz",
           "weight": 4
         },
         {
@@ -2180,10 +2243,6 @@
           "weight": 2
         },
         {
-          "term": "alternative rock",
-          "weight": 2
-        },
-        {
           "term": "build",
           "weight": 2
         },
@@ -2204,10 +2263,6 @@
           "weight": 2
         },
         {
-          "term": "electric blues",
-          "weight": 2
-        },
-        {
           "term": "explorer",
           "weight": 2
         },
@@ -2225,14 +2280,6 @@
         },
         {
           "term": "indie",
-          "weight": 2
-        },
-        {
-          "term": "indie rock",
-          "weight": 2
-        },
-        {
-          "term": "jazz fusion",
           "weight": 2
         },
         {
@@ -2282,50 +2329,6 @@
         {
           "term": "twelve string electric",
           "weight": 2
-        },
-        {
-          "term": "yamaha",
-          "weight": 2
-        },
-        {
-          "term": "1275",
-          "weight": 1
-        },
-        {
-          "term": "1950",
-          "weight": 1
-        },
-        {
-          "term": "1950s",
-          "weight": 1
-        },
-        {
-          "term": "1952",
-          "weight": 1
-        },
-        {
-          "term": "1954",
-          "weight": 1
-        },
-        {
-          "term": "24 frets",
-          "weight": 1
-        },
-        {
-          "term": "3021",
-          "weight": 1
-        },
-        {
-          "term": "335",
-          "weight": 1
-        },
-        {
-          "term": "355",
-          "weight": 1
-        },
-        {
-          "term": "360",
-          "weight": 1
         }
       ]
     },
@@ -2339,6 +2342,22 @@
       "eraMedian": 1985,
       "learnedTerms": [
         {
+          "term": "hip hop",
+          "weight": 142
+        },
+        {
+          "term": "rap",
+          "weight": 124
+        },
+        {
+          "term": "west coast hip hop",
+          "weight": 80
+        },
+        {
+          "term": "gangsta rap",
+          "weight": 66
+        },
+        {
           "term": "hip",
           "weight": 46
         },
@@ -2347,43 +2366,87 @@
           "weight": 46
         },
         {
-          "term": "rap",
-          "weight": 40
+          "term": "funk",
+          "weight": 28
         },
         {
-          "term": "hip hop",
-          "weight": 34
+          "term": "g funk",
+          "weight": 28
         },
         {
           "term": "coast",
           "weight": 22
         },
         {
-          "term": "west",
+          "term": "rap collective",
           "weight": 18
         },
         {
-          "term": "west coast hip hop",
-          "weight": 16
+          "term": "west",
+          "weight": 18
         },
         {
           "term": "gangsta",
           "weight": 14
         },
         {
-          "term": "gangsta rap",
+          "term": "n w a",
           "weight": 14
+        },
+        {
+          "term": "detroit hip hop",
+          "weight": 12
+        },
+        {
+          "term": "east coast hip hop",
+          "weight": 12
+        },
+        {
+          "term": "eminem connection",
+          "weight": 12
+        },
+        {
+          "term": "tupac connection",
+          "weight": 12
         },
         {
           "term": "connection",
           "weight": 10
         },
         {
-          "term": "funk",
+          "term": "political hip hop",
+          "weight": 10
+        },
+        {
+          "term": "rap metal",
+          "weight": 10
+        },
+        {
+          "term": "rap rock",
           "weight": 8
         },
         {
+          "term": "thug life",
+          "weight": 8
+        },
+        {
+          "term": "alternative hip hop",
+          "weight": 6
+        },
+        {
+          "term": "california rap",
+          "weight": 6
+        },
+        {
           "term": "collective",
+          "weight": 6
+        },
+        {
+          "term": "compton",
+          "weight": 6
+        },
+        {
+          "term": "dr dre connection",
           "weight": 6
         },
         {
@@ -2391,11 +2454,19 @@
           "weight": 6
         },
         {
-          "term": "n w a",
+          "term": "hip hop metal bridge",
           "weight": 6
         },
         {
-          "term": "rap collective",
+          "term": "ice t",
+          "weight": 6
+        },
+        {
+          "term": "producer",
+          "weight": 6
+        },
+        {
+          "term": "thrash metal",
           "weight": 6
         },
         {
@@ -2403,11 +2474,11 @@
           "weight": 6
         },
         {
-          "term": "detroit",
-          "weight": 4
+          "term": "west coast",
+          "weight": 6
         },
         {
-          "term": "detroit hip hop",
+          "term": "detroit",
           "weight": 4
         },
         {
@@ -2419,15 +2490,7 @@
           "weight": 4
         },
         {
-          "term": "east coast hip hop",
-          "weight": 4
-        },
-        {
-          "term": "eminem connection",
-          "weight": 4
-        },
-        {
-          "term": "g funk",
+          "term": "hip hop anchor with possible punk rock crossover context keep hip hop in its own area but allow documented bridges",
           "weight": 4
         },
         {
@@ -2439,23 +2502,31 @@
           "weight": 4
         },
         {
+          "term": "rap rock bridge potential",
+          "weight": 4
+        },
+        {
           "term": "thug",
           "weight": 4
         },
         {
-          "term": "thug life",
-          "weight": 4
+          "term": "hard rock metal",
+          "weight": 3
         },
         {
-          "term": "tupac connection",
-          "weight": 4
+          "term": "hip hop needs its own readable territory while still allowing documented crossover lines into funk punk rock and metal",
+          "weight": 3
+        },
+        {
+          "term": "punk alt",
+          "weight": 3
+        },
+        {
+          "term": "rock circuit",
+          "weight": 3
         },
         {
           "term": "alternative",
-          "weight": 2
-        },
-        {
-          "term": "alternative hip hop",
           "weight": 2
         },
         {
@@ -2495,19 +2566,11 @@
           "weight": 2
         },
         {
-          "term": "california rap",
-          "weight": 2
-        },
-        {
           "term": "chicago",
           "weight": 2
         },
         {
           "term": "clinton",
-          "weight": 2
-        },
-        {
-          "term": "compton",
           "weight": 2
         },
         {
@@ -2532,10 +2595,6 @@
         },
         {
           "term": "dr dre",
-          "weight": 2
-        },
-        {
-          "term": "dr dre connection",
           "weight": 2
         },
         {
@@ -2571,19 +2630,11 @@
           "weight": 2
         },
         {
-          "term": "hip hop metal bridge",
-          "weight": 2
-        },
-        {
           "term": "hughes",
           "weight": 2
         },
         {
           "term": "ice cube",
-          "weight": 2
-        },
-        {
-          "term": "ice t",
           "weight": 2
         },
         {
@@ -2607,47 +2658,7 @@
           "weight": 2
         },
         {
-          "term": "political hip hop",
-          "weight": 2
-        },
-        {
-          "term": "producer",
-          "weight": 2
-        },
-        {
           "term": "public",
-          "weight": 2
-        },
-        {
-          "term": "public enemy",
-          "weight": 2
-        },
-        {
-          "term": "rap metal",
-          "weight": 2
-        },
-        {
-          "term": "shakur",
-          "weight": 2
-        },
-        {
-          "term": "thrash",
-          "weight": 2
-        },
-        {
-          "term": "thrash metal",
-          "weight": 2
-        },
-        {
-          "term": "tupac shakur",
-          "weight": 2
-        },
-        {
-          "term": "underground",
-          "weight": 2
-        },
-        {
-          "term": "west coast",
           "weight": 2
         }
       ]
@@ -3048,7 +3059,6 @@
       ],
       "curatorTags": [
         "Electric blues",
-        "electric blues",
         "blues"
       ],
       "connectionCount": 3,
@@ -3072,8 +3082,7 @@
       ],
       "curatorTags": [
         "Blues",
-        "Folk",
-        "blues"
+        "Folk"
       ],
       "connectionCount": 3,
       "linkedGenres": [
@@ -3098,7 +3107,6 @@
       ],
       "curatorTags": [
         "Rock and roll",
-        "rock and roll",
         "rock"
       ],
       "connectionCount": 2,
@@ -3146,7 +3154,6 @@
       ],
       "curatorTags": [
         "Psychedelic rock",
-        "psychedelic rock",
         "guitarist"
       ],
       "connectionCount": 4,
@@ -3171,8 +3178,7 @@
       ],
       "curatorTags": [
         "Electric blues",
-        "blues rock",
-        "electric blues"
+        "blues rock"
       ],
       "connectionCount": 6,
       "linkedGenres": [
@@ -3195,8 +3201,7 @@
       ],
       "curatorTags": [
         "Electric blues",
-        "blues rock",
-        "electric blues"
+        "blues rock"
       ],
       "connectionCount": 5,
       "linkedGenres": [
@@ -3285,8 +3290,7 @@
       ],
       "curatorTags": [
         "Jazz fusion",
-        "Rock",
-        "jazz fusion"
+        "Rock"
       ],
       "connectionCount": 4,
       "linkedGenres": [
@@ -3331,7 +3335,6 @@
       ],
       "curatorTags": [
         "Heavy metal",
-        "heavy metal",
         "guitarist"
       ],
       "connectionCount": 4,
@@ -3447,7 +3450,6 @@
       ],
       "curatorTags": [
         "Country",
-        "country",
         "artist"
       ],
       "connectionCount": 2,
@@ -3470,7 +3472,6 @@
       ],
       "curatorTags": [
         "Country",
-        "country",
         "artist"
       ],
       "connectionCount": 2,
@@ -3493,7 +3494,6 @@
       ],
       "curatorTags": [
         "Country",
-        "country",
         "guitarist"
       ],
       "connectionCount": 2,
@@ -3517,7 +3517,6 @@
       ],
       "curatorTags": [
         "Electric blues",
-        "electric blues",
         "blues"
       ],
       "connectionCount": 3,
@@ -3586,8 +3585,7 @@
       ],
       "curatorTags": [
         "Funk",
-        "Rock",
-        "rock"
+        "Rock"
       ],
       "connectionCount": 5,
       "linkedGenres": [
@@ -3610,8 +3608,7 @@
       ],
       "curatorTags": [
         "Psychedelic rock",
-        "Rock",
-        "psychedelic rock"
+        "Rock"
       ],
       "connectionCount": 3,
       "linkedGenres": [
@@ -3632,8 +3629,7 @@
       ],
       "curatorTags": [
         "Progressive rock",
-        "Psychedelic rock",
-        "progressive rock"
+        "Psychedelic rock"
       ],
       "connectionCount": 4,
       "linkedGenres": [
@@ -3649,22 +3645,27 @@
     "led-zeppelin": {
       "zone": "hard-rock-metal",
       "secondaryZones": [
+        "rock-circuit",
         "roots-blues"
       ],
       "primaryGenres": [
-        "hard rock"
+        "hard rock",
+        "blues rock"
       ],
       "curatorTags": [
+        "hard rock bridge",
+        "blues rock lineage",
+        "classic rock",
         "hard rock",
-        "Blues",
-        "Hard rock"
+        "Blues"
       ],
+      "curatorFeedback": "Important overlap point between blues rock, classic rock and hard rock.",
       "connectionCount": 3,
       "linkedGenres": [
         "hard-rock",
         "blues"
       ],
-      "bridgeScore": 0.38,
+      "bridgeScore": 0.84,
       "hubScore": 0.25,
       "layoutHints": {
         "pinned": false
@@ -3672,21 +3673,28 @@
     },
     "black-sabbath": {
       "zone": "hard-rock-metal",
-      "secondaryZones": [],
+      "secondaryZones": [
+        "rock-circuit"
+      ],
       "primaryGenres": [
-        "heavy metal"
+        "heavy metal",
+        "hard rock",
+        "doom metal"
       ],
       "curatorTags": [
+        "metal origin",
+        "doom metal root",
+        "hard rock bridge",
         "Heavy metal",
-        "heavy metal",
         "band"
       ],
+      "curatorFeedback": "Should behave as a bridge between hard rock, doom metal and heavy metal rather than sitting in a closed metal box.",
       "connectionCount": 4,
       "linkedGenres": [
         "heavy-metal"
       ],
-      "bridgeScore": 0.08,
-      "hubScore": 0.333,
+      "bridgeScore": 0.54,
+      "hubScore": 0.453,
       "layoutHints": {
         "pinned": false
       }
@@ -3699,7 +3707,6 @@
       ],
       "curatorTags": [
         "hard rock",
-        "Hard rock",
         "band"
       ],
       "connectionCount": 6,
@@ -3720,7 +3727,6 @@
       ],
       "curatorTags": [
         "Rock",
-        "rock",
         "band"
       ],
       "connectionCount": 2,
@@ -3742,8 +3748,7 @@
       ],
       "curatorTags": [
         "Punk rock",
-        "alternative rock",
-        "punk rock"
+        "alternative rock"
       ],
       "connectionCount": 2,
       "linkedGenres": [
@@ -3763,7 +3768,6 @@
       ],
       "curatorTags": [
         "Heavy metal",
-        "heavy metal",
         "band"
       ],
       "connectionCount": 3,
@@ -3786,7 +3790,6 @@
       ],
       "curatorTags": [
         "Heavy metal",
-        "heavy metal",
         "band"
       ],
       "connectionCount": 4,
@@ -3831,8 +3834,7 @@
       ],
       "curatorTags": [
         "Hard rock",
-        "blues rock",
-        "hard rock"
+        "blues rock"
       ],
       "connectionCount": 5,
       "linkedGenres": [
@@ -4116,8 +4118,7 @@
       "primaryGenres": [],
       "curatorTags": [
         "Electric blues",
-        "electric guitar",
-        "electric blues"
+        "electric guitar"
       ],
       "connectionCount": 4,
       "linkedGenres": [
@@ -4736,8 +4737,7 @@
       ],
       "curatorTags": [
         "Blues",
-        "Blues rock",
-        "blues rock"
+        "Blues rock"
       ],
       "connectionCount": 2,
       "linkedGenres": [
@@ -4806,8 +4806,7 @@
       ],
       "curatorTags": [
         "Electric blues",
-        "blues rock",
-        "electric blues"
+        "blues rock"
       ],
       "connectionCount": 3,
       "linkedGenres": [
@@ -4830,7 +4829,6 @@
       ],
       "curatorTags": [
         "Electric blues",
-        "electric blues",
         "blues"
       ],
       "connectionCount": 3,
@@ -4851,8 +4849,7 @@
       ],
       "curatorTags": [
         "Blues rock",
-        "Electric blues",
-        "blues rock"
+        "Electric blues"
       ],
       "connectionCount": 2,
       "linkedGenres": [
@@ -4876,8 +4873,7 @@
       ],
       "curatorTags": [
         "Southern rock",
-        "blues rock",
-        "southern rock"
+        "blues rock"
       ],
       "connectionCount": 4,
       "linkedGenres": [
@@ -4899,7 +4895,6 @@
       ],
       "curatorTags": [
         "Southern rock",
-        "southern rock",
         "guitarist"
       ],
       "connectionCount": 3,
@@ -4923,7 +4918,6 @@
       ],
       "curatorTags": [
         "Blues rock",
-        "blues rock",
         "southern rock"
       ],
       "connectionCount": 3,
@@ -4947,7 +4941,6 @@
       ],
       "curatorTags": [
         "Blues rock",
-        "blues rock",
         "blues"
       ],
       "connectionCount": 3,
@@ -4997,7 +4990,6 @@
       ],
       "curatorTags": [
         "Blues rock",
-        "blues rock",
         "rock"
       ],
       "connectionCount": 3,
@@ -5021,8 +5013,7 @@
       ],
       "curatorTags": [
         "Blues rock",
-        "Jazz fusion",
-        "blues rock"
+        "Jazz fusion"
       ],
       "connectionCount": 4,
       "linkedGenres": [
@@ -5046,7 +5037,6 @@
       ],
       "curatorTags": [
         "Rock",
-        "rock",
         "guitarist"
       ],
       "connectionCount": 3,
@@ -5112,8 +5102,7 @@
       ],
       "curatorTags": [
         "Rockabilly",
-        "guitarist",
-        "rockabilly"
+        "guitarist"
       ],
       "connectionCount": 3,
       "linkedGenres": [
@@ -5182,7 +5171,6 @@
       ],
       "curatorTags": [
         "Progressive metal",
-        "progressive metal",
         "guitarist"
       ],
       "connectionCount": 4,
@@ -5206,7 +5194,6 @@
       ],
       "curatorTags": [
         "Rock",
-        "rock",
         "guitarist"
       ],
       "connectionCount": 3,
@@ -5229,7 +5216,6 @@
       ],
       "curatorTags": [
         "Heavy metal",
-        "heavy metal",
         "guitarist"
       ],
       "connectionCount": 2,
@@ -5254,7 +5240,6 @@
       ],
       "curatorTags": [
         "Blues rock",
-        "blues rock",
         "hard rock"
       ],
       "connectionCount": 4,
@@ -5321,7 +5306,6 @@
       ],
       "curatorTags": [
         "Thrash metal",
-        "thrash metal",
         "guitarist"
       ],
       "connectionCount": 7,
@@ -5342,7 +5326,6 @@
       ],
       "curatorTags": [
         "Heavy metal",
-        "heavy metal",
         "guitarist"
       ],
       "connectionCount": 2,
@@ -5365,7 +5348,6 @@
       ],
       "curatorTags": [
         "Heavy metal",
-        "heavy metal",
         "guitarist"
       ],
       "connectionCount": 3,
@@ -5388,8 +5370,7 @@
       ],
       "curatorTags": [
         "Jazz",
-        "Jazz fusion",
-        "jazz fusion"
+        "Jazz fusion"
       ],
       "connectionCount": 2,
       "linkedGenres": [
@@ -5413,8 +5394,7 @@
       ],
       "curatorTags": [
         "Jazz",
-        "guitarist",
-        "jazz"
+        "guitarist"
       ],
       "connectionCount": 3,
       "linkedGenres": [
@@ -5437,8 +5417,7 @@
       ],
       "curatorTags": [
         "Jazz",
-        "guitarist",
-        "jazz"
+        "guitarist"
       ],
       "connectionCount": 4,
       "linkedGenres": [
@@ -5669,8 +5648,7 @@
       ],
       "curatorTags": [
         "Folk",
-        "Norwegian vise",
-        "folk"
+        "Norwegian vise"
       ],
       "connectionCount": 2,
       "linkedGenres": [
@@ -5693,8 +5671,7 @@
       ],
       "curatorTags": [
         "Blues rock",
-        "Rock",
-        "blues rock"
+        "Rock"
       ],
       "connectionCount": 4,
       "linkedGenres": [
@@ -5717,8 +5694,7 @@
       ],
       "curatorTags": [
         "Art rock",
-        "Rock",
-        "art rock"
+        "Rock"
       ],
       "connectionCount": 3,
       "linkedGenres": [
@@ -5763,7 +5739,6 @@
       ],
       "curatorTags": [
         "hard rock",
-        "Hard rock",
         "Heavy metal"
       ],
       "connectionCount": 3,
@@ -5787,8 +5762,7 @@
       ],
       "curatorTags": [
         "Blues rock",
-        "Hard rock",
-        "blues rock"
+        "Hard rock"
       ],
       "connectionCount": 4,
       "linkedGenres": [
@@ -5812,7 +5786,6 @@
       ],
       "curatorTags": [
         "hard rock",
-        "Hard rock",
         "band"
       ],
       "connectionCount": 5,
@@ -5855,7 +5828,6 @@
       ],
       "curatorTags": [
         "Thrash metal",
-        "thrash metal",
         "band"
       ],
       "connectionCount": 5,
@@ -5876,8 +5848,7 @@
       ],
       "curatorTags": [
         "Heavy metal",
-        "Thrash metal",
-        "heavy metal"
+        "Thrash metal"
       ],
       "connectionCount": 3,
       "linkedGenres": [
@@ -5946,8 +5917,7 @@
       ],
       "curatorTags": [
         "Art rock",
-        "Progressive rock",
-        "art rock"
+        "Progressive rock"
       ],
       "connectionCount": 3,
       "linkedGenres": [
@@ -5968,7 +5938,6 @@
       ],
       "curatorTags": [
         "Progressive rock",
-        "progressive rock",
         "band"
       ],
       "connectionCount": 2,
@@ -5991,8 +5960,7 @@
       ],
       "curatorTags": [
         "Hard rock",
-        "Progressive rock",
-        "hard rock"
+        "Progressive rock"
       ],
       "connectionCount": 3,
       "linkedGenres": [
@@ -6015,8 +5983,7 @@
       ],
       "curatorTags": [
         "Blues rock",
-        "Jazz fusion",
-        "blues rock"
+        "Jazz fusion"
       ],
       "connectionCount": 3,
       "linkedGenres": [
@@ -6037,8 +6004,7 @@
       ],
       "curatorTags": [
         "Rockabilly",
-        "band",
-        "rockabilly"
+        "band"
       ],
       "connectionCount": 2,
       "linkedGenres": [
@@ -6060,8 +6026,7 @@
       ],
       "curatorTags": [
         "Alternative rock",
-        "Art rock",
-        "alternative rock"
+        "Art rock"
       ],
       "connectionCount": 3,
       "linkedGenres": [
@@ -6082,7 +6047,6 @@
       ],
       "curatorTags": [
         "Heavy metal",
-        "heavy metal",
         "band"
       ],
       "connectionCount": 2,
@@ -6106,7 +6070,6 @@
       ],
       "curatorTags": [
         "Heavy metal",
-        "heavy metal",
         "band"
       ],
       "connectionCount": 7,
@@ -6297,8 +6260,7 @@
       "primaryGenres": [],
       "curatorTags": [
         "electric guitar",
-        "Glam rock",
-        "glam rock"
+        "Glam rock"
       ],
       "connectionCount": 2,
       "linkedGenres": [
@@ -6367,8 +6329,7 @@
       "primaryGenres": [],
       "curatorTags": [
         "Blues rock",
-        "electric guitar",
-        "blues rock"
+        "electric guitar"
       ],
       "connectionCount": 2,
       "linkedGenres": [
@@ -6548,8 +6509,7 @@
       "primaryGenres": [],
       "curatorTags": [
         "electric guitar",
-        "Heavy metal",
-        "heavy metal"
+        "Heavy metal"
       ],
       "connectionCount": 2,
       "linkedGenres": [
@@ -6590,8 +6550,7 @@
       "primaryGenres": [],
       "curatorTags": [
         "electric guitar",
-        "Hard rock",
-        "hard rock"
+        "Hard rock"
       ],
       "connectionCount": 2,
       "linkedGenres": [
@@ -6611,8 +6570,7 @@
       "primaryGenres": [],
       "curatorTags": [
         "electric guitar",
-        "Hard rock",
-        "hard rock"
+        "Hard rock"
       ],
       "connectionCount": 3,
       "linkedGenres": [
@@ -6632,8 +6590,7 @@
       "primaryGenres": [],
       "curatorTags": [
         "electric guitar",
-        "Jazz fusion",
-        "jazz fusion"
+        "Jazz fusion"
       ],
       "connectionCount": 2,
       "linkedGenres": [
@@ -6674,8 +6631,7 @@
       "primaryGenres": [],
       "curatorTags": [
         "acoustic guitar",
-        "Folk",
-        "folk"
+        "Folk"
       ],
       "connectionCount": 2,
       "linkedGenres": [
@@ -6695,8 +6651,7 @@
       "primaryGenres": [],
       "curatorTags": [
         "electric guitar",
-        "Indie rock",
-        "indie rock"
+        "Indie rock"
       ],
       "connectionCount": 2,
       "linkedGenres": [
@@ -6716,7 +6671,6 @@
       ],
       "curatorTags": [
         "Doom metal",
-        "doom metal",
         "band"
       ],
       "connectionCount": 1,
@@ -6740,8 +6694,7 @@
       ],
       "curatorTags": [
         "gothic metal",
-        "Doom metal",
-        "doom metal"
+        "Doom metal"
       ],
       "connectionCount": 3,
       "linkedGenres": [
@@ -6762,7 +6715,6 @@
       ],
       "curatorTags": [
         "Doom metal",
-        "doom metal",
         "band"
       ],
       "connectionCount": 2,
@@ -6783,7 +6735,6 @@
       ],
       "curatorTags": [
         "Doom metal",
-        "doom metal",
         "band"
       ],
       "connectionCount": 1,
@@ -6828,8 +6779,7 @@
       ],
       "curatorTags": [
         "hard rock",
-        "alternative metal",
-        "Hard rock"
+        "alternative metal"
       ],
       "connectionCount": 16,
       "linkedGenres": [
@@ -7021,7 +6971,6 @@
       ],
       "curatorTags": [
         "Thrash metal",
-        "thrash metal",
         "band"
       ],
       "connectionCount": 8,
@@ -7249,7 +7198,6 @@
       ],
       "curatorTags": [
         "Progressive metal",
-        "progressive metal",
         "band"
       ],
       "connectionCount": 2,
@@ -8491,20 +8439,24 @@
     },
     "ramones": {
       "zone": "punk-alt",
-      "secondaryZones": [],
+      "secondaryZones": [
+        "rock-circuit"
+      ],
       "eraStart": 1974,
       "eraPeak": 1974,
       "primaryGenres": [
         "punk rock"
       ],
       "curatorTags": [
-        "punk rock",
         "punk roots",
-        "new york punk"
+        "new york punk",
+        "early punk anchor",
+        "punk rock"
       ],
+      "curatorFeedback": "Major early punk anchor. Should help organize the punk-alt area and connect back to rock history.",
       "connectionCount": 2,
       "linkedGenres": [],
-      "bridgeScore": 0,
+      "bridgeScore": 0.38,
       "hubScore": 0.167,
       "layoutHints": {
         "pinned": false
@@ -8601,8 +8553,7 @@
       ],
       "curatorTags": [
         "glam metal",
-        "hard rock",
-        "Hard rock"
+        "hard rock"
       ],
       "connectionCount": 7,
       "linkedGenres": [
@@ -8624,7 +8575,6 @@
       ],
       "curatorTags": [
         "Horror punk",
-        "horror punk",
         "band"
       ],
       "connectionCount": 1,
@@ -8664,7 +8614,6 @@
       ],
       "curatorTags": [
         "Thrash metal",
-        "thrash metal",
         "band"
       ],
       "connectionCount": 1,
@@ -8685,7 +8634,6 @@
       ],
       "curatorTags": [
         "Thrash metal",
-        "thrash metal",
         "band"
       ],
       "connectionCount": 2,
@@ -8706,7 +8654,6 @@
       ],
       "curatorTags": [
         "Thrash metal",
-        "thrash metal",
         "band"
       ],
       "connectionCount": 1,
@@ -8727,7 +8674,6 @@
       ],
       "curatorTags": [
         "Thrash metal",
-        "thrash metal",
         "band"
       ],
       "connectionCount": 1,
@@ -8748,8 +8694,7 @@
       ],
       "curatorTags": [
         "Speed Metal",
-        "Thrash metal",
-        "speed metal"
+        "Thrash metal"
       ],
       "connectionCount": 2,
       "linkedGenres": [
@@ -8824,19 +8769,24 @@
     },
     "misfits": {
       "zone": "punk-alt",
-      "secondaryZones": [],
+      "secondaryZones": [
+        "rock-circuit"
+      ],
       "primaryGenres": [
         "horror punk",
         "punk rock"
       ],
       "curatorTags": [
+        "horror punk anchor",
+        "punk roots",
+        "Ramones/Sex Pistols neighborhood",
         "horror punk",
-        "punk rock",
-        "punk roots"
+        "punk rock"
       ],
+      "curatorFeedback": "Core punk and horror punk anchor. Keep near Ramones, Sex Pistols, horror punk and hardcore punk rather than generic rock.",
       "connectionCount": 0,
       "linkedGenres": [],
-      "bridgeScore": 0,
+      "bridgeScore": 0.42,
       "hubScore": 0,
       "layoutHints": {
         "pinned": false
@@ -8850,8 +8800,7 @@
       ],
       "curatorTags": [
         "Shoegaze",
-        "band",
-        "shoegaze"
+        "band"
       ],
       "connectionCount": 1,
       "linkedGenres": [
@@ -8871,8 +8820,7 @@
       ],
       "curatorTags": [
         "Shoegaze",
-        "band",
-        "shoegaze"
+        "band"
       ],
       "connectionCount": 1,
       "linkedGenres": [
@@ -8894,8 +8842,7 @@
       ],
       "curatorTags": [
         "Shoegaze",
-        "artist",
-        "shoegaze"
+        "artist"
       ],
       "connectionCount": 4,
       "linkedGenres": [
@@ -8915,8 +8862,7 @@
       ],
       "curatorTags": [
         "Shoegaze",
-        "band",
-        "shoegaze"
+        "band"
       ],
       "connectionCount": 1,
       "linkedGenres": [
@@ -8936,8 +8882,7 @@
       ],
       "curatorTags": [
         "Shoegaze",
-        "band",
-        "shoegaze"
+        "band"
       ],
       "connectionCount": 2,
       "linkedGenres": [
@@ -9621,8 +9566,7 @@
       ],
       "curatorTags": [
         "skate punk",
-        "Speed Metal",
-        "speed metal"
+        "Speed Metal"
       ],
       "connectionCount": 2,
       "linkedGenres": [
@@ -9643,7 +9587,6 @@
       ],
       "curatorTags": [
         "Speed Metal",
-        "speed metal",
         "band"
       ],
       "connectionCount": 1,
@@ -10603,7 +10546,6 @@
       ],
       "curatorTags": [
         "hard rock",
-        "Hard rock",
         "band"
       ],
       "connectionCount": 1,
@@ -10624,7 +10566,6 @@
       ],
       "curatorTags": [
         "hard rock",
-        "Hard rock",
         "band"
       ],
       "connectionCount": 1,
@@ -11095,8 +11036,7 @@
       ],
       "curatorTags": [
         "hardcore punk",
-        "Punk rock",
-        "punk rock"
+        "Punk rock"
       ],
       "connectionCount": 2,
       "linkedGenres": [
@@ -11412,20 +11352,24 @@
     },
     "sex-pistols": {
       "zone": "punk-alt",
-      "secondaryZones": [],
+      "secondaryZones": [
+        "rock-circuit"
+      ],
       "eraStart": 1975,
       "eraPeak": 1975,
       "primaryGenres": [
         "punk rock"
       ],
       "curatorTags": [
-        "punk rock",
         "uk punk",
-        "punk roots"
+        "punk roots",
+        "early punk anchor",
+        "punk rock"
       ],
+      "curatorFeedback": "Major UK punk anchor. Should sit in the punk-alt core with clear relation to Ramones and early punk.",
       "connectionCount": 0,
       "linkedGenres": [],
-      "bridgeScore": 0,
+      "bridgeScore": 0.38,
       "hubScore": 0,
       "layoutHints": {
         "pinned": false
@@ -11752,8 +11696,7 @@
       ],
       "curatorTags": [
         "Post-punk",
-        "band",
-        "post-punk"
+        "band"
       ],
       "connectionCount": 1,
       "linkedGenres": [
@@ -11773,8 +11716,7 @@
       ],
       "curatorTags": [
         "Post-punk",
-        "band",
-        "post-punk"
+        "band"
       ],
       "connectionCount": 1,
       "linkedGenres": [
@@ -12310,8 +12252,7 @@
       ],
       "curatorTags": [
         "roots rock",
-        "Southern rock",
-        "southern rock"
+        "Southern rock"
       ],
       "connectionCount": 2,
       "linkedGenres": [
@@ -12413,22 +12354,27 @@
     "public-enemy": {
       "zone": "hip-hop-rap",
       "secondaryZones": [
+        "punk-alt",
+        "rock-circuit",
         "hard-rock-metal",
         "guitar-workshop"
       ],
       "eraStart": 1985,
       "eraPeak": 1985,
       "primaryGenres": [
+        "political hip-hop",
         "hip-hop"
       ],
       "curatorTags": [
         "political hip-hop",
+        "rap-rock bridge potential",
         "east coast hip-hop",
         "rap"
       ],
+      "curatorFeedback": "Hip-hop anchor with possible punk/rock crossover context. Keep hip-hop in its own area, but allow documented bridges.",
       "connectionCount": 6,
       "linkedGenres": [],
-      "bridgeScore": 0.44,
+      "bridgeScore": 1,
       "hubScore": 0.5,
       "layoutHints": {
         "pinned": false
@@ -12627,7 +12573,6 @@
       ],
       "curatorTags": [
         "Gangsta rap",
-        "gangsta rap",
         "rap"
       ],
       "connectionCount": 2,
@@ -14722,6 +14667,34 @@
         "pinned": false
       }
     }
+  },
+  "curatorFeedback": {
+    "updatedAt": "2026-09-15T00:00:00.000Z",
+    "rules": [
+      {
+        "id": "zones-are-guides-not-cages",
+        "weight": 1,
+        "feedback": "Zones are guidance, not cages. Strong bridge nodes may bleed outside the visual rectangle when it improves readability."
+      },
+      {
+        "id": "wikipedia-categories-are-weak-signals",
+        "weight": 1,
+        "feedback": "Wikipedia categories are weak signals. Do not create or prioritize category-like genre nodes unless they are recognized music genres."
+      },
+      {
+        "id": "songs-and-albums-are-context",
+        "weight": 1,
+        "feedback": "Songs, albums and releases can explain a connection, but should not become graph nodes."
+      }
+    ],
+    "nodeIds": [
+      "black-sabbath",
+      "led-zeppelin",
+      "misfits",
+      "public-enemy",
+      "ramones",
+      "sex-pistols"
+    ]
   },
   "warnings": []
 }

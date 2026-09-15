@@ -1,0 +1,115 @@
+{
+  "version": 1,
+  "updatedAt": "2026-09-15T00:00:00.000Z",
+  "notes": [
+    "Human feedback for the MHM learning layer.",
+    "Use this for taste, placement and organization signals after reviewing the live map.",
+    "This file should stay factual and music-related. Do not add albums or songs as node targets."
+  ],
+  "nodeFeedback": [
+    {
+      "id": "misfits",
+      "label": "Misfits",
+      "zone": "punk-alt",
+      "secondaryZones": ["rock-circuit"],
+      "primaryGenres": ["horror punk", "punk rock"],
+      "curatorTags": ["horror punk anchor", "punk roots", "Ramones/Sex Pistols neighborhood"],
+      "bridgeBoost": 0.2,
+      "feedback": "Core punk and horror punk anchor. Keep near Ramones, Sex Pistols, horror punk and hardcore punk rather than generic rock."
+    },
+    {
+      "id": "ramones",
+      "label": "Ramones",
+      "zone": "punk-alt",
+      "secondaryZones": ["rock-circuit"],
+      "primaryGenres": ["punk rock"],
+      "curatorTags": ["punk roots", "new york punk", "early punk anchor"],
+      "bridgeBoost": 0.16,
+      "feedback": "Major early punk anchor. Should help organize the punk-alt area and connect back to rock history."
+    },
+    {
+      "id": "sex-pistols",
+      "label": "Sex Pistols",
+      "zone": "punk-alt",
+      "secondaryZones": ["rock-circuit"],
+      "primaryGenres": ["punk rock"],
+      "curatorTags": ["uk punk", "punk roots", "early punk anchor"],
+      "bridgeBoost": 0.16,
+      "feedback": "Major UK punk anchor. Should sit in the punk-alt core with clear relation to Ramones and early punk."
+    },
+    {
+      "id": "black-sabbath",
+      "label": "Black Sabbath",
+      "zone": "hard-rock-metal",
+      "secondaryZones": ["rock-circuit"],
+      "primaryGenres": ["heavy metal", "hard rock", "doom metal"],
+      "curatorTags": ["metal origin", "doom metal root", "hard rock bridge"],
+      "bridgeBoost": 0.24,
+      "hubBoost": 0.12,
+      "feedback": "Should behave as a bridge between hard rock, doom metal and heavy metal rather than sitting in a closed metal box."
+    },
+    {
+      "id": "led-zeppelin",
+      "label": "Led Zeppelin",
+      "zone": "hard-rock-metal",
+      "secondaryZones": ["rock-circuit", "roots-blues"],
+      "primaryGenres": ["hard rock", "blues rock"],
+      "curatorTags": ["hard rock bridge", "blues rock lineage", "classic rock"],
+      "bridgeBoost": 0.24,
+      "feedback": "Important overlap point between blues rock, classic rock and hard rock."
+    },
+    {
+      "id": "public-enemy",
+      "label": "Public Enemy",
+      "zone": "hip-hop-rap",
+      "secondaryZones": ["punk-alt", "rock-circuit"],
+      "primaryGenres": ["political hip-hop", "hip-hop"],
+      "curatorTags": ["political hip-hop", "rap-rock bridge potential", "east coast hip-hop"],
+      "bridgeBoost": 0.18,
+      "feedback": "Hip-hop anchor with possible punk/rock crossover context. Keep hip-hop in its own area, but allow documented bridges."
+    }
+  ],
+  "zoneFeedback": [
+    {
+      "zone": "rock-circuit",
+      "terms": ["classic rock", "rock and roll", "glam rock", "blues rock", "hard rock bridge"],
+      "bridgeToZones": ["roots-blues", "hard-rock-metal", "psychedelia-prog", "punk-alt"],
+      "feedback": "Rock is the connective tissue. It should overlap with roots/blues, hard rock/metal, prog/psychedelia and punk instead of becoming a sealed box."
+    },
+    {
+      "zone": "hard-rock-metal",
+      "terms": ["hard rock", "heavy metal", "doom metal", "thrash metal", "power metal", "riff culture"],
+      "bridgeToZones": ["rock-circuit", "punk-alt", "psychedelia-prog"],
+      "feedback": "Hard rock and metal should be dense, but not isolated. Black Sabbath, Led Zeppelin, Deep Purple, Van Halen, AC/DC and punk/metal crossover nodes should bleed across borders."
+    },
+    {
+      "zone": "punk-alt",
+      "terms": ["punk rock", "horror punk", "hardcore punk", "post-punk", "alternative rock", "indie rock"],
+      "bridgeToZones": ["rock-circuit", "hard-rock-metal", "hip-hop-rap"],
+      "feedback": "Punk/alternative should feel chaotic and connected, not boxed. Let hardcore, horror punk, post-punk and alternative scenes cluster, but allow cross-zone drift."
+    },
+    {
+      "zone": "hip-hop-rap",
+      "terms": ["hip-hop", "rap", "west coast hip-hop", "gangsta rap", "g-funk", "rap rock"],
+      "bridgeToZones": ["punk-alt", "rock-circuit", "hard-rock-metal"],
+      "feedback": "Hip-hop needs its own readable territory while still allowing documented crossover lines into funk, punk, rock and metal."
+    }
+  ],
+  "rules": [
+    {
+      "id": "zones-are-guides-not-cages",
+      "weight": 1,
+      "feedback": "Zones are guidance, not cages. Strong bridge nodes may bleed outside the visual rectangle when it improves readability."
+    },
+    {
+      "id": "wikipedia-categories-are-weak-signals",
+      "weight": 1,
+      "feedback": "Wikipedia categories are weak signals. Do not create or prioritize category-like genre nodes unless they are recognized music genres."
+    },
+    {
+      "id": "songs-and-albums-are-context",
+      "weight": 1,
+      "feedback": "Songs, albums and releases can explain a connection, but should not become graph nodes."
+    }
+  ]
+}

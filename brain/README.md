@@ -102,8 +102,11 @@ fields back into `brain/data/approved/obsidian-overrides.json`; `migrate:data`
 then applies those fields before regenerating the public graph JSON.
 
 `brain:learn` reads the approved graph plus Obsidian frontmatter and writes
-`brain/data/approved/learning-model.json`. The layout engine uses that model for
-learned zone terms, era sorting, bridge signals and pinned human curation.
+`brain/data/approved/learning-model.json`. It also reads
+`brain/data/approved/curator-feedback.json`, where you can write direct human
+feedback about node placement, zone overlap, weak suggestions and project taste.
+The layout engine uses that model for learned zone terms, era sorting, bridge
+signals and pinned human curation.
 
 `brain:organize` reads the approved graph and learning model, then writes
 `brain/data/approved/organization-model.json`. It also writes a local report and
@@ -156,8 +159,9 @@ site still reads generated JSON.
 ## Learning Layer
 
 The current learning layer is deterministic and review-friendly. It learns from
-the approved graph and from human Obsidian edits, then stores the result in a
-small JSON model. It does not invent facts and it does not publish by itself.
+the approved graph, human Obsidian edits and explicit curator feedback, then
+stores the result in a small JSON model. It does not invent facts and it does
+not publish by itself.
 
 The model currently learns:
 
@@ -171,6 +175,18 @@ The model currently learns:
 This gives the map memory. If a curator repeatedly moves or classifies entities
 in Obsidian, the generated layout starts treating those choices as project
 knowledge.
+
+Use `brain/data/approved/curator-feedback.json` for quick corrections after
+looking at the live map. Good feedback examples:
+
+- `Misfits should anchor horror punk / punk-alt, close to Ramones and Sex Pistols.`
+- `Hard rock and metal should overlap more with rock-circuit around Black Sabbath, Led Zeppelin, Deep Purple and AC/DC.`
+- `Hip-hop should have its own readable territory, but allow documented bridges into punk, rock and metal.`
+
+The feedback file supports node-level hints (`zone`, `secondaryZones`,
+`primaryGenres`, `curatorTags`, `bridgeBoost`, `hubBoost`) and zone-level terms.
+Run `npm run brain:learn`, then `npm run migrate:data`, then
+`npm run brain:organize` after editing it.
 
 After learning, run `npm run brain:organize` to turn that memory into actionable
 organization signals. The organization model does not move the public map by

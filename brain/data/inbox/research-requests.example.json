@@ -57,6 +57,11 @@
       "purpose": "Show what the scout would do, including a frontier request if the queue is empty."
     },
     {
+      "label": "Learning model",
+      "command": "npm run brain:learn",
+      "purpose": "Teach the local brain from Obsidian notes and curator feedback."
+    },
+    {
       "label": "Organization brain",
       "command": "npm run brain:organize",
       "purpose": "Analyze weak zones, bridge nodes, layout pressure and frontier requests for the scout agent."

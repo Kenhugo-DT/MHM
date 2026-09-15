@@ -14,6 +14,7 @@ const brainRoot = path.resolve(scriptDir, "..");
 const graphPath = path.join(brainRoot, "data", "approved", "graph.json");
 const vaultRoot = path.join(brainRoot, "obsidian");
 const modelPath = path.join(brainRoot, "data", "approved", "learning-model.json");
+const feedbackPath = path.join(brainRoot, "data", "approved", "curator-feedback.json");
 const reportPath = path.join(brainRoot, "data", "runs", "learning-report.md");
 
 const STOP_WORDS = new Set([
@@ -68,6 +69,30 @@ function addWeighted(map, key, amount) {
   map.set(normalized, (map.get(normalized) ?? 0) + amount);
 }
 
+function mergeUnique(...arrays) {
+  const values = [];
+  const seen = new Set();
+  for (const array of arrays) {
+    for (const value of array ?? []) {
+      const text = String(value ?? "").trim();
+      const key = normalize(text);
+      if (!text || seen.has(key)) continue;
+      seen.add(key);
+      values.push(text);
+    }
+  }
+  return values;
+}
+
+function coerceNumber(value) {
+  const number = Number(value);
+  return Number.isFinite(number) ? number : undefined;
+}
+
+function clamp01(value) {
+  return Math.max(0, Math.min(1, value));
+}
+
 function median(values) {
   if (!values.length) return undefined;
   const sorted = [...values].sort((a, b) => a - b);
@@ -116,6 +141,50 @@ function frontmatterById() {
   }
 
   return { notes, warnings };
+}
+
+function feedbackById(graph) {
+  const payload = fs.existsSync(feedbackPath)
+    ? JSON.parse(fs.readFileSync(feedbackPath, "utf8"))
+    : { nodeFeedback: [], zoneFeedback: [], rules: [] };
+  const nodeById = new Map((graph.nodes ?? []).map((node) => [node.id, node]));
+  const idByLabel = new Map((graph.nodes ?? []).map((node) => [normalize(node.label), node.id]));
+  const feedback = new Map();
+  const warnings = [];
+
+  for (const item of payload.nodeFeedback ?? []) {
+    const directId = String(item.id ?? "").trim();
+    const labelId = idByLabel.get(normalize(item.label));
+    const id = directId || labelId;
+
+    if (!id || !nodeById.has(id)) {
+      warnings.push(`Skipped feedback for unknown node: ${item.label || item.id || "unnamed"}`);
+      continue;
+    }
+
+    feedback.set(id, {
+      id,
+      label: item.label,
+      zone: String(item.zone ?? "").trim(),
+      primaryGenres: coerceStringArray(item.primaryGenres),
+      curatorTags: coerceStringArray(item.curatorTags),
+      secondaryZones: coerceStringArray(item.secondaryZones),
+      eraStart: coerceOptionalNumber(item.eraStart),
+      eraPeak: coerceOptionalNumber(item.eraPeak),
+      layoutPinned: item.layoutPinned === undefined ? undefined : Boolean(item.layoutPinned),
+      layoutX: coerceNumber(item.layoutX),
+      layoutY: coerceNumber(item.layoutY),
+      bridgeBoost: coerceNumber(item.bridgeBoost) ?? 0,
+      hubBoost: coerceNumber(item.hubBoost) ?? 0,
+      feedback: String(item.feedback ?? "").trim(),
+    });
+  }
+
+  return {
+    payload,
+    feedback,
+    warnings,
+  };
 }
 
 function graphMaps(graph) {
@@ -176,11 +245,12 @@ function termSeeds(node, note, linkedGenres) {
   return [...terms];
 }
 
-function buildLearningModel(graph, notes, warnings) {
+function buildLearningModel(graph, notes, feedbackData, warnings) {
   const { nodeById, degree, genreLinks, zonesByNode } = graphMaps(graph);
   const zoneTerms = new Map();
   const zoneStats = new Map();
   const learnedNodes = {};
+  const feedback = feedbackData.feedback;
 
   for (const zone of new Set((graph.nodes ?? []).map((node) => node.zone).filter(Boolean))) {
     zoneTerms.set(zone, new Map());
@@ -195,28 +265,34 @@ function buildLearningModel(graph, notes, warnings) {
 
   for (const node of graph.nodes ?? []) {
     const note = notes.get(node.id);
+    const noteFeedback = feedback.get(node.id);
     const linkedGenreIds = [...(genreLinks.get(node.id) ?? [])];
     const linkedGenreLabels = linkedGenreIds.map((id) => nodeById.get(id)?.label ?? id);
-    const primaryZone = note?.zone || node.zone;
+    const primaryZone = noteFeedback?.zone || note?.zone || node.zone;
     const secondaryZones = [
+      ...(noteFeedback?.secondaryZones ?? []),
       ...(note?.secondaryZones ?? []),
       ...[...(zonesByNode.get(node.id) ?? [])].filter((zone) => zone && zone !== primaryZone),
     ];
     const uniqueSecondaryZones = [...new Set(secondaryZones)].filter(Boolean);
     const nodeDegree = degree.get(node.id) ?? 0;
-    const bridgeScore = Math.min(1, uniqueSecondaryZones.length * 0.22 + linkedGenreIds.length * 0.08);
-    const hubScore = Math.min(1, nodeDegree / 12);
+    const bridgeScore = clamp01(uniqueSecondaryZones.length * 0.22 + linkedGenreIds.length * 0.08 + (noteFeedback?.bridgeBoost ?? 0));
+    const hubScore = clamp01(nodeDegree / 12 + (noteFeedback?.hubBoost ?? 0));
     const years = [
+      noteFeedback?.eraStart,
+      noteFeedback?.eraPeak,
       note?.eraStart,
       note?.eraPeak,
       ...(node.metadata ?? []).flatMap(yearsFromText),
       ...yearsFromText(node.summary),
     ].filter(Number.isFinite);
-    const eraStart = note?.eraStart ?? (years.length ? Math.min(...years) : undefined);
-    const eraPeak = note?.eraPeak ?? median(years);
-    const pinned = Boolean(note?.layoutPinned);
-    const x = pinned ? note?.layoutX : undefined;
-    const y = pinned ? note?.layoutY : undefined;
+    const eraStart = noteFeedback?.eraStart ?? note?.eraStart ?? (years.length ? Math.min(...years) : undefined);
+    const eraPeak = noteFeedback?.eraPeak ?? note?.eraPeak ?? median(years);
+    const pinned = Boolean(noteFeedback?.layoutPinned ?? note?.layoutPinned);
+    const x = pinned ? (noteFeedback?.layoutX ?? note?.layoutX) : undefined;
+    const y = pinned ? (noteFeedback?.layoutY ?? note?.layoutY) : undefined;
+    const primaryGenres = mergeUnique(noteFeedback?.primaryGenres, note?.primaryGenres);
+    const curatorTags = mergeUnique(noteFeedback?.curatorTags, note?.curatorTags);
 
     if (!zoneTerms.has(primaryZone)) zoneTerms.set(primaryZone, new Map());
     if (!zoneStats.has(primaryZone)) {
@@ -232,8 +308,11 @@ function buildLearningModel(graph, notes, warnings) {
 
     const terms = termSeeds(node, note, linkedGenreLabels);
     for (const term of terms) {
-      const amount = (note?.zone && note.zone !== node.zone ? 3 : 1) + (note?.primaryGenres?.length ? 1 : 0);
+      const amount = (primaryZone !== node.zone ? 3 : 1) + (primaryGenres.length ? 1 : 0);
       addWeighted(zoneTerms.get(primaryZone), term, amount);
+    }
+    for (const term of [...primaryGenres, ...curatorTags, noteFeedback?.feedback].filter(Boolean)) {
+      addWeighted(zoneTerms.get(primaryZone), term, 4);
     }
 
     learnedNodes[node.id] = {
@@ -241,8 +320,9 @@ function buildLearningModel(graph, notes, warnings) {
       secondaryZones: uniqueSecondaryZones,
       eraStart,
       eraPeak,
-      primaryGenres: note?.primaryGenres ?? [],
-      curatorTags: note?.curatorTags ?? [],
+      primaryGenres,
+      curatorTags,
+      curatorFeedback: noteFeedback?.feedback,
       connectionCount: nodeDegree,
       linkedGenres: linkedGenreIds,
       bridgeScore: Number(bridgeScore.toFixed(3)),
@@ -253,6 +333,21 @@ function buildLearningModel(graph, notes, warnings) {
         y,
       },
     };
+  }
+
+  for (const item of feedbackData.payload.zoneFeedback ?? []) {
+    const zone = String(item.zone ?? "").trim();
+    if (!zone) continue;
+    if (!zoneTerms.has(zone)) zoneTerms.set(zone, new Map());
+    for (const term of coerceStringArray(item.terms)) {
+      addWeighted(zoneTerms.get(zone), term, 8);
+    }
+    for (const term of coerceStringArray(item.bridgeToZones)) {
+      addWeighted(zoneTerms.get(zone), term, 3);
+    }
+    if (item.feedback) {
+      addWeighted(zoneTerms.get(zone), item.feedback, 3);
+    }
   }
 
   const zones = {};
@@ -276,11 +371,14 @@ function buildLearningModel(graph, notes, warnings) {
   return {
     version: 1,
     generatedAt: new Date().toISOString(),
-    source: "graph + Obsidian frontmatter",
+    source: "graph + Obsidian frontmatter + curator feedback",
     samples: {
       graphNodes: graph.nodes?.length ?? 0,
       graphEdges: graph.edges?.length ?? 0,
       obsidianNotes: notes.size,
+      feedbackNodes: feedback.size,
+      feedbackZones: feedbackData.payload.zoneFeedback?.length ?? 0,
+      feedbackRules: feedbackData.payload.rules?.length ?? 0,
       pinnedNotes: [...notes.values()].filter((note) => note.layoutPinned).length,
       notesWithEra: [...notes.values()].filter((note) => note.eraStart || note.eraPeak).length,
       notesWithPrimaryGenres: [...notes.values()].filter((note) => note.primaryGenres.length).length,
@@ -288,6 +386,11 @@ function buildLearningModel(graph, notes, warnings) {
     },
     zones,
     nodes: learnedNodes,
+    curatorFeedback: {
+      updatedAt: feedbackData.payload.updatedAt,
+      rules: feedbackData.payload.rules ?? [],
+      nodeIds: [...feedback.keys()].sort((a, b) => a.localeCompare(b, "en")),
+    },
     warnings,
   };
 }
@@ -303,6 +406,9 @@ function writeReport(model) {
     `- Graph nodes: ${model.samples.graphNodes}`,
     `- Graph edges: ${model.samples.graphEdges}`,
     `- Obsidian notes: ${model.samples.obsidianNotes}`,
+    `- Feedback nodes: ${model.samples.feedbackNodes}`,
+    `- Feedback zones: ${model.samples.feedbackZones}`,
+    `- Feedback rules: ${model.samples.feedbackRules}`,
     `- Pinned notes: ${model.samples.pinnedNotes}`,
     `- Notes with era data: ${model.samples.notesWithEra}`,
     `- Notes with primary genres: ${model.samples.notesWithPrimaryGenres}`,
@@ -322,6 +428,14 @@ function writeReport(model) {
     lines.push("");
   }
 
+  if (model.curatorFeedback.nodeIds.length || model.curatorFeedback.rules.length) {
+    lines.push("## Curator Feedback", "");
+    lines.push(`- Feedback file updated: ${model.curatorFeedback.updatedAt ?? "unknown"}`);
+    lines.push(`- Node feedback: ${model.curatorFeedback.nodeIds.length ? model.curatorFeedback.nodeIds.join(", ") : "none"}`);
+    lines.push(`- Rules: ${model.curatorFeedback.rules.length ? model.curatorFeedback.rules.map((rule) => rule.id).join(", ") : "none"}`);
+    lines.push("");
+  }
+
   if (model.warnings.length) {
     lines.push("## Warnings", "");
     model.warnings.forEach((warning) => lines.push(`- ${warning}`));
@@ -334,7 +448,8 @@ function writeReport(model) {
 
 const graph = JSON.parse(fs.readFileSync(graphPath, "utf8"));
 const { notes, warnings } = frontmatterById();
-const model = buildLearningModel(graph, notes, warnings);
+const feedbackData = feedbackById(graph);
+const model = buildLearningModel(graph, notes, feedbackData, [...warnings, ...feedbackData.warnings]);
 
 fs.writeFileSync(modelPath, `${JSON.stringify(model, null, 2)}\n`);
 writeReport(model);
