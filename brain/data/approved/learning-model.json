@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-15T12:27:31.451Z",
+  "generatedAt": "2026-09-15T19:13:50.989Z",
   "source": "graph + Obsidian frontmatter + curator feedback",
   "samples": {
     "graphNodes": 563,
@@ -8,7 +8,7 @@
     "obsidianNotes": 563,
     "feedbackNodes": 6,
     "feedbackZones": 4,
-    "feedbackRules": 3,
+    "feedbackRules": 4,
     "pinnedNotes": 0,
     "notesWithEra": 0,
     "notesWithPrimaryGenres": 477,
@@ -19,8 +19,8 @@
       "nodeCount": 39,
       "pinnedCount": 0,
       "centroid": {
-        "x": -866,
-        "y": -70
+        "x": -869,
+        "y": -76
       },
       "eraMedian": 1948,
       "learnedTerms": [
@@ -350,8 +350,8 @@
       "nodeCount": 171,
       "pinnedCount": 0,
       "centroid": {
-        "x": -147,
-        "y": 297
+        "x": 167,
+        "y": 225
       },
       "eraMedian": 1975,
       "learnedTerms": [
@@ -413,6 +413,22 @@
         },
         {
           "term": "hard rock bridge",
+          "weight": 8
+        },
+        {
+          "term": "label spacing",
+          "weight": 8
+        },
+        {
+          "term": "local cluster spacing",
+          "weight": 8
+        },
+        {
+          "term": "organized chaos",
+          "weight": 8
+        },
+        {
+          "term": "readability",
           "weight": 8
         },
         {
@@ -544,7 +560,7 @@
           "weight": 3
         },
         {
-          "term": "rock is the connective tissue it should overlap with roots blues hard rock metal prog psychedelia and punk instead of becoming a sealed box",
+          "term": "rock is the connective tissue it should overlap with roots blues hard rock metal prog psychedelia and punk instead of becoming a sealed box rock circuit may be dense and messy but it must never become a crushed cluster nodes can sit close together but labels should remain readable and should not overlap across multiple names when rock blues rock and hard rock nodes crowd together spread them outward and preserve readable lanes between related groups",
           "weight": 3
         },
         {
@@ -658,22 +674,6 @@
         {
           "term": "ark",
           "weight": 2
-        },
-        {
-          "term": "armageddon",
-          "weight": 2
-        },
-        {
-          "term": "armstrong",
-          "weight": 2
-        },
-        {
-          "term": "art of dying",
-          "weight": 2
-        },
-        {
-          "term": "arthur brown",
-          "weight": 2
         }
       ]
     },
@@ -681,8 +681,8 @@
       "nodeCount": 37,
       "pinnedCount": 0,
       "centroid": {
-        "x": 236,
-        "y": -742
+        "x": 358,
+        "y": -775
       },
       "eraMedian": 1969,
       "learnedTerms": [
@@ -1012,8 +1012,8 @@
       "nodeCount": 125,
       "pinnedCount": 0,
       "centroid": {
-        "x": 2595,
-        "y": 30
+        "x": 2617,
+        "y": 22
       },
       "eraMedian": 1977,
       "learnedTerms": [
@@ -1343,8 +1343,8 @@
       "nodeCount": 74,
       "pinnedCount": 0,
       "centroid": {
-        "x": 1413,
-        "y": 1442
+        "x": 1575,
+        "y": 1397
       },
       "eraMedian": 1977,
       "learnedTerms": [
@@ -1674,8 +1674,8 @@
       "nodeCount": 25,
       "pinnedCount": 0,
       "centroid": {
-        "x": -591,
-        "y": 1174
+        "x": -594,
+        "y": 1179
       },
       "eraMedian": 1963,
       "learnedTerms": [
@@ -2005,8 +2005,8 @@
       "nodeCount": 68,
       "pinnedCount": 0,
       "centroid": {
-        "x": 3584,
-        "y": -10
+        "x": 3602,
+        "y": -9
       },
       "eraMedian": 1958,
       "learnedTerms": [
@@ -2336,8 +2336,8 @@
       "nodeCount": 24,
       "pinnedCount": 0,
       "centroid": {
-        "x": 3716,
-        "y": 1397
+        "x": 3592,
+        "y": 1417
       },
       "eraMedian": 1985,
       "learnedTerms": [
@@ -14669,7 +14669,7 @@
     }
   },
   "curatorFeedback": {
-    "updatedAt": "2026-09-15T00:00:00.000Z",
+    "updatedAt": "2026-09-15T12:40:00.000Z",
     "rules": [
       {
         "id": "zones-are-guides-not-cages",
@@ -14685,6 +14685,11 @@
         "id": "songs-and-albums-are-context",
         "weight": 1,
         "feedback": "Songs, albums and releases can explain a connection, but should not become graph nodes."
+      },
+      {
+        "id": "readability-beats-density",
+        "weight": 1,
+        "feedback": "Never allow the map to become visually unreadable. Dense clusters are acceptable when they feel like organized chaos, but labels must not overlap heavily, node labels must remain readable, and important names should not stack on top of each other. If a zone becomes too crowded, expand the local layout, increase spacing, or let bridge nodes drift outward instead of compressing everything into one tight cluster."
       }
     ],
     "nodeIds": [

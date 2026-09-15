@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-15T00:00:00.000Z",
+  "updatedAt": "2026-09-15T12:40:00.000Z",
   "notes": [
     "Human feedback for the MHM learning layer.",
     "Use this for taste, placement and organization signals after reviewing the live map.",
@@ -72,9 +72,19 @@
   "zoneFeedback": [
     {
       "zone": "rock-circuit",
-      "terms": ["classic rock", "rock and roll", "glam rock", "blues rock", "hard rock bridge"],
+      "terms": [
+        "classic rock",
+        "rock and roll",
+        "glam rock",
+        "blues rock",
+        "hard rock bridge",
+        "readability",
+        "organized chaos",
+        "label spacing",
+        "local cluster spacing"
+      ],
       "bridgeToZones": ["roots-blues", "hard-rock-metal", "psychedelia-prog", "punk-alt"],
-      "feedback": "Rock is the connective tissue. It should overlap with roots/blues, hard rock/metal, prog/psychedelia and punk instead of becoming a sealed box."
+      "feedback": "Rock is the connective tissue. It should overlap with roots/blues, hard rock/metal, prog/psychedelia and punk instead of becoming a sealed box. Rock circuit may be dense and messy, but it must never become a crushed cluster. Nodes can sit close together, but labels should remain readable and should not overlap across multiple names. When rock, blues rock and hard rock nodes crowd together, spread them outward and preserve readable lanes between related groups."
     },
     {
       "zone": "hard-rock-metal",
@@ -110,6 +120,11 @@
       "id": "songs-and-albums-are-context",
       "weight": 1,
       "feedback": "Songs, albums and releases can explain a connection, but should not become graph nodes."
+    },
+    {
+      "id": "readability-beats-density",
+      "weight": 1,
+      "feedback": "Never allow the map to become visually unreadable. Dense clusters are acceptable when they feel like organized chaos, but labels must not overlap heavily, node labels must remain readable, and important names should not stack on top of each other. If a zone becomes too crowded, expand the local layout, increase spacing, or let bridge nodes drift outward instead of compressing everything into one tight cluster."
     }
   ]
 }

@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-15T12:28:32.643Z",
+  "generatedAt": "2026-09-15T19:14:13.797Z",
   "source": "approved graph + learning model + layout analysis",
   "graph": {
     "nodes": 563,
     "edges": 749,
-    "generatedAt": "2026-09-15T12:28:19.157Z"
+    "generatedAt": "2026-09-15T19:14:00.956Z"
   },
   "layoutPolicy": {
     "target": "organized chaos",
@@ -13433,7 +13433,7 @@
       "status": "queued",
       "priority": 90,
       "scope": "artist_network",
-      "createdAt": "2026-09-15T12:28:32.642Z",
+      "createdAt": "2026-09-15T19:14:13.796Z",
       "instructions": "Expand and clarify the ROCK CIRCUIT part of Music History Map. Current organization signal: rock, classic rock, glam, funk and broad band history. Prioritize documented music-related connections that help layout organization: associated genres, shared members, collaborations, influences, instruments and clear bridges to neighboring zones. Use albums, songs and releases only as context for edges. Do not create release/song nodes. Only propose node types allowed by MHM: band, guitarist, artist, guitar, guitar_brand and genre.",
       "seeds": [
         {
@@ -13481,7 +13481,7 @@
       "status": "queued",
       "priority": 90,
       "scope": "guitar_history",
-      "createdAt": "2026-09-15T12:28:32.643Z",
+      "createdAt": "2026-09-15T19:14:13.797Z",
       "instructions": "Expand and clarify the GUITAR WORKSHOP part of Music History Map. Current organization signal: guitar models, guitar brands and instrument history. Prioritize documented music-related connections that help layout organization: associated genres, shared members, collaborations, influences, instruments and clear bridges to neighboring zones. Use albums, songs and releases only as context for edges. Do not create release/song nodes. Only propose node types allowed by MHM: band, guitarist, artist, guitar, guitar_brand and genre.",
       "seeds": [
         {
@@ -13529,7 +13529,7 @@
       "status": "queued",
       "priority": 90,
       "scope": "artist_network",
-      "createdAt": "2026-09-15T12:28:32.643Z",
+      "createdAt": "2026-09-15T19:14:13.797Z",
       "instructions": "Expand and clarify the HARD ROCK / METAL part of Music History Map. Current organization signal: hard rock, metal, riff culture, virtuoso guitar and heavier scenes. Prioritize documented music-related connections that help layout organization: associated genres, shared members, collaborations, influences, instruments and clear bridges to neighboring zones. Use albums, songs and releases only as context for edges. Do not create release/song nodes. Only propose node types allowed by MHM: band, guitarist, artist, guitar, guitar_brand and genre.",
       "seeds": [
         {
@@ -13577,7 +13577,7 @@
       "status": "queued",
       "priority": 90,
       "scope": "artist_network",
-      "createdAt": "2026-09-15T12:28:32.643Z",
+      "createdAt": "2026-09-15T19:14:13.797Z",
       "instructions": "Expand and clarify the PUNK / ALTERNATIVE part of Music History Map. Current organization signal: punk, post-punk, alternative, indie, hardcore and adjacent scenes. Prioritize documented music-related connections that help layout organization: associated genres, shared members, collaborations, influences, instruments and clear bridges to neighboring zones. Use albums, songs and releases only as context for edges. Do not create release/song nodes. Only propose node types allowed by MHM: band, guitarist, artist, guitar, guitar_brand and genre.",
       "seeds": [
         {
@@ -13625,7 +13625,7 @@
       "status": "queued",
       "priority": 90,
       "scope": "artist_network",
-      "createdAt": "2026-09-15T12:28:32.643Z",
+      "createdAt": "2026-09-15T19:14:13.797Z",
       "instructions": "Expand and clarify the ROOTS / BLUES part of Music History Map. Current organization signal: roots, blues, blues rock, early rock and Southern guitar lineage. Prioritize documented music-related connections that help layout organization: associated genres, shared members, collaborations, influences, instruments and clear bridges to neighboring zones. Use albums, songs and releases only as context for edges. Do not create release/song nodes. Only propose node types allowed by MHM: band, guitarist, artist, guitar, guitar_brand and genre.",
       "seeds": [
         {
