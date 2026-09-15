@@ -48,6 +48,24 @@ interface Camera {
   zoom: number;
 }
 
+type VisualMode = "detail" | "map" | "overview";
+
+interface NodeVisualItem {
+  node: GraphNode;
+  shape: Graphics;
+  label: Text;
+  alwaysLabel: boolean;
+  hubLabel: boolean;
+  overviewLabel: boolean;
+  hovered: boolean;
+}
+
+interface EdgeVisualItem {
+  edge: GraphEdge;
+  source: GraphNode;
+  target: GraphNode;
+}
+
 const MIN_ZOOM = 0.24;
 const MOBILE_MIN_ZOOM = 0.2;
 const MAX_ZOOM = 1.55;
@@ -103,47 +121,75 @@ function nodeRadius(node: GraphNode): number {
   return 10;
 }
 
-function drawNodeShape(graphics: Graphics, node: GraphNode, emphasized: boolean) {
+function visualModeForZoom(zoom: number): VisualMode {
+  if (zoom <= 0.32) return "overview";
+  if (zoom <= 0.56) return "map";
+  return "detail";
+}
+
+function screenWidth(worldZoom: number, pixels: number, maxWorld = 10): number {
+  return Math.min(maxWorld, Math.max(pixels, pixels / Math.max(worldZoom, 0.16)));
+}
+
+function nodeScaleForMode(node: GraphNode, visualMode: VisualMode, hubLabel: boolean): number {
+  if (visualMode === "detail") return 1;
+  if (node.type === "genre") return visualMode === "overview" ? 1.22 : 1.1;
+  if (hubLabel) return visualMode === "overview" ? 1.16 : 1.08;
+  return visualMode === "overview" ? 1.08 : 1.03;
+}
+
+function drawNodeShape(
+  graphics: Graphics,
+  node: GraphNode,
+  emphasized: boolean,
+  zoom = 1,
+  visualMode: VisualMode = "detail",
+  hubLabel = false,
+) {
+  graphics.clear();
   const color = NODE_COLORS[node.type];
-  const radius = nodeRadius(node);
+  const radius = nodeRadius(node) * nodeScaleForMode(node, visualMode, hubLabel);
+  const outline = screenWidth(zoom, emphasized ? 3.2 : visualMode === "detail" ? 1.8 : 2.2, 9);
+  const innerLine = screenWidth(zoom, 1.1, 5);
+  const fillAlpha = visualMode === "overview" && !hubLabel && node.type !== "genre" ? 0.9 : 0.96;
 
   if (node.type === "genre") {
     graphics.roundRect(-radius * 2.7, -radius, radius * 5.4, radius * 2, 18);
     graphics.fill({ color: 0x11110f, alpha: 0.94 });
-    graphics.stroke({ color, alpha: emphasized ? 1 : 0.72, width: emphasized ? 3 : 2 });
+    graphics.stroke({ color, alpha: emphasized ? 1 : 0.82, width: outline });
     return;
   }
 
   if (node.type === "band") {
     graphics.roundRect(-radius * 1.6, -radius, radius * 3.2, radius * 2, 8);
-    graphics.fill({ color: 0x11110f, alpha: 0.96 });
-    graphics.stroke({ color, alpha: emphasized ? 1 : 0.8, width: emphasized ? 3 : 2 });
+    graphics.fill({ color: 0x11110f, alpha: fillAlpha });
+    graphics.stroke({ color, alpha: emphasized ? 1 : 0.84, width: outline });
     return;
   }
 
   if (node.type === "guitar_brand") {
     graphics.rect(-radius * 1.65, -radius, radius * 3.3, radius * 2);
-    graphics.fill({ color: 0x11110f, alpha: 0.96 });
-    graphics.stroke({ color, alpha: 0.88, width: emphasized ? 3 : 2 });
+    graphics.fill({ color: 0x11110f, alpha: fillAlpha });
+    graphics.stroke({ color, alpha: 0.88, width: outline });
     graphics.rect(-radius * 1.35, -radius * 0.7, radius * 2.7, radius * 1.4);
-    graphics.stroke({ color, alpha: 0.45, width: 1 });
+    graphics.stroke({ color, alpha: 0.45, width: innerLine });
     return;
   }
 
   if (node.type === "guitar") {
     graphics.rect(-radius * 1.4, -radius * 0.75, radius * 2.8, radius * 1.5);
-    graphics.fill({ color: 0x11110f, alpha: 0.96 });
-    graphics.stroke({ color, alpha: 0.88, width: emphasized ? 3 : 2 });
+    graphics.fill({ color: 0x11110f, alpha: fillAlpha });
+    graphics.stroke({ color, alpha: 0.88, width: outline });
     graphics.moveTo(radius * 1.4, 0);
     graphics.lineTo(radius * 2.15, 0);
-    graphics.stroke({ color, alpha: 0.78, width: 2 });
+    graphics.stroke({ color, alpha: 0.78, width: screenWidth(zoom, 1.8, 7) });
     return;
   }
 
   graphics.circle(0, 0, radius);
   graphics.fill({ color, alpha: emphasized ? 1 : 0.88 });
-  graphics.circle(0, 0, radius + 4);
-  graphics.stroke({ color, alpha: emphasized ? 0.86 : 0.32, width: emphasized ? 3 : 2 });
+  graphics.circle(0, 0, radius + screenWidth(zoom, 3.2, 8));
+  graphics.stroke({ color, alpha: emphasized ? 0.9 : 0.46, width: outline });
 }
 
 export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
@@ -169,14 +215,11 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
     const nodesRef = useRef(nodes);
     const onSelectRef = useRef(onSelect);
     const visibleTypesRef = useRef(visibleTypes);
-    const labelItemsRef = useRef<
-      Array<{
-        label: Text;
-        node: GraphNode;
-        alwaysLabel: boolean;
-        hovered: boolean;
-      }>
-    >([]);
+    const nodeVisualItemsRef = useRef<NodeVisualItem[]>([]);
+    const edgeVisualItemsRef = useRef<EdgeVisualItem[]>([]);
+    const edgeLayerRef = useRef<Graphics | null>(null);
+    const visualModeRef = useRef<VisualMode>("detail");
+    const visualZoomRef = useRef(0);
     const [ready, setReady] = useState(false);
 
     nodesRef.current = nodes;
@@ -199,31 +242,93 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
       return Math.max(minZoom(), Math.min(MAX_ZOOM, zoom));
     }
 
+    function redrawEdges(camera = cameraRef.current, visualMode = visualModeForZoom(camera.zoom)) {
+      const edgeLayer = edgeLayerRef.current;
+      if (!edgeLayer) return;
+
+      edgeLayer.clear();
+      edgeVisualItemsRef.current.forEach(({ edge, source, target }) => {
+        const isOverview = visualMode === "overview";
+        const isMap = visualMode === "map";
+        const minimumStrength = isOverview ? 0.72 : 0.64;
+        if (edge.strength < minimumStrength) return;
+
+        const targetPixels = isOverview ? 1.8 : isMap ? 1.55 : 1.25;
+        trace(
+          edgeLayer,
+          source,
+          target,
+          0xcabbb1,
+          isOverview ? 0.24 : isMap ? 0.2 : 0.18,
+          screenWidth(camera.zoom, targetPixels, 8),
+        );
+      });
+    }
+
+    function redrawNodes(camera = cameraRef.current, visualMode = visualModeForZoom(camera.zoom)) {
+      nodeVisualItemsRef.current.forEach((item) => {
+        drawNodeShape(
+          item.shape,
+          item.node,
+          false,
+          camera.zoom,
+          visualMode,
+          item.hubLabel,
+        );
+      });
+    }
+
     function syncLabelReadability(camera = cameraRef.current) {
       const compact = isCompactMap();
-      const targetScreenScale = compact ? 0.86 : 1;
-      const labelScale = compact
-        ? Math.min(2.45, Math.max(1, targetScreenScale / camera.zoom))
-        : 1;
+      const visualMode = visualModeForZoom(camera.zoom);
+      const targetScreenScale = compact ? 0.86 : visualMode === "detail" ? 1 : visualMode === "map" ? 0.72 : 0.62;
+      const labelScale = Math.min(compact ? 2.45 : 1.95, Math.max(1, targetScreenScale / camera.zoom));
 
-      labelItemsRef.current.forEach((item) => {
+      nodeVisualItemsRef.current.forEach((item) => {
+        const showMapLabel = item.alwaysLabel || item.hubLabel;
+        const showOverviewLabel = item.node.type === "genre" || item.node.starter || item.overviewLabel;
+        const visible =
+          visualMode === "detail"
+            ? item.alwaysLabel
+            : visualMode === "map"
+              ? showMapLabel
+              : showOverviewLabel;
+
         item.label.scale.set(labelScale);
-        item.label.position.y = Math.max(nodeRadius(item.node) + 12, 18 / camera.zoom);
+        item.label.position.set(
+          item.node.x,
+          item.node.y + Math.max(nodeRadius(item.node) + 12, 18 / camera.zoom),
+        );
 
         if (item.hovered) {
           item.label.alpha = 1;
           return;
         }
 
-        item.label.alpha = item.alwaysLabel ? 0.95 : 0;
+        item.label.alpha = visible ? (visualMode === "overview" ? 0.84 : 0.95) : 0;
       });
+    }
+
+    function syncMapReadability(camera = cameraRef.current, force = false) {
+      const visualMode = visualModeForZoom(camera.zoom);
+      const zoomDelta = Math.abs(camera.zoom - visualZoomRef.current) / Math.max(camera.zoom, 0.1);
+      const shouldRedraw = force || visualModeRef.current !== visualMode || zoomDelta > 0.08;
+
+      if (shouldRedraw) {
+        visualModeRef.current = visualMode;
+        visualZoomRef.current = camera.zoom;
+        redrawEdges(camera, visualMode);
+        redrawNodes(camera, visualMode);
+      }
+
+      syncLabelReadability(camera);
     }
 
     function applyCamera(camera = cameraRef.current) {
       const app = appRef.current;
       const viewport = viewportRef.current;
       if (!app || !viewport) return;
-      syncLabelReadability(camera);
+      syncMapReadability(camera, true);
       viewport.resize(app.screen.width, app.screen.height);
       viewport.setZoom(camera.zoom, false);
       viewport.moveCenter(camera.x, camera.y);
@@ -254,7 +359,7 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
         y: viewport.center.y,
         zoom: viewport.scale.x,
       };
-      syncLabelReadability();
+      syncMapReadability(cameraRef.current);
     }
 
     function pickNodeAtWorld(x: number, y: number) {
@@ -372,9 +477,9 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
           autoStart: true,
           preference: "webgl",
           powerPreference: "high-performance",
-          antialias: false,
+          antialias: true,
           autoDensity: true,
-          resolution: 1,
+          resolution: Math.min(window.devicePixelRatio || 1, 2),
           backgroundAlpha: 0,
         })
         .then(() => {
@@ -471,11 +576,19 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
 
       destroyChildren(world);
       selectionLayerRef.current = null;
-      labelItemsRef.current = [];
+      edgeLayerRef.current = null;
+      nodeVisualItemsRef.current = [];
+      edgeVisualItemsRef.current = [];
 
       const shownNodes = nodes.filter((node) => visibleTypes.has(node.type));
       const shownIds = new Set(shownNodes.map((node) => node.id));
       const nodeById = new Map(shownNodes.map((node) => [node.id, node]));
+      const degreeById = new Map<string, number>();
+      edges.forEach((edge) => {
+        if (!shownIds.has(edge.source) || !shownIds.has(edge.target)) return;
+        degreeById.set(edge.source, (degreeById.get(edge.source) ?? 0) + 1);
+        degreeById.set(edge.target, (degreeById.get(edge.target) ?? 0) + 1);
+      });
 
       const grid = new Graphics();
       const graphMinX = Math.min(...shownNodes.map((node) => node.x), -1800) - 900;
@@ -498,12 +611,18 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
       grid.stroke({ color: 0xcabbb1, alpha: 0.045, width: 1 });
       world.addChild(grid);
 
+      const zoneLayer = new Container();
+      const connectionLayer = new Container();
+      const nodeLayer = new Container();
+      const labelLayer = new Container();
+      world.addChild(zoneLayer, connectionLayer, nodeLayer, labelLayer);
+
       MAP_ZONES.filter((zone) => zone.mode === mode).forEach((zone) => {
         const zoneGraphic = new Graphics();
         zoneGraphic.rect(zone.x, zone.y, zone.width, zone.height);
         zoneGraphic.fill({ color: 0x0d0d0b, alpha: 0.16 });
         zoneGraphic.stroke({ color: zone.color, alpha: 0.22, width: 2 });
-        world.addChild(zoneGraphic);
+        zoneLayer.addChild(zoneGraphic);
 
         const zoneLabel = new Text({
           text: zone.label,
@@ -516,11 +635,13 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
           },
         });
         zoneLabel.alpha = 0.58;
+        zoneLabel.eventMode = "none";
         zoneLabel.position.set(zone.x + 22, zone.y + 18);
-        world.addChild(zoneLabel);
+        zoneLayer.addChild(zoneLabel);
       });
 
       const edgeLayer = new Graphics();
+      edgeLayerRef.current = edgeLayer;
       edges.forEach((edge) => {
         if (!shownIds.has(edge.source) || !shownIds.has(edge.target)) return;
         const source = nodeById.get(edge.source);
@@ -530,16 +651,9 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
         const primary = edge.strength >= 0.64;
         if (!primary) return;
 
-        trace(
-          edgeLayer,
-          source,
-          target,
-          0xcabbb1,
-          0.18,
-          1.5,
-        );
+        edgeVisualItemsRef.current.push({ edge, source, target });
       });
-      world.addChild(edgeLayer);
+      connectionLayer.addChild(edgeLayer);
 
       shownNodes.forEach((node) => {
         const nodeContainer = new Container();
@@ -549,15 +663,17 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
         nodeContainer.hitArea = new Rectangle(-38, -28, 76, 70);
 
         const shape = new Graphics();
-        drawNodeShape(shape, node, false);
         nodeContainer.addChild(shape);
 
+        const degree = degreeById.get(node.id) ?? 0;
         const alwaysLabel = Boolean(
           node.type === "genre" ||
             node.type === "band" ||
             node.type === "guitar_brand" ||
             node.starter,
         );
+        const hubLabel = Boolean(node.starter || node.type === "genre" || degree >= 4);
+        const overviewLabel = Boolean(node.starter || node.type === "genre" || degree >= 8);
         const label = new Text({
           text: node.label,
           style: {
@@ -571,19 +687,23 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
           },
         });
         label.anchor.set(0.5, 0);
-        label.position.set(0, nodeRadius(node) + 12);
+        label.eventMode = "none";
+        label.position.set(node.x, node.y + nodeRadius(node) + 12);
         label.alpha = alwaysLabel ? 0.95 : 0;
-        nodeContainer.addChild(label);
-        const labelItem = {
+        labelLayer.addChild(label);
+        const visualItem = {
           label,
           node,
+          shape,
           alwaysLabel,
+          hubLabel,
+          overviewLabel,
           hovered: false,
         };
-        labelItemsRef.current.push(labelItem);
+        nodeVisualItemsRef.current.push(visualItem);
 
         nodeContainer.on("pointerover", () => {
-          labelItem.hovered = true;
+          visualItem.hovered = true;
           label.alpha = 1;
           label.style.fill = colorToCss(NODE_COLORS[node.type]);
           shape.alpha = 1;
@@ -591,12 +711,12 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
           renderFrame();
         });
         nodeContainer.on("pointerout", () => {
-          labelItem.hovered = false;
+          visualItem.hovered = false;
           label.style.fill = "#e6d9cc";
           syncLabelReadability();
           renderFrame();
         });
-        world.addChild(nodeContainer);
+        nodeLayer.addChild(nodeContainer);
       });
 
       const selectionLayer = new Container();
