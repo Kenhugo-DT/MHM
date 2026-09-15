@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-15T19:14:13.797Z",
+  "generatedAt": "2026-09-15T19:27:33.792Z",
   "source": "approved graph + learning model + layout analysis",
   "graph": {
-    "nodes": 563,
-    "edges": 749,
-    "generatedAt": "2026-09-15T19:14:00.956Z"
+    "nodes": 562,
+    "edges": 748,
+    "generatedAt": "2026-09-15T19:27:10.471Z"
   },
   "layoutPolicy": {
     "target": "organized chaos",
@@ -119,32 +119,30 @@
         "bob-dylan",
         "john-mayer"
       ],
-      "overlapRisk": 45,
+      "overlapRisk": 0,
       "overflowNodes": [
-        "bb-king",
-        "eric-clapton",
-        "the-yardbirds",
-        "buddy-guy",
-        "albert-king",
-        "duane-allman",
-        "dickey-betts",
-        "brian-setzer",
-        "slash",
-        "stevie-ray-vaughan",
         "cream",
+        "buddy-guy",
         "bob-dylan",
-        "jeff-beck",
-        "peter-green",
-        "acdc",
         "blues-rock",
+        "slash",
+        "dickey-betts",
+        "stevie-ray-vaughan",
+        "the-yardbirds",
+        "duane-allman",
+        "albert-king",
+        "bb-king",
+        "elvis-presley",
+        "brian-setzer",
+        "eric-clapton",
         "angus-young",
-        "rock-and-roll",
-        "carlos-santana"
+        "southern-rock",
+        "38-special"
       ],
       "eraMedian": 1948,
       "averageDegree": 3.97,
       "averageSourceQuality": 0.526,
-      "needsAttentionScore": 57.07,
+      "needsAttentionScore": 39.97,
       "nodeCount": 39,
       "degreeP25": 2
     },
@@ -310,7 +308,6 @@
         "emily-armstrong",
         "equinox",
         "tenacious-d",
-        "american-rock-music-duos",
         "jeff-duncan",
         "jeff-martin",
         "kevin-gilbert",
@@ -324,7 +321,7 @@
         "linkin-park",
         "andrew-watt"
       ],
-      "edgesInternal": 42,
+      "edgesInternal": 41,
       "edgesCrossing": 208,
       "isolatedNodes": [
         "buckethead",
@@ -347,14 +344,13 @@
         "mark-knopfler",
         "brian-may",
         "shock-rock",
-        "american-rock-music-duos",
         "pop-rock"
       ],
       "bridgeNodes": [
         "rock",
         "queen",
-        "tenacious-d",
         "jazz-fusion",
+        "tenacious-d",
         "prince",
         "lindsey-buckingham",
         "chuck-berry",
@@ -385,28 +381,36 @@
         "auri",
         "aina",
         "stone-sour",
-        "tenacious-d",
         "george-harrison",
         "surf-rock",
         "lindsey-buckingham",
         "keith-richards",
-        "pete-townshend"
+        "pete-townshend",
+        "joe-satriani"
       ],
-      "overlapRisk": 295,
+      "overlapRisk": 4,
       "overflowNodes": [
         "prince",
-        "tenacious-d",
-        "candlemass",
-        "altaria",
-        "magnus-karlsson",
-        "armageddon",
-        "civil-war"
+        "mark-knopfler",
+        "ancient",
+        "as-lions",
+        "into-eternity",
+        "jeff-martin",
+        "femme-fatale",
+        "heavens-gate",
+        "air",
+        "powerglove",
+        "jeff-duncan",
+        "dgm",
+        "american-football",
+        "arven",
+        "auri"
       ],
       "eraMedian": 1975,
       "averageDegree": 1.71,
-      "averageSourceQuality": 0.57,
-      "needsAttentionScore": 99.23,
-      "nodeCount": 171,
+      "averageSourceQuality": 0.571,
+      "needsAttentionScore": 67.93,
+      "nodeCount": 170,
       "degreeP25": 1
     },
     "psychedelia-prog": {
@@ -508,12 +512,12 @@
       ],
       "overlapRisk": 0,
       "overflowNodes": [
-        "radiohead",
         "alex-lifeson",
-        "bill-stevenson",
+        "radiohead",
+        "the-who",
         "david-gilmour",
-        "jazz",
-        "the-who"
+        "bill-stevenson",
+        "jazz"
       ],
       "eraMedian": 1969,
       "averageDegree": 2.76,
@@ -714,15 +718,20 @@
         "corey-taylor",
         "axl-rose"
       ],
-      "overlapRisk": 116,
+      "overlapRisk": 6,
       "overflowNodes": [
         "led-zeppelin",
-        "guns-n-roses"
+        "guns-n-roses",
+        "tony-iommi",
+        "james-hetfield",
+        "all-that-remains",
+        "avatar",
+        "death"
       ],
       "eraMedian": 1977,
       "averageDegree": 3.82,
       "averageSourceQuality": 0.672,
-      "needsAttentionScore": 78.54,
+      "needsAttentionScore": 50.82,
       "nodeCount": 125,
       "degreeP25": 1
     },
@@ -869,17 +878,20 @@
         "blondie",
         "suicidal-tendencies"
       ],
-      "overlapRisk": 6,
+      "overlapRisk": 0,
       "overflowNodes": [
         "circle-jerks",
-        "minor-threat",
         "black-president",
-        "rammstein"
+        "descendents",
+        "rammstein",
+        "afi",
+        "misfits",
+        "minor-threat"
       ],
       "eraMedian": 1977,
       "averageDegree": 2.28,
       "averageSourceQuality": 0.689,
-      "needsAttentionScore": 66.88,
+      "needsAttentionScore": 64.6,
       "nodeCount": 74,
       "degreeP25": 1
     },
@@ -943,8 +955,8 @@
       ],
       "overlapRisk": 0,
       "overflowNodes": [
-        "n-w-a",
-        "body-count"
+        "body-count",
+        "n-w-a"
       ],
       "eraMedian": 1985,
       "averageDegree": 1.67,
@@ -1029,8 +1041,8 @@
       "overflowNodes": [
         "oystein-sunde",
         "joe-pass",
-        "singer-songwriter",
-        "django-reinhardt"
+        "django-reinhardt",
+        "singer-songwriter"
       ],
       "eraMedian": 1963,
       "averageDegree": 3.12,
@@ -1177,33 +1189,33 @@
         "fender-mustang",
         "prs-custom-24"
       ],
-      "overlapRisk": 72,
+      "overlapRisk": 6,
       "overflowNodes": [
         "fender-stratocaster",
+        "fender-telecaster",
         "gibson-les-paul",
         "martin-d28",
-        "gretsch-6120",
-        "fender-telecaster",
         "acoustic-guitar",
+        "gretsch-6120",
         "gibson-sg",
         "prs-santana",
-        "prs-custom-24",
+        "fender-esquire",
+        "gibson-es-335",
+        "gibson-explorer",
         "gibson-eds-1275",
         "gibson-flying-v",
+        "prs-custom-24",
         "gibson-es-355-lucille",
-        "gibson-es-335",
-        "fender-esquire",
-        "gibson-explorer",
-        "guild-f-512",
-        "american-primitive-guitar",
+        "gibson-firebird",
         "concerto-suite-for-electric-guitar-and-orchestra-in-e-flat-minor-op-1",
-        "trigger",
-        "brian-may-red-special"
+        "guitar-solo",
+        "hohner-mad-cat",
+        "electric-acoustic-guitar"
       ],
       "eraMedian": 1958,
       "averageDegree": 2.72,
       "averageSourceQuality": 0.5,
-      "needsAttentionScore": 91.4,
+      "needsAttentionScore": 66.32,
       "nodeCount": 68,
       "degreeP25": 1
     }
@@ -1239,7 +1251,7 @@
         "punk-alt"
       ],
       "linkedGenres": [],
-      "overlapCount": 2,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge"
@@ -1259,7 +1271,7 @@
         "punk-alt"
       ],
       "linkedGenres": [],
-      "overlapCount": 2,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge"
@@ -1320,11 +1332,10 @@
         "guitar-workshop"
       ],
       "linkedGenres": [],
-      "overlapCount": 1,
-      "overflow": 55,
+      "overlapCount": 0,
+      "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "review-zone-bleed"
+        "preserve-cross-zone-bridge"
       ]
     },
     "rock": {
@@ -1431,11 +1442,10 @@
         "psychedelia-prog"
       ],
       "linkedGenres": [],
-      "overlapCount": 4,
+      "overlapCount": 1,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "punk": {
@@ -1548,11 +1558,10 @@
         "guitar-workshop"
       ],
       "linkedGenres": [],
-      "overlapCount": 4,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "jazz-fusion": {
@@ -1571,11 +1580,10 @@
         "guitar-workshop"
       ],
       "linkedGenres": [],
-      "overlapCount": 3,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "bb-king": {
@@ -1594,8 +1602,8 @@
       "linkedGenres": [
         "electric-blues"
       ],
-      "overlapCount": 2,
-      "overflow": 198,
+      "overlapCount": 0,
+      "overflow": 116,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
         "review-zone-bleed"
@@ -1642,12 +1650,11 @@
       "linkedGenres": [
         "rock-and-roll"
       ],
-      "overlapCount": 3,
+      "overlapCount": 1,
       "overflow": 0,
       "recommendedActions": [
         "expand-important-node",
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "elvis-presley": {
@@ -1668,10 +1675,11 @@
         "country"
       ],
       "overlapCount": 0,
-      "overflow": 0,
+      "overflow": 95,
       "recommendedActions": [
         "expand-important-node",
-        "preserve-cross-zone-bridge"
+        "preserve-cross-zone-bridge",
+        "review-zone-bleed"
       ]
     },
     "jimi-hendrix": {
@@ -1714,11 +1722,10 @@
       "linkedGenres": [
         "electric-blues"
       ],
-      "overlapCount": 4,
-      "overflow": 190,
+      "overlapCount": 0,
+      "overflow": 194,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
-        "spread-local-neighborhood",
         "review-zone-bleed"
       ]
     },
@@ -1738,8 +1745,8 @@
       "linkedGenres": [
         "electric-blues"
       ],
-      "overlapCount": 2,
-      "overflow": 198,
+      "overlapCount": 0,
+      "overflow": 57,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
         "review-zone-bleed"
@@ -1760,7 +1767,7 @@
       ],
       "linkedGenres": [],
       "overlapCount": 0,
-      "overflow": 40,
+      "overflow": 116,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
         "review-zone-bleed"
@@ -1780,11 +1787,12 @@
         "guitar-workshop"
       ],
       "linkedGenres": [],
-      "overlapCount": 1,
-      "overflow": 0,
+      "overlapCount": 0,
+      "overflow": 190,
       "recommendedActions": [
         "expand-important-node",
-        "preserve-cross-zone-bridge"
+        "preserve-cross-zone-bridge",
+        "review-zone-bleed"
       ]
     },
     "eddie-van-halen": {
@@ -1802,7 +1810,7 @@
         "roots-blues"
       ],
       "linkedGenres": [],
-      "overlapCount": 2,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge"
@@ -1868,11 +1876,10 @@
       "linkedGenres": [
         "heavy-metal"
       ],
-      "overlapCount": 3,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "tony-iommi": {
@@ -1890,10 +1897,11 @@
       ],
       "linkedGenres": [],
       "overlapCount": 0,
-      "overflow": 0,
+      "overflow": 72,
       "recommendedActions": [
         "expand-important-node",
-        "preserve-cross-zone-bridge"
+        "preserve-cross-zone-bridge",
+        "review-zone-bleed"
       ]
     },
     "jimmy-page": {
@@ -1911,11 +1919,10 @@
         "guitar-workshop"
       ],
       "linkedGenres": [],
-      "overlapCount": 3,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "george-harrison": {
@@ -1933,7 +1940,7 @@
         "guitar-workshop"
       ],
       "linkedGenres": [],
-      "overlapCount": 2,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge"
@@ -1958,11 +1965,10 @@
         "folk",
         "rock"
       ],
-      "overlapCount": 4,
-      "overflow": 136,
+      "overlapCount": 0,
+      "overflow": 197,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
-        "spread-local-neighborhood",
         "review-zone-bleed"
       ]
     },
@@ -2051,7 +2057,7 @@
       "linkedGenres": [
         "electric-blues"
       ],
-      "overlapCount": 1,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge"
@@ -2074,7 +2080,7 @@
         "norwegian-vise"
       ],
       "overlapCount": 0,
-      "overflow": 215,
+      "overflow": 212,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
         "review-zone-bleed"
@@ -2094,10 +2100,11 @@
         "guitar-workshop"
       ],
       "linkedGenres": [],
-      "overlapCount": 1,
-      "overflow": 0,
+      "overlapCount": 0,
+      "overflow": 26,
       "recommendedActions": [
-        "preserve-cross-zone-bridge"
+        "preserve-cross-zone-bridge",
+        "review-zone-bleed"
       ]
     },
     "prince": {
@@ -2119,7 +2126,7 @@
         "rock"
       ],
       "overlapCount": 0,
-      "overflow": 352,
+      "overflow": 236,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
         "review-zone-bleed"
@@ -2186,7 +2193,7 @@
         "blues"
       ],
       "overlapCount": 0,
-      "overflow": 327,
+      "overflow": 388,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
         "review-zone-bleed"
@@ -2228,7 +2235,7 @@
       "linkedGenres": [
         "hard-rock"
       ],
-      "overlapCount": 1,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": []
     },
@@ -2345,7 +2352,7 @@
         "hard-rock"
       ],
       "overlapCount": 0,
-      "overflow": 183,
+      "overflow": 208,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
         "review-zone-bleed"
@@ -2368,8 +2375,8 @@
       "linkedGenres": [
         "rock"
       ],
-      "overlapCount": 1,
-      "overflow": 198,
+      "overlapCount": 0,
+      "overflow": 181,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
         "review-zone-bleed"
@@ -2453,7 +2460,7 @@
       "bridgeScore": 0,
       "secondaryZones": [],
       "linkedGenres": [],
-      "overlapCount": 1,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": []
     },
@@ -2494,11 +2501,10 @@
         "rock",
         "electric-blues"
       ],
-      "overlapCount": 3,
+      "overlapCount": 0,
       "overflow": 318,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
-        "spread-local-neighborhood",
         "review-zone-bleed"
       ]
     },
@@ -2521,8 +2527,8 @@
         "country",
         "funk"
       ],
-      "overlapCount": 2,
-      "overflow": 317,
+      "overlapCount": 1,
+      "overflow": 318,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
         "review-zone-bleed"
@@ -2583,7 +2589,7 @@
       "linkedGenres": [
         "hard-rock"
       ],
-      "overlapCount": 2,
+      "overlapCount": 0,
       "overflow": 318,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
@@ -2609,11 +2615,10 @@
       "linkedGenres": [
         "heavy-metal"
       ],
-      "overlapCount": 4,
-      "overflow": 316,
+      "overlapCount": 2,
+      "overflow": 313,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
-        "spread-local-neighborhood",
         "review-zone-bleed"
       ]
     },
@@ -2634,8 +2639,8 @@
       "linkedGenres": [
         "electric-blues"
       ],
-      "overlapCount": 2,
-      "overflow": 215,
+      "overlapCount": 0,
+      "overflow": 155,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
         "review-zone-bleed"
@@ -2659,11 +2664,10 @@
       "linkedGenres": [
         "heavy-metal"
       ],
-      "overlapCount": 3,
-      "overflow": 217,
+      "overlapCount": 0,
+      "overflow": 165,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
-        "spread-local-neighborhood",
         "review-zone-bleed"
       ]
     },
@@ -2686,11 +2690,10 @@
         "folk",
         "country"
       ],
-      "overlapCount": 3,
+      "overlapCount": 0,
       "overflow": 318,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
-        "spread-local-neighborhood",
         "review-zone-bleed"
       ]
     },
@@ -2710,13 +2713,11 @@
       "linkedGenres": [
         "folk"
       ],
-      "overlapCount": 4,
-      "overflow": 94,
+      "overlapCount": 0,
+      "overflow": 0,
       "recommendedActions": [
         "expand-important-node",
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood",
-        "review-zone-bleed"
+        "preserve-cross-zone-bridge"
       ]
     },
     "trigger": {
@@ -2735,11 +2736,10 @@
       "linkedGenres": [
         "country"
       ],
-      "overlapCount": 3,
-      "overflow": 117,
+      "overlapCount": 0,
+      "overflow": 91,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
-        "spread-local-neighborhood",
         "review-zone-bleed"
       ]
     },
@@ -2781,7 +2781,7 @@
       ],
       "linkedGenres": [],
       "overlapCount": 0,
-      "overflow": 318,
+      "overflow": 315,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
         "review-zone-bleed"
@@ -2822,7 +2822,7 @@
         "psychedelia-prog"
       ],
       "linkedGenres": [],
-      "overlapCount": 1,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge"
@@ -2862,8 +2862,8 @@
         "rock-circuit"
       ],
       "linkedGenres": [],
-      "overlapCount": 1,
-      "overflow": 21,
+      "overlapCount": 0,
+      "overflow": 109,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
         "review-zone-bleed"
@@ -2883,11 +2883,10 @@
         "folk-country-vise"
       ],
       "linkedGenres": [],
-      "overlapCount": 1,
-      "overflow": 65,
+      "overlapCount": 0,
+      "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "review-zone-bleed"
+        "preserve-cross-zone-bridge"
       ]
     },
     "national-resonator": {
@@ -2904,12 +2903,10 @@
         "roots-blues"
       ],
       "linkedGenres": [],
-      "overlapCount": 3,
-      "overflow": 27,
+      "overlapCount": 0,
+      "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood",
-        "review-zone-bleed"
+        "preserve-cross-zone-bridge"
       ]
     },
     "blues-rock": {
@@ -2927,11 +2924,10 @@
         "guitar-workshop"
       ],
       "linkedGenres": [],
-      "overlapCount": 4,
-      "overflow": 81,
+      "overlapCount": 0,
+      "overflow": 197,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
-        "spread-local-neighborhood",
         "review-zone-bleed"
       ]
     },
@@ -2969,11 +2965,10 @@
         "roots-blues"
       ],
       "linkedGenres": [],
-      "overlapCount": 5,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "southern-rock": {
@@ -2992,9 +2987,10 @@
       ],
       "linkedGenres": [],
       "overlapCount": 0,
-      "overflow": 0,
+      "overflow": 8,
       "recommendedActions": [
-        "preserve-cross-zone-bridge"
+        "preserve-cross-zone-bridge",
+        "review-zone-bleed"
       ]
     },
     "glam-rock": {
@@ -3012,11 +3008,10 @@
         "guitar-workshop"
       ],
       "linkedGenres": [],
-      "overlapCount": 3,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "art-rock": {
@@ -3075,7 +3070,7 @@
         "guitar-workshop"
       ],
       "linkedGenres": [],
-      "overlapCount": 2,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge"
@@ -3127,7 +3122,7 @@
         "guitar-workshop"
       ],
       "linkedGenres": [],
-      "overlapCount": 1,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge"
@@ -3204,7 +3199,7 @@
       ],
       "linkedGenres": [],
       "overlapCount": 0,
-      "overflow": 92,
+      "overflow": 82,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
         "review-zone-bleed"
@@ -3227,7 +3222,7 @@
       ],
       "linkedGenres": [],
       "overlapCount": 0,
-      "overflow": 40,
+      "overflow": 45,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
         "review-zone-bleed"
@@ -3327,7 +3322,7 @@
       "linkedGenres": [
         "electric-blues"
       ],
-      "overlapCount": 2,
+      "overlapCount": 0,
       "overflow": 198,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
@@ -3350,11 +3345,10 @@
       "linkedGenres": [
         "electric-blues"
       ],
-      "overlapCount": 3,
-      "overflow": 198,
+      "overlapCount": 0,
+      "overflow": 140,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
-        "spread-local-neighborhood",
         "review-zone-bleed"
       ]
     },
@@ -3393,11 +3387,10 @@
       "linkedGenres": [
         "southern-rock"
       ],
-      "overlapCount": 3,
-      "overflow": 198,
+      "overlapCount": 0,
+      "overflow": 144,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
-        "spread-local-neighborhood",
         "review-zone-bleed"
       ]
     },
@@ -3417,8 +3410,8 @@
       "linkedGenres": [
         "southern-rock"
       ],
-      "overlapCount": 2,
-      "overflow": 198,
+      "overlapCount": 0,
+      "overflow": 195,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
         "review-zone-bleed"
@@ -3462,11 +3455,10 @@
       "linkedGenres": [
         "blues-rock"
       ],
-      "overlapCount": 1,
-      "overflow": 97,
+      "overlapCount": 0,
+      "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "review-zone-bleed"
+        "preserve-cross-zone-bridge"
       ]
     },
     "lindsey-buckingham": {
@@ -3510,11 +3502,10 @@
       "linkedGenres": [
         "blues-rock"
       ],
-      "overlapCount": 3,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "jeff-beck": {
@@ -3535,12 +3526,10 @@
         "blues-rock",
         "jazz-fusion"
       ],
-      "overlapCount": 4,
-      "overflow": 106,
+      "overlapCount": 0,
+      "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood",
-        "review-zone-bleed"
+        "preserve-cross-zone-bridge"
       ]
     },
     "pete-townshend": {
@@ -3560,11 +3549,10 @@
       "linkedGenres": [
         "rock"
       ],
-      "overlapCount": 3,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "brian-may": {
@@ -3581,7 +3569,7 @@
         "guitar-workshop"
       ],
       "linkedGenres": [],
-      "overlapCount": 1,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "expand-important-node",
@@ -3625,8 +3613,8 @@
       "linkedGenres": [
         "rockabilly"
       ],
-      "overlapCount": 2,
-      "overflow": 198,
+      "overlapCount": 0,
+      "overflow": 73,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
         "review-zone-bleed"
@@ -3648,12 +3636,11 @@
       "linkedGenres": [
         "surf-rock"
       ],
-      "overlapCount": 3,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "expand-important-node",
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "carlos-santana": {
@@ -3670,11 +3657,10 @@
         "guitar-workshop"
       ],
       "linkedGenres": [],
-      "overlapCount": 2,
-      "overflow": 20,
+      "overlapCount": 0,
+      "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "review-zone-bleed"
+        "preserve-cross-zone-bridge"
       ]
     },
     "steve-vai": {
@@ -3717,7 +3703,7 @@
       "linkedGenres": [
         "rock"
       ],
-      "overlapCount": 2,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge"
@@ -3739,12 +3725,11 @@
       "linkedGenres": [
         "heavy-metal"
       ],
-      "overlapCount": 3,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "expand-important-node",
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "slash": {
@@ -3764,11 +3749,10 @@
       "linkedGenres": [
         "blues-rock"
       ],
-      "overlapCount": 3,
-      "overflow": 195,
+      "overlapCount": 0,
+      "overflow": 197,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
-        "spread-local-neighborhood",
         "review-zone-bleed"
       ]
     },
@@ -3786,8 +3770,8 @@
         "guitar-workshop"
       ],
       "linkedGenres": [],
-      "overlapCount": 2,
-      "overflow": 75,
+      "overlapCount": 0,
+      "overflow": 46,
       "recommendedActions": [
         "expand-important-node",
         "preserve-cross-zone-bridge",
@@ -3870,11 +3854,10 @@
       "linkedGenres": [
         "heavy-metal"
       ],
-      "overlapCount": 3,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "wes-montgomery": {
@@ -3919,7 +3902,7 @@
         "jazz"
       ],
       "overlapCount": 0,
-      "overflow": 151,
+      "overflow": 180,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
         "review-zone-bleed"
@@ -3943,7 +3926,7 @@
         "jazz"
       ],
       "overlapCount": 0,
-      "overflow": 74,
+      "overflow": 105,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
         "review-zone-bleed"
@@ -4040,7 +4023,7 @@
       ],
       "linkedGenres": [],
       "overlapCount": 0,
-      "overflow": 113,
+      "overflow": 190,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
         "review-zone-bleed"
@@ -4201,7 +4184,7 @@
         "art-rock"
       ],
       "overlapCount": 0,
-      "overflow": 30,
+      "overflow": 129,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
         "review-zone-bleed"
@@ -4226,11 +4209,10 @@
         "hard-rock",
         "progressive-rock"
       ],
-      "overlapCount": 4,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "deep-purple": {
@@ -4269,11 +4251,10 @@
         "hard-rock",
         "blues-rock"
       ],
-      "overlapCount": 2,
-      "overflow": 93,
+      "overlapCount": 0,
+      "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "review-zone-bleed"
+        "preserve-cross-zone-bridge"
       ]
     },
     "guns-n-roses": {
@@ -4293,8 +4274,8 @@
       "linkedGenres": [
         "hard-rock"
       ],
-      "overlapCount": 2,
-      "overflow": 124,
+      "overlapCount": 0,
+      "overflow": 93,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
         "review-zone-bleed"
@@ -4519,7 +4500,7 @@
         "art-rock"
       ],
       "overlapCount": 0,
-      "overflow": 231,
+      "overflow": 156,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
         "review-zone-bleed"
@@ -4748,12 +4729,11 @@
       "linkedGenres": [
         "glam-rock"
       ],
-      "overlapCount": 3,
-      "overflow": 115,
+      "overlapCount": 0,
+      "overflow": 52,
       "recommendedActions": [
         "expand-important-node",
         "preserve-cross-zone-bridge",
-        "spread-local-neighborhood",
         "review-zone-bleed"
       ]
     },
@@ -4776,11 +4756,10 @@
         "blues-rock",
         "jazz"
       ],
-      "overlapCount": 4,
-      "overflow": 208,
+      "overlapCount": 1,
+      "overflow": 221,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
-        "spread-local-neighborhood",
         "review-zone-bleed"
       ]
     },
@@ -4802,11 +4781,10 @@
       "linkedGenres": [
         "heavy-metal"
       ],
-      "overlapCount": 3,
-      "overflow": 202,
+      "overlapCount": 1,
+      "overflow": 210,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
-        "spread-local-neighborhood",
         "review-zone-bleed"
       ]
     },
@@ -4826,12 +4804,11 @@
       "linkedGenres": [
         "blues-rock"
       ],
-      "overlapCount": 3,
-      "overflow": 112,
+      "overlapCount": 0,
+      "overflow": 145,
       "recommendedActions": [
         "expand-important-node",
         "preserve-cross-zone-bridge",
-        "spread-local-neighborhood",
         "review-zone-bleed"
       ]
     },
@@ -4853,8 +4830,8 @@
         "hard-rock",
         "progressive-rock"
       ],
-      "overlapCount": 2,
-      "overflow": 224,
+      "overlapCount": 0,
+      "overflow": 202,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
         "review-zone-bleed"
@@ -4879,8 +4856,8 @@
         "rock-and-roll",
         "country"
       ],
-      "overlapCount": 2,
-      "overflow": 206,
+      "overlapCount": 1,
+      "overflow": 304,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
         "review-zone-bleed"
@@ -4927,11 +4904,10 @@
         "rock",
         "hard-rock"
       ],
-      "overlapCount": 4,
-      "overflow": 304,
+      "overlapCount": 0,
+      "overflow": 161,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
-        "spread-local-neighborhood",
         "review-zone-bleed"
       ]
     },
@@ -4953,7 +4929,7 @@
         "blues-rock",
         "jazz-fusion"
       ],
-      "overlapCount": 2,
+      "overlapCount": 0,
       "overflow": 305,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
@@ -4978,7 +4954,7 @@
         "progressive-metal",
         "heavy-metal"
       ],
-      "overlapCount": 1,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge"
@@ -5001,9 +4977,10 @@
         "rock"
       ],
       "overlapCount": 0,
-      "overflow": 0,
+      "overflow": 14,
       "recommendedActions": [
-        "preserve-cross-zone-bridge"
+        "preserve-cross-zone-bridge",
+        "review-zone-bleed"
       ]
     },
     "jackson-rhoads": {
@@ -5160,11 +5137,10 @@
         "folk"
       ],
       "overlapCount": 0,
-      "overflow": 146,
+      "overflow": 0,
       "recommendedActions": [
         "expand-important-node",
-        "preserve-cross-zone-bridge",
-        "review-zone-bleed"
+        "preserve-cross-zone-bridge"
       ]
     },
     "danelectro-3021": {
@@ -5279,7 +5255,7 @@
       "bridgeScore": 0,
       "secondaryZones": [],
       "linkedGenres": [],
-      "overlapCount": 2,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": []
     },
@@ -5305,7 +5281,7 @@
         "hard-rock",
         "alternative-metal"
       ],
-      "overlapCount": 2,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge"
@@ -5391,7 +5367,7 @@
         "rock-circuit"
       ],
       "linkedGenres": [],
-      "overlapCount": 2,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge"
@@ -5409,7 +5385,7 @@
       "bridgeScore": 0,
       "secondaryZones": [],
       "linkedGenres": [],
-      "overlapCount": 1,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": []
     },
@@ -5426,7 +5402,7 @@
       "bridgeScore": 0,
       "secondaryZones": [],
       "linkedGenres": [],
-      "overlapCount": 2,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": []
     },
@@ -5484,11 +5460,9 @@
       "bridgeScore": 0,
       "secondaryZones": [],
       "linkedGenres": [],
-      "overlapCount": 4,
+      "overlapCount": 0,
       "overflow": 0,
-      "recommendedActions": [
-        "spread-local-neighborhood"
-      ]
+      "recommendedActions": []
     },
     "as-i-lay-dying": {
       "id": "as-i-lay-dying",
@@ -5504,7 +5478,7 @@
         "punk-alt"
       ],
       "linkedGenres": [],
-      "overlapCount": 2,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge"
@@ -5522,7 +5496,7 @@
       "bridgeScore": 0,
       "secondaryZones": [],
       "linkedGenres": [],
-      "overlapCount": 2,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": []
     },
@@ -5538,7 +5512,7 @@
       "bridgeScore": 0,
       "secondaryZones": [],
       "linkedGenres": [],
-      "overlapCount": 1,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": []
     },
@@ -5554,7 +5528,7 @@
       "bridgeScore": 0,
       "secondaryZones": [],
       "linkedGenres": [],
-      "overlapCount": 1,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": []
     },
@@ -5576,7 +5550,7 @@
         "gangsta-rap"
       ],
       "overlapCount": 0,
-      "overflow": 155,
+      "overflow": 226,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
         "review-zone-bleed"
@@ -5597,11 +5571,10 @@
         "roots-blues"
       ],
       "linkedGenres": [],
-      "overlapCount": 3,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "fight": {
@@ -5616,7 +5589,7 @@
       "bridgeScore": 0,
       "secondaryZones": [],
       "linkedGenres": [],
-      "overlapCount": 0,
+      "overlapCount": 1,
       "overflow": 0,
       "recommendedActions": []
     },
@@ -5749,7 +5722,7 @@
         "rock-circuit"
       ],
       "linkedGenres": [],
-      "overlapCount": 0,
+      "overlapCount": 1,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge"
@@ -5770,9 +5743,10 @@
       ],
       "linkedGenres": [],
       "overlapCount": 0,
-      "overflow": 0,
+      "overflow": 10,
       "recommendedActions": [
-        "preserve-cross-zone-bridge"
+        "preserve-cross-zone-bridge",
+        "review-zone-bleed"
       ]
     },
     "northward": {
@@ -5789,11 +5763,10 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 4,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "children-of-bodom": {
@@ -5831,11 +5804,10 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 3,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "ancient": {
@@ -5852,10 +5824,11 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 2,
-      "overflow": 0,
+      "overlapCount": 0,
+      "overflow": 190,
       "recommendedActions": [
-        "preserve-cross-zone-bridge"
+        "preserve-cross-zone-bridge",
+        "review-zone-bleed"
       ]
     },
     "diablo": {
@@ -5872,11 +5845,10 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 3,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "sonata-arctica": {
@@ -5893,7 +5865,7 @@
         "rock-circuit"
       ],
       "linkedGenres": [],
-      "overlapCount": 2,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge"
@@ -5913,11 +5885,11 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 4,
-      "overflow": 0,
+      "overlapCount": 0,
+      "overflow": 33,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "review-zone-bleed"
       ]
     },
     "gamma-ray": {
@@ -5932,7 +5904,7 @@
       "bridgeScore": 0,
       "secondaryZones": [],
       "linkedGenres": [],
-      "overlapCount": 2,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": []
     },
@@ -5950,10 +5922,11 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 2,
-      "overflow": 0,
+      "overlapCount": 0,
+      "overflow": 69,
       "recommendedActions": [
-        "preserve-cross-zone-bridge"
+        "preserve-cross-zone-bridge",
+        "review-zone-bleed"
       ]
     },
     "silent-voices": {
@@ -5970,7 +5943,7 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 2,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge"
@@ -5988,11 +5961,9 @@
       "bridgeScore": 0,
       "secondaryZones": [],
       "linkedGenres": [],
-      "overlapCount": 4,
+      "overlapCount": 1,
       "overflow": 0,
-      "recommendedActions": [
-        "spread-local-neighborhood"
-      ]
+      "recommendedActions": []
     },
     "dutch-rock-music": {
       "id": "dutch-rock-music",
@@ -6026,7 +5997,7 @@
       "linkedGenres": [
         "symphonic-metal"
       ],
-      "overlapCount": 1,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": []
     },
@@ -6044,7 +6015,7 @@
       "linkedGenres": [
         "symphonic-metal"
       ],
-      "overlapCount": 2,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": []
     },
@@ -6062,11 +6033,9 @@
       "linkedGenres": [
         "symphonic-metal"
       ],
-      "overlapCount": 3,
+      "overlapCount": 0,
       "overflow": 0,
-      "recommendedActions": [
-        "spread-local-neighborhood"
-      ]
+      "recommendedActions": []
     },
     "tarja-turunen": {
       "id": "tarja-turunen",
@@ -6121,11 +6090,9 @@
       "bridgeScore": 0,
       "secondaryZones": [],
       "linkedGenres": [],
-      "overlapCount": 4,
+      "overlapCount": 0,
       "overflow": 0,
-      "recommendedActions": [
-        "spread-local-neighborhood"
-      ]
+      "recommendedActions": []
     },
     "angra": {
       "id": "angra",
@@ -6141,11 +6108,9 @@
       "linkedGenres": [
         "power-metal"
       ],
-      "overlapCount": 3,
+      "overlapCount": 0,
       "overflow": 0,
-      "recommendedActions": [
-        "spread-local-neighborhood"
-      ]
+      "recommendedActions": []
     },
     "avian": {
       "id": "avian",
@@ -6221,10 +6186,9 @@
       ],
       "linkedGenres": [],
       "overlapCount": 0,
-      "overflow": 63,
+      "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "review-zone-bleed"
+        "preserve-cross-zone-bridge"
       ]
     },
     "charon": {
@@ -6241,11 +6205,10 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 3,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "gandalf": {
@@ -6262,7 +6225,7 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 2,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge"
@@ -6282,11 +6245,10 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 3,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "roky-erickson": {
@@ -6363,7 +6325,7 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 2,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge"
@@ -6385,11 +6347,10 @@
         "rock-circuit"
       ],
       "linkedGenres": [],
-      "overlapCount": 4,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "hypocrisy": {
@@ -6406,11 +6367,10 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 3,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "norther": {
@@ -6427,7 +6387,7 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 2,
+      "overlapCount": 1,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge"
@@ -6447,7 +6407,7 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 1,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge"
@@ -6468,11 +6428,10 @@
         "rock-circuit"
       ],
       "linkedGenres": [],
-      "overlapCount": 3,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "aqua": {
@@ -6489,7 +6448,7 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 2,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge"
@@ -6508,7 +6467,7 @@
       "bridgeScore": 0,
       "secondaryZones": [],
       "linkedGenres": [],
-      "overlapCount": 1,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": []
     },
@@ -6645,9 +6604,10 @@
         "hardcore-punk"
       ],
       "overlapCount": 0,
-      "overflow": 0,
+      "overflow": 38,
       "recommendedActions": [
-        "preserve-cross-zone-bridge"
+        "preserve-cross-zone-bridge",
+        "review-zone-bleed"
       ]
     },
     "black-flag": {
@@ -6682,7 +6642,7 @@
       ],
       "linkedGenres": [],
       "overlapCount": 0,
-      "overflow": 145,
+      "overflow": 200,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
         "review-zone-bleed"
@@ -6735,11 +6695,10 @@
         "rock-circuit"
       ],
       "linkedGenres": [],
-      "overlapCount": 3,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "execration": {
@@ -6776,11 +6735,10 @@
         "rock-circuit"
       ],
       "linkedGenres": [],
-      "overlapCount": 4,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "gojira": {
@@ -6931,7 +6889,7 @@
         "hard-rock",
         "glam-metal"
       ],
-      "overlapCount": 1,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge"
@@ -6967,9 +6925,11 @@
       "bridgeScore": 0,
       "secondaryZones": [],
       "linkedGenres": [],
-      "overlapCount": 1,
-      "overflow": 0,
-      "recommendedActions": []
+      "overlapCount": 0,
+      "overflow": 20,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
     },
     "absu": {
       "id": "absu",
@@ -7091,7 +7051,7 @@
       "bridgeScore": 0,
       "secondaryZones": [],
       "linkedGenres": [],
-      "overlapCount": 1,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": []
     },
@@ -7108,8 +7068,10 @@
       "secondaryZones": [],
       "linkedGenres": [],
       "overlapCount": 0,
-      "overflow": 0,
-      "recommendedActions": []
+      "overflow": 19,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
     },
     "misfits": {
       "id": "misfits",
@@ -7126,11 +7088,12 @@
       ],
       "linkedGenres": [],
       "overlapCount": 0,
-      "overflow": 0,
+      "overflow": 22,
       "recommendedActions": [
         "research-first-connections",
         "expand-important-node",
-        "preserve-cross-zone-bridge"
+        "preserve-cross-zone-bridge",
+        "review-zone-bleed"
       ]
     },
     "adorable": {
@@ -7273,8 +7236,8 @@
         "folk-country-vise"
       ],
       "linkedGenres": [],
-      "overlapCount": 2,
-      "overflow": 102,
+      "overlapCount": 0,
+      "overflow": 96,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
         "review-zone-bleed"
@@ -7399,11 +7362,10 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 3,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "avantasia": {
@@ -7420,7 +7382,7 @@
         "rock-circuit"
       ],
       "linkedGenres": [],
-      "overlapCount": 2,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge"
@@ -7440,11 +7402,10 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 3,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "bodine": {
@@ -7481,7 +7442,7 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 1,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge"
@@ -7501,7 +7462,7 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 2,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge"
@@ -7521,7 +7482,7 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 1,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge"
@@ -7542,9 +7503,10 @@
       ],
       "linkedGenres": [],
       "overlapCount": 0,
-      "overflow": 0,
+      "overflow": 126,
       "recommendedActions": [
-        "preserve-cross-zone-bridge"
+        "preserve-cross-zone-bridge",
+        "review-zone-bleed"
       ]
     },
     "ralf-scheepers": {
@@ -7562,11 +7524,10 @@
         "rock-circuit"
       ],
       "linkedGenres": [],
-      "overlapCount": 3,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "magnus-karlsson": {
@@ -7584,10 +7545,9 @@
       ],
       "linkedGenres": [],
       "overlapCount": 0,
-      "overflow": 54,
+      "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "review-zone-bleed"
+        "preserve-cross-zone-bridge"
       ]
     },
     "masterplan": {
@@ -7604,11 +7564,10 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 3,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "phenomena": {
@@ -7625,11 +7584,10 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 3,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "primal-fear": {
@@ -7662,11 +7620,10 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 3,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "therion": {
@@ -7683,7 +7640,7 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 2,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge"
@@ -7726,11 +7683,10 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 3,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "orden-ogan": {
@@ -7746,7 +7702,7 @@
       "bridgeScore": 0,
       "secondaryZones": [],
       "linkedGenres": [],
-      "overlapCount": 1,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "research-first-connections"
@@ -7767,7 +7723,7 @@
         "rock-circuit"
       ],
       "linkedGenres": [],
-      "overlapCount": 1,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge"
@@ -7846,11 +7802,9 @@
       "bridgeScore": 0,
       "secondaryZones": [],
       "linkedGenres": [],
-      "overlapCount": 3,
+      "overlapCount": 0,
       "overflow": 0,
-      "recommendedActions": [
-        "spread-local-neighborhood"
-      ]
+      "recommendedActions": []
     },
     "bandana-thrash": {
       "id": "bandana-thrash",
@@ -7928,7 +7882,7 @@
         "rock-circuit"
       ],
       "linkedGenres": [],
-      "overlapCount": 1,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge"
@@ -7949,11 +7903,10 @@
         "rock-circuit"
       ],
       "linkedGenres": [],
-      "overlapCount": 4,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "elvenking": {
@@ -8010,11 +7963,10 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 3,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "midnight": {
@@ -8031,11 +7983,10 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 4,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "michael-weikath": {
@@ -8054,7 +8005,7 @@
         "rock-circuit"
       ],
       "linkedGenres": [],
-      "overlapCount": 1,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge"
@@ -8074,7 +8025,7 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 1,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge"
@@ -8116,10 +8067,9 @@
       ],
       "linkedGenres": [],
       "overlapCount": 0,
-      "overflow": 79,
+      "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "review-zone-bleed"
+        "preserve-cross-zone-bridge"
       ]
     },
     "death": {
@@ -8135,8 +8085,10 @@
       "secondaryZones": [],
       "linkedGenres": [],
       "overlapCount": 0,
-      "overflow": 0,
-      "recommendedActions": []
+      "overflow": 1,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
     },
     "savatage": {
       "id": "savatage",
@@ -8153,7 +8105,7 @@
         "rock-circuit"
       ],
       "linkedGenres": [],
-      "overlapCount": 1,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge"
@@ -8235,7 +8187,7 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 1,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge"
@@ -8255,7 +8207,7 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 2,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge"
@@ -8275,11 +8227,10 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 3,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "testament": {
@@ -8296,11 +8247,10 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 3,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "rammstein": {
@@ -8319,7 +8269,7 @@
       ],
       "linkedGenres": [],
       "overlapCount": 0,
-      "overflow": 11,
+      "overflow": 82,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
         "review-zone-bleed"
@@ -8440,11 +8390,10 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 3,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "stone-sour": {
@@ -8462,7 +8411,7 @@
         "punk-alt"
       ],
       "linkedGenres": [],
-      "overlapCount": 2,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge"
@@ -8602,11 +8551,10 @@
         "hip-hop-rap"
       ],
       "linkedGenres": [],
-      "overlapCount": 3,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "seether": {
@@ -8622,7 +8570,7 @@
       "bridgeScore": 0,
       "secondaryZones": [],
       "linkedGenres": [],
-      "overlapCount": 1,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "research-first-connections"
@@ -8641,7 +8589,7 @@
       "bridgeScore": 0,
       "secondaryZones": [],
       "linkedGenres": [],
-      "overlapCount": 2,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": []
     },
@@ -8657,7 +8605,7 @@
       "bridgeScore": 0,
       "secondaryZones": [],
       "linkedGenres": [],
-      "overlapCount": 2,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "expand-important-node"
@@ -8809,12 +8757,11 @@
       "bridgeScore": 0,
       "secondaryZones": [],
       "linkedGenres": [],
-      "overlapCount": 5,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "research-first-connections",
-        "expand-important-node",
-        "spread-local-neighborhood"
+        "expand-important-node"
       ]
     },
     "creed": {
@@ -8831,7 +8778,7 @@
         "rock-circuit"
       ],
       "linkedGenres": [],
-      "overlapCount": 2,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge"
@@ -8881,7 +8828,7 @@
       "bridgeScore": 0,
       "secondaryZones": [],
       "linkedGenres": [],
-      "overlapCount": 0,
+      "overlapCount": 1,
       "overflow": 0,
       "recommendedActions": []
     },
@@ -8900,11 +8847,10 @@
         "hip-hop-rap"
       ],
       "linkedGenres": [],
-      "overlapCount": 5,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "bruce-hall": {
@@ -8987,11 +8933,10 @@
       "bridgeScore": 0,
       "secondaryZones": [],
       "linkedGenres": [],
-      "overlapCount": 3,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "research-first-connections",
-        "spread-local-neighborhood"
+        "research-first-connections"
       ]
     },
     "journey": {
@@ -9006,11 +8951,10 @@
       "bridgeScore": 0,
       "secondaryZones": [],
       "linkedGenres": [],
-      "overlapCount": 5,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "research-first-connections",
-        "spread-local-neighborhood"
+        "research-first-connections"
       ]
     },
     "steve-perry": {
@@ -9026,7 +8970,7 @@
       "bridgeScore": 0,
       "secondaryZones": [],
       "linkedGenres": [],
-      "overlapCount": 2,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "research-first-connections"
@@ -9046,11 +8990,10 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 3,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "john-fogerty": {
@@ -9066,11 +9009,10 @@
       "bridgeScore": 0,
       "secondaryZones": [],
       "linkedGenres": [],
-      "overlapCount": 3,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "research-first-connections",
-        "spread-local-neighborhood"
+        "research-first-connections"
       ]
     },
     "jerry-reed": {
@@ -9105,7 +9047,7 @@
       "bridgeScore": 0,
       "secondaryZones": [],
       "linkedGenres": [],
-      "overlapCount": 1,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "research-first-connections"
@@ -9238,7 +9180,7 @@
       ],
       "linkedGenres": [],
       "overlapCount": 0,
-      "overflow": 289,
+      "overflow": 357,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
         "review-zone-bleed"
@@ -9259,7 +9201,7 @@
       ],
       "linkedGenres": [],
       "overlapCount": 0,
-      "overflow": 71,
+      "overflow": 94,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
         "review-zone-bleed"
@@ -9280,8 +9222,8 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 2,
-      "overflow": 22,
+      "overlapCount": 0,
+      "overflow": 85,
       "recommendedActions": [
         "expand-important-node",
         "preserve-cross-zone-bridge",
@@ -9322,7 +9264,7 @@
         "punk-alt"
       ],
       "linkedGenres": [],
-      "overlapCount": 1,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge"
@@ -9361,7 +9303,7 @@
         "rock-circuit"
       ],
       "linkedGenres": [],
-      "overlapCount": 1,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge"
@@ -9384,7 +9326,7 @@
       ],
       "linkedGenres": [],
       "overlapCount": 0,
-      "overflow": 225,
+      "overflow": 14,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
         "review-zone-bleed"
@@ -9404,11 +9346,10 @@
         "punk-alt"
       ],
       "linkedGenres": [],
-      "overlapCount": 3,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "dr-know": {
@@ -9425,7 +9366,7 @@
         "punk-alt"
       ],
       "linkedGenres": [],
-      "overlapCount": 2,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge"
@@ -9445,11 +9386,10 @@
         "punk-alt"
       ],
       "linkedGenres": [],
-      "overlapCount": 3,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "embrace": {
@@ -9466,7 +9406,7 @@
         "punk-alt"
       ],
       "linkedGenres": [],
-      "overlapCount": 2,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge"
@@ -9486,7 +9426,7 @@
         "punk-alt"
       ],
       "linkedGenres": [],
-      "overlapCount": 2,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge"
@@ -9506,11 +9446,10 @@
         "punk-alt"
       ],
       "linkedGenres": [],
-      "overlapCount": 3,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "sex-pistols": {
@@ -9590,7 +9529,7 @@
         "punk-alt"
       ],
       "linkedGenres": [],
-      "overlapCount": 2,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge"
@@ -9610,7 +9549,7 @@
         "punk-alt"
       ],
       "linkedGenres": [],
-      "overlapCount": 1,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge"
@@ -9670,9 +9609,10 @@
       ],
       "linkedGenres": [],
       "overlapCount": 0,
-      "overflow": 0,
+      "overflow": 130,
       "recommendedActions": [
-        "preserve-cross-zone-bridge"
+        "preserve-cross-zone-bridge",
+        "review-zone-bleed"
       ]
     },
     "acoustic-guitar": {
@@ -9691,11 +9631,10 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 5,
-      "overflow": 317,
+      "overlapCount": 0,
+      "overflow": 316,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
-        "spread-local-neighborhood",
         "review-zone-bleed"
       ]
     },
@@ -9809,10 +9748,11 @@
         "punk-alt"
       ],
       "linkedGenres": [],
-      "overlapCount": 2,
-      "overflow": 0,
+      "overlapCount": 0,
+      "overflow": 106,
       "recommendedActions": [
-        "preserve-cross-zone-bridge"
+        "preserve-cross-zone-bridge",
+        "review-zone-bleed"
       ]
     },
     "23-skidoo": {
@@ -9829,7 +9769,7 @@
       "linkedGenres": [
         "post-punk"
       ],
-      "overlapCount": 1,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": []
     },
@@ -10113,11 +10053,10 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 3,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "skate-punk": {
@@ -10175,11 +10114,11 @@
         "punk-alt"
       ],
       "linkedGenres": [],
-      "overlapCount": 3,
-      "overflow": 0,
+      "overlapCount": 0,
+      "overflow": 54,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "review-zone-bleed"
       ]
     },
     "ataxia": {
@@ -10216,11 +10155,10 @@
         "punk-alt"
       ],
       "linkedGenres": [],
-      "overlapCount": 4,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "botch": {
@@ -10341,10 +10279,11 @@
         "southern-rock"
       ],
       "overlapCount": 0,
-      "overflow": 0,
+      "overflow": 3,
       "recommendedActions": [
         "expand-important-node",
-        "preserve-cross-zone-bridge"
+        "preserve-cross-zone-bridge",
+        "review-zone-bleed"
       ]
     },
     "american-primitive-guitar": {
@@ -10363,12 +10302,11 @@
       "linkedGenres": [
         "roots-rock"
       ],
-      "overlapCount": 2,
-      "overflow": 146,
+      "overlapCount": 0,
+      "overflow": 0,
       "recommendedActions": [
         "expand-important-node",
-        "preserve-cross-zone-bridge",
-        "review-zone-bleed"
+        "preserve-cross-zone-bridge"
       ]
     },
     "country-rock": {
@@ -10408,7 +10346,7 @@
       ],
       "linkedGenres": [],
       "overlapCount": 0,
-      "overflow": 157,
+      "overflow": 181,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
         "review-zone-bleed"
@@ -10823,11 +10761,10 @@
         "rock-circuit"
       ],
       "linkedGenres": [],
-      "overlapCount": 3,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "armageddon": {
@@ -10845,10 +10782,9 @@
       ],
       "linkedGenres": [],
       "overlapCount": 0,
-      "overflow": 37,
+      "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "review-zone-bleed"
+        "preserve-cross-zone-bridge"
       ]
     },
     "darkest-hour": {
@@ -10865,7 +10801,7 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 2,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge"
@@ -10885,11 +10821,10 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 3,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "distant": {
@@ -10924,11 +10859,10 @@
       "bridgeScore": 0,
       "secondaryZones": [],
       "linkedGenres": [],
-      "overlapCount": 4,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "research-first-connections",
-        "spread-local-neighborhood"
+        "research-first-connections"
       ]
     },
     "bruce-dickinson": {
@@ -10947,7 +10881,7 @@
         "punk-alt"
       ],
       "linkedGenres": [],
-      "overlapCount": 1,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge"
@@ -10969,7 +10903,7 @@
       "linkedGenres": [
         "shock-rock"
       ],
-      "overlapCount": 1,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "expand-important-node",
@@ -10990,11 +10924,11 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 3,
-      "overflow": 0,
+      "overlapCount": 0,
+      "overflow": 190,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "review-zone-bleed"
       ]
     },
     "catherine-wheel": {
@@ -11011,11 +10945,10 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 3,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "iced-earth": {
@@ -11054,7 +10987,7 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 1,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge"
@@ -11095,9 +11028,10 @@
       ],
       "linkedGenres": [],
       "overlapCount": 0,
-      "overflow": 0,
+      "overflow": 190,
       "recommendedActions": [
-        "preserve-cross-zone-bridge"
+        "preserve-cross-zone-bridge",
+        "review-zone-bleed"
       ]
     },
     "bandwagon-effect": {
@@ -11114,7 +11048,7 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 2,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge"
@@ -11135,7 +11069,7 @@
         "psychedelia-prog"
       ],
       "linkedGenres": [],
-      "overlapCount": 2,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge"
@@ -11196,11 +11130,10 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 3,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "arcade": {
@@ -11215,7 +11148,7 @@
       "bridgeScore": 0,
       "secondaryZones": [],
       "linkedGenres": [],
-      "overlapCount": 2,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": []
     },
@@ -11249,11 +11182,10 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 3,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "janick-gers": {
@@ -11273,11 +11205,10 @@
         "guitar-workshop"
       ],
       "linkedGenres": [],
-      "overlapCount": 3,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "gillan": {
@@ -11294,11 +11225,10 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 3,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "gogmagog": {
@@ -11315,7 +11245,7 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 2,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge"
@@ -11378,7 +11308,7 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 1,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge"
@@ -11398,11 +11328,10 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 3,
-      "overflow": 119,
+      "overlapCount": 0,
+      "overflow": 120,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
-        "spread-local-neighborhood",
         "review-zone-bleed"
       ]
     },
@@ -11420,11 +11349,10 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 4,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "hail": {
@@ -11478,10 +11406,11 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 2,
-      "overflow": 0,
+      "overlapCount": 0,
+      "overflow": 56,
       "recommendedActions": [
-        "preserve-cross-zone-bridge"
+        "preserve-cross-zone-bridge",
+        "review-zone-bleed"
       ]
     },
     "dennis-ward": {
@@ -11498,11 +11427,10 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 3,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "hardline": {
@@ -11558,11 +11486,10 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 3,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "aerosmith": {
@@ -11615,7 +11542,7 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 1,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge"
@@ -11635,11 +11562,10 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 1,
-      "overflow": 8,
+      "overlapCount": 0,
+      "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "review-zone-bleed"
+        "preserve-cross-zone-bridge"
       ]
     },
     "dominum": {
@@ -11656,11 +11582,10 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 4,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "wind-rose": {
@@ -11677,7 +11602,7 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 2,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge"
@@ -11719,7 +11644,7 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 2,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge"
@@ -11756,9 +11681,10 @@
       ],
       "linkedGenres": [],
       "overlapCount": 0,
-      "overflow": 0,
+      "overflow": 172,
       "recommendedActions": [
-        "preserve-cross-zone-bridge"
+        "preserve-cross-zone-bridge",
+        "review-zone-bleed"
       ]
     },
     "grim-reaper": {
@@ -11773,7 +11699,7 @@
       "bridgeScore": 0,
       "secondaryZones": [],
       "linkedGenres": [],
-      "overlapCount": 2,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": []
     },
@@ -11792,7 +11718,7 @@
       ],
       "linkedGenres": [],
       "overlapCount": 0,
-      "overflow": 111,
+      "overflow": 120,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
         "review-zone-bleed"
@@ -11811,7 +11737,7 @@
       "bridgeScore": 0,
       "secondaryZones": [],
       "linkedGenres": [],
-      "overlapCount": 2,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "research-first-connections"
@@ -11870,7 +11796,7 @@
       "bridgeScore": 0,
       "secondaryZones": [],
       "linkedGenres": [],
-      "overlapCount": 1,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "research-first-connections"
@@ -11891,11 +11817,10 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 3,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "filter": {
@@ -11950,7 +11875,7 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 2,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge"
@@ -11970,11 +11895,10 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 3,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "the-iron-maidens": {
@@ -12051,11 +11975,10 @@
         "guitar-workshop"
       ],
       "linkedGenres": [],
-      "overlapCount": 3,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "emily-armstrong": {
@@ -12070,7 +11993,7 @@
       "bridgeScore": 0,
       "secondaryZones": [],
       "linkedGenres": [],
-      "overlapCount": 2,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": []
     },
@@ -12089,10 +12012,9 @@
       ],
       "linkedGenres": [],
       "overlapCount": 0,
-      "overflow": 10,
+      "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "review-zone-bleed"
+        "preserve-cross-zone-bridge"
       ]
     },
     "steel-panther": {
@@ -12130,7 +12052,7 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 2,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge"
@@ -12141,44 +12063,22 @@
       "label": "Tenacious D",
       "type": "band",
       "zone": "rock-circuit",
-      "degree": 4,
-      "weightedDegree": 1.76,
+      "degree": 3,
+      "weightedDegree": 1.38,
       "era": 1994,
       "sourceQuality": 1,
-      "hubScore": 0.5,
-      "bridgeScore": 1,
+      "hubScore": 0.375,
+      "bridgeScore": 0.96,
       "secondaryZones": [
         "guitar-workshop",
         "hip-hop-rap",
         "hard-rock-metal"
       ],
-      "linkedGenres": [
-        "american-rock-music-duos"
-      ],
-      "overlapCount": 0,
-      "overflow": 275,
-      "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "review-zone-bleed"
-      ]
-    },
-    "american-rock-music-duos": {
-      "id": "american-rock-music-duos",
-      "label": "American rock music duos",
-      "type": "genre",
-      "zone": "rock-circuit",
-      "degree": 1,
-      "weightedDegree": 0.38,
-      "sourceQuality": 0.5,
-      "hubScore": 0.125,
-      "bridgeScore": 0,
-      "secondaryZones": [],
       "linkedGenres": [],
-      "overlapCount": 5,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "expand-important-node",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "satchel": {
@@ -12218,9 +12118,10 @@
       ],
       "linkedGenres": [],
       "overlapCount": 0,
-      "overflow": 0,
+      "overflow": 62,
       "recommendedActions": [
-        "preserve-cross-zone-bridge"
+        "preserve-cross-zone-bridge",
+        "review-zone-bleed"
       ]
     },
     "jeff-martin": {
@@ -12237,10 +12138,11 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 2,
-      "overflow": 0,
+      "overlapCount": 0,
+      "overflow": 190,
       "recommendedActions": [
-        "preserve-cross-zone-bridge"
+        "preserve-cross-zone-bridge",
+        "review-zone-bleed"
       ]
     },
     "kevin-gilbert": {
@@ -12257,11 +12159,10 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 3,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "kramer-guitars": {
@@ -12356,11 +12257,10 @@
         "rock-circuit"
       ],
       "linkedGenres": [],
-      "overlapCount": 3,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "adam-hamilton": {
@@ -12377,11 +12277,10 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 3,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "arthur-porter": {
@@ -12398,7 +12297,7 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 1,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge"
@@ -12418,11 +12317,10 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 3,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "billy-williamson": {
@@ -12439,11 +12337,10 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 3,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "charles-sutton": {
@@ -12460,11 +12357,10 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 4,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "preserve-cross-zone-bridge",
-        "spread-local-neighborhood"
+        "preserve-cross-zone-bridge"
       ]
     },
     "chris-holmes": {
@@ -12481,7 +12377,7 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 2,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge"
@@ -12523,7 +12419,7 @@
         "rock-circuit"
       ],
       "linkedGenres": [],
-      "overlapCount": 1,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge"
@@ -12543,7 +12439,7 @@
         "hard-rock-metal"
       ],
       "linkedGenres": [],
-      "overlapCount": 1,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge"
@@ -12565,7 +12461,7 @@
         "rock-circuit"
       ],
       "linkedGenres": [],
-      "overlapCount": 2,
+      "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge"
@@ -12595,724 +12491,76 @@
   "issues": {
     "overlapRisks": [
       {
-        "source": "buddy-guy",
-        "target": "albert-king",
-        "sourceLabel": "Buddy Guy",
-        "targetLabel": "Albert King",
-        "zone": "roots-blues",
-        "distance": 56,
-        "severity": 0.428
-      },
-      {
-        "source": "surf-rock",
-        "target": "our-band-could-be-your-life",
-        "sourceLabel": "Surf rock",
-        "targetLabel": "Our Band Could Be Your Life",
-        "zone": "rock-circuit",
-        "distance": 78,
-        "severity": 0.42
-      },
-      {
-        "source": "stevie-ray-vaughan",
-        "target": "albert-king",
-        "sourceLabel": "Stevie Ray Vaughan",
-        "targetLabel": "Albert King",
-        "zone": "roots-blues",
-        "distance": 59,
-        "severity": 0.402
-      },
-      {
-        "source": "slash",
-        "target": "jeff-nelson",
-        "sourceLabel": "Slash",
-        "targetLabel": "Jeff Nelson",
+        "source": "fender-esquire",
+        "target": "extreme",
+        "sourceLabel": "Fender Esquire",
+        "targetLabel": "Extreme",
         "zone": "cross-zone",
-        "distance": 43,
-        "severity": 0.372
+        "distance": 72,
+        "severity": 0.126
       },
       {
-        "source": "stevie-ray-vaughan",
-        "target": "brian-setzer",
-        "sourceLabel": "Stevie Ray Vaughan",
-        "targetLabel": "Brian Setzer",
-        "zone": "roots-blues",
-        "distance": 63,
-        "severity": 0.362
-      },
-      {
-        "source": "buddy-guy",
-        "target": "dickey-betts",
-        "sourceLabel": "Buddy Guy",
-        "targetLabel": "Dickey Betts",
-        "zone": "roots-blues",
-        "distance": 63,
-        "severity": 0.357
-      },
-      {
-        "source": "arven",
-        "target": "egg-hunt",
-        "sourceLabel": "Arven",
-        "targetLabel": "Egg Hunt",
+        "source": "norther",
+        "target": "flyleaf",
+        "sourceLabel": "Norther",
+        "targetLabel": "Flyleaf",
         "zone": "rock-circuit",
-        "distance": 81,
-        "severity": 0.317
+        "distance": 106,
+        "severity": 0.105
       },
       {
-        "source": "brian-setzer",
-        "target": "slash",
-        "sourceLabel": "Brian Setzer",
-        "targetLabel": "Slash",
-        "zone": "roots-blues",
-        "distance": 69,
-        "severity": 0.295
-      },
-      {
-        "source": "jazz-fusion",
-        "target": "joe-satriani",
-        "sourceLabel": "Jazz fusion",
-        "targetLabel": "Joe Satriani",
-        "zone": "rock-circuit",
-        "distance": 91,
-        "severity": 0.268
-      },
-      {
-        "source": "glam-rock",
-        "target": "our-band-could-be-your-life",
-        "sourceLabel": "Glam rock",
-        "targetLabel": "Our Band Could Be Your Life",
-        "zone": "rock-circuit",
-        "distance": 99,
-        "severity": 0.26
-      },
-      {
-        "source": "beefeater",
-        "target": "dominum",
-        "sourceLabel": "Beefeater",
-        "targetLabel": "Dominum",
-        "zone": "rock-circuit",
-        "distance": 88,
-        "severity": 0.255
-      },
-      {
-        "source": "national-resonator",
-        "target": "thrash-metal",
-        "sourceLabel": "National resonator",
-        "targetLabel": "Thrash metal",
+        "source": "gibson-sg",
+        "target": "skid-row",
+        "sourceLabel": "Gibson SG",
+        "targetLabel": "Skid Row",
         "zone": "cross-zone",
-        "distance": 69,
-        "severity": 0.254
-      },
-      {
-        "source": "craig-jones",
-        "target": "hollywood-vampires",
-        "sourceLabel": "Craig Jones",
-        "targetLabel": "Hollywood Vampires",
-        "zone": "rock-circuit",
-        "distance": 81,
-        "severity": 0.251
-      },
-      {
-        "source": "jazz-fusion",
-        "target": "arven",
-        "sourceLabel": "Jazz fusion",
-        "targetLabel": "Arven",
-        "zone": "rock-circuit",
-        "distance": 101,
-        "severity": 0.246
-      },
-      {
-        "source": "guns-n-roses",
-        "target": "northward",
-        "sourceLabel": "Guns N' Roses",
-        "targetLabel": "Northward",
-        "zone": "cross-zone",
-        "distance": 62,
-        "severity": 0.244
-      },
-      {
-        "source": "jazz-fusion",
-        "target": "pete-townshend",
-        "sourceLabel": "Jazz fusion",
-        "targetLabel": "Pete Townshend",
-        "zone": "rock-circuit",
-        "distance": 95,
-        "severity": 0.236
-      },
-      {
-        "source": "funk",
-        "target": "sinner",
-        "sourceLabel": "Funk",
-        "targetLabel": "Sinner",
-        "zone": "rock-circuit",
-        "distance": 102,
-        "severity": 0.235
-      },
-      {
-        "source": "randy-rhoads",
-        "target": "power-metal",
-        "sourceLabel": "Randy Rhoads",
-        "targetLabel": "power metal",
-        "zone": "hard-rock-metal",
-        "distance": 95,
-        "severity": 0.231
-      },
-      {
-        "source": "keith-richards",
-        "target": "joe-satriani",
-        "sourceLabel": "Keith Richards",
-        "targetLabel": "Joe Satriani",
-        "zone": "rock-circuit",
-        "distance": 76,
-        "severity": 0.219
-      },
-      {
-        "source": "john-fogerty",
-        "target": "gillan",
-        "sourceLabel": "John Fogerty",
-        "targetLabel": "Gillan",
-        "zone": "rock-circuit",
-        "distance": 85,
-        "severity": 0.216
+        "distance": 74,
+        "severity": 0.098
       },
       {
         "source": "fender-telecaster",
-        "target": "acoustic-guitar",
+        "target": "gibson-explorer",
         "sourceLabel": "Fender Telecaster",
-        "targetLabel": "Acoustic guitar",
+        "targetLabel": "Gibson Explorer",
         "zone": "guitar-workshop",
-        "distance": 93,
-        "severity": 0.212
-      },
-      {
-        "source": "surf-rock",
-        "target": "david-rosenthal",
-        "sourceLabel": "Surf rock",
-        "targetLabel": "David Rosenthal",
-        "zone": "rock-circuit",
-        "distance": 98,
-        "severity": 0.206
-      },
-      {
-        "source": "power-metal",
-        "target": "axl-rose",
-        "sourceLabel": "power metal",
-        "targetLabel": "Axl Rose",
-        "zone": "hard-rock-metal",
-        "distance": 98,
-        "severity": 0.205
-      },
-      {
-        "source": "anthrax-american-band",
-        "target": "in-flames",
-        "sourceLabel": "Anthrax (American band)",
-        "targetLabel": "In Flames",
-        "zone": "hard-rock-metal",
-        "distance": 95,
-        "severity": 0.194
-      },
-      {
-        "source": "northward",
-        "target": "aqua",
-        "sourceLabel": "Northward",
-        "targetLabel": "Aqua",
-        "zone": "rock-circuit",
-        "distance": 95,
-        "severity": 0.194
-      },
-      {
-        "source": "stevie-ray-vaughan",
-        "target": "emily-armstrong",
-        "sourceLabel": "Stevie Ray Vaughan",
-        "targetLabel": "Emily Armstrong",
-        "zone": "cross-zone",
-        "distance": 55,
-        "severity": 0.191
-      },
-      {
-        "source": "bob-dylan",
-        "target": "slash",
-        "sourceLabel": "Bob Dylan",
-        "targetLabel": "Slash",
-        "zone": "roots-blues",
-        "distance": 79,
-        "severity": 0.19
-      },
-      {
-        "source": "glam-rock",
-        "target": "brain",
-        "sourceLabel": "Glam rock",
-        "targetLabel": "Brain",
-        "zone": "rock-circuit",
-        "distance": 100,
-        "severity": 0.189
-      },
-      {
-        "source": "funk",
-        "target": "dick-dale",
-        "sourceLabel": "Funk",
-        "targetLabel": "Dick Dale",
-        "zone": "rock-circuit",
-        "distance": 101,
-        "severity": 0.187
-      },
-      {
-        "source": "dick-dale",
-        "target": "adrian-smith",
-        "sourceLabel": "Dick Dale",
-        "targetLabel": "Adrian Smith",
-        "zone": "rock-circuit",
-        "distance": 80,
-        "severity": 0.186
-      },
-      {
-        "source": "power-metal",
-        "target": "alexi-laiho",
-        "sourceLabel": "power metal",
-        "targetLabel": "Alexi Laiho",
-        "zone": "hard-rock-metal",
-        "distance": 101,
-        "severity": 0.186
-      },
-      {
-        "source": "pete-townshend",
-        "target": "american-rock-music-duos",
-        "sourceLabel": "Pete Townshend",
-        "targetLabel": "American rock music duos",
-        "zone": "rock-circuit",
-        "distance": 101,
-        "severity": 0.182
-      },
-      {
-        "source": "bob-dylan",
-        "target": "arcade",
-        "sourceLabel": "Bob Dylan",
-        "targetLabel": "Arcade",
-        "zone": "cross-zone",
-        "distance": 62,
-        "severity": 0.179
-      },
-      {
-        "source": "eddie-van-halen",
-        "target": "martin-d28",
-        "sourceLabel": "Eddie Van Halen",
-        "targetLabel": "Martin D-28",
-        "zone": "cross-zone",
-        "distance": 62,
-        "severity": 0.172
-      },
-      {
-        "source": "martin-d28",
-        "target": "gibson-eds-1275",
-        "sourceLabel": "Martin D-28",
-        "targetLabel": "Gibson EDS-1275",
-        "zone": "guitar-workshop",
-        "distance": 98,
-        "severity": 0.167
-      },
-      {
-        "source": "sethian",
-        "target": "fuel",
-        "sourceLabel": "Sethian",
-        "targetLabel": "Fuel",
-        "zone": "rock-circuit",
-        "distance": 98,
-        "severity": 0.167
-      },
-      {
-        "source": "john-fogerty",
-        "target": "dominum",
-        "sourceLabel": "John Fogerty",
-        "targetLabel": "Dominum",
-        "zone": "rock-circuit",
-        "distance": 90,
-        "severity": 0.166
-      },
-      {
-        "source": "power-metal",
-        "target": "speed-metal",
-        "sourceLabel": "power metal",
-        "targetLabel": "Speed Metal",
-        "zone": "hard-rock-metal",
-        "distance": 125,
-        "severity": 0.166
-      },
-      {
-        "source": "scorpions",
-        "target": "bruce-springsteen-the-e-street-band",
-        "sourceLabel": "Scorpions",
-        "targetLabel": "Bruce Springsteen & the E Street Band",
-        "zone": "rock-circuit",
-        "distance": 98,
-        "severity": 0.166
-      },
-      {
-        "source": "artillery",
-        "target": "axl-rose",
-        "sourceLabel": "Artillery",
-        "targetLabel": "Axl Rose",
-        "zone": "hard-rock-metal",
-        "distance": 90,
-        "severity": 0.165
-      },
-      {
-        "source": "carrie",
-        "target": "american-rock-music-duos",
-        "sourceLabel": "Carrie",
-        "targetLabel": "American rock music duos",
-        "zone": "rock-circuit",
-        "distance": 112,
-        "severity": 0.164
-      },
-      {
-        "source": "guns-n-roses",
-        "target": "our-band-could-be-your-life",
-        "sourceLabel": "Guns N' Roses",
-        "targetLabel": "Our Band Could Be Your Life",
-        "zone": "cross-zone",
-        "distance": 69,
-        "severity": 0.163
-      },
-      {
-        "source": "fender-stratocaster",
-        "target": "fender-telecaster",
-        "sourceLabel": "Fender Stratocaster",
-        "targetLabel": "Fender Telecaster",
-        "zone": "guitar-workshop",
-        "distance": 99,
-        "severity": 0.162
-      },
-      {
-        "source": "martin-d28",
-        "target": "prs-custom-24",
-        "sourceLabel": "Martin D-28",
-        "targetLabel": "PRS Custom 24",
-        "zone": "guitar-workshop",
-        "distance": 99,
-        "severity": 0.162
-      },
-      {
-        "source": "gibson-j45",
-        "target": "brian-may-red-special",
-        "sourceLabel": "Gibson J-45",
-        "targetLabel": "Brian May Red Special",
-        "zone": "guitar-workshop",
-        "distance": 99,
-        "severity": 0.159
-      },
-      {
-        "source": "peter-green",
-        "target": "arcade",
-        "sourceLabel": "Peter Green",
-        "targetLabel": "Arcade",
-        "zone": "cross-zone",
-        "distance": 63,
-        "severity": 0.159
-      },
-      {
-        "source": "charon",
-        "target": "beefeater",
-        "sourceLabel": "Charon",
-        "targetLabel": "Beefeater",
-        "zone": "rock-circuit",
-        "distance": 100,
-        "severity": 0.155
+        "distance": 110,
+        "severity": 0.065
       },
       {
         "source": "gibson-sg",
-        "target": "prs-custom-24",
+        "target": "gibson-es-335",
         "sourceLabel": "Gibson SG",
-        "targetLabel": "PRS Custom 24",
+        "targetLabel": "Gibson ES-335",
         "zone": "guitar-workshop",
-        "distance": 100,
-        "severity": 0.155
-      },
-      {
-        "source": "arven",
-        "target": "craig-jones",
-        "sourceLabel": "Arven",
-        "targetLabel": "Craig Jones",
-        "zone": "rock-circuit",
-        "distance": 91,
-        "severity": 0.154
-      },
-      {
-        "source": "bb-king",
-        "target": "bob-dylan",
-        "sourceLabel": "B.B. King",
-        "targetLabel": "Bob Dylan",
-        "zone": "roots-blues",
-        "distance": 83,
-        "severity": 0.154
-      },
-      {
-        "source": "big-boys",
-        "target": "glittertind",
-        "sourceLabel": "Big Boys",
-        "targetLabel": "Glittertind",
-        "zone": "rock-circuit",
-        "distance": 100,
-        "severity": 0.152
-      },
-      {
-        "source": "duane-allman",
-        "target": "dickey-betts",
-        "sourceLabel": "Duane Allman",
-        "targetLabel": "Dickey Betts",
-        "zone": "roots-blues",
-        "distance": 83,
-        "severity": 0.152
-      },
-      {
-        "source": "funk",
-        "target": "diablo",
-        "sourceLabel": "Funk",
-        "targetLabel": "Diablo",
-        "zone": "rock-circuit",
-        "distance": 114,
-        "severity": 0.149
-      },
-      {
-        "source": "journey",
-        "target": "egg-hunt",
-        "sourceLabel": "Journey",
-        "targetLabel": "Egg Hunt",
-        "zone": "rock-circuit",
-        "distance": 100,
-        "severity": 0.149
-      },
-      {
-        "source": "agathodaimon",
-        "target": "charon",
-        "sourceLabel": "Agathodaimon",
-        "targetLabel": "Charon",
-        "zone": "rock-circuit",
-        "distance": 101,
-        "severity": 0.146
-      },
-      {
-        "source": "eddie-van-halen",
-        "target": "gibson-les-paul",
-        "sourceLabel": "Eddie Van Halen",
-        "targetLabel": "Gibson Les Paul",
-        "zone": "cross-zone",
-        "distance": 64,
-        "severity": 0.146
-      },
-      {
-        "source": "gillan",
-        "target": "carrie",
-        "sourceLabel": "Gillan",
-        "targetLabel": "Carrie",
-        "zone": "rock-circuit",
-        "distance": 101,
-        "severity": 0.146
-      },
-      {
-        "source": "gibson-sg",
-        "target": "acoustic-guitar",
-        "sourceLabel": "Gibson SG",
-        "targetLabel": "Acoustic guitar",
-        "zone": "guitar-workshop",
-        "distance": 101,
-        "severity": 0.145
-      },
-      {
-        "source": "sinner",
-        "target": "big-boys",
-        "sourceLabel": "Sinner",
-        "targetLabel": "Big Boys",
-        "zone": "rock-circuit",
-        "distance": 101,
-        "severity": 0.142
-      },
-      {
-        "source": "midnight",
-        "target": "embrace",
-        "sourceLabel": "Midnight",
-        "targetLabel": "Embrace",
-        "zone": "rock-circuit",
-        "distance": 93,
-        "severity": 0.14
-      },
-      {
-        "source": "dgm",
-        "target": "kevin-gilbert",
-        "sourceLabel": "DGM",
-        "targetLabel": "Kevin Gilbert",
-        "zone": "rock-circuit",
-        "distance": 93,
-        "severity": 0.138
-      },
-      {
-        "source": "aqua",
-        "target": "pop-rock",
-        "sourceLabel": "Aqua",
-        "targetLabel": "pop rock",
-        "zone": "rock-circuit",
-        "distance": 116,
-        "severity": 0.137
-      },
-      {
-        "source": "beefeater",
-        "target": "dgm",
-        "sourceLabel": "Beefeater",
-        "targetLabel": "DGM",
-        "zone": "rock-circuit",
-        "distance": 102,
-        "severity": 0.136
-      },
-      {
-        "source": "believer",
-        "target": "nightwish",
-        "sourceLabel": "Believer",
-        "targetLabel": "Nightwish",
-        "zone": "hard-rock-metal",
-        "distance": 102,
-        "severity": 0.136
-      },
-      {
-        "source": "gibson-explorer",
-        "target": "prs-custom-24",
-        "sourceLabel": "Gibson Explorer",
-        "targetLabel": "PRS Custom 24",
-        "zone": "guitar-workshop",
-        "distance": 102,
-        "severity": 0.136
-      },
-      {
-        "source": "surf-rock",
-        "target": "queen",
-        "sourceLabel": "Surf rock",
-        "targetLabel": "Queen",
-        "zone": "rock-circuit",
-        "distance": 116,
-        "severity": 0.135
-      },
-      {
-        "source": "surf-rock",
-        "target": "adam-hamilton",
-        "sourceLabel": "Surf rock",
-        "targetLabel": "Adam Hamilton",
-        "zone": "rock-circuit",
-        "distance": 108,
-        "severity": 0.129
-      },
-      {
-        "source": "randy-rhoads",
-        "target": "ralf-scheepers",
-        "sourceLabel": "Randy Rhoads",
-        "targetLabel": "Ralf Scheepers",
-        "zone": "hard-rock-metal",
-        "distance": 85,
-        "severity": 0.128
-      },
-      {
-        "source": "reo-speedwagon",
-        "target": "brain",
-        "sourceLabel": "REO Speedwagon",
-        "targetLabel": "Brain",
-        "zone": "rock-circuit",
-        "distance": 94,
-        "severity": 0.127
-      },
-      {
-        "source": "gibson-les-paul",
-        "target": "gibson-flying-v",
-        "sourceLabel": "Gibson Les Paul",
-        "targetLabel": "Gibson Flying V",
-        "zone": "guitar-workshop",
-        "distance": 103,
-        "severity": 0.125
-      },
-      {
-        "source": "zakk-wylde",
-        "target": "alexi-laiho",
-        "sourceLabel": "Zakk Wylde",
-        "targetLabel": "Alexi Laiho",
-        "zone": "hard-rock-metal",
-        "distance": 86,
-        "severity": 0.124
-      },
-      {
-        "source": "silent-voices",
-        "target": "bruce-springsteen-the-e-street-band",
-        "sourceLabel": "Silent Voices",
-        "targetLabel": "Bruce Springsteen & the E Street Band",
-        "zone": "rock-circuit",
-        "distance": 104,
-        "severity": 0.123
-      },
-      {
-        "source": "gandalf",
-        "target": "grim-reaper",
-        "sourceLabel": "Gandalf",
-        "targetLabel": "Grim Reaper",
-        "zone": "rock-circuit",
-        "distance": 104,
-        "severity": 0.121
+        "distance": 110,
+        "severity": 0.065
       },
       {
         "source": "heavy-metal",
-        "target": "yngwie-malmsteen",
+        "target": "jukka-nevalainen",
         "sourceLabel": "Heavy metal",
-        "targetLabel": "Yngwie Malmsteen",
+        "targetLabel": "Jukka Nevalainen",
         "zone": "hard-rock-metal",
-        "distance": 109,
-        "severity": 0.121
+        "distance": 117,
+        "severity": 0.055
       },
       {
-        "source": "keith-richards",
-        "target": "agathodaimon",
-        "sourceLabel": "Keith Richards",
-        "targetLabel": "Agathodaimon",
-        "zone": "rock-circuit",
-        "distance": 95,
-        "severity": 0.119
-      },
-      {
-        "source": "diablo",
-        "target": "therion",
-        "sourceLabel": "Diablo",
-        "targetLabel": "Therion",
-        "zone": "rock-circuit",
-        "distance": 104,
-        "severity": 0.118
-      },
-      {
-        "source": "dominum",
-        "target": "wind-rose",
-        "sourceLabel": "Dominum",
-        "targetLabel": "Wind Rose",
-        "zone": "rock-circuit",
-        "distance": 104,
-        "severity": 0.118
-      },
-      {
-        "source": "steve-perry",
-        "target": "billy-davis",
-        "sourceLabel": "Steve Perry",
-        "targetLabel": "Billy Davis",
-        "zone": "rock-circuit",
-        "distance": 86,
-        "severity": 0.118
-      },
-      {
-        "source": "speed-metal",
-        "target": "janick-gers",
-        "sourceLabel": "Speed Metal",
-        "targetLabel": "Janick Gers",
+        "source": "fight",
+        "target": "symphonic-metal",
+        "sourceLabel": "Fight",
+        "targetLabel": "symphonic metal",
         "zone": "hard-rock-metal",
-        "distance": 109,
-        "severity": 0.117
+        "distance": 129,
+        "severity": 0.034
       },
       {
-        "source": "dawn",
-        "target": "carrie",
-        "sourceLabel": "Dawn",
-        "targetLabel": "Carrie",
+        "source": "chuck-berry",
+        "target": "angel-dust",
+        "sourceLabel": "Chuck Berry",
+        "targetLabel": "Angel Dust",
         "zone": "rock-circuit",
         "distance": 105,
-        "severity": 0.114
+        "severity": 0.028
       }
     ],
     "isolatedNodes": [
@@ -13416,7 +12664,6 @@
       "dutch-rock-music",
       "gothic-rock",
       "shock-rock",
-      "american-rock-music-duos",
       "space-rock",
       "industrial-rock",
       "pop-rock",
@@ -13433,7 +12680,7 @@
       "status": "queued",
       "priority": 90,
       "scope": "artist_network",
-      "createdAt": "2026-09-15T19:14:13.796Z",
+      "createdAt": "2026-09-15T19:27:33.792Z",
       "instructions": "Expand and clarify the ROCK CIRCUIT part of Music History Map. Current organization signal: rock, classic rock, glam, funk and broad band history. Prioritize documented music-related connections that help layout organization: associated genres, shared members, collaborations, influences, instruments and clear bridges to neighboring zones. Use albums, songs and releases only as context for edges. Do not create release/song nodes. Only propose node types allowed by MHM: band, guitarist, artist, guitar, guitar_brand and genre.",
       "seeds": [
         {
@@ -13473,7 +12720,7 @@
         "maxSeeds": 8,
         "maxCandidates": 70
       },
-      "notes": "Generated by brain:organize. Needs-attention score 99.23."
+      "notes": "Generated by brain:organize. Needs-attention score 67.93."
     },
     {
       "id": "organization-guitar-workshop-20260915",
@@ -13481,7 +12728,7 @@
       "status": "queued",
       "priority": 90,
       "scope": "guitar_history",
-      "createdAt": "2026-09-15T19:14:13.797Z",
+      "createdAt": "2026-09-15T19:27:33.792Z",
       "instructions": "Expand and clarify the GUITAR WORKSHOP part of Music History Map. Current organization signal: guitar models, guitar brands and instrument history. Prioritize documented music-related connections that help layout organization: associated genres, shared members, collaborations, influences, instruments and clear bridges to neighboring zones. Use albums, songs and releases only as context for edges. Do not create release/song nodes. Only propose node types allowed by MHM: band, guitarist, artist, guitar, guitar_brand and genre.",
       "seeds": [
         {
@@ -13521,55 +12768,7 @@
         "maxSeeds": 8,
         "maxCandidates": 70
       },
-      "notes": "Generated by brain:organize. Needs-attention score 91.4."
-    },
-    {
-      "id": "organization-hard-rock-metal-20260915",
-      "title": "Organize HARD ROCK / METAL frontier",
-      "status": "queued",
-      "priority": 90,
-      "scope": "artist_network",
-      "createdAt": "2026-09-15T19:14:13.797Z",
-      "instructions": "Expand and clarify the HARD ROCK / METAL part of Music History Map. Current organization signal: hard rock, metal, riff culture, virtuoso guitar and heavier scenes. Prioritize documented music-related connections that help layout organization: associated genres, shared members, collaborations, influences, instruments and clear bridges to neighboring zones. Use albums, songs and releases only as context for edges. Do not create release/song nodes. Only propose node types allowed by MHM: band, guitarist, artist, guitar, guitar_brand and genre.",
-      "seeds": [
-        {
-          "name": "Dutch rock music",
-          "kind": "genre"
-        },
-        {
-          "name": "Yngwie Malmsteen",
-          "kind": "guitarist"
-        },
-        {
-          "name": "glam metal",
-          "kind": "genre"
-        },
-        {
-          "name": "gothic metal",
-          "kind": "genre"
-        },
-        {
-          "name": "Ritchie Blackmore",
-          "kind": "guitarist"
-        },
-        {
-          "name": "Tony Iommi",
-          "kind": "guitarist"
-        },
-        {
-          "name": "Hard rock",
-          "kind": "genre"
-        },
-        {
-          "name": "Edguy",
-          "kind": "band"
-        }
-      ],
-      "limits": {
-        "maxSeeds": 8,
-        "maxCandidates": 70
-      },
-      "notes": "Generated by brain:organize. Needs-attention score 78.54."
+      "notes": "Generated by brain:organize. Needs-attention score 66.32."
     },
     {
       "id": "organization-punk-alt-20260915",
@@ -13577,7 +12776,7 @@
       "status": "queued",
       "priority": 90,
       "scope": "artist_network",
-      "createdAt": "2026-09-15T19:14:13.797Z",
+      "createdAt": "2026-09-15T19:27:33.792Z",
       "instructions": "Expand and clarify the PUNK / ALTERNATIVE part of Music History Map. Current organization signal: punk, post-punk, alternative, indie, hardcore and adjacent scenes. Prioritize documented music-related connections that help layout organization: associated genres, shared members, collaborations, influences, instruments and clear bridges to neighboring zones. Use albums, songs and releases only as context for edges. Do not create release/song nodes. Only propose node types allowed by MHM: band, guitarist, artist, guitar, guitar_brand and genre.",
       "seeds": [
         {
@@ -13617,55 +12816,103 @@
         "maxSeeds": 8,
         "maxCandidates": 70
       },
-      "notes": "Generated by brain:organize. Needs-attention score 66.88."
+      "notes": "Generated by brain:organize. Needs-attention score 64.6."
     },
     {
-      "id": "organization-roots-blues-20260915",
-      "title": "Organize ROOTS / BLUES frontier",
+      "id": "organization-hard-rock-metal-20260915",
+      "title": "Organize HARD ROCK / METAL frontier",
       "status": "queued",
       "priority": 90,
       "scope": "artist_network",
-      "createdAt": "2026-09-15T19:14:13.797Z",
-      "instructions": "Expand and clarify the ROOTS / BLUES part of Music History Map. Current organization signal: roots, blues, blues rock, early rock and Southern guitar lineage. Prioritize documented music-related connections that help layout organization: associated genres, shared members, collaborations, influences, instruments and clear bridges to neighboring zones. Use albums, songs and releases only as context for edges. Do not create release/song nodes. Only propose node types allowed by MHM: band, guitarist, artist, guitar, guitar_brand and genre.",
+      "createdAt": "2026-09-15T19:27:33.792Z",
+      "instructions": "Expand and clarify the HARD ROCK / METAL part of Music History Map. Current organization signal: hard rock, metal, riff culture, virtuoso guitar and heavier scenes. Prioritize documented music-related connections that help layout organization: associated genres, shared members, collaborations, influences, instruments and clear bridges to neighboring zones. Use albums, songs and releases only as context for edges. Do not create release/song nodes. Only propose node types allowed by MHM: band, guitarist, artist, guitar, guitar_brand and genre.",
       "seeds": [
         {
-          "name": "swamp rock",
+          "name": "Dutch rock music",
           "kind": "genre"
         },
         {
-          "name": "Angus Young",
+          "name": "Yngwie Malmsteen",
           "kind": "guitarist"
         },
         {
-          "name": "Robert Johnson",
+          "name": "glam metal",
+          "kind": "genre"
+        },
+        {
+          "name": "gothic metal",
+          "kind": "genre"
+        },
+        {
+          "name": "Ritchie Blackmore",
           "kind": "guitarist"
         },
         {
-          "name": "Elvis Presley",
-          "kind": "artist"
+          "name": "Tony Iommi",
+          "kind": "guitarist"
         },
         {
-          "name": ".38 Special",
+          "name": "Hard rock",
+          "kind": "genre"
+        },
+        {
+          "name": "Edguy",
           "kind": "band"
-        },
-        {
-          "name": "Ronnie Van Zant",
-          "kind": "artist"
-        },
-        {
-          "name": "Blues rock",
-          "kind": "genre"
-        },
-        {
-          "name": "Rock and roll",
-          "kind": "genre"
         }
       ],
       "limits": {
         "maxSeeds": 8,
         "maxCandidates": 70
       },
-      "notes": "Generated by brain:organize. Needs-attention score 57.07."
+      "notes": "Generated by brain:organize. Needs-attention score 50.82."
+    },
+    {
+      "id": "organization-psychedelia-prog-20260915",
+      "title": "Organize PSYCHEDELIA / PROG frontier",
+      "status": "queued",
+      "priority": 90,
+      "scope": "artist_network",
+      "createdAt": "2026-09-15T19:27:33.792Z",
+      "instructions": "Expand and clarify the PSYCHEDELIA / PROG part of Music History Map. Current organization signal: psychedelia, art rock, progressive rock and progressive metal bridges. Prioritize documented music-related connections that help layout organization: associated genres, shared members, collaborations, influences, instruments and clear bridges to neighboring zones. Use albums, songs and releases only as context for edges. Do not create release/song nodes. Only propose node types allowed by MHM: band, guitarist, artist, guitar, guitar_brand and genre.",
+      "seeds": [
+        {
+          "name": "Space Rock",
+          "kind": "genre"
+        },
+        {
+          "name": "roots rock",
+          "kind": "genre"
+        },
+        {
+          "name": "Wes Montgomery",
+          "kind": "guitarist"
+        },
+        {
+          "name": "Robert Fripp",
+          "kind": "guitarist"
+        },
+        {
+          "name": "Jazz",
+          "kind": "genre"
+        },
+        {
+          "name": "Atheist",
+          "kind": "band"
+        },
+        {
+          "name": "Jack Black",
+          "kind": "artist"
+        },
+        {
+          "name": "Roky Erickson",
+          "kind": "artist"
+        }
+      ],
+      "limits": {
+        "maxSeeds": 8,
+        "maxCandidates": 70
+      },
+      "notes": "Generated by brain:organize. Needs-attention score 39.98."
     }
   ]
 }

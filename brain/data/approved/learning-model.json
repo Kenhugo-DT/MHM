@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-15T19:13:50.989Z",
+  "generatedAt": "2026-09-15T19:27:21.794Z",
   "source": "graph + Obsidian frontmatter + curator feedback",
   "samples": {
-    "graphNodes": 563,
-    "graphEdges": 749,
+    "graphNodes": 562,
+    "graphEdges": 748,
     "obsidianNotes": 563,
     "feedbackNodes": 6,
     "feedbackZones": 4,
@@ -19,8 +19,8 @@
       "nodeCount": 39,
       "pinnedCount": 0,
       "centroid": {
-        "x": -869,
-        "y": -76
+        "x": -943,
+        "y": -33
       },
       "eraMedian": 1948,
       "learnedTerms": [
@@ -347,21 +347,21 @@
       ]
     },
     "rock-circuit": {
-      "nodeCount": 171,
+      "nodeCount": 170,
       "pinnedCount": 0,
       "centroid": {
-        "x": 167,
-        "y": 225
+        "x": 272,
+        "y": 293
       },
       "eraMedian": 1975,
       "learnedTerms": [
         {
           "term": "classic rock",
-          "weight": 938
+          "weight": 932
         },
         {
           "term": "classic",
-          "weight": 310
+          "weight": 308
         },
         {
           "term": "rock and roll",
@@ -386,10 +386,6 @@
         {
           "term": "jazz",
           "weight": 14
-        },
-        {
-          "term": "american rock music duos",
-          "weight": 12
         },
         {
           "term": "funk",
@@ -440,7 +436,7 @@
           "weight": 6
         },
         {
-          "term": "american",
+          "term": "american rock music duos",
           "weight": 6
         },
         {
@@ -468,6 +464,10 @@
           "weight": 5
         },
         {
+          "term": "american",
+          "weight": 4
+        },
+        {
           "term": "art",
           "weight": 4
         },
@@ -481,10 +481,6 @@
         },
         {
           "term": "billy",
-          "weight": 4
-        },
-        {
-          "term": "duos",
           "weight": 4
         },
         {
@@ -674,6 +670,10 @@
         {
           "term": "ark",
           "weight": 2
+        },
+        {
+          "term": "armageddon",
+          "weight": 2
         }
       ]
     },
@@ -681,8 +681,8 @@
       "nodeCount": 37,
       "pinnedCount": 0,
       "centroid": {
-        "x": 358,
-        "y": -775
+        "x": 401,
+        "y": -744
       },
       "eraMedian": 1969,
       "learnedTerms": [
@@ -1012,8 +1012,8 @@
       "nodeCount": 125,
       "pinnedCount": 0,
       "centroid": {
-        "x": 2617,
-        "y": 22
+        "x": 2524,
+        "y": 85
       },
       "eraMedian": 1977,
       "learnedTerms": [
@@ -1343,8 +1343,8 @@
       "nodeCount": 74,
       "pinnedCount": 0,
       "centroid": {
-        "x": 1575,
-        "y": 1397
+        "x": 1544,
+        "y": 1477
       },
       "eraMedian": 1977,
       "learnedTerms": [
@@ -1674,8 +1674,8 @@
       "nodeCount": 25,
       "pinnedCount": 0,
       "centroid": {
-        "x": -594,
-        "y": 1179
+        "x": -615,
+        "y": 1221
       },
       "eraMedian": 1963,
       "learnedTerms": [
@@ -2005,8 +2005,8 @@
       "nodeCount": 68,
       "pinnedCount": 0,
       "centroid": {
-        "x": 3602,
-        "y": -9
+        "x": 3677,
+        "y": 46
       },
       "eraMedian": 1958,
       "learnedTerms": [
@@ -2336,8 +2336,8 @@
       "nodeCount": 24,
       "pinnedCount": 0,
       "centroid": {
-        "x": 3592,
-        "y": 1417
+        "x": 3589,
+        "y": 1434
       },
       "eraMedian": 1985,
       "learnedTerms": [
@@ -14211,30 +14211,10 @@
         "rock",
         "band"
       ],
-      "connectionCount": 4,
-      "linkedGenres": [
-        "american-rock-music-duos"
-      ],
-      "bridgeScore": 0.74,
-      "hubScore": 0.333,
-      "layoutHints": {
-        "pinned": false
-      }
-    },
-    "american-rock-music-duos": {
-      "zone": "rock-circuit",
-      "secondaryZones": [],
-      "primaryGenres": [
-        "American rock music duos"
-      ],
-      "curatorTags": [
-        "rock",
-        "classic rock"
-      ],
-      "connectionCount": 1,
+      "connectionCount": 3,
       "linkedGenres": [],
-      "bridgeScore": 0,
-      "hubScore": 0.083,
+      "bridgeScore": 0.66,
+      "hubScore": 0.25,
       "layoutHints": {
         "pinned": false
       }

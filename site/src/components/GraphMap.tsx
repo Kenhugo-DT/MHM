@@ -279,17 +279,26 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
     }
 
     function syncLabelReadability(camera = cameraRef.current) {
+      const app = appRef.current;
       const compact = isCompactMap();
       const visualMode = visualModeForZoom(camera.zoom);
       const targetScreenScale = compact ? 0.86 : visualMode === "detail" ? 1 : visualMode === "map" ? 0.72 : 0.62;
       const labelScale = Math.min(compact ? 2.45 : 1.95, Math.max(1, targetScreenScale / camera.zoom));
+      const occupied: Array<{ left: number; right: number; top: number; bottom: number }> = [];
+      const candidates: Array<{
+        item: NodeVisualItem;
+        alpha: number;
+        priority: number;
+      }> = [];
 
       nodeVisualItemsRef.current.forEach((item) => {
-        const showMapLabel = item.alwaysLabel || item.hubLabel;
+        const showMapLabel =
+          item.alwaysLabel ||
+          (item.hubLabel && (camera.zoom >= 0.44 || item.node.type === "genre" || item.node.starter));
         const showOverviewLabel = item.node.type === "genre" || item.node.starter || item.overviewLabel;
         const visible =
           visualMode === "detail"
-            ? item.alwaysLabel
+            ? true
             : visualMode === "map"
               ? showMapLabel
               : showOverviewLabel;
@@ -302,11 +311,66 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
 
         if (item.hovered) {
           item.label.alpha = 1;
+          candidates.push({ item, alpha: 1, priority: 1000 });
           return;
         }
 
-        item.label.alpha = visible ? (visualMode === "overview" ? 0.84 : 0.95) : 0;
+        item.label.alpha = 0;
+        if (!visible) return;
+
+        const degreePriority = item.overviewLabel ? 28 : item.hubLabel ? 16 : 0;
+        const typePriority =
+          item.node.type === "genre" ? 90 :
+          item.node.starter ? 84 :
+          item.node.type === "guitar_brand" ? 58 :
+          item.node.type === "guitarist" ? 42 :
+          item.node.type === "artist" ? 36 :
+          item.node.type === "band" ? 30 :
+          24;
+        const selectedPriority = item.node.id === selectedId ? 500 : 0;
+        candidates.push({
+          item,
+          alpha: visualMode === "overview" ? 0.84 : 0.95,
+          priority: selectedPriority + typePriority + degreePriority,
+        });
       });
+
+      candidates
+        .sort((a, b) => b.priority - a.priority || a.item.node.label.localeCompare(b.item.node.label))
+        .forEach(({ item, alpha }) => {
+          if (!app) {
+            item.label.alpha = alpha;
+            return;
+          }
+
+          const screenX = (item.node.x - camera.x) * camera.zoom + app.screen.width / 2;
+          const screenY = (item.label.y - camera.y) * camera.zoom + app.screen.height / 2;
+          const width = Math.min(170, Math.max(44, item.label.width * camera.zoom));
+          const height = Math.min(72, Math.max(16, item.label.height * camera.zoom));
+          const padding = visualMode === "detail" ? 5 : 8;
+          const box = {
+            left: screenX - width / 2 - padding,
+            right: screenX + width / 2 + padding,
+            top: screenY - padding,
+            bottom: screenY + height + padding,
+          };
+          const offscreen =
+            box.right < -40 ||
+            box.left > app.screen.width + 40 ||
+            box.bottom < -40 ||
+            box.top > app.screen.height + 40;
+          const overlaps = occupied.some((other) =>
+            box.left < other.right &&
+            box.right > other.left &&
+            box.top < other.bottom &&
+            box.bottom > other.top,
+          );
+
+          if (!offscreen && !overlaps) {
+            occupied.push(box);
+            item.label.alpha = alpha;
+          }
+        });
     }
 
     function syncMapReadability(camera = cameraRef.current, force = false) {
@@ -666,14 +730,9 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
         nodeContainer.addChild(shape);
 
         const degree = degreeById.get(node.id) ?? 0;
-        const alwaysLabel = Boolean(
-          node.type === "genre" ||
-            node.type === "band" ||
-            node.type === "guitar_brand" ||
-            node.starter,
-        );
-        const hubLabel = Boolean(node.starter || node.type === "genre" || degree >= 4);
-        const overviewLabel = Boolean(node.starter || node.type === "genre" || degree >= 8);
+        const alwaysLabel = Boolean(node.type === "genre" || node.type === "guitar_brand" || node.starter);
+        const hubLabel = Boolean(node.starter || node.type === "genre" || degree >= 3);
+        const overviewLabel = Boolean(node.starter || node.type === "genre" || degree >= 7);
         const label = new Text({
           text: node.label,
           style: {

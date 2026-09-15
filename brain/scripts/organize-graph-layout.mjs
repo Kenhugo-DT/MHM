@@ -11,13 +11,13 @@ const ZONE_LAYOUTS = {
   },
   "rock-circuit": {
     label: "ROCK CIRCUIT",
-    x: -1080,
-    y: -520,
-    width: 2020,
-    height: 1900,
-    columns: 5,
-    colGap: 205,
-    rowGap: 98,
+    x: -1240,
+    y: -620,
+    width: 2380,
+    height: 2180,
+    columns: 6,
+    colGap: 230,
+    rowGap: 128,
   },
   "psychedelia-prog": {
     label: "PSYCHEDELIA / PROG",
@@ -600,12 +600,16 @@ function placeAroundAnchor(zone, anchor, node, index, total) {
   const bounds = innerBounds(zone);
   const hash = hashValue(`${zone}:${node.id}:organic`);
   const goldenAngle = 2.399963229728653;
-  const ringSize = zone === "hard-rock-metal" ? 8 : 7;
+  const ringSize = zone === "rock-circuit" ? 6 : zone === "hard-rock-metal" ? 7 : 7;
   const ring = Math.floor(index / ringSize);
   const localIndex = index % ringSize;
   const angle = localIndex * goldenAngle + ring * 0.58 + (hash % 360) * Math.PI / 180;
   const density = Math.max(0, total - 5);
-  const rawRadius = 95 + ring * 72 + Math.min(82, density * 2.2) + ((hash >>> 7) % 28);
+  const rawRadius =
+    (zone === "rock-circuit" ? 125 : 95) +
+    ring * (zone === "rock-circuit" ? 96 : 78) +
+    Math.min(zone === "rock-circuit" ? 140 : 92, density * (zone === "rock-circuit" ? 3.8 : 2.5)) +
+    ((hash >>> 7) % 34);
   const maxRadius = Math.max(
     92,
     Math.min(
@@ -617,8 +621,8 @@ function placeAroundAnchor(zone, anchor, node, index, total) {
   );
   const radius = Math.min(rawRadius, maxRadius);
   const typeDrift = node.type === "band" ? 34 : node.type === "artist" ? 8 : -10;
-  const xScale = zone === "hard-rock-metal" ? 1.08 : zone === "psychedelia-prog" ? 1.12 : 1;
-  const yScale = zone === "punk-alt" ? 0.88 : 1;
+  const xScale = zone === "rock-circuit" ? 1.2 : zone === "hard-rock-metal" ? 1.1 : zone === "psychedelia-prog" ? 1.12 : 1;
+  const yScale = zone === "rock-circuit" ? 1.08 : zone === "punk-alt" ? 0.88 : 1;
 
   return pointFor(
     zone,
@@ -628,16 +632,24 @@ function placeAroundAnchor(zone, anchor, node, index, total) {
 }
 
 function collisionRadius(node) {
-  if (node.type === "genre") return 92;
-  if (node.type === "band") return 74;
-  if (node.type === "guitar" || node.type === "guitar_brand") return 76;
-  return 62;
+  const label = String(node.label ?? "");
+  const words = label.split(/\s+/).filter(Boolean);
+  const longestWord = words.reduce((max, word) => Math.max(max, word.length), 0);
+  const estimatedLines = Math.max(1, Math.ceil(Math.max(label.length * 8.6, longestWord * 10.5) / 138));
+  const labelWidth = Math.min(154, Math.max(58, Math.min(label.length * 8.6, 138), longestWord * 10.5));
+  const labelHeight = estimatedLines * 23;
+  const labelRadius = Math.max(labelWidth * 0.56, labelHeight * 0.78 + 28);
+
+  if (node.type === "genre") return Math.max(108, labelRadius + 36);
+  if (node.type === "band") return Math.max(96, labelRadius + 28);
+  if (node.type === "guitar" || node.type === "guitar_brand") return Math.max(92, labelRadius + 26);
+  return Math.max(84, labelRadius + 22);
 }
 
 function relaxZone(zone, zoneNodes) {
   const bounds = innerBounds(zone);
 
-  for (let pass = 0; pass < 42; pass += 1) {
+  for (let pass = 0; pass < 68; pass += 1) {
     for (let a = 0; a < zoneNodes.length; a += 1) {
       for (let b = a + 1; b < zoneNodes.length; b += 1) {
         const first = zoneNodes[a];
@@ -656,7 +668,7 @@ function relaxZone(zone, zoneNodes) {
           distance = 1;
         }
 
-        const push = (minDistance - distance) * 0.23;
+        const push = (minDistance - distance) * (zone === "rock-circuit" ? 0.31 : 0.25);
         const nx = dx / distance;
         const ny = dy / distance;
         const firstPinned = Boolean(pinnedPoint(first, zone));
@@ -747,7 +759,7 @@ function driftBridgeNodes(nodes, edges, learningModel, connectedZones) {
 }
 
 function relaxAll(nodes, connectedZones, learningModel) {
-  for (let pass = 0; pass < 28; pass += 1) {
+  for (let pass = 0; pass < 42; pass += 1) {
     for (let a = 0; a < nodes.length; a += 1) {
       for (let b = a + 1; b < nodes.length; b += 1) {
         const first = nodes[a];
@@ -755,7 +767,7 @@ function relaxAll(nodes, connectedZones, learningModel) {
         const sameZone = first.zone === second.zone;
         const minDistance =
           (collisionRadius(first) + collisionRadius(second)) *
-          (sameZone ? 0.92 : 0.66);
+          (sameZone ? 0.98 : 0.74);
         let dx = second.x - first.x;
         let dy = second.y - first.y;
         let distance = Math.hypot(dx, dy);
