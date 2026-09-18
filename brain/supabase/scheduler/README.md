@@ -29,20 +29,27 @@ us one place to monitor the schedule next to the private brain tables.
 
 ## Schedule
 
-The default schedule is:
+The schedule uses a catch-up watchdog:
 
 ```text
-5 9 * * 1,4
+5,20,35,50 9-23 * * 1,4
 ```
 
-That means Mondays and Thursdays at 09:05 UTC.
+That means Mondays and Thursdays from 09:05 UTC, then every 15 minutes until
+23:50 UTC.
+
+The watchdog only triggers the agent once per UTC date. If Supabase or GitHub
+misses the exact 09:05 minute, the next watchdog tick can still dispatch the
+agent later the same day.
 
 ## What Happens
 
 Supabase stores the GitHub token in Vault, creates a private helper function,
 then schedules a Cron job named `mhm-research-agent`.
 
-Each Cron run calls GitHub's workflow dispatch endpoint for:
+Each Cron run calls `mhm_private.trigger_research_agent_if_due(...)`. That
+function checks whether this Monday/Thursday run has already been dispatched.
+If not, it calls GitHub's workflow dispatch endpoint for:
 
 ```text
 Kenhugo-DT/MHM/.github/workflows/research-agent.yml
@@ -74,6 +81,23 @@ select *
 from mhm_private.agent_trigger_log
 order by requested_at desc
 limit 20;
+```
+
+See watchdog decisions:
+
+```sql
+select *
+from mhm_private.agent_scheduler_log
+order by checked_at desc
+limit 50;
+```
+
+See the last UTC date that actually triggered:
+
+```sql
+select *
+from mhm_private.agent_scheduler_state
+where schedule_name = 'mhm-research-agent';
 ```
 
 See Cron history:

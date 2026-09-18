@@ -47,6 +47,22 @@ create table if not exists mhm_private.agent_trigger_log (
   note text
 );
 
+create table if not exists mhm_private.agent_scheduler_state (
+  schedule_name text primary key,
+  last_due_date date,
+  updated_at timestamptz not null default now()
+);
+
+create table if not exists mhm_private.agent_scheduler_log (
+  id bigint generated always as identity primary key,
+  schedule_name text not null default 'mhm-research-agent',
+  checked_at timestamptz not null default now(),
+  due_date date,
+  action text not null,
+  reason text,
+  request_id bigint
+);
+
 create or replace function mhm_private.trigger_research_agent(
   run_limit integer default 2,
   trigger_note text default ''
@@ -96,6 +112,69 @@ begin
 end;
 $$;
 
+create or replace function mhm_private.trigger_research_agent_if_due(
+  check_time timestamptz default now()
+)
+returns bigint
+language plpgsql
+security definer
+set search_path = public, extensions, vault, mhm_private
+as $$
+declare
+  v_schedule_name text := 'mhm-research-agent';
+  utc_time timestamp := check_time at time zone 'UTC';
+  due_date date := (check_time at time zone 'UTC')::date;
+  already_ran date;
+  request_id bigint;
+begin
+  if extract(isodow from utc_time) not in (1, 4) then
+    insert into mhm_private.agent_scheduler_log (schedule_name, due_date, action, reason)
+    values (v_schedule_name, due_date, 'skip', 'Not a Monday or Thursday in UTC.');
+    return null;
+  end if;
+
+  if utc_time::time < time '09:05' then
+    insert into mhm_private.agent_scheduler_log (schedule_name, due_date, action, reason)
+    values (v_schedule_name, due_date, 'skip', 'Before 09:05 UTC.');
+    return null;
+  end if;
+
+  if not pg_try_advisory_xact_lock(hashtext('mhm-research-agent-scheduler')) then
+    insert into mhm_private.agent_scheduler_log (schedule_name, due_date, action, reason)
+    values (v_schedule_name, due_date, 'skip', 'Another scheduler check is already running.');
+    return null;
+  end if;
+
+  select last_due_date
+    into already_ran
+    from mhm_private.agent_scheduler_state
+   where agent_scheduler_state.schedule_name = v_schedule_name;
+
+  if already_ran = due_date then
+    insert into mhm_private.agent_scheduler_log (schedule_name, due_date, action, reason)
+    values (v_schedule_name, due_date, 'skip', 'Already triggered for this UTC date.');
+    return null;
+  end if;
+
+  request_id := mhm_private.trigger_research_agent(
+    2,
+    'Regular Monday/Thursday research scout run with catch-up scheduler.'
+  );
+
+  insert into mhm_private.agent_scheduler_state (schedule_name, last_due_date, updated_at)
+  values (v_schedule_name, due_date, now())
+  on conflict (schedule_name)
+  do update set
+    last_due_date = excluded.last_due_date,
+    updated_at = excluded.updated_at;
+
+  insert into mhm_private.agent_scheduler_log (schedule_name, due_date, action, reason, request_id)
+  values (v_schedule_name, due_date, 'trigger', 'Triggered GitHub workflow_dispatch.', request_id);
+
+  return request_id;
+end;
+$$;
+
 do $$
 begin
   if exists (select 1 from cron.job where jobname = 'mhm-research-agent') then
@@ -105,8 +184,8 @@ end $$;
 
 select cron.schedule(
   'mhm-research-agent',
-  '5 9 * * 1,4',
-  $$ select mhm_private.trigger_research_agent(2, 'Regular Monday/Thursday research scout run.'); $$
+  '5,20,35,50 9-23 * * 1,4',
+  $$ select mhm_private.trigger_research_agent_if_due(now()); $$
 );
 
 -- Manual smoke test:
