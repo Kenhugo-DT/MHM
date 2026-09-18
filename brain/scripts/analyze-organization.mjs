@@ -138,6 +138,34 @@ function buildConnectionData(graph) {
   return { nodeById, degree, weightedDegree, neighbors, connectedZones, linkedGenres, edgesByZone };
 }
 
+function bridgePoliciesForNode(node, connectedZones, learningModel) {
+  const policies = learningModel?.curatorFeedback?.bridgePolicies ?? [];
+  const nodeZones = new Set([
+    node.zone,
+    ...[...(connectedZones.get(node.id) ?? new Map()).keys()],
+    ...(learningModel?.nodes?.[node.id]?.secondaryZones ?? []),
+  ].filter(Boolean));
+  const nodeId = normalize(node.id);
+  const nodeLabel = normalize(node.label);
+  const matches = [];
+
+  for (const policy of policies) {
+    const policyZones = new Set((policy.zones ?? []).map(normalize));
+    const anchorNodes = new Set((policy.anchorNodes ?? []).map(normalize));
+    const zoneHits = [...nodeZones].filter((zone) => policyZones.has(normalize(zone)));
+    const anchorHit = anchorNodes.has(nodeId) || anchorNodes.has(nodeLabel);
+    if (!anchorHit && zoneHits.length < 2) continue;
+    matches.push({
+      id: policy.id,
+      zones: policy.zones ?? [],
+      anchor: anchorHit,
+      feedbackCategories: policy.feedbackCategories ?? [],
+    });
+  }
+
+  return matches;
+}
+
 function zoneBounds(zoneId) {
   const zone = ORGANIZED_MAP_ZONES[zoneId];
   if (!zone) return undefined;
@@ -244,11 +272,14 @@ function analyzeGraph(graph, learningModel) {
       ...[...(connections.connectedZones.get(node.id) ?? new Map()).keys()],
     ].filter((zone) => zone && zone !== node.zone);
     const uniqueSecondaryZones = [...new Set(secondaryZones)];
+    const bridgePolicyMatches = bridgePoliciesForNode(node, connections.connectedZones, learningModel);
     const bridgeScore = Math.min(
       1,
       Number(learned.bridgeScore ?? 0) +
         uniqueSecondaryZones.length * 0.1 +
-        Math.min(0.35, (connections.linkedGenres.get(node.id)?.size ?? 0) * 0.05),
+        Math.min(0.35, (connections.linkedGenres.get(node.id)?.size ?? 0) * 0.05) +
+        bridgePolicyMatches.length * 0.12 +
+        (bridgePolicyMatches.some((policy) => policy.anchor) ? 0.16 : 0),
     );
     const hubScore = Math.min(1, Number(learned.hubScore ?? 0) + Math.min(0.45, degree / 24));
     const overlapCount = overlaps.counts.get(node.id) ?? 0;
@@ -262,6 +293,7 @@ function analyzeGraph(graph, learningModel) {
     if (isolated) recommendedActions.push("research-first-connections");
     if (important && degree <= 2) recommendedActions.push("expand-important-node");
     if (uniqueSecondaryZones.length) recommendedActions.push("preserve-cross-zone-bridge");
+    if (bridgePolicyMatches.length) recommendedActions.push("train-bridge-policy");
     if (overlapCount >= 3) recommendedActions.push("spread-local-neighborhood");
     if (overflow > 0) recommendedActions.push("review-zone-bleed");
     if (sourceScore < 0.45) recommendedActions.push("improve-source-quality");
@@ -278,6 +310,7 @@ function analyzeGraph(graph, learningModel) {
       hubScore: Number(hubScore.toFixed(3)),
       bridgeScore: Number(bridgeScore.toFixed(3)),
       secondaryZones: uniqueSecondaryZones,
+      bridgePolicies: bridgePolicyMatches,
       linkedGenres: [...(connections.linkedGenres.get(node.id) ?? [])],
       overlapCount,
       overflow,
@@ -351,6 +384,30 @@ function analyzeGraph(graph, learningModel) {
       Math.max(0, 0.68 - zone.averageSourceQuality) * 18 +
       Math.max(0, 2.4 - zone.averageDegree) * 5
     ).toFixed(2));
+  }
+
+  for (const [zoneId, zone] of Object.entries(zones)) {
+    const policies = (learningModel?.curatorFeedback?.bridgePolicies ?? [])
+      .filter((policy) => (policy.zones ?? []).includes(zoneId));
+    zone.bridgePolicies = policies.map((policy) => policy.id);
+    zone.bridgeTransitionNeeds = policies
+      .map((policy) => {
+        const anchors = (policy.anchorNodes ?? [])
+          .map((id) => nodeAnalysis[id])
+          .filter(Boolean);
+        const activeAnchors = anchors.filter((node) => node.bridgePolicies?.some((match) => match.id === policy.id));
+        return {
+          id: policy.id,
+          zones: policy.zones ?? [],
+          anchorCount: anchors.length,
+          activeAnchorCount: activeAnchors.length,
+          needsMoreEvidence: activeAnchors.length < Math.min(3, Math.max(1, anchors.length)),
+        };
+      })
+      .filter((item) => item.needsMoreEvidence);
+    if (zone.bridgeTransitionNeeds.length) {
+      zone.needsAttentionScore = Number((zone.needsAttentionScore + zone.bridgeTransitionNeeds.length * 3.5).toFixed(2));
+    }
   }
 
   const recommendedResearchRequests = buildRecommendedRequests(zones, nodeAnalysis);
@@ -453,6 +510,8 @@ function buildRecommendedRequests(zones, nodeAnalysis) {
     if (!seeds.length) continue;
 
     const title = `Organize ${zone.label || zoneId} frontier`;
+    const bridgeNeeds = zone.bridgeTransitionNeeds ?? [];
+    const activeBridgePolicies = zone.bridgePolicies ?? [];
     requests.push({
       id: `organization-${slugify(zoneId)}-${new Date().toISOString().slice(0, 10).replace(/-/g, "")}`,
       title,
@@ -466,15 +525,25 @@ function buildRecommendedRequests(zones, nodeAnalysis) {
         `Expand and clarify the ${zone.label || zoneId} part of Music History Map.`,
         `Current organization signal: ${ZONE_DESCRIPTIONS[zoneId] ?? zoneId}.`,
         "Prioritize documented music-related connections that help layout organization: associated genres, shared members, collaborations, influences, instruments and clear bridges to neighboring zones.",
+        activeBridgePolicies.length
+          ? `Active bridge policies for this zone: ${activeBridgePolicies.join(", ")}. Prefer candidates that strengthen those transitions without turning category pages into nodes.`
+          : "",
+        bridgeNeeds.length
+          ? `Bridge training focus: improve ${bridgeNeeds.map((item) => item.id).join(", ")} with documented cross-zone relationships.`
+          : "",
         "Use albums, songs and releases only as context for edges. Do not create release/song nodes.",
         "Only propose node types allowed by MHM: band, guitarist, artist, guitar, guitar_brand and genre.",
-      ].join(" "),
+      ].filter(Boolean).join(" "),
       seeds,
       limits: {
         maxSeeds: seeds.length,
         maxCandidates: 70,
       },
-      notes: `Generated by brain:organize. Needs-attention score ${zone.needsAttentionScore}.`,
+      notes: [
+        `Generated by brain:organize. Needs-attention score ${zone.needsAttentionScore}.`,
+        activeBridgePolicies.length ? `Active bridge policies: ${activeBridgePolicies.join(", ")}.` : "",
+        bridgeNeeds.length ? `Bridge policies needing evidence: ${bridgeNeeds.map((item) => item.id).join(", ")}.` : "",
+      ].filter(Boolean).join(" "),
     });
   }
 
@@ -514,6 +583,7 @@ function writeReport(model) {
     lines.push(`- Isolated: ${zone.isolatedNodes.length ? zone.isolatedNodes.slice(0, 8).join(", ") : "none"}`);
     lines.push(`- Under-connected important: ${zone.underConnectedImportantNodes.length ? zone.underConnectedImportantNodes.slice(0, 8).join(", ") : "none"}`);
     lines.push(`- Bridge nodes: ${zone.bridgeNodes.length ? zone.bridgeNodes.slice(0, 8).join(", ") : "none"}`);
+    lines.push(`- Bridge transition needs: ${zone.bridgeTransitionNeeds?.length ? zone.bridgeTransitionNeeds.map((item) => item.id).join(", ") : "none"}`);
     lines.push("");
   }
 

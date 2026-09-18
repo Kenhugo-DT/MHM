@@ -56,6 +56,8 @@ RELEASE_TERMS = {
     "album",
     "albums",
     "discography",
+    "ep",
+    "eps",
     "single",
     "singles",
     "song",
@@ -94,6 +96,7 @@ CATEGORY_COLLECTION_TERMS = {
     "singers",
     "songwriters",
     "songs",
+    "supergroups",
 }
 
 GENERIC_TOPIC_TERMS = {
@@ -115,6 +118,7 @@ OUT_OF_SCOPE_TITLE_TERMS = {
     "award",
     "awards",
     "bandcamp",
+    "bandcamp daily",
     "billboard",
     "biographical dictionary",
     "charts",
@@ -141,6 +145,7 @@ OUT_OF_SCOPE_TITLE_TERMS = {
     "record company",
     "record label",
     "record store",
+    "research brain",
     "spotify",
     "streaming",
     "television",
@@ -152,6 +157,7 @@ OUT_OF_SCOPE_TITLE_TERMS = {
 OUT_OF_SCOPE_EXACT_TERMS = {
     "bandcamp daily",
     "baker's biographical dictionary of musicians",
+    "brain",
     "bundesverband musikindustrie",
     "guitar player",
     "guitar world",
@@ -232,6 +238,37 @@ PROG_TERMS = {
     "progressive",
     "psychedelic",
     "space rock",
+}
+
+CATEGORYISH_GENRE_TERMS = {
+    "duos",
+    "trios",
+    "quartets",
+    "groups",
+    "musicians",
+    "artists",
+    "bands",
+    "singers",
+    "songwriters",
+    "people",
+    "albums",
+    "songs",
+    "record labels",
+    "companies",
+    "supergroups",
+}
+
+GENERIC_PREFIXES = (
+    "category:",
+    "history of ",
+    "list of ",
+    "music of ",
+)
+
+WEAK_SOURCE_NAMES = {
+    "category",
+    "template",
+    "navbox",
 }
 
 
@@ -351,8 +388,11 @@ def is_blocked(text: str, blocked_terms: set[str]) -> bool:
 
 def out_of_scope_reason(title: str, kind: str, source: str = "") -> str | None:
     normalized = normalize_text(canonical_title(title))
+    source = normalize_text(source)
     if not normalized:
         return "empty title"
+    if any(normalize_text(title).startswith(prefix) for prefix in GENERIC_PREFIXES):
+        return "category, list, history or geography page"
     if normalized in OUT_OF_SCOPE_EXACT_TERMS:
         return "out-of-scope reference/platform topic"
     if any(term in normalized for term in OUT_OF_SCOPE_TITLE_TERMS):
@@ -365,6 +405,10 @@ def out_of_scope_reason(title: str, kind: str, source: str = "") -> str | None:
         return "release, maintenance or generic encyclopedia topic"
     if normalized in GENERIC_TOPIC_TERMS or normalized.endswith(" genres"):
         return "generic topic, not a concrete map entity"
+    if kind == "genre" and any(term in normalized for term in CATEGORYISH_GENRE_TERMS):
+        return "category-style grouping, not a concrete music genre"
+    if source in WEAK_SOURCE_NAMES and kind != "genre":
+        return "weak category/template signal for non-genre candidate"
     if source == "category":
         if kind != "genre":
             return "category candidates may only become genre nodes"

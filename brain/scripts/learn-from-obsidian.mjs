@@ -350,6 +350,28 @@ function buildLearningModel(graph, notes, feedbackData, warnings) {
     }
   }
 
+  for (const policy of feedbackData.payload.bridgePolicies ?? []) {
+    const zones = coerceStringArray(policy.zones);
+    const anchorNodes = coerceStringArray(policy.anchorNodes);
+    const categories = coerceStringArray(policy.feedbackCategories);
+    for (const zone of zones) {
+      if (!zone) continue;
+      if (!zoneTerms.has(zone)) zoneTerms.set(zone, new Map());
+      for (const connectedZone of zones.filter((candidate) => candidate !== zone)) {
+        addWeighted(zoneTerms.get(zone), connectedZone, 4);
+      }
+      for (const anchor of anchorNodes) {
+        addWeighted(zoneTerms.get(zone), anchor, 6);
+      }
+      for (const category of categories) {
+        addWeighted(zoneTerms.get(zone), category, 3);
+      }
+      if (policy.feedback) {
+        addWeighted(zoneTerms.get(zone), policy.feedback, 3);
+      }
+    }
+  }
+
   const zones = {};
   for (const [zone, terms] of zoneTerms) {
     const stats = zoneStats.get(zone) ?? { nodeCount: 0, pinnedCount: 0, xValues: [], yValues: [], eras: [] };
@@ -379,6 +401,8 @@ function buildLearningModel(graph, notes, feedbackData, warnings) {
       feedbackNodes: feedback.size,
       feedbackZones: feedbackData.payload.zoneFeedback?.length ?? 0,
       feedbackRules: feedbackData.payload.rules?.length ?? 0,
+      feedbackCategories: feedbackData.payload.feedbackCategories?.length ?? 0,
+      bridgePolicies: feedbackData.payload.bridgePolicies?.length ?? 0,
       pinnedNotes: [...notes.values()].filter((note) => note.layoutPinned).length,
       notesWithEra: [...notes.values()].filter((note) => note.eraStart || note.eraPeak).length,
       notesWithPrimaryGenres: [...notes.values()].filter((note) => note.primaryGenres.length).length,
@@ -389,6 +413,8 @@ function buildLearningModel(graph, notes, feedbackData, warnings) {
     curatorFeedback: {
       updatedAt: feedbackData.payload.updatedAt,
       rules: feedbackData.payload.rules ?? [],
+      feedbackCategories: feedbackData.payload.feedbackCategories ?? [],
+      bridgePolicies: feedbackData.payload.bridgePolicies ?? [],
       nodeIds: [...feedback.keys()].sort((a, b) => a.localeCompare(b, "en")),
     },
     warnings,
@@ -409,6 +435,8 @@ function writeReport(model) {
     `- Feedback nodes: ${model.samples.feedbackNodes}`,
     `- Feedback zones: ${model.samples.feedbackZones}`,
     `- Feedback rules: ${model.samples.feedbackRules}`,
+    `- Feedback categories: ${model.samples.feedbackCategories}`,
+    `- Bridge policies: ${model.samples.bridgePolicies}`,
     `- Pinned notes: ${model.samples.pinnedNotes}`,
     `- Notes with era data: ${model.samples.notesWithEra}`,
     `- Notes with primary genres: ${model.samples.notesWithPrimaryGenres}`,
@@ -433,6 +461,8 @@ function writeReport(model) {
     lines.push(`- Feedback file updated: ${model.curatorFeedback.updatedAt ?? "unknown"}`);
     lines.push(`- Node feedback: ${model.curatorFeedback.nodeIds.length ? model.curatorFeedback.nodeIds.join(", ") : "none"}`);
     lines.push(`- Rules: ${model.curatorFeedback.rules.length ? model.curatorFeedback.rules.map((rule) => rule.id).join(", ") : "none"}`);
+    lines.push(`- Categories: ${model.curatorFeedback.feedbackCategories?.length ? model.curatorFeedback.feedbackCategories.map((category) => category.id).join(", ") : "none"}`);
+    lines.push(`- Bridge policies: ${model.curatorFeedback.bridgePolicies?.length ? model.curatorFeedback.bridgePolicies.map((policy) => policy.id).join(", ") : "none"}`);
     lines.push("");
   }
 

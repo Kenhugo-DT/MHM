@@ -65,6 +65,11 @@
       "id": "musicians-institute",
       "labels": ["Musicians Institute"],
       "reason": "Educational institution, not an allowed map node."
+    },
+    {
+      "id": "brain",
+      "labels": ["Brain", "Brain (musician)", "Research brain"],
+      "reason": "Ambiguous musician/internal-agent term that created visible research-brain noise in the map."
     }
   ]
 }

@@ -23,6 +23,8 @@ RELEASE_TERMS = {
     "album",
     "albums",
     "discography",
+    "ep",
+    "eps",
     "single",
     "singles",
     "song",
@@ -36,6 +38,7 @@ OUT_OF_SCOPE_TITLE_TERMS = {
     "award",
     "awards",
     "bandcamp",
+    "bandcamp daily",
     "billboard",
     "biographical dictionary",
     "charts",
@@ -62,6 +65,7 @@ OUT_OF_SCOPE_TITLE_TERMS = {
     "record company",
     "record label",
     "record store",
+    "research brain",
     "spotify",
     "streaming",
     "television",
@@ -73,6 +77,7 @@ OUT_OF_SCOPE_TITLE_TERMS = {
 OUT_OF_SCOPE_EXACT_TERMS = {
     "bandcamp daily",
     "baker's biographical dictionary of musicians",
+    "brain",
     "bundesverband musikindustrie",
     "guitar player",
     "guitar world",
@@ -116,6 +121,37 @@ GENERIC_TOPIC_TERMS = {
     "tribute band",
 }
 
+CATEGORYISH_GENRE_TERMS = {
+    "duos",
+    "trios",
+    "quartets",
+    "groups",
+    "musicians",
+    "artists",
+    "bands",
+    "singers",
+    "songwriters",
+    "people",
+    "albums",
+    "songs",
+    "record labels",
+    "companies",
+    "supergroups",
+}
+
+GENERIC_PREFIXES = (
+    "category:",
+    "history of ",
+    "list of ",
+    "music of ",
+)
+
+WEAK_SOURCE_NAMES = {
+    "category",
+    "template",
+    "navbox",
+}
+
 
 def normalize_text(text: str) -> str:
     return str(text).lower().replace("_", " ").strip()
@@ -149,8 +185,11 @@ def has_blocked_term(text: str, blocked_terms: set[str]) -> bool:
 
 def out_of_scope_reason(title: str, kind: str, source: str = "") -> str | None:
     normalized = normalize_text(title.replace("Category:", ""))
+    source = normalize_text(source)
     if not normalized:
         return "empty title"
+    if any(normalize_text(title).startswith(prefix) for prefix in GENERIC_PREFIXES):
+        return "category, list, history or geography page"
     if normalized in OUT_OF_SCOPE_EXACT_TERMS:
         return "out-of-scope reference/platform topic"
     if any(term in normalized for term in OUT_OF_SCOPE_TITLE_TERMS):
@@ -163,6 +202,10 @@ def out_of_scope_reason(title: str, kind: str, source: str = "") -> str | None:
         return "release page, not a map entity"
     if normalized in GENERIC_TOPIC_TERMS or normalized.endswith(" genres"):
         return "generic topic, not a concrete map entity"
+    if kind == "genre" and any(term in normalized for term in CATEGORYISH_GENRE_TERMS):
+        return "category-style grouping, not a concrete music genre"
+    if source in WEAK_SOURCE_NAMES and kind != "genre":
+        return "weak category/template signal for non-genre candidate"
     if source == "category":
         if kind != "genre":
             return "category candidates may only become genre nodes"
@@ -171,6 +214,34 @@ def out_of_scope_reason(title: str, kind: str, source: str = "") -> str | None:
         if " by " in normalized or " from " in normalized:
             return "category grouping page"
     return None
+
+
+def candidate_quality_category(candidate: dict[str, Any], issues: list[dict[str, str]]) -> list[str]:
+    title = normalize_text(str(candidate.get("title", "")))
+    kind = str(candidate.get("kind", "unknown")).strip()
+    categories: list[str] = []
+    codes = {issue.get("code") for issue in issues}
+    messages = " ".join(issue.get("message", "") for issue in issues)
+
+    if "unsupported_candidate_kind" in codes:
+        categories.append("bad_node_type")
+    if "blocked_entity" in codes:
+        categories.append("blocked_entity")
+    if "out_of_scope_candidate" in codes:
+        if any(term in messages for term in ["platform", "media", "reference"]):
+            categories.append("platform_or_reference")
+        elif "release" in messages:
+            categories.append("release_as_context_only")
+        elif "category" in messages or "grouping" in messages:
+            categories.append("category_grouping")
+        else:
+            categories.append("out_of_scope")
+    if kind == "genre" and any(term in title for term in CATEGORYISH_GENRE_TERMS):
+        categories.append("category_grouping")
+    if not categories:
+        categories.append("candidate_ok")
+
+    return sorted(set(categories))
 
 
 def review_music_candidate(
@@ -243,6 +314,7 @@ def review_candidate_payload(
     for candidate in candidates:
         issues = review_music_candidate(candidate, seed_name, blocked_terms)
         severities = {issue["severity"] for issue in issues}
+        quality_categories = candidate_quality_category(candidate, issues)
         if "reject" in severities:
             reject_count += 1
             if len(rejected_preview) < 8:
@@ -251,6 +323,7 @@ def review_candidate_payload(
                         "title": candidate.get("title"),
                         "kind": candidate.get("kind"),
                         "reason": issues[0]["message"],
+                        "qualityCategories": quality_categories,
                     }
                 )
             continue
@@ -262,6 +335,7 @@ def review_candidate_payload(
                         "title": candidate.get("title"),
                         "kind": candidate.get("kind"),
                         "reason": issues[0]["message"],
+                        "qualityCategories": quality_categories,
                     }
                 )
         publishable_count += 1

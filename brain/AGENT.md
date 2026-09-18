@@ -95,6 +95,24 @@ Candidate edges should include:
 Use stable lowercase kebab-case IDs. Merge aliases instead of creating duplicate
 nodes. Keep summaries short and factual.
 
+Reject category-style or source-only topics even when Wikipedia exposes them as
+links. Examples include music duos/trios/groups, people categories, magazines,
+databases, platforms, educational institutions, record labels, awards and
+reference works. These may be source context, but they are not public map nodes.
+
+Prefer suggestions that improve the map structure, not just raw node count.
+Useful candidates usually do at least one of these:
+
+- Strengthen a documented bridge between neighboring zones.
+- Clarify an under-connected important artist, guitarist, band or genre.
+- Add a real genre anchor, not a Wikipedia category grouping.
+- Add a guitar, guitar brand or guitarist connection with clear source support.
+
+Use curator feedback categories from `brain/data/approved/learning-model.json`
+when available. `good_bridge`, `genre_transition_needed`, `too_dense`,
+`label_overlap`, `bad_node_type`, `category_grouping` and
+`platform_or_reference` are map-training signals, not public tags.
+
 ## Edge Rules
 
 Use these relation types:
@@ -125,6 +143,10 @@ Place candidates close to related entities and within the relevant zone:
 
 The public map should feel like an organized schematic, not a random force graph.
 Prefer readable clusters, gentle spacing and documented links.
+
+Zones are guides, not cages. Bridge nodes may drift toward secondary zones when
+that makes the history clearer. Rock-to-metal, punk-to-rock and hip-hop
+crossover bridges are especially valuable when documented.
 
 When Obsidian metadata exists, treat it as human curation. Do not override
 `layoutPinned`, `eraStart`, `eraPeak`, `primaryGenres` or `secondaryZones`

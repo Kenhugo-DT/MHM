@@ -6,6 +6,71 @@
     "Use this for taste, placement and organization signals after reviewing the live map.",
     "This file should stay factual and music-related. Do not add albums or songs as node targets."
   ],
+  "feedbackCategories": [
+    {
+      "id": "too_dense",
+      "label": "Too dense",
+      "feedback": "A local cluster is too compressed. Nodes may sit close together, but labels must remain readable and important names must not stack."
+    },
+    {
+      "id": "label_overlap",
+      "label": "Label overlap",
+      "feedback": "Visible labels collide or form unreadable piles. The renderer should hide lower-priority labels when zoomed out, and layout should increase spacing."
+    },
+    {
+      "id": "wrong_zone",
+      "label": "Wrong zone",
+      "feedback": "A node is placed in a zone that does not match its strongest music-history context."
+    },
+    {
+      "id": "good_bridge",
+      "label": "Good bridge",
+      "feedback": "A node usefully connects two or more zones. Preserve its cross-zone pull instead of forcing it into a sealed cluster."
+    },
+    {
+      "id": "bad_node_type",
+      "label": "Bad node type",
+      "feedback": "A candidate is not one of the allowed visible map node types: band, guitarist, artist, guitar, guitar_brand or genre."
+    },
+    {
+      "id": "genre_transition_needed",
+      "label": "Genre transition needed",
+      "feedback": "Neighboring scenes need more documented bridge nodes so the map reads like a music-history flow, not separate boxes."
+    },
+    {
+      "id": "category_grouping",
+      "label": "Category grouping",
+      "feedback": "Category-like labels such as duos, groups, people, artists, albums or companies are not concrete music genres and should not become visible nodes."
+    },
+    {
+      "id": "platform_or_reference",
+      "label": "Platform or reference",
+      "feedback": "Music platforms, magazines, databases, institutions and reference works are source context, not visible map nodes."
+    }
+  ],
+  "bridgePolicies": [
+    {
+      "id": "rock-to-metal",
+      "zones": ["rock-circuit", "hard-rock-metal"],
+      "anchorNodes": ["black-sabbath", "led-zeppelin", "deep-purple", "acdc", "van-halen"],
+      "feedbackCategories": ["good_bridge", "genre_transition_needed"],
+      "feedback": "The rock to hard-rock/metal path should overlap strongly. Let bridge nodes drift between zones rather than forming a straight, sterile lane."
+    },
+    {
+      "id": "punk-to-rock",
+      "zones": ["punk-alt", "rock-circuit"],
+      "anchorNodes": ["ramones", "sex-pistols", "misfits", "the-clash", "bad-religion"],
+      "feedbackCategories": ["good_bridge", "genre_transition_needed"],
+      "feedback": "Punk should connect back into rock history while keeping its own chaotic identity."
+    },
+    {
+      "id": "hip-hop-crossovers",
+      "zones": ["hip-hop-rap", "punk-alt", "hard-rock-metal", "rock-circuit"],
+      "anchorNodes": ["public-enemy", "body-count", "beastie-boys", "run-dmc"],
+      "feedbackCategories": ["good_bridge", "genre_transition_needed"],
+      "feedback": "Hip-hop should keep a readable territory while allowing documented crossover lines into punk, rock and metal."
+    }
+  ],
   "nodeFeedback": [
     {
       "id": "misfits",

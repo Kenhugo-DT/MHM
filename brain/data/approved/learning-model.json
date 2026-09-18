@@ -1,14 +1,16 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-15T19:27:21.794Z",
+  "generatedAt": "2026-09-18T11:56:04.989Z",
   "source": "graph + Obsidian frontmatter + curator feedback",
   "samples": {
-    "graphNodes": 562,
-    "graphEdges": 748,
+    "graphNodes": 561,
+    "graphEdges": 746,
     "obsidianNotes": 563,
     "feedbackNodes": 6,
     "feedbackZones": 4,
     "feedbackRules": 4,
+    "feedbackCategories": 8,
+    "bridgePolicies": 3,
     "pinnedNotes": 0,
     "notesWithEra": 0,
     "notesWithPrimaryGenres": 477,
@@ -19,8 +21,8 @@
       "nodeCount": 39,
       "pinnedCount": 0,
       "centroid": {
-        "x": -943,
-        "y": -33
+        "x": -914,
+        "y": -16
       },
       "eraMedian": 1948,
       "learnedTerms": [
@@ -347,21 +349,21 @@
       ]
     },
     "rock-circuit": {
-      "nodeCount": 170,
+      "nodeCount": 169,
       "pinnedCount": 0,
       "centroid": {
-        "x": 272,
-        "y": 293
+        "x": 283,
+        "y": 275
       },
       "eraMedian": 1975,
       "learnedTerms": [
         {
           "term": "classic rock",
-          "weight": 932
+          "weight": 926
         },
         {
           "term": "classic",
-          "weight": 308
+          "weight": 306
         },
         {
           "term": "rock and roll",
@@ -404,8 +406,24 @@
           "weight": 11
         },
         {
+          "term": "hard rock metal",
+          "weight": 11
+        },
+        {
+          "term": "punk alt",
+          "weight": 11
+        },
+        {
           "term": "swamp rock",
           "weight": 10
+        },
+        {
+          "term": "genre transition needed",
+          "weight": 9
+        },
+        {
+          "term": "good bridge",
+          "weight": 9
         },
         {
           "term": "hard rock bridge",
@@ -432,6 +450,10 @@
           "weight": 8
         },
         {
+          "term": "acdc",
+          "weight": 6
+        },
+        {
           "term": "alternative rock",
           "weight": 6
         },
@@ -444,7 +466,27 @@
           "weight": 6
         },
         {
+          "term": "bad religion",
+          "weight": 6
+        },
+        {
+          "term": "beastie boys",
+          "weight": 6
+        },
+        {
+          "term": "black sabbath",
+          "weight": 6
+        },
+        {
+          "term": "body count",
+          "weight": 6
+        },
+        {
           "term": "bruce",
+          "weight": 6
+        },
+        {
+          "term": "deep purple",
           "weight": 6
         },
         {
@@ -452,7 +494,39 @@
           "weight": 6
         },
         {
+          "term": "led zeppelin",
+          "weight": 6
+        },
+        {
+          "term": "misfits",
+          "weight": 6
+        },
+        {
+          "term": "public enemy",
+          "weight": 6
+        },
+        {
+          "term": "ramones",
+          "weight": 6
+        },
+        {
+          "term": "run dmc",
+          "weight": 6
+        },
+        {
+          "term": "sex pistols",
+          "weight": 6
+        },
+        {
           "term": "singer songwriter",
+          "weight": 6
+        },
+        {
+          "term": "the clash",
+          "weight": 6
+        },
+        {
+          "term": "van halen",
           "weight": 6
         },
         {
@@ -489,6 +563,10 @@
         },
         {
           "term": "fusion",
+          "weight": 4
+        },
+        {
+          "term": "hip hop rap",
           "weight": 4
         },
         {
@@ -540,7 +618,7 @@
           "weight": 3
         },
         {
-          "term": "hard rock metal",
+          "term": "hip hop should keep a readable territory while allowing documented crossover lines into punk rock and metal",
           "weight": 3
         },
         {
@@ -548,7 +626,7 @@
           "weight": 3
         },
         {
-          "term": "punk alt",
+          "term": "punk should connect back into rock history while keeping its own chaotic identity",
           "weight": 3
         },
         {
@@ -561,6 +639,10 @@
         },
         {
           "term": "roots blues",
+          "weight": 3
+        },
+        {
+          "term": "the rock to hard rock metal path should overlap strongly let bridge nodes drift between zones rather than forming a straight sterile lane",
           "weight": 3
         },
         {
@@ -594,86 +676,6 @@
         {
           "term": "agathodaimon",
           "weight": 2
-        },
-        {
-          "term": "aina",
-          "weight": 2
-        },
-        {
-          "term": "air",
-          "weight": 2
-        },
-        {
-          "term": "allison",
-          "weight": 2
-        },
-        {
-          "term": "alogia",
-          "weight": 2
-        },
-        {
-          "term": "altaria",
-          "weight": 2
-        },
-        {
-          "term": "alternative",
-          "weight": 2
-        },
-        {
-          "term": "american football",
-          "weight": 2
-        },
-        {
-          "term": "amy",
-          "weight": 2
-        },
-        {
-          "term": "amy lee",
-          "weight": 2
-        },
-        {
-          "term": "ancient",
-          "weight": 2
-        },
-        {
-          "term": "andrew",
-          "weight": 2
-        },
-        {
-          "term": "andrew watt",
-          "weight": 2
-        },
-        {
-          "term": "angel",
-          "weight": 2
-        },
-        {
-          "term": "angel dust",
-          "weight": 2
-        },
-        {
-          "term": "aqua",
-          "weight": 2
-        },
-        {
-          "term": "arcade",
-          "weight": 2
-        },
-        {
-          "term": "aria",
-          "weight": 2
-        },
-        {
-          "term": "arion",
-          "weight": 2
-        },
-        {
-          "term": "ark",
-          "weight": 2
-        },
-        {
-          "term": "armageddon",
-          "weight": 2
         }
       ]
     },
@@ -681,8 +683,8 @@
       "nodeCount": 37,
       "pinnedCount": 0,
       "centroid": {
-        "x": 401,
-        "y": -744
+        "x": 379,
+        "y": -784
       },
       "eraMedian": 1969,
       "learnedTerms": [
@@ -1012,8 +1014,8 @@
       "nodeCount": 125,
       "pinnedCount": 0,
       "centroid": {
-        "x": 2524,
-        "y": 85
+        "x": 2534,
+        "y": 120
       },
       "eraMedian": 1977,
       "learnedTerms": [
@@ -1102,12 +1104,24 @@
           "weight": 12
         },
         {
+          "term": "rock circuit",
+          "weight": 11
+        },
+        {
           "term": "blues rock",
+          "weight": 10
+        },
+        {
+          "term": "deep purple",
           "weight": 10
         },
         {
           "term": "riff culture",
           "weight": 10
+        },
+        {
+          "term": "black sabbath",
+          "weight": 8
         },
         {
           "term": "death",
@@ -1118,8 +1132,24 @@
           "weight": 8
         },
         {
+          "term": "led zeppelin",
+          "weight": 8
+        },
+        {
           "term": "symphonic",
           "weight": 8
+        },
+        {
+          "term": "van halen",
+          "weight": 8
+        },
+        {
+          "term": "punk alt",
+          "weight": 7
+        },
+        {
+          "term": "acdc",
+          "weight": 6
         },
         {
           "term": "alternative metal",
@@ -1130,7 +1160,23 @@
           "weight": 6
         },
         {
+          "term": "beastie boys",
+          "weight": 6
+        },
+        {
+          "term": "body count",
+          "weight": 6
+        },
+        {
           "term": "dutch rock music",
+          "weight": 6
+        },
+        {
+          "term": "genre transition needed",
+          "weight": 6
+        },
+        {
+          "term": "good bridge",
           "weight": 6
         },
         {
@@ -1146,6 +1192,10 @@
           "weight": 6
         },
         {
+          "term": "public enemy",
+          "weight": 6
+        },
+        {
           "term": "punk",
           "weight": 6
         },
@@ -1155,6 +1205,10 @@
         },
         {
           "term": "punk rock",
+          "weight": 6
+        },
+        {
+          "term": "run dmc",
           "weight": 6
         },
         {
@@ -1178,10 +1232,6 @@
           "weight": 4
         },
         {
-          "term": "deep purple",
-          "weight": 4
-        },
-        {
           "term": "doom metal root",
           "weight": 4
         },
@@ -1195,6 +1245,10 @@
         },
         {
           "term": "halford",
+          "weight": 4
+        },
+        {
+          "term": "hip hop rap",
           "weight": 4
         },
         {
@@ -1270,71 +1324,19 @@
           "weight": 3
         },
         {
+          "term": "hip hop should keep a readable territory while allowing documented crossover lines into punk rock and metal",
+          "weight": 3
+        },
+        {
           "term": "psychedelia prog",
           "weight": 3
         },
         {
-          "term": "punk alt",
-          "weight": 3
-        },
-        {
-          "term": "rock circuit",
+          "term": "the rock to hard rock metal path should overlap strongly let bridge nodes drift between zones rather than forming a straight sterile lane",
           "weight": 3
         },
         {
           "term": "a wake in providence",
-          "weight": 2
-        },
-        {
-          "term": "absu",
-          "weight": 2
-        },
-        {
-          "term": "ac dc",
-          "weight": 2
-        },
-        {
-          "term": "accept",
-          "weight": 2
-        },
-        {
-          "term": "acid",
-          "weight": 2
-        },
-        {
-          "term": "acid king band",
-          "weight": 2
-        },
-        {
-          "term": "aerosmith",
-          "weight": 2
-        },
-        {
-          "term": "airbourne",
-          "weight": 2
-        },
-        {
-          "term": "alexi",
-          "weight": 2
-        },
-        {
-          "term": "alexi laiho",
-          "weight": 2
-        },
-        {
-          "term": "alice",
-          "weight": 2
-        },
-        {
-          "term": "alice cooper",
-          "weight": 2
-        },
-        {
-          "term": "all",
-          "weight": 2
-        },
-        {
-          "term": "all that remains",
           "weight": 2
         }
       ]
@@ -1343,8 +1345,8 @@
       "nodeCount": 74,
       "pinnedCount": 0,
       "centroid": {
-        "x": 1544,
-        "y": 1477
+        "x": 1538,
+        "y": 1469
       },
       "eraMedian": 1977,
       "learnedTerms": [
@@ -1477,6 +1479,10 @@
           "weight": 12
         },
         {
+          "term": "rock circuit",
+          "weight": 11
+        },
+        {
           "term": "deathrock",
           "weight": 10
         },
@@ -1486,6 +1492,10 @@
         },
         {
           "term": "gothic",
+          "weight": 10
+        },
+        {
+          "term": "misfits",
           "weight": 10
         },
         {
@@ -1509,6 +1519,10 @@
           "weight": 8
         },
         {
+          "term": "bad religion",
+          "weight": 8
+        },
+        {
           "term": "early punk anchor",
           "weight": 8
         },
@@ -1517,11 +1531,39 @@
           "weight": 8
         },
         {
+          "term": "ramones",
+          "weight": 8
+        },
+        {
+          "term": "sex pistols",
+          "weight": 8
+        },
+        {
+          "term": "the clash",
+          "weight": 8
+        },
+        {
+          "term": "hard rock metal",
+          "weight": 7
+        },
+        {
+          "term": "hip hop rap",
+          "weight": 7
+        },
+        {
           "term": "art rock",
           "weight": 6
         },
         {
           "term": "bad",
+          "weight": 6
+        },
+        {
+          "term": "beastie boys",
+          "weight": 6
+        },
+        {
+          "term": "body count",
           "weight": 6
         },
         {
@@ -1538,6 +1580,14 @@
         },
         {
           "term": "garage punk",
+          "weight": 6
+        },
+        {
+          "term": "genre transition needed",
+          "weight": 6
+        },
+        {
+          "term": "good bridge",
           "weight": 6
         },
         {
@@ -1605,6 +1655,10 @@
           "weight": 6
         },
         {
+          "term": "public enemy",
+          "weight": 6
+        },
+        {
           "term": "rancid roots",
           "weight": 6
         },
@@ -1615,58 +1669,6 @@
         {
           "term": "reggae fusion",
           "weight": 6
-        },
-        {
-          "term": "straight edge",
-          "weight": 6
-        },
-        {
-          "term": "thrash metal",
-          "weight": 6
-        },
-        {
-          "term": "venice scene",
-          "weight": 6
-        },
-        {
-          "term": "1970s",
-          "weight": 4
-        },
-        {
-          "term": "all",
-          "weight": 4
-        },
-        {
-          "term": "bay",
-          "weight": 4
-        },
-        {
-          "term": "core punk and horror punk anchor keep near ramones sex pistols horror punk and hardcore punk rather than generic rock",
-          "weight": 4
-        },
-        {
-          "term": "east",
-          "weight": 4
-        },
-        {
-          "term": "edge",
-          "weight": 4
-        },
-        {
-          "term": "horror punk anchor",
-          "weight": 4
-        },
-        {
-          "term": "independent",
-          "weight": 4
-        },
-        {
-          "term": "indie",
-          "weight": 4
-        },
-        {
-          "term": "ivy",
-          "weight": 4
         }
       ]
     },
@@ -1674,8 +1676,8 @@
       "nodeCount": 25,
       "pinnedCount": 0,
       "centroid": {
-        "x": -615,
-        "y": 1221
+        "x": -610,
+        "y": 1227
       },
       "eraMedian": 1963,
       "learnedTerms": [
@@ -2005,8 +2007,8 @@
       "nodeCount": 68,
       "pinnedCount": 0,
       "centroid": {
-        "x": 3677,
-        "y": 46
+        "x": 3673,
+        "y": 38
       },
       "eraMedian": 1958,
       "learnedTerms": [
@@ -2422,6 +2424,14 @@
           "weight": 10
         },
         {
+          "term": "body count",
+          "weight": 8
+        },
+        {
+          "term": "public enemy",
+          "weight": 8
+        },
+        {
           "term": "rap rock",
           "weight": 8
         },
@@ -2430,7 +2440,23 @@
           "weight": 8
         },
         {
+          "term": "hard rock metal",
+          "weight": 7
+        },
+        {
+          "term": "punk alt",
+          "weight": 7
+        },
+        {
+          "term": "rock circuit",
+          "weight": 7
+        },
+        {
           "term": "alternative hip hop",
+          "weight": 6
+        },
+        {
+          "term": "beastie boys",
           "weight": 6
         },
         {
@@ -2463,6 +2489,10 @@
         },
         {
           "term": "producer",
+          "weight": 6
+        },
+        {
+          "term": "run dmc",
           "weight": 6
         },
         {
@@ -2510,7 +2540,11 @@
           "weight": 4
         },
         {
-          "term": "hard rock metal",
+          "term": "genre transition needed",
+          "weight": 3
+        },
+        {
+          "term": "good bridge",
           "weight": 3
         },
         {
@@ -2518,11 +2552,7 @@
           "weight": 3
         },
         {
-          "term": "punk alt",
-          "weight": 3
-        },
-        {
-          "term": "rock circuit",
+          "term": "hip hop should keep a readable territory while allowing documented crossover lines into punk rock and metal",
           "weight": 3
         },
         {
@@ -2547,10 +2577,6 @@
         },
         {
           "term": "body",
-          "weight": 2
-        },
-        {
-          "term": "body count",
           "weight": 2
         },
         {
@@ -2635,30 +2661,6 @@
         },
         {
           "term": "ice cube",
-          "weight": 2
-        },
-        {
-          "term": "magic",
-          "weight": 2
-        },
-        {
-          "term": "metal",
-          "weight": 2
-        },
-        {
-          "term": "my band",
-          "weight": 2
-        },
-        {
-          "term": "outsidaz",
-          "weight": 2
-        },
-        {
-          "term": "political",
-          "weight": 2
-        },
-        {
-          "term": "public",
           "weight": 2
         }
       ]
@@ -13974,30 +13976,9 @@
         "hard rock",
         "band"
       ],
-      "connectionCount": 3,
-      "linkedGenres": [],
-      "bridgeScore": 0.44,
-      "hubScore": 0.25,
-      "layoutHints": {
-        "pinned": false
-      }
-    },
-    "brain": {
-      "zone": "rock-circuit",
-      "secondaryZones": [
-        "hard-rock-metal"
-      ],
-      "primaryGenres": [
-        "rock"
-      ],
-      "curatorTags": [
-        "artist",
-        "classic rock",
-        "rock"
-      ],
       "connectionCount": 2,
       "linkedGenres": [],
-      "bridgeScore": 0.22,
+      "bridgeScore": 0.44,
       "hubScore": 0.167,
       "layoutHints": {
         "pinned": false
@@ -14401,10 +14382,10 @@
         "artist",
         "rock"
       ],
-      "connectionCount": 7,
+      "connectionCount": 6,
       "linkedGenres": [],
       "bridgeScore": 0.22,
-      "hubScore": 0.583,
+      "hubScore": 0.5,
       "layoutHints": {
         "pinned": false
       }
@@ -14670,6 +14651,108 @@
         "id": "readability-beats-density",
         "weight": 1,
         "feedback": "Never allow the map to become visually unreadable. Dense clusters are acceptable when they feel like organized chaos, but labels must not overlap heavily, node labels must remain readable, and important names should not stack on top of each other. If a zone becomes too crowded, expand the local layout, increase spacing, or let bridge nodes drift outward instead of compressing everything into one tight cluster."
+      }
+    ],
+    "feedbackCategories": [
+      {
+        "id": "too_dense",
+        "label": "Too dense",
+        "feedback": "A local cluster is too compressed. Nodes may sit close together, but labels must remain readable and important names must not stack."
+      },
+      {
+        "id": "label_overlap",
+        "label": "Label overlap",
+        "feedback": "Visible labels collide or form unreadable piles. The renderer should hide lower-priority labels when zoomed out, and layout should increase spacing."
+      },
+      {
+        "id": "wrong_zone",
+        "label": "Wrong zone",
+        "feedback": "A node is placed in a zone that does not match its strongest music-history context."
+      },
+      {
+        "id": "good_bridge",
+        "label": "Good bridge",
+        "feedback": "A node usefully connects two or more zones. Preserve its cross-zone pull instead of forcing it into a sealed cluster."
+      },
+      {
+        "id": "bad_node_type",
+        "label": "Bad node type",
+        "feedback": "A candidate is not one of the allowed visible map node types: band, guitarist, artist, guitar, guitar_brand or genre."
+      },
+      {
+        "id": "genre_transition_needed",
+        "label": "Genre transition needed",
+        "feedback": "Neighboring scenes need more documented bridge nodes so the map reads like a music-history flow, not separate boxes."
+      },
+      {
+        "id": "category_grouping",
+        "label": "Category grouping",
+        "feedback": "Category-like labels such as duos, groups, people, artists, albums or companies are not concrete music genres and should not become visible nodes."
+      },
+      {
+        "id": "platform_or_reference",
+        "label": "Platform or reference",
+        "feedback": "Music platforms, magazines, databases, institutions and reference works are source context, not visible map nodes."
+      }
+    ],
+    "bridgePolicies": [
+      {
+        "id": "rock-to-metal",
+        "zones": [
+          "rock-circuit",
+          "hard-rock-metal"
+        ],
+        "anchorNodes": [
+          "black-sabbath",
+          "led-zeppelin",
+          "deep-purple",
+          "acdc",
+          "van-halen"
+        ],
+        "feedbackCategories": [
+          "good_bridge",
+          "genre_transition_needed"
+        ],
+        "feedback": "The rock to hard-rock/metal path should overlap strongly. Let bridge nodes drift between zones rather than forming a straight, sterile lane."
+      },
+      {
+        "id": "punk-to-rock",
+        "zones": [
+          "punk-alt",
+          "rock-circuit"
+        ],
+        "anchorNodes": [
+          "ramones",
+          "sex-pistols",
+          "misfits",
+          "the-clash",
+          "bad-religion"
+        ],
+        "feedbackCategories": [
+          "good_bridge",
+          "genre_transition_needed"
+        ],
+        "feedback": "Punk should connect back into rock history while keeping its own chaotic identity."
+      },
+      {
+        "id": "hip-hop-crossovers",
+        "zones": [
+          "hip-hop-rap",
+          "punk-alt",
+          "hard-rock-metal",
+          "rock-circuit"
+        ],
+        "anchorNodes": [
+          "public-enemy",
+          "body-count",
+          "beastie-boys",
+          "run-dmc"
+        ],
+        "feedbackCategories": [
+          "good_bridge",
+          "genre_transition_needed"
+        ],
+        "feedback": "Hip-hop should keep a readable territory while allowing documented crossover lines into punk, rock and metal."
       }
     ],
     "nodeIds": [
