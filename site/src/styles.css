@@ -141,6 +141,8 @@ button {
 
 .topbar button,
 .topbar input,
+.topbar select,
+.layout-control,
 .search-control {
   pointer-events: auto;
 }
