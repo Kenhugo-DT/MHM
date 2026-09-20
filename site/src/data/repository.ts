@@ -2,6 +2,7 @@ import type { SupabaseClient } from "@supabase/supabase-js";
 import type {
   GraphDataset,
   GraphEdge,
+  GraphLayoutDataset,
   GraphNeighborhood,
   GraphNode,
   MapMode,
@@ -12,12 +13,14 @@ import { MODE_TYPES } from "../lib/graph-config";
 
 export interface GraphRepository {
   readonly source: "local" | "supabase";
+  loadLayouts(): Promise<GraphLayoutDataset | undefined>;
   loadMap(mode: MapMode): Promise<GraphNeighborhood>;
   loadNeighborhood(nodeId: string, depth?: number): Promise<GraphNeighborhood>;
   search(query: string, limit?: number): Promise<GraphNode[]>;
 }
 
 let localDatasetPromise: Promise<GraphDataset> | undefined;
+let localLayoutsPromise: Promise<GraphLayoutDataset | undefined> | undefined;
 
 function loadLocalDataset(): Promise<GraphDataset> {
   if (!localDatasetPromise) {
@@ -33,8 +36,27 @@ function loadLocalDataset(): Promise<GraphDataset> {
   return localDatasetPromise;
 }
 
+function loadLocalLayouts(): Promise<GraphLayoutDataset | undefined> {
+  if (!localLayoutsPromise) {
+    localLayoutsPromise = fetch(`${import.meta.env.BASE_URL}data/layouts.json`).then(
+      async (response) => {
+        if (response.status === 404) return undefined;
+        if (!response.ok) {
+          throw new Error(`Could not load layout data (${response.status}).`);
+        }
+        return (await response.json()) as GraphLayoutDataset;
+      },
+    );
+  }
+  return localLayoutsPromise;
+}
+
 class LocalGraphRepository implements GraphRepository {
   readonly source = "local" as const;
+
+  async loadLayouts(): Promise<GraphLayoutDataset | undefined> {
+    return loadLocalLayouts();
+  }
 
   async loadMap(mode: MapMode): Promise<GraphNeighborhood> {
     const dataset = await loadLocalDataset();
@@ -166,6 +188,10 @@ class SupabaseGraphRepository implements GraphRepository {
       );
     }
     return this.clientPromise;
+  }
+
+  async loadLayouts(): Promise<GraphLayoutDataset | undefined> {
+    return loadLocalLayouts();
   }
 
   async loadMap(mode: MapMode): Promise<GraphNeighborhood> {

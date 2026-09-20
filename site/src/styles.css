@@ -303,6 +303,38 @@ button {
   padding: 3px;
 }
 
+.layout-control {
+  min-width: 116px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 7px;
+  align-items: center;
+  padding: 0 9px;
+  border-right: 1px solid rgba(225, 208, 191, 0.1);
+}
+
+.layout-control span {
+  color: var(--faint);
+  font-size: 0.64rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.layout-control select {
+  min-width: 0;
+  height: 32px;
+  border: 0;
+  outline: 0;
+  color: var(--text);
+  background: transparent;
+  cursor: pointer;
+}
+
+.layout-control option {
+  color: #0d0d0b;
+  background: #e9ded2;
+}
+
 .top-actions button {
   width: 43px;
   display: grid;
@@ -965,6 +997,10 @@ button {
     display: none;
   }
 
+  .topbar.controls-collapsed .layout-control {
+    display: none;
+  }
+
   .topbar.controls-collapsed .zoom-out-action,
   .topbar.controls-collapsed .zoom-in-action {
     display: none;
@@ -1070,6 +1106,16 @@ button {
 
   .top-actions button {
     width: 39px;
+  }
+
+  .layout-control {
+    min-width: 104px;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .layout-control span {
+    display: none;
   }
 
   .topbar.controls-collapsed .top-actions button {

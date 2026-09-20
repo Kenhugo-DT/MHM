@@ -21,6 +21,8 @@ import {
 import type {
   GraphEdge,
   GraphNode,
+  LayoutMode,
+  LayoutNodePosition,
   MapMode,
   NodeType,
 } from "../types/graph";
@@ -39,6 +41,8 @@ interface GraphMapProps {
   selectedId?: string;
   routeNodeIds?: string[];
   visibleTypes: Set<NodeType>;
+  layoutMode: LayoutMode;
+  layoutPositions?: Record<string, LayoutNodePosition>;
   onSelect(node: GraphNode): void;
 }
 
@@ -52,6 +56,7 @@ type VisualMode = "detail" | "map" | "overview";
 
 interface NodeVisualItem {
   node: GraphNode;
+  container: Container;
   shape: Graphics;
   label: Text;
   alwaysLabel: boolean;
@@ -201,6 +206,8 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
       selectedId,
       routeNodeIds = EMPTY_ROUTE_NODE_IDS,
       visibleTypes,
+      layoutMode,
+      layoutPositions,
       onSelect,
     },
     ref,
@@ -211,10 +218,13 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
     const worldRef = useRef<Viewport | null>(null);
     const selectionLayerRef = useRef<Container | null>(null);
     const cameraFrameRef = useRef<number | null>(null);
+    const layoutFrameRef = useRef<number | null>(null);
     const cameraRef = useRef<Camera>({ x: 0, y: 0, zoom: 0.42 });
     const nodesRef = useRef(nodes);
     const onSelectRef = useRef(onSelect);
     const visibleTypesRef = useRef(visibleTypes);
+    const layoutPositionsRef = useRef(layoutPositions);
+    const nodePositionRef = useRef(new Map<string, { x: number; y: number }>());
     const nodeVisualItemsRef = useRef<NodeVisualItem[]>([]);
     const edgeVisualItemsRef = useRef<EdgeVisualItem[]>([]);
     const edgeLayerRef = useRef<Graphics | null>(null);
@@ -225,6 +235,7 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
     nodesRef.current = nodes;
     onSelectRef.current = onSelect;
     visibleTypesRef.current = visibleTypes;
+    layoutPositionsRef.current = layoutPositions;
 
     function isCompactMap() {
       const host = hostRef.current;
@@ -411,6 +422,81 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
       });
     }
 
+    function targetPositionFor(node: GraphNode) {
+      const layoutPosition = layoutPositionsRef.current?.[node.id];
+      return {
+        x: layoutPosition?.x ?? node.x,
+        y: layoutPosition?.y ?? node.y,
+      };
+    }
+
+    function displayPositionFor(node: GraphNode) {
+      return nodePositionRef.current.get(node.id) ?? targetPositionFor(node);
+    }
+
+    function setVisualPosition(item: NodeVisualItem, x: number, y: number) {
+      item.node.x = x;
+      item.node.y = y;
+      item.container.position.set(x, y);
+      item.label.position.set(
+        x,
+        y + Math.max(nodeRadius(item.node) + 12, 18 / Math.max(cameraRef.current.zoom, 0.16)),
+      );
+      nodePositionRef.current.set(item.node.id, { x, y });
+    }
+
+    function animateToLayout(instant = false) {
+      if (!ready || !nodeVisualItemsRef.current.length) return;
+      if (layoutFrameRef.current !== null) {
+        window.cancelAnimationFrame(layoutFrameRef.current);
+        layoutFrameRef.current = null;
+      }
+
+      const items = nodeVisualItemsRef.current.map((item) => {
+        const target = targetPositionFor(item.node);
+        return {
+          item,
+          startX: item.node.x,
+          startY: item.node.y,
+          targetX: target.x,
+          targetY: target.y,
+        };
+      });
+
+      if (instant) {
+        items.forEach(({ item, targetX, targetY }) => setVisualPosition(item, targetX, targetY));
+        syncMapReadability(cameraRef.current, true);
+        renderFrame();
+        return;
+      }
+
+      const start = performance.now();
+      const duration = 760;
+      const step = (now: number) => {
+        const raw = Math.min(1, (now - start) / duration);
+        const eased = 1 - Math.pow(1 - raw, 3);
+
+        items.forEach(({ item, startX, startY, targetX, targetY }) => {
+          setVisualPosition(
+            item,
+            startX + (targetX - startX) * eased,
+            startY + (targetY - startY) * eased,
+          );
+        });
+
+        syncMapReadability(cameraRef.current, true);
+        renderFrame();
+
+        if (raw < 1) {
+          layoutFrameRef.current = window.requestAnimationFrame(step);
+        } else {
+          layoutFrameRef.current = null;
+        }
+      };
+
+      layoutFrameRef.current = window.requestAnimationFrame(step);
+    }
+
     function visibleNodes() {
       return nodesRef.current.filter((node) => visibleTypes.has(node.type));
     }
@@ -432,8 +518,9 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
       nodesRef.current.forEach((node) => {
         if (!visibleTypesRef.current.has(node.type)) return;
 
-        const dx = x - node.x;
-        const dy = y - node.y;
+        const position = displayPositionFor(node);
+        const dx = x - position.x;
+        const dy = y - position.y;
         const radius = Math.max(22, nodeRadius(node) + 12 / cameraRef.current.zoom);
         const onMarker = Math.hypot(dx, dy) <= radius;
         const onLabel = Math.abs(dx) <= 90 / cameraRef.current.zoom && dy >= 4 && dy <= 52 / cameraRef.current.zoom;
@@ -465,19 +552,19 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
 
       const zones = MAP_ZONES.filter((zone) => zone.mode === mode);
       const minX = Math.min(
-        ...list.map((node) => node.x),
+        ...list.map((node) => displayPositionFor(node).x),
         ...zones.map((zone) => zone.x),
       );
       const maxX = Math.max(
-        ...list.map((node) => node.x),
+        ...list.map((node) => displayPositionFor(node).x),
         ...zones.map((zone) => zone.x + zone.width),
       );
       const minY = Math.min(
-        ...list.map((node) => node.y),
+        ...list.map((node) => displayPositionFor(node).y),
         ...zones.map((zone) => zone.y),
       );
       const maxY = Math.max(
-        ...list.map((node) => node.y),
+        ...list.map((node) => displayPositionFor(node).y),
         ...zones.map((zone) => zone.y + zone.height),
       );
 
@@ -508,9 +595,10 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
     function focusNode(nodeId: string) {
       const node = nodesRef.current.find((candidate) => candidate.id === nodeId);
       if (!node) return;
+      const position = displayPositionFor(node);
       cameraRef.current = {
-        x: node.x + (window.innerWidth > 980 ? 190 : 0),
-        y: node.y,
+        x: position.x + (window.innerWidth > 980 ? 190 : 0),
+        y: position.y,
         zoom: clampZoom(window.innerWidth > 700 ? 0.92 : 0.86),
       };
       applyCamera();
@@ -606,6 +694,10 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
           window.cancelAnimationFrame(cameraFrameRef.current);
           cameraFrameRef.current = null;
         }
+        if (layoutFrameRef.current !== null) {
+          window.cancelAnimationFrame(layoutFrameRef.current);
+          layoutFrameRef.current = null;
+        }
         if (tickViewport) {
           app.ticker.remove(tickViewport);
           tickViewport = undefined;
@@ -643,10 +735,17 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
       edgeLayerRef.current = null;
       nodeVisualItemsRef.current = [];
       edgeVisualItemsRef.current = [];
+      nodePositionRef.current = new Map();
 
       const shownNodes = nodes.filter((node) => visibleTypes.has(node.type));
       const shownIds = new Set(shownNodes.map((node) => node.id));
-      const nodeById = new Map(shownNodes.map((node) => [node.id, node]));
+      const positionedNodes = shownNodes.map((node) => {
+        const position = targetPositionFor(node);
+        const copy = { ...node, x: position.x, y: position.y };
+        nodePositionRef.current.set(node.id, position);
+        return copy;
+      });
+      const nodeById = new Map(positionedNodes.map((node) => [node.id, node]));
       const degreeById = new Map<string, number>();
       edges.forEach((edge) => {
         if (!shownIds.has(edge.source) || !shownIds.has(edge.target)) return;
@@ -655,10 +754,10 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
       });
 
       const grid = new Graphics();
-      const graphMinX = Math.min(...shownNodes.map((node) => node.x), -1800) - 900;
-      const graphMaxX = Math.max(...shownNodes.map((node) => node.x), 3800) + 900;
-      const graphMinY = Math.min(...shownNodes.map((node) => node.y), -1400) - 900;
-      const graphMaxY = Math.max(...shownNodes.map((node) => node.y), 1700) + 900;
+      const graphMinX = Math.min(...positionedNodes.map((node) => node.x), -1800) - 900;
+      const graphMaxX = Math.max(...positionedNodes.map((node) => node.x), 3800) + 900;
+      const graphMinY = Math.min(...positionedNodes.map((node) => node.y), -1400) - 900;
+      const graphMaxY = Math.max(...positionedNodes.map((node) => node.y), 1700) + 900;
       viewportRef.current?.resize(
         app.screen.width,
         app.screen.height,
@@ -719,7 +818,7 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
       });
       connectionLayer.addChild(edgeLayer);
 
-      shownNodes.forEach((node) => {
+      positionedNodes.forEach((node) => {
         const nodeContainer = new Container();
         nodeContainer.position.set(node.x, node.y);
         nodeContainer.eventMode = "static";
@@ -753,6 +852,7 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
         const visualItem = {
           label,
           node,
+          container: nodeContainer,
           shape,
           alwaysLabel,
           hubLabel,
@@ -794,6 +894,12 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
     ]);
 
     useEffect(() => {
+      layoutPositionsRef.current = layoutPositions;
+      if (!ready) return;
+      animateToLayout(false);
+    }, [layoutMode, layoutPositions, ready]);
+
+    useEffect(() => {
       if (!ready) return;
       const layer = selectionLayerRef.current;
       if (!layer) return;
@@ -802,7 +908,12 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
 
       const shownNodes = nodes.filter((node) => visibleTypes.has(node.type));
       const shownIds = new Set(shownNodes.map((node) => node.id));
-      const nodeById = new Map(shownNodes.map((node) => [node.id, node]));
+      const nodeById = new Map(
+        shownNodes.map((node) => {
+          const position = displayPositionFor(node);
+          return [node.id, { ...node, x: position.x, y: position.y }];
+        }),
+      );
       const routeKeys = new Set(
         routeNodeIds.slice(1).map((id, index) => edgeKey(routeNodeIds[index], id)),
       );
@@ -840,8 +951,9 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
         const node = nodeById.get(nodeId);
         if (!node) return;
 
+        const position = displayPositionFor(node);
         const nodeContainer = new Container();
-        nodeContainer.position.set(node.x, node.y);
+        nodeContainer.position.set(position.x, position.y);
         nodeContainer.eventMode = "none";
 
         const shape = new Graphics();

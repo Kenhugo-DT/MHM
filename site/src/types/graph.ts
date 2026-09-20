@@ -9,6 +9,7 @@ export const NODE_TYPES = [
 
 export type NodeType = (typeof NODE_TYPES)[number];
 export type MapMode = "artists" | "guitars";
+export type LayoutMode = "organized" | "genre" | "timeline" | "alphabetic" | "chaos";
 
 export interface SourceReference {
   label: string;
@@ -70,6 +71,28 @@ export interface GraphDataset {
   generatedAt: string;
   nodes: GraphNode[];
   edges: GraphEdge[];
+}
+
+export interface LayoutNodePosition {
+  x: number;
+  y: number;
+  zone?: string;
+  priority?: number;
+}
+
+export interface GraphLayout {
+  id: LayoutMode;
+  label: string;
+  description: string;
+  generatedAt: string;
+  nodes: Record<string, LayoutNodePosition>;
+}
+
+export interface GraphLayoutDataset {
+  version: number;
+  generatedAt: string;
+  source: string;
+  layouts: Record<LayoutMode, GraphLayout>;
 }
 
 export interface GraphNeighborhood {

@@ -46,7 +46,9 @@ import {
 import type {
   BrowseRoute,
   GraphEdge,
+  GraphLayoutDataset,
   GraphNode,
+  LayoutMode,
   MapMode,
   NodeType,
 } from "./types/graph";
@@ -57,6 +59,14 @@ const logoUrl = new URL("../images/logos/gitarlogo-small.png", import.meta.url).
 const GraphMap = lazy(() =>
   import("./components/GraphMap").then((module) => ({ default: module.GraphMap })),
 );
+
+const LAYOUT_OPTIONS: Array<{ id: LayoutMode; label: string }> = [
+  { id: "organized", label: "Map" },
+  { id: "genre", label: "Genres" },
+  { id: "timeline", label: "Timeline" },
+  { id: "alphabetic", label: "A-Z" },
+  { id: "chaos", label: "Chaos" },
+];
 
 function initialMode(): MapMode {
   return new URLSearchParams(window.location.search).get("map") === "guitars"
@@ -150,6 +160,8 @@ export default function App() {
   const [showFullDetail, setShowFullDetail] = useState(false);
   const [showStartPanel, setShowStartPanel] = useState(initialShowStartPanel);
   const [showMobileControls, setShowMobileControls] = useState(false);
+  const [layoutMode, setLayoutMode] = useState<LayoutMode>("organized");
+  const [layouts, setLayouts] = useState<GraphLayoutDataset>();
   const [detailNodes, setDetailNodes] = useState<GraphNode[]>([]);
   const [detailEdges, setDetailEdges] = useState<GraphEdge[]>([]);
   const [searchQuery, setSearchQuery] = useState("");
@@ -164,6 +176,11 @@ export default function App() {
   const nodeById = useMemo(
     () => new Map([...nodes, ...detailNodes].map((node) => [node.id, node])),
     [detailNodes, nodes],
+  );
+
+  const layoutPositions = useMemo(
+    () => layouts?.layouts[layoutMode]?.nodes,
+    [layoutMode, layouts],
   );
 
   const routes = useMemo(
@@ -182,6 +199,22 @@ export default function App() {
       }),
     [mode, nodeById],
   );
+
+  useEffect(() => {
+    let cancelled = false;
+    repository
+      .loadLayouts()
+      .then((layoutData) => {
+        if (!cancelled && layoutData) setLayouts(layoutData);
+      })
+      .catch(() => {
+        if (!cancelled) setLayouts(undefined);
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  }, []);
 
   useEffect(() => {
     let cancelled = false;
@@ -469,6 +502,8 @@ export default function App() {
           selectedId={selected?.id}
           routeNodeIds={activeRoute?.nodeIds}
           visibleTypes={visibleTypes}
+          layoutMode={layoutMode}
+          layoutPositions={layoutPositions}
           onSelect={handleMapSelect}
         />
       </Suspense>
@@ -530,6 +565,20 @@ export default function App() {
         </div>
 
         <div className="top-actions">
+          <label className="layout-control">
+            <span>Layout</span>
+            <select
+              value={layoutMode}
+              onChange={(event) => setLayoutMode(event.target.value as LayoutMode)}
+              aria-label="Map layout"
+            >
+              {LAYOUT_OPTIONS.map((option) => (
+                <option key={option.id} value={option.id}>
+                  {option.label}
+                </option>
+              ))}
+            </select>
+          </label>
           <button
             className="mobile-controls-toggle"
             type="button"

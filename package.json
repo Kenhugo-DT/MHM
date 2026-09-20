@@ -7,7 +7,7 @@
     "dev": "vite --config site/vite.config.ts",
     "build": "tsc -b site/tsconfig.json && vite build --config site/vite.config.ts",
     "preview": "vite preview --config site/vite.config.ts",
-    "migrate:data": "node brain/scripts/migrate-graph-data.mjs",
+    "migrate:data": "node brain/scripts/migrate-graph-data.mjs && node brain/scripts/generate-layouts.mjs",
     "check": "tsc -b site/tsconfig.json --pretty false",
     "brain:install-python": "node brain/scripts/run-python.mjs -m pip install -r brain/pipeline/requirements.txt",
     "brain:collect": "node brain/scripts/run-python.mjs brain/pipeline/sync.py",
@@ -33,6 +33,7 @@
     "brain:notes:seed-tags": "node brain/scripts/seed-obsidian-tags.mjs",
     "brain:learn": "node brain/scripts/learn-from-obsidian.mjs",
     "brain:organize": "node brain/scripts/analyze-organization.mjs",
+    "brain:layouts": "node brain/scripts/generate-layouts.mjs",
     "brain:python-check": "node brain/scripts/run-python.mjs -m py_compile brain/pipeline/sync.py brain/pipeline/import_graph.py brain/pipeline/process_inbox.py brain/pipeline/supabase_brain.py brain/pipeline/brain_db.py brain/pipeline/scout_agent.py brain/pipeline/promote_candidates.py brain/pipeline/queue_request.py brain/pipeline/candidate_quality.py",
     "brain:import": "node brain/scripts/run-python.mjs brain/pipeline/import_graph.py",
     "brain:audit": "node brain/scripts/audit-graph.mjs"
