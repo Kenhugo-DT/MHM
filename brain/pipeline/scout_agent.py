@@ -476,6 +476,20 @@ def write_run_summary(summary: dict[str, Any]) -> Path:
     return path
 
 
+def write_crash_summary(error: BaseException | str) -> None:
+    summary = {
+        "version": 1,
+        "createdAt": iso_now(),
+        "status": "crashed",
+        "errorType": type(error).__name__ if isinstance(error, BaseException) else "Error",
+        "error": str(error),
+        "argv": sys.argv[1:],
+    }
+    summary_path = write_run_summary(summary)
+    summary["summaryPath"] = str(summary_path.relative_to(REPO_ROOT)).replace("\\", "/")
+    print_json(summary)
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="Run the MHM research scout agent.")
     parser.add_argument(
@@ -590,4 +604,12 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except SystemExit as error:
+        if error.code not in (0, None):
+            write_crash_summary(error)
+        raise
+    except BaseException as error:
+        write_crash_summary(error)
+        raise

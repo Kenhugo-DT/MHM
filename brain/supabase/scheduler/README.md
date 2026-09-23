@@ -38,9 +38,10 @@ The schedule uses a catch-up watchdog:
 That means Mondays and Thursdays from 09:05 UTC, then every 15 minutes until
 23:50 UTC.
 
-The watchdog only triggers the agent once per UTC date. If Supabase or GitHub
-misses the exact 09:05 minute, the next watchdog tick can still dispatch the
-agent later the same day.
+The watchdog only accepts a run as done after GitHub's dispatch API returns a
+successful HTTP status for that UTC date. If the dispatch fails or the response
+never arrives, a later watchdog tick retries instead of silently marking the day
+as handled.
 
 ## What Happens
 
@@ -48,8 +49,8 @@ Supabase stores the GitHub token in Vault, creates a private helper function,
 then schedules a Cron job named `mhm-research-agent`.
 
 Each Cron run calls `mhm_private.trigger_research_agent_if_due(...)`. That
-function checks whether this Monday/Thursday run has already been dispatched.
-If not, it calls GitHub's workflow dispatch endpoint for:
+function checks whether this Monday/Thursday run has already been dispatched
+successfully. If not, it calls GitHub's workflow dispatch endpoint for:
 
 ```text
 Kenhugo-DT/MHM/.github/workflows/research-agent.yml
@@ -77,9 +78,19 @@ where jobname = 'mhm-research-agent';
 See Supabase trigger attempts:
 
 ```sql
-select *
-from mhm_private.agent_trigger_log
-order by requested_at desc
+select
+  trigger_log.id,
+  trigger_log.due_date,
+  trigger_log.requested_at,
+  trigger_log.request_id,
+  response.status_code,
+  response.timed_out,
+  response.error_msg,
+  response.content
+from mhm_private.agent_trigger_log trigger_log
+left join net._http_response response
+  on response.id = trigger_log.request_id
+order by trigger_log.requested_at desc
 limit 20;
 ```
 
