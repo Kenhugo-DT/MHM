@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-18T12:08:54.688Z",
+  "generatedAt": "2026-09-23T14:41:37.990Z",
   "source": "approved graph + learning model + layout analysis",
   "graph": {
     "nodes": 561,
     "edges": 746,
-    "generatedAt": "2026-09-18T11:56:17.914Z"
+    "generatedAt": "2026-09-23T14:41:37.898Z"
   },
   "layoutPolicy": {
     "target": "organized chaos",
@@ -14,6 +14,3758 @@
       "Bridge nodes may bleed toward secondary zones.",
       "Dense genre clusters should use local constellation spacing rather than rows.",
       "Research should prioritize isolated hubs, bridge nodes and zones with low average source quality."
+    ]
+  },
+  "layoutIntelligence": {
+    "version": 1,
+    "generatedAt": "2026-09-23T14:41:37.990Z",
+    "intent": "organized chaos with readable labels and porous genre boundaries",
+    "global": {
+      "targetLabelState": "close-but-readable",
+      "baseSpacingMultiplier": 1.08,
+      "allowZoneBleed": true,
+      "maxRecommendedOverlapSeverity": 0.18
+    },
+    "zones": {
+      "roots-blues": {
+        "zone": "roots-blues",
+        "label": "ROOTS / BLUES",
+        "pressureScore": 0.344,
+        "density": 2.638,
+        "overlapPerNode": 0.103,
+        "bridgeRatio": 0.513,
+        "spacingMultiplier": 1.224,
+        "expansion": {
+          "x": 205,
+          "y": 167
+        },
+        "bridgeBleed": 663,
+        "strategy": "soft-overlap-bridges",
+        "bridgeTargets": [],
+        "readableChaos": true
+      },
+      "rock-circuit": {
+        "zone": "rock-circuit",
+        "label": "ROCK CIRCUIT",
+        "pressureScore": 0.639,
+        "density": 3.257,
+        "overlapPerNode": 0.036,
+        "bridgeRatio": 0.118,
+        "spacingMultiplier": 1.348,
+        "expansion": {
+          "x": 525,
+          "y": 453
+        },
+        "bridgeBleed": 377,
+        "strategy": "preserve-loose-cluster",
+        "bridgeTargets": [],
+        "readableChaos": true
+      },
+      "psychedelia-prog": {
+        "zone": "psychedelia-prog",
+        "label": "PSYCHEDELIA / PROG",
+        "pressureScore": 0.285,
+        "density": 2.002,
+        "overlapPerNode": 0,
+        "bridgeRatio": 0.405,
+        "spacingMultiplier": 1.2,
+        "expansion": {
+          "x": 300,
+          "y": 121
+        },
+        "bridgeBleed": 560,
+        "strategy": "soft-overlap-bridges",
+        "bridgeTargets": [],
+        "readableChaos": true
+      },
+      "hard-rock-metal": {
+        "zone": "hard-rock-metal",
+        "label": "HARD ROCK / METAL",
+        "pressureScore": 0.479,
+        "density": 1.984,
+        "overlapPerNode": 0,
+        "bridgeRatio": 0.16,
+        "spacingMultiplier": 1.281,
+        "expansion": {
+          "x": 556,
+          "y": 369
+        },
+        "bridgeBleed": 384,
+        "strategy": "preserve-loose-cluster",
+        "bridgeTargets": [],
+        "readableChaos": true
+      },
+      "punk-alt": {
+        "zone": "punk-alt",
+        "label": "PUNK / ALTERNATIVE",
+        "pressureScore": 0.419,
+        "density": 2.323,
+        "overlapPerNode": 0,
+        "bridgeRatio": 0.27,
+        "spacingMultiplier": 1.256,
+        "expansion": {
+          "x": 465,
+          "y": 193
+        },
+        "bridgeBleed": 468,
+        "strategy": "soft-overlap-bridges",
+        "bridgeTargets": [],
+        "readableChaos": true
+      },
+      "hip-hop-rap": {
+        "zone": "hip-hop-rap",
+        "label": "HIP-HOP / RAP",
+        "pressureScore": 0.208,
+        "density": 1.169,
+        "overlapPerNode": 0,
+        "bridgeRatio": 0.167,
+        "spacingMultiplier": 1.167,
+        "expansion": {
+          "x": 219,
+          "y": 143
+        },
+        "bridgeBleed": 341,
+        "strategy": "preserve-loose-cluster",
+        "bridgeTargets": [],
+        "readableChaos": true
+      },
+      "folk-country-vise": {
+        "zone": "folk-country-vise",
+        "label": "FOLK / COUNTRY / VISE",
+        "pressureScore": 0.183,
+        "density": 1.033,
+        "overlapPerNode": 0,
+        "bridgeRatio": 0.36,
+        "spacingMultiplier": 1.157,
+        "expansion": {
+          "x": 260,
+          "y": 131
+        },
+        "bridgeBleed": 503,
+        "strategy": "soft-overlap-bridges",
+        "bridgeTargets": [],
+        "readableChaos": true
+      },
+      "guitar-workshop": {
+        "zone": "guitar-workshop",
+        "label": "GUITAR WORKSHOP",
+        "pressureScore": 0.461,
+        "density": 2.355,
+        "overlapPerNode": 0.059,
+        "bridgeRatio": 0.294,
+        "spacingMultiplier": 1.274,
+        "expansion": {
+          "x": 276,
+          "y": 327
+        },
+        "bridgeBleed": 496,
+        "strategy": "soft-overlap-bridges",
+        "bridgeTargets": [],
+        "readableChaos": true
+      }
+    },
+    "bridgeNodes": {
+      "311": {
+        "id": "311",
+        "label": "311",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "punk-alt",
+          "hip-hop-rap",
+          "hard-rock-metal"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: punk-to-rock, hip-hop-crossovers."
+      },
+      "999": {
+        "id": "999",
+        "label": "999",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "punk-alt",
+          "hip-hop-rap",
+          "hard-rock-metal"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: punk-to-rock, hip-hop-crossovers."
+      },
+      "rock-and-roll": {
+        "id": "rock-and-roll",
+        "label": "Rock and roll",
+        "sourceZone": "roots-blues",
+        "pullZones": [
+          "rock-circuit",
+          "guitar-workshop"
+        ],
+        "pullStrength": 0.473,
+        "reason": "Connected to multiple zones."
+      },
+      "rock": {
+        "id": "rock",
+        "label": "Rock",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "roots-blues",
+          "psychedelia-prog",
+          "hard-rock-metal",
+          "punk-alt",
+          "guitar-workshop",
+          "folk-country-vise",
+          "hip-hop-rap"
+        ],
+        "pullStrength": 0.58,
+        "reason": "Bridge policy match: rock-to-metal, punk-to-rock, hip-hop-crossovers."
+      },
+      "progressive-rock": {
+        "id": "progressive-rock",
+        "label": "Progressive rock",
+        "sourceZone": "psychedelia-prog",
+        "pullZones": [
+          "rock-circuit",
+          "guitar-workshop"
+        ],
+        "pullStrength": 0.473,
+        "reason": "Connected to multiple zones."
+      },
+      "hard-rock": {
+        "id": "hard-rock",
+        "label": "Hard rock",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "rock-circuit",
+          "roots-blues",
+          "guitar-workshop",
+          "psychedelia-prog",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.58,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "heavy-metal": {
+        "id": "heavy-metal",
+        "label": "Heavy metal",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "guitar-workshop",
+          "psychedelia-prog"
+        ],
+        "pullStrength": 0.473,
+        "reason": "Connected to multiple zones."
+      },
+      "punk": {
+        "id": "punk",
+        "label": "Punk rock",
+        "sourceZone": "punk-alt",
+        "pullZones": [
+          "rock-circuit",
+          "hip-hop-rap",
+          "hard-rock-metal"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: punk-to-rock, hip-hop-crossovers."
+      },
+      "folk": {
+        "id": "folk",
+        "label": "Folk",
+        "sourceZone": "folk-country-vise",
+        "pullZones": [
+          "roots-blues",
+          "guitar-workshop"
+        ],
+        "pullStrength": 0.473,
+        "reason": "Connected to multiple zones."
+      },
+      "country": {
+        "id": "country",
+        "label": "Country",
+        "sourceZone": "folk-country-vise",
+        "pullZones": [
+          "roots-blues",
+          "guitar-workshop"
+        ],
+        "pullStrength": 0.473,
+        "reason": "Connected to multiple zones."
+      },
+      "jazz-fusion": {
+        "id": "jazz-fusion",
+        "label": "Jazz fusion",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "psychedelia-prog",
+          "roots-blues",
+          "guitar-workshop"
+        ],
+        "pullStrength": 0.58,
+        "reason": "Connected to multiple zones."
+      },
+      "bb-king": {
+        "id": "bb-king",
+        "label": "B.B. King",
+        "sourceZone": "roots-blues",
+        "pullZones": [
+          "guitar-workshop"
+        ],
+        "pullStrength": 0.366,
+        "reason": "Connected to multiple zones."
+      },
+      "lead-belly": {
+        "id": "lead-belly",
+        "label": "Lead Belly",
+        "sourceZone": "roots-blues",
+        "pullZones": [
+          "folk-country-vise",
+          "guitar-workshop"
+        ],
+        "pullStrength": 0.572,
+        "reason": "Connected to multiple zones."
+      },
+      "chuck-berry": {
+        "id": "chuck-berry",
+        "label": "Chuck Berry",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "roots-blues",
+          "guitar-workshop"
+        ],
+        "pullStrength": 0.523,
+        "reason": "Connected to multiple zones."
+      },
+      "elvis-presley": {
+        "id": "elvis-presley",
+        "label": "Elvis Presley",
+        "sourceZone": "roots-blues",
+        "pullZones": [
+          "folk-country-vise"
+        ],
+        "pullStrength": 0.415,
+        "reason": "Connected to multiple zones."
+      },
+      "jimi-hendrix": {
+        "id": "jimi-hendrix",
+        "label": "Jimi Hendrix",
+        "sourceZone": "psychedelia-prog",
+        "pullZones": [
+          "guitar-workshop",
+          "roots-blues"
+        ],
+        "pullStrength": 0.523,
+        "reason": "Connected to multiple zones."
+      },
+      "stevie-ray-vaughan": {
+        "id": "stevie-ray-vaughan",
+        "label": "Stevie Ray Vaughan",
+        "sourceZone": "roots-blues",
+        "pullZones": [
+          "guitar-workshop",
+          "psychedelia-prog"
+        ],
+        "pullStrength": 0.523,
+        "reason": "Connected to multiple zones."
+      },
+      "eric-clapton": {
+        "id": "eric-clapton",
+        "label": "Eric Clapton",
+        "sourceZone": "roots-blues",
+        "pullZones": [
+          "guitar-workshop"
+        ],
+        "pullStrength": 0.366,
+        "reason": "Connected to multiple zones."
+      },
+      "eddie-van-halen": {
+        "id": "eddie-van-halen",
+        "label": "Eddie Van Halen",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "guitar-workshop",
+          "roots-blues"
+        ],
+        "pullStrength": 0.473,
+        "reason": "Connected to multiple zones."
+      },
+      "frank-zappa": {
+        "id": "frank-zappa",
+        "label": "Frank Zappa",
+        "sourceZone": "psychedelia-prog",
+        "pullZones": [
+          "rock-circuit",
+          "guitar-workshop"
+        ],
+        "pullStrength": 0.572,
+        "reason": "Connected to multiple zones."
+      },
+      "randy-rhoads": {
+        "id": "randy-rhoads",
+        "label": "Randy Rhoads",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "guitar-workshop"
+        ],
+        "pullStrength": 0.366,
+        "reason": "Connected to multiple zones."
+      },
+      "jimmy-page": {
+        "id": "jimmy-page",
+        "label": "Jimmy Page",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "roots-blues",
+          "guitar-workshop"
+        ],
+        "pullStrength": 0.473,
+        "reason": "Connected to multiple zones."
+      },
+      "george-harrison": {
+        "id": "george-harrison",
+        "label": "George Harrison",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "psychedelia-prog",
+          "guitar-workshop"
+        ],
+        "pullStrength": 0.473,
+        "reason": "Connected to multiple zones."
+      },
+      "bob-dylan": {
+        "id": "bob-dylan",
+        "label": "Bob Dylan",
+        "sourceZone": "roots-blues",
+        "pullZones": [
+          "folk-country-vise",
+          "rock-circuit",
+          "guitar-workshop"
+        ],
+        "pullStrength": 0.58,
+        "reason": "Connected to multiple zones."
+      },
+      "johnny-cash": {
+        "id": "johnny-cash",
+        "label": "Johnny Cash",
+        "sourceZone": "folk-country-vise",
+        "pullZones": [
+          "guitar-workshop"
+        ],
+        "pullStrength": 0.366,
+        "reason": "Connected to multiple zones."
+      },
+      "willie-nelson": {
+        "id": "willie-nelson",
+        "label": "Willie Nelson",
+        "sourceZone": "folk-country-vise",
+        "pullZones": [
+          "guitar-workshop"
+        ],
+        "pullStrength": 0.366,
+        "reason": "Connected to multiple zones."
+      },
+      "chet-atkins": {
+        "id": "chet-atkins",
+        "label": "Chet Atkins",
+        "sourceZone": "folk-country-vise",
+        "pullZones": [
+          "guitar-workshop"
+        ],
+        "pullStrength": 0.366,
+        "reason": "Connected to multiple zones."
+      },
+      "john-mayer": {
+        "id": "john-mayer",
+        "label": "John Mayer",
+        "sourceZone": "roots-blues",
+        "pullZones": [
+          "guitar-workshop"
+        ],
+        "pullStrength": 0.366,
+        "reason": "Connected to multiple zones."
+      },
+      "oystein-sunde": {
+        "id": "oystein-sunde",
+        "label": "Øystein Sunde",
+        "sourceZone": "folk-country-vise",
+        "pullZones": [
+          "guitar-workshop"
+        ],
+        "pullStrength": 0.366,
+        "reason": "Connected to multiple zones."
+      },
+      "prince": {
+        "id": "prince",
+        "label": "Prince",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "guitar-workshop",
+          "hip-hop-rap",
+          "punk-alt",
+          "hard-rock-metal"
+        ],
+        "pullStrength": 0.58,
+        "reason": "Bridge policy match: hip-hop-crossovers."
+      },
+      "the-beatles": {
+        "id": "the-beatles",
+        "label": "The Beatles",
+        "sourceZone": "psychedelia-prog",
+        "pullZones": [
+          "rock-circuit"
+        ],
+        "pullStrength": 0.415,
+        "reason": "Connected to multiple zones."
+      },
+      "led-zeppelin": {
+        "id": "led-zeppelin",
+        "label": "Led Zeppelin",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "rock-circuit",
+          "roots-blues",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.58,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "black-sabbath": {
+        "id": "black-sabbath",
+        "label": "Black Sabbath",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "rock-circuit",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.58,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "van-halen": {
+        "id": "van-halen",
+        "label": "Van Halen",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "rock-circuit"
+        ],
+        "pullStrength": 0.351,
+        "reason": "Bridge policy match: rock-to-metal."
+      },
+      "metallica": {
+        "id": "metallica",
+        "label": "Metallica",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "punk-alt",
+          "hip-hop-rap",
+          "rock-circuit"
+        ],
+        "pullStrength": 0.482,
+        "reason": "Bridge policy match: hip-hop-crossovers."
+      },
+      "cream": {
+        "id": "cream",
+        "label": "Cream",
+        "sourceZone": "roots-blues",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt",
+          "rock-circuit"
+        ],
+        "pullStrength": 0.58,
+        "reason": "Bridge policy match: hip-hop-crossovers."
+      },
+      "the-yardbirds": {
+        "id": "the-yardbirds",
+        "label": "The Yardbirds",
+        "sourceZone": "roots-blues",
+        "pullZones": [
+          "hard-rock-metal",
+          "rock-circuit",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.58,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "fender-stratocaster": {
+        "id": "fender-stratocaster",
+        "label": "Fender Stratocaster",
+        "sourceZone": "guitar-workshop",
+        "pullZones": [
+          "psychedelia-prog",
+          "roots-blues",
+          "rock-circuit",
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.58,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "fender-telecaster": {
+        "id": "fender-telecaster",
+        "label": "Fender Telecaster",
+        "sourceZone": "guitar-workshop",
+        "pullZones": [
+          "rock-circuit",
+          "folk-country-vise",
+          "psychedelia-prog"
+        ],
+        "pullStrength": 0.58,
+        "reason": "Connected to multiple zones."
+      },
+      "gibson-les-paul": {
+        "id": "gibson-les-paul",
+        "label": "Gibson Les Paul",
+        "sourceZone": "guitar-workshop",
+        "pullZones": [
+          "roots-blues",
+          "hard-rock-metal",
+          "punk-alt",
+          "hip-hop-rap",
+          "rock-circuit"
+        ],
+        "pullStrength": 0.58,
+        "reason": "Bridge policy match: hip-hop-crossovers."
+      },
+      "gibson-sg": {
+        "id": "gibson-sg",
+        "label": "Gibson SG",
+        "sourceZone": "guitar-workshop",
+        "pullZones": [
+          "psychedelia-prog",
+          "hard-rock-metal",
+          "roots-blues",
+          "rock-circuit",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.58,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "gibson-es-355-lucille": {
+        "id": "gibson-es-355-lucille",
+        "label": "Gibson ES-355 Lucille",
+        "sourceZone": "guitar-workshop",
+        "pullZones": [
+          "roots-blues",
+          "rock-circuit"
+        ],
+        "pullStrength": 0.523,
+        "reason": "Connected to multiple zones."
+      },
+      "gibson-flying-v": {
+        "id": "gibson-flying-v",
+        "label": "Gibson Flying V",
+        "sourceZone": "guitar-workshop",
+        "pullZones": [
+          "hard-rock-metal",
+          "roots-blues"
+        ],
+        "pullStrength": 0.523,
+        "reason": "Connected to multiple zones."
+      },
+      "martin-d28": {
+        "id": "martin-d28",
+        "label": "Martin D-28",
+        "sourceZone": "guitar-workshop",
+        "pullZones": [
+          "hard-rock-metal",
+          "roots-blues",
+          "folk-country-vise"
+        ],
+        "pullStrength": 0.58,
+        "reason": "Connected to multiple zones."
+      },
+      "gibson-j45": {
+        "id": "gibson-j45",
+        "label": "Gibson J-45",
+        "sourceZone": "guitar-workshop",
+        "pullZones": [
+          "folk-country-vise"
+        ],
+        "pullStrength": 0.366,
+        "reason": "Connected to multiple zones."
+      },
+      "trigger": {
+        "id": "trigger",
+        "label": "Trigger",
+        "sourceZone": "guitar-workshop",
+        "pullZones": [
+          "folk-country-vise"
+        ],
+        "pullStrength": 0.366,
+        "reason": "Connected to multiple zones."
+      },
+      "rickenbacker-360-12": {
+        "id": "rickenbacker-360-12",
+        "label": "Rickenbacker 360/12",
+        "sourceZone": "guitar-workshop",
+        "pullZones": [
+          "punk-alt",
+          "rock-circuit",
+          "hip-hop-rap",
+          "hard-rock-metal"
+        ],
+        "pullStrength": 0.58,
+        "reason": "Bridge policy match: punk-to-rock, hip-hop-crossovers."
+      },
+      "gretsch-6120": {
+        "id": "gretsch-6120",
+        "label": "Gretsch 6120",
+        "sourceZone": "guitar-workshop",
+        "pullZones": [
+          "rock-circuit",
+          "folk-country-vise",
+          "roots-blues"
+        ],
+        "pullStrength": 0.58,
+        "reason": "Connected to multiple zones."
+      },
+      "blues-rock": {
+        "id": "blues-rock",
+        "label": "Blues rock",
+        "sourceZone": "roots-blues",
+        "pullZones": [
+          "rock-circuit",
+          "guitar-workshop"
+        ],
+        "pullStrength": 0.473,
+        "reason": "Connected to multiple zones."
+      },
+      "southern-rock": {
+        "id": "southern-rock",
+        "label": "Southern rock",
+        "sourceZone": "roots-blues",
+        "pullZones": [
+          "folk-country-vise",
+          "hard-rock-metal"
+        ],
+        "pullStrength": 0.473,
+        "reason": "Connected to multiple zones."
+      },
+      "glam-rock": {
+        "id": "glam-rock",
+        "label": "Glam rock",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "guitar-workshop",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.58,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "alternative-rock": {
+        "id": "alternative-rock",
+        "label": "Alternative rock",
+        "sourceZone": "punk-alt",
+        "pullZones": [
+          "rock-circuit",
+          "psychedelia-prog",
+          "guitar-workshop",
+          "hip-hop-rap",
+          "hard-rock-metal"
+        ],
+        "pullStrength": 0.58,
+        "reason": "Bridge policy match: punk-to-rock, hip-hop-crossovers."
+      },
+      "progressive-metal": {
+        "id": "progressive-metal",
+        "label": "Progressive metal",
+        "sourceZone": "psychedelia-prog",
+        "pullZones": [
+          "hard-rock-metal",
+          "guitar-workshop"
+        ],
+        "pullStrength": 0.473,
+        "reason": "Connected to multiple zones."
+      },
+      "singer-songwriter": {
+        "id": "singer-songwriter",
+        "label": "Singer-songwriter",
+        "sourceZone": "folk-country-vise",
+        "pullZones": [
+          "rock-circuit",
+          "guitar-workshop"
+        ],
+        "pullStrength": 0.473,
+        "reason": "Connected to multiple zones."
+      },
+      "jazz": {
+        "id": "jazz",
+        "label": "Jazz",
+        "sourceZone": "psychedelia-prog",
+        "pullZones": [
+          "rock-circuit",
+          "folk-country-vise",
+          "guitar-workshop"
+        ],
+        "pullStrength": 0.58,
+        "reason": "Connected to multiple zones."
+      },
+      "buddy-guy": {
+        "id": "buddy-guy",
+        "label": "Buddy Guy",
+        "sourceZone": "roots-blues",
+        "pullZones": [
+          "guitar-workshop",
+          "psychedelia-prog"
+        ],
+        "pullStrength": 0.523,
+        "reason": "Connected to multiple zones."
+      },
+      "albert-king": {
+        "id": "albert-king",
+        "label": "Albert King",
+        "sourceZone": "roots-blues",
+        "pullZones": [
+          "guitar-workshop"
+        ],
+        "pullStrength": 0.366,
+        "reason": "Connected to multiple zones."
+      },
+      "duane-allman": {
+        "id": "duane-allman",
+        "label": "Duane Allman",
+        "sourceZone": "roots-blues",
+        "pullZones": [
+          "guitar-workshop"
+        ],
+        "pullStrength": 0.366,
+        "reason": "Connected to multiple zones."
+      },
+      "dickey-betts": {
+        "id": "dickey-betts",
+        "label": "Dickey Betts",
+        "sourceZone": "roots-blues",
+        "pullZones": [
+          "guitar-workshop"
+        ],
+        "pullStrength": 0.366,
+        "reason": "Connected to multiple zones."
+      },
+      "derek-trucks": {
+        "id": "derek-trucks",
+        "label": "Derek Trucks",
+        "sourceZone": "roots-blues",
+        "pullZones": [
+          "guitar-workshop"
+        ],
+        "pullStrength": 0.366,
+        "reason": "Connected to multiple zones."
+      },
+      "peter-green": {
+        "id": "peter-green",
+        "label": "Peter Green",
+        "sourceZone": "roots-blues",
+        "pullZones": [
+          "guitar-workshop"
+        ],
+        "pullStrength": 0.366,
+        "reason": "Connected to multiple zones."
+      },
+      "lindsey-buckingham": {
+        "id": "lindsey-buckingham",
+        "label": "Lindsey Buckingham",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "roots-blues",
+          "folk-country-vise"
+        ],
+        "pullStrength": 0.572,
+        "reason": "Connected to multiple zones."
+      },
+      "keith-richards": {
+        "id": "keith-richards",
+        "label": "Keith Richards",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "roots-blues",
+          "guitar-workshop"
+        ],
+        "pullStrength": 0.523,
+        "reason": "Connected to multiple zones."
+      },
+      "jeff-beck": {
+        "id": "jeff-beck",
+        "label": "Jeff Beck",
+        "sourceZone": "roots-blues",
+        "pullZones": [
+          "rock-circuit",
+          "guitar-workshop"
+        ],
+        "pullStrength": 0.572,
+        "reason": "Connected to multiple zones."
+      },
+      "pete-townshend": {
+        "id": "pete-townshend",
+        "label": "Pete Townshend",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "psychedelia-prog",
+          "guitar-workshop"
+        ],
+        "pullStrength": 0.523,
+        "reason": "Connected to multiple zones."
+      },
+      "brian-setzer": {
+        "id": "brian-setzer",
+        "label": "Brian Setzer",
+        "sourceZone": "roots-blues",
+        "pullZones": [
+          "guitar-workshop"
+        ],
+        "pullStrength": 0.366,
+        "reason": "Connected to multiple zones."
+      },
+      "dick-dale": {
+        "id": "dick-dale",
+        "label": "Dick Dale",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "guitar-workshop"
+        ],
+        "pullStrength": 0.366,
+        "reason": "Connected to multiple zones."
+      },
+      "steve-vai": {
+        "id": "steve-vai",
+        "label": "Steve Vai",
+        "sourceZone": "psychedelia-prog",
+        "pullZones": [
+          "guitar-workshop",
+          "rock-circuit"
+        ],
+        "pullStrength": 0.523,
+        "reason": "Connected to multiple zones."
+      },
+      "joe-satriani": {
+        "id": "joe-satriani",
+        "label": "Joe Satriani",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "psychedelia-prog",
+          "guitar-workshop"
+        ],
+        "pullStrength": 0.523,
+        "reason": "Connected to multiple zones."
+      },
+      "yngwie-malmsteen": {
+        "id": "yngwie-malmsteen",
+        "label": "Yngwie Malmsteen",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "guitar-workshop"
+        ],
+        "pullStrength": 0.366,
+        "reason": "Connected to multiple zones."
+      },
+      "slash": {
+        "id": "slash",
+        "label": "Slash",
+        "sourceZone": "roots-blues",
+        "pullZones": [
+          "hard-rock-metal",
+          "guitar-workshop"
+        ],
+        "pullStrength": 0.523,
+        "reason": "Connected to multiple zones."
+      },
+      "dave-mustaine": {
+        "id": "dave-mustaine",
+        "label": "Dave Mustaine",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "guitar-workshop"
+        ],
+        "pullStrength": 0.366,
+        "reason": "Connected to multiple zones."
+      },
+      "zakk-wylde": {
+        "id": "zakk-wylde",
+        "label": "Zakk Wylde",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "guitar-workshop"
+        ],
+        "pullStrength": 0.366,
+        "reason": "Connected to multiple zones."
+      },
+      "wes-montgomery": {
+        "id": "wes-montgomery",
+        "label": "Wes Montgomery",
+        "sourceZone": "psychedelia-prog",
+        "pullZones": [
+          "rock-circuit"
+        ],
+        "pullStrength": 0.415,
+        "reason": "Connected to multiple zones."
+      },
+      "joe-pass": {
+        "id": "joe-pass",
+        "label": "Joe Pass",
+        "sourceZone": "folk-country-vise",
+        "pullZones": [
+          "psychedelia-prog",
+          "guitar-workshop"
+        ],
+        "pullStrength": 0.523,
+        "reason": "Connected to multiple zones."
+      },
+      "django-reinhardt": {
+        "id": "django-reinhardt",
+        "label": "Django Reinhardt",
+        "sourceZone": "folk-country-vise",
+        "pullZones": [
+          "psychedelia-prog",
+          "roots-blues"
+        ],
+        "pullStrength": 0.523,
+        "reason": "Connected to multiple zones."
+      },
+      "john-mclaughlin": {
+        "id": "john-mclaughlin",
+        "label": "John McLaughlin",
+        "sourceZone": "psychedelia-prog",
+        "pullZones": [
+          "rock-circuit"
+        ],
+        "pullStrength": 0.465,
+        "reason": "Connected to multiple zones."
+      },
+      "the-rolling-stones": {
+        "id": "the-rolling-stones",
+        "label": "The Rolling Stones",
+        "sourceZone": "roots-blues",
+        "pullZones": [
+          "rock-circuit"
+        ],
+        "pullStrength": 0.415,
+        "reason": "Connected to multiple zones."
+      },
+      "the-who": {
+        "id": "the-who",
+        "label": "The Who",
+        "sourceZone": "psychedelia-prog",
+        "pullZones": [
+          "rock-circuit"
+        ],
+        "pullStrength": 0.415,
+        "reason": "Connected to multiple zones."
+      },
+      "queen": {
+        "id": "queen",
+        "label": "Queen",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "psychedelia-prog",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.58,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "deep-purple": {
+        "id": "deep-purple",
+        "label": "Deep Purple",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "rock-circuit"
+        ],
+        "pullStrength": 0.4,
+        "reason": "Bridge policy match: rock-to-metal."
+      },
+      "acdc": {
+        "id": "acdc",
+        "label": "AC/DC",
+        "sourceZone": "roots-blues",
+        "pullZones": [
+          "hard-rock-metal",
+          "rock-circuit"
+        ],
+        "pullStrength": 0.557,
+        "reason": "Bridge policy match: rock-to-metal."
+      },
+      "guns-n-roses": {
+        "id": "guns-n-roses",
+        "label": "Guns N' Roses",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "roots-blues",
+          "punk-alt",
+          "hip-hop-rap",
+          "rock-circuit"
+        ],
+        "pullStrength": 0.58,
+        "reason": "Bridge policy match: hip-hop-crossovers."
+      },
+      "allman-brothers-band": {
+        "id": "allman-brothers-band",
+        "label": "The Allman Brothers Band",
+        "sourceZone": "roots-blues",
+        "pullZones": [
+          "folk-country-vise"
+        ],
+        "pullStrength": 0.366,
+        "reason": "Connected to multiple zones."
+      },
+      "rush": {
+        "id": "rush",
+        "label": "Rush",
+        "sourceZone": "psychedelia-prog",
+        "pullZones": [
+          "hard-rock-metal"
+        ],
+        "pullStrength": 0.415,
+        "reason": "Connected to multiple zones."
+      },
+      "santana-band": {
+        "id": "santana-band",
+        "label": "Santana",
+        "sourceZone": "roots-blues",
+        "pullZones": [
+          "rock-circuit"
+        ],
+        "pullStrength": 0.415,
+        "reason": "Connected to multiple zones."
+      },
+      "radiohead": {
+        "id": "radiohead",
+        "label": "Radiohead",
+        "sourceZone": "psychedelia-prog",
+        "pullZones": [
+          "punk-alt"
+        ],
+        "pullStrength": 0.415,
+        "reason": "Connected to multiple zones."
+      },
+      "judas-priest": {
+        "id": "judas-priest",
+        "label": "Judas Priest",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "guitar-workshop",
+          "hip-hop-rap",
+          "punk-alt",
+          "rock-circuit"
+        ],
+        "pullStrength": 0.58,
+        "reason": "Bridge policy match: hip-hop-crossovers."
+      },
+      "brian-may-red-special": {
+        "id": "brian-may-red-special",
+        "label": "Brian May Red Special",
+        "sourceZone": "guitar-workshop",
+        "pullZones": [
+          "rock-circuit"
+        ],
+        "pullStrength": 0.366,
+        "reason": "Connected to multiple zones."
+      },
+      "gibson-es-335": {
+        "id": "gibson-es-335",
+        "label": "Gibson ES-335",
+        "sourceZone": "guitar-workshop",
+        "pullZones": [
+          "psychedelia-prog",
+          "roots-blues"
+        ],
+        "pullStrength": 0.572,
+        "reason": "Connected to multiple zones."
+      },
+      "gibson-explorer": {
+        "id": "gibson-explorer",
+        "label": "Gibson Explorer",
+        "sourceZone": "guitar-workshop",
+        "pullZones": [
+          "punk-alt",
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "rock-circuit"
+        ],
+        "pullStrength": 0.58,
+        "reason": "Bridge policy match: hip-hop-crossovers."
+      },
+      "gibson-firebird": {
+        "id": "gibson-firebird",
+        "label": "Gibson Firebird",
+        "sourceZone": "guitar-workshop",
+        "pullZones": [
+          "roots-blues"
+        ],
+        "pullStrength": 0.366,
+        "reason": "Connected to multiple zones."
+      },
+      "gibson-eds-1275": {
+        "id": "gibson-eds-1275",
+        "label": "Gibson EDS-1275",
+        "sourceZone": "guitar-workshop",
+        "pullZones": [
+          "hard-rock-metal",
+          "psychedelia-prog"
+        ],
+        "pullStrength": 0.572,
+        "reason": "Connected to multiple zones."
+      },
+      "fender-esquire": {
+        "id": "fender-esquire",
+        "label": "Fender Esquire",
+        "sourceZone": "guitar-workshop",
+        "pullZones": [
+          "roots-blues",
+          "folk-country-vise"
+        ],
+        "pullStrength": 0.572,
+        "reason": "Connected to multiple zones."
+      },
+      "fender-mustang": {
+        "id": "fender-mustang",
+        "label": "Fender Mustang",
+        "sourceZone": "guitar-workshop",
+        "pullZones": [
+          "punk-alt"
+        ],
+        "pullStrength": 0.415,
+        "reason": "Connected to multiple zones."
+      },
+      "prs-custom-24": {
+        "id": "prs-custom-24",
+        "label": "PRS Custom 24",
+        "sourceZone": "guitar-workshop",
+        "pullZones": [
+          "rock-circuit",
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.58,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "prs-santana": {
+        "id": "prs-santana",
+        "label": "PRS Santana",
+        "sourceZone": "guitar-workshop",
+        "pullZones": [
+          "roots-blues",
+          "rock-circuit"
+        ],
+        "pullStrength": 0.572,
+        "reason": "Connected to multiple zones."
+      },
+      "ibanez-rg": {
+        "id": "ibanez-rg",
+        "label": "Ibanez RG",
+        "sourceZone": "guitar-workshop",
+        "pullZones": [
+          "psychedelia-prog",
+          "hard-rock-metal"
+        ],
+        "pullStrength": 0.572,
+        "reason": "Connected to multiple zones."
+      },
+      "ibanez-js": {
+        "id": "ibanez-js",
+        "label": "Ibanez JS",
+        "sourceZone": "guitar-workshop",
+        "pullZones": [
+          "rock-circuit"
+        ],
+        "pullStrength": 0.366,
+        "reason": "Connected to multiple zones."
+      },
+      "jackson-rhoads": {
+        "id": "jackson-rhoads",
+        "label": "Jackson Rhoads",
+        "sourceZone": "guitar-workshop",
+        "pullZones": [
+          "hard-rock-metal"
+        ],
+        "pullStrength": 0.366,
+        "reason": "Connected to multiple zones."
+      },
+      "jackson-soloist": {
+        "id": "jackson-soloist",
+        "label": "Jackson Soloist",
+        "sourceZone": "guitar-workshop",
+        "pullZones": [
+          "hard-rock-metal"
+        ],
+        "pullStrength": 0.366,
+        "reason": "Connected to multiple zones."
+      },
+      "charvel-san-dimas": {
+        "id": "charvel-san-dimas",
+        "label": "Charvel San Dimas",
+        "sourceZone": "guitar-workshop",
+        "pullZones": [
+          "hard-rock-metal"
+        ],
+        "pullStrength": 0.366,
+        "reason": "Connected to multiple zones."
+      },
+      "music-man-axis": {
+        "id": "music-man-axis",
+        "label": "Music Man Axis",
+        "sourceZone": "guitar-workshop",
+        "pullZones": [
+          "hard-rock-metal"
+        ],
+        "pullStrength": 0.366,
+        "reason": "Connected to multiple zones."
+      },
+      "yamaha-sg": {
+        "id": "yamaha-sg",
+        "label": "Yamaha SG",
+        "sourceZone": "guitar-workshop",
+        "pullZones": [
+          "rock-circuit"
+        ],
+        "pullStrength": 0.366,
+        "reason": "Connected to multiple zones."
+      },
+      "taylor-814ce": {
+        "id": "taylor-814ce",
+        "label": "Taylor 814ce",
+        "sourceZone": "guitar-workshop",
+        "pullZones": [
+          "folk-country-vise"
+        ],
+        "pullStrength": 0.366,
+        "reason": "Connected to multiple zones."
+      },
+      "guild-f-512": {
+        "id": "guild-f-512",
+        "label": "Guild F-512",
+        "sourceZone": "guitar-workshop",
+        "pullZones": [
+          "folk-country-vise"
+        ],
+        "pullStrength": 0.366,
+        "reason": "Connected to multiple zones."
+      },
+      "danelectro-3021": {
+        "id": "danelectro-3021",
+        "label": "Danelectro 3021",
+        "sourceZone": "guitar-workshop",
+        "pullZones": [
+          "punk-alt"
+        ],
+        "pullStrength": 0.366,
+        "reason": "Connected to multiple zones."
+      },
+      "anathema-band": {
+        "id": "anathema-band",
+        "label": "Anathema (band)",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "psychedelia-prog"
+        ],
+        "pullStrength": 0.415,
+        "reason": "Connected to multiple zones."
+      },
+      "anthrax-american-band": {
+        "id": "anthrax-american-band",
+        "label": "Anthrax (American band)",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "psychedelia-prog",
+          "punk-alt",
+          "hip-hop-rap",
+          "rock-circuit"
+        ],
+        "pullStrength": 0.58,
+        "reason": "Bridge policy match: rock-to-metal, punk-to-rock, hip-hop-crossovers."
+      },
+      "dio": {
+        "id": "dio",
+        "label": "Dio",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "rock-circuit",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "annihilator": {
+        "id": "annihilator",
+        "label": "Annihilator",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "rock-circuit",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.527,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "as-i-lay-dying": {
+        "id": "as-i-lay-dying",
+        "label": "As I Lay Dying",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "punk-alt",
+          "hip-hop-rap",
+          "rock-circuit"
+        ],
+        "pullStrength": 0.432,
+        "reason": "Bridge policy match: hip-hop-crossovers."
+      },
+      "body-count": {
+        "id": "body-count",
+        "label": "Body Count",
+        "sourceZone": "hip-hop-rap",
+        "pullZones": [
+          "hard-rock-metal",
+          "rock-circuit",
+          "punk-alt"
+        ],
+        "pullStrength": 0.58,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "atheist": {
+        "id": "atheist",
+        "label": "Atheist",
+        "sourceZone": "psychedelia-prog",
+        "pullZones": [
+          "hard-rock-metal"
+        ],
+        "pullStrength": 0.366,
+        "reason": "Connected to multiple zones."
+      },
+      "disturbed": {
+        "id": "disturbed",
+        "label": "Disturbed",
+        "sourceZone": "psychedelia-prog",
+        "pullZones": [
+          "hard-rock-metal",
+          "rock-circuit",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.58,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "jukka-nevalainen": {
+        "id": "jukka-nevalainen",
+        "label": "Jukka Nevalainen",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "rock-circuit",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "auri": {
+        "id": "auri",
+        "label": "Auri",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "northward": {
+        "id": "northward",
+        "label": "Northward",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "children-of-bodom": {
+        "id": "children-of-bodom",
+        "label": "Children of Bodom",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "rock-circuit",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "agathodaimon": {
+        "id": "agathodaimon",
+        "label": "Agathodaimon",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "ancient": {
+        "id": "ancient",
+        "label": "Ancient",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "diablo": {
+        "id": "diablo",
+        "label": "Diablo",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "sonata-arctica": {
+        "id": "sonata-arctica",
+        "label": "Sonata Arctica",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "rock-circuit",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "arven": {
+        "id": "arven",
+        "label": "Arven",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "powerglove": {
+        "id": "powerglove",
+        "label": "Powerglove",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "silent-voices": {
+        "id": "silent-voices",
+        "label": "Silent Voices",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "tarja-turunen": {
+        "id": "tarja-turunen",
+        "label": "Tarja Turunen",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "rock-circuit",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "epica": {
+        "id": "epica",
+        "label": "Epica",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "marko-hietala": {
+        "id": "marko-hietala",
+        "label": "Marko Hietala",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "rock-circuit",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "aina": {
+        "id": "aina",
+        "label": "Aina",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "altaria": {
+        "id": "altaria",
+        "label": "Altaria",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "charon": {
+        "id": "charon",
+        "label": "Charon",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "gandalf": {
+        "id": "gandalf",
+        "label": "Gandalf",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "machine-men": {
+        "id": "machine-men",
+        "label": "Machine Men",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "finntroll": {
+        "id": "finntroll",
+        "label": "Finntroll",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "rock-circuit",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "sethian": {
+        "id": "sethian",
+        "label": "Sethian",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "alexi-laiho": {
+        "id": "alexi-laiho",
+        "label": "Alexi Laiho",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "guitar-workshop",
+          "rock-circuit",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.58,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "hypocrisy": {
+        "id": "hypocrisy",
+        "label": "Hypocrisy",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "norther": {
+        "id": "norther",
+        "label": "Norther",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "pain": {
+        "id": "pain",
+        "label": "Pain",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "nightwish": {
+        "id": "nightwish",
+        "label": "Nightwish",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "rock-circuit",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "aqua": {
+        "id": "aqua",
+        "label": "Aqua",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "avalon": {
+        "id": "avalon",
+        "label": "Avalon",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "heavenly": {
+        "id": "heavenly",
+        "label": "Heavenly",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "bauhaus": {
+        "id": "bauhaus",
+        "label": "Bauhaus",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "punk-alt",
+          "hip-hop-rap",
+          "rock-circuit"
+        ],
+        "pullStrength": 0.482,
+        "reason": "Bridge policy match: hip-hop-crossovers."
+      },
+      "bad-religion": {
+        "id": "bad-religion",
+        "label": "Bad Religion",
+        "sourceZone": "punk-alt",
+        "pullZones": [
+          "rock-circuit"
+        ],
+        "pullStrength": 0.301,
+        "reason": "Bridge policy match: punk-to-rock."
+      },
+      "afi": {
+        "id": "afi",
+        "label": "AFI",
+        "sourceZone": "punk-alt",
+        "pullZones": [
+          "hard-rock-metal",
+          "rock-circuit",
+          "hip-hop-rap"
+        ],
+        "pullStrength": 0.58,
+        "reason": "Bridge policy match: rock-to-metal, punk-to-rock, hip-hop-crossovers."
+      },
+      "black-president": {
+        "id": "black-president",
+        "label": "Black President",
+        "sourceZone": "punk-alt",
+        "pullZones": [
+          "hard-rock-metal",
+          "rock-circuit",
+          "hip-hop-rap"
+        ],
+        "pullStrength": 0.58,
+        "reason": "Bridge policy match: rock-to-metal, punk-to-rock, hip-hop-crossovers."
+      },
+      "kvelertak": {
+        "id": "kvelertak",
+        "label": "Kvelertak",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "rock-circuit",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "execration": {
+        "id": "execration",
+        "label": "Execration",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "ghost": {
+        "id": "ghost",
+        "label": "Ghost",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "rock-circuit",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "ramones": {
+        "id": "ramones",
+        "label": "Ramones",
+        "sourceZone": "punk-alt",
+        "pullZones": [
+          "rock-circuit",
+          "hip-hop-rap",
+          "hard-rock-metal"
+        ],
+        "pullStrength": 0.58,
+        "reason": "Bridge policy match: punk-to-rock, hip-hop-crossovers."
+      },
+      "suicidal-tendencies": {
+        "id": "suicidal-tendencies",
+        "label": "Suicidal Tendencies",
+        "sourceZone": "punk-alt",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "rock-circuit"
+        ],
+        "pullStrength": 0.432,
+        "reason": "Bridge policy match: hip-hop-crossovers."
+      },
+      "horror-punk": {
+        "id": "horror-punk",
+        "label": "Horror punk",
+        "sourceZone": "punk-alt",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "rock-circuit"
+        ],
+        "pullStrength": 0.432,
+        "reason": "Bridge policy match: hip-hop-crossovers."
+      },
+      "alice-cooper": {
+        "id": "alice-cooper",
+        "label": "Alice Cooper",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "punk-alt",
+          "rock-circuit",
+          "hip-hop-rap"
+        ],
+        "pullStrength": 0.58,
+        "reason": "Bridge policy match: rock-to-metal, punk-to-rock, hip-hop-crossovers."
+      },
+      "misfits": {
+        "id": "misfits",
+        "label": "Misfits",
+        "sourceZone": "punk-alt",
+        "pullZones": [
+          "rock-circuit",
+          "hip-hop-rap",
+          "hard-rock-metal"
+        ],
+        "pullStrength": 0.58,
+        "reason": "Bridge policy match: punk-to-rock, hip-hop-crossovers."
+      },
+      "andy-bell": {
+        "id": "andy-bell",
+        "label": "Andy Bell",
+        "sourceZone": "punk-alt",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "rock-circuit"
+        ],
+        "pullStrength": 0.482,
+        "reason": "Bridge policy match: hip-hop-crossovers."
+      },
+      "apocalyptica": {
+        "id": "apocalyptica",
+        "label": "Apocalyptica",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "rock-circuit",
+          "punk-alt",
+          "hip-hop-rap"
+        ],
+        "pullStrength": 0.58,
+        "reason": "Bridge policy match: rock-to-metal, punk-to-rock, hip-hop-crossovers."
+      },
+      "allison": {
+        "id": "allison",
+        "label": "Allison",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "bush": {
+        "id": "bush",
+        "label": "Bush",
+        "sourceZone": "punk-alt",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "rock-circuit"
+        ],
+        "pullStrength": 0.482,
+        "reason": "Bridge policy match: hip-hop-crossovers."
+      },
+      "flyleaf": {
+        "id": "flyleaf",
+        "label": "Flyleaf",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "fuel": {
+        "id": "fuel",
+        "label": "Fuel",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "avantasia": {
+        "id": "avantasia",
+        "label": "Avantasia",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "rock-circuit",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "ark": {
+        "id": "ark",
+        "label": "Ark",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "bodine": {
+        "id": "bodine",
+        "label": "Bodine",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "conception": {
+        "id": "conception",
+        "label": "Conception",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "h-e-a-t": {
+        "id": "h-e-a-t",
+        "label": "H.E.A.T",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "hard-rain": {
+        "id": "hard-rain",
+        "label": "Hard Rain",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "heavens-gate": {
+        "id": "heavens-gate",
+        "label": "Heavens Gate",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "ralf-scheepers": {
+        "id": "ralf-scheepers",
+        "label": "Ralf Scheepers",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "rock-circuit",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "magnus-karlsson": {
+        "id": "magnus-karlsson",
+        "label": "Magnus Karlsson",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "masterplan": {
+        "id": "masterplan",
+        "label": "Masterplan",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "phenomena": {
+        "id": "phenomena",
+        "label": "Phenomena",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "sinner": {
+        "id": "sinner",
+        "label": "Sinner",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "therion": {
+        "id": "therion",
+        "label": "Therion",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "edguy": {
+        "id": "edguy",
+        "label": "Edguy",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "rock-circuit",
+          "roots-blues",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.58,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "scorpions": {
+        "id": "scorpions",
+        "label": "Scorpions",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "at-vance": {
+        "id": "at-vance",
+        "label": "At Vance",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "rock-circuit",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "angel-dust": {
+        "id": "angel-dust",
+        "label": "Angel Dust",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "mark-cross": {
+        "id": "mark-cross",
+        "label": "Mark Cross",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "tobias-sammet": {
+        "id": "tobias-sammet",
+        "label": "Tobias Sammet",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "rock-circuit",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "bandana-thrash": {
+        "id": "bandana-thrash",
+        "label": "Bandana thrash",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "punk-alt",
+          "hip-hop-rap",
+          "rock-circuit"
+        ],
+        "pullStrength": 0.531,
+        "reason": "Bridge policy match: hip-hop-crossovers."
+      },
+      "ingo-schwichtenberg": {
+        "id": "ingo-schwichtenberg",
+        "label": "Ingo Schwichtenberg",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "rock-circuit",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "jon-oliva": {
+        "id": "jon-oliva",
+        "label": "Jon Oliva",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "rock-circuit",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "elvenking": {
+        "id": "elvenking",
+        "label": "Elvenking",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "free": {
+        "id": "free",
+        "label": "Free",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "jack-frost": {
+        "id": "jack-frost",
+        "label": "Jack Frost",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "midnight": {
+        "id": "midnight",
+        "label": "Midnight",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "michael-weikath": {
+        "id": "michael-weikath",
+        "label": "Michael Weikath",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "guitar-workshop",
+          "rock-circuit",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.58,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "ufo": {
+        "id": "ufo",
+        "label": "UFO",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "angel-witch": {
+        "id": "angel-witch",
+        "label": "Angel Witch",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "rock-circuit",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "candlemass": {
+        "id": "candlemass",
+        "label": "Candlemass",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "savatage": {
+        "id": "savatage",
+        "label": "Savatage",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "rock-circuit",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "asia": {
+        "id": "asia",
+        "label": "Asia",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "criss-oliva": {
+        "id": "criss-oliva",
+        "label": "Criss Oliva",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "guitar-workshop",
+          "rock-circuit",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.58,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "joe-perry": {
+        "id": "joe-perry",
+        "label": "Joe Perry",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "overkill": {
+        "id": "overkill",
+        "label": "Overkill",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "testament": {
+        "id": "testament",
+        "label": "Testament",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "rammstein": {
+        "id": "rammstein",
+        "label": "Rammstein",
+        "sourceZone": "punk-alt",
+        "pullZones": [
+          "rock-circuit",
+          "hip-hop-rap",
+          "hard-rock-metal"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: punk-to-rock, hip-hop-crossovers."
+      },
+      "aria": {
+        "id": "aria",
+        "label": "Aria",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "punk-alt",
+          "folk-country-vise",
+          "hip-hop-rap",
+          "hard-rock-metal"
+        ],
+        "pullStrength": 0.58,
+        "reason": "Bridge policy match: punk-to-rock, hip-hop-crossovers."
+      },
+      "corey-taylor": {
+        "id": "corey-taylor",
+        "label": "Corey Taylor",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "rock-circuit",
+          "punk-alt",
+          "psychedelia-prog",
+          "hip-hop-rap"
+        ],
+        "pullStrength": 0.58,
+        "reason": "Bridge policy match: rock-to-metal, punk-to-rock, hip-hop-crossovers."
+      },
+      "biohazard": {
+        "id": "biohazard",
+        "label": "Biohazard",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "code-orange": {
+        "id": "code-orange",
+        "label": "Code Orange",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "craig-jones": {
+        "id": "craig-jones",
+        "label": "Craig Jones",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "stone-sour": {
+        "id": "stone-sour",
+        "label": "Stone Sour",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "punk-alt",
+          "hip-hop-rap",
+          "hard-rock-metal"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: punk-to-rock, hip-hop-crossovers."
+      },
+      "amy-lee": {
+        "id": "amy-lee",
+        "label": "Amy Lee",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hip-hop-rap",
+          "punk-alt",
+          "hard-rock-metal"
+        ],
+        "pullStrength": 0.432,
+        "reason": "Bridge policy match: hip-hop-crossovers."
+      },
+      "creed": {
+        "id": "creed",
+        "label": "Creed",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "rock-circuit",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "reo-speedwagon": {
+        "id": "reo-speedwagon",
+        "label": "REO Speedwagon",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hip-hop-rap",
+          "punk-alt",
+          "hard-rock-metal"
+        ],
+        "pullStrength": 0.432,
+        "reason": "Bridge policy match: hip-hop-crossovers."
+      },
+      "drake": {
+        "id": "drake",
+        "label": "Drake",
+        "sourceZone": "hip-hop-rap",
+        "pullZones": [
+          "rock-circuit",
+          "punk-alt",
+          "hard-rock-metal"
+        ],
+        "pullStrength": 0.432,
+        "reason": "Bridge policy match: hip-hop-crossovers."
+      },
+      "foreigner": {
+        "id": "foreigner",
+        "label": "Foreigner",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "circle-jerks": {
+        "id": "circle-jerks",
+        "label": "Circle Jerks",
+        "sourceZone": "punk-alt",
+        "pullZones": [
+          "psychedelia-prog",
+          "guitar-workshop",
+          "rock-circuit",
+          "hip-hop-rap",
+          "hard-rock-metal"
+        ],
+        "pullStrength": 0.58,
+        "reason": "Bridge policy match: punk-to-rock, hip-hop-crossovers."
+      },
+      "classical-guitar": {
+        "id": "classical-guitar",
+        "label": "Classical guitar",
+        "sourceZone": "guitar-workshop",
+        "pullZones": [
+          "punk-alt",
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "rock-circuit"
+        ],
+        "pullStrength": 0.58,
+        "reason": "Bridge policy match: hip-hop-crossovers."
+      },
+      "d-o-a": {
+        "id": "d-o-a",
+        "label": "D.O.A.",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "punk-alt",
+          "hip-hop-rap",
+          "hard-rock-metal"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: punk-to-rock, hip-hop-crossovers."
+      },
+      "dc3": {
+        "id": "dc3",
+        "label": "DC3",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "punk-alt",
+          "hip-hop-rap",
+          "hard-rock-metal"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: punk-to-rock, hip-hop-crossovers."
+      },
+      "bad-brains": {
+        "id": "bad-brains",
+        "label": "Bad Brains",
+        "sourceZone": "punk-alt",
+        "pullZones": [
+          "rock-circuit",
+          "hip-hop-rap",
+          "hard-rock-metal"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: punk-to-rock, hip-hop-crossovers."
+      },
+      "minor-threat": {
+        "id": "minor-threat",
+        "label": "Minor Threat",
+        "sourceZone": "punk-alt",
+        "pullZones": [
+          "rock-circuit",
+          "guitar-workshop",
+          "hip-hop-rap",
+          "hard-rock-metal"
+        ],
+        "pullStrength": 0.58,
+        "reason": "Bridge policy match: punk-to-rock, hip-hop-crossovers."
+      },
+      "big-boys": {
+        "id": "big-boys",
+        "label": "Big Boys",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "punk-alt",
+          "hip-hop-rap",
+          "hard-rock-metal"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: punk-to-rock, hip-hop-crossovers."
+      },
+      "dr-know": {
+        "id": "dr-know",
+        "label": "Dr. Know",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "punk-alt",
+          "hip-hop-rap",
+          "hard-rock-metal"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: punk-to-rock, hip-hop-crossovers."
+      },
+      "egg-hunt": {
+        "id": "egg-hunt",
+        "label": "Egg Hunt",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "punk-alt",
+          "hip-hop-rap",
+          "hard-rock-metal"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: punk-to-rock, hip-hop-crossovers."
+      },
+      "embrace": {
+        "id": "embrace",
+        "label": "Embrace",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "punk-alt",
+          "hip-hop-rap",
+          "hard-rock-metal"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: punk-to-rock, hip-hop-crossovers."
+      },
+      "jeff-nelson": {
+        "id": "jeff-nelson",
+        "label": "Jeff Nelson",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "punk-alt",
+          "hip-hop-rap",
+          "hard-rock-metal"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: punk-to-rock, hip-hop-crossovers."
+      },
+      "our-band-could-be-your-life": {
+        "id": "our-band-could-be-your-life",
+        "label": "Our Band Could Be Your Life",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "punk-alt",
+          "hip-hop-rap",
+          "hard-rock-metal"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: punk-to-rock, hip-hop-crossovers."
+      },
+      "sex-pistols": {
+        "id": "sex-pistols",
+        "label": "Sex Pistols",
+        "sourceZone": "punk-alt",
+        "pullZones": [
+          "rock-circuit",
+          "hip-hop-rap",
+          "hard-rock-metal"
+        ],
+        "pullStrength": 0.58,
+        "reason": "Bridge policy match: punk-to-rock, hip-hop-crossovers."
+      },
+      "the-clash": {
+        "id": "the-clash",
+        "label": "The Clash",
+        "sourceZone": "punk-alt",
+        "pullZones": [
+          "rock-circuit",
+          "hip-hop-rap",
+          "hard-rock-metal"
+        ],
+        "pullStrength": 0.58,
+        "reason": "Bridge policy match: punk-to-rock, hip-hop-crossovers."
+      },
+      "bruce-springsteen-the-e-street-band": {
+        "id": "bruce-springsteen-the-e-street-band",
+        "label": "Bruce Springsteen & the E Street Band",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "punk-alt",
+          "hip-hop-rap",
+          "hard-rock-metal"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: punk-to-rock, hip-hop-crossovers."
+      },
+      "bruce-thomas": {
+        "id": "bruce-thomas",
+        "label": "Bruce Thomas",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "punk-alt",
+          "hip-hop-rap",
+          "hard-rock-metal"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: punk-to-rock, hip-hop-crossovers."
+      },
+      "acoustic-guitar": {
+        "id": "acoustic-guitar",
+        "label": "Acoustic guitar",
+        "sourceZone": "guitar-workshop",
+        "pullZones": [
+          "punk-alt",
+          "rock-circuit",
+          "hard-rock-metal",
+          "hip-hop-rap"
+        ],
+        "pullStrength": 0.58,
+        "reason": "Bridge policy match: rock-to-metal, punk-to-rock, hip-hop-crossovers."
+      },
+      "the-offspring": {
+        "id": "the-offspring",
+        "label": "The Offspring",
+        "sourceZone": "punk-alt",
+        "pullZones": [
+          "rock-circuit",
+          "hip-hop-rap",
+          "hard-rock-metal"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: punk-to-rock, hip-hop-crossovers."
+      },
+      "siouxsie-and-the-banshees": {
+        "id": "siouxsie-and-the-banshees",
+        "label": "Siouxsie and the Banshees",
+        "sourceZone": "punk-alt",
+        "pullZones": [
+          "rock-circuit",
+          "hip-hop-rap",
+          "hard-rock-metal"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: punk-to-rock, hip-hop-crossovers."
+      },
+      "air": {
+        "id": "air",
+        "label": "Air",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "punk-alt",
+          "hip-hop-rap",
+          "hard-rock-metal"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: punk-to-rock, hip-hop-crossovers."
+      },
+      "samhain": {
+        "id": "samhain",
+        "label": "Samhain",
+        "sourceZone": "punk-alt",
+        "pullZones": [
+          "rock-circuit",
+          "hip-hop-rap",
+          "hard-rock-metal"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: punk-to-rock, hip-hop-crossovers."
+      },
+      "bando-sport": {
+        "id": "bando-sport",
+        "label": "Bando (sport)",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "punk-alt",
+          "hip-hop-rap",
+          "hard-rock-metal"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: punk-to-rock, hip-hop-crossovers."
+      },
+      "joy-division": {
+        "id": "joy-division",
+        "label": "Joy Division",
+        "sourceZone": "punk-alt",
+        "pullZones": [
+          "rock-circuit",
+          "hard-rock-metal",
+          "hip-hop-rap"
+        ],
+        "pullStrength": 0.58,
+        "reason": "Bridge policy match: rock-to-metal, punk-to-rock, hip-hop-crossovers."
+      },
+      "adrian-smith": {
+        "id": "adrian-smith",
+        "label": "Adrian Smith",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "punk-alt",
+          "hard-rock-metal",
+          "hip-hop-rap"
+        ],
+        "pullStrength": 0.58,
+        "reason": "Bridge policy match: rock-to-metal, punk-to-rock, hip-hop-crossovers."
+      },
+      "skate-punk": {
+        "id": "skate-punk",
+        "label": "skate punk",
+        "sourceZone": "punk-alt",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "rock-circuit"
+        ],
+        "pullStrength": 0.432,
+        "reason": "Bridge policy match: hip-hop-crossovers."
+      },
+      "fugazi": {
+        "id": "fugazi",
+        "label": "Fugazi",
+        "sourceZone": "punk-alt",
+        "pullZones": [
+          "rock-circuit",
+          "hip-hop-rap",
+          "hard-rock-metal"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: punk-to-rock, hip-hop-crossovers."
+      },
+      "american-football": {
+        "id": "american-football",
+        "label": "American Football",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "punk-alt",
+          "hip-hop-rap",
+          "hard-rock-metal"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: punk-to-rock, hip-hop-crossovers."
+      },
+      "ataxia": {
+        "id": "ataxia",
+        "label": "Ataxia",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "punk-alt",
+          "hip-hop-rap",
+          "hard-rock-metal"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: punk-to-rock, hip-hop-crossovers."
+      },
+      "beefeater": {
+        "id": "beefeater",
+        "label": "Beefeater",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "punk-alt",
+          "hip-hop-rap",
+          "hard-rock-metal"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: punk-to-rock, hip-hop-crossovers."
+      },
+      "botch": {
+        "id": "botch",
+        "label": "Botch",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "punk-alt",
+          "hip-hop-rap",
+          "hard-rock-metal"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: punk-to-rock, hip-hop-crossovers."
+      },
+      "braid": {
+        "id": "braid",
+        "label": "Braid",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "punk-alt",
+          "hip-hop-rap",
+          "hard-rock-metal"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: punk-to-rock, hip-hop-crossovers."
+      },
+      "roots-rock": {
+        "id": "roots-rock",
+        "label": "roots rock",
+        "sourceZone": "psychedelia-prog",
+        "pullZones": [
+          "roots-blues",
+          "guitar-workshop"
+        ],
+        "pullStrength": 0.473,
+        "reason": "Connected to multiple zones."
+      },
+      "38-special": {
+        "id": "38-special",
+        "label": ".38 Special",
+        "sourceZone": "roots-blues",
+        "pullZones": [
+          "psychedelia-prog"
+        ],
+        "pullStrength": 0.415,
+        "reason": "Connected to multiple zones."
+      },
+      "american-primitive-guitar": {
+        "id": "american-primitive-guitar",
+        "label": "American primitive guitar",
+        "sourceZone": "guitar-workshop",
+        "pullZones": [
+          "psychedelia-prog"
+        ],
+        "pullStrength": 0.366,
+        "reason": "Connected to multiple zones."
+      },
+      "public-enemy": {
+        "id": "public-enemy",
+        "label": "Public Enemy",
+        "sourceZone": "hip-hop-rap",
+        "pullZones": [
+          "punk-alt",
+          "rock-circuit",
+          "hard-rock-metal",
+          "guitar-workshop"
+        ],
+        "pullStrength": 0.58,
+        "reason": "Bridge policy match: rock-to-metal, punk-to-rock, hip-hop-crossovers."
+      },
+      "digital-underground": {
+        "id": "digital-underground",
+        "label": "Digital Underground",
+        "sourceZone": "hip-hop-rap",
+        "pullZones": [
+          "rock-circuit",
+          "punk-alt",
+          "hard-rock-metal"
+        ],
+        "pullStrength": 0.432,
+        "reason": "Bridge policy match: hip-hop-crossovers."
+      },
+      "in-flames": {
+        "id": "in-flames",
+        "label": "In Flames",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "rock-circuit",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "armageddon": {
+        "id": "armageddon",
+        "label": "Armageddon",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "darkest-hour": {
+        "id": "darkest-hour",
+        "label": "Darkest Hour",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "dawn": {
+        "id": "dawn",
+        "label": "Dawn",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "distant": {
+        "id": "distant",
+        "label": "Distant",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "bruce-dickinson": {
+        "id": "bruce-dickinson",
+        "label": "Bruce Dickinson",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "rock-circuit",
+          "punk-alt",
+          "hip-hop-rap"
+        ],
+        "pullStrength": 0.58,
+        "reason": "Bridge policy match: rock-to-metal, punk-to-rock, hip-hop-crossovers."
+      },
+      "arthur-brown": {
+        "id": "arthur-brown",
+        "label": "Arthur Brown",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.527,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "as-lions": {
+        "id": "as-lions",
+        "label": "As Lions",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "catherine-wheel": {
+        "id": "catherine-wheel",
+        "label": "Catherine Wheel",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "iced-earth": {
+        "id": "iced-earth",
+        "label": "Iced Earth",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "rock-circuit",
+          "psychedelia-prog",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.58,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "demons-wizards": {
+        "id": "demons-wizards",
+        "label": "Demons & Wizards",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "into-eternity": {
+        "id": "into-eternity",
+        "label": "Into Eternity",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "bandwagon-effect": {
+        "id": "bandwagon-effect",
+        "label": "Bandwagon effect",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "michael-schenker": {
+        "id": "michael-schenker",
+        "label": "Michael Schenker",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "dave-murray": {
+        "id": "dave-murray",
+        "label": "Dave Murray",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "janick-gers": {
+        "id": "janick-gers",
+        "label": "Janick Gers",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "rock-circuit",
+          "punk-alt",
+          "guitar-workshop",
+          "hip-hop-rap"
+        ],
+        "pullStrength": 0.58,
+        "reason": "Bridge policy match: rock-to-metal, punk-to-rock, hip-hop-crossovers."
+      },
+      "gillan": {
+        "id": "gillan",
+        "label": "Gillan",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "gogmagog": {
+        "id": "gogmagog",
+        "label": "Gogmagog",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "tim-ripper-owens": {
+        "id": "tim-ripper-owens",
+        "label": "Tim Ripper Owens",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "rock-circuit",
+          "guitar-workshop",
+          "psychedelia-prog",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.58,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "alogia": {
+        "id": "alogia",
+        "label": "Alogia",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "chi-cheng": {
+        "id": "chi-cheng",
+        "label": "Chi Cheng",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "david-rosenthal": {
+        "id": "david-rosenthal",
+        "label": "David Rosenthal",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "michael-kiske": {
+        "id": "michael-kiske",
+        "label": "Michael Kiske",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "rock-circuit",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "dgm": {
+        "id": "dgm",
+        "label": "DGM",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "dennis-ward": {
+        "id": "dennis-ward",
+        "label": "Dennis Ward",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "hardline": {
+        "id": "hardline",
+        "label": "Hardline",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "hollywood-vampires": {
+        "id": "hollywood-vampires",
+        "label": "Hollywood Vampires",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "gloryhammer": {
+        "id": "gloryhammer",
+        "label": "Gloryhammer",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "rock-circuit",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "arion": {
+        "id": "arion",
+        "label": "Arion",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "civil-war": {
+        "id": "civil-war",
+        "label": "Civil War",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "dominum": {
+        "id": "dominum",
+        "label": "Dominum",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "wind-rose": {
+        "id": "wind-rose",
+        "label": "Wind Rose",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "nita-strauss": {
+        "id": "nita-strauss",
+        "label": "Nita Strauss",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "guitar-workshop",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.58,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "courtney-cox": {
+        "id": "courtney-cox",
+        "label": "Courtney Cox",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "femme-fatale": {
+        "id": "femme-fatale",
+        "label": "Femme Fatale",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "alternative-metal": {
+        "id": "alternative-metal",
+        "label": "alternative metal",
+        "sourceZone": "punk-alt",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "rock-circuit"
+        ],
+        "pullStrength": 0.432,
+        "reason": "Bridge policy match: hip-hop-crossovers."
+      },
+      "scott-weiland": {
+        "id": "scott-weiland",
+        "label": "Scott Weiland",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "velvet-revolver": {
+        "id": "velvet-revolver",
+        "label": "Velvet Revolver",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "psychedelia-prog",
+          "rock-circuit",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.58,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "carrie": {
+        "id": "carrie",
+        "label": "Carrie",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "the-iron-maidens": {
+        "id": "the-iron-maidens",
+        "label": "The Iron Maidens",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "rock-circuit",
+          "guitar-workshop",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.58,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "chester-bennington": {
+        "id": "chester-bennington",
+        "label": "Chester Bennington",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "psychedelia-prog",
+          "guitar-workshop"
+        ],
+        "pullStrength": 0.473,
+        "reason": "Connected to multiple zones."
+      },
+      "steel-panther": {
+        "id": "steel-panther",
+        "label": "Steel Panther",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "rock-circuit",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "equinox": {
+        "id": "equinox",
+        "label": "Equinox",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "tenacious-d": {
+        "id": "tenacious-d",
+        "label": "Tenacious D",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "guitar-workshop",
+          "hip-hop-rap",
+          "hard-rock-metal",
+          "punk-alt"
+        ],
+        "pullStrength": 0.58,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "satchel": {
+        "id": "satchel",
+        "label": "Satchel",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "rock-circuit",
+          "guitar-workshop",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.58,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "jeff-duncan": {
+        "id": "jeff-duncan",
+        "label": "Jeff Duncan",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "jeff-martin": {
+        "id": "jeff-martin",
+        "label": "Jeff Martin",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "kevin-gilbert": {
+        "id": "kevin-gilbert",
+        "label": "Kevin Gilbert",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "mr-big": {
+        "id": "mr-big",
+        "label": "Mr. Big",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "axl-rose": {
+        "id": "axl-rose",
+        "label": "Axl Rose",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "rock-circuit",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "adam-hamilton": {
+        "id": "adam-hamilton",
+        "label": "Adam Hamilton",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "arthur-porter": {
+        "id": "arthur-porter",
+        "label": "Arthur Porter",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "billy-davis": {
+        "id": "billy-davis",
+        "label": "Billy Davis",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "billy-williamson": {
+        "id": "billy-williamson",
+        "label": "Billy Williamson",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "charles-sutton": {
+        "id": "charles-sutton",
+        "label": "Charles Sutton",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "chris-holmes": {
+        "id": "chris-holmes",
+        "label": "Chris Holmes",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "linkin-park": {
+        "id": "linkin-park",
+        "label": "Linkin Park",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "punk-alt",
+          "hip-hop-rap",
+          "hard-rock-metal"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: punk-to-rock, hip-hop-crossovers."
+      },
+      "duff-mckagan": {
+        "id": "duff-mckagan",
+        "label": "Duff McKagan",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "rock-circuit",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "andrew-watt": {
+        "id": "andrew-watt",
+        "label": "Andrew Watt",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "kai-hansen": {
+        "id": "kai-hansen",
+        "label": "Kai Hansen",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "guitar-workshop",
+          "rock-circuit",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.58,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      }
+    },
+    "antiPatterns": [
+      {
+        "id": "crushed-label-clusters",
+        "severity": "critical",
+        "avoid": "Do not compress many labelled nodes into a small local cluster. Labels may be close, but must remain readable."
+      },
+      {
+        "id": "sealed-zone-boxes",
+        "severity": "high",
+        "avoid": "Do not force every node to stay inside a strict zone rectangle when cross-zone context is stronger."
+      }
     ]
   },
   "zones": {
@@ -19374,12 +23126,12 @@
   },
   "recommendedResearchRequests": [
     {
-      "id": "organization-rock-circuit-20260918",
+      "id": "organization-rock-circuit-20260923",
       "title": "Organize ROCK CIRCUIT frontier",
       "status": "queued",
       "priority": 90,
       "scope": "artist_network",
-      "createdAt": "2026-09-18T12:08:54.688Z",
+      "createdAt": "2026-09-23T14:41:37.989Z",
       "instructions": "Expand and clarify the ROCK CIRCUIT part of Music History Map. Current organization signal: rock, classic rock, glam, funk and broad band history. Prioritize documented music-related connections that help layout organization: associated genres, shared members, collaborations, influences, instruments and clear bridges to neighboring zones. Active bridge policies for this zone: rock-to-metal, punk-to-rock, hip-hop-crossovers. Prefer candidates that strengthen those transitions without turning category pages into nodes. Use albums, songs and releases only as context for edges. Do not create release/song nodes. Only propose node types allowed by MHM: band, guitarist, artist, guitar, guitar_brand and genre.",
       "seeds": [
         {
@@ -19422,12 +23174,12 @@
       "notes": "Generated by brain:organize. Needs-attention score 103.94. Active bridge policies: rock-to-metal, punk-to-rock, hip-hop-crossovers."
     },
     {
-      "id": "organization-punk-alt-20260918",
+      "id": "organization-punk-alt-20260923",
       "title": "Organize PUNK / ALTERNATIVE frontier",
       "status": "queued",
       "priority": 90,
       "scope": "artist_network",
-      "createdAt": "2026-09-18T12:08:54.688Z",
+      "createdAt": "2026-09-23T14:41:37.989Z",
       "instructions": "Expand and clarify the PUNK / ALTERNATIVE part of Music History Map. Current organization signal: punk, post-punk, alternative, indie, hardcore and adjacent scenes. Prioritize documented music-related connections that help layout organization: associated genres, shared members, collaborations, influences, instruments and clear bridges to neighboring zones. Active bridge policies for this zone: punk-to-rock, hip-hop-crossovers. Prefer candidates that strengthen those transitions without turning category pages into nodes. Use albums, songs and releases only as context for edges. Do not create release/song nodes. Only propose node types allowed by MHM: band, guitarist, artist, guitar, guitar_brand and genre.",
       "seeds": [
         {
@@ -19470,12 +23222,12 @@
       "notes": "Generated by brain:organize. Needs-attention score 82.2. Active bridge policies: punk-to-rock, hip-hop-crossovers."
     },
     {
-      "id": "organization-hard-rock-metal-20260918",
+      "id": "organization-hard-rock-metal-20260923",
       "title": "Organize HARD ROCK / METAL frontier",
       "status": "queued",
       "priority": 90,
       "scope": "artist_network",
-      "createdAt": "2026-09-18T12:08:54.688Z",
+      "createdAt": "2026-09-23T14:41:37.989Z",
       "instructions": "Expand and clarify the HARD ROCK / METAL part of Music History Map. Current organization signal: hard rock, metal, riff culture, virtuoso guitar and heavier scenes. Prioritize documented music-related connections that help layout organization: associated genres, shared members, collaborations, influences, instruments and clear bridges to neighboring zones. Active bridge policies for this zone: rock-to-metal, hip-hop-crossovers. Prefer candidates that strengthen those transitions without turning category pages into nodes. Use albums, songs and releases only as context for edges. Do not create release/song nodes. Only propose node types allowed by MHM: band, guitarist, artist, guitar, guitar_brand and genre.",
       "seeds": [
         {
@@ -19518,12 +23270,12 @@
       "notes": "Generated by brain:organize. Needs-attention score 76.54. Active bridge policies: rock-to-metal, hip-hop-crossovers."
     },
     {
-      "id": "organization-guitar-workshop-20260918",
+      "id": "organization-guitar-workshop-20260923",
       "title": "Organize GUITAR WORKSHOP frontier",
       "status": "queued",
       "priority": 90,
       "scope": "guitar_history",
-      "createdAt": "2026-09-18T12:08:54.688Z",
+      "createdAt": "2026-09-23T14:41:37.989Z",
       "instructions": "Expand and clarify the GUITAR WORKSHOP part of Music History Map. Current organization signal: guitar models, guitar brands and instrument history. Prioritize documented music-related connections that help layout organization: associated genres, shared members, collaborations, influences, instruments and clear bridges to neighboring zones. Use albums, songs and releases only as context for edges. Do not create release/song nodes. Only propose node types allowed by MHM: band, guitarist, artist, guitar, guitar_brand and genre.",
       "seeds": [
         {
@@ -19566,12 +23318,12 @@
       "notes": "Generated by brain:organize. Needs-attention score 65.56."
     },
     {
-      "id": "organization-roots-blues-20260918",
+      "id": "organization-roots-blues-20260923",
       "title": "Organize ROOTS / BLUES frontier",
       "status": "queued",
       "priority": 90,
       "scope": "artist_network",
-      "createdAt": "2026-09-18T12:08:54.688Z",
+      "createdAt": "2026-09-23T14:41:37.989Z",
       "instructions": "Expand and clarify the ROOTS / BLUES part of Music History Map. Current organization signal: roots, blues, blues rock, early rock and Southern guitar lineage. Prioritize documented music-related connections that help layout organization: associated genres, shared members, collaborations, influences, instruments and clear bridges to neighboring zones. Use albums, songs and releases only as context for edges. Do not create release/song nodes. Only propose node types allowed by MHM: band, guitarist, artist, guitar, guitar_brand and genre.",
       "seeds": [
         {

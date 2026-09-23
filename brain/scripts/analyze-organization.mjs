@@ -183,6 +183,10 @@ function zoneBounds(zoneId) {
   };
 }
 
+function clamp(value, min, max) {
+  return Math.max(min, Math.min(max, value));
+}
+
 function overflowDistance(node) {
   const bounds = zoneBounds(node.zone);
   if (!bounds) return 0;
@@ -219,6 +223,108 @@ function overlapAnalysis(nodes) {
 
   risks.sort((a, b) => b.severity - a.severity || a.sourceLabel.localeCompare(b.sourceLabel, "en"));
   return { risks, counts };
+}
+
+function buildLayoutIntelligence(zones, nodeAnalysis, learningModel) {
+  const zoneGuidance = {};
+  const bridgeNodes = {};
+  const antiPatterns = [];
+  const feedbackRules = learningModel?.curatorFeedback?.rules ?? [];
+  const hasReadabilityRule = feedbackRules.some((rule) => rule.id === "readability-beats-density");
+  const hasLooseZonesRule = feedbackRules.some((rule) => rule.id === "zones-are-guides-not-cages");
+
+  if (hasReadabilityRule) {
+    antiPatterns.push({
+      id: "crushed-label-clusters",
+      severity: "critical",
+      avoid: "Do not compress many labelled nodes into a small local cluster. Labels may be close, but must remain readable.",
+    });
+  }
+
+  if (hasLooseZonesRule) {
+    antiPatterns.push({
+      id: "sealed-zone-boxes",
+      severity: "high",
+      avoid: "Do not force every node to stay inside a strict zone rectangle when cross-zone context is stronger.",
+    });
+  }
+
+  for (const [zoneId, zone] of Object.entries(zones)) {
+    const bounds = zoneBounds(zoneId);
+    if (!bounds || !zone.nodeCount) continue;
+
+    const areaUnits = Math.max(1, (bounds.width * bounds.height) / 100000);
+    const density = zone.nodeCount / areaUnits;
+    const overlapPerNode = zone.overlapRisk / Math.max(1, zone.nodeCount);
+    const bridgeRatio = zone.bridgeNodes.length / Math.max(1, zone.nodeCount);
+    const pressureScore = clamp(
+      density * 0.09 +
+        overlapPerNode * 0.16 +
+        Math.max(0, 2.2 - zone.averageDegree) * 0.08 +
+        zone.underConnectedImportantNodes.length * 0.015,
+      0,
+      1,
+    );
+    const spacingMultiplier = Number((1 + pressureScore * 0.42 + (hasReadabilityRule ? 0.08 : 0)).toFixed(3));
+    const expansionX = Math.round(clamp(bounds.width * (0.08 + pressureScore * 0.22), 120, 760));
+    const expansionY = Math.round(clamp(bounds.height * (0.08 + pressureScore * 0.2), 100, 620));
+    const bridgeBleed = Math.round(clamp(160 + bridgeRatio * 860 + pressureScore * 180, 160, 760));
+
+    zoneGuidance[zoneId] = {
+      zone: zoneId,
+      label: zone.label,
+      pressureScore: Number(pressureScore.toFixed(3)),
+      density: Number(density.toFixed(3)),
+      overlapPerNode: Number(overlapPerNode.toFixed(3)),
+      bridgeRatio: Number(bridgeRatio.toFixed(3)),
+      spacingMultiplier,
+      expansion: {
+        x: expansionX,
+        y: expansionY,
+      },
+      bridgeBleed,
+      strategy: pressureScore > 0.66
+        ? "expand-and-relax"
+        : bridgeRatio > 0.2
+          ? "soft-overlap-bridges"
+          : "preserve-loose-cluster",
+      bridgeTargets: zone.bridgeTransitionNeeds?.flatMap((need) => need.zones).filter((target) => target !== zoneId) ?? [],
+      readableChaos: true,
+    };
+  }
+
+  for (const node of Object.values(nodeAnalysis)) {
+    if (node.bridgeScore < 0.34 && node.secondaryZones.length < 2 && !node.bridgePolicies.length) continue;
+    const policyZones = node.bridgePolicies.flatMap((policy) => policy.zones ?? []);
+    const pullZones = [...new Set([...node.secondaryZones, ...policyZones].filter((zone) => zone && zone !== node.zone))];
+    if (!pullZones.length) continue;
+
+    bridgeNodes[node.id] = {
+      id: node.id,
+      label: node.label,
+      sourceZone: node.zone,
+      pullZones,
+      pullStrength: Number(clamp(0.16 + node.bridgeScore * 0.38 + pullZones.length * 0.035, 0.18, 0.58).toFixed(3)),
+      reason: node.bridgePolicies.length
+        ? `Bridge policy match: ${node.bridgePolicies.map((policy) => policy.id).join(", ")}.`
+        : "Connected to multiple zones.",
+    };
+  }
+
+  return {
+    version: 1,
+    generatedAt: new Date().toISOString(),
+    intent: "organized chaos with readable labels and porous genre boundaries",
+    global: {
+      targetLabelState: "close-but-readable",
+      baseSpacingMultiplier: hasReadabilityRule ? 1.08 : 1,
+      allowZoneBleed: hasLooseZonesRule,
+      maxRecommendedOverlapSeverity: 0.18,
+    },
+    zones: zoneGuidance,
+    bridgeNodes,
+    antiPatterns,
+  };
 }
 
 function eraFor(node, learned) {
@@ -411,6 +517,7 @@ function analyzeGraph(graph, learningModel) {
   }
 
   const recommendedResearchRequests = buildRecommendedRequests(zones, nodeAnalysis);
+  const layoutIntelligence = buildLayoutIntelligence(zones, nodeAnalysis, learningModel);
 
   return {
     version: 1,
@@ -430,6 +537,7 @@ function analyzeGraph(graph, learningModel) {
         "Research should prioritize isolated hubs, bridge nodes and zones with low average source quality.",
       ],
     },
+    layoutIntelligence,
     zones,
     nodes: nodeAnalysis,
     issues: {
@@ -595,6 +703,26 @@ function writeReport(model) {
     lines.push(`- Seeds: ${request.seeds.map((seed) => `${seed.name}:${seed.kind}`).join(", ")}`);
     lines.push("");
   }
+
+  lines.push("## Layout Intelligence", "");
+  lines.push(`- Intent: ${model.layoutIntelligence.intent}`);
+  lines.push(`- Label target: ${model.layoutIntelligence.global.targetLabelState}`);
+  lines.push(`- Zone bleed allowed: ${model.layoutIntelligence.global.allowZoneBleed ? "yes" : "no"}`);
+  lines.push("");
+  lines.push("### Highest Pressure Zones", "");
+  for (const zone of Object.values(model.layoutIntelligence.zones)
+    .sort((a, b) => b.pressureScore - a.pressureScore)
+    .slice(0, 6)) {
+    lines.push(`- ${zone.label || zone.zone}: pressure ${zone.pressureScore}, spacing x${zone.spacingMultiplier}, expansion ${zone.expansion.x}/${zone.expansion.y}, strategy ${zone.strategy}`);
+  }
+  lines.push("");
+  lines.push("### Bridge Pulls", "");
+  for (const node of Object.values(model.layoutIntelligence.bridgeNodes)
+    .sort((a, b) => b.pullStrength - a.pullStrength || a.label.localeCompare(b.label, "en"))
+    .slice(0, 14)) {
+    lines.push(`- ${node.label}: ${node.sourceZone} -> ${node.pullZones.join(", ")} at ${node.pullStrength}`);
+  }
+  lines.push("");
 
   fs.mkdirSync(path.dirname(reportPath), { recursive: true });
   fs.writeFileSync(reportPath, `${lines.join("\n")}\n`);

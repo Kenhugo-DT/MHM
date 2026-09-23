@@ -174,6 +174,41 @@ function innerBounds(zoneId) {
   };
 }
 
+function zoneGuidance(organizationModel, zoneId) {
+  return organizationModel?.layoutIntelligence?.zones?.[zoneId] ?? {};
+}
+
+function bridgeGuidance(organizationModel, nodeId) {
+  return organizationModel?.layoutIntelligence?.bridgeNodes?.[nodeId];
+}
+
+function guidedBounds(zoneId, organizationModel, bridgeNode = undefined) {
+  const base = innerBounds(zoneId);
+  const guidance = zoneGuidance(organizationModel, zoneId);
+  const expansion = guidance.expansion ?? {};
+  const bridgeBleed = bridgeNode ? Number(guidance.bridgeBleed ?? 0) : 0;
+  const allowBleed = organizationModel?.layoutIntelligence?.global?.allowZoneBleed !== false;
+  const xBleed = allowBleed ? Math.max(Number(expansion.x ?? 0), bridgeBleed) : Number(expansion.x ?? 0) * 0.45;
+  const yBleed = allowBleed ? Math.max(Number(expansion.y ?? 0), bridgeBleed * 0.72) : Number(expansion.y ?? 0) * 0.45;
+
+  return {
+    minX: base.minX - xBleed,
+    maxX: base.maxX + xBleed,
+    minY: base.minY - yBleed,
+    maxY: base.maxY + yBleed,
+    centerX: base.centerX,
+    centerY: base.centerY,
+  };
+}
+
+function clampToGuidedBounds(node, x, y, organizationModel) {
+  const bounds = guidedBounds(node.zone, organizationModel, bridgeGuidance(organizationModel, node.id));
+  return {
+    x: clamp(x, bounds.minX, bounds.maxX),
+    y: clamp(y, bounds.minY, bounds.maxY),
+  };
+}
+
 function layoutPriority(node, degree) {
   const typeScore = node.type === "genre" ? 1 : node.starter ? 0.92 : 0.42;
   return Number(Math.min(1, typeScore + Math.min(0.45, (degree.get(node.id) ?? 0) * 0.045)).toFixed(3));
@@ -258,21 +293,25 @@ function spreadInZone(nodes, zoneId, degree, learningModel, neighbors, nodeById,
   return [...positions.values()];
 }
 
-function collisionRadius(node, mode) {
+function collisionRadius(node, mode, organizationModel = undefined) {
   const label = String(node.label ?? "");
   const base = node.type === "genre" ? 118 : node.type === "band" ? 94 : 86;
   const extra = Math.min(60, Math.max(0, label.length - 10) * 2.5);
-  return (base + extra) * (mode === "chaos" ? 0.86 : 1);
+  const guidance = zoneGuidance(organizationModel, node.zone);
+  const globalMultiplier = Number(organizationModel?.layoutIntelligence?.global?.baseSpacingMultiplier ?? 1);
+  const spacingMultiplier = Number(guidance.spacingMultiplier ?? 1);
+  const modeMultiplier = mode === "chaos" ? 0.86 : mode === "organized" ? 1.04 : 1;
+  return (base + extra) * modeMultiplier * Math.max(globalMultiplier, spacingMultiplier);
 }
 
-function relaxPositions(items, mode, passes = 34) {
+function relaxPositions(items, mode, passes = 34, organizationModel = undefined) {
   for (let pass = 0; pass < passes; pass += 1) {
     for (let a = 0; a < items.length; a += 1) {
       for (let b = a + 1; b < items.length; b += 1) {
         const first = items[a];
         const second = items[b];
         const sameZone = first.node.zone === second.node.zone;
-        const minDistance = (collisionRadius(first.node, mode) + collisionRadius(second.node, mode)) * (sameZone ? 0.86 : 0.52);
+        const minDistance = (collisionRadius(first.node, mode, organizationModel) + collisionRadius(second.node, mode, organizationModel)) * (sameZone ? 0.86 : 0.52);
         let dx = second.x - first.x;
         let dy = second.y - first.y;
         let distance = Math.hypot(dx, dy);
@@ -292,15 +331,90 @@ function relaxPositions(items, mode, passes = 34) {
         first.y -= ny * push;
         second.x += nx * push;
         second.y += ny * push;
+
+        if (mode === "organized") {
+          const nextFirst = clampToGuidedBounds(first.node, first.x, first.y, organizationModel);
+          const nextSecond = clampToGuidedBounds(second.node, second.x, second.y, organizationModel);
+          first.x = nextFirst.x;
+          first.y = nextFirst.y;
+          second.x = nextSecond.x;
+          second.y = nextSecond.y;
+        }
       }
     }
   }
 }
 
-function makeOrganizedLayout(nodes, degree) {
+function applyLayoutIntelligence(items, organizationModel) {
+  if (!organizationModel?.layoutIntelligence) return;
+  const byId = new Map(items.map((item) => [item.node.id, item]));
+
+  for (const item of items) {
+    const guidance = zoneGuidance(organizationModel, item.node.zone);
+    const bounds = guidedBounds(item.node.zone, organizationModel, bridgeGuidance(organizationModel, item.node.id));
+    const pressure = Number(guidance.pressureScore ?? 0);
+    const spacingMultiplier = Number(guidance.spacingMultiplier ?? 1);
+    const radialScale = clamp(1 + pressure * 0.34 + Math.max(0, spacingMultiplier - 1) * 0.28, 1, 1.46);
+
+    let x = bounds.centerX + (item.x - bounds.centerX) * radialScale;
+    let y = bounds.centerY + (item.y - bounds.centerY) * radialScale;
+
+    const bridge = bridgeGuidance(organizationModel, item.node.id);
+    if (bridge?.pullZones?.length) {
+      let targetX = bounds.centerX;
+      let targetY = bounds.centerY;
+      let weight = 1;
+      for (const zone of bridge.pullZones) {
+        if (!ORGANIZED_MAP_ZONES[zone]) continue;
+        const target = innerBounds(zone);
+        targetX += target.centerX;
+        targetY += target.centerY;
+        weight += 1;
+      }
+      targetX /= weight;
+      targetY /= weight;
+      const pull = clamp(Number(bridge.pullStrength ?? 0.2), 0.12, 0.58);
+      x += (targetX - x) * pull;
+      y += (targetY - y) * pull;
+    }
+
+    const point = clampToGuidedBounds(item.node, x, y, organizationModel);
+    item.x = point.x;
+    item.y = point.y;
+  }
+
+  for (const item of items) {
+    const analysis = organizationModel.nodes?.[item.node.id];
+    if (!analysis?.linkedGenres?.length) continue;
+    const genreNeighbors = analysis.linkedGenres.map((id) => byId.get(id)).filter(Boolean);
+    if (!genreNeighbors.length) continue;
+    const targetX = genreNeighbors.reduce((sum, neighbor) => sum + neighbor.x, 0) / genreNeighbors.length;
+    const targetY = genreNeighbors.reduce((sum, neighbor) => sum + neighbor.y, 0) / genreNeighbors.length;
+    const pull = clamp(0.05 + genreNeighbors.length * 0.025, 0.05, 0.16);
+    const point = clampToGuidedBounds(
+      item.node,
+      item.x + (targetX - item.x) * pull,
+      item.y + (targetY - item.y) * pull,
+      organizationModel,
+    );
+    item.x = point.x;
+    item.y = point.y;
+  }
+}
+
+function makeOrganizedLayout(nodes, edges, degree, organizationModel) {
+  const items = nodes.map((node) => ({
+    node,
+    x: node.x,
+    y: node.y,
+  }));
+  applyLayoutIntelligence(items, organizationModel);
+  relaxPositions(items, "organized", 58, organizationModel);
+
   const layoutNodes = {};
-  for (const node of nodes) {
-    layoutNodes[node.id] = toLayoutNode(node, node.x, node.y, degree);
+  for (const item of items) {
+    const point = clampToGuidedBounds(item.node, item.x, item.y, organizationModel);
+    layoutNodes[item.node.id] = toLayoutNode(item.node, point.x, point.y, degree);
   }
   return layoutNodes;
 }
@@ -412,7 +526,7 @@ const layouts = {
     id: "organized",
     ...LAYOUTS.organized,
     generatedAt,
-    nodes: makeOrganizedLayout(graph.nodes, degree),
+    nodes: makeOrganizedLayout(graph.nodes, graph.edges, degree, organizationModel),
   },
   genre: {
     id: "genre",

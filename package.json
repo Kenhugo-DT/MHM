@@ -7,7 +7,7 @@
     "dev": "vite --config site/vite.config.ts",
     "build": "tsc -b site/tsconfig.json && vite build --config site/vite.config.ts",
     "preview": "vite preview --config site/vite.config.ts",
-    "migrate:data": "node brain/scripts/migrate-graph-data.mjs && node brain/scripts/generate-layouts.mjs",
+    "migrate:data": "node brain/scripts/learn-from-obsidian.mjs && node brain/scripts/migrate-graph-data.mjs && node brain/scripts/analyze-organization.mjs --quiet && node brain/scripts/generate-layouts.mjs",
     "check": "tsc -b site/tsconfig.json --pretty false",
     "brain:install-python": "node brain/scripts/run-python.mjs -m pip install -r brain/pipeline/requirements.txt",
     "brain:collect": "node brain/scripts/run-python.mjs brain/pipeline/sync.py",

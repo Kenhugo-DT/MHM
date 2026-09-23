@@ -1,3377 +1,3377 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-20T08:29:49.503Z",
+  "generatedAt": "2026-09-23T14:41:38.044Z",
   "source": "approved graph + learning model + organization model",
   "layouts": {
     "organized": {
       "id": "organized",
       "label": "Map",
       "description": "Current brain-organized map positions.",
-      "generatedAt": "2026-09-20T08:29:49.503Z",
+      "generatedAt": "2026-09-23T14:41:38.044Z",
       "nodes": {
         "3": {
-          "x": -432,
-          "y": -617,
+          "x": -561,
+          "y": -559,
           "zone": "psychedelia-prog",
           "priority": 0.51
         },
         "311": {
-          "x": -116,
-          "y": 1366,
+          "x": 546,
+          "y": 1561,
           "zone": "rock-circuit",
           "priority": 0.555
         },
         "999": {
-          "x": -233,
-          "y": 230,
+          "x": 474,
+          "y": 522,
           "zone": "rock-circuit",
           "priority": 0.465
         },
         "blues": {
-          "x": -1581,
-          "y": -308,
+          "x": -1601,
+          "y": -346,
           "zone": "roots-blues",
           "priority": 1
         },
         "electric-blues": {
-          "x": -1026,
-          "y": 286,
+          "x": -973,
+          "y": 430,
           "zone": "roots-blues",
           "priority": 1
         },
         "rock-and-roll": {
-          "x": -829,
-          "y": 359,
+          "x": -287,
+          "y": 430,
           "zone": "roots-blues",
           "priority": 1
         },
         "rock": {
-          "x": -584,
-          "y": 214,
+          "x": -136,
+          "y": 461,
           "zone": "rock-circuit",
           "priority": 1
         },
         "psychedelic-rock": {
-          "x": 543,
-          "y": -790,
+          "x": 678,
+          "y": -892,
           "zone": "psychedelia-prog",
           "priority": 1
         },
         "progressive-rock": {
-          "x": 859,
-          "y": -621,
+          "x": 1308,
+          "y": -327,
           "zone": "psychedelia-prog",
           "priority": 1
         },
         "hard-rock": {
-          "x": 1080,
-          "y": -223,
+          "x": 1058,
+          "y": -103,
           "zone": "hard-rock-metal",
           "priority": 1
         },
         "heavy-metal": {
-          "x": 2332,
-          "y": 262,
+          "x": 2392,
+          "y": -128,
           "zone": "hard-rock-metal",
           "priority": 1
         },
         "punk": {
-          "x": 1988,
-          "y": 1021,
+          "x": 2060,
+          "y": 998,
           "zone": "punk-alt",
           "priority": 1
         },
         "grunge": {
-          "x": 800,
-          "y": 1606,
+          "x": 623,
+          "y": 1658,
           "zone": "punk-alt",
           "priority": 1
         },
         "folk": {
-          "x": -319,
-          "y": 1063,
+          "x": 92,
+          "y": 752,
           "zone": "folk-country-vise",
           "priority": 1
         },
         "country": {
-          "x": -779,
-          "y": 929,
+          "x": -145,
+          "y": 695,
           "zone": "folk-country-vise",
           "priority": 1
         },
         "norwegian-vise": {
-          "x": -534,
-          "y": 1199,
+          "x": -472,
+          "y": 1188,
           "zone": "folk-country-vise",
           "priority": 1
         },
         "funk": {
-          "x": 735,
-          "y": 224,
+          "x": 935,
+          "y": -169,
           "zone": "rock-circuit",
           "priority": 1
         },
         "jazz-fusion": {
-          "x": 48,
-          "y": -91,
+          "x": 400,
+          "y": -482,
           "zone": "rock-circuit",
           "priority": 1
         },
         "bb-king": {
-          "x": -665,
-          "y": 360,
+          "x": -559,
+          "y": 458,
           "zone": "roots-blues",
           "priority": 1
         },
         "lead-belly": {
-          "x": -1028,
-          "y": -57,
+          "x": -471,
+          "y": 308,
           "zone": "roots-blues",
           "priority": 0.555
         },
         "chuck-berry": {
-          "x": 461,
-          "y": -111,
+          "x": 653,
+          "y": -220,
           "zone": "rock-circuit",
           "priority": 1
         },
         "elvis-presley": {
-          "x": -1495,
-          "y": 565,
+          "x": -1276,
+          "y": 687,
           "zone": "roots-blues",
           "priority": 0.51
         },
         "jimi-hendrix": {
-          "x": 825,
-          "y": -438,
+          "x": 902,
+          "y": -378,
           "zone": "psychedelia-prog",
           "priority": 1
         },
         "stevie-ray-vaughan": {
-          "x": -777,
-          "y": 154,
+          "x": -498,
+          "y": -51,
           "zone": "roots-blues",
           "priority": 1
         },
         "eric-clapton": {
-          "x": -685,
-          "y": 10,
+          "x": -474,
+          "y": 140,
           "zone": "roots-blues",
           "priority": 0.645
         },
         "david-gilmour": {
-          "x": 1288,
+          "x": 1356,
           "y": -538,
           "zone": "psychedelia-prog",
           "priority": 1
         },
         "mark-knopfler": {
-          "x": 121,
-          "y": 331,
+          "x": -115,
+          "y": 216,
           "zone": "rock-circuit",
           "priority": 1
         },
         "eddie-van-halen": {
-          "x": 2777,
-          "y": -433,
+          "x": 2291,
+          "y": -505,
           "zone": "hard-rock-metal",
           "priority": 1
         },
         "frank-zappa": {
-          "x": 885,
-          "y": -808,
+          "x": 1093,
+          "y": -461,
           "zone": "psychedelia-prog",
           "priority": 0.6
         },
         "johnny-marr": {
-          "x": 2022,
-          "y": 1263,
+          "x": 2211,
+          "y": 1161,
           "zone": "punk-alt",
           "priority": 0.555
         },
         "randy-rhoads": {
-          "x": 2397,
-          "y": 101,
+          "x": 2952,
+          "y": 130,
           "zone": "hard-rock-metal",
           "priority": 0.6
         },
         "tony-iommi": {
-          "x": 3735,
-          "y": -373,
+          "x": 4106,
+          "y": -541,
           "zone": "hard-rock-metal",
           "priority": 1
         },
         "jimmy-page": {
-          "x": 2245,
-          "y": -272,
+          "x": 1907,
+          "y": -317,
           "zone": "hard-rock-metal",
           "priority": 1
         },
         "george-harrison": {
-          "x": 611,
-          "y": -472,
+          "x": 982,
+          "y": -596,
           "zone": "rock-circuit",
           "priority": 0.555
         },
         "bob-dylan": {
-          "x": -665,
-          "y": 258,
+          "x": -287,
+          "y": 576,
           "zone": "roots-blues",
           "priority": 1
         },
         "johnny-cash": {
-          "x": -440,
-          "y": 1349,
+          "x": 153,
+          "y": 1203,
           "zone": "folk-country-vise",
           "priority": 0.51
         },
         "willie-nelson": {
-          "x": -349,
-          "y": 1227,
+          "x": 260,
+          "y": 1056,
           "zone": "folk-country-vise",
           "priority": 1
         },
         "chet-atkins": {
-          "x": -707,
-          "y": 1185,
+          "x": 92,
+          "y": 980,
           "zone": "folk-country-vise",
           "priority": 0.51
         },
         "john-mayer": {
-          "x": -1040,
-          "y": -218,
+          "x": -287,
+          "y": -162,
           "zone": "roots-blues",
           "priority": 0.555
         },
         "oystein-sunde": {
-          "x": 202,
-          "y": 1234,
+          "x": 378,
+          "y": 1195,
           "zone": "folk-country-vise",
           "priority": 1
         },
         "james-hetfield": {
-          "x": 3657,
-          "y": -220,
+          "x": 4026,
+          "y": -346,
           "zone": "hard-rock-metal",
           "priority": 0.51
         },
         "prince": {
-          "x": 1507,
-          "y": 275,
+          "x": 1439,
+          "y": 566,
           "zone": "rock-circuit",
           "priority": 1
         },
         "the-beatles": {
-          "x": 519,
-          "y": -448,
+          "x": 382,
+          "y": -300,
           "zone": "psychedelia-prog",
           "priority": 1
         },
         "pink-floyd": {
-          "x": 379,
-          "y": -864,
+          "x": 445,
+          "y": -842,
           "zone": "psychedelia-prog",
           "priority": 1
         },
         "led-zeppelin": {
-          "x": 252,
-          "y": -215,
+          "x": 415,
+          "y": 219,
           "zone": "hard-rock-metal",
           "priority": 1
         },
         "black-sabbath": {
-          "x": 1704,
-          "y": 365,
+          "x": 1627,
+          "y": 766,
           "zone": "hard-rock-metal",
           "priority": 1
         },
         "van-halen": {
-          "x": 806,
-          "y": -200,
+          "x": 655,
+          "y": -103,
           "zone": "hard-rock-metal",
           "priority": 0.69
         },
         "dire-straits": {
-          "x": -1148,
-          "y": 907,
+          "x": -1358,
+          "y": 995,
           "zone": "rock-circuit",
           "priority": 0.51
         },
         "the-smiths": {
-          "x": 2342,
-          "y": 1828,
+          "x": 2533,
+          "y": 1805,
           "zone": "punk-alt",
           "priority": 0.51
         },
         "ozzy-osbourne": {
-          "x": 1935,
-          "y": 717,
+          "x": 1779,
+          "y": 900,
           "zone": "hard-rock-metal",
           "priority": 0.555
         },
         "metallica": {
-          "x": 1844,
-          "y": 267,
+          "x": 1558,
+          "y": 506,
           "zone": "hard-rock-metal",
           "priority": 1
         },
         "gitarkameratene": {
-          "x": -988,
-          "y": 991,
+          "x": -896,
+          "y": 940,
           "zone": "folk-country-vise",
           "priority": 0.69
         },
         "cream": {
-          "x": -817,
-          "y": 585,
+          "x": -287,
+          "y": 857,
           "zone": "roots-blues",
           "priority": 0.645
         },
         "the-yardbirds": {
-          "x": -662,
-          "y": 504,
+          "x": -287,
+          "y": 710,
           "zone": "roots-blues",
           "priority": 0.6
         },
         "fender": {
-          "x": 4586,
-          "y": -169,
+          "x": 4671,
+          "y": -239,
           "zone": "guitar-workshop",
           "priority": 1
         },
         "gibson": {
-          "x": 3661,
-          "y": 260,
+          "x": 3597,
+          "y": 314,
           "zone": "guitar-workshop",
           "priority": 1
         },
         "martin": {
-          "x": 3828,
-          "y": -24,
+          "x": 3686,
+          "y": -56,
           "zone": "guitar-workshop",
           "priority": 1
         },
         "rickenbacker": {
-          "x": 4888,
-          "y": 274,
+          "x": 5044,
+          "y": 308,
           "zone": "guitar-workshop",
           "priority": 0.465
         },
         "gretsch": {
-          "x": 3743,
-          "y": 404,
+          "x": 3655,
+          "y": 503,
           "zone": "guitar-workshop",
           "priority": 0.465
         },
         "esp": {
-          "x": 4565,
-          "y": -346,
+          "x": 4646,
+          "y": -457,
           "zone": "guitar-workshop",
           "priority": 0.465
         },
         "fender-stratocaster": {
-          "x": 3142,
-          "y": -392,
+          "x": 3054,
+          "y": -142,
           "zone": "guitar-workshop",
           "priority": 1
         },
         "fender-telecaster": {
-          "x": 3142,
-          "y": 48,
+          "x": 3054,
+          "y": 118,
           "zone": "guitar-workshop",
           "priority": 1
         },
         "fender-jaguar": {
-          "x": 4686,
-          "y": 207,
+          "x": 4795,
+          "y": 225,
           "zone": "guitar-workshop",
           "priority": 0.465
         },
         "fender-jazzmaster": {
-          "x": 4271,
-          "y": -298,
+          "x": 4286,
+          "y": -401,
           "zone": "guitar-workshop",
           "priority": 0.51
         },
         "gibson-les-paul": {
-          "x": 3142,
-          "y": 705,
+          "x": 3054,
+          "y": 1057,
           "zone": "guitar-workshop",
           "priority": 1
         },
         "gibson-sg": {
-          "x": 3144,
-          "y": 217,
+          "x": 3054,
+          "y": 274,
           "zone": "guitar-workshop",
           "priority": 1
         },
         "gibson-es-355-lucille": {
-          "x": 3269,
-          "y": -471,
+          "x": 3054,
+          "y": -556,
           "zone": "guitar-workshop",
           "priority": 1
         },
         "gibson-flying-v": {
-          "x": 3266,
-          "y": 580,
+          "x": 3054,
+          "y": 344,
           "zone": "guitar-workshop",
           "priority": 0.69
         },
         "martin-d28": {
-          "x": 3142,
-          "y": 368,
+          "x": 3056,
+          "y": 611,
           "zone": "guitar-workshop",
           "priority": 1
         },
         "gibson-j45": {
-          "x": 3401,
-          "y": 224,
+          "x": 3055,
+          "y": 532,
           "zone": "guitar-workshop",
           "priority": 0.51
         },
         "trigger": {
-          "x": 3375,
-          "y": 342,
+          "x": 3054,
+          "y": 957,
           "zone": "guitar-workshop",
           "priority": 1
         },
         "rickenbacker-360-12": {
-          "x": 3757,
-          "y": 574,
+          "x": 3054,
+          "y": 1195,
           "zone": "guitar-workshop",
           "priority": 1
         },
         "gretsch-6120": {
-          "x": 3144,
-          "y": 531,
+          "x": 3054,
+          "y": 855,
           "zone": "guitar-workshop",
           "priority": 0.6
         },
         "frankenstrat": {
-          "x": 3641,
-          "y": -109,
+          "x": 3504,
+          "y": -146,
           "zone": "guitar-workshop",
           "priority": 0.965
         },
         "ibanez-jem": {
-          "x": 3884,
-          "y": 302,
+          "x": 3805,
+          "y": 359,
           "zone": "guitar-workshop",
           "priority": 0.51
         },
         "esp-explorer-style": {
-          "x": 4251,
-          "y": -35,
+          "x": 4258,
+          "y": -74,
           "zone": "guitar-workshop",
           "priority": 0.51
         },
         "hohner-mad-cat": {
-          "x": 3545,
-          "y": 618,
+          "x": 3466,
+          "y": 684,
           "zone": "guitar-workshop",
           "priority": 0.465
         },
         "banjo": {
-          "x": 3383,
-          "y": 692,
+          "x": 3337,
+          "y": 1002,
           "zone": "guitar-workshop",
           "priority": 0.465
         },
         "national-resonator": {
-          "x": 3529,
-          "y": 372,
+          "x": 3455,
+          "y": 445,
           "zone": "guitar-workshop",
           "priority": 0.51
         },
         "blues-rock": {
-          "x": -662,
-          "y": -533,
+          "x": -287,
+          "y": -625,
           "zone": "roots-blues",
           "priority": 1
         },
         "rockabilly": {
-          "x": -1375,
-          "y": -322,
+          "x": -1344,
+          "y": -374,
           "zone": "roots-blues",
           "priority": 1
         },
         "surf-rock": {
-          "x": 367,
-          "y": 210,
+          "x": 149,
+          "y": -78,
           "zone": "rock-circuit",
           "priority": 1
         },
         "southern-rock": {
-          "x": -897,
-          "y": -330,
+          "x": -704,
+          "y": 98,
           "zone": "roots-blues",
           "priority": 1
         },
         "glam-rock": {
-          "x": 534,
-          "y": 476,
+          "x": 1575,
+          "y": 732,
           "zone": "rock-circuit",
           "priority": 1
         },
         "art-rock": {
-          "x": -212,
-          "y": -705,
+          "x": -171,
+          "y": -741,
           "zone": "psychedelia-prog",
           "priority": 1
         },
         "alternative-rock": {
-          "x": 873,
-          "y": 1274,
+          "x": 1282,
+          "y": 784,
           "zone": "punk-alt",
           "priority": 1
         },
         "indie-rock": {
-          "x": 1643,
-          "y": 1641,
+          "x": 1715,
+          "y": 1784,
           "zone": "punk-alt",
           "priority": 1
         },
         "post-punk": {
-          "x": 2150,
-          "y": 1581,
+          "x": 2374,
+          "y": 1613,
           "zone": "punk-alt",
           "priority": 1
         },
         "shoegaze": {
-          "x": 2605,
-          "y": 1287,
+          "x": 2879,
+          "y": 1219,
           "zone": "punk-alt",
           "priority": 1
         },
         "thrash-metal": {
-          "x": 3410,
-          "y": -286,
+          "x": 3681,
+          "y": -421,
           "zone": "hard-rock-metal",
           "priority": 1
         },
         "doom-metal": {
-          "x": 1476,
-          "y": -102,
+          "x": 1293,
+          "y": -216,
           "zone": "hard-rock-metal",
           "priority": 1
         },
         "progressive-metal": {
-          "x": 725,
-          "y": -904,
+          "x": 1573,
+          "y": -649,
           "zone": "psychedelia-prog",
           "priority": 1
         },
         "bluegrass": {
-          "x": -1763,
-          "y": 1244,
+          "x": -1838,
+          "y": 1221,
           "zone": "folk-country-vise",
           "priority": 1
         },
         "singer-songwriter": {
-          "x": 188,
-          "y": 1055,
+          "x": 388,
+          "y": 863,
           "zone": "folk-country-vise",
           "priority": 1
         },
         "jazz": {
-          "x": -346,
-          "y": -463,
+          "x": 170,
+          "y": -201,
           "zone": "psychedelia-prog",
           "priority": 1
         },
         "flamenco": {
-          "x": -1050,
-          "y": 1608,
+          "x": -1046,
+          "y": 1631,
           "zone": "folk-country-vise",
           "priority": 1
         },
         "robert-johnson": {
-          "x": -1821,
-          "y": -546,
+          "x": -1782,
+          "y": -595,
           "zone": "roots-blues",
           "priority": 1
         },
         "muddy-waters": {
           "x": -1938,
-          "y": 205,
+          "y": 233,
           "zone": "roots-blues",
           "priority": 1
         },
         "sister-rosetta-tharpe": {
-          "x": -1540,
-          "y": 1,
+          "x": -1483,
+          "y": 14,
           "zone": "roots-blues",
           "priority": 0.51
         },
         "buddy-guy": {
-          "x": -767,
-          "y": -155,
+          "x": -619,
+          "y": -306,
           "zone": "roots-blues",
           "priority": 1
         },
         "albert-king": {
-          "x": -663,
-          "y": -234,
+          "x": -463,
+          "y": -241,
           "zone": "roots-blues",
           "priority": 0.555
         },
         "freddie-king": {
-          "x": -1621,
-          "y": 291,
+          "x": -1602,
+          "y": 331,
           "zone": "roots-blues",
           "priority": 0.51
         },
         "duane-allman": {
-          "x": -767,
-          "y": -402,
+          "x": -485,
+          "y": -434,
           "zone": "roots-blues",
           "priority": 1
         },
         "dickey-betts": {
-          "x": -664,
-          "y": -330,
+          "x": -287,
+          "y": -283,
           "zone": "roots-blues",
           "priority": 0.555
         },
         "derek-trucks": {
-          "x": -1053,
-          "y": -379,
+          "x": -287,
+          "y": -431,
           "zone": "roots-blues",
           "priority": 0.555
         },
         "peter-green": {
-          "x": -914,
-          "y": 53,
+          "x": -287,
+          "y": -53,
           "zone": "roots-blues",
           "priority": 0.555
         },
         "lindsey-buckingham": {
-          "x": -1126,
-          "y": 541,
+          "x": -1023,
+          "y": 579,
           "zone": "rock-circuit",
           "priority": 0.555
         },
         "keith-richards": {
-          "x": 126,
-          "y": 468,
+          "x": 222,
+          "y": 299,
           "zone": "rock-circuit",
           "priority": 1
         },
         "jeff-beck": {
-          "x": -807,
-          "y": -16,
+          "x": -287,
+          "y": 178,
           "zone": "roots-blues",
           "priority": 1
         },
         "pete-townshend": {
-          "x": -175,
-          "y": 95,
+          "x": 599,
+          "y": -380,
           "zone": "rock-circuit",
           "priority": 0.555
         },
         "brian-may": {
-          "x": 292,
-          "y": 328,
+          "x": 118,
+          "y": 140,
           "zone": "rock-circuit",
           "priority": 1
         },
         "ritchie-blackmore": {
-          "x": 3058,
-          "y": -42,
+          "x": 3356,
+          "y": -225,
           "zone": "hard-rock-metal",
           "priority": 1
         },
         "brian-setzer": {
-          "x": -665,
-          "y": -80,
+          "x": -687,
+          "y": -132,
           "zone": "roots-blues",
           "priority": 0.555
         },
         "dick-dale": {
-          "x": 979,
-          "y": 207,
+          "x": 1410,
+          "y": 30,
           "zone": "rock-circuit",
           "priority": 0.51
         },
         "carlos-santana": {
-          "x": -1057,
-          "y": 97,
+          "x": -935,
+          "y": 187,
           "zone": "roots-blues",
           "priority": 1
         },
         "steve-vai": {
-          "x": 666,
-          "y": -567,
+          "x": 1086,
+          "y": -287,
           "zone": "psychedelia-prog",
           "priority": 1
         },
         "joe-satriani": {
-          "x": 18,
-          "y": 434,
+          "x": 637,
+          "y": 2,
           "zone": "rock-circuit",
           "priority": 0.555
         },
         "yngwie-malmsteen": {
-          "x": 2226,
-          "y": -153,
+          "x": 2600,
+          "y": -207,
           "zone": "hard-rock-metal",
           "priority": 0.51
         },
         "slash": {
-          "x": -662,
-          "y": 116,
+          "x": -287,
+          "y": 279,
           "zone": "roots-blues",
           "priority": 1
         },
         "angus-young": {
-          "x": -905,
-          "y": 201,
+          "x": -767,
+          "y": 319,
           "zone": "roots-blues",
           "priority": 1
         },
         "malcolm-young": {
-          "x": 2328,
-          "y": 571,
+          "x": 2336,
+          "y": 524,
           "zone": "hard-rock-metal",
           "priority": 0.465
         },
         "dave-mustaine": {
-          "x": 3067,
-          "y": 308,
+          "x": 3385,
+          "y": 233,
           "zone": "hard-rock-metal",
           "priority": 1
         },
         "dimebag-darrell": {
-          "x": 1874,
-          "y": 426,
+          "x": 1767,
+          "y": 460,
           "zone": "hard-rock-metal",
           "priority": 0.51
         },
         "zakk-wylde": {
-          "x": 2392,
-          "y": -165,
+          "x": 2773,
+          "y": -299,
           "zone": "hard-rock-metal",
           "priority": 0.555
         },
         "wes-montgomery": {
-          "x": -520,
-          "y": -925,
+          "x": -382,
+          "y": -638,
           "zone": "psychedelia-prog",
           "priority": 1
         },
         "joe-pass": {
-          "x": 135,
-          "y": 873,
+          "x": 306,
+          "y": 654,
           "zone": "folk-country-vise",
           "priority": 0.555
         },
         "django-reinhardt": {
-          "x": -620,
-          "y": 801,
+          "x": -629,
+          "y": 646,
           "zone": "folk-country-vise",
           "priority": 0.6
         },
         "paco-de-lucia": {
-          "x": -1123,
-          "y": 1418,
+          "x": -1120,
+          "y": 1425,
           "zone": "folk-country-vise",
           "priority": 0.465
         },
         "john-mclaughlin": {
-          "x": -633,
-          "y": -784,
+          "x": -379,
+          "y": -429,
           "zone": "psychedelia-prog",
           "priority": 0.555
         },
         "robert-fripp": {
-          "x": 787,
-          "y": -1078,
+          "x": 892,
+          "y": -1099,
           "zone": "psychedelia-prog",
           "priority": 0.965
         },
         "steve-howe": {
-          "x": 648,
-          "y": -1155,
+          "x": 727,
+          "y": -1194,
           "zone": "psychedelia-prog",
           "priority": 0.465
         },
         "alex-lifeson": {
-          "x": 1350,
-          "y": -856,
+          "x": 1370,
+          "y": -884,
           "zone": "psychedelia-prog",
           "priority": 0.51
         },
         "the-edge": {
-          "x": 1617,
-          "y": 1152,
+          "x": 1694,
+          "y": 1122,
           "zone": "punk-alt",
           "priority": 0.465
         },
         "jonny-greenwood": {
-          "x": 1044,
-          "y": -871,
+          "x": 1153,
+          "y": -910,
           "zone": "psychedelia-prog",
           "priority": 0.51
         },
         "lillebjorn-nilsen": {
-          "x": -597,
-          "y": 1010,
+          "x": -569,
+          "y": 968,
           "zone": "folk-country-vise",
           "priority": 0.51
         },
         "jan-eggum": {
-          "x": -153,
-          "y": 1078,
+          "x": -76,
+          "y": 1041,
           "zone": "folk-country-vise",
           "priority": 0.555
         },
         "halvdan-sivertsen": {
-          "x": -312,
-          "y": 1467,
+          "x": -222,
+          "y": 1482,
           "zone": "folk-country-vise",
           "priority": 0.51
         },
         "alf-cranner": {
-          "x": -835,
-          "y": 1102,
+          "x": -739,
+          "y": 1065,
           "zone": "folk-country-vise",
           "priority": 0.51
         },
         "the-rolling-stones": {
-          "x": -1343,
-          "y": 41,
+          "x": -1063,
+          "y": -4,
           "zone": "roots-blues",
           "priority": 1
         },
         "the-who": {
-          "x": -512,
-          "y": -377,
+          "x": -371,
+          "y": -207,
           "zone": "psychedelia-prog",
           "priority": 1
         },
         "queen": {
-          "x": 606,
-          "y": -143,
+          "x": 1127,
+          "y": 134,
           "zone": "rock-circuit",
           "priority": 1
         },
         "deep-purple": {
-          "x": 704,
-          "y": -374,
+          "x": 716,
+          "y": -310,
           "zone": "hard-rock-metal",
           "priority": 1
         },
         "acdc": {
-          "x": -907,
-          "y": -148,
+          "x": -287,
+          "y": 61,
           "zone": "roots-blues",
           "priority": 1
         },
         "guns-n-roses": {
-          "x": 526,
-          "y": 372,
+          "x": 698,
+          "y": 514,
           "zone": "hard-rock-metal",
           "priority": 1
         },
         "rage-against-the-machine": {
-          "x": 740,
-          "y": 2051,
+          "x": 564,
+          "y": 2078,
           "zone": "punk-alt",
           "priority": 0.465
         },
         "megadeth": {
-          "x": 2992,
-          "y": -524,
+          "x": 3222,
+          "y": -700,
           "zone": "hard-rock-metal",
           "priority": 1
         },
         "pantera": {
-          "x": 2053,
-          "y": -146,
+          "x": 2033,
+          "y": -465,
           "zone": "hard-rock-metal",
           "priority": 0.555
         },
         "allman-brothers-band": {
-          "x": -1466,
-          "y": 199,
+          "x": -1390,
+          "y": 472,
           "zone": "roots-blues",
           "priority": 1
         },
         "fleetwood-mac": {
-          "x": -1199,
-          "y": 188,
+          "x": -1151,
+          "y": 240,
           "zone": "roots-blues",
           "priority": 1
         },
         "king-crimson": {
-          "x": 120,
-          "y": -1101,
+          "x": 139,
+          "y": -1088,
           "zone": "psychedelia-prog",
           "priority": 1
         },
         "yes": {
-          "x": 236,
-          "y": -959,
+          "x": 271,
+          "y": -932,
           "zone": "psychedelia-prog",
           "priority": 1
         },
         "rush": {
-          "x": 947,
-          "y": -1024,
+          "x": 1039,
+          "y": -672,
           "zone": "psychedelia-prog",
           "priority": 1
         },
         "santana-band": {
-          "x": -1189,
-          "y": -289,
+          "x": -882,
+          "y": -137,
           "zone": "roots-blues",
           "priority": 0.555
         },
         "stray-cats": {
-          "x": -1297,
-          "y": -142,
+          "x": -1260,
+          "y": -158,
           "zone": "roots-blues",
           "priority": 0.51
         },
         "radiohead": {
-          "x": 362,
-          "y": -271,
+          "x": 558,
+          "y": -192,
           "zone": "psychedelia-prog",
           "priority": 1
         },
         "iron-maiden": {
-          "x": 2078,
-          "y": 141,
+          "x": 2007,
+          "y": -167,
           "zone": "hard-rock-metal",
           "priority": 1
         },
         "judas-priest": {
-          "x": 2582,
-          "y": 697,
+          "x": 2354,
+          "y": 987,
           "zone": "hard-rock-metal",
           "priority": 0.735
         },
         "ibanez": {
-          "x": 4507,
-          "y": 284,
+          "x": 4574,
+          "y": 320,
           "zone": "guitar-workshop",
           "priority": 1
         },
         "prs": {
-          "x": 4119,
-          "y": -196,
+          "x": 4123,
+          "y": -261,
           "zone": "guitar-workshop",
           "priority": 1
         },
         "jackson": {
-          "x": 4130,
-          "y": -716,
+          "x": 4109,
+          "y": -914,
           "zone": "guitar-workshop",
           "priority": 1
         },
         "charvel": {
-          "x": 4341,
-          "y": 349,
+          "x": 4369,
+          "y": 400,
           "zone": "guitar-workshop",
           "priority": 0.465
         },
         "music-man": {
-          "x": 4762,
-          "y": -180,
+          "x": 4889,
+          "y": -252,
           "zone": "guitar-workshop",
           "priority": 0.465
         },
         "yamaha": {
-          "x": 4833,
-          "y": 102,
+          "x": 4976,
+          "y": 95,
           "zone": "guitar-workshop",
           "priority": 0.465
         },
         "taylor": {
-          "x": 4650,
-          "y": 386,
+          "x": 4750,
+          "y": 446,
           "zone": "guitar-workshop",
           "priority": 0.465
         },
         "guild": {
-          "x": 4018,
-          "y": -339,
+          "x": 3999,
+          "y": -467,
           "zone": "guitar-workshop",
           "priority": 0.465
         },
         "national": {
-          "x": 3960,
-          "y": -767,
+          "x": 3866,
+          "y": -974,
           "zone": "guitar-workshop",
           "priority": 0.465
         },
         "danelectro": {
-          "x": 4655,
-          "y": -716,
+          "x": 4757,
+          "y": -914,
           "zone": "guitar-workshop",
           "priority": 0.465
         },
         "brian-may-red-special": {
-          "x": 3409,
-          "y": 511,
+          "x": 3280,
+          "y": 828,
           "zone": "guitar-workshop",
           "priority": 1
         },
         "gibson-es-335": {
-          "x": 3249,
-          "y": 255,
+          "x": 3056,
+          "y": -231,
           "zone": "guitar-workshop",
           "priority": 1
         },
         "gibson-explorer": {
-          "x": 3250,
-          "y": 80,
+          "x": 3184,
+          "y": 647,
           "zone": "guitar-workshop",
           "priority": 0.555
         },
         "gibson-firebird": {
-          "x": 3314,
-          "y": -201,
+          "x": 3054,
+          "y": -444,
           "zone": "guitar-workshop",
           "priority": 0.51
         },
         "gibson-eds-1275": {
-          "x": 3260,
-          "y": 421,
+          "x": 3054,
+          "y": -62,
           "zone": "guitar-workshop",
           "priority": 0.555
         },
         "fender-esquire": {
-          "x": 3156,
-          "y": -229,
+          "x": 3054,
+          "y": 34,
           "zone": "guitar-workshop",
           "priority": 0.555
         },
         "fender-mustang": {
-          "x": 4093,
-          "y": 133,
+          "x": 3319,
+          "y": 586,
           "zone": "guitar-workshop",
           "priority": 0.555
         },
         "prs-custom-24": {
-          "x": 3313,
-          "y": -340,
+          "x": 3054,
+          "y": 198,
           "zone": "guitar-workshop",
           "priority": 1
         },
         "prs-santana": {
-          "x": 3155,
-          "y": -599,
+          "x": 3057,
+          "y": -686,
           "zone": "guitar-workshop",
           "priority": 0.6
         },
         "ibanez-rg": {
-          "x": 3530,
-          "y": -4,
+          "x": 3206,
+          "y": -255,
           "zone": "guitar-workshop",
           "priority": 1
         },
         "ibanez-js": {
-          "x": 3644,
-          "y": -319,
+          "x": 3054,
+          "y": -335,
           "zone": "guitar-workshop",
           "priority": 0.555
         },
         "jackson-rhoads": {
-          "x": 4050,
-          "y": -511,
+          "x": 3705,
+          "y": -274,
           "zone": "guitar-workshop",
           "priority": 1
         },
         "jackson-soloist": {
-          "x": 3740,
-          "y": -490,
+          "x": 3519,
+          "y": -353,
           "zone": "guitar-workshop",
           "priority": 0.51
         },
         "charvel-san-dimas": {
-          "x": 3886,
-          "y": -600,
+          "x": 3306,
+          "y": -364,
           "zone": "guitar-workshop",
           "priority": 0.51
         },
         "music-man-axis": {
-          "x": 4408,
-          "y": -168,
+          "x": 3907,
+          "y": -53,
           "zone": "guitar-workshop",
           "priority": 0.555
         },
         "yamaha-sg": {
-          "x": 4063,
-          "y": -34,
+          "x": 3245,
+          "y": 108,
           "zone": "guitar-workshop",
           "priority": 0.51
         },
         "taylor-814ce": {
-          "x": 3673,
-          "y": 38,
+          "x": 3056,
+          "y": 429,
           "zone": "guitar-workshop",
           "priority": 0.51
         },
         "guild-f-512": {
-          "x": 3464,
-          "y": 841,
+          "x": 3059,
+          "y": 1346,
           "zone": "guitar-workshop",
           "priority": 0.51
         },
         "danelectro-3021": {
-          "x": 3774,
-          "y": -194,
+          "x": 3296,
+          "y": 273,
           "zone": "guitar-workshop",
           "priority": 0.51
         },
         "acid-king-band": {
-          "x": 1571,
-          "y": -285,
+          "x": 1460,
+          "y": -501,
           "zone": "hard-rock-metal",
           "priority": 0.465
         },
         "anathema-band": {
-          "x": 1006,
-          "y": -411,
+          "x": 888,
+          "y": -487,
           "zone": "hard-rock-metal",
           "priority": 0.555
         },
         "autopsy-band": {
-          "x": 1232,
-          "y": -344,
+          "x": 1126,
+          "y": -573,
           "zone": "hard-rock-metal",
           "priority": 0.51
         },
         "bang-american-band": {
-          "x": 1374,
-          "y": 262,
+          "x": 1116,
+          "y": 244,
           "zone": "hard-rock-metal",
           "priority": 0.465
         },
         "asap-band": {
-          "x": 2713,
-          "y": 911,
+          "x": 2911,
+          "y": 1054,
           "zone": "hard-rock-metal",
           "priority": 0.465
         },
         "anthrax-american-band": {
-          "x": 2695,
-          "y": 166,
+          "x": 1934,
+          "y": 371,
           "zone": "hard-rock-metal",
           "priority": 0.87
         },
         "badlands-american-band": {
-          "x": 2982,
-          "y": 950,
+          "x": 3189,
+          "y": 1095,
           "zone": "hard-rock-metal",
           "priority": 0.465
         },
         "skid-row": {
-          "x": 3109,
-          "y": 140,
+          "x": 3357,
+          "y": 26,
           "zone": "hard-rock-metal",
           "priority": 0.465
         },
         "kiss": {
-          "x": 2822,
-          "y": -571,
+          "x": 2978,
+          "y": -749,
           "zone": "hard-rock-metal",
           "priority": 0.555
         },
         "sebastian-bach": {
-          "x": 2474,
-          "y": -699,
+          "x": 2557,
+          "y": -950,
           "zone": "hard-rock-metal",
           "priority": 0.51
         },
         "dio": {
-          "x": 2540,
-          "y": -289,
+          "x": 2233,
+          "y": 190,
           "zone": "hard-rock-metal",
           "priority": 0.645
         },
         "george-lynch": {
-          "x": 3645,
-          "y": 142,
+          "x": 4024,
+          "y": 86,
           "zone": "hard-rock-metal",
           "priority": 0.555
         },
         "andy-sneap": {
-          "x": 2933,
-          "y": 298,
+          "x": 3167,
+          "y": 305,
           "zone": "hard-rock-metal",
           "priority": 0.735
         },
         "accept": {
-          "x": 2259,
-          "y": 702,
+          "x": 2278,
+          "y": 815,
           "zone": "hard-rock-metal",
           "priority": 0.87
         },
         "annihilator": {
-          "x": 1874,
-          "y": -139,
+          "x": 1818,
+          "y": 241,
           "zone": "hard-rock-metal",
           "priority": 0.78
         },
         "artillery": {
-          "x": 3306,
-          "y": 178,
+          "x": 3595,
+          "y": 135,
           "zone": "hard-rock-metal",
           "priority": 0.51
         },
         "as-i-lay-dying": {
-          "x": 2817,
-          "y": 1049,
+          "x": 2585,
+          "y": 1281,
           "zone": "hard-rock-metal",
           "priority": 0.6
         },
         "caliban": {
-          "x": 3306,
-          "y": 859,
+          "x": 3631,
+          "y": 949,
           "zone": "hard-rock-metal",
           "priority": 0.465
         },
         "carcass": {
-          "x": 3554,
-          "y": 979,
+          "x": 3898,
+          "y": 1135,
           "zone": "hard-rock-metal",
           "priority": 0.465
         },
         "andy-taylor": {
-          "x": 3154,
-          "y": 954,
+          "x": 3430,
+          "y": 1136,
           "zone": "hard-rock-metal",
           "priority": 0.51
         },
         "body-count": {
-          "x": 2602,
-          "y": 969,
+          "x": 2473,
+          "y": 970,
           "zone": "hip-hop-rap",
           "priority": 0.6
         },
         "rob-halford": {
-          "x": 2181,
-          "y": 233,
+          "x": 2125,
+          "y": 77,
           "zone": "hard-rock-metal",
           "priority": 0.6
         },
         "fight": {
-          "x": 2668,
-          "y": -16,
+          "x": 2959,
+          "y": -228,
           "zone": "hard-rock-metal",
           "priority": 0.555
         },
         "halford": {
-          "x": 3569,
-          "y": -383,
+          "x": 3904,
+          "y": -564,
           "zone": "hard-rock-metal",
           "priority": 0.51
         },
         "dream-theater": {
-          "x": 868,
-          "y": -1230,
+          "x": 986,
+          "y": -1282,
           "zone": "psychedelia-prog",
           "priority": 0.465
         },
         "atheist": {
-          "x": 554,
-          "y": -1009,
+          "x": 903,
+          "y": -814,
           "zone": "psychedelia-prog",
           "priority": 0.51
         },
         "mike-portnoy": {
-          "x": 701,
-          "y": -716,
+          "x": 816,
+          "y": -625,
           "zone": "psychedelia-prog",
           "priority": 0.6
         },
         "beardfish": {
-          "x": -173,
-          "y": -528,
+          "x": -141,
+          "y": -460,
           "zone": "psychedelia-prog",
           "priority": 0.465
         },
         "disturbed": {
-          "x": 153,
-          "y": -678,
+          "x": 887,
+          "y": -197,
           "zone": "psychedelia-prog",
           "priority": 0.555
         },
         "jukka-nevalainen": {
-          "x": 2264,
-          "y": 120,
+          "x": 1954,
+          "y": 556,
           "zone": "hard-rock-metal",
           "priority": 0.51
         },
         "auri": {
-          "x": -273,
-          "y": -21,
+          "x": 559,
+          "y": 436,
           "zone": "rock-circuit",
           "priority": 0.6
         },
         "northward": {
-          "x": 1127,
-          "y": -412,
+          "x": 1575,
+          "y": -371,
           "zone": "rock-circuit",
           "priority": 0.465
         },
         "children-of-bodom": {
-          "x": 2018,
-          "y": 304,
+          "x": 1858,
+          "y": 719,
           "zone": "hard-rock-metal",
           "priority": 0.69
         },
         "agathodaimon": {
-          "x": 602,
-          "y": 799,
+          "x": 1159,
+          "y": 1119,
           "zone": "rock-circuit",
           "priority": 0.465
         },
         "ancient": {
-          "x": -380,
-          "y": -362,
+          "x": 351,
+          "y": -74,
           "zone": "rock-circuit",
           "priority": 0.465
         },
         "diablo": {
-          "x": 849,
-          "y": 599,
+          "x": 1425,
+          "y": 919,
           "zone": "rock-circuit",
           "priority": 0.465
         },
         "sonata-arctica": {
-          "x": 2800,
-          "y": 56,
+          "x": 2470,
+          "y": 418,
           "zone": "hard-rock-metal",
           "priority": 0.645
         },
         "arven": {
-          "x": -593,
-          "y": 14,
+          "x": 173,
+          "y": 648,
           "zone": "rock-circuit",
           "priority": 0.465
         },
         "gamma-ray": {
-          "x": 2429,
-          "y": -418,
+          "x": 2502,
+          "y": -592,
           "zone": "hard-rock-metal",
           "priority": 0.69
         },
         "powerglove": {
-          "x": -362,
-          "y": -183,
+          "x": 467,
+          "y": 73,
           "zone": "rock-circuit",
           "priority": 0.51
         },
         "silent-voices": {
-          "x": -419,
-          "y": 388,
+          "x": 275,
+          "y": 782,
           "zone": "rock-circuit",
           "priority": 0.465
         },
         "symphonic-metal": {
-          "x": 2570,
-          "y": 97,
+          "x": 2808,
+          "y": -56,
           "zone": "hard-rock-metal",
           "priority": 1
         },
         "dutch-rock-music": {
-          "x": 1504,
-          "y": 109,
+          "x": 1311,
+          "y": 53,
           "zone": "hard-rock-metal",
           "priority": 1
         },
         "a-wake-in-providence": {
-          "x": 2139,
-          "y": -599,
+          "x": 2162,
+          "y": -756,
           "zone": "hard-rock-metal",
           "priority": 0.465
         },
         "almora": {
-          "x": 2334,
-          "y": -39,
+          "x": 2432,
+          "y": -345,
           "zone": "hard-rock-metal",
           "priority": 0.465
         },
         "believer": {
-          "x": 2728,
-          "y": 616,
+          "x": 3007,
+          "y": 676,
           "zone": "hard-rock-metal",
           "priority": 0.465
         },
         "tarja-turunen": {
-          "x": 2620,
-          "y": 417,
+          "x": 2162,
+          "y": 900,
           "zone": "hard-rock-metal",
           "priority": 0.51
         },
         "epica": {
-          "x": 1083,
-          "y": 38,
+          "x": 1575,
+          "y": 295,
           "zone": "rock-circuit",
           "priority": 0.51
         },
         "power-metal": {
-          "x": 2160,
-          "y": -6,
+          "x": 2193,
+          "y": -297,
           "zone": "hard-rock-metal",
           "priority": 1
         },
         "angra": {
-          "x": 2184,
-          "y": 377,
+          "x": 2264,
+          "y": 399,
           "zone": "hard-rock-metal",
           "priority": 0.735
         },
         "avian": {
-          "x": 2418,
-          "y": 730,
+          "x": 2566,
+          "y": 924,
           "zone": "hard-rock-metal",
           "priority": 0.465
         },
         "marko-hietala": {
-          "x": 2896,
-          "y": 434,
+          "x": 2457,
+          "y": 807,
           "zone": "hard-rock-metal",
           "priority": 0.735
         },
         "aina": {
-          "x": 427,
-          "y": 1086,
+          "x": 1064,
+          "y": 1461,
           "zone": "rock-circuit",
           "priority": 0.6
         },
         "altaria": {
-          "x": 682,
-          "y": 645,
+          "x": 1221,
+          "y": 1023,
           "zone": "rock-circuit",
           "priority": 0.465
         },
         "charon": {
-          "x": 926,
-          "y": -490,
+          "x": 1386,
+          "y": -448,
           "zone": "rock-circuit",
           "priority": 0.51
         },
         "gandalf": {
-          "x": -144,
-          "y": 339,
+          "x": 598,
+          "y": 603,
           "zone": "rock-circuit",
           "priority": 0.465
         },
         "machine-men": {
-          "x": 283,
-          "y": 688,
+          "x": 1061,
+          "y": 907,
           "zone": "rock-circuit",
           "priority": 0.465
         },
         "roky-erickson": {
-          "x": -42,
-          "y": -1039,
+          "x": -65,
+          "y": -1060,
           "zone": "psychedelia-prog",
           "priority": 0.42
         },
         "history-of-rock-music": {
-          "x": 439,
-          "y": -615,
+          "x": 549,
+          "y": -617,
           "zone": "psychedelia-prog",
           "priority": 1
         },
         "finntroll": {
-          "x": 1940,
-          "y": -293,
+          "x": 1646,
+          "y": 174,
           "zone": "hard-rock-metal",
           "priority": 0.465
         },
         "sethian": {
-          "x": -196,
-          "y": 787,
+          "x": 553,
+          "y": 1145,
           "zone": "rock-circuit",
           "priority": 0.465
         },
         "alexi-laiho": {
-          "x": 2926,
-          "y": -47,
+          "x": 2755,
+          "y": 421,
           "zone": "hard-rock-metal",
           "priority": 0.645
         },
         "hypocrisy": {
-          "x": -411,
-          "y": -27,
+          "x": 352,
+          "y": 358,
           "zone": "rock-circuit",
           "priority": 0.465
         },
         "norther": {
-          "x": 110,
-          "y": 703,
+          "x": 780,
+          "y": 944,
           "zone": "rock-circuit",
           "priority": 0.465
         },
         "pain": {
-          "x": -498,
-          "y": 726,
-          "zone": "rock-circuit",
-          "priority": 0.465
-        },
-        "nightwish": {
-          "x": 2612,
-          "y": -428,
-          "zone": "hard-rock-metal",
-          "priority": 0.51
-        },
-        "aqua": {
-          "x": -132,
-          "y": 462,
-          "zone": "rock-circuit",
-          "priority": 0.465
-        },
-        "tony-kakko": {
-          "x": 326,
-          "y": 828,
-          "zone": "rock-circuit",
-          "priority": 0.69
-        },
-        "avalon": {
-          "x": -219,
-          "y": -132,
-          "zone": "rock-circuit",
-          "priority": 0.51
-        },
-        "heavenly": {
-          "x": 1030,
-          "y": -119,
-          "zone": "rock-circuit",
-          "priority": 0.51
-        },
-        "tarot": {
-          "x": 288,
-          "y": -625,
-          "zone": "rock-circuit",
-          "priority": 0.465
-        },
-        "gothic-metal": {
-          "x": 1687,
-          "y": -119,
-          "zone": "hard-rock-metal",
-          "priority": 1
-        },
-        "bauhaus": {
-          "x": 1720,
-          "y": 572,
-          "zone": "hard-rock-metal",
-          "priority": 0.51
-        },
-        "bad-religion": {
-          "x": 2142,
-          "y": 1384,
-          "zone": "punk-alt",
-          "priority": 0.645
-        },
-        "afi": {
-          "x": 546,
-          "y": 1020,
-          "zone": "punk-alt",
-          "priority": 0.825
-        },
-        "black-flag": {
-          "x": 2294,
-          "y": 2102,
-          "zone": "punk-alt",
-          "priority": 0.69
-        },
-        "black-president": {
-          "x": 1595,
-          "y": 796,
-          "zone": "punk-alt",
-          "priority": 0.6
-        },
-        "brian-baker": {
-          "x": 1727,
-          "y": 1922,
-          "zone": "punk-alt",
-          "priority": 0.51
-        },
-        "germs": {
-          "x": 2027,
-          "y": 1948,
-          "zone": "punk-alt",
-          "priority": 0.465
-        },
-        "kvelertak": {
-          "x": 2364,
-          "y": -289,
-          "zone": "hard-rock-metal",
-          "priority": 0.555
-        },
-        "execration": {
-          "x": 71,
-          "y": -439,
-          "zone": "rock-circuit",
-          "priority": 0.465
-        },
-        "ghost": {
-          "x": 3041,
-          "y": 482,
-          "zone": "hard-rock-metal",
-          "priority": 0.51
-        },
-        "gojira": {
-          "x": 3542,
-          "y": 736,
-          "zone": "hard-rock-metal",
-          "priority": 0.51
-        },
-        "the-good-the-bad-and-the-zugly": {
-          "x": 1345,
-          "y": 1506,
-          "zone": "punk-alt",
-          "priority": 0.42
-        },
-        "ramones": {
-          "x": 1804,
-          "y": 1101,
-          "zone": "punk-alt",
-          "priority": 0.51
-        },
-        "blondie": {
-          "x": 1733,
-          "y": 2102,
-          "zone": "punk-alt",
-          "priority": 0.555
-        },
-        "suicidal-tendencies": {
-          "x": 2355,
-          "y": 1636,
-          "zone": "punk-alt",
-          "priority": 0.555
-        },
-        "beartooth": {
-          "x": 1480,
-          "y": 1969,
-          "zone": "punk-alt",
-          "priority": 0.465
-        },
-        "horror-punk": {
-          "x": 304,
-          "y": 1152,
-          "zone": "punk-alt",
-          "priority": 1
-        },
-        "alice-cooper": {
-          "x": 960,
-          "y": 339,
-          "zone": "hard-rock-metal",
-          "priority": 0.735
-        },
-        "calabrese": {
-          "x": 337,
-          "y": 1392,
-          "zone": "punk-alt",
-          "priority": 0.465
-        },
-        "all-that-remains": {
-          "x": 2829,
-          "y": -751,
-          "zone": "hard-rock-metal",
-          "priority": 0.51
-        },
-        "absu": {
-          "x": 3248,
-          "y": -48,
-          "zone": "hard-rock-metal",
-          "priority": 0.465
-        },
-        "anacrusis": {
-          "x": 3302,
-          "y": 1033,
-          "zone": "hard-rock-metal",
-          "priority": 0.51
-        },
-        "angkor-wat": {
-          "x": 3495,
-          "y": -95,
-          "zone": "hard-rock-metal",
-          "priority": 0.465
-        },
-        "anonymus": {
-          "x": 2646,
-          "y": -612,
-          "zone": "hard-rock-metal",
-          "priority": 0.465
-        },
-        "anvil": {
-          "x": 2908,
-          "y": -213,
-          "zone": "hard-rock-metal",
-          "priority": 0.51
-        },
-        "avenged-sevenfold": {
-          "x": 3024,
-          "y": 675,
-          "zone": "hard-rock-metal",
-          "priority": 0.555
-        },
-        "atreyu": {
-          "x": 3520,
-          "y": 1161,
-          "zone": "hard-rock-metal",
-          "priority": 0.465
-        },
-        "avatar": {
-          "x": 3604,
-          "y": -741,
-          "zone": "hard-rock-metal",
-          "priority": 0.51
-        },
-        "misfits": {
-          "x": 1508,
-          "y": 1000,
-          "zone": "punk-alt",
-          "priority": 0.42
-        },
-        "adorable": {
-          "x": 2497,
-          "y": 1037,
-          "zone": "punk-alt",
-          "priority": 0.465
-        },
-        "adventures": {
-          "x": 2355,
-          "y": 1137,
-          "zone": "punk-alt",
-          "priority": 0.465
-        },
-        "andy-bell": {
-          "x": 2376,
-          "y": 1304,
-          "zone": "punk-alt",
-          "priority": 0.6
-        },
-        "bleed": {
-          "x": 2201,
-          "y": 1221,
-          "zone": "punk-alt",
-          "priority": 0.465
-        },
-        "blur": {
-          "x": 2301,
-          "y": 1459,
-          "zone": "punk-alt",
-          "priority": 0.51
-        },
-        "billy-arnold": {
-          "x": -935,
-          "y": 1242,
-          "zone": "folk-country-vise",
-          "priority": 0.465
-        },
-        "camel": {
-          "x": -610,
-          "y": 1604,
-          "zone": "folk-country-vise",
-          "priority": 0.465
-        },
-        "electric-acoustic-guitar": {
-          "x": 3359,
-          "y": -78,
-          "zone": "guitar-workshop",
-          "priority": 0.465
-        },
-        "gibson-guitar-company": {
-          "x": 3543,
-          "y": 165,
-          "zone": "guitar-workshop",
-          "priority": 0.465
-        },
-        "apocalyptica": {
-          "x": 2471,
-          "y": 380,
-          "zone": "hard-rock-metal",
-          "priority": 0.645
-        },
-        "allison": {
-          "x": 460,
-          "y": 22,
-          "zone": "rock-circuit",
-          "priority": 0.465
-        },
-        "bush": {
-          "x": 1926,
-          "y": 1635,
-          "zone": "punk-alt",
-          "priority": 0.51
-        },
-        "flyleaf": {
-          "x": 96,
-          "y": 981,
-          "zone": "rock-circuit",
-          "priority": 0.51
-        },
-        "fuel": {
-          "x": 780,
-          "y": -84,
-          "zone": "rock-circuit",
-          "priority": 0.465
-        },
-        "avantasia": {
-          "x": 2197,
-          "y": 532,
-          "zone": "hard-rock-metal",
-          "priority": 0.825
-        },
-        "ark": {
-          "x": 800,
-          "y": 104,
-          "zone": "rock-circuit",
-          "priority": 0.51
-        },
-        "bodine": {
-          "x": -50,
-          "y": 1068,
-          "zone": "rock-circuit",
-          "priority": 0.465
-        },
-        "conception": {
-          "x": 325,
-          "y": -368,
-          "zone": "rock-circuit",
-          "priority": 0.465
-        },
-        "h-e-a-t": {
-          "x": -1,
-          "y": 571,
-          "zone": "rock-circuit",
-          "priority": 0.465
-        },
-        "hard-rain": {
-          "x": 1330,
-          "y": 126,
-          "zone": "rock-circuit",
-          "priority": 0.465
-        },
-        "heavens-gate": {
-          "x": 59,
-          "y": -251,
-          "zone": "rock-circuit",
-          "priority": 0.465
-        },
-        "ralf-scheepers": {
-          "x": 2027,
-          "y": -451,
-          "zone": "hard-rock-metal",
-          "priority": 0.78
-        },
-        "magnus-karlsson": {
-          "x": -68,
-          "y": 895,
-          "zone": "rock-circuit",
-          "priority": 0.465
-        },
-        "masterplan": {
-          "x": 280,
-          "y": 979,
-          "zone": "rock-circuit",
-          "priority": 0.465
-        },
-        "phenomena": {
-          "x": 1115,
-          "y": 751,
-          "zone": "rock-circuit",
-          "priority": 0.465
-        },
-        "primal-fear": {
-          "x": 2339,
-          "y": -577,
-          "zone": "hard-rock-metal",
-          "priority": 0.465
-        },
-        "sinner": {
-          "x": 1167,
-          "y": 543,
-          "zone": "rock-circuit",
-          "priority": 0.465
-        },
-        "therion": {
-          "x": -108,
-          "y": -34,
-          "zone": "rock-circuit",
-          "priority": 0.465
-        },
-        "edguy": {
-          "x": 2035,
-          "y": 480,
-          "zone": "hard-rock-metal",
-          "priority": 0.51
-        },
-        "scorpions": {
-          "x": -473,
-          "y": 106,
-          "zone": "rock-circuit",
-          "priority": 0.51
-        },
-        "orden-ogan": {
-          "x": 3253,
-          "y": 692,
-          "zone": "hard-rock-metal",
-          "priority": 0.42
-        },
-        "at-vance": {
-          "x": 2516,
-          "y": -135,
-          "zone": "hard-rock-metal",
-          "priority": 0.555
-        },
-        "angel-dust": {
-          "x": 207,
-          "y": 253,
-          "zone": "rock-circuit",
-          "priority": 0.465
-        },
-        "mark-cross": {
-          "x": 1319,
-          "y": 600,
-          "zone": "rock-circuit",
-          "priority": 0.555
-        },
-        "tobias-sammet": {
-          "x": 2928,
-          "y": -369,
-          "zone": "hard-rock-metal",
-          "priority": 0.51
-        },
-        "speed-metal": {
-          "x": 2463,
-          "y": 546,
-          "zone": "hard-rock-metal",
-          "priority": 1
-        },
-        "bandana-thrash": {
-          "x": 2087,
-          "y": 654,
-          "zone": "hard-rock-metal",
-          "priority": 0.51
-        },
-        "bathory": {
-          "x": 2534,
-          "y": 867,
-          "zone": "hard-rock-metal",
-          "priority": 0.465
-        },
-        "space-rock": {
-          "x": 1065,
-          "y": -678,
-          "zone": "psychedelia-prog",
-          "priority": 1
-        },
-        "ingo-schwichtenberg": {
-          "x": 2742,
-          "y": -288,
-          "zone": "hard-rock-metal",
-          "priority": 0.51
-        },
-        "jon-oliva": {
-          "x": 2826,
-          "y": 213,
-          "zone": "hard-rock-metal",
-          "priority": 0.69
-        },
-        "elvenking": {
-          "x": -335,
-          "y": 656,
-          "zone": "rock-circuit",
-          "priority": 0.465
-        },
-        "free": {
-          "x": 1286,
-          "y": 758,
-          "zone": "rock-circuit",
-          "priority": 0.465
-        },
-        "jack-frost": {
-          "x": 1155,
-          "y": 162,
-          "zone": "rock-circuit",
-          "priority": 0.51
-        },
-        "midnight": {
-          "x": -371,
+          "x": 261,
           "y": 968,
           "zone": "rock-circuit",
           "priority": 0.465
         },
+        "nightwish": {
+          "x": 2325,
+          "y": 62,
+          "zone": "hard-rock-metal",
+          "priority": 0.51
+        },
+        "aqua": {
+          "x": 636,
+          "y": 830,
+          "zone": "rock-circuit",
+          "priority": 0.465
+        },
+        "tony-kakko": {
+          "x": 103,
+          "y": 1085,
+          "zone": "rock-circuit",
+          "priority": 0.69
+        },
+        "avalon": {
+          "x": 460,
+          "y": 320,
+          "zone": "rock-circuit",
+          "priority": 0.51
+        },
+        "heavenly": {
+          "x": 1575,
+          "y": 101,
+          "zone": "rock-circuit",
+          "priority": 0.51
+        },
+        "tarot": {
+          "x": 407,
+          "y": -965,
+          "zone": "rock-circuit",
+          "priority": 0.465
+        },
+        "gothic-metal": {
+          "x": 1680,
+          "y": -367,
+          "zone": "hard-rock-metal",
+          "priority": 1
+        },
+        "bauhaus": {
+          "x": 1603,
+          "y": 982,
+          "zone": "hard-rock-metal",
+          "priority": 0.51
+        },
+        "bad-religion": {
+          "x": 1872,
+          "y": 1136,
+          "zone": "punk-alt",
+          "priority": 0.645
+        },
+        "afi": {
+          "x": 1070,
+          "y": 1129,
+          "zone": "punk-alt",
+          "priority": 0.825
+        },
+        "black-flag": {
+          "x": 2500,
+          "y": 2209,
+          "zone": "punk-alt",
+          "priority": 0.69
+        },
+        "black-president": {
+          "x": 1724,
+          "y": 781,
+          "zone": "punk-alt",
+          "priority": 0.6
+        },
+        "brian-baker": {
+          "x": 1823,
+          "y": 2011,
+          "zone": "punk-alt",
+          "priority": 0.51
+        },
+        "germs": {
+          "x": 2176,
+          "y": 2023,
+          "zone": "punk-alt",
+          "priority": 0.465
+        },
+        "kvelertak": {
+          "x": 1977,
+          "y": 163,
+          "zone": "hard-rock-metal",
+          "priority": 0.555
+        },
+        "execration": {
+          "x": 818,
+          "y": -279,
+          "zone": "rock-circuit",
+          "priority": 0.465
+        },
+        "ghost": {
+          "x": 2733,
+          "y": 874,
+          "zone": "hard-rock-metal",
+          "priority": 0.51
+        },
+        "gojira": {
+          "x": 3881,
+          "y": 834,
+          "zone": "hard-rock-metal",
+          "priority": 0.51
+        },
+        "the-good-the-bad-and-the-zugly": {
+          "x": 1455,
+          "y": 1734,
+          "zone": "punk-alt",
+          "priority": 0.42
+        },
+        "ramones": {
+          "x": 1860,
+          "y": 953,
+          "zone": "punk-alt",
+          "priority": 0.51
+        },
+        "blondie": {
+          "x": 1819,
+          "y": 2213,
+          "zone": "punk-alt",
+          "priority": 0.555
+        },
+        "suicidal-tendencies": {
+          "x": 2235,
+          "y": 1386,
+          "zone": "punk-alt",
+          "priority": 0.555
+        },
+        "beartooth": {
+          "x": 1465,
+          "y": 2095,
+          "zone": "punk-alt",
+          "priority": 0.465
+        },
+        "horror-punk": {
+          "x": 662,
+          "y": 1016,
+          "zone": "punk-alt",
+          "priority": 1
+        },
+        "alice-cooper": {
+          "x": 1204,
+          "y": 604,
+          "zone": "hard-rock-metal",
+          "priority": 0.735
+        },
+        "calabrese": {
+          "x": 174,
+          "y": 1325,
+          "zone": "punk-alt",
+          "priority": 0.465
+        },
+        "all-that-remains": {
+          "x": 2990,
+          "y": -981,
+          "zone": "hard-rock-metal",
+          "priority": 0.51
+        },
+        "absu": {
+          "x": 3596,
+          "y": -192,
+          "zone": "hard-rock-metal",
+          "priority": 0.465
+        },
+        "anacrusis": {
+          "x": 3636,
+          "y": 1159,
+          "zone": "hard-rock-metal",
+          "priority": 0.51
+        },
+        "angkor-wat": {
+          "x": 3808,
+          "y": -195,
+          "zone": "hard-rock-metal",
+          "priority": 0.465
+        },
+        "anonymus": {
+          "x": 2783,
+          "y": -824,
+          "zone": "hard-rock-metal",
+          "priority": 0.465
+        },
+        "anvil": {
+          "x": 3164,
+          "y": -352,
+          "zone": "hard-rock-metal",
+          "priority": 0.51
+        },
+        "avenged-sevenfold": {
+          "x": 3288,
+          "y": 697,
+          "zone": "hard-rock-metal",
+          "priority": 0.555
+        },
+        "atreyu": {
+          "x": 3798,
+          "y": 1372,
+          "zone": "hard-rock-metal",
+          "priority": 0.465
+        },
+        "avatar": {
+          "x": 3990,
+          "y": -981,
+          "zone": "hard-rock-metal",
+          "priority": 0.51
+        },
+        "misfits": {
+          "x": 1679,
+          "y": 961,
+          "zone": "punk-alt",
+          "priority": 0.42
+        },
+        "adorable": {
+          "x": 2837,
+          "y": 928,
+          "zone": "punk-alt",
+          "priority": 0.465
+        },
+        "adventures": {
+          "x": 2595,
+          "y": 1020,
+          "zone": "punk-alt",
+          "priority": 0.465
+        },
+        "andy-bell": {
+          "x": 2266,
+          "y": 979,
+          "zone": "punk-alt",
+          "priority": 0.6
+        },
+        "bleed": {
+          "x": 2402,
+          "y": 1122,
+          "zone": "punk-alt",
+          "priority": 0.465
+        },
+        "blur": {
+          "x": 2598,
+          "y": 1566,
+          "zone": "punk-alt",
+          "priority": 0.51
+        },
+        "billy-arnold": {
+          "x": -922,
+          "y": 1219,
+          "zone": "folk-country-vise",
+          "priority": 0.465
+        },
+        "camel": {
+          "x": -562,
+          "y": 1619,
+          "zone": "folk-country-vise",
+          "priority": 0.465
+        },
+        "electric-acoustic-guitar": {
+          "x": 3301,
+          "y": -90,
+          "zone": "guitar-workshop",
+          "priority": 0.465
+        },
+        "gibson-guitar-company": {
+          "x": 3471,
+          "y": 117,
+          "zone": "guitar-workshop",
+          "priority": 0.465
+        },
+        "apocalyptica": {
+          "x": 2058,
+          "y": 723,
+          "zone": "hard-rock-metal",
+          "priority": 0.645
+        },
+        "allison": {
+          "x": 992,
+          "y": 391,
+          "zone": "rock-circuit",
+          "priority": 0.465
+        },
+        "bush": {
+          "x": 1860,
+          "y": 1308,
+          "zone": "punk-alt",
+          "priority": 0.51
+        },
+        "flyleaf": {
+          "x": 837,
+          "y": 1280,
+          "zone": "rock-circuit",
+          "priority": 0.51
+        },
+        "fuel": {
+          "x": 1441,
+          "y": 239,
+          "zone": "rock-circuit",
+          "priority": 0.465
+        },
+        "avantasia": {
+          "x": 1984,
+          "y": 879,
+          "zone": "hard-rock-metal",
+          "priority": 0.825
+        },
+        "ark": {
+          "x": 1426,
+          "y": 463,
+          "zone": "rock-circuit",
+          "priority": 0.51
+        },
+        "bodine": {
+          "x": 725,
+          "y": 1463,
+          "zone": "rock-circuit",
+          "priority": 0.465
+        },
+        "conception": {
+          "x": 1079,
+          "y": -8,
+          "zone": "rock-circuit",
+          "priority": 0.465
+        },
+        "h-e-a-t": {
+          "x": 709,
+          "y": 790,
+          "zone": "rock-circuit",
+          "priority": 0.465
+        },
+        "hard-rain": {
+          "x": 1575,
+          "y": 376,
+          "zone": "rock-circuit",
+          "priority": 0.465
+        },
+        "heavens-gate": {
+          "x": 826,
+          "y": 146,
+          "zone": "rock-circuit",
+          "priority": 0.465
+        },
+        "ralf-scheepers": {
+          "x": 1770,
+          "y": 58,
+          "zone": "hard-rock-metal",
+          "priority": 0.78
+        },
+        "magnus-karlsson": {
+          "x": 697,
+          "y": 1221,
+          "zone": "rock-circuit",
+          "priority": 0.465
+        },
+        "masterplan": {
+          "x": 1113,
+          "y": 1328,
+          "zone": "rock-circuit",
+          "priority": 0.465
+        },
+        "phenomena": {
+          "x": 1575,
+          "y": 1325,
+          "zone": "rock-circuit",
+          "priority": 0.465
+        },
+        "primal-fear": {
+          "x": 2407,
+          "y": -788,
+          "zone": "hard-rock-metal",
+          "priority": 0.465
+        },
+        "sinner": {
+          "x": 1574,
+          "y": 926,
+          "zone": "rock-circuit",
+          "priority": 0.465
+        },
+        "therion": {
+          "x": 653,
+          "y": 414,
+          "zone": "rock-circuit",
+          "priority": 0.465
+        },
+        "edguy": {
+          "x": 1445,
+          "y": 661,
+          "zone": "hard-rock-metal",
+          "priority": 0.51
+        },
+        "scorpions": {
+          "x": 274,
+          "y": 489,
+          "zone": "rock-circuit",
+          "priority": 0.51
+        },
+        "orden-ogan": {
+          "x": 3546,
+          "y": 754,
+          "zone": "hard-rock-metal",
+          "priority": 0.42
+        },
+        "at-vance": {
+          "x": 2111,
+          "y": 275,
+          "zone": "hard-rock-metal",
+          "priority": 0.555
+        },
+        "angel-dust": {
+          "x": 949,
+          "y": 577,
+          "zone": "rock-circuit",
+          "priority": 0.465
+        },
+        "mark-cross": {
+          "x": 1575,
+          "y": 1021,
+          "zone": "rock-circuit",
+          "priority": 0.555
+        },
+        "tobias-sammet": {
+          "x": 2580,
+          "y": -2,
+          "zone": "hard-rock-metal",
+          "priority": 0.51
+        },
+        "speed-metal": {
+          "x": 2801,
+          "y": 631,
+          "zone": "hard-rock-metal",
+          "priority": 1
+        },
+        "bandana-thrash": {
+          "x": 1939,
+          "y": 1054,
+          "zone": "hard-rock-metal",
+          "priority": 0.51
+        },
+        "bathory": {
+          "x": 2704,
+          "y": 1088,
+          "zone": "hard-rock-metal",
+          "priority": 0.465
+        },
+        "space-rock": {
+          "x": 1249,
+          "y": -715,
+          "zone": "psychedelia-prog",
+          "priority": 1
+        },
+        "ingo-schwichtenberg": {
+          "x": 2496,
+          "y": 160,
+          "zone": "hard-rock-metal",
+          "priority": 0.51
+        },
+        "jon-oliva": {
+          "x": 2619,
+          "y": 526,
+          "zone": "hard-rock-metal",
+          "priority": 0.69
+        },
+        "elvenking": {
+          "x": 436,
+          "y": 942,
+          "zone": "rock-circuit",
+          "priority": 0.465
+        },
+        "free": {
+          "x": 1575,
+          "y": 1236,
+          "zone": "rock-circuit",
+          "priority": 0.465
+        },
+        "jack-frost": {
+          "x": 1575,
+          "y": 447,
+          "zone": "rock-circuit",
+          "priority": 0.51
+        },
+        "midnight": {
+          "x": 412,
+          "y": 1292,
+          "zone": "rock-circuit",
+          "priority": 0.465
+        },
         "michael-weikath": {
-          "x": 2794,
-          "y": -107,
+          "x": 2618,
+          "y": 322,
           "zone": "hard-rock-metal",
           "priority": 0.645
         },
         "ufo": {
-          "x": -72,
-          "y": -181,
+          "x": 686,
+          "y": 285,
           "zone": "rock-circuit",
           "priority": 0.465
         },
         "angel-witch": {
-          "x": 2144,
-          "y": 831,
+          "x": 1940,
+          "y": 1256,
           "zone": "hard-rock-metal",
           "priority": 0.555
         },
         "candlemass": {
-          "x": 164,
-          "y": 584,
+          "x": 871,
+          "y": 894,
           "zone": "rock-circuit",
           "priority": 0.51
         },
         "death": {
-          "x": 3626,
-          "y": -558,
+          "x": 3985,
+          "y": -766,
           "zone": "hard-rock-metal",
           "priority": 0.465
         },
         "savatage": {
-          "x": 2645,
-          "y": -166,
+          "x": 2357,
+          "y": 277,
           "zone": "hard-rock-metal",
           "priority": 0.69
         },
         "asia": {
-          "x": 812,
-          "y": 1176,
+          "x": 1416,
+          "y": 1469,
           "zone": "rock-circuit",
           "priority": 0.555
         },
         "criss-oliva": {
-          "x": 3059,
-          "y": -220,
+          "x": 2862,
+          "y": 281,
           "zone": "hard-rock-metal",
           "priority": 0.735
         },
         "charvel-guitars": {
-          "x": 3936,
-          "y": 125,
+          "x": 3932,
+          "y": 169,
           "zone": "guitar-workshop",
           "priority": 0.465
         },
         "jackson-guitars": {
-          "x": 3947,
-          "y": -171,
+          "x": 3918,
+          "y": -274,
           "zone": "guitar-workshop",
           "priority": 0.465
         },
         "joe-perry": {
-          "x": 756,
-          "y": -494,
+          "x": 1407,
+          "y": -304,
           "zone": "rock-circuit",
           "priority": 0.51
         },
         "overkill": {
-          "x": 765,
-          "y": 759,
+          "x": 1391,
+          "y": 1039,
           "zone": "rock-circuit",
           "priority": 0.465
         },
         "testament": {
-          "x": 223,
-          "y": -5,
+          "x": 946,
+          "y": 299,
           "zone": "rock-circuit",
           "priority": 0.465
         },
         "rammstein": {
-          "x": 1253,
-          "y": 877,
+          "x": 1501,
+          "y": 781,
           "zone": "punk-alt",
           "priority": 0.51
         },
         "aria": {
-          "x": 440,
-          "y": 302,
+          "x": 834,
+          "y": 772,
           "zone": "rock-circuit",
           "priority": 0.51
         },
         "battery": {
-          "x": 1169,
-          "y": 1780,
+          "x": 1127,
+          "y": 1880,
           "zone": "punk-alt",
           "priority": 0.465
         },
         "corey-taylor": {
-          "x": 1808,
-          "y": 16,
+          "x": 1460,
+          "y": 347,
           "zone": "hard-rock-metal",
           "priority": 0.735
         },
         "biohazard": {
-          "x": -400,
-          "y": 252,
+          "x": 370,
+          "y": 616,
           "zone": "rock-circuit",
           "priority": 0.465
         },
         "code-orange": {
-          "x": 1330,
-          "y": -147,
+          "x": 1575,
+          "y": 28,
           "zone": "rock-circuit",
           "priority": 0.465
         },
         "craig-jones": {
-          "x": 207,
-          "y": 823,
+          "x": 962,
+          "y": 1088,
           "zone": "rock-circuit",
           "priority": 0.465
         },
         "stone-sour": {
-          "x": -62,
-          "y": -344,
+          "x": 743,
+          "y": -92,
           "zone": "rock-circuit",
           "priority": 0.6
         },
         "art-of-dying": {
-          "x": 1017,
-          "y": 618,
+          "x": 1363,
+          "y": 664,
           "zone": "rock-circuit",
           "priority": 0.465
         },
         "chevelle": {
-          "x": 594,
-          "y": 1249,
+          "x": 751,
+          "y": 1669,
           "zone": "rock-circuit",
           "priority": 0.465
         },
         "genesis": {
-          "x": -787,
-          "y": -261,
-          "zone": "rock-circuit",
-          "priority": 0.465
-        },
-        "2-tone-music-genre": {
-          "x": 438,
-          "y": 1765,
-          "zone": "punk-alt",
-          "priority": 1
-        },
-        "gothic-rock": {
-          "x": 706,
-          "y": 1390,
-          "zone": "punk-alt",
-          "priority": 1
-        },
-        "all-about-eve": {
-          "x": 691,
-          "y": 1197,
-          "zone": "punk-alt",
-          "priority": 0.465
-        },
-        "industrial-rock": {
-          "x": 1077,
-          "y": 1072,
-          "zone": "punk-alt",
-          "priority": 1
-        },
-        "amy-lee": {
-          "x": 724,
-          "y": 7,
-          "zone": "rock-circuit",
-          "priority": 0.465
-        },
-        "seether": {
-          "x": -821,
-          "y": 790,
-          "zone": "rock-circuit",
-          "priority": 0.42
-        },
-        "shinedown": {
-          "x": -462,
-          "y": 1091,
-          "zone": "rock-circuit",
-          "priority": 0.465
-        },
-        "post-grunge": {
-          "x": 1802,
-          "y": 1517,
-          "zone": "punk-alt",
-          "priority": 1
-        },
-        "cold": {
-          "x": 1531,
-          "y": 1316,
-          "zone": "punk-alt",
-          "priority": 0.465
-        },
-        "till-lindemann": {
-          "x": -419,
-          "y": 877,
-          "zone": "folk-country-vise",
-          "priority": 0.555
-        },
-        "emigrate": {
-          "x": -934,
-          "y": 442,
-          "zone": "rock-circuit",
-          "priority": 0.465
-        },
-        "lindemann": {
-          "x": 470,
-          "y": -231,
-          "zone": "rock-circuit",
-          "priority": 0.465
-        },
-        "richard-marx": {
-          "x": -826,
-          "y": 1608,
-          "zone": "folk-country-vise",
-          "priority": 0.42
-        },
-        "airbourne": {
-          "x": 1160,
-          "y": -530,
-          "zone": "hard-rock-metal",
-          "priority": 0.465
-        },
-        "argent": {
-          "x": 1050,
-          "y": 170,
-          "zone": "hard-rock-metal",
-          "priority": 0.465
-        },
-        "pop-rock": {
-          "x": 1061,
-          "y": 312,
-          "zone": "rock-circuit",
-          "priority": 1
-        },
-        "creed": {
-          "x": 2767,
-          "y": 343,
-          "zone": "hard-rock-metal",
-          "priority": 0.51
-        },
-        "dlr-band": {
-          "x": 3462,
-          "y": -626,
-          "zone": "hard-rock-metal",
-          "priority": 0.465
-        },
-        "eddie-martinez": {
-          "x": 2277,
-          "y": -734,
-          "zone": "hard-rock-metal",
-          "priority": 0.465
-        },
-        "extreme": {
-          "x": 3216,
-          "y": -292,
-          "zone": "hard-rock-metal",
-          "priority": 0.465
-        },
-        "reo-speedwagon": {
-          "x": 848,
-          "y": 1422,
-          "zone": "rock-circuit",
-          "priority": 0.645
-        },
-        "bruce-hall": {
-          "x": 930,
-          "y": 891,
-          "zone": "rock-circuit",
-          "priority": 0.465
-        },
-        "daughtry": {
-          "x": -1187,
-          "y": -516,
-          "zone": "rock-circuit",
-          "priority": 0.465
-        },
-        "drake": {
-          "x": 3305,
-          "y": 1401,
-          "zone": "hip-hop-rap",
-          "priority": 0.51
-        },
-        "eagles": {
-          "x": 896,
-          "y": -196,
-          "zone": "rock-circuit",
-          "priority": 0.465
-        },
-        "toto": {
-          "x": -768,
-          "y": -530,
-          "zone": "rock-circuit",
-          "priority": 0.42
-        },
-        "journey": {
-          "x": 944,
-          "y": 93,
-          "zone": "rock-circuit",
-          "priority": 0.42
-        },
-        "steve-perry": {
-          "x": 352,
-          "y": 88,
-          "zone": "rock-circuit",
-          "priority": 0.42
-        },
-        "foreigner": {
-          "x": -343,
-          "y": 810,
-          "zone": "rock-circuit",
-          "priority": 0.465
-        },
-        "john-fogerty": {
-          "x": -35,
-          "y": 61,
-          "zone": "rock-circuit",
-          "priority": 0.42
-        },
-        "jerry-reed": {
-          "x": -431,
-          "y": 1595,
-          "zone": "folk-country-vise",
-          "priority": 0.42
-        },
-        "jerry-lee-lewis": {
-          "x": -319,
-          "y": 109,
-          "zone": "rock-circuit",
-          "priority": 0.42
-        },
-        "little-richard": {
-          "x": -772,
-          "y": 1337,
-          "zone": "folk-country-vise",
-          "priority": 0.42
-        },
-        "ronnie-van-zant": {
-          "x": -1722,
-          "y": -39,
-          "zone": "roots-blues",
-          "priority": 0.42
-        },
-        "creedence-clearwater-revival": {
-          "x": -1138,
-          "y": 351,
-          "zone": "rock-circuit",
-          "priority": 0.42
-        },
-        "dead-kennedys": {
-          "x": 1546,
-          "y": 2140,
-          "zone": "punk-alt",
-          "priority": 0.51
-        },
-        "ceremony": {
-          "x": 2165,
-          "y": 1777,
-          "zone": "punk-alt",
-          "priority": 0.465
-        },
-        "7-seconds": {
-          "x": 2483,
-          "y": 1438,
-          "zone": "punk-alt",
-          "priority": 0.51
-        },
-        "circle-jerks": {
-          "x": 1507,
-          "y": 634,
-          "zone": "punk-alt",
-          "priority": 0.69
-        },
-        "bill-stevenson": {
-          "x": 169,
-          "y": -396,
-          "zone": "psychedelia-prog",
-          "priority": 0.51
-        },
-        "classical-guitar": {
-          "x": 3389,
-          "y": 79,
-          "zone": "guitar-workshop",
-          "priority": 0.51
-        },
-        "d-o-a": {
-          "x": 210,
-          "y": 1345,
-          "zone": "rock-circuit",
-          "priority": 0.465
-        },
-        "dc3": {
-          "x": 1000,
-          "y": -304,
-          "zone": "rock-circuit",
-          "priority": 0.465
-        },
-        "the-damned": {
-          "x": 1271,
-          "y": 1048,
-          "zone": "punk-alt",
-          "priority": 0.42
-        },
-        "bad-brains": {
-          "x": 1981,
-          "y": 1788,
-          "zone": "punk-alt",
-          "priority": 0.465
-        },
-        "minor-threat": {
-          "x": 1709,
-          "y": 944,
-          "zone": "punk-alt",
-          "priority": 0.825
-        },
-        "big-boys": {
-          "x": 1254,
-          "y": 13,
-          "zone": "rock-circuit",
-          "priority": 0.465
-        },
-        "dr-know": {
-          "x": 55,
-          "y": 829,
-          "zone": "rock-circuit",
-          "priority": 0.465
-        },
-        "egg-hunt": {
-          "x": -568,
-          "y": 1340,
-          "zone": "rock-circuit",
-          "priority": 0.465
-        },
-        "embrace": {
-          "x": 666,
-          "y": 1081,
-          "zone": "rock-circuit",
-          "priority": 0.465
-        },
-        "jeff-nelson": {
-          "x": 554,
-          "y": 650,
-          "zone": "rock-circuit",
-          "priority": 0.465
-        },
-        "our-band-could-be-your-life": {
-          "x": 586,
-          "y": -18,
-          "zone": "rock-circuit",
-          "priority": 0.465
-        },
-        "sex-pistols": {
-          "x": 1227,
-          "y": 1215,
-          "zone": "punk-alt",
-          "priority": 0.42
-        },
-        "new-york-dolls": {
-          "x": 1990,
-          "y": 1469,
-          "zone": "punk-alt",
-          "priority": 0.465
-        },
-        "the-clash": {
-          "x": 512,
-          "y": 1357,
-          "zone": "punk-alt",
-          "priority": 0.645
-        },
-        "bruce-springsteen-the-e-street-band": {
-          "x": 202,
-          "y": -308,
-          "zone": "rock-circuit",
-          "priority": 0.465
-        },
-        "bruce-thomas": {
-          "x": 618,
-          "y": 937,
-          "zone": "rock-circuit",
-          "priority": 0.465
-        },
-        "mc5": {
-          "x": 2110,
-          "y": 2106,
-          "zone": "punk-alt",
-          "priority": 0.42
-        },
-        "the-stooges": {
-          "x": 1587,
-          "y": 1820,
-          "zone": "punk-alt",
-          "priority": 0.42
-        },
-        "descendents": {
-          "x": 2809,
-          "y": 1477,
-          "zone": "punk-alt",
-          "priority": 0.465
-        },
-        "acoustic-guitar": {
-          "x": 3142,
-          "y": -101,
-          "zone": "guitar-workshop",
-          "priority": 0.555
-        },
-        "green-day": {
-          "x": 1066,
-          "y": 1267,
-          "zone": "punk-alt",
-          "priority": 0.465
-        },
-        "the-offspring": {
-          "x": 1170,
-          "y": 1419,
-          "zone": "punk-alt",
-          "priority": 0.6
-        },
-        "adolescents": {
-          "x": 1005,
-          "y": 1597,
-          "zone": "punk-alt",
-          "priority": 0.6
-        },
-        "agent-orange": {
-          "x": 986,
-          "y": 1427,
-          "zone": "punk-alt",
-          "priority": 0.51
-        },
-        "siouxsie-and-the-banshees": {
-          "x": 740,
-          "y": 1803,
-          "zone": "punk-alt",
-          "priority": 0.465
-        },
-        "air": {
-          "x": 222,
-          "y": 123,
-          "zone": "rock-circuit",
-          "priority": 0.465
-        },
-        "23-skidoo": {
-          "x": 1868,
-          "y": 1332,
-          "zone": "punk-alt",
-          "priority": 0.465
-        },
-        "abc": {
-          "x": 1797,
-          "y": 1765,
-          "zone": "punk-alt",
-          "priority": 0.465
-        },
-        "pop-punk": {
-          "x": 1420,
-          "y": 1167,
-          "zone": "punk-alt",
-          "priority": 1
-        },
-        "operation-ivy": {
-          "x": 1688,
-          "y": 1375,
-          "zone": "punk-alt",
-          "priority": 0.42
-        },
-        "rancid": {
-          "x": 1189,
-          "y": 1602,
-          "zone": "punk-alt",
-          "priority": 0.42
-        },
-        "nofx": {
-          "x": 1348,
-          "y": 1340,
-          "zone": "punk-alt",
-          "priority": 0.555
-        },
-        "samhain": {
-          "x": 1401,
-          "y": 1677,
-          "zone": "punk-alt",
-          "priority": 0.465
-        },
-        "bando-sport": {
-          "x": -53,
-          "y": 722,
-          "zone": "rock-circuit",
-          "priority": 0.465
-        },
-        "the-cramps": {
-          "x": 1917,
-          "y": 2103,
-          "zone": "punk-alt",
-          "priority": 0.465
-        },
-        "hardcore-punk": {
-          "x": 1084,
-          "y": 1956,
-          "zone": "punk-alt",
-          "priority": 1
-        },
-        "agression": {
-          "x": 1212,
-          "y": 2102,
-          "zone": "punk-alt",
-          "priority": 0.51
-        },
-        "al-thawra": {
-          "x": 890,
-          "y": 1933,
-          "zone": "punk-alt",
-          "priority": 0.465
-        },
-        "all-out-war": {
-          "x": 976,
-          "y": 1770,
-          "zone": "punk-alt",
-          "priority": 0.465
-        },
-        "pennywise": {
-          "x": 1346,
-          "y": 1846,
-          "zone": "punk-alt",
-          "priority": 0.42
-        },
-        "joy-division": {
-          "x": 854,
-          "y": 1073,
-          "zone": "punk-alt",
-          "priority": 0.555
-        },
-        "adrian-smith": {
-          "x": 345,
-          "y": -47,
-          "zone": "rock-circuit",
-          "priority": 0.645
-        },
-        "skate-punk": {
-          "x": 2633,
-          "y": 1562,
-          "zone": "punk-alt",
-          "priority": 1
-        },
-        "fugazi": {
-          "x": 492,
-          "y": 1181,
-          "zone": "punk-alt",
-          "priority": 0.735
-        },
-        "american-football": {
-          "x": -222,
-          "y": -277,
-          "zone": "rock-circuit",
-          "priority": 0.465
-        },
-        "ataxia": {
-          "x": 947,
-          "y": 1031,
-          "zone": "rock-circuit",
-          "priority": 0.465
-        },
-        "beefeater": {
-          "x": 634,
-          "y": 123,
-          "zone": "rock-circuit",
-          "priority": 0.465
-        },
-        "botch": {
-          "x": 387,
-          "y": 1266,
-          "zone": "rock-circuit",
-          "priority": 0.465
-        },
-        "braid": {
-          "x": -641,
-          "y": -159,
-          "zone": "rock-circuit",
-          "priority": 0.465
-        },
-        "iggy-pop": {
-          "x": 1538,
-          "y": 1490,
-          "zone": "punk-alt",
-          "priority": 0.42
-        },
-        "swamp-rock": {
-          "x": -1061,
-          "y": -556,
-          "zone": "roots-blues",
-          "priority": 1
-        },
-        "roots-rock": {
-          "x": -20,
-          "y": -633,
-          "zone": "psychedelia-prog",
-          "priority": 1
-        },
-        "38-special": {
-          "x": -881,
-          "y": -531,
-          "zone": "roots-blues",
-          "priority": 0.51
-        },
-        "american-primitive-guitar": {
-          "x": 3505,
-          "y": -218,
-          "zone": "guitar-workshop",
-          "priority": 0.465
-        },
-        "country-rock": {
-          "x": -1298,
-          "y": 1357,
-          "zone": "folk-country-vise",
-          "priority": 1
-        },
-        "n-w-a": {
-          "x": 2507,
-          "y": 1183,
-          "zone": "hip-hop-rap",
-          "priority": 0.51
-        },
-        "chicago": {
-          "x": 4280,
-          "y": 1633,
-          "zone": "hip-hop-rap",
-          "priority": 0.6
-        },
-        "public-enemy": {
-          "x": 3325,
-          "y": 1230,
-          "zone": "hip-hop-rap",
-          "priority": 0.69
-        },
-        "bandleader": {
-          "x": 3767,
-          "y": 1195,
-          "zone": "hip-hop-rap",
-          "priority": 0.465
-        },
-        "bass-guitars": {
-          "x": 3676,
-          "y": 736,
-          "zone": "guitar-workshop",
-          "priority": 0.465
-        },
-        "blue-magic": {
-          "x": 3955,
-          "y": 1162,
-          "zone": "hip-hop-rap",
-          "priority": 0.465
-        },
-        "thug-life": {
-          "x": 3141,
-          "y": 1248,
-          "zone": "hip-hop-rap",
-          "priority": 0.42
-        },
-        "digital-underground": {
-          "x": 3012,
-          "y": 1392,
-          "zone": "hip-hop-rap",
-          "priority": 0.555
-        },
-        "george-clinton": {
-          "x": 4227,
-          "y": 1434,
-          "zone": "hip-hop-rap",
-          "priority": 0.51
-        },
-        "eminem": {
-          "x": 3916,
-          "y": 1693,
-          "zone": "hip-hop-rap",
-          "priority": 0.42
-        },
-        "outsidaz": {
-          "x": 3768,
-          "y": 1796,
-          "zone": "hip-hop-rap",
-          "priority": 0.42
-        },
-        "gangsta-rap": {
-          "x": 3589,
-          "y": 1281,
-          "zone": "hip-hop-rap",
-          "priority": 1
-        },
-        "c-i-a": {
-          "x": 3419,
-          "y": 1073,
-          "zone": "hip-hop-rap",
-          "priority": 0.51
-        },
-        "g-funk": {
-          "x": 3169,
-          "y": 1523,
-          "zone": "hip-hop-rap",
-          "priority": 1
-        },
-        "dr-dre": {
-          "x": 3523,
-          "y": 1493,
-          "zone": "hip-hop-rap",
-          "priority": 0.465
-        },
-        "babyface": {
-          "x": 4076,
-          "y": 1298,
-          "zone": "hip-hop-rap",
-          "priority": 0.465
-        },
-        "eazy-e": {
-          "x": 3304,
-          "y": 1654,
-          "zone": "hip-hop-rap",
-          "priority": 0.555
-        },
-        "glenn-hughes": {
-          "x": 4057,
-          "y": 1465,
-          "zone": "hip-hop-rap",
-          "priority": 0.465
-        },
-        "d12": {
-          "x": 4036,
-          "y": 1827,
-          "zone": "hip-hop-rap",
-          "priority": 0.51
-        },
-        "my-band": {
-          "x": 3691,
-          "y": 1448,
-          "zone": "hip-hop-rap",
-          "priority": 0.465
-        },
-        "tupac-shakur": {
-          "x": 2992,
-          "y": 1573,
-          "zone": "hip-hop-rap",
-          "priority": 0.42
-        },
-        "west-coast-hip-hop": {
-          "x": 3889,
-          "y": 1361,
-          "zone": "hip-hop-rap",
-          "priority": 1
-        },
-        "ice-cube": {
-          "x": 3114,
-          "y": 1699,
-          "zone": "hip-hop-rap",
-          "priority": 0.51
-        },
-        "in-flames": {
-          "x": 2748,
-          "y": 756,
-          "zone": "hard-rock-metal",
-          "priority": 0.69
-        },
-        "armageddon": {
-          "x": 95,
-          "y": 1178,
-          "zone": "rock-circuit",
-          "priority": 0.465
-        },
-        "darkest-hour": {
-          "x": 994,
-          "y": 481,
-          "zone": "rock-circuit",
-          "priority": 0.465
-        },
-        "dawn": {
-          "x": 820,
-          "y": -340,
-          "zone": "rock-circuit",
-          "priority": 0.465
-        },
-        "distant": {
-          "x": 440,
-          "y": 742,
-          "zone": "rock-circuit",
-          "priority": 0.465
-        },
-        "glittertind": {
-          "x": -219,
-          "y": 1185,
-          "zone": "rock-circuit",
-          "priority": 0.42
-        },
-        "bruce-dickinson": {
-          "x": 1916,
-          "y": 141,
-          "zone": "hard-rock-metal",
-          "priority": 0.69
-        },
-        "arthur-brown": {
-          "x": 80,
-          "y": 190,
-          "zone": "rock-circuit",
-          "priority": 0.51
-        },
-        "as-lions": {
-          "x": 86,
-          "y": 57,
-          "zone": "rock-circuit",
-          "priority": 0.465
-        },
-        "catherine-wheel": {
-          "x": 930,
-          "y": 750,
-          "zone": "rock-circuit",
-          "priority": 0.465
-        },
-        "iced-earth": {
-          "x": 1979,
-          "y": -5,
-          "zone": "hard-rock-metal",
-          "priority": 0.6
-        },
-        "demons-wizards": {
-          "x": -478,
-          "y": 547,
-          "zone": "rock-circuit",
-          "priority": 0.465
-        },
-        "dennis-hayes": {
-          "x": 302,
-          "y": -732,
-          "zone": "psychedelia-prog",
-          "priority": 0.51
-        },
-        "into-eternity": {
-          "x": -516,
-          "y": -273,
-          "zone": "rock-circuit",
-          "priority": 0.465
-        },
-        "bandwagon-effect": {
-          "x": 1330,
-          "y": 430,
-          "zone": "rock-circuit",
-          "priority": 0.465
-        },
-        "steve-harris": {
-          "x": -503,
-          "y": -120,
-          "zone": "rock-circuit",
-          "priority": 0.555
-        },
-        "archive": {
-          "x": -194,
-          "y": -892,
-          "zone": "psychedelia-prog",
-          "priority": 0.465
-        },
-        "shy": {
-          "x": -409,
-          "y": -788,
-          "zone": "psychedelia-prog",
-          "priority": 0.465
-        },
-        "michael-schenker": {
-          "x": 396,
-          "y": 426,
-          "zone": "rock-circuit",
-          "priority": 0.645
-        },
-        "arcade": {
-          "x": 1164,
-          "y": -106,
-          "zone": "rock-circuit",
-          "priority": 0.465
-        },
-        "contraband": {
-          "x": -1152,
-          "y": -38,
-          "zone": "rock-circuit",
-          "priority": 0.465
-        },
-        "dave-murray": {
-          "x": 222,
+          "x": -1019,
           "y": -491,
           "zone": "rock-circuit",
           "priority": 0.465
         },
-        "janick-gers": {
-          "x": 2331,
-          "y": 426,
-          "zone": "hard-rock-metal",
-          "priority": 0.69
+        "2-tone-music-genre": {
+          "x": 247,
+          "y": 1800,
+          "zone": "punk-alt",
+          "priority": 1
         },
-        "gillan": {
-          "x": 1207,
-          "y": -257,
-          "zone": "rock-circuit",
+        "gothic-rock": {
+          "x": 470,
+          "y": 1427,
+          "zone": "punk-alt",
+          "priority": 1
+        },
+        "all-about-eve": {
+          "x": 479,
+          "y": 1181,
+          "zone": "punk-alt",
           "priority": 0.465
         },
-        "gogmagog": {
-          "x": -531,
-          "y": 903,
-          "zone": "rock-circuit",
-          "priority": 0.465
-        },
-        "tim-ripper-owens": {
-          "x": 2111,
-          "y": -302,
-          "zone": "hard-rock-metal",
-          "priority": 0.87
-        },
-        "alogia": {
-          "x": 621,
-          "y": -307,
-          "zone": "rock-circuit",
-          "priority": 0.465
-        },
-        "chi-cheng": {
-          "x": 292,
-          "y": 539,
-          "zone": "rock-circuit",
-          "priority": 0.465
-        },
-        "concerto-suite-for-electric-guitar-and-orchestra-in-e-flat-minor-op-1": {
-          "x": 3340,
-          "y": -818,
-          "zone": "guitar-workshop",
-          "priority": 0.465
-        },
-        "david-rosenthal": {
-          "x": 428,
-          "y": 589,
-          "zone": "rock-circuit",
-          "priority": 0.465
-        },
-        "hail": {
-          "x": 2487,
-          "y": 220,
-          "zone": "hard-rock-metal",
-          "priority": 0.465
-        },
-        "michael-kiske": {
-          "x": 2501,
-          "y": -545,
-          "zone": "hard-rock-metal",
-          "priority": 0.87
-        },
-        "dgm": {
-          "x": -217,
-          "y": -434,
-          "zone": "rock-circuit",
-          "priority": 0.465
-        },
-        "dennis-ward": {
-          "x": -276,
-          "y": 369,
-          "zone": "rock-circuit",
-          "priority": 0.51
-        },
-        "hardline": {
-          "x": 773,
+        "industrial-rock": {
+          "x": 925,
           "y": 930,
+          "zone": "punk-alt",
+          "priority": 1
+        },
+        "amy-lee": {
+          "x": 1264,
+          "y": 229,
           "zone": "rock-circuit",
           "priority": 0.465
         },
-        "unisonic": {
-          "x": 3637,
-          "y": 350,
-          "zone": "hard-rock-metal",
+        "seether": {
+          "x": -1064,
+          "y": 891,
+          "zone": "rock-circuit",
           "priority": 0.42
         },
-        "hollywood-vampires": {
-          "x": 453,
-          "y": 917,
+        "shinedown": {
+          "x": -592,
+          "y": 1286,
           "zone": "rock-circuit",
+          "priority": 0.465
+        },
+        "post-grunge": {
+          "x": 1914,
+          "y": 1655,
+          "zone": "punk-alt",
+          "priority": 1
+        },
+        "cold": {
+          "x": 1665,
+          "y": 1300,
+          "zone": "punk-alt",
+          "priority": 0.465
+        },
+        "till-lindemann": {
+          "x": -381,
+          "y": 898,
+          "zone": "folk-country-vise",
+          "priority": 0.555
+        },
+        "emigrate": {
+          "x": -1211,
+          "y": 431,
+          "zone": "rock-circuit",
+          "priority": 0.465
+        },
+        "lindemann": {
+          "x": 662,
+          "y": -586,
+          "zone": "rock-circuit",
+          "priority": 0.465
+        },
+        "richard-marx": {
+          "x": -801,
+          "y": 1624,
+          "zone": "folk-country-vise",
+          "priority": 0.42
+        },
+        "airbourne": {
+          "x": 920,
+          "y": -701,
+          "zone": "hard-rock-metal",
+          "priority": 0.465
+        },
+        "argent": {
+          "x": 769,
+          "y": 71,
+          "zone": "hard-rock-metal",
+          "priority": 0.465
+        },
+        "pop-rock": {
+          "x": 1368,
+          "y": 133,
+          "zone": "rock-circuit",
+          "priority": 1
+        },
+        "creed": {
+          "x": 2483,
+          "y": 623,
+          "zone": "hard-rock-metal",
           "priority": 0.51
         },
-        "aerosmith": {
-          "x": 3530,
-          "y": 498,
+        "dlr-band": {
+          "x": 3781,
+          "y": -857,
           "zone": "hard-rock-metal",
           "priority": 0.465
         },
-        "gloryhammer": {
-          "x": 2487,
-          "y": -11,
+        "eddie-martinez": {
+          "x": 2302,
+          "y": -981,
           "zone": "hard-rock-metal",
+          "priority": 0.465
+        },
+        "extreme": {
+          "x": 3437,
+          "y": -450,
+          "zone": "hard-rock-metal",
+          "priority": 0.465
+        },
+        "reo-speedwagon": {
+          "x": 1361,
+          "y": 1666,
+          "zone": "rock-circuit",
+          "priority": 0.645
+        },
+        "bruce-hall": {
+          "x": 1232,
+          "y": 1193,
+          "zone": "rock-circuit",
+          "priority": 0.465
+        },
+        "daughtry": {
+          "x": -1545,
+          "y": -826,
+          "zone": "rock-circuit",
+          "priority": 0.465
+        },
+        "drake": {
+          "x": 2686,
+          "y": 1295,
+          "zone": "hip-hop-rap",
+          "priority": 0.51
+        },
+        "eagles": {
+          "x": 1269,
+          "y": -624,
+          "zone": "rock-circuit",
+          "priority": 0.465
+        },
+        "toto": {
+          "x": -994,
+          "y": -845,
+          "zone": "rock-circuit",
+          "priority": 0.42
+        },
+        "journey": {
+          "x": 1184,
+          "y": -470,
+          "zone": "rock-circuit",
+          "priority": 0.42
+        },
+        "steve-perry": {
+          "x": 280,
+          "y": -263,
+          "zone": "rock-circuit",
+          "priority": 0.42
+        },
+        "foreigner": {
+          "x": 387,
+          "y": 1099,
+          "zone": "rock-circuit",
+          "priority": 0.465
+        },
+        "john-fogerty": {
+          "x": -94,
+          "y": -152,
+          "zone": "rock-circuit",
+          "priority": 0.42
+        },
+        "jerry-reed": {
+          "x": -368,
+          "y": 1613,
+          "zone": "folk-country-vise",
+          "priority": 0.42
+        },
+        "jerry-lee-lewis": {
+          "x": -401,
+          "y": 38,
+          "zone": "rock-circuit",
+          "priority": 0.42
+        },
+        "little-richard": {
+          "x": -741,
+          "y": 1324,
+          "zone": "folk-country-vise",
+          "priority": 0.42
+        },
+        "ronnie-van-zant": {
+          "x": -1758,
+          "y": -30,
+          "zone": "roots-blues",
+          "priority": 0.42
+        },
+        "creedence-clearwater-revival": {
+          "x": -1450,
+          "y": 285,
+          "zone": "rock-circuit",
+          "priority": 0.42
+        },
+        "dead-kennedys": {
+          "x": 1598,
+          "y": 2265,
+          "zone": "punk-alt",
+          "priority": 0.51
+        },
+        "ceremony": {
+          "x": 2321,
+          "y": 1845,
+          "zone": "punk-alt",
+          "priority": 0.465
+        },
+        "7-seconds": {
+          "x": 2723,
+          "y": 1398,
+          "zone": "punk-alt",
+          "priority": 0.51
+        },
+        "circle-jerks": {
+          "x": 1942,
+          "y": 781,
+          "zone": "punk-alt",
+          "priority": 0.69
+        },
+        "bill-stevenson": {
+          "x": 79,
+          "y": -465,
+          "zone": "psychedelia-prog",
+          "priority": 0.51
+        },
+        "classical-guitar": {
+          "x": 3055,
+          "y": 749,
+          "zone": "guitar-workshop",
+          "priority": 0.51
+        },
+        "d-o-a": {
+          "x": 951,
+          "y": 1642,
+          "zone": "rock-circuit",
+          "priority": 0.465
+        },
+        "dc3": {
+          "x": 1448,
+          "y": -84,
+          "zone": "rock-circuit",
+          "priority": 0.465
+        },
+        "the-damned": {
+          "x": 1145,
+          "y": 945,
+          "zone": "punk-alt",
+          "priority": 0.42
+        },
+        "bad-brains": {
+          "x": 2003,
+          "y": 1444,
+          "zone": "punk-alt",
+          "priority": 0.465
+        },
+        "minor-threat": {
+          "x": 2154,
+          "y": 782,
+          "zone": "punk-alt",
+          "priority": 0.825
+        },
+        "big-boys": {
+          "x": 1575,
+          "y": 206,
+          "zone": "rock-circuit",
+          "priority": 0.465
+        },
+        "dr-know": {
+          "x": 861,
+          "y": 1083,
+          "zone": "rock-circuit",
+          "priority": 0.465
+        },
+        "egg-hunt": {
+          "x": 342,
+          "y": 1476,
+          "zone": "rock-circuit",
+          "priority": 0.465
+        },
+        "embrace": {
+          "x": 1231,
+          "y": 1502,
+          "zone": "rock-circuit",
+          "priority": 0.465
+        },
+        "jeff-nelson": {
+          "x": 1224,
+          "y": 907,
+          "zone": "rock-circuit",
+          "priority": 0.465
+        },
+        "our-band-could-be-your-life": {
+          "x": 1162,
+          "y": 312,
+          "zone": "rock-circuit",
+          "priority": 0.465
+        },
+        "sex-pistols": {
+          "x": 1472,
+          "y": 959,
+          "zone": "punk-alt",
+          "priority": 0.42
+        },
+        "new-york-dolls": {
+          "x": 2141,
+          "y": 1607,
+          "zone": "punk-alt",
+          "priority": 0.465
+        },
+        "the-clash": {
+          "x": 1205,
+          "y": 1279,
+          "zone": "punk-alt",
+          "priority": 0.645
+        },
+        "bruce-springsteen-the-e-street-band": {
+          "x": 908,
+          "y": -6,
+          "zone": "rock-circuit",
+          "priority": 0.465
+        },
+        "bruce-thomas": {
+          "x": 1261,
+          "y": 1357,
+          "zone": "rock-circuit",
+          "priority": 0.465
+        },
+        "mc5": {
+          "x": 2277,
+          "y": 2214,
+          "zone": "punk-alt",
+          "priority": 0.42
+        },
+        "the-stooges": {
+          "x": 1624,
+          "y": 1975,
+          "zone": "punk-alt",
+          "priority": 0.42
+        },
+        "descendents": {
+          "x": 3031,
+          "y": 1449,
+          "zone": "punk-alt",
+          "priority": 0.465
+        },
+        "acoustic-guitar": {
+          "x": 3234,
+          "y": 439,
+          "zone": "guitar-workshop",
+          "priority": 0.555
+        },
+        "green-day": {
+          "x": 983,
+          "y": 1325,
+          "zone": "punk-alt",
+          "priority": 0.465
+        },
+        "the-offspring": {
+          "x": 1452,
+          "y": 1335,
+          "zone": "punk-alt",
           "priority": 0.6
         },
-        "arion": {
-          "x": 1099,
-          "y": 927,
+        "adolescents": {
+          "x": 998,
+          "y": 1723,
+          "zone": "punk-alt",
+          "priority": 0.6
+        },
+        "agent-orange": {
+          "x": 843,
+          "y": 1563,
+          "zone": "punk-alt",
+          "priority": 0.51
+        },
+        "siouxsie-and-the-banshees": {
+          "x": 1091,
+          "y": 1517,
+          "zone": "punk-alt",
+          "priority": 0.465
+        },
+        "air": {
+          "x": 896,
+          "y": 488,
           "zone": "rock-circuit",
           "priority": 0.465
         },
-        "civil-war": {
-          "x": 1255,
-          "y": 260,
+        "23-skidoo": {
+          "x": 2051,
+          "y": 1248,
+          "zone": "punk-alt",
+          "priority": 0.465
+        },
+        "abc": {
+          "x": 1968,
+          "y": 1875,
+          "zone": "punk-alt",
+          "priority": 0.465
+        },
+        "pop-punk": {
+          "x": 1492,
+          "y": 1150,
+          "zone": "punk-alt",
+          "priority": 1
+        },
+        "operation-ivy": {
+          "x": 1784,
+          "y": 1466,
+          "zone": "punk-alt",
+          "priority": 0.42
+        },
+        "rancid": {
+          "x": 1215,
+          "y": 1714,
+          "zone": "punk-alt",
+          "priority": 0.42
+        },
+        "nofx": {
+          "x": 1318,
+          "y": 1474,
+          "zone": "punk-alt",
+          "priority": 0.555
+        },
+        "samhain": {
+          "x": 1514,
+          "y": 1500,
+          "zone": "punk-alt",
+          "priority": 0.465
+        },
+        "bando-sport": {
+          "x": 734,
+          "y": 1074,
           "zone": "rock-circuit",
           "priority": 0.465
         },
-        "dominum": {
-          "x": -8,
+        "the-cramps": {
+          "x": 2043,
+          "y": 2211,
+          "zone": "punk-alt",
+          "priority": 0.465
+        },
+        "hardcore-punk": {
+          "x": 1044,
+          "y": 2098,
+          "zone": "punk-alt",
+          "priority": 1
+        },
+        "agression": {
+          "x": 1275,
+          "y": 2175,
+          "zone": "punk-alt",
+          "priority": 0.51
+        },
+        "al-thawra": {
+          "x": 806,
+          "y": 2052,
+          "zone": "punk-alt",
+          "priority": 0.465
+        },
+        "all-out-war": {
+          "x": 876,
+          "y": 1866,
+          "zone": "punk-alt",
+          "priority": 0.465
+        },
+        "pennywise": {
+          "x": 1323,
+          "y": 1948,
+          "zone": "punk-alt",
+          "priority": 0.42
+        },
+        "joy-division": {
+          "x": 1282,
+          "y": 1082,
+          "zone": "punk-alt",
+          "priority": 0.555
+        },
+        "adrian-smith": {
+          "x": 1054,
+          "y": 538,
+          "zone": "rock-circuit",
+          "priority": 0.645
+        },
+        "skate-punk": {
+          "x": 2489,
+          "y": 1363,
+          "zone": "punk-alt",
+          "priority": 1
+        },
+        "fugazi": {
+          "x": 871,
+          "y": 1157,
+          "zone": "punk-alt",
+          "priority": 0.735
+        },
+        "american-football": {
+          "x": 533,
+          "y": 206,
+          "zone": "rock-circuit",
+          "priority": 0.465
+        },
+        "ataxia": {
+          "x": 1574,
+          "y": 1635,
+          "zone": "rock-circuit",
+          "priority": 0.465
+        },
+        "beefeater": {
+          "x": 1283,
+          "y": 597,
+          "zone": "rock-circuit",
+          "priority": 0.465
+        },
+        "botch": {
+          "x": 1140,
+          "y": 1665,
+          "zone": "rock-circuit",
+          "priority": 0.465
+        },
+        "braid": {
+          "x": 45,
           "y": 313,
           "zone": "rock-circuit",
           "priority": 0.465
         },
+        "iggy-pop": {
+          "x": 1663,
+          "y": 1588,
+          "zone": "punk-alt",
+          "priority": 0.42
+        },
+        "swamp-rock": {
+          "x": -979,
+          "y": -640,
+          "zone": "roots-blues",
+          "priority": 1
+        },
+        "roots-rock": {
+          "x": 293,
+          "y": -505,
+          "zone": "psychedelia-prog",
+          "priority": 1
+        },
+        "38-special": {
+          "x": -675,
+          "y": -525,
+          "zone": "roots-blues",
+          "priority": 0.51
+        },
+        "american-primitive-guitar": {
+          "x": 3067,
+          "y": -870,
+          "zone": "guitar-workshop",
+          "priority": 0.465
+        },
+        "country-rock": {
+          "x": -1329,
+          "y": 1344,
+          "zone": "folk-country-vise",
+          "priority": 1
+        },
+        "n-w-a": {
+          "x": 2605,
+          "y": 1129,
+          "zone": "hip-hop-rap",
+          "priority": 0.51
+        },
+        "chicago": {
+          "x": 4366,
+          "y": 1647,
+          "zone": "hip-hop-rap",
+          "priority": 0.6
+        },
+        "public-enemy": {
+          "x": 2733,
+          "y": 979,
+          "zone": "hip-hop-rap",
+          "priority": 0.69
+        },
+        "bandleader": {
+          "x": 3776,
+          "y": 1155,
+          "zone": "hip-hop-rap",
+          "priority": 0.465
+        },
+        "bass-guitars": {
+          "x": 3536,
+          "y": 879,
+          "zone": "guitar-workshop",
+          "priority": 0.465
+        },
+        "blue-magic": {
+          "x": 4019,
+          "y": 1107,
+          "zone": "hip-hop-rap",
+          "priority": 0.465
+        },
+        "thug-life": {
+          "x": 3147,
+          "y": 1246,
+          "zone": "hip-hop-rap",
+          "priority": 0.42
+        },
+        "digital-underground": {
+          "x": 2429,
+          "y": 1244,
+          "zone": "hip-hop-rap",
+          "priority": 0.555
+        },
+        "george-clinton": {
+          "x": 4317,
+          "y": 1422,
+          "zone": "hip-hop-rap",
+          "priority": 0.51
+        },
+        "eminem": {
+          "x": 3959,
+          "y": 1714,
+          "zone": "hip-hop-rap",
+          "priority": 0.42
+        },
+        "outsidaz": {
+          "x": 3794,
+          "y": 1830,
+          "zone": "hip-hop-rap",
+          "priority": 0.42
+        },
+        "gangsta-rap": {
+          "x": 3572,
+          "y": 1280,
+          "zone": "hip-hop-rap",
+          "priority": 1
+        },
+        "c-i-a": {
+          "x": 3433,
+          "y": 1017,
+          "zone": "hip-hop-rap",
+          "priority": 0.51
+        },
+        "g-funk": {
+          "x": 3140,
+          "y": 1528,
+          "zone": "hip-hop-rap",
+          "priority": 1
+        },
+        "dr-dre": {
+          "x": 3520,
+          "y": 1491,
+          "zone": "hip-hop-rap",
+          "priority": 0.465
+        },
+        "babyface": {
+          "x": 4162,
+          "y": 1265,
+          "zone": "hip-hop-rap",
+          "priority": 0.465
+        },
+        "eazy-e": {
+          "x": 3285,
+          "y": 1682,
+          "zone": "hip-hop-rap",
+          "priority": 0.555
+        },
+        "glenn-hughes": {
+          "x": 4131,
+          "y": 1479,
+          "zone": "hip-hop-rap",
+          "priority": 0.465
+        },
+        "d12": {
+          "x": 4093,
+          "y": 1864,
+          "zone": "hip-hop-rap",
+          "priority": 0.51
+        },
+        "my-band": {
+          "x": 3710,
+          "y": 1456,
+          "zone": "hip-hop-rap",
+          "priority": 0.465
+        },
+        "tupac-shakur": {
+          "x": 2923,
+          "y": 1581,
+          "zone": "hip-hop-rap",
+          "priority": 0.42
+        },
+        "west-coast-hip-hop": {
+          "x": 3940,
+          "y": 1336,
+          "zone": "hip-hop-rap",
+          "priority": 1
+        },
+        "ice-cube": {
+          "x": 3061,
+          "y": 1726,
+          "zone": "hip-hop-rap",
+          "priority": 0.51
+        },
+        "in-flames": {
+          "x": 2309,
+          "y": 1197,
+          "zone": "hard-rock-metal",
+          "priority": 0.69
+        },
+        "armageddon": {
+          "x": 899,
+          "y": 1456,
+          "zone": "rock-circuit",
+          "priority": 0.465
+        },
+        "darkest-hour": {
+          "x": 1339,
+          "y": 891,
+          "zone": "rock-circuit",
+          "priority": 0.465
+        },
+        "dawn": {
+          "x": 1374,
+          "y": -183,
+          "zone": "rock-circuit",
+          "priority": 0.465
+        },
+        "distant": {
+          "x": 1045,
+          "y": 1006,
+          "zone": "rock-circuit",
+          "priority": 0.465
+        },
+        "glittertind": {
+          "x": -297,
+          "y": 1370,
+          "zone": "rock-circuit",
+          "priority": 0.42
+        },
+        "bruce-dickinson": {
+          "x": 1715,
+          "y": 615,
+          "zone": "hard-rock-metal",
+          "priority": 0.69
+        },
+        "arthur-brown": {
+          "x": 699,
+          "y": 605,
+          "zone": "rock-circuit",
+          "priority": 0.51
+        },
+        "as-lions": {
+          "x": 823,
+          "y": 289,
+          "zone": "rock-circuit",
+          "priority": 0.465
+        },
+        "catherine-wheel": {
+          "x": 1384,
+          "y": 1154,
+          "zone": "rock-circuit",
+          "priority": 0.465
+        },
+        "iced-earth": {
+          "x": 1657,
+          "y": 343,
+          "zone": "hard-rock-metal",
+          "priority": 0.6
+        },
+        "demons-wizards": {
+          "x": 69,
+          "y": 870,
+          "zone": "rock-circuit",
+          "priority": 0.465
+        },
+        "dennis-hayes": {
+          "x": 290,
+          "y": -722,
+          "zone": "psychedelia-prog",
+          "priority": 0.51
+        },
+        "into-eternity": {
+          "x": 304,
+          "y": 132,
+          "zone": "rock-circuit",
+          "priority": 0.465
+        },
+        "bandwagon-effect": {
+          "x": 1575,
+          "y": 833,
+          "zone": "rock-circuit",
+          "priority": 0.465
+        },
+        "steve-harris": {
+          "x": -710,
+          "y": -329,
+          "zone": "rock-circuit",
+          "priority": 0.555
+        },
+        "archive": {
+          "x": -238,
+          "y": -958,
+          "zone": "psychedelia-prog",
+          "priority": 0.465
+        },
+        "shy": {
+          "x": -505,
+          "y": -791,
+          "zone": "psychedelia-prog",
+          "priority": 0.465
+        },
+        "michael-schenker": {
+          "x": 1225,
+          "y": 704,
+          "zone": "rock-circuit",
+          "priority": 0.645
+        },
+        "arcade": {
+          "x": 1575,
+          "y": -542,
+          "zone": "rock-circuit",
+          "priority": 0.465
+        },
+        "contraband": {
+          "x": -1499,
+          "y": -198,
+          "zone": "rock-circuit",
+          "priority": 0.465
+        },
+        "dave-murray": {
+          "x": 993,
+          "y": -412,
+          "zone": "rock-circuit",
+          "priority": 0.465
+        },
+        "janick-gers": {
+          "x": 2321,
+          "y": 682,
+          "zone": "hard-rock-metal",
+          "priority": 0.69
+        },
+        "gillan": {
+          "x": 1575,
+          "y": -122,
+          "zone": "rock-circuit",
+          "priority": 0.465
+        },
+        "gogmagog": {
+          "x": 237,
+          "y": 1228,
+          "zone": "rock-circuit",
+          "priority": 0.465
+        },
+        "tim-ripper-owens": {
+          "x": 1945,
+          "y": -7,
+          "zone": "hard-rock-metal",
+          "priority": 0.87
+        },
+        "alogia": {
+          "x": 1270,
+          "y": -75,
+          "zone": "rock-circuit",
+          "priority": 0.465
+        },
+        "chi-cheng": {
+          "x": 979,
+          "y": 691,
+          "zone": "rock-circuit",
+          "priority": 0.465
+        },
+        "concerto-suite-for-electric-guitar-and-orchestra-in-e-flat-minor-op-1": {
+          "x": 3293,
+          "y": -1039,
+          "zone": "guitar-workshop",
+          "priority": 0.465
+        },
+        "david-rosenthal": {
+          "x": 982,
+          "y": 812,
+          "zone": "rock-circuit",
+          "priority": 0.465
+        },
+        "hail": {
+          "x": 2716,
+          "y": 157,
+          "zone": "hard-rock-metal",
+          "priority": 0.465
+        },
+        "michael-kiske": {
+          "x": 2179,
+          "y": -75,
+          "zone": "hard-rock-metal",
+          "priority": 0.87
+        },
+        "dgm": {
+          "x": 533,
+          "y": -92,
+          "zone": "rock-circuit",
+          "priority": 0.465
+        },
+        "dennis-ward": {
+          "x": 547,
+          "y": 713,
+          "zone": "rock-circuit",
+          "priority": 0.51
+        },
+        "hardline": {
+          "x": 1399,
+          "y": 1293,
+          "zone": "rock-circuit",
+          "priority": 0.465
+        },
+        "unisonic": {
+          "x": 3999,
+          "y": 355,
+          "zone": "hard-rock-metal",
+          "priority": 0.42
+        },
+        "hollywood-vampires": {
+          "x": 994,
+          "y": 1242,
+          "zone": "rock-circuit",
+          "priority": 0.51
+        },
+        "aerosmith": {
+          "x": 3866,
+          "y": 539,
+          "zone": "hard-rock-metal",
+          "priority": 0.465
+        },
+        "gloryhammer": {
+          "x": 2114,
+          "y": 457,
+          "zone": "hard-rock-metal",
+          "priority": 0.6
+        },
+        "arion": {
+          "x": 1575,
+          "y": 1447,
+          "zone": "rock-circuit",
+          "priority": 0.465
+        },
+        "civil-war": {
+          "x": 1575,
+          "y": 545,
+          "zone": "rock-circuit",
+          "priority": 0.465
+        },
+        "dominum": {
+          "x": 813,
+          "y": 654,
+          "zone": "rock-circuit",
+          "priority": 0.465
+        },
         "wind-rose": {
-          "x": 913,
-          "y": -36,
+          "x": 1391,
+          "y": 349,
           "zone": "rock-circuit",
           "priority": 0.465
         },
         "nita-strauss": {
-          "x": 1177,
-          "y": 392,
+          "x": 1575,
+          "y": 637,
           "zone": "rock-circuit",
           "priority": 0.69
         },
         "courtney-cox": {
-          "x": -302,
-          "y": 504,
+          "x": 439,
+          "y": 780,
           "zone": "rock-circuit",
           "priority": 0.51
         },
         "dorothy": {
-          "x": 187,
-          "y": -130,
+          "x": 119,
+          "y": -364,
           "zone": "rock-circuit",
           "priority": 0.465
         },
         "femme-fatale": {
-          "x": -72,
-          "y": 187,
+          "x": 780,
+          "y": 448,
           "zone": "rock-circuit",
           "priority": 0.51
         },
         "grim-reaper": {
-          "x": 571,
-          "y": 268,
+          "x": 675,
+          "y": 120,
           "zone": "rock-circuit",
           "priority": 0.465
         },
         "guitar-solo": {
-          "x": 3340,
-          "y": -607,
+          "x": 3299,
+          "y": -809,
           "zone": "guitar-workshop",
           "priority": 0.465
         },
         "buckethead": {
-          "x": 230,
-          "y": 423,
+          "x": 98,
+          "y": 482,
           "zone": "rock-circuit",
           "priority": 0.42
         },
         "alternative-metal": {
-          "x": 566,
-          "y": 1549,
+          "x": 726,
+          "y": 1339,
           "zone": "punk-alt",
           "priority": 1
         },
         "shock-rock": {
-          "x": -665,
-          "y": 630,
+          "x": -797,
+          "y": 724,
           "zone": "rock-circuit",
           "priority": 1
         },
         "stone-temple-pilots": {
-          "x": 868,
-          "y": 386,
+          "x": 1161,
+          "y": 445,
           "zone": "rock-circuit",
           "priority": 0.42
         },
         "scott-weiland": {
-          "x": 496,
-          "y": 142,
+          "x": 1112,
+          "y": 652,
           "zone": "rock-circuit",
           "priority": 0.51
         },
         "filter": {
-          "x": -296,
-          "y": -592,
+          "x": -355,
+          "y": -906,
           "zone": "rock-circuit",
           "priority": 0.465
         },
         "velvet-revolver": {
-          "x": 2241,
-          "y": -432,
+          "x": 1778,
+          "y": -153,
           "zone": "hard-rock-metal",
           "priority": 0.51
         },
         "carrie": {
-          "x": 667,
-          "y": 525,
+          "x": 1156,
+          "y": 807,
           "zone": "rock-circuit",
           "priority": 0.465
         },
         "the-iron-maidens": {
-          "x": 2959,
-          "y": 123,
+          "x": 2969,
+          "y": 457,
           "zone": "hard-rock-metal",
           "priority": 0.6
         },
         "electric-guitar": {
-          "x": 3773,
-          "y": 165,
+          "x": 3715,
+          "y": 159,
           "zone": "guitar-workshop",
           "priority": 0.51
         },
         "phil-campbell": {
-          "x": 3486,
-          "y": 261,
+          "x": 3813,
+          "y": 237,
           "zone": "hard-rock-metal",
           "priority": 0.465
         },
         "chester-bennington": {
-          "x": 676,
-          "y": 361,
+          "x": 1204,
+          "y": -316,
           "zone": "rock-circuit",
           "priority": 0.555
         },
         "emily-armstrong": {
-          "x": -1155,
-          "y": 725,
+          "x": -1503,
+          "y": 805,
           "zone": "rock-circuit",
           "priority": 0.465
         },
         "guitar-heaven-the-greatest-guitar-classics-of-all-time": {
-          "x": 3476,
-          "y": -457,
+          "x": 3403,
+          "y": -597,
           "zone": "guitar-workshop",
           "priority": 0.465
         },
         "steel-panther": {
-          "x": 2624,
-          "y": 286,
+          "x": 2173,
+          "y": 613,
           "zone": "hard-rock-metal",
           "priority": 0.465
         },
         "equinox": {
-          "x": 478,
-          "y": -367,
+          "x": 1169,
+          "y": -144,
           "zone": "rock-circuit",
           "priority": 0.465
         },
         "tenacious-d": {
-          "x": 1456,
-          "y": 805,
+          "x": 1575,
+          "y": 1113,
           "zone": "rock-circuit",
           "priority": 0.555
         },
         "satchel": {
-          "x": 2880,
-          "y": 588,
+          "x": 2906,
+          "y": 834,
           "zone": "hard-rock-metal",
           "priority": 0.69
         },
         "jeff-duncan": {
-          "x": -502,
-          "y": -505,
+          "x": 459,
+          "y": -251,
           "zone": "rock-circuit",
           "priority": 0.465
         },
         "jeff-martin": {
-          "x": -627,
-          "y": -405,
+          "x": -38,
+          "y": 40,
           "zone": "rock-circuit",
           "priority": 0.465
         },
         "kevin-gilbert": {
-          "x": 404,
-          "y": -505,
+          "x": 1029,
+          "y": -254,
           "zone": "rock-circuit",
           "priority": 0.465
         },
         "kramer-guitars": {
-          "x": 3848,
-          "y": -345,
+          "x": 3796,
+          "y": -501,
           "zone": "guitar-workshop",
           "priority": 0.465
         },
         "mr-big": {
-          "x": -210,
-          "y": 972,
+          "x": 573,
+          "y": 1352,
           "zone": "rock-circuit",
           "priority": 0.465
         },
         "jack-black": {
-          "x": -356,
-          "y": -953,
+          "x": -455,
+          "y": -978,
           "zone": "psychedelia-prog",
           "priority": 0.42
         },
         "glam-metal": {
-          "x": 1700,
-          "y": 152,
+          "x": 1560,
+          "y": -41,
           "zone": "hard-rock-metal",
           "priority": 1
         },
         "axl-rose": {
-          "x": 2604,
-          "y": 543,
+          "x": 2154,
+          "y": 1074,
           "zone": "hard-rock-metal",
           "priority": 0.69
         },
         "adam-hamilton": {
-          "x": 332,
-          "y": -173,
+          "x": 1015,
+          "y": 182,
           "zone": "rock-circuit",
           "priority": 0.465
         },
         "arthur-porter": {
-          "x": 871,
-          "y": 245,
+          "x": 1300,
+          "y": 477,
           "zone": "rock-circuit",
           "priority": 0.51
         },
         "billy-davis": {
-          "x": 785,
-          "y": 476,
+          "x": 1408,
+          "y": 761,
           "zone": "rock-circuit",
           "priority": 0.51
         },
         "billy-williamson": {
-          "x": -176,
-          "y": 611,
+          "x": 571,
+          "y": 965,
           "zone": "rock-circuit",
           "priority": 0.465
         },
         "charles-sutton": {
-          "x": -67,
-          "y": -515,
+          "x": 795,
+          "y": -447,
           "zone": "rock-circuit",
           "priority": 0.465
         },
         "chris-holmes": {
-          "x": 1305,
-          "y": -426,
+          "x": 1575,
+          "y": -244,
           "zone": "rock-circuit",
           "priority": 0.465
         },
         "linkin-park": {
-          "x": -584,
-          "y": 396,
+          "x": -24,
+          "y": 665,
           "zone": "rock-circuit",
           "priority": 0.465
         },
         "duff-mckagan": {
-          "x": 2897,
-          "y": 803,
+          "x": 2499,
+          "y": 1103,
           "zone": "hard-rock-metal",
           "priority": 0.555
         },
         "andrew-watt": {
-          "x": 726,
-          "y": -210,
+          "x": 1211,
+          "y": 57,
           "zone": "rock-circuit",
           "priority": 0.465
         },
         "kai-hansen": {
-          "x": 2755,
-          "y": 489,
+          "x": 2623,
+          "y": 728,
           "zone": "hard-rock-metal",
           "priority": 0.87
         },
         "esp-guitars": {
-          "x": 4254,
-          "y": 192,
+          "x": 4262,
+          "y": 206,
           "zone": "guitar-workshop",
           "priority": 0.465
         }
@@ -3381,7 +3381,7 @@
       "id": "genre",
       "label": "Genres",
       "description": "Genre-led clusters with bridge nodes pulled toward related scenes.",
-      "generatedAt": "2026-09-20T08:29:49.503Z",
+      "generatedAt": "2026-09-23T14:41:38.044Z",
       "nodes": {
         "3": {
           "x": -691,
@@ -6755,7 +6755,7 @@
       "id": "timeline",
       "label": "Timeline",
       "description": "Older scenes left, newer scenes right, with zones kept as loose lanes.",
-      "generatedAt": "2026-09-20T08:29:49.503Z",
+      "generatedAt": "2026-09-23T14:41:38.044Z",
       "nodes": {
         "3": {
           "x": 427,
@@ -10129,7 +10129,7 @@
       "id": "alphabetic",
       "label": "A-Z",
       "description": "A simple training layout sorted by label.",
-      "generatedAt": "2026-09-20T08:29:49.503Z",
+      "generatedAt": "2026-09-23T14:41:38.044Z",
       "nodes": {
         "3": {
           "x": -948,
@@ -13503,7 +13503,7 @@
       "id": "chaos",
       "label": "Chaos",
       "description": "Seeded loose layout for stress-testing readable disorder.",
-      "generatedAt": "2026-09-20T08:29:49.503Z",
+      "generatedAt": "2026-09-23T14:41:38.044Z",
       "nodes": {
         "3": {
           "x": 36,

@@ -49,8 +49,10 @@ npm run brain:organize
 npm run brain:import
 ```
 
-`migrate:data` writes both `brain/data/approved/graph.json` and
-`site/public/data/graph.json`.
+`migrate:data` is the full local/public refresh loop. It learns from Obsidian
+and curator feedback, migrates the approved graph, analyzes organization
+pressure, then regenerates public layout JSON. It writes both
+`brain/data/approved/graph.json` and `site/public/data/graph.json`.
 
 `brain:install-python` installs the Python packages used by the source
 collectors and Supabase brain scripts.
@@ -110,10 +112,12 @@ signals and pinned human curation.
 
 `brain:organize` reads the approved graph and learning model, then writes
 `brain/data/approved/organization-model.json`. It also writes a local report and
-frontier-request draft to `brain/data/runs/`. This is the first organization
-brain layer: it scores weak zones, under-connected hubs, bridge nodes, overlap
-risk and source quality. The scout agent uses this model first when it needs to
-create its own frontier request.
+frontier-request draft to `brain/data/runs/`. This is the organization brain
+layer: it scores weak zones, under-connected hubs, bridge nodes, overlap risk
+and source quality. It also writes layout-intelligence directives for pressure,
+spacing, bridge pull and anti-overlap rules. The scout agent uses this model
+first when it needs to create its own frontier request, and the layout generator
+uses it to keep organized chaos readable.
 
 The npm scripts look for `python3`, `python` or `py -3`. You can also set
 `PYTHON` to an exact Python executable path.
@@ -171,6 +175,7 @@ The model currently learns:
 - secondary/bridge zones
 - hub and bridge scores
 - pinned layout coordinates
+- layout pressure and bridge-pull directives from organization analysis
 
 This gives the map memory. If a curator repeatedly moves or classifies entities
 in Obsidian, the generated layout starts treating those choices as project
@@ -189,9 +194,9 @@ Run `npm run brain:learn`, then `npm run migrate:data`, then
 `npm run brain:organize` after editing it.
 
 After learning, run `npm run brain:organize` to turn that memory into actionable
-organization signals. The organization model does not move the public map by
-itself. It tells the scout what needs research and gives future layout modes a
-safe way to reason about hubs, bridges and zones.
+organization signals. `npm run migrate:data` now runs this full loop and lets the
+public layout read those signals. The organization model still does not invent
+facts, but it can influence spacing, zone pressure and bridge drift.
 
 ## Scout Agent
 
