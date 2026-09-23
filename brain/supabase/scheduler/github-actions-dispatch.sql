@@ -70,6 +70,8 @@ create table if not exists mhm_private.agent_scheduler_log (
   request_id bigint
 );
 
+drop function if exists mhm_private.trigger_research_agent(integer, text);
+
 create or replace function mhm_private.trigger_research_agent(
   run_limit integer default 2,
   trigger_note text default '',
@@ -242,4 +244,7 @@ select cron.schedule(
 
 -- Manual smoke test:
 -- Uncomment and run this line after setup if you want Supabase to trigger one run immediately.
--- select mhm_private.trigger_research_agent(1, 'Manual smoke test from Supabase SQL Editor.');
+-- select mhm_private.trigger_research_agent(
+--   run_limit := 1,
+--   trigger_note := 'Manual smoke test from Supabase SQL Editor.'
+-- );
