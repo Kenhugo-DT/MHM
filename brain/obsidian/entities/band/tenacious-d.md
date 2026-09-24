@@ -24,7 +24,6 @@ Tenacious D is an American comedy rock band formed in Los Angeles in 1994 by Jac
 ## Connections
 
 - [[acoustic-guitar|Acoustic guitar]] - Wikipedia link signal (Wikipedia link: Acoustic guitar)
-- [[american-rock-music-duos|American rock music duos]] - Wikipedia category signal (Wikipedia category: American rock music duos)
 - [[body-count|Body Count]] - Wikipedia link signal (Wikipedia link: Body Count (band))
 - [[dio|Dio]] - Wikipedia link signal (Wikipedia link: Dio (band))
 

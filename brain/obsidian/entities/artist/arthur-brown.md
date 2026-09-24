@@ -23,6 +23,7 @@ An artist connected to documented Wikipedia signals around Bruce Dickinson.
 
 ## Connections
 
+- [[alice-cooper|Alice Cooper]] - Wikipedia link signal (Wikipedia link: Arthur Brown (musician))
 - [[bruce-dickinson|Bruce Dickinson]] - Wikipedia link signal (Wikipedia link: Arthur Brown (musician))
 - [[shock-rock|Shock Rock]] - Wikipedia link signal (Wikipedia link: Arthur Brown (musician))
 

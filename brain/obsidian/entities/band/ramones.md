@@ -25,6 +25,7 @@ The Ramones were an American punk rock band formed in the New York City neighbor
 
 - [[black-flag|Black Flag]] - Wikipedia link signal (Wikipedia link: Black Flag (band))
 - [[blondie|Blondie]] - Wikipedia link signal (Wikipedia link: Blondie (band))
+- [[chelsea|Chelsea]] - Wikipedia link signal (Wikipedia link: Chelsea (band))
 
 ## Sources
 

@@ -34,6 +34,7 @@ Song-centered acoustic traditions where the guitar often works as both rhythm in
 - [[martin-d28|Martin D-28]] - dreadnought tradition
 - [[norwegian-vise|Norwegian vise]] - song tradition
 - [[singer-songwriter|Singer-songwriter]] - song tradition
+- [[the-carter-family|The Carter Family]] - folk repertoire (The group drew on British folk ballads and other traditional songs.)
 
 ## Sources
 

@@ -2,7 +2,7 @@
 id: richard-marx
 label: Richard Marx
 type: artist
-zone: folk-country-vise
+zone: rock-circuit
 roles: [artist]
 aliases: []
 eraStart: 

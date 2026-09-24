@@ -23,6 +23,7 @@ A Southern rock band known for twin guitars, blues roots, long improvisations an
 
 ## Connections
 
+- [[blues-rock|Blues rock]] - Wikipedia link signal (Wikipedia link: Allman Brothers Band)
 - [[country-rock|country rock]] - Wikipedia link signal (Wikipedia link: Allman Brothers Band)
 - [[derek-trucks|Derek Trucks]] - member
 - [[dickey-betts|Dickey Betts]] - member

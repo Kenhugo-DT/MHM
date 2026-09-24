@@ -30,6 +30,16 @@ export const MODE_TYPES: Record<MapMode, Set<NodeType>> = {
 
 export const MAP_ZONES: MapZone[] = [
   {
+    id: "jazz",
+    label: "JAZZ",
+    mode: "artists",
+    x: -2050,
+    y: -1690,
+    width: 1480,
+    height: 1040,
+    color: 0x80a998,
+  },
+  {
     id: "roots-blues",
     label: "ROOTS / BLUES",
     mode: "artists",
@@ -91,13 +101,23 @@ export const MAP_ZONES: MapZone[] = [
   },
   {
     id: "folk-country-vise",
-    label: "FOLK / COUNTRY / VISE",
+    label: "FOLK / VISE",
     mode: "artists",
     x: -2140,
     y: 900,
     width: 2160,
     height: 1120,
     color: 0x83a66b,
+  },
+  {
+    id: "country-roots",
+    label: "COUNTRY ROOTS",
+    mode: "artists",
+    x: -3460,
+    y: 320,
+    width: 1560,
+    height: 1400,
+    color: 0xa9a168,
   },
   {
     id: "guitar-workshop",

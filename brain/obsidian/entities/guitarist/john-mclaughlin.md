@@ -2,14 +2,14 @@
 id: john-mclaughlin
 label: John McLaughlin
 type: guitarist
-zone: psychedelia-prog
+zone: jazz
 roles: [guitarist, artist]
 aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: []
 curatorTags: [Jazz, Jazz fusion, Progressive rock]
-secondaryZones: []
+secondaryZones: [rock-circuit, psychedelia-prog]
 layoutPinned: false
 layoutX: -683
 layoutY: 1623

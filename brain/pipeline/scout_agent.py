@@ -77,6 +77,8 @@ ZONE_HINTS = {
     "hard-rock-metal": "hard rock, metal, riff culture and heavier guitar history",
     "hip-hop-rap": "hip-hop, rap, funk-rap, rap rock and crossovers into punk, metal and guitar-driven music",
     "folk-country-vise": "folk, country, singer-songwriter and Norwegian vise traditions",
+    "country-roots": "early country, bluegrass, honky-tonk, western swing and documented links to blues and rockabilly",
+    "jazz": "early jazz, swing, bebop, jazz guitar and documented links to blues, funk and jazz fusion",
     "guitar-workshop": "guitar models, makers and instrument history",
     "guitar-genres": "genres connected to guitar models and brands",
 }

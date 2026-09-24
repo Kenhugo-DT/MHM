@@ -2,14 +2,14 @@
 id: jazz-fusion
 label: Jazz fusion
 type: genre
-zone: rock-circuit
+zone: jazz
 roles: [genre]
 aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [Jazz fusion]
 curatorTags: [rock, jazz fusion, classic rock]
-secondaryZones: []
+secondaryZones: [rock-circuit, psychedelia-prog]
 layoutPinned: false
 layoutX: -916
 layoutY: 1459
@@ -28,6 +28,7 @@ A meeting of jazz harmony, rock volume, funk rhythm and expanded improvisation.
 - [[jazz|Jazz]] - electric branch
 - [[jeff-beck|Jeff Beck]] - instrumental branch
 - [[john-mclaughlin|John McLaughlin]] - electric fusion voice
+- [[miles-davis|Miles Davis]] - jazz-rock fusion (Davis brought rock influences into his late-1960s jazz recordings.)
 - [[prs-santana|PRS Santana]] - fusion lead voice
 - [[rock|Rock]] - electric crossover
 - [[santana-band|Santana]] - fusion overlap

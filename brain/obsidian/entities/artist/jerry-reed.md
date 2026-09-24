@@ -2,7 +2,7 @@
 id: jerry-reed
 label: Jerry Reed
 type: artist
-zone: folk-country-vise
+zone: country-roots
 roles: [artist]
 aliases: []
 eraStart: 

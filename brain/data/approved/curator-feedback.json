@@ -69,9 +69,50 @@
       "anchorNodes": ["public-enemy", "body-count", "beastie-boys", "run-dmc"],
       "feedbackCategories": ["good_bridge", "genre_transition_needed"],
       "feedback": "Hip-hop should keep a readable territory while allowing documented crossover lines into punk, rock and metal."
+    },
+    {
+      "id": "jazz-to-fusion",
+      "zones": ["jazz", "roots-blues", "rock-circuit", "psychedelia-prog"],
+      "anchorNodes": ["jazz", "jazz-fusion", "django-reinhardt", "wes-montgomery", "john-mclaughlin"],
+      "feedbackCategories": ["good_bridge", "genre_transition_needed"],
+      "feedback": "Give jazz its own readable center. Let documented blues, fusion, funk and progressive connections pull bridge nodes outward."
+    },
+    {
+      "id": "country-roots-to-rock",
+      "zones": ["country-roots", "folk-country-vise", "roots-blues", "rock-circuit"],
+      "anchorNodes": ["country", "bluegrass", "country-rock", "chet-atkins", "johnny-cash"],
+      "feedbackCategories": ["good_bridge", "genre_transition_needed"],
+      "feedback": "Keep early country, bluegrass and honky-tonk legible as a tradition, with documented paths into folk, blues, rockabilly and rock."
     }
   ],
   "nodeFeedback": [
+    {
+      "id": "jimmie-rodgers",
+      "zone": "country-roots",
+      "secondaryZones": ["roots-blues", "rock-circuit"],
+      "primaryGenres": ["country", "blues"],
+      "curatorTags": ["early country", "country-blues bridge"],
+      "bridgeBoost": 0.25,
+      "feedback": "Keep Rodgers grounded in early country while letting his blues and early rock influence pull him toward those scenes."
+    },
+    {
+      "id": "the-carter-family",
+      "zone": "country-roots",
+      "secondaryZones": ["folk-country-vise", "roots-blues"],
+      "primaryGenres": ["country", "folk"],
+      "curatorTags": ["early country", "folk repertoire", "Carter guitar style"],
+      "bridgeBoost": 0.2,
+      "feedback": "The Carter Family is an early country anchor with documented folk and blues repertoire."
+    },
+    {
+      "id": "merle-haggard",
+      "zone": "country-roots",
+      "secondaryZones": ["jazz", "roots-blues"],
+      "primaryGenres": ["country", "honky-tonk"],
+      "curatorTags": ["honky-tonk", "country roots", "jazz influence"],
+      "bridgeBoost": 0.23,
+      "feedback": "Haggard belongs in country while his documented jazz and blues influences make him a useful bridge."
+    },
     {
       "id": "misfits",
       "label": "Misfits",
@@ -135,6 +176,18 @@
     }
   ],
   "zoneFeedback": [
+    {
+      "zone": "jazz",
+      "terms": ["early jazz", "swing", "bebop", "jazz guitar", "improvisation", "jazz fusion"],
+      "bridgeToZones": ["roots-blues", "rock-circuit", "psychedelia-prog"],
+      "feedback": "Jazz needs a readable center and historically supported transitions. Keep early jazz and jazz guitar together while allowing fusion and crossover artists to drift toward rock and prog."
+    },
+    {
+      "zone": "country-roots",
+      "terms": ["early country", "bluegrass", "honky-tonk", "western swing", "country rock"],
+      "bridgeToZones": ["folk-country-vise", "roots-blues", "rock-circuit"],
+      "feedback": "Prioritize early country history. Keep this area spacious and let well-sourced country, folk, blues and rockabilly bridges cross its boundary."
+    },
     {
       "zone": "rock-circuit",
       "terms": [

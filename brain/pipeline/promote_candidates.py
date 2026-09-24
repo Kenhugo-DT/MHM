@@ -43,11 +43,13 @@ NODE_LABELS = {
 
 ZONE_CENTERS = {
     "roots-blues": (-1280, -70),
+    "jazz": (-1310, -1170),
     "rock-circuit": (-300, -40),
     "psychedelia-prog": (90, -850),
     "hard-rock-metal": (1420, 80),
     "punk-alt": (1180, 1230),
     "folk-country-vise": (-980, 900),
+    "country-roots": (-2680, 1020),
     "guitar-workshop": (3220, 80),
     "guitar-genres": (-640, 120),
 }
@@ -576,13 +578,27 @@ def zone_for(title: str, kind: str, seed: dict[str, Any] | None) -> str:
     text = normalize_text(title)
     if kind in {"guitar", "guitar_brand"}:
         return "guitar-workshop"
+    if text in {
+        "louis armstrong", "duke ellington", "charlie parker", "miles davis",
+        "john coltrane", "swing music", "bebop",
+    }:
+        return "jazz"
+    if text in {
+        "jimmie rodgers", "the carter family", "hank williams", "bill monroe",
+        "patsy cline", "merle haggard", "honky-tonk",
+    }:
+        return "country-roots"
     if any(term in text for term in PUNK_ALT_TERMS):
         return "punk-alt"
     if any(term in text for term in PROG_TERMS):
         return "psychedelia-prog" if "metal" not in text else "hard-rock-metal"
     if any(term in text for term in HARD_ROCK_METAL_TERMS):
         return "hard-rock-metal"
-    if any(term in text for term in ["folk", "country", "vise", "bluegrass", "sunde"]):
+    if any(term in text for term in ["jazz", "bebop", "swing"]):
+        return "jazz"
+    if any(term in text for term in ["country", "bluegrass", "honky tonk", "honky-tonk"]):
+        return "country-roots"
+    if any(term in text for term in ["folk", "vise", "sunde"]):
         return "folk-country-vise"
     if any(term in text for term in ["blues", "soul", "gospel"]):
         return "roots-blues"

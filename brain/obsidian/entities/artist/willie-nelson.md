@@ -2,7 +2,7 @@
 id: willie-nelson
 label: Willie Nelson
 type: artist
-zone: folk-country-vise
+zone: country-roots
 roles: [artist]
 aliases: []
 eraStart: 
@@ -24,6 +24,7 @@ A country songwriter and guitarist whose nylon-string guitar Trigger became part
 ## Connections
 
 - [[country|Country]] - outlaw country voice
+- [[patsy-cline|Patsy Cline]] - recorded Nelson composition (Cline recorded a Willie Nelson composition during her career.)
 - [[trigger|Trigger]] - signature guitar
 
 ## Sources

@@ -7,9 +7,17 @@ truths. Bridge nodes can belong to one primary zone and several secondary zones.
 
 Roots, blues, early electric guitar history and rock and roll foundations.
 
+## jazz
+
+Early jazz, swing, bebop, jazz guitar and bridges into fusion, funk and rock.
+
 ## folk-country-vise
 
-Folk, country, acoustic traditions, jazz-adjacent guitar and Norwegian vise.
+Folk, acoustic singer-songwriters and Norwegian vise.
+
+## country-roots
+
+Early country, bluegrass, honky-tonk and bridges into blues, rockabilly and rock.
 
 ## rock-circuit
 

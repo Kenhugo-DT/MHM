@@ -30,6 +30,8 @@ Fugazi (; foo-GAH-zee) is an American post-hardcore band formed in Washington, D
 - [[blur|Blur]] - Wikipedia link signal (Wikipedia link: Blur (band))
 - [[botch|Botch]] - Wikipedia link signal (Wikipedia link: Botch (band))
 - [[braid|Braid]] - Wikipedia link signal (Wikipedia link: Braid (band))
+- [[brand-new|Brand New]] - Wikipedia link signal (Wikipedia link: Brand New (band))
+- [[brian-cook|Brian Cook]] - Wikipedia link signal (Wikipedia link: Brian Cook (musician))
 
 ## Sources
 

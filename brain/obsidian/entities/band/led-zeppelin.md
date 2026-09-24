@@ -23,6 +23,7 @@ A hard rock band that fused blues, folk, riffs and studio ambition into a huge g
 
 ## Connections
 
+- [[band-of-joy|Band of Joy]] - Wikipedia link signal (Wikipedia link: Band of Joy)
 - [[blues|Blues]] - roots source
 - [[hard-rock|Hard rock]] - central band
 - [[jimmy-page|Jimmy Page]] - guitarist / producer

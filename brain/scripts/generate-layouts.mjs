@@ -46,23 +46,27 @@ const TYPE_ORDER = {
 
 const ZONE_ORDER = [
   "roots-blues",
+  "jazz",
   "rock-circuit",
   "psychedelia-prog",
   "hard-rock-metal",
   "punk-alt",
   "hip-hop-rap",
   "folk-country-vise",
+  "country-roots",
   "guitar-workshop",
 ];
 
 const TIMELINE_ZONE_LANES = {
   "roots-blues": -520,
+  jazz: -730,
   "psychedelia-prog": -930,
   "rock-circuit": -150,
   "hard-rock-metal": 350,
   "punk-alt": 940,
   "hip-hop-rap": 1370,
   "folk-country-vise": 1730,
+  "country-roots": 1950,
   "guitar-workshop": -1180,
 };
 

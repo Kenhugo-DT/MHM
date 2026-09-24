@@ -28,6 +28,7 @@ Bad Religion is an American punk rock band, formed in Los Angeles, California, i
 - [[black-president|Black President]] - Wikipedia link signal (Wikipedia link: Black President (band))
 - [[brian-baker|Brian Baker]] - Wikipedia link signal (Wikipedia link: Brian Baker (musician))
 - [[germs|Germs]] - Wikipedia link signal (Wikipedia link: Germs (band))
+- [[goldfinger|Goldfinger]] - Wikipedia link signal (Wikipedia link: Goldfinger (band))
 
 ## Sources
 

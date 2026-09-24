@@ -2,7 +2,7 @@
 id: joe-pass
 label: Joe Pass
 type: guitarist
-zone: folk-country-vise
+zone: jazz
 roles: [guitarist, artist]
 aliases: []
 eraStart: 

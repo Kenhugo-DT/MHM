@@ -23,6 +23,7 @@ A band connected to documented Wikipedia signals around Horror punk.
 
 ## Connections
 
+- [[arthur-brown|Arthur Brown]] - Wikipedia link signal (Wikipedia link: Arthur Brown (musician))
 - [[bruce-dickinson|Bruce Dickinson]] - Wikipedia link signal (Wikipedia link: Alice Cooper (band))
 - [[dave-mustaine|Dave Mustaine]] - Wikipedia link signal (Wikipedia link: Alice Cooper (band))
 - [[glam-metal|glam metal]] - Wikipedia link signal (Wikipedia link: Alice Cooper (band))

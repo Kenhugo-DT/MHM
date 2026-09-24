@@ -16,12 +16,14 @@ const vaultRoot = path.join(brainRoot, "obsidian");
 
 const ZONE_TAGS = {
   "roots-blues": ["roots", "blues"],
+  jazz: ["jazz", "improvisation"],
   "rock-circuit": ["rock", "classic rock"],
   "psychedelia-prog": ["psychedelic", "progressive"],
   "hard-rock-metal": ["hard rock", "metal"],
   "punk-alt": ["punk", "alternative"],
   "hip-hop-rap": ["hip-hop", "rap"],
-  "folk-country-vise": ["folk", "country"],
+  "folk-country-vise": ["folk", "vise"],
+  "country-roots": ["country", "roots"],
   "guitar-workshop": ["guitar", "instrument"],
 };
 
@@ -36,6 +38,9 @@ const ZONE_KEYWORDS = {
     "rockabilly",
     "southern rock",
     "slide guitar",
+  ],
+  jazz: [
+    "jazz", "swing", "bebop", "jazz fusion", "jazz guitar",
   ],
   "rock-circuit": [
     "rock",
@@ -109,14 +114,14 @@ const ZONE_KEYWORDS = {
   ],
   "folk-country-vise": [
     "folk",
-    "country",
-    "country rock",
     "singer-songwriter",
-    "bluegrass",
     "flamenco",
     "norwegian vise",
     "vise",
-    "jazz",
+  ],
+  "country-roots": [
+    "country", "country rock", "bluegrass", "honky-tonk", "western swing",
+    "outlaw country", "rockabilly",
   ],
 };
 

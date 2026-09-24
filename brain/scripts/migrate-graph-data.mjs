@@ -3,6 +3,7 @@ import path from "node:path";
 import vm from "node:vm";
 import { fileURLToPath } from "node:url";
 import { extraEdges, extraNodes } from "./graph-expansion.mjs";
+import { curatedHistoryLinks } from "./curated-history-links.mjs";
 import { organizeGraphLayout } from "./organize-graph-layout.mjs";
 
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
@@ -299,7 +300,7 @@ const edgeKeys = new Set(
   edges.map((edge) => [edge.source, edge.target, edge.type, edge.label].join("|")),
 );
 
-for (const edge of promotionData.edges) {
+for (const edge of [...promotionData.edges, ...curatedHistoryLinks]) {
   const edgeKey = [edge.source, edge.target, edge.type, edge.label].join("|");
   if (
     !edge?.id ||

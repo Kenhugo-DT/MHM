@@ -2,7 +2,7 @@
 id: camel
 label: Camel
 type: band
-zone: folk-country-vise
+zone: psychedelia-prog
 roles: [band]
 aliases: []
 eraStart: 

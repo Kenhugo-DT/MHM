@@ -27,6 +27,7 @@ A high-energy meeting point between blues, country, gospel and rhythm and blues,
 - [[chuck-berry|Chuck Berry]] - guitar grammar
 - [[elvis-presley|Elvis Presley]] - popularized
 - [[fender-esquire|Fender Esquire]] - early solid-body line
+- [[jimmie-rodgers|Jimmie Rodgers]] - rock and roll influence (His country-blues fusion became an early framework for rock and roll.)
 - [[rock|Rock]] - branches into
 - [[rockabilly|Rockabilly]] - early branch
 - [[sister-rosetta-tharpe|Sister Rosetta Tharpe]] - early influence

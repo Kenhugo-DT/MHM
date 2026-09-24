@@ -23,6 +23,7 @@ A hard rock band built around direct riffs, tight rhythm guitar and the Young br
 
 ## Connections
 
+- [[airbourne|Airbourne]] - Wikipedia link signal (Wikipedia link: Airbourne (band))
 - [[angus-young|Angus Young]] - guitarist
 - [[blues-rock|Blues rock]] - roots source
 - [[hard-rock|Hard rock]] - riff engine

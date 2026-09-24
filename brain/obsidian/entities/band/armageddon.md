@@ -24,6 +24,7 @@ A band connected to documented Wikipedia signals around In Flames.
 ## Connections
 
 - [[in-flames|In Flames]] - Wikipedia link signal (Wikipedia link: Armageddon (Swedish band))
+- [[the-yardbirds|The Yardbirds]] - Wikipedia link signal (Wikipedia link: Armageddon (British band))
 
 ## Sources
 

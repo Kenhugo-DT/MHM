@@ -24,6 +24,7 @@ A bridge between electric blues phrasing and louder rock bands, central to late-
 ## Connections
 
 - [[acdc|AC/DC]] - roots source
+- [[alan-wilson|Alan Wilson]] - Wikipedia link signal (Wikipedia link: Alan Wilson (musician))
 - [[blues|Blues]] - feeds
 - [[derek-trucks|Derek Trucks]] - modern slide branch
 - [[electric-blues|Electric blues]] - amplified into
@@ -39,6 +40,7 @@ A bridge between electric blues phrasing and louder rock bands, central to late-
 - [[santana-band|Santana]] - Latin blues-rock blend
 - [[slash|Slash]] - lead guitar root
 - [[southern-rock|Southern rock]] - roots source
+- [[allman-brothers-band|The Allman Brothers Band]] - Wikipedia link signal (Wikipedia link: Allman Brothers Band)
 - [[the-rolling-stones|The Rolling Stones]] - central band
 
 ## Sources

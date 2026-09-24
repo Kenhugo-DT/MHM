@@ -2,7 +2,7 @@
 id: chet-atkins
 label: Chet Atkins
 type: guitarist
-zone: folk-country-vise
+zone: country-roots
 roles: [guitarist, artist]
 aliases: []
 eraStart: 

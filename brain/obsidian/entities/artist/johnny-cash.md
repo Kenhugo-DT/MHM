@@ -2,7 +2,7 @@
 id: johnny-cash
 label: Johnny Cash
 type: artist
-zone: folk-country-vise
+zone: country-roots
 roles: [artist]
 aliases: []
 eraStart: 

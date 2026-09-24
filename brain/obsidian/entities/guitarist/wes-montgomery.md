@@ -2,14 +2,14 @@
 id: wes-montgomery
 label: Wes Montgomery
 type: guitarist
-zone: psychedelia-prog
+zone: jazz
 roles: [guitarist, artist]
 aliases: []
 eraStart: 
 eraPeak: 
-primaryGenres: [jazz fusion]
+primaryGenres: [jazz]
 curatorTags: [Jazz, Jazz fusion, jazz fusion]
-secondaryZones: []
+secondaryZones: [rock-circuit]
 layoutPinned: false
 layoutX: -810
 layoutY: 1614

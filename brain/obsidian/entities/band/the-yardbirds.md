@@ -23,6 +23,8 @@ A British blues-rock band famously connected to Eric Clapton, Jeff Beck and Jimm
 
 ## Connections
 
+- [[armageddon|Armageddon]] - Wikipedia link signal (Wikipedia link: Armageddon (British band))
+- [[ben-king|Ben King]] - Wikipedia link signal (Wikipedia link: Ben King (guitarist))
 - [[eric-clapton|Eric Clapton]] - member
 - [[jeff-beck|Jeff Beck]] - member
 - [[jimmy-page|Jimmy Page]] - member link

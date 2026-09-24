@@ -2,7 +2,7 @@
 id: little-richard
 label: Little Richard
 type: artist
-zone: folk-country-vise
+zone: roots-blues
 roles: [artist]
 aliases: []
 eraStart: 

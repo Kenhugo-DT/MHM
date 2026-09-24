@@ -2,14 +2,14 @@
 id: country-rock
 label: country rock
 type: genre
-zone: folk-country-vise
+zone: country-roots
 roles: [genre]
 aliases: []
 eraStart: 
 eraPeak: 
 primaryGenres: [country rock]
 curatorTags: [country, folk, rock]
-secondaryZones: []
+secondaryZones: [folk-country-vise, rock-circuit]
 layoutPinned: false
 layoutX: -1170
 layoutY: 1684

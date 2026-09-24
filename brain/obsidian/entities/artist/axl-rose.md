@@ -27,7 +27,6 @@ W. Axl Rose ( AK-səl; born William Bruce Rose Jr., February 6, 1962) is an Amer
 - [[arthur-porter|Arthur Porter]] - Wikipedia link signal (Wikipedia link: Arthur Porter (R&B musician))
 - [[billy-davis|Billy Davis]] - Wikipedia link signal (Wikipedia link: Billy Davis (guitarist))
 - [[billy-williamson|Billy Williamson]] - Wikipedia link signal (Wikipedia link: Billy Williamson (guitarist))
-- [[brain|Brain]] - Wikipedia link signal (Wikipedia link: Brain (musician))
 - [[charles-sutton|Charles Sutton]] - Wikipedia link signal (Wikipedia link: Charles Sutton (musician))
 - [[chris-holmes|Chris Holmes]] - Wikipedia link signal (Wikipedia link: Chris Holmes (guitarist))
 

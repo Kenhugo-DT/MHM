@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-14T12:12:20.596Z",
+  "generatedAt": "2026-09-24T12:12:16.355Z",
   "source": "brain/obsidian",
   "nodes": [
     {
@@ -701,6 +701,25 @@
         "pinned": false,
         "x": 1317,
         "y": 1284
+      }
+    },
+    {
+      "id": "alan-wilson",
+      "label": "Alan Wilson",
+      "type": "artist",
+      "zone": "roots-blues",
+      "roles": [
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -1702,
+        "y": -425
       }
     },
     {
@@ -2473,6 +2492,44 @@
       }
     },
     {
+      "id": "bakerloo",
+      "label": "Bakerloo",
+      "type": "band",
+      "zone": "hard-rock-metal",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 2995,
+        "y": -416
+      }
+    },
+    {
+      "id": "band-of-joy",
+      "label": "Band of Joy",
+      "type": "band",
+      "zone": "hard-rock-metal",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 2808,
+        "y": -725
+      }
+    },
+    {
       "id": "bandana-thrash",
       "label": "Bandana thrash",
       "type": "band",
@@ -2794,6 +2851,44 @@
       }
     },
     {
+      "id": "beastie-boys",
+      "label": "Beastie Boys",
+      "type": "band",
+      "zone": "hip-hop-rap",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 3731,
+        "y": 1543
+      }
+    },
+    {
+      "id": "bebop",
+      "label": "Bebop",
+      "type": "genre",
+      "zone": "jazz",
+      "roles": [
+        "genre"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -1495,
+        "y": -973
+      }
+    },
+    {
       "id": "beefeater",
       "label": "Beefeater",
       "type": "band",
@@ -2844,6 +2939,26 @@
       }
     },
     {
+      "id": "ben-king",
+      "label": "Ben King",
+      "type": "guitarist",
+      "zone": "roots-blues",
+      "roles": [
+        "guitarist",
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -1743,
+        "y": -211
+      }
+    },
+    {
       "id": "big-boys",
       "label": "Big Boys",
       "type": "band",
@@ -2866,6 +2981,25 @@
         "pinned": false,
         "x": -628,
         "y": 261
+      }
+    },
+    {
+      "id": "bill-monroe",
+      "label": "Bill Monroe",
+      "type": "artist",
+      "zone": "country-roots",
+      "roles": [
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -2828,
+        "y": 824
       }
     },
     {
@@ -3146,7 +3280,7 @@
       "id": "bluegrass",
       "label": "Bluegrass",
       "type": "genre",
-      "zone": "folk-country-vise",
+      "zone": "country-roots",
       "roles": [
         "genre"
       ],
@@ -3159,7 +3293,9 @@
         "country",
         "folk"
       ],
-      "secondaryZones": [],
+      "secondaryZones": [
+        "folk-country-vise"
+      ],
       "layoutHints": {
         "pinned": false,
         "x": -1513,
@@ -3393,6 +3529,25 @@
       }
     },
     {
+      "id": "brand-new",
+      "label": "Brand New",
+      "type": "band",
+      "zone": "punk-alt",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 2471,
+        "y": 1293
+      }
+    },
+    {
       "id": "brian-baker",
       "label": "Brian Baker",
       "type": "artist",
@@ -3413,6 +3568,25 @@
         "pinned": false,
         "x": 878,
         "y": 1595
+      }
+    },
+    {
+      "id": "brian-cook",
+      "label": "Brian Cook",
+      "type": "artist",
+      "zone": "punk-alt",
+      "roles": [
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 1826,
+        "y": 1756
       }
     },
     {
@@ -3750,7 +3924,7 @@
       "id": "camel",
       "label": "Camel",
       "type": "band",
-      "zone": "folk-country-vise",
+      "zone": "psychedelia-prog",
       "roles": [
         "band"
       ],
@@ -3949,6 +4123,25 @@
       }
     },
     {
+      "id": "charlie-parker",
+      "label": "Charlie Parker",
+      "type": "artist",
+      "zone": "jazz",
+      "roles": [
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -1360,
+        "y": -1157
+      }
+    },
+    {
       "id": "charon",
       "label": "Charon",
       "type": "band",
@@ -4043,6 +4236,25 @@
       }
     },
     {
+      "id": "chelsea",
+      "label": "Chelsea",
+      "type": "band",
+      "zone": "punk-alt",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 1227,
+        "y": 1228
+      }
+    },
+    {
       "id": "chester-bennington",
       "label": "Chester Bennington",
       "type": "artist",
@@ -4071,7 +4283,7 @@
       "id": "chet-atkins",
       "label": "Chet Atkins",
       "type": "guitarist",
-      "zone": "folk-country-vise",
+      "zone": "country-roots",
       "roles": [
         "guitarist",
         "artist"
@@ -4476,7 +4688,7 @@
       "id": "country",
       "label": "Country",
       "type": "genre",
-      "zone": "folk-country-vise",
+      "zone": "country-roots",
       "roles": [
         "genre"
       ],
@@ -4490,7 +4702,10 @@
         "folk",
         "southern rock"
       ],
-      "secondaryZones": [],
+      "secondaryZones": [
+        "folk-country-vise",
+        "roots-blues"
+      ],
       "layoutHints": {
         "pinned": false,
         "x": -1333,
@@ -4501,7 +4716,7 @@
       "id": "country-rock",
       "label": "country rock",
       "type": "genre",
-      "zone": "folk-country-vise",
+      "zone": "country-roots",
       "roles": [
         "genre"
       ],
@@ -4515,7 +4730,10 @@
         "folk",
         "rock"
       ],
-      "secondaryZones": [],
+      "secondaryZones": [
+        "folk-country-vise",
+        "rock-circuit"
+      ],
       "layoutHints": {
         "pinned": false,
         "x": -1170,
@@ -5433,7 +5651,7 @@
       "id": "django-reinhardt",
       "label": "Django Reinhardt",
       "type": "guitarist",
-      "zone": "folk-country-vise",
+      "zone": "jazz",
       "roles": [
         "guitarist",
         "artist"
@@ -5709,6 +5927,25 @@
         "pinned": false,
         "x": 2588,
         "y": 503
+      }
+    },
+    {
+      "id": "duke-ellington",
+      "label": "Duke Ellington",
+      "type": "artist",
+      "zone": "jazz",
+      "roles": [
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -1834,
+        "y": -1383
       }
     },
     {
@@ -7602,6 +7839,25 @@
       }
     },
     {
+      "id": "goldfinger",
+      "label": "Goldfinger",
+      "type": "band",
+      "zone": "punk-alt",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 2099,
+        "y": 2080
+      }
+    },
+    {
       "id": "gothic-metal",
       "label": "gothic metal",
       "type": "genre",
@@ -7992,6 +8248,25 @@
       }
     },
     {
+      "id": "hank-williams",
+      "label": "Hank Williams",
+      "type": "artist",
+      "zone": "country-roots",
+      "roles": [
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -2658,
+        "y": 609
+      }
+    },
+    {
       "id": "hard-rain",
       "label": "Hard Rain",
       "type": "band",
@@ -8237,6 +8512,25 @@
         "pinned": false,
         "x": -266,
         "y": 18
+      }
+    },
+    {
+      "id": "honky-tonk",
+      "label": "Honky-tonk",
+      "type": "genre",
+      "zone": "country-roots",
+      "roles": [
+        "genre"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -2211,
+        "y": 976
       }
     },
     {
@@ -8829,7 +9123,7 @@
       "id": "jazz",
       "label": "Jazz",
       "type": "genre",
-      "zone": "psychedelia-prog",
+      "zone": "jazz",
       "roles": [
         "genre"
       ],
@@ -8839,11 +9133,14 @@
         "Jazz"
       ],
       "curatorTags": [
-        "jazz fusion",
-        "progressive",
-        "psychedelic"
+        "jazz",
+        "improvisation",
+        "jazz roots"
       ],
-      "secondaryZones": [],
+      "secondaryZones": [
+        "roots-blues",
+        "rock-circuit"
+      ],
       "layoutHints": {
         "pinned": false,
         "x": -1038,
@@ -8854,7 +9151,7 @@
       "id": "jazz-fusion",
       "label": "Jazz fusion",
       "type": "genre",
-      "zone": "rock-circuit",
+      "zone": "jazz",
       "roles": [
         "genre"
       ],
@@ -8868,7 +9165,10 @@
         "jazz fusion",
         "classic rock"
       ],
-      "secondaryZones": [],
+      "secondaryZones": [
+        "rock-circuit",
+        "psychedelia-prog"
+      ],
       "layoutHints": {
         "pinned": false,
         "x": -916,
@@ -9006,7 +9306,7 @@
       "id": "jerry-reed",
       "label": "Jerry Reed",
       "type": "artist",
-      "zone": "folk-country-vise",
+      "zone": "country-roots",
       "roles": [
         "artist"
       ],
@@ -9055,6 +9355,25 @@
       }
     },
     {
+      "id": "jimmie-rodgers",
+      "label": "Jimmie Rodgers",
+      "type": "artist",
+      "zone": "country-roots",
+      "roles": [
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -2269,
+        "y": 652
+      }
+    },
+    {
       "id": "jimmy-page",
       "label": "Jimmy Page",
       "type": "guitarist",
@@ -9085,7 +9404,7 @@
       "id": "joe-pass",
       "label": "Joe Pass",
       "type": "guitarist",
-      "zone": "folk-country-vise",
+      "zone": "jazz",
       "roles": [
         "guitarist",
         "artist"
@@ -9159,6 +9478,25 @@
       }
     },
     {
+      "id": "john-coltrane",
+      "label": "John Coltrane",
+      "type": "artist",
+      "zone": "jazz",
+      "roles": [
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -1350,
+        "y": -1342
+      }
+    },
+    {
       "id": "john-fogerty",
       "label": "John Fogerty",
       "type": "artist",
@@ -9215,7 +9553,7 @@
       "id": "john-mclaughlin",
       "label": "John McLaughlin",
       "type": "guitarist",
-      "zone": "psychedelia-prog",
+      "zone": "jazz",
       "roles": [
         "guitarist",
         "artist"
@@ -9228,7 +9566,10 @@
         "Jazz fusion",
         "Progressive rock"
       ],
-      "secondaryZones": [],
+      "secondaryZones": [
+        "rock-circuit",
+        "psychedelia-prog"
+      ],
       "layoutHints": {
         "pinned": false,
         "x": -683,
@@ -9239,7 +9580,7 @@
       "id": "johnny-cash",
       "label": "Johnny Cash",
       "type": "artist",
-      "zone": "folk-country-vise",
+      "zone": "country-roots",
       "roles": [
         "artist"
       ],
@@ -9774,7 +10115,7 @@
       "id": "little-richard",
       "label": "Little Richard",
       "type": "artist",
-      "zone": "folk-country-vise",
+      "zone": "roots-blues",
       "roles": [
         "artist"
       ],
@@ -9794,6 +10135,25 @@
         "pinned": false,
         "x": -316,
         "y": 632
+      }
+    },
+    {
+      "id": "louis-armstrong",
+      "label": "Louis Armstrong",
+      "type": "artist",
+      "zone": "jazz",
+      "roles": [
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -1613,
+        "y": -1434
       }
     },
     {
@@ -10073,6 +10433,25 @@
       }
     },
     {
+      "id": "merle-haggard",
+      "label": "Merle Haggard",
+      "type": "artist",
+      "zone": "country-roots",
+      "roles": [
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -2205,
+        "y": 303
+      }
+    },
+    {
       "id": "metallica",
       "label": "Metallica",
       "type": "band",
@@ -10223,6 +10602,25 @@
         "pinned": false,
         "x": -353,
         "y": -766
+      }
+    },
+    {
+      "id": "miles-davis",
+      "label": "Miles Davis",
+      "type": "artist",
+      "zone": "jazz",
+      "roles": [
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -1572,
+        "y": -1140
       }
     },
     {
@@ -10900,6 +11298,25 @@
         "pinned": false,
         "x": 1381,
         "y": 429
+      }
+    },
+    {
+      "id": "patsy-cline",
+      "label": "Patsy Cline",
+      "type": "artist",
+      "zone": "country-roots",
+      "roles": [
+        "artist"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -2993,
+        "y": 799
       }
     },
     {
@@ -11682,7 +12099,7 @@
       "id": "richard-marx",
       "label": "Richard Marx",
       "type": "artist",
-      "zone": "folk-country-vise",
+      "zone": "rock-circuit",
       "roles": [
         "artist"
       ],
@@ -12006,6 +12423,25 @@
         "pinned": false,
         "x": -500,
         "y": -662
+      }
+    },
+    {
+      "id": "run-dmc",
+      "label": "Run-DMC",
+      "type": "band",
+      "zone": "hip-hop-rap",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": 4073,
+        "y": 1556
       }
     },
     {
@@ -13000,6 +13436,25 @@
       }
     },
     {
+      "id": "swing-music",
+      "label": "Swing music",
+      "type": "genre",
+      "zone": "jazz",
+      "roles": [
+        "genre"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -990,
+        "y": -1323
+      }
+    },
+    {
       "id": "symphonic-metal",
       "label": "symphonic metal",
       "type": "genre",
@@ -13194,6 +13649,25 @@
         "pinned": false,
         "x": 347,
         "y": -688
+      }
+    },
+    {
+      "id": "the-carter-family",
+      "label": "The Carter Family",
+      "type": "band",
+      "zone": "country-roots",
+      "roles": [
+        "band"
+      ],
+      "aliases": [],
+      "starter": false,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "secondaryZones": [],
+      "layoutHints": {
+        "pinned": false,
+        "x": -2456,
+        "y": 650
       }
     },
     {
@@ -13586,7 +14060,7 @@
       "id": "till-lindemann",
       "label": "Till Lindemann",
       "type": "artist",
-      "zone": "folk-country-vise",
+      "zone": "hard-rock-metal",
       "roles": [
         "artist"
       ],
@@ -13890,7 +14364,7 @@
       "id": "wes-montgomery",
       "label": "Wes Montgomery",
       "type": "guitarist",
-      "zone": "psychedelia-prog",
+      "zone": "jazz",
       "roles": [
         "guitarist",
         "artist"
@@ -13898,14 +14372,16 @@
       "aliases": [],
       "starter": true,
       "primaryGenres": [
-        "jazz fusion"
+        "jazz"
       ],
       "curatorTags": [
         "Jazz",
         "Jazz fusion",
         "jazz fusion"
       ],
-      "secondaryZones": [],
+      "secondaryZones": [
+        "rock-circuit"
+      ],
       "layoutHints": {
         "pinned": false,
         "x": -810,
@@ -13941,7 +14417,7 @@
       "id": "willie-nelson",
       "label": "Willie Nelson",
       "type": "artist",
-      "zone": "folk-country-vise",
+      "zone": "country-roots",
       "roles": [
         "artist"
       ],

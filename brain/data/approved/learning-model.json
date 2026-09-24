@@ -1,16 +1,16 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-24T09:51:09.660Z",
+  "generatedAt": "2026-09-24T12:12:25.541Z",
   "source": "graph + Obsidian frontmatter + curator feedback",
   "samples": {
-    "graphNodes": 561,
-    "graphEdges": 746,
-    "obsidianNotes": 563,
-    "feedbackNodes": 6,
-    "feedbackZones": 4,
+    "graphNodes": 585,
+    "graphEdges": 784,
+    "obsidianNotes": 587,
+    "feedbackNodes": 9,
+    "feedbackZones": 6,
     "feedbackRules": 4,
     "feedbackCategories": 8,
-    "bridgePolicies": 3,
+    "bridgePolicies": 5,
     "pinnedNotes": 0,
     "notesWithEra": 0,
     "notesWithPrimaryGenres": 477,
@@ -18,21 +18,21 @@
   },
   "zones": {
     "roots-blues": {
-      "nodeCount": 39,
+      "nodeCount": 42,
       "pinnedCount": 0,
       "centroid": {
-        "x": -914,
-        "y": -16
+        "x": -983,
+        "y": -38
       },
       "eraMedian": 1948,
       "learnedTerms": [
         {
           "term": "blues rock",
-          "weight": 248
+          "weight": 249
         },
         {
           "term": "blues",
-          "weight": 182
+          "weight": 183
         },
         {
           "term": "electric blues",
@@ -43,12 +43,20 @@
           "weight": 66
         },
         {
-          "term": "rock and roll",
-          "weight": 28
+          "term": "country",
+          "weight": 32
         },
         {
           "term": "country rock",
-          "weight": 26
+          "weight": 32
+        },
+        {
+          "term": "jazz fusion",
+          "weight": 28
+        },
+        {
+          "term": "rock and roll",
+          "weight": 28
         },
         {
           "term": "hard rock",
@@ -63,7 +71,7 @@
           "weight": 22
         },
         {
-          "term": "jazz fusion",
+          "term": "folk",
           "weight": 22
         },
         {
@@ -71,7 +79,7 @@
           "weight": 20
         },
         {
-          "term": "country",
+          "term": "jazz",
           "weight": 16
         },
         {
@@ -83,19 +91,43 @@
           "weight": 14
         },
         {
-          "term": "folk",
-          "weight": 12
-        },
-        {
           "term": "pop rock",
           "weight": 10
+        },
+        {
+          "term": "rock circuit",
+          "weight": 8
         },
         {
           "term": "roll",
           "weight": 8
         },
         {
+          "term": "king",
+          "weight": 7
+        },
+        {
+          "term": "bluegrass",
+          "weight": 6
+        },
+        {
+          "term": "chet atkins",
+          "weight": 6
+        },
+        {
+          "term": "django reinhardt",
+          "weight": 6
+        },
+        {
           "term": "fusion",
+          "weight": 6
+        },
+        {
+          "term": "genre transition needed",
+          "weight": 6
+        },
+        {
+          "term": "good bridge",
           "weight": 6
         },
         {
@@ -103,15 +135,19 @@
           "weight": 6
         },
         {
-          "term": "jazz",
+          "term": "john mclaughlin",
           "weight": 6
         },
         {
-          "term": "king",
+          "term": "johnny cash",
           "weight": 6
         },
         {
           "term": "swamp rock",
+          "weight": 6
+        },
+        {
+          "term": "wes montgomery",
           "weight": 6
         },
         {
@@ -143,6 +179,10 @@
           "weight": 4
         },
         {
+          "term": "country roots",
+          "weight": 4
+        },
+        {
           "term": "fleetwood",
           "weight": 4
         },
@@ -151,11 +191,19 @@
           "weight": 4
         },
         {
+          "term": "folk country vise",
+          "weight": 4
+        },
+        {
           "term": "influence",
           "weight": 4
         },
         {
           "term": "mac",
+          "weight": 4
+        },
+        {
+          "term": "psychedelia prog",
           "weight": 4
         },
         {
@@ -169,6 +217,14 @@
         {
           "term": "yardbirds",
           "weight": 4
+        },
+        {
+          "term": "give jazz its own readable center let documented blues fusion funk and progressive connections pull bridge nodes outward",
+          "weight": 3
+        },
+        {
+          "term": "keep early country bluegrass and honky tonk legible as a tradition with documented paths into folk blues rockabilly and rock",
+          "weight": 3
         },
         {
           "term": "38 special",
@@ -289,62 +345,6 @@
         {
           "term": "derek",
           "weight": 2
-        },
-        {
-          "term": "derek trucks",
-          "weight": 2
-        },
-        {
-          "term": "dickey",
-          "weight": 2
-        },
-        {
-          "term": "dickey betts",
-          "weight": 2
-        },
-        {
-          "term": "duane",
-          "weight": 2
-        },
-        {
-          "term": "duane allman",
-          "weight": 2
-        },
-        {
-          "term": "dylan",
-          "weight": 2
-        },
-        {
-          "term": "elvis",
-          "weight": 2
-        },
-        {
-          "term": "elvis presley",
-          "weight": 2
-        },
-        {
-          "term": "eric",
-          "weight": 2
-        },
-        {
-          "term": "eric clapton",
-          "weight": 2
-        },
-        {
-          "term": "flying",
-          "weight": 2
-        },
-        {
-          "term": "flying v",
-          "weight": 2
-        },
-        {
-          "term": "freddie",
-          "weight": 2
-        },
-        {
-          "term": "freddie king",
-          "weight": 2
         }
       ]
     },
@@ -352,18 +352,18 @@
       "nodeCount": 169,
       "pinnedCount": 0,
       "centroid": {
-        "x": 283,
-        "y": 275
+        "x": 193,
+        "y": 316
       },
-      "eraMedian": 1975,
+      "eraMedian": 1969,
       "learnedTerms": [
         {
           "term": "classic rock",
-          "weight": 926
+          "weight": 920
         },
         {
           "term": "classic",
-          "weight": 306
+          "weight": 304
         },
         {
           "term": "rock and roll",
@@ -374,11 +374,15 @@
           "weight": 23
         },
         {
+          "term": "jazz",
+          "weight": 22
+        },
+        {
           "term": "blues rock",
           "weight": 18
         },
         {
-          "term": "jazz fusion",
+          "term": "country",
           "weight": 16
         },
         {
@@ -386,11 +390,19 @@
           "weight": 16
         },
         {
-          "term": "jazz",
-          "weight": 14
+          "term": "genre transition needed",
+          "weight": 15
+        },
+        {
+          "term": "good bridge",
+          "weight": 15
         },
         {
           "term": "funk",
+          "weight": 12
+        },
+        {
+          "term": "jazz fusion",
           "weight": 12
         },
         {
@@ -414,16 +426,16 @@
           "weight": 11
         },
         {
-          "term": "swamp rock",
+          "term": "roots blues",
+          "weight": 11
+        },
+        {
+          "term": "folk",
           "weight": 10
         },
         {
-          "term": "genre transition needed",
-          "weight": 9
-        },
-        {
-          "term": "good bridge",
-          "weight": 9
+          "term": "swamp rock",
+          "weight": 10
         },
         {
           "term": "hard rock bridge",
@@ -448,6 +460,10 @@
         {
           "term": "roll",
           "weight": 8
+        },
+        {
+          "term": "psychedelia prog",
+          "weight": 7
         },
         {
           "term": "acdc",
@@ -478,6 +494,10 @@
           "weight": 6
         },
         {
+          "term": "bluegrass",
+          "weight": 6
+        },
+        {
           "term": "body count",
           "weight": 6
         },
@@ -486,11 +506,31 @@
           "weight": 6
         },
         {
+          "term": "chet atkins",
+          "weight": 6
+        },
+        {
+          "term": "country rock",
+          "weight": 6
+        },
+        {
           "term": "deep purple",
           "weight": 6
         },
         {
+          "term": "django reinhardt",
+          "weight": 6
+        },
+        {
           "term": "jeff",
+          "weight": 6
+        },
+        {
+          "term": "john mclaughlin",
+          "weight": 6
+        },
+        {
+          "term": "johnny cash",
           "weight": 6
         },
         {
@@ -530,6 +570,10 @@
           "weight": 6
         },
         {
+          "term": "wes montgomery",
+          "weight": 6
+        },
+        {
           "term": "hard",
           "weight": 5
         },
@@ -558,11 +602,15 @@
           "weight": 4
         },
         {
+          "term": "country roots",
+          "weight": 4
+        },
+        {
           "term": "fingerstyle",
           "weight": 4
         },
         {
-          "term": "fusion",
+          "term": "folk country vise",
           "weight": 4
         },
         {
@@ -614,6 +662,10 @@
           "weight": 4
         },
         {
+          "term": "give jazz its own readable center let documented blues fusion funk and progressive connections pull bridge nodes outward",
+          "weight": 3
+        },
+        {
           "term": "glam",
           "weight": 3
         },
@@ -622,83 +674,31 @@
           "weight": 3
         },
         {
-          "term": "psychedelia prog",
+          "term": "keep early country bluegrass and honky tonk legible as a tradition with documented paths into folk blues rockabilly and rock",
           "weight": 3
-        },
-        {
-          "term": "punk should connect back into rock history while keeping its own chaotic identity",
-          "weight": 3
-        },
-        {
-          "term": "queen",
-          "weight": 3
-        },
-        {
-          "term": "rock is the connective tissue it should overlap with roots blues hard rock metal prog psychedelia and punk instead of becoming a sealed box rock circuit may be dense and messy but it must never become a crushed cluster nodes can sit close together but labels should remain readable and should not overlap across multiple names when rock blues rock and hard rock nodes crowd together spread them outward and preserve readable lanes between related groups",
-          "weight": 3
-        },
-        {
-          "term": "roots blues",
-          "weight": 3
-        },
-        {
-          "term": "the rock to hard rock metal path should overlap strongly let bridge nodes drift between zones rather than forming a straight sterile lane",
-          "weight": 3
-        },
-        {
-          "term": "1970s",
-          "weight": 2
-        },
-        {
-          "term": "311",
-          "weight": 2
-        },
-        {
-          "term": "999",
-          "weight": 2
-        },
-        {
-          "term": "adam",
-          "weight": 2
-        },
-        {
-          "term": "adam hamilton",
-          "weight": 2
-        },
-        {
-          "term": "adrian",
-          "weight": 2
-        },
-        {
-          "term": "adrian smith",
-          "weight": 2
-        },
-        {
-          "term": "agathodaimon",
-          "weight": 2
         }
       ]
     },
     "psychedelia-prog": {
-      "nodeCount": 37,
+      "nodeCount": 35,
       "pinnedCount": 0,
       "centroid": {
-        "x": 379,
-        "y": -784
+        "x": 289,
+        "y": -763
       },
       "eraMedian": 1969,
       "learnedTerms": [
         {
           "term": "progressive",
-          "weight": 113
+          "weight": 106
         },
         {
           "term": "progressive rock",
-          "weight": 105
+          "weight": 100
         },
         {
           "term": "psychedelic",
-          "weight": 74
+          "weight": 68
         },
         {
           "term": "art rock",
@@ -713,20 +713,24 @@
           "weight": 52
         },
         {
-          "term": "jazz fusion",
-          "weight": 31
-        },
-        {
           "term": "hard rock",
           "weight": 26
         },
         {
-          "term": "jazz",
-          "weight": 19
+          "term": "country",
+          "weight": 20
+        },
+        {
+          "term": "jazz fusion",
+          "weight": 16
         },
         {
           "term": "art",
           "weight": 14
+        },
+        {
+          "term": "jazz",
+          "weight": 12
         },
         {
           "term": "metal",
@@ -737,7 +741,7 @@
           "weight": 10
         },
         {
-          "term": "country",
+          "term": "folk",
           "weight": 10
         },
         {
@@ -745,8 +749,8 @@
           "weight": 10
         },
         {
-          "term": "fusion",
-          "weight": 7
+          "term": "django reinhardt",
+          "weight": 6
         },
         {
           "term": "hard",
@@ -761,7 +765,15 @@
           "weight": 6
         },
         {
+          "term": "john mclaughlin",
+          "weight": 6
+        },
+        {
           "term": "roots rock",
+          "weight": 6
+        },
+        {
+          "term": "wes montgomery",
           "weight": 6
         },
         {
@@ -785,6 +797,14 @@
           "weight": 4
         },
         {
+          "term": "rock circuit",
+          "weight": 4
+        },
+        {
+          "term": "roots blues",
+          "weight": 4
+        },
+        {
           "term": "rush",
           "weight": 4
         },
@@ -795,6 +815,18 @@
         {
           "term": "yes",
           "weight": 4
+        },
+        {
+          "term": "genre transition needed",
+          "weight": 3
+        },
+        {
+          "term": "give jazz its own readable center let documented blues fusion funk and progressive connections pull bridge nodes outward",
+          "weight": 3
+        },
+        {
+          "term": "good bridge",
+          "weight": 3
         },
         {
           "term": "album",
@@ -826,6 +858,10 @@
         },
         {
           "term": "beatles",
+          "weight": 2
+        },
+        {
+          "term": "camel",
           "weight": 2
         },
         {
@@ -885,6 +921,10 @@
           "weight": 2
         },
         {
+          "term": "fusion",
+          "weight": 2
+        },
+        {
           "term": "gilmour",
           "weight": 2
         },
@@ -914,10 +954,6 @@
         },
         {
           "term": "ibanez jem",
-          "weight": 2
-        },
-        {
-          "term": "improvisation",
           "weight": 2
         },
         {
@@ -953,10 +989,6 @@
           "weight": 2
         },
         {
-          "term": "montgomery",
-          "weight": 2
-        },
-        {
           "term": "pink",
           "weight": 2
         },
@@ -975,47 +1007,15 @@
         {
           "term": "power chords",
           "weight": 2
-        },
-        {
-          "term": "robert",
-          "weight": 2
-        },
-        {
-          "term": "robert fripp",
-          "weight": 2
-        },
-        {
-          "term": "roky",
-          "weight": 2
-        },
-        {
-          "term": "roky erickson",
-          "weight": 2
-        },
-        {
-          "term": "roots",
-          "weight": 2
-        },
-        {
-          "term": "space",
-          "weight": 2
-        },
-        {
-          "term": "steve howe",
-          "weight": 2
-        },
-        {
-          "term": "steve vai",
-          "weight": 2
         }
       ]
     },
     "hard-rock-metal": {
-      "nodeCount": 125,
+      "nodeCount": 128,
       "pinnedCount": 0,
       "centroid": {
-        "x": 2534,
-        "y": 120
+        "x": 2513,
+        "y": 94
       },
       "eraMedian": 1977,
       "learnedTerms": [
@@ -1064,6 +1064,10 @@
           "weight": 40
         },
         {
+          "term": "folk",
+          "weight": 30
+        },
+        {
           "term": "power",
           "weight": 28
         },
@@ -1078,10 +1082,6 @@
         {
           "term": "symphonic metal",
           "weight": 24
-        },
-        {
-          "term": "folk",
-          "weight": 20
         },
         {
           "term": "blues",
@@ -1109,6 +1109,10 @@
         },
         {
           "term": "blues rock",
+          "weight": 10
+        },
+        {
+          "term": "country",
           "weight": 10
         },
         {
@@ -1334,19 +1338,15 @@
         {
           "term": "the rock to hard rock metal path should overlap strongly let bridge nodes drift between zones rather than forming a straight sterile lane",
           "weight": 3
-        },
-        {
-          "term": "a wake in providence",
-          "weight": 2
         }
       ]
     },
     "punk-alt": {
-      "nodeCount": 74,
+      "nodeCount": 78,
       "pinnedCount": 0,
       "centroid": {
-        "x": 1538,
-        "y": 1469
+        "x": 1608,
+        "y": 1474
       },
       "eraMedian": 1977,
       "learnedTerms": [
@@ -1673,29 +1673,24 @@
       ]
     },
     "folk-country-vise": {
-      "nodeCount": 25,
+      "nodeCount": 12,
       "pinnedCount": 0,
       "centroid": {
-        "x": -610,
-        "y": 1227
+        "x": -910,
+        "y": 1286
       },
-      "eraMedian": 1963,
       "learnedTerms": [
         {
           "term": "country",
-          "weight": 166
+          "weight": 70
         },
         {
           "term": "folk",
-          "weight": 126
+          "weight": 58
         },
         {
           "term": "norwegian vise",
           "weight": 40
-        },
-        {
-          "term": "jazz",
-          "weight": 20
         },
         {
           "term": "singer songwriter",
@@ -1714,11 +1709,11 @@
           "weight": 12
         },
         {
-          "term": "acoustic",
+          "term": "bluegrass",
           "weight": 6
         },
         {
-          "term": "bluegrass",
+          "term": "chet atkins",
           "weight": 6
         },
         {
@@ -1730,12 +1725,32 @@
           "weight": 6
         },
         {
-          "term": "southern rock",
+          "term": "johnny cash",
           "weight": 6
         },
         {
-          "term": "richard",
+          "term": "country roots",
           "weight": 4
+        },
+        {
+          "term": "rock circuit",
+          "weight": 4
+        },
+        {
+          "term": "roots blues",
+          "weight": 4
+        },
+        {
+          "term": "genre transition needed",
+          "weight": 3
+        },
+        {
+          "term": "good bridge",
+          "weight": 3
+        },
+        {
+          "term": "keep early country bluegrass and honky tonk legible as a tradition with documented paths into folk blues rockabilly and rock",
+          "weight": 3
         },
         {
           "term": "norwegian song",
@@ -1744,6 +1759,10 @@
         {
           "term": "song",
           "weight": 3
+        },
+        {
+          "term": "acoustic",
+          "weight": 2
         },
         {
           "term": "acoustic tradition",
@@ -1762,10 +1781,6 @@
           "weight": 2
         },
         {
-          "term": "atkins",
-          "weight": 2
-        },
-        {
           "term": "banjo",
           "weight": 2
         },
@@ -1778,43 +1793,7 @@
           "weight": 2
         },
         {
-          "term": "camel",
-          "weight": 2
-        },
-        {
-          "term": "cash",
-          "weight": 2
-        },
-        {
-          "term": "chet",
-          "weight": 2
-        },
-        {
-          "term": "chet atkins",
-          "weight": 2
-        },
-        {
-          "term": "chord",
-          "weight": 2
-        },
-        {
-          "term": "chord melody",
-          "weight": 2
-        },
-        {
           "term": "cranner",
-          "weight": 2
-        },
-        {
-          "term": "django",
-          "weight": 2
-        },
-        {
-          "term": "django reinhardt",
-          "weight": 2
-        },
-        {
-          "term": "fingerstyle",
           "weight": 2
         },
         {
@@ -1823,30 +1802,6 @@
         },
         {
           "term": "halvdan sivertsen",
-          "weight": 2
-        },
-        {
-          "term": "jerry",
-          "weight": 2
-        },
-        {
-          "term": "jerry reed",
-          "weight": 2
-        },
-        {
-          "term": "joe",
-          "weight": 2
-        },
-        {
-          "term": "joe pass",
-          "weight": 2
-        },
-        {
-          "term": "johnny",
-          "weight": 2
-        },
-        {
-          "term": "johnny cash",
           "weight": 2
         },
         {
@@ -1866,31 +1821,7 @@
           "weight": 2
         },
         {
-          "term": "lindemann",
-          "weight": 2
-        },
-        {
-          "term": "little",
-          "weight": 2
-        },
-        {
-          "term": "little richard",
-          "weight": 2
-        },
-        {
           "term": "lucia",
-          "weight": 2
-        },
-        {
-          "term": "marx",
-          "weight": 2
-        },
-        {
-          "term": "melody",
-          "weight": 2
-        },
-        {
-          "term": "nelson",
           "weight": 2
         },
         {
@@ -1922,51 +1853,11 @@
           "weight": 2
         },
         {
-          "term": "pass",
-          "weight": 2
-        },
-        {
-          "term": "producer",
-          "weight": 2
-        },
-        {
-          "term": "reed",
-          "weight": 2
-        },
-        {
-          "term": "reinhardt",
-          "weight": 2
-        },
-        {
-          "term": "rhythm",
-          "weight": 2
-        },
-        {
-          "term": "rhythm guitar",
-          "weight": 2
-        },
-        {
-          "term": "richard marx",
-          "weight": 2
-        },
-        {
-          "term": "roots",
-          "weight": 2
-        },
-        {
-          "term": "roots music",
-          "weight": 2
-        },
-        {
           "term": "sivertsen",
           "weight": 2
         },
         {
           "term": "songcraft",
-          "weight": 2
-        },
-        {
-          "term": "southern",
           "weight": 2
         },
         {
@@ -1982,15 +1873,258 @@
           "weight": 2
         },
         {
-          "term": "till",
-          "weight": 2
-        },
-        {
-          "term": "till lindemann",
-          "weight": 2
-        },
-        {
           "term": "tradition",
+          "weight": 2
+        },
+        {
+          "term": "eggum",
+          "weight": 1
+        },
+        {
+          "term": "group",
+          "weight": 1
+        },
+        {
+          "term": "jan",
+          "weight": 1
+        },
+        {
+          "term": "jan eggum",
+          "weight": 1
+        }
+      ]
+    },
+    "country-roots": {
+      "nodeCount": 14,
+      "pinnedCount": 0,
+      "centroid": {
+        "x": -2211,
+        "y": 794
+      },
+      "eraMedian": 1933,
+      "learnedTerms": [
+        {
+          "term": "country",
+          "weight": 88
+        },
+        {
+          "term": "folk",
+          "weight": 34
+        },
+        {
+          "term": "bluegrass",
+          "weight": 21
+        },
+        {
+          "term": "country rock",
+          "weight": 20
+        },
+        {
+          "term": "honky tonk",
+          "weight": 20
+        },
+        {
+          "term": "early country",
+          "weight": 16
+        },
+        {
+          "term": "blues",
+          "weight": 8
+        },
+        {
+          "term": "chet atkins",
+          "weight": 8
+        },
+        {
+          "term": "johnny cash",
+          "weight": 8
+        },
+        {
+          "term": "western swing",
+          "weight": 8
+        },
+        {
+          "term": "folk country vise",
+          "weight": 7
+        },
+        {
+          "term": "rock circuit",
+          "weight": 7
+        },
+        {
+          "term": "roots blues",
+          "weight": 7
+        },
+        {
+          "term": "southern rock",
+          "weight": 6
+        },
+        {
+          "term": "carter guitar style",
+          "weight": 4
+        },
+        {
+          "term": "country blues bridge",
+          "weight": 4
+        },
+        {
+          "term": "country roots",
+          "weight": 4
+        },
+        {
+          "term": "folk repertoire",
+          "weight": 4
+        },
+        {
+          "term": "haggard belongs in country while his documented jazz and blues influences make him a useful bridge",
+          "weight": 4
+        },
+        {
+          "term": "honky",
+          "weight": 4
+        },
+        {
+          "term": "jazz influence",
+          "weight": 4
+        },
+        {
+          "term": "keep rodgers grounded in early country while letting his blues and early rock influence pull him toward those scenes",
+          "weight": 4
+        },
+        {
+          "term": "the carter family is an early country anchor with documented folk and blues repertoire",
+          "weight": 4
+        },
+        {
+          "term": "tonk",
+          "weight": 4
+        },
+        {
+          "term": "genre transition needed",
+          "weight": 3
+        },
+        {
+          "term": "good bridge",
+          "weight": 3
+        },
+        {
+          "term": "keep early country bluegrass and honky tonk legible as a tradition with documented paths into folk blues rockabilly and rock",
+          "weight": 3
+        },
+        {
+          "term": "prioritize early country history keep this area spacious and let well sourced country folk blues and rockabilly bridges cross its boundary",
+          "weight": 3
+        },
+        {
+          "term": "acoustic",
+          "weight": 2
+        },
+        {
+          "term": "atkins",
+          "weight": 2
+        },
+        {
+          "term": "carter",
+          "weight": 2
+        },
+        {
+          "term": "cash",
+          "weight": 2
+        },
+        {
+          "term": "chet",
+          "weight": 2
+        },
+        {
+          "term": "family",
+          "weight": 2
+        },
+        {
+          "term": "fingerstyle",
+          "weight": 2
+        },
+        {
+          "term": "haggard",
+          "weight": 2
+        },
+        {
+          "term": "jazz",
+          "weight": 2
+        },
+        {
+          "term": "jerry",
+          "weight": 2
+        },
+        {
+          "term": "jerry reed",
+          "weight": 2
+        },
+        {
+          "term": "jimmie",
+          "weight": 2
+        },
+        {
+          "term": "jimmie rodgers",
+          "weight": 2
+        },
+        {
+          "term": "johnny",
+          "weight": 2
+        },
+        {
+          "term": "merle",
+          "weight": 2
+        },
+        {
+          "term": "merle haggard",
+          "weight": 2
+        },
+        {
+          "term": "nelson",
+          "weight": 2
+        },
+        {
+          "term": "producer",
+          "weight": 2
+        },
+        {
+          "term": "reed",
+          "weight": 2
+        },
+        {
+          "term": "rhythm",
+          "weight": 2
+        },
+        {
+          "term": "rhythm guitar",
+          "weight": 2
+        },
+        {
+          "term": "rock and roll",
+          "weight": 2
+        },
+        {
+          "term": "rodgers",
+          "weight": 2
+        },
+        {
+          "term": "roll",
+          "weight": 2
+        },
+        {
+          "term": "roots",
+          "weight": 2
+        },
+        {
+          "term": "roots music",
+          "weight": 2
+        },
+        {
+          "term": "southern",
+          "weight": 2
+        },
+        {
+          "term": "the carter family",
           "weight": 2
         },
         {
@@ -2000,6 +2134,277 @@
         {
           "term": "willie",
           "weight": 2
+        },
+        {
+          "term": "willie nelson",
+          "weight": 2
+        },
+        {
+          "term": "bill",
+          "weight": 1
+        },
+        {
+          "term": "bill monroe",
+          "weight": 1
+        },
+        {
+          "term": "cline",
+          "weight": 1
+        },
+        {
+          "term": "hank",
+          "weight": 1
+        },
+        {
+          "term": "hank williams",
+          "weight": 1
+        },
+        {
+          "term": "monroe",
+          "weight": 1
+        },
+        {
+          "term": "patsy",
+          "weight": 1
+        },
+        {
+          "term": "patsy cline",
+          "weight": 1
+        },
+        {
+          "term": "williams",
+          "weight": 1
+        }
+      ]
+    },
+    "jazz": {
+      "nodeCount": 13,
+      "pinnedCount": 0,
+      "centroid": {
+        "x": -1350,
+        "y": -1157
+      },
+      "eraMedian": 1926,
+      "learnedTerms": [
+        {
+          "term": "jazz",
+          "weight": 57
+        },
+        {
+          "term": "jazz fusion",
+          "weight": 36
+        },
+        {
+          "term": "improvisation",
+          "weight": 14
+        },
+        {
+          "term": "bebop",
+          "weight": 11
+        },
+        {
+          "term": "swing",
+          "weight": 10
+        },
+        {
+          "term": "django reinhardt",
+          "weight": 8
+        },
+        {
+          "term": "early jazz",
+          "weight": 8
+        },
+        {
+          "term": "jazz guitar",
+          "weight": 8
+        },
+        {
+          "term": "wes montgomery",
+          "weight": 8
+        },
+        {
+          "term": "john mclaughlin",
+          "weight": 7
+        },
+        {
+          "term": "psychedelia prog",
+          "weight": 7
+        },
+        {
+          "term": "rock circuit",
+          "weight": 7
+        },
+        {
+          "term": "roots blues",
+          "weight": 7
+        },
+        {
+          "term": "classic rock",
+          "weight": 6
+        },
+        {
+          "term": "fusion",
+          "weight": 6
+        },
+        {
+          "term": "jazz roots",
+          "weight": 6
+        },
+        {
+          "term": "progressive rock",
+          "weight": 5
+        },
+        {
+          "term": "genre transition needed",
+          "weight": 3
+        },
+        {
+          "term": "give jazz its own readable center let documented blues fusion funk and progressive connections pull bridge nodes outward",
+          "weight": 3
+        },
+        {
+          "term": "good bridge",
+          "weight": 3
+        },
+        {
+          "term": "jazz needs a readable center and historically supported transitions keep early jazz and jazz guitar together while allowing fusion and crossover artists to drift toward rock and prog",
+          "weight": 3
+        },
+        {
+          "term": "acoustic",
+          "weight": 2
+        },
+        {
+          "term": "chord",
+          "weight": 2
+        },
+        {
+          "term": "chord melody",
+          "weight": 2
+        },
+        {
+          "term": "classic",
+          "weight": 2
+        },
+        {
+          "term": "django",
+          "weight": 2
+        },
+        {
+          "term": "form",
+          "weight": 2
+        },
+        {
+          "term": "hybrid",
+          "weight": 2
+        },
+        {
+          "term": "hybrid form",
+          "weight": 2
+        },
+        {
+          "term": "joe",
+          "weight": 2
+        },
+        {
+          "term": "joe pass",
+          "weight": 2
+        },
+        {
+          "term": "john",
+          "weight": 2
+        },
+        {
+          "term": "melody",
+          "weight": 2
+        },
+        {
+          "term": "montgomery",
+          "weight": 2
+        },
+        {
+          "term": "pass",
+          "weight": 2
+        },
+        {
+          "term": "reinhardt",
+          "weight": 2
+        },
+        {
+          "term": "roots",
+          "weight": 2
+        },
+        {
+          "term": "swing music",
+          "weight": 2
+        },
+        {
+          "term": "wes",
+          "weight": 2
+        },
+        {
+          "term": "armstrong",
+          "weight": 1
+        },
+        {
+          "term": "charlie",
+          "weight": 1
+        },
+        {
+          "term": "charlie parker",
+          "weight": 1
+        },
+        {
+          "term": "coltrane",
+          "weight": 1
+        },
+        {
+          "term": "davis",
+          "weight": 1
+        },
+        {
+          "term": "duke",
+          "weight": 1
+        },
+        {
+          "term": "duke ellington",
+          "weight": 1
+        },
+        {
+          "term": "ellington",
+          "weight": 1
+        },
+        {
+          "term": "john coltrane",
+          "weight": 1
+        },
+        {
+          "term": "louis",
+          "weight": 1
+        },
+        {
+          "term": "louis armstrong",
+          "weight": 1
+        },
+        {
+          "term": "mclaughlin",
+          "weight": 1
+        },
+        {
+          "term": "miles",
+          "weight": 1
+        },
+        {
+          "term": "miles davis",
+          "weight": 1
+        },
+        {
+          "term": "parker",
+          "weight": 1
+        },
+        {
+          "term": "progressive",
+          "weight": 1
         }
       ]
     },
@@ -2007,8 +2412,8 @@
       "nodeCount": 68,
       "pinnedCount": 0,
       "centroid": {
-        "x": 3673,
-        "y": 38
+        "x": 3638,
+        "y": -16
       },
       "eraMedian": 1958,
       "learnedTerms": [
@@ -2335,13 +2740,13 @@
       ]
     },
     "hip-hop-rap": {
-      "nodeCount": 24,
+      "nodeCount": 26,
       "pinnedCount": 0,
       "centroid": {
-        "x": 3589,
-        "y": 1434
+        "x": 3650,
+        "y": 1478
       },
-      "eraMedian": 1985,
+      "eraMedian": 1983,
       "learnedTerms": [
         {
           "term": "hip hop",
@@ -2440,6 +2845,10 @@
           "weight": 8
         },
         {
+          "term": "beastie boys",
+          "weight": 7
+        },
+        {
           "term": "hard rock metal",
           "weight": 7
         },
@@ -2452,11 +2861,11 @@
           "weight": 7
         },
         {
-          "term": "alternative hip hop",
-          "weight": 6
+          "term": "run dmc",
+          "weight": 7
         },
         {
-          "term": "beastie boys",
+          "term": "alternative hip hop",
           "weight": 6
         },
         {
@@ -2489,10 +2898,6 @@
         },
         {
           "term": "producer",
-          "weight": 6
-        },
-        {
-          "term": "run dmc",
           "weight": 6
         },
         {
@@ -2729,7 +3134,8 @@
     "blues": {
       "zone": "roots-blues",
       "secondaryZones": [
-        "hard-rock-metal"
+        "hard-rock-metal",
+        "country-roots"
       ],
       "primaryGenres": [
         "Blues"
@@ -2739,10 +3145,10 @@
         "blues rock",
         "electric blues"
       ],
-      "connectionCount": 8,
+      "connectionCount": 10,
       "linkedGenres": [],
-      "bridgeScore": 0.22,
-      "hubScore": 0.667,
+      "bridgeScore": 0.44,
+      "hubScore": 0.833,
       "layoutHints": {
         "pinned": false
       }
@@ -2772,7 +3178,8 @@
       "zone": "roots-blues",
       "secondaryZones": [
         "rock-circuit",
-        "guitar-workshop"
+        "guitar-workshop",
+        "country-roots"
       ],
       "primaryGenres": [
         "Rock and roll"
@@ -2782,10 +3189,10 @@
         "rock and roll",
         "roots"
       ],
-      "connectionCount": 8,
+      "connectionCount": 9,
       "linkedGenres": [],
-      "bridgeScore": 0.44,
-      "hubScore": 0.667,
+      "bridgeScore": 0.66,
+      "hubScore": 0.75,
       "layoutHints": {
         "pinned": false
       }
@@ -2797,6 +3204,7 @@
         "psychedelia-prog",
         "hard-rock-metal",
         "punk-alt",
+        "jazz",
         "guitar-workshop",
         "folk-country-vise"
       ],
@@ -2841,6 +3249,7 @@
       "zone": "psychedelia-prog",
       "secondaryZones": [
         "rock-circuit",
+        "jazz",
         "guitar-workshop"
       ],
       "primaryGenres": [
@@ -2853,7 +3262,7 @@
       ],
       "connectionCount": 10,
       "linkedGenres": [],
-      "bridgeScore": 0.44,
+      "bridgeScore": 0.66,
       "hubScore": 0.833,
       "layoutHints": {
         "pinned": false
@@ -2948,6 +3357,7 @@
     "folk": {
       "zone": "folk-country-vise",
       "secondaryZones": [
+        "country-roots",
         "roots-blues",
         "guitar-workshop"
       ],
@@ -2958,17 +3368,18 @@
         "country",
         "folk"
       ],
-      "connectionCount": 11,
+      "connectionCount": 12,
       "linkedGenres": [],
-      "bridgeScore": 0.44,
-      "hubScore": 0.917,
+      "bridgeScore": 0.66,
+      "hubScore": 1,
       "layoutHints": {
         "pinned": false
       }
     },
     "country": {
-      "zone": "folk-country-vise",
+      "zone": "country-roots",
       "secondaryZones": [
+        "folk-country-vise",
         "roots-blues",
         "guitar-workshop"
       ],
@@ -2980,9 +3391,9 @@
         "folk",
         "southern rock"
       ],
-      "connectionCount": 12,
+      "connectionCount": 18,
       "linkedGenres": [],
-      "bridgeScore": 0.44,
+      "bridgeScore": 0.66,
       "hubScore": 1,
       "layoutHints": {
         "pinned": false
@@ -3009,6 +3420,7 @@
     "funk": {
       "zone": "rock-circuit",
       "secondaryZones": [
+        "jazz",
         "guitar-workshop"
       ],
       "primaryGenres": [
@@ -3021,15 +3433,16 @@
       ],
       "connectionCount": 4,
       "linkedGenres": [],
-      "bridgeScore": 0.22,
+      "bridgeScore": 0.44,
       "hubScore": 0.333,
       "layoutHints": {
         "pinned": false
       }
     },
     "jazz-fusion": {
-      "zone": "rock-circuit",
+      "zone": "jazz",
       "secondaryZones": [
+        "rock-circuit",
         "psychedelia-prog",
         "roots-blues",
         "guitar-workshop"
@@ -3042,10 +3455,10 @@
         "jazz fusion",
         "classic rock"
       ],
-      "connectionCount": 10,
+      "connectionCount": 11,
       "linkedGenres": [],
-      "bridgeScore": 0.66,
-      "hubScore": 0.833,
+      "bridgeScore": 0.88,
+      "hubScore": 0.917,
       "layoutHints": {
         "pinned": false
       }
@@ -3124,7 +3537,7 @@
     "elvis-presley": {
       "zone": "roots-blues",
       "secondaryZones": [
-        "folk-country-vise"
+        "country-roots"
       ],
       "primaryGenres": [
         "country rock"
@@ -3284,6 +3697,7 @@
     "frank-zappa": {
       "zone": "psychedelia-prog",
       "secondaryZones": [
+        "jazz",
         "rock-circuit",
         "guitar-workshop"
       ],
@@ -3299,7 +3713,7 @@
         "jazz-fusion",
         "rock"
       ],
-      "bridgeScore": 0.6,
+      "bridgeScore": 0.82,
       "hubScore": 0.333,
       "layoutHints": {
         "pinned": false
@@ -3443,7 +3857,7 @@
       }
     },
     "johnny-cash": {
-      "zone": "folk-country-vise",
+      "zone": "country-roots",
       "secondaryZones": [
         "guitar-workshop"
       ],
@@ -3465,7 +3879,7 @@
       }
     },
     "willie-nelson": {
-      "zone": "folk-country-vise",
+      "zone": "country-roots",
       "secondaryZones": [
         "guitar-workshop"
       ],
@@ -3476,18 +3890,18 @@
         "Country",
         "artist"
       ],
-      "connectionCount": 2,
+      "connectionCount": 3,
       "linkedGenres": [
         "country"
       ],
       "bridgeScore": 0.3,
-      "hubScore": 0.167,
+      "hubScore": 0.25,
       "layoutHints": {
         "pinned": false
       }
     },
     "chet-atkins": {
-      "zone": "folk-country-vise",
+      "zone": "country-roots",
       "secondaryZones": [
         "guitar-workshop"
       ],
@@ -3662,13 +4076,13 @@
         "Blues"
       ],
       "curatorFeedback": "Important overlap point between blues rock, classic rock and hard rock.",
-      "connectionCount": 3,
+      "connectionCount": 4,
       "linkedGenres": [
         "hard-rock",
         "blues"
       ],
       "bridgeScore": 0.84,
-      "hubScore": 0.25,
+      "hubScore": 0.333,
       "layoutHints": {
         "pinned": false
       }
@@ -3691,12 +4105,12 @@
         "band"
       ],
       "curatorFeedback": "Should behave as a bridge between hard rock, doom metal and heavy metal rather than sitting in a closed metal box.",
-      "connectionCount": 4,
+      "connectionCount": 5,
       "linkedGenres": [
         "heavy-metal"
       ],
       "bridgeScore": 0.54,
-      "hubScore": 0.453,
+      "hubScore": 0.537,
       "layoutHints": {
         "pinned": false
       }
@@ -3863,12 +4277,12 @@
         "blues rock",
         "blues"
       ],
-      "connectionCount": 4,
+      "connectionCount": 6,
       "linkedGenres": [
         "rock"
       ],
       "bridgeScore": 0.52,
-      "hubScore": 0.333,
+      "hubScore": 0.5,
       "layoutHints": {
         "pinned": false
       }
@@ -4006,7 +4420,7 @@
       "zone": "guitar-workshop",
       "secondaryZones": [
         "rock-circuit",
-        "folk-country-vise",
+        "country-roots",
         "psychedelia-prog"
       ],
       "primaryGenres": [],
@@ -4161,6 +4575,7 @@
       "secondaryZones": [
         "hard-rock-metal",
         "roots-blues",
+        "country-roots",
         "folk-country-vise"
       ],
       "primaryGenres": [],
@@ -4174,7 +4589,7 @@
         "folk",
         "country"
       ],
-      "bridgeScore": 0.82,
+      "bridgeScore": 1,
       "hubScore": 0.5,
       "layoutHints": {
         "pinned": false
@@ -4204,7 +4619,7 @@
     "trigger": {
       "zone": "guitar-workshop",
       "secondaryZones": [
-        "folk-country-vise"
+        "country-roots"
       ],
       "primaryGenres": [],
       "curatorTags": [
@@ -4246,7 +4661,7 @@
       "zone": "guitar-workshop",
       "secondaryZones": [
         "rock-circuit",
-        "folk-country-vise",
+        "country-roots",
         "roots-blues"
       ],
       "primaryGenres": [],
@@ -4391,7 +4806,7 @@
         "blues rock",
         "electric blues"
       ],
-      "connectionCount": 17,
+      "connectionCount": 19,
       "linkedGenres": [],
       "bridgeScore": 0.44,
       "hubScore": 1,
@@ -4402,7 +4817,7 @@
     "rockabilly": {
       "zone": "roots-blues",
       "secondaryZones": [
-        "folk-country-vise"
+        "country-roots"
       ],
       "primaryGenres": [
         "Rockabilly"
@@ -4444,7 +4859,7 @@
     "southern-rock": {
       "zone": "roots-blues",
       "secondaryZones": [
-        "folk-country-vise",
+        "country-roots",
         "hard-rock-metal"
       ],
       "primaryGenres": [
@@ -4651,8 +5066,10 @@
       }
     },
     "bluegrass": {
-      "zone": "folk-country-vise",
-      "secondaryZones": [],
+      "zone": "country-roots",
+      "secondaryZones": [
+        "folk-country-vise"
+      ],
       "primaryGenres": [
         "Bluegrass"
       ],
@@ -4660,10 +5077,10 @@
         "country",
         "folk"
       ],
-      "connectionCount": 2,
+      "connectionCount": 3,
       "linkedGenres": [],
-      "bridgeScore": 0,
-      "hubScore": 0.167,
+      "bridgeScore": 0.22,
+      "hubScore": 0.25,
       "layoutHints": {
         "pinned": false
       }
@@ -4691,24 +5108,25 @@
       }
     },
     "jazz": {
-      "zone": "psychedelia-prog",
+      "zone": "jazz",
       "secondaryZones": [
+        "roots-blues",
         "rock-circuit",
-        "folk-country-vise",
-        "guitar-workshop"
+        "guitar-workshop",
+        "country-roots"
       ],
       "primaryGenres": [
         "Jazz"
       ],
       "curatorTags": [
-        "jazz fusion",
-        "progressive",
-        "psychedelic"
+        "jazz",
+        "improvisation",
+        "jazz roots"
       ],
-      "connectionCount": 6,
+      "connectionCount": 12,
       "linkedGenres": [],
-      "bridgeScore": 0.66,
-      "hubScore": 0.5,
+      "bridgeScore": 0.88,
+      "hubScore": 1,
       "layoutHints": {
         "pinned": false
       }
@@ -5007,7 +5425,7 @@
     "jeff-beck": {
       "zone": "roots-blues",
       "secondaryZones": [
-        "rock-circuit",
+        "jazz",
         "guitar-workshop"
       ],
       "primaryGenres": [
@@ -5363,12 +5781,12 @@
       }
     },
     "wes-montgomery": {
-      "zone": "psychedelia-prog",
+      "zone": "jazz",
       "secondaryZones": [
         "rock-circuit"
       ],
       "primaryGenres": [
-        "jazz fusion"
+        "jazz"
       ],
       "curatorTags": [
         "Jazz",
@@ -5386,9 +5804,8 @@
       }
     },
     "joe-pass": {
-      "zone": "folk-country-vise",
+      "zone": "jazz",
       "secondaryZones": [
-        "psychedelia-prog",
         "guitar-workshop"
       ],
       "primaryGenres": [
@@ -5402,17 +5819,18 @@
       "linkedGenres": [
         "jazz"
       ],
-      "bridgeScore": 0.52,
+      "bridgeScore": 0.3,
       "hubScore": 0.25,
       "layoutHints": {
         "pinned": false
       }
     },
     "django-reinhardt": {
-      "zone": "folk-country-vise",
+      "zone": "jazz",
       "secondaryZones": [
-        "psychedelia-prog",
-        "roots-blues"
+        "roots-blues",
+        "folk-country-vise",
+        "psychedelia-prog"
       ],
       "primaryGenres": [
         "jazz"
@@ -5425,7 +5843,7 @@
       "linkedGenres": [
         "jazz"
       ],
-      "bridgeScore": 0.52,
+      "bridgeScore": 0.74,
       "hubScore": 0.333,
       "layoutHints": {
         "pinned": false
@@ -5453,9 +5871,10 @@
       }
     },
     "john-mclaughlin": {
-      "zone": "psychedelia-prog",
+      "zone": "jazz",
       "secondaryZones": [
-        "rock-circuit"
+        "rock-circuit",
+        "psychedelia-prog"
       ],
       "primaryGenres": [],
       "curatorTags": [
@@ -5469,7 +5888,7 @@
         "jazz",
         "progressive-rock"
       ],
-      "bridgeScore": 0.46,
+      "bridgeScore": 0.68,
       "hubScore": 0.25,
       "layoutHints": {
         "pinned": false
@@ -5766,13 +6185,13 @@
         "Blues rock",
         "Hard rock"
       ],
-      "connectionCount": 4,
+      "connectionCount": 5,
       "linkedGenres": [
         "hard-rock",
         "blues-rock"
       ],
       "bridgeScore": 0.38,
-      "hubScore": 0.333,
+      "hubScore": 0.417,
       "layoutHints": {
         "pinned": false
       }
@@ -5866,7 +6285,8 @@
     "allman-brothers-band": {
       "zone": "roots-blues",
       "secondaryZones": [
-        "folk-country-vise"
+        "jazz",
+        "country-roots"
       ],
       "primaryGenres": [
         "country rock",
@@ -5878,12 +6298,13 @@
         "blues rock",
         "southern rock"
       ],
-      "connectionCount": 5,
+      "connectionCount": 6,
       "linkedGenres": [
-        "country-rock"
+        "country-rock",
+        "blues-rock"
       ],
-      "bridgeScore": 0.3,
-      "hubScore": 0.417,
+      "bridgeScore": 0.6,
+      "hubScore": 0.5,
       "layoutHints": {
         "pinned": false
       }
@@ -5978,7 +6399,7 @@
     "santana-band": {
       "zone": "roots-blues",
       "secondaryZones": [
-        "rock-circuit"
+        "jazz"
       ],
       "primaryGenres": [
         "blues rock"
@@ -6278,7 +6699,8 @@
       "zone": "guitar-workshop",
       "secondaryZones": [
         "psychedelia-prog",
-        "roots-blues"
+        "roots-blues",
+        "jazz"
       ],
       "eraStart": 1958,
       "eraPeak": 1958,
@@ -6293,7 +6715,7 @@
         "blues-rock",
         "jazz"
       ],
-      "bridgeScore": 0.6,
+      "bridgeScore": 0.82,
       "hubScore": 0.333,
       "layoutHints": {
         "pinned": false
@@ -6370,7 +6792,7 @@
       "zone": "guitar-workshop",
       "secondaryZones": [
         "roots-blues",
-        "folk-country-vise"
+        "country-roots"
       ],
       "eraStart": 1950,
       "eraPeak": 1950,
@@ -6440,7 +6862,7 @@
       "zone": "guitar-workshop",
       "secondaryZones": [
         "roots-blues",
-        "rock-circuit"
+        "jazz"
       ],
       "primaryGenres": [],
       "curatorTags": [
@@ -6587,7 +7009,7 @@
     "yamaha-sg": {
       "zone": "guitar-workshop",
       "secondaryZones": [
-        "rock-circuit"
+        "jazz"
       ],
       "primaryGenres": [],
       "curatorTags": [
@@ -8223,10 +8645,10 @@
         "hardcore punk",
         "melodic punk"
       ],
-      "connectionCount": 5,
+      "connectionCount": 6,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0.417,
+      "hubScore": 0.5,
       "layoutHints": {
         "pinned": false
       }
@@ -8456,10 +8878,10 @@
         "punk rock"
       ],
       "curatorFeedback": "Major early punk anchor. Should help organize the punk-alt area and connect back to rock history.",
-      "connectionCount": 2,
+      "connectionCount": 3,
       "linkedGenres": [],
       "bridgeScore": 0.38,
-      "hubScore": 0.167,
+      "hubScore": 0.25,
       "layoutHints": {
         "pinned": false
       }
@@ -8557,14 +8979,14 @@
         "glam metal",
         "hard rock"
       ],
-      "connectionCount": 7,
+      "connectionCount": 8,
       "linkedGenres": [
         "horror-punk",
         "hard-rock",
         "glam-metal"
       ],
       "bridgeScore": 0.68,
-      "hubScore": 0.583,
+      "hubScore": 0.667,
       "layoutHints": {
         "pinned": false
       }
@@ -8898,7 +9320,9 @@
     },
     "billy-arnold": {
       "zone": "folk-country-vise",
-      "secondaryZones": [],
+      "secondaryZones": [
+        "jazz"
+      ],
       "primaryGenres": [
         "country",
         "folk"
@@ -8910,15 +9334,17 @@
       ],
       "connectionCount": 1,
       "linkedGenres": [],
-      "bridgeScore": 0,
+      "bridgeScore": 0.22,
       "hubScore": 0.083,
       "layoutHints": {
         "pinned": false
       }
     },
     "camel": {
-      "zone": "folk-country-vise",
-      "secondaryZones": [],
+      "zone": "psychedelia-prog",
+      "secondaryZones": [
+        "jazz"
+      ],
       "primaryGenres": [
         "country",
         "folk"
@@ -8930,7 +9356,7 @@
       ],
       "connectionCount": 1,
       "linkedGenres": [],
-      "bridgeScore": 0,
+      "bridgeScore": 0.22,
       "hubScore": 0.083,
       "layoutHints": {
         "pinned": false
@@ -8939,7 +9365,7 @@
     "electric-acoustic-guitar": {
       "zone": "guitar-workshop",
       "secondaryZones": [
-        "folk-country-vise"
+        "jazz"
       ],
       "primaryGenres": [],
       "curatorTags": [
@@ -8958,7 +9384,7 @@
     "gibson-guitar-company": {
       "zone": "guitar-workshop",
       "secondaryZones": [
-        "folk-country-vise"
+        "jazz"
       ],
       "primaryGenres": [],
       "curatorTags": [
@@ -10061,7 +10487,7 @@
       "zone": "rock-circuit",
       "secondaryZones": [
         "punk-alt",
-        "folk-country-vise"
+        "hard-rock-metal"
       ],
       "primaryGenres": [
         "rock"
@@ -10453,7 +10879,7 @@
       }
     },
     "till-lindemann": {
-      "zone": "folk-country-vise",
+      "zone": "hard-rock-metal",
       "secondaryZones": [
         "rock-circuit"
       ],
@@ -10479,7 +10905,7 @@
     "emigrate": {
       "zone": "rock-circuit",
       "secondaryZones": [
-        "folk-country-vise"
+        "hard-rock-metal"
       ],
       "primaryGenres": [
         "rock"
@@ -10500,7 +10926,7 @@
     "lindemann": {
       "zone": "rock-circuit",
       "secondaryZones": [
-        "folk-country-vise"
+        "hard-rock-metal"
       ],
       "primaryGenres": [
         "rock"
@@ -10519,7 +10945,7 @@
       }
     },
     "richard-marx": {
-      "zone": "folk-country-vise",
+      "zone": "rock-circuit",
       "secondaryZones": [],
       "eraStart": 1963,
       "eraPeak": 1963,
@@ -10542,7 +10968,9 @@
     },
     "airbourne": {
       "zone": "hard-rock-metal",
-      "secondaryZones": [],
+      "secondaryZones": [
+        "roots-blues"
+      ],
       "primaryGenres": [
         "hard rock"
       ],
@@ -10550,12 +10978,12 @@
         "hard rock",
         "band"
       ],
-      "connectionCount": 1,
+      "connectionCount": 2,
       "linkedGenres": [
         "hard-rock"
       ],
-      "bridgeScore": 0.08,
-      "hubScore": 0.083,
+      "bridgeScore": 0.3,
+      "hubScore": 0.167,
       "layoutHints": {
         "pinned": false
       }
@@ -10882,7 +11310,7 @@
       }
     },
     "jerry-reed": {
-      "zone": "folk-country-vise",
+      "zone": "country-roots",
       "secondaryZones": [],
       "eraStart": 1937,
       "eraPeak": 2008,
@@ -10926,7 +11354,7 @@
       }
     },
     "little-richard": {
-      "zone": "folk-country-vise",
+      "zone": "roots-blues",
       "secondaryZones": [],
       "eraStart": 1932,
       "eraPeak": 2020,
@@ -12070,10 +12498,10 @@
         "dc punk",
         "independent punk"
       ],
-      "connectionCount": 7,
+      "connectionCount": 9,
       "linkedGenres": [],
       "bridgeScore": 0.22,
-      "hubScore": 0.583,
+      "hubScore": 0.75,
       "layoutHints": {
         "pinned": false
       }
@@ -12289,8 +12717,10 @@
       }
     },
     "country-rock": {
-      "zone": "folk-country-vise",
+      "zone": "country-roots",
       "secondaryZones": [
+        "folk-country-vise",
+        "rock-circuit",
         "roots-blues"
       ],
       "primaryGenres": [
@@ -12303,7 +12733,7 @@
       ],
       "connectionCount": 1,
       "linkedGenres": [],
-      "bridgeScore": 0.22,
+      "bridgeScore": 0.66,
       "hubScore": 0.083,
       "layoutHints": {
         "pinned": false
@@ -12821,7 +13251,8 @@
     "armageddon": {
       "zone": "rock-circuit",
       "secondaryZones": [
-        "hard-rock-metal"
+        "hard-rock-metal",
+        "roots-blues"
       ],
       "primaryGenres": [
         "rock"
@@ -12831,10 +13262,10 @@
         "classic rock",
         "rock"
       ],
-      "connectionCount": 1,
+      "connectionCount": 2,
       "linkedGenres": [],
-      "bridgeScore": 0.22,
-      "hubScore": 0.083,
+      "bridgeScore": 0.44,
+      "hubScore": 0.167,
       "layoutHints": {
         "pinned": false
       }
@@ -12959,12 +13390,12 @@
         "rock",
         "artist"
       ],
-      "connectionCount": 2,
+      "connectionCount": 3,
       "linkedGenres": [
         "shock-rock"
       ],
       "bridgeScore": 0.3,
-      "hubScore": 0.167,
+      "hubScore": 0.25,
       "layoutHints": {
         "pinned": false
       }
@@ -14627,6 +15058,409 @@
       "layoutHints": {
         "pinned": false
       }
+    },
+    "beastie-boys": {
+      "zone": "hip-hop-rap",
+      "secondaryZones": [],
+      "eraStart": 1981,
+      "eraPeak": 1981,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 0,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "run-dmc": {
+      "zone": "hip-hop-rap",
+      "secondaryZones": [],
+      "eraStart": 1983,
+      "eraPeak": 1983,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 0,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "ben-king": {
+      "zone": "roots-blues",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "bakerloo": {
+      "zone": "hard-rock-metal",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "chelsea": {
+      "zone": "punk-alt",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "band-of-joy": {
+      "zone": "hard-rock-metal",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "goldfinger": {
+      "zone": "punk-alt",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "alan-wilson": {
+      "zone": "roots-blues",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "blues-rock"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "brand-new": {
+      "zone": "punk-alt",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "brian-cook": {
+      "zone": "punk-alt",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "louis-armstrong": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1971,
+      "eraPeak": 1971,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "jazz"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "duke-ellington": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1924,
+      "eraPeak": 1974,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "jazz",
+        "swing-music"
+      ],
+      "bridgeScore": 0.16,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "charlie-parker": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1920,
+      "eraPeak": 1955,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "bebop"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "miles-davis": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1926,
+      "eraPeak": 1991,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 3,
+      "linkedGenres": [
+        "bebop",
+        "jazz-fusion"
+      ],
+      "bridgeScore": 0.16,
+      "hubScore": 0.25,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "john-coltrane": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1926,
+      "eraPeak": 1967,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "jazz"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "swing-music": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "bebop": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 3,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.25,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "jimmie-rodgers": {
+      "zone": "country-roots",
+      "secondaryZones": [
+        "roots-blues",
+        "rock-circuit"
+      ],
+      "eraStart": 1933,
+      "eraPeak": 1933,
+      "primaryGenres": [
+        "country",
+        "blues"
+      ],
+      "curatorTags": [
+        "early country",
+        "country-blues bridge"
+      ],
+      "curatorFeedback": "Keep Rodgers grounded in early country while letting his blues and early rock influence pull him toward those scenes.",
+      "connectionCount": 4,
+      "linkedGenres": [
+        "country",
+        "blues",
+        "rock-and-roll"
+      ],
+      "bridgeScore": 0.93,
+      "hubScore": 0.333,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "the-carter-family": {
+      "zone": "country-roots",
+      "secondaryZones": [
+        "folk-country-vise",
+        "roots-blues"
+      ],
+      "eraStart": 1927,
+      "eraPeak": 1956,
+      "primaryGenres": [
+        "country",
+        "folk"
+      ],
+      "curatorTags": [
+        "early country",
+        "folk repertoire",
+        "Carter guitar style"
+      ],
+      "curatorFeedback": "The Carter Family is an early country anchor with documented folk and blues repertoire.",
+      "connectionCount": 3,
+      "linkedGenres": [
+        "country",
+        "folk",
+        "blues"
+      ],
+      "bridgeScore": 0.88,
+      "hubScore": 0.25,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "hank-williams": {
+      "zone": "country-roots",
+      "secondaryZones": [],
+      "eraStart": 1923,
+      "eraPeak": 1953,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "country",
+        "honky-tonk"
+      ],
+      "bridgeScore": 0.16,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "bill-monroe": {
+      "zone": "country-roots",
+      "secondaryZones": [],
+      "eraStart": 1996,
+      "eraPeak": 1996,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "bluegrass"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "patsy-cline": {
+      "zone": "country-roots",
+      "secondaryZones": [],
+      "eraStart": 1932,
+      "eraPeak": 1963,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "country"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "merle-haggard": {
+      "zone": "country-roots",
+      "secondaryZones": [
+        "jazz",
+        "roots-blues"
+      ],
+      "eraStart": 1937,
+      "eraPeak": 2016,
+      "primaryGenres": [
+        "country",
+        "honky-tonk"
+      ],
+      "curatorTags": [
+        "honky-tonk",
+        "country roots",
+        "jazz influence"
+      ],
+      "curatorFeedback": "Haggard belongs in country while his documented jazz and blues influences make him a useful bridge.",
+      "connectionCount": 3,
+      "linkedGenres": [
+        "country",
+        "honky-tonk",
+        "jazz"
+      ],
+      "bridgeScore": 0.91,
+      "hubScore": 0.25,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "honky-tonk": {
+      "zone": "country-roots",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 3,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.25,
+      "layoutHints": {
+        "pinned": false
+      }
     }
   },
   "curatorFeedback": {
@@ -14753,15 +15587,60 @@
           "genre_transition_needed"
         ],
         "feedback": "Hip-hop should keep a readable territory while allowing documented crossover lines into punk, rock and metal."
+      },
+      {
+        "id": "jazz-to-fusion",
+        "zones": [
+          "jazz",
+          "roots-blues",
+          "rock-circuit",
+          "psychedelia-prog"
+        ],
+        "anchorNodes": [
+          "jazz",
+          "jazz-fusion",
+          "django-reinhardt",
+          "wes-montgomery",
+          "john-mclaughlin"
+        ],
+        "feedbackCategories": [
+          "good_bridge",
+          "genre_transition_needed"
+        ],
+        "feedback": "Give jazz its own readable center. Let documented blues, fusion, funk and progressive connections pull bridge nodes outward."
+      },
+      {
+        "id": "country-roots-to-rock",
+        "zones": [
+          "country-roots",
+          "folk-country-vise",
+          "roots-blues",
+          "rock-circuit"
+        ],
+        "anchorNodes": [
+          "country",
+          "bluegrass",
+          "country-rock",
+          "chet-atkins",
+          "johnny-cash"
+        ],
+        "feedbackCategories": [
+          "good_bridge",
+          "genre_transition_needed"
+        ],
+        "feedback": "Keep early country, bluegrass and honky-tonk legible as a tradition, with documented paths into folk, blues, rockabilly and rock."
       }
     ],
     "nodeIds": [
       "black-sabbath",
+      "jimmie-rodgers",
       "led-zeppelin",
+      "merle-haggard",
       "misfits",
       "public-enemy",
       "ramones",
-      "sex-pistols"
+      "sex-pistols",
+      "the-carter-family"
     ]
   },
   "warnings": []

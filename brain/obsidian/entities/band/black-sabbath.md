@@ -25,6 +25,7 @@ A Birmingham band whose dark riffs, volume and atmosphere became a foundation fo
 
 - [[anthrax-american-band|Anthrax (American band)]] - Wikipedia link signal (Wikipedia link: Anthrax (American band))
 - [[badlands-american-band|Badlands (American band)]] - Wikipedia link signal (Wikipedia link: Badlands (American band))
+- [[bakerloo|Bakerloo]] - Wikipedia link signal (Wikipedia link: Bakerloo (band))
 - [[heavy-metal|Heavy metal]] - foundation
 - [[tony-iommi|Tony Iommi]] - guitarist
 

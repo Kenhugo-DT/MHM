@@ -2,7 +2,7 @@
 id: django-reinhardt
 label: Django Reinhardt
 type: guitarist
-zone: folk-country-vise
+zone: jazz
 roles: [guitarist, artist]
 aliases: []
 eraStart: 

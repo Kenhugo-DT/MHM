@@ -23,6 +23,7 @@ A band connected to documented Wikipedia signals around hard rock.
 
 ## Connections
 
+- [[acdc|AC/DC]] - Wikipedia link signal (Wikipedia link: Airbourne (band))
 - [[hard-rock|Hard rock]] - Wikipedia link signal (Wikipedia link: Airbourne (band))
 
 ## Sources

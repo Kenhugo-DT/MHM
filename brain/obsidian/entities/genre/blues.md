@@ -25,12 +25,14 @@ A root system for much of modern guitar music, built around call and response, b
 
 - [[blues-rock|Blues rock]] - feeds
 - [[electric-blues|Electric blues]] - amplified into
+- [[jimmie-rodgers|Jimmie Rodgers]] - country-blues crossover (Rodgers fused country with blues phrasing.)
 - [[lead-belly|Lead Belly]] - roots repertoire
 - [[led-zeppelin|Led Zeppelin]] - roots source
 - [[muddy-waters|Muddy Waters]] - roots source
 - [[robert-johnson|Robert Johnson]] - Delta source
 - [[rock-and-roll|Rock and roll]] - feeds
 - [[sister-rosetta-tharpe|Sister Rosetta Tharpe]] - gospel-blues guitar link
+- [[the-carter-family|The Carter Family]] - blues repertoire (The Carter Family also performed blues material.)
 
 ## Sources
 

@@ -2,7 +2,7 @@
 id: till-lindemann
 label: Till Lindemann
 type: artist
-zone: folk-country-vise
+zone: hard-rock-metal
 roles: [artist]
 aliases: []
 eraStart: 

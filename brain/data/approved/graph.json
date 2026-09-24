@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-24T09:51:11.997Z",
+  "generatedAt": "2026-09-24T12:12:27.794Z",
   "nodes": [
     {
       "id": "blues",
@@ -14,8 +14,8 @@
         "Genre",
         "Roots music"
       ],
-      "x": -1576,
-      "y": -337,
+      "x": -1903,
+      "y": -202,
       "zone": "roots-blues",
       "starter": true,
       "sources": [
@@ -46,8 +46,8 @@
         "Genre",
         "Amplified blues"
       ],
-      "x": -965,
-      "y": 92,
+      "x": -999,
+      "y": 106,
       "zone": "roots-blues",
       "starter": true,
       "sources": [
@@ -78,8 +78,8 @@
         "Genre",
         "1950s"
       ],
-      "x": -802,
-      "y": 199,
+      "x": -873,
+      "y": 424,
       "zone": "roots-blues",
       "starter": false,
       "sources": [
@@ -110,8 +110,8 @@
         "Genre",
         "Guitar culture"
       ],
-      "x": -637,
-      "y": 179,
+      "x": -264,
+      "y": 338,
       "zone": "rock-circuit",
       "starter": true,
       "sources": [
@@ -142,8 +142,8 @@
         "Genre",
         "1960s"
       ],
-      "x": 544,
-      "y": -758,
+      "x": 529,
+      "y": -957,
       "zone": "psychedelia-prog",
       "starter": false,
       "sources": [
@@ -174,8 +174,8 @@
         "Genre",
         "Album era"
       ],
-      "x": 866,
-      "y": -630,
+      "x": 473,
+      "y": -747,
       "zone": "psychedelia-prog",
       "starter": true,
       "sources": [
@@ -206,8 +206,8 @@
         "Genre",
         "Amplified rock"
       ],
-      "x": 1091,
-      "y": -102,
+      "x": 1015,
+      "y": -113,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -238,8 +238,8 @@
         "Genre",
         "Riff culture"
       ],
-      "x": 2418,
-      "y": 280,
+      "x": 2263,
+      "y": 234,
       "zone": "hard-rock-metal",
       "starter": true,
       "sources": [
@@ -270,8 +270,8 @@
         "Genre",
         "1970s"
       ],
-      "x": 2111,
-      "y": 934,
+      "x": 2114,
+      "y": 946,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -302,8 +302,8 @@
         "Genre",
         "1990s"
       ],
-      "x": 648,
-      "y": 1705,
+      "x": 649,
+      "y": 1698,
       "zone": "punk-alt",
       "starter": true,
       "sources": [
@@ -334,8 +334,8 @@
         "Genre",
         "Acoustic tradition"
       ],
-      "x": -313,
-      "y": 1037,
+      "x": -912,
+      "y": 1122,
       "zone": "folk-country-vise",
       "starter": true,
       "sources": [
@@ -365,9 +365,9 @@
         "Genre",
         "Roots music"
       ],
-      "x": -761,
-      "y": 926,
-      "zone": "folk-country-vise",
+      "x": -1649,
+      "y": 624,
+      "zone": "country-roots",
       "starter": false,
       "sources": [
         {
@@ -397,8 +397,8 @@
         "Genre",
         "Norwegian song"
       ],
-      "x": -565,
-      "y": 1263,
+      "x": -858,
+      "y": 1459,
       "zone": "folk-country-vise",
       "starter": false,
       "sources": [
@@ -428,8 +428,8 @@
         "Genre",
         "Rhythm guitar"
       ],
-      "x": 587,
-      "y": 180,
+      "x": 329,
+      "y": 162,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -460,9 +460,9 @@
         "Genre",
         "Hybrid form"
       ],
-      "x": 349,
-      "y": 101,
-      "zone": "rock-circuit",
+      "x": -607,
+      "y": -880,
+      "zone": "jazz",
       "starter": false,
       "sources": [
         {
@@ -494,8 +494,8 @@
         "Singer",
         "Electric blues"
       ],
-      "x": -816,
-      "y": 375,
+      "x": -923,
+      "y": -178,
       "zone": "roots-blues",
       "starter": true,
       "sources": [
@@ -529,8 +529,8 @@
         "Guitarist",
         "Twelve-string"
       ],
-      "x": -1129,
-      "y": -237,
+      "x": -986,
+      "y": -61,
       "zone": "roots-blues",
       "starter": false,
       "sources": [
@@ -563,8 +563,8 @@
         "Songwriter",
         "Rock and roll"
       ],
-      "x": 544,
-      "y": -83,
+      "x": 364,
+      "y": -63,
       "zone": "rock-circuit",
       "starter": true,
       "sources": [
@@ -596,8 +596,8 @@
         "Singer",
         "Rock and roll"
       ],
-      "x": -1580,
-      "y": 518,
+      "x": -1891,
+      "y": 291,
       "zone": "roots-blues",
       "starter": false,
       "sources": [
@@ -630,8 +630,8 @@
         "Singer",
         "Psychedelic rock"
       ],
-      "x": 783,
-      "y": -460,
+      "x": 686,
+      "y": -581,
       "zone": "psychedelia-prog",
       "starter": true,
       "sources": [
@@ -664,8 +664,8 @@
         "Singer",
         "Blues rock"
       ],
-      "x": -662,
-      "y": -651,
+      "x": -664,
+      "y": 166,
       "zone": "roots-blues",
       "starter": true,
       "sources": [
@@ -699,8 +699,8 @@
         "Singer",
         "Blues rock"
       ],
-      "x": -698,
-      "y": 351,
+      "x": -665,
+      "y": -20,
       "zone": "roots-blues",
       "starter": false,
       "sources": [
@@ -734,8 +734,8 @@
         "Singer",
         "Progressive rock"
       ],
-      "x": 1264,
-      "y": -504,
+      "x": 1272,
+      "y": -561,
       "zone": "psychedelia-prog",
       "starter": true,
       "sources": [
@@ -769,8 +769,8 @@
         "Songwriter",
         "Fingerstyle"
       ],
-      "x": 39,
-      "y": 379,
+      "x": 1183,
+      "y": 471,
       "zone": "rock-circuit",
       "starter": true,
       "sources": [
@@ -802,8 +802,8 @@
         "Guitarist",
         "Inventive gear"
       ],
-      "x": 2736,
-      "y": -569,
+      "x": 2894,
+      "y": 37,
       "zone": "hard-rock-metal",
       "starter": true,
       "sources": [
@@ -837,8 +837,8 @@
         "Composer",
         "Bandleader"
       ],
-      "x": 888,
-      "y": -812,
+      "x": 362,
+      "y": -870,
       "zone": "psychedelia-prog",
       "starter": false,
       "sources": [
@@ -870,8 +870,8 @@
         "Guitarist",
         "Alternative rock"
       ],
-      "x": 2394,
-      "y": 1052,
+      "x": 2391,
+      "y": 1073,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -904,8 +904,8 @@
         "Guitarist",
         "Heavy metal"
       ],
-      "x": 2309,
-      "y": 170,
+      "x": 2385,
+      "y": 135,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -938,8 +938,8 @@
         "Riff writer",
         "Heavy metal"
       ],
-      "x": 3748,
-      "y": -94,
+      "x": 3580,
+      "y": -10,
       "zone": "hard-rock-metal",
       "starter": true,
       "sources": [
@@ -973,8 +973,8 @@
         "Producer",
         "Hard rock"
       ],
-      "x": 2495,
-      "y": -221,
+      "x": 2611,
+      "y": -74,
       "zone": "hard-rock-metal",
       "starter": true,
       "sources": [
@@ -1008,8 +1008,8 @@
         "Songwriter",
         "The Beatles"
       ],
-      "x": 716,
-      "y": -133,
+      "x": 485,
+      "y": 148,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -1041,8 +1041,8 @@
         "Folk",
         "Rock"
       ],
-      "x": -662,
-      "y": 252,
+      "x": -751,
+      "y": 303,
       "zone": "roots-blues",
       "starter": true,
       "sources": [
@@ -1074,9 +1074,9 @@
         "Country",
         "Rhythm guitar"
       ],
-      "x": -407,
-      "y": 1337,
-      "zone": "folk-country-vise",
+      "x": -1692,
+      "y": 804,
+      "zone": "country-roots",
       "starter": false,
       "sources": [
         {
@@ -1107,9 +1107,9 @@
         "Songwriter",
         "Trigger"
       ],
-      "x": -382,
-      "y": 1185,
-      "zone": "folk-country-vise",
+      "x": -1793,
+      "y": 511,
+      "zone": "country-roots",
       "starter": true,
       "sources": [
         {
@@ -1141,9 +1141,9 @@
         "Producer",
         "Fingerstyle"
       ],
-      "x": -692,
-      "y": 1135,
-      "zone": "folk-country-vise",
+      "x": -1684,
+      "y": 393,
+      "zone": "country-roots",
       "starter": false,
       "sources": [
         {
@@ -1175,8 +1175,8 @@
         "Singer",
         "Modern blues"
       ],
-      "x": -663,
-      "y": 97,
+      "x": -968,
+      "y": 281,
       "zone": "roots-blues",
       "starter": false,
       "sources": [
@@ -1210,8 +1210,8 @@
         "Banjo",
         "Norwegian vise"
       ],
-      "x": 236,
-      "y": 1261,
+      "x": 141,
+      "y": 1218,
       "zone": "folk-country-vise",
       "starter": true,
       "sources": [
@@ -1249,8 +1249,8 @@
         "Vocalist",
         "Heavy metal"
       ],
-      "x": 3570,
-      "y": -127,
+      "x": 3041,
+      "y": 512,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -1284,8 +1284,8 @@
         "Songwriter",
         "Funk"
       ],
-      "x": 1494,
-      "y": 379,
+      "x": 1433,
+      "y": 517,
       "zone": "rock-circuit",
       "starter": true,
       "sources": [
@@ -1317,8 +1317,8 @@
         "1960s",
         "Rock"
       ],
-      "x": 563,
-      "y": -484,
+      "x": 523,
+      "y": -579,
       "zone": "psychedelia-prog",
       "starter": true,
       "sources": [
@@ -1349,8 +1349,8 @@
         "Band",
         "Progressive rock"
       ],
-      "x": 378,
-      "y": -848,
+      "x": 220,
+      "y": -936,
       "zone": "psychedelia-prog",
       "starter": true,
       "sources": [
@@ -1381,8 +1381,8 @@
         "Band",
         "Hard rock"
       ],
-      "x": 253,
-      "y": -295,
+      "x": 289,
+      "y": -271,
       "zone": "hard-rock-metal",
       "starter": true,
       "sources": [
@@ -1413,8 +1413,8 @@
         "Band",
         "Heavy metal"
       ],
-      "x": 1601,
-      "y": 310,
+      "x": 1634,
+      "y": 323,
       "zone": "hard-rock-metal",
       "starter": true,
       "sources": [
@@ -1445,8 +1445,8 @@
         "Band",
         "Hard rock"
       ],
-      "x": 792,
-      "y": -199,
+      "x": 817,
+      "y": -107,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -1477,8 +1477,8 @@
         "Band",
         "Rock"
       ],
-      "x": -1148,
-      "y": 937,
+      "x": -684,
+      "y": 838,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -1509,8 +1509,8 @@
         "Band",
         "Alternative rock"
       ],
-      "x": 2235,
-      "y": 1664,
+      "x": 2228,
+      "y": 1677,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -1542,8 +1542,8 @@
         "Solo artist",
         "Band context"
       ],
-      "x": 1979,
-      "y": 719,
+      "x": 2038,
+      "y": 684,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -1574,8 +1574,8 @@
         "Band",
         "Heavy metal"
       ],
-      "x": 1828,
-      "y": 23,
+      "x": 1842,
+      "y": 28,
       "zone": "hard-rock-metal",
       "starter": true,
       "sources": [
@@ -1606,8 +1606,8 @@
         "Group",
         "Norwegian song"
       ],
-      "x": -995,
-      "y": 992,
+      "x": -1088,
+      "y": 1481,
       "zone": "folk-country-vise",
       "starter": false,
       "sources": [
@@ -1635,8 +1635,8 @@
         "Band",
         "Blues rock"
       ],
-      "x": -681,
-      "y": 657,
+      "x": -842,
+      "y": 191,
       "zone": "roots-blues",
       "starter": false,
       "sources": [
@@ -1668,8 +1668,8 @@
         "Band",
         "British blues"
       ],
-      "x": -692,
-      "y": 501,
+      "x": -1126,
+      "y": 235,
       "zone": "roots-blues",
       "starter": false,
       "sources": [
@@ -1730,8 +1730,8 @@
         "Maker",
         "Electric and acoustic guitars"
       ],
-      "x": 3682,
-      "y": 279,
+      "x": 3625,
+      "y": 256,
       "zone": "guitar-workshop",
       "starter": true,
       "sources": [
@@ -1759,8 +1759,8 @@
         "Maker",
         "Acoustic guitars"
       ],
-      "x": 3856,
-      "y": -19,
+      "x": 3860,
+      "y": -16,
       "zone": "guitar-workshop",
       "starter": true,
       "sources": [
@@ -1817,8 +1817,8 @@
         "Maker",
         "Hollow-body electric"
       ],
-      "x": 3751,
-      "y": 442,
+      "x": 3736,
+      "y": 412,
       "zone": "guitar-workshop",
       "starter": false,
       "sources": [
@@ -1876,8 +1876,8 @@
         "1954",
         "Solid-body"
       ],
-      "x": 3145,
-      "y": -406,
+      "x": 3143,
+      "y": -372,
       "zone": "guitar-workshop",
       "starter": true,
       "sources": [
@@ -1906,8 +1906,8 @@
         "1950s",
         "Solid-body"
       ],
-      "x": 3145,
-      "y": 49,
+      "x": 3211,
+      "y": 6,
       "zone": "guitar-workshop",
       "starter": true,
       "sources": [
@@ -1965,8 +1965,8 @@
         "Guitar",
         "Offset"
       ],
-      "x": 4284,
-      "y": -318,
+      "x": 4293,
+      "y": -320,
       "zone": "guitar-workshop",
       "starter": false,
       "sources": [
@@ -1996,7 +1996,7 @@
         "Solid-body"
       ],
       "x": 3142,
-      "y": 616,
+      "y": 586,
       "zone": "guitar-workshop",
       "starter": true,
       "sources": [
@@ -2024,8 +2024,8 @@
         "Guitar",
         "Double-cutaway"
       ],
-      "x": 3143,
-      "y": 182,
+      "x": 3165,
+      "y": 210,
       "zone": "guitar-workshop",
       "starter": true,
       "sources": [
@@ -2054,8 +2054,8 @@
         "Semi-hollow",
         "Signature"
       ],
-      "x": 3346,
-      "y": -430,
+      "x": 3201,
+      "y": -496,
       "zone": "guitar-workshop",
       "starter": true,
       "sources": [
@@ -2084,8 +2084,8 @@
         "1958",
         "Solid-body"
       ],
-      "x": 3274,
-      "y": 694,
+      "x": 3249,
+      "y": 642,
       "zone": "guitar-workshop",
       "starter": false,
       "sources": [
@@ -2114,8 +2114,8 @@
         "Dreadnought",
         "Acoustic"
       ],
-      "x": 3147,
-      "y": 336,
+      "x": 3142,
+      "y": 462,
       "zone": "guitar-workshop",
       "starter": true,
       "sources": [
@@ -2143,8 +2143,8 @@
         "Guitar",
         "Acoustic"
       ],
-      "x": 3393,
-      "y": 217,
+      "x": 3472,
+      "y": 213,
       "zone": "guitar-workshop",
       "starter": false,
       "sources": [
@@ -2173,8 +2173,8 @@
         "Martin N-20",
         "Signature instrument"
       ],
-      "x": 3353,
-      "y": 332,
+      "x": 3346,
+      "y": 275,
       "zone": "guitar-workshop",
       "starter": true,
       "sources": [
@@ -2202,8 +2202,8 @@
         "Guitar",
         "Twelve-string electric"
       ],
-      "x": 3796,
-      "y": 612,
+      "x": 3803,
+      "y": 578,
       "zone": "guitar-workshop",
       "starter": true,
       "sources": [
@@ -2231,8 +2231,8 @@
         "Guitar",
         "Hollow-body"
       ],
-      "x": 3142,
-      "y": 467,
+      "x": 3143,
+      "y": 284,
       "zone": "guitar-workshop",
       "starter": false,
       "sources": [
@@ -2261,8 +2261,8 @@
         "Custom build",
         "Eddie Van Halen"
       ],
-      "x": 3674,
-      "y": -49,
+      "x": 3696,
+      "y": -22,
       "zone": "guitar-workshop",
       "starter": true,
       "sources": [
@@ -2291,8 +2291,8 @@
         "Superstrat",
         "Signature"
       ],
-      "x": 3837,
-      "y": 303,
+      "x": 3859,
+      "y": 309,
       "zone": "guitar-workshop",
       "starter": false,
       "sources": [
@@ -2321,8 +2321,8 @@
         "Metal",
         "Explorer shape"
       ],
-      "x": 4272,
-      "y": -30,
+      "x": 4220,
+      "y": -42,
       "zone": "guitar-workshop",
       "starter": false,
       "sources": [
@@ -2351,8 +2351,8 @@
         "Prince",
         "Tele-style"
       ],
-      "x": 3451,
-      "y": 725,
+      "x": 3340,
+      "y": 762,
       "zone": "guitar-workshop",
       "starter": false,
       "sources": [
@@ -2380,8 +2380,8 @@
         "Instrument",
         "Plucked strings"
       ],
-      "x": 3404,
-      "y": 595,
+      "x": 3411,
+      "y": 615,
       "zone": "guitar-workshop",
       "starter": false,
       "sources": [
@@ -2409,8 +2409,8 @@
         "Guitar",
         "Resonator"
       ],
-      "x": 3581,
-      "y": 444,
+      "x": 3563,
+      "y": 438,
       "zone": "guitar-workshop",
       "starter": false,
       "sources": [
@@ -2439,8 +2439,8 @@
         "Blues influence",
         "Rock guitar"
       ],
-      "x": -1060,
-      "y": -69,
+      "x": -1104,
+      "y": -174,
       "zone": "roots-blues",
       "starter": true,
       "sources": [
@@ -2472,8 +2472,8 @@
         "1950s",
         "Roots rock"
       ],
-      "x": -1303,
-      "y": -224,
+      "x": -1531,
+      "y": -355,
       "zone": "roots-blues",
       "starter": false,
       "sources": [
@@ -2505,8 +2505,8 @@
         "Instrumental rock",
         "Reverb"
       ],
-      "x": 382,
-      "y": 277,
+      "x": 68,
+      "y": -110,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -2538,8 +2538,8 @@
         "Blues rock",
         "Country rock"
       ],
-      "x": -962,
-      "y": -227,
+      "x": -1101,
+      "y": -379,
       "zone": "roots-blues",
       "starter": false,
       "sources": [
@@ -2571,8 +2571,8 @@
         "1970s",
         "Theatrical rock"
       ],
-      "x": 454,
-      "y": 406,
+      "x": 473,
+      "y": 307,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -2603,8 +2603,8 @@
         "Genre",
         "Experimental rock"
       ],
-      "x": -234,
-      "y": -676,
+      "x": -340,
+      "y": -673,
       "zone": "psychedelia-prog",
       "starter": false,
       "sources": [
@@ -2635,8 +2635,8 @@
         "Genre",
         "Post-punk aftermath"
       ],
-      "x": 819,
-      "y": 1319,
+      "x": 816,
+      "y": 1345,
       "zone": "punk-alt",
       "starter": true,
       "sources": [
@@ -2667,8 +2667,8 @@
         "Genre",
         "Independent rock"
       ],
-      "x": 1655,
-      "y": 1644,
+      "x": 1691,
+      "y": 1649,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -2699,8 +2699,8 @@
         "Genre",
         "Late 1970s"
       ],
-      "x": 2264,
-      "y": 1470,
+      "x": 2259,
+      "y": 1475,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -2732,8 +2732,8 @@
         "Texture",
         "Effects"
       ],
-      "x": 2621,
-      "y": 1097,
+      "x": 2644,
+      "y": 1086,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -2765,8 +2765,8 @@
         "Heavy metal",
         "Speed"
       ],
-      "x": 3249,
-      "y": -20,
+      "x": 3248,
+      "y": -326,
       "zone": "hard-rock-metal",
       "starter": true,
       "sources": [
@@ -2798,8 +2798,8 @@
         "Heavy metal",
         "Riffs"
       ],
-      "x": 1457,
-      "y": -112,
+      "x": 1476,
+      "y": -88,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -2831,8 +2831,8 @@
         "Progressive rock",
         "Metal"
       ],
-      "x": 727,
-      "y": -917,
+      "x": 819,
+      "y": -704,
       "zone": "psychedelia-prog",
       "starter": false,
       "sources": [
@@ -2864,9 +2864,9 @@
         "Acoustic",
         "Country"
       ],
-      "x": -1763,
-      "y": 1244,
-      "zone": "folk-country-vise",
+      "x": -2881,
+      "y": 943,
+      "zone": "country-roots",
       "starter": false,
       "sources": [
         {
@@ -2895,8 +2895,8 @@
         "Genre",
         "Songcraft"
       ],
-      "x": 211,
-      "y": 1020,
+      "x": -136,
+      "y": 1170,
       "zone": "folk-country-vise",
       "starter": true,
       "sources": [
@@ -2927,9 +2927,9 @@
         "Genre",
         "Improvisation"
       ],
-      "x": -349,
-      "y": -431,
-      "zone": "psychedelia-prog",
+      "x": -1191,
+      "y": -751,
+      "zone": "jazz",
       "starter": false,
       "sources": [
         {
@@ -2942,9 +2942,9 @@
         "Jazz"
       ],
       "curatorTags": [
-        "jazz fusion",
-        "progressive",
-        "psychedelic"
+        "jazz",
+        "improvisation",
+        "jazz roots"
       ]
     },
     {
@@ -2959,8 +2959,8 @@
         "Genre",
         "Spanish guitar"
       ],
-      "x": -1050,
-      "y": 1608,
+      "x": -1624,
+      "y": 1306,
       "zone": "folk-country-vise",
       "starter": false,
       "sources": [
@@ -2992,8 +2992,8 @@
         "Delta blues",
         "Influence"
       ],
-      "x": -1900,
-      "y": -546,
+      "x": -1809,
+      "y": -550,
       "zone": "roots-blues",
       "starter": true,
       "sources": [
@@ -3025,8 +3025,8 @@
         "Guitarist",
         "Chicago blues"
       ],
-      "x": -1563,
-      "y": -153,
+      "x": -1642,
+      "y": 244,
       "zone": "roots-blues",
       "starter": true,
       "sources": [
@@ -3059,8 +3059,8 @@
         "Gospel",
         "Rock and roll roots"
       ],
-      "x": -1435,
-      "y": 25,
+      "x": -1379,
+      "y": 83,
       "zone": "roots-blues",
       "starter": false,
       "sources": [
@@ -3092,8 +3092,8 @@
         "Guitarist",
         "Chicago blues"
       ],
-      "x": -823,
-      "y": 51,
+      "x": -662,
+      "y": -475,
       "zone": "roots-blues",
       "starter": true,
       "sources": [
@@ -3127,8 +3127,8 @@
         "Electric blues",
         "Flying V"
       ],
-      "x": -725,
-      "y": -3,
+      "x": -663,
+      "y": 408,
       "zone": "roots-blues",
       "starter": false,
       "sources": [
@@ -3161,8 +3161,8 @@
         "Guitarist",
         "Electric blues"
       ],
-      "x": -1395,
-      "y": -383,
+      "x": -1564,
+      "y": 384,
       "zone": "roots-blues",
       "starter": false,
       "sources": [
@@ -3195,8 +3195,8 @@
         "Slide",
         "Southern rock"
       ],
-      "x": -663,
-      "y": -177,
+      "x": -664,
+      "y": -295,
       "zone": "roots-blues",
       "starter": true,
       "sources": [
@@ -3229,8 +3229,8 @@
         "Guitarist",
         "Southern rock"
       ],
-      "x": -664,
-      "y": -260,
+      "x": -667,
+      "y": -161,
       "zone": "roots-blues",
       "starter": false,
       "sources": [
@@ -3263,8 +3263,8 @@
         "Slide",
         "Blues rock"
       ],
-      "x": -803,
-      "y": -251,
+      "x": -814,
+      "y": -269,
       "zone": "roots-blues",
       "starter": false,
       "sources": [
@@ -3298,8 +3298,8 @@
         "British blues",
         "Fleetwood Mac"
       ],
-      "x": -945,
-      "y": -386,
+      "x": -937,
+      "y": -330,
       "zone": "roots-blues",
       "starter": false,
       "sources": [
@@ -3333,8 +3333,8 @@
         "Songwriter",
         "Fingerstyle"
       ],
-      "x": -1229,
-      "y": 429,
+      "x": -1141,
+      "y": 846,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -3367,8 +3367,8 @@
         "The Rolling Stones",
         "Riffs"
       ],
-      "x": 225,
-      "y": 309,
+      "x": 163,
+      "y": 291,
       "zone": "rock-circuit",
       "starter": true,
       "sources": [
@@ -3402,8 +3402,8 @@
         "Yardbirds",
         "Jazz fusion"
       ],
-      "x": -662,
-      "y": -497,
+      "x": -698,
+      "y": -612,
       "zone": "roots-blues",
       "starter": true,
       "sources": [
@@ -3436,8 +3436,8 @@
         "Songwriter",
         "The Who"
       ],
-      "x": -267,
-      "y": -216,
+      "x": 39,
+      "y": 209,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -3470,8 +3470,8 @@
         "Queen",
         "Red Special"
       ],
-      "x": 459,
-      "y": 734,
+      "x": 773,
+      "y": 402,
       "zone": "rock-circuit",
       "starter": true,
       "sources": [
@@ -3504,8 +3504,8 @@
         "Deep Purple",
         "Hard rock"
       ],
-      "x": 3290,
-      "y": 178,
+      "x": 3055,
+      "y": -2,
       "zone": "hard-rock-metal",
       "starter": true,
       "sources": [
@@ -3539,8 +3539,8 @@
         "Rockabilly",
         "Gretsch"
       ],
-      "x": -663,
-      "y": -72,
+      "x": -742,
+      "y": 61,
       "zone": "roots-blues",
       "starter": false,
       "sources": [
@@ -3572,8 +3572,8 @@
         "Guitarist",
         "Surf rock"
       ],
-      "x": 1003,
-      "y": 358,
+      "x": 861,
+      "y": 89,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -3606,8 +3606,8 @@
         "Santana",
         "PRS"
       ],
-      "x": -860,
-      "y": -94,
+      "x": -731,
+      "y": 549,
       "zone": "roots-blues",
       "starter": true,
       "sources": [
@@ -3642,8 +3642,8 @@
         "Virtuoso",
         "Ibanez JEM"
       ],
-      "x": 680,
-      "y": -592,
+      "x": 827,
+      "y": -460,
       "zone": "psychedelia-prog",
       "starter": true,
       "sources": [
@@ -3675,8 +3675,8 @@
         "Guitarist",
         "Instrumental rock"
       ],
-      "x": 134,
-      "y": 397,
+      "x": 299,
+      "y": 296,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -3708,8 +3708,8 @@
         "Guitarist",
         "Neoclassical metal"
       ],
-      "x": 2320,
-      "y": -13,
+      "x": 2324,
+      "y": -99,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -3742,8 +3742,8 @@
         "Guns N' Roses",
         "Les Paul"
       ],
-      "x": -703,
-      "y": -372,
+      "x": -787,
+      "y": -392,
       "zone": "roots-blues",
       "starter": true,
       "sources": [
@@ -3777,8 +3777,8 @@
         "AC/DC",
         "Gibson SG"
       ],
-      "x": -1143,
-      "y": 93,
+      "x": -877,
+      "y": -4,
       "zone": "roots-blues",
       "starter": true,
       "sources": [
@@ -3811,8 +3811,8 @@
         "Rhythm guitar",
         "AC/DC"
       ],
-      "x": 2581,
-      "y": -105,
+      "x": 2745,
+      "y": -30,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -3846,8 +3846,8 @@
         "Megadeth",
         "Thrash metal"
       ],
-      "x": 2921,
-      "y": 330,
+      "x": 3504,
+      "y": -526,
       "zone": "hard-rock-metal",
       "starter": true,
       "sources": [
@@ -3880,8 +3880,8 @@
         "Pantera",
         "Heavy metal"
       ],
-      "x": 1923,
-      "y": 335,
+      "x": 1780,
+      "y": 432,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -3914,8 +3914,8 @@
         "Ozzy Osbourne",
         "Les Paul"
       ],
-      "x": 2199,
-      "y": -296,
+      "x": 2368,
+      "y": -399,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -3947,9 +3947,9 @@
         "Guitarist",
         "Jazz"
       ],
-      "x": -515,
-      "y": -925,
-      "zone": "psychedelia-prog",
+      "x": -1509,
+      "y": -1293,
+      "zone": "jazz",
       "starter": true,
       "sources": [
         {
@@ -3959,7 +3959,7 @@
         }
       ],
       "primaryGenres": [
-        "jazz fusion"
+        "jazz"
       ],
       "curatorTags": [
         "Jazz",
@@ -3981,9 +3981,9 @@
         "Jazz",
         "Chord melody"
       ],
-      "x": 35,
-      "y": 880,
-      "zone": "folk-country-vise",
+      "x": -369,
+      "y": -1201,
+      "zone": "jazz",
       "starter": false,
       "sources": [
         {
@@ -4015,9 +4015,9 @@
         "Jazz",
         "Acoustic"
       ],
-      "x": -642,
-      "y": 779,
-      "zone": "folk-country-vise",
+      "x": -1296,
+      "y": -986,
+      "zone": "jazz",
       "starter": false,
       "sources": [
         {
@@ -4048,8 +4048,8 @@
         "Guitarist",
         "Flamenco"
       ],
-      "x": -1126,
-      "y": 1418,
+      "x": -1707,
+      "y": 1131,
       "zone": "folk-country-vise",
       "starter": false,
       "sources": [
@@ -4081,9 +4081,9 @@
         "Guitarist",
         "Jazz fusion"
       ],
-      "x": -621,
-      "y": -782,
-      "zone": "psychedelia-prog",
+      "x": -798,
+      "y": -916,
+      "zone": "jazz",
       "starter": false,
       "sources": [
         {
@@ -4112,8 +4112,8 @@
         "King Crimson",
         "Progressive rock"
       ],
-      "x": 797,
-      "y": -1095,
+      "x": 822,
+      "y": -1068,
       "zone": "psychedelia-prog",
       "starter": true,
       "sources": [
@@ -4147,8 +4147,8 @@
         "Yes",
         "Progressive rock"
       ],
-      "x": 644,
-      "y": -1140,
+      "x": 639,
+      "y": -1246,
       "zone": "psychedelia-prog",
       "starter": false,
       "sources": [
@@ -4183,7 +4183,7 @@
         "Progressive rock"
       ],
       "x": 1350,
-      "y": -856,
+      "y": -880,
       "zone": "psychedelia-prog",
       "starter": false,
       "sources": [
@@ -4217,8 +4217,8 @@
         "Delay",
         "Post-punk"
       ],
-      "x": 1696,
-      "y": 1354,
+      "x": 1707,
+      "y": 1365,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -4251,8 +4251,8 @@
         "Radiohead",
         "Art rock"
       ],
-      "x": 1060,
-      "y": -873,
+      "x": 973,
+      "y": -582,
       "zone": "psychedelia-prog",
       "starter": false,
       "sources": [
@@ -4285,8 +4285,8 @@
         "Norwegian vise",
         "Gitarkameratene"
       ],
-      "x": -561,
-      "y": 1021,
+      "x": -1025,
+      "y": 1286,
       "zone": "folk-country-vise",
       "starter": false,
       "sources": [
@@ -4318,8 +4318,8 @@
         "Singer-songwriter",
         "Gitarkameratene"
       ],
-      "x": -171,
-      "y": 1172,
+      "x": -321,
+      "y": 1238,
       "zone": "folk-country-vise",
       "starter": false,
       "sources": [
@@ -4348,8 +4348,8 @@
         "Norwegian vise",
         "Gitarkameratene"
       ],
-      "x": -307,
-      "y": 1474,
+      "x": -785,
+      "y": 1660,
       "zone": "folk-country-vise",
       "starter": false,
       "sources": [
@@ -4381,8 +4381,8 @@
         "Norwegian vise",
         "Folk"
       ],
-      "x": -845,
-      "y": 1141,
+      "x": -966,
+      "y": 1630,
       "zone": "folk-country-vise",
       "starter": false,
       "sources": [
@@ -4414,8 +4414,8 @@
         "Blues rock",
         "Rock"
       ],
-      "x": -1631,
-      "y": 33,
+      "x": -1570,
+      "y": 38,
       "zone": "roots-blues",
       "starter": true,
       "sources": [
@@ -4447,8 +4447,8 @@
         "Rock",
         "Power chords"
       ],
-      "x": -560,
-      "y": -438,
+      "x": -504,
+      "y": -575,
       "zone": "psychedelia-prog",
       "starter": true,
       "sources": [
@@ -4480,8 +4480,8 @@
         "Glam rock",
         "Hard rock"
       ],
-      "x": 476,
-      "y": 174,
+      "x": 899,
+      "y": -33,
       "zone": "rock-circuit",
       "starter": true,
       "sources": [
@@ -4510,8 +4510,8 @@
         "Hard rock",
         "Heavy metal roots"
       ],
-      "x": 858,
-      "y": -380,
+      "x": 846,
+      "y": -291,
       "zone": "hard-rock-metal",
       "starter": true,
       "sources": [
@@ -4543,8 +4543,8 @@
         "Hard rock",
         "Riffs"
       ],
-      "x": -954,
-      "y": 290,
+      "x": -786,
+      "y": -105,
       "zone": "roots-blues",
       "starter": true,
       "sources": [
@@ -4575,8 +4575,8 @@
         "Band",
         "Hard rock"
       ],
-      "x": 511,
-      "y": 288,
+      "x": 407,
+      "y": 226,
       "zone": "hard-rock-metal",
       "starter": true,
       "sources": [
@@ -4608,8 +4608,8 @@
         "Alternative metal",
         "Rap rock"
       ],
-      "x": 756,
-      "y": 2036,
+      "x": 745,
+      "y": 2033,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -4641,8 +4641,8 @@
         "Band",
         "Thrash metal"
       ],
-      "x": 2576,
-      "y": -520,
+      "x": 3453,
+      "y": 105,
       "zone": "hard-rock-metal",
       "starter": true,
       "sources": [
@@ -4673,8 +4673,8 @@
         "Band",
         "Groove metal"
       ],
-      "x": 2068,
-      "y": -213,
+      "x": 1998,
+      "y": -23,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -4706,8 +4706,8 @@
         "Southern rock",
         "Blues rock"
       ],
-      "x": -1835,
-      "y": 406,
+      "x": -1954,
+      "y": -4,
       "zone": "roots-blues",
       "starter": true,
       "sources": [
@@ -4741,8 +4741,8 @@
         "Blues rock",
         "Pop rock"
       ],
-      "x": -1481,
-      "y": 378,
+      "x": -1079,
+      "y": 412,
       "zone": "roots-blues",
       "starter": true,
       "sources": [
@@ -4776,8 +4776,8 @@
         "Progressive rock",
         "Art rock"
       ],
-      "x": 129,
-      "y": -1101,
+      "x": 268,
+      "y": -1267,
       "zone": "psychedelia-prog",
       "starter": true,
       "sources": [
@@ -4808,8 +4808,8 @@
         "Band",
         "Progressive rock"
       ],
-      "x": 237,
-      "y": -952,
+      "x": 168,
+      "y": -1113,
       "zone": "psychedelia-prog",
       "starter": true,
       "sources": [
@@ -4841,8 +4841,8 @@
         "Progressive rock",
         "Hard rock"
       ],
-      "x": 916,
-      "y": -983,
+      "x": 743,
+      "y": -918,
       "zone": "psychedelia-prog",
       "starter": true,
       "sources": [
@@ -4874,8 +4874,8 @@
         "Blues rock",
         "Latin rock"
       ],
-      "x": -1405,
-      "y": 211,
+      "x": -1725,
+      "y": -76,
       "zone": "roots-blues",
       "starter": false,
       "sources": [
@@ -4906,8 +4906,8 @@
         "Band",
         "Rockabilly"
       ],
-      "x": -1257,
-      "y": -34,
+      "x": -1298,
+      "y": -203,
       "zone": "roots-blues",
       "starter": false,
       "sources": [
@@ -4939,8 +4939,8 @@
         "Alternative rock",
         "Art rock"
       ],
-      "x": 363,
-      "y": -297,
+      "x": 88,
+      "y": -227,
       "zone": "psychedelia-prog",
       "starter": true,
       "sources": [
@@ -4971,8 +4971,8 @@
         "Band",
         "Heavy metal"
       ],
-      "x": 1982,
-      "y": 99,
+      "x": 2084,
+      "y": 246,
       "zone": "hard-rock-metal",
       "starter": true,
       "sources": [
@@ -5003,8 +5003,8 @@
         "Band",
         "Heavy metal"
       ],
-      "x": 2509,
-      "y": 709,
+      "x": 2640,
+      "y": 718,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -5065,8 +5065,8 @@
         "Maker",
         "Electric guitars"
       ],
-      "x": 4141,
-      "y": -212,
+      "x": 4145,
+      "y": -214,
       "zone": "guitar-workshop",
       "starter": true,
       "sources": [
@@ -5094,7 +5094,7 @@
         "Maker",
         "Metal guitars"
       ],
-      "x": 4117,
+      "x": 4118,
       "y": -716,
       "zone": "guitar-workshop",
       "starter": true,
@@ -5240,8 +5240,8 @@
         "Acoustic guitars",
         "Twelve-string"
       ],
-      "x": 4022,
-      "y": -339,
+      "x": 4007,
+      "y": -323,
       "zone": "guitar-workshop",
       "starter": false,
       "sources": [
@@ -5269,8 +5269,8 @@
         "Maker",
         "Resonator guitars"
       ],
-      "x": 3941,
-      "y": -738,
+      "x": 3942,
+      "y": -757,
       "zone": "guitar-workshop",
       "starter": false,
       "sources": [
@@ -5328,8 +5328,8 @@
         "Custom build",
         "Brian May"
       ],
-      "x": 3427,
-      "y": 436,
+      "x": 3396,
+      "y": 444,
       "zone": "guitar-workshop",
       "starter": true,
       "sources": [
@@ -5358,8 +5358,8 @@
         "Semi-hollow",
         "1958"
       ],
-      "x": 3237,
-      "y": 255,
+      "x": 3143,
+      "y": 73,
       "zone": "guitar-workshop",
       "starter": true,
       "sources": [
@@ -5388,8 +5388,8 @@
         "Solid-body",
         "1958"
       ],
-      "x": 3263,
-      "y": 86,
+      "x": 3285,
+      "y": 167,
       "zone": "guitar-workshop",
       "starter": false,
       "sources": [
@@ -5418,8 +5418,8 @@
         "Offset",
         "Mini-humbuckers"
       ],
-      "x": 3364,
-      "y": -202,
+      "x": 3322,
+      "y": -92,
       "zone": "guitar-workshop",
       "starter": false,
       "sources": [
@@ -5448,8 +5448,8 @@
         "Double-neck",
         "Twelve-string"
       ],
-      "x": 3270,
-      "y": 497,
+      "x": 3256,
+      "y": 379,
       "zone": "guitar-workshop",
       "starter": false,
       "sources": [
@@ -5479,7 +5479,7 @@
         "1950"
       ],
       "x": 3159,
-      "y": -219,
+      "y": -223,
       "zone": "guitar-workshop",
       "starter": false,
       "sources": [
@@ -5508,8 +5508,8 @@
         "Offset",
         "Short-scale"
       ],
-      "x": 4058,
-      "y": 94,
+      "x": 4073,
+      "y": 68,
       "zone": "guitar-workshop",
       "starter": false,
       "sources": [
@@ -5538,8 +5538,8 @@
         "PRS",
         "24 frets"
       ],
-      "x": 3282,
-      "y": -317,
+      "x": 3291,
+      "y": -218,
       "zone": "guitar-workshop",
       "starter": true,
       "sources": [
@@ -5568,8 +5568,8 @@
         "Signature",
         "Carlos Santana"
       ],
-      "x": 3156,
-      "y": -587,
+      "x": 3155,
+      "y": -667,
       "zone": "guitar-workshop",
       "starter": false,
       "sources": [
@@ -5597,8 +5597,8 @@
         "Guitar",
         "Superstrat"
       ],
-      "x": 3503,
-      "y": -81,
+      "x": 3478,
+      "y": -28,
       "zone": "guitar-workshop",
       "starter": true,
       "sources": [
@@ -5627,8 +5627,8 @@
         "Signature",
         "Joe Satriani"
       ],
-      "x": 3633,
-      "y": -212,
+      "x": 3582,
+      "y": -125,
       "zone": "guitar-workshop",
       "starter": false,
       "sources": [
@@ -5657,8 +5657,8 @@
         "Signature",
         "Metal"
       ],
-      "x": 4047,
-      "y": -507,
+      "x": 4059,
+      "y": -492,
       "zone": "guitar-workshop",
       "starter": true,
       "sources": [
@@ -5687,8 +5687,8 @@
         "Superstrat",
         "Metal"
       ],
-      "x": 3719,
-      "y": -447,
+      "x": 3727,
+      "y": -527,
       "zone": "guitar-workshop",
       "starter": false,
       "sources": [
@@ -5716,8 +5716,8 @@
         "Guitar",
         "Superstrat"
       ],
-      "x": 3868,
-      "y": -566,
+      "x": 3897,
+      "y": -580,
       "zone": "guitar-workshop",
       "starter": false,
       "sources": [
@@ -5746,8 +5746,8 @@
         "Music Man",
         "Hard rock"
       ],
-      "x": 4398,
-      "y": -169,
+      "x": 4388,
+      "y": -151,
       "zone": "guitar-workshop",
       "starter": false,
       "sources": [
@@ -5775,8 +5775,8 @@
         "Guitar",
         "Solid-body"
       ],
-      "x": 4088,
-      "y": -57,
+      "x": 3884,
+      "y": -202,
       "zone": "guitar-workshop",
       "starter": false,
       "sources": [
@@ -5804,8 +5804,8 @@
         "Guitar",
         "Acoustic-electric"
       ],
-      "x": 3582,
-      "y": 67,
+      "x": 3581,
+      "y": 102,
       "zone": "guitar-workshop",
       "starter": false,
       "sources": [
@@ -5834,8 +5834,8 @@
         "Twelve-string",
         "Acoustic"
       ],
-      "x": 3460,
-      "y": 888,
+      "x": 3490,
+      "y": 808,
       "zone": "guitar-workshop",
       "starter": false,
       "sources": [
@@ -5863,8 +5863,8 @@
         "Guitar",
         "Lipstick pickups"
       ],
-      "x": 3787,
-      "y": -196,
+      "x": 3720,
+      "y": -213,
       "zone": "guitar-workshop",
       "starter": false,
       "sources": [
@@ -5891,8 +5891,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 1579,
-      "y": -274,
+      "x": 1570,
+      "y": -282,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -5922,8 +5922,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 1050,
-      "y": -310,
+      "x": 1084,
+      "y": -382,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -5954,8 +5954,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 1232,
-      "y": -381,
+      "x": 1286,
+      "y": -374,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -5985,8 +5985,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 1365,
-      "y": 204,
+      "x": 1341,
+      "y": 257,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -6016,8 +6016,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 2664,
-      "y": 988,
+      "x": 3248,
+      "y": -753,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -6047,8 +6047,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 2564,
-      "y": 173,
+      "x": 2169,
+      "y": -80,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -6078,8 +6078,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 2971,
-      "y": 826,
+      "x": 3026,
+      "y": -727,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -6109,8 +6109,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 3261,
-      "y": -202,
+      "x": 2945,
+      "y": 661,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -6146,8 +6146,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 2704,
-      "y": -137,
+      "x": 3280,
+      "y": -568,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -6177,8 +6177,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": 2297,
-      "y": -629,
+      "x": 3596,
+      "y": -234,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -6219,8 +6219,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 2831,
-      "y": -419,
+      "x": 2417,
+      "y": 963,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -6250,8 +6250,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": 3630,
-      "y": 164,
+      "x": 2687,
+      "y": 417,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -6282,8 +6282,8 @@
       "metadata": [
         "Guitarist"
       ],
-      "x": 2968,
-      "y": -214,
+      "x": 3596,
+      "y": -652,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -6318,8 +6318,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 2192,
-      "y": 722,
+      "x": 2210,
+      "y": 671,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -6350,8 +6350,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 2070,
-      "y": -35,
+      "x": 2889,
+      "y": -272,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -6381,8 +6381,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 3051,
-      "y": -668,
+      "x": 3488,
+      "y": 538,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -6412,8 +6412,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 2866,
-      "y": 1127,
+      "x": 2969,
+      "y": 338,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -6443,8 +6443,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 3607,
-      "y": -333,
+      "x": 2830,
+      "y": 966,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -6474,8 +6474,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 3554,
-      "y": -636,
+      "x": 3123,
+      "y": 705,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -6506,8 +6506,8 @@
       "metadata": [
         "Guitarist"
       ],
-      "x": 3034,
-      "y": 1053,
+      "x": 2529,
+      "y": -686,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -6537,8 +6537,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 2523,
-      "y": 972,
+      "x": 2551,
+      "y": 977,
       "zone": "hip-hop-rap",
       "starter": false,
       "sources": [
@@ -6569,8 +6569,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": 2143,
-      "y": 158,
+      "x": 2512,
+      "y": 649,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -6606,8 +6606,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 3253,
-      "y": 371,
+      "x": 2311,
+      "y": -551,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -6637,8 +6637,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 2902,
-      "y": -565,
+      "x": 3454,
+      "y": 328,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -6668,8 +6668,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 874,
-      "y": -1250,
+      "x": 816,
+      "y": -1240,
       "zone": "psychedelia-prog",
       "starter": false,
       "sources": [
@@ -6709,8 +6709,8 @@
       "metadata": [
         "Band"
       ],
-      "x": -415,
-      "y": -604,
+      "x": -630,
+      "y": -693,
       "zone": "psychedelia-prog",
       "starter": false,
       "sources": [
@@ -6737,8 +6737,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 545,
-      "y": -999,
+      "x": 535,
+      "y": -396,
       "zone": "psychedelia-prog",
       "starter": false,
       "sources": [
@@ -6768,8 +6768,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": 716,
-      "y": -737,
+      "x": 651,
+      "y": -775,
       "zone": "psychedelia-prog",
       "starter": false,
       "sources": [
@@ -6809,8 +6809,8 @@
       "metadata": [
         "Band"
       ],
-      "x": -146,
-      "y": -508,
+      "x": -339,
+      "y": -494,
       "zone": "psychedelia-prog",
       "starter": false,
       "sources": [
@@ -6837,8 +6837,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 145,
-      "y": -690,
+      "x": 121,
+      "y": -667,
       "zone": "psychedelia-prog",
       "starter": false,
       "sources": [
@@ -6865,8 +6865,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": 2385,
-      "y": 479,
+      "x": 2912,
+      "y": -569,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -6906,8 +6906,8 @@
       "metadata": [
         "Band"
       ],
-      "x": -458,
-      "y": -36,
+      "x": 498,
+      "y": -150,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -6937,8 +6937,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 804,
-      "y": -11,
+      "x": 755,
+      "y": -367,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -6968,8 +6968,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 1910,
-      "y": 511,
+      "x": 2752,
+      "y": -164,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -7010,8 +7010,8 @@
       "metadata": [
         "Band"
       ],
-      "x": -173,
-      "y": 1292,
+      "x": -647,
+      "y": 239,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -7041,8 +7041,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 1264,
-      "y": 174,
+      "x": 768,
+      "y": 1058,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -7072,8 +7072,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 587,
-      "y": 652,
+      "x": 677,
+      "y": 499,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -7103,8 +7103,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 2521,
-      "y": 405,
+      "x": 2005,
+      "y": -367,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -7140,8 +7140,8 @@
       "metadata": [
         "Band"
       ],
-      "x": -602,
-      "y": 4,
+      "x": -269,
+      "y": 480,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -7171,8 +7171,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 2983,
-      "y": 635,
+      "x": 3092,
+      "y": -552,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -7202,8 +7202,8 @@
       "metadata": [
         "Band"
       ],
-      "x": -17,
-      "y": 109,
+      "x": 610,
+      "y": -482,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -7233,8 +7233,8 @@
       "metadata": [
         "Band"
       ],
-      "x": -419,
-      "y": 637,
+      "x": -216,
+      "y": 766,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -7264,8 +7264,8 @@
       "metadata": [
         "Genre"
       ],
-      "x": 2447,
-      "y": 89,
+      "x": 2186,
+      "y": -419,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -7300,8 +7300,8 @@
       "metadata": [
         "Genre"
       ],
-      "x": 1506,
-      "y": 84,
+      "x": 1486,
+      "y": 125,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -7331,8 +7331,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 2114,
-      "y": -592,
+      "x": 2168,
+      "y": -663,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -7362,8 +7362,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 2198,
-      "y": -131,
+      "x": 2443,
+      "y": 11,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -7393,8 +7393,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 2803,
-      "y": 784,
+      "x": 2896,
+      "y": -99,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -7424,8 +7424,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": 2617,
-      "y": 282,
+      "x": 1867,
+      "y": -467,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -7461,8 +7461,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 1330,
-      "y": -335,
+      "x": 1165,
+      "y": 621,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -7492,8 +7492,8 @@
       "metadata": [
         "Genre"
       ],
-      "x": 2201,
-      "y": 52,
+      "x": 2265,
+      "y": 69,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -7528,8 +7528,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 2230,
-      "y": 537,
+      "x": 2183,
+      "y": 375,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -7560,8 +7560,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 2354,
-      "y": 653,
+      "x": 2434,
+      "y": 518,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -7592,8 +7592,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": 2824,
-      "y": 614,
+      "x": 1947,
+      "y": 148,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -7634,8 +7634,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 412,
-      "y": -196,
+      "x": 333,
+      "y": -389,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -7665,8 +7665,8 @@
       "metadata": [
         "Band"
       ],
-      "x": -243,
-      "y": 398,
+      "x": -690,
+      "y": 665,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -7696,8 +7696,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 762,
-      "y": -346,
+      "x": 916,
+      "y": -397,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -7727,8 +7727,8 @@
       "metadata": [
         "Band"
       ],
-      "x": -490,
-      "y": 479,
+      "x": -226,
+      "y": -370,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -7758,8 +7758,8 @@
       "metadata": [
         "Band"
       ],
-      "x": -57,
-      "y": 964,
+      "x": 52,
+      "y": 690,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -7789,8 +7789,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": -41,
-      "y": -1039,
+      "x": -12,
+      "y": -763,
       "zone": "psychedelia-prog",
       "starter": false,
       "sources": [
@@ -7831,8 +7831,8 @@
       "metadata": [
         "Genre"
       ],
-      "x": 417,
-      "y": -595,
+      "x": 27,
+      "y": -952,
       "zone": "psychedelia-prog",
       "starter": false,
       "sources": [
@@ -7862,8 +7862,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 1931,
-      "y": -292,
+      "x": 2959,
+      "y": 836,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -7904,8 +7904,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 63,
-      "y": 650,
+      "x": -88,
+      "y": 846,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -7935,8 +7935,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": 2979,
-      "y": 480,
+      "x": 2342,
+      "y": 386,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -7977,8 +7977,8 @@
       "metadata": [
         "Band"
       ],
-      "x": -466,
-      "y": 120,
+      "x": 60,
+      "y": -372,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -8008,8 +8008,8 @@
       "metadata": [
         "Band"
       ],
-      "x": -43,
-      "y": 800,
+      "x": -424,
+      "y": 332,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -8039,8 +8039,8 @@
       "metadata": [
         "Band"
       ],
-      "x": -482,
-      "y": 801,
+      "x": -672,
+      "y": -376,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -8070,8 +8070,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 2837,
-      "y": 955,
+      "x": 1895,
+      "y": -143,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -8111,8 +8111,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 891,
-      "y": -112,
+      "x": 442,
+      "y": 12,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -8142,8 +8142,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": 316,
-      "y": 527,
+      "x": 25,
+      "y": 31,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -8173,8 +8173,8 @@
       "metadata": [
         "Band"
       ],
-      "x": -202,
-      "y": 287,
+      "x": 35,
+      "y": -547,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -8204,8 +8204,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 1128,
-      "y": -424,
+      "x": 626,
+      "y": -148,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -8235,8 +8235,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 307,
-      "y": -414,
+      "x": 584,
+      "y": 6,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -8266,8 +8266,8 @@
       "metadata": [
         "Genre"
       ],
-      "x": 1658,
-      "y": -64,
+      "x": 1709,
+      "y": -136,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -8302,8 +8302,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 1720,
-      "y": 568,
+      "x": 1639,
+      "y": 632,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -8376,8 +8376,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 575,
-      "y": 1035,
+      "x": 536,
+      "y": 1090,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -8408,8 +8408,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 1157,
-      "y": 1439,
+      "x": 1143,
+      "y": 1478,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -8440,8 +8440,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 1040,
-      "y": 985,
+      "x": 1104,
+      "y": 890,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -8468,8 +8468,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": 1823,
-      "y": 1878,
+      "x": 1799,
+      "y": 1906,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -8496,8 +8496,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 1347,
-      "y": 1072,
+      "x": 1348,
+      "y": 1091,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -8528,8 +8528,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 2369,
-      "y": -338,
+      "x": 2965,
+      "y": 156,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -8570,8 +8570,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 91,
-      "y": -40,
+      "x": 459,
+      "y": -327,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -8601,8 +8601,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 2691,
-      "y": -397,
+      "x": 2600,
+      "y": 531,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -8632,8 +8632,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 3132,
-      "y": 731,
+      "x": 2617,
+      "y": -458,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -8663,8 +8663,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 2418,
-      "y": 1680,
+      "x": 2412,
+      "y": 1666,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -8700,8 +8700,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 1657,
-      "y": 1992,
+      "x": 1652,
+      "y": 1991,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -8741,8 +8741,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 1848,
-      "y": 1299,
+      "x": 1855,
+      "y": 1291,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -8769,8 +8769,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 1456,
-      "y": 1525,
+      "x": 1444,
+      "y": 1487,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -8811,8 +8811,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 1556,
-      "y": 1142,
+      "x": 1544,
+      "y": 1126,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -8839,8 +8839,8 @@
       "metadata": [
         "Genre"
       ],
-      "x": 382,
-      "y": 1204,
+      "x": 349,
+      "y": 1195,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -8875,8 +8875,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 861,
-      "y": 394,
+      "x": 884,
+      "y": 307,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -8907,8 +8907,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 270,
-      "y": 1375,
+      "x": 326,
+      "y": 1415,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -8938,8 +8938,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 2651,
-      "y": -732,
+      "x": 3616,
+      "y": 805,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -8969,8 +8969,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 3485,
-      "y": 27,
+      "x": 2733,
+      "y": -564,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -9000,8 +9000,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 3386,
-      "y": 1052,
+      "x": 2240,
+      "y": -249,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -9031,8 +9031,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 3248,
-      "y": -493,
+      "x": 3364,
+      "y": 875,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -9062,8 +9062,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 2845,
-      "y": -735,
+      "x": 3665,
+      "y": 535,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -9093,8 +9093,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 2909,
-      "y": 79,
+      "x": 3635,
+      "y": 348,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -9124,8 +9124,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 3587,
-      "y": 797,
+      "x": 3126,
+      "y": 365,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -9161,8 +9161,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 3509,
-      "y": 547,
+      "x": 2715,
+      "y": -332,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -9192,8 +9192,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 3241,
-      "y": -682,
+      "x": 2474,
+      "y": -532,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -9223,8 +9223,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 1249,
-      "y": 937,
+      "x": 1289,
+      "y": 939,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -9265,8 +9265,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 2661,
-      "y": 1281,
+      "x": 2654,
+      "y": 1278,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -9296,8 +9296,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 2278,
-      "y": 1275,
+      "x": 2286,
+      "y": 1280,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -9328,7 +9328,7 @@
         "Artist"
       ],
       "x": 2426,
-      "y": 1500,
+      "y": 1484,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -9358,8 +9358,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 1931,
-      "y": 1588,
+      "x": 1915,
+      "y": 1610,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -9420,8 +9420,8 @@
       "metadata": [
         "Band"
       ],
-      "x": -965,
-      "y": 1264,
+      "x": -910,
+      "y": 802,
       "zone": "folk-country-vise",
       "starter": false,
       "sources": [
@@ -9452,9 +9452,9 @@
       "metadata": [
         "Band"
       ],
-      "x": -610,
-      "y": 1604,
-      "zone": "folk-country-vise",
+      "x": -145,
+      "y": -656,
+      "zone": "psychedelia-prog",
       "starter": false,
       "sources": [
         {
@@ -9484,8 +9484,8 @@
       "metadata": [
         "Guitar"
       ],
-      "x": 3341,
-      "y": -75,
+      "x": 3401,
+      "y": -523,
       "zone": "guitar-workshop",
       "starter": false,
       "sources": [
@@ -9512,8 +9512,8 @@
       "metadata": [
         "Guitar"
       ],
-      "x": 3539,
-      "y": 234,
+      "x": 3354,
+      "y": -365,
       "zone": "guitar-workshop",
       "starter": false,
       "sources": [
@@ -9540,8 +9540,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 2089,
-      "y": 414,
+      "x": 1918,
+      "y": 315,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -9576,8 +9576,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 1139,
-      "y": 913,
+      "x": 519,
+      "y": 465,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -9607,8 +9607,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 2088,
-      "y": 1492,
+      "x": 2089,
+      "y": 1461,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -9639,8 +9639,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 78,
-      "y": 1069,
+      "x": 44,
+      "y": 856,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -9670,8 +9670,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 534,
-      "y": -177,
+      "x": 1028,
+      "y": 315,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -9701,8 +9701,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 2607,
-      "y": 838,
+      "x": 2026,
+      "y": -532,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -9738,8 +9738,8 @@
       "metadata": [
         "Band"
       ],
-      "x": -581,
-      "y": 657,
+      "x": -524,
+      "y": 104,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -9769,8 +9769,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 210,
-      "y": 775,
+      "x": -619,
+      "y": 517,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -9800,8 +9800,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 458,
-      "y": -335,
+      "x": 920,
+      "y": -189,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -9831,8 +9831,8 @@
       "metadata": [
         "Band"
       ],
-      "x": -287,
-      "y": -77,
+      "x": -534,
+      "y": -482,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -9862,8 +9862,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 1155,
-      "y": 302,
+      "x": 1134,
+      "y": -144,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -9893,8 +9893,8 @@
       "metadata": [
         "Band"
       ],
-      "x": -102,
-      "y": -426,
+      "x": 436,
+      "y": -507,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -9924,8 +9924,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": 2008,
-      "y": -441,
+      "x": 2900,
+      "y": 500,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -9956,8 +9956,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": -500,
-      "y": 1141,
+      "x": 788,
+      "y": 1232,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -9987,8 +9987,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 199,
-      "y": 1168,
+      "x": -517,
+      "y": 801,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -10018,8 +10018,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 858,
-      "y": 812,
+      "x": 172,
+      "y": 933,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -10049,8 +10049,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 3068,
-      "y": 355,
+      "x": 3408,
+      "y": -137,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -10080,8 +10080,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 865,
-      "y": 664,
+      "x": 426,
+      "y": 1092,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -10111,8 +10111,8 @@
       "metadata": [
         "Band"
       ],
-      "x": -250,
-      "y": -379,
+      "x": -368,
+      "y": -410,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -10142,8 +10142,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 1794,
-      "y": -399,
+      "x": 1926,
+      "y": 538,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -10179,8 +10179,8 @@
       "metadata": [
         "Band"
       ],
-      "x": -370,
-      "y": 339,
+      "x": -362,
+      "y": 879,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -10210,8 +10210,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 3654,
-      "y": 362,
+      "x": 2796,
+      "y": 771,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -10252,8 +10252,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 2037,
-      "y": 251,
+      "x": 2514,
+      "y": -338,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -10289,8 +10289,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 1196,
-      "y": -104,
+      "x": 1226,
+      "y": 839,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -10320,8 +10320,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": 1330,
-      "y": 845,
+      "x": 1047,
+      "y": -494,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -10351,8 +10351,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": 2935,
-      "y": -84,
+      "x": 2729,
+      "y": 284,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -10383,8 +10383,8 @@
       "metadata": [
         "Genre"
       ],
-      "x": 2660,
-      "y": 531,
+      "x": 2761,
+      "y": 585,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -10414,8 +10414,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 2077,
-      "y": 585,
+      "x": 2105,
+      "y": 538,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -10445,8 +10445,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 2398,
-      "y": 837,
+      "x": 2318,
+      "y": 819,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -10476,8 +10476,8 @@
       "metadata": [
         "Genre"
       ],
-      "x": 1071,
-      "y": -679,
+      "x": 936,
+      "y": -879,
       "zone": "psychedelia-prog",
       "starter": false,
       "sources": [
@@ -10512,8 +10512,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": 2242,
-      "y": -456,
+      "x": 3025,
+      "y": 1009,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -10554,8 +10554,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": 2676,
-      "y": 391,
+      "x": 2821,
+      "y": 385,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -10596,8 +10596,8 @@
       "metadata": [
         "Band"
       ],
-      "x": -237,
-      "y": 918,
+      "x": -130,
+      "y": 1040,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -10627,8 +10627,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 1171,
-      "y": 604,
+      "x": 254,
+      "y": 1159,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -10658,8 +10658,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": 1330,
-      "y": -163,
+      "x": 232,
+      "y": -534,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -10689,8 +10689,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": 74,
-      "y": 776,
+      "x": 1283,
+      "y": 144,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -10720,8 +10720,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": 2828,
-      "y": 459,
+      "x": 2767,
+      "y": 96,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -10762,8 +10762,8 @@
       "metadata": [
         "Band"
       ],
-      "x": -562,
-      "y": -175,
+      "x": -311,
+      "y": 214,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -10793,8 +10793,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 1927,
-      "y": -105,
+      "x": 2513,
+      "y": 169,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -10835,8 +10835,8 @@
       "metadata": [
         "Band"
       ],
-      "x": -206,
-      "y": 1074,
+      "x": -512,
+      "y": 636,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -10866,8 +10866,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 2471,
-      "y": -661,
+      "x": 2598,
+      "y": 47,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -10898,8 +10898,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 2679,
-      "y": 691,
+      "x": 2273,
+      "y": 518,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -10940,8 +10940,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 721,
-      "y": 724,
+      "x": 769,
+      "y": 769,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -10971,8 +10971,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": 3045,
-      "y": 30,
+      "x": 3036,
+      "y": -145,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -11013,8 +11013,8 @@
       "metadata": [
         "Guitar"
       ],
-      "x": 3916,
-      "y": 162,
+      "x": 3935,
+      "y": 161,
       "zone": "guitar-workshop",
       "starter": false,
       "sources": [
@@ -11041,8 +11041,8 @@
       "metadata": [
         "Guitar"
       ],
-      "x": 3964,
-      "y": -175,
+      "x": 4020,
+      "y": -98,
       "zone": "guitar-workshop",
       "starter": false,
       "sources": [
@@ -11069,8 +11069,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": 707,
-      "y": -501,
+      "x": -754,
+      "y": -215,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -11100,8 +11100,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 975,
-      "y": 902,
+      "x": 786,
+      "y": 254,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -11131,8 +11131,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 162,
-      "y": -342,
+      "x": 610,
+      "y": -302,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -11162,8 +11162,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 1344,
-      "y": 1891,
+      "x": 1367,
+      "y": 1808,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -11198,8 +11198,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 70,
-      "y": 1441,
+      "x": 464,
+      "y": 732,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -11229,8 +11229,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 2229,
-      "y": 1097,
+      "x": 2222,
+      "y": 1108,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -11260,8 +11260,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": 1850,
-      "y": 197,
+      "x": 2385,
+      "y": -248,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -11302,8 +11302,8 @@
       "metadata": [
         "Band"
       ],
-      "x": -20,
-      "y": -160,
+      "x": 271,
+      "y": 39,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -11333,8 +11333,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 1330,
-      "y": 9,
+      "x": 605,
+      "y": 795,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -11364,8 +11364,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": 350,
-      "y": 803,
+      "x": 1055,
+      "y": 467,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -11395,8 +11395,8 @@
       "metadata": [
         "Band"
       ],
-      "x": -42,
-      "y": -24,
+      "x": -246,
+      "y": 77,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -11436,8 +11436,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 1001,
-      "y": 609,
+      "x": 578,
+      "y": 1001,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -11467,8 +11467,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 818,
-      "y": 1199,
+      "x": 352,
+      "y": 419,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -11498,8 +11498,8 @@
       "metadata": [
         "Band"
       ],
-      "x": -173,
-      "y": 39,
+      "x": -1089,
+      "y": -7,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -11529,7 +11529,7 @@
       "metadata": [
         "Genre"
       ],
-      "x": 436,
+      "x": 439,
       "y": 1726,
       "zone": "punk-alt",
       "starter": false,
@@ -11560,8 +11560,8 @@
       "metadata": [
         "Genre"
       ],
-      "x": 638,
-      "y": 1216,
+      "x": 673,
+      "y": 1195,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -11591,8 +11591,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 773,
-      "y": 1557,
+      "x": 762,
+      "y": 1539,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -11623,8 +11623,8 @@
       "metadata": [
         "Genre"
       ],
-      "x": 995,
-      "y": 1186,
+      "x": 1039,
+      "y": 1208,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -11654,8 +11654,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": 708,
-      "y": 108,
+      "x": 194,
+      "y": 414,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -11695,8 +11695,8 @@
       "metadata": [
         "Band"
       ],
-      "x": -791,
-      "y": 715,
+      "x": -823,
+      "y": 79,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -11736,8 +11736,8 @@
       "metadata": [
         "Band"
       ],
-      "x": -433,
-      "y": 971,
+      "x": -973,
+      "y": 495,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -11777,8 +11777,8 @@
       "metadata": [
         "Genre"
       ],
-      "x": 1447,
-      "y": 1711,
+      "x": 1495,
+      "y": 1677,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -11813,8 +11813,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 2097,
-      "y": 1301,
+      "x": 2104,
+      "y": 1287,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -11845,9 +11845,9 @@
       "metadata": [
         "Artist"
       ],
-      "x": -364,
-      "y": 863,
-      "zone": "folk-country-vise",
+      "x": 2141,
+      "y": 826,
+      "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
         {
@@ -11887,8 +11887,8 @@
       "metadata": [
         "Band"
       ],
-      "x": -1049,
-      "y": 386,
+      "x": -84,
+      "y": -408,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -11918,8 +11918,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 257,
-      "y": -80,
+      "x": 184,
+      "y": -254,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -11949,9 +11949,9 @@
       "metadata": [
         "Artist"
       ],
-      "x": -826,
-      "y": 1608,
-      "zone": "folk-country-vise",
+      "x": 126,
+      "y": 50,
+      "zone": "rock-circuit",
       "starter": false,
       "sources": [
         {
@@ -11986,8 +11986,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 1003,
-      "y": -520,
+      "x": 720,
+      "y": -472,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -12017,8 +12017,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 1060,
-      "y": 239,
+      "x": 998,
+      "y": 92,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -12048,8 +12048,8 @@
       "metadata": [
         "Genre"
       ],
-      "x": 1082,
-      "y": 460,
+      "x": 1196,
+      "y": 302,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -12079,8 +12079,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 2964,
-      "y": -365,
+      "x": 2660,
+      "y": 896,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -12110,8 +12110,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 3112,
-      "y": -298,
+      "x": 2852,
+      "y": 226,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -12141,8 +12141,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": 2518,
-      "y": -370,
+      "x": 3652,
+      "y": -459,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -12172,8 +12172,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 2628,
-      "y": 23,
+      "x": 3069,
+      "y": -273,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -12203,8 +12203,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 848,
-      "y": 1446,
+      "x": 1330,
+      "y": -228,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -12234,8 +12234,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": 1018,
-      "y": 755,
+      "x": 827,
+      "y": -569,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -12265,8 +12265,8 @@
       "metadata": [
         "Band"
       ],
-      "x": -926,
-      "y": -572,
+      "x": -583,
+      "y": 360,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -12296,8 +12296,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": 3358,
-      "y": 1446,
+      "x": 3353,
+      "y": 1395,
       "zone": "hip-hop-rap",
       "starter": false,
       "sources": [
@@ -12328,8 +12328,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 281,
-      "y": -214,
+      "x": 916,
+      "y": 740,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -12359,8 +12359,8 @@
       "metadata": [
         "Band"
       ],
-      "x": -811,
-      "y": -361,
+      "x": -495,
+      "y": -330,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -12395,8 +12395,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 1038,
-      "y": -27,
+      "x": 556,
+      "y": 619,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -12431,8 +12431,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": 252,
-      "y": 190,
+      "x": -352,
+      "y": 594,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -12467,8 +12467,8 @@
       "metadata": [
         "Band"
       ],
-      "x": -343,
-      "y": 505,
+      "x": -230,
+      "y": 929,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -12503,8 +12503,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": -159,
-      "y": -116,
+      "x": -41,
+      "y": 120,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -12545,9 +12545,9 @@
       "metadata": [
         "Artist"
       ],
-      "x": -432,
-      "y": 1597,
-      "zone": "folk-country-vise",
+      "x": -2444,
+      "y": 1121,
+      "zone": "country-roots",
       "starter": false,
       "sources": [
         {
@@ -12587,8 +12587,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": -326,
-      "y": 52,
+      "x": -348,
+      "y": -55,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -12624,9 +12624,9 @@
       "metadata": [
         "Artist"
       ],
-      "x": -758,
-      "y": 1307,
-      "zone": "folk-country-vise",
+      "x": -1296,
+      "y": 244,
+      "zone": "roots-blues",
       "starter": false,
       "sources": [
         {
@@ -12666,8 +12666,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": -1145,
-      "y": 266,
+      "x": -2077,
+      "y": 292,
       "zone": "roots-blues",
       "starter": false,
       "sources": [
@@ -12703,8 +12703,8 @@
       "metadata": [
         "Band"
       ],
-      "x": -1139,
-      "y": 614,
+      "x": 215,
+      "y": 1497,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -12739,8 +12739,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 1695,
-      "y": 1016,
+      "x": 1701,
+      "y": 1019,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -12781,8 +12781,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 1876,
-      "y": 1123,
+      "x": 1860,
+      "y": 1117,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -12809,8 +12809,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 2578,
-      "y": 1434,
+      "x": 2586,
+      "y": 1443,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -12841,8 +12841,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 1311,
-      "y": 679,
+      "x": 1231,
+      "y": 717,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -12883,8 +12883,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": 188,
-      "y": -430,
+      "x": 131,
+      "y": -462,
       "zone": "psychedelia-prog",
       "starter": false,
       "sources": [
@@ -12911,8 +12911,8 @@
       "metadata": [
         "Guitar"
       ],
-      "x": 3410,
-      "y": 86,
+      "x": 3358,
+      "y": 64,
       "zone": "guitar-workshop",
       "starter": false,
       "sources": [
@@ -12939,8 +12939,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 324,
-      "y": 1099,
+      "x": 290,
+      "y": 1014,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -12970,8 +12970,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 893,
-      "y": -266,
+      "x": 999,
+      "y": 604,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -13002,7 +13002,7 @@
         "Band"
       ],
       "x": 2312,
-      "y": 1840,
+      "y": 1838,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -13043,8 +13043,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 1118,
-      "y": 1640,
+      "x": 1103,
+      "y": 1647,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -13085,8 +13085,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 128,
-      "y": 84,
+      "x": -472,
+      "y": 221,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -13116,8 +13116,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 1950,
-      "y": 1410,
+      "x": 1938,
+      "y": 1428,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -13157,8 +13157,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 877,
-      "y": 311,
+      "x": 695,
+      "y": 649,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -13189,8 +13189,8 @@
       "metadata": [
         "Guitarist"
       ],
-      "x": -252,
-      "y": 628,
+      "x": 483,
+      "y": 886,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -13220,8 +13220,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 10,
-      "y": 511,
+      "x": -195,
+      "y": 1344,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -13251,8 +13251,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 682,
-      "y": 1091,
+      "x": 947,
+      "y": 1137,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -13282,8 +13282,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": 596,
-      "y": 955,
+      "x": -253,
+      "y": -226,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -13313,8 +13313,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 644,
-      "y": 2,
+      "x": 216,
+      "y": -95,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -13344,8 +13344,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 1716,
-      "y": 1196,
+      "x": 1702,
+      "y": 1204,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -13385,8 +13385,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 2053,
-      "y": 1121,
+      "x": 2038,
+      "y": 1122,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -13427,8 +13427,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 453,
-      "y": 1369,
+      "x": 468,
+      "y": 1319,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -13469,8 +13469,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 741,
-      "y": 572,
+      "x": 1106,
+      "y": 164,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -13500,8 +13500,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 10,
-      "y": -321,
+      "x": -590,
+      "y": -214,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -13531,8 +13531,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": 456,
-      "y": 894,
+      "x": -7,
+      "y": -249,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -13562,8 +13562,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 1674,
-      "y": 1810,
+      "x": 1650,
+      "y": 1812,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -13599,8 +13599,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 1527,
-      "y": 1338,
+      "x": 1558,
+      "y": 1322,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -13641,8 +13641,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 1971,
-      "y": 1788,
+      "x": 1997,
+      "y": 1776,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -13683,8 +13683,8 @@
       "metadata": [
         "Guitar"
       ],
-      "x": 3146,
-      "y": -75,
+      "x": 3143,
+      "y": -97,
       "zone": "guitar-workshop",
       "starter": false,
       "sources": [
@@ -13711,8 +13711,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 1400,
-      "y": 1222,
+      "x": 1409,
+      "y": 1247,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -13743,8 +13743,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 1256,
-      "y": 1747,
+      "x": 1227,
+      "y": 1750,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -13775,8 +13775,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 992,
-      "y": 1518,
+      "x": 974,
+      "y": 1532,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -13806,8 +13806,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 1006,
-      "y": 1354,
+      "x": 998,
+      "y": 1372,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -13837,8 +13837,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 820,
-      "y": 1815,
+      "x": 805,
+      "y": 1831,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -13869,8 +13869,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 817,
-      "y": 978,
+      "x": -1,
+      "y": 1002,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -13900,8 +13900,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 1787,
-      "y": 1493,
+      "x": 1786,
+      "y": 1498,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -13931,8 +13931,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 1961,
-      "y": 1972,
+      "x": 1963,
+      "y": 1956,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -13962,8 +13962,8 @@
       "metadata": [
         "Genre"
       ],
-      "x": 1339,
-      "y": 1392,
+      "x": 1297,
+      "y": 1394,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -13993,7 +13993,7 @@
       "metadata": [
         "Band"
       ],
-      "x": 2137,
+      "x": 2138,
       "y": 1898,
       "zone": "punk-alt",
       "starter": false,
@@ -14025,8 +14025,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 1282,
-      "y": 1573,
+      "x": 1293,
+      "y": 1589,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -14062,8 +14062,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 1915,
-      "y": 950,
+      "x": 1917,
+      "y": 948,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -14094,8 +14094,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 1613,
-      "y": 1484,
+      "x": 1608,
+      "y": 1495,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -14131,8 +14131,8 @@
       "metadata": [
         "Band"
       ],
-      "x": -180,
-      "y": 769,
+      "x": -589,
+      "y": 1272,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -14162,8 +14162,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 1171,
-      "y": 1100,
+      "x": 1158,
+      "y": 1064,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -14204,8 +14204,8 @@
       "metadata": [
         "Genre"
       ],
-      "x": 1081,
-      "y": 1836,
+      "x": 1068,
+      "y": 1844,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -14271,8 +14271,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 936,
-      "y": 1969,
+      "x": 929,
+      "y": 1977,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -14302,8 +14302,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 942,
-      "y": 1680,
+      "x": 923,
+      "y": 1691,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -14333,8 +14333,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 1517,
-      "y": 1887,
+      "x": 1497,
+      "y": 1911,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -14370,8 +14370,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 817,
-      "y": 1086,
+      "x": 844,
+      "y": 1124,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -14406,8 +14406,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": 239,
-      "y": 35,
+      "x": -78,
+      "y": 694,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -14438,7 +14438,7 @@
         "Genre"
       ],
       "x": 2614,
-      "y": 1628,
+      "y": 1638,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -14468,8 +14468,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 397,
-      "y": 989,
+      "x": 403,
+      "y": 967,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -14505,8 +14505,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 644,
-      "y": -257,
+      "x": 907,
+      "y": 433,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -14536,8 +14536,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 574,
-      "y": 801,
+      "x": 13,
+      "y": 1504,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -14567,8 +14567,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 1190,
-      "y": -259,
+      "x": 741,
+      "y": -40,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -14598,8 +14598,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 298,
-      "y": 930,
+      "x": 183,
+      "y": 783,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -14629,8 +14629,8 @@
       "metadata": [
         "Band"
       ],
-      "x": -761,
-      "y": -144,
+      "x": -133,
+      "y": 437,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -14660,8 +14660,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": 2080,
-      "y": 1656,
+      "x": 2074,
+      "y": 1622,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -14699,7 +14699,7 @@
         "Genre"
       ],
       "x": -1062,
-      "y": -515,
+      "y": -583,
       "zone": "roots-blues",
       "starter": false,
       "sources": [
@@ -14734,8 +14734,8 @@
       "metadata": [
         "Genre"
       ],
-      "x": -28,
-      "y": -646,
+      "x": -160,
+      "y": -867,
       "zone": "psychedelia-prog",
       "starter": false,
       "sources": [
@@ -14770,8 +14770,8 @@
       "metadata": [
         "Band"
       ],
-      "x": -822,
-      "y": -491,
+      "x": -901,
+      "y": -500,
       "zone": "roots-blues",
       "starter": false,
       "sources": [
@@ -14802,8 +14802,8 @@
       "metadata": [
         "Guitar"
       ],
-      "x": 3480,
-      "y": -293,
+      "x": 3461,
+      "y": -219,
       "zone": "guitar-workshop",
       "starter": false,
       "sources": [
@@ -14830,9 +14830,9 @@
       "metadata": [
         "Genre"
       ],
-      "x": -1302,
-      "y": 1363,
-      "zone": "folk-country-vise",
+      "x": -2127,
+      "y": 820,
+      "zone": "country-roots",
       "starter": false,
       "sources": [
         {
@@ -14862,7 +14862,7 @@
         "Band"
       ],
       "x": 2490,
-      "y": 1153,
+      "y": 1158,
       "zone": "hip-hop-rap",
       "starter": false,
       "sources": [
@@ -14925,8 +14925,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 3029,
-      "y": 1203,
+      "x": 3023,
+      "y": 1205,
       "zone": "hip-hop-rap",
       "starter": false,
       "sources": [
@@ -14988,8 +14988,8 @@
       "metadata": [
         "Guitar"
       ],
-      "x": 3616,
-      "y": 658,
+      "x": 3638,
+      "y": 667,
       "zone": "guitar-workshop",
       "starter": false,
       "sources": [
@@ -15048,8 +15048,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 3197,
-      "y": 1277,
+      "x": 3193,
+      "y": 1274,
       "zone": "hip-hop-rap",
       "starter": false,
       "sources": [
@@ -15085,8 +15085,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 3168,
-      "y": 1052,
+      "x": 3167,
+      "y": 1057,
       "zone": "hip-hop-rap",
       "starter": false,
       "sources": [
@@ -15248,7 +15248,7 @@
         "Band"
       ],
       "x": 3357,
-      "y": 1186,
+      "y": 1190,
       "zone": "hip-hop-rap",
       "starter": false,
       "sources": [
@@ -15279,8 +15279,8 @@
       "metadata": [
         "Genre"
       ],
-      "x": 3176,
-      "y": 1475,
+      "x": 3191,
+      "y": 1481,
       "zone": "hip-hop-rap",
       "starter": false,
       "sources": [
@@ -15511,7 +15511,7 @@
       "metadata": [
         "Artist"
       ],
-      "x": 3002,
+      "x": 3006,
       "y": 1537,
       "zone": "hip-hop-rap",
       "starter": false,
@@ -15580,7 +15580,7 @@
         "Artist"
       ],
       "x": 3131,
-      "y": 1653,
+      "y": 1655,
       "zone": "hip-hop-rap",
       "starter": false,
       "sources": [
@@ -15611,8 +15611,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 2635,
-      "y": -253,
+      "x": 2516,
+      "y": 393,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -15653,8 +15653,8 @@
       "metadata": [
         "Band"
       ],
-      "x": -620,
-      "y": 905,
+      "x": 318,
+      "y": 695,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -15684,8 +15684,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 1262,
-      "y": 471,
+      "x": 1179,
+      "y": 23,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -15715,8 +15715,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 594,
-      "y": -405,
+      "x": 635,
+      "y": 348,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -15746,8 +15746,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 68,
-      "y": 1267,
+      "x": -12,
+      "y": 1213,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -15777,8 +15777,8 @@
       "metadata": [
         "Band"
       ],
-      "x": -59,
-      "y": 1149,
+      "x": 99,
+      "y": 1344,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -15818,8 +15818,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": 2205,
-      "y": 281,
+      "x": 2098,
+      "y": 87,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -15860,8 +15860,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": 152,
-      "y": 507,
+      "x": 245,
+      "y": 526,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -15891,8 +15891,8 @@
       "metadata": [
         "Band"
       ],
-      "x": -393,
-      "y": -296,
+      "x": 49,
+      "y": 388,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -15922,8 +15922,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 1196,
-      "y": 755,
+      "x": 334,
+      "y": 855,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -15953,8 +15953,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 1762,
-      "y": 388,
+      "x": 1832,
+      "y": -301,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -15995,8 +15995,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 110,
-      "y": 234,
+      "x": -216,
+      "y": -547,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -16026,8 +16026,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": 294,
-      "y": -704,
+      "x": 288,
+      "y": -712,
       "zone": "psychedelia-prog",
       "starter": false,
       "sources": [
@@ -16054,8 +16054,8 @@
       "metadata": [
         "Band"
       ],
-      "x": -312,
-      "y": 195,
+      "x": -40,
+      "y": 544,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -16085,8 +16085,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 742,
-      "y": 252,
+      "x": 619,
+      "y": 187,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -16116,8 +16116,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": -410,
-      "y": -164,
+      "x": 170,
+      "y": 167,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -16158,7 +16158,7 @@
       "metadata": [
         "Band"
       ],
-      "x": -194,
+      "x": -340,
       "y": -867,
       "zone": "psychedelia-prog",
       "starter": false,
@@ -16186,8 +16186,8 @@
       "metadata": [
         "Band"
       ],
-      "x": -412,
-      "y": -781,
+      "x": -495,
+      "y": -792,
       "zone": "psychedelia-prog",
       "starter": false,
       "sources": [
@@ -16215,8 +16215,8 @@
       "metadata": [
         "Guitarist"
       ],
-      "x": 292,
-      "y": 419,
+      "x": -155,
+      "y": 194,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -16256,8 +16256,8 @@
       "metadata": [
         "Band"
       ],
-      "x": -849,
-      "y": 1024,
+      "x": -460,
+      "y": 1159,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -16287,8 +16287,8 @@
       "metadata": [
         "Band"
       ],
-      "x": -883,
-      "y": 459,
+      "x": -358,
+      "y": -243,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -16319,8 +16319,8 @@
       "metadata": [
         "Guitarist"
       ],
-      "x": 216,
-      "y": -551,
+      "x": -651,
+      "y": 73,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -16361,8 +16361,8 @@
       "metadata": [
         "Guitarist"
       ],
-      "x": 2289,
-      "y": 386,
+      "x": 2420,
+      "y": 280,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -16403,8 +16403,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 941,
-      "y": 52,
+      "x": 761,
+      "y": -205,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -16434,8 +16434,8 @@
       "metadata": [
         "Band"
       ],
-      "x": -327,
-      "y": 764,
+      "x": -127,
+      "y": -232,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -16465,8 +16465,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": 2338,
-      "y": -189,
+      "x": 2485,
+      "y": -144,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -16507,8 +16507,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 450,
-      "y": 571,
+      "x": 1034,
+      "y": 991,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -16538,8 +16538,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": 345,
-      "y": 668,
+      "x": 1322,
+      "y": 422,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -16569,8 +16569,8 @@
       "metadata": [
         "Guitar"
       ],
-      "x": 3440,
-      "y": -790,
+      "x": 3524,
+      "y": -801,
       "zone": "guitar-workshop",
       "starter": false,
       "sources": [
@@ -16597,8 +16597,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": 752,
-      "y": 415,
+      "x": -127,
+      "y": 27,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -16628,8 +16628,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 2819,
-      "y": -243,
+      "x": 3103,
+      "y": 173,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -16660,8 +16660,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": 2412,
-      "y": -498,
+      "x": 2612,
+      "y": -224,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -16702,8 +16702,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 128,
-      "y": -180,
+      "x": -453,
+      "y": -149,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -16733,8 +16733,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": -159,
-      "y": 161,
+      "x": 1330,
+      "y": 638,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -16764,8 +16764,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 956,
-      "y": 1076,
+      "x": 890,
+      "y": 909,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -16795,8 +16795,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 3065,
-      "y": -493,
+      "x": 3267,
+      "y": 506,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -16832,8 +16832,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 489,
-      "y": 1096,
+      "x": -287,
+      "y": 1110,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -16873,8 +16873,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 3472,
-      "y": 329,
+      "x": 3349,
+      "y": 1054,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -16904,8 +16904,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 1780,
-      "y": -203,
+      "x": 1888,
+      "y": 765,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -16946,8 +16946,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 127,
-      "y": 921,
+      "x": -194,
+      "y": 602,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -16977,8 +16977,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 1330,
-      "y": 326,
+      "x": 1319,
+      "y": -57,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -17008,8 +17008,8 @@
       "metadata": [
         "Band"
       ],
-      "x": -43,
-      "y": 252,
+      "x": -229,
+      "y": -94,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -17039,8 +17039,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 1036,
-      "y": -196,
+      "x": 831,
+      "y": 586,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -17071,8 +17071,8 @@
       "metadata": [
         "Guitarist"
       ],
-      "x": 1194,
-      "y": 36,
+      "x": 1036,
+      "y": -2,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -17112,8 +17112,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": -86,
-      "y": 647,
+      "x": 189,
+      "y": 643,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -17143,8 +17143,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 59,
-      "y": -497,
+      "x": 737,
+      "y": 97,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -17174,8 +17174,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 1101,
-      "y": 135,
+      "x": 1185,
+      "y": -308,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -17205,8 +17205,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 894,
-      "y": 488,
+      "x": 713,
+      "y": 918,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -17237,7 +17237,7 @@
         "Guitar"
       ],
       "x": 3340,
-      "y": -595,
+      "y": -683,
       "zone": "guitar-workshop",
       "starter": false,
       "sources": [
@@ -17265,8 +17265,8 @@
       "metadata": [
         "Guitarist"
       ],
-      "x": -88,
-      "y": 387,
+      "x": 210,
+      "y": -390,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -17306,8 +17306,8 @@
       "metadata": [
         "Genre"
       ],
-      "x": 632,
-      "y": 1424,
+      "x": 620,
+      "y": 1417,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -17342,8 +17342,8 @@
       "metadata": [
         "Genre"
       ],
-      "x": -627,
-      "y": 389,
+      "x": -442,
+      "y": 472,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -17377,8 +17377,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 593,
-      "y": 495,
+      "x": 124,
+      "y": 1093,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -17418,8 +17418,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": 500,
-      "y": 43,
+      "x": -69,
+      "y": -96,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -17454,8 +17454,8 @@
       "metadata": [
         "Band"
       ],
-      "x": -546,
-      "y": -565,
+      "x": -777,
+      "y": -518,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -17485,8 +17485,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 2458,
-      "y": -70,
+      "x": 1785,
+      "y": 214,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -17525,8 +17525,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 965,
-      "y": 211,
+      "x": 541,
+      "y": 1221,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -17556,8 +17556,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 2793,
-      "y": -29,
+      "x": 2059,
+      "y": -209,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -17598,8 +17598,8 @@
       "metadata": [
         "Guitar"
       ],
-      "x": 3743,
-      "y": 127,
+      "x": 3755,
+      "y": 148,
       "zone": "guitar-workshop",
       "starter": false,
       "sources": [
@@ -17626,8 +17626,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": 3075,
-      "y": -130,
+      "x": 2596,
+      "y": 291,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -17657,8 +17657,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": 611,
-      "y": 335,
+      "x": 358,
+      "y": -202,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -17698,8 +17698,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": -1033,
-      "y": 201,
+      "x": -360,
+      "y": 726,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -17729,8 +17729,8 @@
       "metadata": [
         "Guitar"
       ],
-      "x": 3534,
-      "y": -492,
+      "x": 3575,
+      "y": -377,
       "zone": "guitar-workshop",
       "starter": false,
       "sources": [
@@ -17757,8 +17757,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 2733,
-      "y": 145,
+      "x": 2496,
+      "y": 806,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -17799,8 +17799,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 391,
-      "y": -52,
+      "x": 938,
+      "y": 193,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -17830,8 +17830,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 1482,
-      "y": 926,
+      "x": 1528,
+      "y": 769,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -17871,8 +17871,8 @@
       "metadata": [
         "Guitarist"
       ],
-      "x": 2869,
-      "y": 209,
+      "x": 2831,
+      "y": -425,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -17903,8 +17903,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": -472,
-      "y": -414,
+      "x": -659,
+      "y": 1008,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -17934,8 +17934,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": -600,
-      "y": -329,
+      "x": 1076,
+      "y": 766,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -17965,8 +17965,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": 446,
-      "y": -488,
+      "x": -615,
+      "y": -71,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -17996,8 +17996,8 @@
       "metadata": [
         "Guitar"
       ],
-      "x": 3857,
-      "y": -349,
+      "x": 3818,
+      "y": -367,
       "zone": "guitar-workshop",
       "starter": false,
       "sources": [
@@ -18024,8 +18024,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 210,
-      "y": 623,
+      "x": -72,
+      "y": 309,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -18055,8 +18055,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": -349,
-      "y": -942,
+      "x": -498,
+      "y": -964,
       "zone": "psychedelia-prog",
       "starter": false,
       "sources": [
@@ -18093,8 +18093,8 @@
       "metadata": [
         "Genre"
       ],
-      "x": 1690,
-      "y": 143,
+      "x": 1672,
+      "y": 60,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -18129,8 +18129,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": 2502,
-      "y": 570,
+      "x": 2365,
+      "y": 661,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -18161,8 +18161,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": -144,
-      "y": -266,
+      "x": 101,
+      "y": 533,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -18192,8 +18192,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": 833,
-      "y": 143,
+      "x": -385,
+      "y": 86,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -18224,8 +18224,8 @@
       "metadata": [
         "Guitarist"
       ],
-      "x": 711,
-      "y": 874,
+      "x": 1027,
+      "y": -282,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -18256,8 +18256,8 @@
       "metadata": [
         "Guitarist"
       ],
-      "x": -161,
-      "y": 520,
+      "x": 396,
+      "y": 567,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -18287,8 +18287,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": -264,
-      "y": -542,
+      "x": 268,
+      "y": 1315,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -18319,8 +18319,8 @@
       "metadata": [
         "Guitarist"
       ],
-      "x": 874,
-      "y": -508,
+      "x": -500,
+      "y": -15,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -18350,8 +18350,8 @@
       "metadata": [
         "Band"
       ],
-      "x": -496,
-      "y": 275,
+      "x": -495,
+      "y": 981,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -18386,8 +18386,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": 3024,
-      "y": 193,
+      "x": 2034,
+      "y": 404,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -18423,8 +18423,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": 975,
-      "y": -397,
+      "x": -760,
+      "y": 421,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -18455,8 +18455,8 @@
       "metadata": [
         "Guitarist"
       ],
-      "x": 2770,
-      "y": 309,
+      "x": 2671,
+      "y": 173,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -18492,8 +18492,8 @@
       "metadata": [
         "Guitar"
       ],
-      "x": 4210,
-      "y": 180,
+      "x": 4207,
+      "y": 183,
       "zone": "guitar-workshop",
       "starter": false,
       "sources": [
@@ -18584,8 +18584,8 @@
       "metadata": [
         "Guitarist"
       ],
-      "x": -1653,
-      "y": 360,
+      "x": -1724,
+      "y": -249,
       "zone": "roots-blues",
       "starter": false,
       "sources": [
@@ -18608,8 +18608,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 3292,
-      "y": 820,
+      "x": 2996,
+      "y": -415,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -18632,8 +18632,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 1217,
-      "y": 1264,
+      "x": 1227,
+      "y": 1228,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -18656,8 +18656,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 3135,
-      "y": 914,
+      "x": 2808,
+      "y": -725,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -18680,8 +18680,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 2108,
-      "y": 2081,
+      "x": 2099,
+      "y": 2080,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -18704,8 +18704,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": -1748,
-      "y": -405,
+      "x": -1702,
+      "y": -425,
       "zone": "roots-blues",
       "starter": false,
       "sources": [
@@ -18728,8 +18728,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 2463,
-      "y": 1287,
+      "x": 2471,
+      "y": 1294,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -18752,8 +18752,8 @@
       "metadata": [
         "Artist"
       ],
-      "x": 1818,
-      "y": 1717,
+      "x": 1826,
+      "y": 1756,
       "zone": "punk-alt",
       "starter": false,
       "sources": [
@@ -18761,6 +18761,447 @@
           "label": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Brian_Cook_%28musician%29",
           "provider": "wikipedia"
+        }
+      ],
+      "curatorTags": []
+    },
+    {
+      "id": "louis-armstrong",
+      "label": "Louis Armstrong",
+      "type": "artist",
+      "roles": [
+        "artist"
+      ],
+      "summary": "Louis Daniel Armstrong (August 4, 1901 – July 6, 1971), nicknamed \"Satchmo\", \"Satch\", and \"Pops\", was an American jazz and blues trumpeter and vocalist. Among the most influential figures in jazz, his career spanned five decades and several eras in the history of the genre.",
+      "metadata": [
+        "Artist"
+      ],
+      "x": -1613,
+      "y": -1434,
+      "zone": "jazz",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Louis_Armstrong",
+          "provider": "wikipedia"
+        },
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1779",
+          "provider": "wikidata"
+        },
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/eea8a864-fcda-4602-9569-38ab446decd6",
+          "provider": "musicbrainz"
+        }
+      ],
+      "curatorTags": []
+    },
+    {
+      "id": "duke-ellington",
+      "label": "Duke Ellington",
+      "type": "artist",
+      "roles": [
+        "artist"
+      ],
+      "summary": "Edward Kennedy \"Duke\" Ellington (April 29, 1899 – May 24, 1974) was an American jazz pianist, composer, and leader of his eponymous jazz orchestra from 1924 through the rest of his life. Music critic Ralph J.",
+      "metadata": [
+        "Artist"
+      ],
+      "x": -1834,
+      "y": -1383,
+      "zone": "jazz",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Duke_Ellington",
+          "provider": "wikipedia"
+        },
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q4030",
+          "provider": "wikidata"
+        },
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/3af06bc4-68ad-4cae-bb7a-7eeeb45e411f",
+          "provider": "musicbrainz"
+        }
+      ],
+      "curatorTags": []
+    },
+    {
+      "id": "charlie-parker",
+      "label": "Charlie Parker",
+      "type": "artist",
+      "roles": [
+        "artist"
+      ],
+      "summary": "Charles Parker Jr. (August 29, 1920 – March 12, 1955), nicknamed \"Bird\" or \"Yardbird\", was an American jazz saxophonist, bandleader, and composer.",
+      "metadata": [
+        "Artist"
+      ],
+      "x": -1360,
+      "y": -1157,
+      "zone": "jazz",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Charlie_Parker",
+          "provider": "wikipedia"
+        },
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q103767",
+          "provider": "wikidata"
+        },
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/c7356af9-9ea6-4a78-a55b-c73775716312",
+          "provider": "musicbrainz"
+        }
+      ],
+      "curatorTags": []
+    },
+    {
+      "id": "miles-davis",
+      "label": "Miles Davis",
+      "type": "artist",
+      "roles": [
+        "artist"
+      ],
+      "summary": "Miles Dewey Davis III (May 26, 1926 – September 28, 1991) was an American trumpeter, bandleader, composer, and painter. He is among the most influential and acclaimed figures in the history of jazz and 20th-century music.",
+      "metadata": [
+        "Artist"
+      ],
+      "x": -1572,
+      "y": -1140,
+      "zone": "jazz",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Miles_Davis",
+          "provider": "wikipedia"
+        },
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q93341",
+          "provider": "wikidata"
+        },
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+          "provider": "musicbrainz"
+        }
+      ],
+      "curatorTags": []
+    },
+    {
+      "id": "john-coltrane",
+      "label": "John Coltrane",
+      "type": "artist",
+      "roles": [
+        "artist"
+      ],
+      "summary": "John William Coltrane (September 23, 1926 – July 17, 1967) was an American jazz saxophonist, bandleader, and composer. He is among the most influential and acclaimed figures in the history of jazz and 20th-century music.",
+      "metadata": [
+        "Artist"
+      ],
+      "x": -1350,
+      "y": -1342,
+      "zone": "jazz",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/John_Coltrane",
+          "provider": "wikipedia"
+        },
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q7346",
+          "provider": "wikidata"
+        },
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/b625448e-bf4a-41c3-a421-72ad46cdb831",
+          "provider": "musicbrainz"
+        }
+      ],
+      "curatorTags": []
+    },
+    {
+      "id": "swing-music",
+      "label": "Swing music",
+      "type": "genre",
+      "roles": [
+        "genre"
+      ],
+      "summary": "Swing music is a style of jazz that developed in the United States during the late 1920s and early 1930s. It became nationally popular from the mid-1930s.",
+      "metadata": [
+        "Genre"
+      ],
+      "x": -990,
+      "y": -1323,
+      "zone": "jazz",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Swing_music",
+          "provider": "wikipedia"
+        },
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q203775",
+          "provider": "wikidata"
+        }
+      ],
+      "curatorTags": []
+    },
+    {
+      "id": "bebop",
+      "label": "Bebop",
+      "type": "genre",
+      "roles": [
+        "genre"
+      ],
+      "summary": "Bebop or bop is a style of jazz developed in the early to mid-1940s in the United States. It is characterized by a fast tempo, complex chord progressions—with rapid chord changes, changes of key, angular melodies and substitute chords—along with virtuosic improvisation based on a combination of harmonic structure, scales, and occasional references to the melody.",
+      "metadata": [
+        "Genre"
+      ],
+      "x": -1495,
+      "y": -973,
+      "zone": "jazz",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Bebop",
+          "provider": "wikipedia"
+        },
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q105513",
+          "provider": "wikidata"
+        }
+      ],
+      "curatorTags": []
+    },
+    {
+      "id": "jimmie-rodgers",
+      "label": "Jimmie Rodgers",
+      "type": "artist",
+      "roles": [
+        "artist"
+      ],
+      "summary": "James Charles Rodgers ((1897-09-08)September 8, 1897 – (1933-05-26)May 26, 1933) was an American singer, songwriter, and musician who rose to popularity in the late 1920s. Known as Jimmie Rodgers and widely regarded as the \"Father of Country Music\", he is best known for his distinctive yodeling.",
+      "metadata": [
+        "Artist"
+      ],
+      "x": -2270,
+      "y": 657,
+      "zone": "country-roots",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Jimmie_Rodgers",
+          "provider": "wikipedia"
+        },
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/394492c0-cecf-40a8-b676-0e5706317fab",
+          "provider": "musicbrainz"
+        }
+      ],
+      "curatorTags": []
+    },
+    {
+      "id": "the-carter-family",
+      "label": "The Carter Family",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "The Carter Family was an American folk music group that recorded and performed between 1927 and 1956. Regarded as one of the most important music acts of the early 20th century, they had a profound influence on the development of bluegrass, country, southern gospel, pop, and rock, as well as the American folk revival in the 1960s.",
+      "metadata": [
+        "Band"
+      ],
+      "x": -2458,
+      "y": 654,
+      "zone": "country-roots",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Carter_Family",
+          "provider": "wikipedia"
+        },
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/29c5b1fb-5dcc-4499-b225-4ceeeb8a73d1",
+          "provider": "musicbrainz"
+        }
+      ],
+      "curatorTags": []
+    },
+    {
+      "id": "hank-williams",
+      "label": "Hank Williams",
+      "type": "artist",
+      "roles": [
+        "artist"
+      ],
+      "summary": "Hiram \"Hank\" Williams (September 17, 1923 – January 1, 1953) was an American singer, songwriter, and musician. An early pioneer of country music, he is regarded as one of the most significant and influential musicians of the 20th century.",
+      "metadata": [
+        "Artist"
+      ],
+      "x": -2658,
+      "y": 609,
+      "zone": "country-roots",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Hank_Williams",
+          "provider": "wikipedia"
+        },
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/906bddec-bc73-49f8-ac1e-eaee691c6cf9",
+          "provider": "musicbrainz"
+        }
+      ],
+      "curatorTags": []
+    },
+    {
+      "id": "bill-monroe",
+      "label": "Bill Monroe",
+      "type": "artist",
+      "roles": [
+        "artist"
+      ],
+      "summary": "William Smith Monroe ( mən-ROH; September 13, 1911 – September 9, 1996) was an American mandolinist, singer, and songwriter who created the bluegrass music genre. For this reason, he is often called the \"Father of Bluegrass\".",
+      "metadata": [
+        "Artist"
+      ],
+      "x": -3058,
+      "y": 996,
+      "zone": "country-roots",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Bill_Monroe",
+          "provider": "wikipedia"
+        },
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q170042",
+          "provider": "wikidata"
+        },
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/2a2be593-6984-4640-8cf1-717ec7a6e18b",
+          "provider": "musicbrainz"
+        }
+      ],
+      "curatorTags": []
+    },
+    {
+      "id": "patsy-cline",
+      "label": "Patsy Cline",
+      "type": "artist",
+      "roles": [
+        "artist"
+      ],
+      "summary": "Patsy Cline (born Virginia Patterson Hensley; September 8, 1932 – March 5, 1963) was an American singer. One of the most influential vocalists of the 20th century, she was known as one of the first country music artists to successfully cross over into pop music.",
+      "metadata": [
+        "Artist"
+      ],
+      "x": -2994,
+      "y": 796,
+      "zone": "country-roots",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Patsy_Cline",
+          "provider": "wikipedia"
+        },
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/ad82dd72-0df3-4a09-8d7a-1af9c9e80522",
+          "provider": "musicbrainz"
+        }
+      ],
+      "curatorTags": []
+    },
+    {
+      "id": "merle-haggard",
+      "label": "Merle Haggard",
+      "type": "artist",
+      "roles": [
+        "artist"
+      ],
+      "summary": "Merle Ronald Haggard (April 6, 1937 – April 6, 2016) was an American country music singer, songwriter, guitarist, and fiddler. Widely regarded as one of the greatest and most influential figures in country music, he was a central pioneer of the Bakersfield sound.",
+      "metadata": [
+        "Artist"
+      ],
+      "x": -2214,
+      "y": 305,
+      "zone": "country-roots",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Merle_Haggard",
+          "provider": "wikipedia"
+        },
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q183092",
+          "provider": "wikidata"
+        },
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/deb2448c-6fdf-4d31-921e-757630515dbd",
+          "provider": "musicbrainz"
+        }
+      ],
+      "curatorTags": []
+    },
+    {
+      "id": "honky-tonk",
+      "label": "Honky-tonk",
+      "type": "genre",
+      "roles": [
+        "genre"
+      ],
+      "summary": "The term honky-tonk (also called honkatonk, honkey-tonk, honky tonk, or tonk) refers either to a bar that provides country music for the entertainment of its patrons, or to the particular genre of music which is played at such establishments itself. It can also refer to the type of piano (a tack piano) used to play such music.",
+      "metadata": [
+        "Genre"
+      ],
+      "x": -2264,
+      "y": 1053,
+      "zone": "country-roots",
+      "starter": false,
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Honky-tonk",
+          "provider": "wikipedia"
+        },
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1627155",
+          "provider": "wikidata"
         }
       ],
       "curatorTags": []
@@ -29798,6 +30239,474 @@
           "label": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Fugazi",
           "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "curated-louis-armstrong-jazz-associated_genre",
+      "source": "louis-armstrong",
+      "target": "jazz",
+      "type": "associated_genre",
+      "label": "early jazz innovator",
+      "strength": 0.78,
+      "context": [
+        "Armstrong reshaped jazz improvisation."
+      ],
+      "sources": [
+        {
+          "label": "Jazz at Lincoln Center",
+          "url": "https://jazz.org/education/school-programs/let-freedom-swing/what-is-jazz/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "curated-duke-ellington-jazz-associated_genre",
+      "source": "duke-ellington",
+      "target": "jazz",
+      "type": "associated_genre",
+      "label": "jazz orchestra leader",
+      "strength": 0.78,
+      "context": [
+        "Ellington joined composition and improvisation in jazz."
+      ],
+      "sources": [
+        {
+          "label": "Jazz at Lincoln Center",
+          "url": "https://jazz.org/education/school-programs/let-freedom-swing/what-is-jazz/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "curated-duke-ellington-swing-music-associated_genre",
+      "source": "duke-ellington",
+      "target": "swing-music",
+      "type": "associated_genre",
+      "label": "swing-era orchestra",
+      "strength": 0.78,
+      "context": [
+        "Ellington led one of jazz's major swing-era orchestras."
+      ],
+      "sources": [
+        {
+          "label": "Jazz at Lincoln Center",
+          "url": "https://jazz.org/education/school-programs/let-freedom-swing/what-is-jazz/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "curated-swing-music-jazz-associated_genre",
+      "source": "swing-music",
+      "target": "jazz",
+      "type": "associated_genre",
+      "label": "jazz era",
+      "strength": 0.78,
+      "context": [
+        "Swing grew within the jazz tradition."
+      ],
+      "sources": [
+        {
+          "label": "Jazz at Lincoln Center",
+          "url": "https://jazz.org/education/school-programs/let-freedom-swing/what-is-jazz/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "curated-bebop-jazz-associated_genre",
+      "source": "bebop",
+      "target": "jazz",
+      "type": "associated_genre",
+      "label": "jazz movement",
+      "strength": 0.78,
+      "context": [
+        "Bebop followed the swing era as a jazz movement."
+      ],
+      "sources": [
+        {
+          "label": "Jazz at Lincoln Center",
+          "url": "https://jazz.org/education/school-programs/let-freedom-swing/what-is-jazz/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "curated-charlie-parker-bebop-associated_genre",
+      "source": "charlie-parker",
+      "target": "bebop",
+      "type": "associated_genre",
+      "label": "bebop innovator",
+      "strength": 0.78,
+      "context": [
+        "Parker was a central voice in bebop."
+      ],
+      "sources": [
+        {
+          "label": "Smithsonian",
+          "url": "https://www.smithsonianmag.com/arts-culture/miles-davis-emerged-middle-america-become-picasso-jazz-taught-us-all-how-to-be-cool-180987828/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "curated-miles-davis-bebop-associated_genre",
+      "source": "miles-davis",
+      "target": "bebop",
+      "type": "associated_genre",
+      "label": "bebop beginnings",
+      "strength": 0.78,
+      "context": [
+        "Davis played with Charlie Parker before his later jazz phases."
+      ],
+      "sources": [
+        {
+          "label": "Smithsonian",
+          "url": "https://www.smithsonianmag.com/arts-culture/miles-davis-emerged-middle-america-become-picasso-jazz-taught-us-all-how-to-be-cool-180987828/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "curated-miles-davis-jazz-fusion-associated_genre",
+      "source": "miles-davis",
+      "target": "jazz-fusion",
+      "type": "associated_genre",
+      "label": "jazz-rock fusion",
+      "strength": 0.78,
+      "context": [
+        "Davis brought rock influences into his late-1960s jazz recordings."
+      ],
+      "sources": [
+        {
+          "label": "Smithsonian National Museum of American History",
+          "url": "https://www.smithsonianmag.com/smithsonian-institution/Smithsonian-jazz-expert-gives-liner-notes-to-new-miles-davis-biopic-180958658/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "curated-miles-davis-john-coltrane-related",
+      "source": "miles-davis",
+      "target": "john-coltrane",
+      "type": "related",
+      "label": "played together",
+      "strength": 0.78,
+      "context": [
+        "Coltrane worked with Davis during a pivotal period of modern jazz."
+      ],
+      "sources": [
+        {
+          "label": "Smithsonian National Museum of American History",
+          "url": "https://www.smithsonianmag.com/smithsonian-institution/Smithsonian-jazz-expert-gives-liner-notes-to-new-miles-davis-biopic-180958658/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "curated-john-coltrane-jazz-associated_genre",
+      "source": "john-coltrane",
+      "target": "jazz",
+      "type": "associated_genre",
+      "label": "modern jazz",
+      "strength": 0.78,
+      "context": [
+        "Coltrane became a major voice in modern jazz."
+      ],
+      "sources": [
+        {
+          "label": "Smithsonian National Museum of American History",
+          "url": "https://www.smithsonianmag.com/smithsonian-institution/Smithsonian-jazz-expert-gives-liner-notes-to-new-miles-davis-biopic-180958658/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "curated-jimmie-rodgers-country-associated_genre",
+      "source": "jimmie-rodgers",
+      "target": "country",
+      "type": "associated_genre",
+      "label": "early country pioneer",
+      "strength": 0.78,
+      "context": [
+        "Rodgers helped establish early country music."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://www.countrymusichalloffame.org/hall-of-fame/jimmie-rodgers",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "curated-jimmie-rodgers-blues-associated_genre",
+      "source": "jimmie-rodgers",
+      "target": "blues",
+      "type": "associated_genre",
+      "label": "country-blues crossover",
+      "strength": 0.78,
+      "context": [
+        "Rodgers fused country with blues phrasing."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/jimmie-rodgers/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "curated-jimmie-rodgers-rock-and-roll-related",
+      "source": "jimmie-rodgers",
+      "target": "rock-and-roll",
+      "type": "related",
+      "label": "rock and roll influence",
+      "strength": 0.78,
+      "context": [
+        "His country-blues fusion became an early framework for rock and roll."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/jimmie-rodgers/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "curated-the-carter-family-country-associated_genre",
+      "source": "the-carter-family",
+      "target": "country",
+      "type": "associated_genre",
+      "label": "early country foundation",
+      "strength": 0.78,
+      "context": [
+        "The Carter Family shaped country harmony singing and guitar style."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://www.countrymusichalloffame.org/hall-of-fame/carter-family",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "curated-the-carter-family-folk-associated_genre",
+      "source": "the-carter-family",
+      "target": "folk",
+      "type": "associated_genre",
+      "label": "folk repertoire",
+      "strength": 0.78,
+      "context": [
+        "The group drew on British folk ballads and other traditional songs."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://www.countrymusichalloffame.org/hall-of-fame/carter-family",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "curated-the-carter-family-blues-associated_genre",
+      "source": "the-carter-family",
+      "target": "blues",
+      "type": "associated_genre",
+      "label": "blues repertoire",
+      "strength": 0.78,
+      "context": [
+        "The Carter Family also performed blues material."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://www.countrymusichalloffame.org/hall-of-fame/carter-family",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "curated-hank-williams-country-associated_genre",
+      "source": "hank-williams",
+      "target": "country",
+      "type": "associated_genre",
+      "label": "country songwriter",
+      "strength": 0.78,
+      "context": [
+        "Williams shaped country songwriting in the late 1940s and early 1950s."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://www.countrymusichalloffame.org/hall-of-fame/hank-williams",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "curated-hank-williams-honky-tonk-associated_genre",
+      "source": "hank-williams",
+      "target": "honky-tonk",
+      "type": "associated_genre",
+      "label": "honky-tonk voice",
+      "strength": 0.78,
+      "context": [
+        "His honky-tonk repertoire became central to postwar country."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://www.countrymusichalloffame.org/hall-of-fame/hank-williams",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "curated-bill-monroe-bluegrass-associated_genre",
+      "source": "bill-monroe",
+      "target": "bluegrass",
+      "type": "associated_genre",
+      "label": "bluegrass pioneer",
+      "strength": 0.78,
+      "context": [
+        "Monroe's band and acoustic sound helped define bluegrass."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://www.countrymusichalloffame.org/hall-of-fame/bill-monroe",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "curated-bill-monroe-jimmie-rodgers-related",
+      "source": "bill-monroe",
+      "target": "jimmie-rodgers",
+      "type": "related",
+      "label": "recorded Rodgers material",
+      "strength": 0.78,
+      "context": [
+        "Monroe's early repertoire included Jimmie Rodgers material."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://www.countrymusichalloffame.org/hall-of-fame/bill-monroe",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "curated-patsy-cline-country-associated_genre",
+      "source": "patsy-cline",
+      "target": "country",
+      "type": "associated_genre",
+      "label": "country vocalist",
+      "strength": 0.78,
+      "context": [
+        "Cline was a landmark country vocalist."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://www.countrymusichalloffame.org/hall-of-fame/patsy-cline",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "curated-patsy-cline-willie-nelson-related",
+      "source": "patsy-cline",
+      "target": "willie-nelson",
+      "type": "related",
+      "label": "recorded Nelson composition",
+      "strength": 0.78,
+      "context": [
+        "Cline recorded a Willie Nelson composition during her career."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://www.countrymusichalloffame.org/hall-of-fame/patsy-cline",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "curated-merle-haggard-country-associated_genre",
+      "source": "merle-haggard",
+      "target": "country",
+      "type": "associated_genre",
+      "label": "country songwriter",
+      "strength": 0.78,
+      "context": [
+        "Haggard was an influential country singer-songwriter."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://www.countrymusichalloffame.org/hall-of-fame/merle-haggard",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "curated-merle-haggard-honky-tonk-associated_genre",
+      "source": "merle-haggard",
+      "target": "honky-tonk",
+      "type": "associated_genre",
+      "label": "honky-tonk tradition",
+      "strength": 0.78,
+      "context": [
+        "Haggard drew heavily on honky-tonk."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://www.countrymusichalloffame.org/hall-of-fame/merle-haggard",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "curated-merle-haggard-jazz-associated_genre",
+      "source": "merle-haggard",
+      "target": "jazz",
+      "type": "associated_genre",
+      "label": "jazz influence",
+      "strength": 0.78,
+      "context": [
+        "Haggard's style drew from jazz as well as country and blues."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://www.countrymusichalloffame.org/hall-of-fame/merle-haggard",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "curated-honky-tonk-country-associated_genre",
+      "source": "honky-tonk",
+      "target": "country",
+      "type": "associated_genre",
+      "label": "country tradition",
+      "strength": 0.78,
+      "context": [
+        "Honky-tonk is a central country style."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://www.countrymusichalloffame.org/hall-of-fame/merle-haggard",
+          "provider": "other"
         }
       ]
     },
