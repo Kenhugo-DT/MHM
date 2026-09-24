@@ -173,6 +173,7 @@ disable the stale layouts.
 
 Use `brain/supabase/scheduler/` to let Supabase Cron wake the GitHub workflow.
 
-GitHub's own scheduled workflow trigger is disabled. Supabase stores
-the GitHub token in Vault, calls GitHub's `workflow_dispatch` API on Mondays and
-Thursdays at 09:05 UTC, and the workflow runs the existing scout agent.
+Supabase stores the GitHub token in Vault, calls GitHub's `workflow_dispatch`
+API on Mondays and Thursdays at 09:05 UTC, and the workflow runs the existing
+scout agent. GitHub has a 10:20 UTC backup schedule. Its guard skips work if a
+successful dispatch run has already started since 09:05 UTC that day.

@@ -15,16 +15,51 @@ on:
         description: "Optional run note."
         required: false
         default: ""
+  schedule:
+    # Backup if the Supabase Cron dispatch did not complete successfully.
+    - cron: "20 10 * * 1,4"
 
 concurrency:
   group: mhm-research-agent
   cancel-in-progress: false
 
 permissions:
+  actions: read
   contents: read
 
 jobs:
+  schedule-guard:
+    runs-on: ubuntu-latest
+    outputs:
+      should_run: ${{ steps.check.outputs.should_run }}
+    steps:
+      - id: check
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ "$GITHUB_EVENT_NAME" != "schedule" ]; then
+            echo "should_run=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          since="$(date -u +%Y-%m-%d)T09:05:00Z"
+          if ! response=$(curl -fsS --max-time 10 \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/$GITHUB_REPOSITORY/actions/workflows/research-agent.yml/runs?event=workflow_dispatch&per_page=50"); then
+            echo "should_run=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          if printf '%s' "$response" | jq -e --arg since "$since" \
+            'any(.workflow_runs[]; .created_at >= $since and .conclusion == "success")' > /dev/null; then
+            echo "should_run=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "should_run=true" >> "$GITHUB_OUTPUT"
+          fi
   scout:
+    needs: schedule-guard
+    if: needs.schedule-guard.outputs.should_run == 'true'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
