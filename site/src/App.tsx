@@ -202,22 +202,6 @@ export default function App() {
 
   useEffect(() => {
     let cancelled = false;
-    repository
-      .loadLayouts()
-      .then((layoutData) => {
-        if (!cancelled && layoutData) setLayouts(layoutData);
-      })
-      .catch(() => {
-        if (!cancelled) setLayouts(undefined);
-      });
-
-    return () => {
-      cancelled = true;
-    };
-  }, []);
-
-  useEffect(() => {
-    let cancelled = false;
     setLoading(true);
     setError("");
     setVisibleTypes(new Set(MODE_TYPES[mode]));
@@ -228,6 +212,8 @@ export default function App() {
         if (cancelled) return;
         setNodes(graph.nodes);
         setEdges(graph.edges);
+        setLayouts(graph.layouts);
+        if (!graph.layouts) setLayoutMode("organized");
         const candidates = graph.nodes.filter((node) => node.starter);
         setStarterNodes(shuffle(candidates.length >= 6 ? candidates : graph.nodes).slice(0, 6));
       })
@@ -571,6 +557,8 @@ export default function App() {
               value={layoutMode}
               onChange={(event) => setLayoutMode(event.target.value as LayoutMode)}
               aria-label="Map layout"
+              disabled={!layouts}
+              title={layouts ? "Choose map layout" : "Layouts are updating for this map"}
             >
               {LAYOUT_OPTIONS.map((option) => (
                 <option key={option.id} value={option.id}>

@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { graphFingerprint, MODE_NODE_TYPES } from "../../shared/graph-schema/graph-snapshot.mjs";
 import { ORGANIZED_MAP_ZONES } from "./organize-graph-layout.mjs";
 
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
@@ -566,6 +567,11 @@ const dataset = {
     learningModel ? "learning model" : undefined,
     organizationModel ? "organization model" : undefined,
   ].filter(Boolean).join(" + "),
+  graphFingerprints: Object.fromEntries(
+    await Promise.all(
+      Object.keys(MODE_NODE_TYPES).map(async (mode) => [mode, await graphFingerprint(graph, mode)]),
+    ),
+  ),
   layouts,
 };
 

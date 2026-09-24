@@ -15,9 +15,10 @@ on:
         description: "Optional run note."
         required: false
         default: ""
-  schedule:
-    # Mondays and Thursdays at 09:05 UTC.
-    - cron: "5 9 * * 1,4"
+
+concurrency:
+  group: mhm-research-agent
+  cancel-in-progress: false
 
 permissions:
   contents: read

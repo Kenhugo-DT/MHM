@@ -1,13 +1,17 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-24T12:12:27.958Z",
+  "generatedAt": "2026-09-24T14:55:20.136Z",
   "source": "approved graph + learning model + organization model",
+  "graphFingerprints": {
+    "artists": "78ab6bfb525893ddaee5bca962ef770041aff8786616dcc06984c91aa491189b",
+    "guitars": "ae98d9855a2f0d876c2365668a9debff26f0dd4e7bbc49f8cdafd1a44912427d"
+  },
   "layouts": {
     "organized": {
       "id": "organized",
       "label": "Map",
       "description": "Current brain-organized map positions.",
-      "generatedAt": "2026-09-24T12:12:27.958Z",
+      "generatedAt": "2026-09-24T14:55:20.136Z",
       "nodes": {
         "3": {
           "x": -854,
@@ -3525,7 +3529,7 @@
       "id": "genre",
       "label": "Genres",
       "description": "Genre-led clusters with bridge nodes pulled toward related scenes.",
-      "generatedAt": "2026-09-24T12:12:27.958Z",
+      "generatedAt": "2026-09-24T14:55:20.136Z",
       "nodes": {
         "3": {
           "x": 747,
@@ -7043,7 +7047,7 @@
       "id": "timeline",
       "label": "Timeline",
       "description": "Older scenes left, newer scenes right, with zones kept as loose lanes.",
-      "generatedAt": "2026-09-24T12:12:27.958Z",
+      "generatedAt": "2026-09-24T14:55:20.136Z",
       "nodes": {
         "3": {
           "x": 451,
@@ -10561,7 +10565,7 @@
       "id": "alphabetic",
       "label": "A-Z",
       "description": "A simple training layout sorted by label.",
-      "generatedAt": "2026-09-24T12:12:27.958Z",
+      "generatedAt": "2026-09-24T14:55:20.136Z",
       "nodes": {
         "3": {
           "x": -948,
@@ -14079,7 +14083,7 @@
       "id": "chaos",
       "label": "Chaos",
       "description": "Seeded loose layout for stress-testing readable disorder.",
-      "generatedAt": "2026-09-24T12:12:27.958Z",
+      "generatedAt": "2026-09-24T14:55:20.136Z",
       "nodes": {
         "3": {
           "x": -539,

@@ -92,6 +92,7 @@ export interface GraphLayoutDataset {
   version: number;
   generatedAt: string;
   source: string;
+  graphFingerprints?: Record<MapMode, string>;
   layouts: Record<LayoutMode, GraphLayout>;
 }
 
@@ -99,6 +100,10 @@ export interface GraphNeighborhood {
   centerId?: string;
   nodes: GraphNode[];
   edges: GraphEdge[];
+}
+
+export interface GraphMapSnapshot extends GraphNeighborhood {
+  layouts?: GraphLayoutDataset;
 }
 
 export interface BrowseRoute {

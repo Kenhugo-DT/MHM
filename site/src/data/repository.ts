@@ -3,6 +3,7 @@ import type {
   GraphDataset,
   GraphEdge,
   GraphLayoutDataset,
+  GraphMapSnapshot,
   GraphNeighborhood,
   GraphNode,
   MapMode,
@@ -10,11 +11,12 @@ import type {
 } from "../types/graph";
 import { filterExcludedEntities, isIncludedNode } from "../lib/excluded-entities";
 import { MODE_TYPES } from "../lib/graph-config";
+import { matchingLayouts } from "../../../shared/graph-schema/graph-snapshot.mjs";
+import { loadAllRows } from "./load-all-rows.mjs";
 
 export interface GraphRepository {
   readonly source: "local" | "supabase";
-  loadLayouts(): Promise<GraphLayoutDataset | undefined>;
-  loadMap(mode: MapMode): Promise<GraphNeighborhood>;
+  loadMap(mode: MapMode): Promise<GraphMapSnapshot>;
   loadNeighborhood(nodeId: string, depth?: number): Promise<GraphNeighborhood>;
   search(query: string, limit?: number): Promise<GraphNode[]>;
 }
@@ -54,20 +56,17 @@ function loadLocalLayouts(): Promise<GraphLayoutDataset | undefined> {
 class LocalGraphRepository implements GraphRepository {
   readonly source = "local" as const;
 
-  async loadLayouts(): Promise<GraphLayoutDataset | undefined> {
-    return loadLocalLayouts();
-  }
-
-  async loadMap(mode: MapMode): Promise<GraphNeighborhood> {
-    const dataset = await loadLocalDataset();
+  async loadMap(mode: MapMode): Promise<GraphMapSnapshot> {
+    const [dataset, layouts] = await Promise.all([loadLocalDataset(), loadLocalLayouts()]);
     const nodes = dataset.nodes.filter((node) => MODE_TYPES[mode].has(node.type));
     const ids = new Set(nodes.map((node) => node.id));
-    return filterExcludedEntities({
+    const graph = filterExcludedEntities({
       nodes,
       edges: dataset.edges.filter(
         (edge) => ids.has(edge.source) && ids.has(edge.target),
       ),
     });
+    return { ...graph, layouts: await matchingLayouts(graph, mode, layouts) };
   }
 
   async loadNeighborhood(nodeId: string, depth = 1): Promise<GraphNeighborhood> {
@@ -140,6 +139,9 @@ interface RelationRow {
   sources: GraphEdge["sources"] | null;
 }
 
+const ENTITY_COLUMNS = "id,label,node_type,roles,summary,metadata,aliases,map_x,map_y,map_zone,starter,image,sources";
+const RELATION_COLUMNS = "id,source_id,target_id,relation_type,label,strength,context,year,sources";
+
 function mapNode(row: EntityRow): GraphNode {
   return {
     id: row.id,
@@ -190,23 +192,39 @@ class SupabaseGraphRepository implements GraphRepository {
     return this.clientPromise;
   }
 
-  async loadLayouts(): Promise<GraphLayoutDataset | undefined> {
-    return loadLocalLayouts();
-  }
-
-  async loadMap(mode: MapMode): Promise<GraphNeighborhood> {
+  async loadMap(mode: MapMode): Promise<GraphMapSnapshot> {
     const types = [...MODE_TYPES[mode]];
     const client = await this.client();
-    const { data, error } = await client.rpc("graph_map", {
-      node_types: types,
-      entity_limit: 800,
+    const [entities, relations, layouts, baseline] = await Promise.all([
+      loadAllRows<EntityRow>(async (afterId, pageSize) => {
+        let query = client.from("entities").select(ENTITY_COLUMNS).in("node_type", types).order("id").limit(pageSize);
+        if (afterId) query = query.gt("id", afterId);
+        const { data, error } = await query;
+        if (error) throw error;
+        return (data ?? []) as EntityRow[];
+      }),
+      loadAllRows<RelationRow>(async (afterId, pageSize) => {
+        let query = client.from("relations").select(RELATION_COLUMNS).order("id").limit(pageSize);
+        if (afterId) query = query.gt("id", afterId);
+        const { data, error } = await query;
+        if (error) throw error;
+        return (data ?? []) as RelationRow[];
+      }),
+      loadLocalLayouts(),
+      loadLocalDataset(),
+    ]);
+    const nodes = entities.map(mapNode);
+    const ids = new Set(nodes.map((node) => node.id));
+    const graph = filterExcludedEntities({
+      nodes,
+      edges: relations
+        .filter((edge) => ids.has(edge.source_id) && ids.has(edge.target_id))
+        .map(mapEdge),
     });
-    if (error) throw error;
-    const payload = data as { nodes: EntityRow[]; edges: RelationRow[] };
-    return filterExcludedEntities({
-      nodes: payload.nodes.map(mapNode),
-      edges: payload.edges.map(mapEdge),
-    });
+    return {
+      ...graph,
+      layouts: await matchingLayouts(graph, mode, layouts, filterExcludedEntities(baseline)),
+    };
   }
 
   async loadNeighborhood(nodeId: string): Promise<GraphNeighborhood> {

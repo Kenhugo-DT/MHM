@@ -162,13 +162,17 @@ Candidate proposals appear in:
 Approved facts still need a human review before they are promoted. The promote
 step writes durable additions to `brain/data/approved/promotions.json`;
 `migrate:data` rebuilds `brain/data/approved/graph.json` and
-`site/public/data/graph.json`; `brain:import` publishes the same graph to the
-public Supabase tables.
+`site/public/data/graph.json` plus five versioned layouts; `brain:import`
+publishes the graph to the public Supabase tables. The site loads live map rows
+in pages and checks that the published layouts still match their approved
+baseline. Additional live nodes remain visible at their stored map positions
+until the next layout rebuild; changed or missing baseline nodes and relations
+disable the stale layouts.
 
 ## 9. Schedule The Scout Agent
 
 Use `brain/supabase/scheduler/` to let Supabase Cron wake the GitHub workflow.
 
-This avoids relying on GitHub's own scheduled workflow trigger. Supabase stores
+GitHub's own scheduled workflow trigger is disabled. Supabase stores
 the GitHub token in Vault, calls GitHub's `workflow_dispatch` API on Mondays and
 Thursdays at 09:05 UTC, and the workflow runs the existing scout agent.

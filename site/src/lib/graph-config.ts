@@ -1,4 +1,5 @@
 import type { BrowseRoute, MapMode, MapZone, NodeType } from "../types/graph";
+import { MODE_NODE_TYPES } from "../../../shared/graph-schema/graph-snapshot.mjs";
 
 export const NODE_COLORS: Record<NodeType, number> = {
   band: 0xbd7049,
@@ -24,8 +25,8 @@ export const MODE_LABELS: Record<MapMode, string> = {
 };
 
 export const MODE_TYPES: Record<MapMode, Set<NodeType>> = {
-  artists: new Set(["band", "guitarist", "artist", "genre"]),
-  guitars: new Set(["guitar", "guitar_brand", "genre"]),
+  artists: new Set(MODE_NODE_TYPES.artists),
+  guitars: new Set(MODE_NODE_TYPES.guitars),
 };
 
 export const MAP_ZONES: MapZone[] = [

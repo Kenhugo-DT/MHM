@@ -25,5 +25,6 @@ jobs:
       - run: npm run brain:example-inbox
       - run: npm run brain:python-check
       - run: npm run brain:audit
+      - run: npm test
       - run: npm run check
       - run: npm run build
