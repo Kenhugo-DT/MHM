@@ -16,15 +16,16 @@ There is no requirement to fill every node: no fact is better than a weak one.
 limit before the site can be built. The source links appear beside the fact in
 the detail panel. Tags are research context only, not automatic graph links.
 
-After applying the migration in Supabase SQL Editor, keep the GitHub Actions
-repository variable `FACT_SCOUT_ENABLED` at `false` until the source-pattern
-scout has been previewed. If enabled, the scheduled agent scouts up to three
-fact leads per run after its normal graph research, checking at most 12
-Wikipedia articles. Locally, `npm run brain:fact-scout:dry-run` previews leads;
-`npm run brain:fact-scout` writes them to review. Both use the existing Supabase
-server credentials. This scout makes no paid model calls. It looks for a narrow
-set of origin and naming clues, so some runs may yield nothing. The lead text
-is a source excerpt for private review, not publication-ready wording.
+Keep the GitHub Actions repository variable `FACT_SCOUT_ENABLED` at `false`
+until the source-pattern scout has been previewed. If enabled, the existing
+scheduled research agent scouts up to three fact leads after normal graph
+research, checking at most 12 Wikipedia articles. Locally,
+`npm run brain:fact-scout:dry-run` previews leads; `npm run brain:fact-scout`
+writes them to review. Both use the existing Supabase server credentials. This
+scout makes no paid model calls. It checks specific patterns for names,
+instruments, performances, recordings and other stories, and spreads lookups
+across map zones. Some runs may yield nothing. The lead text is a source excerpt
+for private review, not publication-ready wording.
 
 Review in Supabase Table Editor, table `entity_facts`: inspect `text`, `evidence`
 and `sources`; verify the claim; rewrite any copied source wording; add a direct
@@ -33,3 +34,10 @@ Wikipedia link cannot pass the approval trigger. Editing approved public
 content returns that row to review. Only approved rows can be queried by the
 public site, and it shows at most two facts per selected entity including the
 curated pilot.
+
+After applying `0004_fact_review_feedback.sql`, reviewers may fill the optional
+`review_reason` column with a short explanation such as "wrong subject" or
+"unsupported by source". It stays private. The scout uses approval/rejection
+counts from its `scout-*` category tags to adjust future ranking once a category
+has three decisions; it does not interpret the free-text note or retrain a
+model. Rejected leads are not proposed again from the same source excerpt.

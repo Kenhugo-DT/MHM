@@ -23,10 +23,12 @@ Open `SQL Editor` in Supabase and run these files in order:
 1. `brain/supabase/migrations/0001_graph_schema.sql`
 2. `brain/supabase/migrations/0002_research_brain_schema.sql`
 3. `brain/supabase/migrations/0003_entity_fact_review.sql`
+4. `brain/supabase/migrations/0004_fact_review_feedback.sql`
 
 `0001` creates the public graph tables read by the site. `0002` creates the
 private brain tables used by the research pipeline. `0003` creates the separate
-fact review queue. Only approved fact rows are readable by the public site.
+fact review queue. `0004` adds a private optional reviewer note. Only approved
+fact rows are readable by the public site; the reviewer note is never public.
 
 ## 3. Get API Values
 
