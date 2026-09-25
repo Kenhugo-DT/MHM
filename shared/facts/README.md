@@ -26,6 +26,9 @@ scout makes no paid model calls. It checks specific patterns for names,
 instruments, performances, recordings and other stories, and spreads lookups
 across map zones. Some runs may yield nothing. The lead text is a source excerpt
 for private review, not publication-ready wording.
+For a small controlled run, add repeated `--entity` IDs and a low `--limit` to
+the dry-run or publish command; the normal scheduled run still scans eligible
+entities across zones.
 
 Review in Supabase Table Editor, table `entity_facts`: inspect `text`, `evidence`
 and `sources`; verify the claim; rewrite any copied source wording; add a direct

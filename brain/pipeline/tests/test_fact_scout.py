@@ -47,6 +47,32 @@ class FactScoutTests(unittest.TestCase):
             "The Allman Brothers Band", "band",
             "The Allman Brothers Band was recorded and mixed in two weeks, and proved a positive experience for the ensemble."
         ), [])
+        self.assertEqual(candidate_leads(
+            "Radiohead", "band",
+            "With Deamer, Radiohead recorded The King of Limbs: Live from the Basement, released online in August 2011."
+        ), [])
+
+    def test_specific_stories_can_use_an_artist_surname(self):
+        injury = (
+            "As a teen, Iommi lost the tips of his right-hand ring and middle fingers in a work accident "
+            "at a sheet metal factory, which influenced his distinct playing style."
+        )
+        stage = (
+            "Young tried a number of stage costumes, such as Spider-Man, Zorro, a gorilla, "
+            "and a parody of Superman named Super-Ang, before settling on his signature schoolboy look."
+        )
+        self.assertEqual(candidate_leads("Tony Iommi", "guitarist", injury)[0]["category"], "playing-technique")
+        self.assertEqual(candidate_leads("Angus Young", "guitarist", stage)[0]["category"], "stage-identity")
+        self.assertEqual(candidate_leads(
+            "Johnny Cash", "artist", "Cash Loch and other locations in Fife are named after distant ancestors."
+        ), [])
+        self.assertEqual(candidate_leads(
+            "Keith Richards", "guitarist", "Theodora was named after Richards's grandfather, Theodore Augustus Dupree."
+        ), [])
+        self.assertEqual(candidate_leads(
+            "John McLaughlin", "guitarist",
+            "John McLaughlin (born 4 January 1942), also previously known as Mahavishnu, is an English guitarist."
+        ), [])
 
     def test_review_decisions_tune_categories_after_three_examples(self):
         facts = [
@@ -119,6 +145,12 @@ class FactScoutTests(unittest.TestCase):
             self.assertIn("scout-name-origin", proposal["tags"])
             self.assertEqual(len(proposal["sources"]), 1)
             self.assertEqual(client.table.return_value.upsert.call_args.args[0]["outcome"], "proposed")
+
+            client.reset_mock()
+            targeted = scout(client, publish=False, limit=1, max_lookup=1, target_ids={"another-band"})
+            self.assertEqual(targeted["lookups"], 0)
+            self.assertEqual(targeted["proposals"], [])
+            client.table.assert_not_called()
 
 
 if __name__ == "__main__":

@@ -30,13 +30,17 @@ RULES = (
     ("instrument-story", 4, re.compile(
         r"\b(?:built|constructed|made|designed|modified)\b.{0,85}\b(?:guitar|instrument)\b|"
         r"\b(?:guitar|instrument)\b.{0,85}\b(?:built|constructed|made|designed|modified)\b", re.I)),
+    ("playing-technique", 5, re.compile(
+        r"\b(?:lost|burned|injured|damaged)\b.{0,90}\b(?:finger|hand|fingertip)s?\b|"
+        r"\b(?:finger|hand|fingertip)s?\b.{0,90}\b(?:lost|burned|injured|damaged)\b|"
+        r"\b(?:retaught himself|relearned)\b.{0,80}\b(?:guitar|play)\b", re.I)),
     ("stage-identity", 4, re.compile(
-        r"\b(?:wore|wearing|adopted|used|designed|created)\b.{0,85}"
-        r"\b(?:costume|mask|uniform|stage persona|makeup|make-up|face paint)\b", re.I)),
+        r"\b(?:wore|wearing|adopted|used|designed|created|tried)\b.{0,85}"
+        r"\b(?:costume|mask|uniform|stage persona|makeup|make-up|face paint)s?\b", re.I)),
     ("recording-story", 4, re.compile(
         r"\b(?:recorded|mixed|tracked)\b.{0,100}"
         r"(?:\b(?:\d+|one|two|three|four|five|six|seven)\s+(?:hours|days|weeks)\b|"
-        r"\b(?:basement|garage|bedroom|makeshift)\b)", re.I)),
+        r"\b(?:in|at|inside)\s+(?:(?:a|the|his|their)\s+)?(?:basement|garage|bedroom|makeshift)\b)", re.I)),
     ("performance-story", 4, re.compile(
         r"\b(?:performed|played|concert|show|tour)\b.{0,110}"
         r"\b(?:headphones|antarctica|aircraft|boeing|prison|rooftop|satellite|hospital|ship)\b", re.I)),
@@ -98,15 +102,22 @@ def near_duplicate(text: str, existing: list[str]) -> bool:
 def candidate_leads(label: str, node_type: str, extract: str,
                     bias: dict[str, int] | None = None, used_categories: set[str] | None = None) -> list[dict]:
     named_subject = re.compile(rf"(?<!\w){re.escape(label)}(?:'s)?(?!\w)", re.I)
+    surname = label.split()[-1] if node_type in {"artist", "guitarist"} else ""
+    surname_subject = re.compile(
+        rf"(?<!\w){re.escape(surname)}(?!\w)(?=\s+(?:was|were|is|are|had|has|lost|built|recorded|"
+        r"tried|retaught|named|created|designed|modified|performed|played|wore|used|adopted|"
+        r"made|started|began|took|relearned)\b)"
+    ) if len(surname) >= 4 else None
     band_subject = re.compile(r"^(?:the band|the group)(?:'s)?\b", re.I)
     band_name = re.compile(r"\b(?:the band|the group)(?:'s)? name\b", re.I)
     used_categories = used_categories or set()
     leads = []
     for index, sentence in enumerate(SENTENCE_BOUNDARY.split(re.sub(r"\s+", " ", extract[:32000]).strip())):
         sentence = sentence.strip()
-        if not 35 <= len(sentence) <= 200 or len(sentence.split()) > 30 or SUPERLATIVE.search(sentence):
+        if not 35 <= len(sentence) <= 200 or len(sentence.split()) > 36 or SUPERLATIVE.search(sentence):
             continue
-        name_match = named_subject.search(sentence)
+        full_name = named_subject.search(sentence)
+        name_match = full_name or (surname_subject.search(sentence) if surname_subject else None)
         named = bool(name_match and name_match.start() < 40)
         band_context = node_type == "band" and index < 30
         if not named and not (band_context and (band_subject.search(sentence) or band_name.search(sentence))):
@@ -115,15 +126,19 @@ def candidate_leads(label: str, node_type: str, extract: str,
             matches = (NAME_ORIGIN.search(sentence) or NAME_CONTEXT.search(sentence)) if category == "name-origin" else pattern.search(sentence)
             if not matches or (node_type != "band" and re.search(r"\bthe band(?:'s)? name\b", sentence, re.I)):
                 continue
+            if category == "name-origin" and re.search(r"\bborn\b", sentence[:80], re.I):
+                continue
             if not named and not band_subject.search(sentence) and category != "name-origin":
                 continue
             if category == "recording-story" and name_match and re.match(
                 r"\s+was\s+(?:recorded|mixed|tracked)\b", sentence[name_match.end():], re.I
             ):
                 continue
-            if named and matches.start() < name_match.start() and category != "name-origin":
+            if named and matches.start() < name_match.start() and not (
+                band_context and category == "name-origin" and band_name.search(sentence)
+            ):
                 continue
-            score = base_score + (2 if named else 0) + (1 if len(sentence) >= 70 else 0)
+            score = base_score + (2 if full_name else 1 if named else 0) + (1 if len(sentence) >= 70 else 0)
             score += (bias or {}).get(category, 0) - (2 if category in used_categories else 0)
             if score >= 5:
                 leads.append({"category": category, "evidence": sentence, "score": score, "order": index})
@@ -191,7 +206,8 @@ def eligible_entities(entities: list[dict], facts: list[dict], attempts: list[di
     return ordered
 
 
-def scout(client, *, publish: bool, limit: int, max_lookup: int) -> dict:
+def scout(client, *, publish: bool, limit: int, max_lookup: int,
+          target_ids: set[str] | None = None) -> dict:
     entities = all_rows(client, "entities", "id,label,node_type,sources,starter,map_zone")
     facts = all_rows(client, "entity_facts", "id,entity_id,status,source_fingerprint,text,tags")
     attempts = all_rows(client, "fact_scout_attempts", "entity_id,attempted_at,outcome", "entity_id")
@@ -210,6 +226,8 @@ def scout(client, *, publish: bool, limit: int, max_lookup: int) -> dict:
         existing_text[fact["entityId"]].append(fact["text"])
     bias = feedback_bias(facts)
     targets = eligible_entities(entities, facts, attempts, curated, datetime.now(UTC))
+    if target_ids:
+        targets = [entity for entity in targets if entity["id"] in target_ids]
     session = requests.Session()
     session.headers["User-Agent"] = "MusicHistoryMap/0.1 (fact review; https://kenhugo-dt.github.io/MHM/)"
     proposals = []
@@ -274,10 +292,12 @@ def main() -> None:
     parser.add_argument("--publish", action="store_true", help="Write review proposals to Supabase.")
     parser.add_argument("--limit", type=int, default=3, help="Maximum proposals per run.")
     parser.add_argument("--max-lookup", type=int, default=12, help="Maximum article lookups per run.")
+    parser.add_argument("--entity", action="append", help="Restrict this run to an eligible entity ID; repeat for more.")
     args = parser.parse_args()
     if args.limit < 1 or args.max_lookup < 1:
         parser.error("Limits must be positive.")
-    result = scout(require_client(), publish=args.publish, limit=args.limit, max_lookup=args.max_lookup)
+    result = scout(require_client(), publish=args.publish, limit=args.limit, max_lookup=args.max_lookup,
+                   target_ids=set(args.entity) if args.entity else None)
     print(json.dumps(result, ensure_ascii=False, indent=2))
 
 
