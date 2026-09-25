@@ -49,7 +49,6 @@ Create `.env` from `.env.example`:
 MUSICBRAINZ_CONTACT=you@example.com
 SUPABASE_URL=https://your-project-ref.supabase.co
 SUPABASE_SECRET_KEY=sb_secret_your_server_side_key
-OPENAI_API_KEY=
 ```
 
 Create `.env.local` from `.env.local.example`:
@@ -80,7 +79,6 @@ Add repository secrets:
 
 - `SUPABASE_SECRET_KEY`
 - `MUSICBRAINZ_CONTACT`
-- `OPENAI_API_KEY` later, only when the editorial AI stage is enabled
 
 ## 6. Load The Approved Graph
 

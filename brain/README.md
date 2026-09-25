@@ -225,7 +225,6 @@ Trusted local or GitHub Action variables:
 - `MUSICBRAINZ_CONTACT`
 - `SUPABASE_URL`
 - `SUPABASE_SECRET_KEY`
-- `OPENAI_API_KEY` for a future editorial AI pass
 
 ## Future Brain Modes
 

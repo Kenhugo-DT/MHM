@@ -92,7 +92,6 @@ Trusted pipeline jobs may receive:
 - `SUPABASE_URL`
 - `SUPABASE_SECRET_KEY`
 - `MUSICBRAINZ_CONTACT`
-- `OPENAI_API_KEY` when the editorial AI stage is enabled
 
 Never prefix a secret with `VITE_`. Vite embeds every `VITE_` variable in the
 public browser bundle.

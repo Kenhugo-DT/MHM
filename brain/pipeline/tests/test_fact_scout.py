@@ -8,26 +8,6 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from fact_scout import candidate_sentence, eligible_entities, propose_fact, wikipedia_title
 
 
-class FakeSession:
-    def __init__(self, answer):
-        self.answer = answer
-
-    def post(self, *args, **kwargs):
-        class Response:
-            def __init__(self, answer):
-                self.answer = answer
-
-            def raise_for_status(self):
-                pass
-
-            def json(self):
-                return {"output": [{"type": "message", "content": [
-                    {"type": "output_text", "text": self.answer},
-                ]}]}
-
-        return Response(self.answer)
-
-
 class FactScoutTests(unittest.TestCase):
     def test_title_requires_english_wikipedia_source(self):
         self.assertEqual(
@@ -50,8 +30,22 @@ class FactScoutTests(unittest.TestCase):
         )
         self.assertEqual(
             candidate_sentence("Ramones", "The band was originally known as another name for a short period."),
-            "Ramones was originally known as another name for a short period.",
+            "The band was originally known as another name for a short period.",
         )
+        self.assertEqual(
+            candidate_sentence("Ramones", "The band's name came from Paul McCartney's stage name Paul Ramon."),
+            "The band's name came from Paul McCartney's stage name Paul Ramon.",
+        )
+        self.assertEqual(
+            candidate_sentence("Black Sabbath", "Black Sabbath's name is derived from a 1963 film title."),
+            "Black Sabbath's name is derived from a 1963 film title.",
+        )
+        name_origin = (
+            "Upon formation, Malcolm and Angus developed the band's name after their "
+            "sister Margaret pointed out the symbol AC/DC on her sewing machine."
+        )
+        self.assertEqual(candidate_sentence("AC/DC", name_origin), name_origin)
+        self.assertIsNone(candidate_sentence("AC/DC", name_origin, "artist"))
 
     def test_review_and_curated_facts_fill_the_two_fact_limit(self):
         now = datetime.now(UTC)
@@ -72,17 +66,13 @@ class FactScoutTests(unittest.TestCase):
         attempts[0]["attempted_at"] = (now - timedelta(days=31)).isoformat()
         self.assertEqual([row["id"] for row in eligible_entities(entities, facts, attempts, curated, now)], ["ramones"])
 
-    def test_model_lead_requires_exact_evidence_and_paraphrase(self):
+    def test_source_lead_stays_a_private_excerpt_for_review(self):
         article = "Ramones took their name from Paul McCartney's early stage name, Paul Ramon."
-        good = '{"text":"Ramones borrowed their band name from a stage name once used by Paul McCartney.","evidence":"' + article + '"}'
         self.assertEqual(
-            propose_fact(FakeSession(good), "Ramones", "band", article, "test-key"),
-            ("Ramones borrowed their band name from a stage name once used by Paul McCartney.", article),
+            propose_fact("Ramones", "band", article),
+            (article, article),
         )
-        unsupported = good.replace("Paul Ramon.", "John Lennon.")
-        self.assertIsNone(propose_fact(FakeSession(unsupported), "Ramones", "band", article, "test-key"))
-        copied = '{"text":"' + article + '","evidence":"' + article + '"}'
-        self.assertIsNone(propose_fact(FakeSession(copied), "Ramones", "band", article, "test-key"))
+        self.assertIsNone(propose_fact("Ramones", "band", "The group made many albums and toured widely."))
 
 
 if __name__ == "__main__":

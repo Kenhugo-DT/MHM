@@ -16,16 +16,15 @@ There is no requirement to fill every node: no fact is better than a weak one.
 limit before the site can be built. The source links appear beside the fact in
 the detail panel. Tags are research context only, not automatic graph links.
 
-After applying the migration in Supabase SQL Editor, set the GitHub Actions
-repository variable `FACT_SCOUT_ENABLED` to `true`. The scheduled agent then
-scouts up to three fact leads per run after its normal graph research. Locally,
-`npm run brain:fact-scout:dry-run` previews leads; `npm run brain:fact-scout`
-writes them to review. Both use the existing Supabase server credentials.
-For useful extraction, also set the GitHub Actions secret `OPENAI_API_KEY`;
-the default `gpt-6-luna` model reads source excerpts and proposes a paraphrase
-plus an exact evidence excerpt. Without that secret, a strict, low-yield text
-filter is used. This is an API call with usage cost, capped by the per-run
-lookup limit. No model-generated text is auto-approved.
+After applying the migration in Supabase SQL Editor, keep the GitHub Actions
+repository variable `FACT_SCOUT_ENABLED` at `false` until the source-pattern
+scout has been previewed. If enabled, the scheduled agent scouts up to three
+fact leads per run after its normal graph research, checking at most 12
+Wikipedia articles. Locally, `npm run brain:fact-scout:dry-run` previews leads;
+`npm run brain:fact-scout` writes them to review. Both use the existing Supabase
+server credentials. This scout makes no paid model calls. It looks for a narrow
+set of origin and naming clues, so some runs may yield nothing. The lead text
+is a source excerpt for private review, not publication-ready wording.
 
 Review in Supabase Table Editor, table `entity_facts`: inspect `text`, `evidence`
 and `sources`; verify the claim; rewrite any copied source wording; add a direct
