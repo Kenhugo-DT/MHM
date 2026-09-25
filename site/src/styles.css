@@ -698,6 +698,97 @@ button {
   overflow-wrap: anywhere;
 }
 
+.detail-heading.with-facts {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(230px, 44%);
+  align-items: start;
+  gap: 18px;
+}
+
+.detail-heading > div {
+  min-width: 0;
+}
+
+.detail-heading.with-facts h2 {
+  max-width: 100%;
+}
+
+.fact-spotlight {
+  min-width: 0;
+  padding-left: 12px;
+  border-left: 2px solid rgba(95, 170, 169, 0.7);
+}
+
+.fact-heading,
+.fact-navigation,
+.fact-sources,
+.fact-sources a {
+  display: flex;
+  align-items: center;
+}
+
+.fact-heading {
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.fact-heading h3 {
+  margin: 0;
+  color: #8dc7c3;
+  font-size: 0.67rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.fact-navigation {
+  gap: 2px;
+  color: var(--muted);
+  font-size: 0.68rem;
+  white-space: nowrap;
+}
+
+.fact-navigation button {
+  width: 25px;
+  height: 25px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 0;
+  color: #8dc7c3;
+  background: transparent;
+  cursor: pointer;
+}
+
+.fact-navigation button:hover,
+.fact-navigation button:focus-visible {
+  color: var(--text);
+}
+
+.fact-spotlight p {
+  margin: 7px 0;
+  color: var(--text);
+  font-size: 0.82rem;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.fact-sources {
+  flex-wrap: wrap;
+  gap: 4px 10px;
+}
+
+.fact-sources a {
+  gap: 3px;
+  color: #8dc7c3;
+  font-size: 0.7rem;
+  text-decoration: none;
+}
+
+.fact-sources a:hover,
+.fact-sources a:focus-visible {
+  text-decoration: underline;
+}
+
 .detail-summary {
   display: grid;
   gap: 12px;
@@ -1077,6 +1168,11 @@ button {
 
   .detail-panel h2 {
     font-size: 2rem;
+  }
+
+  .detail-heading.with-facts {
+    grid-template-columns: 1fr;
+    gap: 14px;
   }
 
   .map-status {

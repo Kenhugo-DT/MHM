@@ -24,6 +24,8 @@ import {
   useState,
 } from "react";
 import type { GraphMapHandle } from "./components/GraphMap";
+import { FactSpotlight } from "./components/FactSpotlight";
+import { factsForEntity } from "./data/facts";
 import { createGraphRepository } from "./data/repository";
 import {
   fetchWikiActionContextForNode,
@@ -370,6 +372,7 @@ export default function App() {
     detailTextSections.length - visibleDetailTextSections.length,
   );
   const selectedMetadata = selected ? publicMetadata(selected.metadata) : [];
+  const selectedFacts = selected ? factsForEntity(selected.id) : [];
 
   const detailSources = useMemo(() => {
     if (!selected) return [];
@@ -760,13 +763,20 @@ export default function App() {
             </figure>
           )}
 
-          <p
-            className="detail-type"
-            style={{ color: colorToCss(NODE_COLORS[selected.type]) }}
-          >
-            {NODE_LABELS[selected.type]}
-          </p>
-          <h2>{selected.label}</h2>
+          <div className={`detail-heading${selectedFacts.length ? " with-facts" : ""}`}>
+            <div>
+              <p
+                className="detail-type"
+                style={{ color: colorToCss(NODE_COLORS[selected.type]) }}
+              >
+                {NODE_LABELS[selected.type]}
+              </p>
+              <h2>{selected.label}</h2>
+            </div>
+            {selectedFacts.length > 0 && (
+              <FactSpotlight key={selected.id} facts={selectedFacts} />
+            )}
+          </div>
           <div className="detail-summary" aria-label={`${selected.label} overview`}>
             {visibleDetailTextSections.length > 0 ? (
               visibleDetailTextSections.map((section, index) => (
