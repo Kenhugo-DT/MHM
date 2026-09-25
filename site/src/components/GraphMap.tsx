@@ -226,6 +226,7 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
     const layoutPositionsRef = useRef(layoutPositions);
     const nodePositionRef = useRef(new Map<string, { x: number; y: number }>());
     const nodeVisualItemsRef = useRef<NodeVisualItem[]>([]);
+    const emphasizedIdsRef = useRef<Set<string>>(new Set());
     const edgeVisualItemsRef = useRef<EdgeVisualItem[]>([]);
     const edgeLayerRef = useRef<Graphics | null>(null);
     const visualModeRef = useRef<VisualMode>("detail");
@@ -319,6 +320,11 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
           item.node.x,
           item.node.y + Math.max(nodeRadius(item.node) + 12, 18 / camera.zoom),
         );
+
+        if (emphasizedIdsRef.current.has(item.node.id)) {
+          item.label.alpha = 0;
+          return;
+        }
 
         if (item.hovered) {
           item.label.alpha = 1;
@@ -917,10 +923,12 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
       const routeKeys = new Set(
         routeNodeIds.slice(1).map((id, index) => edgeKey(routeNodeIds[index], id)),
       );
-      const emphasizedIds = new Set(routeNodeIds);
+      const emphasizedIds = new Set(routeKeys.size ? routeNodeIds : []);
       if (selectedId) emphasizedIds.add(selectedId);
+      emphasizedIdsRef.current = emphasizedIds;
 
       if (!selectedId && routeKeys.size === 0) {
+        syncLabelReadability();
         renderFrame();
         return;
       }
@@ -979,6 +987,7 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
         layer.addChild(nodeContainer);
       });
 
+      syncLabelReadability();
       if (selectedId) focusNode(selectedId);
       else renderFrame();
     }, [edges, nodes, ready, routeNodeIds, selectedId, visibleTypes]);
