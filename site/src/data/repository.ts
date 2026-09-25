@@ -13,12 +13,14 @@ import { filterExcludedEntities, isIncludedNode } from "../lib/excluded-entities
 import { MODE_TYPES } from "../lib/graph-config";
 import { matchingLayouts } from "../../../shared/graph-schema/graph-snapshot.mjs";
 import { loadAllRows } from "./load-all-rows.mjs";
+import { factsForEntity, mergeFacts, type EntityFact } from "./facts";
 
 export interface GraphRepository {
   readonly source: "local" | "supabase";
   loadMap(mode: MapMode): Promise<GraphMapSnapshot>;
   loadNeighborhood(nodeId: string, depth?: number): Promise<GraphNeighborhood>;
   search(query: string, limit?: number): Promise<GraphNode[]>;
+  loadFacts(entityId: string): Promise<readonly EntityFact[]>;
 }
 
 let localDatasetPromise: Promise<GraphDataset> | undefined;
@@ -55,6 +57,10 @@ function loadLocalLayouts(): Promise<GraphLayoutDataset | undefined> {
 
 class LocalGraphRepository implements GraphRepository {
   readonly source = "local" as const;
+
+  async loadFacts(entityId: string): Promise<readonly EntityFact[]> {
+    return factsForEntity(entityId);
+  }
 
   async loadMap(mode: MapMode): Promise<GraphMapSnapshot> {
     const [dataset, layouts] = await Promise.all([loadLocalDataset(), loadLocalLayouts()]);
@@ -190,6 +196,29 @@ class SupabaseGraphRepository implements GraphRepository {
       );
     }
     return this.clientPromise;
+  }
+
+  async loadFacts(entityId: string): Promise<readonly EntityFact[]> {
+    if (factsForEntity(entityId).length >= 2) return factsForEntity(entityId);
+    const client = await this.client();
+    const { data, error } = await client
+      .from("entity_facts")
+      .select("id,entity_id,text,year,tags,verified_at,sources")
+      .eq("entity_id", entityId)
+      .eq("status", "approved")
+      .order("reviewed_at", { ascending: false })
+      .limit(2);
+    if (error) throw error;
+    const approved: EntityFact[] = (data ?? []).map((row) => ({
+      id: row.id,
+      entityId: row.entity_id,
+      text: row.text,
+      year: row.year ?? undefined,
+      tags: row.tags,
+      verifiedAt: row.verified_at,
+      sources: row.sources,
+    }));
+    return mergeFacts(entityId, approved);
   }
 
   async loadMap(mode: MapMode): Promise<GraphMapSnapshot> {

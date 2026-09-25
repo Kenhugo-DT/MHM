@@ -92,6 +92,13 @@ jobs:
           MUSICBRAINZ_CONTACT: ${{ secrets.MUSICBRAINZ_CONTACT }}
           SUPABASE_URL: ${{ vars.SUPABASE_URL }}
           SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+      - name: Scout fact leads for review
+        if: vars.FACT_SCOUT_ENABLED == 'true'
+        run: npm run brain:fact-scout -- --limit 3 --max-lookup 12
+        env:
+          SUPABASE_URL: ${{ vars.SUPABASE_URL }}
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       - uses: actions/upload-artifact@v4
         if: always()
         with:

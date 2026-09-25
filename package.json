@@ -11,6 +11,9 @@
     "check": "tsc -b site/tsconfig.json --pretty false",
     "test": "node --test tests/graph-data.test.mjs tests/facts.test.mjs",
     "facts:validate": "node shared/facts/validate.mjs",
+    "brain:fact-scout": "node brain/scripts/run-python.mjs brain/pipeline/fact_scout.py --publish",
+    "brain:fact-scout:dry-run": "node brain/scripts/run-python.mjs brain/pipeline/fact_scout.py",
+    "brain:fact-scout:test": "node brain/scripts/run-python.mjs -m unittest discover -s brain/pipeline/tests -p test_fact_scout.py",
     "brain:install-python": "node brain/scripts/run-python.mjs -m pip install -r brain/pipeline/requirements.txt",
     "brain:collect": "node brain/scripts/run-python.mjs brain/pipeline/sync.py",
     "brain:example-inbox": "node brain/scripts/run-python.mjs brain/pipeline/process_inbox.py --inbox brain/data/inbox/research-requests.example.json --dry-run",
@@ -36,7 +39,7 @@
     "brain:learn": "node brain/scripts/learn-from-obsidian.mjs",
     "brain:organize": "node brain/scripts/analyze-organization.mjs",
     "brain:layouts": "node brain/scripts/generate-layouts.mjs",
-    "brain:python-check": "node brain/scripts/run-python.mjs -m py_compile brain/pipeline/sync.py brain/pipeline/import_graph.py brain/pipeline/process_inbox.py brain/pipeline/supabase_brain.py brain/pipeline/brain_db.py brain/pipeline/scout_agent.py brain/pipeline/promote_candidates.py brain/pipeline/queue_request.py brain/pipeline/candidate_quality.py",
+    "brain:python-check": "node brain/scripts/run-python.mjs -m py_compile brain/pipeline/sync.py brain/pipeline/import_graph.py brain/pipeline/process_inbox.py brain/pipeline/supabase_brain.py brain/pipeline/brain_db.py brain/pipeline/scout_agent.py brain/pipeline/promote_candidates.py brain/pipeline/queue_request.py brain/pipeline/candidate_quality.py brain/pipeline/fact_scout.py",
     "brain:import": "node brain/scripts/run-python.mjs brain/pipeline/import_graph.py",
     "brain:audit": "node brain/scripts/audit-graph.mjs"
   },

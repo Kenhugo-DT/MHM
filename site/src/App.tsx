@@ -26,6 +26,7 @@ import {
 import type { GraphMapHandle } from "./components/GraphMap";
 import { FactSpotlight } from "./components/FactSpotlight";
 import { factsForEntity } from "./data/facts";
+import type { EntityFact } from "./data/facts";
 import { createGraphRepository } from "./data/repository";
 import {
   fetchWikiActionContextForNode,
@@ -156,6 +157,7 @@ export default function App() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
   const [selected, setSelected] = useState<GraphNode>();
+  const [loadedFacts, setLoadedFacts] = useState<{ entityId: string; facts: readonly EntityFact[] }>();
   const [wikiDetail, setWikiDetail] = useState<WikiDetail>();
   const [wikiContext, setWikiContext] = useState<WikiActionContext>();
   const [wikiContextLoading, setWikiContextLoading] = useState(false);
@@ -317,6 +319,20 @@ export default function App() {
 
   useEffect(() => {
     let cancelled = false;
+    setLoadedFacts(undefined);
+    if (!selected) return;
+    repository.loadFacts(selected.id)
+      .then((facts) => {
+        if (!cancelled) setLoadedFacts({ entityId: selected.id, facts });
+      })
+      .catch(() => {
+        // The curated pilot still works before the fact-review migration is applied.
+      });
+    return () => { cancelled = true; };
+  }, [selected?.id]);
+
+  useEffect(() => {
+    let cancelled = false;
     setWikiContext(undefined);
     setWikiContextLoading(Boolean(selected));
     if (!selected) return;
@@ -372,7 +388,9 @@ export default function App() {
     detailTextSections.length - visibleDetailTextSections.length,
   );
   const selectedMetadata = selected ? publicMetadata(selected.metadata) : [];
-  const selectedFacts = selected ? factsForEntity(selected.id) : [];
+  const selectedFacts = selected
+    ? loadedFacts?.entityId === selected.id ? loadedFacts.facts : factsForEntity(selected.id)
+    : [];
 
   const detailSources = useMemo(() => {
     if (!selected) return [];
