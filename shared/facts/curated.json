@@ -280,5 +280,324 @@
     "sources": [
       { "label": "C.F. Martin & Co.", "url": "https://www.martinguitar.com/blog-categories/players/blog-051425-now-playing-latest-martin-journal.html" }
     ]
+  },
+  {
+    "id": "blues-mamie-smith-record-market",
+    "entityId": "blues",
+    "text": "Mamie Smith's 1920 recording of Crazy Blues convinced record companies there was a market for blues records.",
+    "year": 1920,
+    "tags": ["recording-history", "origins"],
+    "verifiedAt": "2026-09-26",
+    "sources": [
+      { "label": "Smithsonian Folkways", "url": "https://folkways.si.edu/lesson/building-the-blues" }
+    ]
+  },
+  {
+    "id": "rock-and-roll-alan-freed-radio",
+    "entityId": "rock-and-roll",
+    "text": "Cleveland DJ Alan Freed used the name rock and roll on radio in 1951 for the uptempo Black R&B records he played.",
+    "year": 1951,
+    "tags": ["radio", "origins"],
+    "verifiedAt": "2026-09-26",
+    "sources": [
+      { "label": "Rock & Roll Hall of Fame archives", "url": "https://catalog.rockhall.com/rrhof-ais/Details/archive/110000362" }
+    ]
+  },
+  {
+    "id": "punk-magazine-joey-ramone-cover",
+    "entityId": "punk",
+    "text": "Joey Ramone appeared on the April 1976 cover of Punk magazine, captured in an original drawing held by the Rock Hall.",
+    "year": 1976,
+    "tags": ["punk", "print-culture"],
+    "verifiedAt": "2026-09-26",
+    "sources": [
+      { "label": "Rock & Roll Hall of Fame archives", "url": "https://catalog.rockhall.com/rrhof-ais/Details/archive/110139830" }
+    ]
+  },
+  {
+    "id": "country-bristol-sessions-dual-debut",
+    "entityId": "country",
+    "text": "The 1927 Bristol Sessions gave both the Carter Family and Jimmie Rodgers their early recording breakthrough.",
+    "year": 1927,
+    "tags": ["recording-history", "origins"],
+    "verifiedAt": "2026-09-26",
+    "sources": [
+      { "label": "Country Music Hall of Fame", "url": "https://www.countrymusichalloffame.org/hall-of-fame/ralph-peer" }
+    ]
+  },
+  {
+    "id": "grunge-deep-six-compilation",
+    "entityId": "grunge",
+    "text": "The 1986 Deep Six compilation gathered Green River, Soundgarden, Skin Yard, the Melvins, the U-Men and Malfunkshun.",
+    "year": 1986,
+    "tags": ["seattle", "recording-history"],
+    "verifiedAt": "2026-09-26",
+    "sources": [
+      { "label": "Museum of Pop Culture", "url": "https://www.mopop.org/experience/puget-sound-stories" }
+    ]
+  },
+  {
+    "id": "heavy-metal-born-to-be-wild-phrase",
+    "entityId": "heavy-metal",
+    "text": "Steppenwolf's 1968 Born to Be Wild used the phrase 'heavy metal thunder' before heavy metal became a genre name.",
+    "year": 1968,
+    "tags": ["genre-name", "songwriting"],
+    "verifiedAt": "2026-09-26",
+    "sources": [
+      { "label": "Rock & Roll Hall of Fame", "url": "https://www.rockhall.com/wp-content/uploads/2024/03/Black_Sabbath_2006.pdf" }
+    ]
+  },
+  {
+    "id": "telecaster-broadcaster-nocaster",
+    "entityId": "fender-telecaster",
+    "text": "The Telecaster was briefly called the Broadcaster, then sold without a model name after a Gretsch trademark clash.",
+    "tags": ["guitar-design", "model-name"],
+    "verifiedAt": "2026-09-26",
+    "sources": [
+      { "label": "Fender", "url": "https://www.fender.com/articles/behind-the-scenes/a-decade-of-beginnings-fender-in-the-1950s" }
+    ]
+  },
+  {
+    "id": "jazzmaster-surf-adoption",
+    "entityId": "fender-jazzmaster",
+    "text": "Fender built the Jazzmaster for jazz players, but surf bands embraced it while the intended audience largely passed.",
+    "tags": ["guitar-design", "surf-rock"],
+    "verifiedAt": "2026-09-26",
+    "sources": [
+      { "label": "Fender", "url": "https://www.fender.com/articles/behind-the-scenes/jazz-bomb-surf-staple-indie-icon-a-jazzmaster-history" }
+    ]
+  },
+  {
+    "id": "flying-v-1958-shipment",
+    "entityId": "gibson-flying-v",
+    "text": "Gibson shipped just 81 Flying V guitars in 1958; the futuristic design found its audience later.",
+    "year": 1958,
+    "tags": ["guitar-design", "history"],
+    "verifiedAt": "2026-09-26",
+    "sources": [
+      { "label": "Gibson", "url": "https://www.gibson.com/blogs/gibson-tv/the-gibson-1958-flying-v-and-explorer" }
+    ]
+  },
+  {
+    "id": "les-paul-goldtop-to-sunburst",
+    "entityId": "gibson-les-paul",
+    "text": "In 1958, Gibson replaced the Les Paul's gold finish with the sunburst look of the Les Paul Standard.",
+    "year": 1958,
+    "tags": ["guitar-design", "history"],
+    "verifiedAt": "2026-09-26",
+    "sources": [
+      { "label": "Gibson", "url": "https://www.gibson.com/products/gibson-certified-vintage-1957-gibson-les-paul-standard-goldtop" }
+    ]
+  },
+  {
+    "id": "martin-d28-fourteen-fret-neck",
+    "entityId": "martin-d28",
+    "text": "Martin shifted its Dreadnought guitars to a 14-fret neck in 1934, shaping the D-28's familiar form.",
+    "year": 1934,
+    "tags": ["guitar-design", "history"],
+    "verifiedAt": "2026-09-26",
+    "sources": [
+      { "label": "C.F. Martin & Co.", "url": "https://www.martinguitar.com/museum-behind-the-glass.html" }
+    ]
+  },
+  {
+    "id": "gretsch-fred-took-over-at-fifteen",
+    "entityId": "gretsch",
+    "text": "Fred Gretsch took over the family instrument company at age 15 after his father died.",
+    "tags": ["founder", "history"],
+    "verifiedAt": "2026-09-26",
+    "sources": [
+      { "label": "Gretsch", "url": "https://www.gretsch.com/about/" }
+    ]
+  },
+  {
+    "id": "johnny-cash-folsom-live-recording",
+    "entityId": "johnny-cash",
+    "text": "Johnny Cash recorded At Folsom Prison inside the prison on January 13, 1968.",
+    "year": 1968,
+    "tags": ["live-performance", "recording-history"],
+    "verifiedAt": "2026-09-26",
+    "sources": [
+      { "label": "Country Music Hall of Fame", "url": "https://countrymusichalloffame.org/hall-of-fame/johnny-cash" }
+    ]
+  },
+  {
+    "id": "willie-nelson-red-headed-stranger-demo",
+    "entityId": "willie-nelson",
+    "text": "Columbia executives thought Willie Nelson's spare Red Headed Stranger sounded like a demo before it became a hit.",
+    "year": 1975,
+    "tags": ["recording-history", "country"],
+    "verifiedAt": "2026-09-26",
+    "sources": [
+      { "label": "Country Music Hall of Fame", "url": "https://countrymusichalloffame.org/hall-of-fame/willie-nelson" }
+    ]
+  },
+  {
+    "id": "hank-williams-lovesick-blues-cover",
+    "entityId": "hank-williams",
+    "text": "Hank Williams's breakout hit Lovesick Blues was a cover of a pop song dating back to 1922.",
+    "year": 1949,
+    "tags": ["cover-versions", "country"],
+    "verifiedAt": "2026-09-26",
+    "sources": [
+      { "label": "Country Music Hall of Fame", "url": "https://www.countrymusichalloffame.org/hall-of-fame/hank-williams" }
+    ]
+  },
+  {
+    "id": "jimmie-rodgers-louis-armstrong-duet",
+    "entityId": "jimmie-rodgers",
+    "text": "Jazz trumpeter Louis Armstrong played on country star Jimmie Rodgers's Blue Yodel Number 9.",
+    "tags": ["jazz", "country", "collaboration"],
+    "verifiedAt": "2026-09-26",
+    "sources": [
+      { "label": "Country Music Hall of Fame", "url": "https://countrymusichalloffame.org/hall-of-fame/jimmie-rodgers" }
+    ]
+  },
+  {
+    "id": "bill-monroe-earl-scruggs-banjo",
+    "entityId": "bill-monroe",
+    "text": "Bill Monroe added Earl Scruggs's three-finger banjo picking to the Blue Grass Boys in 1945, reshaping their sound.",
+    "year": 1945,
+    "tags": ["bluegrass", "playing-technique"],
+    "verifiedAt": "2026-09-26",
+    "sources": [
+      { "label": "Country Music Hall of Fame", "url": "https://countrymusichalloffame.org/hall-of-fame/bill-monroe" }
+    ]
+  },
+  {
+    "id": "merle-haggard-boxcar-home",
+    "entityId": "merle-haggard",
+    "text": "Merle Haggard was born in a converted railroad boxcar that his family used as their home.",
+    "tags": ["origins", "country"],
+    "verifiedAt": "2026-09-26",
+    "sources": [
+      { "label": "Country Music Hall of Fame", "url": "https://countrymusichalloffame.org/press/releases/museum-exhibit-the-bakersfield-sound-buck-owens-merle-haggard-and-california-country-closes-december-31-2014-2" },
+      { "label": "Merle Haggard", "url": "https://merlehaggard.com/pages/biography" }
+    ]
+  },
+  {
+    "id": "miles-davis-kind-of-blue-two-sessions",
+    "entityId": "miles-davis",
+    "text": "Miles Davis recorded Kind of Blue in two sessions, using new melodic scales to open up jazz improvisation.",
+    "year": 1959,
+    "tags": ["recording-history", "jazz"],
+    "verifiedAt": "2026-09-26",
+    "sources": [
+      { "label": "Smithsonian Magazine", "url": "https://www.smithsonianmag.com/arts-culture/miles-davis-emerged-middle-america-become-picasso-jazz-taught-us-all-how-to-be-cool-180987828/" }
+    ]
+  },
+  {
+    "id": "louis-armstrong-personal-tapes",
+    "entityId": "louis-armstrong",
+    "text": "Louis Armstrong made more than 700 personal reel-to-reel tapes, recording music, conversations and rehearsals.",
+    "tags": ["recording-history", "archive"],
+    "verifiedAt": "2026-09-26",
+    "sources": [
+      { "label": "Louis Armstrong House Museum", "url": "https://www.louisarmstronghouse.org/west-end-blog/armstrongs-archive/" }
+    ]
+  },
+  {
+    "id": "charlie-parker-birdland-name",
+    "entityId": "charlie-parker",
+    "text": "New York's Birdland jazz club was named after Charlie Parker, whose nickname was Bird.",
+    "tags": ["jazz", "venues"],
+    "verifiedAt": "2026-09-26",
+    "sources": [
+      { "label": "Smithsonian Magazine", "url": "https://www.smithsonianmag.com/smithsonian-institution/long-journey-charlie-parker-saxophone-180973393/" }
+    ]
+  },
+  {
+    "id": "duke-ellington-a-train-composer",
+    "entityId": "duke-ellington",
+    "text": "Duke Ellington's signature tune Take the A Train was composed by his collaborator Billy Strayhorn.",
+    "tags": ["songwriting", "jazz"],
+    "verifiedAt": "2026-09-26",
+    "sources": [
+      { "label": "Smithsonian National Museum of American History", "url": "https://amhistory.si.edu/documentsgallery/exhibitions/ellington_strayhorn_6.html" }
+    ]
+  },
+  {
+    "id": "john-coltrane-a-love-supreme-gratitude",
+    "entityId": "john-coltrane",
+    "text": "John Coltrane conceived A Love Supreme as a musical expression of gratitude after a spiritual turning point.",
+    "tags": ["recording-history", "jazz"],
+    "verifiedAt": "2026-09-26",
+    "sources": [
+      { "label": "John Coltrane", "url": "https://www.johncoltrane.com/biography" }
+    ]
+  },
+  {
+    "id": "wes-montgomery-quiet-thumb-technique",
+    "entityId": "wes-montgomery",
+    "text": "Wes Montgomery switched from a pick to his thumb to practice more quietly at home; it became his signature sound.",
+    "tags": ["playing-technique", "jazz"],
+    "verifiedAt": "2026-09-26",
+    "sources": [
+      { "label": "Indiana Historical Bureau", "url": "https://www.in.gov/history/files/Wes-Montgomery-Annotated-Points.pdf" }
+    ]
+  },
+  {
+    "id": "public-enemy-fight-the-power-film",
+    "entityId": "public-enemy",
+    "text": "Public Enemy wrote Fight the Power at Spike Lee's request for the film Do the Right Thing.",
+    "year": 1989,
+    "tags": ["hip-hop", "film"],
+    "verifiedAt": "2026-09-26",
+    "sources": [
+      { "label": "Rock & Roll Hall of Fame", "url": "https://www.rockhall.com/wp-content/uploads/2024/03/Public_Enemy_2013.pdf" }
+    ]
+  },
+  {
+    "id": "nwa-fbi-letter-promotion",
+    "entityId": "n-w-a",
+    "text": "N.W.A's label publicized an FBI complaint about the group's music while promoting Straight Outta Compton.",
+    "tags": ["hip-hop", "recording-history"],
+    "verifiedAt": "2026-09-26",
+    "sources": [
+      { "label": "Rock & Roll Hall of Fame", "url": "https://www.rockhall.com/wp-content/uploads/2024/04/Annual-Report-2017.pdf" }
+    ]
+  },
+  {
+    "id": "tupac-shakur-inca-namesake",
+    "entityId": "tupac-shakur",
+    "text": "Tupac Shakur was named after an Inca revolutionary.",
+    "tags": ["hip-hop", "name"],
+    "verifiedAt": "2026-09-26",
+    "sources": [
+      { "label": "Rock & Roll Hall of Fame", "url": "https://rockhall.com/inductees/tupac-shakur/" }
+    ]
+  },
+  {
+    "id": "sex-pistols-boycott-rock-hall",
+    "entityId": "sex-pistols",
+    "text": "The Sex Pistols boycotted their own 2006 Rock & Roll Hall of Fame induction ceremony.",
+    "year": 2006,
+    "tags": ["punk", "awards"],
+    "verifiedAt": "2026-09-26",
+    "sources": [
+      { "label": "Rhino Records", "url": "https://www.rhino.com/article/rhino-factoids-the-sex-pistols-boycott-the-rock-and-roll-hall-of-fame" }
+    ]
+  },
+  {
+    "id": "green-day-boston-show-stopped",
+    "entityId": "green-day",
+    "text": "Police stopped Green Day's free 1994 Boston show before the band finished its sixth song after the crowd surged.",
+    "year": 1994,
+    "tags": ["punk", "live-performance"],
+    "verifiedAt": "2026-09-26",
+    "sources": [
+      { "label": "Rock & Roll Hall of Fame", "url": "https://www.rockhall.com/wp-content/uploads/2024/03/Green_Day_2015.pdf" }
+    ]
+  },
+  {
+    "id": "the-clash-london-calling-cover",
+    "entityId": "the-clash",
+    "text": "The Clash's London Calling cover paired Paul Simonon smashing his bass with lettering modeled on Elvis Presley's debut.",
+    "year": 1979,
+    "tags": ["punk", "album-art"],
+    "verifiedAt": "2026-09-26",
+    "sources": [
+      { "label": "Recording Academy", "url": "https://live.grammy.com/news/iconic-album-covers" }
+    ]
   }
 ]
