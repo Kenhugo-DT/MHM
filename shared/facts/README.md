@@ -37,6 +37,20 @@ For a small controlled run, add repeated `--entity` IDs and a low `--limit` to
 the dry-run or publish command; the normal scheduled run still scans eligible
 entities across zones.
 
+The separate Wikidata pilot is opt-in and is not part of the scheduled run.
+`npm run brain:fact-scout:wikidata:dry-run` checks at most 12 existing nodes
+(hard cap 20; use `--offset 20` for another batch). It requires the Wikidata
+item's English Wikipedia sitelink to match the node's Wikipedia source, so a
+discography or similarly named subject
+cannot be mistaken for the node. It reports uncited structured claims as
+`researchLeads`; these are not written anywhere. Only claims with a direct
+external HTTPS reference qualify as `reviewProposals`. After inspecting the
+preview, `npm run brain:fact-scout:wikidata` writes up to three such proposals
+to private review, never to the public site. The reviewer still must open the
+linked reference and verify the exact claim before approval. Both commands
+accept `-- --entity NODE_ID --max-lookup 1 --limit 1` for a targeted run.
+Routine middle-name additions are excluded from birth-name leads.
+
 Apply `brain/supabase/migrations/0005_facts_all_node_types.sql` to allow review
 facts for genres, guitars and guitar brands as well as people and bands. The
 current automatic scout still targets people and bands; other types need a

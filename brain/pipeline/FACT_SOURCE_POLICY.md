@@ -10,7 +10,7 @@ and topic labels are the feedback the scout can use.
 | Source | Access | Best use | Current state |
 | --- | --- | --- | --- |
 | [Wikipedia API](https://www.mediawiki.org/wiki/API:Main_page) | Public API; identify the client and respect throttling | Lead discovery, never the only approval source | Existing pattern scout |
-| [Wikidata](https://www.wikidata.org/wiki/Wikidata:Licensing) | Public API; structured data is CC0 | Entity identity, dates, relationships and claim references | Existing graph collector; eligible nodes now counted in the coverage report |
+| [Wikidata](https://www.wikidata.org/wiki/Wikidata:Licensing) | Public API; structured data is CC0 | Entity identity, dates, relationships and claim references | Bounded, opt-in name-origin and birth-name pilot; not scheduled |
 | [MusicBrainz](https://musicbrainz.org/doc/MusicBrainz_API) | Non-commercial API use is free without a key; at most one request per second with a meaningful User-Agent | Credits, membership, recordings and cross-source IDs | Existing graph collector; eligible nodes now counted in the coverage report |
 | [Library of Congress](https://www.loc.gov/apis/json-and-yaml/working-within-limits/) | Public JSON API without a key; limit 20 requests per minute | Historical recordings and archival evidence | Candidate for a bounded pilot, not yet connected |
 | [Smithsonian Open Access](https://www.si.edu/openaccess/faq) | CC0 collections; API needs an api.data.gov key | Instrument and music-history collection objects | Defer until the owner wants another key |
@@ -47,3 +47,8 @@ historical record into a claim that it still stands today.
 No paid model calls, new credentials or automatic approval are part of this
 source policy. New integrations must have explicit per-run lookup limits,
 timeouts, rate-limit handling and a dry-run before scheduled use.
+The Wikidata pilot checks the English Wikipedia sitelink against the map node's
+existing Wikipedia URL. A QID alone is not sufficient: the map contains at
+least one QID for a band's discography rather than the band. Claims without a
+direct external HTTPS reference stay report-only. A reference URL is still a
+lead, not proof that the linked page supports the claim; a human verifies it.
