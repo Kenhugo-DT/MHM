@@ -18,6 +18,10 @@ limit before the site can be built. The source links appear beside the fact in
 the detail panel. Tags are research context only, not automatic graph links.
 `npm run facts:coverage` reads the live Supabase map and approved facts plus
 curated facts, then reports gaps by type and zone for the next research batch.
+It also counts existing Wikipedia, Wikidata and MusicBrainz pointers on
+uncovered nodes. Those pointers are research starting points, not evidence that
+any particular fact is true. See `brain/pipeline/FACT_SOURCE_POLICY.md` before
+adding a new automatic source.
 
 Keep the GitHub Actions repository variable `FACT_SCOUT_ENABLED` at `false`
 until the source-pattern scout has been previewed. If enabled, the existing
