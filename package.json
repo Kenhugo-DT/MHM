@@ -11,6 +11,7 @@
     "check": "tsc -b site/tsconfig.json --pretty false",
     "test": "node --test tests/graph-data.test.mjs tests/facts.test.mjs",
     "facts:validate": "node shared/facts/validate.mjs",
+    "facts:coverage": "node brain/scripts/run-python.mjs brain/pipeline/fact_coverage.py",
     "brain:fact-scout": "node brain/scripts/run-python.mjs brain/pipeline/fact_scout.py --publish",
     "brain:fact-scout:dry-run": "node brain/scripts/run-python.mjs brain/pipeline/fact_scout.py",
     "brain:fact-scout:test": "node brain/scripts/run-python.mjs -m unittest discover -s brain/pipeline/tests -p test_fact_scout.py",

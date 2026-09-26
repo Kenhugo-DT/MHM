@@ -178,5 +178,107 @@
     "sources": [
       { "label": "Queen music history", "url": "https://www.queenonline.com/music" }
     ]
+  },
+  {
+    "id": "jazz-new-orleans-roots",
+    "entityId": "jazz",
+    "text": "Early New Orleans jazz blended blues and ragtime with the collective improvisation of brass bands.",
+    "tags": ["origins", "new-orleans"],
+    "verifiedAt": "2026-09-26",
+    "sources": [
+      { "label": "Smithsonian Folkways", "url": "https://folkways.si.edu/magazine-winter-2011-jazz-cover-story/ragtime/music/article/smithsonian" },
+      { "label": "Smithsonian Folklife", "url": "https://folklife.si.edu/magazine/freedom-sounds-new-orleans-music-spirit-of-a-community" }
+    ]
+  },
+  {
+    "id": "chet-atkins-radio-picking",
+    "entityId": "chet-atkins",
+    "text": "After hearing Merle Travis on the radio, Chet Atkins developed his own thumb-and-two-finger picking style.",
+    "tags": ["guitars", "playing-technique"],
+    "verifiedAt": "2026-09-26",
+    "sources": [
+      { "label": "Country Music Hall of Fame", "url": "https://countrymusichalloffame.org/hall-of-fame/chet-atkins" }
+    ]
+  },
+  {
+    "id": "beastie-boys-punk-origins",
+    "entityId": "beastie-boys",
+    "text": "Before their hip-hop breakthrough, the Beastie Boys emerged from New York's hardcore punk scene.",
+    "tags": ["origins", "punk", "hip-hop"],
+    "verifiedAt": "2026-09-26",
+    "sources": [
+      { "label": "Rock & Roll Hall of Fame", "url": "https://rockhall.com/inductees/beastie-boys/8/?field_induction_category=All" }
+    ]
+  },
+  {
+    "id": "django-reinhardt-two-finger-solos",
+    "entityId": "django-reinhardt",
+    "text": "After a caravan fire injured his fretting hand, Django Reinhardt relearned guitar solos using mainly two fingers.",
+    "tags": ["guitars", "playing-technique"],
+    "verifiedAt": "2026-09-26",
+    "sources": [
+      { "label": "Smithsonian Folkways", "url": "https://folkways-media.si.edu/docs/folkways/artwork/SFW40820.pdf" }
+    ]
+  },
+  {
+    "id": "patsy-cline-crazy-songwriter",
+    "entityId": "patsy-cline",
+    "text": "Willie Nelson wrote Crazy before Patsy Cline turned it into one of her signature hits.",
+    "tags": ["songwriting", "country"],
+    "verifiedAt": "2026-09-26",
+    "sources": [
+      { "label": "Country Music Hall of Fame", "url": "https://countrymusichalloffame.org/hall-of-fame/patsy-cline" }
+    ]
+  },
+  {
+    "id": "run-dmc-adidas-crowd",
+    "entityId": "run-dmc",
+    "text": "After a concert crowd waved Adidas sneakers in the air, RUN-DMC landed a million-dollar deal with the brand.",
+    "tags": ["hip-hop", "fashion"],
+    "verifiedAt": "2026-09-26",
+    "sources": [
+      { "label": "Rock & Roll Hall of Fame", "url": "https://rockhall.com/inductees/run-dmc/" }
+    ]
+  },
+  {
+    "id": "fender-founder-saxophone",
+    "entityId": "fender",
+    "text": "Fender's founder Leo Fender did not play guitar; he played saxophone and was drawn to electronics.",
+    "tags": ["founder", "instruments"],
+    "verifiedAt": "2026-09-26",
+    "sources": [
+      { "label": "Fender", "url": "https://www.fender.com/articles/behind-the-scenes/8-things-you-might-not-know-about-leo-fender" }
+    ]
+  },
+  {
+    "id": "stratocaster-hidden-switch-positions",
+    "entityId": "fender-stratocaster",
+    "text": "The original Stratocaster had a three-way pickup switch; players found two extra sounds by balancing it between positions.",
+    "tags": ["guitar-design", "electronics"],
+    "verifiedAt": "2026-09-26",
+    "sources": [
+      { "label": "Fender", "url": "https://www.fender.com/articles/behind-the-scenes/the-history-of-the-fender-stratocaster-the-1950s" }
+    ]
+  },
+  {
+    "id": "gibson-sg-les-paul-origin",
+    "entityId": "gibson-sg",
+    "text": "Gibson's SG shape debuted in 1961 as a redesigned Les Paul before the model took the SG name.",
+    "year": 1961,
+    "tags": ["guitar-design", "origins"],
+    "verifiedAt": "2026-09-26",
+    "sources": [
+      { "label": "Gibson", "url": "https://www.gibson.com/en-US/p/Electric-Guitar/CUSF52344/Polaris-White" }
+    ]
+  },
+  {
+    "id": "martin-x-bracing-de-goni",
+    "entityId": "martin",
+    "text": "Martin's early X-braced guitar was built for Spanish virtuoso Dolores de Goni in the 1840s.",
+    "tags": ["guitar-design", "history"],
+    "verifiedAt": "2026-09-26",
+    "sources": [
+      { "label": "C.F. Martin & Co.", "url": "https://www.martinguitar.com/blog-categories/players/blog-051425-now-playing-latest-martin-journal.html" }
+    ]
   }
 ]

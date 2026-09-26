@@ -6,7 +6,7 @@ const factFile = new URL("./curated.json", import.meta.url);
 const graphFile = new URL("../../site/public/data/graph.json", import.meta.url);
 const slugPattern = /^[a-z0-9][a-z0-9-]*$/;
 const tagPattern = /^[a-z0-9][a-z0-9-]*$/;
-const factualTypes = new Set(["band", "artist", "guitarist"]);
+const factualTypes = new Set(["band", "artist", "guitarist", "genre", "guitar", "guitar_brand"]);
 
 export function validateCuratedFacts(facts, nodes) {
   const errors = [];
@@ -31,7 +31,7 @@ export function validateCuratedFacts(facts, nodes) {
 
     const node = nodeById.get(fact.entityId);
     if (!node || !factualTypes.has(node.type)) {
-      errors.push(`${at} must reference an existing band, artist or guitarist.`);
+      errors.push(`${at} must reference an existing supported node.`);
     }
     const count = (countByEntity.get(fact.entityId) ?? 0) + 1;
     countByEntity.set(fact.entityId, count);

@@ -2,12 +2,15 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { readAndValidateCuratedFacts, validateCuratedFacts } from "../shared/facts/validate.mjs";
 
-test("the published pilot contains sourced facts for 15-20 existing artists and bands", () => {
+test("published facts are sourced and include every node type", () => {
   const { facts, errors } = readAndValidateCuratedFacts();
   assert.deepEqual(errors, []);
   const entityIds = new Set(facts.map((fact) => fact.entityId));
-  assert.ok(entityIds.size >= 15 && entityIds.size <= 20);
+  assert.ok(entityIds.size >= 20);
   assert.ok(facts.some((fact) => fact.entityId === "metallica" && fact.sources.length >= 2));
+  for (const id of ["jazz", "fender", "fender-stratocaster"]) {
+    assert.ok(entityIds.has(id), `Missing a fact for ${id}`);
+  }
 });
 
 test("unsourced or excessive facts cannot pass the publication gate", () => {

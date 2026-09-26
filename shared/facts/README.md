@@ -7,14 +7,17 @@ changes a layout by itself.
 Only add a fact after checking that the linked page directly supports the exact
 wording. Keep the text short, include its verification date and topic tags, and
 use two independent sources for records or other superlative claims. This pilot
-is manually curated. Agent suggestions now have a separate Supabase review queue
+is manually curated. Agent suggestions have a separate Supabase review queue
 (`entity_facts`, migration `0003_entity_fact_review.sql`). Unverified suggestions
 must stay outside this file and are never shown on the site.
-There is no requirement to fill every node: no fact is better than a weak one.
+The coverage goal is every node type and, eventually, every node. No fact is
+better than a weak or unsupported one.
 
 `npm run facts:validate` checks identifiers, source links, dates and the two-fact
 limit before the site can be built. The source links appear beside the fact in
 the detail panel. Tags are research context only, not automatic graph links.
+`npm run facts:coverage` reads the live Supabase map and approved facts plus
+curated facts, then reports gaps by type and zone for the next research batch.
 
 Keep the GitHub Actions repository variable `FACT_SCOUT_ENABLED` at `false`
 until the source-pattern scout has been previewed. If enabled, the existing
@@ -29,6 +32,11 @@ for private review, not publication-ready wording.
 For a small controlled run, add repeated `--entity` IDs and a low `--limit` to
 the dry-run or publish command; the normal scheduled run still scans eligible
 entities across zones.
+
+Apply `brain/supabase/migrations/0005_facts_all_node_types.sql` to allow review
+facts for genres, guitars and guitar brands as well as people and bands. The
+current automatic scout still targets people and bands; other types need a
+manually checked source until dedicated extraction rules are in place.
 
 Review in Supabase Table Editor, table `entity_facts`: inspect `text`, `evidence`
 and `sources`; verify the claim; rewrite any copied source wording; add a direct
