@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { isMapConnection } from "../../shared/graph-schema/edge-evidence.mjs";
 import { graphFingerprint, MODE_NODE_TYPES } from "../../shared/graph-schema/graph-snapshot.mjs";
 import { ORGANIZED_MAP_ZONES } from "./organize-graph-layout.mjs";
 
@@ -521,9 +522,10 @@ function makeChaosLayout(nodes, edges, degree, learningModel) {
 }
 
 const graph = readJson(graphPath);
+const mapEdges = graph.edges.filter(isMapConnection);
 const learningModel = readJson(learningModelPath, undefined);
 const organizationModel = readJson(organizationModelPath, undefined);
-const degree = buildDegreeMap(graph.nodes, graph.edges);
+const degree = buildDegreeMap(graph.nodes, mapEdges);
 const generatedAt = new Date().toISOString();
 
 const layouts = {
@@ -531,13 +533,13 @@ const layouts = {
     id: "organized",
     ...LAYOUTS.organized,
     generatedAt,
-    nodes: makeOrganizedLayout(graph.nodes, graph.edges, degree, organizationModel),
+    nodes: makeOrganizedLayout(graph.nodes, mapEdges, degree, organizationModel),
   },
   genre: {
     id: "genre",
     ...LAYOUTS.genre,
     generatedAt,
-    nodes: makeGenreLayout(graph.nodes, graph.edges, degree, learningModel),
+    nodes: makeGenreLayout(graph.nodes, mapEdges, degree, learningModel),
   },
   timeline: {
     id: "timeline",
@@ -555,7 +557,7 @@ const layouts = {
     id: "chaos",
     ...LAYOUTS.chaos,
     generatedAt,
-    nodes: makeChaosLayout(graph.nodes, graph.edges, degree, learningModel),
+    nodes: makeChaosLayout(graph.nodes, mapEdges, degree, learningModel),
   },
 };
 

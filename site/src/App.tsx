@@ -28,6 +28,7 @@ import { FactSpotlight } from "./components/FactSpotlight";
 import { factsForEntity } from "./data/facts";
 import type { EntityFact } from "./data/facts";
 import { createGraphRepository } from "./data/repository";
+import { isMapConnection } from "../../shared/graph-schema/edge-evidence.mjs";
 import {
   fetchWikiActionContextForNode,
   type WikiActionContext,
@@ -215,7 +216,7 @@ export default function App() {
       .then((graph) => {
         if (cancelled) return;
         setNodes(graph.nodes);
-        setEdges(graph.edges);
+        setEdges(graph.edges.filter(isMapConnection));
         setLayouts(graph.layouts);
         if (!graph.layouts) setLayoutMode("organized");
         const candidates = graph.nodes.filter((node) => node.starter);
@@ -275,7 +276,7 @@ export default function App() {
       try {
         const graph = await repository.loadNeighborhood(node.id, 1);
         setDetailNodes(graph.nodes);
-        setDetailEdges(graph.edges);
+        setDetailEdges(graph.edges.filter(isMapConnection));
       } catch {
         setDetailNodes([node]);
         setDetailEdges([]);
@@ -356,7 +357,7 @@ export default function App() {
   const selectedConnections = useMemo(() => {
     if (!selected) return [];
     return detailEdges
-      .filter((edge) => edge.source === selected.id || edge.target === selected.id)
+      .filter((edge) => isMapConnection(edge) && (edge.source === selected.id || edge.target === selected.id))
       .map((edge) => ({ edge, node: nodeById.get(edgeForNode(edge, selected.id)) }))
       .filter((item): item is { edge: GraphEdge; node: GraphNode } => Boolean(item.node))
       .sort((a, b) => b.edge.strength - a.edge.strength);
@@ -889,7 +890,7 @@ export default function App() {
                   </button>
                 ))
               ) : (
-                <p className="empty-copy">No documented connections yet.</p>
+                <p className="empty-copy">No curated connections yet.</p>
               )}
             </div>
           </section>
@@ -947,7 +948,7 @@ export default function App() {
 
       <footer className="map-status">
         <span>{nodes.length} nodes</span>
-        <span>{edges.length} documented links</span>
+        <span>{edges.length} curated connections</span>
         <span>{repository.source === "local" ? "Curated preview data" : "Live database"}</span>
       </footer>
     </main>

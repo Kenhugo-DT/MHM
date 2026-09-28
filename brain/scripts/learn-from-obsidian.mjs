@@ -2,6 +2,7 @@ import fs from "node:fs";
 import { createHash } from "node:crypto";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { isMapConnection } from "../../shared/graph-schema/edge-evidence.mjs";
 import {
   ALLOWED_NODE_TYPES,
   coerceOptionalNumber,
@@ -278,6 +279,7 @@ function graphMaps(graph) {
   const zonesByNode = new Map(nodes.map((node) => [node.id, new Set([node.zone].filter(Boolean))]));
 
   for (const edge of graph.edges ?? []) {
+    if (!isMapConnection(edge)) continue;
     const source = nodeById.get(edge.source);
     const target = nodeById.get(edge.target);
     if (!source || !target) continue;
@@ -493,6 +495,7 @@ function buildLearningModel(graph, notes, feedbackData, approvedEvidence, warnin
     samples: {
       graphNodes: graph.nodes?.length ?? 0,
       graphEdges: graph.edges?.length ?? 0,
+      mapConnections: (graph.edges ?? []).filter(isMapConnection).length,
       obsidianNotes: notes.size,
       feedbackNodes: feedback.size,
       feedbackZones: feedbackData.payload.zoneFeedback?.length ?? 0,

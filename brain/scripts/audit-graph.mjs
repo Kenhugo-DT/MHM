@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { edgeEvidenceTier, isMapConnection } from "../../shared/graph-schema/edge-evidence.mjs";
 
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
 const brainRoot = path.resolve(scriptDir, "..");
@@ -92,12 +93,57 @@ for (const edge of graph.edges ?? []) {
   }
 }
 
+const edgeEvidence = { sourceLinked: 0, curatedUnsourced: 0, researchLeads: 0 };
+for (const edge of graph.edges ?? []) {
+  const tier = edgeEvidenceTier(edge);
+  if (tier === "source_linked") edgeEvidence.sourceLinked += 1;
+  else if (tier === "curated_unsourced") edgeEvidence.curatedUnsourced += 1;
+  else edgeEvidence.researchLeads += 1;
+}
+if (edgeEvidence.curatedUnsourced) {
+  warnings.push(`${edgeEvidence.curatedUnsourced} map connections lack relation-specific sources.`);
+}
+if (edgeEvidence.researchLeads) {
+  warnings.push(`${edgeEvidence.researchLeads} Wikipedia link/category signals remain research leads, not map connections.`);
+}
+
+const nodeById = new Map((graph.nodes ?? []).map((node) => [node.id, node]));
+const sceneBridges = (graph.edges ?? [])
+  .filter((edge) => {
+    const source = nodeById.get(edge.source);
+    const target = nodeById.get(edge.target);
+    return source?.zone && target?.zone && source.zone !== target.zone
+      && ![source.type, target.type].some((type) => type === "guitar" || type === "guitar_brand")
+      && edgeEvidenceTier(edge) !== "source_linked";
+  })
+  .sort((a, b) => {
+    const aGenre = [a.source, a.target].some((id) => nodeById.get(id)?.type === "genre");
+    const bGenre = [b.source, b.target].some((id) => nodeById.get(id)?.type === "genre");
+    return Number(bGenre) - Number(aGenre)
+      || (b.strength ?? 0) - (a.strength ?? 0)
+      || a.id.localeCompare(b.id);
+  });
+const reviewItem = (edge) => ({
+    id: edge.id,
+    source: nodeById.get(edge.source)?.label ?? edge.source,
+    target: nodeById.get(edge.target)?.label ?? edge.target,
+    zones: [nodeById.get(edge.source)?.zone, nodeById.get(edge.target)?.zone],
+    evidence: edgeEvidenceTier(edge),
+    label: edge.label,
+  });
+const priorityReview = {
+  unsourcedConnections: sceneBridges.filter(isMapConnection).slice(0, 12).map(reviewItem),
+  researchLeads: sceneBridges.filter((edge) => !isMapConnection(edge)).slice(0, 8).map(reviewItem),
+};
+
 const report = {
   graphPath,
   nodes: graph.nodes?.length ?? 0,
   edges: graph.edges?.length ?? 0,
   nodeTypes: countBy(graph.nodes ?? [], "type"),
   relationTypes: countBy(graph.edges ?? [], "type"),
+  edgeEvidence: { ...edgeEvidence, mapConnections: (graph.edges ?? []).filter(isMapConnection).length },
+  priorityReview,
   warnings,
   errors,
 };

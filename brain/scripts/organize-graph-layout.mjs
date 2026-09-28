@@ -1,3 +1,5 @@
+import { isMapConnection } from "../../shared/graph-schema/edge-evidence.mjs";
+
 const ZONE_LAYOUTS = {
   "roots-blues": {
     label: "ROOTS / BLUES",
@@ -846,8 +848,9 @@ function relaxAll(nodes, connectedZones, learningModel) {
 }
 
 export function organizeGraphLayout(nodes, edges, learningModel = undefined) {
-  const edgeTextByNode = buildEdgeText(nodes, edges);
-  const { genreLinks } = connectionMaps(nodes, edges);
+  const mapEdges = edges.filter(isMapConnection);
+  const edgeTextByNode = buildEdgeText(nodes, mapEdges);
+  const { genreLinks } = connectionMaps(nodes, mapEdges);
   const grouped = new Map();
 
   for (const node of nodes) {
@@ -910,8 +913,8 @@ export function organizeGraphLayout(nodes, edges, learningModel = undefined) {
     relaxZone(zone, zoneNodes);
   }
 
-  const { connectedZones } = connectionMaps(nodes, edges);
-  driftBridgeNodes(nodes, edges, learningModel, connectedZones);
+  const { connectedZones } = connectionMaps(nodes, mapEdges);
+  driftBridgeNodes(nodes, mapEdges, learningModel, connectedZones);
   relaxAll(nodes, connectedZones, learningModel);
 
   return nodes;

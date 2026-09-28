@@ -680,7 +680,7 @@ def promoted_candidate_node(
         "roles": kind_roles(kind),
         "summary": (
             f"{article_for(NODE_LABELS[kind].lower())} {NODE_LABELS[kind].lower()} "
-            f"connected to documented Wikipedia signals around {seed_name}."
+            f"found while researching Wikipedia signals around {seed_name}."
         ),
         "metadata": [NODE_LABELS[kind]],
         "x": x,

@@ -3,6 +3,7 @@ import fs from "node:fs";
 import path from "node:path";
 import test from "node:test";
 import { fileURLToPath } from "node:url";
+import { isMapConnection } from "../shared/graph-schema/edge-evidence.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const readJson = (relativePath) => JSON.parse(fs.readFileSync(path.join(root, relativePath), "utf8"));
@@ -11,6 +12,23 @@ const learning = readJson("brain/data/approved/learning-model.json");
 const organization = readJson("brain/data/approved/organization-model.json");
 const approvedFacts = readJson("brain/data/approved/fact-evidence.json");
 const curatedFacts = readJson("shared/facts/curated.json");
+const approvedGraph = readJson("brain/data/approved/graph.json");
+
+test("brain connection counts exclude Wikipedia research leads", () => {
+  const mapEdges = approvedGraph.edges.filter(isMapConnection);
+  const degree = new Map(approvedGraph.nodes.map((node) => [node.id, 0]));
+  for (const edge of mapEdges) {
+    degree.set(edge.source, degree.get(edge.source) + 1);
+    degree.set(edge.target, degree.get(edge.target) + 1);
+  }
+
+  assert.equal(learning.samples.mapConnections, mapEdges.length);
+  assert.equal(organization.graph.mapConnections, mapEdges.length);
+  for (const [id, count] of degree) {
+    assert.equal(learning.nodes[id].connectionCount, count, `Learning degree for ${id}`);
+    assert.equal(organization.nodes[id].degree, count, `Organization degree for ${id}`);
+  }
+});
 
 test("fact interpretations resolve to sourced candidates and reach their nodes", () => {
   assert.equal(learning.warnings.length, 0);

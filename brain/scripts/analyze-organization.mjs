@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { isMapConnection } from "../../shared/graph-schema/edge-evidence.mjs";
 import { ORGANIZED_MAP_ZONES } from "./organize-graph-layout.mjs";
 
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
@@ -109,6 +110,7 @@ function buildConnectionData(graph) {
   const edgesByZone = new Map();
 
   for (const edge of graph.edges ?? []) {
+    if (!isMapConnection(edge)) continue;
     const source = nodeById.get(edge.source);
     const target = nodeById.get(edge.target);
     if (!source || !target) continue;
@@ -535,6 +537,7 @@ function analyzeGraph(graph, learningModel) {
     graph: {
       nodes: nodes.length,
       edges: edges.length,
+      mapConnections: edges.filter(isMapConnection).length,
       generatedAt: graph.generatedAt,
     },
     layoutPolicy: {

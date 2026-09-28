@@ -2,6 +2,8 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import test from "node:test";
 import { graphFingerprint, matchingLayouts, MODE_NODE_TYPES } from "../shared/graph-schema/graph-snapshot.mjs";
+import { edgeEvidenceTier, isMapConnection } from "../shared/graph-schema/edge-evidence.mjs";
+import { organizeGraphLayout } from "../brain/scripts/organize-graph-layout.mjs";
 import { loadAllRows } from "../site/src/data/load-all-rows.mjs";
 
 test("pagination returns every row beyond the old 800-node cap", async () => {
@@ -85,4 +87,33 @@ test("published layouts match the approved graph in every map mode", async () =>
   for (const mode of Object.keys(MODE_NODE_TYPES)) {
     assert.equal(layouts.graphFingerprints[mode], await graphFingerprint(graph, mode));
   }
+});
+
+test("Wikipedia link and category signals stay research leads even with source URLs", () => {
+  for (const signal of ["link", "category"]) {
+    const edge = {
+      label: `Wikipedia ${signal} signal`,
+      context: [`Wikipedia ${signal}: Example`],
+      sources: [{ url: "https://en.wikipedia.org/wiki/Example" }],
+    };
+    assert.equal(edgeEvidenceTier(edge), "research_lead");
+    assert.equal(isMapConnection(edge), false);
+  }
+  assert.equal(edgeEvidenceTier({ label: "member", sources: [] }), "curated_unsourced");
+  assert.equal(edgeEvidenceTier({ label: "member", sources: [{ url: "https://example.org/history" }] }), "source_linked");
+  assert.equal(isMapConnection({ label: "member", sources: [] }), true);
+});
+
+test("research leads cannot pull nodes into another layout zone", () => {
+  const nodes = [
+    { id: "punk-band", label: "Punk Band", type: "band", zone: "punk-alt", x: 0, y: 0 },
+    { id: "jazz", label: "Jazz", type: "genre", zone: "jazz", x: 0, y: 0 },
+  ];
+  const lead = {
+    source: "punk-band", target: "jazz", type: "associated_genre",
+    label: "Wikipedia link signal", context: ["Wikipedia link: Jazz"], sources: [],
+  };
+  const alone = organizeGraphLayout(structuredClone(nodes), []);
+  const withLead = organizeGraphLayout(structuredClone(nodes), [lead]);
+  assert.deepEqual(withLead, alone);
 });
