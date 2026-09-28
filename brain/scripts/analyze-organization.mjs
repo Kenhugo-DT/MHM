@@ -156,7 +156,7 @@ function bridgePoliciesForNode(node, connectedZones, learningModel) {
     const anchorNodes = new Set((policy.anchorNodes ?? []).map(normalize));
     const zoneHits = [...nodeZones].filter((zone) => policyZones.has(normalize(zone)));
     const anchorHit = anchorNodes.has(nodeId) || anchorNodes.has(nodeLabel);
-    if (!anchorHit && zoneHits.length < 2) continue;
+    if (policy.anchorsOnly ? !anchorHit : !anchorHit && zoneHits.length < 2) continue;
     matches.push({
       id: policy.id,
       zones: policy.zones ?? [],
@@ -358,6 +358,7 @@ function analyzeGraph(graph, learningModel) {
       eraMedian: undefined,
       averageDegree: 0,
       averageSourceQuality: 0,
+      approvedFactNodes: 0,
       needsAttentionScore: 0,
     };
   }
@@ -393,6 +394,7 @@ function analyzeGraph(graph, learningModel) {
     const overlapCount = overlaps.counts.get(node.id) ?? 0;
     const overflow = overflowDistance(node);
     const sourceScore = sourceQuality(node);
+    const approvedFactCount = Number(learned.approvedFactCount ?? 0);
     const era = eraFor(node, learned);
     const isolated = degree === 0;
     const important = Boolean(node.starter || node.type === "genre" || hubScore >= 0.45 || bridgeScore >= 0.35);
@@ -405,6 +407,7 @@ function analyzeGraph(graph, learningModel) {
     if (overlapCount >= 3) recommendedActions.push("spread-local-neighborhood");
     if (overflow > 0) recommendedActions.push("review-zone-bleed");
     if (sourceScore < 0.45) recommendedActions.push("improve-source-quality");
+    if (important && approvedFactCount === 0) recommendedActions.push("source-history-fact");
 
     nodeAnalysis[node.id] = {
       id: node.id,
@@ -415,6 +418,7 @@ function analyzeGraph(graph, learningModel) {
       weightedDegree,
       era,
       sourceQuality: Number(sourceScore.toFixed(3)),
+      approvedFactCount,
       hubScore: Number(hubScore.toFixed(3)),
       bridgeScore: Number(bridgeScore.toFixed(3)),
       secondaryZones: uniqueSecondaryZones,
@@ -441,12 +445,14 @@ function analyzeGraph(graph, learningModel) {
         eraMedian: undefined,
         averageDegree: 0,
         averageSourceQuality: 0,
+        approvedFactNodes: 0,
         needsAttentionScore: 0,
       };
     }
 
     const zone = zones[node.zone];
     zone.nodes.push(node.id);
+    if (approvedFactCount > 0) zone.approvedFactNodes += 1;
     if (isolated) zone.isolatedNodes.push(node.id);
     if (important && degree <= 2) zone.underConnectedImportantNodes.push(node.id);
     if (bridgeScore >= 0.34 || uniqueSecondaryZones.length >= 2) zone.bridgeNodes.push(node.id);
@@ -461,6 +467,7 @@ function analyzeGraph(graph, learningModel) {
     const eras = zoneNodes.map((node) => node.era).filter(Number.isFinite);
     const sourceScores = zoneNodes.map((node) => node.sourceQuality);
     zone.nodeCount = zone.nodes.length;
+    zone.factCoverageRate = Number((zone.approvedFactNodes / Math.max(1, zone.nodeCount)).toFixed(3));
     zone.averageDegree = Number((degrees.reduce((sum, value) => sum + value, 0) / Math.max(1, degrees.length)).toFixed(2));
     zone.degreeP25 = quantile(degrees, 0.25) ?? 0;
     zone.eraMedian = median(eras);
@@ -690,6 +697,7 @@ function writeReport(model) {
     lines.push(`- Nodes: ${zone.nodeCount}`);
     lines.push(`- Average degree: ${zone.averageDegree}`);
     lines.push(`- Average source quality: ${zone.averageSourceQuality}`);
+    lines.push(`- Approved fact coverage: ${zone.approvedFactNodes}/${zone.nodeCount}`);
     lines.push(`- Isolated: ${zone.isolatedNodes.length ? zone.isolatedNodes.slice(0, 8).join(", ") : "none"}`);
     lines.push(`- Under-connected important: ${zone.underConnectedImportantNodes.length ? zone.underConnectedImportantNodes.slice(0, 8).join(", ") : "none"}`);
     lines.push(`- Bridge nodes: ${zone.bridgeNodes.length ? zone.bridgeNodes.slice(0, 8).join(", ") : "none"}`);

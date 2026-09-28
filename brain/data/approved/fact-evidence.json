@@ -1,0 +1,1111 @@
+{
+  "version": 1,
+  "source": "Supabase public.entity_facts; approved rows only",
+  "syncedAt": "2026-09-28T12:09:43.543718Z",
+  "facts": [
+    {
+      "entityId": "aerosmith",
+      "text": "Kid Rock inducted Aerosmith into the Rock & Roll Hall of Fame in 2001.",
+      "tags": [
+        "music-history",
+        "manual-research",
+        "collaboration"
+      ],
+      "sources": [
+        {
+          "label": "Rock Hall: Aerosmith",
+          "url": "https://rockhall.com/inductees/aerosmith/"
+        }
+      ],
+      "sourceFingerprint": "e8a25460d1658046e3fabae0eb604abc9c55c3eaef0c38efcd31b0db7a01e66b",
+      "verifiedAt": "2026-09-28"
+    },
+    {
+      "entityId": "alexi-laiho",
+      "text": "Alexi Laiho was born under the name Markku Uula Aleksi Laiho.",
+      "tags": [
+        "music-history",
+        "scout-birth-name"
+      ],
+      "sources": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q270970"
+        },
+        {
+          "label": "Claim reference",
+          "url": "https://yle.fi/uutiset/3-10684937"
+        },
+        {
+          "label": "Claim reference",
+          "url": "https://www.hs.fi/lehti/hs-daily/2021-02-04/50"
+        }
+      ],
+      "sourceFingerprint": "c273cdb6cd80d3c5c7c94ddc9eb679c510efc9d2b56be313b1a2f66cde6060d2",
+      "verifiedAt": "2026-09-28"
+    },
+    {
+      "entityId": "alice-cooper",
+      "text": "Alice Cooper's stage shows paired hard rock with electric-chair scenes and simulated guillotine beheadings.",
+      "tags": [
+        "music-history",
+        "manual-research",
+        "stage-story"
+      ],
+      "sources": [
+        {
+          "label": "Rock Hall: Alice Cooper",
+          "url": "https://rockhall.com/inductees/alice-cooper/"
+        }
+      ],
+      "sourceFingerprint": "02a8250fac37687d453e1bb97be91ba14a2398a5b0842cd0b292f38b3ccdb363",
+      "verifiedAt": "2026-09-28"
+    },
+    {
+      "entityId": "angus-young",
+      "text": "Before adopting his schoolboy uniform, Angus Young tried gorilla, Zorro and Superman costumes. His sister Margaret suggested the uniform.",
+      "tags": [
+        "music-history",
+        "scout-stage-identity"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Angus_Young"
+        },
+        {
+          "label": "National Film and Sound Archive of Australia",
+          "url": "https://www.nfsa.gov.au/collection/item/schoolboy-cap-worn-angus-young-acdc"
+        }
+      ],
+      "sourceFingerprint": "c4961a97f501793f32e1cc8f435bf09d529399e03118ae698a0d1369222d1aaa",
+      "verifiedAt": "2026-09-25"
+    },
+    {
+      "entityId": "bb-king",
+      "text": "B.B. King joined Eric Clapton to induct Buddy Guy into the Rock & Roll Hall of Fame in 2005.",
+      "tags": [
+        "music-history",
+        "manual-research",
+        "collaboration"
+      ],
+      "sources": [
+        {
+          "label": "Rock Hall: Buddy Guy",
+          "url": "https://rockhall.com/inductees/buddy-guy/"
+        }
+      ],
+      "sourceFingerprint": "8bab12da9bf1afc7f9535fecab9e0c43808239094d0911ab9b76d9991ebe0bab",
+      "verifiedAt": "2026-09-28"
+    },
+    {
+      "entityId": "bebop",
+      "text": "Charlie Parker and Dizzy Gillespie's 1940s partnership helped reshape jazz harmony, melody and rhythm into bebop.",
+      "tags": [
+        "music-history",
+        "manual-research",
+        "genre-history"
+      ],
+      "sources": [
+        {
+          "label": "Smithsonian National Portrait Gallery: Dizzy Gillespie",
+          "url": "https://npg.si.edu/es/node/70668"
+        }
+      ],
+      "sourceFingerprint": "0524acdf010f7b84194031f220a3176b70b988409f75826b9367c42eb8b14804",
+      "verifiedAt": "2026-09-28"
+    },
+    {
+      "entityId": "bluegrass",
+      "text": "Bluegrass took its name from Bill Monroe's band, the Blue Grass Boys.",
+      "tags": [
+        "music-history",
+        "manual-research",
+        "genre-origin"
+      ],
+      "sources": [
+        {
+          "label": "Smithsonian Folkways: Bill Monroe",
+          "url": "https://folkways.si.edu/bill-monroe-bluegrass-innovator/music/article/smithsonian"
+        }
+      ],
+      "sourceFingerprint": "b996e7e39d73f986e897bf117fb717892c9383abce9002a8ddcb3073365fd158",
+      "verifiedAt": "2026-09-28"
+    },
+    {
+      "entityId": "buddy-guy",
+      "text": "B.B. King and Eric Clapton jointly inducted Buddy Guy into the Rock & Roll Hall of Fame in 2005.",
+      "tags": [
+        "music-history",
+        "manual-research",
+        "collaboration"
+      ],
+      "sources": [
+        {
+          "label": "Rock Hall: Buddy Guy",
+          "url": "https://rockhall.com/inductees/buddy-guy/"
+        }
+      ],
+      "sourceFingerprint": "9ae28bcb481d981d59b09c4a88078fe17fcbfd0a75c23b681921712e613b0241",
+      "verifiedAt": "2026-09-28"
+    },
+    {
+      "entityId": "chuck-berry",
+      "text": "Keith Richards of the Rolling Stones inducted Chuck Berry into the Rock & Roll Hall of Fame in 1986.",
+      "tags": [
+        "music-history",
+        "manual-research",
+        "collaboration"
+      ],
+      "sources": [
+        {
+          "label": "Rock Hall: Chuck Berry",
+          "url": "https://rockhall.com/inductees/chuck-berry/"
+        }
+      ],
+      "sourceFingerprint": "fe011deec13606bff5c3fcba171931f952405011cc0d36972f56dd40123247c7",
+      "verifiedAt": "2026-09-28"
+    },
+    {
+      "entityId": "cream",
+      "text": "ZZ Top inducted Cream into the Rock & Roll Hall of Fame in 1993.",
+      "tags": [
+        "music-history",
+        "manual-research",
+        "collaboration"
+      ],
+      "sources": [
+        {
+          "label": "Rock Hall: Cream",
+          "url": "https://rockhall.com/inductees/cream/"
+        }
+      ],
+      "sourceFingerprint": "879086e3855528d4ab1bbd8a42b8f703d0316ba7438c36a0b91797f317a9c158",
+      "verifiedAt": "2026-09-28"
+    },
+    {
+      "entityId": "deep-purple",
+      "text": "Lars Ulrich of Metallica inducted Deep Purple into the Rock & Roll Hall of Fame in 2016.",
+      "tags": [
+        "music-history",
+        "manual-research",
+        "collaboration"
+      ],
+      "sources": [
+        {
+          "label": "Rock Hall: Deep Purple",
+          "url": "https://rockhall.com/inductees/deep-purple/"
+        }
+      ],
+      "sourceFingerprint": "25c1187dae8680dac08b339be293383a47e541a5b90747a61a86b39e430e2a2d",
+      "verifiedAt": "2026-09-28"
+    },
+    {
+      "entityId": "dr-dre",
+      "text": "Dr. Dre released The Chronic in 1992 after N.W.A broke up, helping define the sound of West Coast rap.",
+      "tags": [
+        "music-history",
+        "manual-research",
+        "recording-story"
+      ],
+      "sources": [
+        {
+          "label": "Recording Academy: The Chronic",
+          "url": "https://www.grammy.com/news/dr-dres-chronic-record/"
+        }
+      ],
+      "sourceFingerprint": "f4cdff396e254cfc4c16cba9c2f122ec66753919e36a5dae51582c9bbd09ea1d",
+      "verifiedAt": "2026-09-28"
+    },
+    {
+      "entityId": "eddie-van-halen",
+      "text": "Eddie Van Halen's two-handed finger tapping and whammy-bar techniques became central to Van Halen's guitar sound.",
+      "tags": [
+        "music-history",
+        "manual-research",
+        "playing-technique"
+      ],
+      "sources": [
+        {
+          "label": "Rock Hall: Van Halen",
+          "url": "https://rockhall.com/inductees/van-halen/"
+        }
+      ],
+      "sourceFingerprint": "bbee79bbda2da22a2900acb912015108610261d15a3031229822f52a0fa470e2",
+      "verifiedAt": "2026-09-28"
+    },
+    {
+      "entityId": "eminem",
+      "text": "Dr. Dre inducted Eminem into the Rock & Roll Hall of Fame in 2022.",
+      "tags": [
+        "music-history",
+        "manual-research",
+        "collaboration"
+      ],
+      "sources": [
+        {
+          "label": "Rock Hall: Eminem",
+          "url": "https://rockhall.com/inductees/eminem/"
+        }
+      ],
+      "sourceFingerprint": "3dbd45a6dd4a0db073f08ab18c6742eb63e15f53c7727cc0a983b043f2cce384",
+      "verifiedAt": "2026-09-28"
+    },
+    {
+      "entityId": "eric-clapton",
+      "text": "Eric Clapton entered the Rock & Roll Hall of Fame with the Yardbirds, with Cream and as a solo performer.",
+      "tags": [
+        "music-history",
+        "manual-research",
+        "career-story"
+      ],
+      "sources": [
+        {
+          "label": "Rock Hall: Eric Clapton",
+          "url": "https://rockhall.com/inductees/eric-clapton/"
+        }
+      ],
+      "sourceFingerprint": "f74a344fe1a35c19e9c21195c86d5e4dcfacb5d4028b372a036ce6960de9fb25",
+      "verifiedAt": "2026-09-28"
+    },
+    {
+      "entityId": "fender-esquire",
+      "text": "Luther Perkins used a Fender Esquire to make his boom-chicka-boom sound behind Johnny Cash.",
+      "tags": [
+        "music-history",
+        "manual-research",
+        "instrument-story"
+      ],
+      "sources": [
+        {
+          "label": "Fender: Esquire history",
+          "url": "https://www.fender.com/articles/instruments/70th-anniversary-esquire"
+        }
+      ],
+      "sourceFingerprint": "3c919f3b5c9bd9b58c27814350425de254a4f5b8a94091dc51500ed389efaf22",
+      "verifiedAt": "2026-09-28"
+    },
+    {
+      "entityId": "fender-esquire",
+      "text": "The 1950 Fender Esquire had one pickup repurposed from a lap steel guitar.",
+      "tags": [
+        "music-history",
+        "manual-research",
+        "instrument-history"
+      ],
+      "sources": [
+        {
+          "label": "Fender: Esquire history",
+          "url": "https://www.fender.com/articles/instruments/70th-anniversary-esquire"
+        }
+      ],
+      "sourceFingerprint": "ef7b3f32dc54437b97be114da8b1568c3119de55c74aa9ffe5ce76d6a0783401",
+      "verifiedAt": "2026-09-28"
+    },
+    {
+      "entityId": "fender-jaguar",
+      "text": "Fender launched the Jaguar in 1962 as its high-end model, with a shorter 24-inch scale than the Stratocaster.",
+      "tags": [
+        "music-history",
+        "manual-research",
+        "instrument-history"
+      ],
+      "sources": [
+        {
+          "label": "Fender: Jaguar history",
+          "url": "https://www.fender.com/articles/behind-the-scenes/from-surf-to-shoegaze-a-history-of-the-jaguar"
+        }
+      ],
+      "sourceFingerprint": "0cd49638e8b8645e80f0da43b558f4ef84d92d382ba346f35a52d23888e247fc",
+      "verifiedAt": "2026-09-28"
+    },
+    {
+      "entityId": "fender-jaguar",
+      "text": "The Jaguar's pickup switches include a low-cut control nicknamed the strangle switch.",
+      "tags": [
+        "music-history",
+        "manual-research",
+        "instrument-design"
+      ],
+      "sources": [
+        {
+          "label": "Fender: Jaguar history",
+          "url": "https://www.fender.com/articles/behind-the-scenes/from-surf-to-shoegaze-a-history-of-the-jaguar"
+        }
+      ],
+      "sourceFingerprint": "2cc11f2c5ed62adf5288c41a71da0ee20347779dd1660825e0436222c01fbb74",
+      "verifiedAt": "2026-09-28"
+    },
+    {
+      "entityId": "fender-mustang",
+      "text": "The Mustang brought a vibrato system to Fender's student guitar range.",
+      "tags": [
+        "music-history",
+        "manual-research",
+        "instrument-design"
+      ],
+      "sources": [
+        {
+          "label": "Fender: Mustang history",
+          "url": "https://www.fender.com/articles/behind-the-scenes/short-scale-big-noise-the-mustang-story"
+        }
+      ],
+      "sourceFingerprint": "e1aadbb54a8c0ceceff4c3a24efdb72d022f4849c9e7ed65c8470e038e092a7a",
+      "verifiedAt": "2026-09-28"
+    },
+    {
+      "entityId": "fender-mustang",
+      "text": "Fender introduced the Mustang in 1964 as part of its student guitar range.",
+      "tags": [
+        "music-history",
+        "manual-research",
+        "instrument-history"
+      ],
+      "sources": [
+        {
+          "label": "Fender: Mustang history",
+          "url": "https://www.fender.com/articles/behind-the-scenes/short-scale-big-noise-the-mustang-story"
+        }
+      ],
+      "sourceFingerprint": "fd11b5205f9bf59d5a9ba859bd71477e7ab3392d972743788cbeee2c21ffb8b2",
+      "verifiedAt": "2026-09-28"
+    },
+    {
+      "entityId": "flamenco",
+      "text": "Flamenco includes singing, guitar and dance; the vocal tradition is called cante flamenco.",
+      "tags": [
+        "music-history",
+        "manual-research",
+        "genre-history"
+      ],
+      "sources": [
+        {
+          "label": "Smithsonian Folkways: Early Cante Flamenco",
+          "url": "https://folkways.si.edu/early-cante-flamenco/latin-world/music/album/smithsonian"
+        }
+      ],
+      "sourceFingerprint": "658821809fea8e0aa149a6b6ff08cd6d6ab360e1afee3ca5233a377478e1db1d",
+      "verifiedAt": "2026-09-28"
+    },
+    {
+      "entityId": "foreigner",
+      "text": "Mick Jones removed one pickup from his 1957 Gibson Les Paul Custom and rewired it for Foreigner's sound.",
+      "tags": [
+        "music-history",
+        "manual-research",
+        "instrument-story"
+      ],
+      "sources": [
+        {
+          "label": "Rock Hall: Foreigner",
+          "url": "https://rockhall.com/inductees/foreigner/"
+        }
+      ],
+      "sourceFingerprint": "24affd741a41da00a05b9c10afa2eb50cf476c71255eb13904cd33d56b645ce4",
+      "verifiedAt": "2026-09-28"
+    },
+    {
+      "entityId": "g-funk",
+      "text": "G-funk blended West Coast rap with 1970s funk, especially Parliament-Funkadelic; Dr. Dre's The Chronic helped establish it.",
+      "tags": [
+        "music-history",
+        "manual-research",
+        "genre-history"
+      ],
+      "sources": [
+        {
+          "label": "Recording Academy: Hip-hop subgenres",
+          "url": "https://www.grammy.com/news/11-subgenres-of-hip-hop-jersey-club-drill-trap-examples-videos/"
+        }
+      ],
+      "sourceFingerprint": "129a1edf26d3826a0d2877bfa07b28545a10848736847cf02461520f8688617b",
+      "verifiedAt": "2026-09-28"
+    },
+    {
+      "entityId": "gibson-eds-1275",
+      "text": "Jimmy Page commissioned the Gibson EDS-1275's six- and twelve-string necks to perform Stairway to Heaven onstage.",
+      "tags": [
+        "music-history",
+        "manual-research",
+        "instrument-story"
+      ],
+      "sources": [
+        {
+          "label": "Gibson: Jimmy Page EDS-1275",
+          "url": "https://www.gibson.com/en-eu/blogs/gibson-gazette/gibson-custom-jimmy-page-doubleneck-collectors-edition"
+        }
+      ],
+      "sourceFingerprint": "c40144e3b8f2f99aa4eb9ad4d831efdd641ee30a5b8cc58db06433fe723664ce",
+      "verifiedAt": "2026-09-28"
+    },
+    {
+      "entityId": "gibson-es-335",
+      "text": "The Gibson ES-335's solid maple center block helps limit feedback despite its semi-hollow body.",
+      "tags": [
+        "music-history",
+        "manual-research",
+        "instrument-design"
+      ],
+      "sources": [
+        {
+          "label": "Gibson: ES-335 construction",
+          "url": "https://www.gibson.com/en-eu/blogs/gibson-gazette/gibson-introduces-new-es-335-50s-and-60s-models"
+        }
+      ],
+      "sourceFingerprint": "0e038207d265b47900e46e37d906b8cb3800ddec23f4ff1077ff8caba00fe37e",
+      "verifiedAt": "2026-09-28"
+    },
+    {
+      "entityId": "gibson-es-335",
+      "text": "Gibson unveiled the ES-335 at the 1958 NAMM convention alongside the Explorer and Flying V.",
+      "tags": [
+        "music-history",
+        "manual-research",
+        "instrument-history"
+      ],
+      "sources": [
+        {
+          "label": "Gibson: 1958 model history",
+          "url": "https://www.gibson.com/nl-eu/blogs/gibson-gazette/seven-reasons-why-you-need-a-gibson-es-335"
+        }
+      ],
+      "sourceFingerprint": "8d78d18fe3ca58eb7098146a1c2314be8a081023f5c57f684ab4d3a9b86db55a",
+      "verifiedAt": "2026-09-28"
+    },
+    {
+      "entityId": "gibson-explorer",
+      "text": "The angular Gibson Explorer was unveiled at the 1958 NAMM convention in Chicago.",
+      "tags": [
+        "music-history",
+        "manual-research",
+        "instrument-history"
+      ],
+      "sources": [
+        {
+          "label": "Gibson: 1958 model history",
+          "url": "https://www.gibson.com/nl-eu/blogs/gibson-gazette/seven-reasons-why-you-need-a-gibson-es-335"
+        }
+      ],
+      "sourceFingerprint": "115c7d0b50aaf9536e06a1e831756114aa9cb05d796584e180efaae0f46614c9",
+      "verifiedAt": "2026-09-28"
+    },
+    {
+      "entityId": "gibson-firebird",
+      "text": "Automotive designer Ray Dietrich drew the Gibson Firebird's distinctive body shape.",
+      "tags": [
+        "music-history",
+        "manual-research",
+        "instrument-design"
+      ],
+      "sources": [
+        {
+          "label": "Gibson: Firebird design",
+          "url": "https://www.gibson.com/en-eu/blogs/gibson-gazette/epiphone-announces-inspired-by-gibson-custom-firebird-thunderbird"
+        }
+      ],
+      "sourceFingerprint": "2a338476ff201c76b62b9a5efdeaabcf2039cd8e6b5161c2b1b83e82efd6769a",
+      "verifiedAt": "2026-09-28"
+    },
+    {
+      "entityId": "gibson-j45",
+      "text": "Gibson's round-shouldered J-45 acoustic guitar dates back to 1942.",
+      "tags": [
+        "music-history",
+        "manual-research",
+        "instrument-history"
+      ],
+      "sources": [
+        {
+          "label": "Gibson: Flat-top history",
+          "url": "https://www.gibson.com/blogs/gibson-gazette/100-years-of-gibson-flat-top-acoustic-guitars"
+        }
+      ],
+      "sourceFingerprint": "cc35df6d3b905d2c2824c3b51dec7ad5e3e9639548906d7d5cce3ec8619170d0",
+      "verifiedAt": "2026-09-28"
+    },
+    {
+      "entityId": "honky-tonk",
+      "text": "Ernest Tubb's honky-tonk sound used a lone electric lead guitar playing the melody rather than a dense band arrangement.",
+      "tags": [
+        "music-history",
+        "manual-research",
+        "genre-history"
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame: Ernest Tubb",
+          "url": "https://www.countrymusichalloffame.org/hall-of-fame/ernest-tubb"
+        }
+      ],
+      "sourceFingerprint": "7d8617879890fe4e33ed6d68a5854d60132fd77ec25b22c0c6016159ab79d688",
+      "verifiedAt": "2026-09-28"
+    },
+    {
+      "entityId": "ibanez-jem",
+      "text": "Steve Vai designed the Ibanez JEM in 1985 with its recognizable monkey-grip handle.",
+      "tags": [
+        "music-history",
+        "manual-research",
+        "instrument-design"
+      ],
+      "sources": [
+        {
+          "label": "Ibanez: Steve Vai",
+          "url": "https://www.ibanez.com/eu/artists/detail/213.html"
+        }
+      ],
+      "sourceFingerprint": "d418b86e9183be9b77dfe9f5b37030296872008ce63ab93367cc6d9bbe5d7fd2",
+      "verifiedAt": "2026-09-28"
+    },
+    {
+      "entityId": "jackson-rhoads",
+      "text": "Randy Rhoads named the Jackson Rhoads prototype Concorde after flying on the supersonic aircraft in 1980.",
+      "tags": [
+        "music-history",
+        "manual-research",
+        "instrument-story"
+      ],
+      "sources": [
+        {
+          "label": "Jackson: Concorde origin",
+          "url": "https://blog.jacksonguitars.com/where-did-the-%E2%80%9Cconcorde%E2%80%9D-come-from/"
+        }
+      ],
+      "sourceFingerprint": "1683d12a986a143c85871db4d2429b635bbe91fe659c3bdb784fecfa565573f3",
+      "verifiedAt": "2026-09-28"
+    },
+    {
+      "entityId": "jeff-beck",
+      "text": "Jeff Beck shared the Yardbirds' guitar lineage with Eric Clapton and Jimmy Page.",
+      "tags": [
+        "music-history",
+        "manual-research",
+        "lineup-story"
+      ],
+      "sources": [
+        {
+          "label": "Rock Hall: The Yardbirds",
+          "url": "https://rockhall.com/inductees/yardbirds/"
+        }
+      ],
+      "sourceFingerprint": "ad35de1885c475b95ca035e075ca40ed89a3845108198bb251c30b15685a19e7",
+      "verifiedAt": "2026-09-28"
+    },
+    {
+      "entityId": "jimmy-page",
+      "text": "Jimmy Page commissioned a Gibson double-neck guitar so he could play the six- and twelve-string parts of Stairway to Heaven live.",
+      "tags": [
+        "music-history",
+        "manual-research",
+        "instrument-story"
+      ],
+      "sources": [
+        {
+          "label": "Gibson: Jimmy Page EDS-1275",
+          "url": "https://www.gibson.com/en-eu/blogs/gibson-gazette/gibson-custom-jimmy-page-doubleneck-collectors-edition"
+        }
+      ],
+      "sourceFingerprint": "d64543d2fc352b5853e893ed1a2ae24d284434c4161a56c7680a1e1d4e4d3c9e",
+      "verifiedAt": "2026-09-28"
+    },
+    {
+      "entityId": "joe-satriani",
+      "text": "Joe Satriani taught Steve Vai guitar when Vai was 12 years old.",
+      "tags": [
+        "music-history",
+        "manual-research",
+        "collaboration"
+      ],
+      "sources": [
+        {
+          "label": "Ibanez: Steve Vai",
+          "url": "https://www.ibanez.com/eu/artists/detail/213.html"
+        }
+      ],
+      "sourceFingerprint": "b91a3026a012d2785a80d3954d8c2d332d6af9bb54cf44b0352a6fffb704bb3b",
+      "verifiedAt": "2026-09-28"
+    },
+    {
+      "entityId": "john-mclaughlin",
+      "text": "John McLaughlin played a custom double-neck electric guitar called Double Rainbow, built for him by Rex Bogue.",
+      "tags": [
+        "music-history",
+        "scout-instrument-story"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/John_McLaughlin_(musician)"
+        },
+        {
+          "label": "John McLaughlin official archive",
+          "url": "https://www.johnmclaughlin.com/2007/11/john-mclaughlins-2007-touring-rig/"
+        }
+      ],
+      "sourceFingerprint": "2acfb7430c0d36ecc0709716533e92115a5aa66b03cb543039ddd47b07afdd74",
+      "verifiedAt": "2026-09-25"
+    },
+    {
+      "entityId": "johnny-marr",
+      "text": "Johnny Marr's signature Jaguar, released in 2012, included several design refinements he chose himself.",
+      "tags": [
+        "music-history",
+        "manual-research",
+        "instrument-story"
+      ],
+      "sources": [
+        {
+          "label": "Fender: Jaguar history",
+          "url": "https://www.fender.com/articles/behind-the-scenes/from-surf-to-shoegaze-a-history-of-the-jaguar"
+        }
+      ],
+      "sourceFingerprint": "acc03ebf7b778e06866178c2cd822831405c389ee9a2a289387f2c0229e33f90",
+      "verifiedAt": "2026-09-28"
+    },
+    {
+      "entityId": "keith-richards",
+      "text": "Keith Richards inducted his guitar influence Chuck Berry into the Rock & Roll Hall of Fame in 1986.",
+      "tags": [
+        "music-history",
+        "manual-research",
+        "collaboration"
+      ],
+      "sources": [
+        {
+          "label": "Rock Hall: Chuck Berry",
+          "url": "https://rockhall.com/inductees/chuck-berry/"
+        }
+      ],
+      "sourceFingerprint": "3106792606358adaeed41dc143aee7c2759de14d30d120087b4a1b5c88bbb675",
+      "verifiedAt": "2026-09-28"
+    },
+    {
+      "entityId": "kiss",
+      "text": "KISS drew on the New York Dolls' glam, Alice Cooper's stage theatrics and the Beatles' melodies when shaping their sound.",
+      "tags": [
+        "music-history",
+        "manual-research",
+        "influences"
+      ],
+      "sources": [
+        {
+          "label": "Rock Hall: KISS",
+          "url": "https://rockhall.com/inductees/kiss/"
+        }
+      ],
+      "sourceFingerprint": "37f396cc3cea9cbbe8c21865c815cf1aded52cf1f9631e8b91a21ec119357c61",
+      "verifiedAt": "2026-09-28"
+    },
+    {
+      "entityId": "national",
+      "text": "National's early metal-body resonator guitars used three thin aluminum cones to make acoustic playing louder.",
+      "tags": [
+        "music-history",
+        "manual-research",
+        "brand-history"
+      ],
+      "sources": [
+        {
+          "label": "Rickenbacker: Legacy",
+          "url": "https://www.rickenbacker.com/legacy/"
+        }
+      ],
+      "sourceFingerprint": "b1121894228c00cd06e3845c631dcdcdbc6f660fec08773af52de768b9e6b618",
+      "verifiedAt": "2026-09-28"
+    },
+    {
+      "entityId": "prince",
+      "text": "Prince's original white Cloud guitar was custom-made in Minneapolis for him to play in the 1984 film Purple Rain.",
+      "tags": [
+        "music-history",
+        "manual-research",
+        "instrument-story"
+      ],
+      "sources": [
+        {
+          "label": "Rock Hall: Prince",
+          "url": "https://rockhall.com/inductees/prince/"
+        }
+      ],
+      "sourceFingerprint": "d1790be765aae2d8c3400fd82e282a9f074572afef45c2a5b974dfe7381b79d8",
+      "verifiedAt": "2026-09-28"
+    },
+    {
+      "entityId": "prs-custom-24",
+      "text": "PRS introduced the Custom 24 in 1985; later SE versions retained its 24-fret design.",
+      "tags": [
+        "music-history",
+        "manual-research",
+        "instrument-history"
+      ],
+      "sources": [
+        {
+          "label": "PRS: Custom 24 history",
+          "url": "https://eu.prsguitars.com/news/story/prs_guitars_se_custom_24_family_of_instruments"
+        }
+      ],
+      "sourceFingerprint": "5ae04601421f786ebb44255f2ebe126d107fcc201ebaa084108a555cffee043d",
+      "verifiedAt": "2026-09-28"
+    },
+    {
+      "entityId": "psychedelic-rock",
+      "text": "The Yardbirds' experiments with feedback and distortion helped shape the sound of psychedelic rock.",
+      "tags": [
+        "music-history",
+        "manual-research",
+        "genre-history"
+      ],
+      "sources": [
+        {
+          "label": "Rock Hall: The Yardbirds",
+          "url": "https://rockhall.com/inductees/yardbirds/"
+        }
+      ],
+      "sourceFingerprint": "5a7c4b635dd9379d5f6e2124cef62f8e5edfd80e26d7f1c158bc874bffaa2892",
+      "verifiedAt": "2026-09-28"
+    },
+    {
+      "entityId": "radiohead",
+      "text": "David Byrne of Talking Heads inducted Radiohead into the Rock & Roll Hall of Fame in 2019.",
+      "tags": [
+        "music-history",
+        "manual-research",
+        "collaboration"
+      ],
+      "sources": [
+        {
+          "label": "Rock Hall: Radiohead",
+          "url": "https://rockhall.com/inductees/radiohead/"
+        }
+      ],
+      "sourceFingerprint": "ed48cab4999e9520544da40cb14d1c62b61ecd0c1c6d216dd3035dc91e5f3028",
+      "verifiedAt": "2026-09-28"
+    },
+    {
+      "entityId": "rage-against-the-machine",
+      "text": "Ice-T inducted Rage Against the Machine into the Rock & Roll Hall of Fame in 2023.",
+      "tags": [
+        "music-history",
+        "manual-research",
+        "collaboration"
+      ],
+      "sources": [
+        {
+          "label": "Rock Hall: Rage Against the Machine",
+          "url": "https://rockhall.com/inductees/rage-against-the-machine/"
+        }
+      ],
+      "sourceFingerprint": "a056a9bebeb39618bd7188fc7903c41f13692428da62023c16914b17dc87f0b0",
+      "verifiedAt": "2026-09-28"
+    },
+    {
+      "entityId": "rickenbacker",
+      "text": "An early Rickenbacker electric-guitar pickup was wound using a washing-machine motor at George Beauchamp's home.",
+      "tags": [
+        "music-history",
+        "manual-research",
+        "brand-history"
+      ],
+      "sources": [
+        {
+          "label": "Rickenbacker: Legacy",
+          "url": "https://www.rickenbacker.com/legacy/"
+        }
+      ],
+      "sourceFingerprint": "bb06dc52b40b2a1129f14eab317f81ce1b79eee1f1c9eba2dbd0fb30cc7c97d9",
+      "verifiedAt": "2026-09-28"
+    },
+    {
+      "entityId": "rickenbacker-360-12",
+      "text": "George Harrison played the second Rickenbacker 360/12 ever made on several Beatles recordings.",
+      "tags": [
+        "music-history",
+        "manual-research",
+        "instrument-story"
+      ],
+      "sources": [
+        {
+          "label": "Rickenbacker: Legacy",
+          "url": "https://www.rickenbacker.com/legacy/"
+        }
+      ],
+      "sourceFingerprint": "9485f23ffbe3e7d1a1d1ea6b78a12263d9a5cebc33d2f34c9027e18b362c51ad",
+      "verifiedAt": "2026-09-28"
+    },
+    {
+      "entityId": "rickenbacker-360-12",
+      "text": "Roger McGuinn bought a Rickenbacker 360/12 after seeing the Beatles film A Hard Day's Night.",
+      "tags": [
+        "music-history",
+        "manual-research",
+        "instrument-story"
+      ],
+      "sources": [
+        {
+          "label": "Rickenbacker: Legacy",
+          "url": "https://www.rickenbacker.com/legacy/"
+        }
+      ],
+      "sourceFingerprint": "d6ad0292a921da0c85c68c8b3b16df587b15576fb90343a8103c7ace9bd5c129",
+      "verifiedAt": "2026-09-28"
+    },
+    {
+      "entityId": "rockabilly",
+      "text": "Carl Perkins recorded Blue Suede Shoes at Sun Records in 1955; the song became a signature rockabilly record.",
+      "tags": [
+        "music-history",
+        "manual-research",
+        "genre-history"
+      ],
+      "sources": [
+        {
+          "label": "Rock Hall: Carl Perkins",
+          "url": "https://www.rockhall.com/wp-content/uploads/2024/03/Carl_Perkins_1987.pdf"
+        }
+      ],
+      "sourceFingerprint": "aedafcf8f78092f3c6c02e3f6a2d502863c6361a9c229c3df6ec24f820ae4e7b",
+      "verifiedAt": "2026-09-28"
+    },
+    {
+      "entityId": "rush",
+      "text": "Neil Peart played a snare made from barrel-stave redwood on Rush's 2012-13 Clockwork Angels tour.",
+      "tags": [
+        "music-history",
+        "manual-research",
+        "instrument-story"
+      ],
+      "sources": [
+        {
+          "label": "Rock Hall: Rush",
+          "url": "https://rockhall.com/inductees/rush/"
+        }
+      ],
+      "sourceFingerprint": "ab1a1f7ba6719809e3593110ce999592850d1631e28caec0c84f56af221e0cfc",
+      "verifiedAt": "2026-09-28"
+    },
+    {
+      "entityId": "shoegaze",
+      "text": "Slowdive's Neil Halstead says shoegaze began as an unflattering label before musicians and listeners embraced it as a genre name.",
+      "tags": [
+        "music-history",
+        "manual-research",
+        "genre-origin"
+      ],
+      "sources": [
+        {
+          "label": "Recording Academy: Slowdive",
+          "url": "https://www.grammy.com/news/slowdive-interview-shoegaze-new-album-everything-is-alive-neil-halstead/"
+        }
+      ],
+      "sourceFingerprint": "dccc8d670dcdece45c6ce8360859d546db06ebc48c51ae1f9cfd2e5e04dd5c42",
+      "verifiedAt": "2026-09-28"
+    },
+    {
+      "entityId": "slash",
+      "text": "Slash acquired two original late-1950s Gibson Explorers, including a 1958 example fitted with a Bigsby vibrato.",
+      "tags": [
+        "music-history",
+        "manual-research",
+        "instrument-story"
+      ],
+      "sources": [
+        {
+          "label": "Gibson: Slash's 1958 Explorer",
+          "url": "https://www.gibson.com/blogs/gibson-gazette/see-slash-1958-gibson-explorer-up-close"
+        }
+      ],
+      "sourceFingerprint": "cbf19d6513f59efa493202d1fc99c22d93685385cb6c7050125dcf0cc4a923dc",
+      "verifiedAt": "2026-09-28"
+    },
+    {
+      "entityId": "steve-vai",
+      "text": "Steve Vai began taking guitar lessons from Joe Satriani at age 12, then worked with Frank Zappa at 18.",
+      "tags": [
+        "music-history",
+        "manual-research",
+        "career-story"
+      ],
+      "sources": [
+        {
+          "label": "Ibanez: Steve Vai",
+          "url": "https://www.ibanez.com/eu/artists/detail/213.html"
+        }
+      ],
+      "sourceFingerprint": "ad870f4beed60440824787c9a8b7d22be63191bd405debbd7462172e7be01634",
+      "verifiedAt": "2026-09-28"
+    },
+    {
+      "entityId": "stevie-ray-vaughan",
+      "text": "John Mayer inducted Stevie Ray Vaughan & Double Trouble into the Rock & Roll Hall of Fame in 2015.",
+      "tags": [
+        "music-history",
+        "manual-research",
+        "collaboration"
+      ],
+      "sources": [
+        {
+          "label": "Rock Hall: Stevie Ray Vaughan",
+          "url": "https://rockhall.com/inductees/stevie-ray-vaughan-double-trouble/"
+        }
+      ],
+      "sourceFingerprint": "edde500647f0fb2aaa6a0d9f0d8606d02139b2ac8d3b0919be0a6ebf0835683a",
+      "verifiedAt": "2026-09-28"
+    },
+    {
+      "entityId": "surf-rock",
+      "text": "Dick Dale's surf-rock guitar style paired rapid picking with shimmering reverb and high volume.",
+      "tags": [
+        "music-history",
+        "manual-research",
+        "genre-history"
+      ],
+      "sources": [
+        {
+          "label": "Recording Academy: Dick Dale",
+          "url": "https://www.grammy.com/news/remembering-dick-dale-get-soaked-these-7-surf-rock-classics"
+        }
+      ],
+      "sourceFingerprint": "076d42d1626138ff89aefd12e0866d4ef3153f6d1828cc53ec04ac7b7e18c123",
+      "verifiedAt": "2026-09-28"
+    },
+    {
+      "entityId": "taylor",
+      "text": "Taylor Guitars' founders arrived for their opening day in 1974 to find the workshop flooded, so they spent the day mopping.",
+      "tags": [
+        "music-history",
+        "manual-research",
+        "brand-history"
+      ],
+      "sources": [
+        {
+          "label": "Taylor: 50th anniversary timeline",
+          "url": "https://www.taylorguitars.com/about/50th-anniversary-timeline"
+        }
+      ],
+      "sourceFingerprint": "047d7a762b4a82af6f12a068b79f6d88b647ed20bbe1c5013c101c8b7c8956a6",
+      "verifiedAt": "2026-09-28"
+    },
+    {
+      "entityId": "the-rolling-stones",
+      "text": "The Rolling Stones' 1989 Steel Wheels tour was their last with original bassist Bill Wyman.",
+      "tags": [
+        "music-history",
+        "manual-research",
+        "tour-story"
+      ],
+      "sources": [
+        {
+          "label": "Rock Hall: The Rolling Stones",
+          "url": "https://rockhall.com/inductees/rolling-stones/"
+        }
+      ],
+      "sourceFingerprint": "856b420a46458323e96214a5f587d579a4d80871cccfe16b9ae3aca211723769",
+      "verifiedAt": "2026-09-28"
+    },
+    {
+      "entityId": "the-stooges",
+      "text": "Billie Joe Armstrong of Green Day inducted the Stooges into the Rock & Roll Hall of Fame in 2010.",
+      "tags": [
+        "music-history",
+        "manual-research",
+        "collaboration"
+      ],
+      "sources": [
+        {
+          "label": "Rock Hall: The Stooges",
+          "url": "https://rockhall.com/inductees/stooges/"
+        }
+      ],
+      "sourceFingerprint": "2e9e8b06063d6fc87eb2288b1a33024332db175ffcb6d41e76e20ebb6f13c3f9",
+      "verifiedAt": "2026-09-28"
+    },
+    {
+      "entityId": "the-who",
+      "text": "U2 inducted the Who into the Rock & Roll Hall of Fame in 1990.",
+      "tags": [
+        "music-history",
+        "manual-research",
+        "collaboration"
+      ],
+      "sources": [
+        {
+          "label": "Rock Hall: The Who",
+          "url": "https://rockhall.com/inductees/who/"
+        }
+      ],
+      "sourceFingerprint": "a26e407e3b7079b4e5107704814a85dead2145c3b47621afff4f8059a0566ea6",
+      "verifiedAt": "2026-09-28"
+    },
+    {
+      "entityId": "the-yardbirds",
+      "text": "Eric Clapton, Jeff Beck and Jimmy Page all belonged to the Yardbirds before becoming major guitar figures in their own right.",
+      "tags": [
+        "music-history",
+        "manual-research",
+        "lineup-story"
+      ],
+      "sources": [
+        {
+          "label": "Rock Hall: The Yardbirds",
+          "url": "https://rockhall.com/inductees/yardbirds/"
+        }
+      ],
+      "sourceFingerprint": "b42ef0a45868f8078e26950ed73b676ee43eb5966ad3c66480fd58865fb8d093",
+      "verifiedAt": "2026-09-28"
+    },
+    {
+      "entityId": "tony-iommi",
+      "text": "After losing two fingertips in a sheet-metal factory accident, Tony Iommi adapted his guitar technique and developed a distinctive playing style.",
+      "tags": [
+        "music-history",
+        "scout-playing-technique"
+      ],
+      "sources": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Tony_Iommi"
+        },
+        {
+          "label": "Tony Iommi official biography",
+          "url": "https://www.iommi.com/biography/"
+        }
+      ],
+      "sourceFingerprint": "6e7115cf3cb4f7bda5eee7285a9d569837e4df3d2933a8c089a725618e68ce1a",
+      "verifiedAt": "2026-09-25"
+    },
+    {
+      "entityId": "van-halen",
+      "text": "Velvet Revolver inducted Van Halen into the Rock & Roll Hall of Fame in 2007.",
+      "tags": [
+        "music-history",
+        "manual-research",
+        "collaboration"
+      ],
+      "sources": [
+        {
+          "label": "Rock Hall: Van Halen",
+          "url": "https://rockhall.com/inductees/van-halen/"
+        }
+      ],
+      "sourceFingerprint": "4070034a12825964dc5691f3bd46ee1f743c38f298767840de9c7e8a7089af94",
+      "verifiedAt": "2026-09-28"
+    },
+    {
+      "entityId": "west-coast-hip-hop",
+      "text": "Dr. Dre's 1992 album The Chronic brought G-funk production and Snoop Dogg's voice to a defining West Coast rap sound.",
+      "tags": [
+        "music-history",
+        "manual-research",
+        "genre-history"
+      ],
+      "sources": [
+        {
+          "label": "Recording Academy: The Chronic",
+          "url": "https://www.grammy.com/news/dr-dres-chronic-record/"
+        }
+      ],
+      "sourceFingerprint": "4ec6f6623a24e7407b1ce37c4b9973367be07d1bbfdcefaf49d9262b87a79de3",
+      "verifiedAt": "2026-09-28"
+    }
+  ]
+}

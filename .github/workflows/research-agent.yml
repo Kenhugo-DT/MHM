@@ -74,6 +74,14 @@ jobs:
           cache-dependency-path: brain/pipeline/requirements.txt
       - run: npm ci
       - run: pip install -r brain/pipeline/requirements.txt
+      - name: Refresh approved fact evidence for this run
+        run: |
+          npm run brain:facts:sync-approved
+          npm run brain:learn
+          npm run brain:organize
+        env:
+          SUPABASE_URL: ${{ vars.SUPABASE_URL }}
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
       - name: Show trigger details
         run: |
           echo "Source: ${AGENT_TRIGGER_SOURCE:-manual}" >> "$GITHUB_STEP_SUMMARY"

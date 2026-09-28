@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import { createHash } from "node:crypto";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import {
@@ -15,6 +16,9 @@ const graphPath = path.join(brainRoot, "data", "approved", "graph.json");
 const vaultRoot = path.join(brainRoot, "obsidian");
 const modelPath = path.join(brainRoot, "data", "approved", "learning-model.json");
 const feedbackPath = path.join(brainRoot, "data", "approved", "curator-feedback.json");
+const factBatchRoot = path.join(brainRoot, "data", "fact-batches");
+const approvedFactEvidencePath = path.join(brainRoot, "data", "approved", "fact-evidence.json");
+const curatedFactsPath = path.resolve(brainRoot, "..", "shared", "facts", "curated.json");
 const reportPath = path.join(brainRoot, "data", "runs", "learning-report.md");
 
 const STOP_WORDS = new Set([
@@ -150,6 +154,8 @@ function feedbackById(graph) {
   const nodeById = new Map((graph.nodes ?? []).map((node) => [node.id, node]));
   const idByLabel = new Map((graph.nodes ?? []).map((node) => [normalize(node.label), node.id]));
   const feedback = new Map();
+  const factNotes = [];
+  const batches = new Map();
   const warnings = [];
 
   for (const item of payload.nodeFeedback ?? []) {
@@ -180,11 +186,88 @@ function feedbackById(graph) {
     });
   }
 
+  for (const item of payload.factFeedback ?? []) {
+    const batchId = String(item.batchId ?? "");
+    const index = Number(item.factIndex);
+    const ref = `${batchId}#${index}`;
+    if (!/^[a-z0-9-]+$/.test(batchId) || !Number.isInteger(index) || index < 1) {
+      warnings.push(`Skipped invalid fact note reference: ${ref}`);
+      continue;
+    }
+    if (!batches.has(batchId)) {
+      const batchPath = path.join(factBatchRoot, `${batchId}.json`);
+      batches.set(batchId, fs.existsSync(batchPath)
+        ? JSON.parse(fs.readFileSync(batchPath, "utf8"))
+        : null);
+    }
+    const batch = batches.get(batchId);
+    const entry = batch?.facts?.[index - 1];
+    const relatedNodes = coerceStringArray(item.relatedNodes);
+    const interpretation = String(item.interpretation ?? "").trim();
+    const source = batch?.sources?.[entry?.[3]];
+    if (!entry || !source?.[1] || !nodeById.has(entry[0]) || !interpretation ||
+        relatedNodes.some((id) => !nodeById.has(id)) || !relatedNodes.includes(entry[0])) {
+      warnings.push(`Skipped fact note with missing fact, source, subject, related node or interpretation: ${ref}`);
+      continue;
+    }
+    factNotes.push({
+      ref,
+      entityId: entry[0],
+      category: entry[2],
+      relatedNodes,
+      interpretation,
+      sourceUrl: source?.[1],
+      sourceFingerprint: createHash("sha256")
+        .update(`${batchId}\n${entry[0]}\n${entry[1]}`)
+        .digest("hex"),
+    });
+  }
+
   return {
     payload,
     feedback,
+    factNotes,
     warnings,
   };
+}
+
+function approvedFactEvidence(graph) {
+  const warnings = [];
+  const byEntity = new Map();
+  const byFingerprint = new Map();
+  const knownIds = new Set((graph.nodes ?? []).map((node) => node.id));
+  let curatedCount = 0;
+  for (const fact of JSON.parse(fs.readFileSync(curatedFactsPath, "utf8"))) {
+    if (!knownIds.has(fact.entityId) || !fact.sources?.length) {
+      warnings.push(`Skipped curated fact for unknown or invalid node: ${fact.entityId}`);
+      continue;
+    }
+    byEntity.set(fact.entityId, (byEntity.get(fact.entityId) ?? 0) + 1);
+    curatedCount += 1;
+  }
+  if (!fs.existsSync(approvedFactEvidencePath)) {
+    warnings.push("Approved fact snapshot missing; run brain:facts:sync-approved.");
+    return { syncedAt: undefined, curatedCount, byEntity, byFingerprint, warnings };
+  }
+
+  const snapshot = JSON.parse(fs.readFileSync(approvedFactEvidencePath, "utf8"));
+  if (snapshot.version !== 1 || !Array.isArray(snapshot.facts)) {
+    throw new Error("Invalid approved fact evidence snapshot.");
+  }
+  for (const fact of snapshot.facts) {
+    if (!knownIds.has(fact.entityId) || !fact.sourceFingerprint || !fact.sources?.length) {
+      warnings.push(`Skipped approved fact evidence for unknown or invalid node: ${fact.entityId}`);
+      continue;
+    }
+    const key = `${fact.entityId}:${fact.sourceFingerprint}`;
+    if (byFingerprint.has(key)) {
+      warnings.push(`Skipped duplicate approved fact fingerprint for ${fact.entityId}`);
+      continue;
+    }
+    byFingerprint.set(key, fact);
+    byEntity.set(fact.entityId, (byEntity.get(fact.entityId) ?? 0) + 1);
+  }
+  return { syncedAt: snapshot.syncedAt, curatedCount, byEntity, byFingerprint, warnings };
 }
 
 function graphMaps(graph) {
@@ -245,12 +328,21 @@ function termSeeds(node, note, linkedGenres) {
   return [...terms];
 }
 
-function buildLearningModel(graph, notes, feedbackData, warnings) {
+function buildLearningModel(graph, notes, feedbackData, approvedEvidence, warnings) {
   const { nodeById, degree, genreLinks, zonesByNode } = graphMaps(graph);
   const zoneTerms = new Map();
   const zoneStats = new Map();
   const learnedNodes = {};
   const feedback = feedbackData.feedback;
+  const interpretedFactNotes = feedbackData.factNotes.map((note) => {
+    const approved = approvedEvidence.byFingerprint.get(`${note.entityId}:${note.sourceFingerprint}`);
+    return {
+      ...note,
+      approvalAtLastSync: approved ? "approved" : "not-in-approved-snapshot",
+      ...(approved?.verifiedAt ? { verifiedAt: approved.verifiedAt } : {}),
+    };
+  });
+  const factNotesByEntity = Map.groupBy(interpretedFactNotes, (item) => item.entityId);
 
   for (const zone of new Set((graph.nodes ?? []).map((node) => node.zone).filter(Boolean))) {
     zoneTerms.set(zone, new Map());
@@ -323,6 +415,10 @@ function buildLearningModel(graph, notes, feedbackData, warnings) {
       primaryGenres,
       curatorTags,
       curatorFeedback: noteFeedback?.feedback,
+      ...(factNotesByEntity.has(node.id) ? { factNotes: factNotesByEntity.get(node.id) } : {}),
+      ...(approvedEvidence.byEntity.has(node.id)
+        ? { approvedFactCount: approvedEvidence.byEntity.get(node.id) }
+        : {}),
       connectionCount: nodeDegree,
       linkedGenres: linkedGenreIds,
       bridgeScore: Number(bridgeScore.toFixed(3)),
@@ -403,6 +499,12 @@ function buildLearningModel(graph, notes, feedbackData, warnings) {
       feedbackRules: feedbackData.payload.rules?.length ?? 0,
       feedbackCategories: feedbackData.payload.feedbackCategories?.length ?? 0,
       bridgePolicies: feedbackData.payload.bridgePolicies?.length ?? 0,
+      factNotes: feedbackData.factNotes.length,
+      approvedFacts: approvedEvidence.byFingerprint.size + approvedEvidence.curatedCount,
+      approvedSupabaseFacts: approvedEvidence.byFingerprint.size,
+      curatedFacts: approvedEvidence.curatedCount,
+      approvedFactNodes: approvedEvidence.byEntity.size,
+      approvedFactNotes: interpretedFactNotes.filter((note) => note.approvalAtLastSync === "approved").length,
       pinnedNotes: [...notes.values()].filter((note) => note.layoutPinned).length,
       notesWithEra: [...notes.values()].filter((note) => note.eraStart || note.eraPeak).length,
       notesWithPrimaryGenres: [...notes.values()].filter((note) => note.primaryGenres.length).length,
@@ -415,7 +517,15 @@ function buildLearningModel(graph, notes, feedbackData, warnings) {
       rules: feedbackData.payload.rules ?? [],
       feedbackCategories: feedbackData.payload.feedbackCategories ?? [],
       bridgePolicies: feedbackData.payload.bridgePolicies ?? [],
+      factNotes: interpretedFactNotes,
       nodeIds: [...feedback.keys()].sort((a, b) => a.localeCompare(b, "en")),
+    },
+    approvedFactEvidence: {
+      syncedAt: approvedEvidence.syncedAt,
+      supabaseFacts: approvedEvidence.byFingerprint.size,
+      curatedFacts: approvedEvidence.curatedCount,
+      factsTotal: approvedEvidence.byFingerprint.size + approvedEvidence.curatedCount,
+      nodesCovered: approvedEvidence.byEntity.size,
     },
     warnings,
   };
@@ -437,6 +547,13 @@ function writeReport(model) {
     `- Feedback rules: ${model.samples.feedbackRules}`,
     `- Feedback categories: ${model.samples.feedbackCategories}`,
     `- Bridge policies: ${model.samples.bridgePolicies}`,
+    `- Fact interpretation notes: ${model.samples.factNotes}`,
+    `- Approved facts at last sync: ${model.samples.approvedFacts}`,
+    `- Supabase-approved facts: ${model.samples.approvedSupabaseFacts}`,
+    `- Repository-curated facts: ${model.samples.curatedFacts}`,
+    `- Nodes with approved facts: ${model.samples.approvedFactNodes}`,
+    `- Approved fact interpretations: ${model.samples.approvedFactNotes}`,
+    `- Fact snapshot synced: ${model.approvedFactEvidence.syncedAt ?? "not available"}`,
     `- Pinned notes: ${model.samples.pinnedNotes}`,
     `- Notes with era data: ${model.samples.notesWithEra}`,
     `- Notes with primary genres: ${model.samples.notesWithPrimaryGenres}`,
@@ -479,7 +596,9 @@ function writeReport(model) {
 const graph = JSON.parse(fs.readFileSync(graphPath, "utf8"));
 const { notes, warnings } = frontmatterById();
 const feedbackData = feedbackById(graph);
-const model = buildLearningModel(graph, notes, feedbackData, [...warnings, ...feedbackData.warnings]);
+const approvedEvidence = approvedFactEvidence(graph);
+const model = buildLearningModel(graph, notes, feedbackData, approvedEvidence,
+  [...warnings, ...feedbackData.warnings, ...approvedEvidence.warnings]);
 
 fs.writeFileSync(modelPath, `${JSON.stringify(model, null, 2)}\n`);
 writeReport(model);

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-15T12:40:00.000Z",
+  "updatedAt": "2026-09-28T10:59:23.000Z",
   "notes": [
     "Human feedback for the MHM learning layer.",
     "Use this for taste, placement and organization signals after reviewing the live map.",
@@ -83,6 +83,54 @@
       "anchorNodes": ["country", "bluegrass", "country-rock", "chet-atkins", "johnny-cash"],
       "feedbackCategories": ["good_bridge", "genre_transition_needed"],
       "feedback": "Keep early country, bluegrass and honky-tonk legible as a tradition, with documented paths into folk, blues, rockabilly and rock."
+    },
+    {
+      "id": "yardbirds-guitar-lineage",
+      "zones": ["roots-blues", "rock-circuit", "hard-rock-metal", "psychedelia-prog"],
+      "anchorNodes": ["the-yardbirds", "eric-clapton", "jeff-beck", "jimmy-page"],
+      "anchorsOnly": true,
+      "feedbackCategories": ["good_bridge", "genre_transition_needed"],
+      "feedback": "The Yardbirds' documented membership links three guitarists to different later directions. Keep the shared band history visible without implying the three played in the band at the same time or followed one identical style."
+    },
+    {
+      "id": "esquire-country-use",
+      "zones": ["guitar-workshop", "country-roots"],
+      "anchorNodes": ["fender-esquire"],
+      "anchorsOnly": true,
+      "feedbackCategories": ["good_bridge", "genre_transition_needed"],
+      "feedback": "Luther Perkins' documented Esquire use behind Johnny Cash connects a specific guitar to early country. Cash is context, not the player."
+    },
+    {
+      "id": "jaguar-alternative-use",
+      "zones": ["guitar-workshop", "punk-alt"],
+      "anchorNodes": ["fender-jaguar", "johnny-marr"],
+      "anchorsOnly": true,
+      "feedbackCategories": ["good_bridge"],
+      "feedback": "Johnny Marr's documented Jaguar design gives a specific guitar-to-player link. The model's hardware specifications alone do not establish a genre connection."
+    },
+    {
+      "id": "rickenbacker-recording-use",
+      "zones": ["guitar-workshop", "rock-circuit", "psychedelia-prog"],
+      "anchorNodes": ["rickenbacker-360-12", "george-harrison"],
+      "anchorsOnly": true,
+      "feedbackCategories": ["good_bridge"],
+      "feedback": "George Harrison's documented use on Beatles recordings is a player-to-instrument bridge. Do not treat a later purchase inspired by the Beatles as a shared performance."
+    },
+    {
+      "id": "jem-virtuoso-design",
+      "zones": ["guitar-workshop", "psychedelia-prog"],
+      "anchorNodes": ["ibanez-jem", "steve-vai"],
+      "anchorsOnly": true,
+      "feedbackCategories": ["good_bridge"],
+      "feedback": "Steve Vai's documented JEM design links a guitarist to a model. Keep instrument design distinct from teacher and band relationships."
+    },
+    {
+      "id": "jazz-fusion-guitar",
+      "zones": ["jazz", "roots-blues", "rock-circuit", "psychedelia-prog"],
+      "anchorNodes": ["jazz-fusion", "john-mclaughlin", "jeff-beck", "frank-zappa"],
+      "anchorsOnly": true,
+      "feedbackCategories": ["good_bridge", "genre_transition_needed"],
+      "feedback": "Jazz fusion is a transition, not a sealed genre island. Preserve jazz as the center and let documented electric guitar, rock and funk relationships form its outward paths."
     }
   ],
   "nodeFeedback": [
@@ -173,6 +221,165 @@
       "curatorTags": ["political hip-hop", "rap-rock bridge potential", "east coast hip-hop"],
       "bridgeBoost": 0.18,
       "feedback": "Hip-hop anchor with possible punk/rock crossover context. Keep hip-hop in its own area, but allow documented bridges."
+    },
+    {
+      "id": "the-yardbirds",
+      "zone": "roots-blues",
+      "secondaryZones": ["rock-circuit", "hard-rock-metal", "psychedelia-prog"],
+      "primaryGenres": ["blues rock"],
+      "curatorTags": ["British blues rock", "guitarist lineage", "documented membership"],
+      "bridgeBoost": 0.25,
+      "feedback": "Keep the band in British blues rock. Clapton, Beck and Page are documented former members whose later paths explain its wide bridge role; membership does not imply a shared later sound."
+    },
+    {
+      "id": "eric-clapton",
+      "zone": "roots-blues",
+      "secondaryZones": ["rock-circuit"],
+      "primaryGenres": ["electric blues", "blues rock"],
+      "curatorTags": ["Yardbirds member", "Cream member", "blues guitar"],
+      "bridgeBoost": 0.16,
+      "feedback": "Connect the Yardbirds and Cream through verified membership, with blues guitar as the musical center. Hall of Fame inductions are career context, not new collaborations."
+    },
+    {
+      "id": "jeff-beck",
+      "zone": "roots-blues",
+      "secondaryZones": ["jazz", "rock-circuit"],
+      "primaryGenres": ["blues rock", "jazz fusion"],
+      "curatorTags": ["Yardbirds member", "electric fusion guitar"],
+      "bridgeBoost": 0.22,
+      "feedback": "The Yardbirds are the documented roots link; later instrumental work gives Beck a separate jazz-fusion direction. Keep those reasons distinct."
+    },
+    {
+      "id": "jimmy-page",
+      "zone": "hard-rock-metal",
+      "secondaryZones": ["roots-blues", "rock-circuit", "guitar-workshop"],
+      "primaryGenres": ["hard rock", "blues rock"],
+      "curatorTags": ["Yardbirds member", "Led Zeppelin guitarist", "double-neck stage guitar"],
+      "bridgeBoost": 0.24,
+      "feedback": "Page links the Yardbirds' blues-rock lineage to Led Zeppelin's hard rock. His double-neck guitar is a separate instrument-use link, not a genre by itself."
+    },
+    {
+      "id": "jazz-fusion",
+      "zone": "jazz",
+      "secondaryZones": ["rock-circuit", "psychedelia-prog"],
+      "primaryGenres": ["jazz fusion"],
+      "curatorTags": ["electric improvisation", "jazz-rock transition"],
+      "bridgeBoost": 0.23,
+      "feedback": "Keep jazz fusion attached to jazz while allowing documented rock, funk and progressive crossover. Do not pull every nearby jazz artist into rock."
+    },
+    {
+      "id": "steve-vai",
+      "zone": "psychedelia-prog",
+      "secondaryZones": ["rock-circuit", "guitar-workshop"],
+      "primaryGenres": ["instrumental rock", "progressive metal"],
+      "curatorTags": ["Satriani student", "Zappa band link", "Ibanez JEM design"],
+      "bridgeBoost": 0.2,
+      "feedback": "Teaching, band work and guitar design are three different relationship types. Keep Vai close to Satriani, Zappa and the JEM for their documented reasons, not as one generic collaboration cluster."
+    },
+    {
+      "id": "joe-satriani",
+      "zone": "rock-circuit",
+      "secondaryZones": ["psychedelia-prog", "guitar-workshop"],
+      "primaryGenres": ["instrumental rock"],
+      "curatorTags": ["guitar teacher", "Steve Vai teacher"],
+      "bridgeBoost": 0.14,
+      "feedback": "The documented Vai link is teacher-to-student. Keep it distinct from a shared recording or band-membership edge."
+    },
+    {
+      "id": "fender-esquire",
+      "zone": "guitar-workshop",
+      "secondaryZones": ["country-roots", "rock-circuit"],
+      "curatorTags": ["single-pickup solid-body", "Luther Perkins", "country rhythm"],
+      "bridgeBoost": 0.18,
+      "feedback": "The model belongs with Fender guitar history. Its documented use by Luther Perkins behind Johnny Cash gives it a specific country bridge; do not infer that Cash himself played this model."
+    },
+    {
+      "id": "rickenbacker-360-12",
+      "zone": "guitar-workshop",
+      "secondaryZones": ["rock-circuit", "psychedelia-prog"],
+      "curatorTags": ["electric twelve-string", "George Harrison", "Beatles recording context"],
+      "bridgeBoost": 0.18,
+      "feedback": "The Harrison/Beatles recording use supports a concrete instrument-to-player bridge. A later artist being inspired to buy the model is influence context, not proof of a shared recording."
+    },
+    {
+      "id": "bluegrass",
+      "zone": "country-roots",
+      "secondaryZones": ["folk-country-vise"],
+      "primaryGenres": ["bluegrass"],
+      "curatorTags": ["Bill Monroe", "Blue Grass Boys", "acoustic roots"],
+      "bridgeBoost": 0.12,
+      "feedback": "The genre name's link to Bill Monroe's band is an origin clue. Keep bluegrass rooted in early country and acoustic folk history, not modern pop-country."
+    },
+    {
+      "id": "g-funk",
+      "zone": "hip-hop-rap",
+      "secondaryZones": ["rock-circuit"],
+      "primaryGenres": ["g-funk", "west coast hip-hop"],
+      "curatorTags": ["West Coast production", "1970s funk source"],
+      "bridgeBoost": 0.12,
+      "feedback": "A funk sample or stylistic debt explains musical lineage. Keep G-funk in hip-hop; do not treat every funk influence as a direct artist-to-artist collaboration."
+    }
+  ],
+  "factFeedback": [
+    {
+      "batchId": "2026-09-26-sixty",
+      "factIndex": 2,
+      "relatedNodes": ["deep-purple", "metallica"],
+      "interpretation": "This records a Hall of Fame induction, not a joint performance or musical collaboration. Do not create a collaboration edge from it."
+    },
+    {
+      "batchId": "2026-09-26-sixty",
+      "factIndex": 9,
+      "relatedNodes": ["the-yardbirds", "eric-clapton", "jeff-beck", "jimmy-page"],
+      "interpretation": "Use as evidence for separate membership links and a British blues-rock lineage. Do not infer simultaneous membership."
+    },
+    {
+      "batchId": "2026-09-26-sixty",
+      "factIndex": 22,
+      "relatedNodes": ["steve-vai", "joe-satriani", "frank-zappa"],
+      "interpretation": "Satriani taught Vai; Zappa later employed him. These are teaching and band/career relationships, not interchangeable collaboration edges."
+    },
+    {
+      "batchId": "2026-09-26-sixty",
+      "factIndex": 25,
+      "relatedNodes": ["jimmy-page", "gibson-eds-1275", "led-zeppelin"],
+      "interpretation": "This supports Page's use of a double-neck on stage. It explains an instrument connection, not a new musical genre."
+    },
+    {
+      "batchId": "2026-09-26-sixty",
+      "factIndex": 32,
+      "relatedNodes": ["fender-jaguar"],
+      "interpretation": "A pickup-switch specification enriches the guitar node only. Do not derive an artist or genre edge from hardware alone."
+    },
+    {
+      "batchId": "2026-09-26-sixty",
+      "factIndex": 36,
+      "relatedNodes": ["fender-esquire", "johnny-cash"],
+      "interpretation": "The player was Luther Perkins, backing Johnny Cash. Keep Cash as scene context; do not claim Cash played the Esquire."
+    },
+    {
+      "batchId": "2026-09-26-sixty",
+      "factIndex": 43,
+      "relatedNodes": ["rickenbacker-360-12", "george-harrison", "the-beatles"],
+      "interpretation": "A documented player and recording context can bridge instrument and band. The guitar model remains in the workshop zone."
+    },
+    {
+      "batchId": "2026-09-26-sixty",
+      "factIndex": 51,
+      "relatedNodes": ["bluegrass", "bill-monroe"],
+      "interpretation": "This is a genre-origin relationship, not a claim that one person alone invented every part of the style."
+    },
+    {
+      "batchId": "2026-09-26-sixty",
+      "factIndex": 54,
+      "relatedNodes": ["g-funk", "dr-dre", "west-coast-hip-hop"],
+      "interpretation": "Use as a stylistic and production lineage inside hip-hop. Funk influence is not by itself a documented collaboration with a specific funk artist."
+    },
+    {
+      "batchId": "2026-09-26-sixty",
+      "factIndex": 58,
+      "relatedNodes": ["psychedelic-rock", "the-yardbirds"],
+      "interpretation": "The band's sound experiments support a stylistic bridge into psychedelia. Keep this separate from its member-to-member links."
     }
   ],
   "zoneFeedback": [

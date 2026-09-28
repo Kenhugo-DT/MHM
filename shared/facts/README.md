@@ -13,6 +13,14 @@ must stay outside this file and are never shown on the site.
 The coverage goal is every node type and, eventually, every node. No fact is
 better than a weak or unsupported one.
 
+The manually researched batch in `brain/data/fact-batches/2026-09-26-sixty.json`
+contains 60 source-linked facts originally submitted for review. `npm run brain:fact-batch:dry-run`
+compares them with local and live nodes plus existing facts. After the database
+has applied `brain/supabase/migrations/0005_facts_all_node_types.sql`,
+`npm run brain:fact-batch` inserts any still-missing rows into private review.
+The command is idempotent and never approves or publishes a fact. If an insert
+fails midway, rerun the dry-run and then the import after resolving the cause.
+
 `npm run facts:validate` checks identifiers, source links, dates and the two-fact
 limit before the site can be built. The source links appear beside the fact in
 the detail panel. Tags are research context only, not automatic graph links.
@@ -22,6 +30,19 @@ It also counts existing Wikipedia, Wikidata and MusicBrainz pointers on
 uncovered nodes. Those pointers are research starting points, not evidence that
 any particular fact is true. See `brain/pipeline/FACT_SOURCE_POLICY.md` before
 adding a new automatic source.
+
+After reviewing facts in Supabase, run `npm run brain:facts:sync-approved`, then
+`npm run brain:learn` and `npm run brain:organize`. The first command reads only
+approved, sourced rows into `brain/data/approved/fact-evidence.json`; it does
+not change Supabase. The learning model records the snapshot time, per-node
+coverage across Supabase and the repository's curated pilot, and whether each
+batch fact interpretation matched an approved Supabase row.
+This snapshot can become stale after later review decisions, so refresh it
+before relying on its approval counts. Fact categories and snippets are never
+promoted into graph edges automatically.
+The scheduled GitHub research agent refreshes this read-only evidence snapshot
+at the start of each run, so newly approved facts can guide that run without
+committing a new snapshot after every review decision.
 
 Keep the GitHub Actions repository variable `FACT_SCOUT_ENABLED` at `false`
 until the source-pattern scout has been previewed. If enabled, the existing

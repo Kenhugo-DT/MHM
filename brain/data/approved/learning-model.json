@@ -1,16 +1,22 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-24T12:12:25.541Z",
+  "generatedAt": "2026-09-28T12:14:51.458Z",
   "source": "graph + Obsidian frontmatter + curator feedback",
   "samples": {
     "graphNodes": 585,
     "graphEdges": 784,
     "obsidianNotes": 587,
-    "feedbackNodes": 9,
+    "feedbackNodes": 20,
     "feedbackZones": 6,
     "feedbackRules": 4,
     "feedbackCategories": 8,
-    "bridgePolicies": 5,
+    "bridgePolicies": 11,
+    "factNotes": 10,
+    "approvedFacts": 121,
+    "approvedSupabaseFacts": 64,
+    "curatedFacts": 57,
+    "approvedFactNodes": 115,
+    "approvedFactNotes": 10,
     "pinnedNotes": 0,
     "notesWithEra": 0,
     "notesWithPrimaryGenres": 477,
@@ -21,8 +27,8 @@
       "nodeCount": 42,
       "pinnedCount": 0,
       "centroid": {
-        "x": -983,
-        "y": -38
+        "x": -986,
+        "y": -20
       },
       "eraMedian": 1948,
       "learnedTerms": [
@@ -43,16 +49,16 @@
           "weight": 66
         },
         {
+          "term": "jazz fusion",
+          "weight": 38
+        },
+        {
           "term": "country",
           "weight": 32
         },
         {
           "term": "country rock",
           "weight": 32
-        },
-        {
-          "term": "jazz fusion",
-          "weight": 28
         },
         {
           "term": "rock and roll",
@@ -75,11 +81,15 @@
           "weight": 22
         },
         {
+          "term": "jazz",
+          "weight": 20
+        },
+        {
           "term": "roots",
           "weight": 20
         },
         {
-          "term": "jazz",
+          "term": "rock circuit",
           "weight": 16
         },
         {
@@ -87,19 +97,47 @@
           "weight": 16
         },
         {
+          "term": "jeff beck",
+          "weight": 14
+        },
+        {
           "term": "southern",
           "weight": 14
+        },
+        {
+          "term": "genre transition needed",
+          "weight": 12
+        },
+        {
+          "term": "good bridge",
+          "weight": 12
+        },
+        {
+          "term": "john mclaughlin",
+          "weight": 12
+        },
+        {
+          "term": "psychedelia prog",
+          "weight": 12
         },
         {
           "term": "pop rock",
           "weight": 10
         },
         {
-          "term": "rock circuit",
+          "term": "eric clapton",
           "weight": 8
         },
         {
           "term": "roll",
+          "weight": 8
+        },
+        {
+          "term": "the yardbirds",
+          "weight": 8
+        },
+        {
+          "term": "yardbirds member",
           "weight": 8
         },
         {
@@ -119,15 +157,11 @@
           "weight": 6
         },
         {
+          "term": "frank zappa",
+          "weight": 6
+        },
+        {
           "term": "fusion",
-          "weight": 6
-        },
-        {
-          "term": "genre transition needed",
-          "weight": 6
-        },
-        {
-          "term": "good bridge",
           "weight": 6
         },
         {
@@ -135,7 +169,7 @@
           "weight": 6
         },
         {
-          "term": "john mclaughlin",
+          "term": "jimmy page",
           "weight": 6
         },
         {
@@ -163,11 +197,19 @@
           "weight": 4
         },
         {
+          "term": "blues guitar",
+          "weight": 4
+        },
+        {
           "term": "british",
           "weight": 4
         },
         {
           "term": "british blues",
+          "weight": 4
+        },
+        {
+          "term": "british blues rock",
           "weight": 4
         },
         {
@@ -179,7 +221,23 @@
           "weight": 4
         },
         {
+          "term": "connect the yardbirds and cream through verified membership with blues guitar as the musical center hall of fame inductions are career context not new collaborations",
+          "weight": 4
+        },
+        {
           "term": "country roots",
+          "weight": 4
+        },
+        {
+          "term": "cream member",
+          "weight": 4
+        },
+        {
+          "term": "documented membership",
+          "weight": 4
+        },
+        {
+          "term": "electric fusion guitar",
           "weight": 4
         },
         {
@@ -195,15 +253,23 @@
           "weight": 4
         },
         {
+          "term": "guitarist lineage",
+          "weight": 4
+        },
+        {
+          "term": "hard rock metal",
+          "weight": 4
+        },
+        {
           "term": "influence",
           "weight": 4
         },
         {
-          "term": "mac",
+          "term": "keep the band in british blues rock clapton beck and page are documented former members whose later paths explain its wide bridge role membership does not imply a shared later sound",
           "weight": 4
         },
         {
-          "term": "psychedelia prog",
+          "term": "mac",
           "weight": 4
         },
         {
@@ -215,6 +281,10 @@
           "weight": 4
         },
         {
+          "term": "the yardbirds are the documented roots link later instrumental work gives beck a separate jazz fusion direction keep those reasons distinct",
+          "weight": 4
+        },
+        {
           "term": "yardbirds",
           "weight": 4
         },
@@ -223,7 +293,15 @@
           "weight": 3
         },
         {
+          "term": "jazz fusion is a transition not a sealed genre island preserve jazz as the center and let documented electric guitar rock and funk relationships form its outward paths",
+          "weight": 3
+        },
+        {
           "term": "keep early country bluegrass and honky tonk legible as a tradition with documented paths into folk blues rockabilly and rock",
+          "weight": 3
+        },
+        {
+          "term": "the yardbirds documented membership links three guitarists to different later directions keep the shared band history visible without implying the three played in the band at the same time or followed one identical style",
           "weight": 3
         },
         {
@@ -273,78 +351,6 @@
         {
           "term": "beck",
           "weight": 2
-        },
-        {
-          "term": "belly",
-          "weight": 2
-        },
-        {
-          "term": "betts",
-          "weight": 2
-        },
-        {
-          "term": "blues influence",
-          "weight": 2
-        },
-        {
-          "term": "bob",
-          "weight": 2
-        },
-        {
-          "term": "bob dylan",
-          "weight": 2
-        },
-        {
-          "term": "brian",
-          "weight": 2
-        },
-        {
-          "term": "brian setzer",
-          "weight": 2
-        },
-        {
-          "term": "brothers",
-          "weight": 2
-        },
-        {
-          "term": "buddy",
-          "weight": 2
-        },
-        {
-          "term": "buddy guy",
-          "weight": 2
-        },
-        {
-          "term": "carlos",
-          "weight": 2
-        },
-        {
-          "term": "carlos santana",
-          "weight": 2
-        },
-        {
-          "term": "cats",
-          "weight": 2
-        },
-        {
-          "term": "clapton",
-          "weight": 2
-        },
-        {
-          "term": "cream",
-          "weight": 2
-        },
-        {
-          "term": "delta",
-          "weight": 2
-        },
-        {
-          "term": "delta blues",
-          "weight": 2
-        },
-        {
-          "term": "derek",
-          "weight": 2
         }
       ]
     },
@@ -352,8 +358,8 @@
       "nodeCount": 169,
       "pinnedCount": 0,
       "centroid": {
-        "x": 193,
-        "y": 316
+        "x": 194,
+        "y": 315
       },
       "eraMedian": 1969,
       "learnedTerms": [
@@ -370,15 +376,35 @@
           "weight": 40
         },
         {
+          "term": "jazz",
+          "weight": 26
+        },
+        {
+          "term": "good bridge",
+          "weight": 24
+        },
+        {
           "term": "glam rock",
           "weight": 23
         },
         {
-          "term": "jazz",
-          "weight": 22
+          "term": "genre transition needed",
+          "weight": 21
+        },
+        {
+          "term": "psychedelia prog",
+          "weight": 19
+        },
+        {
+          "term": "roots blues",
+          "weight": 19
         },
         {
           "term": "blues rock",
+          "weight": 18
+        },
+        {
+          "term": "jazz fusion",
           "weight": 18
         },
         {
@@ -390,11 +416,7 @@
           "weight": 16
         },
         {
-          "term": "genre transition needed",
-          "weight": 15
-        },
-        {
-          "term": "good bridge",
+          "term": "hard rock metal",
           "weight": 15
         },
         {
@@ -402,7 +424,11 @@
           "weight": 12
         },
         {
-          "term": "jazz fusion",
+          "term": "jeff beck",
+          "weight": 12
+        },
+        {
+          "term": "john mclaughlin",
           "weight": 12
         },
         {
@@ -418,15 +444,7 @@
           "weight": 11
         },
         {
-          "term": "hard rock metal",
-          "weight": 11
-        },
-        {
           "term": "punk alt",
-          "weight": 11
-        },
-        {
-          "term": "roots blues",
           "weight": 11
         },
         {
@@ -438,7 +456,15 @@
           "weight": 10
         },
         {
+          "term": "george harrison",
+          "weight": 8
+        },
+        {
           "term": "hard rock bridge",
+          "weight": 8
+        },
+        {
+          "term": "instrumental rock",
           "weight": 8
         },
         {
@@ -460,10 +486,6 @@
         {
           "term": "roll",
           "weight": 8
-        },
-        {
-          "term": "psychedelia prog",
-          "weight": 7
         },
         {
           "term": "acdc",
@@ -522,11 +544,19 @@
           "weight": 6
         },
         {
+          "term": "eric clapton",
+          "weight": 6
+        },
+        {
+          "term": "frank zappa",
+          "weight": 6
+        },
+        {
           "term": "jeff",
           "weight": 6
         },
         {
-          "term": "john mclaughlin",
+          "term": "jimmy page",
           "weight": 6
         },
         {
@@ -550,6 +580,10 @@
           "weight": 6
         },
         {
+          "term": "rickenbacker 360 12",
+          "weight": 6
+        },
+        {
           "term": "run dmc",
           "weight": 6
         },
@@ -563,6 +597,10 @@
         },
         {
           "term": "the clash",
+          "weight": 6
+        },
+        {
+          "term": "the yardbirds",
           "weight": 6
         },
         {
@@ -614,15 +652,19 @@
           "weight": 4
         },
         {
+          "term": "guitar teacher",
+          "weight": 4
+        },
+        {
+          "term": "guitar workshop",
+          "weight": 4
+        },
+        {
           "term": "hip hop rap",
           "weight": 4
         },
         {
           "term": "instrumental",
-          "weight": 4
-        },
-        {
-          "term": "instrumental rock",
           "weight": 4
         },
         {
@@ -640,42 +682,6 @@
         {
           "term": "perry",
           "weight": 4
-        },
-        {
-          "term": "pop",
-          "weight": 4
-        },
-        {
-          "term": "shock",
-          "weight": 4
-        },
-        {
-          "term": "steve",
-          "weight": 4
-        },
-        {
-          "term": "stone",
-          "weight": 4
-        },
-        {
-          "term": "surf",
-          "weight": 4
-        },
-        {
-          "term": "give jazz its own readable center let documented blues fusion funk and progressive connections pull bridge nodes outward",
-          "weight": 3
-        },
-        {
-          "term": "glam",
-          "weight": 3
-        },
-        {
-          "term": "hip hop should keep a readable territory while allowing documented crossover lines into punk rock and metal",
-          "weight": 3
-        },
-        {
-          "term": "keep early country bluegrass and honky tonk legible as a tradition with documented paths into folk blues rockabilly and rock",
-          "weight": 3
         }
       ]
     },
@@ -683,7 +689,7 @@
       "nodeCount": 35,
       "pinnedCount": 0,
       "centroid": {
-        "x": 289,
+        "x": 288,
         "y": -763
       },
       "eraMedian": 1969,
@@ -717,23 +723,43 @@
           "weight": 26
         },
         {
+          "term": "jazz fusion",
+          "weight": 22
+        },
+        {
           "term": "country",
           "weight": 20
         },
         {
-          "term": "jazz fusion",
+          "term": "jazz",
           "weight": 16
+        },
+        {
+          "term": "rock circuit",
+          "weight": 16
+        },
+        {
+          "term": "good bridge",
+          "weight": 15
         },
         {
           "term": "art",
           "weight": 14
         },
         {
-          "term": "jazz",
+          "term": "jeff beck",
+          "weight": 12
+        },
+        {
+          "term": "john mclaughlin",
           "weight": 12
         },
         {
           "term": "metal",
+          "weight": 12
+        },
+        {
+          "term": "roots blues",
           "weight": 12
         },
         {
@@ -749,7 +775,35 @@
           "weight": 10
         },
         {
+          "term": "genre transition needed",
+          "weight": 9
+        },
+        {
+          "term": "frank zappa",
+          "weight": 8
+        },
+        {
+          "term": "guitar workshop",
+          "weight": 8
+        },
+        {
+          "term": "ibanez jem",
+          "weight": 8
+        },
+        {
+          "term": "steve vai",
+          "weight": 8
+        },
+        {
           "term": "django reinhardt",
+          "weight": 6
+        },
+        {
+          "term": "eric clapton",
+          "weight": 6
+        },
+        {
+          "term": "george harrison",
           "weight": 6
         },
         {
@@ -765,11 +819,19 @@
           "weight": 6
         },
         {
-          "term": "john mclaughlin",
+          "term": "jimmy page",
+          "weight": 6
+        },
+        {
+          "term": "rickenbacker 360 12",
           "weight": 6
         },
         {
           "term": "roots rock",
+          "weight": 6
+        },
+        {
+          "term": "the yardbirds",
           "weight": 6
         },
         {
@@ -785,6 +847,18 @@
           "weight": 4
         },
         {
+          "term": "hard rock metal",
+          "weight": 4
+        },
+        {
+          "term": "ibanez jem design",
+          "weight": 4
+        },
+        {
+          "term": "instrumental rock",
+          "weight": 4
+        },
+        {
           "term": "king",
           "weight": 4
         },
@@ -797,15 +871,11 @@
           "weight": 4
         },
         {
-          "term": "rock circuit",
-          "weight": 4
-        },
-        {
-          "term": "roots blues",
-          "weight": 4
-        },
-        {
           "term": "rush",
+          "weight": 4
+        },
+        {
+          "term": "satriani student",
           "weight": 4
         },
         {
@@ -813,11 +883,19 @@
           "weight": 4
         },
         {
+          "term": "teaching band work and guitar design are three different relationship types keep vai close to satriani zappa and the jem for their documented reasons not as one generic collaboration cluster",
+          "weight": 4
+        },
+        {
           "term": "yes",
           "weight": 4
         },
         {
-          "term": "genre transition needed",
+          "term": "zappa band link",
+          "weight": 4
+        },
+        {
+          "term": "george harrison s documented use on beatles recordings is a player to instrument bridge do not treat a later purchase inspired by the beatles as a shared performance",
           "weight": 3
         },
         {
@@ -825,7 +903,15 @@
           "weight": 3
         },
         {
-          "term": "good bridge",
+          "term": "jazz fusion is a transition not a sealed genre island preserve jazz as the center and let documented electric guitar rock and funk relationships form its outward paths",
+          "weight": 3
+        },
+        {
+          "term": "steve vai s documented jem design links a guitarist to a model keep instrument design distinct from teacher and band relationships",
+          "weight": 3
+        },
+        {
+          "term": "the yardbirds documented membership links three guitarists to different later directions keep the shared band history visible without implying the three played in the band at the same time or followed one identical style",
           "weight": 3
         },
         {
@@ -913,10 +999,6 @@
           "weight": 2
         },
         {
-          "term": "frank zappa",
-          "weight": 2
-        },
-        {
           "term": "fripp",
           "weight": 2
         },
@@ -931,82 +1013,6 @@
         {
           "term": "greenwood",
           "weight": 2
-        },
-        {
-          "term": "heavy",
-          "weight": 2
-        },
-        {
-          "term": "hendrix",
-          "weight": 2
-        },
-        {
-          "term": "history",
-          "weight": 2
-        },
-        {
-          "term": "howe",
-          "weight": 2
-        },
-        {
-          "term": "ibanez",
-          "weight": 2
-        },
-        {
-          "term": "ibanez jem",
-          "weight": 2
-        },
-        {
-          "term": "jem",
-          "weight": 2
-        },
-        {
-          "term": "jimi",
-          "weight": 2
-        },
-        {
-          "term": "jimi hendrix",
-          "weight": 2
-        },
-        {
-          "term": "jonny",
-          "weight": 2
-        },
-        {
-          "term": "jonny greenwood",
-          "weight": 2
-        },
-        {
-          "term": "lifeson",
-          "weight": 2
-        },
-        {
-          "term": "mike",
-          "weight": 2
-        },
-        {
-          "term": "mike portnoy",
-          "weight": 2
-        },
-        {
-          "term": "pink",
-          "weight": 2
-        },
-        {
-          "term": "pink floyd",
-          "weight": 2
-        },
-        {
-          "term": "portnoy",
-          "weight": 2
-        },
-        {
-          "term": "power",
-          "weight": 2
-        },
-        {
-          "term": "power chords",
-          "weight": 2
         }
       ]
     },
@@ -1014,8 +1020,8 @@
       "nodeCount": 128,
       "pinnedCount": 0,
       "centroid": {
-        "x": 2513,
-        "y": 94
+        "x": 2514,
+        "y": 96
       },
       "eraMedian": 1977,
       "learnedTerms": [
@@ -1088,6 +1094,14 @@
           "weight": 18
         },
         {
+          "term": "rock circuit",
+          "weight": 15
+        },
+        {
+          "term": "blues rock",
+          "weight": 14
+        },
+        {
           "term": "doom",
           "weight": 12
         },
@@ -1104,14 +1118,6 @@
           "weight": 12
         },
         {
-          "term": "rock circuit",
-          "weight": 11
-        },
-        {
-          "term": "blues rock",
-          "weight": 10
-        },
-        {
           "term": "country",
           "weight": 10
         },
@@ -1122,6 +1128,14 @@
         {
           "term": "riff culture",
           "weight": 10
+        },
+        {
+          "term": "genre transition needed",
+          "weight": 9
+        },
+        {
+          "term": "good bridge",
+          "weight": 9
         },
         {
           "term": "black sabbath",
@@ -1136,6 +1150,10 @@
           "weight": 8
         },
         {
+          "term": "jimmy page",
+          "weight": 8
+        },
+        {
           "term": "led zeppelin",
           "weight": 8
         },
@@ -1146,6 +1164,10 @@
         {
           "term": "van halen",
           "weight": 8
+        },
+        {
+          "term": "psychedelia prog",
+          "weight": 7
         },
         {
           "term": "punk alt",
@@ -1176,11 +1198,7 @@
           "weight": 6
         },
         {
-          "term": "genre transition needed",
-          "weight": 6
-        },
-        {
-          "term": "good bridge",
+          "term": "eric clapton",
           "weight": 6
         },
         {
@@ -1189,6 +1207,10 @@
         },
         {
           "term": "gothic rock",
+          "weight": 6
+        },
+        {
+          "term": "jeff beck",
           "weight": 6
         },
         {
@@ -1220,6 +1242,10 @@
           "weight": 6
         },
         {
+          "term": "the yardbirds",
+          "weight": 6
+        },
+        {
           "term": "andy",
           "weight": 4
         },
@@ -1237,6 +1263,10 @@
         },
         {
           "term": "doom metal root",
+          "weight": 4
+        },
+        {
+          "term": "double neck stage guitar",
           "weight": 4
         },
         {
@@ -1261,6 +1291,10 @@
         },
         {
           "term": "iron",
+          "weight": 4
+        },
+        {
+          "term": "led zeppelin guitarist",
           "weight": 4
         },
         {
@@ -1292,6 +1326,10 @@
           "weight": 4
         },
         {
+          "term": "page links the yardbirds blues rock lineage to led zeppelin s hard rock his double neck guitar is a separate instrument use link not a genre by itself",
+          "weight": 4
+        },
+        {
           "term": "pantera",
           "weight": 4
         },
@@ -1306,38 +1344,6 @@
         {
           "term": "rhythm guitar",
           "weight": 4
-        },
-        {
-          "term": "riff",
-          "weight": 4
-        },
-        {
-          "term": "should behave as a bridge between hard rock doom metal and heavy metal rather than sitting in a closed metal box",
-          "weight": 4
-        },
-        {
-          "term": "taylor",
-          "weight": 4
-        },
-        {
-          "term": "van",
-          "weight": 4
-        },
-        {
-          "term": "hard rock and metal should be dense but not isolated black sabbath led zeppelin deep purple van halen ac dc and punk metal crossover nodes should bleed across borders",
-          "weight": 3
-        },
-        {
-          "term": "hip hop should keep a readable territory while allowing documented crossover lines into punk rock and metal",
-          "weight": 3
-        },
-        {
-          "term": "psychedelia prog",
-          "weight": 3
-        },
-        {
-          "term": "the rock to hard rock metal path should overlap strongly let bridge nodes drift between zones rather than forming a straight sterile lane",
-          "weight": 3
         }
       ]
     },
@@ -1346,7 +1352,7 @@
       "pinnedCount": 0,
       "centroid": {
         "x": 1608,
-        "y": 1474
+        "y": 1475
       },
       "eraMedian": 1977,
       "learnedTerms": [
@@ -1511,6 +1517,10 @@
           "weight": 10
         },
         {
+          "term": "good bridge",
+          "weight": 9
+        },
+        {
           "term": "pop",
           "weight": 9
         },
@@ -1524,6 +1534,10 @@
         },
         {
           "term": "early punk anchor",
+          "weight": 8
+        },
+        {
+          "term": "johnny marr",
           "weight": 8
         },
         {
@@ -1575,6 +1589,10 @@
           "weight": 6
         },
         {
+          "term": "fender jaguar",
+          "weight": 6
+        },
+        {
           "term": "garage",
           "weight": 6
         },
@@ -1584,10 +1602,6 @@
         },
         {
           "term": "genre transition needed",
-          "weight": 6
-        },
-        {
-          "term": "good bridge",
           "weight": 6
         },
         {
@@ -1660,14 +1674,6 @@
         },
         {
           "term": "rancid roots",
-          "weight": 6
-        },
-        {
-          "term": "reggae",
-          "weight": 6
-        },
-        {
-          "term": "reggae fusion",
           "weight": 6
         }
       ]
@@ -1898,8 +1904,8 @@
       "nodeCount": 14,
       "pinnedCount": 0,
       "centroid": {
-        "x": -2211,
-        "y": 794
+        "x": -2264,
+        "y": 796
       },
       "eraMedian": 1933,
       "learnedTerms": [
@@ -1956,8 +1962,32 @@
           "weight": 7
         },
         {
+          "term": "fender esquire",
+          "weight": 6
+        },
+        {
+          "term": "genre transition needed",
+          "weight": 6
+        },
+        {
+          "term": "good bridge",
+          "weight": 6
+        },
+        {
           "term": "southern rock",
           "weight": 6
+        },
+        {
+          "term": "bill monroe",
+          "weight": 5
+        },
+        {
+          "term": "acoustic roots",
+          "weight": 4
+        },
+        {
+          "term": "blue grass boys",
+          "weight": 4
         },
         {
           "term": "carter guitar style",
@@ -1973,6 +2003,10 @@
         },
         {
           "term": "folk repertoire",
+          "weight": 4
+        },
+        {
+          "term": "guitar workshop",
           "weight": 4
         },
         {
@@ -1996,19 +2030,19 @@
           "weight": 4
         },
         {
+          "term": "the genre name s link to bill monroe s band is an origin clue keep bluegrass rooted in early country and acoustic folk history not modern pop country",
+          "weight": 4
+        },
+        {
           "term": "tonk",
           "weight": 4
         },
         {
-          "term": "genre transition needed",
-          "weight": 3
-        },
-        {
-          "term": "good bridge",
-          "weight": 3
-        },
-        {
           "term": "keep early country bluegrass and honky tonk legible as a tradition with documented paths into folk blues rockabilly and rock",
+          "weight": 3
+        },
+        {
+          "term": "luther perkins documented esquire use behind johnny cash connects a specific guitar to early country cash is context not the player",
           "weight": 3
         },
         {
@@ -2144,10 +2178,6 @@
           "weight": 1
         },
         {
-          "term": "bill monroe",
-          "weight": 1
-        },
-        {
           "term": "cline",
           "weight": 1
         },
@@ -2192,14 +2222,30 @@
         },
         {
           "term": "jazz fusion",
-          "weight": 36
+          "weight": 42
         },
         {
           "term": "improvisation",
           "weight": 14
         },
         {
+          "term": "john mclaughlin",
+          "weight": 13
+        },
+        {
           "term": "bebop",
+          "weight": 11
+        },
+        {
+          "term": "psychedelia prog",
+          "weight": 11
+        },
+        {
+          "term": "rock circuit",
+          "weight": 11
+        },
+        {
+          "term": "roots blues",
           "weight": 11
         },
         {
@@ -2223,23 +2269,11 @@
           "weight": 8
         },
         {
-          "term": "john mclaughlin",
-          "weight": 7
-        },
-        {
-          "term": "psychedelia prog",
-          "weight": 7
-        },
-        {
-          "term": "rock circuit",
-          "weight": 7
-        },
-        {
-          "term": "roots blues",
-          "weight": 7
-        },
-        {
           "term": "classic rock",
+          "weight": 6
+        },
+        {
+          "term": "frank zappa",
           "weight": 6
         },
         {
@@ -2247,7 +2281,19 @@
           "weight": 6
         },
         {
+          "term": "genre transition needed",
+          "weight": 6
+        },
+        {
+          "term": "good bridge",
+          "weight": 6
+        },
+        {
           "term": "jazz roots",
+          "weight": 6
+        },
+        {
+          "term": "jeff beck",
           "weight": 6
         },
         {
@@ -2255,15 +2301,23 @@
           "weight": 5
         },
         {
-          "term": "genre transition needed",
-          "weight": 3
+          "term": "electric improvisation",
+          "weight": 4
+        },
+        {
+          "term": "jazz rock transition",
+          "weight": 4
+        },
+        {
+          "term": "keep jazz fusion attached to jazz while allowing documented rock funk and progressive crossover do not pull every nearby jazz artist into rock",
+          "weight": 4
         },
         {
           "term": "give jazz its own readable center let documented blues fusion funk and progressive connections pull bridge nodes outward",
           "weight": 3
         },
         {
-          "term": "good bridge",
+          "term": "jazz fusion is a transition not a sealed genre island preserve jazz as the center and let documented electric guitar rock and funk relationships form its outward paths",
           "weight": 3
         },
         {
@@ -2482,6 +2536,10 @@
           "weight": 12
         },
         {
+          "term": "good bridge",
+          "weight": 12
+        },
+        {
           "term": "jazz",
           "weight": 12
         },
@@ -2495,6 +2553,10 @@
         },
         {
           "term": "electric blues",
+          "weight": 10
+        },
+        {
+          "term": "george harrison",
           "weight": 10
         },
         {
@@ -2518,11 +2580,31 @@
           "weight": 9
         },
         {
+          "term": "psychedelia prog",
+          "weight": 8
+        },
+        {
           "term": "signature",
           "weight": 8
         },
         {
           "term": "fender",
+          "weight": 7
+        },
+        {
+          "term": "fender esquire",
+          "weight": 7
+        },
+        {
+          "term": "fender jaguar",
+          "weight": 7
+        },
+        {
+          "term": "ibanez jem",
+          "weight": 7
+        },
+        {
+          "term": "rickenbacker 360 12",
           "weight": 7
         },
         {
@@ -2535,6 +2617,14 @@
         },
         {
           "term": "heavy",
+          "weight": 6
+        },
+        {
+          "term": "johnny marr",
+          "weight": 6
+        },
+        {
+          "term": "steve vai",
           "weight": 6
         },
         {
@@ -2594,7 +2684,23 @@
           "weight": 5
         },
         {
+          "term": "beatles recording context",
+          "weight": 4
+        },
+        {
+          "term": "country rhythm",
+          "weight": 4
+        },
+        {
+          "term": "country roots",
+          "weight": 4
+        },
+        {
           "term": "electric guitars",
+          "weight": 4
+        },
+        {
+          "term": "electric twelve string",
           "weight": 4
         },
         {
@@ -2610,7 +2716,31 @@
           "weight": 4
         },
         {
+          "term": "luther perkins",
+          "weight": 4
+        },
+        {
           "term": "offset",
+          "weight": 4
+        },
+        {
+          "term": "punk alt",
+          "weight": 4
+        },
+        {
+          "term": "rock circuit",
+          "weight": 4
+        },
+        {
+          "term": "single pickup solid body",
+          "weight": 4
+        },
+        {
+          "term": "the harrison beatles recording use supports a concrete instrument to player bridge a later artist being inspired to buy the model is influence context not proof of a shared recording",
+          "weight": 4
+        },
+        {
+          "term": "the model belongs with fender guitar history its documented use by luther perkins behind johnny cash gives it a specific country bridge do not infer that cash himself played this model",
           "weight": 4
         },
         {
@@ -2634,6 +2764,22 @@
           "weight": 3
         },
         {
+          "term": "genre transition needed",
+          "weight": 3
+        },
+        {
+          "term": "george harrison s documented use on beatles recordings is a player to instrument bridge do not treat a later purchase inspired by the beatles as a shared performance",
+          "weight": 3
+        },
+        {
+          "term": "johnny marr s documented jaguar design gives a specific guitar to player link the model s hardware specifications alone do not establish a genre connection",
+          "weight": 3
+        },
+        {
+          "term": "luther perkins documented esquire use behind johnny cash connects a specific guitar to early country cash is context not the player",
+          "weight": 3
+        },
+        {
           "term": "martin",
           "weight": 3
         },
@@ -2642,100 +2788,8 @@
           "weight": 3
         },
         {
-          "term": "twelve string",
+          "term": "steve vai s documented jem design links a guitarist to a model keep instrument design distinct from teacher and band relationships",
           "weight": 3
-        },
-        {
-          "term": "alternative",
-          "weight": 2
-        },
-        {
-          "term": "build",
-          "weight": 2
-        },
-        {
-          "term": "custom build",
-          "weight": 2
-        },
-        {
-          "term": "danelectro",
-          "weight": 2
-        },
-        {
-          "term": "double",
-          "weight": 2
-        },
-        {
-          "term": "electric and acoustic guitars",
-          "weight": 2
-        },
-        {
-          "term": "explorer",
-          "weight": 2
-        },
-        {
-          "term": "fusion",
-          "weight": 2
-        },
-        {
-          "term": "gretsch",
-          "weight": 2
-        },
-        {
-          "term": "guild",
-          "weight": 2
-        },
-        {
-          "term": "indie",
-          "weight": 2
-        },
-        {
-          "term": "man",
-          "weight": 2
-        },
-        {
-          "term": "metal guitars",
-          "weight": 2
-        },
-        {
-          "term": "music man",
-          "weight": 2
-        },
-        {
-          "term": "national",
-          "weight": 2
-        },
-        {
-          "term": "progressive",
-          "weight": 2
-        },
-        {
-          "term": "resonator",
-          "weight": 2
-        },
-        {
-          "term": "rickenbacker",
-          "weight": 2
-        },
-        {
-          "term": "semi",
-          "weight": 2
-        },
-        {
-          "term": "semi hollow",
-          "weight": 2
-        },
-        {
-          "term": "style",
-          "weight": 2
-        },
-        {
-          "term": "taylor",
-          "weight": 2
-        },
-        {
-          "term": "twelve string electric",
-          "weight": 2
         }
       ]
     },
@@ -2758,7 +2812,7 @@
         },
         {
           "term": "west coast hip hop",
-          "weight": 80
+          "weight": 84
         },
         {
           "term": "gangsta rap",
@@ -2913,6 +2967,14 @@
           "weight": 6
         },
         {
+          "term": "1970s funk source",
+          "weight": 4
+        },
+        {
+          "term": "a funk sample or stylistic debt explains musical lineage keep g funk in hip hop do not treat every funk influence as a direct artist to artist collaboration",
+          "weight": 4
+        },
+        {
           "term": "detroit",
           "weight": 4
         },
@@ -2942,6 +3004,10 @@
         },
         {
           "term": "thug",
+          "weight": 4
+        },
+        {
+          "term": "west coast production",
           "weight": 4
         },
         {
@@ -3055,18 +3121,6 @@
         {
           "term": "glenn",
           "weight": 2
-        },
-        {
-          "term": "glenn hughes",
-          "weight": 2
-        },
-        {
-          "term": "hughes",
-          "weight": 2
-        },
-        {
-          "term": "ice cube",
-          "weight": 2
         }
       ]
     }
@@ -3145,6 +3199,7 @@
         "blues rock",
         "electric blues"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 10,
       "linkedGenres": [],
       "bridgeScore": 0.44,
@@ -3189,6 +3244,7 @@
         "rock and roll",
         "roots"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 9,
       "linkedGenres": [],
       "bridgeScore": 0.66,
@@ -3237,6 +3293,23 @@
         "progressive",
         "psychedelic"
       ],
+      "factNotes": [
+        {
+          "ref": "2026-09-26-sixty#58",
+          "entityId": "psychedelic-rock",
+          "category": "genre-history",
+          "relatedNodes": [
+            "psychedelic-rock",
+            "the-yardbirds"
+          ],
+          "interpretation": "The band's sound experiments support a stylistic bridge into psychedelia. Keep this separate from its member-to-member links.",
+          "sourceUrl": "https://rockhall.com/inductees/yardbirds/",
+          "sourceFingerprint": "5a7c4b635dd9379d5f6e2124cef62f8e5edfd80e26d7f1c158bc874bffaa2892",
+          "approvalAtLastSync": "approved",
+          "verifiedAt": "2026-09-28"
+        }
+      ],
+      "approvedFactCount": 1,
       "connectionCount": 5,
       "linkedGenres": [],
       "bridgeScore": 0.22,
@@ -3306,6 +3379,7 @@
         "doom metal",
         "heavy metal"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 20,
       "linkedGenres": [],
       "bridgeScore": 0.44,
@@ -3327,6 +3401,7 @@
         "alternative",
         "punk"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 6,
       "linkedGenres": [],
       "bridgeScore": 0.22,
@@ -3346,6 +3421,7 @@
         "alternative",
         "punk"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 1,
       "linkedGenres": [],
       "bridgeScore": 0,
@@ -3391,6 +3467,7 @@
         "folk",
         "southern rock"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 18,
       "linkedGenres": [],
       "bridgeScore": 0.66,
@@ -3448,16 +3525,19 @@
         "guitar-workshop"
       ],
       "primaryGenres": [
-        "Jazz fusion"
+        "jazz fusion"
       ],
       "curatorTags": [
+        "electric improvisation",
+        "jazz-rock transition",
         "rock",
         "jazz fusion",
         "classic rock"
       ],
+      "curatorFeedback": "Keep jazz fusion attached to jazz while allowing documented rock, funk and progressive crossover. Do not pull every nearby jazz artist into rock.",
       "connectionCount": 11,
       "linkedGenres": [],
-      "bridgeScore": 0.88,
+      "bridgeScore": 1,
       "hubScore": 0.917,
       "layoutHints": {
         "pinned": false
@@ -3476,6 +3556,7 @@
         "Electric blues",
         "blues"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 3,
       "linkedGenres": [
         "electric-blues"
@@ -3524,6 +3605,7 @@
         "Rock and roll",
         "rock"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 2,
       "linkedGenres": [
         "rock-and-roll"
@@ -3571,6 +3653,7 @@
         "Psychedelic rock",
         "guitarist"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 4,
       "linkedGenres": [
         "psychedelic-rock"
@@ -3595,6 +3678,7 @@
         "Electric blues",
         "blues rock"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 6,
       "linkedGenres": [
         "electric-blues"
@@ -3608,21 +3692,27 @@
     "eric-clapton": {
       "zone": "roots-blues",
       "secondaryZones": [
+        "rock-circuit",
         "guitar-workshop"
       ],
       "primaryGenres": [
-        "blues rock",
-        "electric blues"
+        "electric blues",
+        "blues rock"
       ],
       "curatorTags": [
+        "Yardbirds member",
+        "Cream member",
+        "blues guitar",
         "Electric blues",
         "blues rock"
       ],
+      "curatorFeedback": "Connect the Yardbirds and Cream through verified membership, with blues guitar as the musical center. Hall of Fame inductions are career context, not new collaborations.",
+      "approvedFactCount": 1,
       "connectionCount": 5,
       "linkedGenres": [
         "electric-blues"
       ],
-      "bridgeScore": 0.3,
+      "bridgeScore": 0.68,
       "hubScore": 0.417,
       "layoutHints": {
         "pinned": false
@@ -3686,6 +3776,7 @@
         "guitarist",
         "rock"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 5,
       "linkedGenres": [],
       "bridgeScore": 0.44,
@@ -3733,6 +3824,7 @@
         "guitarist",
         "rock"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 3,
       "linkedGenres": [],
       "bridgeScore": 0.22,
@@ -3777,6 +3869,7 @@
         "guitarist",
         "hard rock"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 2,
       "linkedGenres": [],
       "bridgeScore": 0.22,
@@ -3789,20 +3882,44 @@
       "zone": "hard-rock-metal",
       "secondaryZones": [
         "roots-blues",
+        "rock-circuit",
         "guitar-workshop"
       ],
       "primaryGenres": [
         "hard rock",
+        "blues rock",
         "blues"
       ],
       "curatorTags": [
+        "Yardbirds member",
+        "Led Zeppelin guitarist",
+        "double-neck stage guitar",
         "hard rock",
         "guitarist",
         "blues"
       ],
+      "curatorFeedback": "Page links the Yardbirds' blues-rock lineage to Led Zeppelin's hard rock. His double-neck guitar is a separate instrument-use link, not a genre by itself.",
+      "factNotes": [
+        {
+          "ref": "2026-09-26-sixty#25",
+          "entityId": "jimmy-page",
+          "category": "instrument-story",
+          "relatedNodes": [
+            "jimmy-page",
+            "gibson-eds-1275",
+            "led-zeppelin"
+          ],
+          "interpretation": "This supports Page's use of a double-neck on stage. It explains an instrument connection, not a new musical genre.",
+          "sourceUrl": "https://www.gibson.com/en-eu/blogs/gibson-gazette/gibson-custom-jimmy-page-doubleneck-collectors-edition",
+          "sourceFingerprint": "d64543d2fc352b5853e893ed1a2ae24d284434c4161a56c7680a1e1d4e4d3c9e",
+          "approvalAtLastSync": "approved",
+          "verifiedAt": "2026-09-28"
+        }
+      ],
+      "approvedFactCount": 1,
       "connectionCount": 4,
       "linkedGenres": [],
-      "bridgeScore": 0.44,
+      "bridgeScore": 0.9,
       "hubScore": 0.333,
       "layoutHints": {
         "pinned": false
@@ -3868,6 +3985,7 @@
         "Country",
         "artist"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 2,
       "linkedGenres": [
         "country"
@@ -3890,6 +4008,7 @@
         "Country",
         "artist"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 3,
       "linkedGenres": [
         "country"
@@ -3912,6 +4031,7 @@
         "Country",
         "guitarist"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 2,
       "linkedGenres": [
         "country"
@@ -4003,6 +4123,7 @@
         "Funk",
         "Rock"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 5,
       "linkedGenres": [
         "funk",
@@ -4026,6 +4147,7 @@
         "Psychedelic rock",
         "Rock"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 3,
       "linkedGenres": [
         "rock",
@@ -4047,6 +4169,7 @@
         "Progressive rock",
         "Psychedelic rock"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 4,
       "linkedGenres": [
         "progressive-rock",
@@ -4076,6 +4199,7 @@
         "Blues"
       ],
       "curatorFeedback": "Important overlap point between blues rock, classic rock and hard rock.",
+      "approvedFactCount": 1,
       "connectionCount": 4,
       "linkedGenres": [
         "hard-rock",
@@ -4105,6 +4229,7 @@
         "band"
       ],
       "curatorFeedback": "Should behave as a bridge between hard rock, doom metal and heavy metal rather than sitting in a closed metal box.",
+      "approvedFactCount": 1,
       "connectionCount": 5,
       "linkedGenres": [
         "heavy-metal"
@@ -4125,6 +4250,7 @@
         "hard rock",
         "band"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 6,
       "linkedGenres": [
         "hard-rock"
@@ -4208,6 +4334,7 @@
         "Heavy metal",
         "band"
       ],
+      "approvedFactCount": 2,
       "connectionCount": 4,
       "linkedGenres": [
         "heavy-metal"
@@ -4252,6 +4379,7 @@
         "Hard rock",
         "blues rock"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 5,
       "linkedGenres": [
         "hard-rock"
@@ -4265,23 +4393,47 @@
     "the-yardbirds": {
       "zone": "roots-blues",
       "secondaryZones": [
+        "rock-circuit",
         "hard-rock-metal",
-        "rock-circuit"
+        "psychedelia-prog"
       ],
       "primaryGenres": [
         "blues rock",
         "blues"
       ],
       "curatorTags": [
+        "British blues rock",
+        "guitarist lineage",
+        "documented membership",
         "Rock",
         "blues rock",
         "blues"
       ],
+      "curatorFeedback": "Keep the band in British blues rock. Clapton, Beck and Page are documented former members whose later paths explain its wide bridge role; membership does not imply a shared later sound.",
+      "factNotes": [
+        {
+          "ref": "2026-09-26-sixty#9",
+          "entityId": "the-yardbirds",
+          "category": "lineup-story",
+          "relatedNodes": [
+            "the-yardbirds",
+            "eric-clapton",
+            "jeff-beck",
+            "jimmy-page"
+          ],
+          "interpretation": "Use as evidence for separate membership links and a British blues-rock lineage. Do not infer simultaneous membership.",
+          "sourceUrl": "https://rockhall.com/inductees/yardbirds/",
+          "sourceFingerprint": "b42ef0a45868f8078e26950ed73b676ee43eb5966ad3c66480fd58865fb8d093",
+          "approvalAtLastSync": "approved",
+          "verifiedAt": "2026-09-28"
+        }
+      ],
+      "approvedFactCount": 1,
       "connectionCount": 6,
       "linkedGenres": [
         "rock"
       ],
-      "bridgeScore": 0.52,
+      "bridgeScore": 0.99,
       "hubScore": 0.5,
       "layoutHints": {
         "pinned": false
@@ -4296,6 +4448,7 @@
         "manufacturer",
         "guitar"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 6,
       "linkedGenres": [],
       "bridgeScore": 0,
@@ -4330,6 +4483,7 @@
         "manufacturer",
         "country"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 2,
       "linkedGenres": [],
       "bridgeScore": 0,
@@ -4347,6 +4501,7 @@
         "manufacturer",
         "rock"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 1,
       "linkedGenres": [],
       "bridgeScore": 0,
@@ -4364,6 +4519,7 @@
         "country rock",
         "manufacturer"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 1,
       "linkedGenres": [],
       "bridgeScore": 0,
@@ -4405,6 +4561,7 @@
         "electric guitar",
         "Rock"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 16,
       "linkedGenres": [
         "rock",
@@ -4429,6 +4586,7 @@
         "electric guitar",
         "Funk"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 6,
       "linkedGenres": [
         "country",
@@ -4449,6 +4607,22 @@
         "alternative rock",
         "grunge"
       ],
+      "factNotes": [
+        {
+          "ref": "2026-09-26-sixty#32",
+          "entityId": "fender-jaguar",
+          "category": "instrument-design",
+          "relatedNodes": [
+            "fender-jaguar"
+          ],
+          "interpretation": "A pickup-switch specification enriches the guitar node only. Do not derive an artist or genre edge from hardware alone.",
+          "sourceUrl": "https://www.fender.com/articles/behind-the-scenes/from-surf-to-shoegaze-a-history-of-the-jaguar",
+          "sourceFingerprint": "2cc11f2c5ed62adf5288c41a71da0ee20347779dd1660825e0436222c01fbb74",
+          "approvalAtLastSync": "approved",
+          "verifiedAt": "2026-09-28"
+        }
+      ],
+      "approvedFactCount": 2,
       "connectionCount": 1,
       "linkedGenres": [],
       "bridgeScore": 0,
@@ -4468,6 +4642,7 @@
         "guitar",
         "instrument"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 2,
       "linkedGenres": [],
       "bridgeScore": 0.22,
@@ -4491,6 +4666,7 @@
         "Hard rock",
         "blues rock"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 13,
       "linkedGenres": [
         "hard-rock"
@@ -4515,6 +4691,7 @@
         "Heavy metal",
         "hard rock"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 8,
       "linkedGenres": [
         "heavy-metal"
@@ -4560,6 +4737,7 @@
         "Heavy metal",
         "blues rock"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 6,
       "linkedGenres": [
         "heavy-metal"
@@ -4584,6 +4762,7 @@
         "Country",
         "Folk"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 6,
       "linkedGenres": [
         "folk",
@@ -4606,6 +4785,7 @@
         "Folk",
         "country"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 2,
       "linkedGenres": [
         "folk"
@@ -4640,18 +4820,41 @@
     "rickenbacker-360-12": {
       "zone": "guitar-workshop",
       "secondaryZones": [
-        "punk-alt",
-        "rock-circuit"
+        "rock-circuit",
+        "psychedelia-prog",
+        "punk-alt"
       ],
       "primaryGenres": [],
       "curatorTags": [
+        "electric twelve-string",
+        "George Harrison",
+        "Beatles recording context",
         "electric guitar",
         "guitar",
         "instrument"
       ],
+      "curatorFeedback": "The Harrison/Beatles recording use supports a concrete instrument-to-player bridge. A later artist being inspired to buy the model is influence context, not proof of a shared recording.",
+      "factNotes": [
+        {
+          "ref": "2026-09-26-sixty#43",
+          "entityId": "rickenbacker-360-12",
+          "category": "instrument-story",
+          "relatedNodes": [
+            "rickenbacker-360-12",
+            "george-harrison",
+            "the-beatles"
+          ],
+          "interpretation": "A documented player and recording context can bridge instrument and band. The guitar model remains in the workshop zone.",
+          "sourceUrl": "https://www.rickenbacker.com/legacy/",
+          "sourceFingerprint": "9485f23ffbe3e7d1a1d1ea6b78a12263d9a5cebc33d2f34c9027e18b362c51ad",
+          "approvalAtLastSync": "approved",
+          "verifiedAt": "2026-09-28"
+        }
+      ],
+      "approvedFactCount": 2,
       "connectionCount": 3,
       "linkedGenres": [],
-      "bridgeScore": 0.44,
+      "bridgeScore": 0.84,
       "hubScore": 0.25,
       "layoutHints": {
         "pinned": false
@@ -4708,6 +4911,7 @@
         "signature guitar",
         "guitar"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 2,
       "linkedGenres": [],
       "bridgeScore": 0.22,
@@ -4827,6 +5031,7 @@
         "rock and roll",
         "roots rock"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 4,
       "linkedGenres": [],
       "bridgeScore": 0.22,
@@ -4848,6 +5053,7 @@
         "rock and roll",
         "classic rock"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 3,
       "linkedGenres": [],
       "bridgeScore": 0.22,
@@ -4995,6 +5201,7 @@
         "alternative",
         "punk"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 6,
       "linkedGenres": [],
       "bridgeScore": 0,
@@ -5071,15 +5278,36 @@
         "folk-country-vise"
       ],
       "primaryGenres": [
-        "Bluegrass"
+        "bluegrass"
       ],
       "curatorTags": [
+        "Bill Monroe",
+        "Blue Grass Boys",
+        "acoustic roots",
         "country",
         "folk"
       ],
+      "curatorFeedback": "The genre name's link to Bill Monroe's band is an origin clue. Keep bluegrass rooted in early country and acoustic folk history, not modern pop-country.",
+      "factNotes": [
+        {
+          "ref": "2026-09-26-sixty#51",
+          "entityId": "bluegrass",
+          "category": "genre-origin",
+          "relatedNodes": [
+            "bluegrass",
+            "bill-monroe"
+          ],
+          "interpretation": "This is a genre-origin relationship, not a claim that one person alone invented every part of the style.",
+          "sourceUrl": "https://folkways.si.edu/bill-monroe-bluegrass-innovator/music/article/smithsonian",
+          "sourceFingerprint": "b996e7e39d73f986e897bf117fb717892c9383abce9002a8ddcb3073365fd158",
+          "approvalAtLastSync": "approved",
+          "verifiedAt": "2026-09-28"
+        }
+      ],
+      "approvedFactCount": 1,
       "connectionCount": 3,
       "linkedGenres": [],
-      "bridgeScore": 0.22,
+      "bridgeScore": 0.34,
       "hubScore": 0.25,
       "layoutHints": {
         "pinned": false
@@ -5123,6 +5351,7 @@
         "improvisation",
         "jazz roots"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 12,
       "linkedGenres": [],
       "bridgeScore": 0.88,
@@ -5141,6 +5370,7 @@
         "folk",
         "country"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 2,
       "linkedGenres": [],
       "bridgeScore": 0,
@@ -5228,6 +5458,7 @@
         "Electric blues",
         "blues rock"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 3,
       "linkedGenres": [
         "electric-blues"
@@ -5412,6 +5643,7 @@
         "Blues rock",
         "rock"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 3,
       "linkedGenres": [
         "blues-rock"
@@ -5426,21 +5658,27 @@
       "zone": "roots-blues",
       "secondaryZones": [
         "jazz",
+        "rock-circuit",
         "guitar-workshop"
       ],
       "primaryGenres": [
-        "blues rock"
+        "blues rock",
+        "jazz fusion"
       ],
       "curatorTags": [
+        "Yardbirds member",
+        "electric fusion guitar",
         "Blues rock",
         "Jazz fusion"
       ],
+      "curatorFeedback": "The Yardbirds are the documented roots link; later instrumental work gives Beck a separate jazz-fusion direction. Keep those reasons distinct.",
+      "approvedFactCount": 1,
       "connectionCount": 4,
       "linkedGenres": [
         "blues-rock",
         "jazz-fusion"
       ],
-      "bridgeScore": 0.6,
+      "bridgeScore": 1,
       "hubScore": 0.333,
       "layoutHints": {
         "pinned": false
@@ -5482,6 +5720,7 @@
         "classic rock",
         "rock"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 2,
       "linkedGenres": [],
       "bridgeScore": 0.22,
@@ -5583,21 +5822,44 @@
     "steve-vai": {
       "zone": "psychedelia-prog",
       "secondaryZones": [
-        "guitar-workshop",
-        "rock-circuit"
+        "rock-circuit",
+        "guitar-workshop"
       ],
       "primaryGenres": [
+        "instrumental rock",
         "progressive metal"
       ],
       "curatorTags": [
+        "Satriani student",
+        "Zappa band link",
+        "Ibanez JEM design",
         "Progressive metal",
         "guitarist"
       ],
+      "curatorFeedback": "Teaching, band work and guitar design are three different relationship types. Keep Vai close to Satriani, Zappa and the JEM for their documented reasons, not as one generic collaboration cluster.",
+      "factNotes": [
+        {
+          "ref": "2026-09-26-sixty#22",
+          "entityId": "steve-vai",
+          "category": "career-story",
+          "relatedNodes": [
+            "steve-vai",
+            "joe-satriani",
+            "frank-zappa"
+          ],
+          "interpretation": "Satriani taught Vai; Zappa later employed him. These are teaching and band/career relationships, not interchangeable collaboration edges.",
+          "sourceUrl": "https://www.ibanez.com/eu/artists/detail/213.html",
+          "sourceFingerprint": "ad870f4beed60440824787c9a8b7d22be63191bd405debbd7462172e7be01634",
+          "approvalAtLastSync": "approved",
+          "verifiedAt": "2026-09-28"
+        }
+      ],
+      "approvedFactCount": 1,
       "connectionCount": 4,
       "linkedGenres": [
         "progressive-metal"
       ],
-      "bridgeScore": 0.52,
+      "bridgeScore": 0.72,
       "hubScore": 0.333,
       "layoutHints": {
         "pinned": false
@@ -5610,17 +5872,22 @@
         "guitar-workshop"
       ],
       "primaryGenres": [
+        "instrumental rock",
         "rock"
       ],
       "curatorTags": [
+        "guitar teacher",
+        "Steve Vai teacher",
         "Rock",
         "guitarist"
       ],
+      "curatorFeedback": "The documented Vai link is teacher-to-student. Keep it distinct from a shared recording or band-membership edge.",
+      "approvedFactCount": 1,
       "connectionCount": 3,
       "linkedGenres": [
         "rock"
       ],
-      "bridgeScore": 0.52,
+      "bridgeScore": 0.66,
       "hubScore": 0.25,
       "layoutHints": {
         "pinned": false
@@ -5662,6 +5929,7 @@
         "Blues rock",
         "hard rock"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 4,
       "linkedGenres": [
         "blues-rock"
@@ -5686,6 +5954,7 @@
         "blues",
         "guitarist"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 2,
       "linkedGenres": [],
       "bridgeScore": 0.22,
@@ -5792,6 +6061,7 @@
         "Jazz",
         "Jazz fusion"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 2,
       "linkedGenres": [
         "jazz",
@@ -5839,6 +6109,7 @@
         "Jazz",
         "guitarist"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 4,
       "linkedGenres": [
         "jazz"
@@ -5882,6 +6153,7 @@
         "Jazz fusion",
         "Progressive rock"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 3,
       "linkedGenres": [
         "jazz-fusion",
@@ -6094,6 +6366,7 @@
         "Blues rock",
         "Rock"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 4,
       "linkedGenres": [
         "blues-rock",
@@ -6117,6 +6390,7 @@
         "Art rock",
         "Rock"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 3,
       "linkedGenres": [
         "rock",
@@ -6140,6 +6414,7 @@
         "Hard rock",
         "Progressive rock"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 6,
       "linkedGenres": [
         "glam-rock",
@@ -6162,6 +6437,23 @@
         "hard rock",
         "Heavy metal"
       ],
+      "factNotes": [
+        {
+          "ref": "2026-09-26-sixty#2",
+          "entityId": "deep-purple",
+          "category": "collaboration",
+          "relatedNodes": [
+            "deep-purple",
+            "metallica"
+          ],
+          "interpretation": "This records a Hall of Fame induction, not a joint performance or musical collaboration. Do not create a collaboration edge from it.",
+          "sourceUrl": "https://rockhall.com/inductees/deep-purple/",
+          "sourceFingerprint": "25c1187dae8680dac08b339be293383a47e541a5b90747a61a86b39e430e2a2d",
+          "approvalAtLastSync": "approved",
+          "verifiedAt": "2026-09-28"
+        }
+      ],
+      "approvedFactCount": 1,
       "connectionCount": 3,
       "linkedGenres": [
         "hard-rock",
@@ -6209,6 +6501,7 @@
         "hard rock",
         "band"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 5,
       "linkedGenres": [
         "hard-rock"
@@ -6231,6 +6524,7 @@
         "political rock",
         "hip-hop bridge"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 1,
       "linkedGenres": [
         "alternative-rock"
@@ -6324,6 +6618,7 @@
         "pop rock",
         "blues"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 2,
       "linkedGenres": [],
       "bridgeScore": 0.22,
@@ -6385,6 +6680,7 @@
         "Hard rock",
         "Progressive rock"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 3,
       "linkedGenres": [
         "progressive-rock",
@@ -6451,6 +6747,7 @@
         "Alternative rock",
         "Art rock"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 3,
       "linkedGenres": [
         "alternative-rock",
@@ -6472,6 +6769,7 @@
         "Heavy metal",
         "band"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 2,
       "linkedGenres": [
         "heavy-metal"
@@ -6495,6 +6793,7 @@
         "Heavy metal",
         "band"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 7,
       "linkedGenres": [
         "heavy-metal"
@@ -6616,6 +6915,7 @@
         "manufacturer",
         "guitar"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 1,
       "linkedGenres": [],
       "bridgeScore": 0,
@@ -6650,6 +6950,7 @@
         "manufacturer",
         "blues"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 1,
       "linkedGenres": [],
       "bridgeScore": 0,
@@ -6710,6 +7011,7 @@
         "electric guitar",
         "Jazz"
       ],
+      "approvedFactCount": 2,
       "connectionCount": 4,
       "linkedGenres": [
         "blues-rock",
@@ -6735,6 +7037,7 @@
         "Heavy metal",
         "hard rock"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 3,
       "linkedGenres": [
         "heavy-metal"
@@ -6755,6 +7058,7 @@
         "Blues rock",
         "electric guitar"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 2,
       "linkedGenres": [
         "blues-rock"
@@ -6777,6 +7081,7 @@
         "Hard rock",
         "Progressive rock"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 3,
       "linkedGenres": [
         "hard-rock",
@@ -6791,23 +7096,45 @@
     "fender-esquire": {
       "zone": "guitar-workshop",
       "secondaryZones": [
-        "roots-blues",
-        "country-roots"
+        "country-roots",
+        "rock-circuit",
+        "roots-blues"
       ],
       "eraStart": 1950,
       "eraPeak": 1950,
       "primaryGenres": [],
       "curatorTags": [
+        "single-pickup solid-body",
+        "Luther Perkins",
+        "country rhythm",
         "Country",
         "electric guitar",
         "Rock and roll"
       ],
+      "curatorFeedback": "The model belongs with Fender guitar history. Its documented use by Luther Perkins behind Johnny Cash gives it a specific country bridge; do not infer that Cash himself played this model.",
+      "factNotes": [
+        {
+          "ref": "2026-09-26-sixty#36",
+          "entityId": "fender-esquire",
+          "category": "instrument-story",
+          "relatedNodes": [
+            "fender-esquire",
+            "johnny-cash"
+          ],
+          "interpretation": "The player was Luther Perkins, backing Johnny Cash. Keep Cash as scene context; do not claim Cash played the Esquire.",
+          "sourceUrl": "https://www.fender.com/articles/instruments/70th-anniversary-esquire",
+          "sourceFingerprint": "3c919f3b5c9bd9b58c27814350425de254a4f5b8a94091dc51500ed389efaf22",
+          "approvalAtLastSync": "approved",
+          "verifiedAt": "2026-09-28"
+        }
+      ],
+      "approvedFactCount": 2,
       "connectionCount": 3,
       "linkedGenres": [
         "rock-and-roll",
         "country"
       ],
-      "bridgeScore": 0.6,
+      "bridgeScore": 1,
       "hubScore": 0.25,
       "layoutHints": {
         "pinned": false
@@ -6824,6 +7151,7 @@
         "electric guitar",
         "Indie rock"
       ],
+      "approvedFactCount": 2,
       "connectionCount": 3,
       "linkedGenres": [
         "alternative-rock",
@@ -6847,6 +7175,7 @@
         "Hard rock",
         "Rock"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 3,
       "linkedGenres": [
         "rock",
@@ -6935,6 +7264,7 @@
         "electric guitar",
         "Heavy metal"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 2,
       "linkedGenres": [
         "heavy-metal"
@@ -7270,6 +7600,7 @@
         "hard rock",
         "metal"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 3,
       "linkedGenres": [],
       "bridgeScore": 0,
@@ -7604,6 +7935,7 @@
         "band",
         "progressive"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 1,
       "linkedGenres": [],
       "bridgeScore": 0,
@@ -8391,6 +8723,7 @@
         "artist",
         "hard rock"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 5,
       "linkedGenres": [],
       "bridgeScore": 0.44,
@@ -8878,6 +9211,7 @@
         "punk rock"
       ],
       "curatorFeedback": "Major early punk anchor. Should help organize the punk-alt area and connect back to rock history.",
+      "approvedFactCount": 1,
       "connectionCount": 3,
       "linkedGenres": [],
       "bridgeScore": 0.38,
@@ -8979,6 +9313,7 @@
         "glam metal",
         "hard rock"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 8,
       "linkedGenres": [
         "horror-punk",
@@ -9208,6 +9543,7 @@
         "punk rock"
       ],
       "curatorFeedback": "Core punk and horror punk anchor. Keep near Ramones, Sex Pistols, horror punk and hardcore punk rather than generic rock.",
+      "approvedFactCount": 1,
       "connectionCount": 0,
       "linkedGenres": [],
       "bridgeScore": 0.42,
@@ -11279,6 +11615,7 @@
         "classic rock",
         "rock"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 1,
       "linkedGenres": [],
       "bridgeScore": 0.22,
@@ -11797,6 +12134,7 @@
         "punk rock"
       ],
       "curatorFeedback": "Major UK punk anchor. Should sit in the punk-alt core with clear relation to Ramones and early punk.",
+      "approvedFactCount": 1,
       "connectionCount": 0,
       "linkedGenres": [],
       "bridgeScore": 0.38,
@@ -11843,6 +12181,7 @@
         "uk punk",
         "political punk"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 5,
       "linkedGenres": [
         "2-tone-music-genre"
@@ -11931,6 +12270,7 @@
         "garage rock",
         "punk roots"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 0,
       "linkedGenres": [],
       "bridgeScore": 0,
@@ -11998,6 +12338,7 @@
         "east bay punk",
         "mainstream punk"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 1,
       "linkedGenres": [],
       "bridgeScore": 0,
@@ -12755,6 +13096,7 @@
         "west coast hip-hop",
         "compton"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 2,
       "linkedGenres": [],
       "bridgeScore": 0.22,
@@ -12804,6 +13146,7 @@
         "rap"
       ],
       "curatorFeedback": "Hip-hop anchor with possible punk/rock crossover context. Keep hip-hop in its own area, but allow documented bridges.",
+      "approvedFactCount": 1,
       "connectionCount": 6,
       "linkedGenres": [],
       "bridgeScore": 1,
@@ -12950,6 +13293,7 @@
         "detroit hip-hop",
         "dr. dre connection"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 0,
       "linkedGenres": [],
       "bridgeScore": 0,
@@ -13019,18 +13363,42 @@
     },
     "g-funk": {
       "zone": "hip-hop-rap",
-      "secondaryZones": [],
+      "secondaryZones": [
+        "rock-circuit"
+      ],
       "primaryGenres": [
-        "g-funk"
+        "g-funk",
+        "west coast hip-hop"
       ],
       "curatorTags": [
+        "West Coast production",
+        "1970s funk source",
         "g-funk",
         "west coast hip-hop",
         "funk"
       ],
+      "curatorFeedback": "A funk sample or stylistic debt explains musical lineage. Keep G-funk in hip-hop; do not treat every funk influence as a direct artist-to-artist collaboration.",
+      "factNotes": [
+        {
+          "ref": "2026-09-26-sixty#54",
+          "entityId": "g-funk",
+          "category": "genre-history",
+          "relatedNodes": [
+            "g-funk",
+            "dr-dre",
+            "west-coast-hip-hop"
+          ],
+          "interpretation": "Use as a stylistic and production lineage inside hip-hop. Funk influence is not by itself a documented collaboration with a specific funk artist.",
+          "sourceUrl": "https://www.grammy.com/news/11-subgenres-of-hip-hop-jersey-club-drill-trap-examples-videos/",
+          "sourceFingerprint": "129a1edf26d3826a0d2877bfa07b28545a10848736847cf02461520f8688617b",
+          "approvalAtLastSync": "approved",
+          "verifiedAt": "2026-09-28"
+        }
+      ],
+      "approvedFactCount": 1,
       "connectionCount": 0,
       "linkedGenres": [],
-      "bridgeScore": 0,
+      "bridgeScore": 0.34,
       "hubScore": 0,
       "layoutHints": {
         "pinned": false
@@ -13050,6 +13418,7 @@
         "west coast hip-hop",
         "producer"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 1,
       "linkedGenres": [],
       "bridgeScore": 0,
@@ -13175,6 +13544,7 @@
         "rap",
         "thug life"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 0,
       "linkedGenres": [],
       "bridgeScore": 0,
@@ -13194,6 +13564,7 @@
         "hip-hop",
         "california rap"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 0,
       "linkedGenres": [],
       "bridgeScore": 0,
@@ -13369,6 +13740,7 @@
         "artist",
         "hard rock"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 6,
       "linkedGenres": [],
       "bridgeScore": 0.44,
@@ -14030,6 +14402,7 @@
         "hard rock",
         "metal"
       ],
+      "approvedFactCount": 1,
       "connectionCount": 1,
       "linkedGenres": [],
       "bridgeScore": 0,
@@ -15066,6 +15439,7 @@
       "eraPeak": 1981,
       "primaryGenres": [],
       "curatorTags": [],
+      "approvedFactCount": 1,
       "connectionCount": 0,
       "linkedGenres": [],
       "bridgeScore": 0,
@@ -15081,6 +15455,7 @@
       "eraPeak": 1983,
       "primaryGenres": [],
       "curatorTags": [],
+      "approvedFactCount": 1,
       "connectionCount": 0,
       "linkedGenres": [],
       "bridgeScore": 0,
@@ -15202,6 +15577,7 @@
       "eraPeak": 1971,
       "primaryGenres": [],
       "curatorTags": [],
+      "approvedFactCount": 1,
       "connectionCount": 1,
       "linkedGenres": [
         "jazz"
@@ -15219,6 +15595,7 @@
       "eraPeak": 1974,
       "primaryGenres": [],
       "curatorTags": [],
+      "approvedFactCount": 1,
       "connectionCount": 2,
       "linkedGenres": [
         "jazz",
@@ -15237,6 +15614,7 @@
       "eraPeak": 1955,
       "primaryGenres": [],
       "curatorTags": [],
+      "approvedFactCount": 1,
       "connectionCount": 1,
       "linkedGenres": [
         "bebop"
@@ -15254,6 +15632,7 @@
       "eraPeak": 1991,
       "primaryGenres": [],
       "curatorTags": [],
+      "approvedFactCount": 1,
       "connectionCount": 3,
       "linkedGenres": [
         "bebop",
@@ -15272,6 +15651,7 @@
       "eraPeak": 1967,
       "primaryGenres": [],
       "curatorTags": [],
+      "approvedFactCount": 1,
       "connectionCount": 2,
       "linkedGenres": [
         "jazz"
@@ -15300,6 +15680,7 @@
       "secondaryZones": [],
       "primaryGenres": [],
       "curatorTags": [],
+      "approvedFactCount": 1,
       "connectionCount": 3,
       "linkedGenres": [],
       "bridgeScore": 0,
@@ -15325,6 +15706,7 @@
         "country-blues bridge"
       ],
       "curatorFeedback": "Keep Rodgers grounded in early country while letting his blues and early rock influence pull him toward those scenes.",
+      "approvedFactCount": 1,
       "connectionCount": 4,
       "linkedGenres": [
         "country",
@@ -15374,6 +15756,7 @@
       "eraPeak": 1953,
       "primaryGenres": [],
       "curatorTags": [],
+      "approvedFactCount": 1,
       "connectionCount": 2,
       "linkedGenres": [
         "country",
@@ -15392,6 +15775,7 @@
       "eraPeak": 1996,
       "primaryGenres": [],
       "curatorTags": [],
+      "approvedFactCount": 1,
       "connectionCount": 2,
       "linkedGenres": [
         "bluegrass"
@@ -15409,6 +15793,7 @@
       "eraPeak": 1963,
       "primaryGenres": [],
       "curatorTags": [],
+      "approvedFactCount": 1,
       "connectionCount": 2,
       "linkedGenres": [
         "country"
@@ -15437,6 +15822,7 @@
         "jazz influence"
       ],
       "curatorFeedback": "Haggard belongs in country while his documented jazz and blues influences make him a useful bridge.",
+      "approvedFactCount": 1,
       "connectionCount": 3,
       "linkedGenres": [
         "country",
@@ -15454,6 +15840,7 @@
       "secondaryZones": [],
       "primaryGenres": [],
       "curatorTags": [],
+      "approvedFactCount": 1,
       "connectionCount": 3,
       "linkedGenres": [],
       "bridgeScore": 0,
@@ -15464,7 +15851,7 @@
     }
   },
   "curatorFeedback": {
-    "updatedAt": "2026-09-15T12:40:00.000Z",
+    "updatedAt": "2026-09-28T10:59:23.000Z",
     "rules": [
       {
         "id": "zones-are-guides-not-cages",
@@ -15629,19 +16016,291 @@
           "genre_transition_needed"
         ],
         "feedback": "Keep early country, bluegrass and honky-tonk legible as a tradition, with documented paths into folk, blues, rockabilly and rock."
+      },
+      {
+        "id": "yardbirds-guitar-lineage",
+        "zones": [
+          "roots-blues",
+          "rock-circuit",
+          "hard-rock-metal",
+          "psychedelia-prog"
+        ],
+        "anchorNodes": [
+          "the-yardbirds",
+          "eric-clapton",
+          "jeff-beck",
+          "jimmy-page"
+        ],
+        "anchorsOnly": true,
+        "feedbackCategories": [
+          "good_bridge",
+          "genre_transition_needed"
+        ],
+        "feedback": "The Yardbirds' documented membership links three guitarists to different later directions. Keep the shared band history visible without implying the three played in the band at the same time or followed one identical style."
+      },
+      {
+        "id": "esquire-country-use",
+        "zones": [
+          "guitar-workshop",
+          "country-roots"
+        ],
+        "anchorNodes": [
+          "fender-esquire"
+        ],
+        "anchorsOnly": true,
+        "feedbackCategories": [
+          "good_bridge",
+          "genre_transition_needed"
+        ],
+        "feedback": "Luther Perkins' documented Esquire use behind Johnny Cash connects a specific guitar to early country. Cash is context, not the player."
+      },
+      {
+        "id": "jaguar-alternative-use",
+        "zones": [
+          "guitar-workshop",
+          "punk-alt"
+        ],
+        "anchorNodes": [
+          "fender-jaguar",
+          "johnny-marr"
+        ],
+        "anchorsOnly": true,
+        "feedbackCategories": [
+          "good_bridge"
+        ],
+        "feedback": "Johnny Marr's documented Jaguar design gives a specific guitar-to-player link. The model's hardware specifications alone do not establish a genre connection."
+      },
+      {
+        "id": "rickenbacker-recording-use",
+        "zones": [
+          "guitar-workshop",
+          "rock-circuit",
+          "psychedelia-prog"
+        ],
+        "anchorNodes": [
+          "rickenbacker-360-12",
+          "george-harrison"
+        ],
+        "anchorsOnly": true,
+        "feedbackCategories": [
+          "good_bridge"
+        ],
+        "feedback": "George Harrison's documented use on Beatles recordings is a player-to-instrument bridge. Do not treat a later purchase inspired by the Beatles as a shared performance."
+      },
+      {
+        "id": "jem-virtuoso-design",
+        "zones": [
+          "guitar-workshop",
+          "psychedelia-prog"
+        ],
+        "anchorNodes": [
+          "ibanez-jem",
+          "steve-vai"
+        ],
+        "anchorsOnly": true,
+        "feedbackCategories": [
+          "good_bridge"
+        ],
+        "feedback": "Steve Vai's documented JEM design links a guitarist to a model. Keep instrument design distinct from teacher and band relationships."
+      },
+      {
+        "id": "jazz-fusion-guitar",
+        "zones": [
+          "jazz",
+          "roots-blues",
+          "rock-circuit",
+          "psychedelia-prog"
+        ],
+        "anchorNodes": [
+          "jazz-fusion",
+          "john-mclaughlin",
+          "jeff-beck",
+          "frank-zappa"
+        ],
+        "anchorsOnly": true,
+        "feedbackCategories": [
+          "good_bridge",
+          "genre_transition_needed"
+        ],
+        "feedback": "Jazz fusion is a transition, not a sealed genre island. Preserve jazz as the center and let documented electric guitar, rock and funk relationships form its outward paths."
+      }
+    ],
+    "factNotes": [
+      {
+        "ref": "2026-09-26-sixty#2",
+        "entityId": "deep-purple",
+        "category": "collaboration",
+        "relatedNodes": [
+          "deep-purple",
+          "metallica"
+        ],
+        "interpretation": "This records a Hall of Fame induction, not a joint performance or musical collaboration. Do not create a collaboration edge from it.",
+        "sourceUrl": "https://rockhall.com/inductees/deep-purple/",
+        "sourceFingerprint": "25c1187dae8680dac08b339be293383a47e541a5b90747a61a86b39e430e2a2d",
+        "approvalAtLastSync": "approved",
+        "verifiedAt": "2026-09-28"
+      },
+      {
+        "ref": "2026-09-26-sixty#9",
+        "entityId": "the-yardbirds",
+        "category": "lineup-story",
+        "relatedNodes": [
+          "the-yardbirds",
+          "eric-clapton",
+          "jeff-beck",
+          "jimmy-page"
+        ],
+        "interpretation": "Use as evidence for separate membership links and a British blues-rock lineage. Do not infer simultaneous membership.",
+        "sourceUrl": "https://rockhall.com/inductees/yardbirds/",
+        "sourceFingerprint": "b42ef0a45868f8078e26950ed73b676ee43eb5966ad3c66480fd58865fb8d093",
+        "approvalAtLastSync": "approved",
+        "verifiedAt": "2026-09-28"
+      },
+      {
+        "ref": "2026-09-26-sixty#22",
+        "entityId": "steve-vai",
+        "category": "career-story",
+        "relatedNodes": [
+          "steve-vai",
+          "joe-satriani",
+          "frank-zappa"
+        ],
+        "interpretation": "Satriani taught Vai; Zappa later employed him. These are teaching and band/career relationships, not interchangeable collaboration edges.",
+        "sourceUrl": "https://www.ibanez.com/eu/artists/detail/213.html",
+        "sourceFingerprint": "ad870f4beed60440824787c9a8b7d22be63191bd405debbd7462172e7be01634",
+        "approvalAtLastSync": "approved",
+        "verifiedAt": "2026-09-28"
+      },
+      {
+        "ref": "2026-09-26-sixty#25",
+        "entityId": "jimmy-page",
+        "category": "instrument-story",
+        "relatedNodes": [
+          "jimmy-page",
+          "gibson-eds-1275",
+          "led-zeppelin"
+        ],
+        "interpretation": "This supports Page's use of a double-neck on stage. It explains an instrument connection, not a new musical genre.",
+        "sourceUrl": "https://www.gibson.com/en-eu/blogs/gibson-gazette/gibson-custom-jimmy-page-doubleneck-collectors-edition",
+        "sourceFingerprint": "d64543d2fc352b5853e893ed1a2ae24d284434c4161a56c7680a1e1d4e4d3c9e",
+        "approvalAtLastSync": "approved",
+        "verifiedAt": "2026-09-28"
+      },
+      {
+        "ref": "2026-09-26-sixty#32",
+        "entityId": "fender-jaguar",
+        "category": "instrument-design",
+        "relatedNodes": [
+          "fender-jaguar"
+        ],
+        "interpretation": "A pickup-switch specification enriches the guitar node only. Do not derive an artist or genre edge from hardware alone.",
+        "sourceUrl": "https://www.fender.com/articles/behind-the-scenes/from-surf-to-shoegaze-a-history-of-the-jaguar",
+        "sourceFingerprint": "2cc11f2c5ed62adf5288c41a71da0ee20347779dd1660825e0436222c01fbb74",
+        "approvalAtLastSync": "approved",
+        "verifiedAt": "2026-09-28"
+      },
+      {
+        "ref": "2026-09-26-sixty#36",
+        "entityId": "fender-esquire",
+        "category": "instrument-story",
+        "relatedNodes": [
+          "fender-esquire",
+          "johnny-cash"
+        ],
+        "interpretation": "The player was Luther Perkins, backing Johnny Cash. Keep Cash as scene context; do not claim Cash played the Esquire.",
+        "sourceUrl": "https://www.fender.com/articles/instruments/70th-anniversary-esquire",
+        "sourceFingerprint": "3c919f3b5c9bd9b58c27814350425de254a4f5b8a94091dc51500ed389efaf22",
+        "approvalAtLastSync": "approved",
+        "verifiedAt": "2026-09-28"
+      },
+      {
+        "ref": "2026-09-26-sixty#43",
+        "entityId": "rickenbacker-360-12",
+        "category": "instrument-story",
+        "relatedNodes": [
+          "rickenbacker-360-12",
+          "george-harrison",
+          "the-beatles"
+        ],
+        "interpretation": "A documented player and recording context can bridge instrument and band. The guitar model remains in the workshop zone.",
+        "sourceUrl": "https://www.rickenbacker.com/legacy/",
+        "sourceFingerprint": "9485f23ffbe3e7d1a1d1ea6b78a12263d9a5cebc33d2f34c9027e18b362c51ad",
+        "approvalAtLastSync": "approved",
+        "verifiedAt": "2026-09-28"
+      },
+      {
+        "ref": "2026-09-26-sixty#51",
+        "entityId": "bluegrass",
+        "category": "genre-origin",
+        "relatedNodes": [
+          "bluegrass",
+          "bill-monroe"
+        ],
+        "interpretation": "This is a genre-origin relationship, not a claim that one person alone invented every part of the style.",
+        "sourceUrl": "https://folkways.si.edu/bill-monroe-bluegrass-innovator/music/article/smithsonian",
+        "sourceFingerprint": "b996e7e39d73f986e897bf117fb717892c9383abce9002a8ddcb3073365fd158",
+        "approvalAtLastSync": "approved",
+        "verifiedAt": "2026-09-28"
+      },
+      {
+        "ref": "2026-09-26-sixty#54",
+        "entityId": "g-funk",
+        "category": "genre-history",
+        "relatedNodes": [
+          "g-funk",
+          "dr-dre",
+          "west-coast-hip-hop"
+        ],
+        "interpretation": "Use as a stylistic and production lineage inside hip-hop. Funk influence is not by itself a documented collaboration with a specific funk artist.",
+        "sourceUrl": "https://www.grammy.com/news/11-subgenres-of-hip-hop-jersey-club-drill-trap-examples-videos/",
+        "sourceFingerprint": "129a1edf26d3826a0d2877bfa07b28545a10848736847cf02461520f8688617b",
+        "approvalAtLastSync": "approved",
+        "verifiedAt": "2026-09-28"
+      },
+      {
+        "ref": "2026-09-26-sixty#58",
+        "entityId": "psychedelic-rock",
+        "category": "genre-history",
+        "relatedNodes": [
+          "psychedelic-rock",
+          "the-yardbirds"
+        ],
+        "interpretation": "The band's sound experiments support a stylistic bridge into psychedelia. Keep this separate from its member-to-member links.",
+        "sourceUrl": "https://rockhall.com/inductees/yardbirds/",
+        "sourceFingerprint": "5a7c4b635dd9379d5f6e2124cef62f8e5edfd80e26d7f1c158bc874bffaa2892",
+        "approvalAtLastSync": "approved",
+        "verifiedAt": "2026-09-28"
       }
     ],
     "nodeIds": [
       "black-sabbath",
+      "bluegrass",
+      "eric-clapton",
+      "fender-esquire",
+      "g-funk",
+      "jazz-fusion",
+      "jeff-beck",
       "jimmie-rodgers",
+      "jimmy-page",
+      "joe-satriani",
       "led-zeppelin",
       "merle-haggard",
       "misfits",
       "public-enemy",
       "ramones",
+      "rickenbacker-360-12",
       "sex-pistols",
-      "the-carter-family"
+      "steve-vai",
+      "the-carter-family",
+      "the-yardbirds"
     ]
+  },
+  "approvedFactEvidence": {
+    "syncedAt": "2026-09-28T12:09:43.543718Z",
+    "supabaseFacts": 64,
+    "curatedFacts": 57,
+    "factsTotal": 121,
+    "nodesCovered": 115
   },
   "warnings": []
 }

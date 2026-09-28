@@ -32,6 +32,16 @@ checks the graph.
 `brain/data/approved/learning-model.json`. This is the first persistent learning
 layer for the map.
 
+Curated node and bridge explanations live in
+`brain/data/approved/curator-feedback.json`. Its `factFeedback` entries refer to
+1-based positions in a sourced fact batch. `brain:learn` checks those references
+and carries the interpretations into the learning model. These notes guide
+research and organization; they do not approve facts or create graph edges.
+Run `npm run brain:facts:sync-approved` before `npm run brain:learn` to refresh
+the read-only snapshot of Supabase-approved facts. The learning model records
+the sync time and per-node coverage; it does not invent relationships from
+fact wording or category tags.
+
 ## Editable Fields
 
 These frontmatter fields are safe to edit:
