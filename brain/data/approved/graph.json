@@ -19405,8 +19405,21 @@
       "type": "signature_instrument",
       "label": "signature guitar",
       "strength": 0.95,
-      "context": [],
-      "sources": []
+      "context": [
+        "King played an ES-355 before Gibson developed his Lucille signature model; Gibson's Lucille Legacy retains the ES model lineage."
+      ],
+      "sources": [
+        {
+          "label": "Gibson: B.B. King 1974 ES-355",
+          "url": "https://www.gibson.com/en-eu/products/gibson-custom-b-b-king-rumble-in-the-jungle-1974-es-355-walnut",
+          "provider": "other"
+        },
+        {
+          "label": "Gibson: B.B. King Lucille Legacy",
+          "url": "https://www.gibson.com/products/gibson-custom-b-b-king-lucille-legacy-transparent-ebony",
+          "provider": "other"
+        }
+      ]
     },
     {
       "id": "legacy-16-bb-king-stevie-ray-vaughan",
@@ -20159,8 +20172,16 @@
       "type": "signature_instrument",
       "label": "signature guitar",
       "strength": 0.96,
-      "context": [],
-      "sources": []
+      "context": [
+        "Nelson named his replacement Martin N-20 guitar Trigger, which became his longtime instrument."
+      ],
+      "sources": [
+        {
+          "label": "Library of Congress: Willie Nelson Gershwin Prize program",
+          "url": "https://www.loc.gov/static/events/gershwin-prize/documents/2015-nelson-program.pdf",
+          "provider": "other"
+        }
+      ]
     },
     {
       "id": "legacy-81-chet-atkins-country",
@@ -20179,8 +20200,16 @@
       "type": "signature_instrument",
       "label": "signature association",
       "strength": 0.88,
-      "context": [],
-      "sources": []
+      "context": [
+        "Gretsch launched the Chet Atkins Hollow Body Guitar, Model 6120, in 1955."
+      ],
+      "sources": [
+        {
+          "label": "Gretsch: Chet Atkins and the Model 6120",
+          "url": "https://www.gretsch.com/2024/07/seventy-years-ago-gretsch-and-chet-inked-a-most-important-deal/",
+          "provider": "other"
+        }
+      ]
     },
     {
       "id": "legacy-83-oystein-sunde-norwegian-vise",
@@ -20299,8 +20328,16 @@
       "type": "made_by",
       "label": "made",
       "strength": 0.98,
-      "context": [],
-      "sources": []
+      "context": [
+        "Fender introduced the Stratocaster in 1954 as one of its original electric guitar models."
+      ],
+      "sources": [
+        {
+          "label": "Fender: History of the Jaguar and the original four models",
+          "url": "https://www.fender.com/articles/behind-the-scenes/from-surf-to-shoegaze-a-history-of-the-jaguar",
+          "provider": "other"
+        }
+      ]
     },
     {
       "id": "legacy-95-fender-fender-telecaster",
@@ -20309,8 +20346,16 @@
       "type": "made_by",
       "label": "made",
       "strength": 0.98,
-      "context": [],
-      "sources": []
+      "context": [
+        "Fender's Telecaster preceded the Stratocaster in its original electric guitar lineup."
+      ],
+      "sources": [
+        {
+          "label": "Fender: History of the Jaguar and the original four models",
+          "url": "https://www.fender.com/articles/behind-the-scenes/from-surf-to-shoegaze-a-history-of-the-jaguar",
+          "provider": "other"
+        }
+      ]
     },
     {
       "id": "legacy-96-fender-fender-jazzmaster",
@@ -20319,8 +20364,16 @@
       "type": "made_by",
       "label": "made",
       "strength": 0.96,
-      "context": [],
-      "sources": []
+      "context": [
+        "Fender unveiled the Jazzmaster in 1958 as its first offset electric guitar."
+      ],
+      "sources": [
+        {
+          "label": "Fender: A Jazzmaster History",
+          "url": "https://www.fender.com/articles/behind-the-scenes/jazz-bomb-surf-staple-indie-icon-a-jazzmaster-history",
+          "provider": "other"
+        }
+      ]
     },
     {
       "id": "legacy-97-fender-fender-jaguar",
@@ -20329,8 +20382,16 @@
       "type": "made_by",
       "label": "made",
       "strength": 0.96,
-      "context": [],
-      "sources": []
+      "context": [
+        "Fender introduced the Jaguar in 1962 as the fourth of its original standard electric guitar models."
+      ],
+      "sources": [
+        {
+          "label": "Fender: History of the Jaguar",
+          "url": "https://www.fender.com/articles/behind-the-scenes/from-surf-to-shoegaze-a-history-of-the-jaguar",
+          "provider": "other"
+        }
+      ]
     },
     {
       "id": "legacy-98-gibson-gibson-les-paul",
@@ -20339,8 +20400,16 @@
       "type": "made_by",
       "label": "made",
       "strength": 0.98,
-      "context": [],
-      "sources": []
+      "context": [
+        "The Les Paul is part of Gibson's own original electric guitar collection."
+      ],
+      "sources": [
+        {
+          "label": "Gibson: Original Collection",
+          "url": "https://www.gibson.com/en-eu/collections/gibson-original-collection",
+          "provider": "other"
+        }
+      ]
     },
     {
       "id": "legacy-99-gibson-gibson-sg",
@@ -20349,8 +20418,16 @@
       "type": "made_by",
       "label": "made",
       "strength": 0.98,
-      "context": [],
-      "sources": []
+      "context": [
+        "Gibson lists the SG among the electric guitars it makes."
+      ],
+      "sources": [
+        {
+          "label": "Gibson: Original Collection",
+          "url": "https://www.gibson.com/en-eu/collections/gibson-original-collection",
+          "provider": "other"
+        }
+      ]
     },
     {
       "id": "legacy-100-gibson-gibson-es-355-lucille",
@@ -20359,8 +20436,16 @@
       "type": "made_by",
       "label": "made",
       "strength": 0.94,
-      "context": [],
-      "sources": []
+      "context": [
+        "Gibson Custom makes the B.B. King Lucille Legacy in its ES artist-model lineup."
+      ],
+      "sources": [
+        {
+          "label": "Gibson: B.B. King Lucille Legacy",
+          "url": "https://www.gibson.com/products/gibson-custom-b-b-king-lucille-legacy-transparent-ebony",
+          "provider": "other"
+        }
+      ]
     },
     {
       "id": "legacy-101-gibson-gibson-flying-v",
@@ -20369,8 +20454,16 @@
       "type": "made_by",
       "label": "made",
       "strength": 0.96,
-      "context": [],
-      "sources": []
+      "context": [
+        "Gibson includes the Flying V in its electric guitar collection."
+      ],
+      "sources": [
+        {
+          "label": "Gibson: Original Collection",
+          "url": "https://www.gibson.com/en-eu/collections/gibson-original-collection",
+          "provider": "other"
+        }
+      ]
     },
     {
       "id": "legacy-102-gibson-gibson-j45",
@@ -20379,8 +20472,16 @@
       "type": "made_by",
       "label": "made",
       "strength": 0.9,
-      "context": [],
-      "sources": []
+      "context": [
+        "Gibson introduced the J-45 in 1942 and continues to build the model."
+      ],
+      "sources": [
+        {
+          "label": "Gibson: J-45 Acoustic Guitars",
+          "url": "https://www.gibson.com/pages/gibson-j45-acoustic-guitars",
+          "provider": "other"
+        }
+      ]
     },
     {
       "id": "legacy-103-martin-martin-d28",
@@ -20389,8 +20490,16 @@
       "type": "made_by",
       "label": "made",
       "strength": 0.96,
-      "context": [],
-      "sources": []
+      "context": [
+        "The D-28 is a longstanding Martin dreadnought acoustic model."
+      ],
+      "sources": [
+        {
+          "label": "Martin Guitar: D-28",
+          "url": "https://www.martinguitar.com/guitars/standard-series/D-28.html",
+          "provider": "other"
+        }
+      ]
     },
     {
       "id": "legacy-104-martin-trigger",
@@ -20399,8 +20508,16 @@
       "type": "made_by",
       "label": "Martin N-20 base",
       "strength": 0.82,
-      "context": [],
-      "sources": []
+      "context": [
+        "Willie Nelson's guitar Trigger began as a Martin N-20 classical guitar."
+      ],
+      "sources": [
+        {
+          "label": "Library of Congress: Willie Nelson Gershwin Prize program",
+          "url": "https://www.loc.gov/static/events/gershwin-prize/documents/2015-nelson-program.pdf",
+          "provider": "other"
+        }
+      ]
     },
     {
       "id": "legacy-105-rickenbacker-rickenbacker-360-12",
@@ -20409,8 +20526,16 @@
       "type": "made_by",
       "label": "made",
       "strength": 0.96,
-      "context": [],
-      "sources": []
+      "context": [
+        "Rickenbacker lists the 360/12 as its twelve-string electric guitar model."
+      ],
+      "sources": [
+        {
+          "label": "Rickenbacker: Model 360/12",
+          "url": "https://www.rickenbacker.com/guitars/model-360-12/",
+          "provider": "other"
+        }
+      ]
     },
     {
       "id": "legacy-106-gretsch-gretsch-6120",
@@ -20419,8 +20544,16 @@
       "type": "made_by",
       "label": "made",
       "strength": 0.96,
-      "context": [],
-      "sources": []
+      "context": [
+        "Gretsch shipped its first Chet Atkins Model 6120 guitars in 1955."
+      ],
+      "sources": [
+        {
+          "label": "Gretsch: Chet Atkins and the Model 6120",
+          "url": "https://www.gretsch.com/2024/07/seventy-years-ago-gretsch-and-chet-inked-a-most-important-deal/",
+          "provider": "other"
+        }
+      ]
     },
     {
       "id": "legacy-107-esp-esp-explorer-style",
@@ -20429,8 +20562,16 @@
       "type": "made_by",
       "label": "made",
       "strength": 0.9,
-      "context": [],
-      "sources": []
+      "context": [
+        "ESP sells angular EX-family guitars; the map groups that body shape as explorer-style."
+      ],
+      "sources": [
+        {
+          "label": "ESP Guitars: EX Series",
+          "url": "https://www.espguitars.com/products/page/products?categories=ex-series",
+          "provider": "other"
+        }
+      ]
     },
     {
       "id": "legacy-108-fender-stratocaster-rock",
