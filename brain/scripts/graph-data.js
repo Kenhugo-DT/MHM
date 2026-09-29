@@ -9,6 +9,12 @@
     url: `https://no.wikipedia.org/wiki/${slug}`,
   });
 
+  const rockHall = (slug) => ({
+    label: "Rock & Roll Hall of Fame",
+    url: `https://rockhall.com/inductees/${slug}/`,
+    provider: "other",
+  });
+
   window.GUITAR_GRAPH_DATA = {
     nodes: [
       {
@@ -1089,7 +1095,11 @@
       { from: "rock-and-roll", to: "rock", label: "branches into", strength: 0.82 },
       { from: "rock", to: "psychedelic-rock", label: "branches into", strength: 0.7 },
       { from: "rock", to: "progressive-rock", label: "branches into", strength: 0.68 },
-      { from: "rock", to: "hard-rock", label: "branches into", strength: 0.8 },
+      {
+        from: "rock", to: "hard-rock", label: "branches into", strength: 0.8,
+        context: ["Hard rock emerged in the 1960s as bands brought louder, distorted guitar to the front of rock."],
+        sources: [{ label: "TeachRock: Introducing Hard Rock", url: "https://s3.amazonaws.com/teachrocklessonpdf/Book3/Introducing_HardRock.pdf", provider: "other" }],
+      },
       { from: "hard-rock", to: "heavy-metal", label: "heavier edge", strength: 0.86 },
       { from: "punk", to: "grunge", label: "roughens into", strength: 0.67 },
       { from: "rock", to: "punk", label: "reacts into", strength: 0.62 },
@@ -1107,9 +1117,17 @@
       { from: "lead-belly", to: "folk", label: "song tradition", strength: 0.74 },
       { from: "lead-belly", to: "twelve-string-sound", label: "twelve-string identity", strength: 0.72 },
       { from: "lead-belly", to: "national-resonator", label: "early acoustic volume world", strength: 0.48 },
-      { from: "chuck-berry", to: "rock-and-roll", label: "guitar grammar", strength: 0.94 },
+      {
+        from: "chuck-berry", to: "rock-and-roll", label: "guitar grammar", strength: 0.94,
+        context: ["Berry's guitar solos helped make electric guitar a defining voice of rock and roll."],
+        sources: [{ label: "The Met: Play It Loud", url: "https://www.metmuseum.org/exhibitions/listings/2019/play-it-loud/exhibition-galleries", provider: "other" }],
+      },
       { from: "chuck-berry", to: "gibson-es-355-lucille", label: "semi-hollow lineage", strength: 0.48 },
-      { from: "elvis-presley", to: "rock-and-roll", label: "popularized", strength: 0.78 },
+      {
+        from: "elvis-presley", to: "rock-and-roll", label: "popularized", strength: 0.78,
+        context: ["Presley brought a blend of blues, country and gospel into rock and roll's mass audience."],
+        sources: [rockHall("elvis-presley")],
+      },
       { from: "elvis-presley", to: "country", label: "roots overlap", strength: 0.42 },
 
       { from: "jimi-hendrix", to: "psychedelic-rock", label: "expanded", strength: 0.96 },
@@ -1182,14 +1200,22 @@
       { from: "jimmy-page", to: "martin-d28", label: "acoustic color", strength: 0.42 },
 
       { from: "george-harrison", to: "the-beatles", label: "guitarist", strength: 0.96 },
-      { from: "the-beatles", to: "rock", label: "central band", strength: 0.9 },
+      {
+        from: "the-beatles", to: "rock", label: "central band", strength: 0.9,
+        context: ["The Beatles helped usher rock into an experimental, studio-led era."],
+        sources: [rockHall("beatles")],
+      },
       { from: "the-beatles", to: "psychedelic-rock", label: "studio era", strength: 0.62 },
       { from: "the-beatles", to: "sgt-pepper", label: "album", strength: 0.88 },
       { from: "george-harrison", to: "rickenbacker-360-12", label: "twelve-string era", strength: 0.76 },
       { from: "george-harrison", to: "gretsch-6120", label: "early guitar color", strength: 0.48 },
       { from: "rickenbacker-360-12", to: "twelve-string-sound", label: "signature texture", strength: 0.9 },
 
-      { from: "bob-dylan", to: "folk", label: "songwriting root", strength: 0.86 },
+      {
+        from: "bob-dylan", to: "folk", label: "songwriting root", strength: 0.86,
+        context: ["The original liner notes to Dylan's 1962 debut introduced him as a figure in American folk music."],
+        sources: [{ label: "Bob Dylan: 1962 debut liner notes", url: "https://www.bobdylan.com/albums/bob-dylan/", provider: "other" }],
+      },
       { from: "bob-dylan", to: "rock", label: "electric turn", strength: 0.64 },
       { from: "bob-dylan", to: "highway-61-revisited", label: "electric-era album", strength: 0.9 },
       { from: "bob-dylan", to: "martin-d28", label: "acoustic tradition link", strength: 0.5 },

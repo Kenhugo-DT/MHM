@@ -14,6 +14,13 @@ approved graph.
 Use a current `sb_secret_...` key. It must only be used in a trusted local
 environment or GitHub Actions.
 
+Reviewed relation sources are recorded in `brain/data/source-reviews/`. After
+regenerating the approved graph, preview a review batch with
+`npm run brain:sync-edge-evidence`. Apply it with
+`npm run brain:sync-edge-evidence -- --apply`. This updates only the reviewed
+relations' context and sources. It stops if a live relation already has
+different evidence, so those conflicts can be reviewed manually.
+
 ## Local collection
 
 ```bash

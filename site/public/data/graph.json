@@ -19265,8 +19265,16 @@
       "type": "associated_genre",
       "label": "branches into",
       "strength": 0.8,
-      "context": [],
-      "sources": []
+      "context": [
+        "Hard rock emerged in the 1960s as bands brought louder, distorted guitar to the front of rock."
+      ],
+      "sources": [
+        {
+          "label": "TeachRock: Introducing Hard Rock",
+          "url": "https://s3.amazonaws.com/teachrocklessonpdf/Book3/Introducing_HardRock.pdf",
+          "provider": "other"
+        }
+      ]
     },
     {
       "id": "legacy-6-hard-rock-heavy-metal",
@@ -19415,8 +19423,16 @@
       "type": "associated_genre",
       "label": "guitar grammar",
       "strength": 0.94,
-      "context": [],
-      "sources": []
+      "context": [
+        "Berry's guitar solos helped make electric guitar a defining voice of rock and roll."
+      ],
+      "sources": [
+        {
+          "label": "The Met: Play It Loud",
+          "url": "https://www.metmuseum.org/exhibitions/listings/2019/play-it-loud/exhibition-galleries",
+          "provider": "other"
+        }
+      ]
     },
     {
       "id": "legacy-21-chuck-berry-gibson-es-355-lucille",
@@ -19435,8 +19451,16 @@
       "type": "associated_genre",
       "label": "popularized",
       "strength": 0.78,
-      "context": [],
-      "sources": []
+      "context": [
+        "Presley brought a blend of blues, country and gospel into rock and roll's mass audience."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/elvis-presley/",
+          "provider": "other"
+        }
+      ]
     },
     {
       "id": "legacy-23-elvis-presley-country",
@@ -19915,8 +19939,16 @@
       "type": "associated_genre",
       "label": "central band",
       "strength": 0.9,
-      "context": [],
-      "sources": []
+      "context": [
+        "The Beatles helped usher rock into an experimental, studio-led era."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/beatles/",
+          "provider": "other"
+        }
+      ]
     },
     {
       "id": "legacy-71-the-beatles-psychedelic-rock",
@@ -19955,8 +19987,16 @@
       "type": "associated_genre",
       "label": "songwriting root",
       "strength": 0.86,
-      "context": [],
-      "sources": []
+      "context": [
+        "The original liner notes to Dylan's 1962 debut introduced him as a figure in American folk music."
+      ],
+      "sources": [
+        {
+          "label": "Bob Dylan: 1962 debut liner notes",
+          "url": "https://www.bobdylan.com/albums/bob-dylan/",
+          "provider": "other"
+        }
+      ]
     },
     {
       "id": "legacy-75-bob-dylan-rock",
@@ -20435,8 +20475,16 @@
       "type": "associated_genre",
       "label": "bridges into",
       "strength": 0.78,
-      "context": [],
-      "sources": []
+      "context": [
+        "Amplified British blues helped shape late-1960s rock bands and expand rock's guitar vocabulary."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/john-mayall/",
+          "provider": "other"
+        }
+      ]
     },
     {
       "id": "legacy-123-rockabilly-rock-and-roll",
@@ -20625,8 +20673,16 @@
       "type": "associated_genre",
       "label": "technical branch",
       "strength": 0.78,
-      "context": [],
-      "sources": []
+      "context": [
+        "Progressive metal is a later branch within heavy metal, extending its technical and stylistic range."
+      ],
+      "sources": [
+        {
+          "label": "GRAMMY GO: Heavy Metal",
+          "url": "https://go.grammy.com/music-genres/the-ultimate-guide-to-heavy-metal-music-a-genre-that-rocks/",
+          "provider": "other"
+        }
+      ]
     },
     {
       "id": "legacy-142-progressive-metal-progressive-rock",
@@ -21053,8 +21109,16 @@
       "type": "associated_genre",
       "label": "central band",
       "strength": 0.82,
-      "context": [],
-      "sources": []
+      "context": [
+        "The Stones blended American blues and R&B with a rock sound across their career."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/rolling-stones/",
+          "provider": "other"
+        }
+      ]
     },
     {
       "id": "legacy-184-the-rolling-stones-rock",
@@ -21063,8 +21127,16 @@
       "type": "associated_genre",
       "label": "central band",
       "strength": 0.82,
-      "context": [],
-      "sources": []
+      "context": [
+        "The museum traces the band's rock sound to blues and R&B while documenting their later stylistic range."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/rolling-stones/",
+          "provider": "other"
+        }
+      ]
     },
     {
       "id": "legacy-185-jeff-beck-the-yardbirds",
@@ -21143,8 +21215,16 @@
       "type": "associated_genre",
       "label": "central band",
       "strength": 0.82,
-      "context": [],
-      "sources": []
+      "context": [
+        "The Who were among the British groups that transformed rock and roll in the 1960s."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/who/",
+          "provider": "other"
+        }
+      ]
     },
     {
       "id": "legacy-193-the-who-art-rock",
@@ -21533,8 +21613,16 @@
       "type": "associated_genre",
       "label": "riff engine",
       "strength": 0.88,
-      "context": [],
-      "sources": []
+      "context": [
+        "AC/DC's riff-driven style sits between hard rock and heavy metal."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/acdc/",
+          "provider": "other"
+        }
+      ]
     },
     {
       "id": "legacy-232-acdc-blues-rock",
@@ -21883,8 +21971,16 @@
       "type": "associated_genre",
       "label": "central band",
       "strength": 0.82,
-      "context": [],
-      "sources": []
+      "context": [
+        "AllMusic classifies Radiohead within alternative and indie rock while noting their experimental reach."
+      ],
+      "sources": [
+        {
+          "label": "AllMusic: Radiohead",
+          "url": "https://www.allmusic.com/artist/mn0000326249",
+          "provider": "other"
+        }
+      ]
     },
     {
       "id": "legacy-267-radiohead-art-rock",

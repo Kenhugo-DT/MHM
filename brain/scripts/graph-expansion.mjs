@@ -8,6 +8,12 @@ const nowiki = (slug) => ({
   url: `https://no.wikipedia.org/wiki/${slug}`,
 });
 
+const rockHall = (slug) => ({
+  label: "Rock & Roll Hall of Fame",
+  url: `https://rockhall.com/inductees/${slug}/`,
+  provider: "other",
+});
+
 export const extraNodes = [
   {
     id: "blues-rock",
@@ -1232,7 +1238,11 @@ export const extraNodes = [
 export const extraEdges = [
   { from: "blues", to: "blues-rock", label: "feeds", strength: 0.82 },
   { from: "electric-blues", to: "blues-rock", label: "amplified into", strength: 0.82 },
-  { from: "blues-rock", to: "rock", label: "bridges into", strength: 0.78 },
+  {
+    from: "blues-rock", to: "rock", label: "bridges into", strength: 0.78,
+    context: ["Amplified British blues helped shape late-1960s rock bands and expand rock's guitar vocabulary."],
+    sources: [rockHall("john-mayall")],
+  },
   { from: "rockabilly", to: "rock-and-roll", label: "early branch", strength: 0.82 },
   { from: "country", to: "rockabilly", label: "roots overlap", strength: 0.64 },
   { from: "surf-rock", to: "rock-and-roll", label: "instrumental branch", strength: 0.58 },
@@ -1251,7 +1261,11 @@ export const extraEdges = [
   { from: "shoegaze", to: "alternative-rock", label: "textural branch", strength: 0.66 },
   { from: "thrash-metal", to: "heavy-metal", label: "fast branch", strength: 0.86 },
   { from: "doom-metal", to: "heavy-metal", label: "slower branch", strength: 0.82 },
-  { from: "progressive-metal", to: "heavy-metal", label: "technical branch", strength: 0.78 },
+  {
+    from: "progressive-metal", to: "heavy-metal", label: "technical branch", strength: 0.78,
+    context: ["Progressive metal is a later branch within heavy metal, extending its technical and stylistic range."],
+    sources: [{ label: "GRAMMY GO: Heavy Metal", url: "https://go.grammy.com/music-genres/the-ultimate-guide-to-heavy-metal-music-a-genre-that-rocks/", provider: "other" }],
+  },
   { from: "progressive-metal", to: "progressive-rock", label: "structural overlap", strength: 0.72 },
   { from: "bluegrass", to: "country", label: "roots overlap", strength: 0.78 },
   { from: "bluegrass", to: "folk", label: "acoustic overlap", strength: 0.68 },
@@ -1301,8 +1315,16 @@ export const extraEdges = [
   { from: "keith-richards", to: "the-rolling-stones", label: "guitarist", strength: 0.96 },
   { from: "keith-richards", to: "blues-rock", label: "riff root", strength: 0.78 },
   { from: "keith-richards", to: "fender-telecaster", label: "rhythm guitar link", strength: 0.72 },
-  { from: "the-rolling-stones", to: "blues-rock", label: "central band", strength: 0.82 },
-  { from: "the-rolling-stones", to: "rock", label: "central band", strength: 0.82 },
+  {
+    from: "the-rolling-stones", to: "blues-rock", label: "central band", strength: 0.82,
+    context: ["The Stones blended American blues and R&B with a rock sound across their career."],
+    sources: [rockHall("rolling-stones")],
+  },
+  {
+    from: "the-rolling-stones", to: "rock", label: "central band", strength: 0.82,
+    context: ["The museum traces the band's rock sound to blues and R&B while documenting their later stylistic range."],
+    sources: [rockHall("rolling-stones")],
+  },
   { from: "jeff-beck", to: "the-yardbirds", label: "member", strength: 0.88 },
   { from: "jeff-beck", to: "blues-rock", label: "British blues line", strength: 0.76 },
   { from: "jeff-beck", to: "jazz-fusion", label: "instrumental branch", strength: 0.72 },
@@ -1310,7 +1332,11 @@ export const extraEdges = [
   { from: "pete-townshend", to: "the-who", label: "guitarist / songwriter", strength: 0.96 },
   { from: "pete-townshend", to: "rock", label: "power-chord language", strength: 0.78 },
   { from: "pete-townshend", to: "gibson-sg", label: "stage guitar link", strength: 0.58 },
-  { from: "the-who", to: "rock", label: "central band", strength: 0.82 },
+  {
+    from: "the-who", to: "rock", label: "central band", strength: 0.82,
+    context: ["The Who were among the British groups that transformed rock and roll in the 1960s."],
+    sources: [rockHall("who")],
+  },
   { from: "the-who", to: "art-rock", label: "rock opera scale", strength: 0.52 },
 
   { from: "brian-may", to: "queen", label: "guitarist", strength: 0.96 },
@@ -1351,7 +1377,11 @@ export const extraEdges = [
   { from: "angus-young", to: "acdc", label: "guitarist", strength: 0.96 },
   { from: "angus-young", to: "gibson-sg", label: "signature instrument", strength: 0.96 },
   { from: "malcolm-young", to: "acdc", label: "rhythm guitarist", strength: 0.94 },
-  { from: "acdc", to: "hard-rock", label: "riff engine", strength: 0.88 },
+  {
+    from: "acdc", to: "hard-rock", label: "riff engine", strength: 0.88,
+    context: ["AC/DC's riff-driven style sits between hard rock and heavy metal."],
+    sources: [rockHall("acdc")],
+  },
   { from: "acdc", to: "blues-rock", label: "roots source", strength: 0.58 },
   { from: "dave-mustaine", to: "megadeth", label: "guitarist / vocalist", strength: 0.96 },
   { from: "megadeth", to: "thrash-metal", label: "central band", strength: 0.94 },
@@ -1387,7 +1417,11 @@ export const extraEdges = [
   { from: "alex-lifeson", to: "gibson-es-335", label: "signature guitar link", strength: 0.72 },
   { from: "the-edge", to: "gibson-explorer", label: "stage guitar link", strength: 0.64 },
   { from: "jonny-greenwood", to: "radiohead", label: "guitarist / arranger", strength: 0.96 },
-  { from: "radiohead", to: "alternative-rock", label: "central band", strength: 0.82 },
+  {
+    from: "radiohead", to: "alternative-rock", label: "central band", strength: 0.82,
+    context: ["AllMusic classifies Radiohead within alternative and indie rock while noting their experimental reach."],
+    sources: [{ label: "AllMusic: Radiohead", url: "https://www.allmusic.com/artist/mn0000326249", provider: "other" }],
+  },
   { from: "radiohead", to: "art-rock", label: "experimental identity", strength: 0.72 },
   { from: "jonny-greenwood", to: "fender-telecaster", label: "main guitar link", strength: 0.72 },
 
