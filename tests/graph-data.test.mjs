@@ -76,10 +76,40 @@ test("graph fingerprint ignores ordering but detects changed positions and conne
   };
   assert.equal(await matchingLayouts(added, "artists", layouts, graph), layouts);
   assert.equal(await matchingLayouts({ ...added, edges: added.edges.slice(1) }, "artists", layouts, graph), undefined);
-  assert.equal(
-    await matchingLayouts({ ...added, nodes: added.nodes.map((node) => node.id === "a" ? { ...node, x: 999 } : node) }, "artists", layouts, graph),
-    undefined,
-  );
+  const moved = { ...added, nodes: added.nodes.map((node) => node.id === "a" ? { ...node, x: 999 } : node) };
+  assert.equal(await matchingLayouts(moved, "artists", layouts, graph), layouts);
+  assert.equal(await matchingLayouts({ ...moved, nodes: moved.nodes.filter((node) => node.id !== "a") }, "artists", layouts, graph), undefined);
+  assert.equal(await matchingLayouts({ ...moved, nodes: moved.nodes.map((node) => node.id === "a" ? { ...node, zone: "jazz" } : node) }, "artists", layouts, graph), undefined);
+  assert.equal(await matchingLayouts({ ...moved, nodes: moved.nodes.map((node) => node.id === "a" ? { ...node, type: "artist" } : node) }, "artists", layouts, graph), undefined);
+  assert.equal(await matchingLayouts({ ...moved, edges: moved.edges.map((edge) => edge.target === "b" ? { ...edge, strength: 0.2 } : edge) }, "artists", layouts, graph), undefined);
+});
+
+test("live layout matching keeps current map positions without mutating saved layouts", async () => {
+  const baseline = {
+    nodes: [{ id: "a", type: "band", x: 1, y: 2, zone: "rock" }],
+    edges: [],
+  };
+  const layouts = {
+    graphFingerprints: { artists: await graphFingerprint(baseline, "artists") },
+    layouts: {
+      organized: { nodes: { a: { x: 1, y: 2, zone: "rock", priority: 3 } } },
+      timeline: { nodes: { a: { x: 100, y: 200 } } },
+    },
+  };
+  const live = {
+    nodes: [
+      { ...baseline.nodes[0], x: 50, y: 60 },
+      { id: "new", type: "band", x: 80, y: 90, zone: "rock" },
+    ],
+    edges: [],
+  };
+  const matched = await matchingLayouts(live, "artists", layouts, baseline);
+  assert.notEqual(matched, layouts);
+  assert.deepEqual(matched.layouts.organized.nodes.a, { x: 50, y: 60, zone: "rock", priority: 3 });
+  assert.deepEqual(matched.layouts.organized.nodes.new, { x: 80, y: 90, zone: "rock" });
+  assert.equal(matched.layouts.timeline, layouts.layouts.timeline);
+  assert.deepEqual(layouts.layouts.organized.nodes.a, { x: 1, y: 2, zone: "rock", priority: 3 });
+  assert.equal(layouts.layouts.organized.nodes.new, undefined);
 });
 
 test("published layouts match the approved graph in every map mode", async () => {

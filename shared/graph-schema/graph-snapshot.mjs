@@ -50,6 +50,25 @@ export async function matchingLayouts(graph, mode, layouts, baseline) {
   if (matchingNodes.some((node) => !node) || matchingEdges.some((edge) => !edge)) {
     return undefined;
   }
-  const liveBaseline = { nodes: matchingNodes, edges: matchingEdges };
-  return (await graphFingerprint(liveBaseline, mode)) === expected ? layouts : undefined;
+  if (baselineNodes.some((node, index) => {
+    const live = matchingNodes[index];
+    return live.type !== node.type || live.zone !== node.zone || Boolean(live.starter) !== Boolean(node.starter);
+  }) || baselineEdges.some((edge, index) => matchingEdges[index].strength !== edge.strength)) {
+    return undefined;
+  }
+
+  const organized = layouts.layouts?.organized;
+  if (!organized) return layouts;
+  const positions = { ...organized.nodes };
+  for (const node of graph.nodes) {
+    if (!types.has(node.type)) continue;
+    positions[node.id] = { ...positions[node.id], x: node.x, y: node.y, zone: node.zone };
+  }
+  return {
+    ...layouts,
+    layouts: {
+      ...layouts.layouts,
+      organized: { ...organized, nodes: positions },
+    },
+  };
 }
