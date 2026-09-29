@@ -1158,7 +1158,11 @@
       { from: "stevie-ray-vaughan", to: "electric-blues", label: "revived", strength: 0.86 },
       { from: "stevie-ray-vaughan", to: "fender-stratocaster", label: "main voice", strength: 0.9 },
       { from: "stevie-ray-vaughan", to: "texas-flood", label: "breakthrough", strength: 0.78 },
-      { from: "stevie-ray-vaughan", to: "jimi-hendrix", label: "influence line", strength: 0.62 },
+      {
+        from: "stevie-ray-vaughan", to: "jimi-hendrix", label: "influence line", strength: 0.62,
+        context: ["Vaughan recorded Hendrix's Voodoo Chile, and Rock Hall traces Hendrix's blues-guitar legacy through Vaughan."],
+        sources: [{ label: "Rock Hall: Stevie Ray Vaughan induction essay", url: "https://rockhall.com/wp-content/uploads/2024/03/Stevie_Ray_Vaughan___Double_Trouble_2015.pdf", provider: "other" }],
+      },
       { from: "john-mayer", to: "stevie-ray-vaughan", label: "modern blues influence", strength: 0.5 },
       { from: "john-mayer", to: "fender-stratocaster", label: "blues/pop instrument", strength: 0.62 },
       { from: "john-mayer", to: "electric-blues", label: "draws from", strength: 0.5 },
@@ -1168,8 +1172,16 @@
       { from: "eric-clapton", to: "electric-blues", label: "blues-rock bridge", strength: 0.68 },
       { from: "eric-clapton", to: "gibson-les-paul", label: "classic era tone", strength: 0.62 },
       { from: "cream", to: "hard-rock", label: "loud trio bridge", strength: 0.54 },
-      { from: "the-yardbirds", to: "jimmy-page", label: "member link", strength: 0.68 },
-      { from: "the-yardbirds", to: "rock", label: "British blues-rock", strength: 0.56 },
+      {
+        from: "the-yardbirds", to: "jimmy-page", label: "member link", strength: 0.68,
+        context: ["Page joined the Yardbirds in 1966, moving from rhythm to lead guitar during his tenure."],
+        sources: [{ label: "Rock Hall: The Yardbirds induction essay", url: "https://rockhall.com/wp-content/uploads/2024/03/The_Yardbirds_1992.pdf", provider: "other" }],
+      },
+      {
+        from: "the-yardbirds", to: "rock", label: "British blues-rock", strength: 0.56,
+        context: ["The Yardbirds grew from blues covers into guitar experimentation that shaped later rock styles."],
+        sources: [rockHall("yardbirds")],
+      },
 
       { from: "david-gilmour", to: "pink-floyd", label: "guitarist", strength: 0.95 },
       { from: "pink-floyd", to: "progressive-rock", label: "central band", strength: 0.9 },
@@ -1196,7 +1208,11 @@
         context: ["Zappa explored jazz-rock fusion on albums including Uncle Meat and Hot Rats."],
         sources: [{ label: "Rock Hall: Frank Zappa induction essay", url: "https://rockhall.com/wp-content/uploads/2024/03/Frank_Zappa_1995.pdf", provider: "other" }],
       },
-      { from: "frank-zappa", to: "rock", label: "rock framework", strength: 0.56 },
+      {
+        from: "frank-zappa", to: "rock", label: "rock framework", strength: 0.56,
+        context: ["Zappa used rock alongside jazz and classical ideas across his recordings."],
+        sources: [rockHall("frank-zappa")],
+      },
       { from: "frank-zappa", to: "gibson-sg", label: "stage guitar link", strength: 0.48 },
       { from: "johnny-marr", to: "the-smiths", label: "guitarist", strength: 0.94 },
       { from: "the-smiths", to: "punk", label: "post-punk aftermath", strength: 0.44 },
@@ -1218,12 +1234,20 @@
 
       { from: "jimmy-page", to: "led-zeppelin", label: "guitarist / producer", strength: 0.96 },
       { from: "led-zeppelin", to: "hard-rock", label: "central band", strength: 0.9 },
-      { from: "led-zeppelin", to: "blues", label: "roots source", strength: 0.58 },
+      {
+        from: "led-zeppelin", to: "blues", label: "roots source", strength: 0.58,
+        context: ["Led Zeppelin's late-1960s sound drew heavily on blues before expanding into other styles."],
+        sources: [rockHall("led-zeppelin")],
+      },
       { from: "jimmy-page", to: "gibson-les-paul", label: "classic tone", strength: 0.86 },
       { from: "led-zeppelin", to: "led-zeppelin-iv", label: "album", strength: 0.86 },
       { from: "jimmy-page", to: "martin-d28", label: "acoustic color", strength: 0.42 },
 
-      { from: "george-harrison", to: "the-beatles", label: "guitarist", strength: 0.96 },
+      {
+        from: "george-harrison", to: "the-beatles", label: "guitarist", strength: 0.96,
+        context: ["The Beatles' own timeline identifies Harrison as the group's lead guitarist."],
+        sources: [{ label: "The Beatles: Red and Blue Timeline", url: "https://www.thebeatles.com/red-and-blue-timeline", provider: "other" }],
+      },
       {
         from: "the-beatles", to: "rock", label: "central band", strength: 0.9,
         context: ["The Beatles helped usher rock into an experimental, studio-led era."],
@@ -1240,7 +1264,11 @@
         context: ["The original liner notes to Dylan's 1962 debut introduced him as a figure in American folk music."],
         sources: [{ label: "Bob Dylan: 1962 debut liner notes", url: "https://www.bobdylan.com/albums/bob-dylan/", provider: "other" }],
       },
-      { from: "bob-dylan", to: "rock", label: "electric turn", strength: 0.64 },
+      {
+        from: "bob-dylan", to: "rock", label: "electric turn", strength: 0.64,
+        context: ["Dylan's electric turn brought folk-rock into the mainstream in the mid-1960s."],
+        sources: [rockHall("bob-dylan")],
+      },
       { from: "bob-dylan", to: "highway-61-revisited", label: "electric-era album", strength: 0.9 },
       { from: "bob-dylan", to: "martin-d28", label: "acoustic tradition link", strength: 0.5 },
       { from: "johnny-cash", to: "country", label: "central figure", strength: 0.9 },

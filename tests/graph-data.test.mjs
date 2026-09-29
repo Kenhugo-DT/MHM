@@ -121,7 +121,7 @@ test("research leads cannot pull nodes into another layout zone", () => {
 test("reviewed connections retain relation-specific context and non-Wikipedia sources", () => {
   const graph = JSON.parse(readFileSync("brain/data/approved/graph.json", "utf8"));
   const edges = new Map(graph.edges.map((edge) => [edge.id, edge]));
-  for (const [file, count] of [["2026-09-29-bridges.json", 12], ["2026-09-29-roots-and-branches.json", 16]]) {
+  for (const [file, count] of [["2026-09-29-bridges.json", 12], ["2026-09-29-roots-and-branches.json", 16], ["2026-09-29-artist-links.json", 15]]) {
     const review = JSON.parse(readFileSync(`brain/data/source-reviews/${file}`, "utf8"));
     assert.equal(review.edgeIds.length, count);
     for (const id of review.edgeIds) {
