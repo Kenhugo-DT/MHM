@@ -1092,15 +1092,31 @@
     edges: [
       { from: "blues", to: "electric-blues", label: "amplified into", strength: 0.88 },
       { from: "blues", to: "rock-and-roll", label: "feeds", strength: 0.72 },
-      { from: "rock-and-roll", to: "rock", label: "branches into", strength: 0.82 },
-      { from: "rock", to: "psychedelic-rock", label: "branches into", strength: 0.7 },
-      { from: "rock", to: "progressive-rock", label: "branches into", strength: 0.68 },
+      {
+        from: "rock-and-roll", to: "rock", label: "branches into", strength: 0.82,
+        context: ["Rock music grew from the American rock and roll sound of the late 1940s and early 1950s."],
+        sources: [{ label: "GRAMMY: Rock", url: "https://www.grammy.com/music-genre/rock/", provider: "other" }],
+      },
+      {
+        from: "rock", to: "psychedelic-rock", label: "branches into", strength: 0.7,
+        context: ["Pink Floyd's late-1960s rock experimentation became a defining example of psychedelic rock."],
+        sources: [rockHall("pink-floyd")],
+      },
+      {
+        from: "rock", to: "progressive-rock", label: "branches into", strength: 0.68,
+        context: ["Progressive rock emerged as musicians stretched rock songs into multipart and album-length forms."],
+        sources: [{ label: "Rock Hall: Genesis induction essay", url: "https://rockhall.com/wp-content/uploads/2024/03/Genesis_2010.pdf", provider: "other" }],
+      },
       {
         from: "rock", to: "hard-rock", label: "branches into", strength: 0.8,
         context: ["Hard rock emerged in the 1960s as bands brought louder, distorted guitar to the front of rock."],
         sources: [{ label: "TeachRock: Introducing Hard Rock", url: "https://s3.amazonaws.com/teachrocklessonpdf/Book3/Introducing_HardRock.pdf", provider: "other" }],
       },
-      { from: "hard-rock", to: "heavy-metal", label: "heavier edge", strength: 0.86 },
+      {
+        from: "hard-rock", to: "heavy-metal", label: "heavier edge", strength: 0.86,
+        context: ["Black Sabbath's early hard-rock sound helped establish heavy metal in the 1970s."],
+        sources: [rockHall("black-sabbath")],
+      },
       { from: "punk", to: "grunge", label: "roughens into", strength: 0.67 },
       { from: "rock", to: "punk", label: "reacts into", strength: 0.62 },
       { from: "folk", to: "country", label: "roots overlap", strength: 0.62 },
@@ -1114,7 +1130,11 @@
       { from: "bb-king", to: "live-at-the-regal", label: "landmark release", strength: 0.78 },
       { from: "bb-king", to: "stevie-ray-vaughan", label: "influenced blues phrasing", strength: 0.66 },
       { from: "lead-belly", to: "blues", label: "roots repertoire", strength: 0.72 },
-      { from: "lead-belly", to: "folk", label: "song tradition", strength: 0.74 },
+      {
+        from: "lead-belly", to: "folk", label: "song tradition", strength: 0.74,
+        context: ["Lead Belly's songs and performances contributed to the early American folk movement."],
+        sources: [rockHall("lead-belly")],
+      },
       { from: "lead-belly", to: "twelve-string-sound", label: "twelve-string identity", strength: 0.72 },
       { from: "lead-belly", to: "national-resonator", label: "early acoustic volume world", strength: 0.48 },
       {
@@ -1171,7 +1191,11 @@
       { from: "eddie-van-halen", to: "van-halen-i", label: "breakthrough", strength: 0.86 },
       { from: "eddie-van-halen", to: "distortion", label: "brown sound", strength: 0.72 },
 
-      { from: "frank-zappa", to: "jazz-fusion", label: "composed across", strength: 0.72 },
+      {
+        from: "frank-zappa", to: "jazz-fusion", label: "composed across", strength: 0.72,
+        context: ["Zappa explored jazz-rock fusion on albums including Uncle Meat and Hot Rats."],
+        sources: [{ label: "Rock Hall: Frank Zappa induction essay", url: "https://rockhall.com/wp-content/uploads/2024/03/Frank_Zappa_1995.pdf", provider: "other" }],
+      },
       { from: "frank-zappa", to: "rock", label: "rock framework", strength: 0.56 },
       { from: "frank-zappa", to: "gibson-sg", label: "stage guitar link", strength: 0.48 },
       { from: "johnny-marr", to: "the-smiths", label: "guitarist", strength: 0.94 },
