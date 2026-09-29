@@ -4,6 +4,7 @@ import vm from "node:vm";
 import { fileURLToPath } from "node:url";
 import { extraEdges, extraNodes } from "./graph-expansion.mjs";
 import { curatedHistoryLinks } from "./curated-history-links.mjs";
+import { curatedEraLinks, curatedEraNodes } from "./curated-era-expansion.mjs";
 import { organizeGraphLayout } from "./organize-graph-layout.mjs";
 
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
@@ -17,6 +18,10 @@ const promotionsPath = path.join(brainRoot, "data", "approved", "promotions.json
 const obsidianOverridesPath = path.join(brainRoot, "data", "approved", "obsidian-overrides.json");
 const learningModelPath = path.join(brainRoot, "data", "approved", "learning-model.json");
 const blockedEntitiesPath = path.join(repoRoot, "shared", "graph-schema", "blocked-entities.json");
+const preserveExistingLayout = process.argv.includes("--preserve-existing-layout");
+const previousPositions = preserveExistingLayout && fs.existsSync(approvedOutputPath)
+  ? new Map(JSON.parse(fs.readFileSync(approvedOutputPath, "utf8")).nodes.map((node) => [node.id, node]))
+  : new Map();
 
 const blockedEntities = JSON.parse(fs.readFileSync(blockedEntitiesPath, "utf8"));
 const excludedEntityIds = new Set(
@@ -278,6 +283,12 @@ for (const node of promotionData.nodes) {
   nodeIds.add(node.id);
 }
 
+for (const node of curatedEraNodes) {
+  if (nodeIds.has(node.id)) throw new Error(`Curated era node already exists: ${node.id}`);
+  nodes.push({ ...node, sources: normalizeSources(node.sources) });
+  nodeIds.add(node.id);
+}
+
 const edges = graphEdges
   .filter((edge) => keptIds.has(edge.from) && keptIds.has(edge.to))
   .map((edge, index) => {
@@ -300,7 +311,7 @@ const edgeKeys = new Set(
   edges.map((edge) => [edge.source, edge.target, edge.type, edge.label].join("|")),
 );
 
-for (const edge of [...promotionData.edges, ...curatedHistoryLinks]) {
+function appendCuratedEdge(edge) {
   const edgeKey = [edge.source, edge.target, edge.type, edge.label].join("|");
   if (
     !edge?.id ||
@@ -310,7 +321,7 @@ for (const edge of [...promotionData.edges, ...curatedHistoryLinks]) {
     !nodeIds.has(edge.target) ||
     hasBlockedTerm(edge.id, edge.source, edge.target, edge.label, ...(edge.context ?? []))
   ) {
-    continue;
+    return;
   }
 
   edges.push({
@@ -321,6 +332,10 @@ for (const edge of [...promotionData.edges, ...curatedHistoryLinks]) {
   });
   edgeIds.add(edge.id);
   edgeKeys.add(edgeKey);
+}
+
+for (const edge of [...promotionData.edges, ...curatedHistoryLinks]) {
+  appendCuratedEdge(edge);
 }
 
 const releaseNodes = graphNodes.filter((node) => node.type === "release");
@@ -352,8 +367,19 @@ for (const release of releaseNodes) {
   }
 }
 
+for (const edge of curatedEraLinks) {
+  appendCuratedEdge(edge);
+}
+
 applyObsidianOverrides(nodes);
 organizeGraphLayout(nodes, edges, loadLearningModel());
+
+for (const node of nodes) {
+  const previous = previousPositions.get(node.id);
+  if (!previous || previous.zone !== node.zone) continue;
+  node.x = previous.x;
+  node.y = previous.y;
+}
 
 for (const node of nodes) {
   node.metadata = publicMetadata(node.metadata ?? []);

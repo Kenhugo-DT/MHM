@@ -1,6 +1,26 @@
 import { isMapConnection } from "../../shared/graph-schema/edge-evidence.mjs";
 
 const ZONE_LAYOUTS = {
+  "classical-history": {
+    label: "CLASSICAL / ROMANTIC",
+    x: -3910,
+    y: -1880,
+    width: 1580,
+    height: 1580,
+    columns: 4,
+    colGap: 220,
+    rowGap: 130,
+  },
+  "pop-soul-disco": {
+    label: "POP / SOUL / DISCO",
+    x: -1570,
+    y: 2040,
+    width: 2300,
+    height: 1200,
+    columns: 6,
+    colGap: 220,
+    rowGap: 122,
+  },
   "roots-blues": {
     label: "ROOTS / BLUES",
     x: -2180,
@@ -105,6 +125,8 @@ const ZONE_LAYOUTS = {
 
 const ZONE_PRIORITY = [
   "guitar-workshop",
+  "classical-history",
+  "pop-soul-disco",
   "roots-blues",
   "country-roots",
   "jazz",
@@ -117,6 +139,15 @@ const ZONE_PRIORITY = [
 ];
 
 const ZONE_TERMS = {
+  "classical-history": [
+    "baroque music", "classical music", "classical period", "romantic music",
+    "bach", "pachelbel", "haydn", "mozart", "beethoven", "chopin", "grieg",
+  ],
+  "pop-soul-disco": [
+    "pop music", "soul music", "disco", "synth pop", "motown",
+    "supremes", "jackson 5", "bee gees", "abba", "donna summer",
+    "stevie wonder", "michael jackson", "madonna", "phil collins",
+  ],
   "roots-blues": [
     "albert king",
     "b.b. king",
@@ -368,9 +399,9 @@ function inferEra(node, text, learningModel) {
   if (Number.isFinite(node.eraPeak)) return node.eraPeak;
   if (Number.isFinite(learned?.eraPeak)) return learned.eraPeak;
 
-  const directYears = [...text.matchAll(/\b(19[2-9]\d|20[0-2]\d)\b/g)]
+  const directYears = [...text.matchAll(/\b(1[6-9]\d{2}|20[0-2]\d)\b/g)]
     .map((match) => Number(match[1]))
-    .filter((year) => year >= 1920 && year <= 2026);
+    .filter((year) => year >= 1600 && year <= 2026);
 
   if (directYears.length) return Math.min(...directYears);
 

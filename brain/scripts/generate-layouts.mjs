@@ -47,8 +47,10 @@ const TYPE_ORDER = {
 };
 
 const ZONE_ORDER = [
+  "classical-history",
   "roots-blues",
   "jazz",
+  "pop-soul-disco",
   "rock-circuit",
   "psychedelia-prog",
   "hard-rock-metal",
@@ -60,6 +62,8 @@ const ZONE_ORDER = [
 ];
 
 const TIMELINE_ZONE_LANES = {
+  "classical-history": -1250,
+  "pop-soul-disco": 520,
   "roots-blues": -520,
   jazz: -730,
   "psychedelia-prog": -930,
@@ -131,7 +135,7 @@ function inferEra(node, learningModel) {
     ...(node.curatorTags ?? []),
   ].join(" "));
 
-  const directYear = text.match(/\b(19[2-9]\d|20[0-2]\d)\b/);
+  const directYear = text.match(/\b(1[6-9]\d{2}|20[0-2]\d)\b/);
   if (directYear) return Number(directYear[1]);
 
   if (/robert johnson|lead belly|muddy waters|blues|swing|country/.test(text)) return 1948;
@@ -449,17 +453,19 @@ function makeGenreLayout(nodes, edges, degree, learningModel) {
 }
 
 function makeTimelineLayout(nodes, degree, learningModel) {
-  const minYear = 1930;
+  const minYear = 1600;
   const maxYear = 2026;
-  const minX = -2240;
+  const minX = -4040;
   const maxX = 4300;
   const items = nodes.map((node) => {
     const era = clamp(inferEra(node, learningModel), minYear, maxYear);
-    const t = (era - minYear) / (maxYear - minYear);
     const lane = TIMELINE_ZONE_LANES[node.zone] ?? 0;
     const degreeLift = Math.min(220, (degree.get(node.id) ?? 0) * 22);
     const hash = hashValue(`timeline:${node.id}`);
-    const x = minX + t * (maxX - minX) + ((hash % 180) - 90);
+    const baseX = era < 1930
+      ? minX + ((era - minYear) / (1930 - minYear)) * 1800
+      : -2240 + ((era - 1930) / (maxYear - 1930)) * (maxX + 2240);
+    const x = baseX + ((hash % 180) - 90);
     const y = lane + (((hash >>> 8) % 340) - 170) - degreeLift * 0.28;
     return { node, x, y };
   });

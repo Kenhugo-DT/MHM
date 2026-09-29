@@ -28,6 +28,8 @@ const BLOCKED_SEED_LABELS = new Set(["bandcamp", "bandcamp daily"]);
 const CATEGORYISH_GENRE_TERMS = /\b(duos|trios|quartets|groups|musicians|artists|bands|singers|songwriters|people|albums|songs|record labels|companies)\b/;
 
 const ZONE_DESCRIPTIONS = {
+  "classical-history": "Baroque, Classical and Romantic composition with folk and prog bridges",
+  "pop-soul-disco": "1960s Motown, soul, 1970s disco and 1980s pop and synth-pop",
   "roots-blues": "roots, blues, blues rock, early rock and Southern guitar lineage",
   "rock-circuit": "rock, classic rock, glam, funk and broad band history",
   "psychedelia-prog": "psychedelia, art rock, progressive rock and progressive metal bridges",

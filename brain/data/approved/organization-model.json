@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-28T13:07:29.910Z",
+  "generatedAt": "2026-09-29T12:48:15.625Z",
   "source": "approved graph + learning model + layout analysis",
   "graph": {
-    "nodes": 585,
-    "edges": 784,
-    "mapConnections": 352,
-    "generatedAt": "2026-09-28T13:07:29.808Z"
+    "nodes": 610,
+    "edges": 823,
+    "mapConnections": 391,
+    "generatedAt": "2026-09-29T12:48:15.475Z"
   },
   "layoutPolicy": {
     "target": "organized chaos",
@@ -19,7 +19,7 @@
   },
   "layoutIntelligence": {
     "version": 1,
-    "generatedAt": "2026-09-28T13:07:29.910Z",
+    "generatedAt": "2026-09-29T12:48:15.624Z",
     "intent": "organized chaos with readable labels and porous genre boundaries",
     "global": {
       "targetLabelState": "close-but-readable",
@@ -28,6 +28,40 @@
       "maxRecommendedOverlapSeverity": 0.18
     },
     "zones": {
+      "classical-history": {
+        "zone": "classical-history",
+        "label": "CLASSICAL / ROMANTIC",
+        "pressureScore": 0.055,
+        "density": 0.441,
+        "overlapPerNode": 0,
+        "bridgeRatio": 0.091,
+        "spacingMultiplier": 1.103,
+        "expansion": {
+          "x": 145,
+          "y": 144
+        },
+        "bridgeBleed": 248,
+        "strategy": "preserve-loose-cluster",
+        "bridgeTargets": [],
+        "readableChaos": true
+      },
+      "pop-soul-disco": {
+        "zone": "pop-soul-disco",
+        "label": "POP / SOUL / DISCO",
+        "pressureScore": 0.076,
+        "density": 0.507,
+        "overlapPerNode": 0,
+        "bridgeRatio": 0.214,
+        "spacingMultiplier": 1.112,
+        "expansion": {
+          "x": 222,
+          "y": 114
+        },
+        "bridgeBleed": 358,
+        "strategy": "soft-overlap-bridges",
+        "bridgeTargets": [],
+        "readableChaos": true
+      },
       "roots-blues": {
         "zone": "roots-blues",
         "label": "ROOTS / BLUES",
@@ -65,16 +99,16 @@
       "rock-circuit": {
         "zone": "rock-circuit",
         "label": "ROCK CIRCUIT",
-        "pressureScore": 0.536,
+        "pressureScore": 0.534,
         "density": 3.257,
         "overlapPerNode": 0.065,
         "bridgeRatio": 0.077,
-        "spacingMultiplier": 1.305,
+        "spacingMultiplier": 1.304,
         "expansion": {
-          "x": 471,
-          "y": 408
+          "x": 470,
+          "y": 407
         },
-        "bridgeBleed": 323,
+        "bridgeBleed": 322,
         "strategy": "preserve-loose-cluster",
         "bridgeTargets": [],
         "readableChaos": true
@@ -82,13 +116,13 @@
       "psychedelia-prog": {
         "zone": "psychedelia-prog",
         "label": "PSYCHEDELIA / PROG",
-        "pressureScore": 0.273,
+        "pressureScore": 0.269,
         "density": 1.894,
         "overlapPerNode": 0,
         "bridgeRatio": 0.314,
-        "spacingMultiplier": 1.195,
+        "spacingMultiplier": 1.193,
         "expansion": {
-          "x": 294,
+          "x": 292,
           "y": 118
         },
         "bridgeBleed": 479,
@@ -266,6 +300,7 @@
           "rock-circuit",
           "jazz",
           "guitar-workshop",
+          "classical-history",
           "roots-blues"
         ],
         "pullStrength": 0.58,
@@ -320,6 +355,7 @@
           "country-roots",
           "roots-blues",
           "guitar-workshop",
+          "classical-history",
           "rock-circuit"
         ],
         "pullStrength": 0.58,
@@ -345,6 +381,7 @@
         "pullZones": [
           "jazz",
           "guitar-workshop",
+          "pop-soul-disco",
           "roots-blues",
           "psychedelia-prog"
         ],
@@ -466,6 +503,7 @@
           "jazz",
           "rock-circuit",
           "guitar-workshop",
+          "classical-history",
           "roots-blues"
         ],
         "pullStrength": 0.58,
@@ -915,6 +953,7 @@
         "pullZones": [
           "hard-rock-metal",
           "guitar-workshop",
+          "pop-soul-disco",
           "hip-hop-rap",
           "punk-alt"
         ],
@@ -1748,6 +1787,46 @@
         ],
         "pullStrength": 0.58,
         "reason": "Bridge policy match: jazz-to-fusion, country-roots-to-rock."
+      },
+      "edvard-grieg": {
+        "id": "edvard-grieg",
+        "label": "Edvard Grieg",
+        "sourceZone": "classical-history",
+        "pullZones": [
+          "folk-country-vise"
+        ],
+        "pullStrength": 0.415,
+        "reason": "Connected to multiple zones."
+      },
+      "stevie-wonder": {
+        "id": "stevie-wonder",
+        "label": "Stevie Wonder",
+        "sourceZone": "pop-soul-disco",
+        "pullZones": [
+          "rock-circuit"
+        ],
+        "pullStrength": 0.415,
+        "reason": "Connected to multiple zones."
+      },
+      "david-bowie": {
+        "id": "david-bowie",
+        "label": "David Bowie",
+        "sourceZone": "pop-soul-disco",
+        "pullZones": [
+          "rock-circuit"
+        ],
+        "pullStrength": 0.415,
+        "reason": "Connected to multiple zones."
+      },
+      "phil-collins": {
+        "id": "phil-collins",
+        "label": "Phil Collins",
+        "sourceZone": "pop-soul-disco",
+        "pullZones": [
+          "rock-circuit"
+        ],
+        "pullStrength": 0.415,
+        "reason": "Connected to multiple zones."
       }
     },
     "antiPatterns": [
@@ -1764,6 +1843,106 @@
     ]
   },
   "zones": {
+    "classical-history": {
+      "label": "CLASSICAL / ROMANTIC",
+      "description": "Baroque, Classical and Romantic composition with folk and prog bridges",
+      "nodes": [
+        "classical-music",
+        "baroque-music",
+        "classical-period",
+        "romantic-music",
+        "johann-pachelbel",
+        "johann-sebastian-bach",
+        "joseph-haydn",
+        "wolfgang-amadeus-mozart",
+        "ludwig-van-beethoven",
+        "frederic-chopin",
+        "edvard-grieg"
+      ],
+      "edgesInternal": 12,
+      "edgesCrossing": 3,
+      "isolatedNodes": [],
+      "underConnectedImportantNodes": [
+        "edvard-grieg"
+      ],
+      "bridgeNodes": [
+        "edvard-grieg"
+      ],
+      "topHubs": [
+        "classical-music",
+        "classical-period",
+        "baroque-music",
+        "romantic-music",
+        "ludwig-van-beethoven"
+      ],
+      "overlapRisk": 0,
+      "overflowNodes": [],
+      "eraMedian": 1750,
+      "averageDegree": 2.45,
+      "averageSourceQuality": 0.12,
+      "approvedFactNodes": 0,
+      "needsAttentionScore": 13.68,
+      "nodeCount": 11,
+      "factCoverageRate": 0,
+      "degreeP25": 1,
+      "bridgePolicies": [],
+      "bridgeTransitionNeeds": []
+    },
+    "pop-soul-disco": {
+      "label": "POP / SOUL / DISCO",
+      "description": "1960s Motown, soul, 1970s disco and 1980s pop and synth-pop",
+      "nodes": [
+        "pop-music",
+        "soul-music",
+        "disco",
+        "synth-pop",
+        "the-supremes",
+        "the-jackson-5",
+        "bee-gees",
+        "abba",
+        "donna-summer",
+        "stevie-wonder",
+        "michael-jackson",
+        "madonna",
+        "david-bowie",
+        "phil-collins"
+      ],
+      "edgesInternal": 21,
+      "edgesCrossing": 3,
+      "isolatedNodes": [],
+      "underConnectedImportantNodes": [
+        "stevie-wonder",
+        "synth-pop"
+      ],
+      "bridgeNodes": [
+        "stevie-wonder",
+        "david-bowie",
+        "phil-collins"
+      ],
+      "topHubs": [
+        "pop-music",
+        "soul-music",
+        "disco",
+        "phil-collins",
+        "the-supremes",
+        "michael-jackson",
+        "madonna",
+        "david-bowie",
+        "synth-pop"
+      ],
+      "overlapRisk": 0,
+      "overflowNodes": [],
+      "eraMedian": 1973,
+      "averageDegree": 3.21,
+      "averageSourceQuality": 0.12,
+      "approvedFactNodes": 0,
+      "needsAttentionScore": 18.08,
+      "nodeCount": 14,
+      "factCoverageRate": 0,
+      "degreeP25": 2,
+      "bridgePolicies": [],
+      "bridgeTransitionNeeds": []
+    },
     "roots-blues": {
       "label": "ROOTS / BLUES",
       "description": "roots, blues, blues rock, early rock and Southern guitar lineage",
@@ -2144,7 +2323,7 @@
         "andrew-watt"
       ],
       "edgesInternal": 13,
-      "edgesCrossing": 45,
+      "edgesCrossing": 48,
       "isolatedNodes": [
         "311",
         "999",
@@ -2177,15 +2356,15 @@
       ],
       "bridgeNodes": [
         "rock",
+        "funk",
         "chuck-berry",
         "george-harrison",
+        "glam-rock",
         "lindsey-buckingham",
         "keith-richards",
         "joe-satriani",
         "queen",
         "pete-townshend",
-        "glam-rock",
-        "funk",
         "prince",
         "surf-rock",
         "dick-dale"
@@ -2193,8 +2372,8 @@
       "topHubs": [
         "rock",
         "funk",
-        "prince",
         "glam-rock",
+        "prince",
         "queen",
         "george-harrison",
         "surf-rock",
@@ -2232,10 +2411,10 @@
         "jeff-duncan"
       ],
       "eraMedian": 1969,
-      "averageDegree": 0.42,
+      "averageDegree": 0.44,
       "averageSourceQuality": 0.574,
       "approvedFactNodes": 8,
-      "needsAttentionScore": 87.19,
+      "needsAttentionScore": 87.09,
       "nodeCount": 169,
       "factCoverageRate": 0.047,
       "degreeP25": 0,
@@ -2292,7 +2471,7 @@
         "jack-black"
       ],
       "edgesInternal": 20,
-      "edgesCrossing": 25,
+      "edgesCrossing": 27,
       "isolatedNodes": [
         "3",
         "archive",
@@ -2333,10 +2512,10 @@
       ],
       "topHubs": [
         "progressive-rock",
+        "frank-zappa",
         "art-rock",
         "psychedelic-rock",
         "jimi-hendrix",
-        "frank-zappa",
         "pink-floyd",
         "progressive-metal",
         "steve-vai",
@@ -2360,10 +2539,10 @@
         "steve-vai"
       ],
       "eraMedian": 1969,
-      "averageDegree": 1.86,
+      "averageDegree": 1.91,
       "averageSourceQuality": 0.586,
       "approvedFactNodes": 9,
-      "needsAttentionScore": 62.39,
+      "needsAttentionScore": 62.14,
       "nodeCount": 35,
       "factCoverageRate": 0.257,
       "degreeP25": 0,
@@ -2893,7 +3072,7 @@
         "billy-arnold"
       ],
       "edgesInternal": 17,
-      "edgesCrossing": 12,
+      "edgesCrossing": 13,
       "isolatedNodes": [
         "billy-arnold"
       ],
@@ -2919,7 +3098,7 @@
         "oystein-sunde",
         "singer-songwriter"
       ],
-      "averageDegree": 3.83,
+      "averageDegree": 3.92,
       "averageSourceQuality": 0.542,
       "approvedFactNodes": 1,
       "needsAttentionScore": 10.26,
@@ -3514,8 +3693,8 @@
       "label": "Progressive rock",
       "type": "genre",
       "zone": "psychedelia-prog",
-      "degree": 10,
-      "weightedDegree": 7.24,
+      "degree": 11,
+      "weightedDegree": 8.02,
       "sourceQuality": 0.5,
       "approvedFactCount": 0,
       "hubScore": 1,
@@ -3523,7 +3702,8 @@
       "secondaryZones": [
         "rock-circuit",
         "jazz",
-        "guitar-workshop"
+        "guitar-workshop",
+        "classical-history"
       ],
       "bridgePolicies": [
         {
@@ -3731,8 +3911,8 @@
       "label": "Folk",
       "type": "genre",
       "zone": "folk-country-vise",
-      "degree": 12,
-      "weightedDegree": 8.1,
+      "degree": 13,
+      "weightedDegree": 8.88,
       "sourceQuality": 0.5,
       "approvedFactCount": 0,
       "hubScore": 1,
@@ -3740,7 +3920,8 @@
       "secondaryZones": [
         "country-roots",
         "roots-blues",
-        "guitar-workshop"
+        "guitar-workshop",
+        "classical-history"
       ],
       "bridgePolicies": [
         {
@@ -3833,15 +4014,16 @@
       "label": "Funk",
       "type": "genre",
       "zone": "rock-circuit",
-      "degree": 4,
-      "weightedDegree": 2.24,
+      "degree": 5,
+      "weightedDegree": 3.02,
       "sourceQuality": 0.5,
       "approvedFactCount": 0,
-      "hubScore": 0.5,
-      "bridgeScore": 0.76,
+      "hubScore": 0.625,
+      "bridgeScore": 1,
       "secondaryZones": [
         "jazz",
-        "guitar-workshop"
+        "guitar-workshop",
+        "pop-soul-disco"
       ],
       "bridgePolicies": [
         {
@@ -4333,16 +4515,17 @@
       "label": "Frank Zappa",
       "type": "guitarist",
       "zone": "psychedelia-prog",
-      "degree": 4,
-      "weightedDegree": 2.44,
+      "degree": 5,
+      "weightedDegree": 3.22,
       "sourceQuality": 0.5,
       "approvedFactCount": 0,
-      "hubScore": 0.5,
+      "hubScore": 0.625,
       "bridgeScore": 1,
       "secondaryZones": [
         "jazz",
         "rock-circuit",
-        "guitar-workshop"
+        "guitar-workshop",
+        "classical-history"
       ],
       "bridgePolicies": [
         {
@@ -4376,7 +4559,8 @@
       ],
       "linkedGenres": [
         "jazz-fusion",
-        "rock"
+        "rock",
+        "classical-music"
       ],
       "overlapCount": 0,
       "overflow": 0,
@@ -6419,15 +6603,16 @@
       "label": "Glam rock",
       "type": "genre",
       "zone": "rock-circuit",
-      "degree": 4,
-      "weightedDegree": 2.58,
+      "degree": 5,
+      "weightedDegree": 3.36,
       "sourceQuality": 0.5,
       "approvedFactCount": 0,
-      "hubScore": 0.5,
-      "bridgeScore": 0.88,
+      "hubScore": 0.625,
+      "bridgeScore": 1,
       "secondaryZones": [
         "hard-rock-metal",
-        "guitar-workshop"
+        "guitar-workshop",
+        "pop-soul-disco"
       ],
       "bridgePolicies": [
         {
@@ -13080,19 +13265,21 @@
       "label": "Genesis",
       "type": "band",
       "zone": "rock-circuit",
-      "degree": 0,
-      "weightedDegree": 0,
+      "degree": 1,
+      "weightedDegree": 0.78,
       "sourceQuality": 0.5,
       "approvedFactCount": 0,
-      "hubScore": 0,
-      "bridgeScore": 0,
-      "secondaryZones": [],
+      "hubScore": 0.125,
+      "bridgeScore": 0.32,
+      "secondaryZones": [
+        "pop-soul-disco"
+      ],
       "bridgePolicies": [],
       "linkedGenres": [],
       "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "research-first-connections"
+        "preserve-cross-zone-bridge"
       ]
     },
     "2-tone-music-genre": {
@@ -18050,6 +18237,604 @@
       "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": []
+    },
+    "classical-music": {
+      "id": "classical-music",
+      "label": "Classical music",
+      "type": "genre",
+      "zone": "classical-history",
+      "degree": 6,
+      "weightedDegree": 4.68,
+      "era": 1600,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.75,
+      "bridgeScore": 0.32,
+      "secondaryZones": [
+        "psychedelia-prog"
+      ],
+      "bridgePolicies": [],
+      "linkedGenres": [],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "preserve-cross-zone-bridge",
+        "improve-source-quality",
+        "source-history-fact"
+      ]
+    },
+    "baroque-music": {
+      "id": "baroque-music",
+      "label": "Baroque music",
+      "type": "genre",
+      "zone": "classical-history",
+      "degree": 3,
+      "weightedDegree": 2.34,
+      "era": 1600,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.375,
+      "bridgeScore": 0,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality",
+        "source-history-fact"
+      ]
+    },
+    "classical-period": {
+      "id": "classical-period",
+      "label": "Classical period",
+      "type": "genre",
+      "zone": "classical-history",
+      "degree": 4,
+      "weightedDegree": 3.12,
+      "era": 1750,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.5,
+      "bridgeScore": 0,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality",
+        "source-history-fact"
+      ]
+    },
+    "romantic-music": {
+      "id": "romantic-music",
+      "label": "Romantic music",
+      "type": "genre",
+      "zone": "classical-history",
+      "degree": 3,
+      "weightedDegree": 2.34,
+      "era": 1800,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.375,
+      "bridgeScore": 0,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality",
+        "source-history-fact"
+      ]
+    },
+    "johann-pachelbel": {
+      "id": "johann-pachelbel",
+      "label": "Johann Pachelbel",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.78,
+      "era": 1680,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "baroque-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "johann-sebastian-bach": {
+      "id": "johann-sebastian-bach",
+      "label": "Johann Sebastian Bach",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.78,
+      "era": 1700,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "baroque-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "joseph-haydn": {
+      "id": "joseph-haydn",
+      "label": "Joseph Haydn",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 2,
+      "weightedDegree": 1.56,
+      "era": 1750,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "classical-period"
+      ],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "wolfgang-amadeus-mozart": {
+      "id": "wolfgang-amadeus-mozart",
+      "label": "Wolfgang Amadeus Mozart",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.78,
+      "era": 1760,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "classical-period"
+      ],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "ludwig-van-beethoven": {
+      "id": "ludwig-van-beethoven",
+      "label": "Ludwig van Beethoven",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 3,
+      "weightedDegree": 2.34,
+      "era": 1790,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.375,
+      "bridgeScore": 0.26,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "classical-period",
+        "romantic-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "frederic-chopin": {
+      "id": "frederic-chopin",
+      "label": "Frédéric Chopin",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.78,
+      "era": 1830,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "romantic-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "edvard-grieg": {
+      "id": "edvard-grieg",
+      "label": "Edvard Grieg",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 2,
+      "weightedDegree": 1.56,
+      "era": 1860,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0.58,
+      "secondaryZones": [
+        "folk-country-vise"
+      ],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "folk",
+        "classical-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "expand-important-node",
+        "preserve-cross-zone-bridge",
+        "improve-source-quality",
+        "source-history-fact"
+      ]
+    },
+    "pop-music": {
+      "id": "pop-music",
+      "label": "Pop music",
+      "type": "genre",
+      "zone": "pop-soul-disco",
+      "degree": 10,
+      "weightedDegree": 7.8,
+      "era": 1960,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 1,
+      "bridgeScore": 0,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality",
+        "source-history-fact"
+      ]
+    },
+    "soul-music": {
+      "id": "soul-music",
+      "label": "Soul music",
+      "type": "genre",
+      "zone": "pop-soul-disco",
+      "degree": 5,
+      "weightedDegree": 3.9,
+      "era": 1960,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.625,
+      "bridgeScore": 0,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality",
+        "source-history-fact"
+      ]
+    },
+    "disco": {
+      "id": "disco",
+      "label": "Disco",
+      "type": "genre",
+      "zone": "pop-soul-disco",
+      "degree": 4,
+      "weightedDegree": 3.12,
+      "era": 1973,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.5,
+      "bridgeScore": 0,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality",
+        "source-history-fact"
+      ]
+    },
+    "synth-pop": {
+      "id": "synth-pop",
+      "label": "Synth-pop",
+      "type": "genre",
+      "zone": "pop-soul-disco",
+      "degree": 2,
+      "weightedDegree": 1.56,
+      "era": 1980,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "expand-important-node",
+        "improve-source-quality",
+        "source-history-fact"
+      ]
+    },
+    "the-supremes": {
+      "id": "the-supremes",
+      "label": "The Supremes",
+      "type": "band",
+      "zone": "pop-soul-disco",
+      "degree": 3,
+      "weightedDegree": 2.34,
+      "era": 1964,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.375,
+      "bridgeScore": 0.26,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "soul-music",
+        "pop-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "the-jackson-5": {
+      "id": "the-jackson-5",
+      "label": "The Jackson 5",
+      "type": "band",
+      "zone": "pop-soul-disco",
+      "degree": 2,
+      "weightedDegree": 1.56,
+      "era": 1969,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "soul-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "bee-gees": {
+      "id": "bee-gees",
+      "label": "Bee Gees",
+      "type": "band",
+      "zone": "pop-soul-disco",
+      "degree": 2,
+      "weightedDegree": 1.56,
+      "era": 1967,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0.26,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "disco",
+        "pop-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "abba": {
+      "id": "abba",
+      "label": "ABBA",
+      "type": "band",
+      "zone": "pop-soul-disco",
+      "degree": 1,
+      "weightedDegree": 0.78,
+      "era": 1974,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "pop-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "donna-summer": {
+      "id": "donna-summer",
+      "label": "Donna Summer",
+      "type": "artist",
+      "zone": "pop-soul-disco",
+      "degree": 1,
+      "weightedDegree": 0.78,
+      "era": 1975,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "disco"
+      ],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "stevie-wonder": {
+      "id": "stevie-wonder",
+      "label": "Stevie Wonder",
+      "type": "artist",
+      "zone": "pop-soul-disco",
+      "degree": 2,
+      "weightedDegree": 1.56,
+      "era": 1963,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0.58,
+      "secondaryZones": [
+        "rock-circuit"
+      ],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "soul-music",
+        "funk"
+      ],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "expand-important-node",
+        "preserve-cross-zone-bridge",
+        "improve-source-quality",
+        "source-history-fact"
+      ]
+    },
+    "michael-jackson": {
+      "id": "michael-jackson",
+      "label": "Michael Jackson",
+      "type": "artist",
+      "zone": "pop-soul-disco",
+      "degree": 3,
+      "weightedDegree": 2.34,
+      "era": 1979,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.375,
+      "bridgeScore": 0.26,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "pop-music",
+        "disco"
+      ],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "madonna": {
+      "id": "madonna",
+      "label": "Madonna",
+      "type": "artist",
+      "zone": "pop-soul-disco",
+      "degree": 3,
+      "weightedDegree": 2.34,
+      "era": 1983,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.375,
+      "bridgeScore": 0.26,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "pop-music",
+        "synth-pop"
+      ],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "david-bowie": {
+      "id": "david-bowie",
+      "label": "David Bowie",
+      "type": "artist",
+      "zone": "pop-soul-disco",
+      "degree": 3,
+      "weightedDegree": 2.34,
+      "era": 1969,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.375,
+      "bridgeScore": 0.58,
+      "secondaryZones": [
+        "rock-circuit"
+      ],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "glam-rock",
+        "pop-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "preserve-cross-zone-bridge",
+        "improve-source-quality",
+        "source-history-fact"
+      ]
+    },
+    "phil-collins": {
+      "id": "phil-collins",
+      "label": "Phil Collins",
+      "type": "artist",
+      "zone": "pop-soul-disco",
+      "degree": 4,
+      "weightedDegree": 3.12,
+      "era": 1981,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.5,
+      "bridgeScore": 0.58,
+      "secondaryZones": [
+        "rock-circuit"
+      ],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "pop-music",
+        "soul-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "preserve-cross-zone-bridge",
+        "improve-source-quality",
+        "source-history-fact"
+      ]
     }
   },
   "issues": {
@@ -18348,6 +19133,8 @@
       "ramones",
       "sex-pistols",
       "ibanez-jem",
+      "edvard-grieg",
+      "stevie-wonder",
       "fleetwood-mac",
       "cream",
       "gibson-j45",
@@ -18384,6 +19171,7 @@
       "prs",
       "jackson",
       "swing-music",
+      "synth-pop",
       "grunge",
       "shoegaze",
       "doom-metal",
@@ -18415,12 +19203,12 @@
   },
   "recommendedResearchRequests": [
     {
-      "id": "organization-hard-rock-metal-20260928",
+      "id": "organization-hard-rock-metal-20260929",
       "title": "Organize HARD ROCK / METAL frontier",
       "status": "queued",
       "priority": 90,
       "scope": "artist_network",
-      "createdAt": "2026-09-28T13:07:29.908Z",
+      "createdAt": "2026-09-29T12:48:15.623Z",
       "instructions": "Expand and clarify the HARD ROCK / METAL part of Music History Map. Current organization signal: hard rock, metal, riff culture, virtuoso guitar and heavier scenes. Prioritize documented music-related connections that help layout organization: associated genres, shared members, collaborations, influences, instruments and clear bridges to neighboring zones. Active bridge policies for this zone: rock-to-metal, hip-hop-crossovers, yardbirds-guitar-lineage. Prefer candidates that strengthen those transitions without turning category pages into nodes. Use albums, songs and releases only as context for edges. Do not create release/song nodes. Only propose node types allowed by MHM: band, guitarist, artist, guitar, guitar_brand and genre.",
       "seeds": [
         {
@@ -18463,12 +19251,12 @@
       "notes": "Generated by brain:organize. Needs-attention score 111.91. Active bridge policies: rock-to-metal, hip-hop-crossovers, yardbirds-guitar-lineage."
     },
     {
-      "id": "organization-punk-alt-20260928",
+      "id": "organization-punk-alt-20260929",
       "title": "Organize PUNK / ALTERNATIVE frontier",
       "status": "queued",
       "priority": 90,
       "scope": "artist_network",
-      "createdAt": "2026-09-28T13:07:29.908Z",
+      "createdAt": "2026-09-29T12:48:15.623Z",
       "instructions": "Expand and clarify the PUNK / ALTERNATIVE part of Music History Map. Current organization signal: punk, post-punk, alternative, indie, hardcore and adjacent scenes. Prioritize documented music-related connections that help layout organization: associated genres, shared members, collaborations, influences, instruments and clear bridges to neighboring zones. Active bridge policies for this zone: punk-to-rock, hip-hop-crossovers, jaguar-alternative-use. Prefer candidates that strengthen those transitions without turning category pages into nodes. Use albums, songs and releases only as context for edges. Do not create release/song nodes. Only propose node types allowed by MHM: band, guitarist, artist, guitar, guitar_brand and genre.",
       "seeds": [
         {
@@ -18511,12 +19299,12 @@
       "notes": "Generated by brain:organize. Needs-attention score 101.22. Active bridge policies: punk-to-rock, hip-hop-crossovers, jaguar-alternative-use."
     },
     {
-      "id": "organization-guitar-workshop-20260928",
+      "id": "organization-guitar-workshop-20260929",
       "title": "Organize GUITAR WORKSHOP frontier",
       "status": "queued",
       "priority": 90,
       "scope": "guitar_history",
-      "createdAt": "2026-09-28T13:07:29.909Z",
+      "createdAt": "2026-09-29T12:48:15.623Z",
       "instructions": "Expand and clarify the GUITAR WORKSHOP part of Music History Map. Current organization signal: guitar models, guitar brands and instrument history. Prioritize documented music-related connections that help layout organization: associated genres, shared members, collaborations, influences, instruments and clear bridges to neighboring zones. Active bridge policies for this zone: esquire-country-use, jaguar-alternative-use, rickenbacker-recording-use, jem-virtuoso-design. Prefer candidates that strengthen those transitions without turning category pages into nodes. Use albums, songs and releases only as context for edges. Do not create release/song nodes. Only propose node types allowed by MHM: band, guitarist, artist, guitar, guitar_brand and genre.",
       "seeds": [
         {
@@ -18559,12 +19347,12 @@
       "notes": "Generated by brain:organize. Needs-attention score 93.71. Active bridge policies: esquire-country-use, jaguar-alternative-use, rickenbacker-recording-use, jem-virtuoso-design."
     },
     {
-      "id": "organization-rock-circuit-20260928",
+      "id": "organization-rock-circuit-20260929",
       "title": "Organize ROCK CIRCUIT frontier",
       "status": "queued",
       "priority": 90,
       "scope": "artist_network",
-      "createdAt": "2026-09-28T13:07:29.909Z",
+      "createdAt": "2026-09-29T12:48:15.623Z",
       "instructions": "Expand and clarify the ROCK CIRCUIT part of Music History Map. Current organization signal: rock, classic rock, glam, funk and broad band history. Prioritize documented music-related connections that help layout organization: associated genres, shared members, collaborations, influences, instruments and clear bridges to neighboring zones. Active bridge policies for this zone: rock-to-metal, punk-to-rock, hip-hop-crossovers, jazz-to-fusion, country-roots-to-rock, yardbirds-guitar-lineage, rickenbacker-recording-use, jazz-fusion-guitar. Prefer candidates that strengthen those transitions without turning category pages into nodes. Use albums, songs and releases only as context for edges. Do not create release/song nodes. Only propose node types allowed by MHM: band, guitarist, artist, guitar, guitar_brand and genre.",
       "seeds": [
         {
@@ -18596,23 +19384,23 @@
           "kind": "genre"
         },
         {
-          "name": "Adam Hamilton",
-          "kind": "artist"
+          "name": "Funk",
+          "kind": "genre"
         }
       ],
       "limits": {
         "maxSeeds": 8,
         "maxCandidates": 70
       },
-      "notes": "Generated by brain:organize. Needs-attention score 87.19. Active bridge policies: rock-to-metal, punk-to-rock, hip-hop-crossovers, jazz-to-fusion, country-roots-to-rock, yardbirds-guitar-lineage, rickenbacker-recording-use, jazz-fusion-guitar."
+      "notes": "Generated by brain:organize. Needs-attention score 87.09. Active bridge policies: rock-to-metal, punk-to-rock, hip-hop-crossovers, jazz-to-fusion, country-roots-to-rock, yardbirds-guitar-lineage, rickenbacker-recording-use, jazz-fusion-guitar."
     },
     {
-      "id": "organization-hip-hop-rap-20260928",
+      "id": "organization-hip-hop-rap-20260929",
       "title": "Organize HIP-HOP / RAP frontier",
       "status": "queued",
       "priority": 90,
       "scope": "artist_network",
-      "createdAt": "2026-09-28T13:07:29.909Z",
+      "createdAt": "2026-09-29T12:48:15.623Z",
       "instructions": "Expand and clarify the HIP-HOP / RAP part of Music History Map. Current organization signal: hip-hop, rap, G-funk, West Coast hip-hop and crossover links. Prioritize documented music-related connections that help layout organization: associated genres, shared members, collaborations, influences, instruments and clear bridges to neighboring zones. Active bridge policies for this zone: hip-hop-crossovers. Prefer candidates that strengthen those transitions without turning category pages into nodes. Use albums, songs and releases only as context for edges. Do not create release/song nodes. Only propose node types allowed by MHM: band, guitarist, artist, guitar, guitar_brand and genre.",
       "seeds": [
         {

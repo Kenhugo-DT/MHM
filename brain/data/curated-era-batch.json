@@ -1,0 +1,31 @@
+{
+  "nodeIds": [
+    "classical-music",
+    "baroque-music",
+    "classical-period",
+    "romantic-music",
+    "johann-pachelbel",
+    "johann-sebastian-bach",
+    "joseph-haydn",
+    "wolfgang-amadeus-mozart",
+    "ludwig-van-beethoven",
+    "frederic-chopin",
+    "edvard-grieg",
+    "pop-music",
+    "soul-music",
+    "disco",
+    "synth-pop",
+    "the-supremes",
+    "the-jackson-5",
+    "bee-gees",
+    "abba",
+    "donna-summer",
+    "stevie-wonder",
+    "michael-jackson",
+    "madonna",
+    "david-bowie",
+    "phil-collins"
+  ],
+  "edgePrefix": "era-",
+  "expectedEdges": 39
+}

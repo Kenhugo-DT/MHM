@@ -8,6 +8,7 @@
     "build": "npm run facts:validate && tsc -b site/tsconfig.json && vite build --config site/vite.config.ts",
     "preview": "vite preview --config site/vite.config.ts",
     "migrate:data": "node brain/scripts/learn-from-obsidian.mjs && node brain/scripts/migrate-graph-data.mjs && node brain/scripts/analyze-organization.mjs --quiet && node brain/scripts/generate-layouts.mjs",
+    "migrate:data:expand": "node brain/scripts/migrate-graph-data.mjs --preserve-existing-layout && node brain/scripts/learn-from-obsidian.mjs && node brain/scripts/migrate-graph-data.mjs --preserve-existing-layout && node brain/scripts/analyze-organization.mjs --quiet && node brain/scripts/generate-layouts.mjs",
     "check": "tsc -b site/tsconfig.json --pretty false",
     "test": "node --test tests/graph-data.test.mjs tests/facts.test.mjs tests/brain-curation.test.mjs",
     "facts:validate": "node shared/facts/validate.mjs",
@@ -46,9 +47,10 @@
     "brain:learn": "node brain/scripts/learn-from-obsidian.mjs",
     "brain:organize": "node brain/scripts/analyze-organization.mjs",
     "brain:layouts": "node brain/scripts/generate-layouts.mjs",
-    "brain:python-check": "node brain/scripts/run-python.mjs -m py_compile brain/pipeline/sync.py brain/pipeline/import_graph.py brain/pipeline/process_inbox.py brain/pipeline/supabase_brain.py brain/pipeline/brain_db.py brain/pipeline/scout_agent.py brain/pipeline/promote_candidates.py brain/pipeline/queue_request.py brain/pipeline/candidate_quality.py brain/pipeline/fact_scout.py brain/pipeline/wikidata_fact_scout.py brain/pipeline/import_fact_batch.py brain/pipeline/sync_approved_fact_evidence.py brain/pipeline/sync_edge_evidence.py",
+    "brain:python-check": "node brain/scripts/run-python.mjs -m py_compile brain/pipeline/sync.py brain/pipeline/import_graph.py brain/pipeline/process_inbox.py brain/pipeline/supabase_brain.py brain/pipeline/brain_db.py brain/pipeline/scout_agent.py brain/pipeline/promote_candidates.py brain/pipeline/queue_request.py brain/pipeline/candidate_quality.py brain/pipeline/fact_scout.py brain/pipeline/wikidata_fact_scout.py brain/pipeline/import_fact_batch.py brain/pipeline/sync_approved_fact_evidence.py brain/pipeline/sync_edge_evidence.py brain/pipeline/sync_curated_era.py",
     "brain:import": "node brain/scripts/run-python.mjs brain/pipeline/import_graph.py",
     "brain:sync-edge-evidence": "node brain/scripts/run-python.mjs brain/pipeline/sync_edge_evidence.py",
+    "brain:sync-curated-era": "node brain/scripts/run-python.mjs brain/pipeline/sync_curated_era.py",
     "brain:audit": "node brain/scripts/audit-graph.mjs"
   },
   "dependencies": {

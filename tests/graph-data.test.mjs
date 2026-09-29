@@ -3,7 +3,8 @@ import { readFileSync } from "node:fs";
 import test from "node:test";
 import { graphFingerprint, matchingLayouts, MODE_NODE_TYPES } from "../shared/graph-schema/graph-snapshot.mjs";
 import { edgeEvidenceTier, isMapConnection } from "../shared/graph-schema/edge-evidence.mjs";
-import { organizeGraphLayout } from "../brain/scripts/organize-graph-layout.mjs";
+import { ORGANIZED_MAP_ZONES, organizeGraphLayout } from "../brain/scripts/organize-graph-layout.mjs";
+import { curatedEraLinks, curatedEraNodes } from "../brain/scripts/curated-era-expansion.mjs";
 import { loadAllRows } from "../site/src/data/load-all-rows.mjs";
 
 test("pagination returns every row beyond the old 800-node cap", async () => {
@@ -87,6 +88,43 @@ test("published layouts match the approved graph in every map mode", async () =>
   for (const mode of Object.keys(MODE_NODE_TYPES)) {
     assert.equal(layouts.graphFingerprints[mode], await graphFingerprint(graph, mode));
   }
+});
+
+test("classical and pop expansion is sourced, connected and keeps historical order", () => {
+  const graph = JSON.parse(readFileSync("brain/data/approved/graph.json", "utf8"));
+  const layouts = JSON.parse(readFileSync("brain/data/approved/layouts.json", "utf8"));
+  const nodes = new Map(graph.nodes.map((node) => [node.id, node]));
+  const edges = new Map(graph.edges.map((edge) => [edge.id, edge]));
+  assert.equal(curatedEraNodes.length, 25);
+  assert.equal(curatedEraLinks.length, 39);
+  const batch = JSON.parse(readFileSync("brain/data/curated-era-batch.json", "utf8"));
+  assert.deepEqual(new Set(batch.nodeIds), new Set(curatedEraNodes.map((node) => node.id)));
+  assert.equal(batch.expectedEdges, curatedEraLinks.length);
+
+  for (const entry of curatedEraNodes) {
+    const node = nodes.get(entry.id);
+    assert.ok(node, entry.id);
+    assert.equal(node.type, entry.type);
+    assert.equal(node.zone, entry.zone);
+    assert.equal(node.eraStart, entry.eraStart);
+    assert.ok(node.sources.some((source) => source.url.startsWith("https://")));
+    assert.ok(curatedEraLinks.some((edge) => edge.source === entry.id || edge.target === entry.id));
+    const bounds = ORGANIZED_MAP_ZONES[entry.zone];
+    assert.ok(node.x >= bounds.x - 200 && node.x <= bounds.x + bounds.width + 200);
+    assert.ok(node.y >= bounds.y - 200 && node.y <= bounds.y + bounds.height + 200);
+  }
+  for (const entry of curatedEraLinks) {
+    const edge = edges.get(entry.id);
+    assert.ok(edge, entry.id);
+    assert.equal(edgeEvidenceTier(edge), "source_linked");
+    assert.ok(nodes.has(edge.source) && nodes.has(edge.target));
+  }
+
+  const timeline = layouts.layouts.timeline.nodes;
+  assert.ok(timeline["johann-pachelbel"].x < timeline["johann-sebastian-bach"].x);
+  assert.ok(timeline["johann-sebastian-bach"].x < timeline["wolfgang-amadeus-mozart"].x);
+  assert.ok(timeline["wolfgang-amadeus-mozart"].x < timeline["edvard-grieg"].x);
+  assert.ok(timeline["edvard-grieg"].x < timeline["the-supremes"].x);
 });
 
 test("Wikipedia link and category signals stay research leads even with source URLs", () => {

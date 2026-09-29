@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-28T13:07:29.808Z",
+  "generatedAt": "2026-09-29T12:48:15.475Z",
   "nodes": [
     {
       "id": "blues",
@@ -19205,6 +19205,556 @@
         }
       ],
       "curatorTags": []
+    },
+    {
+      "id": "classical-music",
+      "label": "Classical music",
+      "type": "genre",
+      "zone": "classical-history",
+      "eraStart": 1600,
+      "summary": "European art-music traditions spanning the Baroque, Classical and Romantic periods.",
+      "roles": [
+        "genre"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Carnegie Hall Data Lab",
+          "url": "https://data.carnegiehall.org/datalab/experiments/chdl-0003/",
+          "provider": "other"
+        }
+      ],
+      "x": -2878,
+      "y": -1373,
+      "curatorTags": []
+    },
+    {
+      "id": "baroque-music",
+      "label": "Baroque music",
+      "type": "genre",
+      "zone": "classical-history",
+      "eraStart": 1600,
+      "summary": "The seventeenth- and early eighteenth-century tradition of contrapuntal, sacred and instrumental composition.",
+      "roles": [
+        "genre"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Bach-Archiv Leipzig",
+          "url": "https://www.bachmuseumleipzig.de/de/node/6146",
+          "provider": "other"
+        }
+      ],
+      "x": -3524,
+      "y": -1416,
+      "curatorTags": []
+    },
+    {
+      "id": "classical-period",
+      "label": "Classical period",
+      "type": "genre",
+      "zone": "classical-history",
+      "eraStart": 1750,
+      "summary": "The late-eighteenth-century musical era associated with Haydn, Mozart and early Beethoven.",
+      "roles": [
+        "genre"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Carnegie Hall Data Lab",
+          "url": "https://data.carnegiehall.org/datalab/experiments/chdl-0003/",
+          "provider": "other"
+        }
+      ],
+      "x": -3066,
+      "y": -1272,
+      "curatorTags": []
+    },
+    {
+      "id": "romantic-music",
+      "label": "Romantic music",
+      "type": "genre",
+      "zone": "classical-history",
+      "eraStart": 1800,
+      "summary": "Nineteenth-century music emphasizing expressive individuality, public concerts and intimate piano works.",
+      "roles": [
+        "genre"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "The Metropolitan Museum of Art",
+          "url": "https://www.metmuseum.org/pt/essays/nineteenth-century-classical-music",
+          "provider": "other"
+        }
+      ],
+      "x": -2683,
+      "y": -1202,
+      "curatorTags": []
+    },
+    {
+      "id": "johann-pachelbel",
+      "label": "Johann Pachelbel",
+      "type": "artist",
+      "zone": "classical-history",
+      "eraStart": 1680,
+      "summary": "German Baroque organist and composer known for keyboard and chamber music.",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Brigham Young University Organ",
+          "url": "https://organ.byu.edu/composers/pachelbel.html",
+          "provider": "other"
+        }
+      ],
+      "x": -3518,
+      "y": -1625,
+      "curatorTags": []
+    },
+    {
+      "id": "johann-sebastian-bach",
+      "label": "Johann Sebastian Bach",
+      "type": "artist",
+      "zone": "classical-history",
+      "eraStart": 1700,
+      "summary": "Baroque composer whose church and instrumental music developed contrapuntal forms.",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Bach-Archiv Leipzig",
+          "url": "https://www.bachmuseumleipzig.de/de/node/6146",
+          "provider": "other"
+        }
+      ],
+      "x": -3342,
+      "y": -1535,
+      "curatorTags": []
+    },
+    {
+      "id": "joseph-haydn",
+      "label": "Joseph Haydn",
+      "type": "artist",
+      "zone": "classical-history",
+      "eraStart": 1750,
+      "summary": "Composer of the First Viennese School and Beethoven's teacher in Vienna.",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Carnegie Hall Data Lab",
+          "url": "https://data.carnegiehall.org/datalab/experiments/chdl-0003/",
+          "provider": "other"
+        }
+      ],
+      "x": -3024,
+      "y": -983,
+      "curatorTags": []
+    },
+    {
+      "id": "wolfgang-amadeus-mozart",
+      "label": "Wolfgang Amadeus Mozart",
+      "type": "artist",
+      "zone": "classical-history",
+      "eraStart": 1760,
+      "summary": "Salzburg-born composer and performer central to the Classical period.",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Mozarteum Foundation",
+          "url": "https://mozarteum.at/en/wolfgang-amade-mozart",
+          "provider": "other"
+        }
+      ],
+      "x": -2884,
+      "y": -1160,
+      "curatorTags": []
+    },
+    {
+      "id": "ludwig-van-beethoven",
+      "label": "Ludwig van Beethoven",
+      "type": "artist",
+      "zone": "classical-history",
+      "eraStart": 1790,
+      "summary": "Viennese composer whose career spans late Classical music and early Romanticism.",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Beethoven-Haus Bonn",
+          "url": "https://www.beethoven.de/en/g/zeittafel-beethoven-in-bonn",
+          "provider": "other"
+        }
+      ],
+      "x": -3250,
+      "y": -959,
+      "curatorTags": []
+    },
+    {
+      "id": "frederic-chopin",
+      "label": "Frédéric Chopin",
+      "type": "artist",
+      "zone": "classical-history",
+      "eraStart": 1830,
+      "summary": "Romantic composer-pianist associated with the nineteenth-century piano repertoire.",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "The Metropolitan Museum of Art",
+          "url": "https://www.metmuseum.org/pt/essays/nineteenth-century-classical-music",
+          "provider": "other"
+        }
+      ],
+      "x": -2800,
+      "y": -986,
+      "curatorTags": []
+    },
+    {
+      "id": "edvard-grieg",
+      "label": "Edvard Grieg",
+      "type": "artist",
+      "zone": "classical-history",
+      "eraStart": 1860,
+      "summary": "Norwegian composer who incorporated traditional melodies into art music.",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Bergen City Archives",
+          "url": "https://www.bergen.kommune.no/hvaskjer/tema/bergen-byarkiv-forteller/byhistorie/manedens-dokument/gjendine-slalien-hedersgjest-pa-festspillene-1961",
+          "provider": "other"
+        }
+      ],
+      "x": -3153,
+      "y": -1104,
+      "curatorTags": []
+    },
+    {
+      "id": "pop-music",
+      "label": "Pop music",
+      "type": "genre",
+      "zone": "pop-soul-disco",
+      "eraStart": 1960,
+      "summary": "Popular song traditions linking Motown vocal groups, disco and later studio-led pop.",
+      "roles": [
+        "genre"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Rock Hall EDU",
+          "url": "https://oldschool-edu.rockhall.com/sites/default/files/2021-02/Supremes%20playlist.pdf",
+          "provider": "other"
+        }
+      ],
+      "x": -1192,
+      "y": 2270,
+      "curatorTags": []
+    },
+    {
+      "id": "soul-music",
+      "label": "Soul music",
+      "type": "genre",
+      "zone": "pop-soul-disco",
+      "eraStart": 1960,
+      "summary": "Vocal music that became a foundation for Motown-era pop and later R&B.",
+      "roles": [
+        "genre"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Rock Hall EDU",
+          "url": "https://oldschool-edu.rockhall.com/sites/default/files/2021-02/Supremes%20playlist.pdf",
+          "provider": "other"
+        }
+      ],
+      "x": -553,
+      "y": 2261,
+      "curatorTags": []
+    },
+    {
+      "id": "disco",
+      "label": "Disco",
+      "type": "genre",
+      "zone": "pop-soul-disco",
+      "eraStart": 1973,
+      "summary": "Dance music of the 1970s associated with Donna Summer and the Bee Gees.",
+      "roles": [
+        "genre"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/donna-summer/",
+          "provider": "other"
+        }
+      ],
+      "x": -136,
+      "y": 2718,
+      "curatorTags": []
+    },
+    {
+      "id": "synth-pop",
+      "label": "Synth-pop",
+      "type": "genre",
+      "zone": "pop-soul-disco",
+      "eraStart": 1980,
+      "summary": "Pop built around synthesizer-led production, prominent in Madonna's early-1980s sound.",
+      "roles": [
+        "genre"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/madonna/",
+          "provider": "other"
+        }
+      ],
+      "x": 222,
+      "y": 2655,
+      "curatorTags": []
+    },
+    {
+      "id": "the-supremes",
+      "label": "The Supremes",
+      "type": "band",
+      "zone": "pop-soul-disco",
+      "eraStart": 1964,
+      "summary": "Motown vocal group whose recordings bridged soul and pop in the 1960s.",
+      "roles": [
+        "band"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Rock Hall EDU",
+          "url": "https://oldschool-edu.rockhall.com/sites/default/files/2021-02/Supremes%20playlist.pdf",
+          "provider": "other"
+        }
+      ],
+      "x": -748,
+      "y": 2433,
+      "curatorTags": []
+    },
+    {
+      "id": "the-jackson-5",
+      "label": "The Jackson 5",
+      "type": "band",
+      "zone": "pop-soul-disco",
+      "eraStart": 1969,
+      "summary": "Motown family group that launched Michael Jackson's career.",
+      "roles": [
+        "band"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/jackson-5/",
+          "provider": "other"
+        }
+      ],
+      "x": -434,
+      "y": 2545,
+      "curatorTags": []
+    },
+    {
+      "id": "bee-gees",
+      "label": "Bee Gees",
+      "type": "band",
+      "zone": "pop-soul-disco",
+      "eraStart": 1967,
+      "summary": "Pop group whose later recordings helped define the disco era.",
+      "roles": [
+        "band"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/arif-mardin/",
+          "provider": "other"
+        }
+      ],
+      "x": -312,
+      "y": 2830,
+      "curatorTags": []
+    },
+    {
+      "id": "abba",
+      "label": "ABBA",
+      "type": "band",
+      "zone": "pop-soul-disco",
+      "eraStart": 1974,
+      "summary": "Swedish pop group known for melodic, studio-crafted recordings.",
+      "roles": [
+        "band"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/abba/",
+          "provider": "other"
+        }
+      ],
+      "x": -1205,
+      "y": 2600,
+      "curatorTags": []
+    },
+    {
+      "id": "donna-summer",
+      "label": "Donna Summer",
+      "type": "artist",
+      "zone": "pop-soul-disco",
+      "eraStart": 1975,
+      "summary": "Singer whose recordings became central to disco and modern dance music.",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/donna-summer/",
+          "provider": "other"
+        }
+      ],
+      "x": -269,
+      "y": 2593,
+      "curatorTags": []
+    },
+    {
+      "id": "stevie-wonder",
+      "label": "Stevie Wonder",
+      "type": "artist",
+      "zone": "pop-soul-disco",
+      "eraStart": 1963,
+      "summary": "Motown singer, songwriter and keyboard player who crossed soul, pop and funk.",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/stevie-wonder/",
+          "provider": "other"
+        }
+      ],
+      "x": -574,
+      "y": 2445,
+      "curatorTags": []
+    },
+    {
+      "id": "michael-jackson",
+      "label": "Michael Jackson",
+      "type": "artist",
+      "zone": "pop-soul-disco",
+      "eraStart": 1979,
+      "summary": "Former Jackson 5 singer whose solo work blended pop, soul, funk and disco.",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/michael-jackson/",
+          "provider": "other"
+        }
+      ],
+      "x": -923,
+      "y": 2482,
+      "curatorTags": []
+    },
+    {
+      "id": "madonna",
+      "label": "Madonna",
+      "type": "artist",
+      "zone": "pop-soul-disco",
+      "eraStart": 1983,
+      "summary": "Pop artist whose early sound included synth-pop and dance music.",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/madonna/",
+          "provider": "other"
+        }
+      ],
+      "x": -852,
+      "y": 2224,
+      "curatorTags": []
+    },
+    {
+      "id": "david-bowie",
+      "label": "David Bowie",
+      "type": "artist",
+      "zone": "pop-soul-disco",
+      "eraStart": 1969,
+      "summary": "British artist who crossed glam rock, art rock and later pop.",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/david-bowie/",
+          "provider": "other"
+        }
+      ],
+      "x": -1075,
+      "y": 2058,
+      "curatorTags": []
+    },
+    {
+      "id": "phil-collins",
+      "label": "Phil Collins",
+      "type": "artist",
+      "zone": "pop-soul-disco",
+      "eraStart": 1981,
+      "summary": "Genesis drummer and singer who crossed progressive rock, pop and soul.",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/phil-collins/",
+          "provider": "other"
+        }
+      ],
+      "x": -1008,
+      "y": 2264,
+      "curatorTags": []
     }
   ],
   "edges": [
@@ -31224,6 +31774,708 @@
         {
           "label": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/The_Dark_Side_of_the_Moon"
+        }
+      ]
+    },
+    {
+      "id": "era-baroque-music-classical-music-associated_genre",
+      "source": "baroque-music",
+      "target": "classical-music",
+      "type": "associated_genre",
+      "label": "Baroque era",
+      "strength": 0.78,
+      "context": [
+        "Baroque is an early period within Western classical music history."
+      ],
+      "sources": [
+        {
+          "label": "Bach-Archiv Leipzig",
+          "url": "https://www.bachmuseumleipzig.de/de/node/6146",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "era-classical-period-classical-music-associated_genre",
+      "source": "classical-period",
+      "target": "classical-music",
+      "type": "associated_genre",
+      "label": "Classical era",
+      "strength": 0.78,
+      "context": [
+        "The First Viennese School anchors the Classical period."
+      ],
+      "sources": [
+        {
+          "label": "Carnegie Hall Data Lab",
+          "url": "https://data.carnegiehall.org/datalab/experiments/chdl-0003/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "era-romantic-music-classical-music-associated_genre",
+      "source": "romantic-music",
+      "target": "classical-music",
+      "type": "associated_genre",
+      "label": "Romantic era",
+      "strength": 0.78,
+      "context": [
+        "Romanticism reshaped nineteenth-century classical composition and performance."
+      ],
+      "sources": [
+        {
+          "label": "The Metropolitan Museum of Art",
+          "url": "https://www.metmuseum.org/pt/essays/nineteenth-century-classical-music",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "era-johann-pachelbel-baroque-music-associated_genre",
+      "source": "johann-pachelbel",
+      "target": "baroque-music",
+      "type": "associated_genre",
+      "label": "Baroque composer",
+      "strength": 0.78,
+      "context": [
+        "Pachelbel was a German Baroque organist and composer."
+      ],
+      "sources": [
+        {
+          "label": "Brigham Young University Organ",
+          "url": "https://organ.byu.edu/composers/pachelbel.html",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "era-johann-sebastian-bach-baroque-music-associated_genre",
+      "source": "johann-sebastian-bach",
+      "target": "baroque-music",
+      "type": "associated_genre",
+      "label": "Baroque composer",
+      "strength": 0.78,
+      "context": [
+        "Bach's compositions belong to the Baroque era."
+      ],
+      "sources": [
+        {
+          "label": "Bach-Archiv Leipzig",
+          "url": "https://www.bachmuseumleipzig.de/de/node/6146",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "era-joseph-haydn-classical-period-associated_genre",
+      "source": "joseph-haydn",
+      "target": "classical-period",
+      "type": "associated_genre",
+      "label": "Viennese Classical composer",
+      "strength": 0.78,
+      "context": [
+        "Haydn is one of the First Viennese School composers."
+      ],
+      "sources": [
+        {
+          "label": "Carnegie Hall Data Lab",
+          "url": "https://data.carnegiehall.org/datalab/experiments/chdl-0003/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "era-wolfgang-amadeus-mozart-classical-period-associated_genre",
+      "source": "wolfgang-amadeus-mozart",
+      "target": "classical-period",
+      "type": "associated_genre",
+      "label": "Viennese Classical composer",
+      "strength": 0.78,
+      "context": [
+        "Mozart is one of the First Viennese School composers."
+      ],
+      "sources": [
+        {
+          "label": "Carnegie Hall Data Lab",
+          "url": "https://data.carnegiehall.org/datalab/experiments/chdl-0003/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "era-ludwig-van-beethoven-classical-period-associated_genre",
+      "source": "ludwig-van-beethoven",
+      "target": "classical-period",
+      "type": "associated_genre",
+      "label": "late Classical composer",
+      "strength": 0.78,
+      "context": [
+        "Beethoven is counted among the First Viennese School composers."
+      ],
+      "sources": [
+        {
+          "label": "Carnegie Hall Data Lab",
+          "url": "https://data.carnegiehall.org/datalab/experiments/chdl-0003/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "era-ludwig-van-beethoven-romantic-music-related",
+      "source": "ludwig-van-beethoven",
+      "target": "romantic-music",
+      "type": "related",
+      "label": "Classical-to-Romantic transition",
+      "strength": 0.78,
+      "context": [
+        "Beethoven's public concerts helped shape the nineteenth-century Romantic performance world."
+      ],
+      "sources": [
+        {
+          "label": "The Metropolitan Museum of Art",
+          "url": "https://www.metmuseum.org/pt/essays/nineteenth-century-classical-music",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "era-ludwig-van-beethoven-joseph-haydn-related",
+      "source": "ludwig-van-beethoven",
+      "target": "joseph-haydn",
+      "type": "related",
+      "label": "studied with Haydn",
+      "strength": 0.78,
+      "context": [
+        "Beethoven moved to Vienna in 1792 to study with Haydn."
+      ],
+      "sources": [
+        {
+          "label": "Beethoven-Haus Bonn",
+          "url": "https://www.beethoven.de/en/g/zeittafel-beethoven-in-bonn",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "era-frederic-chopin-romantic-music-associated_genre",
+      "source": "frederic-chopin",
+      "target": "romantic-music",
+      "type": "associated_genre",
+      "label": "Romantic piano",
+      "strength": 0.78,
+      "context": [
+        "Chopin is a major nineteenth-century Romantic pianist and composer."
+      ],
+      "sources": [
+        {
+          "label": "The Metropolitan Museum of Art",
+          "url": "https://www.metmuseum.org/pt/essays/nineteenth-century-classical-music",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "era-edvard-grieg-folk-influenced_by",
+      "source": "edvard-grieg",
+      "target": "folk",
+      "type": "influenced_by",
+      "label": "Norwegian folk melody",
+      "strength": 0.78,
+      "context": [
+        "Grieg drew on Gjendine Slålien's songs and other folk tunes in later compositions."
+      ],
+      "sources": [
+        {
+          "label": "Bergen City Archives",
+          "url": "https://www.bergen.kommune.no/hvaskjer/tema/bergen-byarkiv-forteller/byhistorie/manedens-dokument/gjendine-slalien-hedersgjest-pa-festspillene-1961",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "era-edvard-grieg-classical-music-associated_genre",
+      "source": "edvard-grieg",
+      "target": "classical-music",
+      "type": "associated_genre",
+      "label": "Norwegian composer",
+      "strength": 0.78,
+      "context": [
+        "Grieg incorporated Norwegian traditional melodies into composed art music."
+      ],
+      "sources": [
+        {
+          "label": "Bergen City Archives",
+          "url": "https://www.bergen.kommune.no/hvaskjer/tema/bergen-byarkiv-forteller/byhistorie/manedens-dokument/gjendine-slalien-hedersgjest-pa-festspillene-1961",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "era-classical-music-progressive-rock-related",
+      "source": "classical-music",
+      "target": "progressive-rock",
+      "type": "related",
+      "label": "classical/prog bridge",
+      "strength": 0.78,
+      "context": [
+        "Progressive rock drew on classical composition and instrumentation."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/wp-content/uploads/2024/03/Genesis_2010.pdf",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "era-frank-zappa-classical-music-related",
+      "source": "frank-zappa",
+      "target": "classical-music",
+      "type": "related",
+      "label": "orchestral compositions",
+      "strength": 0.78,
+      "context": [
+        "Zappa also composed and recorded orchestral music."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/wp-content/uploads/2024/03/Frank_Zappa_1995.pdf",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "era-soul-music-pop-music-related",
+      "source": "soul-music",
+      "target": "pop-music",
+      "type": "related",
+      "label": "Motown pop-soul bridge",
+      "strength": 0.78,
+      "context": [
+        "The Supremes bridged pop and soul audiences."
+      ],
+      "sources": [
+        {
+          "label": "Rock Hall EDU",
+          "url": "https://oldschool-edu.rockhall.com/sites/default/files/2021-02/Supremes%20playlist.pdf",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "era-disco-pop-music-related",
+      "source": "disco",
+      "target": "pop-music",
+      "type": "related",
+      "label": "dance-pop bridge",
+      "strength": 0.78,
+      "context": [
+        "Michael Jackson's late-1970s solo music fused disco and pop."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/michael-jackson/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "era-synth-pop-pop-music-associated_genre",
+      "source": "synth-pop",
+      "target": "pop-music",
+      "type": "associated_genre",
+      "label": "electronic pop",
+      "strength": 0.78,
+      "context": [
+        "Madonna's early-1980s pop sound included synth-pop."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/madonna/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "era-the-supremes-soul-music-associated_genre",
+      "source": "the-supremes",
+      "target": "soul-music",
+      "type": "associated_genre",
+      "label": "Motown soul",
+      "strength": 0.78,
+      "context": [
+        "The Supremes' vocal sound bridged soul and pop."
+      ],
+      "sources": [
+        {
+          "label": "Rock Hall EDU",
+          "url": "https://oldschool-edu.rockhall.com/sites/default/files/2021-02/Supremes%20playlist.pdf",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "era-the-supremes-pop-music-associated_genre",
+      "source": "the-supremes",
+      "target": "pop-music",
+      "type": "associated_genre",
+      "label": "1960s pop",
+      "strength": 0.78,
+      "context": [
+        "The Supremes brought Motown songs to a broad pop audience."
+      ],
+      "sources": [
+        {
+          "label": "Rock Hall EDU",
+          "url": "https://oldschool-edu.rockhall.com/sites/default/files/2021-02/Supremes%20playlist.pdf",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "era-the-jackson-5-soul-music-associated_genre",
+      "source": "the-jackson-5",
+      "target": "soul-music",
+      "type": "associated_genre",
+      "label": "Motown vocal group",
+      "strength": 0.78,
+      "context": [
+        "The Jackson 5 blended vocal-group, soul and Motown influences."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/jackson-5/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "era-michael-jackson-the-jackson-5-member_of",
+      "source": "michael-jackson",
+      "target": "the-jackson-5",
+      "type": "member_of",
+      "label": "Jackson 5 singer",
+      "strength": 0.78,
+      "context": [
+        "Michael Jackson performed with his brothers in the Jackson 5 before his solo career."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/jackson-5/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "era-bee-gees-disco-associated_genre",
+      "source": "bee-gees",
+      "target": "disco",
+      "type": "associated_genre",
+      "label": "disco era",
+      "strength": 0.78,
+      "context": [
+        "The Bee Gees helped bring disco into the late-1970s mainstream."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/arif-mardin/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "era-bee-gees-pop-music-associated_genre",
+      "source": "bee-gees",
+      "target": "pop-music",
+      "type": "associated_genre",
+      "label": "pop group",
+      "strength": 0.78,
+      "context": [
+        "The Bee Gees crossed from pop songwriting into disco-era hits."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/bee-gees/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "era-abba-pop-music-associated_genre",
+      "source": "abba",
+      "target": "pop-music",
+      "type": "associated_genre",
+      "label": "1970s pop",
+      "strength": 0.78,
+      "context": [
+        "ABBA became an international pop group in the 1970s."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/abba/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "era-donna-summer-disco-associated_genre",
+      "source": "donna-summer",
+      "target": "disco",
+      "type": "associated_genre",
+      "label": "disco singer",
+      "strength": 0.78,
+      "context": [
+        "Donna Summer was a central voice of disco."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/donna-summer/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "era-stevie-wonder-soul-music-associated_genre",
+      "source": "stevie-wonder",
+      "target": "soul-music",
+      "type": "associated_genre",
+      "label": "Motown soul",
+      "strength": 0.78,
+      "context": [
+        "Stevie Wonder's career developed within Motown's soul tradition."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/stevie-wonder/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "era-stevie-wonder-funk-related",
+      "source": "stevie-wonder",
+      "target": "funk",
+      "type": "related",
+      "label": "soul-funk crossover",
+      "strength": 0.78,
+      "context": [
+        "Wonder's recordings joined soul songwriting with funk rhythms."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/stevie-wonder/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "era-michael-jackson-pop-music-associated_genre",
+      "source": "michael-jackson",
+      "target": "pop-music",
+      "type": "associated_genre",
+      "label": "1980s pop",
+      "strength": 0.78,
+      "context": [
+        "Jackson's solo recordings redefined mainstream pop."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/michael-jackson/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "era-michael-jackson-disco-associated_genre",
+      "source": "michael-jackson",
+      "target": "disco",
+      "type": "associated_genre",
+      "label": "Off the Wall",
+      "strength": 0.78,
+      "context": [
+        "His 1979 album Off the Wall fused funk, disco and soul."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/michael-jackson/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "era-madonna-pop-music-associated_genre",
+      "source": "madonna",
+      "target": "pop-music",
+      "type": "associated_genre",
+      "label": "1980s pop",
+      "strength": 0.78,
+      "context": [
+        "Madonna's early recordings reshaped 1980s pop."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/madonna/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "era-madonna-synth-pop-associated_genre",
+      "source": "madonna",
+      "target": "synth-pop",
+      "type": "associated_genre",
+      "label": "early synth-pop",
+      "strength": 0.78,
+      "context": [
+        "Madonna's early-1980s sound included synth-pop."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/madonna/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "era-david-bowie-glam-rock-associated_genre",
+      "source": "david-bowie",
+      "target": "glam-rock",
+      "type": "associated_genre",
+      "label": "glam-rock pioneer",
+      "strength": 0.78,
+      "context": [
+        "Bowie helped shape early-1970s glam rock."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/wp-content/uploads/2024/03/Green_Day_2015.pdf",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "era-david-bowie-pop-music-related",
+      "source": "david-bowie",
+      "target": "pop-music",
+      "type": "related",
+      "label": "rock-to-pop crossover",
+      "strength": 0.78,
+      "context": [
+        "Bowie's later work crossed into mainstream pop."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/wp-content/uploads/2024/03/David_Bowie_1996.pdf",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "era-phil-collins-genesis-member_of",
+      "source": "phil-collins",
+      "target": "genesis",
+      "type": "member_of",
+      "label": "Genesis drummer and singer",
+      "strength": 0.78,
+      "context": [
+        "Collins joined Genesis in 1970 and later became its lead singer."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/phil-collins/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "era-phil-collins-pop-music-associated_genre",
+      "source": "phil-collins",
+      "target": "pop-music",
+      "type": "associated_genre",
+      "label": "prog-to-pop crossover",
+      "strength": 0.78,
+      "context": [
+        "Collins crossed from progressive rock into pop during his solo career."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/phil-collins/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "era-phil-collins-soul-music-related",
+      "source": "phil-collins",
+      "target": "soul-music",
+      "type": "related",
+      "label": "soul influence",
+      "strength": 0.78,
+      "context": [
+        "Collins brought soul material into his 1980s work."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/phil-collins/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "era-the-supremes-phil-collins-related",
+      "source": "the-supremes",
+      "target": "phil-collins",
+      "type": "related",
+      "label": "covered Supremes song",
+      "strength": 0.78,
+      "context": [
+        "Collins recorded the Supremes hit You Can't Hurry Love."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/phil-collins/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "era-madonna-david-bowie-influenced_by",
+      "source": "madonna",
+      "target": "david-bowie",
+      "type": "influenced_by",
+      "label": "Bowie influence",
+      "strength": 0.78,
+      "context": [
+        "Rock Hall lists David Bowie among Madonna's influences."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/madonna/",
+          "provider": "other"
         }
       ]
     }

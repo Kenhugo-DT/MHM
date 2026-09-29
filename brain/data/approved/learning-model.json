@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-28T13:07:27.696Z",
+  "generatedAt": "2026-09-29T12:48:12.818Z",
   "source": "graph + Obsidian frontmatter + curator feedback",
   "samples": {
-    "graphNodes": 585,
-    "graphEdges": 784,
-    "mapConnections": 352,
+    "graphNodes": 610,
+    "graphEdges": 823,
+    "mapConnections": 391,
     "obsidianNotes": 587,
     "feedbackNodes": 20,
     "feedbackZones": 6,
@@ -28,8 +28,8 @@
       "nodeCount": 42,
       "pinnedCount": 0,
       "centroid": {
-        "x": -986,
-        "y": -20
+        "x": -952,
+        "y": -61
       },
       "eraMedian": 1948,
       "learnedTerms": [
@@ -359,8 +359,8 @@
       "nodeCount": 169,
       "pinnedCount": 0,
       "centroid": {
-        "x": 194,
-        "y": 315
+        "x": -520,
+        "y": 321
       },
       "eraMedian": 1969,
       "learnedTerms": [
@@ -690,8 +690,8 @@
       "nodeCount": 35,
       "pinnedCount": 0,
       "centroid": {
-        "x": 288,
-        "y": -763
+        "x": 213,
+        "y": -820
       },
       "eraMedian": 1969,
       "learnedTerms": [
@@ -956,6 +956,14 @@
           "weight": 2
         },
         {
+          "term": "classical",
+          "weight": 2
+        },
+        {
+          "term": "classical music",
+          "weight": 2
+        },
+        {
           "term": "composer",
           "weight": 2
         },
@@ -1006,14 +1014,6 @@
         {
           "term": "fusion",
           "weight": 2
-        },
-        {
-          "term": "gilmour",
-          "weight": 2
-        },
-        {
-          "term": "greenwood",
-          "weight": 2
         }
       ]
     },
@@ -1021,8 +1021,8 @@
       "nodeCount": 128,
       "pinnedCount": 0,
       "centroid": {
-        "x": 2514,
-        "y": 96
+        "x": 2867,
+        "y": 72
       },
       "eraMedian": 1977,
       "learnedTerms": [
@@ -1352,8 +1352,8 @@
       "nodeCount": 78,
       "pinnedCount": 0,
       "centroid": {
-        "x": 1608,
-        "y": 1475
+        "x": 1623,
+        "y": 1528
       },
       "eraMedian": 1977,
       "learnedTerms": [
@@ -1683,8 +1683,8 @@
       "nodeCount": 12,
       "pinnedCount": 0,
       "centroid": {
-        "x": -910,
-        "y": 1286
+        "x": -819,
+        "y": 1306
       },
       "learnedTerms": [
         {
@@ -1905,8 +1905,8 @@
       "nodeCount": 14,
       "pinnedCount": 0,
       "centroid": {
-        "x": -2264,
-        "y": 796
+        "x": -2271,
+        "y": 804
       },
       "eraMedian": 1933,
       "learnedTerms": [
@@ -2212,8 +2212,8 @@
       "nodeCount": 13,
       "pinnedCount": 0,
       "centroid": {
-        "x": -1350,
-        "y": -1157
+        "x": -1398,
+        "y": -1289
       },
       "eraMedian": 1926,
       "learnedTerms": [
@@ -2467,8 +2467,8 @@
       "nodeCount": 68,
       "pinnedCount": 0,
       "centroid": {
-        "x": 3638,
-        "y": -16
+        "x": 3777,
+        "y": -11
       },
       "eraMedian": 1958,
       "learnedTerms": [
@@ -2798,8 +2798,8 @@
       "nodeCount": 26,
       "pinnedCount": 0,
       "centroid": {
-        "x": 3650,
-        "y": 1478
+        "x": 3825,
+        "y": 1521
       },
       "eraMedian": 1983,
       "learnedTerms": [
@@ -3124,6 +3124,286 @@
           "weight": 2
         }
       ]
+    },
+    "classical-history": {
+      "nodeCount": 11,
+      "pinnedCount": 0,
+      "centroid": {
+        "x": -3066,
+        "y": -1202
+      },
+      "learnedTerms": [
+        {
+          "term": "classical",
+          "weight": 6
+        },
+        {
+          "term": "classical period",
+          "weight": 4
+        },
+        {
+          "term": "period",
+          "weight": 4
+        },
+        {
+          "term": "baroque",
+          "weight": 3
+        },
+        {
+          "term": "baroque music",
+          "weight": 3
+        },
+        {
+          "term": "romantic",
+          "weight": 3
+        },
+        {
+          "term": "romantic music",
+          "weight": 3
+        },
+        {
+          "term": "classical music",
+          "weight": 2
+        },
+        {
+          "term": "johann",
+          "weight": 2
+        },
+        {
+          "term": "amadeus",
+          "weight": 1
+        },
+        {
+          "term": "bach",
+          "weight": 1
+        },
+        {
+          "term": "beethoven",
+          "weight": 1
+        },
+        {
+          "term": "chopin",
+          "weight": 1
+        },
+        {
+          "term": "edvard",
+          "weight": 1
+        },
+        {
+          "term": "edvard grieg",
+          "weight": 1
+        },
+        {
+          "term": "folk",
+          "weight": 1
+        },
+        {
+          "term": "frederic",
+          "weight": 1
+        },
+        {
+          "term": "frederic chopin",
+          "weight": 1
+        },
+        {
+          "term": "grieg",
+          "weight": 1
+        },
+        {
+          "term": "haydn",
+          "weight": 1
+        },
+        {
+          "term": "johann pachelbel",
+          "weight": 1
+        },
+        {
+          "term": "johann sebastian bach",
+          "weight": 1
+        },
+        {
+          "term": "joseph",
+          "weight": 1
+        },
+        {
+          "term": "joseph haydn",
+          "weight": 1
+        },
+        {
+          "term": "ludwig",
+          "weight": 1
+        },
+        {
+          "term": "ludwig van beethoven",
+          "weight": 1
+        },
+        {
+          "term": "mozart",
+          "weight": 1
+        },
+        {
+          "term": "pachelbel",
+          "weight": 1
+        },
+        {
+          "term": "sebastian",
+          "weight": 1
+        },
+        {
+          "term": "van",
+          "weight": 1
+        },
+        {
+          "term": "wolfgang",
+          "weight": 1
+        },
+        {
+          "term": "wolfgang amadeus mozart",
+          "weight": 1
+        }
+      ]
+    },
+    "pop-soul-disco": {
+      "nodeCount": 14,
+      "pinnedCount": 0,
+      "centroid": {
+        "x": -574,
+        "y": 2482
+      },
+      "learnedTerms": [
+        {
+          "term": "pop",
+          "weight": 9
+        },
+        {
+          "term": "pop music",
+          "weight": 8
+        },
+        {
+          "term": "soul",
+          "weight": 5
+        },
+        {
+          "term": "soul music",
+          "weight": 5
+        },
+        {
+          "term": "disco",
+          "weight": 4
+        },
+        {
+          "term": "jackson",
+          "weight": 2
+        },
+        {
+          "term": "synth",
+          "weight": 2
+        },
+        {
+          "term": "synth pop",
+          "weight": 2
+        },
+        {
+          "term": "abba",
+          "weight": 1
+        },
+        {
+          "term": "bee",
+          "weight": 1
+        },
+        {
+          "term": "bee gees",
+          "weight": 1
+        },
+        {
+          "term": "bowie",
+          "weight": 1
+        },
+        {
+          "term": "collins",
+          "weight": 1
+        },
+        {
+          "term": "david",
+          "weight": 1
+        },
+        {
+          "term": "david bowie",
+          "weight": 1
+        },
+        {
+          "term": "donna",
+          "weight": 1
+        },
+        {
+          "term": "donna summer",
+          "weight": 1
+        },
+        {
+          "term": "funk",
+          "weight": 1
+        },
+        {
+          "term": "gees",
+          "weight": 1
+        },
+        {
+          "term": "glam",
+          "weight": 1
+        },
+        {
+          "term": "glam rock",
+          "weight": 1
+        },
+        {
+          "term": "madonna",
+          "weight": 1
+        },
+        {
+          "term": "michael",
+          "weight": 1
+        },
+        {
+          "term": "michael jackson",
+          "weight": 1
+        },
+        {
+          "term": "phil",
+          "weight": 1
+        },
+        {
+          "term": "phil collins",
+          "weight": 1
+        },
+        {
+          "term": "stevie",
+          "weight": 1
+        },
+        {
+          "term": "stevie wonder",
+          "weight": 1
+        },
+        {
+          "term": "summer",
+          "weight": 1
+        },
+        {
+          "term": "supremes",
+          "weight": 1
+        },
+        {
+          "term": "the jackson 5",
+          "weight": 1
+        },
+        {
+          "term": "the supremes",
+          "weight": 1
+        },
+        {
+          "term": "wonder",
+          "weight": 1
+        }
+      ]
     }
   },
   "nodes": {
@@ -3320,7 +3600,8 @@
       "secondaryZones": [
         "rock-circuit",
         "jazz",
-        "guitar-workshop"
+        "guitar-workshop",
+        "classical-history"
       ],
       "primaryGenres": [
         "Progressive rock"
@@ -3330,10 +3611,10 @@
         "progressive metal",
         "progressive rock"
       ],
-      "connectionCount": 10,
+      "connectionCount": 11,
       "linkedGenres": [],
-      "bridgeScore": 0.66,
-      "hubScore": 0.833,
+      "bridgeScore": 0.88,
+      "hubScore": 0.917,
       "layoutHints": {
         "pinned": false
       }
@@ -3432,7 +3713,8 @@
       "secondaryZones": [
         "country-roots",
         "roots-blues",
-        "guitar-workshop"
+        "guitar-workshop",
+        "classical-history"
       ],
       "primaryGenres": [
         "Folk"
@@ -3441,9 +3723,9 @@
         "country",
         "folk"
       ],
-      "connectionCount": 12,
+      "connectionCount": 13,
       "linkedGenres": [],
-      "bridgeScore": 0.66,
+      "bridgeScore": 0.88,
       "hubScore": 1,
       "layoutHints": {
         "pinned": false
@@ -3495,7 +3777,8 @@
       "zone": "rock-circuit",
       "secondaryZones": [
         "jazz",
-        "guitar-workshop"
+        "guitar-workshop",
+        "pop-soul-disco"
       ],
       "primaryGenres": [
         "Funk"
@@ -3505,10 +3788,10 @@
         "jazz fusion",
         "classic rock"
       ],
-      "connectionCount": 4,
+      "connectionCount": 5,
       "linkedGenres": [],
-      "bridgeScore": 0.44,
-      "hubScore": 0.333,
+      "bridgeScore": 0.66,
+      "hubScore": 0.417,
       "layoutHints": {
         "pinned": false
       }
@@ -3786,7 +4069,8 @@
       "secondaryZones": [
         "jazz",
         "rock-circuit",
-        "guitar-workshop"
+        "guitar-workshop",
+        "classical-history"
       ],
       "primaryGenres": [
         "jazz fusion"
@@ -3795,13 +4079,14 @@
         "Jazz fusion",
         "Rock"
       ],
-      "connectionCount": 4,
+      "connectionCount": 5,
       "linkedGenres": [
         "jazz-fusion",
-        "rock"
+        "rock",
+        "classical-music"
       ],
-      "bridgeScore": 0.82,
-      "hubScore": 0.333,
+      "bridgeScore": 1,
+      "hubScore": 0.417,
       "layoutHints": {
         "pinned": false
       }
@@ -5079,7 +5364,8 @@
       "zone": "rock-circuit",
       "secondaryZones": [
         "hard-rock-metal",
-        "guitar-workshop"
+        "guitar-workshop",
+        "pop-soul-disco"
       ],
       "primaryGenres": [
         "Glam rock"
@@ -5089,10 +5375,10 @@
         "glam rock",
         "hard rock"
       ],
-      "connectionCount": 4,
+      "connectionCount": 5,
       "linkedGenres": [],
-      "bridgeScore": 0.44,
-      "hubScore": 0.333,
+      "bridgeScore": 0.66,
+      "hubScore": 0.417,
       "layoutHints": {
         "pinned": false
       }
@@ -10692,7 +10978,9 @@
     },
     "genesis": {
       "zone": "rock-circuit",
-      "secondaryZones": [],
+      "secondaryZones": [
+        "pop-soul-disco"
+      ],
       "primaryGenres": [
         "rock"
       ],
@@ -10701,10 +10989,10 @@
         "classic rock",
         "rock"
       ],
-      "connectionCount": 0,
+      "connectionCount": 1,
       "linkedGenres": [],
-      "bridgeScore": 0,
-      "hubScore": 0,
+      "bridgeScore": 0.22,
+      "hubScore": 0.083,
       "layoutHints": {
         "pinned": false
       }
@@ -15222,6 +15510,384 @@
       "linkedGenres": [],
       "bridgeScore": 0,
       "hubScore": 0.25,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "classical-music": {
+      "zone": "classical-history",
+      "secondaryZones": [
+        "psychedelia-prog"
+      ],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 6,
+      "linkedGenres": [],
+      "bridgeScore": 0.22,
+      "hubScore": 0.5,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "baroque-music": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 3,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.25,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "classical-period": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 4,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.333,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "romantic-music": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 3,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.25,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "johann-pachelbel": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "baroque-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "johann-sebastian-bach": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "baroque-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "joseph-haydn": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "classical-period"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "wolfgang-amadeus-mozart": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "classical-period"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "ludwig-van-beethoven": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 3,
+      "linkedGenres": [
+        "classical-period",
+        "romantic-music"
+      ],
+      "bridgeScore": 0.16,
+      "hubScore": 0.25,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "frederic-chopin": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "romantic-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "edvard-grieg": {
+      "zone": "classical-history",
+      "secondaryZones": [
+        "folk-country-vise"
+      ],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "folk",
+        "classical-music"
+      ],
+      "bridgeScore": 0.38,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "pop-music": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 10,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.833,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "soul-music": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 5,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.417,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "disco": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 4,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.333,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "synth-pop": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "the-supremes": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 3,
+      "linkedGenres": [
+        "soul-music",
+        "pop-music"
+      ],
+      "bridgeScore": 0.16,
+      "hubScore": 0.25,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "the-jackson-5": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "soul-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "bee-gees": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "disco",
+        "pop-music"
+      ],
+      "bridgeScore": 0.16,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "abba": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "pop-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "donna-summer": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "disco"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "stevie-wonder": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [
+        "rock-circuit"
+      ],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "soul-music",
+        "funk"
+      ],
+      "bridgeScore": 0.38,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "michael-jackson": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 3,
+      "linkedGenres": [
+        "pop-music",
+        "disco"
+      ],
+      "bridgeScore": 0.16,
+      "hubScore": 0.25,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "madonna": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 3,
+      "linkedGenres": [
+        "pop-music",
+        "synth-pop"
+      ],
+      "bridgeScore": 0.16,
+      "hubScore": 0.25,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "david-bowie": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [
+        "rock-circuit"
+      ],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 3,
+      "linkedGenres": [
+        "glam-rock",
+        "pop-music"
+      ],
+      "bridgeScore": 0.38,
+      "hubScore": 0.25,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "phil-collins": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [
+        "rock-circuit"
+      ],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 4,
+      "linkedGenres": [
+        "pop-music",
+        "soul-music"
+      ],
+      "bridgeScore": 0.38,
+      "hubScore": 0.333,
       "layoutHints": {
         "pinned": false
       }
