@@ -1,0 +1,101 @@
+{
+  "version": 1,
+  "requests": [
+    {
+      "id": "genre-bridge-gospel-soul-20260930",
+      "title": "Gospel to soul: voices and recording paths",
+      "status": "processed",
+      "priority": 96,
+      "scope": "genre_cluster",
+      "createdAt": "2026-09-30T12:00:00Z",
+      "instructions": "Research Mahalia Jackson and Sam Cooke as distinct gospel-to-soul bridges. Check documented gospel practice, secular recordings and direct relationships to existing Gospel music, Rhythm and blues and Soul music nodes. Do not equate gospel with soul or infer influence from a shared genre alone. Require an independent source for each proposed map connection; keep songs, albums, labels and venues as evidence, not nodes.",
+      "seeds": [
+        { "name": "Mahalia Jackson", "kind": "artist" },
+        { "name": "Sam Cooke", "kind": "artist" },
+        { "name": "Sister Rosetta Tharpe", "kind": "guitarist" }
+      ],
+      "limits": { "maxSeeds": 3, "maxCandidates": 20 },
+      "notes": "Anchor zones: roots-blues and pop-soul-disco. Distinguish sacred-to-secular influence from direct collaboration."
+    },
+    {
+      "id": "genre-bridge-rnb-rock-20260930",
+      "title": "R&B to early rock and roll",
+      "status": "processed",
+      "priority": 95,
+      "scope": "genre_cluster",
+      "createdAt": "2026-09-30T12:00:01Z",
+      "instructions": "Research Ruth Brown, Big Joe Turner and Fats Domino as historically specific paths between Rhythm and blues and Rock and roll. Identify recording style, chronology and documented influence rather than treating all early R&B performers as the same story. Verify any links to Blues, Gospel music or later rock artists with independent sources; do not create release or label nodes.",
+      "seeds": [
+        { "name": "Ruth Brown", "kind": "artist" },
+        { "name": "Big Joe Turner", "kind": "artist" },
+        { "name": "Fats Domino", "kind": "artist" }
+      ],
+      "limits": { "maxSeeds": 3, "maxCandidates": 20 },
+      "notes": "Bridge roots-blues to rock-circuit; label influence, genre association and direct collaboration separately."
+    },
+    {
+      "id": "genre-bridge-soul-funk-20260930",
+      "title": "Soul scenes and the funk transition",
+      "status": "processed",
+      "priority": 94,
+      "scope": "genre_cluster",
+      "createdAt": "2026-09-30T12:00:02Z",
+      "instructions": "Research Otis Redding, James Brown and Solomon Burke in relation to Soul music, Rhythm and blues and Funk. Separate documented stylistic influence from actual collaboration, band membership and shared scene. Look for a few meaningful bridge links to existing artists and genres, with source and relation-specific explanation. No song, album, company or festival nodes.",
+      "seeds": [
+        { "name": "Otis Redding", "kind": "artist" },
+        { "name": "James Brown", "kind": "artist" },
+        { "name": "Solomon Burke", "kind": "artist" }
+      ],
+      "limits": { "maxSeeds": 3, "maxCandidates": 20 },
+      "notes": "Reinforce pop-soul-disco as a permeable zone, not a box; avoid an unsupported all-to-all soul cluster."
+    },
+    {
+      "id": "genre-bridge-cool-modal-jazz-20260930",
+      "title": "Cool and modal jazz beyond Miles Davis",
+      "status": "processed",
+      "priority": 93,
+      "scope": "genre_cluster",
+      "createdAt": "2026-09-30T12:00:03Z",
+      "instructions": "Research Dave Brubeck, Bill Evans and Herbie Hancock around Cool jazz, Modal jazz, Jazz fusion and existing Miles Davis and John Coltrane nodes. Check precise periods and documented collaborations before attaching any genre or artist edge. Do not infer that every Miles sideman belongs equally to cool, modal and fusion jazz; use source-backed context for each connection.",
+      "seeds": [
+        { "name": "Dave Brubeck", "kind": "artist" },
+        { "name": "Bill Evans", "kind": "artist" },
+        { "name": "Herbie Hancock", "kind": "artist" }
+      ],
+      "limits": { "maxSeeds": 3, "maxCandidates": 20 },
+      "notes": "Era and playing approach matter: cool, modal and fusion are related but not interchangeable."
+    },
+    {
+      "id": "genre-bridge-western-bakersfield-20260930",
+      "title": "Western swing and Bakersfield country roots",
+      "status": "processed",
+      "priority": 92,
+      "scope": "genre_cluster",
+      "createdAt": "2026-09-30T12:00:04Z",
+      "instructions": "Research Ernest Tubb, Lefty Frizzell and Wynn Stewart as candidate links among Honky-tonk, Western swing and Bakersfield sound. Test actual documented influence or scene connection to Bob Wills, Buck Owens and Merle Haggard; do not claim a direct collaboration merely because careers overlap. Use distinct relationship descriptions and independent sources before promotion.",
+      "seeds": [
+        { "name": "Ernest Tubb", "kind": "artist" },
+        { "name": "Lefty Frizzell", "kind": "artist" },
+        { "name": "Wynn Stewart", "kind": "artist" }
+      ],
+      "limits": { "maxSeeds": 3, "maxCandidates": 20 },
+      "notes": "Keep the California and Texas country strands historically legible rather than placing everyone in one generic country cluster."
+    },
+    {
+      "id": "genre-bridge-outlaw-country-rock-20260930",
+      "title": "Outlaw country and country-rock crossover",
+      "status": "processed",
+      "priority": 91,
+      "scope": "genre_cluster",
+      "createdAt": "2026-09-30T12:00:05Z",
+      "instructions": "Research Gram Parsons, Emmylou Harris and The Flying Burrito Brothers for documented bridges between Country, Outlaw country, Rock and Folk. Keep the 1970s Outlaw movement distinct from country rock; connect them only where specific people, recordings or documented influence justify it. Verify band membership and collaboration directly; releases stay as evidence, not map nodes.",
+      "seeds": [
+        { "name": "Gram Parsons", "kind": "artist" },
+        { "name": "Emmylou Harris", "kind": "artist" },
+        { "name": "The Flying Burrito Brothers", "kind": "band" }
+      ],
+      "limits": { "maxSeeds": 3, "maxCandidates": 20 },
+      "notes": "Use a bridge into rock-circuit while preserving country-roots as the primary home for country artists."
+    }
+  ]
+}
