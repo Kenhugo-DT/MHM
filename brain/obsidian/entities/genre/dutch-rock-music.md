@@ -5,8 +5,8 @@ type: genre
 zone: hard-rock-metal
 roles: [genre]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: [Dutch rock music]
 curatorTags: [hard rock, metal, rock]
 secondaryZones: []

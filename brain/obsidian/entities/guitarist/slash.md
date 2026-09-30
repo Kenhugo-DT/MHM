@@ -5,8 +5,8 @@ type: guitarist
 zone: roots-blues
 roles: [guitarist, artist]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: [blues rock, hard rock]
 curatorTags: [Blues rock, blues rock, hard rock]
 secondaryZones: []

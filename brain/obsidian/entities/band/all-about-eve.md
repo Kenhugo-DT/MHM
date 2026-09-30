@@ -5,8 +5,8 @@ type: band
 zone: punk-alt
 roles: [band]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: [gothic rock, rock]
 curatorTags: [gothic rock, band, rock]
 secondaryZones: []

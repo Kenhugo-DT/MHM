@@ -5,8 +5,8 @@ type: artist
 zone: hip-hop-rap
 roles: [artist]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: [funk, hip-hop]
 curatorTags: [artist, funk, hip-hop]
 secondaryZones: []

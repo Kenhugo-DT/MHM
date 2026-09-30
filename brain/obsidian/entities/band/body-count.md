@@ -5,8 +5,8 @@ type: band
 zone: hip-hop-rap
 roles: [band]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: [rap metal, thrash metal]
 curatorTags: [rap metal, hip-hop metal bridge, ice-t]
 secondaryZones: []

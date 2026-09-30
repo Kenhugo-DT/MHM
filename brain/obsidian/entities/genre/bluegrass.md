@@ -5,8 +5,8 @@ type: genre
 zone: country-roots
 roles: [genre]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: [Bluegrass]
 curatorTags: [country, folk]
 secondaryZones: [folk-country-vise]
@@ -26,6 +26,7 @@ An acoustic American roots style where flatpicked guitar supports fast ensemble 
 - [[bill-monroe|Bill Monroe]] - bluegrass pioneer (Monroe's band and acoustic sound helped define bluegrass.)
 - [[country|Country]] - roots overlap
 - [[folk|Folk]] - acoustic overlap (Bluegrass reached folk-revival audiences through acoustic recordings and performers such as Mike Seeger.)
+- [[the-stanley-brothers|The Stanley Brothers]] - The Stanley Brothers in bluegrass (The Stanley Brothers: Brother duo; Appalachian bluegrass. Museum or Hall documentation establishes this tradition.)
 
 ## Sources
 

@@ -23,6 +23,7 @@ A post-bebop jazz direction associated with the arranged sound of Miles Davis's 
 
 ## Connections
 
+- [[dave-brubeck|Dave Brubeck]] - West Coast cool (NEA associates Brubeck's West Coast work with cool jazz.)
 - [[jazz|Jazz]] - jazz direction (Cool jazz is a direction within jazz, not a separate origin tradition.)
 - [[miles-davis|Miles Davis]] - Birth of the Cool (Davis's late-1940s nonet recordings are an anchor for cool jazz.)
 

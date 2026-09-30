@@ -5,8 +5,8 @@ type: artist
 zone: country-roots
 roles: [artist]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: []
 curatorTags: []
 secondaryZones: []
@@ -26,6 +26,7 @@ James Charles Rodgers ((1897-09-08)September 8, 1897 – (1933-05-26)May 26, 193
 - [[bill-monroe|Bill Monroe]] - recorded Rodgers material (Monroe's early repertoire included Jimmie Rodgers material.)
 - [[blues|Blues]] - country-blues crossover (Rodgers fused country with blues phrasing.)
 - [[country|Country]] - early country pioneer (Rodgers helped establish early country music.)
+- [[ernest-tubb|Ernest Tubb]] - Rodgers model (The museum documents Tubb's early imitation of Jimmie Rodgers.)
 - [[rock-and-roll|Rock and roll]] - rock and roll influence (His country-blues fusion became an early framework for rock and roll.)
 
 ## Sources

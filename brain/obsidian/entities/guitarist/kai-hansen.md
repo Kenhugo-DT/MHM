@@ -5,8 +5,8 @@ type: guitarist
 zone: hard-rock-metal
 roles: [guitarist, artist]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: [power metal, hard rock]
 curatorTags: [power metal, guitarist, hard rock]
 secondaryZones: []

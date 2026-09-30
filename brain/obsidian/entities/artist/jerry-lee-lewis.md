@@ -5,8 +5,8 @@ type: artist
 zone: rock-circuit
 roles: [artist]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: [rock and roll, rock]
 curatorTags: [rock and roll, rock, artist]
 secondaryZones: []

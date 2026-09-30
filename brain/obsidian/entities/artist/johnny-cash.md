@@ -5,8 +5,8 @@ type: artist
 zone: country-roots
 roles: [artist]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: [country]
 curatorTags: [Country, country, artist]
 secondaryZones: []

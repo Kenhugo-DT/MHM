@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-30T11:16:58.533Z",
+  "generatedAt": "2026-09-30T13:54:22.785Z",
   "nodes": [
     {
       "id": "blues",
@@ -20081,6 +20081,2015 @@
       ],
       "x": -2152,
       "y": 916
+    },
+    {
+      "id": "mahalia-jackson",
+      "label": "Mahalia Jackson",
+      "type": "artist",
+      "zone": "roots-blues",
+      "eraStart": 1930,
+      "summary": "Gospel singer whose expressive style became a major influence beyond sacred music.",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/mahalia-jackson/",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "gospel anchor",
+        "sacred music"
+      ],
+      "x": -2106,
+      "y": -395
+    },
+    {
+      "id": "sam-cooke",
+      "label": "Sam Cooke",
+      "type": "artist",
+      "zone": "pop-soul-disco",
+      "eraStart": 1950,
+      "summary": "Singer who moved from the Soul Stirrers' gospel repertoire into soul and popular music.",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/sam-cooke/",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "gospel-to-soul",
+        "vocal transition"
+      ],
+      "x": -819,
+      "y": 2223
+    },
+    {
+      "id": "ruth-brown",
+      "label": "Ruth Brown",
+      "type": "artist",
+      "zone": "roots-blues",
+      "eraStart": 1950,
+      "summary": "Rhythm-and-blues singer central to Atlantic's early recording history.",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/ruth-brown/",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "early R&B",
+        "recording history"
+      ],
+      "x": -1018,
+      "y": -339
+    },
+    {
+      "id": "big-joe-turner",
+      "label": "Big Joe Turner",
+      "type": "artist",
+      "zone": "roots-blues",
+      "eraStart": 1938,
+      "summary": "Blues and jump singer whose work bridged jazz, swing, R&B and early rock and roll.",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/big-joe-turner/",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "blues-to-rock",
+        "jazz-swing crossover"
+      ],
+      "x": -1088,
+      "y": -487
+    },
+    {
+      "id": "fats-domino",
+      "label": "Fats Domino",
+      "type": "artist",
+      "zone": "roots-blues",
+      "eraStart": 1949,
+      "summary": "New Orleans pianist and singer whose R&B sound became part of early rock and roll.",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/fats-domino/",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "R&B-to-rock",
+        "New Orleans"
+      ],
+      "x": -1403,
+      "y": -446
+    },
+    {
+      "id": "otis-redding",
+      "label": "Otis Redding",
+      "type": "artist",
+      "zone": "pop-soul-disco",
+      "eraStart": 1962,
+      "summary": "Stax singer whose emotionally direct recordings helped define Southern soul.",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Stax Records",
+          "url": "https://staxrecords.com/spotlight/otis-redding/",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "Southern soul",
+        "Stax scene"
+      ],
+      "x": -617,
+      "y": 2299
+    },
+    {
+      "id": "james-brown",
+      "label": "James Brown",
+      "type": "artist",
+      "zone": "pop-soul-disco",
+      "eraStart": 1956,
+      "summary": "Singer and bandleader whose rhythmic innovations connected soul to funk.",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/james-brown/",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "soul-to-funk",
+        "rhythm innovation"
+      ],
+      "x": -743,
+      "y": 2397
+    },
+    {
+      "id": "solomon-burke",
+      "label": "Solomon Burke",
+      "type": "artist",
+      "zone": "pop-soul-disco",
+      "eraStart": 1960,
+      "summary": "Soul singer whose recordings also drew from country music.",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/solomon-burke/",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "country-influenced soul",
+        "cross-zone bridge"
+      ],
+      "x": -905,
+      "y": 2087
+    },
+    {
+      "id": "dave-brubeck",
+      "label": "Dave Brubeck",
+      "type": "artist",
+      "zone": "jazz",
+      "eraStart": 1949,
+      "summary": "Pianist associated with West Coast cool jazz and experiments in time signature.",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "National Endowment for the Arts",
+          "url": "https://www.arts.gov/honors/jazz/dave-brubeck",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "cool jazz",
+        "rhythmic experiment"
+      ],
+      "x": -1849,
+      "y": -1378
+    },
+    {
+      "id": "bill-evans",
+      "label": "Bill Evans",
+      "type": "artist",
+      "zone": "jazz",
+      "eraStart": 1956,
+      "summary": "Jazz pianist whose work included Miles Davis's modal-era Kind of Blue sessions.",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Smithsonian Folkways",
+          "url": "https://folkways-media.si.edu/docs/folkways/artwork/SFW40820.pdf",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "modal-era collaboration",
+        "jazz piano"
+      ],
+      "x": -1730,
+      "y": -1586
+    },
+    {
+      "id": "herbie-hancock",
+      "label": "Herbie Hancock",
+      "type": "artist",
+      "zone": "jazz",
+      "eraStart": 1962,
+      "summary": "Pianist who played in Miles Davis's group and later brought funk textures into jazz.",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "National Endowment for the Arts",
+          "url": "https://www.arts.gov/honors/jazz/herbie-hancock",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "jazz-to-funk bridge",
+        "electric piano"
+      ],
+      "x": -1741,
+      "y": -1228
+    },
+    {
+      "id": "ernest-tubb",
+      "label": "Ernest Tubb",
+      "type": "artist",
+      "zone": "country-roots",
+      "eraStart": 1936,
+      "summary": "Honky-tonk singer who began as a Jimmie Rodgers admirer and shaped country performance.",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame/ernest-tubb",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "honky-tonk",
+        "Jimmie Rodgers lineage"
+      ],
+      "x": -2999,
+      "y": 571
+    },
+    {
+      "id": "lefty-frizzell",
+      "label": "Lefty Frizzell",
+      "type": "artist",
+      "zone": "country-roots",
+      "eraStart": 1950,
+      "summary": "Country vocalist whose phrasing strongly influenced Merle Haggard and later singers.",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame/lefty-frizzell",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "country vocal style",
+        "Merle Haggard influence"
+      ],
+      "x": -2518,
+      "y": 588
+    },
+    {
+      "id": "wynn-stewart",
+      "label": "Wynn Stewart",
+      "type": "artist",
+      "zone": "country-roots",
+      "eraStart": 1954,
+      "summary": "Bakersfield-area singer whose bandstands and songs helped shape Buck Owens and Merle Haggard.",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://www.countrymusichalloffame.org/press/releases/museum-exhibit-the-bakersfield-sound-buck-owens-merle-haggard-and-california-country-closes-december-31-2014-2",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "Bakersfield precursor",
+        "regional scene"
+      ],
+      "x": -2477,
+      "y": 1195
+    },
+    {
+      "id": "gram-parsons",
+      "label": "Gram Parsons",
+      "type": "artist",
+      "zone": "country-roots",
+      "eraStart": 1968,
+      "summary": "Musician who brought country arrangements into rock with the Byrds and Flying Burrito Brothers.",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/gram-parsons/",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "country-rock bridge",
+        "Byrds to Burritos"
+      ],
+      "x": -2636,
+      "y": 740
+    },
+    {
+      "id": "emmylou-harris",
+      "label": "Emmylou Harris",
+      "type": "artist",
+      "zone": "country-roots",
+      "eraStart": 1973,
+      "summary": "Singer who worked with Gram Parsons and developed a country-rock and traditional-country repertoire.",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame/emmylou-harris",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "Gram Parsons collaboration",
+        "country-rock"
+      ],
+      "x": -3176,
+      "y": 583
+    },
+    {
+      "id": "the-flying-burrito-brothers",
+      "label": "The Flying Burrito Brothers",
+      "type": "band",
+      "zone": "country-roots",
+      "eraStart": 1968,
+      "summary": "Band co-founded by Gram Parsons that developed a country-rock sound.",
+      "roles": [
+        "band"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/gram-parsons/",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "country-rock band",
+        "Gram Parsons"
+      ],
+      "x": -2534,
+      "y": 1014
+    },
+    {
+      "id": "roy-acuff",
+      "label": "Roy Acuff",
+      "type": "artist",
+      "zone": "country-roots",
+      "eraStart": 1930,
+      "summary": "Opry singer; rural string-band bridge",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "country lineage"
+      ],
+      "x": -2798,
+      "y": 1037
+    },
+    {
+      "id": "deford-bailey",
+      "label": "DeFord Bailey",
+      "type": "artist",
+      "zone": "country-roots",
+      "eraStart": 1925,
+      "summary": "Opry harmonica; Black country pioneer",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "country lineage"
+      ],
+      "x": -3133,
+      "y": 575
+    },
+    {
+      "id": "gene-autry",
+      "label": "Gene Autry",
+      "type": "artist",
+      "zone": "country-roots",
+      "eraStart": 1930,
+      "summary": "Singing cowboy; country on radio and film",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "country lineage"
+      ],
+      "x": -2681,
+      "y": 704
+    },
+    {
+      "id": "eddy-arnold",
+      "label": "Eddy Arnold",
+      "type": "artist",
+      "zone": "country-roots",
+      "eraStart": 1944,
+      "summary": "Nashville vocalist; country-pop crossover",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "country lineage"
+      ],
+      "x": -2977,
+      "y": 1258
+    },
+    {
+      "id": "kitty-wells",
+      "label": "Kitty Wells",
+      "type": "artist",
+      "zone": "country-roots",
+      "eraStart": 1952,
+      "summary": "Honky-tonk voice; women in country",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "country lineage"
+      ],
+      "x": -2905,
+      "y": 1401
+    },
+    {
+      "id": "webb-pierce",
+      "label": "Webb Pierce",
+      "type": "artist",
+      "zone": "country-roots",
+      "eraStart": 1952,
+      "summary": "Honky-tonk singer; 1950s country",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "country lineage"
+      ],
+      "x": -3371,
+      "y": 844
+    },
+    {
+      "id": "carl-smith",
+      "label": "Carl Smith",
+      "type": "artist",
+      "zone": "country-roots",
+      "eraStart": 1951,
+      "summary": "Country vocalist; Opry and honky-tonk",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "country lineage"
+      ],
+      "x": -2485,
+      "y": 1232
+    },
+    {
+      "id": "george-jones",
+      "label": "George Jones",
+      "type": "artist",
+      "zone": "country-roots",
+      "eraStart": 1954,
+      "summary": "Country vocalist; honky-tonk phrasing",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "country lineage"
+      ],
+      "x": -3370,
+      "y": 1011
+    },
+    {
+      "id": "loretta-lynn",
+      "label": "Loretta Lynn",
+      "type": "artist",
+      "zone": "country-roots",
+      "eraStart": 1960,
+      "summary": "Country songwriting; working-class voice",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "country lineage"
+      ],
+      "x": -2173,
+      "y": 547
+    },
+    {
+      "id": "tammy-wynette",
+      "label": "Tammy Wynette",
+      "type": "artist",
+      "zone": "country-roots",
+      "eraStart": 1966,
+      "summary": "Country vocalist; Nashville recordings",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "country lineage"
+      ],
+      "x": -2719,
+      "y": 364
+    },
+    {
+      "id": "bobby-bare",
+      "label": "Bobby Bare",
+      "type": "artist",
+      "zone": "country-roots",
+      "eraStart": 1962,
+      "summary": "Country storyteller; Nashville songwriter link",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "country lineage"
+      ],
+      "x": -2644,
+      "y": 1269
+    },
+    {
+      "id": "floyd-cramer",
+      "label": "Floyd Cramer",
+      "type": "artist",
+      "zone": "country-roots",
+      "eraStart": 1955,
+      "summary": "Session piano; Nashville Sound",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "country lineage"
+      ],
+      "x": -2738,
+      "y": 1407
+    },
+    {
+      "id": "jim-reeves",
+      "label": "Jim Reeves",
+      "type": "artist",
+      "zone": "country-roots",
+      "eraStart": 1953,
+      "summary": "Smooth country voice; Nashville Sound",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "country lineage"
+      ],
+      "x": -2303,
+      "y": 388
+    },
+    {
+      "id": "hank-snow",
+      "label": "Hank Snow",
+      "type": "artist",
+      "zone": "country-roots",
+      "eraStart": 1936,
+      "summary": "Canadian-born country singer; Opry",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "country lineage"
+      ],
+      "x": -3036,
+      "y": 397
+    },
+    {
+      "id": "kris-kristofferson",
+      "label": "Kris Kristofferson",
+      "type": "artist",
+      "zone": "country-roots",
+      "eraStart": 1966,
+      "summary": "Country songwriter; singer-songwriter crossover",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "country lineage"
+      ],
+      "x": -2286,
+      "y": 894
+    },
+    {
+      "id": "roger-miller",
+      "label": "Roger Miller",
+      "type": "artist",
+      "zone": "country-roots",
+      "eraStart": 1957,
+      "summary": "Country songwriter; playful pop crossover",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "country lineage"
+      ],
+      "x": -3137,
+      "y": 1296
+    },
+    {
+      "id": "conway-twitty",
+      "label": "Conway Twitty",
+      "type": "artist",
+      "zone": "country-roots",
+      "eraStart": 1958,
+      "summary": "Rock-to-country vocalist; duets",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "country lineage"
+      ],
+      "x": -2518,
+      "y": 1391
+    },
+    {
+      "id": "don-gibson",
+      "label": "Don Gibson",
+      "type": "artist",
+      "zone": "country-roots",
+      "eraStart": 1956,
+      "summary": "Country songwriter; Nashville recordings",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "country lineage"
+      ],
+      "x": -2874,
+      "y": 422
+    },
+    {
+      "id": "charley-pride",
+      "label": "Charley Pride",
+      "type": "artist",
+      "zone": "country-roots",
+      "eraStart": 1965,
+      "summary": "Country singer; barrier-breaking mainstream success",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "country lineage"
+      ],
+      "x": -3288,
+      "y": 531
+    },
+    {
+      "id": "ray-price",
+      "label": "Ray Price",
+      "type": "artist",
+      "zone": "country-roots",
+      "eraStart": 1950,
+      "summary": "Honky-tonk singer; shuffle rhythm",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "country lineage"
+      ],
+      "x": -2811,
+      "y": 1256
+    },
+    {
+      "id": "the-louvin-brothers",
+      "label": "The Louvin Brothers",
+      "type": "band",
+      "zone": "country-roots",
+      "eraStart": 1947,
+      "summary": "Brother harmony; country-gospel repertoire",
+      "roles": [
+        "band"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://www.countrymusichalloffame.org/hall-of-fame/the-louvin-brothers",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "country lineage"
+      ],
+      "x": -2350,
+      "y": 564
+    },
+    {
+      "id": "the-stanley-brothers",
+      "label": "The Stanley Brothers",
+      "type": "band",
+      "zone": "country-roots",
+      "eraStart": 1946,
+      "summary": "Brother duo; Appalachian bluegrass",
+      "roles": [
+        "band"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Bluegrass Music Hall of Fame and Museum",
+          "url": "https://www.bluegrasshall.org/inductees/the-stanley-brothers/",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "bluegrass lineage"
+      ],
+      "x": -3205,
+      "y": 742
+    },
+    {
+      "id": "dizzy-gillespie",
+      "label": "Dizzy Gillespie",
+      "type": "artist",
+      "zone": "jazz",
+      "eraStart": 1937,
+      "summary": "Bebop trumpet; jazz diplomacy",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Library of Congress",
+          "url": "https://wwws.loc.gov/exhibits/hope-for-america/cultural-diplomacy.html",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "jazz lineage"
+      ],
+      "x": -1760,
+      "y": -975
+    },
+    {
+      "id": "thelonious-monk",
+      "label": "Thelonious Monk",
+      "type": "artist",
+      "zone": "jazz",
+      "eraStart": 1941,
+      "summary": "Jazz piano; angular composition",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Library of Congress",
+          "url": "https://www.loc.gov/item/prn-05-090/",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "jazz lineage"
+      ],
+      "x": -1182,
+      "y": -923
+    },
+    {
+      "id": "ella-fitzgerald",
+      "label": "Ella Fitzgerald",
+      "type": "artist",
+      "zone": "jazz",
+      "eraStart": 1935,
+      "summary": "Jazz voice; scat and songbook",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "National Endowment for the Arts",
+          "url": "https://www.arts.gov/honors/jazz/ella-fitzgerald",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "jazz lineage"
+      ],
+      "x": -1662,
+      "y": -1426
+    },
+    {
+      "id": "sarah-vaughan",
+      "label": "Sarah Vaughan",
+      "type": "artist",
+      "zone": "jazz",
+      "eraStart": 1943,
+      "summary": "Jazz voice; bop phrasing",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "National Endowment for the Arts",
+          "url": "https://www.arts.gov/honors/jazz/sarah-vaughan",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "jazz lineage"
+      ],
+      "x": -1471,
+      "y": -1464
+    },
+    {
+      "id": "art-blakey",
+      "label": "Art Blakey",
+      "type": "artist",
+      "zone": "jazz",
+      "eraStart": 1942,
+      "summary": "Hard-bop drums; Jazz Messengers",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "National Endowment for the Arts",
+          "url": "https://www.arts.gov/honors/jazz/art-blakey",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "jazz lineage"
+      ],
+      "x": -1786,
+      "y": -802
+    },
+    {
+      "id": "horace-silver",
+      "label": "Horace Silver",
+      "type": "artist",
+      "zone": "jazz",
+      "eraStart": 1950,
+      "summary": "Hard-bop piano; blues and gospel phrasing",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "National Endowment for the Arts",
+          "url": "https://www.arts.gov/honors/jazz/horace-silver",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "jazz lineage"
+      ],
+      "x": -888,
+      "y": -1037
+    },
+    {
+      "id": "sonny-rollins",
+      "label": "Sonny Rollins",
+      "type": "artist",
+      "zone": "jazz",
+      "eraStart": 1949,
+      "summary": "Tenor saxophone; hard-bop improvisation",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "National Endowment for the Arts",
+          "url": "https://www.arts.gov/honors/jazz/sonny-rollins",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "jazz lineage"
+      ],
+      "x": -1923,
+      "y": -1027
+    },
+    {
+      "id": "cannonball-adderley",
+      "label": "Cannonball Adderley",
+      "type": "artist",
+      "zone": "jazz",
+      "eraStart": 1955,
+      "summary": "Soul-jazz saxophone; Riverside recordings",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "National Endowment for the Arts",
+          "url": "https://www.arts.gov/sites/default/files/2012-JazzMasters.pdf",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "jazz lineage"
+      ],
+      "x": -1299,
+      "y": -792
+    },
+    {
+      "id": "benny-goodman",
+      "label": "Benny Goodman",
+      "type": "artist",
+      "zone": "jazz",
+      "eraStart": 1934,
+      "summary": "Swing clarinet; 1938 Carnegie Hall jazz concert",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Library of Congress",
+          "url": "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/BennyGoodman.pdf",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "jazz lineage"
+      ],
+      "x": -1513,
+      "y": -1308
+    },
+    {
+      "id": "count-basie",
+      "label": "Count Basie",
+      "type": "artist",
+      "zone": "jazz",
+      "eraStart": 1935,
+      "summary": "Swing orchestra; Kansas City jazz",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "National Endowment for the Arts",
+          "url": "https://www.arts.gov/honors/jazz/william-count-basie",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "jazz lineage"
+      ],
+      "x": -1353,
+      "y": -1341
+    },
+    {
+      "id": "billie-holiday",
+      "label": "Billie Holiday",
+      "type": "artist",
+      "zone": "jazz",
+      "eraStart": 1933,
+      "summary": "Jazz voice; phrasing and protest song",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Library of Congress",
+          "url": "https://wwws.loc.gov/exhibits/jazz-singers/online-exhibition.html",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "jazz lineage"
+      ],
+      "x": -1599,
+      "y": -906
+    },
+    {
+      "id": "gil-evans",
+      "label": "Gil Evans",
+      "type": "artist",
+      "zone": "jazz",
+      "eraStart": 1947,
+      "summary": "Jazz orchestration; Miles Davis arrangements",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "National Endowment for the Arts",
+          "url": "https://www.arts.gov/honors/jazz/gil-evans",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "jazz lineage"
+      ],
+      "x": -1794,
+      "y": -1314
+    },
+    {
+      "id": "wayne-shorter",
+      "label": "Wayne Shorter",
+      "type": "artist",
+      "zone": "jazz",
+      "eraStart": 1959,
+      "summary": "Jazz saxophone; Messengers and fusion",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "National Endowment for the Arts",
+          "url": "https://www.arts.gov/honors/jazz/wayne-shorter",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "jazz lineage"
+      ],
+      "x": -1934,
+      "y": -865
+    },
+    {
+      "id": "joe-zawinul",
+      "label": "Joe Zawinul",
+      "type": "artist",
+      "zone": "jazz",
+      "eraStart": 1959,
+      "summary": "Electric jazz keyboards; Weather Report",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "National Endowment for the Arts",
+          "url": "https://www.arts.gov/honors/jazz/wayne-shorter",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "jazz lineage"
+      ],
+      "x": -1007,
+      "y": -1339
+    },
+    {
+      "id": "ron-carter",
+      "label": "Ron Carter",
+      "type": "artist",
+      "zone": "jazz",
+      "eraStart": 1959,
+      "summary": "Jazz bass; Davis quintet",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "National Endowment for the Arts",
+          "url": "https://www.arts.gov/honors/jazz/ron-carter",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "jazz lineage"
+      ],
+      "x": -1178,
+      "y": -1632
+    },
+    {
+      "id": "max-roach",
+      "label": "Max Roach",
+      "type": "artist",
+      "zone": "jazz",
+      "eraStart": 1942,
+      "summary": "Bebop drums; Brown-Roach quintet",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "National Endowment for the Arts",
+          "url": "https://www.arts.gov/honors/jazz/max-roach",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "jazz lineage"
+      ],
+      "x": -1269,
+      "y": -1205
+    },
+    {
+      "id": "clifford-brown",
+      "label": "Clifford Brown",
+      "type": "artist",
+      "zone": "jazz",
+      "eraStart": 1953,
+      "summary": "Hard-bop trumpet; Brown-Roach quintet",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Library of Congress",
+          "url": "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Night-at-Birdland.pdf",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "jazz lineage"
+      ],
+      "x": -1575,
+      "y": -1592
+    },
+    {
+      "id": "ornette-coleman",
+      "label": "Ornette Coleman",
+      "type": "artist",
+      "zone": "jazz",
+      "eraStart": 1958,
+      "summary": "Free-jazz saxophone; harmolodics",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "National Endowment for the Arts",
+          "url": "https://www.arts.gov/honors/jazz/ornette-coleman",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "jazz lineage"
+      ],
+      "x": -1962,
+      "y": -1284
+    },
+    {
+      "id": "cecil-taylor",
+      "label": "Cecil Taylor",
+      "type": "artist",
+      "zone": "jazz",
+      "eraStart": 1956,
+      "summary": "Avant-garde jazz piano; percussive style",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "National Endowment for the Arts",
+          "url": "https://www.arts.gov/honors/jazz/cecil-taylor",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "jazz lineage"
+      ],
+      "x": -1848,
+      "y": -1465
+    },
+    {
+      "id": "charles-mingus",
+      "label": "Charles Mingus",
+      "type": "artist",
+      "zone": "jazz",
+      "eraStart": 1943,
+      "summary": "Jazz bass and composition; collective improvisation",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Library of Congress",
+          "url": "https://findingaids.loc.gov/exist_collections/ead3pdf/music/2004/mu004009.pdf",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "jazz lineage"
+      ],
+      "x": -1809,
+      "y": -1148
+    },
+    {
+      "id": "mccoy-tyner",
+      "label": "McCoy Tyner",
+      "type": "artist",
+      "zone": "jazz",
+      "eraStart": 1959,
+      "summary": "Jazz piano; Coltrane quartet",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "National Endowment for the Arts",
+          "url": "https://www.arts.gov/honors/jazz/mccoy-tyner",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "jazz lineage"
+      ],
+      "x": -958,
+      "y": -1186
+    },
+    {
+      "id": "wynton-marsalis",
+      "label": "Wynton Marsalis",
+      "type": "artist",
+      "zone": "jazz",
+      "eraStart": 1980,
+      "summary": "Jazz trumpet; Lincoln Center education",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "National Endowment for the Arts",
+          "url": "https://www.arts.gov/honors/medals/wynton-marsalis",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "jazz lineage"
+      ],
+      "x": -1260,
+      "y": -1482
+    },
+    {
+      "id": "the-soul-stirrers",
+      "label": "The Soul Stirrers",
+      "type": "band",
+      "zone": "roots-blues",
+      "eraStart": 1930,
+      "summary": "Gospel quartet; Sam Cooke beginnings",
+      "roles": [
+        "band"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/soul-stirrers/",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "gospel-music lineage"
+      ],
+      "x": -1777,
+      "y": -329
+    },
+    {
+      "id": "the-temptations",
+      "label": "The Temptations",
+      "type": "band",
+      "zone": "pop-soul-disco",
+      "eraStart": 1961,
+      "summary": "Motown vocal group; soul harmonies",
+      "roles": [
+        "band"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/temptations/",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "soul-music lineage"
+      ],
+      "x": -453,
+      "y": 2102
+    },
+    {
+      "id": "the-four-tops",
+      "label": "The Four Tops",
+      "type": "band",
+      "zone": "pop-soul-disco",
+      "eraStart": 1956,
+      "summary": "Motown quartet; Holland-Dozier-Holland songs",
+      "roles": [
+        "band"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/four-tops/",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "soul-music lineage"
+      ],
+      "x": -248,
+      "y": 2133
+    },
+    {
+      "id": "the-drifters",
+      "label": "The Drifters",
+      "type": "band",
+      "zone": "roots-blues",
+      "eraStart": 1953,
+      "summary": "Gospel-to-R&B vocal group",
+      "roles": [
+        "band"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/drifters/",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "rhythm-and-blues lineage"
+      ],
+      "x": -1189,
+      "y": -299
+    },
+    {
+      "id": "the-platters",
+      "label": "The Platters",
+      "type": "band",
+      "zone": "roots-blues",
+      "eraStart": 1953,
+      "summary": "R&B vocal group; early rock ballads",
+      "roles": [
+        "band"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/platters/",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "rhythm-and-blues lineage"
+      ],
+      "x": -1400,
+      "y": -541
+    },
+    {
+      "id": "wilson-pickett",
+      "label": "Wilson Pickett",
+      "type": "artist",
+      "zone": "pop-soul-disco",
+      "eraStart": 1962,
+      "summary": "Southern soul; forceful vocal style",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/wp-content/uploads/2024/03/Wilson_Pickett_1991.pdf",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "soul-music lineage"
+      ],
+      "x": -670,
+      "y": 2183
+    },
+    {
+      "id": "jackie-wilson",
+      "label": "Jackie Wilson",
+      "type": "artist",
+      "zone": "roots-blues",
+      "eraStart": 1957,
+      "summary": "R&B singer; gospel-inflected delivery",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/jackie-wilson/",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "rhythm-and-blues lineage"
+      ],
+      "x": -1067,
+      "y": -600
+    },
+    {
+      "id": "etta-james",
+      "label": "Etta James",
+      "type": "artist",
+      "zone": "roots-blues",
+      "eraStart": 1955,
+      "summary": "Blues and soul singer; vocal crossover",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/etta-james/",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "rhythm-and-blues lineage"
+      ],
+      "x": -955,
+      "y": -220
+    },
+    {
+      "id": "carla-thomas",
+      "label": "Carla Thomas",
+      "type": "artist",
+      "zone": "pop-soul-disco",
+      "eraStart": 1960,
+      "summary": "Stax singer; Memphis soul recordings",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Stax Museum of American Soul Music",
+          "url": "https://staxmuseum.com/wp-content/uploads/2014/07/Sounds_of_Change_Stax_Museum_American_Soul_Music1.pdf",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "soul-music lineage"
+      ],
+      "x": -864,
+      "y": 2732
+    },
+    {
+      "id": "booker-t-and-the-mgs",
+      "label": "Booker T. & the M.G.'s",
+      "type": "band",
+      "zone": "pop-soul-disco",
+      "eraStart": 1962,
+      "summary": "Stax house band; Memphis soul instrumentals",
+      "roles": [
+        "band"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/booker-t-and-mgs/",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "soul-music lineage"
+      ],
+      "x": -898,
+      "y": 2185
+    },
+    {
+      "id": "isaac-hayes",
+      "label": "Isaac Hayes",
+      "type": "artist",
+      "zone": "pop-soul-disco",
+      "eraStart": 1962,
+      "summary": "Stax songwriter; soul arrangements",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/isaac-hayes/",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "soul-music lineage"
+      ],
+      "x": -355,
+      "y": 2266
+    },
+    {
+      "id": "al-green",
+      "label": "Al Green",
+      "type": "artist",
+      "zone": "pop-soul-disco",
+      "eraStart": 1967,
+      "summary": "Memphis soul; gospel-inflected singing",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/al-green/",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "soul-music lineage"
+      ],
+      "x": -476,
+      "y": 2716
+    },
+    {
+      "id": "curtis-mayfield",
+      "label": "Curtis Mayfield",
+      "type": "artist",
+      "zone": "pop-soul-disco",
+      "eraStart": 1958,
+      "summary": "Soul songwriting; social commentary",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/curtis-mayfield/",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "soul-music lineage"
+      ],
+      "x": -625,
+      "y": 2399
+    },
+    {
+      "id": "sly-and-the-family-stone",
+      "label": "Sly and the Family Stone",
+      "type": "band",
+      "zone": "pop-soul-disco",
+      "eraStart": 1966,
+      "summary": "Rock-soul-funk band; integrated lineup",
+      "roles": [
+        "band"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/sly-and-family-stone/",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "funk lineage"
+      ],
+      "x": -338,
+      "y": 2601
+    },
+    {
+      "id": "parliament",
+      "label": "Parliament",
+      "type": "band",
+      "zone": "pop-soul-disco",
+      "eraStart": 1970,
+      "summary": "George Clinton's P-Funk group; funk grooves",
+      "roles": [
+        "band"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/parliament-funkadelic/",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "funk lineage"
+      ],
+      "x": 119,
+      "y": 2489
+    },
+    {
+      "id": "funkadelic",
+      "label": "Funkadelic",
+      "type": "band",
+      "zone": "pop-soul-disco",
+      "eraStart": 1968,
+      "summary": "George Clinton's P-Funk group; psychedelic funk",
+      "roles": [
+        "band"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/parliament-funkadelic/",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "funk lineage"
+      ],
+      "x": -292,
+      "y": 2808
+    },
+    {
+      "id": "the-staple-singers",
+      "label": "The Staple Singers",
+      "type": "band",
+      "zone": "roots-blues",
+      "eraStart": 1956,
+      "summary": "Gospel family group; message soul",
+      "roles": [
+        "band"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/staple-singers/",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "gospel-music lineage"
+      ],
+      "x": -2128,
+      "y": -184
+    },
+    {
+      "id": "marvin-gaye",
+      "label": "Marvin Gaye",
+      "type": "artist",
+      "zone": "pop-soul-disco",
+      "eraStart": 1961,
+      "summary": "Motown soul; socially conscious albums",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/marvin-gaye/",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "soul-music lineage"
+      ],
+      "x": -638,
+      "y": 2716
+    },
+    {
+      "id": "smokey-robinson",
+      "label": "Smokey Robinson",
+      "type": "artist",
+      "zone": "pop-soul-disco",
+      "eraStart": 1957,
+      "summary": "Motown singer-songwriter; vocal soul",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/smokey-robinson/",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "soul-music lineage"
+      ],
+      "x": -414,
+      "y": 2426
+    },
+    {
+      "id": "martha-and-the-vandellas",
+      "label": "Martha and the Vandellas",
+      "type": "band",
+      "zone": "pop-soul-disco",
+      "eraStart": 1962,
+      "summary": "Motown group; dance-oriented soul",
+      "roles": [
+        "band"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/martha-and-the-vandellas/",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "soul-music lineage"
+      ],
+      "x": -953,
+      "y": 2372
+    },
+    {
+      "id": "gladys-knight-and-the-pips",
+      "label": "Gladys Knight & the Pips",
+      "type": "band",
+      "zone": "pop-soul-disco",
+      "eraStart": 1959,
+      "summary": "Vocal group; soul and R&B",
+      "roles": [
+        "band"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/gladys-knight-and-the-pips/",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "soul-music lineage"
+      ],
+      "x": -951,
+      "y": 2574
+    },
+    {
+      "id": "mavis-staples",
+      "label": "Mavis Staples",
+      "type": "artist",
+      "zone": "roots-blues",
+      "eraStart": 1956,
+      "summary": "Staples lead voice; gospel-to-soul",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/staple-singers/",
+          "provider": "other"
+        }
+      ],
+      "curatorTags": [
+        "gospel-music lineage"
+      ],
+      "x": -2115,
+      "y": -366
     }
   ],
   "edges": [
@@ -33521,6 +35530,1950 @@
         {
           "label": "Country Music Hall of Fame and Museum",
           "url": "https://countrymusichalloffame.org/hall-of-fame/waylon-jennings",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "reviewed-bridge-mahalia-jackson-gospel-music-associated_genre",
+      "source": "mahalia-jackson",
+      "target": "gospel-music",
+      "type": "associated_genre",
+      "label": "gospel voice",
+      "strength": 0.76,
+      "context": [
+        "Jackson's recorded and live work is rooted in gospel; this is not a claim that she recorded secular soul."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/mahalia-jackson/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "reviewed-bridge-sam-cooke-gospel-music-related",
+      "source": "sam-cooke",
+      "target": "gospel-music",
+      "type": "related",
+      "label": "gospel beginnings",
+      "strength": 0.76,
+      "context": [
+        "Cooke sang with the Soul Stirrers before his secular pop and soul career."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/sam-cooke/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "reviewed-bridge-sam-cooke-soul-music-associated_genre",
+      "source": "sam-cooke",
+      "target": "soul-music",
+      "type": "associated_genre",
+      "label": "soul singer",
+      "strength": 0.76,
+      "context": [
+        "Cooke is identified as a foundational soul singer by the Rock Hall."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/sam-cooke/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "reviewed-bridge-ruth-brown-rhythm-and-blues-associated_genre",
+      "source": "ruth-brown",
+      "target": "rhythm-and-blues",
+      "type": "associated_genre",
+      "label": "Atlantic R&B",
+      "strength": 0.76,
+      "context": [
+        "Brown's R&B hits were central to Atlantic's early history."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/ruth-brown/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "reviewed-bridge-big-joe-turner-rhythm-and-blues-associated_genre",
+      "source": "big-joe-turner",
+      "target": "rhythm-and-blues",
+      "type": "associated_genre",
+      "label": "jump blues to R&B",
+      "strength": 0.76,
+      "context": [
+        "Turner's blend of blues, jazz and swing fed his R&B recordings."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/big-joe-turner/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "reviewed-bridge-rock-and-roll-big-joe-turner-influenced_by",
+      "source": "rock-and-roll",
+      "target": "big-joe-turner",
+      "type": "influenced_by",
+      "label": "early rock lineage",
+      "strength": 0.76,
+      "context": [
+        "Rock Hall credits Turner's style as a precursor to rock and roll; the link describes lineage rather than a genre identity."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/big-joe-turner/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "reviewed-bridge-fats-domino-rhythm-and-blues-associated_genre",
+      "source": "fats-domino",
+      "target": "rhythm-and-blues",
+      "type": "associated_genre",
+      "label": "New Orleans R&B",
+      "strength": 0.76,
+      "context": [
+        "Domino's New Orleans piano and vocal sound grew from rhythm and blues."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/fats-domino/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "reviewed-bridge-fats-domino-rock-and-roll-associated_genre",
+      "source": "fats-domino",
+      "target": "rock-and-roll",
+      "type": "associated_genre",
+      "label": "early rock and roll",
+      "strength": 0.76,
+      "context": [
+        "Rock Hall documents Domino's R&B style entering the new rock-and-roll idiom."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/fats-domino/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "reviewed-bridge-otis-redding-soul-music-associated_genre",
+      "source": "otis-redding",
+      "target": "soul-music",
+      "type": "associated_genre",
+      "label": "Southern soul",
+      "strength": 0.76,
+      "context": [
+        "Stax documents Redding's emotionally direct soul performances and recordings."
+      ],
+      "sources": [
+        {
+          "label": "Stax Records",
+          "url": "https://staxrecords.com/spotlight/otis-redding/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "reviewed-bridge-james-brown-soul-music-associated_genre",
+      "source": "james-brown",
+      "target": "soul-music",
+      "type": "associated_genre",
+      "label": "soul performer",
+      "strength": 0.76,
+      "context": [
+        "Rock Hall places Brown in the development of soul before his funk innovations."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/james-brown/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "reviewed-bridge-james-brown-funk-associated_genre",
+      "source": "james-brown",
+      "target": "funk",
+      "type": "associated_genre",
+      "label": "funk pioneer",
+      "strength": 0.76,
+      "context": [
+        "Brown's rhythmic approach is documented as a formative step in funk."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/james-brown/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "reviewed-bridge-solomon-burke-soul-music-associated_genre",
+      "source": "solomon-burke",
+      "target": "soul-music",
+      "type": "associated_genre",
+      "label": "soul singer",
+      "strength": 0.76,
+      "context": [
+        "Rock Hall describes Burke's soul singing as the main tradition of his recordings."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/solomon-burke/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "reviewed-bridge-solomon-burke-country-related",
+      "source": "solomon-burke",
+      "target": "country",
+      "type": "related",
+      "label": "country-influenced repertoire",
+      "strength": 0.76,
+      "context": [
+        "Burke's soul incorporated country influence; this is a stylistic bridge, not a claim that he was primarily a country singer."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/solomon-burke/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "reviewed-bridge-dave-brubeck-jazz-associated_genre",
+      "source": "dave-brubeck",
+      "target": "jazz",
+      "type": "associated_genre",
+      "label": "jazz pianist",
+      "strength": 0.76,
+      "context": [
+        "NEA identifies Brubeck as a jazz pianist and bandleader."
+      ],
+      "sources": [
+        {
+          "label": "National Endowment for the Arts",
+          "url": "https://www.arts.gov/honors/jazz/dave-brubeck",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "reviewed-bridge-dave-brubeck-cool-jazz-associated_genre",
+      "source": "dave-brubeck",
+      "target": "cool-jazz",
+      "type": "associated_genre",
+      "label": "West Coast cool",
+      "strength": 0.76,
+      "context": [
+        "NEA associates Brubeck's West Coast work with cool jazz."
+      ],
+      "sources": [
+        {
+          "label": "National Endowment for the Arts",
+          "url": "https://www.arts.gov/honors/jazz/dave-brubeck",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "reviewed-bridge-bill-evans-jazz-associated_genre",
+      "source": "bill-evans",
+      "target": "jazz",
+      "type": "associated_genre",
+      "label": "jazz piano",
+      "strength": 0.76,
+      "context": [
+        "Library of Congress documents Evans's modern-jazz trio recordings."
+      ],
+      "sources": [
+        {
+          "label": "Library of Congress",
+          "url": "https://lcweb2.loc.gov/static/programs/national-recording-preservation-board/documents/Complete-Village-Vanguard-Recordings_Nass.pdf",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "reviewed-bridge-bill-evans-miles-davis-collaboration",
+      "source": "bill-evans",
+      "target": "miles-davis",
+      "type": "collaboration",
+      "label": "Kind of Blue sessions",
+      "strength": 0.76,
+      "context": [
+        "Smithsonian Folkways identifies Evans as the pianist on Davis's Kind of Blue sessions."
+      ],
+      "sources": [
+        {
+          "label": "Smithsonian Folkways",
+          "url": "https://folkways-media.si.edu/docs/folkways/artwork/SFW40820.pdf",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "reviewed-bridge-herbie-hancock-jazz-associated_genre",
+      "source": "herbie-hancock",
+      "target": "jazz",
+      "type": "associated_genre",
+      "label": "jazz pianist",
+      "strength": 0.76,
+      "context": [
+        "NEA documents Hancock's jazz career before and after his Miles Davis tenure."
+      ],
+      "sources": [
+        {
+          "label": "National Endowment for the Arts",
+          "url": "https://www.arts.gov/honors/jazz/herbie-hancock",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "reviewed-bridge-herbie-hancock-miles-davis-collaboration",
+      "source": "herbie-hancock",
+      "target": "miles-davis",
+      "type": "collaboration",
+      "label": "Davis group",
+      "strength": 0.76,
+      "context": [
+        "Hancock joined Davis's group in 1963; this is documented work together, not merely a shared style."
+      ],
+      "sources": [
+        {
+          "label": "National Endowment for the Arts",
+          "url": "https://www.arts.gov/honors/jazz/herbie-hancock",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "reviewed-bridge-herbie-hancock-jazz-fusion-related",
+      "source": "herbie-hancock",
+      "target": "jazz-fusion",
+      "type": "related",
+      "label": "electric jazz and funk",
+      "strength": 0.76,
+      "context": [
+        "NEA describes Hancock's electric-instrument and funk experiments after his Davis tenure."
+      ],
+      "sources": [
+        {
+          "label": "National Endowment for the Arts",
+          "url": "https://www.arts.gov/honors/jazz/herbie-hancock",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "reviewed-bridge-ernest-tubb-country-associated_genre",
+      "source": "ernest-tubb",
+      "target": "country",
+      "type": "associated_genre",
+      "label": "country singer",
+      "strength": 0.76,
+      "context": [
+        "Country Music Hall of Fame identifies Tubb as a major country performer."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame/ernest-tubb",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "reviewed-bridge-ernest-tubb-honky-tonk-associated_genre",
+      "source": "ernest-tubb",
+      "target": "honky-tonk",
+      "type": "associated_genre",
+      "label": "honky-tonk trailblazer",
+      "strength": 0.76,
+      "context": [
+        "The museum explicitly describes Tubb as a honky-tonk trailblazer."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame/ernest-tubb",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "reviewed-bridge-ernest-tubb-jimmie-rodgers-influenced_by",
+      "source": "ernest-tubb",
+      "target": "jimmie-rodgers",
+      "type": "influenced_by",
+      "label": "Rodgers model",
+      "strength": 0.76,
+      "context": [
+        "The museum documents Tubb's early imitation of Jimmie Rodgers."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame/ernest-tubb",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "reviewed-bridge-lefty-frizzell-country-associated_genre",
+      "source": "lefty-frizzell",
+      "target": "country",
+      "type": "associated_genre",
+      "label": "country vocalist",
+      "strength": 0.76,
+      "context": [
+        "Country Music Hall of Fame places Frizzell among country's influential vocalists."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame/lefty-frizzell",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "reviewed-bridge-merle-haggard-lefty-frizzell-influenced_by",
+      "source": "merle-haggard",
+      "target": "lefty-frizzell",
+      "type": "influenced_by",
+      "label": "vocal influence",
+      "strength": 0.76,
+      "context": [
+        "Country Music Hall of Fame documents Haggard's admiration for Frizzell's vocal style."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame/lefty-frizzell",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "reviewed-bridge-wynn-stewart-bakersfield-sound-related",
+      "source": "wynn-stewart",
+      "target": "bakersfield-sound",
+      "type": "related",
+      "label": "Bakersfield scene",
+      "strength": 0.76,
+      "context": [
+        "The museum names Stewart as an influential Bakersfield bandstand musician and songwriter."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://www.countrymusichalloffame.org/press/releases/museum-exhibit-the-bakersfield-sound-buck-owens-merle-haggard-and-california-country-closes-december-31-2014-2",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "reviewed-bridge-wynn-stewart-buck-owens-related",
+      "source": "wynn-stewart",
+      "target": "buck-owens",
+      "type": "related",
+      "label": "early Bakersfield work",
+      "strength": 0.76,
+      "context": [
+        "Owens worked as a sideman for Stewart before his solo career; this is a work-history link."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://www.countrymusichalloffame.org/press/releases/museum-exhibit-the-bakersfield-sound-buck-owens-merle-haggard-and-california-country-closes-december-31-2014-2",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "reviewed-bridge-gram-parsons-country-rock-associated_genre",
+      "source": "gram-parsons",
+      "target": "country-rock",
+      "type": "associated_genre",
+      "label": "country-rock pioneer",
+      "strength": 0.76,
+      "context": [
+        "Rock Hall documents Parsons's blend of country and rock."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/gram-parsons/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "reviewed-bridge-gram-parsons-the-flying-burrito-brothers-member_of",
+      "source": "gram-parsons",
+      "target": "the-flying-burrito-brothers",
+      "type": "member_of",
+      "label": "co-founder",
+      "strength": 0.76,
+      "context": [
+        "Parsons co-founded the Flying Burrito Brothers after the Byrds."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/gram-parsons/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "reviewed-bridge-emmylou-harris-country-associated_genre",
+      "source": "emmylou-harris",
+      "target": "country",
+      "type": "associated_genre",
+      "label": "country singer",
+      "strength": 0.76,
+      "context": [
+        "Country Music Hall of Fame documents Harris's traditional-country repertoire."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame/emmylou-harris",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "reviewed-bridge-emmylou-harris-country-rock-related",
+      "source": "emmylou-harris",
+      "target": "country-rock",
+      "type": "related",
+      "label": "California crossover",
+      "strength": 0.76,
+      "context": [
+        "The museum places Harris in the Southern California country-rock community of the 1970s."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame/emmylou-harris",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "reviewed-bridge-emmylou-harris-gram-parsons-collaboration",
+      "source": "emmylou-harris",
+      "target": "gram-parsons",
+      "type": "collaboration",
+      "label": "Parsons band",
+      "strength": 0.76,
+      "context": [
+        "Parsons recruited Harris to sing harmony and tour in his band."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame/emmylou-harris",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "reviewed-bridge-the-flying-burrito-brothers-country-rock-associated_genre",
+      "source": "the-flying-burrito-brothers",
+      "target": "country-rock",
+      "type": "associated_genre",
+      "label": "country-rock band",
+      "strength": 0.76,
+      "context": [
+        "Rock Hall identifies the band's role in Parsons's development of country rock."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/gram-parsons/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-roy-acuff-country-associated_genre",
+      "source": "roy-acuff",
+      "target": "country",
+      "type": "associated_genre",
+      "label": "Roy Acuff in country",
+      "strength": 0.72,
+      "context": [
+        "Roy Acuff: Opry singer; rural string-band bridge. Museum or Hall documentation establishes this tradition."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-deford-bailey-country-associated_genre",
+      "source": "deford-bailey",
+      "target": "country",
+      "type": "associated_genre",
+      "label": "DeFord Bailey in country",
+      "strength": 0.72,
+      "context": [
+        "DeFord Bailey: Opry harmonica; Black country pioneer. Museum or Hall documentation establishes this tradition."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-gene-autry-country-associated_genre",
+      "source": "gene-autry",
+      "target": "country",
+      "type": "associated_genre",
+      "label": "Gene Autry in country",
+      "strength": 0.72,
+      "context": [
+        "Gene Autry: Singing cowboy; country on radio and film. Museum or Hall documentation establishes this tradition."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-eddy-arnold-country-associated_genre",
+      "source": "eddy-arnold",
+      "target": "country",
+      "type": "associated_genre",
+      "label": "Eddy Arnold in country",
+      "strength": 0.72,
+      "context": [
+        "Eddy Arnold: Nashville vocalist; country-pop crossover. Museum or Hall documentation establishes this tradition."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-kitty-wells-country-associated_genre",
+      "source": "kitty-wells",
+      "target": "country",
+      "type": "associated_genre",
+      "label": "Kitty Wells in country",
+      "strength": 0.72,
+      "context": [
+        "Kitty Wells: Honky-tonk voice; women in country. Museum or Hall documentation establishes this tradition."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-webb-pierce-country-associated_genre",
+      "source": "webb-pierce",
+      "target": "country",
+      "type": "associated_genre",
+      "label": "Webb Pierce in country",
+      "strength": 0.72,
+      "context": [
+        "Webb Pierce: Honky-tonk singer; 1950s country. Museum or Hall documentation establishes this tradition."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-carl-smith-country-associated_genre",
+      "source": "carl-smith",
+      "target": "country",
+      "type": "associated_genre",
+      "label": "Carl Smith in country",
+      "strength": 0.72,
+      "context": [
+        "Carl Smith: Country vocalist; Opry and honky-tonk. Museum or Hall documentation establishes this tradition."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-george-jones-country-associated_genre",
+      "source": "george-jones",
+      "target": "country",
+      "type": "associated_genre",
+      "label": "George Jones in country",
+      "strength": 0.72,
+      "context": [
+        "George Jones: Country vocalist; honky-tonk phrasing. Museum or Hall documentation establishes this tradition."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-loretta-lynn-country-associated_genre",
+      "source": "loretta-lynn",
+      "target": "country",
+      "type": "associated_genre",
+      "label": "Loretta Lynn in country",
+      "strength": 0.72,
+      "context": [
+        "Loretta Lynn: Country songwriting; working-class voice. Museum or Hall documentation establishes this tradition."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-tammy-wynette-country-associated_genre",
+      "source": "tammy-wynette",
+      "target": "country",
+      "type": "associated_genre",
+      "label": "Tammy Wynette in country",
+      "strength": 0.72,
+      "context": [
+        "Tammy Wynette: Country vocalist; Nashville recordings. Museum or Hall documentation establishes this tradition."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-bobby-bare-country-associated_genre",
+      "source": "bobby-bare",
+      "target": "country",
+      "type": "associated_genre",
+      "label": "Bobby Bare in country",
+      "strength": 0.72,
+      "context": [
+        "Bobby Bare: Country storyteller; Nashville songwriter link. Museum or Hall documentation establishes this tradition."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-floyd-cramer-country-associated_genre",
+      "source": "floyd-cramer",
+      "target": "country",
+      "type": "associated_genre",
+      "label": "Floyd Cramer in country",
+      "strength": 0.72,
+      "context": [
+        "Floyd Cramer: Session piano; Nashville Sound. Museum or Hall documentation establishes this tradition."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-jim-reeves-country-associated_genre",
+      "source": "jim-reeves",
+      "target": "country",
+      "type": "associated_genre",
+      "label": "Jim Reeves in country",
+      "strength": 0.72,
+      "context": [
+        "Jim Reeves: Smooth country voice; Nashville Sound. Museum or Hall documentation establishes this tradition."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-hank-snow-country-associated_genre",
+      "source": "hank-snow",
+      "target": "country",
+      "type": "associated_genre",
+      "label": "Hank Snow in country",
+      "strength": 0.72,
+      "context": [
+        "Hank Snow: Canadian-born country singer; Opry. Museum or Hall documentation establishes this tradition."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-kris-kristofferson-country-associated_genre",
+      "source": "kris-kristofferson",
+      "target": "country",
+      "type": "associated_genre",
+      "label": "Kris Kristofferson in country",
+      "strength": 0.72,
+      "context": [
+        "Kris Kristofferson: Country songwriter; singer-songwriter crossover. Museum or Hall documentation establishes this tradition."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-roger-miller-country-associated_genre",
+      "source": "roger-miller",
+      "target": "country",
+      "type": "associated_genre",
+      "label": "Roger Miller in country",
+      "strength": 0.72,
+      "context": [
+        "Roger Miller: Country songwriter; playful pop crossover. Museum or Hall documentation establishes this tradition."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-conway-twitty-country-associated_genre",
+      "source": "conway-twitty",
+      "target": "country",
+      "type": "associated_genre",
+      "label": "Conway Twitty in country",
+      "strength": 0.72,
+      "context": [
+        "Conway Twitty: Rock-to-country vocalist; duets. Museum or Hall documentation establishes this tradition."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-don-gibson-country-associated_genre",
+      "source": "don-gibson",
+      "target": "country",
+      "type": "associated_genre",
+      "label": "Don Gibson in country",
+      "strength": 0.72,
+      "context": [
+        "Don Gibson: Country songwriter; Nashville recordings. Museum or Hall documentation establishes this tradition."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-charley-pride-country-associated_genre",
+      "source": "charley-pride",
+      "target": "country",
+      "type": "associated_genre",
+      "label": "Charley Pride in country",
+      "strength": 0.72,
+      "context": [
+        "Charley Pride: Country singer; barrier-breaking mainstream success. Museum or Hall documentation establishes this tradition."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-ray-price-country-associated_genre",
+      "source": "ray-price",
+      "target": "country",
+      "type": "associated_genre",
+      "label": "Ray Price in country",
+      "strength": 0.72,
+      "context": [
+        "Ray Price: Honky-tonk singer; shuffle rhythm. Museum or Hall documentation establishes this tradition."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-the-louvin-brothers-country-associated_genre",
+      "source": "the-louvin-brothers",
+      "target": "country",
+      "type": "associated_genre",
+      "label": "The Louvin Brothers in country",
+      "strength": 0.72,
+      "context": [
+        "The Louvin Brothers: Brother harmony; country-gospel repertoire. Museum or Hall documentation establishes this tradition."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://www.countrymusichalloffame.org/hall-of-fame/the-louvin-brothers",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-the-stanley-brothers-bluegrass-associated_genre",
+      "source": "the-stanley-brothers",
+      "target": "bluegrass",
+      "type": "associated_genre",
+      "label": "The Stanley Brothers in bluegrass",
+      "strength": 0.72,
+      "context": [
+        "The Stanley Brothers: Brother duo; Appalachian bluegrass. Museum or Hall documentation establishes this tradition."
+      ],
+      "sources": [
+        {
+          "label": "Bluegrass Music Hall of Fame and Museum",
+          "url": "https://www.bluegrasshall.org/inductees/the-stanley-brothers/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-dizzy-gillespie-jazz-associated_genre",
+      "source": "dizzy-gillespie",
+      "target": "jazz",
+      "type": "associated_genre",
+      "label": "Dizzy Gillespie in jazz",
+      "strength": 0.72,
+      "context": [
+        "Dizzy Gillespie: Bebop trumpet; jazz diplomacy. The linked institutional source identifies this musical work."
+      ],
+      "sources": [
+        {
+          "label": "Library of Congress",
+          "url": "https://wwws.loc.gov/exhibits/hope-for-america/cultural-diplomacy.html",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-thelonious-monk-jazz-associated_genre",
+      "source": "thelonious-monk",
+      "target": "jazz",
+      "type": "associated_genre",
+      "label": "Thelonious Monk in jazz",
+      "strength": 0.72,
+      "context": [
+        "Thelonious Monk: Jazz piano; angular composition. The linked institutional source identifies this musical work."
+      ],
+      "sources": [
+        {
+          "label": "Library of Congress",
+          "url": "https://www.loc.gov/item/prn-05-090/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-ella-fitzgerald-jazz-associated_genre",
+      "source": "ella-fitzgerald",
+      "target": "jazz",
+      "type": "associated_genre",
+      "label": "Ella Fitzgerald in jazz",
+      "strength": 0.72,
+      "context": [
+        "Ella Fitzgerald: Jazz voice; scat and songbook. The linked institutional source identifies this musical work."
+      ],
+      "sources": [
+        {
+          "label": "National Endowment for the Arts",
+          "url": "https://www.arts.gov/honors/jazz/ella-fitzgerald",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-sarah-vaughan-jazz-associated_genre",
+      "source": "sarah-vaughan",
+      "target": "jazz",
+      "type": "associated_genre",
+      "label": "Sarah Vaughan in jazz",
+      "strength": 0.72,
+      "context": [
+        "Sarah Vaughan: Jazz voice; bop phrasing. The linked institutional source identifies this musical work."
+      ],
+      "sources": [
+        {
+          "label": "National Endowment for the Arts",
+          "url": "https://www.arts.gov/honors/jazz/sarah-vaughan",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-art-blakey-jazz-associated_genre",
+      "source": "art-blakey",
+      "target": "jazz",
+      "type": "associated_genre",
+      "label": "Art Blakey in jazz",
+      "strength": 0.72,
+      "context": [
+        "Art Blakey: Hard-bop drums; Jazz Messengers. The linked institutional source identifies this musical work."
+      ],
+      "sources": [
+        {
+          "label": "National Endowment for the Arts",
+          "url": "https://www.arts.gov/honors/jazz/art-blakey",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-horace-silver-jazz-associated_genre",
+      "source": "horace-silver",
+      "target": "jazz",
+      "type": "associated_genre",
+      "label": "Horace Silver in jazz",
+      "strength": 0.72,
+      "context": [
+        "Horace Silver: Hard-bop piano; blues and gospel phrasing. The linked institutional source identifies this musical work."
+      ],
+      "sources": [
+        {
+          "label": "National Endowment for the Arts",
+          "url": "https://www.arts.gov/honors/jazz/horace-silver",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-sonny-rollins-jazz-associated_genre",
+      "source": "sonny-rollins",
+      "target": "jazz",
+      "type": "associated_genre",
+      "label": "Sonny Rollins in jazz",
+      "strength": 0.72,
+      "context": [
+        "Sonny Rollins: Tenor saxophone; hard-bop improvisation. The linked institutional source identifies this musical work."
+      ],
+      "sources": [
+        {
+          "label": "National Endowment for the Arts",
+          "url": "https://www.arts.gov/honors/jazz/sonny-rollins",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-cannonball-adderley-jazz-associated_genre",
+      "source": "cannonball-adderley",
+      "target": "jazz",
+      "type": "associated_genre",
+      "label": "Cannonball Adderley in jazz",
+      "strength": 0.72,
+      "context": [
+        "Cannonball Adderley: Soul-jazz saxophone; Riverside recordings. The linked institutional source identifies this musical work."
+      ],
+      "sources": [
+        {
+          "label": "National Endowment for the Arts",
+          "url": "https://www.arts.gov/sites/default/files/2012-JazzMasters.pdf",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-benny-goodman-jazz-associated_genre",
+      "source": "benny-goodman",
+      "target": "jazz",
+      "type": "associated_genre",
+      "label": "Benny Goodman in jazz",
+      "strength": 0.72,
+      "context": [
+        "Benny Goodman: Swing clarinet; 1938 Carnegie Hall jazz concert. The linked institutional source identifies this musical work."
+      ],
+      "sources": [
+        {
+          "label": "Library of Congress",
+          "url": "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/BennyGoodman.pdf",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-count-basie-jazz-associated_genre",
+      "source": "count-basie",
+      "target": "jazz",
+      "type": "associated_genre",
+      "label": "Count Basie in jazz",
+      "strength": 0.72,
+      "context": [
+        "Count Basie: Swing orchestra; Kansas City jazz. The linked institutional source identifies this musical work."
+      ],
+      "sources": [
+        {
+          "label": "National Endowment for the Arts",
+          "url": "https://www.arts.gov/honors/jazz/william-count-basie",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-billie-holiday-jazz-associated_genre",
+      "source": "billie-holiday",
+      "target": "jazz",
+      "type": "associated_genre",
+      "label": "Billie Holiday in jazz",
+      "strength": 0.72,
+      "context": [
+        "Billie Holiday: Jazz voice; phrasing and protest song. The linked institutional source identifies this musical work."
+      ],
+      "sources": [
+        {
+          "label": "Library of Congress",
+          "url": "https://wwws.loc.gov/exhibits/jazz-singers/online-exhibition.html",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-gil-evans-jazz-associated_genre",
+      "source": "gil-evans",
+      "target": "jazz",
+      "type": "associated_genre",
+      "label": "Gil Evans in jazz",
+      "strength": 0.72,
+      "context": [
+        "Gil Evans: Jazz orchestration; Miles Davis arrangements. The linked institutional source identifies this musical work."
+      ],
+      "sources": [
+        {
+          "label": "National Endowment for the Arts",
+          "url": "https://www.arts.gov/honors/jazz/gil-evans",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-wayne-shorter-jazz-associated_genre",
+      "source": "wayne-shorter",
+      "target": "jazz",
+      "type": "associated_genre",
+      "label": "Wayne Shorter in jazz",
+      "strength": 0.72,
+      "context": [
+        "Wayne Shorter: Jazz saxophone; Messengers and fusion. The linked institutional source identifies this musical work."
+      ],
+      "sources": [
+        {
+          "label": "National Endowment for the Arts",
+          "url": "https://www.arts.gov/honors/jazz/wayne-shorter",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-joe-zawinul-jazz-associated_genre",
+      "source": "joe-zawinul",
+      "target": "jazz",
+      "type": "associated_genre",
+      "label": "Joe Zawinul in jazz",
+      "strength": 0.72,
+      "context": [
+        "Joe Zawinul: Electric jazz keyboards; Weather Report. The linked institutional source identifies this musical work."
+      ],
+      "sources": [
+        {
+          "label": "National Endowment for the Arts",
+          "url": "https://www.arts.gov/honors/jazz/wayne-shorter",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-ron-carter-jazz-associated_genre",
+      "source": "ron-carter",
+      "target": "jazz",
+      "type": "associated_genre",
+      "label": "Ron Carter in jazz",
+      "strength": 0.72,
+      "context": [
+        "Ron Carter: Jazz bass; Davis quintet. The linked institutional source identifies this musical work."
+      ],
+      "sources": [
+        {
+          "label": "National Endowment for the Arts",
+          "url": "https://www.arts.gov/honors/jazz/ron-carter",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-max-roach-jazz-associated_genre",
+      "source": "max-roach",
+      "target": "jazz",
+      "type": "associated_genre",
+      "label": "Max Roach in jazz",
+      "strength": 0.72,
+      "context": [
+        "Max Roach: Bebop drums; Brown-Roach quintet. The linked institutional source identifies this musical work."
+      ],
+      "sources": [
+        {
+          "label": "National Endowment for the Arts",
+          "url": "https://www.arts.gov/honors/jazz/max-roach",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-clifford-brown-jazz-associated_genre",
+      "source": "clifford-brown",
+      "target": "jazz",
+      "type": "associated_genre",
+      "label": "Clifford Brown in jazz",
+      "strength": 0.72,
+      "context": [
+        "Clifford Brown: Hard-bop trumpet; Brown-Roach quintet. The linked institutional source identifies this musical work."
+      ],
+      "sources": [
+        {
+          "label": "Library of Congress",
+          "url": "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Night-at-Birdland.pdf",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-ornette-coleman-jazz-associated_genre",
+      "source": "ornette-coleman",
+      "target": "jazz",
+      "type": "associated_genre",
+      "label": "Ornette Coleman in jazz",
+      "strength": 0.72,
+      "context": [
+        "Ornette Coleman: Free-jazz saxophone; harmolodics. The linked institutional source identifies this musical work."
+      ],
+      "sources": [
+        {
+          "label": "National Endowment for the Arts",
+          "url": "https://www.arts.gov/honors/jazz/ornette-coleman",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-cecil-taylor-jazz-associated_genre",
+      "source": "cecil-taylor",
+      "target": "jazz",
+      "type": "associated_genre",
+      "label": "Cecil Taylor in jazz",
+      "strength": 0.72,
+      "context": [
+        "Cecil Taylor: Avant-garde jazz piano; percussive style. The linked institutional source identifies this musical work."
+      ],
+      "sources": [
+        {
+          "label": "National Endowment for the Arts",
+          "url": "https://www.arts.gov/honors/jazz/cecil-taylor",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-charles-mingus-jazz-associated_genre",
+      "source": "charles-mingus",
+      "target": "jazz",
+      "type": "associated_genre",
+      "label": "Charles Mingus in jazz",
+      "strength": 0.72,
+      "context": [
+        "Charles Mingus: Jazz bass and composition; collective improvisation. The linked institutional source identifies this musical work."
+      ],
+      "sources": [
+        {
+          "label": "Library of Congress",
+          "url": "https://findingaids.loc.gov/exist_collections/ead3pdf/music/2004/mu004009.pdf",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-mccoy-tyner-jazz-associated_genre",
+      "source": "mccoy-tyner",
+      "target": "jazz",
+      "type": "associated_genre",
+      "label": "McCoy Tyner in jazz",
+      "strength": 0.72,
+      "context": [
+        "McCoy Tyner: Jazz piano; Coltrane quartet. The linked institutional source identifies this musical work."
+      ],
+      "sources": [
+        {
+          "label": "National Endowment for the Arts",
+          "url": "https://www.arts.gov/honors/jazz/mccoy-tyner",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-wynton-marsalis-jazz-associated_genre",
+      "source": "wynton-marsalis",
+      "target": "jazz",
+      "type": "associated_genre",
+      "label": "Wynton Marsalis in jazz",
+      "strength": 0.72,
+      "context": [
+        "Wynton Marsalis: Jazz trumpet; Lincoln Center education. The linked institutional source identifies this musical work."
+      ],
+      "sources": [
+        {
+          "label": "National Endowment for the Arts",
+          "url": "https://www.arts.gov/honors/medals/wynton-marsalis",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-the-soul-stirrers-gospel-music-associated_genre",
+      "source": "the-soul-stirrers",
+      "target": "gospel-music",
+      "type": "associated_genre",
+      "label": "The Soul Stirrers in gospel-music",
+      "strength": 0.72,
+      "context": [
+        "The Soul Stirrers: Gospel quartet; Sam Cooke beginnings. The source documents this repertoire; no direct influence is inferred."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/soul-stirrers/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-the-temptations-soul-music-associated_genre",
+      "source": "the-temptations",
+      "target": "soul-music",
+      "type": "associated_genre",
+      "label": "The Temptations in soul-music",
+      "strength": 0.72,
+      "context": [
+        "The Temptations: Motown vocal group; soul harmonies. The source documents this repertoire; no direct influence is inferred."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/temptations/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-the-four-tops-soul-music-associated_genre",
+      "source": "the-four-tops",
+      "target": "soul-music",
+      "type": "associated_genre",
+      "label": "The Four Tops in soul-music",
+      "strength": 0.72,
+      "context": [
+        "The Four Tops: Motown quartet; Holland-Dozier-Holland songs. The source documents this repertoire; no direct influence is inferred."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/four-tops/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-the-drifters-rhythm-and-blues-associated_genre",
+      "source": "the-drifters",
+      "target": "rhythm-and-blues",
+      "type": "associated_genre",
+      "label": "The Drifters in rhythm-and-blues",
+      "strength": 0.72,
+      "context": [
+        "The Drifters: Gospel-to-R&B vocal group. The source documents this repertoire; no direct influence is inferred."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/drifters/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-the-platters-rhythm-and-blues-associated_genre",
+      "source": "the-platters",
+      "target": "rhythm-and-blues",
+      "type": "associated_genre",
+      "label": "The Platters in rhythm-and-blues",
+      "strength": 0.72,
+      "context": [
+        "The Platters: R&B vocal group; early rock ballads. The source documents this repertoire; no direct influence is inferred."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/platters/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-wilson-pickett-soul-music-associated_genre",
+      "source": "wilson-pickett",
+      "target": "soul-music",
+      "type": "associated_genre",
+      "label": "Wilson Pickett in soul-music",
+      "strength": 0.72,
+      "context": [
+        "Wilson Pickett: Southern soul; forceful vocal style. The source documents this repertoire; no direct influence is inferred."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/wp-content/uploads/2024/03/Wilson_Pickett_1991.pdf",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-jackie-wilson-rhythm-and-blues-associated_genre",
+      "source": "jackie-wilson",
+      "target": "rhythm-and-blues",
+      "type": "associated_genre",
+      "label": "Jackie Wilson in rhythm-and-blues",
+      "strength": 0.72,
+      "context": [
+        "Jackie Wilson: R&B singer; gospel-inflected delivery. The source documents this repertoire; no direct influence is inferred."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/jackie-wilson/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-etta-james-rhythm-and-blues-associated_genre",
+      "source": "etta-james",
+      "target": "rhythm-and-blues",
+      "type": "associated_genre",
+      "label": "Etta James in rhythm-and-blues",
+      "strength": 0.72,
+      "context": [
+        "Etta James: Blues and soul singer; vocal crossover. The source documents this repertoire; no direct influence is inferred."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/etta-james/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-carla-thomas-soul-music-associated_genre",
+      "source": "carla-thomas",
+      "target": "soul-music",
+      "type": "associated_genre",
+      "label": "Carla Thomas in soul-music",
+      "strength": 0.72,
+      "context": [
+        "Carla Thomas: Stax singer; Memphis soul recordings. The source documents this repertoire; no direct influence is inferred."
+      ],
+      "sources": [
+        {
+          "label": "Stax Museum of American Soul Music",
+          "url": "https://staxmuseum.com/wp-content/uploads/2014/07/Sounds_of_Change_Stax_Museum_American_Soul_Music1.pdf",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-booker-t-and-the-mgs-soul-music-associated_genre",
+      "source": "booker-t-and-the-mgs",
+      "target": "soul-music",
+      "type": "associated_genre",
+      "label": "Booker T. & the M.G.'s in soul-music",
+      "strength": 0.72,
+      "context": [
+        "Booker T. & the M.G.'s: Stax house band; Memphis soul instrumentals. The source documents this repertoire; no direct influence is inferred."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/booker-t-and-mgs/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-isaac-hayes-soul-music-associated_genre",
+      "source": "isaac-hayes",
+      "target": "soul-music",
+      "type": "associated_genre",
+      "label": "Isaac Hayes in soul-music",
+      "strength": 0.72,
+      "context": [
+        "Isaac Hayes: Stax songwriter; soul arrangements. The source documents this repertoire; no direct influence is inferred."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/isaac-hayes/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-al-green-soul-music-associated_genre",
+      "source": "al-green",
+      "target": "soul-music",
+      "type": "associated_genre",
+      "label": "Al Green in soul-music",
+      "strength": 0.72,
+      "context": [
+        "Al Green: Memphis soul; gospel-inflected singing. The source documents this repertoire; no direct influence is inferred."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/al-green/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-curtis-mayfield-soul-music-associated_genre",
+      "source": "curtis-mayfield",
+      "target": "soul-music",
+      "type": "associated_genre",
+      "label": "Curtis Mayfield in soul-music",
+      "strength": 0.72,
+      "context": [
+        "Curtis Mayfield: Soul songwriting; social commentary. The source documents this repertoire; no direct influence is inferred."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/curtis-mayfield/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-sly-and-the-family-stone-funk-associated_genre",
+      "source": "sly-and-the-family-stone",
+      "target": "funk",
+      "type": "associated_genre",
+      "label": "Sly and the Family Stone in funk",
+      "strength": 0.72,
+      "context": [
+        "Sly and the Family Stone: Rock-soul-funk band; integrated lineup. The source documents this repertoire; no direct influence is inferred."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/sly-and-family-stone/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-parliament-funk-associated_genre",
+      "source": "parliament",
+      "target": "funk",
+      "type": "associated_genre",
+      "label": "Parliament in funk",
+      "strength": 0.72,
+      "context": [
+        "Parliament: George Clinton's P-Funk group; funk grooves. The source documents this repertoire; no direct influence is inferred."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/parliament-funkadelic/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-funkadelic-funk-associated_genre",
+      "source": "funkadelic",
+      "target": "funk",
+      "type": "associated_genre",
+      "label": "Funkadelic in funk",
+      "strength": 0.72,
+      "context": [
+        "Funkadelic: George Clinton's P-Funk group; psychedelic funk. The source documents this repertoire; no direct influence is inferred."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/parliament-funkadelic/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-the-staple-singers-gospel-music-associated_genre",
+      "source": "the-staple-singers",
+      "target": "gospel-music",
+      "type": "associated_genre",
+      "label": "The Staple Singers in gospel-music",
+      "strength": 0.72,
+      "context": [
+        "The Staple Singers: Gospel family group; message soul. The source documents this repertoire; no direct influence is inferred."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/staple-singers/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-marvin-gaye-soul-music-associated_genre",
+      "source": "marvin-gaye",
+      "target": "soul-music",
+      "type": "associated_genre",
+      "label": "Marvin Gaye in soul-music",
+      "strength": 0.72,
+      "context": [
+        "Marvin Gaye: Motown soul; socially conscious albums. The source documents this repertoire; no direct influence is inferred."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/marvin-gaye/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-smokey-robinson-soul-music-associated_genre",
+      "source": "smokey-robinson",
+      "target": "soul-music",
+      "type": "associated_genre",
+      "label": "Smokey Robinson in soul-music",
+      "strength": 0.72,
+      "context": [
+        "Smokey Robinson: Motown singer-songwriter; vocal soul. The source documents this repertoire; no direct influence is inferred."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/smokey-robinson/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-martha-and-the-vandellas-soul-music-associated_genre",
+      "source": "martha-and-the-vandellas",
+      "target": "soul-music",
+      "type": "associated_genre",
+      "label": "Martha and the Vandellas in soul-music",
+      "strength": 0.72,
+      "context": [
+        "Martha and the Vandellas: Motown group; dance-oriented soul. The source documents this repertoire; no direct influence is inferred."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/martha-and-the-vandellas/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-gladys-knight-and-the-pips-soul-music-associated_genre",
+      "source": "gladys-knight-and-the-pips",
+      "target": "soul-music",
+      "type": "associated_genre",
+      "label": "Gladys Knight & the Pips in soul-music",
+      "strength": 0.72,
+      "context": [
+        "Gladys Knight & the Pips: Vocal group; soul and R&B. The source documents this repertoire; no direct influence is inferred."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/gladys-knight-and-the-pips/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-mavis-staples-gospel-music-associated_genre",
+      "source": "mavis-staples",
+      "target": "gospel-music",
+      "type": "associated_genre",
+      "label": "Mavis Staples in gospel-music",
+      "strength": 0.72,
+      "context": [
+        "Mavis Staples: Staples lead voice; gospel-to-soul. The source documents this repertoire; no direct influence is inferred."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/staple-singers/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-sam-cooke-the-soul-stirrers-member_of",
+      "source": "sam-cooke",
+      "target": "the-soul-stirrers",
+      "type": "member_of",
+      "label": "Soul Stirrers singer",
+      "strength": 0.72,
+      "context": [
+        "Cooke sang with the Soul Stirrers before his secular career."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/soul-stirrers/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-mavis-staples-the-staple-singers-member_of",
+      "source": "mavis-staples",
+      "target": "the-staple-singers",
+      "type": "member_of",
+      "label": "Staples family voice",
+      "strength": 0.72,
+      "context": [
+        "Rock Hall lists Mavis Staples as a member of the family group."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/staple-singers/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-booker-t-and-the-mgs-otis-redding-collaboration",
+      "source": "booker-t-and-the-mgs",
+      "target": "otis-redding",
+      "type": "collaboration",
+      "label": "Stax sessions",
+      "strength": 0.72,
+      "context": [
+        "The M.G.'s played with Otis Redding on Stax recordings."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/booker-t-and-mgs/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-wayne-shorter-art-blakey-collaboration",
+      "source": "wayne-shorter",
+      "target": "art-blakey",
+      "type": "collaboration",
+      "label": "Jazz Messengers",
+      "strength": 0.72,
+      "context": [
+        "Shorter played in Blakey's Jazz Messengers before joining Miles Davis."
+      ],
+      "sources": [
+        {
+          "label": "National Endowment for the Arts",
+          "url": "https://www.arts.gov/honors/jazz/wayne-shorter",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-gil-evans-miles-davis-collaboration",
+      "source": "gil-evans",
+      "target": "miles-davis",
+      "type": "collaboration",
+      "label": "orchestral jazz",
+      "strength": 0.72,
+      "context": [
+        "Evans arranged the Miles Ahead and Sketches of Spain collaborations with Davis."
+      ],
+      "sources": [
+        {
+          "label": "National Endowment for the Arts",
+          "url": "https://www.arts.gov/honors/jazz/gil-evans",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-mccoy-tyner-john-coltrane-collaboration",
+      "source": "mccoy-tyner",
+      "target": "john-coltrane",
+      "type": "collaboration",
+      "label": "Coltrane quartet",
+      "strength": 0.72,
+      "context": [
+        "Tyner played piano in Coltrane's quartet from 1960 to 1965."
+      ],
+      "sources": [
+        {
+          "label": "National Endowment for the Arts",
+          "url": "https://www.arts.gov/honors/jazz/mccoy-tyner",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-max-roach-clifford-brown-collaboration",
+      "source": "max-roach",
+      "target": "clifford-brown",
+      "type": "collaboration",
+      "label": "Brown-Roach quintet",
+      "strength": 0.72,
+      "context": [
+        "Roach and Brown led a short-lived but important quintet together."
+      ],
+      "sources": [
+        {
+          "label": "National Endowment for the Arts",
+          "url": "https://www.arts.gov/honors/jazz/max-roach",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-parliament-funkadelic-related",
+      "source": "parliament",
+      "target": "funkadelic",
+      "type": "related",
+      "label": "P-Funk family",
+      "strength": 0.72,
+      "context": [
+        "Rock Hall documents the two George Clinton-led groups as the Parliament-Funkadelic collective."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/parliament-funkadelic/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-depth-the-louvin-brothers-emmylou-harris-related",
+      "source": "the-louvin-brothers",
+      "target": "emmylou-harris",
+      "type": "related",
+      "label": "Louvins in Harris repertoire",
+      "strength": 0.72,
+      "context": [
+        "Harris recorded Louvin Brothers material; this is repertoire lineage, not a shared-band claim."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://www.countrymusichalloffame.org/hall-of-fame/the-louvin-brothers",
           "provider": "other"
         }
       ]

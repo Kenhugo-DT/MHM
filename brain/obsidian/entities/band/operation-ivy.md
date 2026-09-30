@@ -5,8 +5,8 @@ type: band
 zone: punk-alt
 roles: [band]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: [ska punk, punk rock]
 curatorTags: [ska punk, east bay punk, rancid roots]
 secondaryZones: []

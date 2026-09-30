@@ -5,8 +5,8 @@ type: guitar
 zone: guitar-workshop
 roles: [guitar]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: []
 curatorTags: [electric guitar, Rock, signature guitar]
 secondaryZones: []

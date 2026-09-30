@@ -118,6 +118,19 @@ def is_out_of_scope_title(title: str) -> bool:
     )
 
 
+def get_json_with_backoff(session: requests.Session, url: str, params: dict[str, Any]) -> dict[str, Any]:
+    for attempt in range(3):
+        response = session.get(url, params=params, timeout=25)
+        if response.status_code in {429, 503} and attempt < 2:
+            retry_after = response.headers.get("Retry-After", "")
+            delay = int(retry_after) if retry_after.isdigit() else 6 * (attempt + 1)
+            time.sleep(min(delay, 30))
+            continue
+        response.raise_for_status()
+        return response.json()
+    raise RuntimeError("Source retries exhausted")
+
+
 class MusicBrainzClient:
     def __init__(self, contact: str) -> None:
         if not contact:
@@ -156,9 +169,10 @@ class WikidataClient:
         self.session.headers["User-Agent"] = "MusicHistoryMap/0.1"
 
     def search(self, name: str) -> dict[str, Any] | None:
-        response = self.session.get(
+        payload = get_json_with_backoff(
+            self.session,
             self.endpoint,
-            params={
+            {
                 "action": "wbsearchentities",
                 "search": name,
                 "language": "en",
@@ -166,10 +180,8 @@ class WikidataClient:
                 "format": "json",
                 "limit": 5,
             },
-            timeout=25,
         )
-        response.raise_for_status()
-        results = response.json().get("search", [])
+        results = payload.get("search", [])
         return results[0] if results else None
 
 
@@ -303,9 +315,10 @@ class WikipediaClient:
         return list(candidates.values())[:20]
 
     def page(self, title: str) -> dict[str, Any] | None:
-        response = self.session.get(
+        payload = get_json_with_backoff(
+            self.session,
             self.endpoint,
-            params={
+            {
                 "action": "query",
                 "format": "json",
                 "formatversion": 2,
@@ -323,10 +336,8 @@ class WikipediaClient:
                 "plnamespace": 0,
                 "titles": title,
             },
-            timeout=25,
         )
-        response.raise_for_status()
-        pages = response.json().get("query", {}).get("pages", [])
+        pages = payload.get("query", {}).get("pages", [])
         page = pages[0] if pages else None
         if not page or page.get("missing"):
             return None
@@ -361,6 +372,8 @@ def collect(seed_file: Path) -> list[Candidate]:
     candidates: list[Candidate] = []
 
     for seed in seeds:
+        if candidates:
+            time.sleep(6)
         name = seed["name"]
         kind = seed["kind"]
         if is_blocked_name(name, blocked_terms):

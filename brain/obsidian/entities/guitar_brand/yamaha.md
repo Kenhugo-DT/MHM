@@ -5,8 +5,8 @@ type: guitar_brand
 zone: guitar-workshop
 roles: [guitar_brand]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: []
 curatorTags: [guitar brand, manufacturer, jazz]
 secondaryZones: []

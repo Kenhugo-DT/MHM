@@ -5,8 +5,8 @@ type: genre
 zone: jazz
 roles: [genre]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: []
 curatorTags: []
 secondaryZones: []

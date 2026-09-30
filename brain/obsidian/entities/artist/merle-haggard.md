@@ -5,8 +5,8 @@ type: artist
 zone: country-roots
 roles: [artist]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: []
 curatorTags: []
 secondaryZones: []
@@ -27,6 +27,7 @@ Merle Ronald Haggard (April 6, 1937 – April 6, 2016) was an American country m
 - [[country|Country]] - country songwriter (Haggard was an influential country singer-songwriter.)
 - [[honky-tonk|Honky-tonk]] - honky-tonk tradition (Haggard drew heavily on honky-tonk.)
 - [[jazz|Jazz]] - jazz influence (Haggard's style drew from jazz as well as country and blues.)
+- [[lefty-frizzell|Lefty Frizzell]] - vocal influence (Country Music Hall of Fame documents Haggard's admiration for Frizzell's vocal style.)
 
 ## Sources
 

@@ -5,8 +5,8 @@ type: band
 zone: folk-country-vise
 roles: [band]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: []
 curatorTags: [Norwegian vise, Singer-songwriter, band]
 secondaryZones: []

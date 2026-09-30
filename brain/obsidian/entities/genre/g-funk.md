@@ -5,8 +5,8 @@ type: genre
 zone: hip-hop-rap
 roles: [genre]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: [g-funk]
 curatorTags: [g-funk, west coast hip-hop, funk]
 secondaryZones: []

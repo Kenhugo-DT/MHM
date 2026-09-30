@@ -5,8 +5,8 @@ type: guitarist
 zone: punk-alt
 roles: [guitarist, artist]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: [post-punk]
 curatorTags: [guitarist, post-punk, alternative]
 secondaryZones: []

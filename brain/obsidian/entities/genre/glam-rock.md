@@ -5,8 +5,8 @@ type: genre
 zone: rock-circuit
 roles: [genre]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: [Glam rock]
 curatorTags: [rock, glam rock, hard rock]
 secondaryZones: []

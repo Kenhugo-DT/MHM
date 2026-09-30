@@ -5,8 +5,8 @@ type: band
 zone: punk-alt
 roles: [band]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: [punk rock, hardcore punk]
 curatorTags: [norwegian punk, hardcore punk, punk rock]
 secondaryZones: []

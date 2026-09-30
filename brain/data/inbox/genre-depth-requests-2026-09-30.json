@@ -1,0 +1,149 @@
+{
+  "version": 1,
+  "requests": [
+    {
+      "id": "genre-depth-country-foundations-20260930",
+      "title": "Early country: radio, string bands and honky-tonk",
+      "status": "processed",
+      "priority": 86,
+      "scope": "genre_cluster",
+      "createdAt": "2026-09-30T12:30:00Z",
+      "instructions": "Investigate early and mid-century country performers, their actual stylistic role and documented links to Western swing, Honky-tonk, Folk, Bluegrass and later Nashville country. Distinguish influence from collaboration. Use Country Music Hall of Fame biographies or other institutional sources before any visible connection; Wikipedia links alone are only leads.",
+      "seeds": [
+        { "name": "Roy Acuff", "kind": "artist" },
+        { "name": "DeFord Bailey", "kind": "artist" },
+        { "name": "Gene Autry", "kind": "artist" },
+        { "name": "Eddy Arnold", "kind": "artist" },
+        { "name": "Kitty Wells", "kind": "artist" },
+        { "name": "Webb Pierce", "kind": "artist" },
+        { "name": "Carl Smith", "kind": "artist" },
+        { "name": "George Jones", "kind": "artist" },
+        { "name": "Loretta Lynn", "kind": "artist" },
+        { "name": "Tammy Wynette", "kind": "artist" },
+        { "name": "Bobby Bare", "kind": "artist" }
+      ],
+      "limits": { "maxSeeds": 11, "maxCandidates": 40 },
+      "notes": "Country-roots first; only documented bridges to folk and rock."
+    },
+    {
+      "id": "genre-depth-country-bakersfield-20260930",
+      "title": "Country branches: Nashville, Bakersfield and songwriter tradition",
+      "status": "processed",
+      "priority": 85,
+      "scope": "genre_cluster",
+      "createdAt": "2026-09-30T12:30:01Z",
+      "instructions": "Research these artists as distinct country traditions, not one generic country cluster. Look for verified links to Bakersfield sound, Western swing, Honky-tonk, Outlaw country, folk songwriting and country-rock where the source explicitly supports them. Do not turn albums, labels, venues or television programs into nodes.",
+      "seeds": [
+        { "name": "Floyd Cramer", "kind": "artist" },
+        { "name": "Jim Reeves", "kind": "artist" },
+        { "name": "Hank Snow", "kind": "artist" },
+        { "name": "Kris Kristofferson", "kind": "artist" },
+        { "name": "Roger Miller", "kind": "artist" },
+        { "name": "Conway Twitty", "kind": "artist" },
+        { "name": "Don Gibson", "kind": "artist" },
+        { "name": "Charley Pride", "kind": "artist" },
+        { "name": "Ray Price", "kind": "artist" },
+        { "name": "The Louvin Brothers", "kind": "band" },
+        { "name": "The Stanley Brothers", "kind": "band" }
+      ],
+      "limits": { "maxSeeds": 11, "maxCandidates": 40 },
+      "notes": "Keep era and regional differences legible; source each named relationship."
+    },
+    {
+      "id": "genre-depth-jazz-swing-bop-20260930",
+      "title": "Jazz foundations: swing, bebop and vocal lines",
+      "status": "processed",
+      "priority": 84,
+      "scope": "genre_cluster",
+      "createdAt": "2026-09-30T12:30:02Z",
+      "instructions": "Research jazz performers across swing, vocal jazz and bebop. Connect each to Jazz and a narrower style only when documented by NEA Jazz Masters, Library of Congress, Smithsonian or equivalent primary institution. Only claim band memberships or direct influence with specific evidence; avoid broad all-to-all jazz links.",
+      "seeds": [
+        { "name": "Dizzy Gillespie", "kind": "artist" },
+        { "name": "Thelonious Monk", "kind": "artist" },
+        { "name": "Ella Fitzgerald", "kind": "artist" },
+        { "name": "Sarah Vaughan", "kind": "artist" },
+        { "name": "Art Blakey", "kind": "artist" },
+        { "name": "Horace Silver", "kind": "artist" },
+        { "name": "Sonny Rollins", "kind": "artist" },
+        { "name": "Cannonball Adderley", "kind": "artist" },
+        { "name": "Benny Goodman", "kind": "artist" },
+        { "name": "Count Basie", "kind": "artist" },
+        { "name": "Billie Holiday", "kind": "artist" }
+      ],
+      "limits": { "maxSeeds": 11, "maxCandidates": 40 },
+      "notes": "Jazz zone: separate swing, bebop and vocal jazz paths."
+    },
+    {
+      "id": "genre-depth-jazz-modal-fusion-20260930",
+      "title": "Jazz development: modal, free jazz and fusion",
+      "status": "processed",
+      "priority": 83,
+      "scope": "genre_cluster",
+      "createdAt": "2026-09-30T12:30:03Z",
+      "instructions": "Investigate the musicians around modal jazz, avant-garde jazz and jazz fusion. Verify the exact Miles Davis, John Coltrane and Herbie Hancock collaborations rather than assuming them from a shared scene. Keep chronology explicit and distinguish Cool jazz, Modal jazz, hard bop, free jazz and fusion. Use NEA and museum biographies as the connection basis.",
+      "seeds": [
+        { "name": "Gil Evans", "kind": "artist" },
+        { "name": "Wayne Shorter", "kind": "artist" },
+        { "name": "Joe Zawinul", "kind": "artist" },
+        { "name": "Ron Carter", "kind": "artist" },
+        { "name": "Max Roach", "kind": "artist" },
+        { "name": "Clifford Brown", "kind": "artist" },
+        { "name": "Ornette Coleman", "kind": "artist" },
+        { "name": "Cecil Taylor", "kind": "artist" },
+        { "name": "Charles Mingus", "kind": "artist" },
+        { "name": "McCoy Tyner", "kind": "artist" },
+        { "name": "Wynton Marsalis", "kind": "artist" }
+      ],
+      "limits": { "maxSeeds": 11, "maxCandidates": 40 },
+      "notes": "Distinct musical developments, with cross-zone jazz-to-funk bridges only when sourced."
+    },
+    {
+      "id": "genre-depth-soul-vocal-groups-20260930",
+      "title": "Gospel, vocal R&B and early soul groups",
+      "status": "processed",
+      "priority": 82,
+      "scope": "genre_cluster",
+      "createdAt": "2026-09-30T12:30:04Z",
+      "instructions": "Research the difference between gospel groups, doo-wop, Motown and R&B vocal groups. Seek specific bridges to Gospel music, Rhythm and blues, Soul music and Pop music, backed by Rock Hall, Stax, Smithsonian or official museum evidence. Do not infer a shared label, producer or collaboration from a co-mention.",
+      "seeds": [
+        { "name": "The Soul Stirrers", "kind": "band" },
+        { "name": "The Temptations", "kind": "band" },
+        { "name": "The Four Tops", "kind": "band" },
+        { "name": "The Drifters", "kind": "band" },
+        { "name": "The Platters", "kind": "band" },
+        { "name": "Wilson Pickett", "kind": "artist" },
+        { "name": "Jackie Wilson", "kind": "artist" },
+        { "name": "Etta James", "kind": "artist" },
+        { "name": "Carla Thomas", "kind": "artist" },
+        { "name": "Booker T. & the M.G.'s", "kind": "band" },
+        { "name": "Isaac Hayes", "kind": "artist" }
+      ],
+      "limits": { "maxSeeds": 11, "maxCandidates": 40 },
+      "notes": "Gospel is not interchangeable with soul; identify the actual transition."
+    },
+    {
+      "id": "genre-depth-soul-funk-hiphop-20260930",
+      "title": "Soul and funk lines into later popular music",
+      "status": "processed",
+      "priority": 81,
+      "scope": "genre_cluster",
+      "createdAt": "2026-09-30T12:30:05Z",
+      "instructions": "Research soul, funk and their documented influence on later pop, disco and hip-hop without inventing direct person-to-person relationships. Verify genre and group membership on institutional artist pages. Treat samples, recordings and labels as evidence; do not add them as standalone map nodes.",
+      "seeds": [
+        { "name": "Al Green", "kind": "artist" },
+        { "name": "Curtis Mayfield", "kind": "artist" },
+        { "name": "Sly and the Family Stone", "kind": "band" },
+        { "name": "Parliament", "kind": "band" },
+        { "name": "Funkadelic", "kind": "band" },
+        { "name": "The Staple Singers", "kind": "band" },
+        { "name": "Marvin Gaye", "kind": "artist" },
+        { "name": "Smokey Robinson", "kind": "artist" },
+        { "name": "Martha and the Vandellas", "kind": "band" },
+        { "name": "Gladys Knight & the Pips", "kind": "band" },
+        { "name": "Mavis Staples", "kind": "artist" }
+      ],
+      "limits": { "maxSeeds": 11, "maxCandidates": 40 },
+      "notes": "Bridge pop-soul-disco and hip-hop-rap only for historically documented reasons."
+    }
+  ]
+}

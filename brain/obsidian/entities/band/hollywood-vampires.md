@@ -5,8 +5,8 @@ type: band
 zone: rock-circuit
 roles: [band]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: [rock]
 curatorTags: [band, classic rock, rock]
 secondaryZones: []

@@ -5,8 +5,8 @@ type: artist
 zone: hip-hop-rap
 roles: [artist]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: [gangsta rap, west coast hip-hop]
 curatorTags: [gangsta rap, west coast hip-hop, n.w.a]
 secondaryZones: []

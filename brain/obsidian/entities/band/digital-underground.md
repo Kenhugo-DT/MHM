@@ -5,8 +5,8 @@ type: band
 zone: hip-hop-rap
 roles: [band]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: [hip-hop, funk]
 curatorTags: [alternative hip-hop, funk, tupac connection]
 secondaryZones: []

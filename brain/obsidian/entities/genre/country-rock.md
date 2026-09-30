@@ -5,8 +5,8 @@ type: genre
 zone: country-roots
 roles: [genre]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: [country rock]
 curatorTags: [country, folk, rock]
 secondaryZones: [folk-country-vise, rock-circuit]
@@ -23,7 +23,10 @@ Country rock is a music genre that fuses rock and country. It was developed by r
 
 ## Connections
 
+- [[emmylou-harris|Emmylou Harris]] - California crossover (The museum places Harris in the Southern California country-rock community of the 1970s.)
+- [[gram-parsons|Gram Parsons]] - country-rock pioneer (Rock Hall documents Parsons's blend of country and rock.)
 - [[allman-brothers-band|The Allman Brothers Band]] - Wikipedia link signal (Wikipedia link: Allman Brothers Band)
+- [[the-flying-burrito-brothers|The Flying Burrito Brothers]] - country-rock band (Rock Hall identifies the band's role in Parsons's development of country rock.)
 
 ## Sources
 

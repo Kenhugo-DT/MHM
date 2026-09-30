@@ -5,8 +5,8 @@ type: genre
 zone: psychedelia-prog
 roles: [genre]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: [Progressive metal]
 curatorTags: [heavy metal, progressive metal, progressive rock]
 secondaryZones: []

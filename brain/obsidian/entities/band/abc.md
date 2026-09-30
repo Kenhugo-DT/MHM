@@ -5,8 +5,8 @@ type: band
 zone: punk-alt
 roles: [band]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: [post-punk]
 curatorTags: [Post-punk, band, post-punk]
 secondaryZones: []

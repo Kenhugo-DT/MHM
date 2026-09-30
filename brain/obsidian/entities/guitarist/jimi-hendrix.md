@@ -5,8 +5,8 @@ type: guitarist
 zone: psychedelia-prog
 roles: [guitarist, artist]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: [psychedelic rock]
 curatorTags: [Psychedelic rock, psychedelic rock, guitarist]
 secondaryZones: []

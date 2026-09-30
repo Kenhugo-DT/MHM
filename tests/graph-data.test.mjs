@@ -6,6 +6,8 @@ import { edgeEvidenceTier, isMapConnection } from "../shared/graph-schema/edge-e
 import { ORGANIZED_MAP_ZONES, organizeGraphLayout } from "../brain/scripts/organize-graph-layout.mjs";
 import { curatedEraLinks, curatedEraNodes } from "../brain/scripts/curated-era-expansion.mjs";
 import { curatedGenreLinks, curatedGenreNodes } from "../brain/scripts/curated-genre-bridges.mjs";
+import { reviewedBridgeLinks, reviewedBridgeNodes } from "../brain/scripts/curated-reviewed-bridges.mjs";
+import { genreDepthLinks, genreDepthNodes } from "../brain/scripts/curated-genre-depth.mjs";
 import { loadAllRows } from "../site/src/data/load-all-rows.mjs";
 
 test("pagination returns every row beyond the old 800-node cap", async () => {
@@ -189,6 +191,55 @@ test("genre bridges are sourced, explain their relationship and reach the learni
   }
   assert.ok(model.nodes["rhythm-and-blues"].secondaryZones.includes("pop-soul-disco"));
   assert.ok(model.nodes["western-swing"].secondaryZones.includes("jazz"));
+});
+
+test("reviewed genre-depth seeds only publish independently sourced bridges", () => {
+  const graph = JSON.parse(readFileSync("brain/data/approved/graph.json", "utf8"));
+  const batch = JSON.parse(readFileSync("brain/data/reviewed-bridge-batch.json", "utf8"));
+  const nodes = new Map(graph.nodes.map((node) => [node.id, node]));
+  const edges = new Map(graph.edges.map((edge) => [edge.id, edge]));
+  assert.equal(reviewedBridgeNodes.length, 17);
+  assert.equal(reviewedBridgeLinks.length, 33);
+  assert.deepEqual(new Set(batch.nodeIds), new Set(reviewedBridgeNodes.map((node) => node.id)));
+  assert.equal(batch.expectedEdges, reviewedBridgeLinks.length);
+  for (const entry of reviewedBridgeNodes) {
+    const node = nodes.get(entry.id);
+    assert.ok(node, entry.id);
+    assert.equal(node.zone, entry.zone);
+    assert.ok(node.sources.some((source) => source.url.startsWith("https://") && !source.url.includes("wikipedia.org")));
+    assert.ok(reviewedBridgeLinks.some((edge) => edge.source === entry.id || edge.target === entry.id));
+  }
+  for (const entry of reviewedBridgeLinks) {
+    const edge = edges.get(entry.id);
+    assert.ok(edge, entry.id);
+    assert.equal(edgeEvidenceTier(edge), "source_linked", entry.id);
+    assert.ok(edge.context.some(Boolean));
+    assert.ok(edge.sources.every((source) => source.url.startsWith("https://") && !source.url.includes("wikipedia.org")));
+  }
+});
+
+test("reviewed genre-depth batch is sourced and matches its live sync manifest", () => {
+  const batch = JSON.parse(readFileSync("brain/data/genre-depth-batch.json", "utf8"));
+  const graph = JSON.parse(readFileSync("brain/data/approved/graph.json", "utf8"));
+  const nodeIds = new Set(graph.nodes.map((node) => node.id));
+  const edgeIds = new Set(graph.edges.map((edge) => edge.id));
+  assert.equal(genreDepthNodes.length, 66);
+  assert.equal(genreDepthLinks.length, 75);
+  assert.deepEqual(new Set(batch.nodeIds), new Set(genreDepthNodes.map((node) => node.id)));
+  assert.equal(batch.expectedEdges, genreDepthLinks.length);
+  for (const node of genreDepthNodes) {
+    assert.ok(nodeIds.has(node.id), node.id);
+    assert.ok(batch.allowedZones.includes(node.zone), node.id);
+    assert.ok(node.sources.some((source) => source.url.startsWith("https://")), node.id);
+    assert.ok(genreDepthLinks.some((edge) => edge.source === node.id || edge.target === node.id), node.id);
+  }
+  for (const edge of genreDepthLinks) {
+    assert.ok(edgeIds.has(edge.id), edge.id);
+    assert.ok(nodeIds.has(edge.source) && nodeIds.has(edge.target), edge.id);
+    assert.equal(edgeEvidenceTier(edge), "source_linked", edge.id);
+    assert.ok(edge.context.some(Boolean), edge.id);
+    assert.ok(edge.sources.every((source) => source.url.startsWith("https://") && !source.url.includes("wikipedia.org")), edge.id);
+  }
 });
 
 test("Wikipedia link and category signals stay research leads even with source URLs", () => {

@@ -5,8 +5,8 @@ type: artist
 zone: hip-hop-rap
 roles: [artist]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: [hip-hop, west coast hip-hop]
 curatorTags: [west coast hip-hop, rap, thug life]
 secondaryZones: []

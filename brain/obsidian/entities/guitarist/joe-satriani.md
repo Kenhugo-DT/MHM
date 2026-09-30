@@ -5,8 +5,8 @@ type: guitarist
 zone: rock-circuit
 roles: [guitarist, artist]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: [rock]
 curatorTags: [Rock, rock, guitarist]
 secondaryZones: []

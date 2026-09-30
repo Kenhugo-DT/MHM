@@ -5,8 +5,8 @@ type: genre
 zone: jazz
 roles: [genre]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: [Jazz fusion]
 curatorTags: [rock, jazz fusion, classic rock]
 secondaryZones: [rock-circuit, psychedelia-prog]
@@ -25,6 +25,7 @@ A meeting of jazz harmony, rock volume, funk rhythm and expanded improvisation.
 
 - [[frank-zappa|Frank Zappa]] - composed across (Zappa explored jazz-rock fusion on albums including Uncle Meat and Hot Rats.)
 - [[funk|Funk]] - shares groove language
+- [[herbie-hancock|Herbie Hancock]] - electric jazz and funk (NEA describes Hancock's electric-instrument and funk experiments after his Davis tenure.)
 - [[jazz|Jazz]] - electric branch
 - [[jeff-beck|Jeff Beck]] - instrumental branch (Beck crossed from rock guitar into jazz-rock fusion on Blow by Blow and Wired.)
 - [[john-mclaughlin|John McLaughlin]] - electric fusion voice

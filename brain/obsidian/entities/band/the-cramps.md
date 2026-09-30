@@ -5,8 +5,8 @@ type: band
 zone: punk-alt
 roles: [band]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: [psychobilly, horror punk]
 curatorTags: [psychobilly, horror punk, garage punk]
 secondaryZones: []

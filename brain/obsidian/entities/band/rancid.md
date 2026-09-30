@@ -5,8 +5,8 @@ type: band
 zone: punk-alt
 roles: [band]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: [punk rock, ska punk]
 curatorTags: [punk rock, ska punk, operation ivy lineage]
 secondaryZones: []

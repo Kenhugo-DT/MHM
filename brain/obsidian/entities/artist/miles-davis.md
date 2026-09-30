@@ -5,8 +5,8 @@ type: artist
 zone: jazz
 roles: [artist]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: []
 curatorTags: []
 secondaryZones: []
@@ -24,7 +24,10 @@ Miles Dewey Davis III (May 26, 1926 – September 28, 1991) was an American trum
 ## Connections
 
 - [[bebop|Bebop]] - bebop beginnings (Davis played with Charlie Parker before his later jazz phases.)
+- [[bill-evans|Bill Evans]] - Kind of Blue sessions (Smithsonian Folkways identifies Evans as the pianist on Davis's Kind of Blue sessions.)
 - [[cool-jazz|Cool jazz]] - Birth of the Cool (Davis's late-1940s nonet recordings are an anchor for cool jazz.)
+- [[gil-evans|Gil Evans]] - orchestral jazz (Evans arranged the Miles Ahead and Sketches of Spain collaborations with Davis.)
+- [[herbie-hancock|Herbie Hancock]] - Davis group (Hancock joined Davis's group in 1963; this is documented work together, not merely a shared style.)
 - [[jazz-fusion|Jazz fusion]] - jazz-rock fusion (Davis brought rock influences into his late-1960s jazz recordings.)
 - [[john-coltrane|John Coltrane]] - played together (Coltrane worked with Davis during a pivotal period of modern jazz.)
 - [[modal-jazz|Modal jazz]] - modal turn (Davis moved toward modal improvisation on Kind of Blue after his earlier cool-jazz work.)

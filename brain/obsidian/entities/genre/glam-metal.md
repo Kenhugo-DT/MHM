@@ -5,8 +5,8 @@ type: genre
 zone: hard-rock-metal
 roles: [genre]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: [glam metal]
 curatorTags: [glam rock, heavy metal, hard rock]
 secondaryZones: []

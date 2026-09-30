@@ -5,8 +5,8 @@ type: band
 zone: punk-alt
 roles: [band]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: [horror punk, punk rock]
 curatorTags: [horror punk, punk rock, punk roots]
 secondaryZones: []

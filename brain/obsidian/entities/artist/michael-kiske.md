@@ -5,8 +5,8 @@ type: artist
 zone: hard-rock-metal
 roles: [artist]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: [hard rock, power metal]
 curatorTags: [hard rock, power metal, artist]
 secondaryZones: []

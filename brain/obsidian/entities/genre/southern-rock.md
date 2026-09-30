@@ -5,8 +5,8 @@ type: genre
 zone: roots-blues
 roles: [genre]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: [Southern rock]
 curatorTags: [blues, blues rock, country rock]
 secondaryZones: []

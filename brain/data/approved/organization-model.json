@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-30T11:22:24.470Z",
+  "generatedAt": "2026-09-30T13:54:22.918Z",
   "source": "approved graph + learning model + layout analysis",
   "graph": {
-    "nodes": 622,
-    "edges": 863,
-    "mapConnections": 431,
-    "generatedAt": "2026-09-30T11:16:58.533Z"
+    "nodes": 705,
+    "edges": 971,
+    "mapConnections": 539,
+    "generatedAt": "2026-09-30T13:54:22.785Z"
   },
   "layoutPolicy": {
     "target": "organized chaos",
@@ -19,7 +19,7 @@
   },
   "layoutIntelligence": {
     "version": 1,
-    "generatedAt": "2026-09-30T11:22:24.470Z",
+    "generatedAt": "2026-09-30T13:54:22.918Z",
     "intent": "organized chaos with readable labels and porous genre boundaries",
     "global": {
       "targetLabelState": "close-but-readable",
@@ -48,16 +48,16 @@
       "pop-soul-disco": {
         "zone": "pop-soul-disco",
         "label": "POP / SOUL / DISCO",
-        "pressureScore": 0.079,
-        "density": 0.543,
-        "overlapPerNode": 0,
-        "bridgeRatio": 0.267,
-        "spacingMultiplier": 1.113,
+        "pressureScore": 0.319,
+        "density": 1.232,
+        "overlapPerNode": 0.647,
+        "bridgeRatio": 0.294,
+        "spacingMultiplier": 1.214,
         "expansion": {
-          "x": 224,
-          "y": 115
+          "x": 346,
+          "y": 173
         },
-        "bridgeBleed": 404,
+        "bridgeBleed": 470,
         "strategy": "soft-overlap-bridges",
         "bridgeTargets": [],
         "readableChaos": true
@@ -65,16 +65,16 @@
       "roots-blues": {
         "zone": "roots-blues",
         "label": "ROOTS / BLUES",
-        "pressureScore": 0.478,
-        "density": 3.044,
-        "overlapPerNode": 0.711,
-        "bridgeRatio": 0.444,
-        "spacingMultiplier": 1.281,
+        "pressureScore": 0.592,
+        "density": 3.788,
+        "overlapPerNode": 0.911,
+        "bridgeRatio": 0.357,
+        "spacingMultiplier": 1.328,
         "expansion": {
-          "x": 244,
-          "y": 197
+          "x": 277,
+          "y": 222
         },
-        "bridgeBleed": 628,
+        "bridgeBleed": 574,
         "strategy": "soft-overlap-bridges",
         "bridgeTargets": [],
         "readableChaos": true
@@ -82,17 +82,17 @@
       "jazz": {
         "zone": "jazz",
         "label": "JAZZ",
-        "pressureScore": 0.154,
-        "density": 0.975,
-        "overlapPerNode": 0.133,
-        "bridgeRatio": 0.467,
-        "spacingMultiplier": 1.145,
+        "pressureScore": 0.368,
+        "density": 2.599,
+        "overlapPerNode": 0.65,
+        "bridgeRatio": 0.175,
+        "spacingMultiplier": 1.235,
         "expansion": {
-          "x": 169,
-          "y": 115
+          "x": 238,
+          "y": 160
         },
-        "bridgeBleed": 589,
-        "strategy": "soft-overlap-bridges",
+        "bridgeBleed": 377,
+        "strategy": "preserve-loose-cluster",
         "bridgeTargets": [],
         "readableChaos": true
       },
@@ -101,7 +101,7 @@
         "label": "ROCK CIRCUIT",
         "pressureScore": 0.536,
         "density": 3.257,
-        "overlapPerNode": 0.077,
+        "overlapPerNode": 0.083,
         "bridgeRatio": 0.077,
         "spacingMultiplier": 1.305,
         "expansion": {
@@ -201,16 +201,16 @@
       "country-roots": {
         "zone": "country-roots",
         "label": "COUNTRY ROOTS",
-        "pressureScore": 0.19,
-        "density": 0.916,
-        "overlapPerNode": 0.3,
-        "bridgeRatio": 0.65,
-        "spacingMultiplier": 1.16,
+        "pressureScore": 0.336,
+        "density": 2.198,
+        "overlapPerNode": 0.583,
+        "bridgeRatio": 0.271,
+        "spacingMultiplier": 1.221,
         "expansion": {
-          "x": 190,
-          "y": 165
+          "x": 240,
+          "y": 206
         },
-        "bridgeBleed": 753,
+        "bridgeBleed": 453,
         "strategy": "soft-overlap-bridges",
         "bridgeTargets": [],
         "readableChaos": true
@@ -369,6 +369,7 @@
           "folk-country-vise",
           "roots-blues",
           "guitar-workshop",
+          "pop-soul-disco",
           "rock-circuit"
         ],
         "pullStrength": 0.58,
@@ -1960,6 +1961,76 @@
         ],
         "pullStrength": 0.58,
         "reason": "Bridge policy match: western-swing-country-jazz, country-roots-to-rock."
+      },
+      "sam-cooke": {
+        "id": "sam-cooke",
+        "label": "Sam Cooke",
+        "sourceZone": "pop-soul-disco",
+        "pullZones": [
+          "roots-blues"
+        ],
+        "pullStrength": 0.415,
+        "reason": "Connected to multiple zones."
+      },
+      "james-brown": {
+        "id": "james-brown",
+        "label": "James Brown",
+        "sourceZone": "pop-soul-disco",
+        "pullZones": [
+          "rock-circuit"
+        ],
+        "pullStrength": 0.415,
+        "reason": "Connected to multiple zones."
+      },
+      "solomon-burke": {
+        "id": "solomon-burke",
+        "label": "Solomon Burke",
+        "sourceZone": "pop-soul-disco",
+        "pullZones": [
+          "country-roots"
+        ],
+        "pullStrength": 0.415,
+        "reason": "Connected to multiple zones."
+      },
+      "the-soul-stirrers": {
+        "id": "the-soul-stirrers",
+        "label": "The Soul Stirrers",
+        "sourceZone": "roots-blues",
+        "pullZones": [
+          "pop-soul-disco"
+        ],
+        "pullStrength": 0.366,
+        "reason": "Connected to multiple zones."
+      },
+      "sly-and-the-family-stone": {
+        "id": "sly-and-the-family-stone",
+        "label": "Sly and the Family Stone",
+        "sourceZone": "pop-soul-disco",
+        "pullZones": [
+          "rock-circuit"
+        ],
+        "pullStrength": 0.366,
+        "reason": "Connected to multiple zones."
+      },
+      "parliament": {
+        "id": "parliament",
+        "label": "Parliament",
+        "sourceZone": "pop-soul-disco",
+        "pullZones": [
+          "rock-circuit"
+        ],
+        "pullStrength": 0.366,
+        "reason": "Connected to multiple zones."
+      },
+      "funkadelic": {
+        "id": "funkadelic",
+        "label": "Funkadelic",
+        "sourceZone": "pop-soul-disco",
+        "pullZones": [
+          "rock-circuit"
+        ],
+        "pullStrength": 0.366,
+        "reason": "Connected to multiple zones."
       }
     },
     "antiPatterns": [
@@ -2039,20 +2110,50 @@
         "madonna",
         "david-bowie",
         "phil-collins",
-        "aretha-franklin"
+        "aretha-franklin",
+        "sam-cooke",
+        "otis-redding",
+        "james-brown",
+        "solomon-burke",
+        "the-temptations",
+        "the-four-tops",
+        "wilson-pickett",
+        "carla-thomas",
+        "booker-t-and-the-mgs",
+        "isaac-hayes",
+        "al-green",
+        "curtis-mayfield",
+        "sly-and-the-family-stone",
+        "parliament",
+        "funkadelic",
+        "marvin-gaye",
+        "smokey-robinson",
+        "martha-and-the-vandellas",
+        "gladys-knight-and-the-pips"
       ],
-      "edgesInternal": 23,
-      "edgesCrossing": 8,
+      "edgesInternal": 41,
+      "edgesCrossing": 15,
       "isolatedNodes": [],
       "underConnectedImportantNodes": [
         "stevie-wonder",
+        "james-brown",
+        "solomon-burke",
+        "parliament",
+        "funkadelic",
+        "sly-and-the-family-stone",
         "synth-pop"
       ],
       "bridgeNodes": [
         "aretha-franklin",
         "stevie-wonder",
         "david-bowie",
-        "phil-collins"
+        "phil-collins",
+        "sam-cooke",
+        "james-brown",
+        "solomon-burke",
+        "sly-and-the-family-stone",
+        "parliament",
+        "funkadelic"
       ],
       "topHubs": [
         "pop-music",
@@ -2064,20 +2165,21 @@
         "michael-jackson",
         "madonna",
         "david-bowie",
+        "sam-cooke",
         "synth-pop"
       ],
-      "overlapRisk": 0,
+      "overlapRisk": 22,
       "overflowNodes": [
         "aretha-franklin"
       ],
-      "eraMedian": 1969,
-      "averageDegree": 3.6,
+      "eraMedian": 1963,
+      "averageDegree": 2.85,
       "averageSourceQuality": 0.12,
       "approvedFactNodes": 0,
-      "needsAttentionScore": 18.88,
-      "nodeCount": 15,
+      "needsAttentionScore": 46.04,
+      "nodeCount": 34,
       "factCoverageRate": 0,
-      "degreeP25": 2,
+      "degreeP25": 1,
       "bridgePolicies": [
         "gospel-rnb-soul-rock"
       ],
@@ -2131,10 +2233,21 @@
         "alan-wilson",
         "gospel-music",
         "rhythm-and-blues",
-        "ray-charles"
+        "ray-charles",
+        "mahalia-jackson",
+        "ruth-brown",
+        "big-joe-turner",
+        "fats-domino",
+        "the-soul-stirrers",
+        "the-drifters",
+        "the-platters",
+        "jackie-wilson",
+        "etta-james",
+        "the-staple-singers",
+        "mavis-staples"
       ],
-      "edgesInternal": 55,
-      "edgesCrossing": 63,
+      "edgesInternal": 69,
+      "edgesCrossing": 65,
       "isolatedNodes": [
         "38-special",
         "alan-wilson",
@@ -2147,6 +2260,7 @@
         "elvis-presley",
         "fleetwood-mac",
         "cream",
+        "the-soul-stirrers",
         "angus-young",
         "robert-johnson",
         "swamp-rock"
@@ -2178,9 +2292,9 @@
         "electric-blues",
         "rock-and-roll",
         "blues-rock",
+        "gospel-music",
         "rhythm-and-blues",
         "stevie-ray-vaughan",
-        "gospel-music",
         "eric-clapton",
         "rockabilly",
         "southern-rock",
@@ -2195,7 +2309,7 @@
         "bob-dylan",
         "john-mayer"
       ],
-      "overlapRisk": 32,
+      "overlapRisk": 51,
       "overflowNodes": [
         "eric-clapton",
         "bb-king",
@@ -2217,13 +2331,13 @@
         "electric-blues",
         "santana-band"
       ],
-      "eraMedian": 1940,
-      "averageDegree": 3.84,
-      "averageSourceQuality": 0.508,
+      "eraMedian": 1950,
+      "averageDegree": 3.63,
+      "averageSourceQuality": 0.432,
       "approvedFactNodes": 14,
-      "needsAttentionScore": 61.26,
-      "nodeCount": 45,
-      "factCoverageRate": 0.311,
+      "needsAttentionScore": 72.64,
+      "nodeCount": 56,
+      "factCoverageRate": 0.25,
       "degreeP25": 2,
       "bridgePolicies": [
         "gospel-rnb-soul-rock",
@@ -2253,15 +2367,39 @@
         "swing-music",
         "bebop",
         "cool-jazz",
-        "modal-jazz"
+        "modal-jazz",
+        "dave-brubeck",
+        "bill-evans",
+        "herbie-hancock",
+        "dizzy-gillespie",
+        "thelonious-monk",
+        "ella-fitzgerald",
+        "sarah-vaughan",
+        "art-blakey",
+        "horace-silver",
+        "sonny-rollins",
+        "cannonball-adderley",
+        "benny-goodman",
+        "count-basie",
+        "billie-holiday",
+        "gil-evans",
+        "wayne-shorter",
+        "joe-zawinul",
+        "ron-carter",
+        "max-roach",
+        "clifford-brown",
+        "ornette-coleman",
+        "cecil-taylor",
+        "charles-mingus",
+        "mccoy-tyner",
+        "wynton-marsalis"
       ],
-      "edgesInternal": 22,
+      "edgesInternal": 55,
       "edgesCrossing": 13,
       "isolatedNodes": [],
       "underConnectedImportantNodes": [
         "wes-montgomery",
-        "django-reinhardt",
-        "cool-jazz"
+        "django-reinhardt"
       ],
       "bridgeNodes": [
         "jazz-fusion",
@@ -2276,23 +2414,24 @@
         "jazz-fusion",
         "jazz",
         "miles-davis",
+        "john-coltrane",
         "swing-music",
         "john-mclaughlin",
-        "john-coltrane",
         "bebop",
+        "cool-jazz",
         "modal-jazz",
-        "wes-montgomery",
-        "cool-jazz"
+        "herbie-hancock",
+        "wes-montgomery"
       ],
-      "overlapRisk": 2,
+      "overlapRisk": 26,
       "overflowNodes": [],
-      "eraMedian": 1926,
-      "averageDegree": 3.8,
-      "averageSourceQuality": 0.683,
+      "eraMedian": 1949,
+      "averageDegree": 3.08,
+      "averageSourceQuality": 0.331,
       "approvedFactNodes": 10,
-      "needsAttentionScore": 14.76,
-      "nodeCount": 15,
-      "factCoverageRate": 0.667,
+      "needsAttentionScore": 27.36,
+      "nodeCount": 40,
+      "factCoverageRate": 0.25,
       "degreeP25": 1,
       "bridgePolicies": [
         "western-swing-country-jazz",
@@ -2476,7 +2615,7 @@
         "andrew-watt"
       ],
       "edgesInternal": 13,
-      "edgesCrossing": 48,
+      "edgesCrossing": 52,
       "isolatedNodes": [
         "311",
         "999",
@@ -2540,7 +2679,7 @@
         "pop-rock",
         "shock-rock"
       ],
-      "overlapRisk": 13,
+      "overlapRisk": 14,
       "overflowNodes": [
         "prince",
         "dick-dale",
@@ -2564,10 +2703,10 @@
         "jeff-duncan"
       ],
       "eraMedian": 1969,
-      "averageDegree": 0.44,
+      "averageDegree": 0.46,
       "averageSourceQuality": 0.574,
       "approvedFactNodes": 8,
-      "needsAttentionScore": 87.85,
+      "needsAttentionScore": 88.13,
       "nodeCount": 169,
       "factCoverageRate": 0.047,
       "degreeP25": 0,
@@ -3287,19 +3426,45 @@
         "outlaw-country",
         "bob-wills",
         "buck-owens",
-        "waylon-jennings"
+        "waylon-jennings",
+        "ernest-tubb",
+        "lefty-frizzell",
+        "wynn-stewart",
+        "gram-parsons",
+        "emmylou-harris",
+        "the-flying-burrito-brothers",
+        "roy-acuff",
+        "deford-bailey",
+        "gene-autry",
+        "eddy-arnold",
+        "kitty-wells",
+        "webb-pierce",
+        "carl-smith",
+        "george-jones",
+        "loretta-lynn",
+        "tammy-wynette",
+        "bobby-bare",
+        "floyd-cramer",
+        "jim-reeves",
+        "hank-snow",
+        "kris-kristofferson",
+        "roger-miller",
+        "conway-twitty",
+        "don-gibson",
+        "charley-pride",
+        "ray-price",
+        "the-louvin-brothers",
+        "the-stanley-brothers"
       ],
-      "edgesInternal": 29,
-      "edgesCrossing": 23,
+      "edgesInternal": 65,
+      "edgesCrossing": 24,
       "isolatedNodes": [
-        "country-rock",
         "jerry-reed"
       ],
       "underConnectedImportantNodes": [
         "bob-wills",
         "johnny-cash",
-        "chet-atkins",
-        "country-rock"
+        "chet-atkins"
       ],
       "bridgeNodes": [
         "country",
@@ -3325,13 +3490,16 @@
         "merle-haggard",
         "honky-tonk",
         "bluegrass",
+        "buck-owens",
+        "emmylou-harris",
+        "country-rock",
         "the-carter-family",
         "outlaw-country",
-        "buck-owens",
         "waylon-jennings",
-        "country-rock"
+        "ernest-tubb",
+        "gram-parsons"
       ],
-      "overlapRisk": 6,
+      "overlapRisk": 28,
       "overflowNodes": [
         "country",
         "johnny-cash",
@@ -3339,14 +3507,14 @@
         "willie-nelson",
         "merle-haggard"
       ],
-      "eraMedian": 1937,
-      "averageDegree": 4.05,
-      "averageSourceQuality": 0.586,
+      "eraMedian": 1952,
+      "averageDegree": 3.21,
+      "averageSourceQuality": 0.314,
       "approvedFactNodes": 11,
-      "needsAttentionScore": 29.97,
-      "nodeCount": 20,
-      "factCoverageRate": 0.55,
-      "degreeP25": 2,
+      "needsAttentionScore": 38.23,
+      "nodeCount": 48,
+      "factCoverageRate": 0.229,
+      "degreeP25": 1,
       "bridgePolicies": [
         "western-swing-country-jazz",
         "country-roots-to-rock",
@@ -3675,8 +3843,8 @@
       "label": "Rock and roll",
       "type": "genre",
       "zone": "roots-blues",
-      "degree": 11,
-      "weightedDegree": 8.36,
+      "degree": 13,
+      "weightedDegree": 9.88,
       "sourceQuality": 0.5,
       "approvedFactCount": 1,
       "hubScore": 1,
@@ -4124,8 +4292,8 @@
       "label": "Country",
       "type": "genre",
       "zone": "country-roots",
-      "degree": 24,
-      "weightedDegree": 17.76,
+      "degree": 49,
+      "weightedDegree": 35.92,
       "sourceQuality": 0.5,
       "approvedFactCount": 1,
       "hubScore": 1,
@@ -4133,7 +4301,8 @@
       "secondaryZones": [
         "folk-country-vise",
         "roots-blues",
-        "guitar-workshop"
+        "guitar-workshop",
+        "pop-soul-disco"
       ],
       "bridgePolicies": [
         {
@@ -4185,11 +4354,11 @@
       "label": "Funk",
       "type": "genre",
       "zone": "rock-circuit",
-      "degree": 5,
-      "weightedDegree": 3.02,
+      "degree": 9,
+      "weightedDegree": 5.94,
       "sourceQuality": 0.5,
       "approvedFactCount": 0,
-      "hubScore": 0.625,
+      "hubScore": 1,
       "bridgeScore": 1,
       "secondaryZones": [
         "jazz",
@@ -4226,8 +4395,8 @@
       "label": "Jazz fusion",
       "type": "genre",
       "zone": "jazz",
-      "degree": 11,
-      "weightedDegree": 7,
+      "degree": 12,
+      "weightedDegree": 7.76,
       "sourceQuality": 0.5,
       "approvedFactCount": 0,
       "hubScore": 1,
@@ -4351,7 +4520,7 @@
         "blues",
         "folk"
       ],
-      "overlapCount": 0,
+      "overlapCount": 1,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
@@ -6762,11 +6931,12 @@
         }
       ],
       "linkedGenres": [],
-      "overlapCount": 2,
+      "overlapCount": 3,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
         "train-bridge-policy",
+        "spread-local-neighborhood",
         "source-history-fact"
       ]
     },
@@ -7066,11 +7236,11 @@
       "label": "Bluegrass",
       "type": "genre",
       "zone": "country-roots",
-      "degree": 3,
-      "weightedDegree": 2.24,
+      "degree": 4,
+      "weightedDegree": 2.96,
       "sourceQuality": 0.5,
       "approvedFactCount": 1,
-      "hubScore": 0.375,
+      "hubScore": 0.5,
       "bridgeScore": 0.72,
       "secondaryZones": [
         "folk-country-vise"
@@ -7092,7 +7262,7 @@
         }
       ],
       "linkedGenres": [],
-      "overlapCount": 0,
+      "overlapCount": 1,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
@@ -7145,8 +7315,8 @@
       "label": "Jazz",
       "type": "genre",
       "zone": "jazz",
-      "degree": 15,
-      "weightedDegree": 11.8,
+      "degree": 40,
+      "weightedDegree": 29.92,
       "sourceQuality": 0.5,
       "approvedFactCount": 1,
       "hubScore": 1,
@@ -7188,7 +7358,7 @@
         }
       ],
       "linkedGenres": [],
-      "overlapCount": 0,
+      "overlapCount": 1,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
@@ -7683,7 +7853,7 @@
         "blues-rock",
         "jazz-fusion"
       ],
-      "overlapCount": 1,
+      "overlapCount": 2,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
@@ -8153,7 +8323,7 @@
         "jazz",
         "jazz-fusion"
       ],
-      "overlapCount": 0,
+      "overlapCount": 1,
       "overflow": 0,
       "recommendedActions": [
         "expand-important-node",
@@ -8177,7 +8347,7 @@
       "linkedGenres": [
         "jazz"
       ],
-      "overlapCount": 0,
+      "overlapCount": 1,
       "overflow": 0,
       "recommendedActions": []
     },
@@ -8212,7 +8382,7 @@
       "linkedGenres": [
         "jazz"
       ],
-      "overlapCount": 0,
+      "overlapCount": 1,
       "overflow": 0,
       "recommendedActions": [
         "expand-important-node",
@@ -14110,7 +14280,7 @@
       "secondaryZones": [],
       "bridgePolicies": [],
       "linkedGenres": [],
-      "overlapCount": 0,
+      "overlapCount": 1,
       "overflow": 0,
       "recommendedActions": [
         "research-first-connections"
@@ -15408,7 +15578,7 @@
       "secondaryZones": [],
       "bridgePolicies": [],
       "linkedGenres": [],
-      "overlapCount": 0,
+      "overlapCount": 2,
       "overflow": 0,
       "recommendedActions": [
         "research-first-connections",
@@ -15483,11 +15653,11 @@
       "label": "country rock",
       "type": "genre",
       "zone": "country-roots",
-      "degree": 0,
-      "weightedDegree": 0,
+      "degree": 3,
+      "weightedDegree": 2.28,
       "sourceQuality": 0.5,
       "approvedFactCount": 0,
-      "hubScore": 0,
+      "hubScore": 0.375,
       "bridgeScore": 0.92,
       "secondaryZones": [
         "folk-country-vise",
@@ -15510,11 +15680,9 @@
         }
       ],
       "linkedGenres": [],
-      "overlapCount": 1,
+      "overlapCount": 2,
       "overflow": 0,
       "recommendedActions": [
-        "research-first-connections",
-        "expand-important-node",
         "preserve-cross-zone-bridge",
         "train-bridge-policy",
         "source-history-fact"
@@ -16486,7 +16654,7 @@
       "secondaryZones": [],
       "bridgePolicies": [],
       "linkedGenres": [],
-      "overlapCount": 0,
+      "overlapCount": 1,
       "overflow": 0,
       "recommendedActions": [
         "research-first-connections"
@@ -18055,7 +18223,7 @@
       "linkedGenres": [
         "jazz"
       ],
-      "overlapCount": 0,
+      "overlapCount": 1,
       "overflow": 0,
       "recommendedActions": []
     },
@@ -18077,9 +18245,11 @@
         "jazz",
         "swing-music"
       ],
-      "overlapCount": 0,
+      "overlapCount": 3,
       "overflow": 0,
-      "recommendedActions": []
+      "recommendedActions": [
+        "spread-local-neighborhood"
+      ]
     },
     "charlie-parker": {
       "id": "charlie-parker",
@@ -18107,12 +18277,12 @@
       "label": "Miles Davis",
       "type": "artist",
       "zone": "jazz",
-      "degree": 5,
-      "weightedDegree": 3.9,
+      "degree": 8,
+      "weightedDegree": 6.14,
       "era": 1926,
       "sourceQuality": 1,
       "approvedFactCount": 1,
-      "hubScore": 0.625,
+      "hubScore": 1,
       "bridgeScore": 0.52,
       "secondaryZones": [],
       "bridgePolicies": [],
@@ -18131,12 +18301,12 @@
       "label": "John Coltrane",
       "type": "artist",
       "zone": "jazz",
-      "degree": 3,
-      "weightedDegree": 2.34,
+      "degree": 4,
+      "weightedDegree": 3.06,
       "era": 1926,
       "sourceQuality": 1,
       "approvedFactCount": 1,
-      "hubScore": 0.375,
+      "hubScore": 0.5,
       "bridgeScore": 0.26,
       "secondaryZones": [],
       "bridgePolicies": [],
@@ -18144,7 +18314,7 @@
         "jazz",
         "modal-jazz"
       ],
-      "overlapCount": 0,
+      "overlapCount": 1,
       "overflow": 0,
       "recommendedActions": []
     },
@@ -18194,7 +18364,7 @@
         }
       ],
       "linkedGenres": [],
-      "overlapCount": 0,
+      "overlapCount": 1,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
@@ -18225,12 +18395,12 @@
       "label": "Jimmie Rodgers",
       "type": "artist",
       "zone": "country-roots",
-      "degree": 4,
-      "weightedDegree": 3.12,
+      "degree": 5,
+      "weightedDegree": 3.88,
       "era": 1933,
       "sourceQuality": 1,
       "approvedFactCount": 1,
-      "hubScore": 0.5,
+      "hubScore": 0.625,
       "bridgeScore": 1,
       "secondaryZones": [
         "roots-blues",
@@ -18315,7 +18485,7 @@
         "folk",
         "blues"
       ],
-      "overlapCount": 0,
+      "overlapCount": 1,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
@@ -18341,7 +18511,7 @@
         "country",
         "honky-tonk"
       ],
-      "overlapCount": 0,
+      "overlapCount": 1,
       "overflow": 0,
       "recommendedActions": []
     },
@@ -18392,12 +18562,12 @@
       "label": "Merle Haggard",
       "type": "artist",
       "zone": "country-roots",
-      "degree": 4,
-      "weightedDegree": 3.12,
+      "degree": 5,
+      "weightedDegree": 3.88,
       "era": 1937,
       "sourceQuality": 1,
       "approvedFactCount": 1,
-      "hubScore": 0.5,
+      "hubScore": 0.625,
       "bridgeScore": 1,
       "secondaryZones": [
         "jazz",
@@ -18452,11 +18622,11 @@
       "label": "Honky-tonk",
       "type": "genre",
       "zone": "country-roots",
-      "degree": 4,
-      "weightedDegree": 3.12,
+      "degree": 5,
+      "weightedDegree": 3.88,
       "sourceQuality": 1,
       "approvedFactCount": 1,
-      "hubScore": 0.5,
+      "hubScore": 0.625,
       "bridgeScore": 0,
       "secondaryZones": [],
       "bridgePolicies": [],
@@ -18751,8 +18921,8 @@
       "label": "Soul music",
       "type": "genre",
       "zone": "pop-soul-disco",
-      "degree": 9,
-      "weightedDegree": 7.02,
+      "degree": 25,
+      "weightedDegree": 18.7,
       "era": 1960,
       "sourceQuality": 0.12,
       "approvedFactCount": 0,
@@ -18763,7 +18933,7 @@
       ],
       "bridgePolicies": [],
       "linkedGenres": [],
-      "overlapCount": 0,
+      "overlapCount": 1,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
@@ -18834,7 +19004,7 @@
         "soul-music",
         "pop-music"
       ],
-      "overlapCount": 0,
+      "overlapCount": 1,
       "overflow": 0,
       "recommendedActions": [
         "improve-source-quality"
@@ -18857,7 +19027,7 @@
       "linkedGenres": [
         "soul-music"
       ],
-      "overlapCount": 0,
+      "overlapCount": 1,
       "overflow": 0,
       "recommendedActions": [
         "improve-source-quality"
@@ -18881,7 +19051,7 @@
         "disco",
         "pop-music"
       ],
-      "overlapCount": 0,
+      "overlapCount": 1,
       "overflow": 0,
       "recommendedActions": [
         "improve-source-quality"
@@ -18927,7 +19097,7 @@
       "linkedGenres": [
         "disco"
       ],
-      "overlapCount": 0,
+      "overlapCount": 1,
       "overflow": 0,
       "recommendedActions": [
         "improve-source-quality"
@@ -18953,7 +19123,7 @@
         "soul-music",
         "funk"
       ],
-      "overlapCount": 0,
+      "overlapCount": 1,
       "overflow": 0,
       "recommendedActions": [
         "expand-important-node",
@@ -18980,7 +19150,7 @@
         "pop-music",
         "disco"
       ],
-      "overlapCount": 0,
+      "overlapCount": 1,
       "overflow": 0,
       "recommendedActions": [
         "improve-source-quality"
@@ -19004,7 +19174,7 @@
         "pop-music",
         "synth-pop"
       ],
-      "overlapCount": 0,
+      "overlapCount": 2,
       "overflow": 0,
       "recommendedActions": [
         "improve-source-quality"
@@ -19071,12 +19241,12 @@
       "label": "Gospel music",
       "type": "genre",
       "zone": "roots-blues",
-      "degree": 6,
-      "weightedDegree": 4.68,
+      "degree": 11,
+      "weightedDegree": 8.36,
       "era": 1930,
       "sourceQuality": 0.12,
       "approvedFactCount": 0,
-      "hubScore": 0.75,
+      "hubScore": 1,
       "bridgeScore": 0.8,
       "secondaryZones": [
         "pop-soul-disco"
@@ -19111,8 +19281,8 @@
       "label": "Rhythm and blues",
       "type": "genre",
       "zone": "roots-blues",
-      "degree": 8,
-      "weightedDegree": 6.24,
+      "degree": 15,
+      "weightedDegree": 11.4,
       "era": 1940,
       "sourceQuality": 0.12,
       "approvedFactCount": 0,
@@ -19168,11 +19338,12 @@
         }
       ],
       "linkedGenres": [],
-      "overlapCount": 2,
+      "overlapCount": 4,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
         "train-bridge-policy",
+        "spread-local-neighborhood",
         "improve-source-quality",
         "source-history-fact"
       ]
@@ -19182,12 +19353,12 @@
       "label": "Cool jazz",
       "type": "genre",
       "zone": "jazz",
-      "degree": 2,
-      "weightedDegree": 1.56,
+      "degree": 3,
+      "weightedDegree": 2.32,
       "era": 1949,
       "sourceQuality": 0.12,
       "approvedFactCount": 0,
-      "hubScore": 0.25,
+      "hubScore": 0.375,
       "bridgeScore": 0,
       "secondaryZones": [],
       "bridgePolicies": [],
@@ -19195,7 +19366,6 @@
       "overlapCount": 1,
       "overflow": 0,
       "recommendedActions": [
-        "expand-important-node",
         "improve-source-quality",
         "source-history-fact"
       ]
@@ -19282,7 +19452,7 @@
         }
       ],
       "linkedGenres": [],
-      "overlapCount": 1,
+      "overlapCount": 2,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
@@ -19296,12 +19466,12 @@
       "label": "Bakersfield sound",
       "type": "genre",
       "zone": "country-roots",
-      "degree": 6,
-      "weightedDegree": 4.68,
+      "degree": 7,
+      "weightedDegree": 5.44,
       "era": 1950,
       "sourceQuality": 0.12,
       "approvedFactCount": 0,
-      "hubScore": 0.75,
+      "hubScore": 0.875,
       "bridgeScore": 0.89,
       "secondaryZones": [
         "roots-blues"
@@ -19336,7 +19506,7 @@
         }
       ],
       "linkedGenres": [],
-      "overlapCount": 0,
+      "overlapCount": 1,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
@@ -19581,12 +19751,12 @@
       "label": "Buck Owens",
       "type": "artist",
       "zone": "country-roots",
-      "degree": 3,
-      "weightedDegree": 2.34,
+      "degree": 4,
+      "weightedDegree": 3.1,
       "era": 1963,
       "sourceQuality": 0.12,
       "approvedFactCount": 0,
-      "hubScore": 0.375,
+      "hubScore": 0.5,
       "bridgeScore": 1,
       "secondaryZones": [
         "roots-blues"
@@ -19625,7 +19795,7 @@
         "western-swing",
         "rhythm-and-blues"
       ],
-      "overlapCount": 0,
+      "overlapCount": 1,
       "overflow": 0,
       "recommendedActions": [
         "preserve-cross-zone-bridge",
@@ -19657,10 +19827,1984 @@
       "recommendedActions": [
         "improve-source-quality"
       ]
+    },
+    "mahalia-jackson": {
+      "id": "mahalia-jackson",
+      "label": "Mahalia Jackson",
+      "type": "artist",
+      "zone": "roots-blues",
+      "degree": 1,
+      "weightedDegree": 0.76,
+      "era": 1930,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "gospel-music"
+      ],
+      "overlapCount": 1,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "sam-cooke": {
+      "id": "sam-cooke",
+      "label": "Sam Cooke",
+      "type": "artist",
+      "zone": "pop-soul-disco",
+      "degree": 3,
+      "weightedDegree": 2.24,
+      "era": 1950,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.375,
+      "bridgeScore": 0.58,
+      "secondaryZones": [
+        "roots-blues"
+      ],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "gospel-music",
+        "soul-music"
+      ],
+      "overlapCount": 2,
+      "overflow": 0,
+      "recommendedActions": [
+        "preserve-cross-zone-bridge",
+        "improve-source-quality",
+        "source-history-fact"
+      ]
+    },
+    "ruth-brown": {
+      "id": "ruth-brown",
+      "label": "Ruth Brown",
+      "type": "artist",
+      "zone": "roots-blues",
+      "degree": 1,
+      "weightedDegree": 0.76,
+      "era": 1950,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "rhythm-and-blues"
+      ],
+      "overlapCount": 3,
+      "overflow": 0,
+      "recommendedActions": [
+        "spread-local-neighborhood",
+        "improve-source-quality"
+      ]
+    },
+    "big-joe-turner": {
+      "id": "big-joe-turner",
+      "label": "Big Joe Turner",
+      "type": "artist",
+      "zone": "roots-blues",
+      "degree": 2,
+      "weightedDegree": 1.52,
+      "era": 1938,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0.26,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "rhythm-and-blues",
+        "rock-and-roll"
+      ],
+      "overlapCount": 2,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "fats-domino": {
+      "id": "fats-domino",
+      "label": "Fats Domino",
+      "type": "artist",
+      "zone": "roots-blues",
+      "degree": 2,
+      "weightedDegree": 1.52,
+      "era": 1949,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0.26,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "rhythm-and-blues",
+        "rock-and-roll"
+      ],
+      "overlapCount": 1,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "otis-redding": {
+      "id": "otis-redding",
+      "label": "Otis Redding",
+      "type": "artist",
+      "zone": "pop-soul-disco",
+      "degree": 2,
+      "weightedDegree": 1.48,
+      "era": 1962,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "soul-music"
+      ],
+      "overlapCount": 1,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "james-brown": {
+      "id": "james-brown",
+      "label": "James Brown",
+      "type": "artist",
+      "zone": "pop-soul-disco",
+      "degree": 2,
+      "weightedDegree": 1.52,
+      "era": 1956,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0.58,
+      "secondaryZones": [
+        "rock-circuit"
+      ],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "soul-music",
+        "funk"
+      ],
+      "overlapCount": 1,
+      "overflow": 0,
+      "recommendedActions": [
+        "expand-important-node",
+        "preserve-cross-zone-bridge",
+        "improve-source-quality",
+        "source-history-fact"
+      ]
+    },
+    "solomon-burke": {
+      "id": "solomon-burke",
+      "label": "Solomon Burke",
+      "type": "artist",
+      "zone": "pop-soul-disco",
+      "degree": 2,
+      "weightedDegree": 1.52,
+      "era": 1960,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0.58,
+      "secondaryZones": [
+        "country-roots"
+      ],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "soul-music",
+        "country"
+      ],
+      "overlapCount": 1,
+      "overflow": 0,
+      "recommendedActions": [
+        "expand-important-node",
+        "preserve-cross-zone-bridge",
+        "improve-source-quality",
+        "source-history-fact"
+      ]
+    },
+    "dave-brubeck": {
+      "id": "dave-brubeck",
+      "label": "Dave Brubeck",
+      "type": "artist",
+      "zone": "jazz",
+      "degree": 2,
+      "weightedDegree": 1.52,
+      "era": 1949,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0.26,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "jazz",
+        "cool-jazz"
+      ],
+      "overlapCount": 3,
+      "overflow": 0,
+      "recommendedActions": [
+        "spread-local-neighborhood",
+        "improve-source-quality"
+      ]
+    },
+    "bill-evans": {
+      "id": "bill-evans",
+      "label": "Bill Evans",
+      "type": "artist",
+      "zone": "jazz",
+      "degree": 2,
+      "weightedDegree": 1.52,
+      "era": 1956,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "jazz"
+      ],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "herbie-hancock": {
+      "id": "herbie-hancock",
+      "label": "Herbie Hancock",
+      "type": "artist",
+      "zone": "jazz",
+      "degree": 3,
+      "weightedDegree": 2.28,
+      "era": 1962,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.375,
+      "bridgeScore": 0.26,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "jazz",
+        "jazz-fusion"
+      ],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "ernest-tubb": {
+      "id": "ernest-tubb",
+      "label": "Ernest Tubb",
+      "type": "artist",
+      "zone": "country-roots",
+      "degree": 3,
+      "weightedDegree": 2.28,
+      "era": 1936,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.375,
+      "bridgeScore": 0.26,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "country",
+        "honky-tonk"
+      ],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "lefty-frizzell": {
+      "id": "lefty-frizzell",
+      "label": "Lefty Frizzell",
+      "type": "artist",
+      "zone": "country-roots",
+      "degree": 2,
+      "weightedDegree": 1.52,
+      "era": 1950,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "country"
+      ],
+      "overlapCount": 1,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "wynn-stewart": {
+      "id": "wynn-stewart",
+      "label": "Wynn Stewart",
+      "type": "artist",
+      "zone": "country-roots",
+      "degree": 2,
+      "weightedDegree": 1.52,
+      "era": 1954,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "bakersfield-sound"
+      ],
+      "overlapCount": 2,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "gram-parsons": {
+      "id": "gram-parsons",
+      "label": "Gram Parsons",
+      "type": "artist",
+      "zone": "country-roots",
+      "degree": 3,
+      "weightedDegree": 2.28,
+      "era": 1968,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.375,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "country-rock"
+      ],
+      "overlapCount": 1,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "emmylou-harris": {
+      "id": "emmylou-harris",
+      "label": "Emmylou Harris",
+      "type": "artist",
+      "zone": "country-roots",
+      "degree": 4,
+      "weightedDegree": 3,
+      "era": 1973,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.5,
+      "bridgeScore": 0.26,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "country",
+        "country-rock"
+      ],
+      "overlapCount": 1,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality",
+        "source-history-fact"
+      ]
+    },
+    "the-flying-burrito-brothers": {
+      "id": "the-flying-burrito-brothers",
+      "label": "The Flying Burrito Brothers",
+      "type": "band",
+      "zone": "country-roots",
+      "degree": 2,
+      "weightedDegree": 1.52,
+      "era": 1968,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "country-rock"
+      ],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "roy-acuff": {
+      "id": "roy-acuff",
+      "label": "Roy Acuff",
+      "type": "artist",
+      "zone": "country-roots",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1930,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "country"
+      ],
+      "overlapCount": 1,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "deford-bailey": {
+      "id": "deford-bailey",
+      "label": "DeFord Bailey",
+      "type": "artist",
+      "zone": "country-roots",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1925,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "country"
+      ],
+      "overlapCount": 1,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "gene-autry": {
+      "id": "gene-autry",
+      "label": "Gene Autry",
+      "type": "artist",
+      "zone": "country-roots",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1930,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "country"
+      ],
+      "overlapCount": 2,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "eddy-arnold": {
+      "id": "eddy-arnold",
+      "label": "Eddy Arnold",
+      "type": "artist",
+      "zone": "country-roots",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1944,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "country"
+      ],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "kitty-wells": {
+      "id": "kitty-wells",
+      "label": "Kitty Wells",
+      "type": "artist",
+      "zone": "country-roots",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1952,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "country"
+      ],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "webb-pierce": {
+      "id": "webb-pierce",
+      "label": "Webb Pierce",
+      "type": "artist",
+      "zone": "country-roots",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1952,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "country"
+      ],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "carl-smith": {
+      "id": "carl-smith",
+      "label": "Carl Smith",
+      "type": "artist",
+      "zone": "country-roots",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1951,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "country"
+      ],
+      "overlapCount": 1,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "george-jones": {
+      "id": "george-jones",
+      "label": "George Jones",
+      "type": "artist",
+      "zone": "country-roots",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1954,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "country"
+      ],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "loretta-lynn": {
+      "id": "loretta-lynn",
+      "label": "Loretta Lynn",
+      "type": "artist",
+      "zone": "country-roots",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1960,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "country"
+      ],
+      "overlapCount": 1,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "tammy-wynette": {
+      "id": "tammy-wynette",
+      "label": "Tammy Wynette",
+      "type": "artist",
+      "zone": "country-roots",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1966,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "country"
+      ],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "bobby-bare": {
+      "id": "bobby-bare",
+      "label": "Bobby Bare",
+      "type": "artist",
+      "zone": "country-roots",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1962,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "country"
+      ],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "floyd-cramer": {
+      "id": "floyd-cramer",
+      "label": "Floyd Cramer",
+      "type": "artist",
+      "zone": "country-roots",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1955,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "country"
+      ],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "jim-reeves": {
+      "id": "jim-reeves",
+      "label": "Jim Reeves",
+      "type": "artist",
+      "zone": "country-roots",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1953,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "country"
+      ],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "hank-snow": {
+      "id": "hank-snow",
+      "label": "Hank Snow",
+      "type": "artist",
+      "zone": "country-roots",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1936,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "country"
+      ],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "kris-kristofferson": {
+      "id": "kris-kristofferson",
+      "label": "Kris Kristofferson",
+      "type": "artist",
+      "zone": "country-roots",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1966,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "country"
+      ],
+      "overlapCount": 2,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "roger-miller": {
+      "id": "roger-miller",
+      "label": "Roger Miller",
+      "type": "artist",
+      "zone": "country-roots",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1957,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "country"
+      ],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "conway-twitty": {
+      "id": "conway-twitty",
+      "label": "Conway Twitty",
+      "type": "artist",
+      "zone": "country-roots",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1958,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "country"
+      ],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "don-gibson": {
+      "id": "don-gibson",
+      "label": "Don Gibson",
+      "type": "artist",
+      "zone": "country-roots",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1956,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "country"
+      ],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "charley-pride": {
+      "id": "charley-pride",
+      "label": "Charley Pride",
+      "type": "artist",
+      "zone": "country-roots",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1965,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "country"
+      ],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "ray-price": {
+      "id": "ray-price",
+      "label": "Ray Price",
+      "type": "artist",
+      "zone": "country-roots",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1950,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "country"
+      ],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "the-louvin-brothers": {
+      "id": "the-louvin-brothers",
+      "label": "The Louvin Brothers",
+      "type": "band",
+      "zone": "country-roots",
+      "degree": 2,
+      "weightedDegree": 1.44,
+      "era": 1947,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "country"
+      ],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "the-stanley-brothers": {
+      "id": "the-stanley-brothers",
+      "label": "The Stanley Brothers",
+      "type": "band",
+      "zone": "country-roots",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1946,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "bluegrass"
+      ],
+      "overlapCount": 1,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "dizzy-gillespie": {
+      "id": "dizzy-gillespie",
+      "label": "Dizzy Gillespie",
+      "type": "artist",
+      "zone": "jazz",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1937,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "jazz"
+      ],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "thelonious-monk": {
+      "id": "thelonious-monk",
+      "label": "Thelonious Monk",
+      "type": "artist",
+      "zone": "jazz",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1941,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "jazz"
+      ],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "ella-fitzgerald": {
+      "id": "ella-fitzgerald",
+      "label": "Ella Fitzgerald",
+      "type": "artist",
+      "zone": "jazz",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1935,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "jazz"
+      ],
+      "overlapCount": 1,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "sarah-vaughan": {
+      "id": "sarah-vaughan",
+      "label": "Sarah Vaughan",
+      "type": "artist",
+      "zone": "jazz",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1943,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "jazz"
+      ],
+      "overlapCount": 1,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "art-blakey": {
+      "id": "art-blakey",
+      "label": "Art Blakey",
+      "type": "artist",
+      "zone": "jazz",
+      "degree": 2,
+      "weightedDegree": 1.44,
+      "era": 1942,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "jazz"
+      ],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "horace-silver": {
+      "id": "horace-silver",
+      "label": "Horace Silver",
+      "type": "artist",
+      "zone": "jazz",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1950,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "jazz"
+      ],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "sonny-rollins": {
+      "id": "sonny-rollins",
+      "label": "Sonny Rollins",
+      "type": "artist",
+      "zone": "jazz",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1949,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "jazz"
+      ],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "cannonball-adderley": {
+      "id": "cannonball-adderley",
+      "label": "Cannonball Adderley",
+      "type": "artist",
+      "zone": "jazz",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1955,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "jazz"
+      ],
+      "overlapCount": 1,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "benny-goodman": {
+      "id": "benny-goodman",
+      "label": "Benny Goodman",
+      "type": "artist",
+      "zone": "jazz",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1934,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "jazz"
+      ],
+      "overlapCount": 1,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "count-basie": {
+      "id": "count-basie",
+      "label": "Count Basie",
+      "type": "artist",
+      "zone": "jazz",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1935,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "jazz"
+      ],
+      "overlapCount": 1,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "billie-holiday": {
+      "id": "billie-holiday",
+      "label": "Billie Holiday",
+      "type": "artist",
+      "zone": "jazz",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1933,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "jazz"
+      ],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "gil-evans": {
+      "id": "gil-evans",
+      "label": "Gil Evans",
+      "type": "artist",
+      "zone": "jazz",
+      "degree": 2,
+      "weightedDegree": 1.44,
+      "era": 1947,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "jazz"
+      ],
+      "overlapCount": 2,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "wayne-shorter": {
+      "id": "wayne-shorter",
+      "label": "Wayne Shorter",
+      "type": "artist",
+      "zone": "jazz",
+      "degree": 2,
+      "weightedDegree": 1.44,
+      "era": 1959,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "jazz"
+      ],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "joe-zawinul": {
+      "id": "joe-zawinul",
+      "label": "Joe Zawinul",
+      "type": "artist",
+      "zone": "jazz",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1959,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "jazz"
+      ],
+      "overlapCount": 1,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "ron-carter": {
+      "id": "ron-carter",
+      "label": "Ron Carter",
+      "type": "artist",
+      "zone": "jazz",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1959,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "jazz"
+      ],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "max-roach": {
+      "id": "max-roach",
+      "label": "Max Roach",
+      "type": "artist",
+      "zone": "jazz",
+      "degree": 2,
+      "weightedDegree": 1.44,
+      "era": 1942,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "jazz"
+      ],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "clifford-brown": {
+      "id": "clifford-brown",
+      "label": "Clifford Brown",
+      "type": "artist",
+      "zone": "jazz",
+      "degree": 2,
+      "weightedDegree": 1.44,
+      "era": 1953,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "jazz"
+      ],
+      "overlapCount": 1,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "ornette-coleman": {
+      "id": "ornette-coleman",
+      "label": "Ornette Coleman",
+      "type": "artist",
+      "zone": "jazz",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1958,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "jazz"
+      ],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "cecil-taylor": {
+      "id": "cecil-taylor",
+      "label": "Cecil Taylor",
+      "type": "artist",
+      "zone": "jazz",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1956,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "jazz"
+      ],
+      "overlapCount": 2,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "charles-mingus": {
+      "id": "charles-mingus",
+      "label": "Charles Mingus",
+      "type": "artist",
+      "zone": "jazz",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1943,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "jazz"
+      ],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "mccoy-tyner": {
+      "id": "mccoy-tyner",
+      "label": "McCoy Tyner",
+      "type": "artist",
+      "zone": "jazz",
+      "degree": 2,
+      "weightedDegree": 1.44,
+      "era": 1959,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "jazz"
+      ],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "wynton-marsalis": {
+      "id": "wynton-marsalis",
+      "label": "Wynton Marsalis",
+      "type": "artist",
+      "zone": "jazz",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1980,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "jazz"
+      ],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "the-soul-stirrers": {
+      "id": "the-soul-stirrers",
+      "label": "The Soul Stirrers",
+      "type": "band",
+      "zone": "roots-blues",
+      "degree": 2,
+      "weightedDegree": 1.44,
+      "era": 1930,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0.45,
+      "secondaryZones": [
+        "pop-soul-disco"
+      ],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "gospel-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "expand-important-node",
+        "preserve-cross-zone-bridge",
+        "improve-source-quality",
+        "source-history-fact"
+      ]
+    },
+    "the-temptations": {
+      "id": "the-temptations",
+      "label": "The Temptations",
+      "type": "band",
+      "zone": "pop-soul-disco",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1961,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "soul-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "the-four-tops": {
+      "id": "the-four-tops",
+      "label": "The Four Tops",
+      "type": "band",
+      "zone": "pop-soul-disco",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1956,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "soul-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "the-drifters": {
+      "id": "the-drifters",
+      "label": "The Drifters",
+      "type": "band",
+      "zone": "roots-blues",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1953,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "rhythm-and-blues"
+      ],
+      "overlapCount": 1,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "the-platters": {
+      "id": "the-platters",
+      "label": "The Platters",
+      "type": "band",
+      "zone": "roots-blues",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1953,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "rhythm-and-blues"
+      ],
+      "overlapCount": 1,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "wilson-pickett": {
+      "id": "wilson-pickett",
+      "label": "Wilson Pickett",
+      "type": "artist",
+      "zone": "pop-soul-disco",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1962,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "soul-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "jackie-wilson": {
+      "id": "jackie-wilson",
+      "label": "Jackie Wilson",
+      "type": "artist",
+      "zone": "roots-blues",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1957,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "rhythm-and-blues"
+      ],
+      "overlapCount": 1,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "etta-james": {
+      "id": "etta-james",
+      "label": "Etta James",
+      "type": "artist",
+      "zone": "roots-blues",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1955,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "rhythm-and-blues"
+      ],
+      "overlapCount": 1,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "carla-thomas": {
+      "id": "carla-thomas",
+      "label": "Carla Thomas",
+      "type": "artist",
+      "zone": "pop-soul-disco",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1960,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "soul-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "booker-t-and-the-mgs": {
+      "id": "booker-t-and-the-mgs",
+      "label": "Booker T. & the M.G.'s",
+      "type": "band",
+      "zone": "pop-soul-disco",
+      "degree": 2,
+      "weightedDegree": 1.44,
+      "era": 1962,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "soul-music"
+      ],
+      "overlapCount": 3,
+      "overflow": 0,
+      "recommendedActions": [
+        "spread-local-neighborhood",
+        "improve-source-quality"
+      ]
+    },
+    "isaac-hayes": {
+      "id": "isaac-hayes",
+      "label": "Isaac Hayes",
+      "type": "artist",
+      "zone": "pop-soul-disco",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1962,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "soul-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "al-green": {
+      "id": "al-green",
+      "label": "Al Green",
+      "type": "artist",
+      "zone": "pop-soul-disco",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1967,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "soul-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "curtis-mayfield": {
+      "id": "curtis-mayfield",
+      "label": "Curtis Mayfield",
+      "type": "artist",
+      "zone": "pop-soul-disco",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1958,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "soul-music"
+      ],
+      "overlapCount": 1,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "sly-and-the-family-stone": {
+      "id": "sly-and-the-family-stone",
+      "label": "Sly and the Family Stone",
+      "type": "band",
+      "zone": "pop-soul-disco",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1966,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.45,
+      "secondaryZones": [
+        "rock-circuit"
+      ],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "funk"
+      ],
+      "overlapCount": 2,
+      "overflow": 0,
+      "recommendedActions": [
+        "expand-important-node",
+        "preserve-cross-zone-bridge",
+        "improve-source-quality",
+        "source-history-fact"
+      ]
+    },
+    "parliament": {
+      "id": "parliament",
+      "label": "Parliament",
+      "type": "band",
+      "zone": "pop-soul-disco",
+      "degree": 2,
+      "weightedDegree": 1.44,
+      "era": 1970,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0.45,
+      "secondaryZones": [
+        "rock-circuit"
+      ],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "funk"
+      ],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "expand-important-node",
+        "preserve-cross-zone-bridge",
+        "improve-source-quality",
+        "source-history-fact"
+      ]
+    },
+    "funkadelic": {
+      "id": "funkadelic",
+      "label": "Funkadelic",
+      "type": "band",
+      "zone": "pop-soul-disco",
+      "degree": 2,
+      "weightedDegree": 1.44,
+      "era": 1968,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0.45,
+      "secondaryZones": [
+        "rock-circuit"
+      ],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "funk"
+      ],
+      "overlapCount": 1,
+      "overflow": 0,
+      "recommendedActions": [
+        "expand-important-node",
+        "preserve-cross-zone-bridge",
+        "improve-source-quality",
+        "source-history-fact"
+      ]
+    },
+    "the-staple-singers": {
+      "id": "the-staple-singers",
+      "label": "The Staple Singers",
+      "type": "band",
+      "zone": "roots-blues",
+      "degree": 2,
+      "weightedDegree": 1.44,
+      "era": 1956,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "gospel-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "marvin-gaye": {
+      "id": "marvin-gaye",
+      "label": "Marvin Gaye",
+      "type": "artist",
+      "zone": "pop-soul-disco",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1961,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "soul-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "smokey-robinson": {
+      "id": "smokey-robinson",
+      "label": "Smokey Robinson",
+      "type": "artist",
+      "zone": "pop-soul-disco",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1957,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "soul-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "martha-and-the-vandellas": {
+      "id": "martha-and-the-vandellas",
+      "label": "Martha and the Vandellas",
+      "type": "band",
+      "zone": "pop-soul-disco",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1962,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "soul-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "gladys-knight-and-the-pips": {
+      "id": "gladys-knight-and-the-pips",
+      "label": "Gladys Knight & the Pips",
+      "type": "band",
+      "zone": "pop-soul-disco",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1959,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "soul-music"
+      ],
+      "overlapCount": 1,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
+    },
+    "mavis-staples": {
+      "id": "mavis-staples",
+      "label": "Mavis Staples",
+      "type": "artist",
+      "zone": "roots-blues",
+      "degree": 2,
+      "weightedDegree": 1.44,
+      "era": 1956,
+      "sourceQuality": 0.12,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "gospel-music"
+      ],
+      "overlapCount": 1,
+      "overflow": 0,
+      "recommendedActions": [
+        "improve-source-quality"
+      ]
     }
   },
   "issues": {
     "overlapRisks": [
+      {
+        "source": "john-coltrane",
+        "target": "count-basie",
+        "sourceLabel": "John Coltrane",
+        "targetLabel": "Count Basie",
+        "zone": "jazz",
+        "distance": 7,
+        "severity": 0.926
+      },
+      {
+        "source": "duke-ellington",
+        "target": "dave-brubeck",
+        "sourceLabel": "Duke Ellington",
+        "targetLabel": "Dave Brubeck",
+        "zone": "jazz",
+        "distance": 16,
+        "severity": 0.839
+      },
       {
         "source": "country-rock",
         "target": "waylon-jennings",
@@ -19669,6 +21813,114 @@
         "zone": "country-roots",
         "distance": 21,
         "severity": 0.831
+      },
+      {
+        "source": "swing-music",
+        "target": "joe-zawinul",
+        "sourceLabel": "Swing music",
+        "targetLabel": "Joe Zawinul",
+        "zone": "jazz",
+        "distance": 23,
+        "severity": 0.811
+      },
+      {
+        "source": "wes-montgomery",
+        "target": "benny-goodman",
+        "sourceLabel": "Wes Montgomery",
+        "targetLabel": "Benny Goodman",
+        "zone": "jazz",
+        "distance": 20,
+        "severity": 0.797
+      },
+      {
+        "source": "django-reinhardt",
+        "target": "clifford-brown",
+        "sourceLabel": "Django Reinhardt",
+        "targetLabel": "Clifford Brown",
+        "zone": "jazz",
+        "distance": 24,
+        "severity": 0.757
+      },
+      {
+        "source": "jeff-beck",
+        "target": "the-drifters",
+        "sourceLabel": "Jeff Beck",
+        "targetLabel": "The Drifters",
+        "zone": "roots-blues",
+        "distance": 26,
+        "severity": 0.757
+      },
+      {
+        "source": "lead-belly",
+        "target": "etta-james",
+        "sourceLabel": "Lead Belly",
+        "targetLabel": "Etta James",
+        "zone": "roots-blues",
+        "distance": 25,
+        "severity": 0.749
+      },
+      {
+        "source": "bee-gees",
+        "target": "funkadelic",
+        "sourceLabel": "Bee Gees",
+        "targetLabel": "Funkadelic",
+        "zone": "pop-soul-disco",
+        "distance": 30,
+        "severity": 0.748
+      },
+      {
+        "source": "southern-rock",
+        "target": "ruth-brown",
+        "sourceLabel": "Southern rock",
+        "targetLabel": "Ruth Brown",
+        "zone": "roots-blues",
+        "distance": 33,
+        "severity": 0.736
+      },
+      {
+        "source": "mahalia-jackson",
+        "target": "mavis-staples",
+        "sourceLabel": "Mahalia Jackson",
+        "targetLabel": "Mavis Staples",
+        "zone": "roots-blues",
+        "distance": 30,
+        "severity": 0.69
+      },
+      {
+        "source": "madonna",
+        "target": "sam-cooke",
+        "sourceLabel": "Madonna",
+        "targetLabel": "Sam Cooke",
+        "zone": "pop-soul-disco",
+        "distance": 33,
+        "severity": 0.663
+      },
+      {
+        "source": "the-supremes",
+        "target": "james-brown",
+        "sourceLabel": "The Supremes",
+        "targetLabel": "James Brown",
+        "zone": "pop-soul-disco",
+        "distance": 36,
+        "severity": 0.663
+      },
+      {
+        "source": "swamp-rock",
+        "target": "jackie-wilson",
+        "sourceLabel": "swamp rock",
+        "targetLabel": "Jackie Wilson",
+        "zone": "roots-blues",
+        "distance": 47,
+        "severity": 0.617
+      },
+      {
+        "source": "wynn-stewart",
+        "target": "carl-smith",
+        "sourceLabel": "Wynn Stewart",
+        "targetLabel": "Carl Smith",
+        "zone": "country-roots",
+        "distance": 38,
+        "severity": 0.613
       },
       {
         "source": "bill-monroe",
@@ -19689,6 +21941,24 @@
         "severity": 0.572
       },
       {
+        "source": "emmylou-harris",
+        "target": "deford-bailey",
+        "sourceLabel": "Emmylou Harris",
+        "targetLabel": "DeFord Bailey",
+        "zone": "country-roots",
+        "distance": 44,
+        "severity": 0.553
+      },
+      {
+        "source": "louis-armstrong",
+        "target": "ella-fitzgerald",
+        "sourceLabel": "Louis Armstrong",
+        "targetLabel": "Ella Fitzgerald",
+        "zone": "jazz",
+        "distance": 44,
+        "severity": 0.551
+      },
+      {
         "source": "bebop",
         "target": "cool-jazz",
         "sourceLabel": "Bebop",
@@ -19696,6 +21966,15 @@
         "zone": "jazz",
         "distance": 76,
         "severity": 0.489
+      },
+      {
+        "source": "madonna",
+        "target": "booker-t-and-the-mgs",
+        "sourceLabel": "Madonna",
+        "targetLabel": "Booker T. & the M.G.'s",
+        "zone": "pop-soul-disco",
+        "distance": 60,
+        "severity": 0.442
       },
       {
         "source": "southern-rock",
@@ -19707,6 +21986,33 @@
         "severity": 0.438
       },
       {
+        "source": "gram-parsons",
+        "target": "gene-autry",
+        "sourceLabel": "Gram Parsons",
+        "targetLabel": "Gene Autry",
+        "zone": "country-roots",
+        "distance": 58,
+        "severity": 0.411
+      },
+      {
+        "source": "soul-music",
+        "target": "otis-redding",
+        "sourceLabel": "Soul music",
+        "targetLabel": "Otis Redding",
+        "zone": "pop-soul-disco",
+        "distance": 74,
+        "severity": 0.399
+      },
+      {
+        "source": "bakersfield-sound",
+        "target": "kris-kristofferson",
+        "sourceLabel": "Bakersfield sound",
+        "targetLabel": "Kris Kristofferson",
+        "zone": "country-roots",
+        "distance": 75,
+        "severity": 0.398
+      },
+      {
         "source": "linkin-park",
         "target": "ray-charles",
         "sourceLabel": "Linkin Park",
@@ -19714,6 +22020,42 @@
         "zone": "cross-zone",
         "distance": 45,
         "severity": 0.396
+      },
+      {
+        "source": "donna-summer",
+        "target": "sly-and-the-family-stone",
+        "sourceLabel": "Donna Summer",
+        "targetLabel": "Sly and the Family Stone",
+        "zone": "pop-soul-disco",
+        "distance": 69,
+        "severity": 0.357
+      },
+      {
+        "source": "rhythm-and-blues",
+        "target": "big-joe-turner",
+        "sourceLabel": "Rhythm and blues",
+        "targetLabel": "Big Joe Turner",
+        "zone": "roots-blues",
+        "distance": 82,
+        "severity": 0.335
+      },
+      {
+        "source": "buck-owens",
+        "target": "loretta-lynn",
+        "sourceLabel": "Buck Owens",
+        "targetLabel": "Loretta Lynn",
+        "zone": "country-roots",
+        "distance": 66,
+        "severity": 0.323
+      },
+      {
+        "source": "stevie-wonder",
+        "target": "curtis-mayfield",
+        "sourceLabel": "Stevie Wonder",
+        "targetLabel": "Curtis Mayfield",
+        "zone": "pop-soul-disco",
+        "distance": 69,
+        "severity": 0.299
       },
       {
         "source": "pain",
@@ -19734,6 +22076,51 @@
         "severity": 0.275
       },
       {
+        "source": "rhythm-and-blues",
+        "target": "ruth-brown",
+        "sourceLabel": "Rhythm and blues",
+        "targetLabel": "Ruth Brown",
+        "zone": "roots-blues",
+        "distance": 91,
+        "severity": 0.263
+      },
+      {
+        "source": "jazz",
+        "target": "cannonball-adderley",
+        "sourceLabel": "Jazz",
+        "targetLabel": "Cannonball Adderley",
+        "zone": "jazz",
+        "distance": 95,
+        "severity": 0.232
+      },
+      {
+        "source": "swamp-rock",
+        "target": "big-joe-turner",
+        "sourceLabel": "swamp rock",
+        "targetLabel": "Big Joe Turner",
+        "zone": "roots-blues",
+        "distance": 97,
+        "severity": 0.216
+      },
+      {
+        "source": "jerry-reed",
+        "target": "wynn-stewart",
+        "sourceLabel": "Jerry Reed",
+        "targetLabel": "Wynn Stewart",
+        "zone": "country-roots",
+        "distance": 77,
+        "severity": 0.214
+      },
+      {
+        "source": "joe-pass",
+        "target": "sarah-vaughan",
+        "sourceLabel": "Joe Pass",
+        "targetLabel": "Sarah Vaughan",
+        "zone": "jazz",
+        "distance": 79,
+        "severity": 0.198
+      },
+      {
         "source": "bob-dylan",
         "target": "cream",
         "sourceLabel": "Bob Dylan",
@@ -19741,6 +22128,33 @@
         "zone": "roots-blues",
         "distance": 87,
         "severity": 0.194
+      },
+      {
+        "source": "sam-cooke",
+        "target": "booker-t-and-the-mgs",
+        "sourceLabel": "Sam Cooke",
+        "targetLabel": "Booker T. & the M.G.'s",
+        "zone": "pop-soul-disco",
+        "distance": 88,
+        "severity": 0.188
+      },
+      {
+        "source": "duke-ellington",
+        "target": "gil-evans",
+        "sourceLabel": "Duke Ellington",
+        "targetLabel": "Gil Evans",
+        "zone": "jazz",
+        "distance": 80,
+        "severity": 0.185
+      },
+      {
+        "source": "the-carter-family",
+        "target": "lefty-frizzell",
+        "sourceLabel": "The Carter Family",
+        "targetLabel": "Lefty Frizzell",
+        "zone": "country-roots",
+        "distance": 89,
+        "severity": 0.18
       },
       {
         "source": "blues-rock",
@@ -19752,6 +22166,15 @@
         "severity": 0.163
       },
       {
+        "source": "duke-ellington",
+        "target": "cecil-taylor",
+        "sourceLabel": "Duke Ellington",
+        "targetLabel": "Cecil Taylor",
+        "zone": "jazz",
+        "distance": 83,
+        "severity": 0.15
+      },
+      {
         "source": "eric-clapton",
         "target": "lindemann",
         "sourceLabel": "Eric Clapton",
@@ -19759,6 +22182,15 @@
         "zone": "cross-zone",
         "distance": 64,
         "severity": 0.148
+      },
+      {
+        "source": "western-swing",
+        "target": "the-stanley-brothers",
+        "sourceLabel": "Western swing",
+        "targetLabel": "The Stanley Brothers",
+        "zone": "country-roots",
+        "distance": 115,
+        "severity": 0.144
       },
       {
         "source": "stray-cats",
@@ -19788,6 +22220,24 @@
         "severity": 0.139
       },
       {
+        "source": "dave-brubeck",
+        "target": "gil-evans",
+        "sourceLabel": "Dave Brubeck",
+        "targetLabel": "Gil Evans",
+        "zone": "jazz",
+        "distance": 84,
+        "severity": 0.138
+      },
+      {
+        "source": "bluegrass",
+        "target": "roy-acuff",
+        "sourceLabel": "Bluegrass",
+        "targetLabel": "Roy Acuff",
+        "zone": "country-roots",
+        "distance": 107,
+        "severity": 0.133
+      },
+      {
         "source": "stevie-ray-vaughan",
         "target": "brian-setzer",
         "sourceLabel": "Stevie Ray Vaughan",
@@ -19795,6 +22245,15 @@
         "zone": "roots-blues",
         "distance": 85,
         "severity": 0.132
+      },
+      {
+        "source": "dave-murray",
+        "target": "ruth-brown",
+        "sourceLabel": "Dave Murray",
+        "targetLabel": "Ruth Brown",
+        "zone": "cross-zone",
+        "distance": 59,
+        "severity": 0.131
       },
       {
         "source": "rock-and-roll",
@@ -19822,6 +22281,33 @@
         "zone": "cross-zone",
         "distance": 66,
         "severity": 0.123
+      },
+      {
+        "source": "fats-domino",
+        "target": "the-platters",
+        "sourceLabel": "Fats Domino",
+        "targetLabel": "The Platters",
+        "zone": "roots-blues",
+        "distance": 95,
+        "severity": 0.12
+      },
+      {
+        "source": "dave-brubeck",
+        "target": "cecil-taylor",
+        "sourceLabel": "Dave Brubeck",
+        "targetLabel": "Cecil Taylor",
+        "zone": "jazz",
+        "distance": 87,
+        "severity": 0.111
+      },
+      {
+        "source": "michael-jackson",
+        "target": "gladys-knight-and-the-pips",
+        "sourceLabel": "Michael Jackson",
+        "targetLabel": "Gladys Knight & the Pips",
+        "zone": "pop-soul-disco",
+        "distance": 96,
+        "severity": 0.11
       },
       {
         "source": "bb-king",
@@ -19860,6 +22346,24 @@
         "severity": 0.091
       },
       {
+        "source": "solomon-burke",
+        "target": "booker-t-and-the-mgs",
+        "sourceLabel": "Solomon Burke",
+        "targetLabel": "Booker T. & the M.G.'s",
+        "zone": "pop-soul-disco",
+        "distance": 98,
+        "severity": 0.09
+      },
+      {
+        "source": "country-rock",
+        "target": "kris-kristofferson",
+        "sourceLabel": "country rock",
+        "targetLabel": "Kris Kristofferson",
+        "zone": "country-roots",
+        "distance": 115,
+        "severity": 0.07
+      },
+      {
         "source": "fleetwood-mac",
         "target": "arion",
         "sourceLabel": "Fleetwood Mac",
@@ -19867,6 +22371,15 @@
         "zone": "cross-zone",
         "distance": 77,
         "severity": 0.066
+      },
+      {
+        "source": "the-jackson-5",
+        "target": "sly-and-the-family-stone",
+        "sourceLabel": "The Jackson 5",
+        "targetLabel": "Sly and the Family Stone",
+        "zone": "pop-soul-disco",
+        "distance": 111,
+        "severity": 0.059
       },
       {
         "source": "brian-setzer",
@@ -19939,12 +22452,20 @@
         "zone": "country-roots",
         "distance": 123,
         "severity": 0.006
+      },
+      {
+        "source": "hank-williams",
+        "target": "gene-autry",
+        "sourceLabel": "Hank Williams",
+        "targetLabel": "Gene Autry",
+        "zone": "country-roots",
+        "distance": 98,
+        "severity": 0.002
       }
     ],
     "isolatedNodes": [
       "public-enemy",
       "misfits",
-      "country-rock",
       "ramones",
       "sex-pistols",
       "g-funk",
@@ -20021,7 +22542,8 @@
       "norther",
       "pain",
       "nightwish",
-      "aqua"
+      "aqua",
+      "tony-kakko"
     ],
     "underConnectedImportantNodes": [
       "black-sabbath",
@@ -20033,12 +22555,13 @@
       "chet-atkins",
       "elvis-presley",
       "misfits",
-      "country-rock",
       "ramones",
       "sex-pistols",
       "ibanez-jem",
       "edvard-grieg",
       "stevie-wonder",
+      "james-brown",
+      "solomon-burke",
       "fleetwood-mac",
       "cream",
       "gibson-j45",
@@ -20055,7 +22578,11 @@
       "taylor-814ce",
       "guild-f-512",
       "danelectro-3021",
+      "the-soul-stirrers",
+      "parliament",
+      "funkadelic",
       "van-halen",
+      "sly-and-the-family-stone",
       "mark-knopfler",
       "tony-iommi",
       "brian-may",
@@ -20075,7 +22602,6 @@
       "prs",
       "jackson",
       "synth-pop",
-      "cool-jazz",
       "grunge",
       "shoegaze",
       "doom-metal",
@@ -20099,10 +22625,7 @@
       "swamp-rock",
       "roots-rock",
       "gangsta-rap",
-      "west-coast-hip-hop",
-      "alternative-metal",
-      "shock-rock",
-      "glam-metal"
+      "west-coast-hip-hop"
     ]
   },
   "recommendedResearchRequests": [
@@ -20112,7 +22635,7 @@
       "status": "queued",
       "priority": 90,
       "scope": "artist_network",
-      "createdAt": "2026-09-30T11:22:24.469Z",
+      "createdAt": "2026-09-30T13:54:22.917Z",
       "instructions": "Expand and clarify the HARD ROCK / METAL part of Music History Map. Current organization signal: hard rock, metal, riff culture, virtuoso guitar and heavier scenes. Prioritize documented music-related connections that help layout organization: associated genres, shared members, collaborations, influences, instruments and clear bridges to neighboring zones. Active bridge policies for this zone: rock-to-metal, hip-hop-crossovers, yardbirds-guitar-lineage. Prefer candidates that strengthen those transitions without turning category pages into nodes. Use albums, songs and releases only as context for edges. Do not create release/song nodes. Only propose node types allowed by MHM: band, guitarist, artist, guitar, guitar_brand and genre.",
       "seeds": [
         {
@@ -20160,7 +22683,7 @@
       "status": "queued",
       "priority": 90,
       "scope": "artist_network",
-      "createdAt": "2026-09-30T11:22:24.469Z",
+      "createdAt": "2026-09-30T13:54:22.917Z",
       "instructions": "Expand and clarify the PUNK / ALTERNATIVE part of Music History Map. Current organization signal: punk, post-punk, alternative, indie, hardcore and adjacent scenes. Prioritize documented music-related connections that help layout organization: associated genres, shared members, collaborations, influences, instruments and clear bridges to neighboring zones. Active bridge policies for this zone: punk-to-rock, hip-hop-crossovers, jaguar-alternative-use. Prefer candidates that strengthen those transitions without turning category pages into nodes. Use albums, songs and releases only as context for edges. Do not create release/song nodes. Only propose node types allowed by MHM: band, guitarist, artist, guitar, guitar_brand and genre.",
       "seeds": [
         {
@@ -20208,7 +22731,7 @@
       "status": "queued",
       "priority": 90,
       "scope": "guitar_history",
-      "createdAt": "2026-09-30T11:22:24.469Z",
+      "createdAt": "2026-09-30T13:54:22.917Z",
       "instructions": "Expand and clarify the GUITAR WORKSHOP part of Music History Map. Current organization signal: guitar models, guitar brands and instrument history. Prioritize documented music-related connections that help layout organization: associated genres, shared members, collaborations, influences, instruments and clear bridges to neighboring zones. Active bridge policies for this zone: esquire-country-use, jaguar-alternative-use, rickenbacker-recording-use, jem-virtuoso-design. Prefer candidates that strengthen those transitions without turning category pages into nodes. Use albums, songs and releases only as context for edges. Do not create release/song nodes. Only propose node types allowed by MHM: band, guitarist, artist, guitar, guitar_brand and genre.",
       "seeds": [
         {
@@ -20256,7 +22779,7 @@
       "status": "queued",
       "priority": 90,
       "scope": "artist_network",
-      "createdAt": "2026-09-30T11:22:24.469Z",
+      "createdAt": "2026-09-30T13:54:22.917Z",
       "instructions": "Expand and clarify the ROCK CIRCUIT part of Music History Map. Current organization signal: rock, classic rock, glam, funk and broad band history. Prioritize documented music-related connections that help layout organization: associated genres, shared members, collaborations, influences, instruments and clear bridges to neighboring zones. Active bridge policies for this zone: gospel-rnb-soul-rock, rock-to-metal, punk-to-rock, hip-hop-crossovers, jazz-to-fusion, country-roots-to-rock, yardbirds-guitar-lineage, rickenbacker-recording-use, jazz-fusion-guitar. Prefer candidates that strengthen those transitions without turning category pages into nodes. Use albums, songs and releases only as context for edges. Do not create release/song nodes. Only propose node types allowed by MHM: band, guitarist, artist, guitar, guitar_brand and genre.",
       "seeds": [
         {
@@ -20284,11 +22807,11 @@
           "kind": "guitarist"
         },
         {
-          "name": "Rock",
+          "name": "Funk",
           "kind": "genre"
         },
         {
-          "name": "Funk",
+          "name": "Rock",
           "kind": "genre"
         }
       ],
@@ -20296,55 +22819,55 @@
         "maxSeeds": 8,
         "maxCandidates": 70
       },
-      "notes": "Generated by brain:organize. Needs-attention score 87.85. Active bridge policies: gospel-rnb-soul-rock, rock-to-metal, punk-to-rock, hip-hop-crossovers, jazz-to-fusion, country-roots-to-rock, yardbirds-guitar-lineage, rickenbacker-recording-use, jazz-fusion-guitar."
+      "notes": "Generated by brain:organize. Needs-attention score 88.13. Active bridge policies: gospel-rnb-soul-rock, rock-to-metal, punk-to-rock, hip-hop-crossovers, jazz-to-fusion, country-roots-to-rock, yardbirds-guitar-lineage, rickenbacker-recording-use, jazz-fusion-guitar."
     },
     {
-      "id": "organization-hip-hop-rap-20260930",
-      "title": "Organize HIP-HOP / RAP frontier",
+      "id": "organization-roots-blues-20260930",
+      "title": "Organize ROOTS / BLUES frontier",
       "status": "queued",
       "priority": 90,
       "scope": "artist_network",
-      "createdAt": "2026-09-30T11:22:24.469Z",
-      "instructions": "Expand and clarify the HIP-HOP / RAP part of Music History Map. Current organization signal: hip-hop, rap, G-funk, West Coast hip-hop and crossover links. Prioritize documented music-related connections that help layout organization: associated genres, shared members, collaborations, influences, instruments and clear bridges to neighboring zones. Active bridge policies for this zone: hip-hop-crossovers. Prefer candidates that strengthen those transitions without turning category pages into nodes. Use albums, songs and releases only as context for edges. Do not create release/song nodes. Only propose node types allowed by MHM: band, guitarist, artist, guitar, guitar_brand and genre.",
+      "createdAt": "2026-09-30T13:54:22.917Z",
+      "instructions": "Expand and clarify the ROOTS / BLUES part of Music History Map. Current organization signal: roots, blues, gospel, rhythm and blues, early rock and Southern guitar lineage. Prioritize documented music-related connections that help layout organization: associated genres, shared members, collaborations, influences, instruments and clear bridges to neighboring zones. Active bridge policies for this zone: gospel-rnb-soul-rock, western-swing-country-jazz, jazz-to-fusion, country-roots-to-rock, yardbirds-guitar-lineage, jazz-fusion-guitar. Prefer candidates that strengthen those transitions without turning category pages into nodes. Use albums, songs and releases only as context for edges. Do not create release/song nodes. Only propose node types allowed by MHM: band, guitarist, artist, guitar, guitar_brand and genre.",
       "seeds": [
         {
-          "name": "G-funk",
+          "name": "swamp rock",
           "kind": "genre"
         },
         {
-          "name": "Gangsta rap",
+          "name": "Rhythm and blues",
           "kind": "genre"
         },
         {
-          "name": "West Coast hip-hop",
+          "name": "Elvis Presley",
+          "kind": "artist"
+        },
+        {
+          "name": "Angus Young",
+          "kind": "guitarist"
+        },
+        {
+          "name": "Robert Johnson",
+          "kind": "guitarist"
+        },
+        {
+          "name": "Gospel music",
           "kind": "genre"
         },
         {
-          "name": "Public Enemy",
+          "name": "The Soul Stirrers",
           "kind": "band"
         },
         {
-          "name": "Babyface",
-          "kind": "artist"
-        },
-        {
-          "name": "Dr. Dre",
-          "kind": "artist"
-        },
-        {
-          "name": "Drake",
-          "kind": "artist"
-        },
-        {
-          "name": "Eazy-E",
-          "kind": "artist"
+          "name": "Ben King",
+          "kind": "guitarist"
         }
       ],
       "limits": {
         "maxSeeds": 8,
         "maxCandidates": 70
       },
-      "notes": "Generated by brain:organize. Needs-attention score 69.61. Active bridge policies: hip-hop-crossovers."
+      "notes": "Generated by brain:organize. Needs-attention score 72.64. Active bridge policies: gospel-rnb-soul-rock, western-swing-country-jazz, jazz-to-fusion, country-roots-to-rock, yardbirds-guitar-lineage, jazz-fusion-guitar."
     }
   ]
 }

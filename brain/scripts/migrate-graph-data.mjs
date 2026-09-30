@@ -6,6 +6,8 @@ import { extraEdges, extraNodes } from "./graph-expansion.mjs";
 import { curatedHistoryLinks } from "./curated-history-links.mjs";
 import { curatedEraLinks, curatedEraNodes } from "./curated-era-expansion.mjs";
 import { curatedGenreLinks, curatedGenreNodes } from "./curated-genre-bridges.mjs";
+import { reviewedBridgeLinks, reviewedBridgeNodes } from "./curated-reviewed-bridges.mjs";
+import { genreDepthLinks, genreDepthNodes } from "./curated-genre-depth.mjs";
 import { organizeGraphLayout } from "./organize-graph-layout.mjs";
 
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
@@ -284,7 +286,7 @@ for (const node of promotionData.nodes) {
   nodeIds.add(node.id);
 }
 
-for (const node of [...curatedEraNodes, ...curatedGenreNodes]) {
+for (const node of [...curatedEraNodes, ...curatedGenreNodes, ...reviewedBridgeNodes, ...genreDepthNodes]) {
   if (nodeIds.has(node.id)) throw new Error(`Curated node already exists: ${node.id}`);
   nodes.push({ ...node, sources: normalizeSources(node.sources) });
   nodeIds.add(node.id);
@@ -368,7 +370,7 @@ for (const release of releaseNodes) {
   }
 }
 
-for (const edge of [...curatedEraLinks, ...curatedGenreLinks]) {
+for (const edge of [...curatedEraLinks, ...curatedGenreLinks, ...reviewedBridgeLinks, ...genreDepthLinks]) {
   appendCuratedEdge(edge);
 }
 

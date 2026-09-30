@@ -5,8 +5,8 @@ type: genre
 zone: hip-hop-rap
 roles: [genre]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: [west coast hip-hop]
 curatorTags: [west coast hip-hop, hip-hop, california rap]
 secondaryZones: []

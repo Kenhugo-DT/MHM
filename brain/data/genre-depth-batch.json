@@ -1,0 +1,22 @@
+{
+  "nodeIds": [
+    "roy-acuff", "deford-bailey", "gene-autry", "eddy-arnold", "kitty-wells", "webb-pierce",
+    "carl-smith", "george-jones", "loretta-lynn", "tammy-wynette", "bobby-bare",
+    "floyd-cramer", "jim-reeves", "hank-snow", "kris-kristofferson", "roger-miller",
+    "conway-twitty", "don-gibson", "charley-pride", "ray-price", "the-louvin-brothers",
+    "the-stanley-brothers",
+    "dizzy-gillespie", "thelonious-monk", "ella-fitzgerald", "sarah-vaughan", "art-blakey",
+    "horace-silver", "sonny-rollins", "cannonball-adderley", "benny-goodman", "count-basie",
+    "billie-holiday", "gil-evans", "wayne-shorter", "joe-zawinul", "ron-carter", "max-roach",
+    "clifford-brown", "ornette-coleman", "cecil-taylor", "charles-mingus", "mccoy-tyner",
+    "wynton-marsalis",
+    "the-soul-stirrers", "the-temptations", "the-four-tops", "the-drifters", "the-platters",
+    "wilson-pickett", "jackie-wilson", "etta-james", "carla-thomas", "booker-t-and-the-mgs",
+    "isaac-hayes", "al-green", "curtis-mayfield", "sly-and-the-family-stone", "parliament",
+    "funkadelic", "the-staple-singers", "marvin-gaye", "smokey-robinson",
+    "martha-and-the-vandellas", "gladys-knight-and-the-pips", "mavis-staples"
+  ],
+  "edgePrefix": "genre-depth-",
+  "expectedEdges": 75,
+  "allowedZones": ["country-roots", "jazz", "pop-soul-disco", "roots-blues"]
+}

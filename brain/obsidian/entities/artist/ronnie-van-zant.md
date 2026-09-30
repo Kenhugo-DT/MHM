@@ -5,8 +5,8 @@ type: artist
 zone: roots-blues
 roles: [artist]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: [southern rock, rock]
 curatorTags: [southern rock, artist, rock]
 secondaryZones: []

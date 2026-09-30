@@ -5,8 +5,8 @@ type: guitarist
 zone: country-roots
 roles: [guitarist, artist]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: [country]
 curatorTags: [Country, country, guitarist]
 secondaryZones: []

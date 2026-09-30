@@ -5,8 +5,8 @@ type: artist
 zone: folk-country-vise
 roles: [artist]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: [folk]
 curatorTags: [Folk, Norwegian vise, folk]
 secondaryZones: []

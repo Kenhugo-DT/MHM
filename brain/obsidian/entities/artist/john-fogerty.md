@@ -5,8 +5,8 @@ type: artist
 zone: rock-circuit
 roles: [artist]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: [swamp rock, rock]
 curatorTags: [swamp rock, rock, artist]
 secondaryZones: []

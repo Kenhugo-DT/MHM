@@ -26,6 +26,7 @@ Singer and guitarist whose bright electric band sound became central to Bakersfi
 - [[bakersfield-sound|Bakersfield sound]] - Bakersfield anchor (Owens's band made the bright, amplified Bakersfield sound widely heard.)
 - [[rhythm-and-blues|Rhythm and blues]] - R&B repertoire (Owens played R&B material in Bakersfield dance halls; this is a repertoire bridge, not a claim that he was an R&B artist.)
 - [[western-swing|Western swing]] - western swing background (Owens learned western swing as a working Southwestern dance-band musician.)
+- [[wynn-stewart|Wynn Stewart]] - early Bakersfield work (Owens worked as a sideman for Stewart before his solo career; this is a work-history link.)
 
 ## Sources
 

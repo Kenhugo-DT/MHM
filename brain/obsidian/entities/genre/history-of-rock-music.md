@@ -5,8 +5,8 @@ type: genre
 zone: psychedelia-prog
 roles: [genre]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: [History of rock music]
 curatorTags: [hard rock, psychedelic rock, progressive]
 secondaryZones: []

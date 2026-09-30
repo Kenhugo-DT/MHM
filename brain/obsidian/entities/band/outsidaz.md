@@ -5,8 +5,8 @@ type: band
 zone: hip-hop-rap
 roles: [band]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: [hip-hop]
 curatorTags: [east coast hip-hop, rap collective, eminem connection]
 secondaryZones: []

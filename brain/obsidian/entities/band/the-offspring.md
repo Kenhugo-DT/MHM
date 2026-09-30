@@ -5,8 +5,8 @@ type: band
 zone: punk-alt
 roles: [band]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: [punk rock, skate punk]
 curatorTags: [skate punk, pop-punk, california punk]
 secondaryZones: []

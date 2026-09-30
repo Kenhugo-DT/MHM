@@ -5,8 +5,8 @@ type: genre
 zone: roots-blues
 roles: [genre]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: [Electric blues]
 curatorTags: [blues, blues rock, electric blues]
 secondaryZones: []

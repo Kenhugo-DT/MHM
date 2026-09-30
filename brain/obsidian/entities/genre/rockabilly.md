@@ -5,8 +5,8 @@ type: genre
 zone: roots-blues
 roles: [genre]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: [Rockabilly]
 curatorTags: [blues, rock and roll, roots rock]
 secondaryZones: []

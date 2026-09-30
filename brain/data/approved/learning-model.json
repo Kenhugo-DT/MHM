@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-30T11:22:15.049Z",
+  "generatedAt": "2026-09-30T13:54:19.134Z",
   "source": "graph + Obsidian frontmatter + curator feedback",
   "samples": {
-    "graphNodes": 622,
-    "graphEdges": 863,
-    "mapConnections": 431,
-    "obsidianNotes": 624,
+    "graphNodes": 705,
+    "graphEdges": 971,
+    "mapConnections": 539,
+    "obsidianNotes": 707,
     "feedbackNodes": 32,
     "feedbackZones": 6,
     "feedbackRules": 4,
@@ -19,19 +19,19 @@
     "approvedFactNodes": 115,
     "approvedFactNotes": 10,
     "pinnedNotes": 0,
-    "notesWithEra": 37,
+    "notesWithEra": 120,
     "notesWithPrimaryGenres": 484,
-    "notesWithCuratorTags": 575
+    "notesWithCuratorTags": 658
   },
   "zones": {
     "roots-blues": {
-      "nodeCount": 45,
+      "nodeCount": 56,
       "pinnedCount": 0,
       "centroid": {
-        "x": -998,
-        "y": -63
+        "x": -1067,
+        "y": -198
       },
-      "eraMedian": 1940,
+      "eraMedian": 1950,
       "learnedTerms": [
         {
           "term": "blues rock",
@@ -39,7 +39,7 @@
         },
         {
           "term": "blues",
-          "weight": 186
+          "weight": 193
         },
         {
           "term": "electric blues",
@@ -63,7 +63,7 @@
         },
         {
           "term": "rock and roll",
-          "weight": 28
+          "weight": 30
         },
         {
           "term": "hard rock",
@@ -75,7 +75,11 @@
         },
         {
           "term": "jazz",
-          "weight": 24
+          "weight": 25
+        },
+        {
+          "term": "rhythm and blues",
+          "weight": 25
         },
         {
           "term": "roots",
@@ -90,6 +94,14 @@
           "weight": 22
         },
         {
+          "term": "gospel music",
+          "weight": 20
+        },
+        {
+          "term": "rhythm and blues lineage",
+          "weight": 20
+        },
+        {
           "term": "rock circuit",
           "weight": 20
         },
@@ -102,16 +114,12 @@
           "weight": 18
         },
         {
-          "term": "rhythm and blues",
-          "weight": 18
-        },
-        {
-          "term": "gospel music",
-          "weight": 16
-        },
-        {
           "term": "roots rock",
           "weight": 16
+        },
+        {
+          "term": "gospel music lineage",
+          "weight": 15
         },
         {
           "term": "jeff beck",
@@ -122,6 +130,10 @@
           "weight": 14
         },
         {
+          "term": "gospel",
+          "weight": 12
+        },
+        {
           "term": "john mclaughlin",
           "weight": 12
         },
@@ -130,11 +142,19 @@
           "weight": 12
         },
         {
+          "term": "rhythm",
+          "weight": 11
+        },
+        {
+          "term": "soul",
+          "weight": 11
+        },
+        {
           "term": "pop rock",
           "weight": 10
         },
         {
-          "term": "soul",
+          "term": "roll",
           "weight": 10
         },
         {
@@ -146,15 +166,7 @@
           "weight": 8
         },
         {
-          "term": "gospel",
-          "weight": 8
-        },
-        {
           "term": "ray charles",
-          "weight": 8
-        },
-        {
-          "term": "roll",
           "weight": 8
         },
         {
@@ -171,6 +183,10 @@
         },
         {
           "term": "king",
+          "weight": 7
+        },
+        {
+          "term": "lineage",
           "weight": 7
         },
         {
@@ -258,6 +274,38 @@
           "weight": 6
         },
         {
+          "term": "blues to rock",
+          "weight": 5
+        },
+        {
+          "term": "early r b",
+          "weight": 5
+        },
+        {
+          "term": "gospel anchor",
+          "weight": 5
+        },
+        {
+          "term": "jazz swing crossover",
+          "weight": 5
+        },
+        {
+          "term": "new orleans",
+          "weight": 5
+        },
+        {
+          "term": "r b to rock",
+          "weight": 5
+        },
+        {
+          "term": "recording history",
+          "weight": 5
+        },
+        {
+          "term": "sacred music",
+          "weight": 5
+        },
+        {
           "term": "1950s",
           "weight": 4
         },
@@ -303,54 +351,6 @@
         },
         {
           "term": "connect the yardbirds and cream through verified membership with blues guitar as the musical center hall of fame inductions are career context not new collaborations",
-          "weight": 4
-        },
-        {
-          "term": "country recordings",
-          "weight": 4
-        },
-        {
-          "term": "cream member",
-          "weight": 4
-        },
-        {
-          "term": "documented membership",
-          "weight": 4
-        },
-        {
-          "term": "electric fusion guitar",
-          "weight": 4
-        },
-        {
-          "term": "fleetwood",
-          "weight": 4
-        },
-        {
-          "term": "fleetwood mac",
-          "weight": 4
-        },
-        {
-          "term": "folk country vise",
-          "weight": 4
-        },
-        {
-          "term": "guitarist lineage",
-          "weight": 4
-        },
-        {
-          "term": "hard rock metal",
-          "weight": 4
-        },
-        {
-          "term": "influence",
-          "weight": 4
-        },
-        {
-          "term": "keep gospel a distinct sacred tradition its documented influence on r b and soul is a historical bridge not evidence that the genres are interchangeable",
-          "weight": 4
-        },
-        {
-          "term": "keep the band in british blues rock clapton beck and page are documented former members whose later paths explain its wide bridge role membership does not imply a shared later sound",
           "weight": 4
         }
       ]
@@ -1902,17 +1902,21 @@
       ]
     },
     "country-roots": {
-      "nodeCount": 20,
+      "nodeCount": 48,
       "pinnedCount": 0,
       "centroid": {
-        "x": -2271,
+        "x": -2636,
         "y": 809
       },
-      "eraMedian": 1937,
+      "eraMedian": 1952,
       "learnedTerms": [
         {
           "term": "country",
-          "weight": 106
+          "weight": 132
+        },
+        {
+          "term": "country lineage",
+          "weight": 105
         },
         {
           "term": "folk",
@@ -1923,20 +1927,24 @@
           "weight": 28
         },
         {
-          "term": "bluegrass",
-          "weight": 21
-        },
-        {
-          "term": "bakersfield sound",
-          "weight": 20
-        },
-        {
           "term": "country rock",
-          "weight": 20
+          "weight": 27
         },
         {
           "term": "honky tonk",
-          "weight": 20
+          "weight": 25
+        },
+        {
+          "term": "lineage",
+          "weight": 23
+        },
+        {
+          "term": "bluegrass",
+          "weight": 22
+        },
+        {
+          "term": "bakersfield sound",
+          "weight": 21
         },
         {
           "term": "early country",
@@ -1987,11 +1995,31 @@
           "weight": 8
         },
         {
+          "term": "bakersfield",
+          "weight": 7
+        },
+        {
+          "term": "bridge",
+          "weight": 7
+        },
+        {
           "term": "folk country vise",
           "weight": 7
         },
         {
+          "term": "honky",
+          "weight": 7
+        },
+        {
           "term": "rock circuit",
+          "weight": 7
+        },
+        {
+          "term": "sound",
+          "weight": 7
+        },
+        {
+          "term": "tonk",
           "weight": 7
         },
         {
@@ -2011,15 +2039,7 @@
           "weight": 6
         },
         {
-          "term": "bakersfield",
-          "weight": 6
-        },
-        {
           "term": "bakersfield anchor",
-          "weight": 6
-        },
-        {
-          "term": "bridge",
           "weight": 6
         },
         {
@@ -2035,7 +2055,7 @@
           "weight": 6
         },
         {
-          "term": "honky",
+          "term": "gram parsons",
           "weight": 6
         },
         {
@@ -2051,19 +2071,11 @@
           "weight": 6
         },
         {
-          "term": "sound",
-          "weight": 6
-        },
-        {
           "term": "southern rock",
           "weight": 6
         },
         {
           "term": "swing",
-          "weight": 6
-        },
-        {
-          "term": "tonk",
           "weight": 6
         },
         {
@@ -2079,7 +2091,47 @@
           "weight": 6
         },
         {
+          "term": "bakersfield precursor",
+          "weight": 5
+        },
+        {
           "term": "bill monroe",
+          "weight": 5
+        },
+        {
+          "term": "bluegrass lineage",
+          "weight": 5
+        },
+        {
+          "term": "byrds to burritos",
+          "weight": 5
+        },
+        {
+          "term": "country rock band",
+          "weight": 5
+        },
+        {
+          "term": "country rock bridge",
+          "weight": 5
+        },
+        {
+          "term": "country vocal style",
+          "weight": 5
+        },
+        {
+          "term": "gram parsons collaboration",
+          "weight": 5
+        },
+        {
+          "term": "jimmie rodgers lineage",
+          "weight": 5
+        },
+        {
+          "term": "merle haggard influence",
+          "weight": 5
+        },
+        {
+          "term": "regional scene",
           "weight": 5
         },
         {
@@ -2177,77 +2229,33 @@
         {
           "term": "western swing background",
           "weight": 4
-        },
-        {
-          "term": "wills anchors western swing in country while his documented jazz and blues ingredients justify outward connections",
-          "weight": 4
-        },
-        {
-          "term": "keep early country bluegrass and honky tonk legible as a tradition with documented paths into folk blues rockabilly and rock",
-          "weight": 3
-        },
-        {
-          "term": "luther perkins documented esquire use behind johnny cash connects a specific guitar to early country cash is context not the player",
-          "weight": 3
-        },
-        {
-          "term": "prioritize early country history keep this area spacious and let well sourced country folk blues and rockabilly bridges cross its boundary",
-          "weight": 3
-        },
-        {
-          "term": "western swing combines country dance music with jazz and blues bakersfield inherits selected elements keep the country center legible while these documented anchors lean outward",
-          "weight": 3
-        },
-        {
-          "term": "1970s",
-          "weight": 2
-        },
-        {
-          "term": "acoustic",
-          "weight": 2
-        },
-        {
-          "term": "atkins",
-          "weight": 2
-        },
-        {
-          "term": "autonomy",
-          "weight": 2
-        },
-        {
-          "term": "bob",
-          "weight": 2
-        },
-        {
-          "term": "buck",
-          "weight": 2
-        },
-        {
-          "term": "carter",
-          "weight": 2
-        },
-        {
-          "term": "cash",
-          "weight": 2
         }
       ]
     },
     "jazz": {
-      "nodeCount": 15,
+      "nodeCount": 40,
       "pinnedCount": 0,
       "centroid": {
-        "x": -1398,
-        "y": -1153
+        "x": -1483,
+        "y": -1228
       },
-      "eraMedian": 1926,
+      "eraMedian": 1949,
       "learnedTerms": [
         {
+          "term": "jazz lineage",
+          "weight": 110
+        },
+        {
           "term": "jazz",
-          "weight": 61
+          "weight": 86
         },
         {
           "term": "jazz fusion",
-          "weight": 42
+          "weight": 43
+        },
+        {
+          "term": "lineage",
+          "weight": 22
         },
         {
           "term": "improvisation",
@@ -2260,6 +2268,10 @@
         {
           "term": "john mclaughlin",
           "weight": 13
+        },
+        {
+          "term": "cool jazz",
+          "weight": 12
         },
         {
           "term": "bebop",
@@ -2306,7 +2318,7 @@
           "weight": 8
         },
         {
-          "term": "cool jazz",
+          "term": "fusion",
           "weight": 7
         },
         {
@@ -2334,10 +2346,6 @@
           "weight": 6
         },
         {
-          "term": "fusion",
-          "weight": 6
-        },
-        {
           "term": "jazz roots",
           "weight": 6
         },
@@ -2362,11 +2370,39 @@
           "weight": 6
         },
         {
+          "term": "electric piano",
+          "weight": 5
+        },
+        {
+          "term": "jazz piano",
+          "weight": 5
+        },
+        {
+          "term": "jazz to funk bridge",
+          "weight": 5
+        },
+        {
+          "term": "modal",
+          "weight": 5
+        },
+        {
+          "term": "modal era collaboration",
+          "weight": 5
+        },
+        {
           "term": "progressive rock",
           "weight": 5
         },
         {
+          "term": "rhythmic experiment",
+          "weight": 5
+        },
+        {
           "term": "birth of the cool is a specific davis led jazz phase keep it within jazz and distinct from his later modal and electric phases",
+          "weight": 4
+        },
+        {
+          "term": "cool",
           "weight": 4
         },
         {
@@ -2386,16 +2422,8 @@
           "weight": 4
         },
         {
-          "term": "modal",
-          "weight": 4
-        },
-        {
           "term": "modal jazz describes an improvisational approach not a claim that all davis or coltrane recordings use modes",
           "weight": 4
-        },
-        {
-          "term": "cool",
-          "weight": 3
         },
         {
           "term": "davis",
@@ -2411,6 +2439,10 @@
         },
         {
           "term": "jazz needs a readable center and historically supported transitions keep early jazz and jazz guitar together while allowing fusion and crossover artists to drift toward rock and prog",
+          "weight": 3
+        },
+        {
+          "term": "joe",
           "weight": 3
         },
         {
@@ -2454,6 +2486,10 @@
           "weight": 2
         },
         {
+          "term": "evans",
+          "weight": 2
+        },
+        {
           "term": "form",
           "weight": 2
         },
@@ -2463,10 +2499,6 @@
         },
         {
           "term": "hybrid form",
-          "weight": 2
-        },
-        {
-          "term": "joe",
           "weight": 2
         },
         {
@@ -2502,6 +2534,10 @@
           "weight": 2
         },
         {
+          "term": "piano",
+          "weight": 2
+        },
+        {
           "term": "reinhardt",
           "weight": 2
         },
@@ -2518,47 +2554,11 @@
           "weight": 2
         },
         {
+          "term": "adderley",
+          "weight": 1
+        },
+        {
           "term": "armstrong",
-          "weight": 1
-        },
-        {
-          "term": "charlie",
-          "weight": 1
-        },
-        {
-          "term": "charlie parker",
-          "weight": 1
-        },
-        {
-          "term": "coltrane",
-          "weight": 1
-        },
-        {
-          "term": "duke",
-          "weight": 1
-        },
-        {
-          "term": "duke ellington",
-          "weight": 1
-        },
-        {
-          "term": "ellington",
-          "weight": 1
-        },
-        {
-          "term": "john coltrane",
-          "weight": 1
-        },
-        {
-          "term": "louis",
-          "weight": 1
-        },
-        {
-          "term": "louis armstrong",
-          "weight": 1
-        },
-        {
-          "term": "mclaughlin",
           "weight": 1
         }
       ]
@@ -3365,14 +3365,34 @@
       ]
     },
     "pop-soul-disco": {
-      "nodeCount": 15,
+      "nodeCount": 34,
       "pinnedCount": 0,
       "centroid": {
-        "x": -748,
-        "y": 2445
+        "x": -625,
+        "y": 2426
       },
-      "eraMedian": 1969,
+      "eraMedian": 1963,
       "learnedTerms": [
+        {
+          "term": "soul music lineage",
+          "weight": 60
+        },
+        {
+          "term": "soul",
+          "weight": 27
+        },
+        {
+          "term": "soul music",
+          "weight": 23
+        },
+        {
+          "term": "funk lineage",
+          "weight": 15
+        },
+        {
+          "term": "lineage",
+          "weight": 15
+        },
         {
           "term": "rhythm and blues",
           "weight": 12
@@ -3382,24 +3402,16 @@
           "weight": 11
         },
         {
-          "term": "soul",
-          "weight": 11
-        },
-        {
           "term": "pop music",
           "weight": 10
         },
         {
+          "term": "gospel music",
+          "weight": 9
+        },
+        {
           "term": "aretha franklin",
           "weight": 8
-        },
-        {
-          "term": "gospel music",
-          "weight": 8
-        },
-        {
-          "term": "soul music",
-          "weight": 7
         },
         {
           "term": "gospel voice",
@@ -3416,6 +3428,42 @@
         {
           "term": "soul crossover",
           "weight": 6
+        },
+        {
+          "term": "country influenced soul",
+          "weight": 5
+        },
+        {
+          "term": "cross zone bridge",
+          "weight": 5
+        },
+        {
+          "term": "funk",
+          "weight": 5
+        },
+        {
+          "term": "gospel to soul",
+          "weight": 5
+        },
+        {
+          "term": "rhythm innovation",
+          "weight": 5
+        },
+        {
+          "term": "soul to funk",
+          "weight": 5
+        },
+        {
+          "term": "southern soul",
+          "weight": 5
+        },
+        {
+          "term": "stax scene",
+          "weight": 5
+        },
+        {
+          "term": "vocal transition",
+          "weight": 5
         },
         {
           "term": "disco",
@@ -3446,7 +3494,15 @@
           "weight": 3
         },
         {
+          "term": "gospel",
+          "weight": 3
+        },
+        {
           "term": "gospel blues and swing feed r b r b and gospel feed soul and early rock preserve the distinct traditions and let only documented anchors create cross zone pull",
+          "weight": 3
+        },
+        {
+          "term": "rhythm",
           "weight": 3
         },
         {
@@ -3466,15 +3522,7 @@
           "weight": 2
         },
         {
-          "term": "gospel",
-          "weight": 2
-        },
-        {
           "term": "jackson",
-          "weight": 2
-        },
-        {
-          "term": "rhythm",
           "weight": 2
         },
         {
@@ -3494,6 +3542,10 @@
           "weight": 1
         },
         {
+          "term": "al green",
+          "weight": 1
+        },
+        {
           "term": "bee",
           "weight": 1
         },
@@ -3502,11 +3554,63 @@
           "weight": 1
         },
         {
+          "term": "booker",
+          "weight": 1
+        },
+        {
+          "term": "booker t and the mgs",
+          "weight": 1
+        },
+        {
+          "term": "booker t the m g s",
+          "weight": 1
+        },
+        {
           "term": "bowie",
           "weight": 1
         },
         {
+          "term": "bridge",
+          "weight": 1
+        },
+        {
+          "term": "brown",
+          "weight": 1
+        },
+        {
+          "term": "burke",
+          "weight": 1
+        },
+        {
+          "term": "carla",
+          "weight": 1
+        },
+        {
+          "term": "carla thomas",
+          "weight": 1
+        },
+        {
           "term": "collins",
+          "weight": 1
+        },
+        {
+          "term": "cooke",
+          "weight": 1
+        },
+        {
+          "term": "country",
+          "weight": 1
+        },
+        {
+          "term": "cross",
+          "weight": 1
+        },
+        {
+          "term": "curtis",
+          "weight": 1
+        },
+        {
+          "term": "curtis mayfield",
           "weight": 1
         },
         {
@@ -3526,11 +3630,35 @@
           "weight": 1
         },
         {
-          "term": "funk",
+          "term": "family",
+          "weight": 1
+        },
+        {
+          "term": "four",
+          "weight": 1
+        },
+        {
+          "term": "funkadelic",
+          "weight": 1
+        },
+        {
+          "term": "gaye",
           "weight": 1
         },
         {
           "term": "gees",
+          "weight": 1
+        },
+        {
+          "term": "gladys",
+          "weight": 1
+        },
+        {
+          "term": "gladys knight and the pips",
+          "weight": 1
+        },
+        {
+          "term": "gladys knight the pips",
           "weight": 1
         },
         {
@@ -3542,51 +3670,27 @@
           "weight": 1
         },
         {
-          "term": "madonna",
+          "term": "green",
           "weight": 1
         },
         {
-          "term": "michael",
+          "term": "hayes",
           "weight": 1
         },
         {
-          "term": "michael jackson",
+          "term": "influenced",
           "weight": 1
         },
         {
-          "term": "phil",
+          "term": "innovation",
           "weight": 1
         },
         {
-          "term": "phil collins",
+          "term": "isaac",
           "weight": 1
         },
         {
-          "term": "stevie",
-          "weight": 1
-        },
-        {
-          "term": "stevie wonder",
-          "weight": 1
-        },
-        {
-          "term": "summer",
-          "weight": 1
-        },
-        {
-          "term": "supremes",
-          "weight": 1
-        },
-        {
-          "term": "the jackson 5",
-          "weight": 1
-        },
-        {
-          "term": "the supremes",
-          "weight": 1
-        },
-        {
-          "term": "wonder",
+          "term": "isaac hayes",
           "weight": 1
         }
       ]
@@ -3708,10 +3812,10 @@
         "roots"
       ],
       "approvedFactCount": 1,
-      "connectionCount": 11,
+      "connectionCount": 13,
       "linkedGenres": [],
       "bridgeScore": 0.66,
-      "hubScore": 0.917,
+      "hubScore": 1,
       "layoutHints": {
         "pinned": false
       }
@@ -3922,7 +4026,8 @@
       "secondaryZones": [
         "folk-country-vise",
         "roots-blues",
-        "guitar-workshop"
+        "guitar-workshop",
+        "pop-soul-disco"
       ],
       "primaryGenres": [
         "Country"
@@ -3933,9 +4038,9 @@
         "southern rock"
       ],
       "approvedFactCount": 1,
-      "connectionCount": 24,
+      "connectionCount": 49,
       "linkedGenres": [],
-      "bridgeScore": 0.66,
+      "bridgeScore": 0.88,
       "hubScore": 1,
       "layoutHints": {
         "pinned": false
@@ -3974,10 +4079,10 @@
         "jazz fusion",
         "classic rock"
       ],
-      "connectionCount": 5,
+      "connectionCount": 9,
       "linkedGenres": [],
       "bridgeScore": 0.66,
-      "hubScore": 0.417,
+      "hubScore": 0.75,
       "layoutHints": {
         "pinned": false
       }
@@ -4001,10 +4106,10 @@
         "classic rock"
       ],
       "curatorFeedback": "Keep jazz fusion attached to jazz while allowing documented rock, funk and progressive crossover. Do not pull every nearby jazz artist into rock.",
-      "connectionCount": 11,
+      "connectionCount": 12,
       "linkedGenres": [],
       "bridgeScore": 1,
-      "hubScore": 0.917,
+      "hubScore": 1,
       "layoutHints": {
         "pinned": false
       }
@@ -5769,10 +5874,10 @@
         }
       ],
       "approvedFactCount": 1,
-      "connectionCount": 3,
+      "connectionCount": 4,
       "linkedGenres": [],
       "bridgeScore": 0.34,
-      "hubScore": 0.25,
+      "hubScore": 0.333,
       "layoutHints": {
         "pinned": false
       }
@@ -5816,7 +5921,7 @@
         "jazz roots"
       ],
       "approvedFactCount": 1,
-      "connectionCount": 15,
+      "connectionCount": 40,
       "linkedGenres": [],
       "bridgeScore": 0.88,
       "hubScore": 1,
@@ -13094,10 +13199,10 @@
         "folk",
         "rock"
       ],
-      "connectionCount": 0,
+      "connectionCount": 3,
       "linkedGenres": [],
       "bridgeScore": 0.44,
-      "hubScore": 0,
+      "hubScore": 0.25,
       "layoutHints": {
         "pinned": false
       }
@@ -15486,7 +15591,7 @@
       "primaryGenres": [],
       "curatorTags": [],
       "approvedFactCount": 1,
-      "connectionCount": 5,
+      "connectionCount": 8,
       "linkedGenres": [
         "bebop",
         "jazz-fusion",
@@ -15494,7 +15599,7 @@
         "modal-jazz"
       ],
       "bridgeScore": 0.32,
-      "hubScore": 0.417,
+      "hubScore": 0.667,
       "layoutHints": {
         "pinned": false
       }
@@ -15507,13 +15612,13 @@
       "primaryGenres": [],
       "curatorTags": [],
       "approvedFactCount": 1,
-      "connectionCount": 3,
+      "connectionCount": 4,
       "linkedGenres": [
         "jazz",
         "modal-jazz"
       ],
       "bridgeScore": 0.16,
-      "hubScore": 0.25,
+      "hubScore": 0.333,
       "layoutHints": {
         "pinned": false
       }
@@ -15566,14 +15671,14 @@
       ],
       "curatorFeedback": "Keep Rodgers grounded in early country while letting his blues and early rock influence pull him toward those scenes.",
       "approvedFactCount": 1,
-      "connectionCount": 4,
+      "connectionCount": 5,
       "linkedGenres": [
         "country",
         "blues",
         "rock-and-roll"
       ],
       "bridgeScore": 0.93,
-      "hubScore": 0.333,
+      "hubScore": 0.417,
       "layoutHints": {
         "pinned": false
       }
@@ -15682,7 +15787,7 @@
       ],
       "curatorFeedback": "Haggard belongs in country while his documented jazz and blues influences make him a useful bridge.",
       "approvedFactCount": 1,
-      "connectionCount": 4,
+      "connectionCount": 5,
       "linkedGenres": [
         "country",
         "honky-tonk",
@@ -15690,7 +15795,7 @@
         "bakersfield-sound"
       ],
       "bridgeScore": 0.99,
-      "hubScore": 0.333,
+      "hubScore": 0.417,
       "layoutHints": {
         "pinned": false
       }
@@ -15701,10 +15806,10 @@
       "primaryGenres": [],
       "curatorTags": [],
       "approvedFactCount": 1,
-      "connectionCount": 4,
+      "connectionCount": 5,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0.333,
+      "hubScore": 0.417,
       "layoutHints": {
         "pinned": false
       }
@@ -15918,10 +16023,10 @@
       "eraPeak": 1960,
       "primaryGenres": [],
       "curatorTags": [],
-      "connectionCount": 9,
+      "connectionCount": 25,
       "linkedGenres": [],
       "bridgeScore": 0.22,
-      "hubScore": 0.75,
+      "hubScore": 1,
       "layoutHints": {
         "pinned": false
       }
@@ -16155,10 +16260,10 @@
         "soul roots"
       ],
       "curatorFeedback": "Keep gospel a distinct sacred tradition. Its documented influence on R&B and soul is a historical bridge, not evidence that the genres are interchangeable.",
-      "connectionCount": 6,
+      "connectionCount": 11,
       "linkedGenres": [],
       "bridgeScore": 0.42,
-      "hubScore": 0.5,
+      "hubScore": 0.917,
       "layoutHints": {
         "pinned": false
       }
@@ -16182,10 +16287,10 @@
         "rock and soul roots"
       ],
       "curatorFeedback": "R&B is the junction of documented blues, gospel and swing influences and later soul/rock developments. Do not collapse it into any one source.",
-      "connectionCount": 8,
+      "connectionCount": 15,
       "linkedGenres": [],
       "bridgeScore": 1,
-      "hubScore": 0.667,
+      "hubScore": 1,
       "layoutHints": {
         "pinned": false
       }
@@ -16203,10 +16308,10 @@
         "arranged jazz"
       ],
       "curatorFeedback": "Birth of the Cool is a specific Davis-led jazz phase. Keep it within jazz and distinct from his later modal and electric phases.",
-      "connectionCount": 2,
+      "connectionCount": 3,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0.167,
+      "hubScore": 0.25,
       "layoutHints": {
         "pinned": false
       }
@@ -16272,10 +16377,10 @@
         "honky-tonk-rockabilly bridge"
       ],
       "curatorFeedback": "Keep Bakersfield with country. Its honky-tonk, western swing and rockabilly ingredients explain the louder regional sound without turning it into generic rock.",
-      "connectionCount": 6,
+      "connectionCount": 7,
       "linkedGenres": [],
       "bridgeScore": 0.39,
-      "hubScore": 0.5,
+      "hubScore": 0.583,
       "layoutHints": {
         "pinned": false
       }
@@ -16410,14 +16515,14 @@
         "western swing and R&B influence"
       ],
       "curatorFeedback": "Owens anchors Bakersfield; R&B is documented dance-hall repertoire, not a reason to reclassify him as an R&B artist.",
-      "connectionCount": 3,
+      "connectionCount": 4,
       "linkedGenres": [
         "bakersfield-sound",
         "western-swing",
         "rhythm-and-blues"
       ],
       "bridgeScore": 0.61,
-      "hubScore": 0.25,
+      "hubScore": 0.333,
       "layoutHints": {
         "pinned": false
       }
@@ -16447,10 +16552,1627 @@
       "layoutHints": {
         "pinned": false
       }
+    },
+    "mahalia-jackson": {
+      "zone": "roots-blues",
+      "secondaryZones": [],
+      "eraStart": 1930,
+      "eraPeak": 1930,
+      "primaryGenres": [],
+      "curatorTags": [
+        "gospel anchor",
+        "sacred music"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "gospel-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "sam-cooke": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [
+        "roots-blues"
+      ],
+      "eraStart": 1950,
+      "eraPeak": 1950,
+      "primaryGenres": [],
+      "curatorTags": [
+        "gospel-to-soul",
+        "vocal transition"
+      ],
+      "connectionCount": 3,
+      "linkedGenres": [
+        "gospel-music",
+        "soul-music"
+      ],
+      "bridgeScore": 0.38,
+      "hubScore": 0.25,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "ruth-brown": {
+      "zone": "roots-blues",
+      "secondaryZones": [],
+      "eraStart": 1950,
+      "eraPeak": 1950,
+      "primaryGenres": [],
+      "curatorTags": [
+        "early R&B",
+        "recording history"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "rhythm-and-blues"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "big-joe-turner": {
+      "zone": "roots-blues",
+      "secondaryZones": [],
+      "eraStart": 1938,
+      "eraPeak": 1938,
+      "primaryGenres": [],
+      "curatorTags": [
+        "blues-to-rock",
+        "jazz-swing crossover"
+      ],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "rhythm-and-blues",
+        "rock-and-roll"
+      ],
+      "bridgeScore": 0.16,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "fats-domino": {
+      "zone": "roots-blues",
+      "secondaryZones": [],
+      "eraStart": 1949,
+      "eraPeak": 1949,
+      "primaryGenres": [],
+      "curatorTags": [
+        "R&B-to-rock",
+        "New Orleans"
+      ],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "rhythm-and-blues",
+        "rock-and-roll"
+      ],
+      "bridgeScore": 0.16,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "otis-redding": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1962,
+      "eraPeak": 1962,
+      "primaryGenres": [],
+      "curatorTags": [
+        "Southern soul",
+        "Stax scene"
+      ],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "soul-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "james-brown": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [
+        "rock-circuit"
+      ],
+      "eraStart": 1956,
+      "eraPeak": 1956,
+      "primaryGenres": [],
+      "curatorTags": [
+        "soul-to-funk",
+        "rhythm innovation"
+      ],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "soul-music",
+        "funk"
+      ],
+      "bridgeScore": 0.38,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "solomon-burke": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [
+        "country-roots"
+      ],
+      "eraStart": 1960,
+      "eraPeak": 1960,
+      "primaryGenres": [],
+      "curatorTags": [
+        "country-influenced soul",
+        "cross-zone bridge"
+      ],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "soul-music",
+        "country"
+      ],
+      "bridgeScore": 0.38,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "dave-brubeck": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1949,
+      "eraPeak": 1949,
+      "primaryGenres": [],
+      "curatorTags": [
+        "cool jazz",
+        "rhythmic experiment"
+      ],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "jazz",
+        "cool-jazz"
+      ],
+      "bridgeScore": 0.16,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "bill-evans": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1956,
+      "eraPeak": 1956,
+      "primaryGenres": [],
+      "curatorTags": [
+        "modal-era collaboration",
+        "jazz piano"
+      ],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "jazz"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "herbie-hancock": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1962,
+      "eraPeak": 1962,
+      "primaryGenres": [],
+      "curatorTags": [
+        "jazz-to-funk bridge",
+        "electric piano"
+      ],
+      "connectionCount": 3,
+      "linkedGenres": [
+        "jazz",
+        "jazz-fusion"
+      ],
+      "bridgeScore": 0.16,
+      "hubScore": 0.25,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "ernest-tubb": {
+      "zone": "country-roots",
+      "secondaryZones": [],
+      "eraStart": 1936,
+      "eraPeak": 1936,
+      "primaryGenres": [],
+      "curatorTags": [
+        "honky-tonk",
+        "Jimmie Rodgers lineage"
+      ],
+      "connectionCount": 3,
+      "linkedGenres": [
+        "country",
+        "honky-tonk"
+      ],
+      "bridgeScore": 0.16,
+      "hubScore": 0.25,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "lefty-frizzell": {
+      "zone": "country-roots",
+      "secondaryZones": [],
+      "eraStart": 1950,
+      "eraPeak": 1950,
+      "primaryGenres": [],
+      "curatorTags": [
+        "country vocal style",
+        "Merle Haggard influence"
+      ],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "country"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "wynn-stewart": {
+      "zone": "country-roots",
+      "secondaryZones": [],
+      "eraStart": 1954,
+      "eraPeak": 1954,
+      "primaryGenres": [],
+      "curatorTags": [
+        "Bakersfield precursor",
+        "regional scene"
+      ],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "bakersfield-sound"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "gram-parsons": {
+      "zone": "country-roots",
+      "secondaryZones": [],
+      "eraStart": 1968,
+      "eraPeak": 1968,
+      "primaryGenres": [],
+      "curatorTags": [
+        "country-rock bridge",
+        "Byrds to Burritos"
+      ],
+      "connectionCount": 3,
+      "linkedGenres": [
+        "country-rock"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.25,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "emmylou-harris": {
+      "zone": "country-roots",
+      "secondaryZones": [],
+      "eraStart": 1973,
+      "eraPeak": 1973,
+      "primaryGenres": [],
+      "curatorTags": [
+        "Gram Parsons collaboration",
+        "country-rock"
+      ],
+      "connectionCount": 4,
+      "linkedGenres": [
+        "country",
+        "country-rock"
+      ],
+      "bridgeScore": 0.16,
+      "hubScore": 0.333,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "the-flying-burrito-brothers": {
+      "zone": "country-roots",
+      "secondaryZones": [],
+      "eraStart": 1968,
+      "eraPeak": 1968,
+      "primaryGenres": [],
+      "curatorTags": [
+        "country-rock band",
+        "Gram Parsons"
+      ],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "country-rock"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "roy-acuff": {
+      "zone": "country-roots",
+      "secondaryZones": [],
+      "eraStart": 1930,
+      "eraPeak": 1930,
+      "primaryGenres": [],
+      "curatorTags": [
+        "country lineage"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "country"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "deford-bailey": {
+      "zone": "country-roots",
+      "secondaryZones": [],
+      "eraStart": 1925,
+      "eraPeak": 1925,
+      "primaryGenres": [],
+      "curatorTags": [
+        "country lineage"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "country"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "gene-autry": {
+      "zone": "country-roots",
+      "secondaryZones": [],
+      "eraStart": 1930,
+      "eraPeak": 1930,
+      "primaryGenres": [],
+      "curatorTags": [
+        "country lineage"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "country"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "eddy-arnold": {
+      "zone": "country-roots",
+      "secondaryZones": [],
+      "eraStart": 1944,
+      "eraPeak": 1944,
+      "primaryGenres": [],
+      "curatorTags": [
+        "country lineage"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "country"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "kitty-wells": {
+      "zone": "country-roots",
+      "secondaryZones": [],
+      "eraStart": 1952,
+      "eraPeak": 1952,
+      "primaryGenres": [],
+      "curatorTags": [
+        "country lineage"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "country"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "webb-pierce": {
+      "zone": "country-roots",
+      "secondaryZones": [],
+      "eraStart": 1952,
+      "eraPeak": 1952,
+      "primaryGenres": [],
+      "curatorTags": [
+        "country lineage"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "country"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "carl-smith": {
+      "zone": "country-roots",
+      "secondaryZones": [],
+      "eraStart": 1951,
+      "eraPeak": 1951,
+      "primaryGenres": [],
+      "curatorTags": [
+        "country lineage"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "country"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "george-jones": {
+      "zone": "country-roots",
+      "secondaryZones": [],
+      "eraStart": 1954,
+      "eraPeak": 1954,
+      "primaryGenres": [],
+      "curatorTags": [
+        "country lineage"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "country"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "loretta-lynn": {
+      "zone": "country-roots",
+      "secondaryZones": [],
+      "eraStart": 1960,
+      "eraPeak": 1960,
+      "primaryGenres": [],
+      "curatorTags": [
+        "country lineage"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "country"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "tammy-wynette": {
+      "zone": "country-roots",
+      "secondaryZones": [],
+      "eraStart": 1966,
+      "eraPeak": 1966,
+      "primaryGenres": [],
+      "curatorTags": [
+        "country lineage"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "country"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "bobby-bare": {
+      "zone": "country-roots",
+      "secondaryZones": [],
+      "eraStart": 1962,
+      "eraPeak": 1962,
+      "primaryGenres": [],
+      "curatorTags": [
+        "country lineage"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "country"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "floyd-cramer": {
+      "zone": "country-roots",
+      "secondaryZones": [],
+      "eraStart": 1955,
+      "eraPeak": 1955,
+      "primaryGenres": [],
+      "curatorTags": [
+        "country lineage"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "country"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "jim-reeves": {
+      "zone": "country-roots",
+      "secondaryZones": [],
+      "eraStart": 1953,
+      "eraPeak": 1953,
+      "primaryGenres": [],
+      "curatorTags": [
+        "country lineage"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "country"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "hank-snow": {
+      "zone": "country-roots",
+      "secondaryZones": [],
+      "eraStart": 1936,
+      "eraPeak": 1936,
+      "primaryGenres": [],
+      "curatorTags": [
+        "country lineage"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "country"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "kris-kristofferson": {
+      "zone": "country-roots",
+      "secondaryZones": [],
+      "eraStart": 1966,
+      "eraPeak": 1966,
+      "primaryGenres": [],
+      "curatorTags": [
+        "country lineage"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "country"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "roger-miller": {
+      "zone": "country-roots",
+      "secondaryZones": [],
+      "eraStart": 1957,
+      "eraPeak": 1957,
+      "primaryGenres": [],
+      "curatorTags": [
+        "country lineage"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "country"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "conway-twitty": {
+      "zone": "country-roots",
+      "secondaryZones": [],
+      "eraStart": 1958,
+      "eraPeak": 1958,
+      "primaryGenres": [],
+      "curatorTags": [
+        "country lineage"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "country"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "don-gibson": {
+      "zone": "country-roots",
+      "secondaryZones": [],
+      "eraStart": 1956,
+      "eraPeak": 1956,
+      "primaryGenres": [],
+      "curatorTags": [
+        "country lineage"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "country"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "charley-pride": {
+      "zone": "country-roots",
+      "secondaryZones": [],
+      "eraStart": 1965,
+      "eraPeak": 1965,
+      "primaryGenres": [],
+      "curatorTags": [
+        "country lineage"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "country"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "ray-price": {
+      "zone": "country-roots",
+      "secondaryZones": [],
+      "eraStart": 1950,
+      "eraPeak": 1950,
+      "primaryGenres": [],
+      "curatorTags": [
+        "country lineage"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "country"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "the-louvin-brothers": {
+      "zone": "country-roots",
+      "secondaryZones": [],
+      "eraStart": 1947,
+      "eraPeak": 1947,
+      "primaryGenres": [],
+      "curatorTags": [
+        "country lineage"
+      ],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "country"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "the-stanley-brothers": {
+      "zone": "country-roots",
+      "secondaryZones": [],
+      "eraStart": 1946,
+      "eraPeak": 1946,
+      "primaryGenres": [],
+      "curatorTags": [
+        "bluegrass lineage"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "bluegrass"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "dizzy-gillespie": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1937,
+      "eraPeak": 1937,
+      "primaryGenres": [],
+      "curatorTags": [
+        "jazz lineage"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "jazz"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "thelonious-monk": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1941,
+      "eraPeak": 1941,
+      "primaryGenres": [],
+      "curatorTags": [
+        "jazz lineage"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "jazz"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "ella-fitzgerald": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1935,
+      "eraPeak": 1935,
+      "primaryGenres": [],
+      "curatorTags": [
+        "jazz lineage"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "jazz"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "sarah-vaughan": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1943,
+      "eraPeak": 1943,
+      "primaryGenres": [],
+      "curatorTags": [
+        "jazz lineage"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "jazz"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "art-blakey": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1942,
+      "eraPeak": 1942,
+      "primaryGenres": [],
+      "curatorTags": [
+        "jazz lineage"
+      ],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "jazz"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "horace-silver": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1950,
+      "eraPeak": 1950,
+      "primaryGenres": [],
+      "curatorTags": [
+        "jazz lineage"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "jazz"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "sonny-rollins": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1949,
+      "eraPeak": 1949,
+      "primaryGenres": [],
+      "curatorTags": [
+        "jazz lineage"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "jazz"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "cannonball-adderley": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1955,
+      "eraPeak": 1955,
+      "primaryGenres": [],
+      "curatorTags": [
+        "jazz lineage"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "jazz"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "benny-goodman": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1934,
+      "eraPeak": 1938,
+      "primaryGenres": [],
+      "curatorTags": [
+        "jazz lineage"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "jazz"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "count-basie": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1935,
+      "eraPeak": 1935,
+      "primaryGenres": [],
+      "curatorTags": [
+        "jazz lineage"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "jazz"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "billie-holiday": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1933,
+      "eraPeak": 1933,
+      "primaryGenres": [],
+      "curatorTags": [
+        "jazz lineage"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "jazz"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "gil-evans": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1947,
+      "eraPeak": 1947,
+      "primaryGenres": [],
+      "curatorTags": [
+        "jazz lineage"
+      ],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "jazz"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "wayne-shorter": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1959,
+      "eraPeak": 1959,
+      "primaryGenres": [],
+      "curatorTags": [
+        "jazz lineage"
+      ],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "jazz"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "joe-zawinul": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1959,
+      "eraPeak": 1959,
+      "primaryGenres": [],
+      "curatorTags": [
+        "jazz lineage"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "jazz"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "ron-carter": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1959,
+      "eraPeak": 1959,
+      "primaryGenres": [],
+      "curatorTags": [
+        "jazz lineage"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "jazz"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "max-roach": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1942,
+      "eraPeak": 1942,
+      "primaryGenres": [],
+      "curatorTags": [
+        "jazz lineage"
+      ],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "jazz"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "clifford-brown": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1953,
+      "eraPeak": 1953,
+      "primaryGenres": [],
+      "curatorTags": [
+        "jazz lineage"
+      ],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "jazz"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "ornette-coleman": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1958,
+      "eraPeak": 1958,
+      "primaryGenres": [],
+      "curatorTags": [
+        "jazz lineage"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "jazz"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "cecil-taylor": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1956,
+      "eraPeak": 1956,
+      "primaryGenres": [],
+      "curatorTags": [
+        "jazz lineage"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "jazz"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "charles-mingus": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1943,
+      "eraPeak": 1943,
+      "primaryGenres": [],
+      "curatorTags": [
+        "jazz lineage"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "jazz"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "mccoy-tyner": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1959,
+      "eraPeak": 1959,
+      "primaryGenres": [],
+      "curatorTags": [
+        "jazz lineage"
+      ],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "jazz"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "wynton-marsalis": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1980,
+      "eraPeak": 1980,
+      "primaryGenres": [],
+      "curatorTags": [
+        "jazz lineage"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "jazz"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "the-soul-stirrers": {
+      "zone": "roots-blues",
+      "secondaryZones": [
+        "pop-soul-disco"
+      ],
+      "eraStart": 1930,
+      "eraPeak": 1930,
+      "primaryGenres": [],
+      "curatorTags": [
+        "gospel-music lineage"
+      ],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "gospel-music"
+      ],
+      "bridgeScore": 0.3,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "the-temptations": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1961,
+      "eraPeak": 1961,
+      "primaryGenres": [],
+      "curatorTags": [
+        "soul-music lineage"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "soul-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "the-four-tops": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1956,
+      "eraPeak": 1956,
+      "primaryGenres": [],
+      "curatorTags": [
+        "soul-music lineage"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "soul-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "the-drifters": {
+      "zone": "roots-blues",
+      "secondaryZones": [],
+      "eraStart": 1953,
+      "eraPeak": 1953,
+      "primaryGenres": [],
+      "curatorTags": [
+        "rhythm-and-blues lineage"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "rhythm-and-blues"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "the-platters": {
+      "zone": "roots-blues",
+      "secondaryZones": [],
+      "eraStart": 1953,
+      "eraPeak": 1953,
+      "primaryGenres": [],
+      "curatorTags": [
+        "rhythm-and-blues lineage"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "rhythm-and-blues"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "wilson-pickett": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1962,
+      "eraPeak": 1962,
+      "primaryGenres": [],
+      "curatorTags": [
+        "soul-music lineage"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "soul-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "jackie-wilson": {
+      "zone": "roots-blues",
+      "secondaryZones": [],
+      "eraStart": 1957,
+      "eraPeak": 1957,
+      "primaryGenres": [],
+      "curatorTags": [
+        "rhythm-and-blues lineage"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "rhythm-and-blues"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "etta-james": {
+      "zone": "roots-blues",
+      "secondaryZones": [],
+      "eraStart": 1955,
+      "eraPeak": 1955,
+      "primaryGenres": [],
+      "curatorTags": [
+        "rhythm-and-blues lineage"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "rhythm-and-blues"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "carla-thomas": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1960,
+      "eraPeak": 1960,
+      "primaryGenres": [],
+      "curatorTags": [
+        "soul-music lineage"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "soul-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "booker-t-and-the-mgs": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1962,
+      "eraPeak": 1962,
+      "primaryGenres": [],
+      "curatorTags": [
+        "soul-music lineage"
+      ],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "soul-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "isaac-hayes": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1962,
+      "eraPeak": 1962,
+      "primaryGenres": [],
+      "curatorTags": [
+        "soul-music lineage"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "soul-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "al-green": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1967,
+      "eraPeak": 1967,
+      "primaryGenres": [],
+      "curatorTags": [
+        "soul-music lineage"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "soul-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "curtis-mayfield": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1958,
+      "eraPeak": 1958,
+      "primaryGenres": [],
+      "curatorTags": [
+        "soul-music lineage"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "soul-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "sly-and-the-family-stone": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [
+        "rock-circuit"
+      ],
+      "eraStart": 1966,
+      "eraPeak": 1966,
+      "primaryGenres": [],
+      "curatorTags": [
+        "funk lineage"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "funk"
+      ],
+      "bridgeScore": 0.3,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "parliament": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [
+        "rock-circuit"
+      ],
+      "eraStart": 1970,
+      "eraPeak": 1970,
+      "primaryGenres": [],
+      "curatorTags": [
+        "funk lineage"
+      ],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "funk"
+      ],
+      "bridgeScore": 0.3,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "funkadelic": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [
+        "rock-circuit"
+      ],
+      "eraStart": 1968,
+      "eraPeak": 1968,
+      "primaryGenres": [],
+      "curatorTags": [
+        "funk lineage"
+      ],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "funk"
+      ],
+      "bridgeScore": 0.3,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "the-staple-singers": {
+      "zone": "roots-blues",
+      "secondaryZones": [],
+      "eraStart": 1956,
+      "eraPeak": 1956,
+      "primaryGenres": [],
+      "curatorTags": [
+        "gospel-music lineage"
+      ],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "gospel-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "marvin-gaye": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1961,
+      "eraPeak": 1961,
+      "primaryGenres": [],
+      "curatorTags": [
+        "soul-music lineage"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "soul-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "smokey-robinson": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1957,
+      "eraPeak": 1957,
+      "primaryGenres": [],
+      "curatorTags": [
+        "soul-music lineage"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "soul-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "martha-and-the-vandellas": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1962,
+      "eraPeak": 1962,
+      "primaryGenres": [],
+      "curatorTags": [
+        "soul-music lineage"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "soul-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "gladys-knight-and-the-pips": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1959,
+      "eraPeak": 1959,
+      "primaryGenres": [],
+      "curatorTags": [
+        "soul-music lineage"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "soul-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "mavis-staples": {
+      "zone": "roots-blues",
+      "secondaryZones": [],
+      "eraStart": 1956,
+      "eraPeak": 1956,
+      "primaryGenres": [],
+      "curatorTags": [
+        "gospel-music lineage"
+      ],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "gospel-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
     }
   },
   "curatorFeedback": {
-    "updatedAt": "2026-09-28T10:59:23.000Z",
+    "updatedAt": "2026-09-30T11:27:57.000Z",
     "rules": [
       {
         "id": "zones-are-guides-not-cages",

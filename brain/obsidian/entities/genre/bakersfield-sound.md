@@ -29,6 +29,7 @@ California country sound associated with Buck Owens and Merle Haggard, drawing o
 - [[merle-haggard|Merle Haggard]] - Bakersfield anchor (Haggard was one of the two best-known artists associated with the Bakersfield sound.)
 - [[rockabilly|Rockabilly]] - rockabilly edge (The sound added a harder rockabilly edge to honky-tonk country.)
 - [[western-swing|Western swing]] - western swing roots (Western swing was one of the ingredients in Owens's Bakersfield sound.)
+- [[wynn-stewart|Wynn Stewart]] - Bakersfield scene (The museum names Stewart as an influential Bakersfield bandstand musician and songwriter.)
 
 ## Sources
 

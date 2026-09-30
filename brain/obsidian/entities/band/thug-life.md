@@ -5,8 +5,8 @@ type: band
 zone: hip-hop-rap
 roles: [band]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: [hip-hop, gangsta rap]
 curatorTags: [west coast hip-hop, tupac connection, rap collective]
 secondaryZones: []

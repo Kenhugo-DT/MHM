@@ -5,8 +5,8 @@ type: genre
 zone: roots-blues
 roles: [genre]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: [Rock and roll]
 curatorTags: [blues, rock and roll, roots]
 secondaryZones: []
@@ -23,9 +23,11 @@ A high-energy meeting point between blues, country, gospel and rhythm and blues,
 
 ## Connections
 
+- [[big-joe-turner|Big Joe Turner]] - early rock lineage (Rock Hall credits Turner's style as a precursor to rock and roll; the link describes lineage rather than a genre identity.)
 - [[blues|Blues]] - feeds
 - [[chuck-berry|Chuck Berry]] - guitar grammar (Berry's guitar solos helped make electric guitar a defining voice of rock and roll.)
 - [[elvis-presley|Elvis Presley]] - popularized (Presley brought a blend of blues, country and gospel into rock and roll's mass audience.)
+- [[fats-domino|Fats Domino]] - early rock and roll (Rock Hall documents Domino's R&B style entering the new rock-and-roll idiom.)
 - [[fender-esquire|Fender Esquire]] - early solid-body line
 - [[gospel-music|Gospel music]] - gospel to rock and roll (The gospel tradition was one of rock and roll's documented early influences.)
 - [[jimmie-rodgers|Jimmie Rodgers]] - rock and roll influence (His country-blues fusion became an early framework for rock and roll.)

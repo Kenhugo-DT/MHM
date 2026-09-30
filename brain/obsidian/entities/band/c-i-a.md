@@ -5,8 +5,8 @@ type: band
 zone: hip-hop-rap
 roles: [band]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: [gangsta rap, rap]
 curatorTags: [Gangsta rap, gangsta rap, rap]
 secondaryZones: []

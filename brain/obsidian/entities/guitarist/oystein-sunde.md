@@ -5,8 +5,8 @@ type: guitarist
 zone: folk-country-vise
 roles: [guitarist, artist]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: [country]
 curatorTags: [Norwegian vise, guitarist, country]
 secondaryZones: []

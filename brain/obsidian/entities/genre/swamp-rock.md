@@ -5,8 +5,8 @@ type: genre
 zone: roots-blues
 roles: [genre]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: [swamp rock]
 curatorTags: [blues, roots, country]
 secondaryZones: []

@@ -5,8 +5,8 @@ type: artist
 zone: punk-alt
 roles: [artist]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: []
 curatorTags: [artist, alternative, punk]
 secondaryZones: []

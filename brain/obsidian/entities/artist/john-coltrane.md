@@ -5,8 +5,8 @@ type: artist
 zone: jazz
 roles: [artist]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: []
 curatorTags: []
 secondaryZones: []
@@ -24,6 +24,7 @@ John William Coltrane (September 23, 1926 – July 17, 1967) was an American jaz
 ## Connections
 
 - [[jazz|Jazz]] - modern jazz (Coltrane became a major voice in modern jazz.)
+- [[mccoy-tyner|McCoy Tyner]] - Coltrane quartet (Tyner played piano in Coltrane's quartet from 1960 to 1965.)
 - [[miles-davis|Miles Davis]] - played together (Coltrane worked with Davis during a pivotal period of modern jazz.)
 - [[modal-jazz|Modal jazz]] - modal improvisation (Coltrane later used modal improvisation in major recordings; his connection is not limited to Davis's band.)
 

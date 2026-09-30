@@ -1,0 +1,24 @@
+{
+  "nodeIds": [
+    "mahalia-jackson",
+    "sam-cooke",
+    "ruth-brown",
+    "big-joe-turner",
+    "fats-domino",
+    "otis-redding",
+    "james-brown",
+    "solomon-burke",
+    "dave-brubeck",
+    "bill-evans",
+    "herbie-hancock",
+    "ernest-tubb",
+    "lefty-frizzell",
+    "wynn-stewart",
+    "gram-parsons",
+    "emmylou-harris",
+    "the-flying-burrito-brothers"
+  ],
+  "edgePrefix": "reviewed-bridge-",
+  "expectedEdges": 33,
+  "allowedZones": ["roots-blues", "pop-soul-disco", "jazz", "country-roots"]
+}

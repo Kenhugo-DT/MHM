@@ -5,8 +5,8 @@ type: band
 zone: punk-alt
 roles: [band]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: [horror punk, deathrock]
 curatorTags: [horror punk, deathrock, misfits lineage]
 secondaryZones: []

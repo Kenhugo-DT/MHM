@@ -5,8 +5,8 @@ type: genre
 zone: punk-alt
 roles: [genre]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: [Shoegaze]
 curatorTags: [alternative rock, alternative, punk]
 secondaryZones: []

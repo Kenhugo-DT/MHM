@@ -5,8 +5,8 @@ type: band
 zone: punk-alt
 roles: [band]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: [rap rock, alternative metal]
 curatorTags: [rap rock, political rock, hip-hop bridge]
 secondaryZones: []

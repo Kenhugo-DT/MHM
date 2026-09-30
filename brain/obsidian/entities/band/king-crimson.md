@@ -5,8 +5,8 @@ type: band
 zone: psychedelia-prog
 roles: [band]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: [art rock]
 curatorTags: [Art rock, Progressive rock, art rock]
 secondaryZones: []

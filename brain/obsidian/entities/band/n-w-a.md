@@ -5,8 +5,8 @@ type: band
 zone: hip-hop-rap
 roles: [band]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: [gangsta rap, west coast hip-hop]
 curatorTags: [gangsta rap, west coast hip-hop, compton]
 secondaryZones: []

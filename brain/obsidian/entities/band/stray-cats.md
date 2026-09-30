@@ -5,8 +5,8 @@ type: band
 zone: roots-blues
 roles: [band]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: [rockabilly]
 curatorTags: [Rockabilly, band, rockabilly]
 secondaryZones: []

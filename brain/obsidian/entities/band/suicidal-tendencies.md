@@ -5,8 +5,8 @@ type: band
 zone: punk-alt
 roles: [band]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: [hardcore punk, thrash metal]
 curatorTags: [crossover thrash, hardcore punk, venice scene]
 secondaryZones: []

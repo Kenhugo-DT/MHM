@@ -5,8 +5,8 @@ type: genre
 zone: punk-alt
 roles: [genre]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: [skate punk]
 curatorTags: [hardcore punk, punk rock, alternative]
 secondaryZones: []

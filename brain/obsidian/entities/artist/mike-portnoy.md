@@ -5,8 +5,8 @@ type: artist
 zone: psychedelia-prog
 roles: [artist]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: [progressive metal]
 curatorTags: [progressive metal, artist, progressive]
 secondaryZones: []

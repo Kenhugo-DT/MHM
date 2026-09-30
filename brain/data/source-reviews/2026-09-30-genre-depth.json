@@ -1,0 +1,24 @@
+{
+  "reviewedAt": "2026-09-30",
+  "requestCount": 6,
+  "candidateCount": 66,
+  "publishedNodeCount": 66,
+  "publishedEdgeCount": 75,
+  "policy": "An exact name match or a Wikipedia link is not sufficient. Genre membership needs a music institution's own description or roster; direct artist-to-artist relations require explicit relationship evidence. Wrong automated IDs are never copied into the public graph.",
+  "ambiguousRawMatches": {
+    "George Jones": "Wikidata chose a US senator; country singer confirmed by Country Music Hall of Fame.",
+    "Don Gibson": "Wikidata chose a footballer; songwriter confirmed by Country Music Hall of Fame.",
+    "Clifford Brown": "Wikidata chose a philosopher; jazz trumpeter confirmed by Library of Congress.",
+    "Carla Thomas": "Wikidata chose a basketball player; Stax singer confirmed by Stax Museum.",
+    "Booker T. & the M.G.'s": "MusicBrainz chose a Japanese collaboration; Stax group confirmed by Rock Hall.",
+    "Parliament": "Wikidata chose the UK legislature; funk group confirmed by Rock Hall's Parliament-Funkadelic history.",
+    "Funkadelic": "Wikidata chose an album; George Clinton's band confirmed by Rock Hall.",
+    "Tammy Wynette": "MusicBrainz and Wikidata were unavailable; country singer confirmed by Country Music Hall of Fame.",
+    "Joe Zawinul": "MusicBrainz was unavailable; jazz keyboardist confirmed by NEA's Wayne Shorter biography.",
+    "The Four Tops": "MusicBrainz was unavailable; Motown group confirmed by Rock Hall.",
+    "Wilson Pickett": "MusicBrainz was unavailable; soul singer confirmed by Rock Hall induction essay.",
+    "Martha and the Vandellas": "MusicBrainz was unavailable; Motown group confirmed by Rock Hall."
+  },
+  "publishedBatch": "brain/data/genre-depth-batch.json",
+  "curatedEvidence": "brain/scripts/curated-genre-depth.mjs"
+}

@@ -5,8 +5,8 @@ type: genre
 zone: country-roots
 roles: [genre]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: []
 curatorTags: []
 secondaryZones: []
@@ -25,6 +25,7 @@ The term honky-tonk (also called honkatonk, honkey-tonk, honky tonk, or tonk) re
 
 - [[bakersfield-sound|Bakersfield sound]] - honky-tonk roots (Bakersfield musicians kept honky-tonk directness in a louder electric setting.)
 - [[country|Country]] - country tradition (Honky-tonk is a central country style.)
+- [[ernest-tubb|Ernest Tubb]] - honky-tonk trailblazer (The museum explicitly describes Tubb as a honky-tonk trailblazer.)
 - [[hank-williams|Hank Williams]] - honky-tonk voice (His honky-tonk repertoire became central to postwar country.)
 - [[merle-haggard|Merle Haggard]] - honky-tonk tradition (Haggard drew heavily on honky-tonk.)
 

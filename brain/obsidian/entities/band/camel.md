@@ -5,8 +5,8 @@ type: band
 zone: psychedelia-prog
 roles: [band]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: [country, folk]
 curatorTags: [band, country, folk]
 secondaryZones: []

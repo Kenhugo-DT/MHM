@@ -5,8 +5,8 @@ type: guitarist
 zone: jazz
 roles: [guitarist, artist]
 aliases: []
-eraStart: 
-eraPeak: 
+eraStart:
+eraPeak:
 primaryGenres: [jazz]
 curatorTags: [Jazz, Jazz fusion, jazz fusion]
 secondaryZones: [rock-circuit]
