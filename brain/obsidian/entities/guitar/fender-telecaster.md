@@ -24,7 +24,7 @@ A simple slab-bodied solid electric known for bright attack, durability and a lo
 ## Connections
 
 - [[country|Country]] - bright attack
-- [[fender|Fender]] - made
+- [[fender|Fender]] - made (Fender's Telecaster preceded the Stratocaster in its original electric guitar lineup.)
 - [[funk|Funk]] - tight rhythm
 - [[jonny-greenwood|Jonny Greenwood]] - main guitar link
 - [[keith-richards|Keith Richards]] - rhythm guitar link

@@ -24,7 +24,7 @@ A workhorse slope-shoulder acoustic linked to folk, country and singer-songwrite
 ## Connections
 
 - [[folk|Folk]] - songwriter rhythm
-- [[gibson|Gibson]] - made
+- [[gibson|Gibson]] - made (Gibson introduced the J-45 in 1942 and continues to build the model.)
 
 ## Sources
 

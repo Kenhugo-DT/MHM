@@ -23,9 +23,9 @@ A songwriter who linked folk, blues, rock and electric controversy, reshaping wh
 
 ## Connections
 
-- [[folk|Folk]] - songwriting root
+- [[folk|Folk]] - songwriting root (The original liner notes to Dylan's 1962 debut introduced him as a figure in American folk music.)
 - [[martin-d28|Martin D-28]] - acoustic tradition link
-- [[rock|Rock]] - electric turn
+- [[rock|Rock]] - electric turn (Dylan's electric turn brought folk-rock into the mainstream in the mid-1960s.)
 
 ## Sources
 

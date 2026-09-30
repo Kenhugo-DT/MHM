@@ -24,12 +24,14 @@ A high-energy meeting point between blues, country, gospel and rhythm and blues,
 ## Connections
 
 - [[blues|Blues]] - feeds
-- [[chuck-berry|Chuck Berry]] - guitar grammar
-- [[elvis-presley|Elvis Presley]] - popularized
+- [[chuck-berry|Chuck Berry]] - guitar grammar (Berry's guitar solos helped make electric guitar a defining voice of rock and roll.)
+- [[elvis-presley|Elvis Presley]] - popularized (Presley brought a blend of blues, country and gospel into rock and roll's mass audience.)
 - [[fender-esquire|Fender Esquire]] - early solid-body line
+- [[gospel-music|Gospel music]] - gospel to rock and roll (The gospel tradition was one of rock and roll's documented early influences.)
 - [[jimmie-rodgers|Jimmie Rodgers]] - rock and roll influence (His country-blues fusion became an early framework for rock and roll.)
-- [[rock|Rock]] - branches into
-- [[rockabilly|Rockabilly]] - early branch
+- [[rhythm-and-blues|Rhythm and blues]] - R&B to rock and roll (Early rock and roll drew on the rhythmic language of R&B, alongside country and other sources.)
+- [[rock|Rock]] - branches into (Rock music grew from the American rock and roll sound of the late 1940s and early 1950s.)
+- [[rockabilly|Rockabilly]] - early branch (Sam Phillips developed rockabilly from a country-and-blues mix during rock and roll's early years.)
 - [[sister-rosetta-tharpe|Sister Rosetta Tharpe]] - early influence
 - [[surf-rock|Surf rock]] - instrumental branch
 

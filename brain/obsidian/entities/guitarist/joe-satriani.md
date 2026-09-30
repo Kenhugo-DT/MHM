@@ -25,7 +25,7 @@ An instrumental rock guitarist and teacher whose melodic technique connects mode
 
 - [[ibanez-js|Ibanez JS]] - signature instrument
 - [[rock|Rock]] - instrumental rock
-- [[steve-vai|Steve Vai]] - teacher/influence line
+- [[steve-vai|Steve Vai]] - teacher/influence line (Vai began taking guitar lessons from Satriani at age 12; both artists document the teacher-student relationship.)
 
 ## Sources
 
@@ -33,4 +33,4 @@ An instrumental rock guitarist and teacher whose melodic technique connects mode
 
 ## Curator Notes
 
-Use this section for human notes. Machine-readable organization belongs in the frontmatter above.
+The documented Vai link is teacher-to-student. Keep it distinct from a shared recording or band-membership edge.

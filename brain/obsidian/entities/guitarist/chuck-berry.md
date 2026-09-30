@@ -24,7 +24,7 @@ A foundational rock and roll guitarist and songwriter whose riffs, double-stops 
 ## Connections
 
 - [[gibson-es-355-lucille|Gibson ES-355 Lucille]] - semi-hollow lineage
-- [[rock-and-roll|Rock and roll]] - guitar grammar
+- [[rock-and-roll|Rock and roll]] - guitar grammar (Berry's guitar solos helped make electric guitar a defining voice of rock and roll.)
 
 ## Sources
 

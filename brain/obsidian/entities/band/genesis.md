@@ -23,6 +23,7 @@ A band connected to documented Wikipedia signals around Stone Sour.
 
 ## Connections
 
+- [[phil-collins|Phil Collins]] - Genesis drummer and singer (Collins joined Genesis in 1970 and later became its lead singer.)
 - [[stone-sour|Stone Sour]] - Wikipedia link signal (Wikipedia link: Genesis (band))
 
 ## Sources

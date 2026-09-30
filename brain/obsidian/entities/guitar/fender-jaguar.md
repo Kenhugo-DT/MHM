@@ -23,7 +23,7 @@ An offset Fender model that found a second life in punk, alternative rock and gr
 
 ## Connections
 
-- [[fender|Fender]] - made
+- [[fender|Fender]] - made (Fender introduced the Jaguar in 1962 as the fourth of its original standard electric guitar models.)
 
 ## Sources
 

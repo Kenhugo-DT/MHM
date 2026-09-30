@@ -35,4 +35,4 @@ A Birmingham band whose dark riffs, volume and atmosphere became a foundation fo
 
 ## Curator Notes
 
-Use this section for human notes. Machine-readable organization belongs in the frontmatter above.
+Should behave as a bridge between hard rock, doom metal and heavy metal rather than sitting in a closed metal box.

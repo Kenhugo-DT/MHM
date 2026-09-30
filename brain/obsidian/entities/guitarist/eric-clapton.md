@@ -35,4 +35,4 @@ A blues-rock guitarist linked to the Yardbirds, Cream and a long solo career acr
 
 ## Curator Notes
 
-Use this section for human notes. Machine-readable organization belongs in the frontmatter above.
+Connect the Yardbirds and Cream through verified membership, with blues guitar as the musical center. Hall of Fame inductions are career context, not new collaborations.

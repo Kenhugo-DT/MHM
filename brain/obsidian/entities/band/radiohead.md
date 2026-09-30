@@ -23,7 +23,7 @@ An alternative and art rock band where guitar textures sit beside electronic, or
 
 ## Connections
 
-- [[alternative-rock|Alternative rock]] - central band
+- [[alternative-rock|Alternative rock]] - central band (AllMusic classifies Radiohead within alternative and indie rock while noting their experimental reach.)
 - [[art-rock|Art rock]] - experimental identity
 - [[jonny-greenwood|Jonny Greenwood]] - guitarist / arranger
 

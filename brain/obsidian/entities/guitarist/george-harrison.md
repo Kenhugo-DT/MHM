@@ -25,7 +25,7 @@ The Beatles' lead guitarist, whose melodic parts, twelve-string sounds and India
 
 - [[gretsch-6120|Gretsch 6120]] - early guitar color
 - [[rickenbacker-360-12|Rickenbacker 360/12]] - twelve-string era
-- [[the-beatles|The Beatles]] - guitarist
+- [[the-beatles|The Beatles]] - guitarist (The Beatles' own timeline identifies Harrison as the group's lead guitarist.)
 
 ## Sources
 

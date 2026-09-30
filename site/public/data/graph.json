@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-29T12:48:15.475Z",
+  "generatedAt": "2026-09-30T11:16:58.533Z",
   "nodes": [
     {
       "id": "blues",
@@ -19755,6 +19755,332 @@
       "x": -1008,
       "y": 2264,
       "curatorTags": []
+    },
+    {
+      "id": "gospel-music",
+      "label": "Gospel music",
+      "type": "genre",
+      "zone": "roots-blues",
+      "eraStart": 1930,
+      "summary": "African American sacred music whose vocal and rhythmic practices shaped R&B, soul and early rock and roll.",
+      "roles": [
+        "genre"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/exhibitions/roots-of-rock/",
+          "provider": "other"
+        }
+      ],
+      "primaryGenres": [
+        "Gospel music"
+      ],
+      "curatorTags": [
+        "sacred-to-secular bridge",
+        "soul roots"
+      ],
+      "x": -1907,
+      "y": -378
+    },
+    {
+      "id": "rhythm-and-blues",
+      "label": "Rhythm and blues",
+      "type": "genre",
+      "zone": "roots-blues",
+      "eraStart": 1940,
+      "summary": "A broad African American popular-music tradition drawing on blues, gospel and swing, and feeding soul and rock and roll.",
+      "roles": [
+        "genre"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Smithsonian Folklife",
+          "url": "https://folklife.si.edu/magazine/freedom-sounds-tell-it-like-it-is-a-history-of-rhythm-and-blues",
+          "provider": "other"
+        }
+      ],
+      "primaryGenres": [
+        "Rhythm and blues"
+      ],
+      "curatorTags": [
+        "blues-gospel-swing synthesis",
+        "rock and soul roots"
+      ],
+      "x": -1081,
+      "y": -405
+    },
+    {
+      "id": "cool-jazz",
+      "label": "Cool jazz",
+      "type": "genre",
+      "zone": "jazz",
+      "eraStart": 1949,
+      "summary": "A post-bebop jazz direction associated with the arranged sound of Miles Davis's Birth of the Cool sessions.",
+      "roles": [
+        "genre"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "National Endowment for the Arts",
+          "url": "https://www.arts.gov/honors/jazz/miles-davis",
+          "provider": "other"
+        }
+      ],
+      "primaryGenres": [
+        "Cool jazz"
+      ],
+      "curatorTags": [
+        "arranged jazz",
+        "Miles Davis nonet"
+      ],
+      "x": -1426,
+      "y": -1028
+    },
+    {
+      "id": "modal-jazz",
+      "label": "Modal jazz",
+      "type": "genre",
+      "zone": "jazz",
+      "eraStart": 1959,
+      "summary": "Jazz improvisation organized around modes rather than rapid chord changes, associated with Miles Davis and John Coltrane.",
+      "roles": [
+        "genre"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "National Endowment for the Arts",
+          "url": "https://www.arts.gov/honors/jazz/miles-davis",
+          "provider": "other"
+        }
+      ],
+      "primaryGenres": [
+        "Modal jazz"
+      ],
+      "curatorTags": [
+        "mode-based improvisation",
+        "Kind of Blue"
+      ],
+      "x": -1215,
+      "y": -1073
+    },
+    {
+      "id": "western-swing",
+      "label": "Western swing",
+      "type": "genre",
+      "zone": "country-roots",
+      "eraStart": 1930,
+      "summary": "Southwestern dance music joining country fiddles with jazz, blues and big-band swing.",
+      "roles": [
+        "genre"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame/bob-wills",
+          "provider": "other"
+        }
+      ],
+      "primaryGenres": [
+        "Western swing"
+      ],
+      "curatorTags": [
+        "country-jazz bridge",
+        "dance-band roots"
+      ],
+      "x": -3112,
+      "y": 809
+    },
+    {
+      "id": "bakersfield-sound",
+      "label": "Bakersfield sound",
+      "type": "genre",
+      "zone": "country-roots",
+      "eraStart": 1950,
+      "summary": "California country sound associated with Buck Owens and Merle Haggard, drawing on honky-tonk, rockabilly and western swing.",
+      "roles": [
+        "genre"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://www.countrymusichalloffame.org/press/releases/museum-exhibit-the-bakersfield-sound-buck-owens-merle-haggard-and-california-country-closes-december-31-2014-2",
+          "provider": "other"
+        }
+      ],
+      "primaryGenres": [
+        "Bakersfield sound"
+      ],
+      "curatorTags": [
+        "electric country",
+        "honky-tonk-rockabilly bridge"
+      ],
+      "x": -2359,
+      "y": 909
+    },
+    {
+      "id": "outlaw-country",
+      "label": "Outlaw country",
+      "type": "genre",
+      "zone": "country-roots",
+      "eraStart": 1970,
+      "summary": "1970s country movement centered on performers taking greater control of their recordings and repertoire.",
+      "roles": [
+        "genre"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame/waylon-jennings",
+          "provider": "other"
+        }
+      ],
+      "primaryGenres": [
+        "Outlaw country"
+      ],
+      "curatorTags": [
+        "artist-led recording",
+        "1970s country"
+      ],
+      "x": -2108,
+      "y": 1184
+    },
+    {
+      "id": "ray-charles",
+      "label": "Ray Charles",
+      "type": "artist",
+      "zone": "roots-blues",
+      "eraStart": 1954,
+      "summary": "Singer and pianist who combined gospel and R&B into soul while also recording country and jazz material.",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Smithsonian Music",
+          "url": "https://music.si.edu/story/brother-ray%E2%80%99s-message-people",
+          "provider": "other"
+        }
+      ],
+      "primaryGenres": [],
+      "curatorTags": [
+        "gospel-to-soul bridge",
+        "cross-genre recordings"
+      ],
+      "x": -998,
+      "y": -29
+    },
+    {
+      "id": "aretha-franklin",
+      "label": "Aretha Franklin",
+      "type": "artist",
+      "zone": "pop-soul-disco",
+      "eraStart": 1967,
+      "summary": "Soul singer whose gospel background met rhythm and blues, jazz and pop.",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Smithsonian National Portrait Gallery",
+          "url": "https://npg.si.edu/blog/aretha-franklin-queen-soul",
+          "provider": "other"
+        }
+      ],
+      "primaryGenres": [],
+      "curatorTags": [
+        "gospel voice",
+        "soul crossover"
+      ],
+      "x": -759,
+      "y": 1987
+    },
+    {
+      "id": "bob-wills",
+      "label": "Bob Wills",
+      "type": "artist",
+      "zone": "country-roots",
+      "eraStart": 1934,
+      "summary": "Bandleader whose Texas Playboys made western swing a country-jazz-blues dance music.",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame/bob-wills",
+          "provider": "other"
+        }
+      ],
+      "primaryGenres": [],
+      "curatorTags": [
+        "western swing anchor",
+        "country-jazz bridge"
+      ],
+      "x": -3010,
+      "y": 963
+    },
+    {
+      "id": "buck-owens",
+      "label": "Buck Owens",
+      "type": "artist",
+      "zone": "country-roots",
+      "eraStart": 1963,
+      "summary": "Singer and guitarist whose bright electric band sound became central to Bakersfield country.",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame/buck-owens",
+          "provider": "other"
+        }
+      ],
+      "primaryGenres": [],
+      "curatorTags": [
+        "Bakersfield anchor",
+        "western swing and R&B influence"
+      ],
+      "x": -2160,
+      "y": 612
+    },
+    {
+      "id": "waylon-jennings",
+      "label": "Waylon Jennings",
+      "type": "artist",
+      "zone": "country-roots",
+      "eraStart": 1973,
+      "summary": "Country singer whose campaign for control over recordings helped define the Outlaw movement.",
+      "roles": [
+        "artist"
+      ],
+      "metadata": [],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame/waylon-jennings",
+          "provider": "other"
+        }
+      ],
+      "primaryGenres": [],
+      "curatorTags": [
+        "outlaw country anchor",
+        "artist autonomy"
+      ],
+      "x": -2152,
+      "y": 916
     }
   ],
   "edges": [
@@ -32475,6 +32801,726 @@
         {
           "label": "Rock & Roll Hall of Fame",
           "url": "https://rockhall.com/inductees/madonna/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-bridge-rhythm-and-blues-blues-influenced_by",
+      "source": "rhythm-and-blues",
+      "target": "blues",
+      "type": "influenced_by",
+      "label": "blues roots",
+      "strength": 0.78,
+      "context": [
+        "Early R&B drew on blues song forms and performance practices; this is a lineage, not a synonym."
+      ],
+      "sources": [
+        {
+          "label": "Smithsonian Folklife",
+          "url": "https://folklife.si.edu/magazine/freedom-sounds-tell-it-like-it-is-a-history-of-rhythm-and-blues",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-bridge-rhythm-and-blues-swing-music-influenced_by",
+      "source": "rhythm-and-blues",
+      "target": "swing-music",
+      "type": "influenced_by",
+      "label": "swing roots",
+      "strength": 0.78,
+      "context": [
+        "Swing horn riffs and small-combo arrangements fed early R&B."
+      ],
+      "sources": [
+        {
+          "label": "Smithsonian Folklife",
+          "url": "https://folklife.si.edu/magazine/freedom-sounds-tell-it-like-it-is-a-history-of-rhythm-and-blues",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-bridge-rhythm-and-blues-gospel-music-influenced_by",
+      "source": "rhythm-and-blues",
+      "target": "gospel-music",
+      "type": "influenced_by",
+      "label": "gospel roots",
+      "strength": 0.78,
+      "context": [
+        "Gospel was one of several sources of R&B; the two traditions should remain distinct."
+      ],
+      "sources": [
+        {
+          "label": "National Museum of African American History and Culture",
+          "url": "https://nmaahc.si.edu/explore/stories/celebrating-black-music-month",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-bridge-soul-music-rhythm-and-blues-influenced_by",
+      "source": "soul-music",
+      "target": "rhythm-and-blues",
+      "type": "influenced_by",
+      "label": "R&B to soul",
+      "strength": 0.78,
+      "context": [
+        "Soul grew from R&B while developing a more pronounced gospel-derived vocal language."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/exhibitions/cities-and-sounds/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-bridge-soul-music-gospel-music-influenced_by",
+      "source": "soul-music",
+      "target": "gospel-music",
+      "type": "influenced_by",
+      "label": "gospel to soul",
+      "strength": 0.78,
+      "context": [
+        "Gospel vocal practices helped shape secular soul singing."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/exhibitions/cities-and-sounds/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-bridge-rock-and-roll-rhythm-and-blues-influenced_by",
+      "source": "rock-and-roll",
+      "target": "rhythm-and-blues",
+      "type": "influenced_by",
+      "label": "R&B to rock and roll",
+      "strength": 0.78,
+      "context": [
+        "Early rock and roll drew on the rhythmic language of R&B, alongside country and other sources."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/exhibitions/roots-of-rock/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-bridge-rock-and-roll-gospel-music-influenced_by",
+      "source": "rock-and-roll",
+      "target": "gospel-music",
+      "type": "influenced_by",
+      "label": "gospel to rock and roll",
+      "strength": 0.78,
+      "context": [
+        "The gospel tradition was one of rock and roll's documented early influences."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/exhibitions/roots-of-rock/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-bridge-sister-rosetta-tharpe-gospel-music-associated_genre",
+      "source": "sister-rosetta-tharpe",
+      "target": "gospel-music",
+      "type": "associated_genre",
+      "label": "electric gospel",
+      "strength": 0.78,
+      "context": [
+        "Tharpe brought a powerful electric-guitar sound to gospel performance."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame",
+          "url": "https://rockhall.com/inductees/sister-rosetta-tharpe/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-bridge-ray-charles-rhythm-and-blues-associated_genre",
+      "source": "ray-charles",
+      "target": "rhythm-and-blues",
+      "type": "associated_genre",
+      "label": "R&B recordings",
+      "strength": 0.78,
+      "context": [
+        "Charles brought gospel phrasing into rhythm and blues recordings."
+      ],
+      "sources": [
+        {
+          "label": "Smithsonian Music",
+          "url": "https://music.si.edu/story/brother-ray%E2%80%99s-message-people",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-bridge-ray-charles-gospel-music-related",
+      "source": "ray-charles",
+      "target": "gospel-music",
+      "type": "related",
+      "label": "gospel vocabulary",
+      "strength": 0.78,
+      "context": [
+        "Gospel was a source for Charles's secular music; this edge describes influence, not a gospel-only career."
+      ],
+      "sources": [
+        {
+          "label": "Smithsonian Music",
+          "url": "https://music.si.edu/story/brother-ray%E2%80%99s-message-people",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-bridge-ray-charles-soul-music-associated_genre",
+      "source": "ray-charles",
+      "target": "soul-music",
+      "type": "associated_genre",
+      "label": "soul pioneer",
+      "strength": 0.78,
+      "context": [
+        "Charles's fusion of gospel expression and R&B helped define soul."
+      ],
+      "sources": [
+        {
+          "label": "Smithsonian Music",
+          "url": "https://music.si.edu/story/brother-ray%E2%80%99s-message-people",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-bridge-ray-charles-country-related",
+      "source": "ray-charles",
+      "target": "country",
+      "type": "related",
+      "label": "country recordings",
+      "strength": 0.78,
+      "context": [
+        "Charles recorded country songs as part of a deliberately cross-genre career."
+      ],
+      "sources": [
+        {
+          "label": "Smithsonian Music",
+          "url": "https://music.si.edu/story/brother-ray%E2%80%99s-message-people",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-bridge-aretha-franklin-gospel-music-related",
+      "source": "aretha-franklin",
+      "target": "gospel-music",
+      "type": "related",
+      "label": "gospel roots",
+      "strength": 0.78,
+      "context": [
+        "Franklin sang in church before her secular career; gospel remained a vocal foundation."
+      ],
+      "sources": [
+        {
+          "label": "Smithsonian National Portrait Gallery",
+          "url": "https://npg.si.edu/blog/aretha-franklin-queen-soul",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-bridge-aretha-franklin-rhythm-and-blues-associated_genre",
+      "source": "aretha-franklin",
+      "target": "rhythm-and-blues",
+      "type": "associated_genre",
+      "label": "R&B voice",
+      "strength": 0.78,
+      "context": [
+        "Franklin's recordings brought gospel-inflected singing into R&B."
+      ],
+      "sources": [
+        {
+          "label": "Smithsonian National Portrait Gallery",
+          "url": "https://npg.si.edu/blog/aretha-franklin-queen-soul",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-bridge-aretha-franklin-soul-music-associated_genre",
+      "source": "aretha-franklin",
+      "target": "soul-music",
+      "type": "associated_genre",
+      "label": "soul singer",
+      "strength": 0.78,
+      "context": [
+        "Franklin became a defining voice of soul, not merely a generic pop performer."
+      ],
+      "sources": [
+        {
+          "label": "Smithsonian National Portrait Gallery",
+          "url": "https://npg.si.edu/blog/aretha-franklin-queen-soul",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-bridge-aretha-franklin-pop-music-related",
+      "source": "aretha-franklin",
+      "target": "pop-music",
+      "type": "related",
+      "label": "pop crossover",
+      "strength": 0.78,
+      "context": [
+        "Franklin's soul recordings also reached a broad pop audience."
+      ],
+      "sources": [
+        {
+          "label": "Smithsonian National Portrait Gallery",
+          "url": "https://npg.si.edu/blog/aretha-franklin-queen-soul",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-bridge-cool-jazz-jazz-associated_genre",
+      "source": "cool-jazz",
+      "target": "jazz",
+      "type": "associated_genre",
+      "label": "jazz direction",
+      "strength": 0.78,
+      "context": [
+        "Cool jazz is a direction within jazz, not a separate origin tradition."
+      ],
+      "sources": [
+        {
+          "label": "National Endowment for the Arts",
+          "url": "https://www.arts.gov/honors/jazz/miles-davis",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-bridge-miles-davis-cool-jazz-associated_genre",
+      "source": "miles-davis",
+      "target": "cool-jazz",
+      "type": "associated_genre",
+      "label": "Birth of the Cool",
+      "strength": 0.78,
+      "context": [
+        "Davis's late-1940s nonet recordings are an anchor for cool jazz."
+      ],
+      "sources": [
+        {
+          "label": "National Endowment for the Arts",
+          "url": "https://www.arts.gov/honors/jazz/miles-davis",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-bridge-modal-jazz-jazz-associated_genre",
+      "source": "modal-jazz",
+      "target": "jazz",
+      "type": "associated_genre",
+      "label": "jazz direction",
+      "strength": 0.78,
+      "context": [
+        "Modal jazz changes the improvisational framework inside jazz."
+      ],
+      "sources": [
+        {
+          "label": "National Endowment for the Arts",
+          "url": "https://www.arts.gov/honors/jazz/miles-davis",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-bridge-miles-davis-modal-jazz-associated_genre",
+      "source": "miles-davis",
+      "target": "modal-jazz",
+      "type": "associated_genre",
+      "label": "modal turn",
+      "strength": 0.78,
+      "context": [
+        "Davis moved toward modal improvisation on Kind of Blue after his earlier cool-jazz work."
+      ],
+      "sources": [
+        {
+          "label": "National Endowment for the Arts",
+          "url": "https://www.arts.gov/honors/jazz/miles-davis",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-bridge-john-coltrane-modal-jazz-associated_genre",
+      "source": "john-coltrane",
+      "target": "modal-jazz",
+      "type": "associated_genre",
+      "label": "modal improvisation",
+      "strength": 0.78,
+      "context": [
+        "Coltrane later used modal improvisation in major recordings; his connection is not limited to Davis's band."
+      ],
+      "sources": [
+        {
+          "label": "Smithsonian Magazine",
+          "url": "https://www.smithsonianmag.com/smithsonian-institution/rusty-hassan-talks-about-john-coltrane-herbie-hancock-and-todays-jazz-scene-67287299/",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-bridge-western-swing-country-associated_genre",
+      "source": "western-swing",
+      "target": "country",
+      "type": "associated_genre",
+      "label": "country dance music",
+      "strength": 0.78,
+      "context": [
+        "Western swing developed in the Southwestern country-dance tradition."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame/bob-wills",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-bridge-western-swing-jazz-influenced_by",
+      "source": "western-swing",
+      "target": "jazz",
+      "type": "influenced_by",
+      "label": "jazz phrasing",
+      "strength": 0.78,
+      "context": [
+        "Western swing incorporated New Orleans jazz and improvising dance-band practices."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame/bob-wills",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-bridge-western-swing-blues-influenced_by",
+      "source": "western-swing",
+      "target": "blues",
+      "type": "influenced_by",
+      "label": "blues roots",
+      "strength": 0.78,
+      "context": [
+        "Blues was one ingredient of western swing rather than its whole sound."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame/bob-wills",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-bridge-western-swing-swing-music-related",
+      "source": "western-swing",
+      "target": "swing-music",
+      "type": "related",
+      "label": "big-band swing bridge",
+      "strength": 0.78,
+      "context": [
+        "Big-band swing was another ingredient in the western-swing mixture."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame/bob-wills",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-bridge-bob-wills-western-swing-associated_genre",
+      "source": "bob-wills",
+      "target": "western-swing",
+      "type": "associated_genre",
+      "label": "western swing bandleader",
+      "strength": 0.78,
+      "context": [
+        "Wills and his Texas Playboys are a documented anchor of western swing."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame/bob-wills",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-bridge-bob-wills-country-associated_genre",
+      "source": "bob-wills",
+      "target": "country",
+      "type": "associated_genre",
+      "label": "country bandleader",
+      "strength": 0.78,
+      "context": [
+        "Wills belongs to country history even though his bands drew widely from jazz and blues."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame/bob-wills",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-bridge-bakersfield-sound-country-associated_genre",
+      "source": "bakersfield-sound",
+      "target": "country",
+      "type": "associated_genre",
+      "label": "California country",
+      "strength": 0.78,
+      "context": [
+        "Bakersfield is a regional country sound, not a separate broad musical tradition."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://www.countrymusichalloffame.org/press/releases/museum-exhibit-the-bakersfield-sound-buck-owens-merle-haggard-and-california-country-closes-december-31-2014-2",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-bridge-bakersfield-sound-honky-tonk-influenced_by",
+      "source": "bakersfield-sound",
+      "target": "honky-tonk",
+      "type": "influenced_by",
+      "label": "honky-tonk roots",
+      "strength": 0.78,
+      "context": [
+        "Bakersfield musicians kept honky-tonk directness in a louder electric setting."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://www.countrymusichalloffame.org/press/releases/museum-exhibit-the-bakersfield-sound-buck-owens-merle-haggard-and-california-country-closes-december-31-2014-2",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-bridge-bakersfield-sound-rockabilly-influenced_by",
+      "source": "bakersfield-sound",
+      "target": "rockabilly",
+      "type": "influenced_by",
+      "label": "rockabilly edge",
+      "strength": 0.78,
+      "context": [
+        "The sound added a harder rockabilly edge to honky-tonk country."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://www.countrymusichalloffame.org/press/releases/museum-exhibit-the-bakersfield-sound-buck-owens-merle-haggard-and-california-country-closes-december-31-2014-2",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-bridge-bakersfield-sound-western-swing-influenced_by",
+      "source": "bakersfield-sound",
+      "target": "western-swing",
+      "type": "influenced_by",
+      "label": "western swing roots",
+      "strength": 0.78,
+      "context": [
+        "Western swing was one of the ingredients in Owens's Bakersfield sound."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://www.countrymusichalloffame.org/press/releases/museum-exhibit-the-bakersfield-sound-buck-owens-merle-haggard-and-california-country-closes-december-31-2014-2",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-bridge-buck-owens-bakersfield-sound-associated_genre",
+      "source": "buck-owens",
+      "target": "bakersfield-sound",
+      "type": "associated_genre",
+      "label": "Bakersfield anchor",
+      "strength": 0.78,
+      "context": [
+        "Owens's band made the bright, amplified Bakersfield sound widely heard."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://www.countrymusichalloffame.org/press/releases/museum-exhibit-the-bakersfield-sound-buck-owens-merle-haggard-and-california-country-closes-december-31-2014-2",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-bridge-buck-owens-western-swing-related",
+      "source": "buck-owens",
+      "target": "western-swing",
+      "type": "related",
+      "label": "western swing background",
+      "strength": 0.78,
+      "context": [
+        "Owens learned western swing as a working Southwestern dance-band musician."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame/buck-owens",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-bridge-buck-owens-rhythm-and-blues-related",
+      "source": "buck-owens",
+      "target": "rhythm-and-blues",
+      "type": "related",
+      "label": "R&B repertoire",
+      "strength": 0.78,
+      "context": [
+        "Owens played R&B material in Bakersfield dance halls; this is a repertoire bridge, not a claim that he was an R&B artist."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame/buck-owens",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-bridge-merle-haggard-bakersfield-sound-associated_genre",
+      "source": "merle-haggard",
+      "target": "bakersfield-sound",
+      "type": "associated_genre",
+      "label": "Bakersfield anchor",
+      "strength": 0.78,
+      "context": [
+        "Haggard was one of the two best-known artists associated with the Bakersfield sound."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://www.countrymusichalloffame.org/press/releases/museum-exhibit-the-bakersfield-sound-buck-owens-merle-haggard-and-california-country-closes-december-31-2014-2",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-bridge-outlaw-country-country-associated_genre",
+      "source": "outlaw-country",
+      "target": "country",
+      "type": "associated_genre",
+      "label": "country movement",
+      "strength": 0.78,
+      "context": [
+        "Outlaw country was a 1970s movement within country, distinguished partly by artist control."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame/waylon-jennings",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-bridge-willie-nelson-outlaw-country-associated_genre",
+      "source": "willie-nelson",
+      "target": "outlaw-country",
+      "type": "associated_genre",
+      "label": "Outlaw movement",
+      "strength": 0.78,
+      "context": [
+        "Nelson helped establish the 1970s Outlaw country movement."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame/willie-nelson",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-bridge-waylon-jennings-outlaw-country-associated_genre",
+      "source": "waylon-jennings",
+      "target": "outlaw-country",
+      "type": "associated_genre",
+      "label": "Outlaw movement",
+      "strength": 0.78,
+      "context": [
+        "Jennings fought for control of songs, sessions and musicians, a core Outlaw-country distinction."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame/waylon-jennings",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-bridge-waylon-jennings-country-associated_genre",
+      "source": "waylon-jennings",
+      "target": "country",
+      "type": "associated_genre",
+      "label": "country singer",
+      "strength": 0.78,
+      "context": [
+        "Jennings remained a country artist while challenging Nashville recording practices."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame/waylon-jennings",
+          "provider": "other"
+        }
+      ]
+    },
+    {
+      "id": "genre-bridge-waylon-jennings-willie-nelson-collaboration",
+      "source": "waylon-jennings",
+      "target": "willie-nelson",
+      "type": "collaboration",
+      "label": "Waylon and Willie",
+      "strength": 0.78,
+      "context": [
+        "Jennings and Nelson recorded together and became a paired public face of Outlaw country."
+      ],
+      "sources": [
+        {
+          "label": "Country Music Hall of Fame and Museum",
+          "url": "https://countrymusichalloffame.org/hall-of-fame/waylon-jennings",
           "provider": "other"
         }
       ]

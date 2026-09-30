@@ -26,7 +26,7 @@ A carved-top solid-body electric strongly associated with sustain, humbuckers an
 - [[dickey-betts|Dickey Betts]] - lead guitar link
 - [[duane-allman|Duane Allman]] - slide guitar link
 - [[eric-clapton|Eric Clapton]] - classic era tone
-- [[gibson|Gibson]] - made
+- [[gibson|Gibson]] - made (The Les Paul is part of Gibson's own original electric guitar collection.)
 - [[hard-rock|Hard rock]] - sustain and humbuckers
 - [[jimmy-page|Jimmy Page]] - classic tone
 - [[kai-hansen|Kai Hansen]] - Wikipedia link signal (Wikipedia link: Gibson Les Paul)

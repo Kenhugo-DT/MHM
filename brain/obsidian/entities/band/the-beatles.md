@@ -23,9 +23,9 @@ A central 1960s band whose songwriting, studio practice and guitar textures resh
 
 ## Connections
 
-- [[george-harrison|George Harrison]] - guitarist
+- [[george-harrison|George Harrison]] - guitarist (The Beatles' own timeline identifies Harrison as the group's lead guitarist.)
 - [[psychedelic-rock|Psychedelic rock]] - studio era
-- [[rock|Rock]] - central band
+- [[rock|Rock]] - central band (The Beatles helped usher rock into an experimental, studio-led era.)
 
 ## Sources
 

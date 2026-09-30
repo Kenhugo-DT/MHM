@@ -24,7 +24,7 @@ A country guitar master and producer whose fingerstyle approach shaped Nashville
 ## Connections
 
 - [[country|Country]] - Nashville guitar
-- [[gretsch-6120|Gretsch 6120]] - signature association
+- [[gretsch-6120|Gretsch 6120]] - signature association (Gretsch launched the Chet Atkins Hollow Body Guitar, Model 6120, in 1955.)
 
 ## Sources
 

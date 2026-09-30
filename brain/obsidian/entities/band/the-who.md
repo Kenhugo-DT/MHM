@@ -24,8 +24,8 @@ A British rock band where Pete Townshend's power chords and aggressive rhythm gu
 ## Connections
 
 - [[art-rock|Art rock]] - rock opera scale
-- [[pete-townshend|Pete Townshend]] - guitarist / songwriter
-- [[rock|Rock]] - central band
+- [[pete-townshend|Pete Townshend]] - guitarist / songwriter (Townshend joined the group on rhythm guitar and became the Who's principal songwriter.)
+- [[rock|Rock]] - central band (The Who were among the British groups that transformed rock and roll in the 1960s.)
 
 ## Sources
 

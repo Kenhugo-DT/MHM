@@ -23,7 +23,7 @@ AC/DC's rhythm guitarist, central to the band's tight riff architecture and hard
 
 ## Connections
 
-- [[acdc|AC/DC]] - rhythm guitarist
+- [[acdc|AC/DC]] - rhythm guitarist (Malcolm Young cofounded AC/DC with Angus and anchored its guitar-driven sound.)
 
 ## Sources
 

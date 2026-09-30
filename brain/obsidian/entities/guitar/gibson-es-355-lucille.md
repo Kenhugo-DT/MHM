@@ -23,10 +23,10 @@ The Lucille line reflects B.B. King's signature semi-hollow guitar identity, con
 
 ## Connections
 
-- [[bb-king|B.B. King]] - signature guitar
+- [[bb-king|B.B. King]] - signature guitar (King played an ES-355 before Gibson developed his Lucille signature model; Gibson's Lucille Legacy retains the ES model lineage.)
 - [[chuck-berry|Chuck Berry]] - semi-hollow lineage
 - [[electric-blues|Electric blues]] - singing semi-hollow
-- [[gibson|Gibson]] - made
+- [[gibson|Gibson]] - made (Gibson Custom makes the B.B. King Lucille Legacy in its ES artist-model lineup.)
 
 ## Sources
 

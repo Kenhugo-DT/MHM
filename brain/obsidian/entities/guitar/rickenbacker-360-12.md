@@ -25,7 +25,7 @@ A twelve-string electric tied to jangly Beatles-era textures and later alternati
 
 - [[george-harrison|George Harrison]] - twelve-string era
 - [[johnny-marr|Johnny Marr]] - jangly texture
-- [[rickenbacker|Rickenbacker]] - made
+- [[rickenbacker|Rickenbacker]] - made (Rickenbacker lists the 360/12 as its twelve-string electric guitar model.)
 
 ## Sources
 
@@ -33,4 +33,4 @@ A twelve-string electric tied to jangly Beatles-era textures and later alternati
 
 ## Curator Notes
 
-Use this section for human notes. Machine-readable organization belongs in the frontmatter above.
+The Harrison/Beatles recording use supports a concrete instrument-to-player bridge. A later artist being inspired to buy the model is influence context, not proof of a shared recording.

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-28T10:59:23.000Z",
+  "updatedAt": "2026-09-30T11:27:57.000Z",
   "notes": [
     "Human feedback for the MHM learning layer.",
     "Use this for taste, placement and organization signals after reviewing the live map.",
@@ -49,6 +49,22 @@
     }
   ],
   "bridgePolicies": [
+    {
+      "id": "gospel-rnb-soul-rock",
+      "zones": ["roots-blues", "pop-soul-disco", "rock-circuit"],
+      "anchorNodes": ["gospel-music", "rhythm-and-blues", "ray-charles", "aretha-franklin", "sister-rosetta-tharpe"],
+      "anchorsOnly": true,
+      "feedbackCategories": ["good_bridge", "genre_transition_needed"],
+      "feedback": "Gospel, blues and swing feed R&B; R&B and gospel feed soul and early rock. Preserve the distinct traditions and let only documented anchors create cross-zone pull."
+    },
+    {
+      "id": "western-swing-country-jazz",
+      "zones": ["country-roots", "jazz", "roots-blues"],
+      "anchorNodes": ["western-swing", "bob-wills", "bakersfield-sound", "buck-owens"],
+      "anchorsOnly": true,
+      "feedbackCategories": ["good_bridge", "genre_transition_needed"],
+      "feedback": "Western swing combines country dance music with jazz and blues; Bakersfield inherits selected elements. Keep the country center legible while these documented anchors lean outward."
+    },
     {
       "id": "rock-to-metal",
       "zones": ["rock-circuit", "hard-rock-metal"],
@@ -134,6 +150,106 @@
     }
   ],
   "nodeFeedback": [
+    {
+      "id": "gospel-music",
+      "zone": "roots-blues",
+      "secondaryZones": ["pop-soul-disco"],
+      "primaryGenres": ["gospel music"],
+      "curatorTags": ["sacred-to-secular bridge", "R&B and soul roots"],
+      "bridgeBoost": 0.2,
+      "feedback": "Keep gospel a distinct sacred tradition. Its documented influence on R&B and soul is a historical bridge, not evidence that the genres are interchangeable."
+    },
+    {
+      "id": "rhythm-and-blues",
+      "zone": "roots-blues",
+      "secondaryZones": ["jazz", "pop-soul-disco", "rock-circuit"],
+      "primaryGenres": ["rhythm and blues"],
+      "curatorTags": ["blues-gospel-swing synthesis", "soul and rock roots"],
+      "bridgeBoost": 0.26,
+      "feedback": "R&B is the junction of documented blues, gospel and swing influences and later soul/rock developments. Do not collapse it into any one source."
+    },
+    {
+      "id": "cool-jazz",
+      "zone": "jazz",
+      "primaryGenres": ["cool jazz"],
+      "curatorTags": ["Miles Davis nonet", "arranged jazz"],
+      "feedback": "Birth of the Cool is a specific Davis-led jazz phase. Keep it within jazz and distinct from his later modal and electric phases."
+    },
+    {
+      "id": "modal-jazz",
+      "zone": "jazz",
+      "primaryGenres": ["modal jazz"],
+      "curatorTags": ["mode-based improvisation", "Kind of Blue"],
+      "feedback": "Modal jazz describes an improvisational approach, not a claim that all Davis or Coltrane recordings use modes."
+    },
+    {
+      "id": "western-swing",
+      "zone": "country-roots",
+      "secondaryZones": ["jazz", "roots-blues"],
+      "primaryGenres": ["western swing"],
+      "curatorTags": ["country-jazz bridge", "Southwestern dance music"],
+      "bridgeBoost": 0.24,
+      "feedback": "Place western swing in country roots while letting its documented jazz, blues and big-band ingredients explain cross-zone connections."
+    },
+    {
+      "id": "bakersfield-sound",
+      "zone": "country-roots",
+      "secondaryZones": ["roots-blues"],
+      "primaryGenres": ["Bakersfield sound"],
+      "curatorTags": ["electric country", "honky-tonk-rockabilly bridge"],
+      "bridgeBoost": 0.17,
+      "feedback": "Keep Bakersfield with country. Its honky-tonk, western swing and rockabilly ingredients explain the louder regional sound without turning it into generic rock."
+    },
+    {
+      "id": "outlaw-country",
+      "zone": "country-roots",
+      "primaryGenres": ["outlaw country"],
+      "curatorTags": ["1970s country", "artist-led recording"],
+      "feedback": "Outlaw country is partly about control over material, studios and musicians. Do not infer that all outlaw artists share one fixed musical style."
+    },
+    {
+      "id": "ray-charles",
+      "zone": "roots-blues",
+      "secondaryZones": ["pop-soul-disco", "country-roots", "jazz"],
+      "primaryGenres": ["rhythm and blues", "soul"],
+      "curatorTags": ["gospel-to-soul bridge", "country recordings"],
+      "bridgeBoost": 0.27,
+      "feedback": "Charles is a documented bridge: gospel phrasing entered R&B and soul, and he also recorded country. Keep influence, genre and repertoire links distinct."
+    },
+    {
+      "id": "aretha-franklin",
+      "zone": "pop-soul-disco",
+      "secondaryZones": ["roots-blues", "jazz"],
+      "primaryGenres": ["soul", "rhythm and blues"],
+      "curatorTags": ["gospel vocal roots", "soul crossover"],
+      "bridgeBoost": 0.2,
+      "feedback": "Franklin's gospel upbringing and R&B recordings explain her soul and pop connections; a gospel influence is not the same as a later secular genre label."
+    },
+    {
+      "id": "bob-wills",
+      "zone": "country-roots",
+      "secondaryZones": ["jazz", "roots-blues"],
+      "primaryGenres": ["western swing"],
+      "curatorTags": ["Texas Playboys", "country-jazz bridge"],
+      "bridgeBoost": 0.22,
+      "feedback": "Wills anchors western swing in country while his documented jazz and blues ingredients justify outward connections."
+    },
+    {
+      "id": "buck-owens",
+      "zone": "country-roots",
+      "secondaryZones": ["roots-blues"],
+      "primaryGenres": ["Bakersfield sound", "country"],
+      "curatorTags": ["electric Bakersfield", "western swing background"],
+      "bridgeBoost": 0.15,
+      "feedback": "Owens anchors Bakersfield; R&B is documented dance-hall repertoire, not a reason to reclassify him as an R&B artist."
+    },
+    {
+      "id": "waylon-jennings",
+      "zone": "country-roots",
+      "primaryGenres": ["outlaw country", "country"],
+      "curatorTags": ["artist autonomy", "Waylon and Willie"],
+      "feedback": "Jennings's Outlaw placement rests on documented recording autonomy and work with Willie Nelson, not on a generic rebellious visual label."
+    },
     {
       "id": "jimmie-rodgers",
       "zone": "country-roots",

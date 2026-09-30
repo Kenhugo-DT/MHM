@@ -27,9 +27,9 @@ A broad post-1970s rock field where punk, indie, art rock and heavier guitar sou
 - [[fender-mustang|Fender Mustang]] - offset underground use
 - [[indie-rock|Indie rock]] - scene overlap
 - [[post-punk|Post-punk]] - feeds
-- [[radiohead|Radiohead]] - central band
+- [[radiohead|Radiohead]] - central band (AllMusic classifies Radiohead within alternative and indie rock while noting their experimental reach.)
 - [[rage-against-the-machine|Rage Against the Machine]] - political heavy branch
-- [[rock|Rock]] - later branch
+- [[rock|Rock]] - later branch (Alternative rock grew from the 1970s indie underground and became mainstream in the 1990s.)
 - [[shoegaze|Shoegaze]] - textural branch
 
 ## Sources

@@ -31,4 +31,4 @@ No documented connections yet.
 
 ## Curator Notes
 
-Use this section for human notes. Machine-readable organization belongs in the frontmatter above.
+A funk sample or stylistic debt explains musical lineage. Keep G-funk in hip-hop; do not treat every funk influence as a direct artist-to-artist collaboration.

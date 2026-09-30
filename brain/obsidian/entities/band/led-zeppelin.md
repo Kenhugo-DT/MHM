@@ -24,7 +24,7 @@ A hard rock band that fused blues, folk, riffs and studio ambition into a huge g
 ## Connections
 
 - [[band-of-joy|Band of Joy]] - Wikipedia link signal (Wikipedia link: Band of Joy)
-- [[blues|Blues]] - roots source
+- [[blues|Blues]] - roots source (Led Zeppelin's late-1960s sound drew heavily on blues before expanding into other styles.)
 - [[hard-rock|Hard rock]] - central band
 - [[jimmy-page|Jimmy Page]] - guitarist / producer
 
@@ -34,4 +34,4 @@ A hard rock band that fused blues, folk, riffs and studio ambition into a huge g
 
 ## Curator Notes
 
-Use this section for human notes. Machine-readable organization belongs in the frontmatter above.
+Important overlap point between blues rock, classic rock and hard rock.

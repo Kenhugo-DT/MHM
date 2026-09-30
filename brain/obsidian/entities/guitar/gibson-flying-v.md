@@ -25,7 +25,7 @@ A radical late-1950s Gibson shape later embraced by blues-rock and metal players
 
 - [[albert-king|Albert King]] - iconic instrument
 - [[dave-mustaine|Dave Mustaine]] - V-shape guitar link
-- [[gibson|Gibson]] - made
+- [[gibson|Gibson]] - made (Gibson includes the Flying V in its electric guitar collection.)
 - [[heavy-metal|Heavy metal]] - stage shape
 - [[judas-priest|Judas Priest]] - stage guitar link
 - [[randy-rhoads|Randy Rhoads]] - stage shape link

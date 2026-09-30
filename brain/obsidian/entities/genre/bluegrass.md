@@ -25,7 +25,7 @@ An acoustic American roots style where flatpicked guitar supports fast ensemble 
 
 - [[bill-monroe|Bill Monroe]] - bluegrass pioneer (Monroe's band and acoustic sound helped define bluegrass.)
 - [[country|Country]] - roots overlap
-- [[folk|Folk]] - acoustic overlap
+- [[folk|Folk]] - acoustic overlap (Bluegrass reached folk-revival audiences through acoustic recordings and performers such as Mike Seeger.)
 
 ## Sources
 
@@ -33,4 +33,4 @@ An acoustic American roots style where flatpicked guitar supports fast ensemble 
 
 ## Curator Notes
 
-Use this section for human notes. Machine-readable organization belongs in the frontmatter above.
+The genre name's link to Bill Monroe's band is an origin clue. Keep bluegrass rooted in early country and acoustic folk history, not modern pop-country.

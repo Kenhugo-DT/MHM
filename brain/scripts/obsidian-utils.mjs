@@ -122,7 +122,8 @@ function unquoteYaml(value) {
 export function frontmatterBlock(data) {
   const lines = ["---"];
   for (const [key, value] of Object.entries(data)) {
-    lines.push(`${key}: ${formatYamlValue(value)}`);
+    const formatted = formatYamlValue(value);
+    lines.push(formatted ? `${key}: ${formatted}` : `${key}:`);
   }
   lines.push("---", "");
   return lines.join("\n");

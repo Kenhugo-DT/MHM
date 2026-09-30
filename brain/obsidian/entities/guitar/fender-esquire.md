@@ -33,4 +33,4 @@ A single-pickup Fender solid-body that sits at the start of the Telecaster famil
 
 ## Curator Notes
 
-Use this section for human notes. Machine-readable organization belongs in the frontmatter above.
+The model belongs with Fender guitar history. Its documented use by Luther Perkins behind Johnny Cash gives it a specific country bridge; do not infer that Cash himself played this model.

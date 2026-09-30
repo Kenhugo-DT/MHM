@@ -24,7 +24,7 @@ A major folk and blues figure whose repertoire and twelve-string guitar style fe
 ## Connections
 
 - [[blues|Blues]] - roots repertoire
-- [[folk|Folk]] - song tradition
+- [[folk|Folk]] - song tradition (Lead Belly's songs and performances contributed to the early American folk movement.)
 - [[national-resonator|National resonator]] - early acoustic volume world
 
 ## Sources

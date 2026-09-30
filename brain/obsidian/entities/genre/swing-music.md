@@ -25,6 +25,8 @@ Swing music is a style of jazz that developed in the United States during the la
 
 - [[duke-ellington|Duke Ellington]] - swing-era orchestra (Ellington led one of jazz's major swing-era orchestras.)
 - [[jazz|Jazz]] - jazz era (Swing grew within the jazz tradition.)
+- [[rhythm-and-blues|Rhythm and blues]] - swing roots (Swing horn riffs and small-combo arrangements fed early R&B.)
+- [[western-swing|Western swing]] - big-band swing bridge (Big-band swing was another ingredient in the western-swing mixture.)
 
 ## Sources
 

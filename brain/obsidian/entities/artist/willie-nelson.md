@@ -24,8 +24,10 @@ A country songwriter and guitarist whose nylon-string guitar Trigger became part
 ## Connections
 
 - [[country|Country]] - outlaw country voice
+- [[outlaw-country|Outlaw country]] - Outlaw movement (Nelson helped establish the 1970s Outlaw country movement.)
 - [[patsy-cline|Patsy Cline]] - recorded Nelson composition (Cline recorded a Willie Nelson composition during her career.)
-- [[trigger|Trigger]] - signature guitar
+- [[trigger|Trigger]] - signature guitar (Nelson named his replacement Martin N-20 guitar Trigger, which became his longtime instrument.)
+- [[waylon-jennings|Waylon Jennings]] - Waylon and Willie (Jennings and Nelson recorded together and became a paired public face of Outlaw country.)
 
 ## Sources
 

@@ -35,4 +35,4 @@ The Ramones were an American punk rock band formed in the New York City neighbor
 
 ## Curator Notes
 
-Use this section for human notes. Machine-readable organization belongs in the frontmatter above.
+Major early punk anchor. Should help organize the punk-alt area and connect back to rock history.

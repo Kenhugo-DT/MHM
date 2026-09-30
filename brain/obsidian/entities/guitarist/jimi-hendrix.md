@@ -26,7 +26,7 @@ A transformative electric guitarist who expanded feedback, fuzz, wah, chord melo
 - [[buddy-guy|Buddy Guy]] - influence line
 - [[fender-stratocaster|Fender Stratocaster]] - iconic instrument
 - [[psychedelic-rock|Psychedelic rock]] - expanded
-- [[stevie-ray-vaughan|Stevie Ray Vaughan]] - influence line
+- [[stevie-ray-vaughan|Stevie Ray Vaughan]] - influence line (Vaughan recorded Hendrix's Voodoo Chile, and Rock Hall traces Hendrix's blues-guitar legacy through Vaughan.)
 
 ## Sources
 

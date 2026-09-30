@@ -1,9 +1,10 @@
-"""Insert only the reviewed classical/pop expansion into Supabase."""
+"""Insert a reviewed, bounded graph expansion without overwriting live rows."""
 
 from __future__ import annotations
 
 import argparse
 import json
+from pathlib import Path
 
 from import_graph import BRAIN_ROOT, entity_row, relation_row
 from supabase_brain import require_client
@@ -12,9 +13,9 @@ GRAPH_PATH = BRAIN_ROOT / "data" / "approved" / "graph.json"
 BATCH_PATH = BRAIN_ROOT / "data" / "curated-era-batch.json"
 
 
-def batch_rows():
+def batch_rows(batch_path=BATCH_PATH):
     graph = json.loads(GRAPH_PATH.read_text(encoding="utf-8"))
-    batch = json.loads(BATCH_PATH.read_text(encoding="utf-8"))
+    batch = json.loads(batch_path.read_text(encoding="utf-8"))
     all_nodes = {node["id"]: node for node in graph["nodes"]}
     node_ids = batch["nodeIds"]
     if len(node_ids) != len(set(node_ids)) or any(node_id not in all_nodes for node_id in node_ids):
@@ -24,8 +25,9 @@ def batch_rows():
     edges = [edge for edge in graph["edges"] if edge["id"].startswith(batch["edgePrefix"])]
     if len(edges) != batch["expectedEdges"] or len({edge["id"] for edge in edges}) != len(edges):
         raise ValueError("Curated edge count or IDs differ from the reviewed batch.")
+    allowed_zones = set(batch.get("allowedZones", ["classical-history", "pop-soul-disco"]))
     for node in nodes:
-        if node["zone"] not in {"classical-history", "pop-soul-disco"} or not node.get("sources"):
+        if node["zone"] not in allowed_zones or not node.get("sources"):
             raise ValueError(f"Node lacks a reviewed zone or source: {node['id']}")
     for edge in edges:
         if (edge["source"] not in all_nodes or edge["target"] not in all_nodes
@@ -41,8 +43,9 @@ def equal_fields(remote, expected):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--apply", action="store_true")
+    parser.add_argument("--batch", default=str(BATCH_PATH))
     args = parser.parse_args()
-    nodes, edges = batch_rows()
+    nodes, edges = batch_rows(Path(args.batch))
     client = require_client()
     pending_nodes = []
     pending_edges = []

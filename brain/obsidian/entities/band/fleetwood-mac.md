@@ -23,7 +23,7 @@ A band that began in British blues and later became a polished pop-rock force wi
 
 ## Connections
 
-- [[lindsey-buckingham|Lindsey Buckingham]] - guitarist / songwriter
+- [[lindsey-buckingham|Lindsey Buckingham]] - guitarist / songwriter (Buckingham joined Fleetwood Mac with Stevie Nicks in 1975 as a guitarist and songwriter.)
 - [[peter-green|Peter Green]] - founding guitarist
 
 ## Sources

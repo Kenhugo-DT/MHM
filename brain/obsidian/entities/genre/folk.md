@@ -24,13 +24,14 @@ Song-centered acoustic traditions where the guitar often works as both rhythm in
 ## Connections
 
 - [[alf-cranner|Alf Cranner]] - folk song link
-- [[bluegrass|Bluegrass]] - acoustic overlap
-- [[bob-dylan|Bob Dylan]] - songwriting root
+- [[bluegrass|Bluegrass]] - acoustic overlap (Bluegrass reached folk-revival audiences through acoustic recordings and performers such as Mike Seeger.)
+- [[bob-dylan|Bob Dylan]] - songwriting root (The original liner notes to Dylan's 1962 debut introduced him as a figure in American folk music.)
 - [[country|Country]] - roots overlap
+- [[edvard-grieg|Edvard Grieg]] - Norwegian folk melody (Grieg drew on Gjendine Slålien's songs and other folk tunes in later compositions.)
 - [[flamenco|Flamenco]] - acoustic tradition
 - [[gibson-j45|Gibson J-45]] - songwriter rhythm
 - [[guild-f-512|Guild F-512]] - twelve-string acoustic shimmer
-- [[lead-belly|Lead Belly]] - song tradition
+- [[lead-belly|Lead Belly]] - song tradition (Lead Belly's songs and performances contributed to the early American folk movement.)
 - [[martin-d28|Martin D-28]] - dreadnought tradition
 - [[norwegian-vise|Norwegian vise]] - song tradition
 - [[singer-songwriter|Singer-songwriter]] - song tradition

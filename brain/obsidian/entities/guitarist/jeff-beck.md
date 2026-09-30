@@ -25,7 +25,7 @@ A Yardbirds alumnus who pushed blues rock, hard rock and jazz fusion into a high
 
 - [[blues-rock|Blues rock]] - British blues line
 - [[fender-stratocaster|Fender Stratocaster]] - signature electric voice
-- [[jazz-fusion|Jazz fusion]] - instrumental branch
+- [[jazz-fusion|Jazz fusion]] - instrumental branch (Beck crossed from rock guitar into jazz-rock fusion on Blow by Blow and Wired.)
 - [[the-yardbirds|The Yardbirds]] - member
 
 ## Sources
@@ -34,4 +34,4 @@ A Yardbirds alumnus who pushed blues rock, hard rock and jazz fusion into a high
 
 ## Curator Notes
 
-Use this section for human notes. Machine-readable organization belongs in the frontmatter above.
+The Yardbirds are the documented roots link; later instrumental work gives Beck a separate jazz-fusion direction. Keep those reasons distinct.

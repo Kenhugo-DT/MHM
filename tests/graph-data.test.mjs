@@ -5,6 +5,7 @@ import { graphFingerprint, matchingLayouts, MODE_NODE_TYPES } from "../shared/gr
 import { edgeEvidenceTier, isMapConnection } from "../shared/graph-schema/edge-evidence.mjs";
 import { ORGANIZED_MAP_ZONES, organizeGraphLayout } from "../brain/scripts/organize-graph-layout.mjs";
 import { curatedEraLinks, curatedEraNodes } from "../brain/scripts/curated-era-expansion.mjs";
+import { curatedGenreLinks, curatedGenreNodes } from "../brain/scripts/curated-genre-bridges.mjs";
 import { loadAllRows } from "../site/src/data/load-all-rows.mjs";
 
 test("pagination returns every row beyond the old 800-node cap", async () => {
@@ -155,6 +156,39 @@ test("classical and pop expansion is sourced, connected and keeps historical ord
   assert.ok(timeline["johann-sebastian-bach"].x < timeline["wolfgang-amadeus-mozart"].x);
   assert.ok(timeline["wolfgang-amadeus-mozart"].x < timeline["edvard-grieg"].x);
   assert.ok(timeline["edvard-grieg"].x < timeline["the-supremes"].x);
+});
+
+test("genre bridges are sourced, explain their relationship and reach the learning model", () => {
+  const graph = JSON.parse(readFileSync("brain/data/approved/graph.json", "utf8"));
+  const model = JSON.parse(readFileSync("brain/data/approved/learning-model.json", "utf8"));
+  const batch = JSON.parse(readFileSync("brain/data/curated-genre-batch.json", "utf8"));
+  const feedback = JSON.parse(readFileSync("brain/data/approved/curator-feedback.json", "utf8"));
+  const nodes = new Map(graph.nodes.map((node) => [node.id, node]));
+  const edges = new Map(graph.edges.map((edge) => [edge.id, edge]));
+  assert.equal(curatedGenreNodes.length, 12);
+  assert.equal(curatedGenreLinks.length, 40);
+  assert.deepEqual(new Set(batch.nodeIds), new Set(curatedGenreNodes.map((node) => node.id)));
+  assert.equal(batch.expectedEdges, curatedGenreLinks.length);
+  for (const entry of curatedGenreNodes) {
+    const node = nodes.get(entry.id);
+    assert.ok(node, entry.id);
+    assert.equal(node.type, entry.type);
+    assert.equal(node.zone, entry.zone);
+    assert.ok(node.sources.some((source) => source.url.startsWith("https://") && !source.url.includes("wikipedia.org")));
+    assert.ok(model.nodes[entry.id]?.curatorFeedback, `Missing learning feedback: ${entry.id}`);
+    assert.ok(feedback.nodeFeedback.some((item) => item.id === entry.id));
+    assert.ok(curatedGenreLinks.some((edge) => edge.source === entry.id || edge.target === entry.id));
+  }
+  for (const entry of curatedGenreLinks) {
+    const edge = edges.get(entry.id);
+    assert.ok(edge, entry.id);
+    assert.equal(edgeEvidenceTier(edge), "source_linked", entry.id);
+    assert.ok(edge.context.some(Boolean));
+    assert.ok(edge.sources.every((source) => source.url.startsWith("https://") && !source.url.includes("wikipedia.org")));
+    assert.ok(nodes.has(edge.source) && nodes.has(edge.target));
+  }
+  assert.ok(model.nodes["rhythm-and-blues"].secondaryZones.includes("pop-soul-disco"));
+  assert.ok(model.nodes["western-swing"].secondaryZones.includes("jazz"));
 });
 
 test("Wikipedia link and category signals stay research leads even with source URLs", () => {

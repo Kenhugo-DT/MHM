@@ -25,7 +25,7 @@ A heavy guitar style that connects metal riffing with progressive rock structure
 
 - [[anthrax-american-band|Anthrax (American band)]] - Wikipedia link signal (Wikipedia link: Anthrax (American band))
 - [[atheist|Atheist]] - Wikipedia link signal (Wikipedia link: Atheist (band))
-- [[heavy-metal|Heavy metal]] - technical branch
+- [[heavy-metal|Heavy metal]] - technical branch (Progressive metal is a later branch within heavy metal, extending its technical and stylistic range.)
 - [[ibanez-rg|Ibanez RG]] - technical guitar platform
 - [[progressive-rock|Progressive rock]] - structural overlap
 - [[steve-vai|Steve Vai]] - virtuoso overlap

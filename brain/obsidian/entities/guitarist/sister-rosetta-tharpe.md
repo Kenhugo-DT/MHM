@@ -24,6 +24,7 @@ A gospel and electric guitar pioneer whose rhythmic attack and showmanship helpe
 ## Connections
 
 - [[blues|Blues]] - gospel-blues guitar link
+- [[gospel-music|Gospel music]] - electric gospel (Tharpe brought a powerful electric-guitar sound to gospel performance.)
 - [[rock-and-roll|Rock and roll]] - early influence
 
 ## Sources

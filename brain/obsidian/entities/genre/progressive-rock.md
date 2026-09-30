@@ -24,13 +24,14 @@ Rock music stretched toward longer forms, concept albums, unusual harmony and mo
 ## Connections
 
 - [[art-rock|Art rock]] - experimental overlap
+- [[classical-music|Classical music]] - classical/prog bridge (Progressive rock drew on classical composition and instrumentation.)
 - [[gibson-eds-1275|Gibson EDS-1275]] - twelve-string stage color
 - [[john-mclaughlin|John McLaughlin]] - complex electric overlap
 - [[king-crimson|King Crimson]] - central band
 - [[pink-floyd|Pink Floyd]] - central band
 - [[progressive-metal|Progressive metal]] - structural overlap
-- [[queen|Queen]] - arrangement scale
-- [[rock|Rock]] - branches into
+- [[queen|Queen]] - arrangement scale (Queen began with heavy progressive rock and later expanded into operatic, stadium-scale arrangements.)
+- [[rock|Rock]] - branches into (Progressive rock emerged as musicians stretched rock songs into multipart and album-length forms.)
 - [[rush|Rush]] - central band
 - [[yes|Yes]] - central band
 

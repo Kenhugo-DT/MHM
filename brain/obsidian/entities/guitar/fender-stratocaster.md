@@ -28,7 +28,7 @@ A contoured solid-body electric with three pickups and tremolo system, tied to H
 - [[david-gilmour|David Gilmour]] - signature tone
 - [[dick-dale|Dick Dale]] - surf guitar voice
 - [[electric-blues|Electric blues]] - blues lead voice
-- [[fender|Fender]] - made
+- [[fender|Fender]] - made (Fender introduced the Stratocaster in 1954 as one of its original electric guitar models.)
 - [[janick-gers|Janick Gers]] - Wikipedia link signal (Wikipedia link: Fender Stratocaster)
 - [[jeff-beck|Jeff Beck]] - signature electric voice
 - [[jimi-hendrix|Jimi Hendrix]] - iconic instrument

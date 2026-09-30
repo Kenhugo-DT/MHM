@@ -25,8 +25,8 @@ A British rock band combining hard rock, glam, progressive arrangements and Bria
 
 - [[brian-may|Brian May]] - guitarist
 - [[glam-rock|Glam rock]] - theatrical rock
-- [[hard-rock|Hard rock]] - arena guitar power
-- [[progressive-rock|Progressive rock]] - arrangement scale
+- [[hard-rock|Hard rock]] - arena guitar power (Queen's early heavy, guitar-driven rock developed into stadium-scale anthems.)
+- [[progressive-rock|Progressive rock]] - arrangement scale (Queen began with heavy progressive rock and later expanded into operatic, stadium-scale arrangements.)
 - [[sonata-arctica|Sonata Arctica]] - Wikipedia link signal (Wikipedia link: Queen (band))
 - [[tobias-sammet|Tobias Sammet]] - Wikipedia link signal (Wikipedia link: Queen (band))
 

@@ -24,6 +24,7 @@ A theatrical rock branch where big hooks, spectacle and electric guitar identity
 ## Connections
 
 - [[brian-may-red-special|Brian May Red Special]] - layered Queen tone
+- [[david-bowie|David Bowie]] - glam-rock pioneer (Bowie helped shape early-1970s glam rock.)
 - [[hard-rock|Hard rock]] - stage volume overlap
 - [[queen|Queen]] - theatrical rock
 - [[rock|Rock]] - theatrical branch

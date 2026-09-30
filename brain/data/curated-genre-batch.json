@@ -1,0 +1,19 @@
+{
+  "nodeIds": [
+    "gospel-music",
+    "rhythm-and-blues",
+    "cool-jazz",
+    "modal-jazz",
+    "western-swing",
+    "bakersfield-sound",
+    "outlaw-country",
+    "ray-charles",
+    "aretha-franklin",
+    "bob-wills",
+    "buck-owens",
+    "waylon-jennings"
+  ],
+  "edgePrefix": "genre-bridge-",
+  "expectedEdges": 40,
+  "allowedZones": ["roots-blues", "jazz", "country-roots", "pop-soul-disco"]
+}

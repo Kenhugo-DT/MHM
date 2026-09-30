@@ -23,7 +23,7 @@ A guitar maker closely associated with modern metal, custom shop instruments and
 
 ## Connections
 
-- [[esp-explorer-style|ESP Explorer style]] - made
+- [[esp-explorer-style|ESP Explorer style]] - made (ESP sells angular EX-family guitars; the map groups that body shape as explorer-style.)
 
 ## Sources
 

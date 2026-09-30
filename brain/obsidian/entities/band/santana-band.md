@@ -25,7 +25,7 @@ A band connecting blues rock guitar with Latin percussion, jazz fusion and Carlo
 
 - [[blues-rock|Blues rock]] - Latin blues-rock blend
 - [[carlos-santana|Carlos Santana]] - guitarist
-- [[jazz-fusion|Jazz fusion]] - fusion overlap
+- [[jazz-fusion|Jazz fusion]] - fusion overlap (Santana's sound combined jazz, rock and Latin musical influences.)
 
 ## Sources
 

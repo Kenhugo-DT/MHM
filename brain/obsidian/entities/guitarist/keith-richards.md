@@ -23,9 +23,9 @@ The Rolling Stones guitarist whose riffs, open tunings and blues roots became ce
 
 ## Connections
 
-- [[blues-rock|Blues rock]] - riff root
+- [[blues-rock|Blues rock]] - riff root (Richards learned in the British blues scene and brought blues-based riffs into the Rolling Stones' rock sound.)
 - [[fender-telecaster|Fender Telecaster]] - rhythm guitar link
-- [[the-rolling-stones|The Rolling Stones]] - guitarist
+- [[the-rolling-stones|The Rolling Stones]] - guitarist (Richards's guitar and songwriting are central to the Rolling Stones' blues-rooted rock sound.)
 
 ## Sources
 

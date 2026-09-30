@@ -24,9 +24,9 @@ A hollow-body electric strongly associated with Chet Atkins, Nashville tone and 
 ## Connections
 
 - [[brian-setzer|Brian Setzer]] - signature guitar link
-- [[chet-atkins|Chet Atkins]] - signature association
+- [[chet-atkins|Chet Atkins]] - signature association (Gretsch launched the Chet Atkins Hollow Body Guitar, Model 6120, in 1955.)
 - [[george-harrison|George Harrison]] - early guitar color
-- [[gretsch|Gretsch]] - made
+- [[gretsch|Gretsch]] - made (Gretsch shipped its first Chet Atkins Model 6120 guitars in 1955.)
 
 ## Sources
 

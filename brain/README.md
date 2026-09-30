@@ -46,6 +46,7 @@ npm run brain:obsidian:export
 npm run brain:obsidian:import
 npm run brain:learn
 npm run brain:organize
+npm run brain:sync-curated-genres
 npm run brain:import
 ```
 
@@ -56,6 +57,10 @@ pressure, then regenerates public layout JSON. It writes both
 
 `brain:install-python` installs the Python packages used by the source
 collectors and Supabase brain scripts.
+
+`brain:sync-curated-genres` checks the reviewed genre-bridge batch against live
+Supabase data without changing it. Add `-- --apply` to insert only missing
+nodes and sourced relations; conflicting existing rows are never overwritten.
 
 `brain:collect` needs `MUSICBRAINZ_CONTACT` so MusicBrainz can identify the
 client. It writes review candidates to `brain/data/candidates/`.

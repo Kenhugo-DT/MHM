@@ -36,4 +36,4 @@ Public Enemy is an American hip-hop group formed in Roosevelt, New York, in 1985
 
 ## Curator Notes
 
-Use this section for human notes. Machine-readable organization belongs in the frontmatter above.
+Hip-hop anchor with possible punk/rock crossover context. Keep hip-hop in its own area, but allow documented bridges.

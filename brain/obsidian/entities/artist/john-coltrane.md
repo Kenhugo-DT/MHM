@@ -25,6 +25,7 @@ John William Coltrane (September 23, 1926 – July 17, 1967) was an American jaz
 
 - [[jazz|Jazz]] - modern jazz (Coltrane became a major voice in modern jazz.)
 - [[miles-davis|Miles Davis]] - played together (Coltrane worked with Davis during a pivotal period of modern jazz.)
+- [[modal-jazz|Modal jazz]] - modal improvisation (Coltrane later used modal improvisation in major recordings; his connection is not limited to Davis's band.)
 
 ## Sources
 

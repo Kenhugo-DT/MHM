@@ -23,9 +23,10 @@ A composer, bandleader and guitarist who connected rock, jazz fusion, satire and
 
 ## Connections
 
+- [[classical-music|Classical music]] - orchestral compositions (Zappa also composed and recorded orchestral music.)
 - [[gibson-sg|Gibson SG]] - stage guitar link
-- [[jazz-fusion|Jazz fusion]] - composed across
-- [[rock|Rock]] - rock framework
+- [[jazz-fusion|Jazz fusion]] - composed across (Zappa explored jazz-rock fusion on albums including Uncle Meat and Hot Rats.)
+- [[rock|Rock]] - rock framework (Zappa used rock alongside jazz and classical ideas across his recordings.)
 - [[steve-vai|Steve Vai]] - band and mentor link
 
 ## Sources

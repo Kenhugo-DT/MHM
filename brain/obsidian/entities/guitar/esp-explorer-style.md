@@ -23,7 +23,7 @@ Explorer-style ESP instruments became part of the visual and rhythmic identity o
 
 ## Connections
 
-- [[esp|ESP]] - made
+- [[esp|ESP]] - made (ESP sells angular EX-family guitars; the map groups that body shape as explorer-style.)
 - [[james-hetfield|James Hetfield]] - stage guitar identity
 
 ## Sources

@@ -23,7 +23,7 @@ A maker strongly associated with jangly electric twelve-string sounds in 1960s r
 
 ## Connections
 
-- [[rickenbacker-360-12|Rickenbacker 360/12]] - made
+- [[rickenbacker-360-12|Rickenbacker 360/12]] - made (Rickenbacker lists the 360/12 as its twelve-string electric guitar model.)
 
 ## Sources
 

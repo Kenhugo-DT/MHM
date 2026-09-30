@@ -27,6 +27,7 @@ Rhythm-first music where guitar often becomes a clipped, syncopated engine insid
 - [[jazz-fusion|Jazz fusion]] - shares groove language
 - [[prince|Prince]] - groove core
 - [[rock|Rock]] - rhythmic crossover
+- [[stevie-wonder|Stevie Wonder]] - soul-funk crossover (Wonder's recordings joined soul songwriting with funk rhythms.)
 
 ## Sources
 

@@ -23,7 +23,7 @@ An offset Fender guitar adopted by alternative and indie players for its wide si
 
 ## Connections
 
-- [[fender|Fender]] - made
+- [[fender|Fender]] - made (Fender unveiled the Jazzmaster in 1958 as its first offset electric guitar.)
 - [[johnny-marr|Johnny Marr]] - offset guitar link
 
 ## Sources

@@ -23,8 +23,8 @@ A major acoustic guitar maker whose dreadnought designs are deeply tied to folk,
 
 ## Connections
 
-- [[martin-d28|Martin D-28]] - made
-- [[trigger|Trigger]] - Martin N-20 base
+- [[martin-d28|Martin D-28]] - made (The D-28 is a longstanding Martin dreadnought acoustic model.)
+- [[trigger|Trigger]] - Martin N-20 base (Willie Nelson's guitar Trigger began as a Martin N-20 classical guitar.)
 
 ## Sources
 

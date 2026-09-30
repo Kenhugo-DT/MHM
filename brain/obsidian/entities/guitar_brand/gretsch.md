@@ -23,7 +23,7 @@ A maker associated with hollow-body electrics, country, rockabilly and distincti
 
 ## Connections
 
-- [[gretsch-6120|Gretsch 6120]] - made
+- [[gretsch-6120|Gretsch 6120]] - made (Gretsch shipped its first Chet Atkins Model 6120 guitars in 1955.)
 
 ## Sources
 

@@ -14,8 +14,10 @@ const scriptDir = path.dirname(fileURLToPath(import.meta.url));
 const brainRoot = path.resolve(scriptDir, "..");
 const vaultRoot = path.join(brainRoot, "obsidian");
 const graphPath = path.join(brainRoot, "data", "approved", "graph.json");
+const learningModelPath = path.join(brainRoot, "data", "approved", "learning-model.json");
 
 const graph = JSON.parse(fs.readFileSync(graphPath, "utf8"));
+const learningModel = JSON.parse(fs.readFileSync(learningModelPath, "utf8"));
 const nodes = (graph.nodes ?? []).filter((node) => ALLOWED_NODE_TYPES.has(node.type));
 const nodesById = new Map(nodes.map((node) => [node.id, node]));
 const edgesByNode = new Map(nodes.map((node) => [node.id, []]));
@@ -49,21 +51,21 @@ for (const node of nodes) {
     eraPeak: editable.eraPeak ?? node.eraPeak ?? "",
     primaryGenres: editable.primaryGenres ?? node.primaryGenres ?? [],
     curatorTags: editable.curatorTags ?? node.curatorTags ?? [],
-    secondaryZones: editable.secondaryZones ?? hints.secondaryZones ?? node.secondaryZones ?? [],
+    secondaryZones: editable.secondaryZones ?? hints.secondaryZones ?? node.secondaryZones ?? learningModel.nodes?.[node.id]?.secondaryZones ?? [],
     layoutPinned: editable.layoutPinned ?? hints.pinned ?? false,
     layoutX: editable.layoutX ?? hints.x ?? node.x,
     layoutY: editable.layoutY ?? hints.y ?? node.y,
     starter: editable.starter ?? node.starter ?? false,
   };
 
-  fs.writeFileSync(outputPath, `${frontmatterBlock(frontmatter)}${noteBody(node, edgesByNode.get(node.id) ?? [])}`);
+  fs.writeFileSync(outputPath, `${frontmatterBlock(frontmatter)}${noteBody(node, edgesByNode.get(node.id) ?? [], learningModel.nodes?.[node.id]?.curatorFeedback)}`);
 }
 
 writeIndex(nodes, graph.edges ?? []);
 
 console.log(`Exported ${nodes.length} Obsidian entity notes to ${vaultRoot}.`);
 
-function noteBody(node, connections) {
+function noteBody(node, connections, curatorFeedback) {
   return [
     `# ${node.label}`,
     "",
@@ -81,7 +83,7 @@ function noteBody(node, connections) {
     "",
     "## Curator Notes",
     "",
-    "Use this section for human notes. Machine-readable organization belongs in the frontmatter above.",
+    curatorFeedback || "Use this section for human notes. Machine-readable organization belongs in the frontmatter above.",
     "",
   ].join("\n");
 }

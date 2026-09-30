@@ -23,6 +23,7 @@ Merle Ronald Haggard (April 6, 1937 – April 6, 2016) was an American country m
 
 ## Connections
 
+- [[bakersfield-sound|Bakersfield sound]] - Bakersfield anchor (Haggard was one of the two best-known artists associated with the Bakersfield sound.)
 - [[country|Country]] - country songwriter (Haggard was an influential country singer-songwriter.)
 - [[honky-tonk|Honky-tonk]] - honky-tonk tradition (Haggard drew heavily on honky-tonk.)
 - [[jazz|Jazz]] - jazz influence (Haggard's style drew from jazz as well as country and blues.)
@@ -35,4 +36,4 @@ Merle Ronald Haggard (April 6, 1937 – April 6, 2016) was an American country m
 
 ## Curator Notes
 
-Use this section for human notes. Machine-readable organization belongs in the frontmatter above.
+Haggard belongs in country while his documented jazz and blues influences make him a useful bridge.

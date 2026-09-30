@@ -25,7 +25,7 @@ A guitar-heavy meeting point between blues rock, country, boogie and American So
 
 - [[38-special|.38 Special]] - Wikipedia link signal (Wikipedia link: 38 Special (band))
 - [[blues-rock|Blues rock]] - roots source
-- [[country|Country]] - regional overlap
+- [[country|Country]] - regional overlap (Alabama combined southern rock with country-pop, while Hank Williams Jr. recorded with Southern rock musicians.)
 - [[dickey-betts|Dickey Betts]] - melodic twin-guitar line
 - [[duane-allman|Duane Allman]] - slide voice
 - [[hard-rock|Hard rock]] - heavier edge

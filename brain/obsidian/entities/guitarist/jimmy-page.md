@@ -26,7 +26,7 @@ Led Zeppelin's guitarist and producer, central to hard rock through riffs, acous
 - [[gibson-les-paul|Gibson Les Paul]] - classic tone
 - [[led-zeppelin|Led Zeppelin]] - guitarist / producer
 - [[martin-d28|Martin D-28]] - acoustic color
-- [[the-yardbirds|The Yardbirds]] - member link
+- [[the-yardbirds|The Yardbirds]] - member link (Page joined the Yardbirds in 1966, moving from rhythm to lead guitar during his tenure.)
 
 ## Sources
 
@@ -34,4 +34,4 @@ Led Zeppelin's guitarist and producer, central to hard rock through riffs, acous
 
 ## Curator Notes
 
-Use this section for human notes. Machine-readable organization belongs in the frontmatter above.
+Page links the Yardbirds' blues-rock lineage to Led Zeppelin's hard rock. His double-neck guitar is a separate instrument-use link, not a genre by itself.

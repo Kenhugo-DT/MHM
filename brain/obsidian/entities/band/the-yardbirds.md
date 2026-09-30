@@ -27,8 +27,8 @@ A British blues-rock band famously connected to Eric Clapton, Jeff Beck and Jimm
 - [[ben-king|Ben King]] - Wikipedia link signal (Wikipedia link: Ben King (guitarist))
 - [[eric-clapton|Eric Clapton]] - member
 - [[jeff-beck|Jeff Beck]] - member
-- [[jimmy-page|Jimmy Page]] - member link
-- [[rock|Rock]] - British blues-rock
+- [[jimmy-page|Jimmy Page]] - member link (Page joined the Yardbirds in 1966, moving from rhythm to lead guitar during his tenure.)
+- [[rock|Rock]] - British blues-rock (The Yardbirds grew from blues covers into guitar experimentation that shaped later rock styles.)
 
 ## Sources
 
@@ -36,4 +36,4 @@ A British blues-rock band famously connected to Eric Clapton, Jeff Beck and Jimm
 
 ## Curator Notes
 
-Use this section for human notes. Machine-readable organization belongs in the frontmatter above.
+Keep the band in British blues rock. Clapton, Beck and Page are documented former members whose later paths explain its wide bridge role; membership does not imply a shared later sound.

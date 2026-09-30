@@ -26,7 +26,7 @@ A hard-rock lead guitarist whose Les Paul tone and blues-rooted phrasing became 
 - [[blues-rock|Blues rock]] - lead guitar root
 - [[edguy|Edguy]] - Wikipedia link signal (Wikipedia link: Slash (musician))
 - [[gibson-les-paul|Gibson Les Paul]] - signature instrument
-- [[guns-n-roses|Guns N' Roses]] - guitarist
+- [[guns-n-roses|Guns N' Roses]] - guitarist (Slash was a guitarist in Guns N' Roses' classic lineup.)
 
 ## Sources
 

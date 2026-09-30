@@ -30,7 +30,7 @@ A heavier guitar tradition built around riffs, distortion, volume and darker har
 - [[gibson-explorer|Gibson Explorer]] - stage shape
 - [[gibson-flying-v|Gibson Flying V]] - stage shape
 - [[gibson-sg|Gibson SG]] - riff instrument
-- [[hard-rock|Hard rock]] - heavier edge
+- [[hard-rock|Hard rock]] - heavier edge (Black Sabbath's early hard-rock sound helped establish heavy metal in the 1970s.)
 - [[ibanez-rg|Ibanez RG]] - modern metal tool
 - [[iron-maiden|Iron Maiden]] - central band
 - [[jackson-rhoads|Jackson Rhoads]] - metal stage shape
@@ -38,7 +38,7 @@ A heavier guitar tradition built around riffs, distortion, volume and darker har
 - [[metallica|Metallica]] - genre pillar
 - [[ozzy-osbourne|Ozzy Osbourne]] - solo metal context
 - [[pantera|Pantera]] - modern heavy branch
-- [[progressive-metal|Progressive metal]] - technical branch
+- [[progressive-metal|Progressive metal]] - technical branch (Progressive metal is a later branch within heavy metal, extending its technical and stylistic range.)
 - [[randy-rhoads|Randy Rhoads]] - neoclassical edge
 - [[thrash-metal|Thrash metal]] - fast branch
 - [[yngwie-malmsteen|Yngwie Malmsteen]] - neoclassical branch

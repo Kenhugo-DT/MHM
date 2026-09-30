@@ -25,23 +25,23 @@ A bridge between electric blues phrasing and louder rock bands, central to late-
 
 - [[acdc|AC/DC]] - roots source
 - [[alan-wilson|Alan Wilson]] - Wikipedia link signal (Wikipedia link: Alan Wilson (musician))
-- [[blues|Blues]] - feeds
+- [[blues|Blues]] - feeds (John Mayall retained a blues core while bringing rock elements into British blues.)
 - [[derek-trucks|Derek Trucks]] - modern slide branch
-- [[electric-blues|Electric blues]] - amplified into
+- [[electric-blues|Electric blues]] - amplified into (Mayall's amplified Chicago-style blues helped develop the British blues-rock sound.)
 - [[freddie-king|Freddie King]] - influenced blues rock
 - [[gibson-es-335|Gibson ES-335]] - semi-hollow voice
 - [[gibson-firebird|Gibson Firebird]] - slide-friendly electric voice
 - [[jeff-beck|Jeff Beck]] - British blues line
-- [[keith-richards|Keith Richards]] - riff root
+- [[keith-richards|Keith Richards]] - riff root (Richards learned in the British blues scene and brought blues-based riffs into the Rolling Stones' rock sound.)
 - [[peter-green|Peter Green]] - British blues voice
 - [[prs-santana|PRS Santana]] - singing sustain
 - [[robert-johnson|Robert Johnson]] - influenced later players
-- [[rock|Rock]] - bridges into
+- [[rock|Rock]] - bridges into (Amplified British blues helped shape late-1960s rock bands and expand rock's guitar vocabulary.)
 - [[santana-band|Santana]] - Latin blues-rock blend
 - [[slash|Slash]] - lead guitar root
 - [[southern-rock|Southern rock]] - roots source
 - [[allman-brothers-band|The Allman Brothers Band]] - Wikipedia link signal (Wikipedia link: Allman Brothers Band)
-- [[the-rolling-stones|The Rolling Stones]] - central band
+- [[the-rolling-stones|The Rolling Stones]] - central band (The Stones blended American blues and R&B with a rock sound across their career.)
 
 ## Sources
 

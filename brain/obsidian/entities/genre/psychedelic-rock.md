@@ -26,7 +26,7 @@ A late-1960s rock branch marked by effects, improvisation, studio experimentatio
 - [[history-of-rock-music|History of rock music]] - Wikipedia category signal (Wikipedia category: History of rock music)
 - [[jimi-hendrix|Jimi Hendrix]] - expanded
 - [[pink-floyd|Pink Floyd]] - early identity
-- [[rock|Rock]] - branches into
+- [[rock|Rock]] - branches into (Pink Floyd's late-1960s rock experimentation became a defining example of psychedelic rock.)
 - [[the-beatles|The Beatles]] - studio era
 
 ## Sources

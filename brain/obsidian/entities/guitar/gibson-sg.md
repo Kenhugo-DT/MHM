@@ -27,7 +27,7 @@ A lighter double-cutaway Gibson model that became iconic in hard rock and heavy 
 - [[carlos-santana|Carlos Santana]] - early guitar link
 - [[derek-trucks|Derek Trucks]] - signature instrument
 - [[frank-zappa|Frank Zappa]] - stage guitar link
-- [[gibson|Gibson]] - made
+- [[gibson|Gibson]] - made (Gibson lists the SG among the electric guitars it makes.)
 - [[heavy-metal|Heavy metal]] - riff instrument
 - [[pete-townshend|Pete Townshend]] - stage guitar link
 - [[tony-iommi|Tony Iommi]] - iconic instrument

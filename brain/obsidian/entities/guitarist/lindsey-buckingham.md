@@ -23,7 +23,7 @@ A Fleetwood Mac guitarist and songwriter known for fingerstyle pop-rock arrangem
 
 ## Connections
 
-- [[fleetwood-mac|Fleetwood Mac]] - guitarist / songwriter
+- [[fleetwood-mac|Fleetwood Mac]] - guitarist / songwriter (Buckingham joined Fleetwood Mac with Stevie Nicks in 1975 as a guitarist and songwriter.)
 - [[rock|Rock]] - pop-rock guitar
 - [[singer-songwriter|Singer-songwriter]] - songcraft link
 

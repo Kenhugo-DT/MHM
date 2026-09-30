@@ -33,4 +33,4 @@ No documented connections yet.
 
 ## Curator Notes
 
-Use this section for human notes. Machine-readable organization belongs in the frontmatter above.
+Major UK punk anchor. Should sit in the punk-alt core with clear relation to Ramones and early punk.

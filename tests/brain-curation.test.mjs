@@ -4,6 +4,7 @@ import path from "node:path";
 import test from "node:test";
 import { fileURLToPath } from "node:url";
 import { isMapConnection } from "../shared/graph-schema/edge-evidence.mjs";
+import { frontmatterBlock, parseFrontmatter } from "../brain/scripts/obsidian-utils.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const readJson = (relativePath) => JSON.parse(fs.readFileSync(path.join(root, relativePath), "utf8"));
@@ -13,6 +14,14 @@ const organization = readJson("brain/data/approved/organization-model.json");
 const approvedFacts = readJson("brain/data/approved/fact-evidence.json");
 const curatedFacts = readJson("shared/facts/curated.json");
 const approvedGraph = readJson("brain/data/approved/graph.json");
+
+test("empty Obsidian frontmatter stays parseable without trailing spaces", () => {
+  const block = frontmatterBlock({ id: "example", eraPeak: "", secondaryZones: [] });
+  assert.match(block, /\neraPeak:\n/);
+  assert.deepEqual(parseFrontmatter(`${block}# Example`), {
+    id: "example", eraPeak: null, secondaryZones: [],
+  });
+});
 
 test("brain connection counts exclude Wikipedia research leads", () => {
   const mapEdges = approvedGraph.edges.filter(isMapConnection);

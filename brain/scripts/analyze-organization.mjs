@@ -29,16 +29,16 @@ const CATEGORYISH_GENRE_TERMS = /\b(duos|trios|quartets|groups|musicians|artists
 
 const ZONE_DESCRIPTIONS = {
   "classical-history": "Baroque, Classical and Romantic composition with folk and prog bridges",
-  "pop-soul-disco": "1960s Motown, soul, 1970s disco and 1980s pop and synth-pop",
-  "roots-blues": "roots, blues, blues rock, early rock and Southern guitar lineage",
+  "pop-soul-disco": "1960s Motown, gospel-informed soul, 1970s disco and 1980s pop and synth-pop",
+  "roots-blues": "roots, blues, gospel, rhythm and blues, early rock and Southern guitar lineage",
   "rock-circuit": "rock, classic rock, glam, funk and broad band history",
   "psychedelia-prog": "psychedelia, art rock, progressive rock and progressive metal bridges",
   "hard-rock-metal": "hard rock, metal, riff culture, virtuoso guitar and heavier scenes",
   "punk-alt": "punk, post-punk, alternative, indie, hardcore and adjacent scenes",
   "hip-hop-rap": "hip-hop, rap, G-funk, West Coast hip-hop and crossover links",
   "folk-country-vise": "folk, singer-songwriter, acoustic traditions and Norwegian vise",
-  "country-roots": "early country, bluegrass, honky-tonk and country-to-rock bridges",
-  jazz: "early jazz, swing, bebop, jazz guitar and jazz-to-fusion bridges",
+  "country-roots": "early country, western swing, Bakersfield, outlaw country and country-to-rock bridges",
+  jazz: "early jazz, swing, bebop, cool and modal jazz, jazz guitar and jazz-to-fusion bridges",
   "guitar-workshop": "guitar models, guitar brands and instrument history",
 };
 

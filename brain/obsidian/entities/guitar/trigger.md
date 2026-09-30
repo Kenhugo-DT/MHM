@@ -23,9 +23,9 @@ Willie Nelson's heavily worn Martin N-20 nylon-string guitar, one of country mus
 
 ## Connections
 
-- [[martin|C.F. Martin & Co.]] - Martin N-20 base
+- [[martin|C.F. Martin & Co.]] - Martin N-20 base (Willie Nelson's guitar Trigger began as a Martin N-20 classical guitar.)
 - [[country|Country]] - outlaw country identity
-- [[willie-nelson|Willie Nelson]] - signature guitar
+- [[willie-nelson|Willie Nelson]] - signature guitar (Nelson named his replacement Martin N-20 guitar Trigger, which became his longtime instrument.)
 
 ## Sources
 

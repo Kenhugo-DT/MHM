@@ -23,15 +23,15 @@ A meeting of jazz harmony, rock volume, funk rhythm and expanded improvisation.
 
 ## Connections
 
-- [[frank-zappa|Frank Zappa]] - composed across
+- [[frank-zappa|Frank Zappa]] - composed across (Zappa explored jazz-rock fusion on albums including Uncle Meat and Hot Rats.)
 - [[funk|Funk]] - shares groove language
 - [[jazz|Jazz]] - electric branch
-- [[jeff-beck|Jeff Beck]] - instrumental branch
+- [[jeff-beck|Jeff Beck]] - instrumental branch (Beck crossed from rock guitar into jazz-rock fusion on Blow by Blow and Wired.)
 - [[john-mclaughlin|John McLaughlin]] - electric fusion voice
 - [[miles-davis|Miles Davis]] - jazz-rock fusion (Davis brought rock influences into his late-1960s jazz recordings.)
 - [[prs-santana|PRS Santana]] - fusion lead voice
 - [[rock|Rock]] - electric crossover
-- [[santana-band|Santana]] - fusion overlap
+- [[santana-band|Santana]] - fusion overlap (Santana's sound combined jazz, rock and Latin musical influences.)
 - [[wes-montgomery|Wes Montgomery]] - influence line
 - [[yamaha-sg|Yamaha SG]] - sustain-heavy fusion link
 
@@ -41,4 +41,4 @@ A meeting of jazz harmony, rock volume, funk rhythm and expanded improvisation.
 
 ## Curator Notes
 
-Use this section for human notes. Machine-readable organization belongs in the frontmatter above.
+Keep jazz fusion attached to jazz while allowing documented rock, funk and progressive crossover. Do not pull every nearby jazz artist into rock.

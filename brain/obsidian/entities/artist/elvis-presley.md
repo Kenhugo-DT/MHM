@@ -24,7 +24,7 @@ A rock and roll catalyst who helped bring country, blues and rhythm and blues la
 ## Connections
 
 - [[country|Country]] - roots overlap
-- [[rock-and-roll|Rock and roll]] - popularized
+- [[rock-and-roll|Rock and roll]] - popularized (Presley brought a blend of blues, country and gospel into rock and roll's mass audience.)
 
 ## Sources
 

@@ -27,7 +27,7 @@ A Texas blues-rock guitarist who revived electric blues guitar for a new generat
 - [[bb-king|B.B. King]] - influenced blues phrasing
 - [[electric-blues|Electric blues]] - revived
 - [[fender-stratocaster|Fender Stratocaster]] - main voice
-- [[jimi-hendrix|Jimi Hendrix]] - influence line
+- [[jimi-hendrix|Jimi Hendrix]] - influence line (Vaughan recorded Hendrix's Voodoo Chile, and Rock Hall traces Hendrix's blues-guitar legacy through Vaughan.)
 - [[john-mayer|John Mayer]] - modern blues influence
 
 ## Sources

@@ -25,7 +25,7 @@ A virtuoso guitarist linked to Frank Zappa, instrumental rock and the Ibanez JEM
 
 - [[frank-zappa|Frank Zappa]] - band and mentor link
 - [[ibanez-jem|Ibanez JEM]] - signature instrument
-- [[joe-satriani|Joe Satriani]] - teacher/influence line
+- [[joe-satriani|Joe Satriani]] - teacher/influence line (Vai began taking guitar lessons from Satriani at age 12; both artists document the teacher-student relationship.)
 - [[progressive-metal|Progressive metal]] - virtuoso overlap
 
 ## Sources
@@ -34,4 +34,4 @@ A virtuoso guitarist linked to Frank Zappa, instrumental rock and the Ibanez JEM
 
 ## Curator Notes
 
-Use this section for human notes. Machine-readable organization belongs in the frontmatter above.
+Teaching, band work and guitar design are three different relationship types. Keep Vai close to Satriani, Zappa and the JEM for their documented reasons, not as one generic collaboration cluster.

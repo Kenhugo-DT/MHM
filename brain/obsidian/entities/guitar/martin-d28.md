@@ -24,7 +24,7 @@ A benchmark dreadnought acoustic associated with bluegrass, folk, country and si
 ## Connections
 
 - [[bob-dylan|Bob Dylan]] - acoustic tradition link
-- [[martin|C.F. Martin & Co.]] - made
+- [[martin|C.F. Martin & Co.]] - made (The D-28 is a longstanding Martin dreadnought acoustic model.)
 - [[country|Country]] - flatpicking link
 - [[folk|Folk]] - dreadnought tradition
 - [[jimmy-page|Jimmy Page]] - acoustic color

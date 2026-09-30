@@ -33,4 +33,4 @@ No documented connections yet.
 
 ## Curator Notes
 
-Use this section for human notes. Machine-readable organization belongs in the frontmatter above.
+Core punk and horror punk anchor. Keep near Ramones, Sex Pistols, horror punk and hardcore punk rather than generic rock.

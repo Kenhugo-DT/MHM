@@ -34,4 +34,4 @@ The Carter Family was an American folk music group that recorded and performed b
 
 ## Curator Notes
 
-Use this section for human notes. Machine-readable organization belongs in the frontmatter above.
+The Carter Family is an early country anchor with documented folk and blues repertoire.

@@ -35,4 +35,4 @@ James Charles Rodgers ((1897-09-08)September 8, 1897 – (1933-05-26)May 26, 193
 
 ## Curator Notes
 
-Use this section for human notes. Machine-readable organization belongs in the frontmatter above.
+Keep Rodgers grounded in early country while letting his blues and early rock influence pull him toward those scenes.

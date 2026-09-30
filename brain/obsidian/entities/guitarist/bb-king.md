@@ -24,7 +24,7 @@ One of electric blues' defining guitar voices, known for vocal phrasing, control
 ## Connections
 
 - [[electric-blues|Electric blues]] - defined voice in
-- [[gibson-es-355-lucille|Gibson ES-355 Lucille]] - signature guitar
+- [[gibson-es-355-lucille|Gibson ES-355 Lucille]] - signature guitar (King played an ES-355 before Gibson developed his Lucille signature model; Gibson's Lucille Legacy retains the ES model lineage.)
 - [[stevie-ray-vaughan|Stevie Ray Vaughan]] - influenced blues phrasing
 
 ## Sources

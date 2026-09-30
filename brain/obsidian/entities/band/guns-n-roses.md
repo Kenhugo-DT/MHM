@@ -27,7 +27,7 @@ A hard rock band whose late-1980s sound put Slash's Les Paul tone and bluesy lea
 - [[aerosmith|Aerosmith]] - Wikipedia link signal (Wikipedia link: Aerosmith (band))
 - [[afi|AFI]] - Wikipedia link signal (Wikipedia link: AFI (band))
 - [[hard-rock|Hard rock]] - central band
-- [[slash|Slash]] - guitarist
+- [[slash|Slash]] - guitarist (Slash was a guitarist in Guns N' Roses' classic lineup.)
 
 ## Sources
 

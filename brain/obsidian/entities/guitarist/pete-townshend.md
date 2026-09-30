@@ -25,7 +25,7 @@ The Who guitarist and songwriter, tied to power chords, windmill rhythm and rock
 
 - [[gibson-sg|Gibson SG]] - stage guitar link
 - [[rock|Rock]] - power-chord language
-- [[the-who|The Who]] - guitarist / songwriter
+- [[the-who|The Who]] - guitarist / songwriter (Townshend joined the group on rhythm guitar and became the Who's principal songwriter.)
 
 ## Sources
 
