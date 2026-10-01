@@ -53,6 +53,7 @@ import type {
   GraphLayoutDataset,
   GraphNode,
   LayoutMode,
+  LayoutNodePosition,
   MapMode,
   NodeType,
 } from "./types/graph";
@@ -183,10 +184,26 @@ export default function App() {
     [detailNodes, nodes],
   );
 
-  const layoutPositions = useMemo(
-    () => layouts?.layouts[layoutMode]?.nodes,
-    [layoutMode, layouts],
-  );
+  const timelineGuide = layouts?.layouts.timeline.guide;
+  const layoutPositions = useMemo(() => {
+    const base = layouts?.layouts[layoutMode]?.nodes;
+    if (!base || layoutMode !== "timeline" || !timelineGuide) return base;
+
+    const extras = nodes.filter((node) => !base[node.id]).sort((a, b) => a.id.localeCompare(b.id));
+    if (!extras.length) return base;
+
+    const positions: Record<string, LayoutNodePosition> = { ...base };
+    const { unknown } = timelineGuide;
+    extras.forEach((node, index) => {
+      const slot = unknown.count + index;
+      positions[node.id] = {
+        x: unknown.left + (slot % unknown.columns + 0.5) * unknown.columnGap,
+        y: unknown.top + Math.floor(slot / unknown.columns) * unknown.rowGap,
+        decade: null,
+      };
+    });
+    return positions;
+  }, [layoutMode, layouts, nodes, timelineGuide]);
 
   const routes = useMemo(
     () =>
@@ -512,6 +529,7 @@ export default function App() {
           visibleTypes={visibleTypes}
           layoutMode={layoutMode}
           layoutPositions={layoutPositions}
+          timelineGuide={timelineGuide}
           onSelect={handleMapSelect}
         />
       </Suspense>

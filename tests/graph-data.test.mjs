@@ -4,6 +4,7 @@ import test from "node:test";
 import { graphFingerprint, matchingLayouts, MODE_NODE_TYPES } from "../shared/graph-schema/graph-snapshot.mjs";
 import { edgeEvidenceTier, isMapConnection } from "../shared/graph-schema/edge-evidence.mjs";
 import { ORGANIZED_MAP_ZONES, organizeGraphLayout } from "../brain/scripts/organize-graph-layout.mjs";
+import { firstActiveYear } from "../brain/scripts/timeline-layout.mjs";
 import { curatedEraLinks, curatedEraNodes } from "../brain/scripts/curated-era-expansion.mjs";
 import { curatedGenreLinks, curatedGenreNodes } from "../brain/scripts/curated-genre-bridges.mjs";
 import { reviewedBridgeLinks, reviewedBridgeNodes } from "../brain/scripts/curated-reviewed-bridges.mjs";
@@ -124,6 +125,41 @@ test("published layouts match the approved graph in every map mode", async () =>
   for (const mode of Object.keys(MODE_NODE_TYPES)) {
     assert.equal(layouts.graphFingerprints[mode], await graphFingerprint(graph, mode));
   }
+});
+
+test("timeline uses the first documented active decade and separates undated nodes", () => {
+  const graph = JSON.parse(readFileSync("brain/data/approved/graph.json", "utf8"));
+  const learningModel = JSON.parse(readFileSync("brain/data/approved/learning-model.json", "utf8"));
+  const timeline = JSON.parse(readFileSync("brain/data/approved/layouts.json", "utf8")).layouts.timeline;
+  const markers = new Map(timeline.guide.markers.map((marker) => [marker.year, marker]));
+  let undated = 0;
+
+  assert.equal(firstActiveYear({ id: "sample", eraStart: 1965, eraPeak: 1995 }, {}), 1965);
+  assert.equal(firstActiveYear({ id: "sample", eraPeak: 1995 }, {}), undefined);
+
+  for (const node of graph.nodes) {
+    const position = timeline.nodes[node.id];
+    assert.ok(position, node.id);
+    const year = firstActiveYear(node, learningModel);
+    if (year === undefined) {
+      undated += 1;
+      assert.equal(position.decade, null, node.id);
+      assert.ok(position.y >= timeline.guide.unknown.top, node.id);
+      continue;
+    }
+
+    const decade = Math.floor(year / 10) * 10;
+    const marker = markers.get(decade);
+    assert.ok(marker, node.id);
+    assert.equal(position.startYear, year, node.id);
+    assert.equal(position.decade, decade, node.id);
+    assert.ok(position.x >= marker.x && position.x < marker.x + marker.width, node.id);
+    assert.ok(position.y < timeline.guide.unknown.top, node.id);
+  }
+
+  assert.equal(undated, timeline.guide.unknown.count);
+  assert.ok(timeline.guide.markers.every((marker, index, all) =>
+    index === 0 || marker.year === all[index - 1].year + 10));
 });
 
 test("classical and pop expansion is sourced, connected and keeps historical order", () => {

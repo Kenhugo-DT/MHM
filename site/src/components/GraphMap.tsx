@@ -25,6 +25,7 @@ import type {
   LayoutNodePosition,
   MapMode,
   NodeType,
+  TimelineGuide,
 } from "../types/graph";
 
 export interface GraphMapHandle {
@@ -43,6 +44,7 @@ interface GraphMapProps {
   visibleTypes: Set<NodeType>;
   layoutMode: LayoutMode;
   layoutPositions?: Record<string, LayoutNodePosition>;
+  timelineGuide?: TimelineGuide;
   onSelect(node: GraphNode): void;
 }
 
@@ -208,6 +210,7 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
       visibleTypes,
       layoutMode,
       layoutPositions,
+      timelineGuide,
       onSelect,
     },
     ref,
@@ -217,6 +220,13 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
     const viewportRef = useRef<Viewport | null>(null);
     const worldRef = useRef<Viewport | null>(null);
     const selectionLayerRef = useRef<Container | null>(null);
+    const zoneLayerRef = useRef<Container | null>(null);
+    const timelineLayerRef = useRef<Container | null>(null);
+    const timelineHeaderRef = useRef<Container | null>(null);
+    const timelineBandRef = useRef<Graphics | null>(null);
+    const timelineMarkerLabelsRef = useRef<Container | null>(null);
+    const timelineUnknownLabelRef = useRef<Text | null>(null);
+    const timelineLabelsRef = useRef<Array<{ year: number; x: number; label: Text }>>([]);
     const cameraFrameRef = useRef<number | null>(null);
     const layoutFrameRef = useRef<number | null>(null);
     const cameraRef = useRef<Camera>({ x: 0, y: 0, zoom: 0.42 });
@@ -231,6 +241,7 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
     const edgeLayerRef = useRef<Graphics | null>(null);
     const visualModeRef = useRef<VisualMode>("detail");
     const visualZoomRef = useRef(0);
+    const previousLayoutModeRef = useRef(layoutMode);
     const [ready, setReady] = useState(false);
 
     nodesRef.current = nodes;
@@ -390,6 +401,39 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
         });
     }
 
+    function syncTimelineReadability(camera = cameraRef.current) {
+      const app = appRef.current;
+      if (!app || !timelineGuide || !timelineHeaderRef.current?.visible) return;
+
+      const topOfView = camera.y - app.screen.height / (2 * camera.zoom);
+      const headerY = topOfView + (isCompactMap() ? 65 : 112) / camera.zoom;
+      if (timelineBandRef.current) {
+        timelineBandRef.current.y = headerY;
+        timelineBandRef.current.scale.y = 44 / camera.zoom;
+      }
+      const labelY = headerY + 9 / camera.zoom;
+      const scale = Math.min(2, Math.max(1, 0.78 / camera.zoom));
+      const inUnknown = camera.y >= timelineGuide.unknown.top - 180;
+      if (timelineMarkerLabelsRef.current) timelineMarkerLabelsRef.current.visible = !inUnknown;
+      if (timelineUnknownLabelRef.current) {
+        timelineUnknownLabelRef.current.visible = inUnknown;
+        timelineUnknownLabelRef.current.position.set(
+          camera.x - app.screen.width / (2 * camera.zoom) + 22 / camera.zoom,
+          labelY,
+        );
+        timelineUnknownLabelRef.current.scale.set(scale);
+      }
+      let lastVisibleX = -Infinity;
+      timelineLabelsRef.current.forEach(({ year, x, label }) => {
+        const screenX = (x - camera.x) * camera.zoom + app.screen.width / 2;
+        const visible = screenX - lastVisibleX >= 78 || year % 100 === 0;
+        label.visible = visible;
+        label.scale.set(scale);
+        label.y = labelY;
+        if (visible) lastVisibleX = screenX;
+      });
+    }
+
     function syncMapReadability(camera = cameraRef.current, force = false) {
       const visualMode = visualModeForZoom(camera.zoom);
       const zoomDelta = Math.abs(camera.zoom - visualZoomRef.current) / Math.max(camera.zoom, 0.1);
@@ -403,6 +447,7 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
       }
 
       syncLabelReadability(camera);
+      syncTimelineReadability(camera);
     }
 
     function applyCamera(camera = cameraRef.current) {
@@ -556,7 +601,7 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
         return;
       }
 
-      const zones = MAP_ZONES.filter((zone) => zone.mode === mode);
+      const zones = layoutMode === "organized" ? MAP_ZONES.filter((zone) => zone.mode === mode) : [];
       const minX = Math.min(
         ...list.map((node) => displayPositionFor(node).x),
         ...zones.map((zone) => zone.x),
@@ -590,6 +635,18 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
     }
 
     function homeMap() {
+      if (layoutMode === "timeline" && timelineGuide) {
+        const marker = timelineGuide.markers.find((entry) => entry.year === 1960);
+        if (marker) {
+          cameraRef.current = {
+            x: marker.x + marker.width / 2,
+            y: 0,
+            zoom: clampZoom(isCompactMap() ? 0.68 : 0.56),
+          };
+          applyCamera();
+          return;
+        }
+      }
       const home = isCompactMap() ? MOBILE_HOME_CAMERA[mode] : DESKTOP_HOME_CAMERA[mode];
       cameraRef.current = {
         ...home,
@@ -738,6 +795,13 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
 
       destroyChildren(world);
       selectionLayerRef.current = null;
+      zoneLayerRef.current = null;
+      timelineLayerRef.current = null;
+      timelineHeaderRef.current = null;
+      timelineBandRef.current = null;
+      timelineMarkerLabelsRef.current = null;
+      timelineUnknownLabelRef.current = null;
+      timelineLabelsRef.current = [];
       edgeLayerRef.current = null;
       nodeVisualItemsRef.current = [];
       edgeVisualItemsRef.current = [];
@@ -781,10 +845,18 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
       world.addChild(grid);
 
       const zoneLayer = new Container();
+      const timelineLayer = new Container();
+      const timelineHeader = new Container();
       const connectionLayer = new Container();
       const nodeLayer = new Container();
       const labelLayer = new Container();
-      world.addChild(zoneLayer, connectionLayer, nodeLayer, labelLayer);
+      world.addChild(zoneLayer, timelineLayer, connectionLayer, nodeLayer, labelLayer);
+      zoneLayerRef.current = zoneLayer;
+      timelineLayerRef.current = timelineLayer;
+      timelineHeaderRef.current = timelineHeader;
+      zoneLayer.visible = layoutMode === "organized";
+      timelineLayer.visible = layoutMode === "timeline";
+      timelineHeader.visible = layoutMode === "timeline";
 
       MAP_ZONES.filter((zone) => zone.mode === mode).forEach((zone) => {
         const zoneGraphic = new Graphics();
@@ -808,6 +880,89 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
         zoneLabel.position.set(zone.x + 22, zone.y + 18);
         zoneLayer.addChild(zoneLabel);
       });
+
+      if (timelineGuide) {
+        const bands = new Graphics();
+        const lines = new Graphics();
+        const markerLabels = new Container();
+        timelineMarkerLabelsRef.current = markerLabels;
+        const lastMarker = timelineGuide.markers.at(-1)!;
+        const rulerBand = new Graphics();
+        rulerBand.rect(
+          timelineGuide.markers[0].x,
+          0,
+          lastMarker.x + lastMarker.width - timelineGuide.markers[0].x,
+          1,
+        );
+        rulerBand.fill({ color: 0x11110f, alpha: 0.91 });
+        timelineBandRef.current = rulerBand;
+        timelineHeader.addChild(rulerBand, markerLabels);
+        const unknownHeader = new Text({
+          text: "START YEAR UNKNOWN",
+          style: {
+            fill: 0xbcb6a8,
+            fontFamily: "Arial, sans-serif",
+            fontSize: 20,
+            fontWeight: "700",
+          },
+        });
+        unknownHeader.eventMode = "none";
+        unknownHeader.visible = false;
+        timelineUnknownLabelRef.current = unknownHeader;
+        timelineHeader.addChild(unknownHeader);
+        timelineGuide.markers.forEach((marker, index) => {
+          if (index % 2 === 0) {
+            bands.rect(marker.x, timelineGuide.minY, marker.width, timelineGuide.maxY - timelineGuide.minY);
+            bands.fill({ color: 0xcabbb1, alpha: 0.026 });
+          }
+          lines.moveTo(marker.x, timelineGuide.minY).lineTo(marker.x, timelineGuide.maxY);
+
+          const label = new Text({
+            text: `${marker.year}s`,
+            style: {
+              fill: 0xbcb6a8,
+              fontFamily: "Arial, sans-serif",
+              fontSize: 20,
+              fontWeight: "700",
+            },
+          });
+          label.anchor.set(0.5, 0);
+          label.position.set(marker.x + marker.width / 2, timelineGuide.minY + 28);
+          label.eventMode = "none";
+          timelineLabelsRef.current.push({ year: marker.year, x: marker.x + marker.width / 2, label });
+          markerLabels.addChild(label);
+        });
+        lines.moveTo(
+          lastMarker.x + lastMarker.width,
+          timelineGuide.minY,
+        ).lineTo(
+          lastMarker.x + lastMarker.width,
+          timelineGuide.maxY,
+        );
+        lines.stroke({ color: 0xaaa89e, alpha: 0.23, width: 3 });
+
+        const unknownDivider = new Graphics();
+        unknownDivider.moveTo(timelineGuide.markers[0].x, timelineGuide.unknown.top - 140);
+        unknownDivider.lineTo(
+          lastMarker.x + lastMarker.width,
+          timelineGuide.unknown.top - 140,
+        );
+        unknownDivider.stroke({ color: 0xa0a8a1, alpha: 0.32, width: 3 });
+        timelineLayer.addChild(bands, lines, unknownDivider);
+
+        const unknownLabel = new Text({
+          text: "START YEAR UNKNOWN",
+          style: {
+            fill: 0xa0a8a1,
+            fontFamily: "Arial, sans-serif",
+            fontSize: 20,
+            fontWeight: "700",
+          },
+        });
+        unknownLabel.position.set(timelineGuide.unknown.left, timelineGuide.unknown.top - 105);
+        unknownLabel.eventMode = "none";
+        timelineLayer.addChild(unknownLabel);
+      }
 
       const edgeLayer = new Graphics();
       edgeLayerRef.current = edgeLayer;
@@ -885,7 +1040,7 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
       });
 
       const selectionLayer = new Container();
-      world.addChild(selectionLayer);
+      world.addChild(selectionLayer, timelineHeader);
       selectionLayerRef.current = selectionLayer;
 
       applyCamera();
@@ -896,13 +1051,22 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
       nodes,
       onSelect,
       ready,
+      timelineGuide,
       visibleTypes,
     ]);
 
     useEffect(() => {
       layoutPositionsRef.current = layoutPositions;
       if (!ready) return;
+      if (zoneLayerRef.current) zoneLayerRef.current.visible = layoutMode === "organized";
+      if (timelineLayerRef.current) timelineLayerRef.current.visible = layoutMode === "timeline";
+      if (timelineHeaderRef.current) timelineHeaderRef.current.visible = layoutMode === "timeline";
       animateToLayout(false);
+      if (previousLayoutModeRef.current !== layoutMode) {
+        const previous = previousLayoutModeRef.current;
+        previousLayoutModeRef.current = layoutMode;
+        if (layoutMode === "timeline" || previous === "timeline") homeMap();
+      }
     }, [layoutMode, layoutPositions, ready]);
 
     useEffect(() => {

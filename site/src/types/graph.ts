@@ -78,6 +78,23 @@ export interface LayoutNodePosition {
   y: number;
   zone?: string;
   priority?: number;
+  decade?: number | null;
+  startYear?: number;
+}
+
+export interface TimelineGuide {
+  markers: { year: number; x: number; width: number }[];
+  minY: number;
+  maxY: number;
+  unknown: {
+    left: number;
+    top: number;
+    columns: number;
+    columnGap: number;
+    rowGap: number;
+    count: number;
+  };
+  unknownBottom: number;
 }
 
 export interface GraphLayout {
@@ -86,6 +103,7 @@ export interface GraphLayout {
   description: string;
   generatedAt: string;
   nodes: Record<string, LayoutNodePosition>;
+  guide?: TimelineGuide;
 }
 
 export interface GraphLayoutDataset {

@@ -1181,6 +1181,19 @@ button {
 }
 
 @media (max-width: 430px) {
+  .topbar:not(.controls-collapsed) .brand,
+  .topbar:not(.controls-collapsed) .top-actions {
+    grid-column: 1 / -1;
+  }
+
+  .topbar:not(.controls-collapsed) .top-actions {
+    justify-content: space-between;
+  }
+
+  .map-legend:not(.controls-collapsed) {
+    top: 225px;
+  }
+
   .brand {
     min-height: 42px;
   }

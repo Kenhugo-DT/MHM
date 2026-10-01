@@ -4,6 +4,7 @@ import { fileURLToPath } from "node:url";
 import { isMapConnection } from "../../shared/graph-schema/edge-evidence.mjs";
 import { graphFingerprint, MODE_NODE_TYPES } from "../../shared/graph-schema/graph-snapshot.mjs";
 import { ORGANIZED_MAP_ZONES } from "./organize-graph-layout.mjs";
+import { buildTimelineLayout } from "./timeline-layout.mjs";
 
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
 const brainRoot = path.resolve(scriptDir, "..");
@@ -25,7 +26,7 @@ const LAYOUTS = {
   },
   timeline: {
     label: "Timeline",
-    description: "Older scenes left, newer scenes right, with zones kept as loose lanes.",
+    description: "First documented active decade, with unknown start years kept separate.",
   },
   alphabetic: {
     label: "A-Z",
@@ -60,21 +61,6 @@ const ZONE_ORDER = [
   "country-roots",
   "guitar-workshop",
 ];
-
-const TIMELINE_ZONE_LANES = {
-  "classical-history": -1250,
-  "pop-soul-disco": 520,
-  "roots-blues": -520,
-  jazz: -730,
-  "psychedelia-prog": -930,
-  "rock-circuit": -150,
-  "hard-rock-metal": 350,
-  "punk-alt": 940,
-  "hip-hop-rap": 1370,
-  "folk-country-vise": 1730,
-  "country-roots": 1950,
-  "guitar-workshop": -1180,
-};
 
 function readJson(filePath, fallback) {
   if (!fs.existsSync(filePath)) return fallback;
@@ -452,34 +438,6 @@ function makeGenreLayout(nodes, edges, degree, learningModel) {
   return layoutNodes;
 }
 
-function makeTimelineLayout(nodes, degree, learningModel) {
-  const minYear = 1600;
-  const maxYear = 2026;
-  const minX = -4840;
-  const modernStartX = -2240;
-  const maxX = 4300;
-  const items = nodes.map((node) => {
-    const era = clamp(inferEra(node, learningModel), minYear, maxYear);
-    const lane = TIMELINE_ZONE_LANES[node.zone] ?? 0;
-    const degreeLift = Math.min(220, (degree.get(node.id) ?? 0) * 22);
-    const hash = hashValue(`timeline:${node.id}`);
-    const baseX = era < 1930
-      ? minX + ((era - minYear) / (1930 - minYear)) * (modernStartX - minX)
-      : modernStartX + ((era - 1930) / (maxYear - 1930)) * (maxX - modernStartX);
-    const x = baseX + ((hash % 180) - 90);
-    const y = lane + (((hash >>> 8) % 340) - 170) - degreeLift * 0.28;
-    return { node, x, y };
-  });
-
-  relaxPositions(items, "timeline", 40);
-
-  const layoutNodes = {};
-  for (const item of items) {
-    layoutNodes[item.node.id] = toLayoutNode(item.node, item.x, item.y, degree);
-  }
-  return layoutNodes;
-}
-
 function makeAlphabeticLayout(nodes, degree) {
   const sorted = [...nodes].sort((a, b) => a.label.localeCompare(b.label, "en", { sensitivity: "base" }));
   const minX = -2260;
@@ -534,6 +492,7 @@ const learningModel = readJson(learningModelPath, undefined);
 const organizationModel = readJson(organizationModelPath, undefined);
 const degree = buildDegreeMap(graph.nodes, mapEdges);
 const generatedAt = new Date().toISOString();
+const timeline = buildTimelineLayout(graph.nodes, learningModel);
 
 const layouts = {
   organized: {
@@ -552,7 +511,12 @@ const layouts = {
     id: "timeline",
     ...LAYOUTS.timeline,
     generatedAt,
-    nodes: makeTimelineLayout(graph.nodes, degree, learningModel),
+    guide: timeline.guide,
+    nodes: Object.fromEntries(timeline.items.map((item) => [item.node.id, {
+      ...toLayoutNode(item.node, item.x, item.y, degree),
+      decade: item.decade,
+      ...(item.startYear === undefined ? {} : { startYear: item.startYear }),
+    }])),
   },
   alphabetic: {
     id: "alphabetic",
