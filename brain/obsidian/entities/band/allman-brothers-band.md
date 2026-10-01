@@ -23,6 +23,7 @@ A Southern rock band known for twin guitars, blues roots, long improvisations an
 
 ## Connections
 
+- [[blind-willie-mctell|Blind Willie McTell]] - later Statesboro Blues version (The Allman Brothers later recorded a version of McTell's song, with Taj Mahal's 1968 arrangement as a key intermediary.)
 - [[blues-rock|Blues rock]] - Wikipedia link signal (Wikipedia link: Allman Brothers Band)
 - [[country-rock|country rock]] - Wikipedia link signal (Wikipedia link: Allman Brothers Band)
 - [[derek-trucks|Derek Trucks]] - member

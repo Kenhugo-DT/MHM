@@ -5,7 +5,7 @@ type: artist
 zone: jazz
 roles: [artist]
 aliases: []
-eraStart:
+eraStart: 1924
 eraPeak:
 primaryGenres: []
 curatorTags: []
@@ -24,6 +24,7 @@ Edward Kennedy "Duke" Ellington (April 29, 1899 – May 24, 1974) was an America
 ## Connections
 
 - [[jazz|Jazz]] - jazz orchestra leader (Ellington joined composition and improvisation in jazz.)
+- [[jazz|Jazz]] - Washingtonians bandleader (Ellington became bandleader of the Washingtonians in 1924.)
 - [[swing-music|Swing music]] - swing-era orchestra (Ellington led one of jazz's major swing-era orchestras.)
 
 ## Sources
@@ -31,6 +32,7 @@ Edward Kennedy "Duke" Ellington (April 29, 1899 – May 24, 1974) was an America
 - [Wikipedia](https://en.wikipedia.org/wiki/Duke_Ellington)
 - [Wikidata](https://www.wikidata.org/wiki/Q4030)
 - [MusicBrainz](https://musicbrainz.org/artist/3af06bc4-68ad-4cae-bb7a-7eeeb45e411f)
+- [Library of Congress](https://blogs.loc.gov/loc/2013/04/duke-ellingtons-film-debut/)
 
 ## Curator Notes
 

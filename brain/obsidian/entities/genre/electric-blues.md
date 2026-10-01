@@ -28,6 +28,7 @@ Blues amplified for clubs, cities and louder bands. It shaped rock guitar tone, 
 - [[blues|Blues]] - amplified into
 - [[blues-rock|Blues rock]] - amplified into (Mayall's amplified Chicago-style blues helped develop the British blues-rock sound.)
 - [[buddy-guy|Buddy Guy]] - Chicago blues voice
+- [[elmore-james|Elmore James]] - documented recording context (The Library of Congress lists Dust My Broom (1951); this link places the act near its documented style or adjacent tradition.)
 - [[eric-clapton|Eric Clapton]] - blues-rock bridge
 - [[fender-stratocaster|Fender Stratocaster]] - blues lead voice
 - [[freddie-king|Freddie King]] - Texas/Chicago bridge

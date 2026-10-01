@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-30T13:54:19.134Z",
+  "generatedAt": "2026-10-01T10:44:42.707Z",
   "source": "graph + Obsidian frontmatter + curator feedback",
   "samples": {
-    "graphNodes": 705,
-    "graphEdges": 971,
-    "mapConnections": 539,
-    "obsidianNotes": 707,
+    "graphNodes": 1015,
+    "graphEdges": 1315,
+    "mapConnections": 883,
+    "obsidianNotes": 1017,
     "feedbackNodes": 32,
     "feedbackZones": 6,
     "feedbackRules": 4,
@@ -19,19 +19,19 @@
     "approvedFactNodes": 115,
     "approvedFactNotes": 10,
     "pinnedNotes": 0,
-    "notesWithEra": 120,
+    "notesWithEra": 437,
     "notesWithPrimaryGenres": 484,
     "notesWithCuratorTags": 658
   },
   "zones": {
     "roots-blues": {
-      "nodeCount": 56,
+      "nodeCount": 90,
       "pinnedCount": 0,
       "centroid": {
-        "x": -1067,
+        "x": -1400,
         "y": -198
       },
-      "eraMedian": 1950,
+      "eraMedian": 1947,
       "learnedTerms": [
         {
           "term": "blues rock",
@@ -39,11 +39,11 @@
         },
         {
           "term": "blues",
-          "weight": 193
+          "weight": 215
         },
         {
           "term": "electric blues",
-          "weight": 94
+          "weight": 95
         },
         {
           "term": "southern rock",
@@ -63,22 +63,26 @@
         },
         {
           "term": "rock and roll",
+          "weight": 31
+        },
+        {
+          "term": "rhythm and blues",
           "weight": 30
+        },
+        {
+          "term": "gospel music",
+          "weight": 27
+        },
+        {
+          "term": "rockabilly",
+          "weight": 27
         },
         {
           "term": "hard rock",
           "weight": 26
         },
         {
-          "term": "rockabilly",
-          "weight": 26
-        },
-        {
           "term": "jazz",
-          "weight": 25
-        },
-        {
-          "term": "rhythm and blues",
           "weight": 25
         },
         {
@@ -87,15 +91,11 @@
         },
         {
           "term": "electric",
-          "weight": 22
+          "weight": 23
         },
         {
           "term": "folk",
-          "weight": 22
-        },
-        {
-          "term": "gospel music",
-          "weight": 20
+          "weight": 23
         },
         {
           "term": "rhythm and blues lineage",
@@ -106,12 +106,20 @@
           "weight": 20
         },
         {
+          "term": "gospel",
+          "weight": 19
+        },
+        {
           "term": "genre transition needed",
           "weight": 18
         },
         {
           "term": "good bridge",
           "weight": 18
+        },
+        {
+          "term": "rhythm",
+          "weight": 16
         },
         {
           "term": "roots rock",
@@ -130,10 +138,6 @@
           "weight": 14
         },
         {
-          "term": "gospel",
-          "weight": 12
-        },
-        {
           "term": "john mclaughlin",
           "weight": 12
         },
@@ -142,7 +146,7 @@
           "weight": 12
         },
         {
-          "term": "rhythm",
+          "term": "roll",
           "weight": 11
         },
         {
@@ -151,10 +155,6 @@
         },
         {
           "term": "pop rock",
-          "weight": 10
-        },
-        {
-          "term": "roll",
           "weight": 10
         },
         {
@@ -356,13 +356,13 @@
       ]
     },
     "rock-circuit": {
-      "nodeCount": 169,
+      "nodeCount": 173,
       "pinnedCount": 0,
       "centroid": {
         "x": -520,
-        "y": 321
+        "y": 322
       },
-      "eraMedian": 1969,
+      "eraMedian": 1967,
       "learnedTerms": [
         {
           "term": "classic rock",
@@ -374,7 +374,7 @@
         },
         {
           "term": "rock and roll",
-          "weight": 40
+          "weight": 44
         },
         {
           "term": "good bridge",
@@ -433,6 +433,10 @@
           "weight": 12
         },
         {
+          "term": "roll",
+          "weight": 12
+        },
+        {
           "term": "shock rock",
           "weight": 12
         },
@@ -482,10 +486,6 @@
         },
         {
           "term": "readability",
-          "weight": 8
-        },
-        {
-          "term": "roll",
           "weight": 8
         },
         {
@@ -687,13 +687,13 @@
       ]
     },
     "psychedelia-prog": {
-      "nodeCount": 35,
+      "nodeCount": 47,
       "pinnedCount": 0,
       "centroid": {
-        "x": 213,
+        "x": 146,
         "y": -820
       },
-      "eraMedian": 1969,
+      "eraMedian": 1967,
       "learnedTerms": [
         {
           "term": "progressive",
@@ -705,19 +705,19 @@
         },
         {
           "term": "psychedelic",
-          "weight": 68
+          "weight": 74
         },
         {
           "term": "art rock",
           "weight": 62
         },
         {
-          "term": "progressive metal",
-          "weight": 56
+          "term": "psychedelic rock",
+          "weight": 58
         },
         {
-          "term": "psychedelic rock",
-          "weight": 52
+          "term": "progressive metal",
+          "weight": 56
         },
         {
           "term": "hard rock",
@@ -1349,17 +1349,17 @@
       ]
     },
     "punk-alt": {
-      "nodeCount": 78,
+      "nodeCount": 95,
       "pinnedCount": 0,
       "centroid": {
         "x": 1623,
         "y": 1528
       },
-      "eraMedian": 1977,
+      "eraMedian": 1980,
       "learnedTerms": [
         {
           "term": "punk rock",
-          "weight": 234
+          "weight": 235
         },
         {
           "term": "hardcore punk",
@@ -1367,11 +1367,11 @@
         },
         {
           "term": "punk",
-          "weight": 174
+          "weight": 175
         },
         {
           "term": "alternative",
-          "weight": 164
+          "weight": 168
         },
         {
           "term": "post punk",
@@ -1379,7 +1379,7 @@
         },
         {
           "term": "alternative rock",
-          "weight": 76
+          "weight": 80
         },
         {
           "term": "horror punk",
@@ -1680,20 +1680,21 @@
       ]
     },
     "folk-country-vise": {
-      "nodeCount": 12,
+      "nodeCount": 40,
       "pinnedCount": 0,
       "centroid": {
-        "x": -819,
-        "y": 1306
+        "x": -1066,
+        "y": 1563
       },
+      "eraMedian": 1960,
       "learnedTerms": [
+        {
+          "term": "folk",
+          "weight": 81
+        },
         {
           "term": "country",
           "weight": 70
-        },
-        {
-          "term": "folk",
-          "weight": 58
         },
         {
           "term": "norwegian vise",
@@ -1746,6 +1747,14 @@
         {
           "term": "roots blues",
           "weight": 4
+        },
+        {
+          "term": "cajun",
+          "weight": 3
+        },
+        {
+          "term": "cajun music",
+          "weight": 3
         },
         {
           "term": "genre transition needed",
@@ -1804,6 +1813,10 @@
           "weight": 2
         },
         {
+          "term": "guthrie",
+          "weight": 2
+        },
+        {
           "term": "halvdan",
           "weight": 2
         },
@@ -1836,6 +1849,10 @@
           "weight": 2
         },
         {
+          "term": "note",
+          "weight": 2
+        },
+        {
           "term": "oystein",
           "weight": 2
         },
@@ -1857,6 +1874,18 @@
         },
         {
           "term": "paco de lucia",
+          "weight": 2
+        },
+        {
+          "term": "shape",
+          "weight": 2
+        },
+        {
+          "term": "shape note singing",
+          "weight": 2
+        },
+        {
+          "term": "singing",
           "weight": 2
         },
         {
@@ -1884,35 +1913,115 @@
           "weight": 2
         },
         {
-          "term": "eggum",
+          "term": "almanac",
           "weight": 1
         },
         {
-          "term": "group",
+          "term": "arlo",
           "weight": 1
         },
         {
-          "term": "jan",
+          "term": "arlo guthrie",
           "weight": 1
         },
         {
-          "term": "jan eggum",
+          "term": "ashley",
+          "weight": 1
+        },
+        {
+          "term": "baez",
+          "weight": 1
+        },
+        {
+          "term": "belle",
+          "weight": 1
+        },
+        {
+          "term": "billings",
+          "weight": 1
+        },
+        {
+          "term": "breaux",
+          "weight": 1
+        },
+        {
+          "term": "buffy",
+          "weight": 1
+        },
+        {
+          "term": "buffy sainte marie",
+          "weight": 1
+        },
+        {
+          "term": "byrds",
+          "weight": 1
+        },
+        {
+          "term": "chapman",
+          "weight": 1
+        },
+        {
+          "term": "chenier",
+          "weight": 1
+        },
+        {
+          "term": "choates",
+          "weight": 1
+        },
+        {
+          "term": "clarence",
+          "weight": 1
+        },
+        {
+          "term": "clarence ashley",
+          "weight": 1
+        },
+        {
+          "term": "cleoma",
+          "weight": 1
+        },
+        {
+          "term": "cleoma breaux",
+          "weight": 1
+        },
+        {
+          "term": "clifton",
+          "weight": 1
+        },
+        {
+          "term": "clifton chenier",
+          "weight": 1
+        },
+        {
+          "term": "collins",
+          "weight": 1
+        },
+        {
+          "term": "cotten",
+          "weight": 1
+        },
+        {
+          "term": "crosby",
+          "weight": 1
+        },
+        {
+          "term": "crosby stills nash and young",
           "weight": 1
         }
       ]
     },
     "country-roots": {
-      "nodeCount": 48,
+      "nodeCount": 75,
       "pinnedCount": 0,
       "centroid": {
-        "x": -2636,
-        "y": 809
+        "x": -2790,
+        "y": 860
       },
       "eraMedian": 1952,
       "learnedTerms": [
         {
           "term": "country",
-          "weight": 132
+          "weight": 156
         },
         {
           "term": "country lineage",
@@ -1920,7 +2029,7 @@
         },
         {
           "term": "folk",
-          "weight": 34
+          "weight": 35
         },
         {
           "term": "western swing",
@@ -1935,12 +2044,12 @@
           "weight": 25
         },
         {
-          "term": "lineage",
-          "weight": 23
+          "term": "bluegrass",
+          "weight": 24
         },
         {
-          "term": "bluegrass",
-          "weight": 22
+          "term": "lineage",
+          "weight": 23
         },
         {
           "term": "bakersfield sound",
@@ -2179,11 +2288,19 @@
           "weight": 4
         },
         {
+          "term": "jimmie",
+          "weight": 4
+        },
+        {
           "term": "keep bakersfield with country its honky tonk western swing and rockabilly ingredients explain the louder regional sound without turning it into generic rock",
           "weight": 4
         },
         {
           "term": "keep rodgers grounded in early country while letting his blues and early rock influence pull him toward those scenes",
+          "weight": 4
+        },
+        {
+          "term": "merle",
           "weight": 4
         },
         {
@@ -2221,25 +2338,17 @@
         {
           "term": "the genre name s link to bill monroe s band is an origin clue keep bluegrass rooted in early country and acoustic folk history not modern pop country",
           "weight": 4
-        },
-        {
-          "term": "waylon and willie",
-          "weight": 4
-        },
-        {
-          "term": "western swing background",
-          "weight": 4
         }
       ]
     },
     "jazz": {
-      "nodeCount": 40,
+      "nodeCount": 69,
       "pinnedCount": 0,
       "centroid": {
-        "x": -1483,
-        "y": -1228
+        "x": -1513,
+        "y": -1269
       },
-      "eraMedian": 1949,
+      "eraMedian": 1947,
       "learnedTerms": [
         {
           "term": "jazz lineage",
@@ -2247,11 +2356,11 @@
         },
         {
           "term": "jazz",
-          "weight": 86
+          "weight": 108
         },
         {
           "term": "jazz fusion",
-          "weight": 43
+          "weight": 44
         },
         {
           "term": "lineage",
@@ -2306,6 +2415,10 @@
           "weight": 8
         },
         {
+          "term": "fusion",
+          "weight": 8
+        },
+        {
           "term": "jazz guitar",
           "weight": 8
         },
@@ -2314,12 +2427,12 @@
           "weight": 8
         },
         {
-          "term": "wes montgomery",
+          "term": "ragtime",
           "weight": 8
         },
         {
-          "term": "fusion",
-          "weight": 7
+          "term": "wes montgomery",
+          "weight": 8
         },
         {
           "term": "arranged jazz",
@@ -2462,11 +2575,23 @@
           "weight": 2
         },
         {
+          "term": "art",
+          "weight": 2
+        },
+        {
           "term": "based",
           "weight": 2
         },
         {
           "term": "blue",
+          "weight": 2
+        },
+        {
+          "term": "brubeck",
+          "weight": 2
+        },
+        {
+          "term": "carter",
           "weight": 2
         },
         {
@@ -2482,6 +2607,10 @@
           "weight": 2
         },
         {
+          "term": "dave",
+          "weight": 2
+        },
+        {
           "term": "django",
           "weight": 2
         },
@@ -2494,11 +2623,19 @@
           "weight": 2
         },
         {
+          "term": "gilberto",
+          "weight": 2
+        },
+        {
           "term": "hybrid",
           "weight": 2
         },
         {
           "term": "hybrid form",
+          "weight": 2
+        },
+        {
+          "term": "james",
           "weight": 2
         },
         {
@@ -2532,34 +2669,6 @@
         {
           "term": "pass",
           "weight": 2
-        },
-        {
-          "term": "piano",
-          "weight": 2
-        },
-        {
-          "term": "reinhardt",
-          "weight": 2
-        },
-        {
-          "term": "roots",
-          "weight": 2
-        },
-        {
-          "term": "swing music",
-          "weight": 2
-        },
-        {
-          "term": "wes",
-          "weight": 2
-        },
-        {
-          "term": "adderley",
-          "weight": 1
-        },
-        {
-          "term": "armstrong",
-          "weight": 1
         }
       ]
     },
@@ -2895,17 +3004,17 @@
       ]
     },
     "hip-hop-rap": {
-      "nodeCount": 26,
+      "nodeCount": 35,
       "pinnedCount": 0,
       "centroid": {
-        "x": 3825,
-        "y": 1521
+        "x": 3536,
+        "y": 1505
       },
-      "eraMedian": 1983,
+      "eraMedian": 1982,
       "learnedTerms": [
         {
           "term": "hip hop",
-          "weight": 142
+          "weight": 149
         },
         {
           "term": "rap",
@@ -2921,11 +3030,11 @@
         },
         {
           "term": "hip",
-          "weight": 46
+          "weight": 53
         },
         {
           "term": "hop",
-          "weight": 46
+          "weight": 53
         },
         {
           "term": "funk",
@@ -3226,17 +3335,37 @@
       ]
     },
     "classical-history": {
-      "nodeCount": 11,
+      "nodeCount": 43,
       "pinnedCount": 0,
       "centroid": {
-        "x": -3066,
-        "y": -1202
+        "x": -3166,
+        "y": -1373
       },
-      "eraMedian": 1750,
+      "eraMedian": 1908,
       "learnedTerms": [
         {
           "term": "classical",
-          "weight": 6
+          "weight": 28
+        },
+        {
+          "term": "classical music",
+          "weight": 24
+        },
+        {
+          "term": "romantic",
+          "weight": 8
+        },
+        {
+          "term": "romantic music",
+          "weight": 8
+        },
+        {
+          "term": "baroque",
+          "weight": 5
+        },
+        {
+          "term": "baroque music",
+          "weight": 5
         },
         {
           "term": "classical period",
@@ -3247,23 +3376,19 @@
           "weight": 4
         },
         {
-          "term": "baroque",
+          "term": "film",
           "weight": 3
         },
         {
-          "term": "baroque music",
+          "term": "film score",
           "weight": 3
         },
         {
-          "term": "romantic",
+          "term": "score",
           "weight": 3
         },
         {
-          "term": "romantic music",
-          "weight": 3
-        },
-        {
-          "term": "classical music",
+          "term": "franz",
           "weight": 2
         },
         {
@@ -3271,7 +3396,59 @@
           "weight": 2
         },
         {
+          "term": "louis",
+          "weight": 2
+        },
+        {
+          "term": "price",
+          "weight": 2
+        },
+        {
+          "term": "van",
+          "weight": 2
+        },
+        {
+          "term": "alex",
+          "weight": 1
+        },
+        {
+          "term": "alex north",
+          "weight": 1
+        },
+        {
           "term": "amadeus",
+          "weight": 1
+        },
+        {
+          "term": "amanda",
+          "weight": 1
+        },
+        {
+          "term": "amanda maier",
+          "weight": 1
+        },
+        {
+          "term": "antonin",
+          "weight": 1
+        },
+        {
+          "term": "antonin dvorak",
+          "weight": 1
+        },
+        {
+          "term": "antonio",
+          "weight": 1
+        },
+        {
+          "term": "antonio vivaldi",
+          "weight": 1
+        },
+        {
+          "term": "arthur",
+          "weight": 1
+        },
+        {
+          "term": "arthur rubinstein",
           "weight": 1
         },
         {
@@ -3283,7 +3460,59 @@
           "weight": 1
         },
         {
+          "term": "benjamin",
+          "weight": 1
+        },
+        {
+          "term": "benjamin britten",
+          "weight": 1
+        },
+        {
+          "term": "brahms",
+          "weight": 1
+        },
+        {
+          "term": "britten",
+          "weight": 1
+        },
+        {
+          "term": "callas",
+          "weight": 1
+        },
+        {
+          "term": "carlos",
+          "weight": 1
+        },
+        {
           "term": "chopin",
+          "weight": 1
+        },
+        {
+          "term": "chorale",
+          "weight": 1
+        },
+        {
+          "term": "claude",
+          "weight": 1
+        },
+        {
+          "term": "claude debussy",
+          "weight": 1
+        },
+        {
+          "term": "cliburn",
+          "weight": 1
+        },
+        {
+          "term": "coleridge",
+          "weight": 1
+        },
+        {
+          "term": "debussy",
+          "weight": 1
+        },
+        {
+          "term": "dvorak",
           "weight": 1
         },
         {
@@ -3295,7 +3524,23 @@
           "weight": 1
         },
         {
+          "term": "florence",
+          "weight": 1
+        },
+        {
+          "term": "florence price",
+          "weight": 1
+        },
+        {
           "term": "folk",
+          "weight": 1
+        },
+        {
+          "term": "franz liszt",
+          "weight": 1
+        },
+        {
+          "term": "franz schubert",
           "weight": 1
         },
         {
@@ -3307,11 +3552,55 @@
           "weight": 1
         },
         {
+          "term": "frideric",
+          "weight": 1
+        },
+        {
+          "term": "george",
+          "weight": 1
+        },
+        {
+          "term": "george frideric handel",
+          "weight": 1
+        },
+        {
+          "term": "glass",
+          "weight": 1
+        },
+        {
+          "term": "gottschalk",
+          "weight": 1
+        },
+        {
+          "term": "grant",
+          "weight": 1
+        },
+        {
           "term": "grieg",
           "weight": 1
         },
         {
+          "term": "handel",
+          "weight": 1
+        },
+        {
           "term": "haydn",
+          "weight": 1
+        },
+        {
+          "term": "igor",
+          "weight": 1
+        },
+        {
+          "term": "igor stravinsky",
+          "weight": 1
+        },
+        {
+          "term": "jessye",
+          "weight": 1
+        },
+        {
+          "term": "jessye norman",
           "weight": 1
         },
         {
@@ -3323,6 +3612,22 @@
           "weight": 1
         },
         {
+          "term": "johannes",
+          "weight": 1
+        },
+        {
+          "term": "johannes brahms",
+          "weight": 1
+        },
+        {
+          "term": "john",
+          "weight": 1
+        },
+        {
+          "term": "john williams",
+          "weight": 1
+        },
+        {
           "term": "joseph",
           "weight": 1
         },
@@ -3331,59 +3636,79 @@
           "weight": 1
         },
         {
-          "term": "ludwig",
+          "term": "kaufman",
           "weight": 1
         },
         {
-          "term": "ludwig van beethoven",
+          "term": "lang",
           "weight": 1
         },
         {
-          "term": "mozart",
+          "term": "leontyne",
           "weight": 1
         },
         {
-          "term": "pachelbel",
+          "term": "leontyne price",
           "weight": 1
         },
         {
-          "term": "sebastian",
+          "term": "liszt",
           "weight": 1
         },
         {
-          "term": "van",
+          "term": "louis kaufman",
           "weight": 1
         },
         {
-          "term": "wolfgang",
-          "weight": 1
-        },
-        {
-          "term": "wolfgang amadeus mozart",
+          "term": "louis moreau gottschalk",
           "weight": 1
         }
       ]
     },
     "pop-soul-disco": {
-      "nodeCount": 34,
+      "nodeCount": 152,
       "pinnedCount": 0,
       "centroid": {
-        "x": -625,
-        "y": 2426
+        "x": -759,
+        "y": 2494
       },
-      "eraMedian": 1963,
+      "eraMedian": 1969,
       "learnedTerms": [
         {
           "term": "soul music lineage",
           "weight": 60
         },
         {
+          "term": "pop",
+          "weight": 55
+        },
+        {
+          "term": "pop music",
+          "weight": 44
+        },
+        {
           "term": "soul",
-          "weight": 27
+          "weight": 35
         },
         {
           "term": "soul music",
-          "weight": 23
+          "weight": 31
+        },
+        {
+          "term": "american",
+          "weight": 25
+        },
+        {
+          "term": "american popular song",
+          "weight": 25
+        },
+        {
+          "term": "popular",
+          "weight": 25
+        },
+        {
+          "term": "song",
+          "weight": 25
         },
         {
           "term": "funk lineage",
@@ -3394,19 +3719,19 @@
           "weight": 15
         },
         {
+          "term": "disco",
+          "weight": 13
+        },
+        {
           "term": "rhythm and blues",
-          "weight": 12
-        },
-        {
-          "term": "pop",
-          "weight": 11
-        },
-        {
-          "term": "pop music",
-          "weight": 10
+          "weight": 13
         },
         {
           "term": "gospel music",
+          "weight": 9
+        },
+        {
+          "term": "pop rock",
           "weight": 9
         },
         {
@@ -3415,6 +3740,14 @@
         },
         {
           "term": "gospel voice",
+          "weight": 6
+        },
+        {
+          "term": "latin",
+          "weight": 6
+        },
+        {
+          "term": "latin music",
           "weight": 6
         },
         {
@@ -3466,15 +3799,19 @@
           "weight": 5
         },
         {
-          "term": "disco",
-          "weight": 4
-        },
-        {
           "term": "franklin s gospel upbringing and r b recordings explain her soul and pop connections a gospel influence is not the same as a later secular genre label",
           "weight": 4
         },
         {
           "term": "gospel vocal roots",
+          "weight": 4
+        },
+        {
+          "term": "jackson",
+          "weight": 4
+        },
+        {
+          "term": "rhythm",
           "weight": 4
         },
         {
@@ -3484,6 +3821,10 @@
         {
           "term": "roots blues",
           "weight": 4
+        },
+        {
+          "term": "blues",
+          "weight": 3
         },
         {
           "term": "genre transition needed",
@@ -3502,7 +3843,27 @@
           "weight": 3
         },
         {
-          "term": "rhythm",
+          "term": "john",
+          "weight": 3
+        },
+        {
+          "term": "king",
+          "weight": 3
+        },
+        {
+          "term": "paul",
+          "weight": 3
+        },
+        {
+          "term": "ragtime",
+          "weight": 3
+        },
+        {
+          "term": "synth",
+          "weight": 3
+        },
+        {
+          "term": "synth pop",
           "weight": 3
         },
         {
@@ -3510,7 +3871,19 @@
           "weight": 2
         },
         {
-          "term": "blues",
+          "term": "bobby",
+          "weight": 2
+        },
+        {
+          "term": "brothers",
+          "weight": 2
+        },
+        {
+          "term": "cars",
+          "weight": 2
+        },
+        {
+          "term": "chic",
           "weight": 2
         },
         {
@@ -3518,19 +3891,67 @@
           "weight": 2
         },
         {
+          "term": "dave",
+          "weight": 2
+        },
+        {
+          "term": "david",
+          "weight": 2
+        },
+        {
+          "term": "four",
+          "weight": 2
+        },
+        {
           "term": "franklin",
           "weight": 2
         },
         {
-          "term": "jackson",
+          "term": "george",
           "weight": 2
         },
         {
-          "term": "synth",
+          "term": "gloria",
           "weight": 2
         },
         {
-          "term": "synth pop",
+          "term": "harry",
+          "weight": 2
+        },
+        {
+          "term": "james",
+          "weight": 2
+        },
+        {
+          "term": "jazz",
+          "weight": 2
+        },
+        {
+          "term": "jimmy",
+          "weight": 2
+        },
+        {
+          "term": "johnny",
+          "weight": 2
+        },
+        {
+          "term": "mcvie",
+          "weight": 2
+        },
+        {
+          "term": "robinson",
+          "weight": 2
+        },
+        {
+          "term": "sam",
+          "weight": 2
+        },
+        {
+          "term": "stevie",
+          "weight": 2
+        },
+        {
+          "term": "tony",
           "weight": 2
         },
         {
@@ -3538,7 +3959,23 @@
           "weight": 2
         },
         {
+          "term": "williams",
+          "weight": 2
+        },
+        {
+          "term": "wilson",
+          "weight": 2
+        },
+        {
           "term": "abba",
+          "weight": 1
+        },
+        {
+          "term": "agnetha",
+          "weight": 1
+        },
+        {
+          "term": "agnetha faltskog",
           "weight": 1
         },
         {
@@ -3546,151 +3983,15 @@
           "weight": 1
         },
         {
-          "term": "bee",
+          "term": "al mckay",
           "weight": 1
         },
         {
-          "term": "bee gees",
+          "term": "alfa",
           "weight": 1
         },
         {
-          "term": "booker",
-          "weight": 1
-        },
-        {
-          "term": "booker t and the mgs",
-          "weight": 1
-        },
-        {
-          "term": "booker t the m g s",
-          "weight": 1
-        },
-        {
-          "term": "bowie",
-          "weight": 1
-        },
-        {
-          "term": "bridge",
-          "weight": 1
-        },
-        {
-          "term": "brown",
-          "weight": 1
-        },
-        {
-          "term": "burke",
-          "weight": 1
-        },
-        {
-          "term": "carla",
-          "weight": 1
-        },
-        {
-          "term": "carla thomas",
-          "weight": 1
-        },
-        {
-          "term": "collins",
-          "weight": 1
-        },
-        {
-          "term": "cooke",
-          "weight": 1
-        },
-        {
-          "term": "country",
-          "weight": 1
-        },
-        {
-          "term": "cross",
-          "weight": 1
-        },
-        {
-          "term": "curtis",
-          "weight": 1
-        },
-        {
-          "term": "curtis mayfield",
-          "weight": 1
-        },
-        {
-          "term": "david",
-          "weight": 1
-        },
-        {
-          "term": "david bowie",
-          "weight": 1
-        },
-        {
-          "term": "donna",
-          "weight": 1
-        },
-        {
-          "term": "donna summer",
-          "weight": 1
-        },
-        {
-          "term": "family",
-          "weight": 1
-        },
-        {
-          "term": "four",
-          "weight": 1
-        },
-        {
-          "term": "funkadelic",
-          "weight": 1
-        },
-        {
-          "term": "gaye",
-          "weight": 1
-        },
-        {
-          "term": "gees",
-          "weight": 1
-        },
-        {
-          "term": "gladys",
-          "weight": 1
-        },
-        {
-          "term": "gladys knight and the pips",
-          "weight": 1
-        },
-        {
-          "term": "gladys knight the pips",
-          "weight": 1
-        },
-        {
-          "term": "glam",
-          "weight": 1
-        },
-        {
-          "term": "glam rock",
-          "weight": 1
-        },
-        {
-          "term": "green",
-          "weight": 1
-        },
-        {
-          "term": "hayes",
-          "weight": 1
-        },
-        {
-          "term": "influenced",
-          "weight": 1
-        },
-        {
-          "term": "innovation",
-          "weight": 1
-        },
-        {
-          "term": "isaac",
-          "weight": 1
-        },
-        {
-          "term": "isaac hayes",
+          "term": "alfa anderson",
           "weight": 1
         }
       ]
@@ -3758,6 +4059,8 @@
         "hard-rock-metal",
         "country-roots"
       ],
+      "eraStart": 1909,
+      "eraPeak": 1909,
       "primaryGenres": [
         "Blues"
       ],
@@ -3767,7 +4070,7 @@
         "electric blues"
       ],
       "approvedFactCount": 1,
-      "connectionCount": 12,
+      "connectionCount": 28,
       "linkedGenres": [],
       "bridgeScore": 0.44,
       "hubScore": 1,
@@ -3788,7 +4091,7 @@
         "blues rock",
         "electric blues"
       ],
-      "connectionCount": 12,
+      "connectionCount": 13,
       "linkedGenres": [],
       "bridgeScore": 0.22,
       "hubScore": 1,
@@ -3812,7 +4115,7 @@
         "roots"
       ],
       "approvedFactCount": 1,
-      "connectionCount": 13,
+      "connectionCount": 18,
       "linkedGenres": [],
       "bridgeScore": 0.66,
       "hubScore": 1,
@@ -3877,10 +4180,10 @@
         }
       ],
       "approvedFactCount": 1,
-      "connectionCount": 4,
+      "connectionCount": 10,
       "linkedGenres": [],
       "bridgeScore": 0.22,
-      "hubScore": 0.333,
+      "hubScore": 0.833,
       "layoutHints": {
         "pinned": false
       }
@@ -3970,10 +4273,10 @@
         "punk"
       ],
       "approvedFactCount": 1,
-      "connectionCount": 4,
+      "connectionCount": 5,
       "linkedGenres": [],
       "bridgeScore": 0.22,
-      "hubScore": 0.333,
+      "hubScore": 0.417,
       "layoutHints": {
         "pinned": false
       }
@@ -4013,7 +4316,7 @@
         "country",
         "folk"
       ],
-      "connectionCount": 13,
+      "connectionCount": 40,
       "linkedGenres": [],
       "bridgeScore": 0.88,
       "hubScore": 1,
@@ -4029,6 +4332,8 @@
         "guitar-workshop",
         "pop-soul-disco"
       ],
+      "eraStart": 1922,
+      "eraPeak": 1922,
       "primaryGenres": [
         "Country"
       ],
@@ -4038,7 +4343,7 @@
         "southern rock"
       ],
       "approvedFactCount": 1,
-      "connectionCount": 49,
+      "connectionCount": 75,
       "linkedGenres": [],
       "bridgeScore": 0.88,
       "hubScore": 1,
@@ -4106,7 +4411,7 @@
         "classic rock"
       ],
       "curatorFeedback": "Keep jazz fusion attached to jazz while allowing documented rock, funk and progressive crossover. Do not pull every nearby jazz artist into rock.",
-      "connectionCount": 12,
+      "connectionCount": 13,
       "linkedGenres": [],
       "bridgeScore": 1,
       "hubScore": 1,
@@ -5600,10 +5905,10 @@
         "roots rock"
       ],
       "approvedFactCount": 1,
-      "connectionCount": 5,
+      "connectionCount": 6,
       "linkedGenres": [],
       "bridgeScore": 0.22,
-      "hubScore": 0.417,
+      "hubScore": 0.5,
       "layoutHints": {
         "pinned": false
       }
@@ -5711,10 +6016,10 @@
         "art rock",
         "indie rock"
       ],
-      "connectionCount": 7,
+      "connectionCount": 11,
       "linkedGenres": [],
       "bridgeScore": 0.66,
-      "hubScore": 0.583,
+      "hubScore": 0.917,
       "layoutHints": {
         "pinned": false
       }
@@ -5874,10 +6179,10 @@
         }
       ],
       "approvedFactCount": 1,
-      "connectionCount": 4,
+      "connectionCount": 6,
       "linkedGenres": [],
       "bridgeScore": 0.34,
-      "hubScore": 0.333,
+      "hubScore": 0.5,
       "layoutHints": {
         "pinned": false
       }
@@ -5910,8 +6215,11 @@
         "roots-blues",
         "rock-circuit",
         "guitar-workshop",
-        "country-roots"
+        "country-roots",
+        "pop-soul-disco"
       ],
+      "eraStart": 1915,
+      "eraPeak": 1915,
       "primaryGenres": [
         "Jazz"
       ],
@@ -5921,9 +6229,9 @@
         "jazz roots"
       ],
       "approvedFactCount": 1,
-      "connectionCount": 40,
+      "connectionCount": 66,
       "linkedGenres": [],
-      "bridgeScore": 0.88,
+      "bridgeScore": 1,
       "hubScore": 1,
       "layoutHints": {
         "pinned": false
@@ -7152,10 +7460,10 @@
         "blues rock",
         "southern rock"
       ],
-      "connectionCount": 3,
+      "connectionCount": 4,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0.25,
+      "hubScore": 0.333,
       "layoutHints": {
         "pinned": false
       }
@@ -7163,7 +7471,8 @@
     "fleetwood-mac": {
       "zone": "roots-blues",
       "secondaryZones": [
-        "rock-circuit"
+        "rock-circuit",
+        "pop-soul-disco"
       ],
       "primaryGenres": [
         "blues rock",
@@ -7176,10 +7485,10 @@
         "blues"
       ],
       "approvedFactCount": 1,
-      "connectionCount": 2,
+      "connectionCount": 6,
       "linkedGenres": [],
-      "bridgeScore": 0.22,
-      "hubScore": 0.167,
+      "bridgeScore": 0.44,
+      "hubScore": 0.5,
       "layoutHints": {
         "pinned": false
       }
@@ -11589,7 +11898,9 @@
     },
     "pop-rock": {
       "zone": "rock-circuit",
-      "secondaryZones": [],
+      "secondaryZones": [
+        "pop-soul-disco"
+      ],
       "primaryGenres": [
         "pop rock"
       ],
@@ -11598,10 +11909,10 @@
         "rock and roll",
         "classic rock"
       ],
-      "connectionCount": 0,
+      "connectionCount": 9,
       "linkedGenres": [],
-      "bridgeScore": 0,
-      "hubScore": 0,
+      "bridgeScore": 0.22,
+      "hubScore": 0.75,
       "layoutHints": {
         "pinned": false
       }
@@ -13132,7 +13443,9 @@
     },
     "roots-rock": {
       "zone": "psychedelia-prog",
-      "secondaryZones": [],
+      "secondaryZones": [
+        "folk-country-vise"
+      ],
       "primaryGenres": [
         "roots rock"
       ],
@@ -13141,10 +13454,10 @@
         "progressive",
         "psychedelic"
       ],
-      "connectionCount": 0,
+      "connectionCount": 1,
       "linkedGenres": [],
-      "bridgeScore": 0,
-      "hubScore": 0,
+      "bridgeScore": 0.22,
+      "hubScore": 0.083,
       "layoutHints": {
         "pinned": false
       }
@@ -15531,17 +15844,17 @@
     "louis-armstrong": {
       "zone": "jazz",
       "secondaryZones": [],
-      "eraStart": 1971,
+      "eraStart": 1925,
       "eraPeak": 1971,
       "primaryGenres": [],
       "curatorTags": [],
       "approvedFactCount": 1,
-      "connectionCount": 1,
+      "connectionCount": 3,
       "linkedGenres": [
         "jazz"
       ],
       "bridgeScore": 0.08,
-      "hubScore": 0.083,
+      "hubScore": 0.25,
       "layoutHints": {
         "pinned": false
       }
@@ -15550,17 +15863,17 @@
       "zone": "jazz",
       "secondaryZones": [],
       "eraStart": 1924,
-      "eraPeak": 1974,
+      "eraPeak": 1924,
       "primaryGenres": [],
       "curatorTags": [],
       "approvedFactCount": 1,
-      "connectionCount": 2,
+      "connectionCount": 3,
       "linkedGenres": [
         "jazz",
         "swing-music"
       ],
       "bridgeScore": 0.16,
-      "hubScore": 0.167,
+      "hubScore": 0.25,
       "layoutHints": {
         "pinned": false
       }
@@ -15659,7 +15972,7 @@
         "roots-blues",
         "rock-circuit"
       ],
-      "eraStart": 1933,
+      "eraStart": 1927,
       "eraPeak": 1933,
       "primaryGenres": [
         "country",
@@ -15671,14 +15984,14 @@
       ],
       "curatorFeedback": "Keep Rodgers grounded in early country while letting his blues and early rock influence pull him toward those scenes.",
       "approvedFactCount": 1,
-      "connectionCount": 5,
+      "connectionCount": 6,
       "linkedGenres": [
         "country",
         "blues",
         "rock-and-roll"
       ],
       "bridgeScore": 0.93,
-      "hubScore": 0.417,
+      "hubScore": 0.5,
       "layoutHints": {
         "pinned": false
       }
@@ -15690,7 +16003,7 @@
         "roots-blues"
       ],
       "eraStart": 1927,
-      "eraPeak": 1956,
+      "eraPeak": 1927,
       "primaryGenres": [
         "country",
         "folk"
@@ -15701,14 +16014,14 @@
         "Carter guitar style"
       ],
       "curatorFeedback": "The Carter Family is an early country anchor with documented folk and blues repertoire.",
-      "connectionCount": 3,
+      "connectionCount": 5,
       "linkedGenres": [
         "country",
         "folk",
         "blues"
       ],
       "bridgeScore": 0.88,
-      "hubScore": 0.25,
+      "hubScore": 0.417,
       "layoutHints": {
         "pinned": false
       }
@@ -15817,16 +16130,17 @@
     "classical-music": {
       "zone": "classical-history",
       "secondaryZones": [
-        "psychedelia-prog"
+        "psychedelia-prog",
+        "pop-soul-disco"
       ],
       "eraStart": 1600,
       "eraPeak": 1600,
       "primaryGenres": [],
       "curatorTags": [],
-      "connectionCount": 6,
+      "connectionCount": 29,
       "linkedGenres": [],
-      "bridgeScore": 0.22,
-      "hubScore": 0.5,
+      "bridgeScore": 0.44,
+      "hubScore": 1,
       "layoutHints": {
         "pinned": false
       }
@@ -15838,10 +16152,10 @@
       "eraPeak": 1600,
       "primaryGenres": [],
       "curatorTags": [],
-      "connectionCount": 3,
+      "connectionCount": 5,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0.25,
+      "hubScore": 0.417,
       "layoutHints": {
         "pinned": false
       }
@@ -15868,10 +16182,10 @@
       "eraPeak": 1800,
       "primaryGenres": [],
       "curatorTags": [],
-      "connectionCount": 3,
+      "connectionCount": 8,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0.25,
+      "hubScore": 0.667,
       "layoutHints": {
         "pinned": false
       }
@@ -16006,10 +16320,10 @@
       "eraPeak": 1960,
       "primaryGenres": [],
       "curatorTags": [],
-      "connectionCount": 11,
+      "connectionCount": 45,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0.917,
+      "hubScore": 1,
       "layoutHints": {
         "pinned": false
       }
@@ -16017,15 +16331,16 @@
     "soul-music": {
       "zone": "pop-soul-disco",
       "secondaryZones": [
-        "roots-blues"
+        "roots-blues",
+        "jazz"
       ],
       "eraStart": 1960,
       "eraPeak": 1960,
       "primaryGenres": [],
       "curatorTags": [],
-      "connectionCount": 25,
+      "connectionCount": 34,
       "linkedGenres": [],
-      "bridgeScore": 0.22,
+      "bridgeScore": 0.44,
       "hubScore": 1,
       "layoutHints": {
         "pinned": false
@@ -16038,10 +16353,10 @@
       "eraPeak": 1973,
       "primaryGenres": [],
       "curatorTags": [],
-      "connectionCount": 4,
+      "connectionCount": 13,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0.333,
+      "hubScore": 1,
       "layoutHints": {
         "pinned": false
       }
@@ -16053,10 +16368,10 @@
       "eraPeak": 1980,
       "primaryGenres": [],
       "curatorTags": [],
-      "connectionCount": 2,
+      "connectionCount": 3,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0.167,
+      "hubScore": 0.25,
       "layoutHints": {
         "pinned": false
       }
@@ -16121,12 +16436,12 @@
       "eraPeak": 1974,
       "primaryGenres": [],
       "curatorTags": [],
-      "connectionCount": 1,
+      "connectionCount": 5,
       "linkedGenres": [
         "pop-music"
       ],
       "bridgeScore": 0.08,
-      "hubScore": 0.083,
+      "hubScore": 0.417,
       "layoutHints": {
         "pinned": false
       }
@@ -16247,7 +16562,8 @@
     "gospel-music": {
       "zone": "roots-blues",
       "secondaryZones": [
-        "pop-soul-disco"
+        "pop-soul-disco",
+        "country-roots"
       ],
       "eraStart": 1930,
       "eraPeak": 1930,
@@ -16260,10 +16576,10 @@
         "soul roots"
       ],
       "curatorFeedback": "Keep gospel a distinct sacred tradition. Its documented influence on R&B and soul is a historical bridge, not evidence that the genres are interchangeable.",
-      "connectionCount": 11,
+      "connectionCount": 20,
       "linkedGenres": [],
-      "bridgeScore": 0.42,
-      "hubScore": 0.917,
+      "bridgeScore": 0.64,
+      "hubScore": 1,
       "layoutHints": {
         "pinned": false
       }
@@ -16287,7 +16603,7 @@
         "rock and soul roots"
       ],
       "curatorFeedback": "R&B is the junction of documented blues, gospel and swing influences and later soul/rock developments. Do not collapse it into any one source.",
-      "connectionCount": 15,
+      "connectionCount": 21,
       "linkedGenres": [],
       "bridgeScore": 1,
       "hubScore": 1,
@@ -18166,6 +18482,5261 @@
       ],
       "bridgeScore": 0.08,
       "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "antonio-vivaldi": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "eraStart": 1725,
+      "eraPeak": 1725,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "baroque-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "george-frideric-handel": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "eraStart": 1742,
+      "eraPeak": 1742,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "baroque-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "franz-schubert": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "eraStart": 1815,
+      "eraPeak": 1815,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "romantic-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "claude-debussy": {
+      "zone": "classical-history",
+      "secondaryZones": [
+        "jazz"
+      ],
+      "eraStart": 1908,
+      "eraPeak": 1908,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "classical-music",
+        "ragtime"
+      ],
+      "bridgeScore": 0.38,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "igor-stravinsky": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "eraStart": 1913,
+      "eraPeak": 1913,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "spirituals": {
+      "zone": "roots-blues",
+      "secondaryZones": [],
+      "eraStart": 1855,
+      "eraPeak": 1855,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 4,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.333,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "fisk-jubilee-singers": {
+      "zone": "roots-blues",
+      "secondaryZones": [],
+      "eraStart": 1871,
+      "eraPeak": 1871,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "spirituals"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "ragtime": {
+      "zone": "jazz",
+      "secondaryZones": [
+        "classical-history",
+        "roots-blues",
+        "pop-soul-disco"
+      ],
+      "eraStart": 1895,
+      "eraPeak": 1895,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 14,
+      "linkedGenres": [],
+      "bridgeScore": 0.66,
+      "hubScore": 1,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "scott-joplin": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1899,
+      "eraPeak": 1899,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 3,
+      "linkedGenres": [
+        "ragtime"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.25,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "w-c-handy": {
+      "zone": "roots-blues",
+      "secondaryZones": [
+        "jazz",
+        "classical-history"
+      ],
+      "eraStart": 1909,
+      "eraPeak": 1909,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 3,
+      "linkedGenres": [
+        "blues",
+        "ragtime"
+      ],
+      "bridgeScore": 0.6,
+      "hubScore": 0.25,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "jelly-roll-morton": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1915,
+      "eraPeak": 1915,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "jazz",
+        "ragtime"
+      ],
+      "bridgeScore": 0.16,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "mamie-smith": {
+      "zone": "roots-blues",
+      "secondaryZones": [],
+      "eraStart": 1920,
+      "eraPeak": 1920,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "blues"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "ma-rainey": {
+      "zone": "roots-blues",
+      "secondaryZones": [],
+      "eraStart": 1923,
+      "eraPeak": 1923,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "blues"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "bessie-smith": {
+      "zone": "roots-blues",
+      "secondaryZones": [],
+      "eraStart": 1923,
+      "eraPeak": 1923,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "blues"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "blind-lemon-jefferson": {
+      "zone": "roots-blues",
+      "secondaryZones": [],
+      "eraStart": 1927,
+      "eraPeak": 1927,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "blues"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "eck-robertson": {
+      "zone": "country-roots",
+      "secondaryZones": [],
+      "eraStart": 1922,
+      "eraPeak": 1922,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "country"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "vernon-dalhart": {
+      "zone": "country-roots",
+      "secondaryZones": [],
+      "eraStart": 1924,
+      "eraPeak": 1924,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "country"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "uncle-dave-macon": {
+      "zone": "country-roots",
+      "secondaryZones": [
+        "folk-country-vise"
+      ],
+      "eraStart": 1924,
+      "eraPeak": 1924,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "country",
+        "folk"
+      ],
+      "bridgeScore": 0.38,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "shape-note-singing": {
+      "zone": "folk-country-vise",
+      "secondaryZones": [],
+      "eraStart": 1835,
+      "eraPeak": 1835,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "american-popular-song": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [
+        "jazz"
+      ],
+      "eraStart": 1847,
+      "eraPeak": 1847,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 25,
+      "linkedGenres": [],
+      "bridgeScore": 0.22,
+      "hubScore": 1,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "stephen-foster": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1847,
+      "eraPeak": 1847,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "american-popular-song"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "harry-von-tilzer": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1900,
+      "eraPeak": 1900,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "american-popular-song"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "irving-berlin": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [
+        "jazz"
+      ],
+      "eraStart": 1911,
+      "eraPeak": 1911,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "american-popular-song",
+        "ragtime"
+      ],
+      "bridgeScore": 0.38,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "george-gershwin": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [
+        "jazz",
+        "classical-history"
+      ],
+      "eraStart": 1924,
+      "eraPeak": 1924,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 3,
+      "linkedGenres": [
+        "american-popular-song",
+        "jazz",
+        "classical-music"
+      ],
+      "bridgeScore": 0.68,
+      "hubScore": 0.25,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "william-billings": {
+      "zone": "folk-country-vise",
+      "secondaryZones": [],
+      "eraStart": 1770,
+      "eraPeak": 1770,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "shape-note-singing",
+        "folk"
+      ],
+      "bridgeScore": 0.16,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "louis-moreau-gottschalk": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "eraStart": 1847,
+      "eraPeak": 1847,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "franz-liszt": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "eraStart": 1830,
+      "eraPeak": 1830,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "romantic-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "johannes-brahms": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "eraStart": 1868,
+      "eraPeak": 1868,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "romantic-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "amanda-maier": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "eraStart": 1876,
+      "eraPeak": 1876,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "romantic-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "antonin-dvorak": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "eraStart": 1893,
+      "eraPeak": 1893,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "romantic-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "margaret-ruthven-lang": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "eraStart": 1890,
+      "eraPeak": 1890,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "samuel-coleridge-taylor": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "eraStart": 1898,
+      "eraPeak": 1898,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "william-grant-still": {
+      "zone": "classical-history",
+      "secondaryZones": [
+        "roots-blues"
+      ],
+      "eraStart": 1926,
+      "eraPeak": 1926,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "bridgeScore": 0.3,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "florence-price": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "eraStart": 1929,
+      "eraPeak": 1929,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "will-marion-cook": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [
+        "jazz"
+      ],
+      "eraStart": 1898,
+      "eraPeak": 1898,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 3,
+      "linkedGenres": [
+        "american-popular-song",
+        "ragtime"
+      ],
+      "bridgeScore": 0.38,
+      "hubScore": 0.25,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "bert-williams": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1901,
+      "eraPeak": 1901,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "american-popular-song"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "victor-herbert": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1903,
+      "eraPeak": 1903,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "american-popular-song"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "george-m-cohan": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1904,
+      "eraPeak": 1904,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "american-popular-song"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "james-reese-europe": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [
+        "jazz"
+      ],
+      "eraStart": 1912,
+      "eraPeak": 1912,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "ragtime"
+      ],
+      "bridgeScore": 0.3,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "clef-club-orchestra": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1912,
+      "eraPeak": 1912,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "american-popular-song"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "jerome-kern": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1920,
+      "eraPeak": 1920,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "american-popular-song"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "noble-sissle": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [
+        "jazz"
+      ],
+      "eraStart": 1921,
+      "eraPeak": 1921,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "american-popular-song"
+      ],
+      "bridgeScore": 0.3,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "hoagy-carmichael": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [
+        "jazz"
+      ],
+      "eraStart": 1927,
+      "eraPeak": 1927,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "american-popular-song",
+        "jazz"
+      ],
+      "bridgeScore": 0.38,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "tom-turpin": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1897,
+      "eraPeak": 1897,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "ragtime"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "james-scott-ragtime": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1903,
+      "eraPeak": 1903,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "ragtime"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "joseph-lamb": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1908,
+      "eraPeak": 1908,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "ragtime"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "eubie-blake": {
+      "zone": "jazz",
+      "secondaryZones": [
+        "pop-soul-disco"
+      ],
+      "eraStart": 1921,
+      "eraPeak": 1921,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "ragtime"
+      ],
+      "bridgeScore": 0.3,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "james-p-johnson": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1921,
+      "eraPeak": 1921,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "jazz",
+        "ragtime"
+      ],
+      "bridgeScore": 0.16,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "sidney-bechet": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1923,
+      "eraPeak": 1923,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "jazz"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "fletcher-henderson": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1925,
+      "eraPeak": 1925,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "jazz"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "fats-waller": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1929,
+      "eraPeak": 1929,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "jazz"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "edith-wilson": {
+      "zone": "roots-blues",
+      "secondaryZones": [],
+      "eraStart": 1921,
+      "eraPeak": 1921,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "blues"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "tuskegee-institute-singers": {
+      "zone": "roots-blues",
+      "secondaryZones": [],
+      "eraStart": 1917,
+      "eraPeak": 1917,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "spirituals"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "hall-johnson": {
+      "zone": "roots-blues",
+      "secondaryZones": [],
+      "eraStart": 1925,
+      "eraPeak": 1925,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "spirituals"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "blind-willie-johnson": {
+      "zone": "roots-blues",
+      "secondaryZones": [],
+      "eraStart": 1927,
+      "eraPeak": 1927,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "gospel-music",
+        "blues"
+      ],
+      "bridgeScore": 0.16,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "mississippi-john-hurt": {
+      "zone": "roots-blues",
+      "secondaryZones": [
+        "folk-country-vise"
+      ],
+      "eraStart": 1928,
+      "eraPeak": 1928,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "blues",
+        "folk"
+      ],
+      "bridgeScore": 0.38,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "blind-willie-mctell": {
+      "zone": "roots-blues",
+      "secondaryZones": [],
+      "eraStart": 1928,
+      "eraPeak": 1928,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "blues"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "charley-patton": {
+      "zone": "roots-blues",
+      "secondaryZones": [],
+      "eraStart": 1929,
+      "eraPeak": 1929,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "blues"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "fiddlin-john-carson": {
+      "zone": "country-roots",
+      "secondaryZones": [],
+      "eraStart": 1923,
+      "eraPeak": 1923,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "country"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "riley-puckett": {
+      "zone": "country-roots",
+      "secondaryZones": [],
+      "eraStart": 1924,
+      "eraPeak": 1924,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "country"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "carl-t-sprague": {
+      "zone": "country-roots",
+      "secondaryZones": [],
+      "eraStart": 1925,
+      "eraPeak": 1925,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "country"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "charlie-poole": {
+      "zone": "country-roots",
+      "secondaryZones": [],
+      "eraStart": 1925,
+      "eraPeak": 1925,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "country"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "gid-tanner-and-the-skillet-lickers": {
+      "zone": "country-roots",
+      "secondaryZones": [],
+      "eraStart": 1926,
+      "eraPeak": 1926,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "country"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "ernest-stoneman": {
+      "zone": "country-roots",
+      "secondaryZones": [],
+      "eraStart": 1927,
+      "eraPeak": 1927,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "country"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "joseph-falcon": {
+      "zone": "folk-country-vise",
+      "secondaryZones": [],
+      "eraStart": 1928,
+      "eraPeak": 1928,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "cajun-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "cleoma-breaux": {
+      "zone": "folk-country-vise",
+      "secondaryZones": [],
+      "eraStart": 1928,
+      "eraPeak": 1928,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "cajun-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "cajun-music": {
+      "zone": "folk-country-vise",
+      "secondaryZones": [],
+      "eraStart": 1928,
+      "eraPeak": 1928,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 3,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.25,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "latin-music": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1950,
+      "eraPeak": 1950,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 5,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.417,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "spoken-word": {
+      "zone": "hip-hop-rap",
+      "secondaryZones": [],
+      "eraStart": 1970,
+      "eraPeak": 1970,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "film-score": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "eraStart": 1977,
+      "eraPeak": 1977,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "hip-hop": {
+      "zone": "hip-hop-rap",
+      "secondaryZones": [],
+      "eraStart": 1979,
+      "eraPeak": 1979,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 6,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.5,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "nat-king-cole": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1943,
+      "eraPeak": 1943,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "american-popular-song"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "bing-crosby": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1942,
+      "eraPeak": 1942,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "american-popular-song"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "woody-guthrie": {
+      "zone": "folk-country-vise",
+      "secondaryZones": [],
+      "eraStart": 1944,
+      "eraPeak": 1944,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "folk"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "spike-jones-and-his-city-slickers": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1944,
+      "eraPeak": 1944,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "american-popular-song"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "international-sweethearts-of-rhythm": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1944,
+      "eraPeak": 1944,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "jazz"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "louis-jordan": {
+      "zone": "roots-blues",
+      "secondaryZones": [],
+      "eraStart": 1945,
+      "eraPeak": 1945,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "rhythm-and-blues"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "memphis-minnie": {
+      "zone": "roots-blues",
+      "secondaryZones": [],
+      "eraStart": 1941,
+      "eraPeak": 1941,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "blues"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "roland-hayes": {
+      "zone": "roots-blues",
+      "secondaryZones": [],
+      "eraStart": 1940,
+      "eraPeak": 1940,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "gospel-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "jimmie-davis": {
+      "zone": "country-roots",
+      "secondaryZones": [],
+      "eraStart": 1940,
+      "eraPeak": 1940,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "country"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "the-almanac-singers": {
+      "zone": "folk-country-vise",
+      "secondaryZones": [],
+      "eraStart": 1941,
+      "eraPeak": 1941,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "folk"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "stan-kenton": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1943,
+      "eraPeak": 1943,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "jazz"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "johnny-mercer": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1944,
+      "eraPeak": 1944,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "american-popular-song"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "frank-yankovic-and-his-yanks": {
+      "zone": "folk-country-vise",
+      "secondaryZones": [],
+      "eraStart": 1947,
+      "eraPeak": 1947,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "folk"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "chano-pozo": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1947,
+      "eraPeak": 1947,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "jazz"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "john-lee-hooker": {
+      "zone": "roots-blues",
+      "secondaryZones": [],
+      "eraStart": 1948,
+      "eraPeak": 1948,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "blues"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "flatt-and-scruggs": {
+      "zone": "country-roots",
+      "secondaryZones": [],
+      "eraStart": 1949,
+      "eraPeak": 1949,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "bluegrass"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "gabby-pahinui": {
+      "zone": "folk-country-vise",
+      "secondaryZones": [],
+      "eraStart": 1947,
+      "eraPeak": 1947,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "folk"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "patti-page": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1950,
+      "eraPeak": 1950,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "pop-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "perez-prado": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1950,
+      "eraPeak": 1950,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "latin-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "clara-ward-and-the-ward-singers": {
+      "zone": "roots-blues",
+      "secondaryZones": [],
+      "eraStart": 1950,
+      "eraPeak": 1950,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "gospel-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "elmore-james": {
+      "zone": "roots-blues",
+      "secondaryZones": [],
+      "eraStart": 1951,
+      "eraPeak": 1951,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "electric-blues"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "les-paul": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1951,
+      "eraPeak": 1951,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "american-popular-song"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "mary-ford": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1951,
+      "eraPeak": 1951,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "american-popular-song"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "jackie-brenston-and-his-delta-cats": {
+      "zone": "roots-blues",
+      "secondaryZones": [],
+      "eraStart": 1951,
+      "eraPeak": 1951,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "rhythm-and-blues"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "big-mama-thornton": {
+      "zone": "roots-blues",
+      "secondaryZones": [],
+      "eraStart": 1953,
+      "eraPeak": 1953,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "rhythm-and-blues"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "gerry-mulligan": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1953,
+      "eraPeak": 1953,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "jazz"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "chet-baker": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1953,
+      "eraPeak": 1953,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "jazz"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "professor-longhair": {
+      "zone": "roots-blues",
+      "secondaryZones": [],
+      "eraStart": 1953,
+      "eraPeak": 1953,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "rhythm-and-blues"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "frank-sinatra": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1954,
+      "eraPeak": 1954,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "american-popular-song"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "carl-perkins": {
+      "zone": "roots-blues",
+      "secondaryZones": [],
+      "eraStart": 1955,
+      "eraPeak": 1955,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "rockabilly"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "bo-diddley": {
+      "zone": "roots-blues",
+      "secondaryZones": [],
+      "eraStart": 1955,
+      "eraPeak": 1955,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "rock-and-roll"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "tennessee-ernie-ford": {
+      "zone": "country-roots",
+      "secondaryZones": [],
+      "eraStart": 1955,
+      "eraPeak": 1955,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "country"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "julie-london": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1955,
+      "eraPeak": 1955,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "american-popular-song"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "harry-belafonte": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1956,
+      "eraPeak": 1956,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "pop-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "elizabeth-cotten": {
+      "zone": "folk-country-vise",
+      "secondaryZones": [],
+      "eraStart": 1959,
+      "eraPeak": 1959,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "folk"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "marty-robbins": {
+      "zone": "country-roots",
+      "secondaryZones": [],
+      "eraStart": 1959,
+      "eraPeak": 1959,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "country"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "paul-anka": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1959,
+      "eraPeak": 1959,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "pop-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "bobby-darin": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1959,
+      "eraPeak": 1959,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "pop-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "link-wray": {
+      "zone": "rock-circuit",
+      "secondaryZones": [
+        "roots-blues"
+      ],
+      "eraStart": 1958,
+      "eraPeak": 1958,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "rock-and-roll"
+      ],
+      "bridgeScore": 0.3,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "henry-mancini": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1958,
+      "eraPeak": 1958,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "american-popular-song"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "john-fahey": {
+      "zone": "folk-country-vise",
+      "secondaryZones": [],
+      "eraStart": 1959,
+      "eraPeak": 1959,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "folk"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "the-everly-brothers": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1960,
+      "eraPeak": 1960,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "pop-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "leontyne-price": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "eraStart": 1962,
+      "eraPeak": 1962,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "dexter-gordon": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1962,
+      "eraPeak": 1962,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "jazz"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "tony-bennett": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1962,
+      "eraPeak": 1962,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "pop-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "andy-williams": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1962,
+      "eraPeak": 1962,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "pop-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "the-four-seasons": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1962,
+      "eraPeak": 1962,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "pop-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "the-ronettes": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1963,
+      "eraPeak": 1963,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "pop-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "stan-getz": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1963,
+      "eraPeak": 1963,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 3,
+      "linkedGenres": [
+        "jazz"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.25,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "joao-gilberto": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1963,
+      "eraPeak": 1963,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 3,
+      "linkedGenres": [
+        "jazz"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.25,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "antonio-carlos-jobim": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1963,
+      "eraPeak": 1963,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "jazz"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "astrud-gilberto": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1963,
+      "eraPeak": 1963,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "jazz"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "benjamin-britten": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "eraStart": 1963,
+      "eraPeak": 1963,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "pete-seeger": {
+      "zone": "folk-country-vise",
+      "secondaryZones": [],
+      "eraStart": 1963,
+      "eraPeak": 1963,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "folk"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "buffy-sainte-marie": {
+      "zone": "folk-country-vise",
+      "secondaryZones": [],
+      "eraStart": 1964,
+      "eraPeak": 1964,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "folk"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "nina-simone": {
+      "zone": "jazz",
+      "secondaryZones": [
+        "pop-soul-disco"
+      ],
+      "eraStart": 1964,
+      "eraPeak": 1964,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "soul-music"
+      ],
+      "bridgeScore": 0.3,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "jackie-deshannon": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1965,
+      "eraPeak": 1965,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "pop-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "the-byrds": {
+      "zone": "folk-country-vise",
+      "secondaryZones": [],
+      "eraStart": 1965,
+      "eraPeak": 1965,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "folk"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "the-beach-boys": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1966,
+      "eraPeak": 1966,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 3,
+      "linkedGenres": [
+        "pop-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.25,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "simon-and-garfunkel": {
+      "zone": "folk-country-vise",
+      "secondaryZones": [],
+      "eraStart": 1966,
+      "eraPeak": 1966,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "folk"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "koko-taylor": {
+      "zone": "roots-blues",
+      "secondaryZones": [],
+      "eraStart": 1966,
+      "eraPeak": 1966,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "blues"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "arlo-guthrie": {
+      "zone": "folk-country-vise",
+      "secondaryZones": [],
+      "eraStart": 1967,
+      "eraPeak": 1967,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "folk"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "the-doors": {
+      "zone": "psychedelia-prog",
+      "secondaryZones": [],
+      "eraStart": 1967,
+      "eraPeak": 1967,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "psychedelic-rock"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "love": {
+      "zone": "psychedelia-prog",
+      "secondaryZones": [],
+      "eraStart": 1967,
+      "eraPeak": 1967,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "psychedelic-rock"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "the-winstons": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1969,
+      "eraPeak": 1969,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "soul-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "the-band": {
+      "zone": "folk-country-vise",
+      "secondaryZones": [
+        "psychedelia-prog"
+      ],
+      "eraStart": 1969,
+      "eraPeak": 1969,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "roots-rock"
+      ],
+      "bridgeScore": 0.3,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "dusty-springfield": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1969,
+      "eraPeak": 1969,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "soul-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "barbra-streisand": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1964,
+      "eraPeak": 1964,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "pop-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "roy-orbison": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1964,
+      "eraPeak": 1964,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "pop-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "connie-smith": {
+      "zone": "country-roots",
+      "secondaryZones": [],
+      "eraStart": 1964,
+      "eraPeak": 1964,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "country"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "lee-morgan": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1964,
+      "eraPeak": 1964,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "jazz"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "the-righteous-brothers": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1964,
+      "eraPeak": 1964,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "pop-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "eddie-palmieri": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1965,
+      "eraPeak": 1965,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "latin-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "vince-guaraldi": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1965,
+      "eraPeak": 1965,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "jazz"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "sam-and-dave": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1967,
+      "eraPeak": 1967,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "soul-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "neil-diamond": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1969,
+      "eraPeak": 1969,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "pop-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "the-impressions": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1965,
+      "eraPeak": 1965,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "soul-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "joan-baez": {
+      "zone": "folk-country-vise",
+      "secondaryZones": [],
+      "eraStart": 1960,
+      "eraPeak": 1960,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "folk"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "terry-riley": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "eraStart": 1968,
+      "eraPeak": 1968,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "jose-feliciano": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1970,
+      "eraPeak": 1970,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "latin-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "gil-scott-heron": {
+      "zone": "hip-hop-rap",
+      "secondaryZones": [],
+      "eraStart": 1970,
+      "eraPeak": 1970,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "spoken-word"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "bill-withers": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1971,
+      "eraPeak": 1971,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "soul-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "don-mclean": {
+      "zone": "folk-country-vise",
+      "secondaryZones": [],
+      "eraStart": 1971,
+      "eraPeak": 1971,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "folk"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "dolly-parton": {
+      "zone": "country-roots",
+      "secondaryZones": [],
+      "eraStart": 1971,
+      "eraPeak": 1971,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "country"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "joni-mitchell": {
+      "zone": "folk-country-vise",
+      "secondaryZones": [],
+      "eraStart": 1972,
+      "eraPeak": 1972,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "folk"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "jimmy-cliff": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1972,
+      "eraPeak": 1972,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "pop-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "elton-john": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1973,
+      "eraPeak": 1973,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "pop-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "thelma-houston": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1975,
+      "eraPeak": 1975,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "disco"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "keith-jarrett": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1975,
+      "eraPeak": 1975,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "jazz"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "pat-metheny": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1976,
+      "eraPeak": 1976,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "jazz-fusion"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "steve-miller-band": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [
+        "rock-circuit"
+      ],
+      "eraStart": 1976,
+      "eraPeak": 1976,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "pop-rock"
+      ],
+      "bridgeScore": 0.3,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "the-wild-tchoupitoulas": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [
+        "roots-blues"
+      ],
+      "eraStart": 1976,
+      "eraPeak": 1976,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "rhythm-and-blues"
+      ],
+      "bridgeScore": 0.3,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "clifton-chenier": {
+      "zone": "folk-country-vise",
+      "secondaryZones": [],
+      "eraStart": 1976,
+      "eraPeak": 1976,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "folk"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "steely-dan": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [
+        "rock-circuit"
+      ],
+      "eraStart": 1977,
+      "eraPeak": 1977,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "pop-rock"
+      ],
+      "bridgeScore": 0.3,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "john-williams": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "eraStart": 1977,
+      "eraPeak": 1977,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "film-score"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "the-grateful-dead": {
+      "zone": "psychedelia-prog",
+      "secondaryZones": [],
+      "eraStart": 1977,
+      "eraPeak": 1977,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "psychedelic-rock"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "the-cars": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [
+        "rock-circuit"
+      ],
+      "eraStart": 1978,
+      "eraPeak": 1978,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 6,
+      "linkedGenres": [
+        "pop-rock"
+      ],
+      "bridgeScore": 0.3,
+      "hubScore": 0.5,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "cheap-trick": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [
+        "rock-circuit"
+      ],
+      "eraStart": 1978,
+      "eraPeak": 1978,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "pop-rock"
+      ],
+      "bridgeScore": 0.3,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "hector-lavoe": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1978,
+      "eraPeak": 1978,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "latin-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "kenny-rogers": {
+      "zone": "country-roots",
+      "secondaryZones": [],
+      "eraStart": 1978,
+      "eraPeak": 1978,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "country"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "gloria-gaynor": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1978,
+      "eraPeak": 1978,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "disco"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "chic": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1978,
+      "eraPeak": 1978,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 6,
+      "linkedGenres": [
+        "disco"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.5,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "earth-wind-and-fire": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1978,
+      "eraPeak": 1978,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 3,
+      "linkedGenres": [
+        "soul-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.25,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "village-people": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1978,
+      "eraPeak": 1978,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "disco"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "sylvester": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1978,
+      "eraPeak": 1978,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "disco"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "the-charlie-daniels-band": {
+      "zone": "country-roots",
+      "secondaryZones": [],
+      "eraStart": 1979,
+      "eraPeak": 1979,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "country"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "philip-glass": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "eraStart": 1979,
+      "eraPeak": 1979,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "the-sugarhill-gang": {
+      "zone": "hip-hop-rap",
+      "secondaryZones": [],
+      "eraStart": 1979,
+      "eraPeak": 1979,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "hip-hop"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "sister-sledge": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1979,
+      "eraPeak": 1979,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "disco"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "patti-smith": {
+      "zone": "punk-alt",
+      "secondaryZones": [],
+      "eraStart": 1975,
+      "eraPeak": 1975,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "punk"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "j-d-crowe-and-the-new-south": {
+      "zone": "country-roots",
+      "secondaryZones": [],
+      "eraStart": 1975,
+      "eraPeak": 1975,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "bluegrass"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "john-denver": {
+      "zone": "country-roots",
+      "secondaryZones": [],
+      "eraStart": 1971,
+      "eraPeak": 1971,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "country"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "jimmy-buffett": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1977,
+      "eraPeak": 1977,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "pop-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "helen-reddy": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1972,
+      "eraPeak": 1972,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "pop-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "ola-belle-reed": {
+      "zone": "folk-country-vise",
+      "secondaryZones": [],
+      "eraStart": 1973,
+      "eraPeak": 1973,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "folk"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "nitty-gritty-dirt-band": {
+      "zone": "country-roots",
+      "secondaryZones": [],
+      "eraStart": 1972,
+      "eraPeak": 1972,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "country"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "linda-ronstadt": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1974,
+      "eraPeak": 1974,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "pop-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "billy-joel": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1973,
+      "eraPeak": 1973,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "pop-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "freddy-fender": {
+      "zone": "country-roots",
+      "secondaryZones": [],
+      "eraStart": 1975,
+      "eraPeak": 1975,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "country"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "betty-carter": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1980,
+      "eraPeak": 1980,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "jazz"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "kool-and-the-gang": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1980,
+      "eraPeak": 1980,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "disco"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "talking-heads": {
+      "zone": "punk-alt",
+      "secondaryZones": [],
+      "eraStart": 1980,
+      "eraPeak": 1980,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 5,
+      "linkedGenres": [
+        "alternative-rock"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.417,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "the-go-gos": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [
+        "rock-circuit"
+      ],
+      "eraStart": 1981,
+      "eraPeak": 1981,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "pop-rock"
+      ],
+      "bridgeScore": 0.3,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "r-e-m": {
+      "zone": "punk-alt",
+      "secondaryZones": [],
+      "eraStart": 1981,
+      "eraPeak": 1981,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 5,
+      "linkedGenres": [
+        "alternative-rock"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.417,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "grandmaster-flash-and-the-furious-five": {
+      "zone": "hip-hop-rap",
+      "secondaryZones": [],
+      "eraStart": 1982,
+      "eraPeak": 1982,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "hip-hop"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "irene-cara": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1983,
+      "eraPeak": 1983,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "pop-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "jessye-norman": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "eraStart": 1983,
+      "eraPeak": 1983,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "cyndi-lauper": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1983,
+      "eraPeak": 1983,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "pop-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "eurythmics": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1983,
+      "eraPeak": 1983,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 3,
+      "linkedGenres": [
+        "synth-pop"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.25,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "the-police": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [
+        "rock-circuit"
+      ],
+      "eraStart": 1983,
+      "eraPeak": 1983,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "pop-rock"
+      ],
+      "bridgeScore": 0.3,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "kenny-loggins": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1984,
+      "eraPeak": 1984,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "pop-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "chaka-khan": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1984,
+      "eraPeak": 1984,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "soul-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "tina-turner": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [
+        "rock-circuit"
+      ],
+      "eraStart": 1984,
+      "eraPeak": 1984,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "pop-rock"
+      ],
+      "bridgeScore": 0.3,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "paul-simon": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1986,
+      "eraPeak": 1986,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "pop-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "doug-e-fresh": {
+      "zone": "hip-hop-rap",
+      "secondaryZones": [],
+      "eraStart": 1985,
+      "eraPeak": 1985,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "hip-hop"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "slick-rick": {
+      "zone": "hip-hop-rap",
+      "secondaryZones": [],
+      "eraStart": 1985,
+      "eraPeak": 1985,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "hip-hop"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "gloria-estefan": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1987,
+      "eraPeak": 1987,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "pop-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "miami-sound-machine": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1987,
+      "eraPeak": 1987,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "pop-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "sonic-youth": {
+      "zone": "punk-alt",
+      "secondaryZones": [],
+      "eraStart": 1988,
+      "eraPeak": 1988,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "alternative-rock"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "bobby-mcferrin": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1988,
+      "eraPeak": 1988,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "pop-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "tracy-chapman": {
+      "zone": "folk-country-vise",
+      "secondaryZones": [],
+      "eraStart": 1988,
+      "eraPeak": 1988,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "folk"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "de-la-soul": {
+      "zone": "hip-hop-rap",
+      "secondaryZones": [],
+      "eraStart": 1989,
+      "eraPeak": 1989,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "hip-hop"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "queen-latifah": {
+      "zone": "hip-hop-rap",
+      "secondaryZones": [],
+      "eraStart": 1989,
+      "eraPeak": 1989,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "hip-hop"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "janet-jackson": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1989,
+      "eraPeak": 1989,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "pop-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "bonnie-raitt": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [
+        "rock-circuit"
+      ],
+      "eraStart": 1989,
+      "eraPeak": 1989,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "pop-rock"
+      ],
+      "bridgeScore": 0.3,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "jamie-principle": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1986,
+      "eraPeak": 1986,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "disco"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "frankie-knuckles": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1987,
+      "eraPeak": 1987,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "disco"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "art-tatum": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1940,
+      "eraPeak": 1940,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "jazz"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "wings-over-jordan-choir": {
+      "zone": "roots-blues",
+      "secondaryZones": [],
+      "eraStart": 1942,
+      "eraPeak": 1942,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "gospel-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "merle-travis": {
+      "zone": "country-roots",
+      "secondaryZones": [],
+      "eraStart": 1946,
+      "eraPeak": 1946,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "country"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "harry-choates": {
+      "zone": "folk-country-vise",
+      "secondaryZones": [],
+      "eraStart": 1946,
+      "eraPeak": 1946,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "folk"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "t-bone-walker": {
+      "zone": "roots-blues",
+      "secondaryZones": [],
+      "eraStart": 1947,
+      "eraPeak": 1947,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "blues"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "the-fairfield-four": {
+      "zone": "roots-blues",
+      "secondaryZones": [],
+      "eraStart": 1947,
+      "eraPeak": 1947,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "gospel-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "robert-shaw": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "eraStart": 1947,
+      "eraPeak": 1947,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "louis-kaufman": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "eraStart": 1947,
+      "eraPeak": 1947,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "brother-bones": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1949,
+      "eraPeak": 1949,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "american-popular-song"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "red-foley": {
+      "zone": "country-roots",
+      "secondaryZones": [
+        "roots-blues"
+      ],
+      "eraStart": 1951,
+      "eraPeak": 1951,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "gospel-music"
+      ],
+      "bridgeScore": 0.3,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "the-roger-wagner-chorale": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "eraStart": 1951,
+      "eraPeak": 1951,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "alex-north": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "eraStart": 1951,
+      "eraPeak": 1951,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "film-score"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "arthur-rubinstein": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "eraStart": 1952,
+      "eraPeak": 1952,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "roy-rogers": {
+      "zone": "country-roots",
+      "secondaryZones": [],
+      "eraStart": 1952,
+      "eraPeak": 1952,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "country"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "dale-evans": {
+      "zone": "country-roots",
+      "secondaryZones": [],
+      "eraStart": 1952,
+      "eraPeak": 1952,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "country"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "the-dixie-hummingbirds": {
+      "zone": "roots-blues",
+      "secondaryZones": [],
+      "eraStart": 1953,
+      "eraPeak": 1953,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "gospel-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "maria-callas": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "eraStart": 1953,
+      "eraPeak": 1953,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "the-penguins": {
+      "zone": "roots-blues",
+      "secondaryZones": [],
+      "eraStart": 1954,
+      "eraPeak": 1954,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "rhythm-and-blues"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "kaye-ballard": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1954,
+      "eraPeak": 1954,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "american-popular-song"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "bill-haley-and-his-comets": {
+      "zone": "rock-circuit",
+      "secondaryZones": [
+        "roots-blues"
+      ],
+      "eraStart": 1954,
+      "eraPeak": 1954,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "rock-and-roll"
+      ],
+      "bridgeScore": 0.3,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "howlin-wolf": {
+      "zone": "roots-blues",
+      "secondaryZones": [],
+      "eraStart": 1956,
+      "eraPeak": 1956,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "blues"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "the-crickets": {
+      "zone": "rock-circuit",
+      "secondaryZones": [
+        "roots-blues"
+      ],
+      "eraStart": 1957,
+      "eraPeak": 1957,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "rock-and-roll"
+      ],
+      "bridgeScore": 0.3,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "perry-como": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1957,
+      "eraPeak": 1957,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "pop-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "johnny-mathis": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1957,
+      "eraPeak": 1957,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "pop-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "van-cliburn": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "eraStart": 1958,
+      "eraPeak": 1958,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "the-dave-brubeck-quartet": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1959,
+      "eraPeak": 1959,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "jazz"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "the-shirelles": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1960,
+      "eraPeak": 1960,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "pop-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "chubby-checker": {
+      "zone": "rock-circuit",
+      "secondaryZones": [
+        "roots-blues"
+      ],
+      "eraStart": 1960,
+      "eraPeak": 1960,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "rock-and-roll"
+      ],
+      "bridgeScore": 0.3,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "mance-lipscomb": {
+      "zone": "roots-blues",
+      "secondaryZones": [],
+      "eraStart": 1960,
+      "eraPeak": 1960,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "blues"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "doc-watson": {
+      "zone": "folk-country-vise",
+      "secondaryZones": [],
+      "eraStart": 1960,
+      "eraPeak": 1960,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "folk"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "clarence-ashley": {
+      "zone": "folk-country-vise",
+      "secondaryZones": [],
+      "eraStart": 1960,
+      "eraPeak": 1960,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "folk"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "ben-e-king": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1961,
+      "eraPeak": 1961,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "soul-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "judy-garland": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1961,
+      "eraPeak": 1961,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "american-popular-song"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "james-cleveland": {
+      "zone": "roots-blues",
+      "secondaryZones": [],
+      "eraStart": 1962,
+      "eraPeak": 1962,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "gospel-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "steve-reich": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "eraStart": 1967,
+      "eraPeak": 1967,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "pauline-oliveros": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "eraStart": 1967,
+      "eraPeak": 1967,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "morton-subotnick": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "eraStart": 1967,
+      "eraPeak": 1967,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "bobbie-gentry": {
+      "zone": "country-roots",
+      "secondaryZones": [],
+      "eraStart": 1967,
+      "eraPeak": 1967,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "country"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "jefferson-airplane": {
+      "zone": "psychedelia-prog",
+      "secondaryZones": [],
+      "eraStart": 1967,
+      "eraPeak": 1967,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 7,
+      "linkedGenres": [
+        "psychedelic-rock"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.583,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "the-velvet-underground": {
+      "zone": "punk-alt",
+      "secondaryZones": [],
+      "eraStart": 1967,
+      "eraPeak": 1967,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 5,
+      "linkedGenres": [
+        "alternative-rock"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.417,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "wendy-carlos": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "eraStart": 1968,
+      "eraPeak": 1968,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "glen-campbell": {
+      "zone": "country-roots",
+      "secondaryZones": [],
+      "eraStart": 1968,
+      "eraPeak": 1968,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "country"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "big-brother-and-the-holding-company": {
+      "zone": "psychedelia-prog",
+      "secondaryZones": [],
+      "eraStart": 1968,
+      "eraPeak": 1968,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "psychedelic-rock"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "captain-beefheart-and-his-magic-band": {
+      "zone": "psychedelia-prog",
+      "secondaryZones": [],
+      "eraStart": 1969,
+      "eraPeak": 1969,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "psychedelic-rock"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "judy-collins": {
+      "zone": "folk-country-vise",
+      "secondaryZones": [],
+      "eraStart": 1970,
+      "eraPeak": 1970,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "folk"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "crosby-stills-nash-and-young": {
+      "zone": "folk-country-vise",
+      "secondaryZones": [],
+      "eraStart": 1970,
+      "eraPeak": 1970,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "folk"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "carole-king": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1971,
+      "eraPeak": 1971,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "pop-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "john-lennon": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1971,
+      "eraPeak": 1971,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "pop-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "jackson-browne": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [
+        "rock-circuit"
+      ],
+      "eraStart": 1974,
+      "eraPeak": 1974,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "pop-rock"
+      ],
+      "bridgeScore": 0.3,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "the-fania-all-stars": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1975,
+      "eraPeak": 1975,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "latin-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "grace-slick": {
+      "zone": "psychedelia-prog",
+      "secondaryZones": [],
+      "eraStart": 1967,
+      "eraPeak": 1967,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "marty-balin": {
+      "zone": "psychedelia-prog",
+      "secondaryZones": [],
+      "eraStart": 1967,
+      "eraPeak": 1967,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "paul-kantner": {
+      "zone": "psychedelia-prog",
+      "secondaryZones": [],
+      "eraStart": 1967,
+      "eraPeak": 1967,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "jorma-kaukonen": {
+      "zone": "psychedelia-prog",
+      "secondaryZones": [],
+      "eraStart": 1967,
+      "eraPeak": 1967,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "jack-casady": {
+      "zone": "psychedelia-prog",
+      "secondaryZones": [],
+      "eraStart": 1967,
+      "eraPeak": 1967,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "spencer-dryden": {
+      "zone": "psychedelia-prog",
+      "secondaryZones": [],
+      "eraStart": 1967,
+      "eraPeak": 1967,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "ric-ocasek": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1978,
+      "eraPeak": 1978,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "benjamin-orr": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1978,
+      "eraPeak": 1978,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "greg-hawkes": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1978,
+      "eraPeak": 1978,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "elliot-easton": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1978,
+      "eraPeak": 1978,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "david-robinson-cars": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1978,
+      "eraPeak": 1978,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "david-byrne": {
+      "zone": "punk-alt",
+      "secondaryZones": [],
+      "eraStart": 1980,
+      "eraPeak": 1980,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "chris-frantz": {
+      "zone": "punk-alt",
+      "secondaryZones": [],
+      "eraStart": 1980,
+      "eraPeak": 1980,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "tina-weymouth": {
+      "zone": "punk-alt",
+      "secondaryZones": [],
+      "eraStart": 1980,
+      "eraPeak": 1980,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "jerry-harrison": {
+      "zone": "punk-alt",
+      "secondaryZones": [],
+      "eraStart": 1980,
+      "eraPeak": 1980,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "benny-andersson": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1976,
+      "eraPeak": 1976,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "bjorn-ulvaeus": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1976,
+      "eraPeak": 1976,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "agnetha-faltskog": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1976,
+      "eraPeak": 1976,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "anni-frid-lyngstad": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1976,
+      "eraPeak": 1976,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "annie-lennox": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1983,
+      "eraPeak": 1983,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "dave-stewart": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1983,
+      "eraPeak": 1983,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "nile-rodgers": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1978,
+      "eraPeak": 1978,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "bernard-edwards": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1978,
+      "eraPeak": 1978,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "tony-thompson-chic": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1978,
+      "eraPeak": 1978,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "norma-jean-wright": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1978,
+      "eraPeak": 1978,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "alfa-anderson": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1978,
+      "eraPeak": 1978,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "stevie-nicks": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [
+        "roots-blues"
+      ],
+      "eraStart": 1977,
+      "eraPeak": 1977,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0.22,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "christine-mcvie": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [
+        "roots-blues"
+      ],
+      "eraStart": 1977,
+      "eraPeak": 1977,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0.22,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "john-mcvie": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [
+        "roots-blues"
+      ],
+      "eraStart": 1977,
+      "eraPeak": 1977,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0.22,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "mick-fleetwood": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [
+        "roots-blues"
+      ],
+      "eraStart": 1977,
+      "eraPeak": 1977,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0.22,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "michael-stipe": {
+      "zone": "punk-alt",
+      "secondaryZones": [],
+      "eraStart": 1981,
+      "eraPeak": 1981,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "mike-mills-rem": {
+      "zone": "punk-alt",
+      "secondaryZones": [],
+      "eraStart": 1981,
+      "eraPeak": 1981,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "peter-buck": {
+      "zone": "punk-alt",
+      "secondaryZones": [],
+      "eraStart": 1981,
+      "eraPeak": 1981,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "bill-berry-rem": {
+      "zone": "punk-alt",
+      "secondaryZones": [],
+      "eraStart": 1981,
+      "eraPeak": 1981,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "al-mckay": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1978,
+      "eraPeak": 1978,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "maurice-white": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1978,
+      "eraPeak": 1978,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "brian-wilson": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1966,
+      "eraPeak": 1966,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "mike-love": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1966,
+      "eraPeak": 1966,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "lou-reed": {
+      "zone": "punk-alt",
+      "secondaryZones": [],
+      "eraStart": 1967,
+      "eraPeak": 1967,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "john-cale": {
+      "zone": "punk-alt",
+      "secondaryZones": [],
+      "eraStart": 1967,
+      "eraPeak": 1967,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "sterling-morrison": {
+      "zone": "punk-alt",
+      "secondaryZones": [],
+      "eraStart": 1967,
+      "eraPeak": 1967,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "maureen-tucker": {
+      "zone": "punk-alt",
+      "secondaryZones": [],
+      "eraStart": 1967,
+      "eraPeak": 1967,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
       "layoutHints": {
         "pinned": false
       }

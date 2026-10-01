@@ -27,7 +27,7 @@ Southern soul; forceful vocal style
 
 ## Sources
 
-- [Rock & Roll Hall of Fame](https://rockhall.com/inductees/wilson-pickett/)
+- [Rock & Roll Hall of Fame](https://rockhall.com/wp-content/uploads/2024/03/Wilson_Pickett_1991.pdf)
 
 ## Curator Notes
 

@@ -8,6 +8,9 @@ import { curatedEraLinks, curatedEraNodes } from "../brain/scripts/curated-era-e
 import { curatedGenreLinks, curatedGenreNodes } from "../brain/scripts/curated-genre-bridges.mjs";
 import { reviewedBridgeLinks, reviewedBridgeNodes } from "../brain/scripts/curated-reviewed-bridges.mjs";
 import { genreDepthLinks, genreDepthNodes } from "../brain/scripts/curated-genre-depth.mjs";
+import { earlyEraCorrections, earlyRootLinks, earlyRootNodes } from "../brain/scripts/curated-early-roots.mjs";
+import { midcenturyLinks, midcenturyNodes } from "../brain/scripts/curated-midcentury.mjs";
+import { thousandLinks, thousandNodes } from "../brain/scripts/curated-thousand.mjs";
 import { loadAllRows } from "../site/src/data/load-all-rows.mjs";
 
 test("pagination returns every row beyond the old 800-node cap", async () => {
@@ -160,6 +163,41 @@ test("classical and pop expansion is sourced, connected and keeps historical ord
   assert.ok(timeline["edvard-grieg"].x < timeline["the-supremes"].x);
 });
 
+test("early timeline roots are sourced, connected and precede modern clusters", () => {
+  const graph = JSON.parse(readFileSync("brain/data/approved/graph.json", "utf8"));
+  const layouts = JSON.parse(readFileSync("brain/data/approved/layouts.json", "utf8"));
+  const batch = JSON.parse(readFileSync("brain/data/early-roots-batch.json", "utf8"));
+  const nodes = new Map(graph.nodes.map((node) => [node.id, node]));
+  const edges = new Map(graph.edges.map((edge) => [edge.id, edge]));
+  assert.ok(graph.nodes.filter((node) => Number.isFinite(node.eraStart) && node.eraStart < 1930).length >= 86);
+  assert.equal(new Set(earlyRootNodes.map((node) => node.id)).size, earlyRootNodes.length);
+  assert.deepEqual(new Set(batch.nodeIds), new Set(earlyRootNodes.map((node) => node.id)));
+  assert.equal(batch.expectedEdges, earlyRootLinks.length);
+  for (const entry of earlyRootNodes) {
+    const node = nodes.get(entry.id);
+    assert.ok(node, entry.id);
+    assert.equal(node.eraStart, entry.eraStart);
+    assert.equal(node.zone, entry.zone);
+    assert.ok(node.sources.some((source) => source.url.startsWith("https://") && !source.url.includes("wikipedia.org")));
+    assert.ok(earlyRootLinks.some((edge) => edge.source === entry.id || edge.target === entry.id));
+  }
+  for (const entry of earlyRootLinks) {
+    const edge = edges.get(entry.id);
+    assert.ok(edge, entry.id);
+    assert.equal(edgeEvidenceTier(edge), "source_linked");
+  }
+  for (const entry of earlyEraCorrections) {
+    const node = nodes.get(entry.id);
+    assert.equal(node?.eraStart, entry.eraStart, entry.id);
+    assert.ok(node.sources.some((source) => source.url === entry.reference.url));
+  }
+  const timeline = layouts.layouts.timeline.nodes;
+  assert.ok(timeline.spirituals.x < timeline.ragtime.x);
+  assert.ok(timeline.ragtime.x < timeline["mamie-smith"].x);
+  assert.ok(nodes.get("eck-robertson").eraStart < nodes.get("the-carter-family").eraStart);
+  assert.ok(timeline["the-carter-family"].x < timeline["the-supremes"].x);
+});
+
 test("genre bridges are sourced, explain their relationship and reach the learning model", () => {
   const graph = JSON.parse(readFileSync("brain/data/approved/graph.json", "utf8"));
   const model = JSON.parse(readFileSync("brain/data/approved/learning-model.json", "utf8"));
@@ -239,6 +277,70 @@ test("reviewed genre-depth batch is sourced and matches its live sync manifest",
     assert.equal(edgeEvidenceTier(edge), "source_linked", edge.id);
     assert.ok(edge.context.some(Boolean), edge.id);
     assert.ok(edge.sources.every((source) => source.url.startsWith("https://") && !source.url.includes("wikipedia.org")), edge.id);
+  }
+});
+
+test("midcentury expansion adds distinct, sourced 1940s-1980s nodes and relations", () => {
+  const graph = JSON.parse(readFileSync("brain/data/approved/graph.json", "utf8"));
+  const batch = JSON.parse(readFileSync("brain/data/midcentury-batch.json", "utf8"));
+  const blocked = JSON.parse(readFileSync("shared/graph-schema/blocked-entities.json", "utf8"));
+  const blockedTerms = new Set(blocked.entities.flatMap((entity) => [entity.id, ...entity.labels]).map((value) => value.toLowerCase()));
+  const graphNodes = new Map(graph.nodes.map((node) => [node.id, node]));
+  const graphEdges = new Map(graph.edges.map((edge) => [edge.id, edge]));
+  assert.ok(midcenturyNodes.length >= 120);
+  assert.deepEqual(new Set(batch.nodeIds), new Set(midcenturyNodes.map((node) => node.id)));
+  assert.equal(batch.expectedEdges, midcenturyLinks.length);
+  assert.ok(midcenturyLinks.every((edge) => edge.id.startsWith(batch.edgePrefix)));
+  assert.equal(new Set(midcenturyNodes.map((node) => node.id)).size, midcenturyNodes.length);
+  assert.equal(new Set(midcenturyLinks.map((edge) => edge.id)).size, midcenturyLinks.length);
+  for (const entry of midcenturyNodes) {
+    const node = graphNodes.get(entry.id);
+    assert.ok(node, entry.id);
+    assert.ok(node.eraStart >= 1940 && node.eraStart < 1990, entry.id);
+    assert.equal(node.zone, entry.zone);
+    assert.ok(batch.allowedZones.includes(node.zone), entry.id);
+    assert.ok(!blockedTerms.has(node.id.toLowerCase()) && !blockedTerms.has(node.label.toLowerCase()), entry.id);
+    assert.ok(node.sources.some((source) => source.url.startsWith("https://www.loc.gov/")), entry.id);
+  }
+  for (const entry of midcenturyLinks) {
+    const edge = graphEdges.get(entry.id);
+    assert.ok(edge, entry.id);
+    assert.ok(graphNodes.has(edge.source) && graphNodes.has(edge.target), entry.id);
+    assert.equal(edgeEvidenceTier(edge), "source_linked", entry.id);
+    assert.ok(edge.context.some(Boolean), entry.id);
+  }
+});
+
+test("1000-node checkpoint adds unique, sourced recordings and group membership", () => {
+  const graph = JSON.parse(readFileSync("brain/data/approved/graph.json", "utf8"));
+  const batch = JSON.parse(readFileSync("brain/data/thousand-batch.json", "utf8"));
+  const blocked = JSON.parse(readFileSync("shared/graph-schema/blocked-entities.json", "utf8"));
+  const blockedTerms = new Set(blocked.entities.flatMap((entity) => [entity.id, ...entity.labels]).map((value) => value.toLowerCase()));
+  const graphNodes = new Map(graph.nodes.map((node) => [node.id, node]));
+  const graphEdges = new Map(graph.edges.map((edge) => [edge.id, edge]));
+  const normalizedLabels = thousandNodes.map((node) => node.label.toLowerCase().replace(/[^a-z0-9]/g, ""));
+  assert.ok(graph.nodes.length > 1000);
+  assert.ok(thousandNodes.length >= 80);
+  assert.deepEqual(new Set(batch.nodeIds), new Set(thousandNodes.map((node) => node.id)));
+  assert.equal(batch.expectedEdges, thousandLinks.length);
+  assert.equal(new Set(thousandNodes.map((node) => node.id)).size, thousandNodes.length);
+  assert.equal(new Set(normalizedLabels).size, thousandNodes.length);
+  assert.equal(new Set(thousandLinks.map((edge) => edge.id)).size, thousandLinks.length);
+  for (const entry of thousandNodes) {
+    const node = graphNodes.get(entry.id);
+    assert.ok(node, entry.id);
+    assert.ok(batch.allowedZones.includes(node.zone), entry.id);
+    assert.ok(!blockedTerms.has(node.id.toLowerCase()) && !blockedTerms.has(node.label.toLowerCase()), entry.id);
+    assert.ok(node.sources.some((source) => source.url.startsWith("https://www.loc.gov/") || source.url.startsWith("https://lcweb2.loc.gov/") || source.url.startsWith("https://rockhall.com/")), entry.id);
+    assert.ok(thousandLinks.some((edge) => edge.source === entry.id || edge.target === entry.id), entry.id);
+  }
+  for (const entry of thousandLinks) {
+    const edge = graphEdges.get(entry.id);
+    assert.ok(edge, entry.id);
+    assert.ok(edge.id.startsWith(batch.edgePrefix));
+    assert.ok(graphNodes.has(edge.source) && graphNodes.has(edge.target), entry.id);
+    assert.equal(edgeEvidenceTier(edge), "source_linked", entry.id);
+    assert.ok(edge.context.some(Boolean), entry.id);
   }
 });
 

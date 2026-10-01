@@ -5,7 +5,7 @@ type: band
 zone: country-roots
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1927
 eraPeak:
 primaryGenres: []
 curatorTags: []
@@ -25,12 +25,15 @@ The Carter Family was an American folk music group that recorded and performed b
 
 - [[blues|Blues]] - blues repertoire (The Carter Family also performed blues material.)
 - [[country|Country]] - early country foundation (The Carter Family shaped country harmony singing and guitar style.)
+- [[country|Country]] - Bristol Sessions (The Carter Family recorded at the 1927 Bristol Sessions.)
+- [[ernest-stoneman|Ernest Stoneman]] - same Bristol sessions (Both acts were documented at the 1927 Bristol recording sessions; this does not imply direct collaboration.)
 - [[folk|Folk]] - folk repertoire (The group drew on British folk ballads and other traditional songs.)
 
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Carter_Family)
 - [MusicBrainz](https://musicbrainz.org/artist/29c5b1fb-5dcc-4499-b225-4ceeeb8a73d1)
+- [Library of Congress](https://lcweb2.loc.gov/static/programs/national-recording-preservation-board/documents/Bristol.pdf)
 
 ## Curator Notes
 

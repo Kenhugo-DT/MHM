@@ -30,6 +30,7 @@ A meeting of jazz harmony, rock volume, funk rhythm and expanded improvisation.
 - [[jeff-beck|Jeff Beck]] - instrumental branch (Beck crossed from rock guitar into jazz-rock fusion on Blow by Blow and Wired.)
 - [[john-mclaughlin|John McLaughlin]] - electric fusion voice
 - [[miles-davis|Miles Davis]] - jazz-rock fusion (Davis brought rock influences into his late-1960s jazz recordings.)
+- [[pat-metheny|Pat Metheny]] - documented recording context (The Library of Congress lists Bright Size Life (1976); this link places the act near its documented style or adjacent tradition.)
 - [[prs-santana|PRS Santana]] - fusion lead voice
 - [[rock|Rock]] - electric crossover
 - [[santana-band|Santana]] - fusion overlap (Santana's sound combined jazz, rock and Latin musical influences.)

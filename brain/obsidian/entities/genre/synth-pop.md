@@ -23,6 +23,7 @@ Pop built around synthesizer-led production, prominent in Madonna's early-1980s 
 
 ## Connections
 
+- [[eurythmics|Eurythmics]] - documented recording context (The Library of Congress lists Sweet Dreams (Are Made of This) (1983); this link places the act near its documented style or adjacent tradition.)
 - [[madonna|Madonna]] - early synth-pop (Madonna's early-1980s sound included synth-pop.)
 - [[pop-music|Pop music]] - electronic pop (Madonna's early-1980s pop sound included synth-pop.)
 

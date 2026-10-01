@@ -8,6 +8,9 @@ import { curatedEraLinks, curatedEraNodes } from "./curated-era-expansion.mjs";
 import { curatedGenreLinks, curatedGenreNodes } from "./curated-genre-bridges.mjs";
 import { reviewedBridgeLinks, reviewedBridgeNodes } from "./curated-reviewed-bridges.mjs";
 import { genreDepthLinks, genreDepthNodes } from "./curated-genre-depth.mjs";
+import { earlyEraCorrections, earlyRootLinks, earlyRootNodes } from "./curated-early-roots.mjs";
+import { midcenturyLinks, midcenturyNodes } from "./curated-midcentury.mjs";
+import { thousandLinks, thousandNodes } from "./curated-thousand.mjs";
 import { organizeGraphLayout } from "./organize-graph-layout.mjs";
 
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
@@ -286,7 +289,8 @@ for (const node of promotionData.nodes) {
   nodeIds.add(node.id);
 }
 
-for (const node of [...curatedEraNodes, ...curatedGenreNodes, ...reviewedBridgeNodes, ...genreDepthNodes]) {
+for (const node of [...curatedEraNodes, ...curatedGenreNodes, ...reviewedBridgeNodes, ...genreDepthNodes, ...earlyRootNodes, ...midcenturyNodes, ...thousandNodes]) {
+  if (hasBlockedTerm(node.id, node.label)) throw new Error(`Curated node is blocked: ${node.id}`);
   if (nodeIds.has(node.id)) throw new Error(`Curated node already exists: ${node.id}`);
   nodes.push({ ...node, sources: normalizeSources(node.sources) });
   nodeIds.add(node.id);
@@ -370,11 +374,19 @@ for (const release of releaseNodes) {
   }
 }
 
-for (const edge of [...curatedEraLinks, ...curatedGenreLinks, ...reviewedBridgeLinks, ...genreDepthLinks]) {
+for (const edge of [...curatedEraLinks, ...curatedGenreLinks, ...reviewedBridgeLinks, ...genreDepthLinks, ...earlyRootLinks, ...midcenturyLinks, ...thousandLinks]) {
   appendCuratedEdge(edge);
 }
 
 applyObsidianOverrides(nodes);
+for (const correction of earlyEraCorrections) {
+  const node = nodes.find((candidate) => candidate.id === correction.id);
+  if (!node) throw new Error(`Early-era correction target missing: ${correction.id}`);
+  node.eraStart = correction.eraStart;
+  if (!node.sources.some((item) => item.url === correction.reference.url)) {
+    node.sources.push(correction.reference);
+  }
+}
 organizeGraphLayout(nodes, edges, loadLearningModel());
 
 for (const node of nodes) {

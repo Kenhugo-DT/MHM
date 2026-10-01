@@ -25,6 +25,7 @@ Roots rock is a genre of rock music that looks back to rock's origins in folk, b
 
 - [[38-special|.38 Special]] - Wikipedia link signal (Wikipedia link: .38 Special (band))
 - [[american-primitive-guitar|American primitive guitar]] - Wikipedia link signal (Wikipedia link: American primitive guitar)
+- [[the-band|The Band]] - documented recording context (The Library of Congress lists The Band (1969); this link places the act near its documented style or adjacent tradition.)
 
 ## Sources
 

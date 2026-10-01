@@ -27,10 +27,14 @@ A broad post-1970s rock field where punk, indie, art rock and heavier guitar sou
 - [[fender-mustang|Fender Mustang]] - offset underground use
 - [[indie-rock|Indie rock]] - scene overlap
 - [[post-punk|Post-punk]] - feeds
+- [[r-e-m|R.E.M.]] - documented recording context (The Library of Congress lists Radio Free Europe (1981); this link places the act near its documented style or adjacent tradition.)
 - [[radiohead|Radiohead]] - central band (AllMusic classifies Radiohead within alternative and indie rock while noting their experimental reach.)
 - [[rage-against-the-machine|Rage Against the Machine]] - political heavy branch
 - [[rock|Rock]] - later branch (Alternative rock grew from the 1970s indie underground and became mainstream in the 1990s.)
 - [[shoegaze|Shoegaze]] - textural branch
+- [[sonic-youth|Sonic Youth]] - documented recording context (The Library of Congress lists Daydream Nation (1988); this link places the act near its documented style or adjacent tradition.)
+- [[talking-heads|Talking Heads]] - documented recording context (The Library of Congress lists Remain in Light (1980); this link places the act near its documented style or adjacent tradition.)
+- [[the-velvet-underground|The Velvet Underground]] - documented recording context (The Library of Congress lists The Velvet Underground and Nico (1967); this places the act near a relevant tradition without claiming that the Registry uses the same genre label.)
 
 ## Sources
 

@@ -1,0 +1,29 @@
+{
+  "reviewedAt": "2026-10-01",
+  "publishedBatch": "brain/data/early-roots-batch.json",
+  "curatedEvidence": "brain/scripts/curated-early-roots.mjs",
+  "addedNodes": 67,
+  "addedRelations": 96,
+  "existingEraCorrections": 7,
+  "policy": "A timeline year is a sourced documentary anchor (score, tour, publication, or recording), not a claim that a genre originated that year. Preserve older oral traditions and distinguish related styles from direct influence. Keep pre-1930 rock and metal lanes empty rather than inventing anachronistic nodes.",
+  "sourceGroups": {
+    "classical": "Library of Congress manuscripts, collections, and recording essays",
+    "spiritualsAndRagtime": "Library of Congress historical collections and Fisk Jubilee Singers documentation",
+    "bluesAndJazz": "Library of Congress National Recording Registry and historical essays",
+    "earlyCountry": "Library of Congress recordings and Country Music Hall of Fame artist histories",
+    "earlyPopularSong": "Library of Congress sheet music, manuscript collections and concert history",
+    "additionalSacredAndConcertMusic": "Library of Congress sacred-music guides, composer archives, and manuscript scores",
+    "additionalStageJazzAndBlues": "Library of Congress ragtime collection, Broadway history, and National Recording Registry",
+    "additionalCountryAndCajun": "Library of Congress country timeline, Bristol Sessions, and Cajun recording history"
+  },
+  "importantCaveats": [
+    "Spirituals were sung long before the 1855 written account used as the map anchor.",
+    "Ragtime's 1895 marker describes its mid-1890s publication, not its invention.",
+    "Blues, jazz and country have older, contested origins than their selected documentary anchors.",
+    "The 1927 Bristol Sessions were important, but not the beginning of recorded country music.",
+    "Stephen Foster's early hits circulated through racist minstrel performance; the map must not erase that context.",
+    "Cajun music and spirituals long predate the selected commercial-recording anchors.",
+    "The 1920s recording market is better documented than earlier oral performance; denser nodes there do not imply that musical innovation began there.",
+    "William Billings' music survived in shape-note repertory, but the graph does not treat him as the originator of shape-note singing."
+  ]
+}

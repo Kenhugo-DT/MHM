@@ -54,6 +54,7 @@
     "brain:sync-curated-genres": "node brain/scripts/run-python.mjs brain/pipeline/sync_curated_era.py --batch brain/data/curated-genre-batch.json",
     "brain:sync-reviewed-bridges": "node brain/scripts/run-python.mjs brain/pipeline/sync_curated_era.py --batch brain/data/reviewed-bridge-batch.json",
     "brain:sync-genre-depth": "node brain/scripts/run-python.mjs brain/pipeline/sync_curated_era.py --batch brain/data/genre-depth-batch.json",
+    "brain:sync-early-roots": "node brain/scripts/run-python.mjs brain/pipeline/sync_curated_era.py --batch brain/data/early-roots-batch.json",
     "brain:audit": "node brain/scripts/audit-graph.mjs"
   },
   "dependencies": {

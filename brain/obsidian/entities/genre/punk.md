@@ -26,6 +26,7 @@ Direct, sharp and often minimal guitar music that reacted against excess and pus
 - [[2-tone-music-genre|2 Tone (music genre)]] - Wikipedia link signal (Wikipedia link: 2 Tone (music genre))
 - [[7-seconds|7 Seconds]] - Wikipedia link signal (Wikipedia link: 7 Seconds (band))
 - [[grunge|Grunge]] - roughens into
+- [[patti-smith|Patti Smith]] - documented recording context (The Library of Congress lists Horses (1975); this link places the act near its documented style or adjacent tradition.)
 - [[post-punk|Post-punk]] - after punk
 - [[rock|Rock]] - reacts into
 - [[the-smiths|The Smiths]] - post-punk aftermath

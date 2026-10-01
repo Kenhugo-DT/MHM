@@ -455,7 +455,8 @@ function makeGenreLayout(nodes, edges, degree, learningModel) {
 function makeTimelineLayout(nodes, degree, learningModel) {
   const minYear = 1600;
   const maxYear = 2026;
-  const minX = -4040;
+  const minX = -4840;
+  const modernStartX = -2240;
   const maxX = 4300;
   const items = nodes.map((node) => {
     const era = clamp(inferEra(node, learningModel), minYear, maxYear);
@@ -463,8 +464,8 @@ function makeTimelineLayout(nodes, degree, learningModel) {
     const degreeLift = Math.min(220, (degree.get(node.id) ?? 0) * 22);
     const hash = hashValue(`timeline:${node.id}`);
     const baseX = era < 1930
-      ? minX + ((era - minYear) / (1930 - minYear)) * 1800
-      : -2240 + ((era - 1930) / (maxYear - 1930)) * (maxX + 2240);
+      ? minX + ((era - minYear) / (1930 - minYear)) * (modernStartX - minX)
+      : modernStartX + ((era - 1930) / (maxYear - 1930)) * (maxX - modernStartX);
     const x = baseX + ((hash % 180) - 90);
     const y = lane + (((hash >>> 8) % 340) - 170) - degreeLift * 0.28;
     return { node, x, y };

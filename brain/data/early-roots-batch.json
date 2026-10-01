@@ -1,0 +1,22 @@
+{
+  "nodeIds": [
+    "antonio-vivaldi", "george-frideric-handel", "franz-schubert", "claude-debussy", "igor-stravinsky",
+    "spirituals", "fisk-jubilee-singers", "ragtime", "scott-joplin", "w-c-handy", "jelly-roll-morton",
+    "mamie-smith", "ma-rainey", "bessie-smith", "blind-lemon-jefferson",
+    "eck-robertson", "vernon-dalhart", "uncle-dave-macon",
+    "shape-note-singing", "american-popular-song", "stephen-foster", "harry-von-tilzer", "irving-berlin", "george-gershwin",
+    "william-billings", "louis-moreau-gottschalk", "franz-liszt", "johannes-brahms", "amanda-maier",
+    "antonin-dvorak", "margaret-ruthven-lang", "samuel-coleridge-taylor", "william-grant-still", "florence-price",
+    "will-marion-cook", "bert-williams", "victor-herbert", "george-m-cohan", "james-reese-europe",
+    "clef-club-orchestra", "jerome-kern", "noble-sissle", "hoagy-carmichael",
+    "tom-turpin", "james-scott-ragtime", "joseph-lamb", "eubie-blake", "james-p-johnson",
+    "sidney-bechet", "fletcher-henderson", "fats-waller",
+    "edith-wilson", "tuskegee-institute-singers", "hall-johnson", "blind-willie-johnson",
+    "mississippi-john-hurt", "blind-willie-mctell", "charley-patton",
+    "fiddlin-john-carson", "riley-puckett", "carl-t-sprague", "charlie-poole",
+    "gid-tanner-and-the-skillet-lickers", "ernest-stoneman", "joseph-falcon", "cleoma-breaux", "cajun-music"
+  ],
+  "edgePrefix": "early-root-",
+  "expectedEdges": 96,
+  "allowedZones": ["classical-history", "roots-blues", "jazz", "country-roots", "folk-country-vise", "pop-soul-disco"]
+}

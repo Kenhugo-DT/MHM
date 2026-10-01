@@ -25,7 +25,9 @@ An acoustic American roots style where flatpicked guitar supports fast ensemble 
 
 - [[bill-monroe|Bill Monroe]] - bluegrass pioneer (Monroe's band and acoustic sound helped define bluegrass.)
 - [[country|Country]] - roots overlap
+- [[flatt-and-scruggs|Flatt & Scruggs]] - documented recording context (The Library of Congress lists Foggy Mountain Breakdown (1949); this link places the act near its documented style or adjacent tradition.)
 - [[folk|Folk]] - acoustic overlap (Bluegrass reached folk-revival audiences through acoustic recordings and performers such as Mike Seeger.)
+- [[j-d-crowe-and-the-new-south|J.D. Crowe & the New South]] - documented recording context (The Library of Congress lists J.D. Crowe & the New South (1975); this link places the act near its documented style or adjacent tradition.)
 - [[the-stanley-brothers|The Stanley Brothers]] - The Stanley Brothers in bluegrass (The Stanley Brothers: Brother duo; Appalachian bluegrass. Museum or Hall documentation establishes this tradition.)
 
 ## Sources

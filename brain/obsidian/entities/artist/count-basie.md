@@ -27,7 +27,7 @@ Swing orchestra; Kansas City jazz
 
 ## Sources
 
-- [National Endowment for the Arts](https://www.arts.gov/honors/jazz/count-basie)
+- [National Endowment for the Arts](https://www.arts.gov/honors/jazz/william-count-basie)
 
 ## Curator Notes
 

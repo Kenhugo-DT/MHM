@@ -25,6 +25,7 @@ A sharp early rock and roll style where country rhythm, blues energy and twangy 
 
 - [[bakersfield-sound|Bakersfield sound]] - rockabilly edge (The sound added a harder rockabilly edge to honky-tonk country.)
 - [[brian-setzer|Brian Setzer]] - revival voice
+- [[carl-perkins|Carl Perkins]] - documented recording context (The Library of Congress lists Blue Suede Shoes (1955); this link places the act near its documented style or adjacent tradition.)
 - [[country|Country]] - roots overlap (Country performers and blues singers supplied the mixture from which Phillips developed rockabilly.)
 - [[rock-and-roll|Rock and roll]] - early branch (Sam Phillips developed rockabilly from a country-and-blues mix during rock and roll's early years.)
 - [[stray-cats|Stray Cats]] - revival band
