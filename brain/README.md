@@ -46,6 +46,11 @@ npm run brain:obsidian:export
 npm run brain:obsidian:import
 npm run brain:learn
 npm run brain:organize
+npm run brain:connection-scout:dry-run
+npm run brain:connection-scout
+npm run brain:connections:queue -- --input brain/data/candidates/connection-evidence-latest.json --publish
+npm run brain:connections:stage
+npm run brain:import:preflight
 npm run brain:sync-curated-genres
 npm run brain:import
 ```
@@ -123,6 +128,57 @@ and source quality. It also writes layout-intelligence directives for pressure,
 spacing, bridge pull and anti-overlap rules. The scout agent uses this model
 first when it needs to create its own frontier request, and the layout generator
 uses it to keep organized chaos readable.
+
+`brain:connection-scout:dry-run` lists isolated MusicBrainz-matched artist and
+band nodes it would check. `brain:connection-scout` queries at most 12 by
+default (maximum 25) and writes only `member_of` proposals to an ignored
+`brain/data/candidates/connection-evidence-*.json` review file. Use
+`-- --node <id>` to target a specific isolated node. It does not approve,
+import or publish relationships. MusicBrainz identities, relation type and
+date ranges are retained for human review; unsupported relation types are
+discarded.
+
+## Reviewed Connection Automation
+
+This is a bounded pilot for exact MusicBrainz band-membership relationships,
+not a general license to turn research leads into map edges. The old generic
+promoter explicitly ignores `typed_connection` candidates. It also does not
+automatically publish other approved packages; those still need careful review.
+
+1. Apply `brain/supabase/migrations/0006_entity_start_year.sql` in Supabase,
+   then run `npm run brain:import:preflight`. Do not enable publication if it
+   fails.
+2. Set GitHub repository variable `BRAIN_IMPORT_ENABLED=true` only after the
+   preflight succeeds. This allows the guarded publish workflow to import the
+   graph after a human merges a reviewed connection PR.
+3. Set `CONNECTION_SCOUT_ENABLED=true` to opt the existing scheduled scout
+   workflow into at most 12 MusicBrainz lookups per run. It places fresh
+   `typed_connection` rows in private `research_candidates` with status
+   `review`; it never approves them.
+4. Review the exact person, band, source and period in Supabase and set only
+   sound candidates to `approved`. Run the `Propose reviewed connections`
+   GitHub workflow. It rechecks membership against MusicBrainz, stages at most
+   12 edges, rejects unrelated graph changes and opens a draft PR. GitHub CI
+   runs against the proposed branch. No direct push to `main` occurs.
+5. A person reviews the diff and merges it. The `Publish reviewed connections`
+   workflow verifies that approval still exists, writes only the 1-12 new
+   membership relations (not the whole graph), reads them back from Supabase
+   and only then marks those candidates `imported`. It remains disabled while
+   `BRAIN_IMPORT_ENABLED` is not true. The published batch gate allows sourced
+   start-year backfill from the earlier timeline work but no other node edits.
+
+`npm run brain:connections:stage -- --file <scout-output>` is an offline preview
+of local proposal statuses. It cannot apply local files, because production
+staging requires an explicit approval in the private Supabase review table.
+This pilot uses existing MusicBrainz and GitHub/Supabase infrastructure; it
+does not call a paid AI API. Keep the GitHub opt-in flags off until the first
+database preflight has passed; keep `CONNECTION_SCOUT_ENABLED` off until the
+first manually reviewed connection batch has completed end to end.
+
+Start years and their reviewed basis now travel with approved graph nodes.
+Apply `brain/supabase/migrations/0006_entity_start_year.sql` before the next
+`brain:import`. The site can read the previous database schema while that
+migration is pending, using the bundled graph's years for matching nodes.
 
 The npm scripts look for `python3`, `python` or `py -3`. You can also set
 `PYTHON` to an exact Python executable path.

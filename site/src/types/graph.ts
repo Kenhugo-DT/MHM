@@ -40,6 +40,12 @@ export interface GraphNode {
   y: number;
   zone: string;
   starter?: boolean;
+  eraStart?: number;
+  eraStartEvidence?: {
+    basis: string;
+    note: string;
+    sources: SourceReference[];
+  };
   image?: ImageReference;
   sources: SourceReference[];
 }

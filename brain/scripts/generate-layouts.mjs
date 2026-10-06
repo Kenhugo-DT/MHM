@@ -26,7 +26,7 @@ const LAYOUTS = {
   },
   timeline: {
     label: "Timeline",
-    description: "First documented active decade, with unknown start years kept separate.",
+    description: "First documented active year within each decade, with unknown start years kept separate.",
   },
   alphabetic: {
     label: "A-Z",

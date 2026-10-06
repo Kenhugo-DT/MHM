@@ -4,7 +4,7 @@ import test from "node:test";
 import { graphFingerprint, matchingLayouts, MODE_NODE_TYPES } from "../shared/graph-schema/graph-snapshot.mjs";
 import { edgeEvidenceTier, isMapConnection } from "../shared/graph-schema/edge-evidence.mjs";
 import { ORGANIZED_MAP_ZONES, organizeGraphLayout } from "../brain/scripts/organize-graph-layout.mjs";
-import { firstActiveYear } from "../brain/scripts/timeline-layout.mjs";
+import { buildTimelineLayout, firstActiveYear } from "../brain/scripts/timeline-layout.mjs";
 import { curatedEraLinks, curatedEraNodes } from "../brain/scripts/curated-era-expansion.mjs";
 import { curatedGenreLinks, curatedGenreNodes } from "../brain/scripts/curated-genre-bridges.mjs";
 import { reviewedBridgeLinks, reviewedBridgeNodes } from "../brain/scripts/curated-reviewed-bridges.mjs";
@@ -74,6 +74,10 @@ test("graph fingerprint ignores ordering but detects changed positions and conne
     original,
   );
   assert.notEqual(await graphFingerprint({ ...graph, edges: [] }, "artists"), original);
+  assert.notEqual(
+    await graphFingerprint({ ...graph, nodes: graph.nodes.map((node) => node.id === "a" ? { ...node, eraStart: 1975 } : node) }, "artists"),
+    original,
+  );
   const layouts = { graphFingerprints: { artists: original } };
   assert.equal(await matchingLayouts(graph, "artists", layouts), layouts);
   assert.equal(await matchingLayouts({ ...graph, edges: [] }, "artists", layouts), undefined);
@@ -119,6 +123,42 @@ test("live layout matching keeps current map positions without mutating saved la
   assert.equal(layouts.layouts.organized.nodes.new, undefined);
 });
 
+test("new live nodes and corrected years keep their decade on the saved timeline", async () => {
+  const baseline = {
+    nodes: [{ id: "a", type: "band", x: 1, y: 2, zone: "rock", eraStart: 1970 }],
+    edges: [],
+  };
+  const timeline = {
+    nodes: { a: { x: 100, y: 0, decade: 1970, startYear: 1970 } },
+    guide: {
+      markers: [{ year: 1970, x: 100, width: 640 }],
+      minY: -1270,
+      maxY: 500,
+      unknown: { left: 0, top: 970, columns: 10, columnGap: 100, rowGap: 126, count: 0 },
+      unknownBottom: 1400,
+    },
+  };
+  const layouts = {
+    graphFingerprints: { artists: await graphFingerprint(baseline, "artists") },
+    layouts: { organized: { nodes: { a: { x: 1, y: 2 } } }, timeline },
+  };
+  const live = {
+    nodes: [
+      { ...baseline.nodes[0], eraStart: 1979 },
+      { id: "b", type: "band", x: 3, y: 4, zone: "rock", eraStart: 1975 },
+      { id: "c", type: "band", x: 5, y: 6, zone: "rock" },
+    ],
+    edges: [],
+  };
+  const matched = await matchingLayouts(live, "artists", layouts, baseline);
+  assert.equal(matched.layouts.timeline.nodes.a.x, 100 + 640 * 0.9);
+  assert.equal(matched.layouts.timeline.nodes.b.x, 100 + 640 * 0.5);
+  assert.equal(matched.layouts.timeline.nodes.b.decade, 1970);
+  assert.equal(matched.layouts.timeline.nodes.c.decade, null);
+  assert.equal(matched.layouts.timeline.guide.unknown.count, 1);
+  assert.deepEqual(layouts.layouts.timeline, timeline);
+});
+
 test("published layouts match the approved graph in every map mode", async () => {
   const graph = JSON.parse(readFileSync("brain/data/approved/graph.json", "utf8"));
   const layouts = JSON.parse(readFileSync("brain/data/approved/layouts.json", "utf8"));
@@ -154,12 +194,37 @@ test("timeline uses the first documented active decade and separates undated nod
     assert.equal(position.startYear, year, node.id);
     assert.equal(position.decade, decade, node.id);
     assert.ok(position.x >= marker.x && position.x < marker.x + marker.width, node.id);
+    assert.ok(Math.abs(position.x - (marker.x + Math.max(18, (year - decade) * marker.width / 10))) < 0.001, node.id);
     assert.ok(position.y < timeline.guide.unknown.top, node.id);
   }
 
   assert.equal(undated, timeline.guide.unknown.count);
   assert.ok(timeline.guide.markers.every((marker, index, all) =>
     index === 0 || marker.year === all[index - 1].year + 10));
+});
+
+test("timeline places years proportionally and separates nearby nodes", () => {
+  const nodes = [1970, 1975, 1979, 1979].map((eraStart, index) => ({
+    id: `sample-${index}`,
+    label: `Sample ${index}`,
+    zone: "rock",
+    eraStart,
+  }));
+  const timeline = buildTimelineLayout(nodes, {});
+  const marker = timeline.guide.markers.find((entry) => entry.year === 1970);
+  const positions = timeline.items.map((item) => item);
+
+  assert.equal(positions[1].x, marker.x + marker.width / 2);
+  assert.equal(positions[2].x, marker.x + marker.width * 0.9);
+  assert.ok(positions[0].x < positions[1].x && positions[1].x < positions[2].x);
+  for (let index = 0; index < positions.length; index += 1) {
+    for (const other of positions.slice(index + 1)) {
+      assert.ok(
+        Math.abs(positions[index].x - other.x) >= 112 ||
+          Math.abs(positions[index].y - other.y) >= 112,
+      );
+    }
+  }
 });
 
 test("classical and pop expansion is sourced, connected and keeps historical order", () => {
@@ -423,4 +488,32 @@ test("reviewed connections retain relation-specific context and non-Wikipedia so
       assert.ok(edge.sources.every((source) => source.url && !source.url.includes("wikipedia.org")), id);
     }
   }
+});
+
+test("source-reviewed start years reach the graph and timeline without guessing unresolved years", () => {
+  const graph = JSON.parse(readFileSync("brain/data/approved/graph.json", "utf8"));
+  const learningModel = JSON.parse(readFileSync("brain/data/approved/learning-model.json", "utf8"));
+  const review = JSON.parse(readFileSync("brain/data/source-reviews/2026-10-02-start-years.json", "utf8"));
+  const curated = JSON.parse(readFileSync("brain/data/curated-start-years.json", "utf8"));
+  const nodes = new Map(graph.nodes.map((node) => [node.id, node]));
+
+  assert.equal(review.results.length, 460);
+  assert.ok(curated.nodes.length >= 152);
+  assert.equal(new Set(curated.nodes.map((entry) => entry.id)).size, curated.nodes.length);
+  for (const entry of curated.nodes) {
+    const node = nodes.get(entry.id);
+    assert.ok(node, entry.id);
+    assert.equal(node.type, entry.type ?? "band", entry.id);
+    assert.ok(Number.isInteger(entry.eraStart) && entry.eraStart >= 1400 && entry.eraStart <= 2100, entry.id);
+    assert.ok(entry.basis && entry.note, entry.id);
+    assert.ok(entry.sources.length > 0 && entry.sources.every((source) => source.url.startsWith("https://")), entry.id);
+    assert.equal(node.eraStart, entry.eraStart, entry.id);
+    assert.equal(firstActiveYear(node, learningModel), entry.eraStart, entry.id);
+    assert.ok(entry.sources.every((source) => node.sources.some((item) => item.url === source.url)), entry.id);
+  }
+
+  const missing = review.results.filter((entry) => firstActiveYear(nodes.get(entry.id), learningModel) === undefined);
+  assert.ok(missing.length <= 308);
+  assert.equal(nodes.get("fender-jaguar").eraStart, 1962);
+  assert.equal(nodes.get("yamaha").eraStart, 1887);
 });

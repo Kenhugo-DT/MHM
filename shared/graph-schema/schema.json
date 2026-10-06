@@ -94,6 +94,20 @@
         "y": { "type": "number" },
         "zone": { "type": "string", "minLength": 1 },
         "starter": { "type": "boolean" },
+        "eraStart": { "type": "integer", "minimum": 1400, "maximum": 2100 },
+        "eraStartEvidence": {
+          "type": "object",
+          "required": ["basis", "note", "sources"],
+          "properties": {
+            "basis": { "type": "string", "minLength": 1 },
+            "note": { "type": "string", "minLength": 1 },
+            "sources": {
+              "type": "array",
+              "minItems": 1,
+              "items": { "$ref": "#/$defs/sourceReference" }
+            }
+          }
+        },
         "image": { "$ref": "#/$defs/imageReference" },
         "sources": {
           "type": "array",
