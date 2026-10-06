@@ -106,6 +106,14 @@ jobs:
         env:
           SUPABASE_URL: ${{ vars.SUPABASE_URL }}
           SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+      - name: Scout documented band memberships
+        if: vars.CONNECTION_SCOUT_ENABLED == 'true'
+        run: |
+          npm run brain:connection-scout -- --limit 12 --output brain/data/candidates/connection-evidence-latest.json
+          npm run brain:connections:queue -- --input brain/data/candidates/connection-evidence-latest.json --publish
+        env:
+          SUPABASE_URL: ${{ vars.SUPABASE_URL }}
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
       - uses: actions/upload-artifact@v4
         if: always()
         with:

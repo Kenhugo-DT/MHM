@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-24T12:01:50.450751Z",
+  "generatedAt": "2026-10-06T12:13:19.846Z",
   "source": "MHM research brain promotions",
   "candidateRows": [
     {
@@ -1542,6 +1542,83 @@
       "requestId": "early-country-foundations-20260924",
       "seedName": "Honky-tonk",
       "requestedKind": "genre"
+    },
+    {
+      "id": "31df41ad-37ad-484c-84cb-a7d93e8843ce",
+      "kind": "typed_connection",
+      "edgeId": "mb-member-dave-murray-iron-maiden",
+      "source": "dave-murray",
+      "target": "iron-maiden"
+    },
+    {
+      "id": "613eb9c2-1f9a-4009-b5b1-d8ac4faad952",
+      "kind": "typed_connection",
+      "edgeId": "mb-member-criss-oliva-savatage",
+      "source": "criss-oliva",
+      "target": "savatage"
+    },
+    {
+      "id": "683cca4f-a056-4bfa-a33f-94655b27dba3",
+      "kind": "typed_connection",
+      "edgeId": "mb-member-buckethead-guns-n-roses",
+      "source": "buckethead",
+      "target": "guns-n-roses"
+    },
+    {
+      "id": "7377f3b2-08fa-4a1a-9c03-c1b4cce65c1f",
+      "kind": "typed_connection",
+      "edgeId": "mb-member-corey-taylor-stone-sour",
+      "source": "corey-taylor",
+      "target": "stone-sour"
+    },
+    {
+      "id": "8395f857-b264-4a37-a825-431b448009eb",
+      "kind": "typed_connection",
+      "edgeId": "mb-member-duff-mckagan-guns-n-roses",
+      "source": "duff-mckagan",
+      "target": "guns-n-roses"
+    },
+    {
+      "id": "9ac53578-0a6c-47cb-a7ea-eed72fbac70d",
+      "kind": "typed_connection",
+      "edgeId": "mb-member-duff-mckagan-velvet-revolver",
+      "source": "duff-mckagan",
+      "target": "velvet-revolver"
+    },
+    {
+      "id": "9e13dfed-3697-44dd-9e52-7fb9bf57aaef",
+      "kind": "typed_connection",
+      "edgeId": "mb-member-iggy-pop-the-stooges",
+      "source": "iggy-pop",
+      "target": "the-stooges"
+    },
+    {
+      "id": "b027a327-ce87-44b9-aeb5-98fa2e8c5ac6",
+      "kind": "typed_connection",
+      "edgeId": "mb-member-alexi-laiho-children-of-bodom",
+      "source": "alexi-laiho",
+      "target": "children-of-bodom"
+    },
+    {
+      "id": "bdf2388c-182e-408d-abd0-7fd220c4d27a",
+      "kind": "typed_connection",
+      "edgeId": "mb-member-chester-bennington-linkin-park",
+      "source": "chester-bennington",
+      "target": "linkin-park"
+    },
+    {
+      "id": "d8a4ea65-c04e-4ef4-9ed7-c59a19975c25",
+      "kind": "typed_connection",
+      "edgeId": "mb-member-chester-bennington-stone-temple-pilots",
+      "source": "chester-bennington",
+      "target": "stone-temple-pilots"
+    },
+    {
+      "id": "e009215c-8725-4bdc-883f-825537a6a23b",
+      "kind": "typed_connection",
+      "edgeId": "mb-member-bruce-dickinson-iron-maiden",
+      "source": "bruce-dickinson",
+      "target": "iron-maiden"
     }
   ],
   "nodes": [
@@ -7179,7 +7256,7 @@
         "Artist",
         "Research brain"
       ],
-      "x": -271.0,
+      "x": -271,
       "y": 353.9,
       "zone": "rock-circuit",
       "starter": false,
@@ -7402,7 +7479,7 @@
         "Research brain"
       ],
       "x": -207.4,
-      "y": 345.0,
+      "y": 345,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -7426,7 +7503,7 @@
         "Guitarist",
         "Research brain"
       ],
-      "x": -597.0,
+      "x": -597,
       "y": -125.2,
       "zone": "rock-circuit",
       "starter": false,
@@ -7498,8 +7575,8 @@
         "Artist",
         "Research brain"
       ],
-      "x": -65.0,
-      "y": 195.0,
+      "x": -65,
+      "y": 195,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -7523,7 +7600,7 @@
         "Research brain"
       ],
       "x": -398.6,
-      "y": 440.0,
+      "y": 440,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -7614,8 +7691,8 @@
         "Artist",
         "Research brain"
       ],
-      "x": -112.0,
-      "y": 148.0,
+      "x": -112,
+      "y": 148,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -7720,7 +7797,7 @@
         "Artist",
         "Research brain"
       ],
-      "x": -25.0,
+      "x": -25,
       "y": 323.8,
       "zone": "rock-circuit",
       "starter": false,
@@ -7913,8 +7990,8 @@
         "Band",
         "Research brain"
       ],
-      "x": -69.0,
-      "y": 191.0,
+      "x": -69,
+      "y": 191,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -7938,7 +8015,7 @@
         "Research brain"
       ],
       "x": -396.2,
-      "y": 375.0,
+      "y": 375,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -8481,7 +8558,7 @@
         "Band",
         "Research brain"
       ],
-      "x": -680.0,
+      "x": -680,
       "y": -40.9,
       "zone": "rock-circuit",
       "starter": false,
@@ -8694,7 +8771,7 @@
         "Research brain"
       ],
       "x": -495.1,
-      "y": 333.0,
+      "y": 333,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -8789,8 +8866,8 @@
         "Band",
         "Research brain"
       ],
-      "x": -111.0,
-      "y": 149.0,
+      "x": -111,
+      "y": 149,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -8837,8 +8914,8 @@
         "Band",
         "Research brain"
       ],
-      "x": -14.0,
-      "y": 246.0,
+      "x": -14,
+      "y": 246,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -8862,7 +8939,7 @@
         "Research brain"
       ],
       "x": -744.9,
-      "y": 77.0,
+      "y": 77,
       "zone": "guitar-workshop",
       "starter": false,
       "sources": [
@@ -8967,8 +9044,8 @@
         "Artist",
         "Research brain"
       ],
-      "x": -22.0,
-      "y": 238.0,
+      "x": -22,
+      "y": 238,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -9188,8 +9265,8 @@
         "Artist",
         "Research brain"
       ],
-      "x": -85.0,
-      "y": 175.0,
+      "x": -85,
+      "y": 175,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -9424,8 +9501,8 @@
         "Band",
         "Research brain"
       ],
-      "x": -115.0,
-      "y": 145.0,
+      "x": -115,
+      "y": 145,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -9448,8 +9525,8 @@
         "Band",
         "Research brain"
       ],
-      "x": -65.0,
-      "y": 195.0,
+      "x": -65,
+      "y": 195,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -9564,8 +9641,8 @@
         "Band",
         "Research brain"
       ],
-      "x": -100.0,
-      "y": 160.0,
+      "x": -100,
+      "y": 160,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -9588,8 +9665,8 @@
         "Band",
         "Research brain"
       ],
-      "x": -54.0,
-      "y": 206.0,
+      "x": -54,
+      "y": 206,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -9694,7 +9771,7 @@
         "Band",
         "Research brain"
       ],
-      "x": -233.0,
+      "x": -233,
       "y": 144.2,
       "zone": "rock-circuit",
       "starter": false,
@@ -9776,7 +9853,7 @@
         "Band",
         "Research brain"
       ],
-      "x": -747.0,
+      "x": -747,
       "y": -45.5,
       "zone": "rock-circuit",
       "starter": false,
@@ -9800,7 +9877,7 @@
         "Band",
         "Research brain"
       ],
-      "x": -738.0,
+      "x": -738,
       "y": -316.5,
       "zone": "rock-circuit",
       "starter": false,
@@ -9860,7 +9937,7 @@
         "Research brain"
       ],
       "x": -665.2,
-      "y": -145.0,
+      "y": -145,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -9883,8 +9960,8 @@
         "Band",
         "Research brain"
       ],
-      "x": -35.0,
-      "y": 225.0,
+      "x": -35,
+      "y": 225,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -10001,8 +10078,8 @@
         "Band",
         "Research brain"
       ],
-      "x": -79.0,
-      "y": 181.0,
+      "x": -79,
+      "y": 181,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -10107,8 +10184,8 @@
         "Guitar",
         "Research brain"
       ],
-      "x": -109.0,
-      "y": 151.0,
+      "x": -109,
+      "y": 151,
       "zone": "guitar-workshop",
       "starter": false,
       "sources": [
@@ -10131,8 +10208,8 @@
         "Artist",
         "Research brain"
       ],
-      "x": -59.0,
-      "y": 201.0,
+      "x": -59,
+      "y": 201,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -10155,8 +10232,8 @@
         "Band",
         "Research brain"
       ],
-      "x": -21.0,
-      "y": 239.0,
+      "x": -21,
+      "y": 239,
       "zone": "hard-rock-metal",
       "starter": false,
       "sources": [
@@ -10237,8 +10314,8 @@
         "Artist",
         "Research brain"
       ],
-      "x": -119.0,
-      "y": 141.0,
+      "x": -119,
+      "y": 141,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -10261,8 +10338,8 @@
         "Band",
         "Research brain"
       ],
-      "x": -83.0,
-      "y": 177.0,
+      "x": -83,
+      "y": 177,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -10406,8 +10483,8 @@
         "Band",
         "Research brain"
       ],
-      "x": -55.0,
-      "y": 205.0,
+      "x": -55,
+      "y": 205,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -10537,8 +10614,8 @@
         "Artist",
         "Research brain"
       ],
-      "x": -53.0,
-      "y": 207.0,
+      "x": -53,
+      "y": 207,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -10561,8 +10638,8 @@
         "Band",
         "Research brain"
       ],
-      "x": -21.0,
-      "y": 239.0,
+      "x": -21,
+      "y": 239,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -10633,8 +10710,8 @@
         "Guitar",
         "Research brain"
       ],
-      "x": -103.0,
-      "y": 157.0,
+      "x": -103,
+      "y": 157,
       "zone": "guitar-workshop",
       "starter": false,
       "sources": [
@@ -10657,8 +10734,8 @@
         "Guitar",
         "Research brain"
       ],
-      "x": -59.0,
-      "y": 201.0,
+      "x": -59,
+      "y": 201,
       "zone": "guitar-workshop",
       "starter": false,
       "sources": [
@@ -10943,8 +11020,8 @@
         "Band",
         "Research brain"
       ],
-      "x": -67.0,
-      "y": 193.0,
+      "x": -67,
+      "y": 193,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -11025,7 +11102,7 @@
         "Artist",
         "Research brain"
       ],
-      "x": 1306.0,
+      "x": 1306,
       "y": -270.9,
       "zone": "hard-rock-metal",
       "starter": false,
@@ -11107,8 +11184,8 @@
         "Guitar",
         "Research brain"
       ],
-      "x": -14.0,
-      "y": 246.0,
+      "x": -14,
+      "y": 246,
       "zone": "guitar-workshop",
       "starter": false,
       "sources": [
@@ -11223,8 +11300,8 @@
         "Genre",
         "Research brain"
       ],
-      "x": -76.0,
-      "y": 184.0,
+      "x": -76,
+      "y": 184,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -11320,8 +11397,8 @@
         "Artist",
         "Research brain"
       ],
-      "x": -123.0,
-      "y": 137.0,
+      "x": -123,
+      "y": 137,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -11344,8 +11421,8 @@
         "Guitar",
         "Research brain"
       ],
-      "x": -56.0,
-      "y": 204.0,
+      "x": -56,
+      "y": 204,
       "zone": "guitar-workshop",
       "starter": false,
       "sources": [
@@ -11503,8 +11580,8 @@
         "Artist",
         "Research brain"
       ],
-      "x": -37.0,
-      "y": 223.0,
+      "x": -37,
+      "y": 223,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -11577,8 +11654,8 @@
         "Guitarist",
         "Research brain"
       ],
-      "x": -129.0,
-      "y": 131.0,
+      "x": -129,
+      "y": 131,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -11601,8 +11678,8 @@
         "Artist",
         "Research brain"
       ],
-      "x": -63.0,
-      "y": 197.0,
+      "x": -63,
+      "y": 197,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -11626,8 +11703,8 @@
         "Guitarist",
         "Research brain"
       ],
-      "x": -33.0,
-      "y": 227.0,
+      "x": -33,
+      "y": 227,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -11708,8 +11785,8 @@
         "Artist",
         "Research brain"
       ],
-      "x": -96.0,
-      "y": 164.0,
+      "x": -96,
+      "y": 164,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -11762,8 +11839,8 @@
         "Guitar",
         "Research brain"
       ],
-      "x": -10.0,
-      "y": 250.0,
+      "x": -10,
+      "y": 250,
       "zone": "guitar-workshop",
       "starter": false,
       "sources": [
@@ -11939,8 +12016,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 2.0,
-      "y": 162.0,
+      "x": 2,
+      "y": 162,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -11985,8 +12062,8 @@
       "metadata": [
         "Band"
       ],
-      "x": 13.0,
-      "y": 273.0,
+      "x": 13,
+      "y": 273,
       "zone": "rock-circuit",
       "starter": false,
       "sources": [
@@ -12008,7 +12085,7 @@
       "metadata": [
         "Artist"
       ],
-      "x": -238.0,
+      "x": -238,
       "y": 468.2,
       "zone": "rock-circuit",
       "starter": false,
@@ -20546,6 +20623,215 @@
           "label": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Fugazi",
           "provider": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "mb-member-dave-murray-iron-maiden",
+      "source": "dave-murray",
+      "target": "iron-maiden",
+      "type": "member_of",
+      "label": "Member of",
+      "strength": 0.9,
+      "context": [
+        "MusicBrainz records Dave Murray as a member of Iron Maiden.",
+        "Documented periods: 1976 to 1977; 1978 to present."
+      ],
+      "sources": [
+        {
+          "label": "MusicBrainz: member of band relationship",
+          "url": "https://musicbrainz.org/artist/621428e2-892f-4a4e-8254-80312b79913c/relationships",
+          "provider": "musicbrainz"
+        }
+      ]
+    },
+    {
+      "id": "mb-member-criss-oliva-savatage",
+      "source": "criss-oliva",
+      "target": "savatage",
+      "type": "member_of",
+      "label": "Member of",
+      "strength": 0.9,
+      "context": [
+        "MusicBrainz records Criss Oliva as a member of Savatage.",
+        "Documented period: 1983 to 1993-10-17."
+      ],
+      "sources": [
+        {
+          "label": "MusicBrainz: member of band relationship",
+          "url": "https://musicbrainz.org/artist/a05619aa-1d5c-4e86-86aa-2a9f4fab8c4c/relationships",
+          "provider": "musicbrainz"
+        }
+      ]
+    },
+    {
+      "id": "mb-member-buckethead-guns-n-roses",
+      "source": "buckethead",
+      "target": "guns-n-roses",
+      "type": "member_of",
+      "label": "Member of",
+      "strength": 0.9,
+      "context": [
+        "MusicBrainz records Buckethead as a member of Guns N' Roses.",
+        "Documented period: 2000 to 2004-03."
+      ],
+      "sources": [
+        {
+          "label": "MusicBrainz: member of band relationship",
+          "url": "https://musicbrainz.org/artist/b5179744-f217-4455-9d8b-17b8d4fdeb93/relationships",
+          "provider": "musicbrainz"
+        }
+      ]
+    },
+    {
+      "id": "mb-member-corey-taylor-stone-sour",
+      "source": "corey-taylor",
+      "target": "stone-sour",
+      "type": "member_of",
+      "label": "Member of",
+      "strength": 0.9,
+      "context": [
+        "MusicBrainz records Corey Taylor as a member of Stone Sour.",
+        "Documented period: 1992 to 2020."
+      ],
+      "sources": [
+        {
+          "label": "MusicBrainz: member of band relationship",
+          "url": "https://musicbrainz.org/artist/15e02679-7a5f-4dd2-850c-5aa6e49d0878/relationships",
+          "provider": "musicbrainz"
+        }
+      ]
+    },
+    {
+      "id": "mb-member-duff-mckagan-guns-n-roses",
+      "source": "duff-mckagan",
+      "target": "guns-n-roses",
+      "type": "member_of",
+      "label": "Member of",
+      "strength": 0.9,
+      "context": [
+        "MusicBrainz records Duff McKagan as a member of Guns N' Roses.",
+        "Documented periods: 1985-06 to 1997-08; 2016 to present."
+      ],
+      "sources": [
+        {
+          "label": "MusicBrainz: member of band relationship",
+          "url": "https://musicbrainz.org/artist/f2da4752-8db0-4e54-8f30-680acaa8e1cf/relationships",
+          "provider": "musicbrainz"
+        }
+      ]
+    },
+    {
+      "id": "mb-member-duff-mckagan-velvet-revolver",
+      "source": "duff-mckagan",
+      "target": "velvet-revolver",
+      "type": "member_of",
+      "label": "Member of",
+      "strength": 0.9,
+      "context": [
+        "MusicBrainz records Duff McKagan as a member of Velvet Revolver.",
+        "Documented period: 2002 to 2012."
+      ],
+      "sources": [
+        {
+          "label": "MusicBrainz: member of band relationship",
+          "url": "https://musicbrainz.org/artist/f2da4752-8db0-4e54-8f30-680acaa8e1cf/relationships",
+          "provider": "musicbrainz"
+        }
+      ]
+    },
+    {
+      "id": "mb-member-iggy-pop-the-stooges",
+      "source": "iggy-pop",
+      "target": "the-stooges",
+      "type": "member_of",
+      "label": "Member of",
+      "strength": 0.9,
+      "context": [
+        "MusicBrainz records Iggy Pop as a member of The Stooges.",
+        "Documented period: 1967 to 1970."
+      ],
+      "sources": [
+        {
+          "label": "MusicBrainz: member of band relationship",
+          "url": "https://musicbrainz.org/artist/f37b3f31-b1f8-4b88-8cb5-b34f709b17d7/relationships",
+          "provider": "musicbrainz"
+        }
+      ]
+    },
+    {
+      "id": "mb-member-alexi-laiho-children-of-bodom",
+      "source": "alexi-laiho",
+      "target": "children-of-bodom",
+      "type": "member_of",
+      "label": "Member of",
+      "strength": 0.9,
+      "context": [
+        "MusicBrainz records Alexi Laiho as a member of Children of Bodom.",
+        "Documented period: 1997 to 2020-12."
+      ],
+      "sources": [
+        {
+          "label": "MusicBrainz: member of band relationship",
+          "url": "https://musicbrainz.org/artist/48c7deb0-e19d-4e0b-86f1-ed799ca9dc73/relationships",
+          "provider": "musicbrainz"
+        }
+      ]
+    },
+    {
+      "id": "mb-member-chester-bennington-linkin-park",
+      "source": "chester-bennington",
+      "target": "linkin-park",
+      "type": "member_of",
+      "label": "Member of",
+      "strength": 0.9,
+      "context": [
+        "MusicBrainz records Chester Bennington as a member of Linkin Park.",
+        "Documented period: 1999 to 2017-07-20."
+      ],
+      "sources": [
+        {
+          "label": "MusicBrainz: member of band relationship",
+          "url": "https://musicbrainz.org/artist/415e30a0-116b-4a4f-8cbf-8d0f6406bbab/relationships",
+          "provider": "musicbrainz"
+        }
+      ]
+    },
+    {
+      "id": "mb-member-chester-bennington-stone-temple-pilots",
+      "source": "chester-bennington",
+      "target": "stone-temple-pilots",
+      "type": "member_of",
+      "label": "Member of",
+      "strength": 0.9,
+      "context": [
+        "MusicBrainz records Chester Bennington as a member of Stone Temple Pilots.",
+        "Documented period: 2013 to 2015-11-09."
+      ],
+      "sources": [
+        {
+          "label": "MusicBrainz: member of band relationship",
+          "url": "https://musicbrainz.org/artist/415e30a0-116b-4a4f-8cbf-8d0f6406bbab/relationships",
+          "provider": "musicbrainz"
+        }
+      ]
+    },
+    {
+      "id": "mb-member-bruce-dickinson-iron-maiden",
+      "source": "bruce-dickinson",
+      "target": "iron-maiden",
+      "type": "member_of",
+      "label": "Member of",
+      "strength": 0.9,
+      "context": [
+        "MusicBrainz records Bruce Dickinson as a member of Iron Maiden.",
+        "Documented periods: 1981-09 to 1993; 1999-01 to present."
+      ],
+      "sources": [
+        {
+          "label": "MusicBrainz: member of band relationship",
+          "url": "https://musicbrainz.org/artist/50698127-f6f4-4c0c-8010-db98c21100e1/relationships",
+          "provider": "musicbrainz"
         }
       ]
     }

@@ -1,0 +1,54 @@
+name: Publish reviewed connections
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - "brain/data/approved/promotions.json"
+  workflow_dispatch:
+
+concurrency:
+  group: mhm-publish-reviewed-connections
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  publish:
+    if: vars.BRAIN_IMPORT_ENABLED == 'true'
+    runs-on: ubuntu-latest
+    env:
+      SUPABASE_URL: ${{ vars.SUPABASE_URL }}
+      SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: brain/pipeline/requirements.txt
+      - run: npm ci
+      - run: pip install -r brain/pipeline/requirements.txt
+      - name: Reject unrelated graph or promotion changes
+        run: |
+          git show HEAD^:brain/data/approved/graph.json > "$RUNNER_TEMP/before-graph.json"
+          git show HEAD^:brain/data/approved/promotions.json > "$RUNNER_TEMP/before-promotions.json"
+          node brain/scripts/check-connection-batch.mjs "$RUNNER_TEMP/before-graph.json" "$RUNNER_TEMP/before-promotions.json" --allow-era-backfill
+      - name: Recheck approval against the merged graph
+        run: npm run brain:connections:verify-publish
+      - run: npm run brain:audit
+      - run: npm run brain:python-check
+      - run: node brain/scripts/run-python.mjs -m unittest discover -s brain/pipeline/tests -p test_publish_reviewed_connection_batch.py
+      - run: npm test
+      - run: npm run build
+      - name: Publish only this reviewed relation batch
+        run: npm run brain:connections:publish -- "$RUNNER_TEMP/before-promotions.json" --apply
+      - name: Verify live relations and close the review loop
+        run: npm run brain:connections:finalize

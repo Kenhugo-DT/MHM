@@ -406,12 +406,12 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
       if (!app || !timelineGuide || !timelineHeaderRef.current?.visible) return;
 
       const topOfView = camera.y - app.screen.height / (2 * camera.zoom);
-      const headerY = topOfView + (isCompactMap() ? 65 : 112) / camera.zoom;
+      const headerY = topOfView + (isCompactMap() ? 48 : 76) / camera.zoom;
       if (timelineBandRef.current) {
         timelineBandRef.current.y = headerY;
         timelineBandRef.current.scale.y = 44 / camera.zoom;
       }
-      const labelY = headerY + 9 / camera.zoom;
+      const labelY = headerY + 7 / camera.zoom;
       const scale = Math.min(2, Math.max(1, 0.78 / camera.zoom));
       const inUnknown = camera.y >= timelineGuide.unknown.top - 180;
       if (timelineMarkerLabelsRef.current) timelineMarkerLabelsRef.current.visible = !inUnknown;
@@ -850,7 +850,7 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
       const connectionLayer = new Container();
       const nodeLayer = new Container();
       const labelLayer = new Container();
-      world.addChild(zoneLayer, timelineLayer, connectionLayer, nodeLayer, labelLayer);
+      world.addChild(zoneLayer, timelineLayer, timelineHeader, connectionLayer, nodeLayer, labelLayer);
       zoneLayerRef.current = zoneLayer;
       timelineLayerRef.current = timelineLayer;
       timelineHeaderRef.current = timelineHeader;
@@ -894,7 +894,7 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
           lastMarker.x + lastMarker.width - timelineGuide.markers[0].x,
           1,
         );
-        rulerBand.fill({ color: 0x11110f, alpha: 0.91 });
+        rulerBand.fill({ color: 0x11110f, alpha: 0.58 });
         timelineBandRef.current = rulerBand;
         timelineHeader.addChild(rulerBand, markerLabels);
         const unknownHeader = new Text({
@@ -908,6 +908,7 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
         });
         unknownHeader.eventMode = "none";
         unknownHeader.visible = false;
+        unknownHeader.alpha = 0.72;
         timelineUnknownLabelRef.current = unknownHeader;
         timelineHeader.addChild(unknownHeader);
         timelineGuide.markers.forEach((marker, index) => {
@@ -929,6 +930,7 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
           label.anchor.set(0.5, 0);
           label.position.set(marker.x + marker.width / 2, timelineGuide.minY + 28);
           label.eventMode = "none";
+          label.alpha = 0.72;
           timelineLabelsRef.current.push({ year: marker.year, x: marker.x + marker.width / 2, label });
           markerLabels.addChild(label);
         });
@@ -1040,7 +1042,7 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
       });
 
       const selectionLayer = new Container();
-      world.addChild(selectionLayer, timelineHeader);
+      world.addChild(selectionLayer);
       selectionLayerRef.current = selectionLayer;
 
       applyCamera();

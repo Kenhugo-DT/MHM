@@ -834,6 +834,12 @@ def build_patch(
             continue
 
         payload = row.get("payload") or {}
+        if payload.get("kind") == "typed_connection":
+            skipped.append({
+                "id": row_id,
+                "reason": "Typed connection requires the reviewed connection staging workflow.",
+            })
+            continue
         review = review_candidate_payload(payload, blocked_terms)
         if review.get("level") == "reject":
             skipped.append({

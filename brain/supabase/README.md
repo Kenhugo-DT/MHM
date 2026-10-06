@@ -24,11 +24,22 @@ Open `SQL Editor` in Supabase and run these files in order:
 2. `brain/supabase/migrations/0002_research_brain_schema.sql`
 3. `brain/supabase/migrations/0003_entity_fact_review.sql`
 4. `brain/supabase/migrations/0004_fact_review_feedback.sql`
+5. `brain/supabase/migrations/0005_facts_all_node_types.sql`
+6. `brain/supabase/migrations/0006_entity_start_year.sql`
 
 `0001` creates the public graph tables read by the site. `0002` creates the
 private brain tables used by the research pipeline. `0003` creates the separate
 fact review queue. `0004` adds a private optional reviewer note. Only approved
 fact rows are readable by the public site; the reviewer note is never public.
+`0005` extends fact review to all map node types. `0006` adds the first
+documented year and its reviewed evidence to live entities. It is additive
+and must run before `brain:import` with graph data containing start years.
+
+After `0006`, run `npm run brain:import:preflight`. The guarded connection
+publication workflow will not create a PR until this succeeds and GitHub
+repository variable `BRAIN_IMPORT_ENABLED` is set to `true`. The full review
+and activation sequence is in `brain/README.md` under "Reviewed Connection
+Automation".
 
 ## 3. Get API Values
 
@@ -91,7 +102,8 @@ npm run brain:import
 ```
 
 That imports `brain/data/approved/graph.json` into `public.entities` and
-`public.relations`.
+`public.relations`. The importer checks for the `0006` columns before writing
+any rows, so a missing migration cannot leave a half-updated graph.
 
 ## 7. Give The Brain Work
 
@@ -167,9 +179,9 @@ step writes durable additions to `brain/data/approved/promotions.json`;
 `site/public/data/graph.json` plus five versioned layouts; `brain:import`
 publishes the graph to the public Supabase tables. The site loads live map rows
 in pages and checks that the published layouts still match their approved
-baseline. Additional live nodes remain visible at their stored map positions
-until the next layout rebuild; changed or missing baseline nodes and relations
-disable the stale layouts.
+baseline. Additional live nodes with a documented year receive a temporary
+position in the correct decade until the next layout rebuild. Changed or
+missing baseline nodes and relations disable the stale layouts.
 
 ## 9. Schedule The Scout Agent
 

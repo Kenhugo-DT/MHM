@@ -1,0 +1,111 @@
+{
+  "nodes": [
+    {
+      "id": "fender", "type": "guitar_brand", "eraStart": 1946, "basis": "brand_formation",
+      "note": "Fender identifies 1946 as the company's founding year.",
+      "sources": [{ "label": "Fender: company history", "url": "https://www.fender.com/articles/behind-the-scenes/offset-originals-explore-the-musicmaster-and-the-duo-sonic", "provider": "other" }]
+    },
+    {
+      "id": "gibson", "type": "guitar_brand", "eraStart": 1894, "basis": "maker_origin",
+      "note": "Orville Gibson began making and selling instruments in 1894; the company was incorporated in 1902.",
+      "sources": [{ "label": "Gibson: brand history", "url": "https://brandbook.gibson.com/overview/gibson/", "provider": "other" }]
+    },
+    {
+      "id": "martin", "type": "guitar_brand", "eraStart": 1833, "basis": "brand_formation",
+      "note": "C. F. Martin & Co. dates its founding to 1833.",
+      "sources": [{ "label": "Martin: company history", "url": "https://www.martinguitar.com/homepage.html", "provider": "other" }]
+    },
+    {
+      "id": "rickenbacker", "type": "guitar_brand", "eraStart": 1931, "basis": "brand_formation",
+      "note": "Electro String Instrument Corporation, the origin of Rickenbacker, was founded in 1931.",
+      "sources": [{ "label": "Rickenbacker: legacy", "url": "https://www.rickenbacker.com/legacy/", "provider": "other" }]
+    },
+    {
+      "id": "gretsch", "type": "guitar_brand", "eraStart": 1883, "basis": "brand_formation",
+      "note": "Friedrich Gretsch founded his instrument shop in 1883.",
+      "sources": [{ "label": "Gretsch: history", "url": "https://www.gretschguitars.com/support/history", "provider": "other" }]
+    },
+    {
+      "id": "esp", "type": "guitar_brand", "eraStart": 1975, "basis": "brand_formation",
+      "note": "ESP began as Electric Sound Products in Tokyo in 1975.",
+      "sources": [{ "label": "ESP: 50th anniversary", "url": "https://www.espguitars.com/articles/2019384-esp-guitars-honored-by-namm-for-50th-anniversary-milestone", "provider": "other" }]
+    },
+    {
+      "id": "prs", "type": "guitar_brand", "eraStart": 1985, "basis": "brand_formation",
+      "note": "PRS Guitars identifies 1985 as its founding year.",
+      "sources": [{ "label": "PRS: company history", "url": "https://support.prsguitars.com/hc/en-us/articles/4411782662939-About-PRS-Our-Mission-Statement", "provider": "other" }]
+    },
+    {
+      "id": "jackson", "type": "guitar_brand", "eraStart": 1980, "basis": "brand_formation",
+      "note": "Jackson traces its brand and first Rhoads design to 1980.",
+      "sources": [{ "label": "Jackson: brand history", "url": "https://blog.jacksonguitars.com/the-30th-anniversary-rr5fr-rhoads/", "provider": "other" }]
+    },
+    {
+      "id": "charvel", "type": "guitar_brand", "eraStart": 1978, "basis": "first_branded_guitars",
+      "note": "Charvel says the first guitars bearing its name were built after Grover Jackson bought the shop in late 1978; this is not the shop's founding year.",
+      "sources": [{ "label": "Charvel: brand history", "url": "https://charvel.com/support/", "provider": "other" }]
+    },
+    {
+      "id": "music-man", "type": "guitar_brand", "eraStart": 1972, "basis": "brand_formation",
+      "note": "Ernie Ball dates the founding of Music Man to 1972, not Wikidata's 1971.",
+      "sources": [{ "label": "Ernie Ball: Music Man history", "url": "https://www.ernieball.com/about", "provider": "other" }]
+    },
+    {
+      "id": "yamaha", "type": "guitar_brand", "eraStart": 1887, "basis": "brand_origin",
+      "note": "Yamaha dates the brand to its first organ in 1887; guitar production began later.",
+      "sources": [{ "label": "Yamaha: company history", "url": "https://www.yamaha.com/en/about/history/", "provider": "other" }]
+    },
+    {
+      "id": "taylor", "type": "guitar_brand", "eraStart": 1974, "basis": "brand_formation",
+      "note": "Taylor Guitars says Bob Taylor and Kurt Listug founded the company in 1974.",
+      "sources": [{ "label": "Taylor Guitars: about", "url": "https://www.taylorguitars.com/about", "provider": "other" }]
+    },
+    {
+      "id": "guild", "type": "guitar_brand", "eraStart": 1952, "basis": "company_formation",
+      "note": "Guild's hosted company history dates its start in New York to 1952; its FAQ dates guitar production to 1953.",
+      "sources": [
+        { "label": "Guild: company history", "url": "https://guildguitars.com/wp-content/uploads/2016/06/musictrades_july2016_guild_coverstory.pdf", "provider": "other" },
+        { "label": "Guild: production history", "url": "https://guildguitars.com/guild-support/faq/", "provider": "other" }
+      ]
+    },
+    {
+      "id": "fender-jaguar", "type": "guitar", "eraStart": 1962, "basis": "model_introduction",
+      "note": "Fender says the Jaguar was introduced in 1962.",
+      "sources": [{ "label": "Fender: Jaguar history", "url": "https://www.fender.com/articles/instruments/jaguar-controls-past-and-present-what-you-need-to-know", "provider": "other" }]
+    },
+    {
+      "id": "fender-jazzmaster", "type": "guitar", "eraStart": 1958, "basis": "model_introduction",
+      "note": "Fender says the Jazzmaster was introduced in 1958.",
+      "sources": [{ "label": "Fender: Jazzmaster history", "url": "https://www.fender.com/articles/instruments/demystifying-the-jazzmaster-controls", "provider": "other" }]
+    },
+    {
+      "id": "prs-custom-24", "type": "guitar", "eraStart": 1985, "basis": "model_introduction",
+      "note": "PRS identifies the Custom 24 as a guitar introduced in 1985.",
+      "sources": [{ "label": "PRS: Custom 24 history", "url": "https://eu.prsguitars.com/news/story/prs_guitars_se_custom_24_family_of_instruments", "provider": "other" }]
+    },
+    {
+      "id": "muddy-waters", "type": "guitarist", "eraStart": 1941, "basis": "first_documented_recording",
+      "note": "MusicBrainz dates Country Blues / I Be's Troubled to 1941, matching Wikidata's work-period start.",
+      "sources": [
+        { "label": "MusicBrainz: 1941 recording", "url": "https://musicbrainz.org/release-group/ad459d3b-f0a7-4ce7-a3bf-d21683e250f3", "provider": "musicbrainz" },
+        { "label": "Wikidata: work period start", "url": "https://www.wikidata.org/wiki/Q220707", "provider": "wikidata" }
+      ]
+    },
+    {
+      "id": "yngwie-malmsteen", "type": "guitarist", "eraStart": 1978, "basis": "first_documented_release",
+      "note": "MusicBrainz lists Yngwie Malmsteen's Powerhouse in 1978, matching Wikidata's work-period start.",
+      "sources": [
+        { "label": "MusicBrainz: 1978 release", "url": "https://musicbrainz.org/release-group/9926249c-72cc-45e8-845f-fd61f9fd1578", "provider": "musicbrainz" },
+        { "label": "Wikidata: work period start", "url": "https://www.wikidata.org/wiki/Q192260", "provider": "wikidata" }
+      ]
+    },
+    {
+      "id": "paco-de-lucia", "type": "guitarist", "eraStart": 1963, "basis": "first_documented_release",
+      "note": "MusicBrainz dates Los chiquitos de Algeciras to 1963, matching Wikidata's work-period start.",
+      "sources": [
+        { "label": "MusicBrainz: 1963 release", "url": "https://musicbrainz.org/release-group/22f62d7a-6e42-4039-a13b-bbda7a3617bc", "provider": "musicbrainz" },
+        { "label": "Wikidata: work period start", "url": "https://www.wikidata.org/wiki/Q153300", "provider": "wikidata" }
+      ]
+    }
+  ]
+}

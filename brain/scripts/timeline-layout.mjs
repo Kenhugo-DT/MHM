@@ -3,6 +3,8 @@ const LAST_DECADE = 2030;
 const START_X = -4800;
 const BODY_TOP = -1040;
 const ROW_GAP = 126;
+const MIN_NODE_GAP_X = 112;
+const MIN_NODE_GAP_Y = 112;
 
 function decadeWidth(year) {
   if (year < 1900) return 140;
@@ -13,6 +15,14 @@ function decadeWidth(year) {
 
 function validStartYear(value) {
   return Number.isInteger(value) && value >= 1400 && value <= 2100;
+}
+
+function stableFraction(value) {
+  let hash = 2166136261;
+  for (const character of value) {
+    hash = Math.imul(hash ^ character.charCodeAt(0), 16777619);
+  }
+  return (hash >>> 0) / 2 ** 32;
 }
 
 export function firstActiveYear(node, learningModel) {
@@ -51,6 +61,7 @@ export function buildTimelineLayout(nodes, learningModel) {
   }
 
   const items = [];
+  const occupied = [];
   let knownBottom = BODY_TOP;
   for (const marker of markers) {
     const entries = byDecade.get(marker.year) ?? [];
@@ -59,17 +70,27 @@ export function buildTimelineLayout(nodes, learningModel) {
       a.node.zone.localeCompare(b.node.zone) ||
       a.node.label.localeCompare(b.node.label, "en", { sensitivity: "base" }),
     );
-    const columns = Math.max(1, Math.floor((marker.width - 24) / 145));
-    const cellWidth = marker.width / columns;
-    entries.forEach(({ node, startYear }, index) => {
-      const row = Math.floor(index / columns);
-      const column = index % columns;
-      const y = BODY_TOP + row * ROW_GAP;
+    const height = Math.max(850, Math.ceil(entries.length / 3.5) * ROW_GAP);
+    entries.forEach(({ node, startYear }) => {
+      const x = marker.x + Math.max(18, (startYear - marker.year) * marker.width / 10);
+      const preferredY = BODY_TOP + Math.round(stableFraction(node.id) * height);
+      let y = preferredY;
+      for (let step = 0; ; step += 1) {
+        const candidate = preferredY + (step % 2 === 0 ? 1 : -1) * Math.ceil(step / 2) * ROW_GAP;
+        if (candidate < BODY_TOP) continue;
+        if (occupied.every((item) =>
+          Math.abs(item.x - x) >= MIN_NODE_GAP_X || Math.abs(item.y - candidate) >= MIN_NODE_GAP_Y
+        )) {
+          y = candidate;
+          break;
+        }
+      }
+      occupied.push({ x, y });
       items.push({
         node,
         startYear,
         decade: marker.year,
-        x: marker.x + (column + 0.5) * cellWidth,
+        x,
         y,
       });
       knownBottom = Math.max(knownBottom, y + ROW_GAP);

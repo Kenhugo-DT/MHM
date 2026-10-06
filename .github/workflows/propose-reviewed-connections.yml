@@ -1,0 +1,108 @@
+name: Propose reviewed connections
+
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: mhm-reviewed-connections
+  cancel-in-progress: false
+
+permissions:
+  actions: write
+  contents: write
+  pull-requests: write
+
+jobs:
+  propose:
+    runs-on: ubuntu-latest
+    env:
+      SUPABASE_URL: ${{ vars.SUPABASE_URL }}
+      SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: pending
+        name: Keep one connection review open at a time
+        run: |
+          count=$(gh pr list --state open --json headRefName \
+            --jq '[.[] | select(.headRefName | startswith("codex/brain-connections-"))] | length')
+          if [ "$count" -gt 0 ]; then
+            echo "open=true" >> "$GITHUB_OUTPUT"
+            echo "A connection review PR is already open." >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "open=false" >> "$GITHUB_OUTPUT"
+          fi
+      - uses: actions/setup-node@v4
+        if: steps.pending.outputs.open == 'false'
+        with:
+          node-version: 22
+          cache: npm
+      - uses: actions/setup-python@v5
+        if: steps.pending.outputs.open == 'false'
+        with:
+          python-version: "3.12"
+      - run: npm ci
+        if: steps.pending.outputs.open == 'false'
+      - run: pip install -r brain/pipeline/requirements.txt
+        if: steps.pending.outputs.open == 'false'
+      - name: Require a ready publication path
+        if: steps.pending.outputs.open == 'false'
+        env:
+          BRAIN_IMPORT_ENABLED: ${{ vars.BRAIN_IMPORT_ENABLED }}
+        run: |
+          if [ "$BRAIN_IMPORT_ENABLED" != "true" ]; then
+            echo "Set BRAIN_IMPORT_ENABLED=true only after the start-year SQL migration is applied." >&2
+            exit 1
+          fi
+          npm run brain:import:preflight
+      - id: stage
+        name: Stage only human-approved typed connections
+        if: steps.pending.outputs.open == 'false'
+        run: |
+          cp brain/data/approved/graph.json "$RUNNER_TEMP/before-graph.json"
+          cp brain/data/approved/promotions.json "$RUNNER_TEMP/before-promotions.json"
+          node brain/scripts/stage-approved-connections.mjs --apply > "$RUNNER_TEMP/stage.json"
+          cat "$RUNNER_TEMP/stage.json"
+          if [ "$(jq -r '.newEdges' "$RUNNER_TEMP/stage.json")" -gt 0 ]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No new approved connections were ready." >> "$GITHUB_STEP_SUMMARY"
+          fi
+      - name: Rebuild and validate the graph
+        if: steps.stage.outputs.changed == 'true'
+        run: |
+          node brain/scripts/migrate-graph-data.mjs --preserve-existing-layout
+          npm run brain:learn
+          npm run brain:organize
+          npm run brain:layouts
+          node brain/scripts/check-connection-batch.mjs "$RUNNER_TEMP/before-graph.json" "$RUNNER_TEMP/before-promotions.json"
+          npm run brain:audit
+          npm run brain:python-check
+          npm run brain:import:test
+          node brain/scripts/run-python.mjs -m unittest discover -s brain/pipeline/tests -p test_publish_connection_candidates.py
+          node brain/scripts/run-python.mjs -m unittest discover -s brain/pipeline/tests -p test_connection_promotion_isolation.py
+          node brain/scripts/run-python.mjs -m unittest discover -s brain/pipeline/tests -p test_finalize_connection_candidates.py
+          node brain/scripts/run-python.mjs -m unittest discover -s brain/pipeline/tests -p test_publish_reviewed_connection_batch.py
+          npm test
+          npm run check
+          npm run build
+          git diff --check
+      - name: Open draft for human review
+        if: steps.stage.outputs.changed == 'true'
+        run: |
+          branch="codex/brain-connections-${GITHUB_RUN_ID}"
+          git switch -c "$branch"
+          git add brain/data/approved/promotions.json brain/data/approved/graph.json \
+            brain/data/approved/layouts.json brain/data/approved/learning-model.json \
+            brain/data/approved/organization-model.json site/public/data/graph.json \
+            site/public/data/layouts.json
+          git -c user.name='github-actions[bot]' \
+            -c user.email='41898282+github-actions[bot]@users.noreply.github.com' \
+            commit -m 'Stage reviewed MusicBrainz connections'
+          git push origin "$branch"
+          gh pr create --draft --base main --head "$branch" \
+            --title 'Review documented music connections' \
+            --body-file brain/data/runs/connection-stage-report.md
+          gh workflow run validate.yml --ref "$branch"
+          cat brain/data/runs/connection-stage-report.md >> "$GITHUB_STEP_SUMMARY"

@@ -129,6 +129,8 @@ interface EntityRow {
   map_y: number;
   map_zone: string;
   starter: boolean;
+  era_start?: number | null;
+  era_start_evidence?: GraphNode["eraStartEvidence"] | null;
   image: GraphNode["image"] | null;
   sources: GraphNode["sources"] | null;
 }
@@ -145,10 +147,16 @@ interface RelationRow {
   sources: GraphEdge["sources"] | null;
 }
 
-const ENTITY_COLUMNS = "id,label,node_type,roles,summary,metadata,aliases,map_x,map_y,map_zone,starter,image,sources";
+const LEGACY_ENTITY_COLUMNS = "id,label,node_type,roles,summary,metadata,aliases,map_x,map_y,map_zone,starter,image,sources";
+const ENTITY_COLUMNS = `${LEGACY_ENTITY_COLUMNS},era_start,era_start_evidence`;
 const RELATION_COLUMNS = "id,source_id,target_id,relation_type,label,strength,context,year,sources";
 
-function mapNode(row: EntityRow): GraphNode {
+function missingEraColumns(error: { code?: string; message?: string }): boolean {
+  return (error.code === "42703" || error.code === "PGRST204" || error.code === "PGRST200") &&
+    /era_start/.test(error.message ?? "");
+}
+
+function mapNode(row: EntityRow, baseline?: GraphNode): GraphNode {
   return {
     id: row.id,
     label: row.label,
@@ -161,6 +169,10 @@ function mapNode(row: EntityRow): GraphNode {
     y: row.map_y,
     zone: row.map_zone,
     starter: row.starter,
+    eraStart: row.era_start ?? baseline?.eraStart,
+    eraStartEvidence: row.era_start_evidence ??
+      (row.era_start == null || row.era_start === baseline?.eraStart
+        ? baseline?.eraStartEvidence : undefined),
     image: row.image ?? undefined,
     sources: row.sources ?? [],
   };
@@ -183,6 +195,7 @@ function mapEdge(row: RelationRow): GraphEdge {
 class SupabaseGraphRepository implements GraphRepository {
   readonly source = "supabase" as const;
   private clientPromise?: Promise<SupabaseClient>;
+  private eraColumnsAvailable: boolean | undefined;
 
   constructor(
     private readonly url: string,
@@ -196,6 +209,24 @@ class SupabaseGraphRepository implements GraphRepository {
       );
     }
     return this.clientPromise;
+  }
+
+  private async entityPage(client: SupabaseClient, types: NodeType[], afterId: string | undefined, pageSize: number): Promise<EntityRow[]> {
+    const fetchPage = async (columns: string) => {
+      let query = client.from("entities").select(columns).in("node_type", types).order("id").limit(pageSize);
+      if (afterId) query = query.gt("id", afterId);
+      return query;
+    };
+    const tryEraColumns = this.eraColumnsAvailable !== false;
+    let result = await fetchPage(tryEraColumns ? ENTITY_COLUMNS : LEGACY_ENTITY_COLUMNS);
+    if (result.error && missingEraColumns(result.error)) {
+      this.eraColumnsAvailable = false;
+      result = await fetchPage(LEGACY_ENTITY_COLUMNS);
+    } else if (!result.error && tryEraColumns) {
+      this.eraColumnsAvailable = true;
+    }
+    if (result.error) throw result.error;
+    return (result.data ?? []) as unknown as EntityRow[];
   }
 
   async loadFacts(entityId: string): Promise<readonly EntityFact[]> {
@@ -226,11 +257,7 @@ class SupabaseGraphRepository implements GraphRepository {
     const client = await this.client();
     const [entities, relations, layouts, baseline] = await Promise.all([
       loadAllRows<EntityRow>(async (afterId, pageSize) => {
-        let query = client.from("entities").select(ENTITY_COLUMNS).in("node_type", types).order("id").limit(pageSize);
-        if (afterId) query = query.gt("id", afterId);
-        const { data, error } = await query;
-        if (error) throw error;
-        return (data ?? []) as EntityRow[];
+        return this.entityPage(client, types, afterId, pageSize);
       }),
       loadAllRows<RelationRow>(async (afterId, pageSize) => {
         let query = client.from("relations").select(RELATION_COLUMNS).order("id").limit(pageSize);
@@ -242,7 +269,8 @@ class SupabaseGraphRepository implements GraphRepository {
       loadLocalLayouts(),
       loadLocalDataset(),
     ]);
-    const nodes = entities.map(mapNode);
+    const baselineNodes = new Map(baseline.nodes.map((node) => [node.id, node]));
+    const nodes = entities.map((row) => mapNode(row, baselineNodes.get(row.id)));
     const ids = new Set(nodes.map((node) => node.id));
     const graph = filterExcludedEntities({
       nodes,
@@ -257,29 +285,31 @@ class SupabaseGraphRepository implements GraphRepository {
   }
 
   async loadNeighborhood(nodeId: string): Promise<GraphNeighborhood> {
-    const client = await this.client();
+    const [client, baseline] = await Promise.all([this.client(), loadLocalDataset()]);
     const { data, error } = await client.rpc("graph_neighborhood", {
       center_id: nodeId,
       neighbor_limit: 80,
     });
     if (error) throw error;
     const payload = data as { nodes: EntityRow[]; edges: RelationRow[] };
+    const baselineNodes = new Map(baseline.nodes.map((node) => [node.id, node]));
     return filterExcludedEntities({
       centerId: nodeId,
-      nodes: payload.nodes.map(mapNode),
+      nodes: payload.nodes.map((row) => mapNode(row, baselineNodes.get(row.id))),
       edges: payload.edges.map(mapEdge),
     });
   }
 
   async search(query: string, limit = 12): Promise<GraphNode[]> {
-    const client = await this.client();
+    const [client, baseline] = await Promise.all([this.client(), loadLocalDataset()]);
     const { data, error } = await client
       .from("entities")
       .select("*")
       .ilike("search_text", `%${query.trim()}%`)
       .limit(limit);
     if (error) throw error;
-    return (data as EntityRow[]).map(mapNode).filter(isIncludedNode);
+    const baselineNodes = new Map(baseline.nodes.map((node) => [node.id, node]));
+    return (data as EntityRow[]).map((row) => mapNode(row, baselineNodes.get(row.id))).filter(isIncludedNode);
   }
 }
 

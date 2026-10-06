@@ -20,6 +20,14 @@ load_dotenv(Path(__file__).with_name(".env"))
 
 
 def entity_row(node: dict[str, Any]) -> dict[str, Any]:
+    era_start = node.get("eraStart")
+    evidence = node.get("eraStartEvidence")
+    if era_start is not None and (type(era_start) is not int or not 1400 <= era_start <= 2100):
+        raise ValueError(f"Invalid eraStart for {node['id']}")
+    if evidence is not None and era_start is None:
+        raise ValueError(f"Start-year evidence without eraStart for {node['id']}")
+    if evidence is not None and not isinstance(evidence, dict):
+        raise ValueError(f"Invalid eraStartEvidence for {node['id']}")
     return {
         "id": node["id"],
         "label": node["label"],
@@ -32,6 +40,8 @@ def entity_row(node: dict[str, Any]) -> dict[str, Any]:
         "map_y": node.get("y", 0),
         "map_zone": node.get("zone", "unplaced"),
         "starter": node.get("starter", False),
+        "era_start": era_start,
+        "era_start_evidence": evidence,
         "image": node.get("image"),
         "sources": node.get("sources", []),
     }
@@ -87,7 +97,19 @@ def main() -> None:
         raise SystemExit("SUPABASE_URL and SUPABASE_SECRET_KEY are required.")
 
     graph = json.loads(args.graph.read_text(encoding="utf-8"))
-    import_graph(create_client(url, secret_key), graph)
+    client = create_client(url, secret_key)
+    try:
+        client.table("entities").select("id,era_start,era_start_evidence").limit(1).execute()
+    except Exception as exc:
+        if getattr(exc, "code", None) == "42703" or (
+            "era_start" in str(exc) and "does not exist" in str(exc)
+        ):
+            raise SystemExit(
+                "Import stopped before writing rows. Apply "
+                "brain/supabase/migrations/0006_entity_start_year.sql first."
+            ) from exc
+        raise
+    import_graph(client, graph)
 
 
 if __name__ == "__main__":

@@ -22,6 +22,7 @@ const browserOutputPath = path.join(repoRoot, "site", "public", "data", "graph.j
 const approvedOutputPath = path.join(brainRoot, "data", "approved", "graph.json");
 const promotionsPath = path.join(brainRoot, "data", "approved", "promotions.json");
 const obsidianOverridesPath = path.join(brainRoot, "data", "approved", "obsidian-overrides.json");
+const curatedStartYearsPath = path.join(brainRoot, "data", "curated-start-years.json");
 const learningModelPath = path.join(brainRoot, "data", "approved", "learning-model.json");
 const blockedEntitiesPath = path.join(repoRoot, "shared", "graph-schema", "blocked-entities.json");
 const preserveExistingLayout = process.argv.includes("--preserve-existing-layout");
@@ -383,8 +384,33 @@ for (const correction of earlyEraCorrections) {
   const node = nodes.find((candidate) => candidate.id === correction.id);
   if (!node) throw new Error(`Early-era correction target missing: ${correction.id}`);
   node.eraStart = correction.eraStart;
+  node.eraStartEvidence = {
+    basis: "documented_milestone",
+    note: correction.why,
+    sources: [correction.reference],
+  };
   if (!node.sources.some((item) => item.url === correction.reference.url)) {
     node.sources.push(correction.reference);
+  }
+}
+if (fs.existsSync(curatedStartYearsPath)) {
+  const corrections = JSON.parse(fs.readFileSync(curatedStartYearsPath, "utf8")).nodes;
+  for (const correction of corrections) {
+    const node = nodes.find((candidate) => candidate.id === correction.id);
+    const expectedType = correction.type ?? "band";
+    if (!node || node.type !== expectedType) throw new Error(`Invalid start-year target: ${correction.id}`);
+    if (Number.isFinite(node.eraStart) && node.eraStart !== correction.eraStart) {
+      throw new Error(`Conflicting start year for ${correction.id}`);
+    }
+    node.eraStart = correction.eraStart;
+    node.eraStartEvidence = {
+      basis: correction.basis,
+      note: correction.note,
+      sources: correction.sources,
+    };
+    for (const source of correction.sources) {
+      if (!node.sources.some((item) => item.url === source.url)) node.sources.push(source);
+    }
   }
 }
 organizeGraphLayout(nodes, edges, loadLearningModel());

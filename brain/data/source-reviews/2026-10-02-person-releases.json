@@ -1,0 +1,852 @@
+{
+  "generatedAt": "2026-10-02T07:08:08.937Z",
+  "results": {
+    "chuck-berry": {
+      "catalogCount": 299,
+      "complete": true,
+      "first": {
+        "title": "Maybellene / Wee Wee Hours",
+        "date": "1955",
+        "year": 1955,
+        "type": "Single",
+        "sourceUrl": "https://musicbrainz.org/release-group/f1a6fb8e-f3d1-4f13-bf2c-240e660d4a90"
+      }
+    },
+    "elvis-presley": {
+      "catalogCount": 1193,
+      "complete": false,
+      "first": {
+        "title": "Elvis Presley",
+        "date": "1956-03-13",
+        "year": 1956,
+        "type": "Album",
+        "sourceUrl": "https://musicbrainz.org/release-group/2ebeec96-6ef7-3d4d-943c-0b4a2af1d7cc"
+      }
+    },
+    "jimi-hendrix": {
+      "catalogCount": 276,
+      "complete": true,
+      "first": {
+        "title": "Strange Things",
+        "date": "1968",
+        "year": 1968,
+        "type": "Album",
+        "sourceUrl": "https://musicbrainz.org/release-group/50955100-d3eb-4eff-a177-991f85fa9d0d"
+      }
+    },
+    "stevie-ray-vaughan": {
+      "catalogCount": 33,
+      "complete": true,
+      "first": {
+        "title": "Pipeline",
+        "date": "1987",
+        "year": 1987,
+        "type": "Single",
+        "sourceUrl": "https://musicbrainz.org/release-group/3afefe6a-9628-4b7c-a675-c9a1ed083d32"
+      }
+    },
+    "eric-clapton": {
+      "catalogCount": 244,
+      "complete": true,
+      "first": {
+        "title": "Lonely Years / Bernard Jenkins",
+        "date": "1966-08",
+        "year": 1966,
+        "type": "Single",
+        "sourceUrl": "https://musicbrainz.org/release-group/0ffdc001-5aa4-3622-ac52-69c425294195"
+      }
+    },
+    "david-gilmour": {
+      "catalogCount": 45,
+      "complete": true,
+      "first": {
+        "title": "There’s No Way Out of There / Deafinitely",
+        "date": "1978",
+        "year": 1978,
+        "type": "Single",
+        "sourceUrl": "https://musicbrainz.org/release-group/67fd9a47-e6a3-4ce0-b86c-45c52ce6a6c9"
+      }
+    },
+    "mark-knopfler": {
+      "catalogCount": 93,
+      "complete": true,
+      "first": {
+        "title": "Local Hero",
+        "date": "1983",
+        "year": 1983,
+        "type": "Album",
+        "sourceUrl": "https://musicbrainz.org/release-group/11571abc-a9a9-38d7-b6e9-5cad850ceada"
+      }
+    },
+    "eddie-van-halen": {
+      "catalogCount": 0,
+      "complete": true,
+      "first": null
+    },
+    "frank-zappa": {
+      "catalogCount": 221,
+      "complete": true,
+      "first": {
+        "title": "The World’s Greatest Sinner",
+        "date": "1962",
+        "year": 1962,
+        "type": "Single",
+        "sourceUrl": "https://musicbrainz.org/release-group/58ad7a69-65c8-4556-980a-85c4edab35b4"
+      }
+    },
+    "johnny-marr": {
+      "catalogCount": 28,
+      "complete": true,
+      "first": {
+        "title": "Life Is Sweet (Todd Margaret Theme)",
+        "date": "2010",
+        "year": 2010,
+        "type": "Single",
+        "sourceUrl": "https://musicbrainz.org/release-group/680c7f43-b253-485b-8ac4-3237c5db4f0c"
+      }
+    },
+    "randy-rhoads": {
+      "catalogCount": 1,
+      "complete": true,
+      "first": null
+    },
+    "tony-iommi": {
+      "catalogCount": 11,
+      "complete": true,
+      "first": {
+        "title": "Seventh Star",
+        "date": "1986-01-28",
+        "year": 1986,
+        "type": "Album",
+        "sourceUrl": "https://musicbrainz.org/release-group/9ff01b54-79d5-343b-9a52-242e5627d652"
+      }
+    },
+    "jimmy-page": {
+      "catalogCount": 37,
+      "complete": true,
+      "first": {
+        "title": "She Just Satisfies",
+        "date": "1965-02",
+        "year": 1965,
+        "type": "Single",
+        "sourceUrl": "https://musicbrainz.org/release-group/f83ca3df-204f-4f4d-a31e-9e8bba90a92b"
+      }
+    },
+    "george-harrison": {
+      "catalogCount": 55,
+      "complete": true,
+      "first": {
+        "title": "Wonderwall Music",
+        "date": "1968-11-01",
+        "year": 1968,
+        "type": "Album",
+        "sourceUrl": "https://musicbrainz.org/release-group/b269b6f2-2244-3401-b093-9ea7ab7274b3"
+      }
+    },
+    "johnny-cash": {
+      "catalogCount": 750,
+      "complete": true,
+      "first": {
+        "title": "Hey, Porter! / Cry! Cry! Cry!",
+        "date": "1955",
+        "year": 1955,
+        "type": "Single",
+        "sourceUrl": "https://musicbrainz.org/release-group/59afa584-8147-4ad1-b94a-62e2f6b161d5"
+      }
+    },
+    "willie-nelson": {
+      "catalogCount": 467,
+      "complete": true,
+      "first": {
+        "title": "Nite Life",
+        "date": "1960",
+        "year": 1960,
+        "type": "Single",
+        "sourceUrl": "https://musicbrainz.org/release-group/3ec4eddf-5b28-42b8-8754-6ee30c249785"
+      }
+    },
+    "chet-atkins": {
+      "catalogCount": 185,
+      "complete": true,
+      "first": {
+        "title": "Stringin’ Along with Chet",
+        "date": "1953",
+        "year": 1953,
+        "type": "Album",
+        "sourceUrl": "https://musicbrainz.org/release-group/19c6280c-acdd-3dfc-b19e-326202c9b74f"
+      }
+    },
+    "john-mayer": {
+      "catalogCount": 53,
+      "complete": true,
+      "first": {
+        "title": "Inside Wants Out",
+        "date": "1999-09-24",
+        "year": 1999,
+        "type": "EP",
+        "sourceUrl": "https://musicbrainz.org/release-group/3986e2cc-edac-3148-b92d-55660a448203"
+      }
+    },
+    "oystein-sunde": {
+      "catalogCount": 23,
+      "complete": true,
+      "first": {
+        "title": "1001 fnatt",
+        "date": "1970",
+        "year": 1970,
+        "type": "Album",
+        "sourceUrl": "https://musicbrainz.org/release-group/0dc579c9-1255-3746-bf6d-bd6c9d7162eb"
+      }
+    },
+    "james-hetfield": {
+      "catalogCount": 1,
+      "complete": true,
+      "first": {
+        "title": "One",
+        "date": "2024-05-17",
+        "year": 2024,
+        "type": "Single",
+        "sourceUrl": "https://musicbrainz.org/release-group/fed52625-d0ca-4796-8656-cdfc6f415bb2"
+      }
+    },
+    "muddy-waters": {
+      "catalogCount": 309,
+      "complete": true,
+      "first": {
+        "title": "Country Blues / I Be's Troubled",
+        "date": "1941",
+        "year": 1941,
+        "type": "Single",
+        "sourceUrl": "https://musicbrainz.org/release-group/ad459d3b-f0a7-4ce7-a3bf-d21683e250f3"
+      }
+    },
+    "sister-rosetta-tharpe": {
+      "catalogCount": 152,
+      "complete": true,
+      "first": {
+        "title": "Rock Me / Lonesome Road",
+        "date": "1938",
+        "year": 1938,
+        "type": "Single",
+        "sourceUrl": "https://musicbrainz.org/release-group/3d2f0ef1-63d4-4260-8550-b9790a24b102"
+      }
+    },
+    "buddy-guy": {
+      "catalogCount": 111,
+      "complete": true,
+      "first": {
+        "title": "I Got My Eyes on You / First Time I Met the Blues",
+        "date": "1960",
+        "year": 1960,
+        "type": "Single",
+        "sourceUrl": "https://musicbrainz.org/release-group/ed3dc431-f890-4788-a4a5-8ce3a6e7332f"
+      }
+    },
+    "albert-king": {
+      "catalogCount": 102,
+      "complete": true,
+      "first": {
+        "title": "The Big Blues",
+        "date": "1962",
+        "year": 1962,
+        "type": "Album",
+        "sourceUrl": "https://musicbrainz.org/release-group/62cc8243-09a3-3b64-872f-7687317a6ae6"
+      }
+    },
+    "freddie-king": {
+      "catalogCount": 72,
+      "complete": true,
+      "first": {
+        "title": "Country Boy / That's What You Think",
+        "date": "1956",
+        "year": 1956,
+        "type": "Single",
+        "sourceUrl": "https://musicbrainz.org/release-group/6a06f3e8-506a-4316-a076-2927f4b84b3e"
+      }
+    },
+    "duane-allman": {
+      "catalogCount": 6,
+      "complete": true,
+      "first": {
+        "title": "Duane & Greg Allman",
+        "date": "1972-05",
+        "year": 1972,
+        "type": "Album",
+        "sourceUrl": "https://musicbrainz.org/release-group/b7fdb233-c97b-3d58-8781-b908f4f17421"
+      }
+    },
+    "dickey-betts": {
+      "catalogCount": 3,
+      "complete": true,
+      "first": {
+        "title": "Highway Call",
+        "date": "1974-11",
+        "year": 1974,
+        "type": "Album",
+        "sourceUrl": "https://musicbrainz.org/release-group/4c71b0ad-b2d0-3416-896a-2416bf4b43c3"
+      }
+    },
+    "derek-trucks": {
+      "catalogCount": 1,
+      "complete": true,
+      "first": {
+        "title": "At Last",
+        "date": "2026-03-27",
+        "year": 2026,
+        "type": "Single",
+        "sourceUrl": "https://musicbrainz.org/release-group/251ff926-ca3a-4a5e-b17d-ed71af6985cb"
+      }
+    },
+    "peter-green": {
+      "catalogCount": 36,
+      "complete": true,
+      "first": {
+        "title": "The End of the Game",
+        "date": "1970-11-20",
+        "year": 1970,
+        "type": "Album",
+        "sourceUrl": "https://musicbrainz.org/release-group/07cca93d-8b4e-3284-a047-f22dd2591fb0"
+      }
+    },
+    "lindsey-buckingham": {
+      "catalogCount": 37,
+      "complete": true,
+      "first": {
+        "title": "Law and Order",
+        "date": "1981-10-03",
+        "year": 1981,
+        "type": "Album",
+        "sourceUrl": "https://musicbrainz.org/release-group/8dd01fb5-a63c-3e8c-91ec-11f18f236d5c"
+      }
+    },
+    "keith-richards": {
+      "catalogCount": 14,
+      "complete": true,
+      "first": {
+        "title": "Run Rudolph Run",
+        "date": "1978-12",
+        "year": 1978,
+        "type": "Single",
+        "sourceUrl": "https://musicbrainz.org/release-group/0d09fe3e-c913-44eb-a24e-10706eb59604"
+      }
+    },
+    "jeff-beck": {
+      "catalogCount": 61,
+      "complete": true,
+      "first": {
+        "title": "Tallyman / Rock My Plimsoul",
+        "date": "1967",
+        "year": 1967,
+        "type": "Single",
+        "sourceUrl": "https://musicbrainz.org/release-group/0f6afd4f-c3e6-3019-894b-32d4a0559839"
+      }
+    },
+    "pete-townshend": {
+      "catalogCount": 73,
+      "complete": true,
+      "first": {
+        "title": "Happy Birthday",
+        "date": "1970",
+        "year": 1970,
+        "type": "Album",
+        "sourceUrl": "https://musicbrainz.org/release-group/2dce3365-71ca-3485-aad6-fb81a7460b1c"
+      }
+    },
+    "brian-may": {
+      "catalogCount": 39,
+      "complete": true,
+      "first": {
+        "title": "Star Fleet",
+        "date": "1983-10-24",
+        "year": 1983,
+        "type": "Single",
+        "sourceUrl": "https://musicbrainz.org/release-group/9f0fcd57-df15-4172-9911-af304f1bf0bb"
+      }
+    },
+    "ritchie-blackmore": {
+      "catalogCount": 9,
+      "complete": true,
+      "first": {
+        "title": "The Thrill Is Gone",
+        "date": "2020-08-27",
+        "year": 2020,
+        "type": "Single",
+        "sourceUrl": "https://musicbrainz.org/release-group/68c6eabb-b251-48ed-b453-ceceb34195eb"
+      }
+    },
+    "brian-setzer": {
+      "catalogCount": 18,
+      "complete": true,
+      "first": {
+        "title": "The Knife Feels Like Justice",
+        "date": "1986",
+        "year": 1986,
+        "type": "Album",
+        "sourceUrl": "https://musicbrainz.org/release-group/9de74850-62bc-3625-91c3-0d5244f66da9"
+      }
+    },
+    "dick-dale": {
+      "catalogCount": 21,
+      "complete": true,
+      "first": {
+        "title": "St. Louis Blues / Jessie Pearl",
+        "date": "1960",
+        "year": 1960,
+        "type": "Single",
+        "sourceUrl": "https://musicbrainz.org/release-group/c09c5769-fa93-4b4d-96bf-c0004c50f9d0"
+      }
+    },
+    "carlos-santana": {
+      "catalogCount": 41,
+      "complete": true,
+      "first": {
+        "title": "Love Devotion Surrender",
+        "date": "1973-07-20",
+        "year": 1973,
+        "type": "Album",
+        "sourceUrl": "https://musicbrainz.org/release-group/0fce256f-84be-372a-b094-109b07c65208"
+      }
+    },
+    "steve-vai": {
+      "catalogCount": 58,
+      "complete": true,
+      "first": {
+        "title": "Flex‐Able",
+        "date": "1984",
+        "year": 1984,
+        "type": "Album",
+        "sourceUrl": "https://musicbrainz.org/release-group/6c23c663-aeec-3a02-984b-f5b3e904da80"
+      }
+    },
+    "joe-satriani": {
+      "catalogCount": 61,
+      "complete": true,
+      "first": {
+        "title": "Joe Satriani",
+        "date": "1984",
+        "year": 1984,
+        "type": "EP",
+        "sourceUrl": "https://musicbrainz.org/release-group/f4c499aa-3368-4945-8025-9f5953e214bf"
+      }
+    },
+    "yngwie-malmsteen": {
+      "catalogCount": 37,
+      "complete": true,
+      "first": {
+        "title": "Yngwie Malmsteen's Powerhouse",
+        "date": "1978",
+        "year": 1978,
+        "type": "Album",
+        "sourceUrl": "https://musicbrainz.org/release-group/9926249c-72cc-45e8-845f-fd61f9fd1578"
+      }
+    },
+    "slash": {
+      "catalogCount": 44,
+      "complete": true,
+      "first": {
+        "title": "Magic Carpet Ride",
+        "date": "1993-09-25",
+        "year": 1993,
+        "type": "Single",
+        "sourceUrl": "https://musicbrainz.org/release-group/bac29b38-f2da-4a25-801e-91336820c9bd"
+      }
+    },
+    "angus-young": {
+      "catalogCount": 0,
+      "complete": true,
+      "first": null
+    },
+    "malcolm-young": {
+      "catalogCount": 0,
+      "complete": true,
+      "first": null
+    },
+    "dave-mustaine": {
+      "catalogCount": 1,
+      "complete": true,
+      "first": {
+        "title": "Wake Up Dead",
+        "date": "2022-04-01",
+        "year": 2022,
+        "type": "Single",
+        "sourceUrl": "https://musicbrainz.org/release-group/778244b4-5527-413c-937c-76bcf59d5ef7"
+      }
+    },
+    "dimebag-darrell": {
+      "catalogCount": 1,
+      "complete": true,
+      "first": {
+        "title": "The Hitz",
+        "date": "2017-11-24",
+        "year": 2017,
+        "type": "EP",
+        "sourceUrl": "https://musicbrainz.org/release-group/dce23fe4-87ac-4ce2-9c01-0b4058203609"
+      }
+    },
+    "zakk-wylde": {
+      "catalogCount": 14,
+      "complete": true,
+      "first": {
+        "title": "Book of Shadows",
+        "date": "1996-06-19",
+        "year": 1996,
+        "type": "Album",
+        "sourceUrl": "https://musicbrainz.org/release-group/3e6afcf0-2629-35b9-a088-25ceb357f8bb"
+      }
+    },
+    "wes-montgomery": {
+      "catalogCount": 109,
+      "complete": true,
+      "first": {
+        "title": "Cannonball Adderley and the Poll-Winners",
+        "date": "1960",
+        "year": 1960,
+        "type": "Album",
+        "sourceUrl": "https://musicbrainz.org/release-group/0c1eaa4a-d660-3621-92b8-5957fa19700f"
+      }
+    },
+    "joe-pass": {
+      "catalogCount": 104,
+      "complete": true,
+      "first": {
+        "title": "Brasamba!",
+        "date": "1962",
+        "year": 1962,
+        "type": "Album",
+        "sourceUrl": "https://musicbrainz.org/release-group/55a510ea-d97a-42ad-a1e5-d80bebefaaf7"
+      }
+    },
+    "django-reinhardt": {
+      "catalogCount": 465,
+      "complete": true,
+      "first": {
+        "title": "Blue Drag / Swanee River",
+        "date": "1935",
+        "year": 1935,
+        "type": "Single",
+        "sourceUrl": "https://musicbrainz.org/release-group/09a78cd3-3198-41ef-bc87-290dfa5baa74"
+      }
+    },
+    "paco-de-lucia": {
+      "catalogCount": 105,
+      "complete": true,
+      "first": {
+        "title": "Los chiquitos de Algeciras",
+        "date": "1963",
+        "year": 1963,
+        "type": "Album",
+        "sourceUrl": "https://musicbrainz.org/release-group/22f62d7a-6e42-4039-a13b-bbda7a3617bc"
+      }
+    },
+    "john-mclaughlin": {
+      "catalogCount": 62,
+      "complete": true,
+      "first": {
+        "title": "Extrapolation",
+        "date": "1969",
+        "year": 1969,
+        "type": "Album",
+        "sourceUrl": "https://musicbrainz.org/release-group/163b5e69-eb8c-3b7f-9fe3-19445396be52"
+      }
+    },
+    "robert-fripp": {
+      "catalogCount": 80,
+      "complete": true,
+      "first": {
+        "title": "Exposure",
+        "date": "1979-06",
+        "year": 1979,
+        "type": "Album",
+        "sourceUrl": "https://musicbrainz.org/release-group/3c0028e7-972c-3b66-a14a-8837c0bce488"
+      }
+    },
+    "alex-lifeson": {
+      "catalogCount": 3,
+      "complete": true,
+      "first": {
+        "title": "Victor",
+        "date": "1996-01-09",
+        "year": 1996,
+        "type": "Album",
+        "sourceUrl": "https://musicbrainz.org/release-group/003256ec-e72a-346a-b37d-19c052436dab"
+      }
+    },
+    "the-edge": {
+      "catalogCount": 5,
+      "complete": true,
+      "first": {
+        "title": "Snake Charmer",
+        "date": "1983",
+        "year": 1983,
+        "type": "EP",
+        "sourceUrl": "https://musicbrainz.org/release-group/637ca1d7-92b7-3d65-a609-4410d7a18247"
+      }
+    },
+    "jonny-greenwood": {
+      "catalogCount": 22,
+      "complete": true,
+      "first": {
+        "title": "Bodysong",
+        "date": "2003-10-27",
+        "year": 2003,
+        "type": "Album",
+        "sourceUrl": "https://musicbrainz.org/release-group/3abadc88-117f-37d6-bd1c-9656a62b8a60"
+      }
+    },
+    "george-lynch": {
+      "catalogCount": 16,
+      "complete": true,
+      "first": {
+        "title": "Sacred Groove",
+        "date": "1993-09-10",
+        "year": 1993,
+        "type": "Album",
+        "sourceUrl": "https://musicbrainz.org/release-group/15a47d03-ce3a-31de-87b3-d080b1643b66"
+      }
+    },
+    "andy-taylor": {
+      "catalogCount": 9,
+      "complete": true,
+      "first": {
+        "title": "Take It Easy",
+        "date": "1986",
+        "year": 1986,
+        "type": "Single",
+        "sourceUrl": "https://musicbrainz.org/release-group/30f13c84-d2aa-4da9-bf92-1f7db5c46cde"
+      }
+    },
+    "brian-baker": {
+      "catalogCount": 1,
+      "complete": true,
+      "first": {
+        "title": "THE FIGHT OF OUR LIVES",
+        "date": "2022-08-10",
+        "year": 2022,
+        "type": "Single",
+        "sourceUrl": "https://musicbrainz.org/release-group/7cdc8c07-814d-4eae-8a17-aab9496dbe34"
+      }
+    },
+    "andy-bell": {
+      "catalogCount": 15,
+      "complete": true,
+      "first": {
+        "title": "Plastic Bag",
+        "date": "2019",
+        "year": 2019,
+        "type": "Single",
+        "sourceUrl": "https://musicbrainz.org/release-group/11f65f66-f68e-4fcd-a088-39a254ed1493"
+      }
+    },
+    "magnus-karlsson": {
+      "catalogCount": 0,
+      "complete": true,
+      "first": null
+    },
+    "mark-cross": {
+      "catalogCount": 0,
+      "complete": true,
+      "first": null
+    },
+    "jack-frost": {
+      "catalogCount": 2,
+      "complete": true,
+      "first": {
+        "title": "Raise Your Fist to Metal",
+        "date": "2003-01",
+        "year": 2003,
+        "type": "Album",
+        "sourceUrl": "https://musicbrainz.org/release-group/01e074ef-2a37-494b-a563-2a9873cd415c"
+      }
+    },
+    "midnight": {
+      "catalogCount": 6,
+      "complete": true,
+      "first": {
+        "title": "Songs From The Attic",
+        "date": "2000",
+        "year": 2000,
+        "type": "Album",
+        "sourceUrl": "https://musicbrainz.org/release-group/85061d5d-d99d-43d2-ae4f-dc0db9df21db"
+      }
+    },
+    "joe-perry": {
+      "catalogCount": 7,
+      "complete": true,
+      "first": {
+        "title": "Shakin' My Cage",
+        "date": "2005-04-05",
+        "year": 2005,
+        "type": "Single",
+        "sourceUrl": "https://musicbrainz.org/release-group/9d441009-2d7a-4e8b-b63f-75613b36f563"
+      }
+    },
+    "craig-jones": {
+      "catalogCount": 0,
+      "complete": true,
+      "first": null
+    },
+    "eddie-martinez": {
+      "catalogCount": 0,
+      "complete": true,
+      "first": null
+    },
+    "bruce-hall": {
+      "catalogCount": 0,
+      "complete": true,
+      "first": null
+    },
+    "bill-stevenson": {
+      "catalogCount": 0,
+      "complete": true,
+      "first": null
+    },
+    "bruce-thomas": {
+      "catalogCount": 0,
+      "complete": true,
+      "first": null
+    },
+    "adrian-smith": {
+      "catalogCount": 0,
+      "complete": true,
+      "first": null
+    },
+    "george-clinton": {
+      "catalogCount": 44,
+      "complete": true,
+      "first": {
+        "title": "Loopzilla",
+        "date": "1982",
+        "year": 1982,
+        "type": "Single",
+        "sourceUrl": "https://musicbrainz.org/release-group/1a4e8d0e-35e0-4a17-84ce-9fdcdc9958cc"
+      }
+    },
+    "babyface": {
+      "catalogCount": 46,
+      "complete": true,
+      "first": {
+        "title": "Lovers",
+        "date": "1986",
+        "year": 1986,
+        "type": "Album",
+        "sourceUrl": "https://musicbrainz.org/release-group/f6bff7bf-4c6c-4e2a-9ba4-e062e22642bd"
+      }
+    },
+    "glenn-hughes": {
+      "catalogCount": 44,
+      "complete": true,
+      "first": {
+        "title": "Play Me Out",
+        "date": "1977",
+        "year": 1977,
+        "type": "Album",
+        "sourceUrl": "https://musicbrainz.org/release-group/e314ddb4-5f49-3c1b-9b01-205a34979854"
+      }
+    },
+    "arthur-brown": {
+      "catalogCount": 17,
+      "complete": true,
+      "first": {
+        "title": "Dance with Arthur Brown",
+        "date": "1974",
+        "year": 1974,
+        "type": "Album",
+        "sourceUrl": "https://musicbrainz.org/release-group/359f1dd5-d7fa-38e8-82e9-25c6c81e8c20"
+      }
+    },
+    "dennis-hayes": {
+      "catalogCount": 0,
+      "complete": true,
+      "first": null
+    },
+    "chi-cheng": {
+      "catalogCount": 1,
+      "complete": true,
+      "first": {
+        "title": "The Head Up project",
+        "date": "2020-12-31",
+        "year": 2020,
+        "type": "Album",
+        "sourceUrl": "https://musicbrainz.org/release-group/6150750f-df66-4586-986d-3ca16628cbc7"
+      }
+    },
+    "david-rosenthal": {
+      "catalogCount": 0,
+      "complete": true,
+      "first": null
+    },
+    "dennis-ward": {
+      "catalogCount": 0,
+      "complete": true,
+      "first": null
+    },
+    "courtney-cox": {
+      "catalogCount": 0,
+      "complete": true,
+      "first": null
+    },
+    "phil-campbell": {
+      "catalogCount": 3,
+      "complete": true,
+      "first": {
+        "title": "Old Lions Still Roar",
+        "date": "2019-10-25",
+        "year": 2019,
+        "type": "Album",
+        "sourceUrl": "https://musicbrainz.org/release-group/49b6632b-1a19-4501-9515-72867b9e6816"
+      }
+    },
+    "jeff-duncan": {
+      "catalogCount": 0,
+      "complete": true,
+      "first": null
+    },
+    "jeff-martin": {
+      "catalogCount": 0,
+      "complete": true,
+      "first": null
+    },
+    "kevin-gilbert": {
+      "catalogCount": 19,
+      "complete": true,
+      "first": {
+        "title": "Thud",
+        "date": "1995-03-21",
+        "year": 1995,
+        "type": "Album",
+        "sourceUrl": "https://musicbrainz.org/release-group/eb75f8b0-870a-3c89-9162-d512ed7bb190"
+      }
+    },
+    "adam-hamilton": {
+      "catalogCount": 0,
+      "complete": true,
+      "first": null
+    },
+    "billy-davis": {
+      "catalogCount": 0,
+      "complete": true,
+      "first": null
+    },
+    "billy-williamson": {
+      "catalogCount": 0,
+      "complete": true,
+      "first": null
+    },
+    "chris-holmes": {
+      "catalogCount": 4,
+      "complete": true,
+      "first": {
+        "title": "Nothing To Lose",
+        "date": "2012",
+        "year": 2012,
+        "type": "Album",
+        "sourceUrl": "https://musicbrainz.org/release-group/748a0331-69d0-4868-95c0-140b6ab6bfae"
+      }
+    },
+    "alan-wilson": {
+      "catalogCount": 2,
+      "complete": true,
+      "first": null
+    }
+  }
+}
