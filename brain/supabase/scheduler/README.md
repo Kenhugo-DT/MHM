@@ -12,6 +12,18 @@ The scout code already works locally and through manual GitHub workflow runs.
 The weak point is GitHub's scheduled trigger. Moving the clock to Supabase gives
 us one place to monitor the schedule next to the private brain tables.
 
+If `agent_scheduler_log.reason` says `Already triggered for this UTC date.`,
+the database has run an older scheduler that marked a day complete before
+checking GitHub's HTTP response. If `cron.job_run_details.return_message`
+reports `column reference "due_date" is ambiguous`, the newer scheduler was
+installed with an ambiguous PL/pgSQL variable name and its Cron job cannot
+finish. Run `brain/supabase/scheduler/upgrade-response-aware.sql` in Supabase
+SQL Editor for either case. This upgrade leaves the existing Vault token and
+Cron job untouched. Do not rerun the initial setup SQL with its token
+placeholder to perform this upgrade.
+It also records confirmed dispatches in durable scheduler state, so an expired
+`pg_net` response cannot cause another dispatch later on the same day.
+
 ## Setup
 
 1. Create a fine-grained GitHub token:
