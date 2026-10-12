@@ -57,8 +57,12 @@ create index if not exists agent_trigger_log_due_date_idx
 create table if not exists mhm_private.agent_scheduler_state (
   schedule_name text primary key,
   last_due_date date,
+  last_confirmed_due_date date,
   updated_at timestamptz not null default now()
 );
+
+alter table mhm_private.agent_scheduler_state
+  add column if not exists last_confirmed_due_date date;
 
 create table if not exists mhm_private.agent_scheduler_log (
   id bigint generated always as identity primary key,
@@ -101,7 +105,7 @@ begin
     headers := jsonb_build_object(
       'Accept', 'application/vnd.github+json',
       'Authorization', 'Bearer ' || github_token,
-      'X-GitHub-Api-Version', '2026-03-10',
+      'X-GitHub-Api-Version', '2022-11-28',
       'User-Agent', 'mhm-supabase-cron'
     ),
     body := jsonb_build_object(
@@ -133,7 +137,8 @@ as $$
 declare
   v_schedule_name text := 'mhm-research-agent';
   utc_time timestamp := check_time at time zone 'UTC';
-  due_date date := (check_time at time zone 'UTC')::date;
+  v_due_date date := (check_time at time zone 'UTC')::date;
+  last_confirmed_due_date date;
   last_request_id bigint;
   last_requested_at timestamptz;
   last_status_code integer;
@@ -144,19 +149,30 @@ declare
 begin
   if extract(isodow from utc_time) not in (1, 4) then
     insert into mhm_private.agent_scheduler_log (schedule_name, due_date, action, reason)
-    values (v_schedule_name, due_date, 'skip', 'Not a Monday or Thursday in UTC.');
+    values (v_schedule_name, v_due_date, 'skip', 'Not a Monday or Thursday in UTC.');
     return null;
   end if;
 
   if utc_time::time < time '09:05' then
     insert into mhm_private.agent_scheduler_log (schedule_name, due_date, action, reason)
-    values (v_schedule_name, due_date, 'skip', 'Before 09:05 UTC.');
+    values (v_schedule_name, v_due_date, 'skip', 'Before 09:05 UTC.');
     return null;
   end if;
 
   if not pg_try_advisory_xact_lock(hashtext('mhm-research-agent-scheduler')) then
     insert into mhm_private.agent_scheduler_log (schedule_name, due_date, action, reason)
-    values (v_schedule_name, due_date, 'skip', 'Another scheduler check is already running.');
+    values (v_schedule_name, v_due_date, 'skip', 'Another scheduler check is already running.');
+    return null;
+  end if;
+
+  select scheduler_state.last_confirmed_due_date
+    into last_confirmed_due_date
+    from mhm_private.agent_scheduler_state scheduler_state
+   where scheduler_state.schedule_name = v_schedule_name;
+
+  if last_confirmed_due_date = v_due_date then
+    insert into mhm_private.agent_scheduler_log (schedule_name, due_date, action, reason)
+    values (v_schedule_name, v_due_date, 'skip', 'Already confirmed for this UTC date.');
     return null;
   end if;
 
@@ -175,21 +191,23 @@ begin
     left join net._http_response response
       on response.id = trigger_log.request_id
    where trigger_log.trigger_name = v_schedule_name
-     and trigger_log.due_date = due_date
+     and trigger_log.due_date = v_due_date
    order by trigger_log.requested_at desc
    limit 1;
 
   if last_request_id is not null
      and last_status_code between 200 and 299 then
-    insert into mhm_private.agent_scheduler_state (schedule_name, last_due_date, updated_at)
-    values (v_schedule_name, due_date, now())
+    insert into mhm_private.agent_scheduler_state
+      (schedule_name, last_due_date, last_confirmed_due_date, updated_at)
+    values (v_schedule_name, v_due_date, v_due_date, now())
     on conflict (schedule_name)
     do update set
       last_due_date = excluded.last_due_date,
+      last_confirmed_due_date = excluded.last_confirmed_due_date,
       updated_at = excluded.updated_at;
 
     insert into mhm_private.agent_scheduler_log (schedule_name, due_date, action, reason)
-    values (v_schedule_name, due_date, 'skip', 'Already dispatched successfully for this UTC date.');
+    values (v_schedule_name, v_due_date, 'skip', 'Already dispatched successfully for this UTC date.');
     return null;
   end if;
 
@@ -197,7 +215,7 @@ begin
      and last_status_code is null
      and last_requested_at > now() - interval '5 minutes' then
     insert into mhm_private.agent_scheduler_log (schedule_name, due_date, action, reason, request_id)
-    values (v_schedule_name, due_date, 'skip', 'Waiting for GitHub dispatch response.', last_request_id);
+    values (v_schedule_name, v_due_date, 'skip', 'Waiting for GitHub dispatch response.', last_request_id);
     return null;
   end if;
 
@@ -219,11 +237,11 @@ begin
   request_id := mhm_private.trigger_research_agent(
     2,
     'Regular Monday/Thursday research scout run with response-aware catch-up scheduler.',
-    due_date
+    v_due_date
   );
 
   insert into mhm_private.agent_scheduler_log (schedule_name, due_date, action, reason, request_id)
-  values (v_schedule_name, due_date, 'trigger', retry_reason, request_id);
+  values (v_schedule_name, v_due_date, 'trigger', retry_reason, request_id);
 
   return request_id;
 end;
