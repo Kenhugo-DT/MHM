@@ -5,7 +5,7 @@ type: band
 zone: rock-circuit
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1997
 eraPeak:
 primaryGenres: [rock]
 curatorTags: [band, classic rock, rock]
@@ -28,6 +28,8 @@ A band connected to documented Wikipedia signals around Iced Earth.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Into_Eternity_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q1671518)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/ced4c589-d194-4c12-9a96-398086940367)
 
 ## Curator Notes
 

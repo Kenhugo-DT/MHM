@@ -5,7 +5,7 @@ type: band
 zone: roots-blues
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1973
 eraPeak:
 primaryGenres: [blues rock]
 curatorTags: [Blues rock, Hard rock, blues rock]
@@ -32,6 +32,8 @@ A hard rock band built around direct riffs, tight rhythm guitar and the Young br
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/AC/DC)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q27593)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/66c662b6-6e2f-4930-8610-912e24c63ed1)
 
 ## Curator Notes
 

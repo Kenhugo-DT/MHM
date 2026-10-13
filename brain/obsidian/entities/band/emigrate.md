@@ -5,7 +5,7 @@ type: band
 zone: rock-circuit
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 2005
 eraPeak:
 primaryGenres: [rock]
 curatorTags: [band, classic rock, rock]
@@ -28,6 +28,8 @@ A band connected to documented Wikipedia signals around Till Lindemann.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Emigrate_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q327315)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/1945e27b-5b00-4dc7-bd0a-7c653cb68f45)
 
 ## Curator Notes
 

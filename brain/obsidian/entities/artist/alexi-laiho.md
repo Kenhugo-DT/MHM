@@ -24,6 +24,7 @@ Alexi Laiho (Finnish: [ˈɑleksi ˈlɑi̯ho]; born Markku Uula Aleksi Laiho; 8 A
 ## Connections
 
 - [[annihilator|Annihilator]] - Wikipedia link signal (Wikipedia link: Annihilator (band))
+- [[children-of-bodom|Children of Bodom]] - Member of (MusicBrainz records Alexi Laiho as a member of Children of Bodom.; Documented period: 1997 to 2020-12.)
 - [[fender-stratocaster|Fender Stratocaster]] - Wikipedia link signal (Wikipedia link: Fender Stratocaster)
 - [[hypocrisy|Hypocrisy]] - Wikipedia link signal (Wikipedia link: Hypocrisy (band))
 - [[norther|Norther]] - Wikipedia link signal (Wikipedia link: Norther (band))

@@ -5,7 +5,7 @@ type: guitar_brand
 zone: guitar-workshop
 roles: [guitar_brand]
 aliases: []
-eraStart:
+eraStart: 1974
 eraPeak:
 primaryGenres: []
 curatorTags: [guitar brand, manufacturer, guitar]
@@ -28,6 +28,7 @@ A modern acoustic guitar maker associated with bright, precise steel-string inst
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Taylor_Guitars)
+- [Taylor Guitars: about](https://www.taylorguitars.com/about)
 
 ## Curator Notes
 

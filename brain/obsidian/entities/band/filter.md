@@ -5,7 +5,7 @@ type: band
 zone: rock-circuit
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1993
 eraPeak:
 primaryGenres: [rock]
 curatorTags: [band, classic rock, rock]
@@ -28,6 +28,8 @@ A band connected to documented Wikipedia signals around Scott Weiland.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Filter_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q750954)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/6ae51665-8261-4ae5-883f-1899651ad31b)
 
 ## Curator Notes
 

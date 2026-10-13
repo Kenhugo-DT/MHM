@@ -5,7 +5,7 @@ type: band
 zone: hard-rock-metal
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1968
 eraPeak:
 primaryGenres: [heavy metal]
 curatorTags: [Heavy metal, heavy metal, band]
@@ -32,6 +32,8 @@ A Birmingham band whose dark riffs, volume and atmosphere became a foundation fo
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Black_Sabbath)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q47670)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/5182c1d9-c7d2-4dad-afa0-ccfeada921a8)
 
 ## Curator Notes
 

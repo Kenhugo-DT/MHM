@@ -31,7 +31,8 @@ A pioneering European jazz guitarist whose acoustic lead style remains central t
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Django_Reinhardt)
+- [MusicBrainz](https://musicbrainz.org/artist/650bf385-6f6d-4992-a3b9-779d144920a4)
 
 ## Curator Notes
 
-Use this section for human notes. Machine-readable organization belongs in the frontmatter above.
+Reinhardt is a European jazz-guitar anchor associated with swing and the Quintette du Hot Club de France. Acoustic guitar technique is context, not proof of a country-music lineage. Source: https://en.wikipedia.org/wiki/Django_Reinhardt.

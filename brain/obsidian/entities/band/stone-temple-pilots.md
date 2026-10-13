@@ -23,7 +23,7 @@ Stone Temple Pilots, commonly abbreviated as STP, are an American rock band form
 
 ## Connections
 
-No documented connections yet.
+- [[chester-bennington|Chester Bennington]] - Member of (MusicBrainz records Chester Bennington as a member of Stone Temple Pilots.; Documented period: 2013 to 2015-11-09.)
 
 ## Sources
 

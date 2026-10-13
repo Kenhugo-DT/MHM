@@ -5,7 +5,7 @@ type: band
 zone: hard-rock-metal
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1969
 eraPeak:
 primaryGenres: [heavy metal]
 curatorTags: [Heavy metal, heavy metal, band]
@@ -34,6 +34,8 @@ A heavy metal band that sharpened twin-guitar attack, riffs and the metal visual
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Judas_Priest)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q83468)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/6b335658-22c8-485d-93de-0bc29a1d0349)
 
 ## Curator Notes
 

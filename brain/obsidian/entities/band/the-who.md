@@ -5,7 +5,7 @@ type: band
 zone: psychedelia-prog
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1964
 eraPeak:
 primaryGenres: [art rock]
 curatorTags: [Art rock, Rock, art rock]
@@ -30,6 +30,8 @@ A British rock band where Pete Townshend's power chords and aggressive rhythm gu
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/The_Who)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q93346)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/9fdaa16b-a6c4-4831-b87c-bc9ca8ce7eaa)
 
 ## Curator Notes
 

@@ -5,7 +5,7 @@ type: band
 zone: roots-blues
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1969
 eraPeak:
 primaryGenres: [country rock, blues rock, southern rock]
 curatorTags: [country rock, blues rock, southern rock]
@@ -34,6 +34,8 @@ A Southern rock band known for twin guitars, blues roots, long improvisations an
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/The_Allman_Brothers_Band)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q507327)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/72359492-22be-4ed9-aaa0-efa434fb2b01)
 
 ## Curator Notes
 

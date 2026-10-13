@@ -5,7 +5,7 @@ type: guitar_brand
 zone: guitar-workshop
 roles: [guitar_brand]
 aliases: []
-eraStart:
+eraStart: 1833
 eraPeak:
 primaryGenres: []
 curatorTags: [guitar brand, manufacturer, country]
@@ -29,6 +29,7 @@ A major acoustic guitar maker whose dreadnought designs are deeply tied to folk,
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/C._F._Martin_%26_Company)
+- [Martin: company history](https://www.martinguitar.com/homepage.html)
 
 ## Curator Notes
 

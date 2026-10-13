@@ -5,7 +5,7 @@ type: band
 zone: hard-rock-metal
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1999
 eraPeak:
 primaryGenres: [hard rock]
 curatorTags: [band, hard rock, metal]
@@ -29,6 +29,8 @@ A band connected to documented Wikipedia signals around Rob Halford.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Halford_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q2264949)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/9b96dcab-ed89-42f4-9863-ca5ec473860e)
 
 ## Curator Notes
 

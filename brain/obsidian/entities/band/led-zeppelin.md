@@ -5,7 +5,7 @@ type: band
 zone: hard-rock-metal
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1968
 eraPeak:
 primaryGenres: [hard rock]
 curatorTags: [hard rock, Blues, Hard rock]
@@ -31,6 +31,8 @@ A hard rock band that fused blues, folk, riffs and studio ambition into a huge g
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Led_Zeppelin)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q2331)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/678d88b2-87b0-403b-b63d-5da7465aecc3)
 
 ## Curator Notes
 

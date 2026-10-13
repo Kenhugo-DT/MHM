@@ -5,7 +5,7 @@ type: band
 zone: hard-rock-metal
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1981
 eraPeak:
 primaryGenres: [heavy metal]
 curatorTags: [Heavy metal, heavy metal, band]
@@ -31,6 +31,8 @@ A heavy metal band where tight rhythm guitar, palm muting and aggressive arrange
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Metallica)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q15920)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/65f4f0c5-ef9e-490c-aee3-909e7ae6b2ab)
 
 ## Curator Notes
 

@@ -30,7 +30,8 @@ A guitarist who connected jazz fusion, rock volume and Indian classical influenc
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/John_McLaughlin_(musician))
+- [MusicBrainz](https://musicbrainz.org/artist/fcbc2086-5863-4659-b03d-44be704697d2)
 
 ## Curator Notes
 
-Use this section for human notes. Machine-readable organization belongs in the frontmatter above.
+McLaughlin connects jazz improvisation with amplified rock and the Mahavishnu Orchestra. Keep him jazz-centered and distinguish documented band membership from broader stylistic influence. Source: https://en.wikipedia.org/wiki/John_McLaughlin_(musician).

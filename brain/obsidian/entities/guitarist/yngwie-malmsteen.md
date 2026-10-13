@@ -5,7 +5,7 @@ type: guitarist
 zone: hard-rock-metal
 roles: [guitarist, artist]
 aliases: []
-eraStart:
+eraStart: 1978
 eraPeak:
 primaryGenres: [heavy metal]
 curatorTags: [Heavy metal, heavy metal, guitarist]
@@ -29,6 +29,8 @@ A neoclassical metal guitarist known for high-speed alternate picking, harmonic 
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Yngwie_Malmsteen)
+- [MusicBrainz: 1978 release](https://musicbrainz.org/release-group/9926249c-72cc-45e8-845f-fd61f9fd1578)
+- [Wikidata: work period start](https://www.wikidata.org/wiki/Q192260)
 
 ## Curator Notes
 

@@ -5,7 +5,7 @@ type: band
 zone: punk-alt
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1976
 eraPeak:
 primaryGenres: []
 curatorTags: []
@@ -28,6 +28,8 @@ A band connected to documented Wikipedia signals around Ramones.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Chelsea_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q349038)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/8aedcd15-34fc-4f31-9817-cd444a9b3789)
 
 ## Curator Notes
 

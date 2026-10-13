@@ -8,6 +8,12 @@ const nowiki = (slug) => ({
   url: `https://no.wikipedia.org/wiki/${slug}`,
 });
 
+const musicBrainz = (id) => ({
+  label: "MusicBrainz",
+  url: `https://musicbrainz.org/artist/${id}`,
+  provider: "musicbrainz",
+});
+
 const rockHall = (slug) => ({
   label: "Rock & Roll Hall of Fame",
   url: `https://rockhall.com/inductees/${slug}/`,
@@ -537,7 +543,7 @@ export const extraNodes = [
     starter: true,
     summary: "A jazz guitarist known for thumb picking, octave melodies and warm single-note phrasing.",
     meta: ["Guitarist", "Jazz"],
-    sources: [wikipedia("Wes_Montgomery")],
+    sources: [wikipedia("Wes_Montgomery"), musicBrainz("663f8232-8c46-4851-803f-a91d31593b14")],
   },
   {
     id: "joe-pass",
@@ -548,7 +554,7 @@ export const extraNodes = [
     size: 18,
     summary: "A jazz guitarist known for solo chord melody, walking bass lines and complete arrangements on one guitar.",
     meta: ["Guitarist", "Jazz", "Chord melody"],
-    sources: [wikipedia("Joe_Pass")],
+    sources: [wikipedia("Joe_Pass"), musicBrainz("2f43e416-f1bf-4f04-8853-a0019aa12441")],
   },
   {
     id: "django-reinhardt",
@@ -559,7 +565,7 @@ export const extraNodes = [
     size: 19,
     summary: "A pioneering European jazz guitarist whose acoustic lead style remains central to gypsy jazz vocabulary.",
     meta: ["Guitarist", "Jazz", "Acoustic"],
-    sources: [wikipedia("Django_Reinhardt")],
+    sources: [wikipedia("Django_Reinhardt"), musicBrainz("650bf385-6f6d-4992-a3b9-779d144920a4")],
   },
   {
     id: "paco-de-lucia",
@@ -581,7 +587,7 @@ export const extraNodes = [
     size: 19,
     summary: "A guitarist who connected jazz fusion, rock volume and Indian classical influence through electric improvisation.",
     meta: ["Guitarist", "Jazz fusion"],
-    sources: [wikipedia("John_McLaughlin_(musician)")],
+    sources: [wikipedia("John_McLaughlin_(musician)"), musicBrainz("fcbc2086-5863-4659-b03d-44be704697d2")],
   },
   {
     id: "robert-fripp",

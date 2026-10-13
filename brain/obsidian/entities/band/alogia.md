@@ -5,7 +5,7 @@ type: band
 zone: rock-circuit
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 2000
 eraPeak:
 primaryGenres: [rock]
 curatorTags: [band, classic rock, rock]
@@ -28,6 +28,8 @@ A band connected to documented Wikipedia signals around Tim Ripper Owens.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Alogia_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q3612855)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/c3a8ed26-4065-4188-a5c1-0efd23e0140d)
 
 ## Curator Notes
 

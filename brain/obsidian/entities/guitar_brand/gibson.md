@@ -5,7 +5,7 @@ type: guitar_brand
 zone: guitar-workshop
 roles: [guitar_brand]
 aliases: []
-eraStart:
+eraStart: 1894
 eraPeak:
 primaryGenres: []
 curatorTags: [guitar brand, blues rock, manufacturer]
@@ -36,6 +36,7 @@ A historic maker tied to archtops, Les Pauls, SGs, semi-hollow guitars and many 
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Gibson_(guitar_company))
+- [Gibson: brand history](https://brandbook.gibson.com/overview/gibson/)
 
 ## Curator Notes
 

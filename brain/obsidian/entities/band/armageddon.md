@@ -5,7 +5,7 @@ type: band
 zone: rock-circuit
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1997
 eraPeak:
 primaryGenres: [rock]
 curatorTags: [band, classic rock, rock]
@@ -29,6 +29,8 @@ A band connected to documented Wikipedia signals around In Flames.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Armageddon_%28Swedish_band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q4034383)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/ccef44a2-db98-4e0b-b2c4-dc5bba90e732)
 
 ## Curator Notes
 

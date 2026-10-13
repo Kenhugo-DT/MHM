@@ -5,7 +5,7 @@ type: band
 zone: roots-blues
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1966
 eraPeak:
 primaryGenres: [blues rock, hard rock]
 curatorTags: [Hard rock, blues rock, hard rock]
@@ -32,7 +32,9 @@ A blues-rock trio that helped push louder improvisational rock guitar into the l
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Cream_(band))
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q203736)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/04cd0cfd-bfd1-4c36-bc38-95c35e2c045f)
 
 ## Curator Notes
 
-Use this section for human notes. Machine-readable organization belongs in the frontmatter above.
+Cream is a British blues-rock power trio whose amplified improvisation connects blues with later rock. Document Clapton membership separately from musical influence; no album or song is a visible node. Source: https://en.wikipedia.org/wiki/Cream_(band).

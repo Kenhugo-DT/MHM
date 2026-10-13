@@ -5,7 +5,7 @@ type: band
 zone: psychedelia-prog
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1984
 eraPeak:
 primaryGenres: [progressive metal]
 curatorTags: [Progressive metal, progressive metal, band]
@@ -29,6 +29,8 @@ A band connected to documented Wikipedia signals around Progressive metal.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Atheist_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q755034)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/424f2349-f719-46c0-ab39-abbb4364d95f)
 
 ## Curator Notes
 

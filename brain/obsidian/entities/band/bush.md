@@ -5,7 +5,7 @@ type: band
 zone: punk-alt
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1992
 eraPeak:
 primaryGenres: [post-grunge, grunge]
 curatorTags: [post-grunge, band, grunge]
@@ -29,6 +29,8 @@ A band connected to documented Wikipedia signals around Apocalyptica.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Bush_%28British_band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q247949)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/93ccd76c-3790-4435-a8bf-02bc26294b93)
 
 ## Curator Notes
 

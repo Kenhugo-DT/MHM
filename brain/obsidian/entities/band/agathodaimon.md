@@ -5,7 +5,7 @@ type: band
 zone: rock-circuit
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1995
 eraPeak:
 primaryGenres: [rock]
 curatorTags: [band, classic rock, rock]
@@ -28,6 +28,8 @@ A band connected to documented Wikipedia signals around Children of Bodom.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Agathodaimon_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q391415)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/f6dad765-8c0b-4256-b8d1-c1818b31bbdb)
 
 ## Curator Notes
 

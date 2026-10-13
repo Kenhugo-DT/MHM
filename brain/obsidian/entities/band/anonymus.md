@@ -5,7 +5,7 @@ type: band
 zone: hard-rock-metal
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1989
 eraPeak:
 primaryGenres: [thrash metal]
 curatorTags: [Thrash metal, thrash metal, band]
@@ -28,6 +28,8 @@ A band connected to documented Wikipedia signals around thrash metal.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Anonymus_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q1969590)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/f40beda8-aa19-4339-bb3b-5183b2760f62)
 
 ## Curator Notes
 

@@ -5,7 +5,7 @@ type: band
 zone: hard-rock-metal
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 2000
 eraPeak:
 primaryGenres: [hard rock]
 curatorTags: [band, hard rock, metal]
@@ -31,6 +31,8 @@ A band connected to documented Wikipedia signals around Andy Sneap.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/As_I_Lay_Dying_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q693583)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/ba147ea0-60c4-4a40-9da6-0d5c2b2e7b03)
 
 ## Curator Notes
 

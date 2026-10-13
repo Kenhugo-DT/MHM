@@ -5,7 +5,7 @@ type: guitar_brand
 zone: guitar-workshop
 roles: [guitar_brand]
 aliases: []
-eraStart:
+eraStart: 1883
 eraPeak:
 primaryGenres: []
 curatorTags: [guitar brand, country rock, manufacturer]
@@ -28,6 +28,7 @@ A maker associated with hollow-body electrics, country, rockabilly and distincti
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Gretsch)
+- [Gretsch: history](https://www.gretschguitars.com/support/history)
 
 ## Curator Notes
 

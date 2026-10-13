@@ -5,7 +5,7 @@ type: band
 zone: punk-alt
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 2012
 eraPeak:
 primaryGenres: []
 curatorTags: [band, alternative, punk]
@@ -28,6 +28,8 @@ A band connected to documented Wikipedia signals around Suicidal Tendencies.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Beartooth_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q16822837)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/98a1e0ab-35fa-40dd-b62c-9fda46fdb061)
 
 ## Curator Notes
 

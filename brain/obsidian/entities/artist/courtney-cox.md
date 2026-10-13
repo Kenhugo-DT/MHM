@@ -19,7 +19,7 @@ starter: false
 
 ## Summary
 
-An artist connected to documented Wikipedia signals around Nita Strauss.
+Courtney Cox is an American metal guitarist known for playing with The Iron Maidens. She is not actor Courteney Cox.
 
 ## Connections
 
@@ -32,4 +32,4 @@ An artist connected to documented Wikipedia signals around Nita Strauss.
 
 ## Curator Notes
 
-Use this section for human notes. Machine-readable organization belongs in the frontmatter above.
+Courtney Cox is the guitarist associated with The Iron Maidens, not actor Courteney Cox. Reject links inherited from the actor's page; keep only independently documented music relationships. Source: https://en.wikipedia.org/wiki/Courtney_Cox_(musician).

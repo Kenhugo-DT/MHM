@@ -29,7 +29,8 @@ A jazz guitarist known for thumb picking, octave melodies and warm single-note p
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Wes_Montgomery)
+- [MusicBrainz](https://musicbrainz.org/artist/663f8232-8c46-4851-803f-a91d31593b14)
 
 ## Curator Notes
 
-Use this section for human notes. Machine-readable organization belongs in the frontmatter above.
+Montgomery is a jazz-guitar anchor. His thumb-picked octave sound can explain stylistic context, but co-mentions in encyclopedia categories do not establish influence or collaboration. Source: https://musicbrainz.org/artist/663f8232-8c46-4851-803f-a91d31593b14.

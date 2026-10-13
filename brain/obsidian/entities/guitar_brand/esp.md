@@ -5,7 +5,7 @@ type: guitar_brand
 zone: guitar-workshop
 roles: [guitar_brand]
 aliases: []
-eraStart:
+eraStart: 1975
 eraPeak:
 primaryGenres: []
 curatorTags: [guitar brand, manufacturer, rock]
@@ -28,6 +28,7 @@ A guitar maker closely associated with modern metal, custom shop instruments and
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/ESP_Guitars)
+- [ESP: 50th anniversary](https://www.espguitars.com/articles/2019384-esp-guitars-honored-by-namm-for-50th-anniversary-milestone)
 
 ## Curator Notes
 

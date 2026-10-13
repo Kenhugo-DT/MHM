@@ -5,7 +5,7 @@ type: band
 zone: rock-circuit
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 2007
 eraPeak:
 primaryGenres: [rock]
 curatorTags: [band, classic rock, rock]
@@ -28,6 +28,8 @@ A band connected to documented Wikipedia signals around Avantasia.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/H.E.A.T_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q387192)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/7f666ada-e2af-433a-8351-374643b3fe9c)
 
 ## Curator Notes
 

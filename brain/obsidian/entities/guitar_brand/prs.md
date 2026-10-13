@@ -5,7 +5,7 @@ type: guitar_brand
 zone: guitar-workshop
 roles: [guitar_brand]
 aliases: []
-eraStart:
+eraStart: 1985
 eraPeak:
 primaryGenres: []
 curatorTags: [guitar brand, manufacturer, guitar]
@@ -29,6 +29,7 @@ Paul Reed Smith's guitar company, known for high-end carved-top electrics and li
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/PRS_Guitars)
+- [PRS: company history](https://support.prsguitars.com/hc/en-us/articles/4411782662939-About-PRS-Our-Mission-Statement)
 
 ## Curator Notes
 

@@ -5,7 +5,7 @@ type: band
 zone: hard-rock-metal
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1990
 eraPeak:
 primaryGenres: [gothic metal, doom metal]
 curatorTags: [gothic metal, Doom metal, doom metal]
@@ -30,6 +30,8 @@ A band connected to documented Wikipedia signals around Doom metal.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Anathema_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q487396)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/20aa23e3-3532-42ca-acf6-e8c2e9df2688)
 
 ## Curator Notes
 

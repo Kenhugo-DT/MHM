@@ -5,7 +5,7 @@ type: guitar_brand
 zone: guitar-workshop
 roles: [guitar_brand]
 aliases: []
-eraStart:
+eraStart: 1931
 eraPeak:
 primaryGenres: []
 curatorTags: [guitar brand, manufacturer, rock]
@@ -28,6 +28,7 @@ A maker strongly associated with jangly electric twelve-string sounds in 1960s r
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Rickenbacker)
+- [Rickenbacker: legacy](https://www.rickenbacker.com/legacy/)
 
 ## Curator Notes
 

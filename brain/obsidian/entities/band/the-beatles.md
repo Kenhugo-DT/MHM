@@ -5,7 +5,7 @@ type: band
 zone: psychedelia-prog
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1960
 eraPeak:
 primaryGenres: [psychedelic rock]
 curatorTags: [Psychedelic rock, Rock, psychedelic rock]
@@ -30,6 +30,8 @@ A central 1960s band whose songwriting, studio practice and guitar textures resh
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/The_Beatles)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q1299)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/b10bbbfc-cf9e-42e0-be17-e2c3e1d2600d)
 
 ## Curator Notes
 

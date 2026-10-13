@@ -5,7 +5,7 @@ type: band
 zone: rock-circuit
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1992
 eraPeak:
 primaryGenres: [rock]
 curatorTags: [band, classic rock, rock]
@@ -29,6 +29,8 @@ A band connected to documented Wikipedia signals around Marko Hietala.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Charon_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q1067679)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/f033e544-8cad-4bee-abdd-619f8489e409)
 
 ## Curator Notes
 

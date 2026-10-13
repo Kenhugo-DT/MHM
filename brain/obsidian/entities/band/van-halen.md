@@ -5,7 +5,7 @@ type: band
 zone: hard-rock-metal
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1972
 eraPeak:
 primaryGenres: [hard rock]
 curatorTags: [hard rock, Hard rock, band]
@@ -33,6 +33,8 @@ A Los Angeles hard rock band that made Eddie Van Halen's guitar innovations part
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Van_Halen)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q190155)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/b665b768-0d83-4363-950c-31ed39317c15)
 
 ## Curator Notes
 

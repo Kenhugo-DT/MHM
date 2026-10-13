@@ -5,7 +5,7 @@ type: guitar_brand
 zone: guitar-workshop
 roles: [guitar_brand]
 aliases: []
-eraStart:
+eraStart: 1980
 eraPeak:
 primaryGenres: []
 curatorTags: [guitar brand, hard rock, manufacturer]
@@ -29,6 +29,7 @@ A guitar brand associated with high-output hard rock and metal designs such as t
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Jackson_Guitars)
+- [Jackson: brand history](https://blog.jacksonguitars.com/the-30th-anniversary-rr5fr-rhoads/)
 
 ## Curator Notes
 

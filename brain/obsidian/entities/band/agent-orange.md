@@ -5,7 +5,7 @@ type: band
 zone: punk-alt
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1979
 eraPeak:
 primaryGenres: [hardcore punk]
 curatorTags: [hardcore punk, band, alternative]
@@ -29,6 +29,8 @@ A band connected to documented Wikipedia signals around The Offspring.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Agent_Orange_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q83814)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/3214be8b-6d78-4c8e-9c93-b1e31a9bc4d6)
 
 ## Curator Notes
 

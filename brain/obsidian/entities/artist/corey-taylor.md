@@ -30,6 +30,7 @@ Corey Todd Taylor (born December 8, 1973) is an American musician. He is best kn
 - [[code-orange|Code Orange]] - Wikipedia link signal (Wikipedia link: Code Orange (band))
 - [[craig-jones|Craig Jones]] - Wikipedia link signal (Wikipedia link: Craig Jones (musician))
 - [[disturbed|Disturbed]] - Wikipedia link signal (Wikipedia link: Disturbed (band))
+- [[stone-sour|Stone Sour]] - Member of (MusicBrainz records Corey Taylor as a member of Stone Sour.; Documented period: 1992 to 2020.)
 
 ## Sources
 

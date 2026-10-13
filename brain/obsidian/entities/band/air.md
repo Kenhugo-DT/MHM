@@ -5,7 +5,7 @@ type: band
 zone: rock-circuit
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1995
 eraPeak:
 primaryGenres: [rock]
 curatorTags: [band, classic rock, rock]
@@ -28,6 +28,8 @@ A band connected to documented Wikipedia signals around Siouxsie and the Banshee
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Air_%28French_band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q318452)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/cb67438a-7f50-4f2b-a6f1-2bb2729fd538)
 
 ## Curator Notes
 

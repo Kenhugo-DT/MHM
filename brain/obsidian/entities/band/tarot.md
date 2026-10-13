@@ -5,7 +5,7 @@ type: band
 zone: rock-circuit
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1985
 eraPeak:
 primaryGenres: [rock]
 curatorTags: [band, classic rock, rock]
@@ -28,6 +28,8 @@ A band connected to documented Wikipedia signals around Tony Kakko.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Tarot_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q1347769)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/0c235ae9-7e9d-428f-b0af-3fa8dbb20064)
 
 ## Curator Notes
 

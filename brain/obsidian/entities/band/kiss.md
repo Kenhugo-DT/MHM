@@ -5,7 +5,7 @@ type: band
 zone: hard-rock-metal
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1973
 eraPeak:
 primaryGenres: [hard rock]
 curatorTags: [band, hard rock, metal]
@@ -30,6 +30,8 @@ A band connected to documented Wikipedia signals around Skid Row (American band)
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Kiss_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q124179)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/e1f1e33e-2e4c-4d43-b91b-7064068d3283)
 
 ## Curator Notes
 

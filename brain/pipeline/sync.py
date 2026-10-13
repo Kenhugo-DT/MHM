@@ -156,9 +156,17 @@ class MusicBrainzClient:
         entity = "artist" if kind in {"artist", "band", "guitarist"} else None
         if not entity:
             return None
-        payload = self._get(entity, {"query": f'artist:"{name}"', "limit": 3})
+        payload = self._get(entity, {"query": f'artist:"{name}"', "limit": 10})
         matches = payload.get("artists", [])
-        return matches[0] if matches else None
+        expected_type = "Group" if kind == "band" else "Person"
+        return next(
+            (
+                match for match in matches
+                if normalize_text(match.get("name", "")) == normalize_text(name)
+                and match.get("type") == expected_type
+            ),
+            None,
+        )
 
 
 class WikidataClient:
@@ -168,7 +176,7 @@ class WikidataClient:
         self.session = requests.Session()
         self.session.headers["User-Agent"] = "MusicHistoryMap/0.1"
 
-    def search(self, name: str) -> dict[str, Any] | None:
+    def search(self, name: str, kind: str = "") -> dict[str, Any] | None:
         payload = get_json_with_backoff(
             self.session,
             self.endpoint,
@@ -182,6 +190,20 @@ class WikidataClient:
             },
         )
         results = payload.get("search", [])
+        if kind in {"band", "artist", "guitarist"}:
+            descriptors = {
+                "band": ("band", "musical group", "music group"),
+                "artist": ("singer", "musician", "composer", "rapper", "songwriter", "record producer"),
+                "guitarist": ("guitarist", "musician"),
+            }[kind]
+            return next(
+                (
+                    result for result in results
+                    if normalize_text(result.get("label", "")) == normalize_text(name)
+                    and any(term in result.get("description", "").lower() for term in descriptors)
+                ),
+                None,
+            )
         return results[0] if results else None
 
 
@@ -359,6 +381,29 @@ class WikipediaClient:
             ],
         }
 
+    def page_for_seed(self, name: str, kind: str) -> dict[str, Any] | None:
+        page = self.page(name)
+        if kind not in {"band", "artist", "guitarist"}:
+            return page
+        if page and normalize_text(page.get("title", "")) == normalize_text(name):
+            extract = page.get("extract") or ""
+            categories = page.get("categories") or []
+            if "may refer to" not in extract.lower() and not any(
+                "disambiguation" in category.lower() for category in categories
+            ):
+                return page
+
+        suffixes = {
+            "band": ["band"],
+            "artist": ["musician", "singer"],
+            "guitarist": ["guitarist", "musician"],
+        }.get(kind, [])
+        for suffix in suffixes:
+            match = self.page(f"{name} ({suffix})")
+            if match and normalize_text(match.get("title", "")).startswith(normalize_text(name)):
+                return match
+        return None
+
 
 def collect(seed_file: Path) -> list[Candidate]:
     seeds = json.loads(seed_file.read_text(encoding="utf-8"))
@@ -393,13 +438,13 @@ def collect(seed_file: Path) -> list[Candidate]:
                 print(f"MusicBrainz lookup failed for {name}: {error}")
 
         try:
-            wikidata_match = wikidata.search(name)
+            wikidata_match = wikidata.search(name, kind)
         except Exception as error:
             source_errors.append({"source": "wikidata", "message": str(error)})
             print(f"Wikidata lookup failed for {name}: {error}")
 
         try:
-            wikipedia_page = wikipedia.page(name)
+            wikipedia_page = wikipedia.page_for_seed(name, kind)
         except Exception as error:
             source_errors.append({"source": "wikipedia", "message": str(error)})
             print(f"Wikipedia lookup failed for {name}: {error}")

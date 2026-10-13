@@ -5,7 +5,7 @@ type: band
 zone: rock-circuit
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1984
 eraPeak:
 primaryGenres: [rock]
 curatorTags: [band, classic rock, rock]
@@ -28,6 +28,8 @@ A band connected to documented Wikipedia signals around At Vance.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Angel_Dust_%28German_band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q531613)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/0c48f429-a407-4716-af13-ca7b83ad3d07)
 
 ## Curator Notes
 

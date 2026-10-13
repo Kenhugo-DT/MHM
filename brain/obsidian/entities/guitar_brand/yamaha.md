@@ -5,7 +5,7 @@ type: guitar_brand
 zone: guitar-workshop
 roles: [guitar_brand]
 aliases: []
-eraStart:
+eraStart: 1887
 eraPeak:
 primaryGenres: []
 curatorTags: [guitar brand, manufacturer, jazz]
@@ -28,6 +28,7 @@ A broad instrument maker with notable electric and acoustic guitar lines across 
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Yamaha_Corporation)
+- [Yamaha: company history](https://www.yamaha.com/en/about/history/)
 
 ## Curator Notes
 

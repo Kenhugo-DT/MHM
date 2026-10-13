@@ -30,8 +30,8 @@ Sebastian Philip Bierk (born April 3, 1968), known professionally as Sebastian B
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Sebastian_Bach)
 - [Wikidata](https://www.wikidata.org/wiki/Q363490)
-- [MusicBrainz](https://musicbrainz.org/artist/24f1766e-9635-4d58-a4d4-9413f9f98a4c)
+- [MusicBrainz](https://musicbrainz.org/artist/50f10489-c87e-4df3-800f-be1f8d6bda4b)
 
 ## Curator Notes
 
-Use this section for human notes. Machine-readable organization belongs in the frontmatter above.
+This is the singer associated with Skid Row, not Johann Sebastian Bach. Match both name and person identity before accepting a MusicBrainz result; an article link alone does not prove a musical relationship. Source: https://musicbrainz.org/artist/50f10489-c87e-4df3-800f-be1f8d6bda4b.

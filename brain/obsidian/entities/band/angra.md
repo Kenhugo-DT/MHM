@@ -5,7 +5,7 @@ type: band
 zone: hard-rock-metal
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1991
 eraPeak:
 primaryGenres: [power metal, hard rock]
 curatorTags: [power metal, band, hard rock]
@@ -34,6 +34,8 @@ A band connected to documented Wikipedia signals around power metal.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Angra_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q542745)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/b0fe8ef0-d59b-4d41-afee-2d21b59112ab)
 
 ## Curator Notes
 

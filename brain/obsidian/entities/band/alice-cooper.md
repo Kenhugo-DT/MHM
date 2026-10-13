@@ -5,7 +5,7 @@ type: band
 zone: hard-rock-metal
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1964
 eraPeak:
 primaryGenres: [glam metal, hard rock]
 curatorTags: [glam metal, hard rock, Hard rock]
@@ -35,6 +35,8 @@ A band connected to documented Wikipedia signals around Horror punk.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Alice_Cooper_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q16821277)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/4d7928cd-7ed2-4282-8c29-c0c9f966f1bd)
 
 ## Curator Notes
 

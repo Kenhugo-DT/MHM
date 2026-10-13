@@ -23,7 +23,7 @@ The Stooges (also known as Iggy and the Stooges) were an American rock band form
 
 ## Connections
 
-No documented connections yet.
+- [[iggy-pop|Iggy Pop]] - Member of (MusicBrainz records Iggy Pop as a member of The Stooges.; Documented period: 1967 to 1970.)
 
 ## Sources
 
@@ -33,4 +33,4 @@ No documented connections yet.
 
 ## Curator Notes
 
-Use this section for human notes. Machine-readable organization belongs in the frontmatter above.
+The Stooges predate punk as a named scene and are a documented proto-punk bridge from late-1960s rock. Avoid treating a category or article co-mention as a direct band relationship. Source: https://musicbrainz.org/artist/794c6bf2-3241-416f-9b8f-24e2d84a1c4b.

@@ -5,7 +5,7 @@ type: band
 zone: rock-circuit
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 2002
 eraPeak:
 primaryGenres: [rock]
 curatorTags: [band, classic rock, rock]
@@ -29,6 +29,8 @@ A band connected to documented Wikipedia signals around Tarja Turunen.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Epica_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q76244)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/21985b14-1b0d-44fe-b357-310b29bba510)
 
 ## Curator Notes
 

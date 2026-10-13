@@ -5,7 +5,7 @@ type: band
 zone: rock-circuit
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1997
 eraPeak:
 primaryGenres: [rock]
 curatorTags: [band, classic rock, rock]
@@ -28,6 +28,8 @@ A band connected to documented Wikipedia signals around Jon Oliva.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Elvenking_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q852573)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/3d6bbeb7-f90e-4d10-b440-e153c0d10b53)
 
 ## Curator Notes
 

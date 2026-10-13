@@ -5,7 +5,7 @@ type: band
 zone: rock-circuit
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 2003
 eraPeak:
 primaryGenres: [rock]
 curatorTags: [band, classic rock, rock]
@@ -31,6 +31,8 @@ A band connected to documented Wikipedia signals around Marko Hietala.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Aina_%28German_band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q2629380)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/70794157-c217-4847-b33a-6accafbe953e)
 
 ## Curator Notes
 

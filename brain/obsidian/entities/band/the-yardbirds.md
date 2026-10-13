@@ -5,7 +5,7 @@ type: band
 zone: roots-blues
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1963
 eraPeak:
 primaryGenres: [blues rock, blues]
 curatorTags: [Rock, blues rock, blues]
@@ -33,6 +33,8 @@ A British blues-rock band famously connected to Eric Clapton, Jeff Beck and Jimm
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/The_Yardbirds)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q192725)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/191de76f-a224-445d-b041-54df16d65bf7)
 
 ## Curator Notes
 

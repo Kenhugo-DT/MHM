@@ -5,7 +5,7 @@ type: band
 zone: rock-circuit
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1997
 eraPeak:
 primaryGenres: [rock]
 curatorTags: [band, classic rock, rock]
@@ -28,6 +28,8 @@ A band connected to documented Wikipedia signals around Fugazi.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/American_Football_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q464369)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/4ebb5ad3-9018-407d-8c24-c03011ab9ac6)
 
 ## Curator Notes
 

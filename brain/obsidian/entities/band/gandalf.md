@@ -5,7 +5,7 @@ type: band
 zone: rock-circuit
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1993
 eraPeak:
 primaryGenres: [rock]
 curatorTags: [band, classic rock, rock]
@@ -28,6 +28,8 @@ A band connected to documented Wikipedia signals around Marko Hietala.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Gandalf_%28Finnish_band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q220967)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/cdf182cc-7994-4f52-af68-2c3d6ab0e4c1)
 
 ## Curator Notes
 

@@ -5,7 +5,7 @@ type: band
 zone: punk-alt
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1980
 eraPeak:
 primaryGenres: [hardcore punk, punk rock]
 curatorTags: [hardcore punk, Punk rock, punk rock]
@@ -29,6 +29,8 @@ A band connected to documented Wikipedia signals around punk rock.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/7_Seconds_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q270019)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/3594dd1c-1267-471f-a6e2-78978bb3e024)
 
 ## Curator Notes
 

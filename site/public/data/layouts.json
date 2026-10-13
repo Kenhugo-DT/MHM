@@ -12438,7 +12438,7 @@
           "top": 6512,
           "columns": 72,
           "rowGap": 126,
-          "count": 308,
+          "count": 307,
           "columnGap": 164.16666666666666
         },
         "unknownBottom": 7242
@@ -19361,11 +19361,12 @@
           "decade": null
         },
         "misfits": {
-          "x": 1108,
-          "y": 6764,
+          "x": 3148,
+          "y": 4001,
           "zone": "punk-alt",
           "priority": 0.42,
-          "decade": null
+          "decade": 1970,
+          "startYear": 1977
         },
         "pop-punk": {
           "x": 1272,

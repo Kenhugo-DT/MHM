@@ -5,7 +5,7 @@ type: band
 zone: psychedelia-prog
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1968
 eraPeak:
 primaryGenres: [art rock]
 curatorTags: [Art rock, Progressive rock, art rock]
@@ -30,6 +30,8 @@ A progressive and art rock band centered on shifting lineups, complex structures
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/King_Crimson)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q189382)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/b38225b8-8e5f-42aa-bcdc-7bae5b5bdab3)
 
 ## Curator Notes
 

@@ -5,7 +5,7 @@ type: band
 zone: psychedelia-prog
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1971
 eraPeak:
 primaryGenres: [country, folk]
 curatorTags: [band, country, folk]
@@ -28,6 +28,8 @@ A band connected to documented Wikipedia signals around Django Reinhardt.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Camel_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q612471)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/94b7a39b-f3cc-4796-90dd-b1786a62877e)
 
 ## Curator Notes
 

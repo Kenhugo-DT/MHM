@@ -5,7 +5,7 @@ type: band
 zone: hard-rock-metal
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1993
 eraPeak:
 primaryGenres: [hard rock]
 curatorTags: [band, hard rock, metal]
@@ -30,6 +30,8 @@ A band connected to documented Wikipedia signals around Rob Halford.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Fight_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q627030)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/e61ce7e2-f78d-4fee-ac56-ef1a784c87fa)
 
 ## Curator Notes
 

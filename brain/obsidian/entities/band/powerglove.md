@@ -5,7 +5,7 @@ type: band
 zone: rock-circuit
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 2005
 eraPeak:
 primaryGenres: [rock]
 curatorTags: [band, classic rock, rock]
@@ -29,6 +29,8 @@ A band connected to documented Wikipedia signals around Sonata Arctica.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Powerglove_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q2107033)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/09deef08-8610-4295-9ea4-544950f45b32)
 
 ## Curator Notes
 

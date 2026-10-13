@@ -5,7 +5,7 @@ type: band
 zone: rock-circuit
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1984
 eraPeak:
 primaryGenres: [rock]
 curatorTags: [band, classic rock, rock]
@@ -28,6 +28,8 @@ A band connected to documented Wikipedia signals around Ralf Scheepers.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Phenomena_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q1426980)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/7f59c0e4-24eb-4de0-b9d9-57d72da7244f)
 
 ## Curator Notes
 

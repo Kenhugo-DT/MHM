@@ -5,7 +5,7 @@ type: band
 zone: rock-circuit
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 2022
 eraPeak:
 primaryGenres: [rock]
 curatorTags: [band, classic rock, rock]
@@ -28,6 +28,8 @@ A band connected to documented Wikipedia signals around Gloryhammer.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Dominum_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q131629535)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/a0385d31-16c4-49b6-ab2c-51877aa653e5)
 
 ## Curator Notes
 

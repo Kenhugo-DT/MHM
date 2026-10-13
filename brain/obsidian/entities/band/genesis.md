@@ -5,7 +5,7 @@ type: band
 zone: rock-circuit
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1967
 eraPeak:
 primaryGenres: [rock]
 curatorTags: [band, classic rock, rock]
@@ -29,6 +29,8 @@ A band connected to documented Wikipedia signals around Stone Sour.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Genesis_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q151012)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/8e3fcd7d-bda1-4ca0-b987-b8528d2ee74e)
 
 ## Curator Notes
 

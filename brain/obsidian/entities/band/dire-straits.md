@@ -5,7 +5,7 @@ type: band
 zone: rock-circuit
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1977
 eraPeak:
 primaryGenres: [rock]
 curatorTags: [Rock, rock, band]
@@ -29,6 +29,8 @@ A British band centered on Mark Knopfler's clean fingerstyle electric guitar and
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Dire_Straits)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q50040)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/614e3804-7d34-41ba-857f-811bad7c2b7a)
 
 ## Curator Notes
 

@@ -5,7 +5,7 @@ type: band
 zone: hard-rock-metal
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1978
 eraPeak:
 primaryGenres: [speed metal]
 curatorTags: [Speed Metal, Thrash metal, speed metal]
@@ -29,6 +29,8 @@ A band connected to documented Wikipedia signals around thrash metal.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Anvil_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q613022)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/07a85e96-bb72-4930-b41d-24853f4a4ede)
 
 ## Curator Notes
 

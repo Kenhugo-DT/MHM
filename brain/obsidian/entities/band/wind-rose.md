@@ -5,7 +5,7 @@ type: band
 zone: rock-circuit
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 2009
 eraPeak:
 primaryGenres: [rock]
 curatorTags: [band, classic rock, rock]
@@ -28,6 +28,8 @@ A band connected to documented Wikipedia signals around Gloryhammer.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Wind_Rose_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q48780265)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/592b488d-dd42-4d9a-a343-d7ca4f69d0bb)
 
 ## Curator Notes
 

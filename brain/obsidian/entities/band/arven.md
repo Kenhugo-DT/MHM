@@ -5,7 +5,7 @@ type: band
 zone: rock-circuit
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 2006
 eraPeak:
 primaryGenres: [rock]
 curatorTags: [band, classic rock, rock]
@@ -28,6 +28,8 @@ A band connected to documented Wikipedia signals around Sonata Arctica.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Arven_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q717060)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/2030bea5-333f-4db2-bc29-aefff5207ee7)
 
 ## Curator Notes
 

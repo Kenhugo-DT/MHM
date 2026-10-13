@@ -5,7 +5,7 @@ type: band
 zone: punk-alt
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 2005
 eraPeak:
 primaryGenres: []
 curatorTags: [band, alternative, punk]
@@ -31,6 +31,8 @@ A band connected to documented Wikipedia signals around Bad Religion.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Black_President_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q4921503)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/ba860f66-b815-41bc-a08c-d6494710524c)
 
 ## Curator Notes
 

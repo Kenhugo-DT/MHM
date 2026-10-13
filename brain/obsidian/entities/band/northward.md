@@ -5,7 +5,7 @@ type: band
 zone: rock-circuit
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 2007
 eraPeak:
 primaryGenres: [rock]
 curatorTags: [band, classic rock, rock]
@@ -28,6 +28,8 @@ A band connected to documented Wikipedia signals around Jukka Nevalainen.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Northward_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q55625475)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/ee3c8199-4f95-40e8-8133-67ebcce7c43f)
 
 ## Curator Notes
 

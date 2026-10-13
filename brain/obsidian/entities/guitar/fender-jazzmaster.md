@@ -5,7 +5,7 @@ type: guitar
 zone: guitar-workshop
 roles: [guitar]
 aliases: []
-eraStart:
+eraStart: 1958
 eraPeak:
 primaryGenres: []
 curatorTags: [electric guitar, guitar, instrument]
@@ -29,6 +29,7 @@ An offset Fender guitar adopted by alternative and indie players for its wide si
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Fender_Jazzmaster)
+- [Fender: Jazzmaster history](https://www.fender.com/articles/instruments/demystifying-the-jazzmaster-controls)
 
 ## Curator Notes
 

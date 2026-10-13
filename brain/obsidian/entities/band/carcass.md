@@ -5,7 +5,7 @@ type: band
 zone: hard-rock-metal
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1985
 eraPeak:
 primaryGenres: [hard rock]
 curatorTags: [band, hard rock, metal]
@@ -28,6 +28,8 @@ A band connected to documented Wikipedia signals around Andy Sneap.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Carcass_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q283835)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/d50a4b89-ff1f-4659-9fde-f76f8d5b3c89)
 
 ## Curator Notes
 

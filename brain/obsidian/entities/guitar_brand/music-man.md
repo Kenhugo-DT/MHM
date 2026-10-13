@@ -5,7 +5,7 @@ type: guitar_brand
 zone: guitar-workshop
 roles: [guitar_brand]
 aliases: []
-eraStart:
+eraStart: 1972
 eraPeak:
 primaryGenres: []
 curatorTags: [guitar brand, manufacturer, guitar]
@@ -28,6 +28,7 @@ An American instrument maker linked to modern signature electric guitars and pre
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Music_Man_(company))
+- [Ernie Ball: Music Man history](https://www.ernieball.com/about)
 
 ## Curator Notes
 

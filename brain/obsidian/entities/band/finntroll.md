@@ -5,7 +5,7 @@ type: band
 zone: hard-rock-metal
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1997
 eraPeak:
 primaryGenres: [folk, hard rock]
 curatorTags: [band, folk, hard rock]

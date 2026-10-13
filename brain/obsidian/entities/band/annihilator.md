@@ -5,7 +5,7 @@ type: band
 zone: hard-rock-metal
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1984
 eraPeak:
 primaryGenres: [thrash metal]
 curatorTags: [Thrash metal, thrash metal, band]
@@ -35,6 +35,8 @@ A band connected to documented Wikipedia signals around Andy Sneap.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Annihilator_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q567086)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/c30ebe30-514f-4e6d-823a-19adf0225a56)
 
 ## Curator Notes
 

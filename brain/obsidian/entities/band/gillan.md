@@ -5,7 +5,7 @@ type: band
 zone: rock-circuit
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1978
 eraPeak:
 primaryGenres: [rock]
 curatorTags: [band, classic rock, rock]
@@ -28,6 +28,8 @@ A band connected to documented Wikipedia signals around Janick Gers.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Gillan_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q2472212)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/f7ee55df-61ae-4d22-989b-60ada0ea44a4)
 
 ## Curator Notes
 

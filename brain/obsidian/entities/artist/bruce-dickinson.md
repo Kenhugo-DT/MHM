@@ -29,6 +29,7 @@ Paul Bruce Dickinson (born 7 August 1958) is an English musician who is best kno
 - [[arthur-brown|Arthur Brown]] - Wikipedia link signal (Wikipedia link: Arthur Brown (musician))
 - [[as-lions|As Lions]] - Wikipedia link signal (Wikipedia link: As Lions (band))
 - [[catherine-wheel|Catherine Wheel]] - Wikipedia link signal (Wikipedia link: Catherine Wheel (band))
+- [[iron-maiden|Iron Maiden]] - Member of (MusicBrainz records Bruce Dickinson as a member of Iron Maiden.; Documented periods: 1981-09 to 1993; 1999-01 to present.)
 
 ## Sources
 

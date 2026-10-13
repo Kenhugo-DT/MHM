@@ -30,7 +30,8 @@ A jazz guitarist known for solo chord melody, walking bass lines and complete ar
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Joe_Pass)
+- [MusicBrainz](https://musicbrainz.org/artist/2f43e416-f1bf-4f04-8853-a0019aa12441)
 
 ## Curator Notes
 
-Use this section for human notes. Machine-readable organization belongs in the frontmatter above.
+Pass belongs in jazz as a solo and ensemble guitarist. Keep performance and collaboration links distinct from broad category co-membership; source: https://musicbrainz.org/artist/2f43e416-f1bf-4f04-8853-a0019aa12441.

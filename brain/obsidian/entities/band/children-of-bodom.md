@@ -24,6 +24,7 @@ Children of Bodom are a Finnish melodic death metal band from Espoo, Uusimaa. Fo
 ## Connections
 
 - [[agathodaimon|Agathodaimon]] - Wikipedia link signal (Wikipedia link: Agathodaimon (band))
+- [[alexi-laiho|Alexi Laiho]] - Member of (MusicBrainz records Alexi Laiho as a member of Children of Bodom.; Documented period: 1997 to 2020-12.)
 - [[ancient|Ancient]] - Wikipedia link signal (Wikipedia link: Ancient (band))
 - [[anthrax-american-band|Anthrax (American band)]] - Wikipedia link signal (Wikipedia link: Anthrax (American band))
 - [[as-i-lay-dying|As I Lay Dying]] - Wikipedia link signal (Wikipedia link: As I Lay Dying (band))

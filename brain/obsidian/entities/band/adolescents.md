@@ -5,7 +5,7 @@ type: band
 zone: punk-alt
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1979
 eraPeak:
 primaryGenres: [hardcore punk]
 curatorTags: [hardcore punk, skate punk, band]
@@ -31,6 +31,8 @@ A band connected to documented Wikipedia signals around The Offspring.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Adolescents_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q360484)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/c43c7134-5d6f-4bfa-8275-b4012ae97c46)
 
 ## Curator Notes
 

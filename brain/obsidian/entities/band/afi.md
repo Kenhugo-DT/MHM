@@ -5,7 +5,7 @@ type: band
 zone: punk-alt
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1991
 eraPeak:
 primaryGenres: [horror punk, punk rock]
 curatorTags: [horror punk, punk rock, alternative]
@@ -36,6 +36,8 @@ A band connected to documented Wikipedia signals around Bad Religion.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/AFI_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q292061)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/1c3919b2-43ca-4a4a-935d-9d50135ec0ef)
 
 ## Curator Notes
 

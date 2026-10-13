@@ -5,7 +5,7 @@ type: band
 zone: rock-circuit
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1978
 eraPeak:
 primaryGenres: [rock]
 curatorTags: [band, classic rock, rock]
@@ -28,6 +28,8 @@ A band connected to documented Wikipedia signals around Circle Jerks.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/D.O.A._%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q923253)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/0f0b2f97-a073-4a92-ab99-ff7980ad7fca)
 
 ## Curator Notes
 

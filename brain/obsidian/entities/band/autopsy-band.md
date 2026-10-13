@@ -5,7 +5,7 @@ type: band
 zone: hard-rock-metal
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1987
 eraPeak:
 primaryGenres: [doom metal]
 curatorTags: [Doom metal, doom metal, band]
@@ -29,6 +29,8 @@ A band connected to documented Wikipedia signals around Doom metal.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Autopsy_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q676620)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/1d097d38-d5ca-4cd4-9200-7f08eedd0875)
 
 ## Curator Notes
 

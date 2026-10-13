@@ -25,6 +25,7 @@ Velvet Revolver was an American hard rock supergroup consisting of Guns N' Roses
 
 - [[atheist|Atheist]] - Wikipedia link signal (Wikipedia link: Atheist (band))
 - [[carrie|Carrie]] - Wikipedia link signal (Wikipedia link: Carrie (band))
+- [[duff-mckagan|Duff McKagan]] - Member of (MusicBrainz records Duff McKagan as a member of Velvet Revolver.; Documented period: 2002 to 2012.)
 
 ## Sources
 

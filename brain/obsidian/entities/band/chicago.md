@@ -5,7 +5,7 @@ type: band
 zone: hip-hop-rap
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1967
 eraPeak:
 primaryGenres: [hip-hop, rap]
 curatorTags: [band, hip-hop, rap]
@@ -31,6 +31,8 @@ A band connected to documented Wikipedia signals around N.W.A.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Chicago_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q371938)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/3f5be744-e867-42fb-8913-5fd69e4099b5)
 
 ## Curator Notes
 

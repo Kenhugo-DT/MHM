@@ -5,7 +5,7 @@ type: band
 zone: rock-circuit
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 2011
 eraPeak:
 primaryGenres: [rock]
 curatorTags: [band, classic rock, rock]
@@ -28,6 +28,8 @@ A band connected to documented Wikipedia signals around Gloryhammer.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Arion_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q20251309)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/722b5dcf-3d11-48ab-b199-ab4338738685)
 
 ## Curator Notes
 

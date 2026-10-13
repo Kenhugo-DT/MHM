@@ -5,7 +5,7 @@ type: band
 zone: rock-circuit
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 2018
 eraPeak:
 primaryGenres: [rock]
 curatorTags: [band, classic rock, rock]
@@ -28,6 +28,8 @@ A band connected to documented Wikipedia signals around Steel Panther.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Equinox_%28Bulgarian_band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q50412411)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/9d2a06f7-1e2a-4661-b413-70ea771daaae)
 
 ## Curator Notes
 

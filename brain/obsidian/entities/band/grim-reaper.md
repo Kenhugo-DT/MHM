@@ -5,7 +5,7 @@ type: band
 zone: rock-circuit
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1979
 eraPeak:
 primaryGenres: [rock]
 curatorTags: [band, classic rock, rock]
@@ -28,6 +28,8 @@ A band connected to documented Wikipedia signals around Nita Strauss.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Grim_Reaper_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q2476571)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/f7ec5e27-6709-416b-8992-ae7ecc180739)
 
 ## Curator Notes
 

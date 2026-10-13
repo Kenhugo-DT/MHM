@@ -5,7 +5,7 @@ type: guitar_brand
 zone: guitar-workshop
 roles: [guitar_brand]
 aliases: []
-eraStart:
+eraStart: 1978
 eraPeak:
 primaryGenres: []
 curatorTags: [guitar brand, manufacturer, guitar]
@@ -28,6 +28,7 @@ A brand tied to hot-rodded Strat-style guitars and the rise of the superstrat id
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Charvel)
+- [Charvel: brand history](https://charvel.com/support/)
 
 ## Curator Notes
 

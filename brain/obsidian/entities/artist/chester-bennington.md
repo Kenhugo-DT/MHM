@@ -26,6 +26,8 @@ Chester Charles Bennington (March 20, 1976 – July 20, 2017) was an American si
 - [[disturbed|Disturbed]] - Wikipedia link signal (Wikipedia link: Disturbed (band))
 - [[emily-armstrong|Emily Armstrong]] - Wikipedia link signal (Wikipedia link: Emily Armstrong (musician))
 - [[guitar-heaven-the-greatest-guitar-classics-of-all-time|Guitar Heaven: The Greatest Guitar Classics of All Time]] - Wikipedia link signal (Wikipedia link: Guitar Heaven: The Greatest Guitar Classics of All Time)
+- [[linkin-park|Linkin Park]] - Member of (MusicBrainz records Chester Bennington as a member of Linkin Park.; Documented period: 1999 to 2017-07-20.)
+- [[stone-temple-pilots|Stone Temple Pilots]] - Member of (MusicBrainz records Chester Bennington as a member of Stone Temple Pilots.; Documented period: 2013 to 2015-11-09.)
 
 ## Sources
 

@@ -5,7 +5,7 @@ type: band
 zone: punk-alt
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 2000
 eraPeak:
 primaryGenres: []
 curatorTags: []
@@ -28,6 +28,8 @@ A band connected to documented Wikipedia signals around Fugazi.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Brand_New_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q897754)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/9311e2bc-bb3f-44cf-90d8-b1fe6912b60b)
 
 ## Curator Notes
 

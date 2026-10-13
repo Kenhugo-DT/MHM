@@ -23,7 +23,7 @@ Brian Patrick Carroll (born May 13, 1969), known professionally as Buckethead, i
 
 ## Connections
 
-No documented connections yet.
+- [[guns-n-roses|Guns N' Roses]] - Member of (MusicBrainz records Buckethead as a member of Guns N' Roses.; Documented period: 2000 to 2004-03.)
 
 ## Sources
 

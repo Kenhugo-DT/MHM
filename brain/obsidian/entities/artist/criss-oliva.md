@@ -29,6 +29,7 @@ Christopher Michael Oliva (April 3, 1963 – October 17, 1993) was an American m
 - [[jackson-guitars|Jackson Guitars]] - Wikipedia link signal (Wikipedia link: Jackson Guitars)
 - [[joe-perry|Joe Perry]] - Wikipedia link signal (Wikipedia link: Joe Perry (musician))
 - [[overkill|Overkill]] - Wikipedia link signal (Wikipedia link: Overkill (band))
+- [[savatage|Savatage]] - Member of (MusicBrainz records Criss Oliva as a member of Savatage.; Documented period: 1983 to 1993-10-17.)
 - [[testament|Testament]] - Wikipedia link signal (Wikipedia link: Testament (band))
 
 ## Sources

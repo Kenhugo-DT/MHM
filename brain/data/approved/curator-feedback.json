@@ -288,6 +288,102 @@
       "feedback": "Core punk and horror punk anchor. Keep near Ramones, Sex Pistols, horror punk and hardcore punk rather than generic rock."
     },
     {
+      "id": "ufo",
+      "zone": "hard-rock-metal",
+      "secondaryZones": ["rock-circuit", "psychedelia-prog"],
+      "primaryGenres": ["hard rock"],
+      "curatorTags": ["British hard rock", "space rock roots", "Michael Schenker era"],
+      "bridgeBoost": 0.16,
+      "feedback": "UFO here means the British band founded in 1969, not unidentified flying objects. Its early space-rock phase and later hard-rock work make it a bridge; only documented members or influence should become edges. Sources: https://musicbrainz.org/artist/c0bf9e20-2872-4897-ad1f-0882b83272a0 and https://en.wikipedia.org/wiki/UFO_(band)."
+    },
+    {
+      "id": "sebastian-bach",
+      "zone": "hard-rock-metal",
+      "primaryGenres": ["hard rock", "glam metal"],
+      "curatorTags": ["Skid Row vocalist", "Canadian metal singer"],
+      "feedback": "This is the singer associated with Skid Row, not Johann Sebastian Bach. Match both name and person identity before accepting a MusicBrainz result; an article link alone does not prove a musical relationship. Source: https://musicbrainz.org/artist/50f10489-c87e-4df3-800f-be1f8d6bda4b."
+    },
+    {
+      "id": "courtney-cox",
+      "zone": "hard-rock-metal",
+      "primaryGenres": ["heavy metal"],
+      "curatorTags": ["metal guitarist", "The Iron Maidens"],
+      "feedback": "Courtney Cox is the guitarist associated with The Iron Maidens, not actor Courteney Cox. Reject links inherited from the actor's page; keep only independently documented music relationships. Source: https://en.wikipedia.org/wiki/Courtney_Cox_(musician)."
+    },
+    {
+      "id": "wes-montgomery",
+      "zone": "jazz",
+      "primaryGenres": ["jazz"],
+      "curatorTags": ["thumb picking", "octave phrasing", "jazz guitar"],
+      "feedback": "Montgomery is a jazz-guitar anchor. His thumb-picked octave sound can explain stylistic context, but co-mentions in encyclopedia categories do not establish influence or collaboration. Source: https://musicbrainz.org/artist/663f8232-8c46-4851-803f-a91d31593b14."
+    },
+    {
+      "id": "joe-pass",
+      "zone": "jazz",
+      "primaryGenres": ["jazz"],
+      "curatorTags": ["solo jazz guitar", "chord melody"],
+      "feedback": "Pass belongs in jazz as a solo and ensemble guitarist. Keep performance and collaboration links distinct from broad category co-membership; source: https://musicbrainz.org/artist/2f43e416-f1bf-4f04-8853-a0019aa12441."
+    },
+    {
+      "id": "body-count",
+      "zone": "hip-hop-rap",
+      "secondaryZones": ["hard-rock-metal", "punk-alt"],
+      "primaryGenres": ["rap metal", "heavy metal"],
+      "curatorTags": ["Ice-T crossover", "metal and hip-hop bridge"],
+      "bridgeBoost": 0.2,
+      "feedback": "Body Count is a metal band fronted by rapper Ice-T, a documented crossover between hip-hop and metal. Keep the band's musical identity separate from a mere shared category or platform link. Source: https://en.wikipedia.org/wiki/Body_Count_(band)."
+    },
+    {
+      "id": "the-stooges",
+      "zone": "punk-alt",
+      "secondaryZones": ["rock-circuit"],
+      "primaryGenres": ["proto-punk", "rock"],
+      "curatorTags": ["Iggy Pop", "proto-punk bridge"],
+      "bridgeBoost": 0.18,
+      "feedback": "The Stooges predate punk as a named scene and are a documented proto-punk bridge from late-1960s rock. Avoid treating a category or article co-mention as a direct band relationship. Source: https://musicbrainz.org/artist/794c6bf2-3241-416f-9b8f-24e2d84a1c4b."
+    },
+    {
+      "id": "rage-against-the-machine",
+      "zone": "punk-alt",
+      "secondaryZones": ["hip-hop-rap", "hard-rock-metal"],
+      "primaryGenres": ["rap metal", "alternative metal"],
+      "curatorTags": ["rap-rock crossover", "funk-metal rhythm", "political rock"],
+      "bridgeBoost": 0.22,
+      "feedback": "Rage Against the Machine blends rap delivery, heavy guitar and funk rhythm. Its documented crossover warrants multiple zone pulls, but nearby hip-hop or metal acts need their own sourced relationship before receiving an edge. Source: https://en.wikipedia.org/wiki/Rage_Against_the_Machine."
+    },
+    {
+      "id": "black-flag",
+      "zone": "punk-alt",
+      "primaryGenres": ["hardcore punk"],
+      "curatorTags": ["US hardcore", "early punk scene"],
+      "feedback": "Black Flag is a US hardcore-punk anchor. Place it with the punk network; an article's category list is not evidence of direct influence on every other hardcore band. Source: https://en.wikipedia.org/wiki/Black_Flag_(band)."
+    },
+    {
+      "id": "cream",
+      "zone": "rock-circuit",
+      "secondaryZones": ["roots-blues", "hard-rock-metal"],
+      "primaryGenres": ["blues rock", "psychedelic rock"],
+      "curatorTags": ["British blues rock", "power trio", "Eric Clapton"],
+      "bridgeBoost": 0.18,
+      "feedback": "Cream is a British blues-rock power trio whose amplified improvisation connects blues with later rock. Document Clapton membership separately from musical influence; no album or song is a visible node. Source: https://en.wikipedia.org/wiki/Cream_(band)."
+    },
+    {
+      "id": "john-mclaughlin",
+      "zone": "jazz",
+      "secondaryZones": ["rock-circuit", "psychedelia-prog"],
+      "primaryGenres": ["jazz fusion"],
+      "curatorTags": ["electric jazz fusion", "Mahavishnu Orchestra"],
+      "bridgeBoost": 0.2,
+      "feedback": "McLaughlin connects jazz improvisation with amplified rock and the Mahavishnu Orchestra. Keep him jazz-centered and distinguish documented band membership from broader stylistic influence. Source: https://en.wikipedia.org/wiki/John_McLaughlin_(musician)."
+    },
+    {
+      "id": "django-reinhardt",
+      "zone": "jazz",
+      "primaryGenres": ["gypsy jazz", "swing"],
+      "curatorTags": ["European jazz guitar", "acoustic swing"],
+      "feedback": "Reinhardt is a European jazz-guitar anchor associated with swing and the Quintette du Hot Club de France. Acoustic guitar technique is context, not proof of a country-music lineage. Source: https://en.wikipedia.org/wiki/Django_Reinhardt."
+    },
+    {
       "id": "ramones",
       "label": "Ramones",
       "zone": "punk-alt",
@@ -556,6 +652,11 @@
       "id": "wikipedia-categories-are-weak-signals",
       "weight": 1,
       "feedback": "Wikipedia categories are weak signals. Do not create or prioritize category-like genre nodes unless they are recognized music genres."
+    },
+    {
+      "id": "verify-source-identity-before-links",
+      "weight": 1,
+      "feedback": "A matching name is insufficient evidence: confirm entity type, exact identity and source page before creating a node or connection. Disambiguation pages, homonyms and article co-links must not become music-history facts. A rejected research package may be a duplicate or contain weak links even when its seed node already belongs on the map."
     },
     {
       "id": "songs-and-albums-are-context",

@@ -5,7 +5,7 @@ type: band
 zone: hard-rock-metal
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1986
 eraPeak:
 primaryGenres: [hard rock]
 curatorTags: [symphonic metal, band, hard rock]
@@ -28,6 +28,8 @@ A band connected to documented Wikipedia signals around symphonic metal.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Believer_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q815610)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/b0f8a148-c7cd-4cae-ac5d-b390ec34f4ef)
 
 ## Curator Notes
 

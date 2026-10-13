@@ -5,7 +5,7 @@ type: band
 zone: rock-circuit
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1992
 eraPeak:
 primaryGenres: [rock]
 curatorTags: [band, classic rock, rock]
@@ -28,6 +28,8 @@ A band connected to documented Wikipedia signals around Children of Bodom.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Ancient_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q489320)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/e6ea52d9-cdc0-475c-b029-0d13dc0f64d6)
 
 ## Curator Notes
 

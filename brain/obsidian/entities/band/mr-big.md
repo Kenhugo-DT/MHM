@@ -5,7 +5,7 @@ type: band
 zone: rock-circuit
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1988
 eraPeak:
 primaryGenres: [rock]
 curatorTags: [band, classic rock, rock]
@@ -28,6 +28,8 @@ A band connected to documented Wikipedia signals around Satchel (musician).
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Mr._Big_%28American_band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q822802)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/bd1180c4-4252-461f-94dc-543906c02522)
 
 ## Curator Notes
 

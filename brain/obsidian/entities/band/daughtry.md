@@ -5,7 +5,7 @@ type: band
 zone: rock-circuit
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 2006
 eraPeak:
 primaryGenres: [rock]
 curatorTags: [band, classic rock, rock]
@@ -28,6 +28,8 @@ A band connected to documented Wikipedia signals around REO Speedwagon.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Daughtry_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q873413)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/21e3292e-dac8-4609-b57d-402f926aa41f)
 
 ## Curator Notes
 

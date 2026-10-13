@@ -5,7 +5,7 @@ type: band
 zone: hard-rock-metal
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1978
 eraPeak:
 primaryGenres: [gothic metal, hard rock]
 curatorTags: [gothic metal, band, hard rock]
@@ -29,6 +29,8 @@ A band connected to documented Wikipedia signals around gothic metal.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Bauhaus_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q180582)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/0688add2-c282-4ee2-ba61-223ffdb3c201)
 
 ## Curator Notes
 

@@ -1,7 +1,7 @@
 # Graph Index
 
 Generated entity notes: 1015
-Documented connections: 1315
+Documented connections: 1326
 
 ## artist
 

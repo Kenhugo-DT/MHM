@@ -5,7 +5,7 @@ type: band
 zone: punk-alt
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 2005
 eraPeak:
 primaryGenres: []
 curatorTags: [band, alternative, punk]
@@ -28,6 +28,8 @@ A band connected to documented Wikipedia signals around Dead Kennedys.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Ceremony_%28punk_band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q5064169)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/c13da818-d566-4f2a-aaaf-1c68301ddc43)
 
 ## Curator Notes
 

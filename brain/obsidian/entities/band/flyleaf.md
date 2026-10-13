@@ -5,7 +5,7 @@ type: band
 zone: rock-circuit
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 2002
 eraPeak:
 primaryGenres: [rock]
 curatorTags: [band, classic rock, rock]
@@ -29,6 +29,8 @@ A band connected to documented Wikipedia signals around Apocalyptica.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Flyleaf_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q215125)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/9011971a-df29-4b57-8889-2e5e9a645cbe)
 
 ## Curator Notes
 

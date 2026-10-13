@@ -5,7 +5,7 @@ type: band
 zone: rock-circuit
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1980
 eraPeak:
 primaryGenres: [rock]
 curatorTags: [band, classic rock, rock]
@@ -28,6 +28,8 @@ A band connected to documented Wikipedia signals around Criss Oliva.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Overkill_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q648949)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/97fa7dd1-4706-4fad-b6ff-e099a37837fc)
 
 ## Curator Notes
 

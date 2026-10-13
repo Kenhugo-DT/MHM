@@ -5,7 +5,7 @@ type: band
 zone: rock-circuit
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 2002
 eraPeak:
 primaryGenres: [rock]
 curatorTags: [band, classic rock, rock]
@@ -28,6 +28,8 @@ A band connected to documented Wikipedia signals around Apocalyptica.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Allison_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q4732726)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/391432b8-72bb-49a1-8ad7-4c41f342cce0)
 
 ## Curator Notes
 

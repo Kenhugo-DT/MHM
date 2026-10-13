@@ -5,7 +5,7 @@ type: band
 zone: psychedelia-prog
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1968
 eraPeak:
 primaryGenres: [hard rock]
 curatorTags: [Hard rock, Progressive rock, hard rock]
@@ -30,6 +30,8 @@ A Canadian trio joining hard rock power, progressive structure and Alex Lifeson'
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Rush_(band))
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q203871)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/534ee493-bfac-4575-a44a-0ae41e2c3fe4)
 
 ## Curator Notes
 

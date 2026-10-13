@@ -5,7 +5,7 @@ type: band
 zone: rock-circuit
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1970
 eraPeak:
 primaryGenres: []
 curatorTags: [Glam rock, Hard rock, Progressive rock]
@@ -33,6 +33,8 @@ A British rock band combining hard rock, glam, progressive arrangements and Bria
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Queen_(band))
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q15862)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/0383dadf-2a4e-4d10-a46a-e9e041da8eb3)
 
 ## Curator Notes
 

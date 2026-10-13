@@ -23,7 +23,7 @@ James Newell Osterberg Jr. (born April 21, 1947), known professionally as Iggy P
 
 ## Connections
 
-No documented connections yet.
+- [[the-stooges|The Stooges]] - Member of (MusicBrainz records Iggy Pop as a member of The Stooges.; Documented period: 1967 to 1970.)
 
 ## Sources
 

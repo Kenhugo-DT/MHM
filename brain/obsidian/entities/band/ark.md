@@ -5,7 +5,7 @@ type: band
 zone: rock-circuit
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1990
 eraPeak:
 primaryGenres: [rock]
 curatorTags: [band, classic rock, rock]
@@ -29,6 +29,8 @@ A band connected to documented Wikipedia signals around Avantasia.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Ark_%28Norwegian_band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q671713)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/166ef05e-53f7-44b8-a5d5-3944c188e12d)
 
 ## Curator Notes
 

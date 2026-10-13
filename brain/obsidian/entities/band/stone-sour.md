@@ -26,6 +26,7 @@ Stone Sour were an American rock band formed in Des Moines, Iowa, in 1992. The b
 - [[art-of-dying|Art of Dying]] - Wikipedia link signal (Wikipedia link: Art of Dying (band))
 - [[black-president|Black President]] - Wikipedia link signal (Wikipedia link: Black President (band))
 - [[chevelle|Chevelle]] - Wikipedia link signal (Wikipedia link: Chevelle (band))
+- [[corey-taylor|Corey Taylor]] - Member of (MusicBrainz records Corey Taylor as a member of Stone Sour.; Documented period: 1992 to 2020.)
 - [[genesis|Genesis]] - Wikipedia link signal (Wikipedia link: Genesis (band))
 
 ## Sources

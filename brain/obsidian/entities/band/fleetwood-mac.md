@@ -5,7 +5,7 @@ type: band
 zone: roots-blues
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1967
 eraPeak:
 primaryGenres: [blues rock, pop rock, blues]
 curatorTags: [blues rock, pop rock, blues]
@@ -33,6 +33,8 @@ A band that began in British blues and later became a polished pop-rock force wi
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Fleetwood_Mac)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q106648)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/bd13909f-1c29-4c27-a874-d4aaf27c5b1a)
 
 ## Curator Notes
 

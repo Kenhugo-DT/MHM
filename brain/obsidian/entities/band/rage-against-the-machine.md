@@ -31,4 +31,4 @@ A band combining rap, punk, funk and metal weight into a hard-edged alternative 
 
 ## Curator Notes
 
-Use this section for human notes. Machine-readable organization belongs in the frontmatter above.
+Rage Against the Machine blends rap delivery, heavy guitar and funk rhythm. Its documented crossover warrants multiple zone pulls, but nearby hip-hop or metal acts need their own sourced relationship before receiving an edge. Source: https://en.wikipedia.org/wiki/Rage_Against_the_Machine.

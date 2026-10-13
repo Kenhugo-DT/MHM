@@ -29,6 +29,7 @@ Savatage () is an American heavy metal band founded by brothers Jon and Criss Ol
 - [[artillery|Artillery]] - Wikipedia link signal (Wikipedia link: Artillery (band))
 - [[asia|Asia]] - Wikipedia link signal (Wikipedia link: Asia (band))
 - [[candlemass|Candlemass]] - Wikipedia link signal (Wikipedia link: Candlemass (band))
+- [[criss-oliva|Criss Oliva]] - Member of (MusicBrainz records Criss Oliva as a member of Savatage.; Documented period: 1983 to 1993-10-17.)
 
 ## Sources
 

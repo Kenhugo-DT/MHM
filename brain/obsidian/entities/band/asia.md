@@ -5,7 +5,7 @@ type: band
 zone: rock-circuit
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1981
 eraPeak:
 primaryGenres: [rock]
 curatorTags: [band, classic rock, rock]
@@ -30,6 +30,8 @@ A band connected to documented Wikipedia signals around Savatage.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Asia_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q726891)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/8f695099-c714-4ad0-8888-36eca37fee84)
 
 ## Curator Notes
 

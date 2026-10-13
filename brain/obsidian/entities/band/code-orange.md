@@ -5,7 +5,7 @@ type: band
 zone: rock-circuit
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 2008
 eraPeak:
 primaryGenres: [rock]
 curatorTags: [band, classic rock, rock]
@@ -28,6 +28,8 @@ A band connected to documented Wikipedia signals around Corey Taylor.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Code_Orange_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q5140037)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/b87d5807-c37a-4d0e-a53c-9cdf6bc6caa1)
 
 ## Curator Notes
 

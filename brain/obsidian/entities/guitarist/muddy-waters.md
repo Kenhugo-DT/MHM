@@ -5,7 +5,7 @@ type: guitarist
 zone: roots-blues
 roles: [guitarist, artist]
 aliases: []
-eraStart:
+eraStart: 1941
 eraPeak:
 primaryGenres: [blues rock]
 curatorTags: [Blues, Electric blues, blues rock]
@@ -30,6 +30,8 @@ A central Chicago blues artist whose amplified band sound fed directly into Brit
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Muddy_Waters)
+- [MusicBrainz: 1941 recording](https://musicbrainz.org/release-group/ad459d3b-f0a7-4ce7-a3bf-d21683e250f3)
+- [Wikidata: work period start](https://www.wikidata.org/wiki/Q220707)
 
 ## Curator Notes
 

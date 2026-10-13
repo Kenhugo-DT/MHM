@@ -5,7 +5,7 @@ type: guitar_brand
 zone: guitar-workshop
 roles: [guitar_brand]
 aliases: []
-eraStart:
+eraStart: 1952
 eraPeak:
 primaryGenres: []
 curatorTags: [guitar brand, manufacturer, folk]
@@ -28,6 +28,8 @@ A guitar company known for acoustic, twelve-string and electric instruments used
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Guild_Guitar_Company)
+- [Guild: company history](https://guildguitars.com/wp-content/uploads/2016/06/musictrades_july2016_guild_coverstory.pdf)
+- [Guild: production history](https://guildguitars.com/guild-support/faq/)
 
 ## Curator Notes
 

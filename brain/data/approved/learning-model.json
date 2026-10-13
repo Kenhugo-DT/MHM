@@ -1,15 +1,15 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-06T12:13:45.650Z",
+  "generatedAt": "2026-10-13T10:37:20.597Z",
   "source": "graph + Obsidian frontmatter + curator feedback",
   "samples": {
     "graphNodes": 1015,
     "graphEdges": 1326,
     "mapConnections": 894,
     "obsidianNotes": 1017,
-    "feedbackNodes": 32,
+    "feedbackNodes": 44,
     "feedbackZones": 6,
-    "feedbackRules": 4,
+    "feedbackRules": 5,
     "feedbackCategories": 8,
     "bridgePolicies": 13,
     "factNotes": 10,
@@ -19,27 +19,27 @@
     "approvedFactNodes": 115,
     "approvedFactNotes": 10,
     "pinnedNotes": 0,
-    "notesWithEra": 437,
+    "notesWithEra": 589,
     "notesWithPrimaryGenres": 484,
     "notesWithCuratorTags": 658
   },
   "zones": {
     "roots-blues": {
-      "nodeCount": 90,
+      "nodeCount": 89,
       "pinnedCount": 0,
       "centroid": {
-        "x": -1400,
-        "y": -198
+        "x": -1403,
+        "y": -199
       },
-      "eraMedian": 1947,
+      "eraMedian": 1948,
       "learnedTerms": [
         {
           "term": "blues rock",
-          "weight": 248
+          "weight": 238
         },
         {
           "term": "blues",
-          "weight": 215
+          "weight": 213
         },
         {
           "term": "electric blues",
@@ -78,10 +78,6 @@
           "weight": 27
         },
         {
-          "term": "hard rock",
-          "weight": 26
-        },
-        {
           "term": "jazz",
           "weight": 25
         },
@@ -116,6 +112,10 @@
         {
           "term": "good bridge",
           "weight": 18
+        },
+        {
+          "term": "hard rock",
+          "weight": 16
         },
         {
           "term": "rhythm",
@@ -238,10 +238,6 @@
           "weight": 6
         },
         {
-          "term": "hard",
-          "weight": 6
-        },
-        {
           "term": "jimmy page",
           "weight": 6
         },
@@ -352,29 +348,37 @@
         {
           "term": "connect the yardbirds and cream through verified membership with blues guitar as the musical center hall of fame inductions are career context not new collaborations",
           "weight": 4
+        },
+        {
+          "term": "country recordings",
+          "weight": 4
         }
       ]
     },
     "rock-circuit": {
-      "nodeCount": 173,
+      "nodeCount": 172,
       "pinnedCount": 0,
       "centroid": {
         "x": -520,
         "y": 322
       },
-      "eraMedian": 1967,
+      "eraMedian": 1990,
       "learnedTerms": [
         {
           "term": "classic rock",
-          "weight": 920
+          "weight": 908
         },
         {
           "term": "classic",
-          "weight": 304
+          "weight": 300
         },
         {
           "term": "rock and roll",
           "weight": 44
+        },
+        {
+          "term": "blues rock",
+          "weight": 30
         },
         {
           "term": "good bridge",
@@ -393,16 +397,16 @@
           "weight": 23
         },
         {
+          "term": "hard rock",
+          "weight": 23
+        },
+        {
           "term": "roots blues",
           "weight": 23
         },
         {
           "term": "psychedelia prog",
           "weight": 19
-        },
-        {
-          "term": "blues rock",
-          "weight": 18
         },
         {
           "term": "jazz fusion",
@@ -445,12 +449,12 @@
           "weight": 12
         },
         {
-          "term": "hard rock",
+          "term": "punk alt",
           "weight": 11
         },
         {
-          "term": "punk alt",
-          "weight": 11
+          "term": "eric clapton",
+          "weight": 10
         },
         {
           "term": "folk",
@@ -459,6 +463,10 @@
         {
           "term": "swamp rock",
           "weight": 10
+        },
+        {
+          "term": "hard",
+          "weight": 9
         },
         {
           "term": "george harrison",
@@ -525,6 +533,10 @@
           "weight": 6
         },
         {
+          "term": "blues",
+          "weight": 6
+        },
+        {
           "term": "body count",
           "weight": 6
         },
@@ -546,10 +558,6 @@
         },
         {
           "term": "django reinhardt",
-          "weight": 6
-        },
-        {
-          "term": "eric clapton",
           "weight": 6
         },
         {
@@ -633,10 +641,6 @@
           "weight": 6
         },
         {
-          "term": "hard",
-          "weight": 5
-        },
-        {
           "term": "progressive rock",
           "weight": 5
         },
@@ -661,27 +665,23 @@
           "weight": 4
         },
         {
+          "term": "british blues rock",
+          "weight": 4
+        },
+        {
           "term": "country roots",
           "weight": 4
         },
         {
+          "term": "cream",
+          "weight": 4
+        },
+        {
+          "term": "cream is a british blues rock power trio whose amplified improvisation connects blues with later rock document clapton membership separately from musical influence no album or song is a visible node source https en wikipedia org wiki cream band",
+          "weight": 4
+        },
+        {
           "term": "fingerstyle",
-          "weight": 4
-        },
-        {
-          "term": "folk country vise",
-          "weight": 4
-        },
-        {
-          "term": "guitar teacher",
-          "weight": 4
-        },
-        {
-          "term": "guitar workshop",
-          "weight": 4
-        },
-        {
-          "term": "hip hop rap",
           "weight": 4
         }
       ]
@@ -1018,21 +1018,21 @@
       ]
     },
     "hard-rock-metal": {
-      "nodeCount": 128,
+      "nodeCount": 130,
       "pinnedCount": 0,
       "centroid": {
-        "x": 2867,
+        "x": 2854,
         "y": 72
       },
-      "eraMedian": 1977,
+      "eraMedian": 1981,
       "learnedTerms": [
         {
           "term": "hard rock",
-          "weight": 942
+          "weight": 946
         },
         {
           "term": "heavy metal",
-          "weight": 376
+          "weight": 380
         },
         {
           "term": "metal",
@@ -1060,7 +1060,7 @@
         },
         {
           "term": "glam metal",
-          "weight": 46
+          "weight": 50
         },
         {
           "term": "speed metal",
@@ -1089,6 +1089,10 @@
         {
           "term": "thrash",
           "weight": 24
+        },
+        {
+          "term": "classic rock",
+          "weight": 20
         },
         {
           "term": "blues",
@@ -1140,6 +1144,10 @@
         },
         {
           "term": "black sabbath",
+          "weight": 8
+        },
+        {
+          "term": "classic",
           "weight": 8
         },
         {
@@ -1239,6 +1247,10 @@
           "weight": 6
         },
         {
+          "term": "the iron maidens",
+          "weight": 6
+        },
+        {
           "term": "the yardbirds",
           "weight": 6
         },
@@ -1251,7 +1263,27 @@
           "weight": 4
         },
         {
-          "term": "classic rock",
+          "term": "british hard rock",
+          "weight": 4
+        },
+        {
+          "term": "canadian metal singer",
+          "weight": 4
+        },
+        {
+          "term": "courtney",
+          "weight": 4
+        },
+        {
+          "term": "courtney cox",
+          "weight": 4
+        },
+        {
+          "term": "courtney cox is the guitarist associated with the iron maidens not actor courteney cox reject links inherited from the actor s page keep only independently documented music relationships source https en wikipedia org wiki courtney cox musician",
+          "weight": 4
+        },
+        {
+          "term": "cox",
           "weight": 4
         },
         {
@@ -1299,6 +1331,10 @@
           "weight": 4
         },
         {
+          "term": "metal guitarist",
+          "weight": 4
+        },
+        {
           "term": "metal origin",
           "weight": 4
         },
@@ -1307,43 +1343,7 @@
           "weight": 4
         },
         {
-          "term": "oliva",
-          "weight": 4
-        },
-        {
-          "term": "osbourne",
-          "weight": 4
-        },
-        {
-          "term": "ozzy",
-          "weight": 4
-        },
-        {
-          "term": "ozzy osbourne",
-          "weight": 4
-        },
-        {
-          "term": "page links the yardbirds blues rock lineage to led zeppelin s hard rock his double neck guitar is a separate instrument use link not a genre by itself",
-          "weight": 4
-        },
-        {
-          "term": "pantera",
-          "weight": 4
-        },
-        {
-          "term": "punk",
-          "weight": 4
-        },
-        {
-          "term": "purple",
-          "weight": 4
-        },
-        {
-          "term": "rhythm",
-          "weight": 4
-        },
-        {
-          "term": "rhythm guitar",
+          "term": "michael schenker era",
           "weight": 4
         }
       ]
@@ -2356,11 +2356,11 @@
         },
         {
           "term": "jazz",
-          "weight": 108
+          "weight": 109
         },
         {
           "term": "jazz fusion",
-          "weight": 44
+          "weight": 49
         },
         {
           "term": "lineage",
@@ -2376,10 +2376,18 @@
         },
         {
           "term": "john mclaughlin",
-          "weight": 13
+          "weight": 14
+        },
+        {
+          "term": "swing",
+          "weight": 14
         },
         {
           "term": "cool jazz",
+          "weight": 12
+        },
+        {
+          "term": "jazz guitar",
           "weight": 12
         },
         {
@@ -2395,8 +2403,8 @@
           "weight": 11
         },
         {
-          "term": "swing",
-          "weight": 10
+          "term": "fusion",
+          "weight": 9
         },
         {
           "term": "genre transition needed",
@@ -2412,14 +2420,6 @@
         },
         {
           "term": "early jazz",
-          "weight": 8
-        },
-        {
-          "term": "fusion",
-          "weight": 8
-        },
-        {
-          "term": "jazz guitar",
           "weight": 8
         },
         {
@@ -2451,6 +2451,10 @@
           "weight": 6
         },
         {
+          "term": "chord melody",
+          "weight": 6
+        },
+        {
           "term": "classic rock",
           "weight": 6
         },
@@ -2479,6 +2483,10 @@
           "weight": 6
         },
         {
+          "term": "progressive rock",
+          "weight": 6
+        },
+        {
           "term": "western swing",
           "weight": 6
         },
@@ -2503,12 +2511,12 @@
           "weight": 5
         },
         {
-          "term": "progressive rock",
+          "term": "rhythmic experiment",
           "weight": 5
         },
         {
-          "term": "rhythmic experiment",
-          "weight": 5
+          "term": "acoustic swing",
+          "weight": 4
         },
         {
           "term": "birth of the cool is a specific davis led jazz phase keep it within jazz and distinct from his later modal and electric phases",
@@ -2527,6 +2535,18 @@
           "weight": 4
         },
         {
+          "term": "electric jazz fusion",
+          "weight": 4
+        },
+        {
+          "term": "european jazz guitar",
+          "weight": 4
+        },
+        {
+          "term": "gypsy jazz",
+          "weight": 4
+        },
+        {
           "term": "jazz rock transition",
           "weight": 4
         },
@@ -2535,7 +2555,39 @@
           "weight": 4
         },
         {
+          "term": "mahavishnu orchestra",
+          "weight": 4
+        },
+        {
+          "term": "mclaughlin connects jazz improvisation with amplified rock and the mahavishnu orchestra keep him jazz centered and distinguish documented band membership from broader stylistic influence source https en wikipedia org wiki john mclaughlin musician",
+          "weight": 4
+        },
+        {
           "term": "modal jazz describes an improvisational approach not a claim that all davis or coltrane recordings use modes",
+          "weight": 4
+        },
+        {
+          "term": "montgomery is a jazz guitar anchor his thumb picked octave sound can explain stylistic context but co mentions in encyclopedia categories do not establish influence or collaboration source https musicbrainz org artist 663f8232 8c46 4851 803f a91d31593b14",
+          "weight": 4
+        },
+        {
+          "term": "octave phrasing",
+          "weight": 4
+        },
+        {
+          "term": "pass belongs in jazz as a solo and ensemble guitarist keep performance and collaboration links distinct from broad category co membership source https musicbrainz org artist 2f43e416 f1bf 4f04 8853 a0019aa12441",
+          "weight": 4
+        },
+        {
+          "term": "reinhardt is a european jazz guitar anchor associated with swing and the quintette du hot club de france acoustic guitar technique is context not proof of a country music lineage source https en wikipedia org wiki django reinhardt",
+          "weight": 4
+        },
+        {
+          "term": "solo jazz guitar",
+          "weight": 4
+        },
+        {
+          "term": "thumb picking",
           "weight": 4
         },
         {
@@ -2556,6 +2608,10 @@
         },
         {
           "term": "joe",
+          "weight": 3
+        },
+        {
+          "term": "john",
           "weight": 3
         },
         {
@@ -2599,10 +2655,6 @@
           "weight": 2
         },
         {
-          "term": "chord melody",
-          "weight": 2
-        },
-        {
           "term": "classic",
           "weight": 2
         },
@@ -2616,58 +2668,6 @@
         },
         {
           "term": "evans",
-          "weight": 2
-        },
-        {
-          "term": "form",
-          "weight": 2
-        },
-        {
-          "term": "gilberto",
-          "weight": 2
-        },
-        {
-          "term": "hybrid",
-          "weight": 2
-        },
-        {
-          "term": "hybrid form",
-          "weight": 2
-        },
-        {
-          "term": "james",
-          "weight": 2
-        },
-        {
-          "term": "joe pass",
-          "weight": 2
-        },
-        {
-          "term": "john",
-          "weight": 2
-        },
-        {
-          "term": "kind",
-          "weight": 2
-        },
-        {
-          "term": "melody",
-          "weight": 2
-        },
-        {
-          "term": "mode",
-          "weight": 2
-        },
-        {
-          "term": "montgomery",
-          "weight": 2
-        },
-        {
-          "term": "nonet",
-          "weight": 2
-        },
-        {
-          "term": "pass",
           "weight": 2
         }
       ]
@@ -3185,6 +3185,10 @@
           "weight": 4
         },
         {
+          "term": "body count is a metal band fronted by rapper ice t a documented crossover between hip hop and metal keep the band s musical identity separate from a mere shared category or platform link source https en wikipedia org wiki body count band",
+          "weight": 4
+        },
+        {
           "term": "detroit",
           "weight": 4
         },
@@ -3197,6 +3201,10 @@
           "weight": 4
         },
         {
+          "term": "heavy metal",
+          "weight": 4
+        },
+        {
           "term": "hip hop anchor with possible punk rock crossover context keep hip hop in its own area but allow documented bridges",
           "weight": 4
         },
@@ -3205,7 +3213,15 @@
           "weight": 4
         },
         {
+          "term": "ice t crossover",
+          "weight": 4
+        },
+        {
           "term": "life",
+          "weight": 4
+        },
+        {
+          "term": "metal and hip hop bridge",
           "weight": 4
         },
         {
@@ -3314,22 +3330,6 @@
         },
         {
           "term": "eazy e",
-          "weight": 2
-        },
-        {
-          "term": "enemy",
-          "weight": 2
-        },
-        {
-          "term": "george",
-          "weight": 2
-        },
-        {
-          "term": "george clinton",
-          "weight": 2
-        },
-        {
-          "term": "glenn",
           "weight": 2
         }
       ]
@@ -4018,6 +4018,8 @@
     "311": {
       "zone": "rock-circuit",
       "secondaryZones": [],
+      "eraStart": 1988,
+      "eraPeak": 1988,
       "primaryGenres": [
         "rock"
       ],
@@ -5017,6 +5019,8 @@
       "secondaryZones": [
         "rock-circuit"
       ],
+      "eraStart": 1960,
+      "eraPeak": 1960,
       "primaryGenres": [
         "psychedelic rock"
       ],
@@ -5064,6 +5068,8 @@
         "rock-circuit",
         "roots-blues"
       ],
+      "eraStart": 1968,
+      "eraPeak": 1968,
       "primaryGenres": [
         "hard rock",
         "blues rock"
@@ -5093,6 +5099,8 @@
       "secondaryZones": [
         "rock-circuit"
       ],
+      "eraStart": 1968,
+      "eraPeak": 1968,
       "primaryGenres": [
         "heavy metal",
         "hard rock",
@@ -5120,6 +5128,8 @@
     "van-halen": {
       "zone": "hard-rock-metal",
       "secondaryZones": [],
+      "eraStart": 1972,
+      "eraPeak": 1972,
       "primaryGenres": [
         "hard rock"
       ],
@@ -5141,6 +5151,8 @@
     "dire-straits": {
       "zone": "rock-circuit",
       "secondaryZones": [],
+      "eraStart": 1977,
+      "eraPeak": 1977,
       "primaryGenres": [
         "rock"
       ],
@@ -5202,6 +5214,8 @@
     "metallica": {
       "zone": "hard-rock-metal",
       "secondaryZones": [],
+      "eraStart": 1981,
+      "eraPeak": 1981,
       "primaryGenres": [
         "heavy metal"
       ],
@@ -5241,24 +5255,32 @@
       }
     },
     "cream": {
-      "zone": "roots-blues",
+      "zone": "rock-circuit",
       "secondaryZones": [
+        "roots-blues",
         "hard-rock-metal"
       ],
+      "eraStart": 1966,
+      "eraPeak": 1966,
       "primaryGenres": [
         "blues rock",
+        "psychedelic rock",
         "hard rock"
       ],
       "curatorTags": [
+        "British blues rock",
+        "power trio",
+        "Eric Clapton",
         "Hard rock",
         "blues rock"
       ],
+      "curatorFeedback": "Cream is a British blues-rock power trio whose amplified improvisation connects blues with later rock. Document Clapton membership separately from musical influence; no album or song is a visible node. Source: https://en.wikipedia.org/wiki/Cream_(band).",
       "approvedFactCount": 1,
       "connectionCount": 2,
       "linkedGenres": [
         "hard-rock"
       ],
-      "bridgeScore": 0.3,
+      "bridgeScore": 0.7,
       "hubScore": 0.167,
       "layoutHints": {
         "pinned": false
@@ -5271,6 +5293,8 @@
         "hard-rock-metal",
         "psychedelia-prog"
       ],
+      "eraStart": 1963,
+      "eraPeak": 1963,
       "primaryGenres": [
         "blues rock",
         "blues"
@@ -5316,6 +5340,8 @@
     "fender": {
       "zone": "guitar-workshop",
       "secondaryZones": [],
+      "eraStart": 1946,
+      "eraPeak": 1946,
       "primaryGenres": [],
       "curatorTags": [
         "guitar brand",
@@ -5334,6 +5360,8 @@
     "gibson": {
       "zone": "guitar-workshop",
       "secondaryZones": [],
+      "eraStart": 1894,
+      "eraPeak": 1894,
       "primaryGenres": [],
       "curatorTags": [
         "guitar brand",
@@ -5351,6 +5379,8 @@
     "martin": {
       "zone": "guitar-workshop",
       "secondaryZones": [],
+      "eraStart": 1833,
+      "eraPeak": 1833,
       "primaryGenres": [],
       "curatorTags": [
         "guitar brand",
@@ -5369,6 +5399,8 @@
     "rickenbacker": {
       "zone": "guitar-workshop",
       "secondaryZones": [],
+      "eraStart": 1931,
+      "eraPeak": 1931,
       "primaryGenres": [],
       "curatorTags": [
         "guitar brand",
@@ -5387,6 +5419,8 @@
     "gretsch": {
       "zone": "guitar-workshop",
       "secondaryZones": [],
+      "eraStart": 1883,
+      "eraPeak": 1883,
       "primaryGenres": [],
       "curatorTags": [
         "guitar brand",
@@ -5405,6 +5439,8 @@
     "esp": {
       "zone": "guitar-workshop",
       "secondaryZones": [],
+      "eraStart": 1975,
+      "eraPeak": 1975,
       "primaryGenres": [],
       "curatorTags": [
         "guitar brand",
@@ -5475,6 +5511,8 @@
     "fender-jaguar": {
       "zone": "guitar-workshop",
       "secondaryZones": [],
+      "eraStart": 1962,
+      "eraPeak": 1962,
       "primaryGenres": [],
       "curatorTags": [
         "electric guitar",
@@ -5510,6 +5548,8 @@
       "secondaryZones": [
         "punk-alt"
       ],
+      "eraStart": 1958,
+      "eraPeak": 1958,
       "primaryGenres": [],
       "curatorTags": [
         "electric guitar",
@@ -6280,6 +6320,8 @@
     "muddy-waters": {
       "zone": "roots-blues",
       "secondaryZones": [],
+      "eraStart": 1941,
+      "eraPeak": 1941,
       "primaryGenres": [
         "blues rock"
       ],
@@ -6776,6 +6818,8 @@
       "secondaryZones": [
         "guitar-workshop"
       ],
+      "eraStart": 1978,
+      "eraPeak": 1978,
       "primaryGenres": [
         "heavy metal"
       ],
@@ -6936,9 +6980,13 @@
         "jazz"
       ],
       "curatorTags": [
+        "thumb picking",
+        "octave phrasing",
+        "jazz guitar",
         "Jazz",
         "Jazz fusion"
       ],
+      "curatorFeedback": "Montgomery is a jazz-guitar anchor. His thumb-picked octave sound can explain stylistic context, but co-mentions in encyclopedia categories do not establish influence or collaboration. Source: https://musicbrainz.org/artist/663f8232-8c46-4851-803f-a91d31593b14.",
       "approvedFactCount": 1,
       "connectionCount": 2,
       "linkedGenres": [
@@ -6958,9 +7006,12 @@
         "jazz"
       ],
       "curatorTags": [
+        "solo jazz guitar",
+        "chord melody",
         "Jazz",
         "guitarist"
       ],
+      "curatorFeedback": "Pass belongs in jazz as a solo and ensemble guitarist. Keep performance and collaboration links distinct from broad category co-membership; source: https://musicbrainz.org/artist/2f43e416-f1bf-4f04-8853-a0019aa12441.",
       "connectionCount": 1,
       "linkedGenres": [
         "jazz"
@@ -6975,12 +7026,17 @@
       "zone": "jazz",
       "secondaryZones": [],
       "primaryGenres": [
+        "gypsy jazz",
+        "swing",
         "jazz"
       ],
       "curatorTags": [
+        "European jazz guitar",
+        "acoustic swing",
         "Jazz",
         "guitarist"
       ],
+      "curatorFeedback": "Reinhardt is a European jazz-guitar anchor associated with swing and the Quintette du Hot Club de France. Acoustic guitar technique is context, not proof of a country-music lineage. Source: https://en.wikipedia.org/wiki/Django_Reinhardt.",
       "approvedFactCount": 1,
       "connectionCount": 1,
       "linkedGenres": [
@@ -6995,6 +7051,8 @@
     "paco-de-lucia": {
       "zone": "folk-country-vise",
       "secondaryZones": [],
+      "eraStart": 1963,
+      "eraPeak": 1963,
       "primaryGenres": [
         "country"
       ],
@@ -7019,12 +7077,17 @@
         "rock-circuit",
         "psychedelia-prog"
       ],
-      "primaryGenres": [],
+      "primaryGenres": [
+        "jazz fusion"
+      ],
       "curatorTags": [
+        "electric jazz fusion",
+        "Mahavishnu Orchestra",
         "Jazz",
         "Jazz fusion",
         "Progressive rock"
       ],
+      "curatorFeedback": "McLaughlin connects jazz improvisation with amplified rock and the Mahavishnu Orchestra. Keep him jazz-centered and distinguish documented band membership from broader stylistic influence. Source: https://en.wikipedia.org/wiki/John_McLaughlin_(musician).",
       "approvedFactCount": 1,
       "connectionCount": 3,
       "linkedGenres": [
@@ -7032,7 +7095,7 @@
         "jazz",
         "progressive-rock"
       ],
-      "bridgeScore": 0.68,
+      "bridgeScore": 0.88,
       "hubScore": 0.25,
       "layoutHints": {
         "pinned": false
@@ -7231,6 +7294,8 @@
       "secondaryZones": [
         "rock-circuit"
       ],
+      "eraStart": 1962,
+      "eraPeak": 1962,
       "primaryGenres": [
         "blues rock"
       ],
@@ -7255,6 +7320,8 @@
       "secondaryZones": [
         "rock-circuit"
       ],
+      "eraStart": 1964,
+      "eraPeak": 1964,
       "primaryGenres": [
         "art rock"
       ],
@@ -7280,6 +7347,8 @@
         "hard-rock-metal",
         "psychedelia-prog"
       ],
+      "eraStart": 1970,
+      "eraPeak": 1970,
       "primaryGenres": [],
       "curatorTags": [
         "Glam rock",
@@ -7302,6 +7371,8 @@
     "deep-purple": {
       "zone": "hard-rock-metal",
       "secondaryZones": [],
+      "eraStart": 1968,
+      "eraPeak": 1968,
       "primaryGenres": [
         "hard rock"
       ],
@@ -7342,6 +7413,8 @@
       "secondaryZones": [
         "hard-rock-metal"
       ],
+      "eraStart": 1973,
+      "eraPeak": 1973,
       "primaryGenres": [
         "blues rock"
       ],
@@ -7366,6 +7439,8 @@
         "roots-blues",
         "rock-circuit"
       ],
+      "eraStart": 1985,
+      "eraPeak": 1985,
       "primaryGenres": [
         "hard rock"
       ],
@@ -7386,22 +7461,29 @@
     },
     "rage-against-the-machine": {
       "zone": "punk-alt",
-      "secondaryZones": [],
+      "secondaryZones": [
+        "hip-hop-rap",
+        "hard-rock-metal"
+      ],
       "primaryGenres": [
-        "rap rock",
-        "alternative metal"
+        "rap metal",
+        "alternative metal",
+        "rap rock"
       ],
       "curatorTags": [
-        "rap rock",
+        "rap-rock crossover",
+        "funk-metal rhythm",
         "political rock",
+        "rap rock",
         "hip-hop bridge"
       ],
+      "curatorFeedback": "Rage Against the Machine blends rap delivery, heavy guitar and funk rhythm. Its documented crossover warrants multiple zone pulls, but nearby hip-hop or metal acts need their own sourced relationship before receiving an edge. Source: https://en.wikipedia.org/wiki/Rage_Against_the_Machine.",
       "approvedFactCount": 1,
       "connectionCount": 1,
       "linkedGenres": [
         "alternative-rock"
       ],
-      "bridgeScore": 0.08,
+      "bridgeScore": 0.74,
       "hubScore": 0.083,
       "layoutHints": {
         "pinned": false
@@ -7410,6 +7492,8 @@
     "megadeth": {
       "zone": "hard-rock-metal",
       "secondaryZones": [],
+      "eraStart": 1983,
+      "eraPeak": 1983,
       "primaryGenres": [
         "thrash metal"
       ],
@@ -7451,6 +7535,8 @@
     "allman-brothers-band": {
       "zone": "roots-blues",
       "secondaryZones": [],
+      "eraStart": 1969,
+      "eraPeak": 1969,
       "primaryGenres": [
         "country rock",
         "blues rock",
@@ -7475,6 +7561,8 @@
         "rock-circuit",
         "pop-soul-disco"
       ],
+      "eraStart": 1967,
+      "eraPeak": 1967,
       "primaryGenres": [
         "blues rock",
         "pop rock",
@@ -7497,6 +7585,8 @@
     "king-crimson": {
       "zone": "psychedelia-prog",
       "secondaryZones": [],
+      "eraStart": 1968,
+      "eraPeak": 1968,
       "primaryGenres": [
         "art rock"
       ],
@@ -7518,6 +7608,8 @@
     "yes": {
       "zone": "psychedelia-prog",
       "secondaryZones": [],
+      "eraStart": 1968,
+      "eraPeak": 1968,
       "primaryGenres": [
         "progressive rock"
       ],
@@ -7540,6 +7632,8 @@
       "secondaryZones": [
         "hard-rock-metal"
       ],
+      "eraStart": 1968,
+      "eraPeak": 1968,
       "primaryGenres": [
         "hard rock"
       ],
@@ -7631,6 +7725,8 @@
       "secondaryZones": [
         "rock-circuit"
       ],
+      "eraStart": 1975,
+      "eraPeak": 1975,
       "primaryGenres": [
         "heavy metal"
       ],
@@ -7654,6 +7750,8 @@
       "secondaryZones": [
         "guitar-workshop"
       ],
+      "eraStart": 1969,
+      "eraPeak": 1969,
       "primaryGenres": [
         "heavy metal"
       ],
@@ -7692,6 +7790,8 @@
     "prs": {
       "zone": "guitar-workshop",
       "secondaryZones": [],
+      "eraStart": 1985,
+      "eraPeak": 1985,
       "primaryGenres": [],
       "curatorTags": [
         "guitar brand",
@@ -7709,6 +7809,8 @@
     "jackson": {
       "zone": "guitar-workshop",
       "secondaryZones": [],
+      "eraStart": 1980,
+      "eraPeak": 1980,
       "primaryGenres": [],
       "curatorTags": [
         "guitar brand",
@@ -7726,6 +7828,8 @@
     "charvel": {
       "zone": "guitar-workshop",
       "secondaryZones": [],
+      "eraStart": 1978,
+      "eraPeak": 1978,
       "primaryGenres": [],
       "curatorTags": [
         "guitar brand",
@@ -7743,6 +7847,8 @@
     "music-man": {
       "zone": "guitar-workshop",
       "secondaryZones": [],
+      "eraStart": 1972,
+      "eraPeak": 1972,
       "primaryGenres": [],
       "curatorTags": [
         "guitar brand",
@@ -7760,6 +7866,8 @@
     "yamaha": {
       "zone": "guitar-workshop",
       "secondaryZones": [],
+      "eraStart": 1887,
+      "eraPeak": 1887,
       "primaryGenres": [],
       "curatorTags": [
         "guitar brand",
@@ -7777,6 +7885,8 @@
     "taylor": {
       "zone": "guitar-workshop",
       "secondaryZones": [],
+      "eraStart": 1974,
+      "eraPeak": 1974,
       "primaryGenres": [],
       "curatorTags": [
         "guitar brand",
@@ -7795,6 +7905,8 @@
     "guild": {
       "zone": "guitar-workshop",
       "secondaryZones": [],
+      "eraStart": 1952,
+      "eraPeak": 1952,
       "primaryGenres": [],
       "curatorTags": [
         "guitar brand",
@@ -8037,6 +8149,8 @@
         "rock-circuit",
         "hard-rock-metal"
       ],
+      "eraStart": 1985,
+      "eraPeak": 1985,
       "primaryGenres": [],
       "curatorTags": [
         "electric guitar",
@@ -8288,6 +8402,8 @@
     "acid-king-band": {
       "zone": "hard-rock-metal",
       "secondaryZones": [],
+      "eraStart": 1993,
+      "eraPeak": 1993,
       "primaryGenres": [
         "doom metal"
       ],
@@ -8306,6 +8422,8 @@
     "anathema-band": {
       "zone": "hard-rock-metal",
       "secondaryZones": [],
+      "eraStart": 1990,
+      "eraPeak": 1990,
       "primaryGenres": [
         "gothic metal",
         "doom metal"
@@ -8325,6 +8443,8 @@
     "autopsy-band": {
       "zone": "hard-rock-metal",
       "secondaryZones": [],
+      "eraStart": 1987,
+      "eraPeak": 1987,
       "primaryGenres": [
         "doom metal"
       ],
@@ -8343,6 +8463,8 @@
     "bang-american-band": {
       "zone": "hard-rock-metal",
       "secondaryZones": [],
+      "eraStart": 1969,
+      "eraPeak": 1969,
       "primaryGenres": [
         "doom metal"
       ],
@@ -8361,6 +8483,8 @@
     "asap-band": {
       "zone": "hard-rock-metal",
       "secondaryZones": [],
+      "eraStart": 1989,
+      "eraPeak": 1989,
       "primaryGenres": [
         "hard rock"
       ],
@@ -8380,6 +8504,8 @@
     "anthrax-american-band": {
       "zone": "hard-rock-metal",
       "secondaryZones": [],
+      "eraStart": 1981,
+      "eraPeak": 1981,
       "primaryGenres": [
         "hard rock"
       ],
@@ -8439,6 +8565,8 @@
     "kiss": {
       "zone": "hard-rock-metal",
       "secondaryZones": [],
+      "eraStart": 1973,
+      "eraPeak": 1973,
       "primaryGenres": [
         "hard rock"
       ],
@@ -8463,13 +8591,17 @@
       "eraPeak": 1996,
       "primaryGenres": [
         "hard rock",
+        "glam metal",
         "rock"
       ],
       "curatorTags": [
+        "Skid Row vocalist",
+        "Canadian metal singer",
         "hard rock",
         "artist",
         "rock"
       ],
+      "curatorFeedback": "This is the singer associated with Skid Row, not Johann Sebastian Bach. Match both name and person identity before accepting a MusicBrainz result; an article link alone does not prove a musical relationship. Source: https://musicbrainz.org/artist/50f10489-c87e-4df3-800f-be1f8d6bda4b.",
       "connectionCount": 0,
       "linkedGenres": [],
       "bridgeScore": 0,
@@ -8560,6 +8692,8 @@
     "annihilator": {
       "zone": "hard-rock-metal",
       "secondaryZones": [],
+      "eraStart": 1984,
+      "eraPeak": 1984,
       "primaryGenres": [
         "thrash metal"
       ],
@@ -8578,6 +8712,8 @@
     "artillery": {
       "zone": "hard-rock-metal",
       "secondaryZones": [],
+      "eraStart": 1982,
+      "eraPeak": 1982,
       "primaryGenres": [
         "hard rock"
       ],
@@ -8597,6 +8733,8 @@
     "as-i-lay-dying": {
       "zone": "hard-rock-metal",
       "secondaryZones": [],
+      "eraStart": 2000,
+      "eraPeak": 2000,
       "primaryGenres": [
         "hard rock"
       ],
@@ -8616,6 +8754,8 @@
     "caliban": {
       "zone": "hard-rock-metal",
       "secondaryZones": [],
+      "eraStart": 1997,
+      "eraPeak": 1997,
       "primaryGenres": [
         "hard rock"
       ],
@@ -8635,6 +8775,8 @@
     "carcass": {
       "zone": "hard-rock-metal",
       "secondaryZones": [],
+      "eraStart": 1985,
+      "eraPeak": 1985,
       "primaryGenres": [
         "hard rock"
       ],
@@ -8672,19 +8814,26 @@
     },
     "body-count": {
       "zone": "hip-hop-rap",
-      "secondaryZones": [],
+      "secondaryZones": [
+        "hard-rock-metal",
+        "punk-alt"
+      ],
       "primaryGenres": [
         "rap metal",
+        "heavy metal",
         "thrash metal"
       ],
       "curatorTags": [
+        "Ice-T crossover",
+        "metal and hip-hop bridge",
         "rap metal",
         "hip-hop metal bridge",
         "ice-t"
       ],
+      "curatorFeedback": "Body Count is a metal band fronted by rapper Ice-T, a documented crossover between hip-hop and metal. Keep the band's musical identity separate from a mere shared category or platform link. Source: https://en.wikipedia.org/wiki/Body_Count_(band).",
       "connectionCount": 0,
       "linkedGenres": [],
-      "bridgeScore": 0,
+      "bridgeScore": 0.64,
       "hubScore": 0,
       "layoutHints": {
         "pinned": false
@@ -8715,6 +8864,8 @@
     "fight": {
       "zone": "hard-rock-metal",
       "secondaryZones": [],
+      "eraStart": 1993,
+      "eraPeak": 1993,
       "primaryGenres": [
         "hard rock"
       ],
@@ -8734,6 +8885,8 @@
     "halford": {
       "zone": "hard-rock-metal",
       "secondaryZones": [],
+      "eraStart": 1999,
+      "eraPeak": 1999,
       "primaryGenres": [
         "hard rock"
       ],
@@ -8775,6 +8928,8 @@
     "atheist": {
       "zone": "psychedelia-prog",
       "secondaryZones": [],
+      "eraStart": 1984,
+      "eraPeak": 1984,
       "primaryGenres": [
         "progressive metal"
       ],
@@ -8814,6 +8969,8 @@
     "beardfish": {
       "zone": "psychedelia-prog",
       "secondaryZones": [],
+      "eraStart": 2001,
+      "eraPeak": 2001,
       "primaryGenres": [],
       "curatorTags": [
         "band",
@@ -8888,6 +9045,8 @@
     "northward": {
       "zone": "rock-circuit",
       "secondaryZones": [],
+      "eraStart": 2007,
+      "eraPeak": 2007,
       "primaryGenres": [
         "rock"
       ],
@@ -8929,6 +9088,8 @@
     "agathodaimon": {
       "zone": "rock-circuit",
       "secondaryZones": [],
+      "eraStart": 1995,
+      "eraPeak": 1995,
       "primaryGenres": [
         "rock"
       ],
@@ -8948,6 +9109,8 @@
     "ancient": {
       "zone": "rock-circuit",
       "secondaryZones": [],
+      "eraStart": 1992,
+      "eraPeak": 1992,
       "primaryGenres": [
         "rock"
       ],
@@ -9006,6 +9169,8 @@
     "arven": {
       "zone": "rock-circuit",
       "secondaryZones": [],
+      "eraStart": 2006,
+      "eraPeak": 2006,
       "primaryGenres": [
         "rock"
       ],
@@ -9044,6 +9209,8 @@
     "powerglove": {
       "zone": "rock-circuit",
       "secondaryZones": [],
+      "eraStart": 2005,
+      "eraPeak": 2005,
       "primaryGenres": [
         "rock"
       ],
@@ -9158,6 +9325,8 @@
     "believer": {
       "zone": "hard-rock-metal",
       "secondaryZones": [],
+      "eraStart": 1986,
+      "eraPeak": 1986,
       "primaryGenres": [
         "hard rock"
       ],
@@ -9199,6 +9368,8 @@
     "epica": {
       "zone": "rock-circuit",
       "secondaryZones": [],
+      "eraStart": 2002,
+      "eraPeak": 2002,
       "primaryGenres": [
         "rock"
       ],
@@ -9237,6 +9408,8 @@
     "angra": {
       "zone": "hard-rock-metal",
       "secondaryZones": [],
+      "eraStart": 1991,
+      "eraPeak": 1991,
       "primaryGenres": [
         "power metal",
         "hard rock"
@@ -9257,6 +9430,8 @@
     "avian": {
       "zone": "hard-rock-metal",
       "secondaryZones": [],
+      "eraStart": 2002,
+      "eraPeak": 2002,
       "primaryGenres": [
         "power metal",
         "hard rock"
@@ -9299,6 +9474,8 @@
     "aina": {
       "zone": "rock-circuit",
       "secondaryZones": [],
+      "eraStart": 2003,
+      "eraPeak": 2003,
       "primaryGenres": [
         "rock"
       ],
@@ -9318,6 +9495,8 @@
     "altaria": {
       "zone": "rock-circuit",
       "secondaryZones": [],
+      "eraStart": 2000,
+      "eraPeak": 2000,
       "primaryGenres": [
         "rock"
       ],
@@ -9337,6 +9516,8 @@
     "charon": {
       "zone": "rock-circuit",
       "secondaryZones": [],
+      "eraStart": 1992,
+      "eraPeak": 1992,
       "primaryGenres": [
         "rock"
       ],
@@ -9356,6 +9537,8 @@
     "gandalf": {
       "zone": "rock-circuit",
       "secondaryZones": [],
+      "eraStart": 1993,
+      "eraPeak": 1993,
       "primaryGenres": [
         "rock"
       ],
@@ -9375,6 +9558,8 @@
     "machine-men": {
       "zone": "rock-circuit",
       "secondaryZones": [],
+      "eraStart": 1998,
+      "eraPeak": 1998,
       "primaryGenres": [
         "rock"
       ],
@@ -9435,6 +9620,8 @@
     "finntroll": {
       "zone": "hard-rock-metal",
       "secondaryZones": [],
+      "eraStart": 1997,
+      "eraPeak": 1997,
       "primaryGenres": [
         "folk",
         "hard rock"
@@ -9497,6 +9684,8 @@
     "hypocrisy": {
       "zone": "rock-circuit",
       "secondaryZones": [],
+      "eraStart": 1990,
+      "eraPeak": 1990,
       "primaryGenres": [
         "rock"
       ],
@@ -9516,6 +9705,8 @@
     "norther": {
       "zone": "rock-circuit",
       "secondaryZones": [],
+      "eraStart": 1996,
+      "eraPeak": 1996,
       "primaryGenres": [
         "rock"
       ],
@@ -9634,6 +9825,8 @@
     "heavenly": {
       "zone": "rock-circuit",
       "secondaryZones": [],
+      "eraStart": 1994,
+      "eraPeak": 1994,
       "primaryGenres": [
         "rock"
       ],
@@ -9653,6 +9846,8 @@
     "tarot": {
       "zone": "rock-circuit",
       "secondaryZones": [],
+      "eraStart": 1985,
+      "eraPeak": 1985,
       "primaryGenres": [
         "rock"
       ],
@@ -9691,6 +9886,8 @@
     "bauhaus": {
       "zone": "hard-rock-metal",
       "secondaryZones": [],
+      "eraStart": 1978,
+      "eraPeak": 1978,
       "primaryGenres": [
         "gothic metal",
         "hard rock"
@@ -9733,6 +9930,8 @@
     "afi": {
       "zone": "punk-alt",
       "secondaryZones": [],
+      "eraStart": 1991,
+      "eraPeak": 1991,
       "primaryGenres": [
         "horror punk",
         "punk rock"
@@ -9753,15 +9952,20 @@
     "black-flag": {
       "zone": "punk-alt",
       "secondaryZones": [],
+      "eraStart": 1976,
+      "eraPeak": 1976,
       "primaryGenres": [
         "hardcore punk",
         "punk rock"
       ],
       "curatorTags": [
+        "US hardcore",
+        "early punk scene",
         "hardcore punk",
         "punk rock",
         "california punk"
       ],
+      "curatorFeedback": "Black Flag is a US hardcore-punk anchor. Place it with the punk network; an article's category list is not evidence of direct influence on every other hardcore band. Source: https://en.wikipedia.org/wiki/Black_Flag_(band).",
       "connectionCount": 0,
       "linkedGenres": [],
       "bridgeScore": 0,
@@ -9773,6 +9977,8 @@
     "black-president": {
       "zone": "punk-alt",
       "secondaryZones": [],
+      "eraStart": 2005,
+      "eraPeak": 2005,
       "primaryGenres": [],
       "curatorTags": [
         "band",
@@ -9991,6 +10197,8 @@
     "beartooth": {
       "zone": "punk-alt",
       "secondaryZones": [],
+      "eraStart": 2012,
+      "eraPeak": 2012,
       "primaryGenres": [],
       "curatorTags": [
         "band",
@@ -10027,6 +10235,8 @@
     "alice-cooper": {
       "zone": "hard-rock-metal",
       "secondaryZones": [],
+      "eraStart": 1964,
+      "eraPeak": 1964,
       "primaryGenres": [
         "glam metal",
         "hard rock"
@@ -10047,6 +10257,8 @@
     "calabrese": {
       "zone": "punk-alt",
       "secondaryZones": [],
+      "eraStart": 2003,
+      "eraPeak": 2003,
       "primaryGenres": [
         "horror punk"
       ],
@@ -10065,6 +10277,8 @@
     "all-that-remains": {
       "zone": "hard-rock-metal",
       "secondaryZones": [],
+      "eraStart": 1998,
+      "eraPeak": 1998,
       "primaryGenres": [
         "hard rock"
       ],
@@ -10102,6 +10316,8 @@
     "anacrusis": {
       "zone": "hard-rock-metal",
       "secondaryZones": [],
+      "eraStart": 1986,
+      "eraPeak": 1986,
       "primaryGenres": [
         "thrash metal"
       ],
@@ -10138,6 +10354,8 @@
     "anonymus": {
       "zone": "hard-rock-metal",
       "secondaryZones": [],
+      "eraStart": 1989,
+      "eraPeak": 1989,
       "primaryGenres": [
         "thrash metal"
       ],
@@ -10156,6 +10374,8 @@
     "anvil": {
       "zone": "hard-rock-metal",
       "secondaryZones": [],
+      "eraStart": 1978,
+      "eraPeak": 1978,
       "primaryGenres": [
         "speed metal"
       ],
@@ -10236,6 +10456,8 @@
       "secondaryZones": [
         "rock-circuit"
       ],
+      "eraStart": 1977,
+      "eraPeak": 1977,
       "primaryGenres": [
         "horror punk",
         "punk rock"
@@ -10278,6 +10500,8 @@
     "adventures": {
       "zone": "punk-alt",
       "secondaryZones": [],
+      "eraStart": 2012,
+      "eraPeak": 2012,
       "primaryGenres": [
         "shoegaze"
       ],
@@ -10370,6 +10594,8 @@
     "camel": {
       "zone": "psychedelia-prog",
       "secondaryZones": [],
+      "eraStart": 1971,
+      "eraPeak": 1971,
       "primaryGenres": [
         "country",
         "folk"
@@ -10445,6 +10671,8 @@
     "allison": {
       "zone": "rock-circuit",
       "secondaryZones": [],
+      "eraStart": 2002,
+      "eraPeak": 2002,
       "primaryGenres": [
         "rock"
       ],
@@ -10464,6 +10692,8 @@
     "bush": {
       "zone": "punk-alt",
       "secondaryZones": [],
+      "eraStart": 1992,
+      "eraPeak": 1992,
       "primaryGenres": [
         "post-grunge",
         "grunge"
@@ -10484,6 +10714,8 @@
     "flyleaf": {
       "zone": "rock-circuit",
       "secondaryZones": [],
+      "eraStart": 2002,
+      "eraPeak": 2002,
       "primaryGenres": [
         "rock"
       ],
@@ -10542,6 +10774,8 @@
     "ark": {
       "zone": "rock-circuit",
       "secondaryZones": [],
+      "eraStart": 1990,
+      "eraPeak": 1990,
       "primaryGenres": [
         "rock"
       ],
@@ -10580,6 +10814,8 @@
     "conception": {
       "zone": "rock-circuit",
       "secondaryZones": [],
+      "eraStart": 1989,
+      "eraPeak": 1989,
       "primaryGenres": [
         "rock"
       ],
@@ -10599,6 +10835,8 @@
     "h-e-a-t": {
       "zone": "rock-circuit",
       "secondaryZones": [],
+      "eraStart": 2007,
+      "eraPeak": 2007,
       "primaryGenres": [
         "rock"
       ],
@@ -10637,6 +10875,8 @@
     "heavens-gate": {
       "zone": "rock-circuit",
       "secondaryZones": [],
+      "eraStart": 1982,
+      "eraPeak": 1982,
       "primaryGenres": [
         "rock"
       ],
@@ -10697,6 +10937,8 @@
     "masterplan": {
       "zone": "rock-circuit",
       "secondaryZones": [],
+      "eraStart": 2001,
+      "eraPeak": 2001,
       "primaryGenres": [
         "rock"
       ],
@@ -10716,6 +10958,8 @@
     "phenomena": {
       "zone": "rock-circuit",
       "secondaryZones": [],
+      "eraStart": 1984,
+      "eraPeak": 1984,
       "primaryGenres": [
         "rock"
       ],
@@ -10735,6 +10979,8 @@
     "primal-fear": {
       "zone": "hard-rock-metal",
       "secondaryZones": [],
+      "eraStart": 1997,
+      "eraPeak": 1997,
       "primaryGenres": [
         "hard rock"
       ],
@@ -10814,6 +11060,8 @@
     "scorpions": {
       "zone": "rock-circuit",
       "secondaryZones": [],
+      "eraStart": 1965,
+      "eraPeak": 1965,
       "primaryGenres": [
         "rock"
       ],
@@ -10877,6 +11125,8 @@
     "angel-dust": {
       "zone": "rock-circuit",
       "secondaryZones": [],
+      "eraStart": 1984,
+      "eraPeak": 1984,
       "primaryGenres": [
         "rock"
       ],
@@ -10974,6 +11224,8 @@
     "bathory": {
       "zone": "hard-rock-metal",
       "secondaryZones": [],
+      "eraStart": 1983,
+      "eraPeak": 1983,
       "primaryGenres": [
         "speed metal"
       ],
@@ -11055,6 +11307,8 @@
     "elvenking": {
       "zone": "rock-circuit",
       "secondaryZones": [],
+      "eraStart": 1997,
+      "eraPeak": 1997,
       "primaryGenres": [
         "rock"
       ],
@@ -11151,19 +11405,29 @@
       }
     },
     "ufo": {
-      "zone": "rock-circuit",
-      "secondaryZones": [],
+      "zone": "hard-rock-metal",
+      "secondaryZones": [
+        "rock-circuit",
+        "psychedelia-prog"
+      ],
+      "eraStart": 1969,
+      "eraPeak": 1969,
       "primaryGenres": [
+        "hard rock",
         "rock"
       ],
       "curatorTags": [
+        "British hard rock",
+        "space rock roots",
+        "Michael Schenker era",
         "band",
         "classic rock",
         "rock"
       ],
+      "curatorFeedback": "UFO here means the British band founded in 1969, not unidentified flying objects. Its early space-rock phase and later hard-rock work make it a bridge; only documented members or influence should become edges. Sources: https://musicbrainz.org/artist/c0bf9e20-2872-4897-ad1f-0882b83272a0 and https://en.wikipedia.org/wiki/UFO_(band).",
       "connectionCount": 0,
       "linkedGenres": [],
-      "bridgeScore": 0,
+      "bridgeScore": 0.6,
       "hubScore": 0,
       "layoutHints": {
         "pinned": false
@@ -11194,6 +11458,8 @@
     "candlemass": {
       "zone": "rock-circuit",
       "secondaryZones": [],
+      "eraStart": 1984,
+      "eraPeak": 1984,
       "primaryGenres": [
         "rock"
       ],
@@ -11255,6 +11521,8 @@
     "asia": {
       "zone": "rock-circuit",
       "secondaryZones": [],
+      "eraStart": 1981,
+      "eraPeak": 1981,
       "primaryGenres": [
         "rock"
       ],
@@ -11349,6 +11617,8 @@
     "overkill": {
       "zone": "rock-circuit",
       "secondaryZones": [],
+      "eraStart": 1980,
+      "eraPeak": 1980,
       "primaryGenres": [
         "rock"
       ],
@@ -11368,6 +11638,8 @@
     "testament": {
       "zone": "rock-circuit",
       "secondaryZones": [],
+      "eraStart": 1983,
+      "eraPeak": 1983,
       "primaryGenres": [
         "rock"
       ],
@@ -11408,6 +11680,8 @@
     "aria": {
       "zone": "rock-circuit",
       "secondaryZones": [],
+      "eraStart": 1985,
+      "eraPeak": 1985,
       "primaryGenres": [
         "rock"
       ],
@@ -11489,6 +11763,8 @@
     "code-orange": {
       "zone": "rock-circuit",
       "secondaryZones": [],
+      "eraStart": 2008,
+      "eraPeak": 2008,
       "primaryGenres": [
         "rock"
       ],
@@ -11590,6 +11866,8 @@
       "secondaryZones": [
         "pop-soul-disco"
       ],
+      "eraStart": 1967,
+      "eraPeak": 1967,
       "primaryGenres": [
         "rock"
       ],
@@ -11647,6 +11925,8 @@
     "all-about-eve": {
       "zone": "punk-alt",
       "secondaryZones": [],
+      "eraStart": 1984,
+      "eraPeak": 1984,
       "primaryGenres": [
         "gothic rock",
         "rock"
@@ -11768,6 +12048,8 @@
     "cold": {
       "zone": "punk-alt",
       "secondaryZones": [],
+      "eraStart": 1996,
+      "eraPeak": 1996,
       "primaryGenres": [
         "post-grunge",
         "grunge"
@@ -11810,6 +12092,8 @@
     "emigrate": {
       "zone": "rock-circuit",
       "secondaryZones": [],
+      "eraStart": 2005,
+      "eraPeak": 2005,
       "primaryGenres": [
         "rock"
       ],
@@ -11984,6 +12268,8 @@
     "extreme": {
       "zone": "hard-rock-metal",
       "secondaryZones": [],
+      "eraStart": 1985,
+      "eraPeak": 1985,
       "primaryGenres": [
         "hard rock"
       ],
@@ -12043,6 +12329,8 @@
     "daughtry": {
       "zone": "rock-circuit",
       "secondaryZones": [],
+      "eraStart": 2006,
+      "eraPeak": 2006,
       "primaryGenres": [
         "rock"
       ],
@@ -12082,6 +12370,8 @@
     "eagles": {
       "zone": "rock-circuit",
       "secondaryZones": [],
+      "eraStart": 1971,
+      "eraPeak": 1971,
       "primaryGenres": [
         "rock"
       ],
@@ -12333,6 +12623,8 @@
     "ceremony": {
       "zone": "punk-alt",
       "secondaryZones": [],
+      "eraStart": 2005,
+      "eraPeak": 2005,
       "primaryGenres": [],
       "curatorTags": [
         "band",
@@ -12350,6 +12642,8 @@
     "7-seconds": {
       "zone": "punk-alt",
       "secondaryZones": [],
+      "eraStart": 1980,
+      "eraPeak": 1980,
       "primaryGenres": [
         "hardcore punk",
         "punk rock"
@@ -12425,6 +12719,8 @@
     "d-o-a": {
       "zone": "rock-circuit",
       "secondaryZones": [],
+      "eraStart": 1978,
+      "eraPeak": 1978,
       "primaryGenres": [
         "rock"
       ],
@@ -12583,6 +12879,8 @@
     "embrace": {
       "zone": "rock-circuit",
       "secondaryZones": [],
+      "eraStart": 1985,
+      "eraPeak": 1985,
       "primaryGenres": [
         "rock"
       ],
@@ -12770,22 +13068,28 @@
     },
     "the-stooges": {
       "zone": "punk-alt",
-      "secondaryZones": [],
+      "secondaryZones": [
+        "rock-circuit"
+      ],
       "eraStart": 1967,
       "eraPeak": 1967,
       "primaryGenres": [
         "proto-punk",
+        "rock",
         "garage rock"
       ],
       "curatorTags": [
+        "Iggy Pop",
+        "proto-punk bridge",
         "proto-punk",
         "garage rock",
         "punk roots"
       ],
+      "curatorFeedback": "The Stooges predate punk as a named scene and are a documented proto-punk bridge from late-1960s rock. Avoid treating a category or article co-mention as a direct band relationship. Source: https://musicbrainz.org/artist/794c6bf2-3241-416f-9b8f-24e2d84a1c4b.",
       "approvedFactCount": 1,
       "connectionCount": 1,
       "linkedGenres": [],
-      "bridgeScore": 0,
+      "bridgeScore": 0.4,
       "hubScore": 0.083,
       "layoutHints": {
         "pinned": false
@@ -12878,6 +13182,8 @@
     "adolescents": {
       "zone": "punk-alt",
       "secondaryZones": [],
+      "eraStart": 1979,
+      "eraPeak": 1979,
       "primaryGenres": [
         "hardcore punk"
       ],
@@ -12897,6 +13203,8 @@
     "agent-orange": {
       "zone": "punk-alt",
       "secondaryZones": [],
+      "eraStart": 1979,
+      "eraPeak": 1979,
       "primaryGenres": [
         "hardcore punk"
       ],
@@ -12938,6 +13246,8 @@
     "air": {
       "zone": "rock-circuit",
       "secondaryZones": [],
+      "eraStart": 1995,
+      "eraPeak": 1995,
       "primaryGenres": [
         "rock"
       ],
@@ -12975,6 +13285,8 @@
     "abc": {
       "zone": "punk-alt",
       "secondaryZones": [],
+      "eraStart": 1980,
+      "eraPeak": 1980,
       "primaryGenres": [
         "post-punk"
       ],
@@ -13318,6 +13630,8 @@
     "american-football": {
       "zone": "rock-circuit",
       "secondaryZones": [],
+      "eraStart": 1997,
+      "eraPeak": 1997,
       "primaryGenres": [
         "rock"
       ],
@@ -13337,6 +13651,8 @@
     "ataxia": {
       "zone": "rock-circuit",
       "secondaryZones": [],
+      "eraStart": 2004,
+      "eraPeak": 2004,
       "primaryGenres": [
         "rock"
       ],
@@ -13375,6 +13691,8 @@
     "botch": {
       "zone": "rock-circuit",
       "secondaryZones": [],
+      "eraStart": 1993,
+      "eraPeak": 1993,
       "primaryGenres": [
         "rock"
       ],
@@ -13394,6 +13712,8 @@
     "braid": {
       "zone": "rock-circuit",
       "secondaryZones": [],
+      "eraStart": 1993,
+      "eraPeak": 1993,
       "primaryGenres": [
         "rock"
       ],
@@ -13553,6 +13873,8 @@
     "chicago": {
       "zone": "hip-hop-rap",
       "secondaryZones": [],
+      "eraStart": 1967,
+      "eraPeak": 1967,
       "primaryGenres": [
         "hip-hop",
         "rap"
@@ -14057,6 +14379,8 @@
     "armageddon": {
       "zone": "rock-circuit",
       "secondaryZones": [],
+      "eraStart": 1997,
+      "eraPeak": 1997,
       "primaryGenres": [
         "rock"
       ],
@@ -14076,6 +14400,8 @@
     "darkest-hour": {
       "zone": "rock-circuit",
       "secondaryZones": [],
+      "eraStart": 1995,
+      "eraPeak": 1995,
       "primaryGenres": [
         "rock"
       ],
@@ -14095,6 +14421,8 @@
     "dawn": {
       "zone": "rock-circuit",
       "secondaryZones": [],
+      "eraStart": 1990,
+      "eraPeak": 1990,
       "primaryGenres": [
         "rock"
       ],
@@ -14213,6 +14541,8 @@
     "catherine-wheel": {
       "zone": "rock-circuit",
       "secondaryZones": [],
+      "eraStart": 1990,
+      "eraPeak": 1990,
       "primaryGenres": [
         "rock"
       ],
@@ -14290,6 +14620,8 @@
     "into-eternity": {
       "zone": "rock-circuit",
       "secondaryZones": [],
+      "eraStart": 1997,
+      "eraPeak": 1997,
       "primaryGenres": [
         "rock"
       ],
@@ -14350,6 +14682,8 @@
     "archive": {
       "zone": "psychedelia-prog",
       "secondaryZones": [],
+      "eraStart": 1994,
+      "eraPeak": 1994,
       "primaryGenres": [],
       "curatorTags": [
         "band",
@@ -14486,6 +14820,8 @@
     "gillan": {
       "zone": "rock-circuit",
       "secondaryZones": [],
+      "eraStart": 1978,
+      "eraPeak": 1978,
       "primaryGenres": [
         "rock"
       ],
@@ -14505,6 +14841,8 @@
     "gogmagog": {
       "zone": "rock-circuit",
       "secondaryZones": [],
+      "eraStart": 1985,
+      "eraPeak": 1985,
       "primaryGenres": [
         "rock"
       ],
@@ -14546,6 +14884,8 @@
     "alogia": {
       "zone": "rock-circuit",
       "secondaryZones": [],
+      "eraStart": 2000,
+      "eraPeak": 2000,
       "primaryGenres": [
         "rock"
       ],
@@ -14662,6 +15002,8 @@
     "dgm": {
       "zone": "rock-circuit",
       "secondaryZones": [],
+      "eraStart": 1994,
+      "eraPeak": 1994,
       "primaryGenres": [
         "rock"
       ],
@@ -14700,6 +15042,8 @@
     "hardline": {
       "zone": "rock-circuit",
       "secondaryZones": [],
+      "eraStart": 1991,
+      "eraPeak": 1991,
       "primaryGenres": [
         "rock"
       ],
@@ -14800,6 +15144,8 @@
     "arion": {
       "zone": "rock-circuit",
       "secondaryZones": [],
+      "eraStart": 2011,
+      "eraPeak": 2011,
       "primaryGenres": [
         "rock"
       ],
@@ -14838,6 +15184,8 @@
     "dominum": {
       "zone": "rock-circuit",
       "secondaryZones": [],
+      "eraStart": 2022,
+      "eraPeak": 2022,
       "primaryGenres": [
         "rock"
       ],
@@ -14857,6 +15205,8 @@
     "wind-rose": {
       "zone": "rock-circuit",
       "secondaryZones": [],
+      "eraStart": 2009,
+      "eraPeak": 2009,
       "primaryGenres": [
         "rock"
       ],
@@ -14895,19 +15245,25 @@
       }
     },
     "courtney-cox": {
-      "zone": "rock-circuit",
-      "secondaryZones": [],
+      "zone": "hard-rock-metal",
+      "secondaryZones": [
+        "rock-circuit"
+      ],
       "primaryGenres": [
+        "heavy metal",
         "rock"
       ],
       "curatorTags": [
+        "metal guitarist",
+        "The Iron Maidens",
         "artist",
         "classic rock",
         "rock"
       ],
+      "curatorFeedback": "Courtney Cox is the guitarist associated with The Iron Maidens, not actor Courteney Cox. Reject links inherited from the actor's page; keep only independently documented music relationships. Source: https://en.wikipedia.org/wiki/Courtney_Cox_(musician).",
       "connectionCount": 0,
       "linkedGenres": [],
-      "bridgeScore": 0,
+      "bridgeScore": 0.22,
       "hubScore": 0,
       "layoutHints": {
         "pinned": false
@@ -14954,6 +15310,8 @@
     "grim-reaper": {
       "zone": "rock-circuit",
       "secondaryZones": [],
+      "eraStart": 1979,
+      "eraPeak": 1979,
       "primaryGenres": [
         "rock"
       ],
@@ -15094,6 +15452,8 @@
     "filter": {
       "zone": "rock-circuit",
       "secondaryZones": [],
+      "eraStart": 1993,
+      "eraPeak": 1993,
       "primaryGenres": [
         "rock"
       ],
@@ -15289,6 +15649,8 @@
     "equinox": {
       "zone": "rock-circuit",
       "secondaryZones": [],
+      "eraStart": 2018,
+      "eraPeak": 2018,
       "primaryGenres": [
         "rock"
       ],
@@ -15425,6 +15787,8 @@
     "mr-big": {
       "zone": "rock-circuit",
       "secondaryZones": [],
+      "eraStart": 1988,
+      "eraPeak": 1988,
       "primaryGenres": [
         "rock"
       ],
@@ -15777,6 +16141,8 @@
     "chelsea": {
       "zone": "punk-alt",
       "secondaryZones": [],
+      "eraStart": 1976,
+      "eraPeak": 1976,
       "primaryGenres": [],
       "curatorTags": [],
       "connectionCount": 0,
@@ -15803,6 +16169,8 @@
     "goldfinger": {
       "zone": "punk-alt",
       "secondaryZones": [],
+      "eraStart": 1994,
+      "eraPeak": 1994,
       "primaryGenres": [],
       "curatorTags": [],
       "connectionCount": 0,
@@ -15829,6 +16197,8 @@
     "brand-new": {
       "zone": "punk-alt",
       "secondaryZones": [],
+      "eraStart": 2000,
+      "eraPeak": 2000,
       "primaryGenres": [],
       "curatorTags": [],
       "connectionCount": 0,
@@ -23767,6 +24137,11 @@
         "feedback": "Wikipedia categories are weak signals. Do not create or prioritize category-like genre nodes unless they are recognized music genres."
       },
       {
+        "id": "verify-source-identity-before-links",
+        "weight": 1,
+        "feedback": "A matching name is insufficient evidence: confirm entity type, exact identity and source page before creating a node or connection. Disambiguation pages, homonyms and article co-links must not become music-history facts. A rejected research package may be a duplicate or contain weak links even when its seed node already belongs on the map."
+      },
+      {
         "id": "songs-and-albums-are-context",
         "weight": 1,
         "feedback": "Songs, albums and releases can explain a connection, but should not become graph nodes."
@@ -24219,11 +24594,16 @@
     "nodeIds": [
       "aretha-franklin",
       "bakersfield-sound",
+      "black-flag",
       "black-sabbath",
       "bluegrass",
       "bob-wills",
+      "body-count",
       "buck-owens",
       "cool-jazz",
+      "courtney-cox",
+      "cream",
+      "django-reinhardt",
       "eric-clapton",
       "fender-esquire",
       "g-funk",
@@ -24232,22 +24612,29 @@
       "jeff-beck",
       "jimmie-rodgers",
       "jimmy-page",
+      "joe-pass",
       "joe-satriani",
+      "john-mclaughlin",
       "led-zeppelin",
       "merle-haggard",
       "misfits",
       "modal-jazz",
       "outlaw-country",
       "public-enemy",
+      "rage-against-the-machine",
       "ramones",
       "ray-charles",
       "rhythm-and-blues",
       "rickenbacker-360-12",
+      "sebastian-bach",
       "sex-pistols",
       "steve-vai",
       "the-carter-family",
+      "the-stooges",
       "the-yardbirds",
+      "ufo",
       "waylon-jennings",
+      "wes-montgomery",
       "western-swing"
     ]
   },

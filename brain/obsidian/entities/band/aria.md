@@ -5,7 +5,7 @@ type: band
 zone: rock-circuit
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1985
 eraPeak:
 primaryGenres: [rock]
 curatorTags: [band, classic rock, rock]
@@ -29,6 +29,8 @@ A band connected to documented Wikipedia signals around Rammstein.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Aria_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q785828)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/1f36a3a2-9687-4819-ac55-54d7ff0b8b88)
 
 ## Curator Notes
 

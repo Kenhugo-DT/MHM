@@ -5,7 +5,7 @@ type: band
 zone: hard-rock-metal
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1998
 eraPeak:
 primaryGenres: [hard rock]
 curatorTags: [band, hard rock, metal]
@@ -29,6 +29,8 @@ A band connected to documented Wikipedia signals around Megadeth.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/All_That_Remains_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q654147)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/4f8b7186-b2a2-40db-97ae-6e1cd46d57b1)
 
 ## Curator Notes
 

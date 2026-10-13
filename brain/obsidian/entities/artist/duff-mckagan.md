@@ -26,6 +26,8 @@ Michael Andrew "Duff" McKagan (born February 5, 1964) is an American musician. H
 - [[andrew-watt|Andrew Watt]] - Wikipedia link signal (Wikipedia link: Andrew Watt (musician))
 - [[arthur-porter|Arthur Porter]] - Wikipedia link signal (Wikipedia link: Arthur Porter (R&B musician))
 - [[billy-davis|Billy Davis]] - Wikipedia link signal (Wikipedia link: Billy Davis (guitarist))
+- [[guns-n-roses|Guns N' Roses]] - Member of (MusicBrainz records Duff McKagan as a member of Guns N' Roses.; Documented periods: 1985-06 to 1997-08; 2016 to present.)
+- [[velvet-revolver|Velvet Revolver]] - Member of (MusicBrainz records Duff McKagan as a member of Velvet Revolver.; Documented period: 2002 to 2012.)
 
 ## Sources
 

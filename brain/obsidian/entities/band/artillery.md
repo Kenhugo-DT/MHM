@@ -5,7 +5,7 @@ type: band
 zone: hard-rock-metal
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1982
 eraPeak:
 primaryGenres: [hard rock]
 curatorTags: [band, hard rock, metal]
@@ -29,6 +29,8 @@ A band connected to documented Wikipedia signals around Andy Sneap.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Artillery_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q713037)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/bd7febcc-fa2c-498a-a48b-9cf2be54dfed)
 
 ## Curator Notes
 

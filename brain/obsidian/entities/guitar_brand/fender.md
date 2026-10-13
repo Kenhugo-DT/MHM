@@ -5,7 +5,7 @@ type: guitar_brand
 zone: guitar-workshop
 roles: [guitar_brand]
 aliases: []
-eraStart:
+eraStart: 1946
 eraPeak:
 primaryGenres: []
 curatorTags: [guitar brand, manufacturer, guitar]
@@ -33,6 +33,7 @@ A manufacturer central to electric guitar history through solid-body designs, am
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Fender_Musical_Instruments_Corporation)
+- [Fender: company history](https://www.fender.com/articles/behind-the-scenes/offset-originals-explore-the-musicmaster-and-the-duo-sonic)
 
 ## Curator Notes
 

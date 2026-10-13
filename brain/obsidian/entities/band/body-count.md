@@ -19,7 +19,7 @@ starter: false
 
 ## Summary
 
-A band connected to documented Wikipedia signals around Judas Priest.
+Body Count is a Los Angeles metal band formed by rapper Ice-T and guitarist Ernie C. Its music and membership make it a documented bridge between hip-hop culture and heavy metal.
 
 ## Connections
 
@@ -34,4 +34,4 @@ A band connected to documented Wikipedia signals around Judas Priest.
 
 ## Curator Notes
 
-Use this section for human notes. Machine-readable organization belongs in the frontmatter above.
+Body Count is a metal band fronted by rapper Ice-T, a documented crossover between hip-hop and metal. Keep the band's musical identity separate from a mere shared category or platform link. Source: https://en.wikipedia.org/wiki/Body_Count_(band).

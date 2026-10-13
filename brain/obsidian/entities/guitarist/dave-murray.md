@@ -23,6 +23,7 @@ David Murray may refer to:
 
 ## Connections
 
+- [[iron-maiden|Iron Maiden]] - Member of (MusicBrainz records Dave Murray as a member of Iron Maiden.; Documented periods: 1976 to 1977; 1978 to present.)
 - [[janick-gers|Janick Gers]] - Wikipedia link signal (Wikipedia link: Dave Murray (musician))
 
 ## Sources

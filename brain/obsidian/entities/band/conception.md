@@ -5,7 +5,7 @@ type: band
 zone: rock-circuit
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1989
 eraPeak:
 primaryGenres: [rock]
 curatorTags: [band, classic rock, rock]
@@ -28,6 +28,8 @@ A band connected to documented Wikipedia signals around Avantasia.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Conception_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q1123849)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/5f72c22e-8b66-4df7-9566-e3b4a04ec9db)
 
 ## Curator Notes
 

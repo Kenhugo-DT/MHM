@@ -5,7 +5,7 @@ type: band
 zone: hard-rock-metal
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1969
 eraPeak:
 primaryGenres: [doom metal]
 curatorTags: [Doom metal, doom metal, band]
@@ -28,6 +28,8 @@ A band connected to documented Wikipedia signals around Doom metal.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Bang_%28American_band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q4854913)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/33f22917-ed9d-4842-8af4-070a7f03f17f)
 
 ## Curator Notes
 

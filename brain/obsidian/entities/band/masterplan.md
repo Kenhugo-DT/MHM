@@ -5,7 +5,7 @@ type: band
 zone: rock-circuit
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 2001
 eraPeak:
 primaryGenres: [rock]
 curatorTags: [band, classic rock, rock]
@@ -28,6 +28,8 @@ A band connected to documented Wikipedia signals around Ralf Scheepers.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Masterplan_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q179898)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/bd496eba-155e-49ba-9a92-56e3fdfd1ea2)
 
 ## Curator Notes
 

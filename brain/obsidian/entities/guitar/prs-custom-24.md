@@ -5,7 +5,7 @@ type: guitar
 zone: guitar-workshop
 roles: [guitar]
 aliases: []
-eraStart:
+eraStart: 1985
 eraPeak:
 primaryGenres: []
 curatorTags: [electric guitar, Hard rock, Rock]
@@ -30,6 +30,7 @@ PRS's flagship carved-top electric, designed as a versatile modern instrument be
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/PRS_Guitars)
+- [PRS: Custom 24 history](https://eu.prsguitars.com/news/story/prs_guitars_se_custom_24_family_of_instruments)
 
 ## Curator Notes
 

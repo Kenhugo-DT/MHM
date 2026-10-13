@@ -5,7 +5,7 @@ type: band
 zone: rock-circuit
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 2000
 eraPeak:
 primaryGenres: [rock]
 curatorTags: [band, classic rock, rock]
@@ -28,6 +28,8 @@ A band connected to documented Wikipedia signals around Marko Hietala.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Altaria_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q434603)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/fcc62161-ea44-4864-8f68-c49a88f141fe)
 
 ## Curator Notes
 

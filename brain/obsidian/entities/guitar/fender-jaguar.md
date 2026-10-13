@@ -5,7 +5,7 @@ type: guitar
 zone: guitar-workshop
 roles: [guitar]
 aliases: []
-eraStart:
+eraStart: 1962
 eraPeak:
 primaryGenres: []
 curatorTags: [electric guitar, alternative rock, grunge]
@@ -28,6 +28,7 @@ An offset Fender model that found a second life in punk, alternative rock and gr
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Fender_Jaguar)
+- [Fender: Jaguar history](https://www.fender.com/articles/instruments/jaguar-controls-past-and-present-what-you-need-to-know)
 
 ## Curator Notes
 

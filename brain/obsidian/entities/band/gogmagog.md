@@ -5,7 +5,7 @@ type: band
 zone: rock-circuit
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1985
 eraPeak:
 primaryGenres: [rock]
 curatorTags: [band, classic rock, rock]
@@ -28,6 +28,8 @@ A band connected to documented Wikipedia signals around Janick Gers.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Gogmagog_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q2629696)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/97a55ef2-2e2a-4652-bd62-8b7e11ca1988)
 
 ## Curator Notes
 

@@ -5,7 +5,7 @@ type: band
 zone: punk-alt
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1996
 eraPeak:
 primaryGenres: [post-grunge, grunge]
 curatorTags: [post-grunge, band, grunge]
@@ -28,6 +28,8 @@ A band connected to documented Wikipedia signals around post-grunge.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Cold_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q1107761)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/d9a2f1e6-6429-41ce-9d32-9a66188fb39c)
 
 ## Curator Notes
 

@@ -5,7 +5,7 @@ type: band
 zone: rock-circuit
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1965
 eraPeak:
 primaryGenres: [rock]
 curatorTags: [band, classic rock, rock]
@@ -29,6 +29,8 @@ A band connected to documented Wikipedia signals around Edguy.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Scorpions_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q124147)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/c3cceeed-3332-4cf0-8c4c-bbde425147b6)
 
 ## Curator Notes
 

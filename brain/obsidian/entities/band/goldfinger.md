@@ -5,7 +5,7 @@ type: band
 zone: punk-alt
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1994
 eraPeak:
 primaryGenres: []
 curatorTags: []
@@ -28,6 +28,8 @@ A band connected to documented Wikipedia signals around Bad Religion.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Goldfinger_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q1064319)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/87fc1871-b74e-4bf5-a00d-8a89c288008b)
 
 ## Curator Notes
 

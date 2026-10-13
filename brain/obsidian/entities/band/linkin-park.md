@@ -24,6 +24,7 @@ Linkin Park is an American rock band formed in Agoura Hills, California, in 1996
 ## Connections
 
 - [[afi|AFI]] - Wikipedia link signal (Wikipedia link: AFI (band))
+- [[chester-bennington|Chester Bennington]] - Member of (MusicBrainz records Chester Bennington as a member of Linkin Park.; Documented period: 1999 to 2017-07-20.)
 
 ## Sources
 

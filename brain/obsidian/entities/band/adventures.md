@@ -5,7 +5,7 @@ type: band
 zone: punk-alt
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 2012
 eraPeak:
 primaryGenres: [shoegaze]
 curatorTags: [Shoegaze, band, shoegaze]
@@ -28,6 +28,8 @@ A band connected to documented Wikipedia signals around Shoegaze.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Adventures_%28band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q17509935)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/21a33751-f9db-4941-a1ec-69627659a5a9)
 
 ## Curator Notes
 

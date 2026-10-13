@@ -5,7 +5,7 @@ type: band
 zone: roots-blues
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1962
 eraPeak:
 primaryGenres: [blues rock]
 curatorTags: [Blues rock, Rock, blues rock]
@@ -31,6 +31,8 @@ A British rock band whose identity is deeply rooted in blues, riffs and Keith Ri
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/The_Rolling_Stones)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q11036)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/b071f9fa-14b0-4217-8e97-eb41da73f598)
 
 ## Curator Notes
 

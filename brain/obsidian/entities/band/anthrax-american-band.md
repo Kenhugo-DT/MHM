@@ -5,7 +5,7 @@ type: band
 zone: hard-rock-metal
 roles: [band]
 aliases: []
-eraStart:
+eraStart: 1981
 eraPeak:
 primaryGenres: [hard rock]
 curatorTags: [hard rock, alternative metal, Hard rock]
@@ -43,6 +43,8 @@ A band connected to documented Wikipedia signals around Black Sabbath.
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Anthrax_%28American_band%29)
+- [Wikidata: inception](https://www.wikidata.org/wiki/Q109871)
+- [MusicBrainz: group begin](https://musicbrainz.org/artist/b616d6f0-ec1f-4c69-8a79-12a97ece7372)
 
 ## Curator Notes
 
