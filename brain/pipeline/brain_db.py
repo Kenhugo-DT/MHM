@@ -26,6 +26,10 @@ ALLOWED_KINDS = {
     "genre",
 }
 ALLOWED_CANDIDATE_STATUSES = {"review", "approved", "imported", "rejected"}
+REVIEW_REASON_CODES = {
+    "duplicate", "wrong_entity", "weak_source", "weak_connection",
+    "incorrect_fact", "out_of_scope", "not_relevant", "other",
+}
 
 
 def load_supabase_helpers():
@@ -110,6 +114,8 @@ def candidate_summary(row: dict[str, Any]) -> dict[str, Any]:
         "seedName": row.get("seed_name"),
         "requestedKind": row.get("requested_kind"),
         "status": row.get("status"),
+        "reviewReasonCode": row.get("review_reason_code"),
+        "reviewNote": row.get("review_note"),
         "musicCandidateCount": len(payload.get("music_candidates") or []),
         "reviewLevel": review.get("level"),
         "reviewScore": review.get("score"),
@@ -150,6 +156,10 @@ def command_set_candidate_status(args: argparse.Namespace) -> None:
     payload = {"status": args.status}
     if args.reason:
         payload["reason"] = args.reason
+    if args.review_reason_code:
+        payload["review_reason_code"] = args.review_reason_code
+    if args.review_note:
+        payload["review_note"] = args.review_note
 
     response = (
         client.table("research_candidates")
@@ -163,6 +173,8 @@ def command_set_candidate_status(args: argparse.Namespace) -> None:
             "status": args.status,
             "ids": args.id,
             "reason": args.reason,
+            "reviewReasonCode": args.review_reason_code,
+            "reviewNote": args.review_note,
         }
     )
 
@@ -235,6 +247,8 @@ def build_parser() -> argparse.ArgumentParser:
     set_candidate_status.add_argument("--id", action="append", required=True)
     set_candidate_status.add_argument("--status", required=True)
     set_candidate_status.add_argument("--reason")
+    set_candidate_status.add_argument("--review-reason-code", choices=sorted(REVIEW_REASON_CODES))
+    set_candidate_status.add_argument("--review-note")
     set_candidate_status.set_defaults(func=command_set_candidate_status)
 
     add_request = subparsers.add_parser(

@@ -21,6 +21,10 @@ from typing import Any
 from dotenv import load_dotenv
 
 from process_inbox import INBOX_PATH, iso_now, load_inbox, queued_requests, slugify
+from research_learning import (
+    build_learning_model, fetch_review_rows, graph_seed_index, priority_adjustment,
+    save_snapshot,
+)
 
 BRAIN_ROOT = Path(__file__).resolve().parents[1]
 REPO_ROOT = BRAIN_ROOT.parent
@@ -187,7 +191,8 @@ def has_wiki_source(node: dict[str, Any]) -> bool:
     return False
 
 
-def frontier_score(node: dict[str, Any], degree: int) -> float:
+def frontier_score(node: dict[str, Any], degree: int,
+                   learning_model: dict[str, Any] | None = None) -> float:
     kind = request_kind_for_node(node)
     score = TYPE_PRIORITY.get(kind, 1)
     score += max(0, 6 - min(degree, 6)) * 5
@@ -197,6 +202,10 @@ def frontier_score(node: dict[str, Any], degree: int) -> float:
         score += 4
     if not node.get("summary"):
         score += 2
+    if learning_model:
+        score += priority_adjustment(
+            learning_model, kind, str(node.get("zone") or "")
+        )["score"]
     return score
 
 
@@ -205,6 +214,7 @@ def select_frontier_seeds(
     blocked_terms: set[str],
     existing_keys: set[tuple[str, str]],
     max_seeds: int,
+    learning_model: dict[str, Any] | None = None,
 ) -> list[dict[str, str]]:
     degrees = degree_by_node(graph)
     scored: list[tuple[float, int, str, str, dict[str, Any]]] = []
@@ -226,7 +236,7 @@ def select_frontier_seeds(
             continue
 
         zone = str(node.get("zone", "unknown"))
-        scored.append((frontier_score(node, degree), degree, label, zone, node))
+        scored.append((frontier_score(node, degree, learning_model), degree, label, zone, node))
 
     scored.sort(key=lambda item: (-item[0], item[1], item[2]))
 
@@ -347,12 +357,16 @@ def load_organization_model() -> dict[str, Any] | None:
 def organization_frontier_request(
     existing_ids: set[Any],
     existing_keys: set[tuple[str, str]],
+    graph: dict[str, Any] | None = None,
+    learning_model: dict[str, Any] | None = None,
 ) -> dict[str, Any] | None:
     model = load_organization_model()
     if not model:
         return None
 
-    for request in model.get("recommendedResearchRequests", []):
+    options: list[tuple[float, int, dict[str, Any]]] = []
+    zone_by_seed = graph_seed_index(graph or {})
+    for position, request in enumerate(model.get("recommendedResearchRequests", [])):
         request_id = request.get("id")
         if not request_id or request_id in existing_ids:
             continue
@@ -369,7 +383,7 @@ def organization_frontier_request(
         if not seeds:
             continue
 
-        return {
+        prepared = {
             **request,
             "status": "queued",
             "createdAt": iso_now(),
@@ -380,7 +394,21 @@ def organization_frontier_request(
             ).strip(),
         }
 
-    return None
+        if not learning_model:
+            return prepared
+        adjustments = [
+            priority_adjustment(
+                learning_model, seed["kind"],
+                zone_by_seed.get((normalize_text(seed["name"]), seed["kind"])) or "",
+            )["score"]
+            for seed in seeds
+        ]
+        score = int(request.get("priority", 50)) + sum(adjustments) / len(adjustments)
+        options.append((score, position, prepared))
+
+    if not options:
+        return None
+    return max(options, key=lambda item: (item[0], -item[1]))[2]
 
 
 def load_supabase_helpers() -> dict[str, Any]:
@@ -478,6 +506,57 @@ def write_run_summary(summary: dict[str, Any]) -> Path:
     return path
 
 
+def write_learning_report(model: dict[str, Any]) -> Path:
+    RUNS_DIR.mkdir(parents=True, exist_ok=True)
+    path = RUNS_DIR / f"research-learning-{datetime.now(UTC).strftime('%Y%m%d-%H%M%S')}.json"
+    public_model = json.loads(json.dumps(model))
+    for dimension in ("kind", "zone"):
+        for group in public_model["training"][dimension].values():
+            group.pop("examples", None)
+    public_model["training"]["overall"].pop("examples", None)
+    path.write_text(json.dumps(public_model, ensure_ascii=False, indent=2), encoding="utf-8")
+    return path
+
+
+def public_priority_adjustment(model: dict[str, Any], kind: str, zone: str) -> dict[str, Any]:
+    result = priority_adjustment(model, kind, zone)
+    for reason in result["reasons"]:
+        reason.pop("reviewExamples", None)
+    return result
+
+
+def append_github_summary(summary: dict[str, Any]) -> None:
+    target = os.getenv("GITHUB_STEP_SUMMARY")
+    learning = summary.get("learning")
+    if not target or not learning:
+        return
+    validation = learning.get("validation") or {}
+    comparison = learning.get("frontierComparison") or learning.get("organizationComparison") or {}
+    lines = [
+        "## Research learning",
+        f"- Mode: {learning.get('mode')}",
+        f"- Reviewed decisions used: {learning.get('usableDecisions', 0)}",
+        f"- Explicit rejected reasons: {learning.get('clearRejections', 0)}",
+        f"- Validation decisions: {validation.get('holdoutCount', 0)}",
+        f"- Baseline / learned error: {validation.get('baselineBrier', 'not yet available')} / "
+        f"{validation.get('learnedBrier', 'not yet available')}",
+        f"- Eligible for bounded automatic ranking: {learning.get('activationEligible', False)}",
+        f"- Snapshot stored: {learning.get('snapshotStored', False)}",
+    ]
+    if comparison.get("currentSeeds"):
+        lines.append("- Current seeds: " + ", ".join(seed["name"] for seed in comparison["currentSeeds"]))
+        lines.append("- Learned seeds: " + ", ".join(seed["name"] for seed in comparison["learnedSeeds"]))
+    elif comparison.get("currentRequestId"):
+        lines.append(f"- Current request: {comparison['currentRequestId']}")
+        lines.append(f"- Learned request: {comparison.get('learnedRequestId')}")
+    if learning.get("errorType") or learning.get("snapshotErrorType"):
+        lines.append(
+            f"- Learning / snapshot error: {learning.get('errorType') or learning.get('snapshotErrorType')}"
+        )
+    with Path(target).open("a", encoding="utf-8") as handle:
+        handle.write("\n".join(lines) + "\n\n")
+
+
 def write_crash_summary(error: BaseException | str) -> None:
     summary = {
         "version": 1,
@@ -518,6 +597,11 @@ def build_parser() -> argparse.ArgumentParser:
         help="Process queued requests after the scout has inspected or queued work.",
     )
     parser.add_argument("--dry-run", action="store_true", help="Report what would happen.")
+    parser.add_argument(
+        "--learning-mode", choices=["off", "shadow", "auto"],
+        default=os.getenv("BRAIN_LEARNING_MODE", "shadow").strip() or "shadow",
+        help="Compare review-trained ranking in shadow mode, or use it only after validation.",
+    )
     return parser
 
 
@@ -543,6 +627,31 @@ def main() -> None:
         "processed": False,
     }
 
+    learning_model: dict[str, Any] | None = None
+    learning_active = False
+    if source == "supabase" and args.learning_mode != "off":
+        try:
+            learning_model = build_learning_model(fetch_review_rows(state), graph)
+            learning_active = args.learning_mode == "auto" and learning_model["activationEligible"]
+            report_path = write_learning_report(learning_model)
+            summary["learning"] = {
+                "mode": "active" if learning_active else "shadow",
+                "usableDecisions": learning_model["usableDecisions"],
+                "clearRejections": learning_model["clearRejections"],
+                "validation": learning_model["validation"],
+                "activationEligible": learning_model["activationEligible"],
+                "reportPath": str(report_path.relative_to(REPO_ROOT)).replace("\\", "/"),
+            }
+            if not args.dry_run:
+                try:
+                    save_snapshot(state, learning_model, summary["learning"]["mode"])
+                    summary["learning"]["snapshotStored"] = True
+                except Exception as error:
+                    summary["learning"]["snapshotStored"] = False
+                    summary["learning"]["snapshotErrorType"] = type(error).__name__
+        except Exception as error:
+            summary["learning"] = {"mode": "unavailable", "errorType": type(error).__name__}
+
     planned_request: dict[str, Any] | None = None
     created_request: dict[str, Any] | None = None
 
@@ -550,14 +659,56 @@ def main() -> None:
         keys = existing_seed_keys(all_requests)
         planned_request = organization_frontier_request(existing_ids, keys)
         if planned_request:
+            if learning_model:
+                learned_request = organization_frontier_request(
+                    existing_ids, keys, graph, learning_model
+                )
+                summary["learning"]["organizationComparison"] = {
+                    "currentRequestId": planned_request["id"],
+                    "learnedRequestId": learned_request["id"] if learned_request else None,
+                    "learnedSeedReasons": [
+                        {
+                            "seed": seed,
+                            **public_priority_adjustment(
+                                learning_model, seed["kind"],
+                                graph_seed_index(graph).get(
+                                    (normalize_text(seed["name"]), seed["kind"])
+                                ) or "",
+                            ),
+                        }
+                        for seed in (learned_request or {}).get("seeds", [])
+                    ],
+                }
+                if learning_active and learned_request:
+                    planned_request = learned_request
             summary["frontierSource"] = "organization-model"
         else:
-            seeds = select_frontier_seeds(
+            baseline_seeds = select_frontier_seeds(
                 graph,
                 blocked_terms,
                 keys,
                 max(1, args.frontier_seeds),
             )
+            shadow_seeds = select_frontier_seeds(
+                graph, blocked_terms, keys, max(1, args.frontier_seeds), learning_model
+            ) if learning_model else baseline_seeds
+            seeds = shadow_seeds if learning_active else baseline_seeds
+            if learning_model:
+                index = graph_seed_index(graph)
+                summary["learning"]["frontierComparison"] = {
+                    "currentSeeds": baseline_seeds,
+                    "learnedSeeds": shadow_seeds,
+                    "reasons": [
+                        {
+                            "seed": seed,
+                            **public_priority_adjustment(
+                                learning_model, seed["kind"],
+                                index.get((normalize_text(seed["name"]), seed["kind"])) or "",
+                            ),
+                        }
+                        for seed in shadow_seeds
+                    ],
+                }
             planned_request = build_frontier_request(graph, seeds) if seeds else None
             if planned_request:
                 summary["frontierSource"] = "thin-node-frontier"
@@ -592,6 +743,7 @@ def main() -> None:
             summary["status"] = "failed"
             summary_path = write_run_summary(summary)
             summary["summaryPath"] = str(summary_path.relative_to(REPO_ROOT)).replace("\\", "/")
+            append_github_summary(summary)
             print_json(summary)
             raise SystemExit(return_code)
     else:
@@ -602,6 +754,7 @@ def main() -> None:
 
     summary_path = write_run_summary(summary)
     summary["summaryPath"] = str(summary_path.relative_to(REPO_ROOT)).replace("\\", "/")
+    append_github_summary(summary)
     print_json(summary)
 
 

@@ -26,6 +26,7 @@ Open `SQL Editor` in Supabase and run these files in order:
 4. `brain/supabase/migrations/0004_fact_review_feedback.sql`
 5. `brain/supabase/migrations/0005_facts_all_node_types.sql`
 6. `brain/supabase/migrations/0006_entity_start_year.sql`
+7. `brain/supabase/migrations/0007_research_learning.sql`
 
 `0001` creates the public graph tables read by the site. `0002` creates the
 private brain tables used by the research pipeline. `0003` creates the separate
@@ -34,6 +35,9 @@ fact rows are readable by the public site; the reviewer note is never public.
 `0005` extends fact review to all map node types. `0006` adds the first
 documented year and its reviewed evidence to live entities. It is additive
 and must run before `brain:import` with graph data containing start years.
+`0007` adds private review-reason fields, an append-only review history and
+research-learning snapshots. Existing approved and rejected candidate statuses
+are backfilled as historical decisions without inventing a reason for them.
 
 After `0006`, run `npm run brain:import:preflight`. The guarded connection
 publication workflow will not create a PR until this succeeds and GitHub

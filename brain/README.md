@@ -274,6 +274,38 @@ That workflow can be started manually. For recurring runs, use the Supabase
 Scheduler in `brain/supabase/scheduler/`; it triggers the same workflow through
 GitHub's manual dispatch API instead of relying on GitHub's scheduled trigger.
 
+## Learning From Research Reviews
+
+Apply `brain/supabase/migrations/0007_research_learning.sql` in Supabase SQL
+Editor before relying on review history or durable learning snapshots. It does
+not change any candidate decision. Status changes are then recorded as events;
+the current approved/imported/rejected status remains the training label.
+
+The scheduled scout reads these labels and compares a review-trained frontier
+ranking with the existing fixed ranking. `shadow` is the default: it records
+both choices and aggregate reasons, but queues the old choice. Exact review IDs
+stay in the private Supabase snapshot, not the public GitHub workflow log. Set
+GitHub repository variable `BRAIN_LEARNING_MODE=auto` only after inspecting the
+reports. Even then, the trained choice is used only after at least 40 training
+decisions, 10 explicit rejected reasons, 8 holdout decisions, and a better
+holdout score. Score changes are bounded. No candidate is auto-approved or
+published. The latest model is written to `brain/data/runs/` in the workflow
+artifact and, after the migration, to `research_learning_snapshots`.
+
+When rejecting a candidate, set `review_reason_code` in Supabase if possible:
+`duplicate`, `wrong_entity`, `weak_source`, `weak_connection`, `incorrect_fact`,
+`out_of_scope`, `not_relevant`, or `other`. Use `review_note` for context. The
+first five codes do not teach the frontier ranking that a genre or node type is
+bad; they identify a specific evidence or identity problem. Earlier rejections
+without a reason are given low weight. CLI example:
+
+```bash
+npm run brain:set-candidate-status -- --id <candidate-uuid> --status rejected --review-reason-code wrong_entity --review-note "Wikipedia page is about a different artist"
+```
+
+The learner never calls a paid model API. It learns review preferences, not
+music-history facts; all factual proposals still need sources and human review.
+
 ## Environment
 
 Public browser variables:
