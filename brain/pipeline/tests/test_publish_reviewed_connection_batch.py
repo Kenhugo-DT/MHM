@@ -5,7 +5,9 @@ import unittest
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from publish_reviewed_connection_batch import approved_relation_rows, new_batch_rows  # noqa: E402
+from publish_reviewed_connection_batch import (  # noqa: E402
+    approved_discovered_nodes, approved_relation_rows, new_batch_rows,
+)
 
 
 class PublishReviewedConnectionsTests(unittest.TestCase):
@@ -40,6 +42,26 @@ class PublishReviewedConnectionsTests(unittest.TestCase):
             approved_relation_rows([self.row], {"candidate-1": self.candidate}, {
                 "edges": [{**self.graph["edges"][0], "sources": [
                     {"provider": "musicbrainz", "url": "https://musicbrainz.org/artist/other"}]}]})
+
+    def test_discovered_band_requires_matching_approval_and_identity(self):
+        mbid = "f4a31f0a-51dd-4fa7-986d-3095c40c5ed9"
+        band = {"id": f"mb-band-{mbid}", "label": "Evanescence", "type": "band",
+                "sources": [{"provider": "musicbrainz",
+                             "url": f"https://musicbrainz.org/artist/{mbid}"}]}
+        candidate = {**self.candidate, "payload": {**self.candidate["payload"],
+                     "connection": {**self.candidate["payload"]["connection"],
+                                    "target": band["id"],
+                                    "discovery": {"mbid": mbid, "name": "Evanescence"}}}}
+        row = {**self.row, "target": band["id"]}
+        graph = {"nodes": [band], "edges": [{**self.graph["edges"][0], "target": band["id"]}]}
+        self.assertEqual(approved_discovered_nodes([row], {"candidate-1": candidate}, graph)[0]["id"],
+                         band["id"])
+        with self.assertRaises(ValueError):
+            approved_discovered_nodes([row], {"candidate-1": candidate},
+                                      {**graph, "nodes": [{**band, "label": "Wrong"}]})
+        with self.assertRaises(ValueError):
+            approved_discovered_nodes([row], {"candidate-1":
+                                      {**candidate, "status": "rejected"}}, graph)
 
 
 if __name__ == "__main__":

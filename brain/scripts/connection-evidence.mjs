@@ -2,6 +2,7 @@ import { isMapConnection } from "../../shared/graph-schema/edge-evidence.mjs";
 
 export const MEMBER_OF_BAND_TYPE_ID = "5be4c609-9afa-4ea0-910b-12ffb71e3821";
 const MUSICBRAINZ_ARTIST_URL = /^https:\/\/musicbrainz\.org\/artist\/([0-9a-f-]{36})(?:[/?#]|$)/i;
+const MUSICBRAINZ_ID = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 
 export function musicBrainzArtistId(node) {
   const ids = new Set((node.sources ?? [])
@@ -36,6 +37,35 @@ export function isolatedArtistSeeds(graph, requestedIds = [], limit = 12) {
     a.label.localeCompare(b.label, "en")
   );
   return eligible.slice(0, limit);
+}
+
+export function feedbackArtistSeeds(graph, rows, limit = 3, recentlyChecked = new Set()) {
+  const byLabel = new Map();
+  for (const node of graph.nodes) {
+    if (!["artist", "guitarist", "band"].includes(node.type)) continue;
+    const key = node.label.trim().toLocaleLowerCase("en");
+    byLabel.set(key, byLabel.has(key) ? null : node);
+  }
+  const chosen = [];
+  const seen = new Set();
+  for (const row of rows) {
+    if (row.status !== "rejected" || row.review_reason_code !== "weak_connection") continue;
+    if (row.payload?.kind === "typed_connection") continue;
+    const node = byLabel.get(String(row.seed_name ?? "").trim().toLocaleLowerCase("en"));
+    if (!node || seen.has(node.id) || recentlyChecked.has(node.id)) continue;
+    const expectedKind = node.type === "band" ? "band" : node.type === "guitarist" ||
+      (node.roles ?? []).includes("guitarist") ? "guitarist" : "artist";
+    if (row.requested_kind !== expectedKind) continue;
+    const candidateId = row.payload?.musicbrainz?.id;
+    const reviewedId = MUSICBRAINZ_ID.test(candidateId ?? "") ? candidateId.toLowerCase() : undefined;
+    const existingId = musicBrainzArtistId(node);
+    if (reviewedId && existingId && reviewedId !== existingId) continue;
+    const musicbrainzId = existingId ?? reviewedId;
+    chosen.push({ node, musicbrainzId, reasonCode: row.review_reason_code });
+    seen.add(node.id);
+    if (chosen.length >= limit) break;
+  }
+  return chosen;
 }
 
 export function artistIndex(graph) {
@@ -94,4 +124,38 @@ export function membershipProposals(seed, artist, index, graph) {
     }
   }
   return [...byPair.values()];
+}
+
+export function membershipDiscoveryProposals(seed, artist, graph, limit = 3) {
+  const personMbid = musicBrainzArtistId(seed);
+  if (!personMbid || seed.type === "band" || artist?.id !== personMbid || artist.type !== "Person") return [];
+  const knownIds = new Set(graph.nodes.map(musicBrainzArtistId).filter(Boolean));
+  const knownLabels = new Set(graph.nodes.map((node) => node.label.trim().toLocaleLowerCase("en")));
+  const discoveries = new Map();
+  for (const relation of artist.relations ?? []) {
+    const band = relation.artist;
+    if (relation["type-id"] !== MEMBER_OF_BAND_TYPE_ID || band?.type !== "Group" ||
+        !MUSICBRAINZ_ID.test(band.id ?? "") || !band.name?.trim() ||
+        knownIds.has(band.id.toLowerCase()) || knownLabels.has(band.name.trim().toLocaleLowerCase("en"))) continue;
+    const mbid = band.id.toLowerCase();
+    if (!discoveries.has(mbid)) discoveries.set(mbid, {
+      id: `mb-member-${seed.id}-mb-band-${mbid}`,
+      source: seed.id,
+      target: `mb-band-${mbid}`,
+      type: "member_of",
+      label: "Member of",
+      strength: 0.9,
+      context: [`MusicBrainz records ${seed.label} as a member of ${band.name}.`],
+      sources: [{ label: "MusicBrainz: member of band relationship",
+        url: `https://musicbrainz.org/artist/${personMbid}/relationships`, provider: "musicbrainz" }],
+      evidence: { relationTypeId: MEMBER_OF_BAND_TYPE_ID, artistIds: [personMbid, mbid],
+        sourceName: seed.label, periods: [] },
+      discovery: { name: band.name.trim(), mbid, type: "band" },
+      status: "review",
+    });
+    const periods = discoveries.get(mbid).evidence.periods;
+    const period = { begin: relation.begin || null, end: relation.end || null };
+    if (!periods.some((item) => item.begin === period.begin && item.end === period.end)) periods.push(period);
+  }
+  return [...discoveries.values()].sort((a, b) => a.discovery.name.localeCompare(b.discovery.name, "en")).slice(0, limit);
 }

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-06T12:13:19.846Z",
+  "generatedAt": "2026-10-20T09:02:35.659Z",
   "source": "MHM research brain promotions",
   "candidateRows": [
     {
@@ -1619,6 +1619,20 @@
       "edgeId": "mb-member-bruce-dickinson-iron-maiden",
       "source": "bruce-dickinson",
       "target": "iron-maiden"
+    },
+    {
+      "id": "0983fce9-8f1a-4591-a9a2-a715d04c2b76",
+      "kind": "typed_connection",
+      "edgeId": "mb-member-amy-lee-mb-band-f4a31f0a-51dd-4fa7-986d-3095c40c5ed9",
+      "source": "amy-lee",
+      "target": "mb-band-f4a31f0a-51dd-4fa7-986d-3095c40c5ed9"
+    },
+    {
+      "id": "23b76361-3467-42b1-a346-92fefa797c3a",
+      "kind": "typed_connection",
+      "edgeId": "mb-member-chi-cheng-mb-band-7527f6c2-d762-4b88-b5e2-9244f1e34c46",
+      "source": "chi-cheng",
+      "target": "mb-band-7527f6c2-d762-4b88-b5e2-9244f1e34c46"
     }
   ],
   "nodes": [
@@ -12523,6 +12537,94 @@
           "provider": "wikidata"
         }
       ]
+    },
+    {
+      "id": "mb-band-f4a31f0a-51dd-4fa7-986d-3095c40c5ed9",
+      "label": "Evanescence",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "Band with a documented membership connection to Amy Lee.",
+      "metadata": [
+        "Band"
+      ],
+      "x": -1158,
+      "y": 1408,
+      "zone": "rock-circuit",
+      "starter": false,
+      "layoutHints": {
+        "preferredZone": "rock-circuit",
+        "nearNode": "amy-lee"
+      },
+      "eraStart": 1995,
+      "eraStartEvidence": {
+        "basis": "group_formation",
+        "note": "MusicBrainz group begin date.",
+        "sources": [
+          {
+            "label": "MusicBrainz: group begin",
+            "url": "https://musicbrainz.org/artist/f4a31f0a-51dd-4fa7-986d-3095c40c5ed9",
+            "provider": "musicbrainz"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "label": "MusicBrainz: artist identity",
+          "url": "https://musicbrainz.org/artist/f4a31f0a-51dd-4fa7-986d-3095c40c5ed9",
+          "provider": "musicbrainz"
+        },
+        {
+          "label": "MusicBrainz: group begin",
+          "url": "https://musicbrainz.org/artist/f4a31f0a-51dd-4fa7-986d-3095c40c5ed9",
+          "provider": "musicbrainz"
+        }
+      ]
+    },
+    {
+      "id": "mb-band-7527f6c2-d762-4b88-b5e2-9244f1e34c46",
+      "label": "Deftones",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "Band with a documented membership connection to Chi Cheng.",
+      "metadata": [
+        "Band"
+      ],
+      "x": 527,
+      "y": 665,
+      "zone": "rock-circuit",
+      "starter": false,
+      "layoutHints": {
+        "preferredZone": "rock-circuit",
+        "nearNode": "chi-cheng"
+      },
+      "eraStart": 1988,
+      "eraStartEvidence": {
+        "basis": "group_formation",
+        "note": "MusicBrainz group begin date.",
+        "sources": [
+          {
+            "label": "MusicBrainz: group begin",
+            "url": "https://musicbrainz.org/artist/7527f6c2-d762-4b88-b5e2-9244f1e34c46",
+            "provider": "musicbrainz"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "label": "MusicBrainz: artist identity",
+          "url": "https://musicbrainz.org/artist/7527f6c2-d762-4b88-b5e2-9244f1e34c46",
+          "provider": "musicbrainz"
+        },
+        {
+          "label": "MusicBrainz: group begin",
+          "url": "https://musicbrainz.org/artist/7527f6c2-d762-4b88-b5e2-9244f1e34c46",
+          "provider": "musicbrainz"
+        }
+      ]
     }
   ],
   "edges": [
@@ -20831,6 +20933,44 @@
         {
           "label": "MusicBrainz: member of band relationship",
           "url": "https://musicbrainz.org/artist/50698127-f6f4-4c0c-8010-db98c21100e1/relationships",
+          "provider": "musicbrainz"
+        }
+      ]
+    },
+    {
+      "id": "mb-member-amy-lee-mb-band-f4a31f0a-51dd-4fa7-986d-3095c40c5ed9",
+      "source": "amy-lee",
+      "target": "mb-band-f4a31f0a-51dd-4fa7-986d-3095c40c5ed9",
+      "type": "member_of",
+      "label": "Member of",
+      "strength": 0.9,
+      "context": [
+        "MusicBrainz records Amy Lee as a member of Evanescence.",
+        "Documented period: 1995 to present."
+      ],
+      "sources": [
+        {
+          "label": "MusicBrainz: member of band relationship",
+          "url": "https://musicbrainz.org/artist/7ee89158-3446-4044-bb88-0dcc4d4cd6c0/relationships",
+          "provider": "musicbrainz"
+        }
+      ]
+    },
+    {
+      "id": "mb-member-chi-cheng-mb-band-7527f6c2-d762-4b88-b5e2-9244f1e34c46",
+      "source": "chi-cheng",
+      "target": "mb-band-7527f6c2-d762-4b88-b5e2-9244f1e34c46",
+      "type": "member_of",
+      "label": "Member of",
+      "strength": 0.9,
+      "context": [
+        "MusicBrainz records Chi Cheng as a member of Deftones.",
+        "Documented period: 1988 to 2008."
+      ],
+      "sources": [
+        {
+          "label": "MusicBrainz: member of band relationship",
+          "url": "https://musicbrainz.org/artist/ed1c0daa-9cdb-4bd8-8f46-794ec0783544/relationships",
           "provider": "musicbrainz"
         }
       ]

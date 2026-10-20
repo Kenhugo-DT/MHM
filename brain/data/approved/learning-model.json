@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-13T10:37:20.597Z",
+  "generatedAt": "2026-10-20T09:16:17.258Z",
   "source": "graph + Obsidian frontmatter + curator feedback",
   "samples": {
-    "graphNodes": 1015,
-    "graphEdges": 1326,
-    "mapConnections": 894,
+    "graphNodes": 1017,
+    "graphEdges": 1328,
+    "mapConnections": 896,
     "obsidianNotes": 1017,
     "feedbackNodes": 44,
     "feedbackZones": 6,
@@ -356,11 +356,11 @@
       ]
     },
     "rock-circuit": {
-      "nodeCount": 172,
+      "nodeCount": 174,
       "pinnedCount": 0,
       "centroid": {
         "x": -520,
-        "y": 322
+        "y": 325
       },
       "eraMedian": 1990,
       "learnedTerms": [
@@ -11976,10 +11976,10 @@
         "artist",
         "classic rock"
       ],
-      "connectionCount": 0,
+      "connectionCount": 1,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0,
+      "hubScore": 0.083,
       "layoutHints": {
         "pinned": false
       }
@@ -14913,10 +14913,10 @@
         "classic rock",
         "rock"
       ],
-      "connectionCount": 0,
+      "connectionCount": 1,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0,
+      "hubScore": 0.083,
       "layoutHints": {
         "pinned": false
       }
@@ -16504,6 +16504,32 @@
       "linkedGenres": [],
       "bridgeScore": 0,
       "hubScore": 0.417,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "mb-band-f4a31f0a-51dd-4fa7-986d-3095c40c5ed9": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "mb-band-7527f6c2-d762-4b88-b5e2-9244f1e34c46": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
       "layoutHints": {
         "pinned": false
       }

@@ -14,6 +14,20 @@ import { midcenturyLinks, midcenturyNodes } from "../brain/scripts/curated-midce
 import { thousandLinks, thousandNodes } from "../brain/scripts/curated-thousand.mjs";
 import { loadAllRows } from "../site/src/data/load-all-rows.mjs";
 
+test("approved band discoveries stay near their documented members", () => {
+  const graph = JSON.parse(readFileSync(new URL("../brain/data/approved/graph.json", import.meta.url), "utf8"));
+  const nodes = new Map(graph.nodes.map((node) => [node.label, node]));
+  for (const [bandName, memberName] of [["Evanescence", "Amy Lee"], ["Deftones", "Chi Cheng"]]) {
+    const band = nodes.get(bandName);
+    const member = nodes.get(memberName);
+    assert.ok(band && member);
+    assert.equal(band.zone, member.zone);
+    assert.ok(Math.hypot(band.x - member.x, band.y - member.y) <= 300);
+    assert.ok(graph.edges.some((edge) => edge.source === member.id && edge.target === band.id &&
+      edge.type === "member_of" && edge.sources?.some((source) => source.provider === "musicbrainz")));
+  }
+});
+
 test("pagination returns every row beyond the old 800-node cap", async () => {
   const source = Array.from({ length: 1105 }, (_, index) => ({
     id: String(index).padStart(5, "0"),

@@ -422,6 +422,33 @@ for (const node of nodes) {
   node.y = previous.y;
 }
 
+const positionedById = new Map(nodes.map((node) => [node.id, node]));
+const nearOffsets = [
+  [180, 0], [0, 180], [-180, 0], [0, -180],
+  [150, 150], [-150, 150], [150, -150], [-150, -150],
+  [260, 0], [0, 260], [-260, 0], [0, -260],
+];
+for (const node of nodes) {
+  if (previousPositions.has(node.id) || !node.layoutHints?.nearNode) continue;
+  const anchor = positionedById.get(node.layoutHints.nearNode);
+  if (!anchor || anchor.zone !== node.zone) continue;
+  const nearby = nodes.filter((other) => other !== node &&
+    Math.abs(other.x - anchor.x) < 600 && Math.abs(other.y - anchor.y) < 600);
+  let best;
+  for (const [dx, dy] of nearOffsets) {
+    const x = anchor.x + dx;
+    const y = anchor.y + dy;
+    const clearance = Math.min(Infinity, ...nearby.map((other) => Math.hypot(other.x - x, other.y - y)));
+    if (!best || clearance > best.clearance) best = { x, y, clearance };
+    if (clearance >= 145) {
+      best = { x, y, clearance };
+      break;
+    }
+  }
+  node.x = best.x;
+  node.y = best.y;
+}
+
 for (const node of nodes) {
   node.metadata = publicMetadata(node.metadata ?? []);
   node.curatorTags = publicTags(node.curatorTags ?? []);

@@ -130,13 +130,16 @@ first when it needs to create its own frontier request, and the layout generator
 uses it to keep organized chaos readable.
 
 `brain:connection-scout:dry-run` lists isolated MusicBrainz-matched artist and
-band nodes it would check. `brain:connection-scout` queries at most 12 by
-default (maximum 25) and writes only `member_of` proposals to an ignored
+band nodes, plus rejected `weak_connection` cases that can be checked with a
+typed source. `brain:connection-scout` queries at most 12 by default (maximum
+25) and writes only `member_of` proposals to an ignored
 `brain/data/candidates/connection-evidence-*.json` review file. Use
 `-- --node <id>` to target a specific isolated node. It does not approve,
 import or publish relationships. MusicBrainz identities, relation type and
 date ranges are retained for human review; unsupported relation types are
-discarded.
+discarded. Its publication log records checked identities so the next run can
+rotate to other feedback cases. A verified person-to-band membership can also
+propose a missing band, still requiring explicit approval.
 
 ## Reviewed Connection Automation
 
@@ -158,12 +161,13 @@ automatically publish other approved packages; those still need careful review.
 4. Review the exact person, band, source and period in Supabase and set only
    sound candidates to `approved`. Run the `Propose reviewed connections`
    GitHub workflow. It rechecks membership against MusicBrainz, stages at most
-   12 edges, rejects unrelated graph changes and opens a draft PR. GitHub CI
+   12 edges and their directly reviewed band discoveries, rejects unrelated
+   graph changes and opens a draft PR. GitHub CI
    runs against the proposed branch. No direct push to `main` occurs.
 5. A person reviews the diff and merges it. The `Publish reviewed connections`
    workflow verifies that approval still exists, writes only the 1-12 new
-   membership relations (not the whole graph), reads them back from Supabase
-   and only then marks those candidates `imported`. It remains disabled while
+   membership relations and their approved new bands (not the whole graph),
+   reads them back from Supabase and only then marks those candidates `imported`. It remains disabled while
    `BRAIN_IMPORT_ENABLED` is not true. The published batch gate allows sourced
    start-year backfill from the earlier timeline work but no other node edits.
 

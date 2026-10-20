@@ -7,7 +7,7 @@ import json
 from pathlib import Path
 
 from finalize_connection_candidates import candidate_matches_manifest, reviewed_rows
-from import_graph import relation_row
+from import_graph import entity_row, relation_row
 from supabase_brain import require_client
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -51,6 +51,30 @@ def approved_relation_rows(rows: list[dict], candidates: dict, graph: dict) -> l
     return result
 
 
+def approved_discovered_nodes(rows: list[dict], candidates: dict, graph: dict) -> list[dict]:
+    nodes = {node["id"]: node for node in graph["nodes"]}
+    result = []
+    for row in rows:
+        candidate = candidates.get(row["id"])
+        if not candidate or not candidate_matches_manifest(row, candidate, graph):
+            raise ValueError(f"Candidate or graph mismatch: {row['id']}")
+        discovery = candidate["payload"]["connection"].get("discovery")
+        if not discovery:
+            continue
+        node = nodes.get(row["target"])
+        mbid = discovery.get("mbid", "")
+        if (not node or node.get("type") != "band" or
+                node.get("id") != f"mb-band-{mbid}" or
+                node.get("label") != discovery.get("name") or
+                not any(source.get("provider") == "musicbrainz" and
+                            source.get("url") == f"https://musicbrainz.org/artist/{mbid}"
+                            for source in node.get("sources", []))):
+            raise ValueError(f"Discovered node identity changed: {row['id']}")
+        if candidate["status"] != "imported":
+            result.append(entity_row(node))
+    return result
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("baseline", type=Path)
@@ -68,11 +92,15 @@ def main() -> None:
         response = client.table("research_candidates").select("id,status,payload").in_("id", ids).execute()
         candidates.update({item["id"]: item for item in response.data or []})
     relations = approved_relation_rows(rows, candidates, graph)
+    entities = approved_discovered_nodes(rows, candidates, graph)
+    if args.apply and entities:
+        client.table("entities").upsert(entities, on_conflict="id").execute()
     if args.apply and relations:
         client.table("relations").upsert(
             relations, on_conflict="source_id,target_id,relation_type,label"
         ).execute()
     print(json.dumps({"reviewed": len(rows), "pending": len(relations),
+                      "new_entities": len(entities),
                       "published": len(relations) if args.apply else 0}))
 
 

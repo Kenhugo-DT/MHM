@@ -41,6 +41,22 @@ class ConnectionCandidateTests(unittest.TestCase):
             candidate_payloads({"version": 1, "proposals": [self.proposal, self.proposal]},
                                set(), self.nodes)
 
+    def test_documented_missing_band_enters_review_without_creating_it(self):
+        mbid = "28503ab7-8bf2-4666-a7bd-2644bfc7cb1d"
+        proposal = {
+            **self.proposal,
+            "id": f"mb-member-person-mb-band-{mbid}",
+            "target": f"mb-band-{mbid}",
+            "evidence": {**self.proposal["evidence"], "artistIds": ["person-id", mbid]},
+            "discovery": {"name": "New Band", "mbid": mbid, "type": "band"},
+        }
+        rows = candidate_payloads({"version": 1, "proposals": [proposal]}, set(), self.nodes)
+        self.assertEqual(rows[0]["name"], "Person -> New Band")
+        self.assertEqual(rows[0]["status"], "review")
+        with self.assertRaises(ValueError):
+            candidate_payloads({"version": 1, "proposals": [
+                {**proposal, "target": "unrelated"}]}, set(), self.nodes)
+
     def test_run_id_matches_supabase_constraint(self):
         self.assertRegex(new_run_id(), re.compile(r"^[a-z0-9][a-z0-9-]*$"))
 

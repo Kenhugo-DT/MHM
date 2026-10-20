@@ -75,7 +75,7 @@ jobs:
           node brain/scripts/migrate-graph-data.mjs --preserve-existing-layout
           npm run brain:learn
           npm run brain:organize
-          npm run brain:layouts
+          node brain/scripts/generate-layouts.mjs --preserve-existing-layout
           node brain/scripts/check-connection-batch.mjs "$RUNNER_TEMP/before-graph.json" "$RUNNER_TEMP/before-promotions.json"
           npm run brain:audit
           npm run brain:python-check

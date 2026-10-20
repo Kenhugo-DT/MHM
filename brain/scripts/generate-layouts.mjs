@@ -5,6 +5,7 @@ import { isMapConnection } from "../../shared/graph-schema/edge-evidence.mjs";
 import { graphFingerprint, MODE_NODE_TYPES } from "../../shared/graph-schema/graph-snapshot.mjs";
 import { ORGANIZED_MAP_ZONES } from "./organize-graph-layout.mjs";
 import { buildTimelineLayout } from "./timeline-layout.mjs";
+import { preserveIncrementalLayouts } from "./incremental-layout.mjs";
 
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
 const brainRoot = path.resolve(scriptDir, "..");
@@ -14,6 +15,8 @@ const learningModelPath = path.join(brainRoot, "data", "approved", "learning-mod
 const organizationModelPath = path.join(brainRoot, "data", "approved", "organization-model.json");
 const approvedOutputPath = path.join(brainRoot, "data", "approved", "layouts.json");
 const browserOutputPath = path.join(repoRoot, "site", "public", "data", "layouts.json");
+const preserveExistingLayout = process.argv.includes("--preserve-existing-layout");
+const previousLayouts = preserveExistingLayout ? readJson(approvedOutputPath, undefined) : undefined;
 
 const LAYOUTS = {
   organized: {
@@ -531,6 +534,7 @@ const layouts = {
     nodes: makeChaosLayout(graph.nodes, mapEdges, degree, learningModel),
   },
 };
+preserveIncrementalLayouts(layouts, previousLayouts, graph);
 
 const dataset = {
   version: 1,

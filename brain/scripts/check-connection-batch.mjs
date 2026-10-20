@@ -23,7 +23,7 @@ export function checkConnectionBatch(before, after, published, promotions, maxNe
   const beforeNodes = new Map(before.nodes.map((node) => [node.id, node]));
   const afterNodes = new Map(after.nodes.map((node) => [node.id, node]));
   if (beforeNodes.size !== before.nodes.length || afterNodes.size !== after.nodes.length ||
-      beforeNodes.size !== afterNodes.size) issues.push("Node count or unique identities changed.");
+      afterNodes.size < beforeNodes.size) issues.push("Node count or unique identities changed.");
   for (const [id, node] of beforeNodes) {
     const next = afterNodes.get(id);
     if (JSON.stringify(next) !== JSON.stringify(node) &&
@@ -46,6 +46,22 @@ export function checkConnectionBatch(before, after, published, promotions, maxNe
   const approvedEdgeIds = new Set((promotions.candidateRows ?? [])
     .filter((row) => row.kind === "typed_connection").map((row) => row.edgeId));
   const promotionEdges = new Map((promotions.edges ?? []).map((edge) => [edge.id, edge]));
+  const promotionNodes = new Map((promotions.nodes ?? []).map((node) => [node.id, node]));
+  const newNodes = after.nodes.filter((node) => !beforeNodes.has(node.id));
+  if (promotionNodes.size !== (promotions.nodes ?? []).length) issues.push("Duplicate promotion node IDs detected.");
+  for (const node of newNodes) {
+    const promoted = promotionNodes.get(node.id);
+    const { layoutHints: _hints, x: _x, y: _y, ...approvedNode } = promoted ?? {};
+    const { x: _mapX, y: _mapY, curatorTags: _tags, ...graphNode } = node;
+    const linked = additions.some((edge) => edge.target === node.id && edge.type === "member_of" &&
+      approvedEdgeIds.has(edge.id));
+    if (!linked || node.type !== "band" || !/^mb-band-[0-9a-f-]{36}$/.test(node.id) ||
+        !node.sources?.some((source) => source.provider === "musicbrainz" &&
+          source.url === `https://musicbrainz.org/artist/${node.id.slice(8)}`) ||
+        JSON.stringify(approvedNode) !== JSON.stringify(graphNode)) {
+      issues.push(`Unreviewed or unsupported new node: ${node.id}`);
+    }
+  }
   for (const edge of additions) {
     if (edge.type !== "member_of" || edgeEvidenceTier(edge) !== "source_linked" ||
         !approvedEdgeIds.has(edge.id) ||
@@ -56,8 +72,14 @@ export function checkConnectionBatch(before, after, published, promotions, maxNe
     }
   }
   if (previousPromotions) {
-    if (JSON.stringify(previousPromotions.nodes ?? []) !== JSON.stringify(promotions.nodes ?? [])) {
-      issues.push("Promotion nodes changed.");
+    const oldPromotionNodes = new Map((previousPromotions.nodes ?? []).map((node) => [node.id, node]));
+    for (const [id, node] of oldPromotionNodes) {
+      if (JSON.stringify(promotionNodes.get(id)) !== JSON.stringify(node)) issues.push(`Promotion node changed: ${id}`);
+    }
+    const addedPromotionNodes = (promotions.nodes ?? []).filter((node) => !oldPromotionNodes.has(node.id));
+    if (addedPromotionNodes.length !== newNodes.length ||
+        addedPromotionNodes.some((node) => !newNodes.some((item) => item.id === node.id))) {
+      issues.push("Promotion node delta differs from graph additions.");
     }
     const oldPromotionRows = new Map((previousPromotions.candidateRows ?? [])
       .map((row) => [String(row.id), row]));
@@ -91,6 +113,7 @@ export function checkConnectionBatch(before, after, published, promotions, maxNe
   }
   return { beforeNodes: before.nodes.length, beforeEdges: before.edges.length,
     afterNodes: after.nodes.length, afterEdges: after.edges.length,
+    newNodes: newNodes.map((node) => node.id),
     newEdges: additions.map((edge) => edge.id), issues };
 }
 

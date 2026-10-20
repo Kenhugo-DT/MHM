@@ -43,6 +43,18 @@ def live_relation_matches(row: dict, relation: dict | None) -> bool:
                 any(source.get("provider") == "musicbrainz" for source in relation.get("sources", [])))
 
 
+def live_discovered_node_matches(row: dict, candidate: dict, entity: dict | None) -> bool:
+    discovery = candidate["payload"]["connection"].get("discovery")
+    if not discovery:
+        return True
+    mbid = discovery.get("mbid")
+    return bool(entity and entity.get("id") == row["target"] == f"mb-band-{mbid}" and
+                entity.get("node_type") == "band" and entity.get("label") == discovery.get("name") and
+                any(source.get("provider") == "musicbrainz" and
+                    source.get("url") == f"https://musicbrainz.org/artist/{mbid}"
+                    for source in entity.get("sources", [])))
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--finalize", action="store_true")
@@ -81,6 +93,13 @@ def main() -> None:
                         .limit(1).execute())
             if not live_relation_matches(row, (response.data or [None])[0]):
                 raise RuntimeError(f"Published relation not found for candidate {row['id']}.")
+            if candidates[row["id"]]["payload"]["connection"].get("discovery"):
+                entity_response = (client.table("entities")
+                                   .select("id,label,node_type,sources")
+                                   .eq("id", row["target"]).limit(1).execute())
+                if not live_discovered_node_matches(row, candidates[row["id"]],
+                                                    (entity_response.data or [None])[0]):
+                    raise RuntimeError(f"Published band not found for candidate {row['id']}.")
         for row in pending:
             (client.table("research_candidates")
              .update({"status": "imported"}).eq("id", row["id"])

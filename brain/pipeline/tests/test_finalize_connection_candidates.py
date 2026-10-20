@@ -6,7 +6,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from finalize_connection_candidates import (  # noqa: E402
-    candidate_matches_manifest, live_relation_matches, reviewed_rows,
+    candidate_matches_manifest, live_discovered_node_matches, live_relation_matches, reviewed_rows,
 )
 
 
@@ -37,6 +37,19 @@ class FinalizeConnectionTests(unittest.TestCase):
         self.assertFalse(live_relation_matches(self.row, None))
         self.assertFalse(live_relation_matches(self.row,
                                                {**self.relation, "sources": []}))
+
+    def test_discovered_band_requires_live_readback(self):
+        mbid = "f4a31f0a-51dd-4fa7-986d-3095c40c5ed9"
+        candidate = {**self.candidate, "payload": {**self.candidate["payload"],
+                     "connection": {**self.candidate["payload"]["connection"],
+                                    "discovery": {"mbid": mbid, "name": "Evanescence"}}}}
+        entity = {"id": f"mb-band-{mbid}", "label": "Evanescence", "node_type": "band",
+                  "sources": [{"provider": "musicbrainz",
+                               "url": f"https://musicbrainz.org/artist/{mbid}"}]}
+        row = {**self.row, "target": entity["id"]}
+        self.assertTrue(live_discovered_node_matches(row, candidate, entity))
+        self.assertFalse(live_discovered_node_matches(row, candidate, {**entity, "label": "Wrong"}))
+        self.assertFalse(live_discovered_node_matches(row, candidate, None))
 
 
 if __name__ == "__main__":

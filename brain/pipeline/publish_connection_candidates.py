@@ -60,15 +60,26 @@ def candidate_payloads(scout_output: dict, existing: set[str], nodes: dict[str, 
             continue
         person = nodes.get(proposal.get("source"))
         band = nodes.get(proposal.get("target"))
-        if not person or person.get("type") not in {"artist", "guitarist"} or not band or band.get("type") != "band":
+        discovery = proposal.get("discovery") or {}
+        artist_ids = (proposal.get("evidence") or {}).get("artistIds") or []
+        discovering_band = (
+            not band and discovery.get("type") == "band"
+            and proposal.get("target") == f"mb-band-{discovery.get('mbid')}"
+            and len(artist_ids) == 2 and artist_ids[1] == discovery.get("mbid")
+            and isinstance(discovery.get("name"), str) and bool(discovery["name"].strip())
+        )
+        if not person or person.get("type") not in {"artist", "guitarist"} or (not band and not discovering_band) or (
+            band and band.get("type") != "band"
+        ):
             raise ValueError(f"Connection nodes are absent or have wrong types: {proposal_id}")
         candidates.append({
-            "name": f"{person['label']} -> {band['label']}",
+            "name": f"{person['label']} -> {band['label'] if band else discovery['name']}",
             "requested_kind": person["type"],
             "kind": KIND,
             "connection": proposal,
             "status": "review",
-            "reason": "Exact MusicBrainz band-membership relationship; requires human review.",
+            "reason": "Exact MusicBrainz band-membership relationship; requires human review."
+                      + (" New band node proposed." if discovering_band else ""),
         })
     return candidates
 
@@ -90,14 +101,18 @@ def main() -> None:
     summary = {"checked": len(scout_output.get("checked", [])),
                "proposals": len(scout_output["proposals"]),
                "newReviewRows": len(candidates), "published": False}
-    if not args.publish or not candidates:
+    if not args.publish:
         print(json.dumps(summary, indent=2))
         return
 
     run_id = new_run_id()
     log = {"runId": run_id, "createdAt": datetime.now(UTC).isoformat(),
-           "requestIds": [], "seedCount": len(candidates), "dryRun": False,
-           "source": "MusicBrainz typed relationships"}
+           "requestIds": [], "seedCount": len(scout_output.get("checked", [])), "dryRun": False,
+           "source": "MusicBrainz typed relationships",
+           "checked": scout_output.get("checked", []),
+           "feedbackSeeds": scout_output.get("feedbackSeeds", []),
+           "proposals": len(scout_output["proposals"]),
+           "newReviewRows": len(candidates)}
     start_run(client, log)
     try:
         count = upsert_candidates(client, run_id, [], candidates)
@@ -105,7 +120,8 @@ def main() -> None:
     except Exception as exc:
         finish_run(client, run_id, "failed", log, error=str(exc))
         raise
-    print(json.dumps({**summary, "published": True, "runId": run_id}, indent=2))
+    print(json.dumps({**summary, "published": bool(candidates), "runLogged": True,
+                      "runId": run_id}, indent=2))
 
 
 if __name__ == "__main__":

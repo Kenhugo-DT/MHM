@@ -52,3 +52,21 @@ test("publish gate permits only sourced era backfill alongside the reviewed edge
   published, promotions, 12, previousPromotions, true).issues
     .some((issue) => issue.includes("Existing node changed")));
 });
+
+test("connection batch gate accepts only a reviewed MusicBrainz band discovery", () => {
+  const mbid = "f4a31f0a-51dd-4fa7-986d-3095c40c5ed9";
+  const band = { id: `mb-band-${mbid}`, label: "Evanescence", type: "band", zone: "rock-circuit",
+    sources: [{ provider: "musicbrainz", url: `https://musicbrainz.org/artist/${mbid}` }] };
+  const person = nodes[0];
+  const membership = { ...edge, id: "new-member", target: band.id };
+  const beforeGraph = { nodes: [person], edges: [] };
+  const afterGraph = { nodes: [person, { ...band, x: 20, y: 30, curatorTags: [] }], edges: [membership] };
+  const current = { nodes: [{ ...band, x: 0, y: 0, layoutHints: { nearNode: person.id } }],
+    edges: [membership], candidateRows: [{ id: "review-1", kind: "typed_connection", edgeId: membership.id }] };
+  assert.deepEqual(checkConnectionBatch(beforeGraph, afterGraph, afterGraph, current,
+    12, previousPromotions).issues, []);
+  assert.ok(checkConnectionBatch(beforeGraph, { ...afterGraph, nodes: [person, { ...band, label: "Wrong" }] },
+    afterGraph, current, 12, previousPromotions).issues.some((issue) => issue.includes("unsupported new node")));
+  assert.ok(checkConnectionBatch(beforeGraph, afterGraph, afterGraph,
+    { ...current, nodes: [] }, 12, previousPromotions).issues.some((issue) => issue.includes("unsupported new node")));
+});
