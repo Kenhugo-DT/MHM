@@ -525,6 +525,22 @@ def public_priority_adjustment(model: dict[str, Any], kind: str, zone: str) -> d
     return result
 
 
+def snapshot_issue(error: Exception) -> dict[str, str]:
+    code = str(getattr(error, "code", "") or "")
+    if code in {"PGRST205", "42P01", "PGRST204", "42703"}:
+        hint = "Apply brain/supabase/migrations/0007_research_learning.sql in Supabase."
+    elif code == "42501":
+        hint = "Check service-role permissions for research_learning_snapshots."
+    else:
+        hint = "Check the private snapshot table and Supabase credentials."
+    safe_code = code if code.isalnum() and len(code) <= 12 else "unknown"
+    return {"type": type(error).__name__, "code": safe_code, "hint": hint}
+
+
+def should_activate_learning(requested_mode: str, model: dict[str, Any], snapshot_stored: bool) -> bool:
+    return requested_mode == "auto" and model["activationEligible"] and snapshot_stored
+
+
 def append_github_summary(summary: dict[str, Any]) -> None:
     target = os.getenv("GITHUB_STEP_SUMMARY")
     learning = summary.get("learning")
@@ -538,21 +554,35 @@ def append_github_summary(summary: dict[str, Any]) -> None:
         f"- Reviewed decisions used: {learning.get('usableDecisions', 0)}",
         f"- Explicit rejected reasons: {learning.get('clearRejections', 0)}",
         f"- Validation decisions: {validation.get('holdoutCount', 0)}",
+        f"- Holdout approved / rejected: {validation.get('holdoutApproved', 0)} / "
+        f"{validation.get('holdoutRejected', 0)}",
         f"- Baseline / learned error: {validation.get('baselineBrier', 'not yet available')} / "
         f"{validation.get('learnedBrier', 'not yet available')}",
         f"- Eligible for bounded automatic ranking: {learning.get('activationEligible', False)}",
         f"- Snapshot stored: {learning.get('snapshotStored', False)}",
     ]
+    checks = learning.get("eligibilityChecks") or {}
+    blocker_labels = {
+        "enoughTrainingDecisions": "fewer than 40 training decisions",
+        "enoughExplicitRejections": "fewer than 10 reason-coded rejections",
+        "enoughHoldoutDecisions": "fewer than 8 validation decisions",
+        "holdoutHasBothOutcomes": "validation lacks recent approvals or rejections",
+        "beatsBaseline": "learned ranking does not beat the fixed ranking",
+    }
+    blockers = [blocker_labels.get(name, name) for name, passed in checks.items() if not passed]
+    if blockers:
+        lines.append("- Validation blockers: " + ", ".join(blockers))
     if comparison.get("currentSeeds"):
         lines.append("- Current seeds: " + ", ".join(seed["name"] for seed in comparison["currentSeeds"]))
         lines.append("- Learned seeds: " + ", ".join(seed["name"] for seed in comparison["learnedSeeds"]))
     elif comparison.get("currentRequestId"):
         lines.append(f"- Current request: {comparison['currentRequestId']}")
         lines.append(f"- Learned request: {comparison.get('learnedRequestId')}")
-    if learning.get("errorType") or learning.get("snapshotErrorType"):
-        lines.append(
-            f"- Learning / snapshot error: {learning.get('errorType') or learning.get('snapshotErrorType')}"
-        )
+    if learning.get("snapshotIssue"):
+        issue = learning["snapshotIssue"]
+        lines.append(f"- Snapshot error: {issue['type']} ({issue['code']}). {issue['hint']}")
+    elif learning.get("errorType"):
+        lines.append(f"- Learning error: {learning['errorType']}")
     with Path(target).open("a", encoding="utf-8") as handle:
         handle.write("\n".join(lines) + "\n\n")
 
@@ -632,23 +662,32 @@ def main() -> None:
     if source == "supabase" and args.learning_mode != "off":
         try:
             learning_model = build_learning_model(fetch_review_rows(state), graph)
-            learning_active = args.learning_mode == "auto" and learning_model["activationEligible"]
             report_path = write_learning_report(learning_model)
             summary["learning"] = {
-                "mode": "active" if learning_active else "shadow",
+                "requestedMode": args.learning_mode,
+                "mode": "shadow",
                 "usableDecisions": learning_model["usableDecisions"],
                 "clearRejections": learning_model["clearRejections"],
                 "validation": learning_model["validation"],
+                "eligibilityChecks": learning_model["eligibilityChecks"],
                 "activationEligible": learning_model["activationEligible"],
                 "reportPath": str(report_path.relative_to(REPO_ROOT)).replace("\\", "/"),
+                "snapshotStored": False,
             }
             if not args.dry_run:
                 try:
-                    save_snapshot(state, learning_model, summary["learning"]["mode"])
+                    snapshot_mode = (
+                        "active" if args.learning_mode == "auto"
+                        and learning_model["activationEligible"] else "shadow"
+                    )
+                    save_snapshot(state, learning_model, snapshot_mode)
                     summary["learning"]["snapshotStored"] = True
                 except Exception as error:
-                    summary["learning"]["snapshotStored"] = False
-                    summary["learning"]["snapshotErrorType"] = type(error).__name__
+                    summary["learning"]["snapshotIssue"] = snapshot_issue(error)
+            learning_active = should_activate_learning(
+                args.learning_mode, learning_model, summary["learning"]["snapshotStored"]
+            )
+            summary["learning"]["mode"] = "active" if learning_active else "shadow"
         except Exception as error:
             summary["learning"] = {"mode": "unavailable", "errorType": type(error).__name__}
 

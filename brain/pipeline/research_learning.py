@@ -174,6 +174,8 @@ def evaluate(train: list[dict[str, Any]], holdout: list[dict[str, Any]]) -> dict
         total_weight += item["weight"]
     return {
         "holdoutCount": len(holdout),
+        "holdoutApproved": sum(item["positive"] for item in holdout),
+        "holdoutRejected": sum(not item["positive"] for item in holdout),
         "baselineBrier": round(base_error / total_weight, 4),
         "learnedBrier": round(learned_error / total_weight, 4),
     }
@@ -184,15 +186,25 @@ def build_learning_model(rows: list[dict[str, Any]], graph: dict[str, Any]) -> d
     validation_count = max(4, round(len(decisions) * 0.2)) if len(decisions) >= 20 else 0
     train = decisions[:-validation_count] if validation_count else decisions
     holdout = decisions[-validation_count:] if validation_count else []
-    validation = evaluate(train, holdout) if holdout else {"holdoutCount": 0}
+    validation = evaluate(train, holdout) if holdout else {
+        "holdoutCount": 0, "holdoutApproved": 0, "holdoutRejected": 0,
+    }
     clear_rejections = sum(
         not item["positive"] and item["reasonCode"] != "unspecified"
         for item in decisions
     )
-    eligible = (
-        len(train) >= 40 and len(holdout) >= 8 and clear_rejections >= 10
-        and validation["learnedBrier"] + 0.01 < validation["baselineBrier"]
-    )
+    eligibility_checks = {
+        "enoughTrainingDecisions": len(train) >= 40,
+        "enoughExplicitRejections": clear_rejections >= 10,
+        "enoughHoldoutDecisions": len(holdout) >= 8,
+        "holdoutHasBothOutcomes": (
+            validation["holdoutApproved"] >= 3 and validation["holdoutRejected"] >= 3
+        ),
+        "beatsBaseline": bool(holdout) and (
+            validation["learnedBrier"] + 0.01 < validation["baselineBrier"]
+        ),
+    }
+    eligible = all(eligibility_checks.values())
     return {
         "version": 1,
         "createdAt": datetime.now(UTC).isoformat().replace("+00:00", "Z"),
@@ -206,8 +218,9 @@ def build_learning_model(rows: list[dict[str, Any]], graph: dict[str, Any]) -> d
         "skipped": dict(skipped),
         "training": counts_for(train),
         "validation": validation,
+        "eligibilityChecks": eligibility_checks,
         "activationEligible": eligible,
-        "policy": "Shadow by default. No review decision or publication is automated.",
+        "policy": "Ranking activates only after validation and durable storage. Reviews and publication stay manual.",
     }
 
 

@@ -97,7 +97,7 @@ jobs:
         run: npm run brain:agent -- --source supabase --auto-queue-frontier --process --limit "${AGENT_LIMIT:-2}"
         env:
           AGENT_LIMIT: ${{ github.event.inputs.limit || '2' }}
-          BRAIN_LEARNING_MODE: ${{ vars.BRAIN_LEARNING_MODE || 'shadow' }}
+          BRAIN_LEARNING_MODE: ${{ vars.BRAIN_LEARNING_MODE || 'auto' }}
           MUSICBRAINZ_CONTACT: ${{ secrets.MUSICBRAINZ_CONTACT }}
           SUPABASE_URL: ${{ vars.SUPABASE_URL }}
           SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}

@@ -282,15 +282,18 @@ not change any candidate decision. Status changes are then recorded as events;
 the current approved/imported/rejected status remains the training label.
 
 The scheduled scout reads these labels and compares a review-trained frontier
-ranking with the existing fixed ranking. `shadow` is the default: it records
-both choices and aggregate reasons, but queues the old choice. Exact review IDs
-stay in the private Supabase snapshot, not the public GitHub workflow log. Set
-GitHub repository variable `BRAIN_LEARNING_MODE=auto` only after inspecting the
-reports. Even then, the trained choice is used only after at least 40 training
-decisions, 10 explicit rejected reasons, 8 holdout decisions, and a better
-holdout score. Score changes are bounded. No candidate is auto-approved or
-published. The latest model is written to `brain/data/runs/` in the workflow
-artifact and, after the migration, to `research_learning_snapshots`.
+ranking with the existing fixed ranking. The CLI defaults to `shadow`, while
+the GitHub workflow requests `auto` by default. `auto` still queues the old
+choice until the model passes every validation check and its snapshot is saved
+to Supabase. Set GitHub repository variable `BRAIN_LEARNING_MODE=shadow` to
+hold it in observation mode. Exact review IDs stay in the private Supabase
+snapshot, not the public GitHub workflow log. Activation requires at least 40
+training decisions, 10 explicitly reason-coded rejections, 8 holdout decisions
+including at least 3 approvals and 3 rejections, and a holdout error at least
+0.01 lower than the fixed ranking. Score changes are bounded. No candidate is
+auto-approved or published. The GitHub job summary names failed checks and
+reports a snapshot error code if storage fails. The latest model is also
+written to `brain/data/runs/` in the workflow artifact.
 
 When rejecting a candidate, set `review_reason_code` in Supabase if possible:
 `duplicate`, `wrong_entity`, `weak_source`, `weak_connection`, `incorrect_fact`,

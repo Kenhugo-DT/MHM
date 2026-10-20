@@ -10,7 +10,8 @@ from research_learning import (  # noqa: E402
 )
 from scout_agent import (  # noqa: E402
     organization_frontier_request, public_priority_adjustment,
-    select_frontier_seeds, write_learning_report,
+    select_frontier_seeds, should_activate_learning, snapshot_issue,
+    write_learning_report,
 )
 
 
@@ -66,6 +67,8 @@ class ResearchLearningTests(unittest.TestCase):
         self.assertLess(jazz["score"], 0)
         self.assertTrue(rock["reasons"][0]["reviewExamples"])
         self.assertEqual(model["validation"]["holdoutCount"], 12)
+        self.assertGreaterEqual(model["validation"]["holdoutApproved"], 3)
+        self.assertGreaterEqual(model["validation"]["holdoutRejected"], 3)
         self.assertLess(model["validation"]["learnedBrier"],
                         model["validation"]["baselineBrier"])
         self.assertTrue(model["activationEligible"])
@@ -98,6 +101,33 @@ class ResearchLearningTests(unittest.TestCase):
         self.assertFalse(model["activationEligible"])
         self.assertEqual(model["validation"]["holdoutCount"], 0)
         self.assertEqual(priority_adjustment(model, "band", "rock")["score"], 0)
+
+    def test_holdout_requires_both_outcomes(self):
+        rows = [
+            row(index, "Jazz One", "rejected", "not_relevant") if index < 12
+            else row(index, "Rock One", "approved")
+            for index in range(60)
+        ]
+        model = build_learning_model(rows, graph())
+        self.assertEqual(model["validation"]["holdoutRejected"], 0)
+        self.assertFalse(model["eligibilityChecks"]["holdoutHasBothOutcomes"])
+        self.assertFalse(model["activationEligible"])
+
+    def test_auto_mode_requires_validated_model_and_stored_snapshot(self):
+        model = {"activationEligible": True}
+        self.assertFalse(should_activate_learning("shadow", model, True))
+        self.assertFalse(should_activate_learning("auto", model, False))
+        self.assertTrue(should_activate_learning("auto", model, True))
+        self.assertFalse(should_activate_learning("auto", {"activationEligible": False}, True))
+
+    def test_snapshot_error_names_missing_migration_without_leaking_message(self):
+        class MissingTableError(Exception):
+            code = "PGRST205"
+
+        issue = snapshot_issue(MissingTableError("private token must not appear"))
+        self.assertEqual(issue["code"], "PGRST205")
+        self.assertIn("0007_research_learning.sql", issue["hint"])
+        self.assertNotIn("private token", str(issue))
 
     def test_fetches_all_pages_of_reviewed_candidates_only(self):
         class Query:
