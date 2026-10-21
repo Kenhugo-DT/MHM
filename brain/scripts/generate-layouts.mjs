@@ -18,6 +18,7 @@ const learningModelPath = path.join(brainRoot, "data", "approved", "learning-mod
 const organizationModelPath = path.join(brainRoot, "data", "approved", "organization-model.json");
 const layoutFeedbackPath = path.join(brainRoot, "data", "approved", "layout-feedback.json");
 const layoutExperiencePath = path.join(brainRoot, "data", "approved", "layout-experience.json");
+const layoutPracticePath = path.join(brainRoot, "data", "approved", "layout-practice.json");
 const layoutConstraintsPath = path.join(brainRoot, "data", "approved", "layout-constraints.json");
 const approvedOutputPath = path.join(brainRoot, "data", "approved", "layouts.json");
 const browserOutputPath = path.join(repoRoot, "site", "public", "data", "layouts.json");
@@ -544,13 +545,14 @@ preserveIncrementalLayouts(layouts, previousLayouts, graph);
 const zoneGeometry = Object.entries(ORGANIZED_MAP_ZONES).map(([id, zone]) => ({ id, ...zone }));
 const layoutFeedback = readJson(layoutFeedbackPath, { reviews: [] });
 const layoutExperience = readJson(layoutExperiencePath, EMPTY_LAYOUT_EXPERIENCE);
+const layoutPractice = readJson(layoutPracticePath, undefined);
 const layoutConstraints = validateLayoutConstraints(readJson(layoutConstraintsPath), graph);
 const pinnedIds = new Set(Object.entries(learningModel?.nodes ?? {})
   .filter(([, entry]) => entry.layoutHints?.pinned).map(([id]) => id));
 const incrementalRepair = preserveExistingLayout
   ? repairIncrementalLayouts(layouts, previousLayouts, graph, organizationModel?.layoutIntelligence,
     zoneGeometry, layoutFeedback.reviews, pinnedIds,
-    { experience: layoutExperience, constraints: layoutConstraints, captureTrials: true })
+    { experience: layoutExperience, practice: layoutPractice, constraints: layoutConstraints, captureTrials: true })
   : undefined;
 const updatedExperience = incrementalRepair?.freshNodes
   ? appendLayoutExperience(layoutExperience, graph, previousLayouts, incrementalRepair)

@@ -72,12 +72,15 @@ export function repairIncrementalLayouts(layouts, previous, graph, guidance, zon
       const preferred = feedback.filter((item) => item.mode === mode && item.zone === zone && item.verdict === "better")
         .map((item) => item.parameters);
       const preferredKeys = new Set(preferred.map(parameterKey));
+      const standardKeys = new Set([...preferred, ...PRESETS].map(parameterKey));
       const rejected = new Set(feedback.filter((item) => item.mode === mode && item.zone === zone && item.verdict === "worse")
         .map((item) => parameterKey(item.parameters)));
-      const parameters = [...preferred, ...PRESETS]
+      const practiceParameters = options.practice?.enabled
+        ? options.practice.parametersByModeZone?.[mode]?.[zone] ?? [] : [];
+      const parameters = [...preferred, ...PRESETS, ...practiceParameters, ...(options.additionalParameters ?? [])]
         .filter((item, index, items) => items.findIndex((other) => parameterKey(other) === parameterKey(item)) === index)
         .filter((item) => !rejected.has(parameterKey(item)))
-        .slice(0, 6);
+        .slice(0, 12);
       const candidates = parameters.map((item) => runLayoutExperiment(graph, baseline, guidance, zones, item, zone,
         movement, activeHints));
       const plainCandidates = activeHints.length ? parameters.map((item) =>
@@ -108,18 +111,24 @@ export function repairIncrementalLayouts(layouts, previous, graph, guidance, zon
           a.connectionsAfter.mean - b.connectionsAfter.mean ||
           a.candidate.after.score - b.candidate.after.score;
       const eligible = assessed.filter((item) => item.reason === "safe").sort(rank);
+      const standardBest = eligible.find((item) => standardKeys.has(parameterKey(item.candidate.parameters)));
       const plainBest = plainAssessed.filter((item) => item.reason === "safe").sort(rank)[0];
       const objectiveBest = eligible[0];
       const comparable = (item) =>
         item.focusAfter.severelyOverlappingNodes === objectiveBest?.focusAfter.severelyOverlappingNodes &&
         item.focusAfter.overlapPairs === objectiveBest?.focusAfter.overlapPairs &&
+        item.mapAfter.severeOverlaps <= objectiveBest.mapAfter.severeOverlaps &&
+        item.mapAfter.overlaps <= objectiveBest.mapAfter.overlaps &&
         item.connectionsAfter.mean <= objectiveBest.connectionsAfter.mean + 100 &&
         item.connectionsAfter.longestSameZone <= objectiveBest.connectionsAfter.longestSameZone + 150 &&
         item.connectionsAfter.longestCrossZone <= objectiveBest.connectionsAfter.longestCrossZone + 150 &&
         item.mapAfter.score <= objectiveBest.mapAfter.score + 25;
       const reviewedBest = eligible.find((item) => preferredKeys.has(parameterKey(item.candidate.parameters)) &&
         comparable(item));
-      const history = options.experience;
+      const realHistory = options.experience;
+      const realSamples = standardBest && historicalLayoutPreference(realHistory, mode, zone,
+        standardBest.candidate.parameters, activeHints.length > 0).samples;
+      const history = realSamples >= 3 ? realHistory : practiceParameters.length ? options.practice : undefined;
       const baselineHistory = objectiveBest && historicalLayoutPreference(history, mode, zone,
         objectiveBest.candidate.parameters, activeHints.length > 0);
       const learnedBest = !reviewedBest && baselineHistory?.samples >= 3 ? eligible.find((item) => {
@@ -131,8 +140,24 @@ export function repairIncrementalLayouts(layouts, previous, graph, guidance, zon
       }) : undefined;
       let bestChoice = reviewedBest ?? learnedBest ?? objectiveBest;
       let selection = reviewedBest && reviewedBest !== objectiveBest ? "reviewed-preference" :
-        learnedBest && learnedBest !== objectiveBest ? "observed-history" :
+        learnedBest && learnedBest !== objectiveBest ? history === realHistory ? "observed-history" : "observed-practice" :
         bestChoice ? "objective" : "none";
+      if (practiceParameters.length && bestChoice && standardBest &&
+          !standardKeys.has(parameterKey(bestChoice.candidate.parameters))) {
+        const safeAgainstStandard =
+          bestChoice.focusAfter.severelyOverlappingNodes <= standardBest.focusAfter.severelyOverlappingNodes &&
+          bestChoice.focusAfter.overlapPairs <= standardBest.focusAfter.overlapPairs &&
+          bestChoice.mapAfter.severeOverlaps <= standardBest.mapAfter.severeOverlaps &&
+          bestChoice.mapAfter.overlaps <= standardBest.mapAfter.overlaps &&
+          bestChoice.candidate.constraintsAfter.totalExcess <= standardBest.candidate.constraintsAfter.totalExcess &&
+          bestChoice.connectionsAfter.mean <= standardBest.connectionsAfter.mean + 100 &&
+          bestChoice.connectionsAfter.longestSameZone <= standardBest.connectionsAfter.longestSameZone + 150 &&
+          bestChoice.connectionsAfter.longestCrossZone <= standardBest.connectionsAfter.longestCrossZone + 150;
+        if (!safeAgainstStandard) {
+          bestChoice = standardBest;
+          selection = "practice-safety-fallback";
+        }
+      }
       if (plainBest && activeHints.length) {
         const plainPairExcess = evaluateLayoutConstraints(plainBest.candidate.positions, activeHints).totalExcess;
         const guidedSafe = bestChoice &&

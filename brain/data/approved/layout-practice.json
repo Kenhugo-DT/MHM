@@ -1,0 +1,3910 @@
+{
+  "version": 1,
+  "enabled": true,
+  "source": "approved-node-replay",
+  "parametersByModeZone": {
+    "organized": {},
+    "genre": {
+      "pop-soul-disco": [
+        {
+          "spacing": 1.3,
+          "connectionPull": 0.2,
+          "zoneFreedom": 0.6,
+          "iterations": 36
+        }
+      ]
+    },
+    "chaos": {}
+  },
+  "batches": [
+    {
+      "id": "1ebb25c7e88431ea2c41",
+      "trials": [
+        {
+          "mode": "organized",
+          "zone": "pop-soul-disco",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "pop-soul-disco",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "pop-soul-disco",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "pop-soul-disco",
+          "parameters": "1.20:0.30:0.50:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "pop-soul-disco",
+          "parameters": "1.30:0.20:0.60:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "pop-soul-disco",
+          "parameters": "1.50:0.25:0.70:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "pop-soul-disco",
+          "parameters": "1.60:0.35:0.55:36.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "organized",
+          "zone": "pop-soul-disco",
+          "parameters": "1.75:0.20:0.80:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "pop-soul-disco",
+          "parameters": "1.90:0.10:0.90:44.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "pop-soul-disco",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "pop-soul-disco",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "pop-soul-disco",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "pop-soul-disco",
+          "parameters": "1.20:0.30:0.50:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "pop-soul-disco",
+          "parameters": "1.30:0.20:0.60:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "pop-soul-disco",
+          "parameters": "1.50:0.25:0.70:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "pop-soul-disco",
+          "parameters": "1.60:0.35:0.55:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "pop-soul-disco",
+          "parameters": "1.75:0.20:0.80:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "pop-soul-disco",
+          "parameters": "1.90:0.10:0.90:44.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "pop-soul-disco",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "pop-soul-disco",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "pop-soul-disco",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "pop-soul-disco",
+          "parameters": "1.20:0.30:0.50:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "pop-soul-disco",
+          "parameters": "1.30:0.20:0.60:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "pop-soul-disco",
+          "parameters": "1.50:0.25:0.70:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "pop-soul-disco",
+          "parameters": "1.60:0.35:0.55:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "pop-soul-disco",
+          "parameters": "1.75:0.20:0.80:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "pop-soul-disco",
+          "parameters": "1.90:0.10:0.90:44.00",
+          "hintCount": 0,
+          "reason": "safe"
+        }
+      ]
+    },
+    {
+      "id": "7460076504fa7092c981",
+      "trials": [
+        {
+          "mode": "organized",
+          "zone": "pop-soul-disco",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "pop-soul-disco",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "pop-soul-disco",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "pop-soul-disco",
+          "parameters": "1.20:0.30:0.50:32.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "pop-soul-disco",
+          "parameters": "1.30:0.20:0.60:36.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "pop-soul-disco",
+          "parameters": "1.50:0.25:0.70:40.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "pop-soul-disco",
+          "parameters": "1.60:0.35:0.55:36.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "pop-soul-disco",
+          "parameters": "1.75:0.20:0.80:40.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "pop-soul-disco",
+          "parameters": "1.90:0.10:0.90:44.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "pop-soul-disco",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "pop-soul-disco",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "pop-soul-disco",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "pop-soul-disco",
+          "parameters": "1.20:0.30:0.50:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "pop-soul-disco",
+          "parameters": "1.30:0.20:0.60:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "pop-soul-disco",
+          "parameters": "1.50:0.25:0.70:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "pop-soul-disco",
+          "parameters": "1.60:0.35:0.55:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "pop-soul-disco",
+          "parameters": "1.75:0.20:0.80:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "pop-soul-disco",
+          "parameters": "1.90:0.10:0.90:44.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "pop-soul-disco",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "pop-soul-disco",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "pop-soul-disco",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "pop-soul-disco",
+          "parameters": "1.20:0.30:0.50:32.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "pop-soul-disco",
+          "parameters": "1.30:0.20:0.60:36.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "pop-soul-disco",
+          "parameters": "1.50:0.25:0.70:40.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "pop-soul-disco",
+          "parameters": "1.60:0.35:0.55:36.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "pop-soul-disco",
+          "parameters": "1.75:0.20:0.80:40.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "pop-soul-disco",
+          "parameters": "1.90:0.10:0.90:44.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "pop-soul-disco",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "pop-soul-disco",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "pop-soul-disco",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "pop-soul-disco",
+          "parameters": "1.20:0.30:0.50:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "pop-soul-disco",
+          "parameters": "1.30:0.20:0.60:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "pop-soul-disco",
+          "parameters": "1.50:0.25:0.70:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "pop-soul-disco",
+          "parameters": "1.60:0.35:0.55:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "pop-soul-disco",
+          "parameters": "1.75:0.20:0.80:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "pop-soul-disco",
+          "parameters": "1.90:0.10:0.90:44.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "pop-soul-disco",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "hintCount": 1,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "pop-soul-disco",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "hintCount": 1,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "pop-soul-disco",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "pop-soul-disco",
+          "parameters": "1.20:0.30:0.50:32.00",
+          "hintCount": 1,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "pop-soul-disco",
+          "parameters": "1.30:0.20:0.60:36.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "pop-soul-disco",
+          "parameters": "1.50:0.25:0.70:40.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "pop-soul-disco",
+          "parameters": "1.60:0.35:0.55:36.00",
+          "hintCount": 1,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "pop-soul-disco",
+          "parameters": "1.75:0.20:0.80:40.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "pop-soul-disco",
+          "parameters": "1.90:0.10:0.90:44.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "pop-soul-disco",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "pop-soul-disco",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "pop-soul-disco",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "pop-soul-disco",
+          "parameters": "1.20:0.30:0.50:32.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "pop-soul-disco",
+          "parameters": "1.30:0.20:0.60:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "pop-soul-disco",
+          "parameters": "1.50:0.25:0.70:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "pop-soul-disco",
+          "parameters": "1.60:0.35:0.55:36.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "pop-soul-disco",
+          "parameters": "1.75:0.20:0.80:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "pop-soul-disco",
+          "parameters": "1.90:0.10:0.90:44.00",
+          "hintCount": 0,
+          "reason": "safe"
+        }
+      ]
+    },
+    {
+      "id": "1456750c97aad48e9bfa",
+      "trials": [
+        {
+          "mode": "organized",
+          "zone": "pop-soul-disco",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "pop-soul-disco",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "pop-soul-disco",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "pop-soul-disco",
+          "parameters": "1.20:0.30:0.50:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "pop-soul-disco",
+          "parameters": "1.30:0.20:0.60:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "pop-soul-disco",
+          "parameters": "1.50:0.25:0.70:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "pop-soul-disco",
+          "parameters": "1.60:0.35:0.55:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "pop-soul-disco",
+          "parameters": "1.75:0.20:0.80:40.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "organized",
+          "zone": "pop-soul-disco",
+          "parameters": "1.90:0.10:0.90:44.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "genre",
+          "zone": "pop-soul-disco",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "pop-soul-disco",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "pop-soul-disco",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "pop-soul-disco",
+          "parameters": "1.20:0.30:0.50:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "pop-soul-disco",
+          "parameters": "1.30:0.20:0.60:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "pop-soul-disco",
+          "parameters": "1.50:0.25:0.70:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "pop-soul-disco",
+          "parameters": "1.60:0.35:0.55:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "pop-soul-disco",
+          "parameters": "1.75:0.20:0.80:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "pop-soul-disco",
+          "parameters": "1.90:0.10:0.90:44.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "pop-soul-disco",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "pop-soul-disco",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "pop-soul-disco",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "pop-soul-disco",
+          "parameters": "1.20:0.30:0.50:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "pop-soul-disco",
+          "parameters": "1.30:0.20:0.60:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "pop-soul-disco",
+          "parameters": "1.50:0.25:0.70:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "pop-soul-disco",
+          "parameters": "1.60:0.35:0.55:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "pop-soul-disco",
+          "parameters": "1.75:0.20:0.80:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "pop-soul-disco",
+          "parameters": "1.90:0.10:0.90:44.00",
+          "hintCount": 0,
+          "reason": "safe"
+        }
+      ]
+    },
+    {
+      "id": "ea341aa0b4e04f356e64",
+      "trials": [
+        {
+          "mode": "organized",
+          "zone": "pop-soul-disco",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "pop-soul-disco",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "pop-soul-disco",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "pop-soul-disco",
+          "parameters": "1.20:0.30:0.50:32.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "organized",
+          "zone": "pop-soul-disco",
+          "parameters": "1.30:0.20:0.60:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "pop-soul-disco",
+          "parameters": "1.50:0.25:0.70:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "pop-soul-disco",
+          "parameters": "1.60:0.35:0.55:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "pop-soul-disco",
+          "parameters": "1.75:0.20:0.80:40.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "organized",
+          "zone": "pop-soul-disco",
+          "parameters": "1.90:0.10:0.90:44.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "genre",
+          "zone": "pop-soul-disco",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "pop-soul-disco",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "pop-soul-disco",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "pop-soul-disco",
+          "parameters": "1.20:0.30:0.50:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "pop-soul-disco",
+          "parameters": "1.30:0.20:0.60:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "pop-soul-disco",
+          "parameters": "1.50:0.25:0.70:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "pop-soul-disco",
+          "parameters": "1.60:0.35:0.55:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "pop-soul-disco",
+          "parameters": "1.75:0.20:0.80:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "pop-soul-disco",
+          "parameters": "1.90:0.10:0.90:44.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "pop-soul-disco",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "pop-soul-disco",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "pop-soul-disco",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "pop-soul-disco",
+          "parameters": "1.20:0.30:0.50:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "pop-soul-disco",
+          "parameters": "1.30:0.20:0.60:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "pop-soul-disco",
+          "parameters": "1.50:0.25:0.70:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "pop-soul-disco",
+          "parameters": "1.60:0.35:0.55:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "pop-soul-disco",
+          "parameters": "1.75:0.20:0.80:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "pop-soul-disco",
+          "parameters": "1.90:0.10:0.90:44.00",
+          "hintCount": 0,
+          "reason": "safe"
+        }
+      ]
+    },
+    {
+      "id": "85eb778b2b27b8790d7b",
+      "trials": [
+        {
+          "mode": "organized",
+          "zone": "country-roots",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "organized",
+          "zone": "country-roots",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "organized",
+          "zone": "country-roots",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "organized",
+          "zone": "country-roots",
+          "parameters": "1.20:0.30:0.50:32.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "organized",
+          "zone": "country-roots",
+          "parameters": "1.30:0.20:0.60:36.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "organized",
+          "zone": "country-roots",
+          "parameters": "1.50:0.25:0.70:40.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "organized",
+          "zone": "country-roots",
+          "parameters": "1.60:0.35:0.55:36.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "organized",
+          "zone": "country-roots",
+          "parameters": "1.75:0.20:0.80:40.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "organized",
+          "zone": "country-roots",
+          "parameters": "1.90:0.10:0.90:44.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "genre",
+          "zone": "country-roots",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "country-roots",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "country-roots",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "country-roots",
+          "parameters": "1.20:0.30:0.50:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "country-roots",
+          "parameters": "1.30:0.20:0.60:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "country-roots",
+          "parameters": "1.50:0.25:0.70:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "country-roots",
+          "parameters": "1.60:0.35:0.55:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "country-roots",
+          "parameters": "1.75:0.20:0.80:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "country-roots",
+          "parameters": "1.90:0.10:0.90:44.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "country-roots",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "country-roots",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "country-roots",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "country-roots",
+          "parameters": "1.20:0.30:0.50:32.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "country-roots",
+          "parameters": "1.30:0.20:0.60:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "country-roots",
+          "parameters": "1.50:0.25:0.70:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "country-roots",
+          "parameters": "1.60:0.35:0.55:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "country-roots",
+          "parameters": "1.75:0.20:0.80:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "country-roots",
+          "parameters": "1.90:0.10:0.90:44.00",
+          "hintCount": 0,
+          "reason": "safe"
+        }
+      ]
+    },
+    {
+      "id": "01b7207a10897f299a13",
+      "trials": [
+        {
+          "mode": "organized",
+          "zone": "country-roots",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "country-roots",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "country-roots",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "country-roots",
+          "parameters": "1.20:0.30:0.50:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "country-roots",
+          "parameters": "1.30:0.20:0.60:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "country-roots",
+          "parameters": "1.50:0.25:0.70:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "country-roots",
+          "parameters": "1.60:0.35:0.55:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "country-roots",
+          "parameters": "1.75:0.20:0.80:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "country-roots",
+          "parameters": "1.90:0.10:0.90:44.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "country-roots",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "genre",
+          "zone": "country-roots",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "genre",
+          "zone": "country-roots",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "country-roots",
+          "parameters": "1.20:0.30:0.50:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "country-roots",
+          "parameters": "1.30:0.20:0.60:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "country-roots",
+          "parameters": "1.50:0.25:0.70:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "country-roots",
+          "parameters": "1.60:0.35:0.55:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "country-roots",
+          "parameters": "1.75:0.20:0.80:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "country-roots",
+          "parameters": "1.90:0.10:0.90:44.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "country-roots",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "country-roots",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "country-roots",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "country-roots",
+          "parameters": "1.20:0.30:0.50:32.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "country-roots",
+          "parameters": "1.30:0.20:0.60:36.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "country-roots",
+          "parameters": "1.50:0.25:0.70:40.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "country-roots",
+          "parameters": "1.60:0.35:0.55:36.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "country-roots",
+          "parameters": "1.75:0.20:0.80:40.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "country-roots",
+          "parameters": "1.90:0.10:0.90:44.00",
+          "hintCount": 0,
+          "reason": "safe"
+        }
+      ]
+    },
+    {
+      "id": "f06513b10a43dd198b8a",
+      "trials": [
+        {
+          "mode": "organized",
+          "zone": "country-roots",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "organized",
+          "zone": "country-roots",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "country-roots",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "country-roots",
+          "parameters": "1.20:0.30:0.50:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "country-roots",
+          "parameters": "1.30:0.20:0.60:36.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "organized",
+          "zone": "country-roots",
+          "parameters": "1.50:0.25:0.70:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "country-roots",
+          "parameters": "1.60:0.35:0.55:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "country-roots",
+          "parameters": "1.75:0.20:0.80:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "country-roots",
+          "parameters": "1.90:0.10:0.90:44.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "country-roots",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "genre",
+          "zone": "country-roots",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "genre",
+          "zone": "country-roots",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "genre",
+          "zone": "country-roots",
+          "parameters": "1.20:0.30:0.50:32.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "genre",
+          "zone": "country-roots",
+          "parameters": "1.30:0.20:0.60:36.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "genre",
+          "zone": "country-roots",
+          "parameters": "1.50:0.25:0.70:40.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "genre",
+          "zone": "country-roots",
+          "parameters": "1.60:0.35:0.55:36.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "genre",
+          "zone": "country-roots",
+          "parameters": "1.75:0.20:0.80:40.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "genre",
+          "zone": "country-roots",
+          "parameters": "1.90:0.10:0.90:44.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "country-roots",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "country-roots",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "country-roots",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "country-roots",
+          "parameters": "1.20:0.30:0.50:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "country-roots",
+          "parameters": "1.30:0.20:0.60:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "country-roots",
+          "parameters": "1.50:0.25:0.70:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "country-roots",
+          "parameters": "1.60:0.35:0.55:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "country-roots",
+          "parameters": "1.75:0.20:0.80:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "country-roots",
+          "parameters": "1.90:0.10:0.90:44.00",
+          "hintCount": 0,
+          "reason": "safe"
+        }
+      ]
+    },
+    {
+      "id": "5373cef68775169b1a67",
+      "trials": [
+        {
+          "mode": "organized",
+          "zone": "country-roots",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "country-roots",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "country-roots",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "country-roots",
+          "parameters": "1.20:0.30:0.50:32.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "organized",
+          "zone": "country-roots",
+          "parameters": "1.30:0.20:0.60:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "country-roots",
+          "parameters": "1.50:0.25:0.70:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "country-roots",
+          "parameters": "1.60:0.35:0.55:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "country-roots",
+          "parameters": "1.75:0.20:0.80:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "country-roots",
+          "parameters": "1.90:0.10:0.90:44.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "country-roots",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "country-roots",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "country-roots",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "country-roots",
+          "parameters": "1.20:0.30:0.50:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "country-roots",
+          "parameters": "1.30:0.20:0.60:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "country-roots",
+          "parameters": "1.50:0.25:0.70:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "country-roots",
+          "parameters": "1.60:0.35:0.55:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "country-roots",
+          "parameters": "1.75:0.20:0.80:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "country-roots",
+          "parameters": "1.90:0.10:0.90:44.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "country-roots",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "country-roots",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "country-roots",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "country-roots",
+          "parameters": "1.20:0.30:0.50:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "country-roots",
+          "parameters": "1.30:0.20:0.60:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "country-roots",
+          "parameters": "1.50:0.25:0.70:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "country-roots",
+          "parameters": "1.60:0.35:0.55:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "country-roots",
+          "parameters": "1.75:0.20:0.80:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "country-roots",
+          "parameters": "1.90:0.10:0.90:44.00",
+          "hintCount": 0,
+          "reason": "safe"
+        }
+      ]
+    },
+    {
+      "id": "bd73e34d47fa23dbdb44",
+      "trials": [
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "hintCount": 1,
+          "reason": "new-node-legibility-regression"
+        },
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "hintCount": 1,
+          "reason": "new-node-legibility-regression"
+        },
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "hintCount": 1,
+          "reason": "new-node-legibility-regression"
+        },
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.20:0.30:0.50:32.00",
+          "hintCount": 1,
+          "reason": "new-node-legibility-regression"
+        },
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.30:0.20:0.60:36.00",
+          "hintCount": 1,
+          "reason": "new-node-legibility-regression"
+        },
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.50:0.25:0.70:40.00",
+          "hintCount": 1,
+          "reason": "new-node-legibility-regression"
+        },
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.60:0.35:0.55:36.00",
+          "hintCount": 1,
+          "reason": "new-node-legibility-regression"
+        },
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.75:0.20:0.80:40.00",
+          "hintCount": 1,
+          "reason": "new-node-legibility-regression"
+        },
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.90:0.10:0.90:44.00",
+          "hintCount": 1,
+          "reason": "new-node-legibility-regression"
+        },
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "hintCount": 0,
+          "reason": "new-node-legibility-regression"
+        },
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "hintCount": 0,
+          "reason": "new-node-legibility-regression"
+        },
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "hintCount": 0,
+          "reason": "new-node-legibility-regression"
+        },
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.20:0.30:0.50:32.00",
+          "hintCount": 0,
+          "reason": "new-node-legibility-regression"
+        },
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.30:0.20:0.60:36.00",
+          "hintCount": 0,
+          "reason": "new-node-legibility-regression"
+        },
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.50:0.25:0.70:40.00",
+          "hintCount": 0,
+          "reason": "new-node-legibility-regression"
+        },
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.60:0.35:0.55:36.00",
+          "hintCount": 0,
+          "reason": "new-node-legibility-regression"
+        },
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.75:0.20:0.80:40.00",
+          "hintCount": 0,
+          "reason": "new-node-legibility-regression"
+        },
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.90:0.10:0.90:44.00",
+          "hintCount": 0,
+          "reason": "new-node-legibility-regression"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "hintCount": 1,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "hintCount": 1,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "hintCount": 1,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.20:0.30:0.50:32.00",
+          "hintCount": 1,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.30:0.20:0.60:36.00",
+          "hintCount": 1,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.50:0.25:0.70:40.00",
+          "hintCount": 1,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.60:0.35:0.55:36.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.75:0.20:0.80:40.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.90:0.10:0.90:44.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.20:0.30:0.50:32.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.30:0.20:0.60:36.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.50:0.25:0.70:40.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.60:0.35:0.55:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.75:0.20:0.80:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.90:0.10:0.90:44.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "hintCount": 1,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "hintCount": 1,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "hintCount": 1,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.20:0.30:0.50:32.00",
+          "hintCount": 1,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.30:0.20:0.60:36.00",
+          "hintCount": 1,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.50:0.25:0.70:40.00",
+          "hintCount": 1,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.60:0.35:0.55:36.00",
+          "hintCount": 1,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.75:0.20:0.80:40.00",
+          "hintCount": 1,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.90:0.10:0.90:44.00",
+          "hintCount": 1,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.20:0.30:0.50:32.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.30:0.20:0.60:36.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.50:0.25:0.70:40.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.60:0.35:0.55:36.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.75:0.20:0.80:40.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.90:0.10:0.90:44.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        }
+      ]
+    },
+    {
+      "id": "8abe5e725fb8efe1dc00",
+      "trials": [
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.20:0.30:0.50:32.00",
+          "hintCount": 1,
+          "reason": "new-node-legibility-regression"
+        },
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.30:0.20:0.60:36.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.50:0.25:0.70:40.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.60:0.35:0.55:36.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.75:0.20:0.80:40.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.90:0.10:0.90:44.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.20:0.30:0.50:32.00",
+          "hintCount": 0,
+          "reason": "new-node-legibility-regression"
+        },
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.30:0.20:0.60:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.50:0.25:0.70:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.60:0.35:0.55:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.75:0.20:0.80:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.90:0.10:0.90:44.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.20:0.30:0.50:32.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.30:0.20:0.60:36.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.50:0.25:0.70:40.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.60:0.35:0.55:36.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.75:0.20:0.80:40.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.90:0.10:0.90:44.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.20:0.30:0.50:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.30:0.20:0.60:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.50:0.25:0.70:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.60:0.35:0.55:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.75:0.20:0.80:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.90:0.10:0.90:44.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "hintCount": 1,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "hintCount": 1,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "hintCount": 1,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.20:0.30:0.50:32.00",
+          "hintCount": 1,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.30:0.20:0.60:36.00",
+          "hintCount": 1,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.50:0.25:0.70:40.00",
+          "hintCount": 1,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.60:0.35:0.55:36.00",
+          "hintCount": 1,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.75:0.20:0.80:40.00",
+          "hintCount": 1,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.90:0.10:0.90:44.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.20:0.30:0.50:32.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.30:0.20:0.60:36.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.50:0.25:0.70:40.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.60:0.35:0.55:36.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.75:0.20:0.80:40.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.90:0.10:0.90:44.00",
+          "hintCount": 0,
+          "reason": "safe"
+        }
+      ]
+    },
+    {
+      "id": "173a631a0cffc0936b99",
+      "trials": [
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.20:0.30:0.50:32.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.30:0.20:0.60:36.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.50:0.25:0.70:40.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.60:0.35:0.55:36.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.75:0.20:0.80:40.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.90:0.10:0.90:44.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.20:0.30:0.50:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.30:0.20:0.60:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.50:0.25:0.70:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.60:0.35:0.55:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.75:0.20:0.80:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.90:0.10:0.90:44.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.20:0.30:0.50:32.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.30:0.20:0.60:36.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.50:0.25:0.70:40.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.60:0.35:0.55:36.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.75:0.20:0.80:40.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.90:0.10:0.90:44.00",
+          "hintCount": 1,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.20:0.30:0.50:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.30:0.20:0.60:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.50:0.25:0.70:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.60:0.35:0.55:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.75:0.20:0.80:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.90:0.10:0.90:44.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "hintCount": 1,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "hintCount": 1,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "hintCount": 1,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.20:0.30:0.50:32.00",
+          "hintCount": 1,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.30:0.20:0.60:36.00",
+          "hintCount": 1,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.50:0.25:0.70:40.00",
+          "hintCount": 1,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.60:0.35:0.55:36.00",
+          "hintCount": 1,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.75:0.20:0.80:40.00",
+          "hintCount": 1,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.90:0.10:0.90:44.00",
+          "hintCount": 1,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.20:0.30:0.50:32.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.30:0.20:0.60:36.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.50:0.25:0.70:40.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.60:0.35:0.55:36.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.75:0.20:0.80:40.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.90:0.10:0.90:44.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        }
+      ]
+    },
+    {
+      "id": "0fd83752b709ff800fb1",
+      "trials": [
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.20:0.30:0.50:32.00",
+          "hintCount": 0,
+          "reason": "new-node-legibility-regression"
+        },
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.30:0.20:0.60:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.50:0.25:0.70:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.60:0.35:0.55:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.75:0.20:0.80:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "roots-blues",
+          "parameters": "1.90:0.10:0.90:44.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.20:0.30:0.50:32.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.30:0.20:0.60:36.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.50:0.25:0.70:40.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.60:0.35:0.55:36.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.75:0.20:0.80:40.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "genre",
+          "zone": "roots-blues",
+          "parameters": "1.90:0.10:0.90:44.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.20:0.30:0.50:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.30:0.20:0.60:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.50:0.25:0.70:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.60:0.35:0.55:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.75:0.20:0.80:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "roots-blues",
+          "parameters": "1.90:0.10:0.90:44.00",
+          "hintCount": 0,
+          "reason": "safe"
+        }
+      ]
+    },
+    {
+      "id": "62ce12977b11e1a3738f",
+      "trials": [
+        {
+          "mode": "organized",
+          "zone": "jazz",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "organized",
+          "zone": "jazz",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "organized",
+          "zone": "jazz",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "organized",
+          "zone": "jazz",
+          "parameters": "1.20:0.30:0.50:32.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "organized",
+          "zone": "jazz",
+          "parameters": "1.30:0.20:0.60:36.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "organized",
+          "zone": "jazz",
+          "parameters": "1.50:0.25:0.70:40.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "organized",
+          "zone": "jazz",
+          "parameters": "1.60:0.35:0.55:36.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "organized",
+          "zone": "jazz",
+          "parameters": "1.75:0.20:0.80:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "jazz",
+          "parameters": "1.90:0.10:0.90:44.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "jazz",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "jazz",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "jazz",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "jazz",
+          "parameters": "1.20:0.30:0.50:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "jazz",
+          "parameters": "1.30:0.20:0.60:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "jazz",
+          "parameters": "1.50:0.25:0.70:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "jazz",
+          "parameters": "1.60:0.35:0.55:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "jazz",
+          "parameters": "1.75:0.20:0.80:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "jazz",
+          "parameters": "1.90:0.10:0.90:44.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "jazz",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "jazz",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "jazz",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "jazz",
+          "parameters": "1.20:0.30:0.50:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "jazz",
+          "parameters": "1.30:0.20:0.60:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "jazz",
+          "parameters": "1.50:0.25:0.70:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "jazz",
+          "parameters": "1.60:0.35:0.55:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "jazz",
+          "parameters": "1.75:0.20:0.80:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "jazz",
+          "parameters": "1.90:0.10:0.90:44.00",
+          "hintCount": 0,
+          "reason": "safe"
+        }
+      ]
+    },
+    {
+      "id": "fe08e25976d91da5e8a2",
+      "trials": [
+        {
+          "mode": "organized",
+          "zone": "jazz",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "organized",
+          "zone": "jazz",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "organized",
+          "zone": "jazz",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "jazz",
+          "parameters": "1.20:0.30:0.50:32.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "organized",
+          "zone": "jazz",
+          "parameters": "1.30:0.20:0.60:36.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "organized",
+          "zone": "jazz",
+          "parameters": "1.50:0.25:0.70:40.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "organized",
+          "zone": "jazz",
+          "parameters": "1.60:0.35:0.55:36.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "organized",
+          "zone": "jazz",
+          "parameters": "1.75:0.20:0.80:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "jazz",
+          "parameters": "1.90:0.10:0.90:44.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "jazz",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "jazz",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "jazz",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "jazz",
+          "parameters": "1.20:0.30:0.50:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "jazz",
+          "parameters": "1.30:0.20:0.60:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "jazz",
+          "parameters": "1.50:0.25:0.70:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "jazz",
+          "parameters": "1.60:0.35:0.55:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "jazz",
+          "parameters": "1.75:0.20:0.80:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "jazz",
+          "parameters": "1.90:0.10:0.90:44.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "jazz",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "jazz",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "jazz",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "jazz",
+          "parameters": "1.20:0.30:0.50:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "jazz",
+          "parameters": "1.30:0.20:0.60:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "jazz",
+          "parameters": "1.50:0.25:0.70:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "jazz",
+          "parameters": "1.60:0.35:0.55:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "jazz",
+          "parameters": "1.75:0.20:0.80:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "jazz",
+          "parameters": "1.90:0.10:0.90:44.00",
+          "hintCount": 0,
+          "reason": "safe"
+        }
+      ]
+    },
+    {
+      "id": "619bdde0e18e871280dc",
+      "trials": [
+        {
+          "mode": "organized",
+          "zone": "jazz",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "organized",
+          "zone": "jazz",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "organized",
+          "zone": "jazz",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "organized",
+          "zone": "jazz",
+          "parameters": "1.20:0.30:0.50:32.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "organized",
+          "zone": "jazz",
+          "parameters": "1.30:0.20:0.60:36.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "organized",
+          "zone": "jazz",
+          "parameters": "1.50:0.25:0.70:40.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "organized",
+          "zone": "jazz",
+          "parameters": "1.60:0.35:0.55:36.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "organized",
+          "zone": "jazz",
+          "parameters": "1.75:0.20:0.80:40.00",
+          "hintCount": 0,
+          "reason": "no-local-improvement"
+        },
+        {
+          "mode": "organized",
+          "zone": "jazz",
+          "parameters": "1.90:0.10:0.90:44.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "jazz",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "jazz",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "jazz",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "jazz",
+          "parameters": "1.20:0.30:0.50:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "jazz",
+          "parameters": "1.30:0.20:0.60:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "jazz",
+          "parameters": "1.50:0.25:0.70:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "jazz",
+          "parameters": "1.60:0.35:0.55:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "jazz",
+          "parameters": "1.75:0.20:0.80:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "jazz",
+          "parameters": "1.90:0.10:0.90:44.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "jazz",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "jazz",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "jazz",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "jazz",
+          "parameters": "1.20:0.30:0.50:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "jazz",
+          "parameters": "1.30:0.20:0.60:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "jazz",
+          "parameters": "1.50:0.25:0.70:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "jazz",
+          "parameters": "1.60:0.35:0.55:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "jazz",
+          "parameters": "1.75:0.20:0.80:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "jazz",
+          "parameters": "1.90:0.10:0.90:44.00",
+          "hintCount": 0,
+          "reason": "safe"
+        }
+      ]
+    },
+    {
+      "id": "b6e4abfa4dc31c6d48bb",
+      "trials": [
+        {
+          "mode": "organized",
+          "zone": "jazz",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "jazz",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "jazz",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "jazz",
+          "parameters": "1.20:0.30:0.50:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "jazz",
+          "parameters": "1.30:0.20:0.60:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "jazz",
+          "parameters": "1.50:0.25:0.70:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "jazz",
+          "parameters": "1.60:0.35:0.55:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "jazz",
+          "parameters": "1.75:0.20:0.80:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "organized",
+          "zone": "jazz",
+          "parameters": "1.90:0.10:0.90:44.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "jazz",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "jazz",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "jazz",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "jazz",
+          "parameters": "1.20:0.30:0.50:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "jazz",
+          "parameters": "1.30:0.20:0.60:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "jazz",
+          "parameters": "1.50:0.25:0.70:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "jazz",
+          "parameters": "1.60:0.35:0.55:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "jazz",
+          "parameters": "1.75:0.20:0.80:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "genre",
+          "zone": "jazz",
+          "parameters": "1.90:0.10:0.90:44.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "jazz",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "jazz",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "jazz",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "jazz",
+          "parameters": "1.20:0.30:0.50:32.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "jazz",
+          "parameters": "1.30:0.20:0.60:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "jazz",
+          "parameters": "1.50:0.25:0.70:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "jazz",
+          "parameters": "1.60:0.35:0.55:36.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "jazz",
+          "parameters": "1.75:0.20:0.80:40.00",
+          "hintCount": 0,
+          "reason": "safe"
+        },
+        {
+          "mode": "chaos",
+          "zone": "jazz",
+          "parameters": "1.90:0.10:0.90:44.00",
+          "hintCount": 0,
+          "reason": "safe"
+        }
+      ]
+    }
+  ],
+  "trainedNodes": [
+    "kaye-ballard",
+    "greg-hawkes",
+    "wilson-pickett",
+    "dusty-springfield",
+    "the-charlie-daniels-band",
+    "jim-reeves",
+    "uncle-dave-macon",
+    "outlaw-country",
+    "the-soul-stirrers",
+    "slash",
+    "mavis-staples",
+    "bessie-smith",
+    "betty-carter",
+    "cecil-taylor",
+    "cannonball-adderley",
+    "james-scott-ragtime"
+  ],
+  "holdoutNodes": [
+    "parliament",
+    "al-green",
+    "bobbie-gentry",
+    "charlie-poole",
+    "john-lee-hooker",
+    "elvis-presley",
+    "gerry-mulligan",
+    "art-blakey"
+  ],
+  "trainedGraphNodes": 1017
+}

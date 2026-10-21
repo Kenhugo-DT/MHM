@@ -14,6 +14,7 @@ import { evaluateFocusedConnections, evaluateNodeLegibility } from "../shared/la
 import { repairIncrementalLayouts } from "../brain/scripts/adaptive-incremental-layout.mjs";
 import { benchmarkDocumentedGrowth } from "../brain/scripts/benchmark-layout-constraints.mjs";
 import { validateLayoutConstraints } from "../shared/layout-playground/constraints.mjs";
+import { replayNode, selectPracticeNodes } from "../brain/scripts/train-layout-practice.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const approved = (name) => JSON.parse(fs.readFileSync(path.join(root, "brain", "data", "approved", name), "utf8"));
@@ -195,6 +196,49 @@ test("observed history can break a safe tie after multiple real batches", () => 
     layoutParameterKey(alternative.parameters));
   assert.ok(learned.modes.chaos.newNodeLegibilityAfter.overlapPairs <=
     baseline.modes.chaos.newNodeLegibilityAfter.overlapPairs);
+});
+
+test("layout practice uses separate documented training and holdout nodes", () => {
+  const graph = approved("graph.json");
+  const layouts = approved("layouts.json");
+  const selection = selectPracticeNodes(graph, layouts);
+  const practice = approved("layout-practice.json");
+  const training = selection.filter((item) => item.split === "train").map((item) => item.id);
+  const holdout = selection.filter((item) => item.split === "holdout").map((item) => item.id);
+  assert.deepEqual(practice.trainedNodes, training);
+  assert.deepEqual(practice.holdoutNodes, holdout);
+  assert.equal(new Set([...training, ...holdout]).size, selection.length);
+  assert.ok(practice.batches.length > 0);
+});
+
+test("enabled practice improves a held-out replay without worsening labels or map overlap", () => {
+  const graph = approved("graph.json");
+  const layouts = approved("layouts.json");
+  const guidance = approved("organization-model.json").layoutIntelligence;
+  const feedback = approved("layout-feedback.json").reviews;
+  const constraints = validateLayoutConstraints(approved("layout-constraints.json"), graph);
+  const practice = approved("layout-practice.json");
+  if (!practice.enabled) return;
+  let improved = false;
+  for (const [mode, zones] of Object.entries(practice.parametersByModeZone)) {
+    for (const zone of Object.keys(zones)) {
+      const held = graph.nodes.filter((node) => node.zone === zone &&
+        practice.holdoutNodes.includes(node.id));
+      for (const node of held) {
+        const baseline = replayNode(graph, layouts, guidance, feedback, constraints, node.id);
+        const learned = replayNode(graph, layouts, guidance, feedback, constraints, node.id, practice);
+        const before = baseline.measurements[mode];
+        const after = learned.measurements[mode];
+        assert.ok(after.labels.overlapPairs <= before.labels.overlapPairs);
+        assert.ok(after.after.severeOverlaps <= before.after.severeOverlaps);
+        assert.ok(after.after.overlaps <= before.after.overlaps);
+        if (after.chosen !== before.chosen && (after.after.severeOverlaps < before.after.severeOverlaps ||
+            after.after.overlaps < before.after.overlaps ||
+            after.connections.mean < before.connections.mean)) improved = true;
+      }
+    }
+  }
+  assert.ok(improved);
 });
 
 test("over-capacity placement keeps 20 discoveries distinct among 20k nodes", () => {

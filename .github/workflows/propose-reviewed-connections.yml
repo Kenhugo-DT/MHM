@@ -76,6 +76,7 @@ jobs:
           npm run brain:learn
           npm run brain:organize
           node brain/scripts/generate-layouts.mjs --preserve-existing-layout
+          npm run brain:layouts:practice
           node brain/scripts/check-connection-batch.mjs "$RUNNER_TEMP/before-graph.json" "$RUNNER_TEMP/before-promotions.json"
           npm run brain:audit
           npm run brain:python-check
@@ -95,6 +96,7 @@ jobs:
           git switch -c "$branch"
           git add brain/data/approved/promotions.json brain/data/approved/graph.json \
             brain/data/approved/layout-experience.json \
+            brain/data/approved/layout-practice.json \
             brain/data/approved/layout-constraints.json \
             brain/data/approved/layouts.json brain/data/approved/learning-model.json \
             brain/data/approved/organization-model.json site/public/data/graph.json \
