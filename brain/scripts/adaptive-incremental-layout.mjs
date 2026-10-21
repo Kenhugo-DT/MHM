@@ -1,5 +1,6 @@
 import { isMapConnection } from "../../shared/graph-schema/edge-evidence.mjs";
 import { classifyOutcome, evaluateFocusedConnections, evaluateLayout, evaluateNodeLegibility, runLayoutExperiment } from "../../shared/layout-playground/experiment.mjs";
+import { historicalLayoutPreference } from "./layout-experience.mjs";
 
 const PRESETS = [
   { spacing: 1.1, connectionPull: 0.2, zoneFreedom: 0.35, iterations: 24 },
@@ -60,6 +61,7 @@ export function repairIncrementalLayouts(layouts, previous, graph, guidance, zon
         freshIds, zone, pinnedIds);
       const preferred = feedback.filter((item) => item.mode === mode && item.zone === zone && item.verdict === "better")
         .map((item) => item.parameters);
+      const preferredKeys = new Set(preferred.map(parameterKey));
       const rejected = new Set(feedback.filter((item) => item.mode === mode && item.zone === zone && item.verdict === "worse")
         .map((item) => parameterKey(item.parameters)));
       const parameters = [...preferred, ...PRESETS]
@@ -84,13 +86,36 @@ export function repairIncrementalLayouts(layouts, previous, graph, guidance, zon
         const connectionsAfter = evaluateFocusedConnections(graph, candidate.positions, zoneFreshIds);
         return { candidate, reason, mapAfter, focusAfter, connectionsAfter };
       });
-      const best = assessed.filter((item) => item.reason === "safe")
+      const eligible = assessed.filter((item) => item.reason === "safe")
         .sort((a, b) => a.focusAfter.severelyOverlappingNodes - b.focusAfter.severelyOverlappingNodes ||
           a.focusAfter.overlapPairs - b.focusAfter.overlapPairs ||
           a.connectionsAfter.mean - b.connectionsAfter.mean ||
-          a.candidate.after.score - b.candidate.after.score)[0]?.candidate;
+          a.candidate.after.score - b.candidate.after.score);
+      const objectiveBest = eligible[0];
+      const comparable = (item) =>
+        item.focusAfter.severelyOverlappingNodes === objectiveBest?.focusAfter.severelyOverlappingNodes &&
+        item.focusAfter.overlapPairs === objectiveBest?.focusAfter.overlapPairs &&
+        item.connectionsAfter.mean <= objectiveBest.connectionsAfter.mean + 100 &&
+        item.connectionsAfter.longestSameZone <= objectiveBest.connectionsAfter.longestSameZone + 150 &&
+        item.connectionsAfter.longestCrossZone <= objectiveBest.connectionsAfter.longestCrossZone + 150 &&
+        item.mapAfter.score <= objectiveBest.mapAfter.score + 25;
+      const reviewedBest = eligible.find((item) => preferredKeys.has(parameterKey(item.candidate.parameters)) &&
+        comparable(item));
+      const history = options.experience;
+      const baselineHistory = objectiveBest && historicalLayoutPreference(history, mode, zone,
+        objectiveBest.candidate.parameters);
+      const learnedBest = !reviewedBest && baselineHistory?.samples >= 3 ? eligible.find((item) => {
+        if (!comparable(item)) return false;
+        const prior = historicalLayoutPreference(history, mode, zone, item.candidate.parameters);
+        return prior.samples >= 3 && prior.safe >= 2 && prior.rate >= 0.75 &&
+          prior.rate > baselineHistory.rate + 0.15;
+      }) : undefined;
+      const best = (reviewedBest ?? learnedBest ?? objectiveBest)?.candidate;
       report.trials.push({ mode, zone, attempted: candidates.length, before: candidates[0]?.before,
         bestScore: best?.after.score ?? null,
+        selection: reviewedBest && reviewedBest !== objectiveBest ? "reviewed-preference" :
+          learnedBest && learnedBest !== objectiveBest ? "observed-history" :
+          best ? "objective" : "none",
         ...(options.captureTrials ? { focusBefore, candidates: assessed.map(({ candidate, reason, mapAfter, focusAfter, connectionsAfter }) => ({
           parameters: candidate.parameters, reason, localAfter: candidate.after,
           wholeMapAfter: mapAfter, focusAfter, connectionsAfter,

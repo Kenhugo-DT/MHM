@@ -133,7 +133,7 @@ function syntheticFit(graph, positions, syntheticIds, zones) {
 }
 
 export function simulateLayoutGrowth(graphInput, layoutInput, guidance, feedback = [],
-  scenarios = TRAINING_SCENARIOS, preserve = preserveIncrementalLayouts) {
+  scenarios = TRAINING_SCENARIOS, preserve = preserveIncrementalLayouts, experience) {
   const zones = Object.entries(ORGANIZED_MAP_ZONES).map(([id, zone]) => ({ id, ...zone }));
   const result = { version: 1, syntheticOnly: true, graphNodes: graphInput.nodes.length,
     scenarios: [], feedbackEvidence: [] };
@@ -148,7 +148,7 @@ export function simulateLayoutGrowth(graphInput, layoutInput, guidance, feedback
     const naive = Object.fromEntries(MODES.map((mode) => [mode, structuredClone(layouts[mode].nodes)]));
     const started = performance.now();
     const repair = repairIncrementalLayouts(layouts, previous, graph, guidance, zones, feedback,
-      new Set(), { captureTrials: true });
+      new Set(), { captureTrials: true, experience });
     const runtimeMs = Math.round(performance.now() - started);
     const modeResults = Object.fromEntries(MODES.map((mode) => [mode, {
       before: counts(graph, naive[mode], naive[mode]),

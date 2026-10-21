@@ -8,6 +8,7 @@ import { benchmarkLayoutGrowth } from "../brain/scripts/benchmark-layout-growth.
 import { benchmarkFeedbackImpact } from "../brain/scripts/benchmark-layout-feedback.mjs";
 import { VALIDATION_SCENARIOS } from "../brain/scripts/simulate-layout-growth.mjs";
 import { preserveIncrementalLayouts } from "../brain/scripts/incremental-layout.mjs";
+import { appendLayoutExperience, EMPTY_LAYOUT_EXPERIENCE, layoutParameterKey } from "../brain/scripts/layout-experience.mjs";
 import { evaluateFocusedConnections, evaluateNodeLegibility } from "../shared/layout-playground/experiment.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -106,6 +107,69 @@ test("feedback impact benchmark detects a rejected layout choice", () => {
     feedback, scenarios);
   assert.equal(impact.testedViews, 3);
   assert.ok(impact.changedChoices >= 1);
+});
+
+test("a positive review changes only a safe, comparable layout choice", () => {
+  const graph = approved("graph.json");
+  const layouts = approved("layouts.json");
+  const guidance = approved("organization-model.json").layoutIntelligence;
+  const scenarios = [{ id: "positive-review", groups: [{ zone: "rock-circuit", count: 1 }] }];
+  const review = [{ mode: "chaos", zone: "rock-circuit", verdict: "better",
+    parameters: { spacing: 1.65, connectionPull: 0.15, zoneFreedom: 0.8, iterations: 36 } }];
+  const impact = benchmarkFeedbackImpact(graph, layouts, guidance, review, scenarios);
+  assert.equal(impact.changedChoices, 1);
+  assert.equal(impact.changedOutcomes, 1);
+  const plain = simulateLayoutGrowth(graph, layouts, guidance, [], scenarios).scenarios[0];
+  const guided = simulateLayoutGrowth(graph, layouts, guidance, review, scenarios).scenarios[0];
+  assert.ok(guided.modes.chaos.newNodeLegibilityAfter.overlapPairs <=
+    plain.modes.chaos.newNodeLegibilityAfter.overlapPairs);
+  assert.ok(guided.modes.chaos.after.overlaps <= plain.modes.chaos.after.overlaps);
+});
+
+test("only real growth is recorded once as layout experience", () => {
+  const graph = { generatedAt: "2026-10-21T00:00:00Z", nodes: [
+    { id: "old", zone: "rock-circuit" }, { id: "new", zone: "rock-circuit" },
+  ] };
+  const previous = { layouts: { organized: { nodes: { old: { x: 0, y: 0 } } } } };
+  const parameters = { spacing: 1.4, connectionPull: 0.3, zoneFreedom: 0.6, iterations: 32 };
+  const report = { freshNodes: 1, accepted: [{ mode: "organized", zone: "rock-circuit", parameters }],
+    trials: [{ mode: "organized", zone: "rock-circuit", candidates: [{ parameters, reason: "safe",
+      focusAfter: { severelyOverlappingNodes: 0, overlapPairs: 0 }, connectionsAfter: { mean: 200 } }] }] };
+  const recorded = appendLayoutExperience(EMPTY_LAYOUT_EXPERIENCE, graph, previous, report);
+  assert.equal(recorded.batches.length, 1);
+  assert.equal(recorded.batches[0].trials[0].parameters, layoutParameterKey(parameters));
+  assert.equal(recorded.batches[0].trials[0].selected, true);
+  assert.deepEqual(appendLayoutExperience(recorded, graph, previous, report), recorded);
+  assert.throws(() => appendLayoutExperience(EMPTY_LAYOUT_EXPERIENCE,
+    { ...graph, nodes: [...graph.nodes, { id: "__simulation_x", synthetic: true }] },
+    previous, { ...report, freshNodes: 2 }), /Synthetic nodes/);
+});
+
+test("observed history can break a safe tie after multiple real batches", () => {
+  const graph = approved("graph.json");
+  const layouts = approved("layouts.json");
+  const guidance = approved("organization-model.json").layoutIntelligence;
+  const scenarios = [{ id: "history-choice", groups: [{ zone: "rock-circuit", count: 1 }] }];
+  const baseline = simulateLayoutGrowth(graph, layouts, guidance, [], scenarios).scenarios[0];
+  const winner = baseline.accepted.find((item) => item.mode === "chaos");
+  const alternative = baseline.trials.find((item) => item.mode === "chaos").candidates.find((item) =>
+    item.reason === "safe" && layoutParameterKey(item.parameters) !== layoutParameterKey(winner.parameters) &&
+    item.parameters.spacing === 1.65);
+  assert.ok(winner && alternative);
+  const experience = { version: 1, batches: Array.from({ length: 4 }, (_, index) => ({
+    id: `actual-${index}`, trials: [
+      { mode: "chaos", zone: "rock-circuit", parameters: layoutParameterKey(winner.parameters),
+        reason: "whole-map-regression" },
+      { mode: "chaos", zone: "rock-circuit", parameters: layoutParameterKey(alternative.parameters),
+        reason: "safe" },
+    ],
+  })) };
+  const learned = simulateLayoutGrowth(graph, layouts, guidance, [], scenarios,
+    preserveIncrementalLayouts, experience).scenarios[0];
+  assert.equal(layoutParameterKey(learned.accepted.find((item) => item.mode === "chaos").parameters),
+    layoutParameterKey(alternative.parameters));
+  assert.ok(learned.modes.chaos.newNodeLegibilityAfter.overlapPairs <=
+    baseline.modes.chaos.newNodeLegibilityAfter.overlapPairs);
 });
 
 test("over-capacity placement keeps 20 discoveries distinct among 20k nodes", () => {

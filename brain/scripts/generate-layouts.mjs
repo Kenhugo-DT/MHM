@@ -7,6 +7,7 @@ import { ORGANIZED_MAP_ZONES } from "./organize-graph-layout.mjs";
 import { buildTimelineLayout } from "./timeline-layout.mjs";
 import { preserveIncrementalLayouts } from "./incremental-layout.mjs";
 import { repairIncrementalLayouts } from "./adaptive-incremental-layout.mjs";
+import { appendLayoutExperience, EMPTY_LAYOUT_EXPERIENCE } from "./layout-experience.mjs";
 
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
 const brainRoot = path.resolve(scriptDir, "..");
@@ -15,6 +16,7 @@ const graphPath = path.join(brainRoot, "data", "approved", "graph.json");
 const learningModelPath = path.join(brainRoot, "data", "approved", "learning-model.json");
 const organizationModelPath = path.join(brainRoot, "data", "approved", "organization-model.json");
 const layoutFeedbackPath = path.join(brainRoot, "data", "approved", "layout-feedback.json");
+const layoutExperiencePath = path.join(brainRoot, "data", "approved", "layout-experience.json");
 const approvedOutputPath = path.join(brainRoot, "data", "approved", "layouts.json");
 const browserOutputPath = path.join(repoRoot, "site", "public", "data", "layouts.json");
 const preserveExistingLayout = process.argv.includes("--preserve-existing-layout");
@@ -539,12 +541,21 @@ const layouts = {
 preserveIncrementalLayouts(layouts, previousLayouts, graph);
 const zoneGeometry = Object.entries(ORGANIZED_MAP_ZONES).map(([id, zone]) => ({ id, ...zone }));
 const layoutFeedback = readJson(layoutFeedbackPath, { reviews: [] });
+const layoutExperience = readJson(layoutExperiencePath, EMPTY_LAYOUT_EXPERIENCE);
 const pinnedIds = new Set(Object.entries(learningModel?.nodes ?? {})
   .filter(([, entry]) => entry.layoutHints?.pinned).map(([id]) => id));
 const incrementalRepair = preserveExistingLayout
   ? repairIncrementalLayouts(layouts, previousLayouts, graph, organizationModel?.layoutIntelligence,
-    zoneGeometry, layoutFeedback.reviews, pinnedIds)
+    zoneGeometry, layoutFeedback.reviews, pinnedIds,
+    { experience: layoutExperience, captureTrials: true })
   : undefined;
+const updatedExperience = incrementalRepair?.freshNodes
+  ? appendLayoutExperience(layoutExperience, graph, previousLayouts, incrementalRepair)
+  : layoutExperience;
+const publicRepair = incrementalRepair && {
+  ...incrementalRepair,
+  trials: incrementalRepair.trials.map(({ candidates, focusBefore, ...trial }) => trial),
+};
 
 const dataset = {
   version: 1,
@@ -559,13 +570,16 @@ const dataset = {
       Object.keys(MODE_NODE_TYPES).map(async (mode) => [mode, await graphFingerprint(graph, mode)]),
     ),
   ),
-  ...(incrementalRepair?.freshNodes ? { incrementalRepair } : {}),
+  ...(publicRepair?.freshNodes ? { incrementalRepair: publicRepair } : {}),
   layouts,
 };
 
 for (const outputPath of [approvedOutputPath, browserOutputPath]) {
   fs.mkdirSync(path.dirname(outputPath), { recursive: true });
   fs.writeFileSync(outputPath, `${JSON.stringify(dataset, null, 2)}\n`);
+}
+if (updatedExperience !== layoutExperience) {
+  fs.writeFileSync(layoutExperiencePath, `${JSON.stringify(updatedExperience, null, 2)}\n`);
 }
 
 console.log(

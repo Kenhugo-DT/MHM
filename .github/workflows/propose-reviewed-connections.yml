@@ -94,6 +94,7 @@ jobs:
           branch="codex/brain-connections-${GITHUB_RUN_ID}"
           git switch -c "$branch"
           git add brain/data/approved/promotions.json brain/data/approved/graph.json \
+            brain/data/approved/layout-experience.json \
             brain/data/approved/layouts.json brain/data/approved/learning-model.json \
             brain/data/approved/organization-model.json site/public/data/graph.json \
             site/public/data/layouts.json
