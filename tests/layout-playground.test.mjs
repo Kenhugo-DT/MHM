@@ -4,6 +4,7 @@ import { readFileSync } from "node:fs";
 import { autoTuneLayout, classifyOutcome, evaluateLayout, runLayoutExperiment } from "../shared/layout-playground/experiment.mjs";
 import { ORGANIZED_MAP_ZONES } from "../brain/scripts/organize-graph-layout.mjs";
 import { validateLayoutReport } from "../brain/scripts/import-layout-feedback.mjs";
+import { deriveGrowthConstraints, evaluateLayoutConstraints, validateLayoutConstraints } from "../shared/layout-playground/constraints.mjs";
 
 const graph = {
   nodes: [
@@ -91,4 +92,43 @@ test("review import reproduces metrics and rejects stale or embellished experime
     after: { ...after, score: 0 } } }, source, layouts), /cannot be reproduced/);
   assert.throws(() => validateLayoutReport({ ...report, current: { ...report.current,
     review: { ...report.current.review, verdict: "unsure" } } }, source, layouts), /Mark the current/);
+});
+
+test("curated pair hints require a real sourced edge and display-only separation", () => {
+  const approvedGraph = JSON.parse(readFileSync("brain/data/approved/graph.json", "utf8"));
+  const document = JSON.parse(readFileSync("brain/data/approved/layout-constraints.json", "utf8"));
+  const constraints = validateLayoutConstraints(document, approvedGraph);
+  assert.equal(constraints.length, 5);
+  const wrongEdge = { ...document, constraints: [{ ...constraints[0], evidenceEdgeId: "missing" }] };
+  assert.throws(() => validateLayoutConstraints(wrongEdge, approvedGraph), /matching sourced connection/);
+  const unsupportedSeparation = { ...document, constraints: [{ ...constraints.at(-1), displayOnly: false }] };
+  assert.throws(() => validateLayoutConstraints(unsupportedSeparation, approvedGraph), /display-only/);
+  const conflicting = { ...document, constraints: [{ ...constraints[3], maxDistance: 180 },
+    { ...constraints[4], minDistance: 190 }] };
+  assert.throws(() => validateLayoutConstraints(conflicting, approvedGraph), /Conflicting/);
+  const duplicatedPair = { ...document, constraints: [constraints[0],
+    { ...constraints[0], id: "second-rule" }] };
+  assert.throws(() => validateLayoutConstraints(duplicatedPair, approvedGraph), /Duplicate near/);
+});
+
+test("new-node hints come only from sourced membership or collaboration", () => {
+  const sample = { nodes: [
+    { id: "band", zone: "rock" }, { id: "member", zone: "rock" }, { id: "lead", zone: "rock" },
+  ], edges: [
+    { id: "membership", source: "member", target: "band", type: "member_of", strength: 0.9,
+      sources: [{ url: "https://example.org/fixture" }] },
+    { id: "second-membership", source: "band", target: "member", type: "member_of", strength: 0.8,
+      sources: [{ url: "https://example.org/second-fixture" }] },
+    { id: "research", source: "member", target: "lead", type: "related",
+      label: "Wikipedia link signal", sources: [{ url: "https://example.org/fixture" }] },
+  ] };
+  const hints = deriveGrowthConstraints(sample, new Set(["member"]));
+  assert.equal(hints.length, 1);
+  assert.equal(hints[0].evidenceEdgeId, "membership");
+  assert.equal(hints[0].maxDistance, 700);
+  const start = { band: { x: 0, y: 0 }, member: { x: 1200, y: 0 }, lead: { x: 1600, y: 0 } };
+  const trial = runLayoutExperiment(sample, start, {}, zones, { connectionPull: 0.2 }, "rock",
+    { band: { weight: 0 }, member: { weight: 1, maxDistance: 500 } }, hints);
+  assert.ok(evaluateLayoutConstraints(trial.positions, hints).totalExcess <
+    evaluateLayoutConstraints(start, hints).totalExcess);
 });

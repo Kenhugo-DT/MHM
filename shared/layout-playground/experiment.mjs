@@ -1,4 +1,5 @@
 import { isMapConnection } from "../graph-schema/edge-evidence.mjs";
+import { evaluateLayoutConstraints } from "./constraints.mjs";
 
 export const DEFAULT_PARAMETERS = Object.freeze({
   spacing: 1,
@@ -165,7 +166,8 @@ export function classifyOutcome(before, after) {
   return "unchanged";
 }
 
-export function runLayoutExperiment(graph, baseline, guidance, zones, input = {}, scopeZone = "all", movementPolicy) {
+export function runLayoutExperiment(graph, baseline, guidance, zones, input = {}, scopeZone = "all", movementPolicy,
+  constraints = []) {
   const parameters = safeParameters(input);
   const nodes = graph.nodes;
   const index = new Map(nodes.map((node, i) => [node.id, i]));
@@ -184,6 +186,10 @@ export function runLayoutExperiment(graph, baseline, guidance, zones, input = {}
   const edges = graph.edges.filter(isMapConnection).map((edge) => ({
     a: index.get(edge.source), b: index.get(edge.target), strength: Number(edge.strength) || 0.5,
   })).filter((edge) => edge.a !== undefined && edge.b !== undefined);
+  const pairRules = constraints.map((item) => ({ ...item, a: index.get(item.source), b: index.get(item.target) }));
+  if (pairRules.some((item) => item.a === undefined || item.b === undefined)) {
+    throw new Error("Layout constraint references a missing node.");
+  }
   const zoneById = new Map(zones.map((zone) => [zone.id, zone]));
   const baselinePoints = nodes.map((node) => baseline[node.id] ?? node);
 
@@ -222,6 +228,23 @@ export function runLayoutExperiment(graph, baseline, guidance, zones, input = {}
       const force = Math.min(18, excess * parameters.connectionPull * edge.strength * 0.012);
       if (mobility[a]) { fx[a] += dx / distance * force; fy[a] += dy / distance * force; }
       if (mobility[b]) { fx[b] -= dx / distance * force; fy[b] -= dy / distance * force; }
+    }
+
+    for (const rule of pairRules) {
+      const { a, b } = rule;
+      if (!mobility[a] && !mobility[b]) continue;
+      const dx = points[b].x - points[a].x;
+      const dy = points[b].y - points[a].y;
+      const distance = Math.max(1, Math.hypot(dx, dy));
+      const error = rule.kind === "near" ? distance - rule.maxDistance : rule.minDistance - distance;
+      if (error <= 0) continue;
+      const force = Math.min(rule.kind === "near" ? 34 : 20,
+        error * (rule.kind === "near" ? 0.03 : 0.08));
+      const direction = rule.kind === "near" ? 1 : -1;
+      const nx = distance === 1 && dx === 0 && dy === 0 ? 1 : dx / distance;
+      const ny = dy / distance;
+      if (mobility[a]) { fx[a] += nx * force * direction; fy[a] += ny * force * direction; }
+      if (mobility[b]) { fx[b] -= nx * force * direction; fy[b] -= ny * force * direction; }
     }
 
     nearbyPairs(nodes, points, (a, b) => {
@@ -266,7 +289,9 @@ export function runLayoutExperiment(graph, baseline, guidance, zones, input = {}
   }]));
   const before = evaluateLayout(graph, baseline, baseline, scopeZone);
   const after = evaluateLayout(graph, baseline, positions, scopeZone);
-  return { parameters, positions, before, after, outcome: classifyOutcome(before, after) };
+  return { parameters, positions, before, after, outcome: classifyOutcome(before, after),
+    constraintsBefore: evaluateLayoutConstraints(baseline, constraints),
+    constraintsAfter: evaluateLayoutConstraints(positions, constraints) };
 }
 
 export function autoTuneLayout(graph, baseline, guidance, zones, scopeZone = "all", feedback = []) {

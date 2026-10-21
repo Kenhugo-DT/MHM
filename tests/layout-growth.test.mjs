@@ -8,8 +8,12 @@ import { benchmarkLayoutGrowth } from "../brain/scripts/benchmark-layout-growth.
 import { benchmarkFeedbackImpact } from "../brain/scripts/benchmark-layout-feedback.mjs";
 import { VALIDATION_SCENARIOS } from "../brain/scripts/simulate-layout-growth.mjs";
 import { preserveIncrementalLayouts } from "../brain/scripts/incremental-layout.mjs";
-import { appendLayoutExperience, EMPTY_LAYOUT_EXPERIENCE, layoutParameterKey } from "../brain/scripts/layout-experience.mjs";
+import { appendLayoutExperience, EMPTY_LAYOUT_EXPERIENCE, historicalLayoutPreference,
+  layoutParameterKey } from "../brain/scripts/layout-experience.mjs";
 import { evaluateFocusedConnections, evaluateNodeLegibility } from "../shared/layout-playground/experiment.mjs";
+import { repairIncrementalLayouts } from "../brain/scripts/adaptive-incremental-layout.mjs";
+import { benchmarkDocumentedGrowth } from "../brain/scripts/benchmark-layout-constraints.mjs";
+import { validateLayoutConstraints } from "../shared/layout-playground/constraints.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const approved = (name) => JSON.parse(fs.readFileSync(path.join(root, "brain", "data", "approved", name), "utf8"));
@@ -145,6 +149,27 @@ test("only real growth is recorded once as layout experience", () => {
     previous, { ...report, freshNodes: 2 }), /Synthetic nodes/);
 });
 
+test("experience distinguishes hinted trials from an unhinted fallback", () => {
+  const graph = { nodes: [{ id: "old" }, { id: "new" }], edges: [] };
+  const previous = { layouts: { organized: { nodes: { old: { x: 0, y: 0 } } } } };
+  const parameters = { spacing: 1.4, connectionPull: 0.3, zoneFreedom: 0.6, iterations: 32 };
+  const candidate = (arm, excess) => ({ arm, parameters, reason: "safe",
+    focusAfter: { severelyOverlappingNodes: 0, overlapPairs: 0 },
+    connectionsAfter: { mean: 300 },
+    constraintsBefore: { totalExcess: 400 }, constraintsAfter: { totalExcess: excess } });
+  const report = { freshNodes: 1, accepted: [{ mode: "organized", zone: "rock", arm: "plain", parameters }],
+    trials: [{ mode: "organized", zone: "rock", hintIds: ["near-old"],
+      candidates: [candidate("hinted", 200), candidate("plain", 400)] }] };
+  const learned = appendLayoutExperience(EMPTY_LAYOUT_EXPERIENCE, graph, previous, report);
+  const [hinted, plain] = learned.batches[0].trials;
+  assert.equal(hinted.selected, false);
+  assert.equal(hinted.hintCount, 1);
+  assert.equal(plain.selected, true);
+  assert.equal(plain.hintCount, 0);
+  assert.equal(historicalLayoutPreference(learned, "organized", "rock", parameters, true).samples, 1);
+  assert.equal(historicalLayoutPreference(learned, "organized", "rock", parameters, false).samples, 1);
+});
+
 test("observed history can break a safe tie after multiple real batches", () => {
   const graph = approved("graph.json");
   const layouts = approved("layouts.json");
@@ -204,4 +229,41 @@ test("out-of-zone anchors still receive a finite incremental position", () => {
   const point = layouts.organized.nodes.newcomer;
   assert.ok(Number.isFinite(point.x) && Number.isFinite(point.y));
   assert.notDeepEqual([point.x, point.y], [old.anchor.x, old.anchor.y]);
+});
+
+test("documented membership hint pulls a new node closer without harming labels", () => {
+  const graph = { nodes: [
+    { id: "band", label: "Band", zone: "rock" },
+    { id: "person", label: "Person", zone: "rock" },
+  ], edges: [{ id: "membership", source: "person", target: "band", type: "member_of",
+    strength: 0.9, sources: [{ url: "https://example.org/test-fixture" }] }] };
+  const previous = { layouts: Object.fromEntries(["organized", "genre", "chaos"].map((mode) =>
+    [mode, { nodes: { band: { x: 0, y: 0 } } }])) };
+  const freshLayouts = () => Object.fromEntries(["organized", "genre", "chaos"].map((mode) =>
+    [mode, { nodes: { band: { x: 0, y: 0 }, person: { x: 1200, y: 0 } } }]));
+  const zones = [{ id: "rock", x: -1000, y: -1000, width: 3000, height: 3000 }];
+  const plain = freshLayouts();
+  const guided = freshLayouts();
+  repairIncrementalLayouts(plain, previous, graph, {}, zones, [], new Set(), { constraintsEnabled: false });
+  const report = repairIncrementalLayouts(guided, previous, graph, {}, zones);
+  assert.ok(guided.organized.nodes.person.x < plain.organized.nodes.person.x);
+  assert.ok(guided.organized.nodes.person.x > 0);
+  assert.ok(Math.hypot(guided.organized.nodes.band.x, guided.organized.nodes.band.y) <= 84);
+  assert.equal(evaluateNodeLegibility(graph, guided.organized.nodes, new Set(["person"])).overlapPairs, 0);
+  assert.ok(report.unresolved.some((item) => item.reason === "pair-constraint-unmet"));
+});
+
+test("real-node replay keeps the unhinted result when pair guidance hurts readability", () => {
+  const graph = approved("graph.json");
+  const layouts = approved("layouts.json");
+  const guidance = approved("organization-model.json").layoutIntelligence;
+  const constraints = validateLayoutConstraints(approved("layout-constraints.json"), graph);
+  const original = JSON.stringify(layouts);
+  const result = benchmarkDocumentedGrowth(graph, layouts, guidance, [], constraints,
+    ["bruce-dickinson", "chester-bennington"]);
+  assert.equal(result.length, 6);
+  assert.ok(result.some((item) => item.pairExcess[2] < item.pairExcess[1]));
+  assert.ok(result.every((item) => item.newLabelPairs[1] <= item.newLabelPairs[0] &&
+    item.severeNewLabels[1] <= item.severeNewLabels[0]));
+  assert.equal(JSON.stringify(layouts), original);
 });

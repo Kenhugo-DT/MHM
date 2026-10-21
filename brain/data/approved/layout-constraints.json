@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "constraints": [
+    {
+      "id": "iron-maiden-bruce-dickinson",
+      "kind": "near",
+      "source": "iron-maiden",
+      "target": "bruce-dickinson",
+      "maxDistance": 700,
+      "evidenceEdgeId": "mb-member-bruce-dickinson-iron-maiden",
+      "reason": "Documented band membership should remain visually discoverable in free-form layouts."
+    },
+    {
+      "id": "guns-n-roses-duff-mckagan",
+      "kind": "near",
+      "source": "guns-n-roses",
+      "target": "duff-mckagan",
+      "maxDistance": 700,
+      "evidenceEdgeId": "mb-member-duff-mckagan-guns-n-roses",
+      "reason": "Documented band membership should remain visually discoverable in free-form layouts."
+    },
+    {
+      "id": "linkin-park-chester-bennington",
+      "kind": "near",
+      "source": "linkin-park",
+      "target": "chester-bennington",
+      "maxDistance": 700,
+      "evidenceEdgeId": "mb-member-chester-bennington-linkin-park",
+      "reason": "Documented band membership should remain visually discoverable in free-form layouts."
+    },
+    {
+      "id": "miles-davis-john-coltrane",
+      "kind": "near",
+      "source": "miles-davis",
+      "target": "john-coltrane",
+      "maxDistance": 700,
+      "evidenceEdgeId": "curated-miles-davis-john-coltrane-related",
+      "reason": "Their documented collaboration is a useful local landmark in the jazz cluster."
+    },
+    {
+      "id": "miles-davis-john-coltrane-label-clearance",
+      "kind": "apart",
+      "source": "miles-davis",
+      "target": "john-coltrane",
+      "minDistance": 170,
+      "displayOnly": true,
+      "reason": "Keep both names readable; this minimum distance makes no claim about their musical relationship."
+    }
+  ]
+}

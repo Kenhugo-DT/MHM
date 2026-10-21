@@ -58,6 +58,7 @@
     "brain:layouts:stress-test": "node brain/scripts/simulate-layout-growth.mjs",
     "brain:layouts:benchmark": "node brain/scripts/benchmark-layout-growth.mjs",
     "brain:layouts:feedback-impact": "node brain/scripts/benchmark-layout-feedback.mjs",
+    "brain:layouts:pair-hints": "node brain/scripts/benchmark-layout-constraints.mjs",
     "brain:layout-feedback:import": "node brain/scripts/import-layout-feedback.mjs",
     "brain:python-check": "node brain/scripts/run-python.mjs -m py_compile brain/pipeline/sync.py brain/pipeline/import_graph.py brain/pipeline/process_inbox.py brain/pipeline/supabase_brain.py brain/pipeline/scout_agent.py brain/pipeline/research_learning.py brain/pipeline/promote_candidates.py brain/pipeline/queue_request.py brain/pipeline/candidate_quality.py brain/pipeline/fact_scout.py brain/pipeline/wikidata_fact_scout.py brain/pipeline/import_fact_batch.py brain/pipeline/sync_approved_fact_evidence.py brain/pipeline/sync_edge_evidence.py brain/pipeline/sync_curated_era.py brain/pipeline/publish_connection_candidates.py brain/pipeline/publish_reviewed_connection_batch.py brain/pipeline/finalize_connection_candidates.py",
     "brain:import:test": "node brain/scripts/run-python.mjs -m unittest discover -s brain/pipeline/tests -p test_import_graph_era.py",

@@ -7,10 +7,11 @@ export function layoutParameterKey(parameters) {
     .map((value) => Number(value).toFixed(2)).join(":");
 }
 
-export function historicalLayoutPreference(experience, mode, zone, parameters) {
+export function historicalLayoutPreference(experience, mode, zone, parameters, hinted = false) {
   const key = layoutParameterKey(parameters);
   const trials = (experience?.batches ?? []).flatMap((batch) => batch.trials ?? [])
-    .filter((trial) => trial.mode === mode && trial.zone === zone && trial.parameters === key);
+    .filter((trial) => trial.mode === mode && trial.zone === zone && trial.parameters === key &&
+      Boolean(trial.hintCount) === hinted);
   const safe = trials.filter((trial) => trial.reason === "safe").length;
   return { samples: trials.length, safe, rate: (safe + 1) / (trials.length + 2) };
 }
@@ -30,12 +31,18 @@ export function appendLayoutExperience(experience, graph, previous, report) {
   if (experience.batches.some((batch) => batch.id === batchId)) return experience;
   const trials = report.trials.flatMap((trial) => (trial.candidates ?? []).map((candidate) => ({
     mode: trial.mode, zone: trial.zone, parameters: layoutParameterKey(candidate.parameters),
+    arm: candidate.arm ?? "plain",
+    hintCount: candidate.arm === "plain" ? 0 : trial.hintIds?.length ?? 0,
+    hintIds: candidate.arm === "plain" ? [] : trial.hintIds ?? [],
     reason: candidate.reason, selected: report.accepted.some((accepted) =>
       accepted.mode === trial.mode && accepted.zone === trial.zone &&
+      (accepted.arm ?? "plain") === (candidate.arm ?? "plain") &&
       layoutParameterKey(accepted.parameters) === layoutParameterKey(candidate.parameters)),
     severeNewLabels: candidate.focusAfter.severelyOverlappingNodes,
     newLabelPairs: candidate.focusAfter.overlapPairs,
     meanNewConnection: candidate.connectionsAfter.mean,
+    pairExcessBefore: candidate.constraintsBefore?.totalExcess ?? 0,
+    pairExcessAfter: candidate.constraintsAfter?.totalExcess ?? 0,
   })));
   return { version: 1, batches: [...experience.batches, {
     id: batchId, graphGeneratedAt: graph.generatedAt, freshNodes: freshIds.length, trials,

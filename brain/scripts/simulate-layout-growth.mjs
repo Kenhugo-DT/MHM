@@ -5,6 +5,7 @@ import { evaluateLayout, evaluateNodeLegibility } from "../../shared/layout-play
 import { ORGANIZED_MAP_ZONES } from "./organize-graph-layout.mjs";
 import { preserveIncrementalLayouts } from "./incremental-layout.mjs";
 import { repairIncrementalLayouts } from "./adaptive-incremental-layout.mjs";
+import { deriveGrowthConstraints, evaluateLayoutConstraints } from "../../shared/layout-playground/constraints.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const MODES = ["organized", "genre", "chaos"];
@@ -133,7 +134,7 @@ function syntheticFit(graph, positions, syntheticIds, zones) {
 }
 
 export function simulateLayoutGrowth(graphInput, layoutInput, guidance, feedback = [],
-  scenarios = TRAINING_SCENARIOS, preserve = preserveIncrementalLayouts, experience) {
+  scenarios = TRAINING_SCENARIOS, preserve = preserveIncrementalLayouts, experience, constraintOptions = {}) {
   const zones = Object.entries(ORGANIZED_MAP_ZONES).map(([id, zone]) => ({ id, ...zone }));
   const result = { version: 1, syntheticOnly: true, graphNodes: graphInput.nodes.length,
     scenarios: [], feedbackEvidence: [] };
@@ -143,12 +144,13 @@ export function simulateLayoutGrowth(graphInput, layoutInput, guidance, feedback
     const layouts = structuredClone(layoutInput.layouts);
     const synthetic = synthesize(graph, layouts, scenario);
     const syntheticIds = new Set(synthetic.map((node) => node.id));
+    const pairHints = [...(constraintOptions.constraints ?? []), ...deriveGrowthConstraints(graph, syntheticIds)];
     const previous = layoutInput;
     preserve(layouts, previous, graph);
     const naive = Object.fromEntries(MODES.map((mode) => [mode, structuredClone(layouts[mode].nodes)]));
     const started = performance.now();
     const repair = repairIncrementalLayouts(layouts, previous, graph, guidance, zones, feedback,
-      new Set(), { captureTrials: true, experience });
+      new Set(), { captureTrials: true, experience, ...constraintOptions });
     const runtimeMs = Math.round(performance.now() - started);
     const modeResults = Object.fromEntries(MODES.map((mode) => [mode, {
       before: counts(graph, naive[mode], naive[mode]),
@@ -157,6 +159,8 @@ export function simulateLayoutGrowth(graphInput, layoutInput, guidance, feedback
       newNodeLegibilityAfter: evaluateNodeLegibility(graph, layouts[mode].nodes, syntheticIds),
       newNodeFitBefore: syntheticFit(graph, naive[mode], syntheticIds, zones),
       newNodeFitAfter: syntheticFit(graph, layouts[mode].nodes, syntheticIds, zones),
+      pairHintsBefore: evaluateLayoutConstraints(naive[mode], pairHints),
+      pairHintsAfter: evaluateLayoutConstraints(layouts[mode].nodes, pairHints),
       maxOldDrift: maxOldDrift(previous.layouts[mode].nodes, layouts[mode].nodes),
     }]));
     for (const trial of repair.trials) {
@@ -170,16 +174,18 @@ export function simulateLayoutGrowth(graphInput, layoutInput, guidance, feedback
       }
     }
     result.scenarios.push({ id: scenario.id, syntheticNodes: synthetic.length, runtimeMs,
-      accepted: repair.accepted.map(({ mode, zone, parameters, before, after }) => ({
-        mode, zone, parameters,
+      accepted: repair.accepted.map(({ mode, zone, arm, parameters, before, after }) => ({
+        mode, zone, arm, parameters,
         localOverlapsBefore: before.overlaps, localOverlapsAfter: after.overlaps,
         localSevereBefore: before.severeOverlaps, localSevereAfter: after.severeOverlaps,
       })),
       unresolved: repair.unresolved,
-      trials: repair.trials.map(({ mode, zone, attempted, candidates }) => ({ mode, zone, attempted,
-        candidates: candidates.map(({ parameters, reason, localAfter, wholeMapAfter }) => ({
-          parameters, reason, localOverlaps: localAfter.overlaps,
+      trials: repair.trials.map(({ mode, zone, attempted, candidates, hintIds }) => ({ mode, zone, attempted,
+        hintIds, candidates: candidates.map(({ arm, parameters, reason, localAfter, wholeMapAfter,
+          constraintsAfter }) => ({
+          arm, parameters, reason, localOverlaps: localAfter.overlaps,
           localSevere: localAfter.severeOverlaps, wholeMapScore: wholeMapAfter.score,
+          pairExcess: constraintsAfter.totalExcess,
         })) })),
       modes: modeResults,
       feedback: MODES.map((mode) => {

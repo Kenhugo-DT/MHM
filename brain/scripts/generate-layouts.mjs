@@ -8,6 +8,7 @@ import { buildTimelineLayout } from "./timeline-layout.mjs";
 import { preserveIncrementalLayouts } from "./incremental-layout.mjs";
 import { repairIncrementalLayouts } from "./adaptive-incremental-layout.mjs";
 import { appendLayoutExperience, EMPTY_LAYOUT_EXPERIENCE } from "./layout-experience.mjs";
+import { validateLayoutConstraints } from "../../shared/layout-playground/constraints.mjs";
 
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
 const brainRoot = path.resolve(scriptDir, "..");
@@ -17,6 +18,7 @@ const learningModelPath = path.join(brainRoot, "data", "approved", "learning-mod
 const organizationModelPath = path.join(brainRoot, "data", "approved", "organization-model.json");
 const layoutFeedbackPath = path.join(brainRoot, "data", "approved", "layout-feedback.json");
 const layoutExperiencePath = path.join(brainRoot, "data", "approved", "layout-experience.json");
+const layoutConstraintsPath = path.join(brainRoot, "data", "approved", "layout-constraints.json");
 const approvedOutputPath = path.join(brainRoot, "data", "approved", "layouts.json");
 const browserOutputPath = path.join(repoRoot, "site", "public", "data", "layouts.json");
 const preserveExistingLayout = process.argv.includes("--preserve-existing-layout");
@@ -542,12 +544,13 @@ preserveIncrementalLayouts(layouts, previousLayouts, graph);
 const zoneGeometry = Object.entries(ORGANIZED_MAP_ZONES).map(([id, zone]) => ({ id, ...zone }));
 const layoutFeedback = readJson(layoutFeedbackPath, { reviews: [] });
 const layoutExperience = readJson(layoutExperiencePath, EMPTY_LAYOUT_EXPERIENCE);
+const layoutConstraints = validateLayoutConstraints(readJson(layoutConstraintsPath), graph);
 const pinnedIds = new Set(Object.entries(learningModel?.nodes ?? {})
   .filter(([, entry]) => entry.layoutHints?.pinned).map(([id]) => id));
 const incrementalRepair = preserveExistingLayout
   ? repairIncrementalLayouts(layouts, previousLayouts, graph, organizationModel?.layoutIntelligence,
     zoneGeometry, layoutFeedback.reviews, pinnedIds,
-    { experience: layoutExperience, captureTrials: true })
+    { experience: layoutExperience, constraints: layoutConstraints, captureTrials: true })
   : undefined;
 const updatedExperience = incrementalRepair?.freshNodes
   ? appendLayoutExperience(layoutExperience, graph, previousLayouts, incrementalRepair)
