@@ -112,6 +112,28 @@ export function evaluateLayout(graph, baseline, positions, scopeZone = "all") {
   };
 }
 
+export function evaluateNodeLegibility(graph, positions, focusIds) {
+  const nodes = graph.nodes;
+  const points = nodes.map((node) => positions[node.id]);
+  const collided = new Set();
+  const severe = new Set();
+  let overlapPairs = 0;
+  nearbyPairs(nodes, points, (a, b) => {
+    if (!focusIds.has(nodes[a].id) && !focusIds.has(nodes[b].id)) return;
+    const hit = overlap(labelBox(nodes[a], points[a]), labelBox(nodes[b], points[b]));
+    if (!hit) return;
+    overlapPairs += 1;
+    if (focusIds.has(nodes[a].id)) collided.add(nodes[a].id);
+    if (focusIds.has(nodes[b].id)) collided.add(nodes[b].id);
+    if (hit.x > 28 && hit.y > 16) {
+      if (focusIds.has(nodes[a].id)) severe.add(nodes[a].id);
+      if (focusIds.has(nodes[b].id)) severe.add(nodes[b].id);
+    }
+  });
+  return { focusedNodes: focusIds.size, overlappingNodes: collided.size,
+    severelyOverlappingNodes: severe.size, overlapPairs };
+}
+
 export function classifyOutcome(before, after) {
   if (after.severeOverlaps > before.severeOverlaps || after.overlaps > before.overlaps ||
       after.meanEdge > Math.max(before.meanEdge * 1.15, before.meanEdge + 100)) return "regression";
