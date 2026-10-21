@@ -134,6 +134,30 @@ export function evaluateNodeLegibility(graph, positions, focusIds) {
     severelyOverlappingNodes: severe.size, overlapPairs };
 }
 
+export function evaluateFocusedConnections(graph, positions, focusIds) {
+  const nodeById = new Map(graph.nodes.map((node) => [node.id, node]));
+  let edges = 0;
+  let sum = 0;
+  let longestSameZone = 0;
+  let longestCrossZone = 0;
+  for (const edge of graph.edges) {
+    if (!isMapConnection(edge) || (!focusIds.has(edge.source) && !focusIds.has(edge.target))) continue;
+    const a = positions[edge.source];
+    const b = positions[edge.target];
+    if (!a || !b) continue;
+    const distance = Math.hypot(a.x - b.x, a.y - b.y);
+    sum += distance;
+    edges += 1;
+    if (nodeById.get(edge.source)?.zone === nodeById.get(edge.target)?.zone) {
+      longestSameZone = Math.max(longestSameZone, distance);
+    } else {
+      longestCrossZone = Math.max(longestCrossZone, distance);
+    }
+  }
+  return { edges, mean: edges ? Math.round(sum / edges) : 0,
+    longestSameZone: Math.round(longestSameZone), longestCrossZone: Math.round(longestCrossZone) };
+}
+
 export function classifyOutcome(before, after) {
   if (after.severeOverlaps > before.severeOverlaps || after.overlaps > before.overlaps ||
       after.meanEdge > Math.max(before.meanEdge * 1.15, before.meanEdge + 100)) return "regression";

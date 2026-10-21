@@ -8,7 +8,7 @@ import { repairIncrementalLayouts } from "./adaptive-incremental-layout.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const MODES = ["organized", "genre", "chaos"];
-const SCENARIOS = [
+export const TRAINING_SCENARIOS = [
   { id: "single-rock", groups: [{ zone: "rock-circuit", count: 1, bridge: false }] },
   { id: "dense-rock", groups: [{ zone: "rock-circuit", count: 18, bridge: false }] },
   { id: "early-history", groups: [{ zone: "classical-history", count: 12, bridge: false }] },
@@ -22,11 +22,47 @@ const SCENARIOS = [
   ] },
 ];
 
+export const CALIBRATION_SCENARIOS = [
+  { id: "metal-and-rap", groups: [
+    { zone: "hard-rock-metal", count: 11, anchorRank: 5, type: "band" },
+    { zone: "hip-hop-rap", count: 7, anchorRank: 3, type: "artist" },
+  ] },
+  { id: "country-pop-bridge", groups: [
+    { zone: "country-roots", count: 5, anchorRank: 4, bridge: "pop-soul-disco", type: "artist" },
+    { zone: "folk-country-vise", count: 4, anchorRank: 2, bridge: "roots-blues", type: "genre" },
+  ] },
+  { id: "instrument-workshop", groups: [
+    { zone: "guitar-workshop", count: 10, anchorRank: 8, type: "guitar" },
+  ] },
+  { id: "punk-prog-growth", groups: [
+    { zone: "punk-alt", count: 9, anchorRank: 9, type: "band" },
+    { zone: "psychedelia-prog", count: 6, anchorRank: 3, type: "genre" },
+  ] },
+];
+
+export const VALIDATION_SCENARIOS = [
+  { id: "blues-jazz-crossing", groups: [
+    { zone: "roots-blues", count: 7, anchorRank: 12, bridge: "jazz", type: "artist" },
+    { zone: "jazz", count: 9, anchorRank: 14, type: "guitarist" },
+  ] },
+  { id: "soul-disco-wave", groups: [
+    { zone: "pop-soul-disco", count: 14, anchorRank: 28, type: "band" },
+  ] },
+  { id: "classical-country-line", groups: [
+    { zone: "classical-history", count: 7, anchorRank: 7, type: "artist" },
+    { zone: "country-roots", count: 7, anchorRank: 17, type: "artist" },
+  ] },
+  { id: "guitar-to-metal-bridge", groups: [
+    { zone: "guitar-workshop", count: 6, anchorRank: 18, bridge: "hard-rock-metal", type: "guitar" },
+    { zone: "hard-rock-metal", count: 6, anchorRank: 22, type: "guitarist" },
+  ] },
+];
+
 function readApproved(name) {
   return JSON.parse(fs.readFileSync(path.join(ROOT, "data", "approved", name), "utf8"));
 }
 
-function anchorFor(graph, layouts, zone) {
+function anchorFor(graph, layouts, zone, rank = 0) {
   const candidates = graph.nodes.filter((node) => node.zone === zone && layouts.organized.nodes[node.id]);
   if (!candidates.length) throw new Error(`No anchor in ${zone}`);
   const edgeCounts = new Map(candidates.map((node) => [node.id, 0]));
@@ -34,18 +70,19 @@ function anchorFor(graph, layouts, zone) {
     if (edgeCounts.has(edge.source)) edgeCounts.set(edge.source, edgeCounts.get(edge.source) + 1);
     if (edgeCounts.has(edge.target)) edgeCounts.set(edge.target, edgeCounts.get(edge.target) + 1);
   }
-  return candidates.sort((a, b) => edgeCounts.get(b.id) - edgeCounts.get(a.id) || a.id.localeCompare(b.id))[0];
+  return candidates.sort((a, b) => edgeCounts.get(b.id) - edgeCounts.get(a.id) || a.id.localeCompare(b.id))
+    [Math.min(rank, candidates.length - 1)];
 }
 
 function synthesize(graph, layouts, scenario) {
   const synthetic = [];
   for (const group of scenario.groups) {
-    const anchor = anchorFor(graph, layouts, group.zone);
+    const anchor = anchorFor(graph, layouts, group.zone, group.anchorRank);
     const bridgeAnchor = group.bridge ? anchorFor(graph, layouts, group.bridge) : undefined;
     for (let i = 0; i < group.count; i += 1) {
       const id = `__simulation_${scenario.id}_${group.zone}_${i}`;
-      const node = { id, label: `Test ensemble ${i + 1} ${group.zone.replaceAll("-", " ")}`,
-        type: "band", zone: group.zone, layoutHints: { nearNode: anchor.id }, synthetic: true };
+      const node = { id, label: `Test ${group.type ?? "band"} ${i + 1} ${group.zone.replaceAll("-", " ")}`,
+        type: group.type ?? "band", zone: group.zone, layoutHints: { nearNode: anchor.id }, synthetic: true };
       graph.nodes.push(node);
       synthetic.push(node);
       graph.edges.push({ id: `${id}_anchor`, source: id, target: anchor.id,
@@ -95,7 +132,8 @@ function syntheticFit(graph, positions, syntheticIds, zones) {
     longestNewEdge: Math.round(Math.max(...lengths)) };
 }
 
-export function simulateLayoutGrowth(graphInput, layoutInput, guidance, feedback = [], scenarios = SCENARIOS) {
+export function simulateLayoutGrowth(graphInput, layoutInput, guidance, feedback = [],
+  scenarios = TRAINING_SCENARIOS, preserve = preserveIncrementalLayouts) {
   const zones = Object.entries(ORGANIZED_MAP_ZONES).map(([id, zone]) => ({ id, ...zone }));
   const result = { version: 1, syntheticOnly: true, graphNodes: graphInput.nodes.length,
     scenarios: [], feedbackEvidence: [] };
@@ -106,7 +144,7 @@ export function simulateLayoutGrowth(graphInput, layoutInput, guidance, feedback
     const synthetic = synthesize(graph, layouts, scenario);
     const syntheticIds = new Set(synthetic.map((node) => node.id));
     const previous = layoutInput;
-    preserveIncrementalLayouts(layouts, previous, graph);
+    preserve(layouts, previous, graph);
     const naive = Object.fromEntries(MODES.map((mode) => [mode, structuredClone(layouts[mode].nodes)]));
     const started = performance.now();
     const repair = repairIncrementalLayouts(layouts, previous, graph, guidance, zones, feedback,
@@ -147,9 +185,11 @@ export function simulateLayoutGrowth(graphInput, layoutInput, guidance, feedback
       feedback: MODES.map((mode) => {
         const before = modeResults[mode].newNodeLegibilityBefore;
         const after = modeResults[mode].newNodeLegibilityAfter;
-        return { mode, verdict: after.overlapPairs ? "needs-work"
+        const issues = [...new Set(repair.unresolved.filter((item) => item.mode === mode)
+          .map((item) => item.reason))];
+        return { mode, verdict: issues.length ? "needs-work"
           : before.overlapPairs > after.overlapPairs ? "better" : "stable",
-          signal: after.overlapPairs ? "new-node-label-overlap" : "new-node-labels-readable",
+          signals: issues.length ? issues : ["new-node-labels-readable"],
           severeNewLabels: after.severelyOverlappingNodes,
           improvedOverlapPairs: modeResults[mode].newNodeLegibilityBefore.overlapPairs - after.overlapPairs };
       }),

@@ -22,21 +22,29 @@ function openPoint(x, y, occupied, timeline, label, zone) {
     const width = labelWidth(label);
     let best;
     for (const [dx, dy] of offsets) {
-      if (Math.hypot(dx, dy) > 1800) continue;
+      if (Math.hypot(dx, dy) > 1500) continue;
       const candidate = { x: x + dx, y: y + dy };
       if (zone && (candidate.x < zone.x - 400 || candidate.x > zone.x + zone.width + 400 ||
           candidate.y < zone.y - 400 || candidate.y > zone.y + zone.height + 400)) continue;
       let collisions = 0;
+      let coincident = 0;
+      let freshCoincident = 0;
       for (const point of occupied) {
         if (Math.abs(point.y - candidate.y) >= 88 ||
             Math.abs(point.x - candidate.x) >= (width + labelWidth(point.label)) / 2) continue;
         collisions += 1;
+        if (Math.hypot(point.x - candidate.x, point.y - candidate.y) < 25) {
+          coincident += 1;
+          if (point.fresh) freshCoincident += 1;
+        }
       }
       if (!collisions) return candidate;
-      const score = collisions * 2000 + Math.hypot(dx, dy);
+      const score = freshCoincident * 1000000000 + coincident * 1000000 +
+        collisions * 2000 + Math.hypot(dx, dy);
       if (!best || score < best.score) best = { ...candidate, score };
     }
-    return { x: best.x, y: best.y };
+    if (!best && zone) return openPoint(x, y, occupied, timeline, label);
+    return best ? { x: best.x, y: best.y } : { x, y };
   }
   let best;
   for (const [dx, dy] of OFFSETS) {
@@ -83,7 +91,7 @@ export function preserveIncrementalLayouts(layouts, previous, graph) {
         mode === "organized" ? ORGANIZED_MAP_ZONES[node?.zone] : undefined);
       point.x = placed.x;
       point.y = placed.y;
-      occupied.push({ ...point, label: node?.label });
+      occupied.push({ ...point, label: node?.label, fresh: true });
     }
   }
   return layouts;

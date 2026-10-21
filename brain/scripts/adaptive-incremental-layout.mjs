@@ -1,5 +1,5 @@
 import { isMapConnection } from "../../shared/graph-schema/edge-evidence.mjs";
-import { classifyOutcome, evaluateLayout, evaluateNodeLegibility, runLayoutExperiment } from "../../shared/layout-playground/experiment.mjs";
+import { classifyOutcome, evaluateFocusedConnections, evaluateLayout, evaluateNodeLegibility, runLayoutExperiment } from "../../shared/layout-playground/experiment.mjs";
 
 const PRESETS = [
   { spacing: 1.1, connectionPull: 0.2, zoneFreedom: 0.35, iterations: 24 },
@@ -81,17 +81,19 @@ export function repairIncrementalLayouts(layouts, previous, graph, guidance, zon
             focusAfter.overlapPairs > focusBefore.overlapPairs ? "new-node-legibility-regression"
           : classifyOutcome(mapBefore, mapAfter) === "regression" || mapAfter.score >= mapBefore.score
             ? "whole-map-regression" : "safe";
-        return { candidate, reason, mapAfter, focusAfter };
+        const connectionsAfter = evaluateFocusedConnections(graph, candidate.positions, zoneFreshIds);
+        return { candidate, reason, mapAfter, focusAfter, connectionsAfter };
       });
       const best = assessed.filter((item) => item.reason === "safe")
         .sort((a, b) => a.focusAfter.severelyOverlappingNodes - b.focusAfter.severelyOverlappingNodes ||
           a.focusAfter.overlapPairs - b.focusAfter.overlapPairs ||
+          a.connectionsAfter.mean - b.connectionsAfter.mean ||
           a.candidate.after.score - b.candidate.after.score)[0]?.candidate;
       report.trials.push({ mode, zone, attempted: candidates.length, before: candidates[0]?.before,
         bestScore: best?.after.score ?? null,
-        ...(options.captureTrials ? { focusBefore, candidates: assessed.map(({ candidate, reason, mapAfter, focusAfter }) => ({
+        ...(options.captureTrials ? { focusBefore, candidates: assessed.map(({ candidate, reason, mapAfter, focusAfter, connectionsAfter }) => ({
           parameters: candidate.parameters, reason, localAfter: candidate.after,
-          wholeMapAfter: mapAfter, focusAfter,
+          wholeMapAfter: mapAfter, focusAfter, connectionsAfter,
         })) } : {}),
       });
       if (best) {
@@ -105,6 +107,10 @@ export function repairIncrementalLayouts(layouts, previous, graph, guidance, zon
       const remaining = evaluateNodeLegibility(graph, layout.nodes, zoneFreshIds);
       if (remaining.overlapPairs) report.unresolved.push({ mode, zone,
         reason: "new-node-label-overlap", ...remaining });
+      const connections = evaluateFocusedConnections(graph, layout.nodes, zoneFreshIds);
+      if (connections.longestSameZone > 1800 || connections.longestCrossZone > 3200) {
+        report.unresolved.push({ mode, zone, reason: "new-connection-long", ...connections });
+      }
     }
   }
   return report;
