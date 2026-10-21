@@ -10,7 +10,7 @@
     "migrate:data": "node brain/scripts/learn-from-obsidian.mjs && node brain/scripts/migrate-graph-data.mjs && node brain/scripts/analyze-organization.mjs --quiet && node brain/scripts/generate-layouts.mjs",
     "migrate:data:expand": "node brain/scripts/migrate-graph-data.mjs --preserve-existing-layout && node brain/scripts/learn-from-obsidian.mjs && node brain/scripts/migrate-graph-data.mjs --preserve-existing-layout && node brain/scripts/analyze-organization.mjs --quiet && node brain/scripts/generate-layouts.mjs --preserve-existing-layout",
     "check": "tsc -b site/tsconfig.json --pretty false",
-    "test": "node --test tests/graph-data.test.mjs tests/facts.test.mjs tests/brain-curation.test.mjs tests/connection-evidence.test.mjs tests/connection-batch.test.mjs tests/incremental-layout.test.mjs",
+    "test": "node --test tests/graph-data.test.mjs tests/facts.test.mjs tests/brain-curation.test.mjs tests/connection-evidence.test.mjs tests/connection-batch.test.mjs tests/incremental-layout.test.mjs tests/layout-playground.test.mjs",
     "facts:validate": "node shared/facts/validate.mjs",
     "facts:coverage": "node brain/scripts/run-python.mjs brain/pipeline/fact_coverage.py",
     "brain:facts:sync-approved": "node brain/scripts/run-python.mjs brain/pipeline/sync_approved_fact_evidence.py",

@@ -4,6 +4,7 @@ import {
   ChevronRight,
   ChevronUp,
   ExternalLink,
+  FlaskConical,
   Focus,
   Home,
   LoaderCircle,
@@ -591,6 +592,8 @@ export default function App() {
         </div>
 
         <div className="top-actions">
+          <button type="button" className="lab-action" onClick={() => { window.location.href = "./playground.html"; }}
+            title="Open layout lab" aria-label="Open layout lab"><FlaskConical aria-hidden="true" size={18} /></button>
           <label className="layout-control">
             <span>Layout</span>
             <select

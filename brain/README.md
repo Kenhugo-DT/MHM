@@ -129,6 +129,27 @@ spacing, bridge pull and anti-overlap rules. The scout agent uses this model
 first when it needs to create its own frontier request, and the layout generator
 uses it to keep organized chaos readable.
 
+## Layout Lab
+
+`/playground.html` is an isolated layout testbed built from the approved static
+graph, layouts and organization guidance. It never writes to Supabase or to
+approved graph files. The shared experiment engine uses the brain's zone
+pressure and bridge targets, plus adjustable spacing, connection pull and zone
+freedom. Auto tune runs several deterministic candidates in a web worker.
+The current and proposed maps share pan, zoom, search and selected-node focus.
+
+The score counts estimated label-box intersections at a reference reading zoom,
+severe intersections,
+documented map-edge length, very long edges and average movement from the
+baseline. A proposal is flagged as a regression if overlap increases or mean
+link length grows beyond the guardrail, even if the weighted score falls.
+These are screening metrics, not proof of good visual organization; inspect the
+maps and record a human verdict. Better/worse feedback is stored locally in the
+browser and biases the next auto-tune by reusing liked parameter sets and
+excluding disliked ones for the same layout and zone. Export produces a JSON
+report with parameters, metrics, positions and feedback. Nothing is promoted
+to the live layout without a separate reviewed code change.
+
 `brain:connection-scout:dry-run` lists isolated MusicBrainz-matched artist and
 band nodes, plus rejected `weak_connection` cases that can be checked with a
 typed source. `brain:connection-scout` queries at most 12 by default (maximum

@@ -11,6 +11,12 @@ export default defineConfig({
     emptyOutDir: true,
     target: "es2022",
     sourcemap: false,
+    rollupOptions: {
+      input: {
+        map: "site/index.html",
+        playground: "site/playground.html",
+      },
+    },
   },
   server: {
     fs: {
