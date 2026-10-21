@@ -119,7 +119,7 @@ export function classifyOutcome(before, after) {
   return "unchanged";
 }
 
-export function runLayoutExperiment(graph, baseline, guidance, zones, input = {}, scopeZone = "all") {
+export function runLayoutExperiment(graph, baseline, guidance, zones, input = {}, scopeZone = "all", movementPolicy) {
   const parameters = safeParameters(input);
   const nodes = graph.nodes;
   const index = new Map(nodes.map((node, i) => [node.id, i]));
@@ -130,7 +130,11 @@ export function runLayoutExperiment(graph, baseline, guidance, zones, input = {}
   if (points.some((point) => !Number.isFinite(point.x) || !Number.isFinite(point.y))) {
     throw new Error("Layout has missing or invalid node positions.");
   }
-  const movable = nodes.map((node) => scopeZone === "all" || node.zone === scopeZone);
+  const mobility = nodes.map((node) => {
+    if (scopeZone !== "all" && node.zone !== scopeZone) return 0;
+    if (!movementPolicy) return 1;
+    return Math.max(0, Math.min(1, Number(movementPolicy[node.id]?.weight) || 0));
+  });
   const edges = graph.edges.filter(isMapConnection).map((edge) => ({
     a: index.get(edge.source), b: index.get(edge.target), strength: Number(edge.strength) || 0.5,
   })).filter((edge) => edge.a !== undefined && edge.b !== undefined);
@@ -143,7 +147,7 @@ export function runLayoutExperiment(graph, baseline, guidance, zones, input = {}
     const cooling = 1 - pass / (parameters.iterations * 1.7);
 
     for (let i = 0; i < nodes.length; i += 1) {
-      if (!movable[i]) continue;
+      if (!mobility[i]) continue;
       const zone = zoneById.get(nodes[i].zone);
       const pressure = Number(guidance?.zones?.[nodes[i].zone]?.pressureScore ?? 0);
       const tether = (0.025 - parameters.zoneFreedom * 0.018) / (1 + pressure);
@@ -163,19 +167,19 @@ export function runLayoutExperiment(graph, baseline, guidance, zones, input = {}
 
     for (const edge of edges) {
       const { a, b } = edge;
-      if (!movable[a] && !movable[b]) continue;
+      if (!mobility[a] && !mobility[b]) continue;
       const dx = points[b].x - points[a].x;
       const dy = points[b].y - points[a].y;
       const distance = Math.max(1, Math.hypot(dx, dy));
       const preferred = nodes[a].zone === nodes[b].zone ? 280 : 650;
       const excess = Math.max(0, distance - preferred);
       const force = Math.min(18, excess * parameters.connectionPull * edge.strength * 0.012);
-      if (movable[a]) { fx[a] += dx / distance * force; fy[a] += dy / distance * force; }
-      if (movable[b]) { fx[b] -= dx / distance * force; fy[b] -= dy / distance * force; }
+      if (mobility[a]) { fx[a] += dx / distance * force; fy[a] += dy / distance * force; }
+      if (mobility[b]) { fx[b] -= dx / distance * force; fy[b] -= dy / distance * force; }
     }
 
     nearbyPairs(nodes, points, (a, b) => {
-      if (!movable[a] && !movable[b]) return;
+      if (!mobility[a] && !mobility[b]) return;
       const first = labelBox(nodes[a], points[a]);
       const second = labelBox(nodes[b], points[b]);
       const pad = 10 * parameters.spacing;
@@ -190,14 +194,24 @@ export function runLayoutExperiment(graph, baseline, guidance, zones, input = {}
       const horizontal = hit.x < hit.y * 1.4;
       const dx = horizontal ? signX * amount : 0;
       const dy = horizontal ? 0 : signY * amount;
-      if (movable[a]) { fx[a] += dx; fy[a] += dy; }
-      if (movable[b]) { fx[b] -= dx; fy[b] -= dy; }
+      if (mobility[a]) { fx[a] += dx; fy[a] += dy; }
+      if (mobility[b]) { fx[b] -= dx; fy[b] -= dy; }
     });
 
     for (let i = 0; i < nodes.length; i += 1) {
-      if (!movable[i]) continue;
-      points[i].x += Math.max(-32, Math.min(32, fx[i])) * cooling;
-      points[i].y += Math.max(-32, Math.min(32, fy[i])) * cooling;
+      if (!mobility[i]) continue;
+      points[i].x += Math.max(-32, Math.min(32, fx[i])) * cooling * mobility[i];
+      points[i].y += Math.max(-32, Math.min(32, fy[i])) * cooling * mobility[i];
+      const limit = movementPolicy?.[nodes[i].id]?.maxDistance;
+      if (Number.isFinite(limit)) {
+        const dx = points[i].x - baselinePoints[i].x;
+        const dy = points[i].y - baselinePoints[i].y;
+        const distance = Math.hypot(dx, dy);
+        if (distance > limit) {
+          points[i].x = baselinePoints[i].x + dx / distance * limit;
+          points[i].y = baselinePoints[i].y + dy / distance * limit;
+        }
+      }
     }
   }
 

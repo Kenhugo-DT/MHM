@@ -6,6 +6,7 @@ import { graphFingerprint, MODE_NODE_TYPES } from "../../shared/graph-schema/gra
 import { ORGANIZED_MAP_ZONES } from "./organize-graph-layout.mjs";
 import { buildTimelineLayout } from "./timeline-layout.mjs";
 import { preserveIncrementalLayouts } from "./incremental-layout.mjs";
+import { repairIncrementalLayouts } from "./adaptive-incremental-layout.mjs";
 
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
 const brainRoot = path.resolve(scriptDir, "..");
@@ -13,6 +14,7 @@ const repoRoot = path.resolve(brainRoot, "..");
 const graphPath = path.join(brainRoot, "data", "approved", "graph.json");
 const learningModelPath = path.join(brainRoot, "data", "approved", "learning-model.json");
 const organizationModelPath = path.join(brainRoot, "data", "approved", "organization-model.json");
+const layoutFeedbackPath = path.join(brainRoot, "data", "approved", "layout-feedback.json");
 const approvedOutputPath = path.join(brainRoot, "data", "approved", "layouts.json");
 const browserOutputPath = path.join(repoRoot, "site", "public", "data", "layouts.json");
 const preserveExistingLayout = process.argv.includes("--preserve-existing-layout");
@@ -535,6 +537,14 @@ const layouts = {
   },
 };
 preserveIncrementalLayouts(layouts, previousLayouts, graph);
+const zoneGeometry = Object.entries(ORGANIZED_MAP_ZONES).map(([id, zone]) => ({ id, ...zone }));
+const layoutFeedback = readJson(layoutFeedbackPath, { reviews: [] });
+const pinnedIds = new Set(Object.entries(learningModel?.nodes ?? {})
+  .filter(([, entry]) => entry.layoutHints?.pinned).map(([id]) => id));
+const incrementalRepair = preserveExistingLayout
+  ? repairIncrementalLayouts(layouts, previousLayouts, graph, organizationModel?.layoutIntelligence,
+    zoneGeometry, layoutFeedback.reviews, pinnedIds)
+  : undefined;
 
 const dataset = {
   version: 1,
@@ -549,6 +559,7 @@ const dataset = {
       Object.keys(MODE_NODE_TYPES).map(async (mode) => [mode, await graphFingerprint(graph, mode)]),
     ),
   ),
+  ...(incrementalRepair?.freshNodes ? { incrementalRepair } : {}),
   layouts,
 };
 

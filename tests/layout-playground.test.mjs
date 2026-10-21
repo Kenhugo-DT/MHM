@@ -3,6 +3,7 @@ import test from "node:test";
 import { readFileSync } from "node:fs";
 import { autoTuneLayout, classifyOutcome, evaluateLayout, runLayoutExperiment } from "../shared/layout-playground/experiment.mjs";
 import { ORGANIZED_MAP_ZONES } from "../brain/scripts/organize-graph-layout.mjs";
+import { validateLayoutReport } from "../brain/scripts/import-layout-feedback.mjs";
 
 const graph = {
   nodes: [
@@ -68,4 +69,26 @@ test("approved rock-circuit snapshot gets a measurable sandbox improvement", () 
   assert.ok(trial.after.overlaps < trial.before.overlaps);
   assert.ok(trial.after.severeOverlaps < trial.before.severeOverlaps);
   assert.equal(JSON.stringify(layout), original);
+});
+
+test("review import reproduces metrics and rejects stale or embellished experiments", () => {
+  const source = { ...graph, generatedAt: "graph-1", nodes: graph.nodes.slice(0, 2), edges: [] };
+  const original = { a: { x: 0, y: 0 }, b: { x: 8, y: 3 } };
+  const moved = { a: { x: 0, y: 0 }, b: { x: 500, y: 3 } };
+  const layouts = { generatedAt: "layout-1", layouts: { organized: { nodes: original } } };
+  const before = evaluateLayout(source, original, original, "rock");
+  const after = evaluateLayout(source, original, moved, "rock");
+  const parameters = { spacing: 1, connectionPull: 0.2, zoneFreedom: 0.4, iterations: 24 };
+  const report = { version: 1, graphGeneratedAt: "graph-1", layoutGeneratedAt: "layout-1",
+    mode: "organized", zone: "rock", current: { parameters, before, after, outcome: "improved",
+      positions: moved, review: { mode: "organized", zone: "rock", verdict: "better",
+        parameters, before, after, note: "Labels separated" } } };
+  const accepted = validateLayoutReport(report, source, layouts);
+  assert.equal(accepted.verdict, "better");
+  assert.equal(accepted.after.overlaps, 0);
+  assert.throws(() => validateLayoutReport({ ...report, graphGeneratedAt: "old" }, source, layouts), /stale/);
+  assert.throws(() => validateLayoutReport({ ...report, current: { ...report.current,
+    after: { ...after, score: 0 } } }, source, layouts), /cannot be reproduced/);
+  assert.throws(() => validateLayoutReport({ ...report, current: { ...report.current,
+    review: { ...report.current.review, verdict: "unsure" } } }, source, layouts), /Mark the current/);
 });

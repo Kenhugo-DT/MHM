@@ -147,8 +147,23 @@ These are screening metrics, not proof of good visual organization; inspect the
 maps and record a human verdict. Better/worse feedback is stored locally in the
 browser and biases the next auto-tune by reusing liked parameter sets and
 excluding disliked ones for the same layout and zone. Export produces a JSON
-report with parameters, metrics, positions and feedback. Nothing is promoted
-to the live layout without a separate reviewed code change.
+report with parameters, metrics, positions and feedback. To make a reviewed
+trial available to the generator, mark the current result Better or Worse,
+export it, then run
+`npm run brain:layout-feedback:import -- <exported-report.json>`. The importer
+requires the exact current graph and layout snapshots, recomputes every metric,
+and stores only the review and parameters in
+`brain/data/approved/layout-feedback.json`; it never imports browser positions.
+
+When approved candidates add nodes, the preserve-existing-layout generator
+now tries bounded local repairs in Map, Genres and
+Chaos. New nodes can move up to 340 layout units; nearby existing nodes at most
+85; distant and curator-pinned nodes stay fixed. Only experiments that lower
+the score without increasing label overlaps or breaking the documented-link
+guardrail are accepted. Timeline and A-Z keep their own explicit ordering.
+The generated layout records an `incrementalRepair` report, including rejected
+trials. This automation runs only after graph candidates have passed their
+normal approval process; playground trials alone never publish positions.
 
 `brain:connection-scout:dry-run` lists isolated MusicBrainz-matched artist and
 band nodes, plus rejected `weak_connection` cases that can be checked with a

@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "reviews": [
+    {
+      "id": "31490947de92e71c337e",
+      "mode": "organized",
+      "zone": "rock-circuit",
+      "verdict": "better",
+      "parameters": {
+        "spacing": 1.65,
+        "connectionPull": 0.15,
+        "zoneFreedom": 0.8,
+        "iterations": 36
+      },
+      "note": "Verified in the live playground: severe overlap fell without longer average documented links.",
+      "graphGeneratedAt": "2026-10-20T09:16:24.754Z",
+      "layoutGeneratedAt": "2026-10-20T09:22:06.569Z",
+      "before": {
+        "nodes": 175,
+        "edges": 85,
+        "overlaps": 335,
+        "severeOverlaps": 229,
+        "meanEdge": 1542,
+        "longEdges": 36,
+        "meanDrift": 0,
+        "score": 5996.6
+      },
+      "after": {
+        "nodes": 175,
+        "edges": 85,
+        "overlaps": 268,
+        "severeOverlaps": 100,
+        "meanEdge": 1521,
+        "longEdges": 36,
+        "meanDrift": 51,
+        "score": 3655.8
+      },
+      "importedAt": "2026-10-21T09:52:49.152Z"
+    }
+  ]
+}

@@ -194,9 +194,14 @@ export function Playground() {
   }
 
   function exportReport() {
+    const currentReview = result && history.find((item) => item.mode === mode && item.zone === zone &&
+      item.after.score === result.after.score && item.before.score === result.before.score &&
+      JSON.stringify(item.parameters) === JSON.stringify(result.parameters));
     const payload = { version: 1, exportedAt: new Date().toISOString(), graphGeneratedAt: graph?.generatedAt,
+      layoutGeneratedAt: layouts?.generatedAt,
       mode, zone, current: result ? { parameters: result.parameters, before: result.before,
-        after: result.after, outcome: result.outcome, positions: result.positions, trials: result.trials } : null,
+        after: result.after, outcome: result.outcome, positions: result.positions, trials: result.trials,
+        review: currentReview ?? null } : null,
       feedback: history };
     const url = URL.createObjectURL(new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" }));
     const link = document.createElement("a");
