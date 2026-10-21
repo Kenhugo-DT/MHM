@@ -57,6 +57,11 @@ function fitCamera(graph: GraphDataset, positions: Record<string, LayoutNodePosi
   };
 }
 
+function readingCamera(graph: GraphDataset, positions: Record<string, LayoutNodePosition>, zone: string): Camera {
+  const fitted = fitCamera(graph, positions, zone);
+  return { ...fitted, scale: Math.max(0.6, fitted.scale) };
+}
+
 function Metric({ label, before, after, suffix = "" }: { label: string; before: number; after?: number; suffix?: string }) {
   const delta = after === undefined ? 0 : after - before;
   return <div className="lab-metric">
@@ -110,7 +115,7 @@ export function Playground() {
       if (cancelled) return;
       setGraph(loadedGraph);
       setLayouts(loadedLayouts);
-      setCamera(fitCamera(loadedGraph, loadedLayouts.layouts.organized.nodes, "rock-circuit"));
+      setCamera(readingCamera(loadedGraph, loadedLayouts.layouts.organized.nodes, "rock-circuit"));
     }).catch((reason: unknown) => { if (!cancelled) setError(String(reason)); });
     const instance = new Worker(new URL("./playground.worker.ts", import.meta.url), { type: "module" });
     worker.current = instance;
@@ -137,7 +142,7 @@ export function Playground() {
     requestId.current += 1;
     setMode(next);
     setResult(undefined);
-    setCamera(fitCamera(graph, layouts.layouts[next].nodes, zone));
+    setCamera(readingCamera(graph, layouts.layouts[next].nodes, zone));
   }
 
   function changeZone(next: string) {
@@ -145,7 +150,7 @@ export function Playground() {
     requestId.current += 1;
     setZone(next);
     setResult(undefined);
-    setCamera(fitCamera(graph, baseline, next));
+    setCamera(readingCamera(graph, baseline, next));
   }
 
   function run(auto: boolean, selectedParameters = parameters) {
@@ -251,7 +256,7 @@ export function Playground() {
           <div className="lab-feedback-count">{history.length} saved reviews</div>
           {history.slice(0, 3).map((item) => <button key={item.id} type="button" className="lab-history"
             onClick={() => {
-              if (graph && layouts) setCamera(fitCamera(graph, layouts.layouts[item.mode].nodes, item.zone));
+              if (graph && layouts) setCamera(readingCamera(graph, layouts.layouts[item.mode].nodes, item.zone));
               requestId.current += 1;
               setMode(item.mode);
               setZone(item.zone);

@@ -100,7 +100,7 @@ export function MapCanvas({ graph, positions, camera, selectedId, scopeZone, onC
           context.arc(p.x, p.y, 10, 0, Math.PI * 2);
           context.stroke();
         }
-        if (camera.scale > 0.12 || selected) {
+        if (camera.scale > 0.2 || selected) {
           context.fillStyle = "#ece5db";
           context.font = selected ? "700 11px Inter, Segoe UI, sans-serif" : "10px Inter, Segoe UI, sans-serif";
           context.textAlign = "center";
