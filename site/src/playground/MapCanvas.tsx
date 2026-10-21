@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useMemo, useRef } from "react";
 import type { GraphDataset, LayoutNodePosition } from "../types/graph";
 import { MAP_ZONES, NODE_COLORS, colorToCss } from "../lib/graph-config";
 import { isMapConnection } from "../../../shared/graph-schema/edge-evidence.mjs";
@@ -18,6 +18,18 @@ interface Props {
 export function MapCanvas({ graph, positions, camera, selectedId, scopeZone, onCamera, onSelect }: Props) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const drag = useRef<{ x: number; y: number; moved: boolean } | undefined>(undefined);
+  const visibleIds = useMemo(() => {
+    if (scopeZone === "all") return new Set(graph.nodes.map((node) => node.id));
+    const ids = new Set(graph.nodes.filter((node) => node.zone === scopeZone).map((node) => node.id));
+    const neighbors = new Set(ids);
+    for (const edge of graph.edges) {
+      if (!isMapConnection(edge)) continue;
+      if (ids.has(edge.source)) neighbors.add(edge.target);
+      if (ids.has(edge.target)) neighbors.add(edge.source);
+    }
+    if (selectedId) neighbors.add(selectedId);
+    return neighbors;
+  }, [graph, scopeZone, selectedId]);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -50,6 +62,7 @@ export function MapCanvas({ graph, positions, camera, selectedId, scopeZone, onC
       context.lineWidth = 1;
       for (const edge of graph.edges) {
         if (!isMapConnection(edge)) continue;
+        if (!visibleIds.has(edge.source) || !visibleIds.has(edge.target)) continue;
         const source = positions[edge.source];
         const target = positions[edge.target];
         if (!source || !target) continue;
@@ -66,6 +79,7 @@ export function MapCanvas({ graph, positions, camera, selectedId, scopeZone, onC
       }
 
       for (const node of graph.nodes) {
+        if (!visibleIds.has(node.id)) continue;
         const position = positions[node.id];
         if (!position) continue;
         const p = point(position.x, position.y);
@@ -86,7 +100,7 @@ export function MapCanvas({ graph, positions, camera, selectedId, scopeZone, onC
           context.arc(p.x, p.y, 10, 0, Math.PI * 2);
           context.stroke();
         }
-        if (camera.scale > 0.2 || selected) {
+        if (camera.scale > 0.12 || selected) {
           context.fillStyle = "#ece5db";
           context.font = selected ? "700 11px Inter, Segoe UI, sans-serif" : "10px Inter, Segoe UI, sans-serif";
           context.textAlign = "center";
@@ -99,7 +113,7 @@ export function MapCanvas({ graph, positions, camera, selectedId, scopeZone, onC
     const observer = new ResizeObserver(render);
     observer.observe(canvas);
     return () => observer.disconnect();
-  }, [graph, positions, camera, selectedId, scopeZone]);
+  }, [graph, positions, camera, selectedId, scopeZone, visibleIds]);
 
   function selectAt(clientX: number, clientY: number) {
     const canvas = canvasRef.current;
@@ -107,6 +121,7 @@ export function MapCanvas({ graph, positions, camera, selectedId, scopeZone, onC
     const rect = canvas.getBoundingClientRect();
     let nearest: { id: string; distance: number } | undefined;
     for (const node of graph.nodes) {
+      if (!visibleIds.has(node.id)) continue;
       const position = positions[node.id];
       if (!position) continue;
       const x = rect.width / 2 + (position.x - camera.x) * camera.scale;

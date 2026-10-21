@@ -168,6 +168,11 @@ export function Playground() {
     const node = graph.nodes.find((item) => item.label.toLocaleLowerCase("en") === query) ??
       graph.nodes.find((item) => item.label.toLocaleLowerCase("en").includes(query));
     if (!node || !query) return;
+    if (zone !== "all" && zone !== node.zone) {
+      requestId.current += 1;
+      setZone(node.zone);
+      setResult(undefined);
+    }
     setSelectedId(node.id);
     const point = baseline[node.id];
     if (point) setCamera({ x: point.x, y: point.y, scale: Math.max(0.4, camera.scale) });
