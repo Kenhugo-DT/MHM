@@ -14,7 +14,7 @@ import { evaluateFocusedConnections, evaluateNodeLegibility } from "../shared/la
 import { repairIncrementalLayouts } from "../brain/scripts/adaptive-incremental-layout.mjs";
 import { benchmarkDocumentedGrowth } from "../brain/scripts/benchmark-layout-constraints.mjs";
 import { validateLayoutConstraints } from "../shared/layout-playground/constraints.mjs";
-import { replayNode, selectPracticeNodes } from "../brain/scripts/train-layout-practice.mjs";
+import { choosePracticeRelease, replayNode, selectPracticeNodes } from "../brain/scripts/train-layout-practice.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const approved = (name) => JSON.parse(fs.readFileSync(path.join(root, "brain", "data", "approved", name), "utf8"));
@@ -171,6 +171,31 @@ test("experience distinguishes hinted trials from an unhinted fallback", () => {
   assert.equal(historicalLayoutPreference(learned, "organized", "rock", parameters, false).samples, 1);
 });
 
+test("compact practice counts retain separate hinted and plain success rates", () => {
+  const parameters = { spacing: 1.3, connectionPull: 0.2, zoneFreedom: 0.6, iterations: 36 };
+  const key = layoutParameterKey(parameters);
+  const practice = { summary: [
+    { mode: "genre", zone: "jazz", parameters: key, hintCount: 1, samples: 4, safe: 3 },
+    { mode: "genre", zone: "jazz", parameters: key, hintCount: 0, samples: 2, safe: 0 },
+  ] };
+  assert.deepEqual(historicalLayoutPreference(practice, "genre", "jazz", parameters, true),
+    { samples: 4, safe: 3, rate: 4 / 6 });
+  assert.deepEqual(historicalLayoutPreference(practice, "genre", "jazz", parameters, false),
+    { samples: 2, safe: 0, rate: 1 / 4 });
+});
+
+test("a failed new lesson keeps a previously proven policy only when it still passes", () => {
+  const old = { enabled: true };
+  const failed = { enabled: false };
+  const result = [{ regressions: [], improvements: ["genre"],
+    baseline: { genre: { chosen: "old" } }, trained: { genre: { chosen: "learned" } } }];
+  assert.deepEqual(choosePracticeRelease(failed, old, result),
+    { practice: old, release: "retained-previous-practice" });
+  assert.deepEqual(choosePracticeRelease(failed, old,
+    [{ ...result[0], regressions: ["genre"] }]),
+  { practice: failed, release: "new-practice" });
+});
+
 test("observed history can break a safe tie after multiple real batches", () => {
   const graph = approved("graph.json");
   const layouts = approved("layouts.json");
@@ -198,20 +223,22 @@ test("observed history can break a safe tie after multiple real batches", () => 
     baseline.modes.chaos.newNodeLegibilityAfter.overlapPairs);
 });
 
-test("layout practice uses separate documented training and holdout nodes", () => {
+test("layout practice uses separate documented training, validation and test nodes", () => {
   const graph = approved("graph.json");
   const layouts = approved("layouts.json");
   const selection = selectPracticeNodes(graph, layouts);
   const practice = approved("layout-practice.json");
   const training = selection.filter((item) => item.split === "train").map((item) => item.id);
-  const holdout = selection.filter((item) => item.split === "holdout").map((item) => item.id);
-  assert.deepEqual(practice.trainedNodes, training);
-  assert.deepEqual(practice.holdoutNodes, holdout);
-  assert.equal(new Set([...training, ...holdout]).size, selection.length);
-  assert.ok(practice.batches.length > 0);
+  const validation = selection.filter((item) => item.split === "validation").map((item) => item.id);
+  const finalTest = selection.filter((item) => item.split === "test").map((item) => item.id);
+  assert.ok(training.length > 0 && validation.length > 0 && finalTest.length > 0);
+  assert.equal(new Set([...training, ...validation, ...finalTest]).size, selection.length);
+  assert.equal(new Set([...practice.trainedNodes, ...practice.validationNodes, ...practice.testNodes]).size,
+    practice.trainedNodes.length + practice.validationNodes.length + practice.testNodes.length);
+  assert.ok(practice.summary.length > 0);
 });
 
-test("enabled practice improves a held-out replay without worsening labels or map overlap", () => {
+test("enabled practice improves an independent test replay without worsening labels or map overlap", () => {
   const graph = approved("graph.json");
   const layouts = approved("layouts.json");
   const guidance = approved("organization-model.json").layoutIntelligence;
@@ -219,11 +246,13 @@ test("enabled practice improves a held-out replay without worsening labels or ma
   const constraints = validateLayoutConstraints(approved("layout-constraints.json"), graph);
   const practice = approved("layout-practice.json");
   if (!practice.enabled) return;
+  const testIds = new Set(selectPracticeNodes(graph, layouts).filter((item) => item.split === "test")
+    .map((item) => item.id));
   let improved = false;
   for (const [mode, zones] of Object.entries(practice.parametersByModeZone)) {
     for (const zone of Object.keys(zones)) {
       const held = graph.nodes.filter((node) => node.zone === zone &&
-        practice.holdoutNodes.includes(node.id));
+        testIds.has(node.id));
       for (const node of held) {
         const baseline = replayNode(graph, layouts, guidance, feedback, constraints, node.id);
         const learned = replayNode(graph, layouts, guidance, feedback, constraints, node.id, practice);

@@ -14,7 +14,8 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const MODES = ["organized", "genre", "chaos"];
 const ZONES = Object.entries(ORGANIZED_MAP_ZONES).map(([id, zone]) => ({ id, ...zone }));
 const TRAIN_PER_ZONE = 4;
-const HOLDOUT_PER_ZONE = 2;
+const VALIDATION_PER_ZONE = 2;
+const TEST_PER_ZONE = 2;
 const SEARCH_PARAMETERS = [
   { spacing: 1.2, connectionPull: 0.3, zoneFreedom: 0.5, iterations: 32 },
   { spacing: 1.3, connectionPull: 0.2, zoneFreedom: 0.6, iterations: 36 },
@@ -28,7 +29,7 @@ function stableOrder(id) {
   return createHash("sha256").update(`layout-practice-v1:${id}`).digest("hex");
 }
 
-export function selectPracticeNodes(graph, layouts, maxZones = 4) {
+export function selectPracticeNodes(graph, layouts, maxZones = 12) {
   const sourcedDegree = new Map(graph.nodes.map((node) => [node.id, 0]));
   for (const edge of graph.edges) {
     if (!isMapConnection(edge) || !edge.sources?.some((source) => source.url)) continue;
@@ -39,13 +40,15 @@ export function selectPracticeNodes(graph, layouts, maxZones = 4) {
   const candidates = graph.nodes.filter((node) => sourcedDegree.get(node.id) > 0 &&
     MODES.every((mode) => layouts.layouts[mode]?.nodes[node.id]));
   const byZone = Map.groupBy(candidates, (node) => node.zone);
-  const selectedZones = [...byZone].filter(([, nodes]) => nodes.length >= TRAIN_PER_ZONE + HOLDOUT_PER_ZONE)
+  const selectedZones = [...byZone].filter(([, nodes]) =>
+    nodes.length >= TRAIN_PER_ZONE + VALIDATION_PER_ZONE + TEST_PER_ZONE)
     .sort((a, b) => b[1].length - a[1].length || a[0].localeCompare(b[0]))
     .slice(0, maxZones);
   return selectedZones.flatMap(([zone, nodes]) => {
     const ordered = [...nodes].sort((a, b) => stableOrder(a.id).localeCompare(stableOrder(b.id)));
-    return ordered.slice(0, TRAIN_PER_ZONE + HOLDOUT_PER_ZONE).map((node, index) => ({
-      id: node.id, zone, split: index < TRAIN_PER_ZONE ? "train" : "holdout",
+    return ordered.slice(0, TRAIN_PER_ZONE + VALIDATION_PER_ZONE + TEST_PER_ZONE).map((node, index) => ({
+      id: node.id, zone, split: index < TRAIN_PER_ZONE ? "train" :
+        index < TRAIN_PER_ZONE + VALIDATION_PER_ZONE ? "validation" : "test",
     }));
   });
 }
@@ -174,15 +177,44 @@ function validatePractice(graph, layouts, guidance, feedback, constraints, holdo
   });
 }
 
+function summarizeTrials(experience) {
+  const records = new Map();
+  for (const batch of experience.batches) {
+    for (const trial of batch.trials) {
+      const key = [trial.mode, trial.zone, trial.parameters, trial.hintCount ?? 0].join("|");
+      if (!records.has(key)) records.set(key, { mode: trial.mode, zone: trial.zone,
+        parameters: trial.parameters, hintCount: trial.hintCount ?? 0, samples: 0, safe: 0 });
+      const record = records.get(key);
+      record.samples += 1;
+      if (trial.reason === "safe") record.safe += 1;
+    }
+  }
+  return [...records.values()].sort((a, b) =>
+    a.mode.localeCompare(b.mode) || a.zone.localeCompare(b.zone) ||
+    a.parameters.localeCompare(b.parameters) || a.hintCount - b.hintCount);
+}
+
+export function choosePracticeRelease(challenger, incumbent, incumbentTest = []) {
+  if (challenger.enabled || !incumbent?.enabled) return { practice: challenger, release: "new-practice" };
+  const regressions = incumbentTest.flatMap((item) => item.regressions);
+  const improvements = incumbentTest.flatMap((item) => item.improvements);
+  const changed = incumbentTest.some((item) => MODES.some((mode) =>
+    item.baseline[mode]?.chosen !== item.trained[mode]?.chosen));
+  return !regressions.length && improvements.length && changed
+    ? { practice: incumbent, release: "retained-previous-practice" }
+    : { practice: challenger, release: "new-practice" };
+}
+
 export function trainLayoutPractice(graph, layouts, guidance, feedback, constraints,
-  selection = selectPracticeNodes(graph, layouts)) {
+  selection = selectPracticeNodes(graph, layouts), incumbent) {
   let experience = EMPTY_LAYOUT_EXPERIENCE;
   const training = selection.filter((item) => item.split === "train");
-  const holdout = selection.filter((item) => item.split === "holdout");
-  if (!training.length || !holdout.length ||
-      new Set(training.map((item) => item.id)).size !== training.length ||
-      training.some((item) => holdout.some((held) => held.id === item.id))) {
-    throw new Error("Layout practice requires disjoint training and holdout nodes.");
+  const validationNodes = selection.filter((item) => item.split === "validation");
+  const testNodes = selection.filter((item) => item.split === "test");
+  if (!training.length || !validationNodes.length || !testNodes.length ||
+      new Set(selection.map((item) => item.id)).size !== selection.length ||
+      training.length + validationNodes.length + testNodes.length !== selection.length) {
+    throw new Error("Layout practice requires disjoint training, validation and test nodes.");
   }
   const samples = training.map((item) => ({ item,
     baseline: replayNode(graph, layouts, guidance, feedback, constraints, item.id),
@@ -194,12 +226,9 @@ export function trainLayoutPractice(graph, layouts, guidance, feedback, constrai
   }
   const learned = chooseLearnedParameters(samples);
   const practice = { version: 1, enabled: true, source: "approved-node-replay",
-    parametersByModeZone: learned.parametersByModeZone, batches:
-    experience.batches.map((batch) => ({ id: batch.id, trials: batch.trials.map((trial) => ({
-      mode: trial.mode, zone: trial.zone, parameters: trial.parameters,
-      hintCount: trial.hintCount, reason: trial.reason,
-    })) })) };
-  const firstValidation = validatePractice(graph, layouts, guidance, feedback, constraints, holdout, practice);
+    parametersByModeZone: learned.parametersByModeZone, summary: summarizeTrials(experience) };
+  const firstValidation = validatePractice(graph, layouts, guidance, feedback, constraints,
+    validationNodes, practice);
   for (const [mode, zones] of Object.entries(practice.parametersByModeZone)) {
     for (const zone of Object.keys(zones)) {
       const views = firstValidation.filter((item) => item.zone === zone);
@@ -209,20 +238,31 @@ export function trainLayoutPractice(graph, layouts, guidance, feedback, constrai
       if (!changed || !improved || regressed) delete zones[zone];
     }
   }
-  const validation = validatePractice(graph, layouts, guidance, feedback, constraints, holdout, practice);
-  const changedViews = validation.flatMap((item) => MODES.map((mode) =>
+  const validation = validatePractice(graph, layouts, guidance, feedback, constraints,
+    validationNodes, practice);
+  const finalTest = validatePractice(graph, layouts, guidance, feedback, constraints,
+    testNodes, practice);
+  const changedViews = finalTest.flatMap((item) => MODES.map((mode) =>
     item.baseline[mode].chosen !== item.trained[mode].chosen ? `${item.id}/${mode}` : null))
     .filter(Boolean);
-  const regressionViews = validation.flatMap((item) => item.regressions.map((mode) => `${item.id}/${mode}`));
-  const improvedViews = validation.flatMap((item) => item.improvements.map((mode) => `${item.id}/${mode}`));
+  const regressionViews = finalTest.flatMap((item) => item.regressions.map((mode) => `${item.id}/${mode}`));
+  const improvedViews = finalTest.flatMap((item) => item.improvements.map((mode) => `${item.id}/${mode}`));
   practice.enabled = changedViews.length > 0 && regressionViews.length === 0 && improvedViews.length > 0;
   practice.trainedNodes = training.map((item) => item.id);
-  practice.holdoutNodes = holdout.map((item) => item.id);
+  practice.validationNodes = validationNodes.map((item) => item.id);
+  practice.testNodes = testNodes.map((item) => item.id);
   practice.trainedGraphNodes = graph.nodes.length;
-  return { practice, report: { version: 1, sandboxOnly: true,
-    trainingNodes: training, holdoutNodes: holdout, learnedCandidates: learned.candidates,
+  let incumbentTest;
+  if (!practice.enabled && incumbent?.enabled) {
+    incumbentTest = validatePractice(graph, layouts, guidance, feedback, constraints,
+      testNodes, incumbent);
+  }
+  const { practice: selected, release } = choosePracticeRelease(practice, incumbent, incumbentTest);
+  return { practice: selected, report: { version: 1, sandboxOnly: true,
+    trainingNodes: training, validationNodes, testNodes, learnedCandidates: learned.candidates,
     changedViews, regressionViews, improvedViews,
-    enabled: practice.enabled, validation } };
+    enabled: selected.enabled, release, validation, finalTest,
+    ...(incumbentTest ? { incumbentTest } : {}) } };
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
@@ -230,16 +270,19 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
   const graph = approved("graph.json");
   const layouts = approved("layouts.json");
   const constraints = validateLayoutConstraints(approved("layout-constraints.json"), graph);
+  const output = path.join(ROOT, "data", "approved", "layout-practice.json");
+  const incumbent = fs.existsSync(output) ? approved("layout-practice.json") : undefined;
   const result = trainLayoutPractice(graph, layouts,
     approved("organization-model.json").layoutIntelligence,
-    approved("layout-feedback.json").reviews, constraints);
-  const output = path.join(ROOT, "data", "approved", "layout-practice.json");
+    approved("layout-feedback.json").reviews, constraints, undefined, incumbent);
   const report = path.join(ROOT, "data", "runs", "layout-practice-report.json");
   fs.mkdirSync(path.dirname(report), { recursive: true });
   fs.writeFileSync(output, `${JSON.stringify(result.practice, null, 2)}\n`);
   fs.writeFileSync(report, `${JSON.stringify(result.report, null, 2)}\n`);
   console.log(`Practiced on ${result.report.trainingNodes.length} approved nodes; ` +
-    `tested ${result.report.holdoutNodes.length} unseen nodes. ` +
+    `tuned on ${result.report.validationNodes.length}; independently tested ` +
+    `${result.report.testNodes.length} separate nodes. ` +
     `Changed ${result.report.changedViews.length} views; improved ${result.report.improvedViews.length}; ` +
-    `regressed ${result.report.regressionViews.length}. Policy enabled: ${result.practice.enabled}.`);
+    `regressed ${result.report.regressionViews.length}. ` +
+    `Release: ${result.report.release}; policy enabled: ${result.practice.enabled}.`);
 }

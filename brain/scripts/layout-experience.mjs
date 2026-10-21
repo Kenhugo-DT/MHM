@@ -9,6 +9,13 @@ export function layoutParameterKey(parameters) {
 
 export function historicalLayoutPreference(experience, mode, zone, parameters, hinted = false) {
   const key = layoutParameterKey(parameters);
+  if (Array.isArray(experience?.summary)) {
+    const entries = experience.summary.filter((item) => item.mode === mode && item.zone === zone &&
+      item.parameters === key && Boolean(item.hintCount) === hinted);
+    const samples = entries.reduce((sum, item) => sum + item.samples, 0);
+    const safe = entries.reduce((sum, item) => sum + item.safe, 0);
+    return { samples, safe, rate: (safe + 1) / (samples + 2) };
+  }
   const trials = (experience?.batches ?? []).flatMap((batch) => batch.trials ?? [])
     .filter((trial) => trial.mode === mode && trial.zone === zone && trial.parameters === key &&
       Boolean(trial.hintCount) === hinted);
