@@ -87,7 +87,6 @@ export function Playground() {
   const [zone, setZone] = useState("rock-circuit");
   const [parameters, setParameters] = useState<PlaygroundParameters>({ ...DEFAULT_PARAMETERS });
   const [result, setResult] = useState<PlaygroundResult>();
-  const [resultId, setResultId] = useState(0);
   const [camera, setCamera] = useState<Camera>({ x: 0, y: 0, scale: 0.25 });
   const [search, setSearch] = useState("");
   const [selectedId, setSelectedId] = useState<string>();
@@ -121,7 +120,6 @@ export function Playground() {
       if (event.data.error) { setError(event.data.error); return; }
       if (event.data.result) {
         setResult(event.data.result);
-        setResultId(event.data.id);
         setParameters(event.data.result.parameters);
       }
     };
@@ -181,7 +179,7 @@ export function Playground() {
   function saveFeedback(verdict: Verdict) {
     if (!result) return;
     const entry: FeedbackRecord = {
-      id: `${resultId}-${mode}-${zone}`,
+      id: crypto.randomUUID(),
       createdAt: new Date().toISOString(), mode, zone, verdict,
       parameters: result.parameters, before: result.before, after: result.after, note: note.trim(),
     };
