@@ -492,7 +492,11 @@ def collect(seed_file: Path) -> list[Candidate]:
             print(f"Wikipedia lookup failed for {name}: {error}")
 
         wikipedia_id = (wikipedia_page or {}).get("wikidata_id")
-        if wikipedia_id and wikipedia_id != (wikidata_match or {}).get("id"):
+        if (
+            kind in {"band", "artist", "guitarist"}
+            and wikipedia_id
+            and wikipedia_id != (wikidata_match or {}).get("id")
+        ):
             try:
                 wikipedia_page.update(wikidata.identity(wikipedia_id))
             except Exception as error:
