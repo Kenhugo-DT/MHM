@@ -81,6 +81,13 @@ Use `brain:agent` when you want the scout to behave like the private worker: rea
 the map, find or create queued work, collect source candidates and write the
 result back for review.
 
+For bands and people, collection checks the Wikipedia page's Wikidata ID and
+Wikidata's MusicBrainz artist ID before accepting a name match. A conflicting
+identity or a non-music Wikipedia page blocks package promotion; a temporary
+source outage stays visible as a source error. Matching IDs verify the seed's
+identity, not its Wikipedia link/category leads. Those proposed connections
+still need relation-specific evidence and human review.
+
 Use `brain:promote:dry-run` after candidate rows are approved. It previews the
 concrete graph nodes and edges that would be created. `brain:promote` writes a
 review patch, while `brain:promote:apply` writes to

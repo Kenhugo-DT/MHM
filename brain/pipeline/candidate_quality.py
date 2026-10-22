@@ -157,6 +157,20 @@ def normalize_text(text: str) -> str:
     return str(text).lower().replace("_", " ").strip()
 
 
+def wikipedia_matches_kind(page: dict[str, Any], kind: str) -> bool:
+    extract = str(page.get("extract") or "").lower()[:600]
+    categories = " ".join(str(item) for item in (page.get("categories") or [])[:30]).lower()
+    if "may refer to" in extract or "disambiguation" in categories:
+        return False
+    terms = {
+        "band": ("band", "musical group", "music group", "duo", "ensemble", "music project"),
+        "artist": ("musician", "guitarist", "singer", "rapper", "composer", "songwriter",
+                   "keyboardist", "percussionist", "drummer", "bassist", "pianist", "vocalist"),
+        "guitarist": ("guitarist", "musician", "singer", "songwriter"),
+    }.get(kind, ())
+    return any(term in extract or term in categories for term in terms)
+
+
 def load_blocked_terms(path: Path = BLOCKED_ENTITIES_PATH) -> set[str]:
     if not path.exists():
         return set()
@@ -289,6 +303,31 @@ def review_candidate_payload(
         flags.append(
             flag("reject", "unsupported_seed_kind", f"Unsupported seed kind: {requested_kind}.", seed_name)
         )
+
+    wikipedia = payload.get("wikipedia") or {}
+    wikidata = payload.get("wikidata") or {}
+    musicbrainz = payload.get("musicbrainz") or {}
+    if wikipedia and requested_kind in {"band", "artist", "guitarist"}:
+        if not wikipedia_matches_kind(wikipedia, requested_kind):
+            flags.append(flag(
+                "reject", "wikipedia_subject_mismatch",
+                "Wikipedia page does not describe the requested music-entity kind.", seed_name,
+            ))
+        wiki_id = wikipedia.get("wikidata_id")
+        if wiki_id and wikidata.get("id") and wiki_id != wikidata["id"]:
+            flags.append(flag(
+                "reject", "source_identity_conflict",
+                "Wikipedia and Wikidata point to different entities.", seed_name,
+            ))
+    linked_ids = wikipedia.get("musicbrainz_artist_ids") or wikidata.get("musicbrainz_artist_ids") or []
+    if musicbrainz.get("id") and linked_ids and musicbrainz["id"].lower() not in {
+        str(artist_id).lower() for artist_id in linked_ids
+    }:
+        flags.append(flag(
+            "reject", "source_identity_conflict",
+            "MusicBrainz artist ID disagrees with the identifier attached to the Wikipedia/Wikidata entity.",
+            seed_name,
+        ))
 
     if not payload.get("wikipedia"):
         flags.append(flag("warning", "missing_wikipedia", "No Wikipedia page was found for this seed.", seed_name))

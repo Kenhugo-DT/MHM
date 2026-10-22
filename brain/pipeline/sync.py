@@ -13,6 +13,8 @@ from typing import Any
 import requests
 from dotenv import load_dotenv
 
+from candidate_quality import wikipedia_matches_kind
+
 BRAIN_ROOT = Path(__file__).resolve().parents[1]
 REPO_ROOT = BRAIN_ROOT.parent
 SHARED_GRAPH_SCHEMA = REPO_ROOT / "shared" / "graph-schema"
@@ -140,17 +142,24 @@ class MusicBrainzClient:
         self.last_request = 0.0
 
     def _get(self, path: str, params: dict[str, Any]) -> dict[str, Any]:
-        elapsed = time.monotonic() - self.last_request
-        if elapsed < 1.1:
-            time.sleep(1.1 - elapsed)
-        response = self.session.get(
-            f"https://musicbrainz.org/ws/2/{path}",
-            params={**params, "fmt": "json"},
-            timeout=25,
-        )
-        self.last_request = time.monotonic()
-        response.raise_for_status()
-        return response.json()
+        for attempt in range(3):
+            elapsed = time.monotonic() - self.last_request
+            if elapsed < 1.1:
+                time.sleep(1.1 - elapsed)
+            response = self.session.get(
+                f"https://musicbrainz.org/ws/2/{path}",
+                params={**params, "fmt": "json"},
+                timeout=25,
+            )
+            self.last_request = time.monotonic()
+            if response.status_code in {429, 503} and attempt < 2:
+                retry_after = response.headers.get("Retry-After", "")
+                delay = int(retry_after) if retry_after.isdigit() else 6 * (attempt + 1)
+                time.sleep(min(delay, 30))
+                continue
+            response.raise_for_status()
+            return response.json()
+        raise RuntimeError("MusicBrainz retries exhausted")
 
     def search(self, name: str, kind: str) -> dict[str, Any] | None:
         entity = "artist" if kind in {"artist", "band", "guitarist"} else None
@@ -167,6 +176,15 @@ class MusicBrainzClient:
             ),
             None,
         )
+
+    def lookup(self, artist_id: str, name: str, kind: str) -> dict[str, Any] | None:
+        if kind not in {"artist", "band", "guitarist"}:
+            return None
+        match = self._get(f"artist/{artist_id}", {})
+        expected_type = "Group" if kind == "band" else "Person"
+        if match.get("type") != expected_type or normalize_text(match.get("name", "")) != normalize_text(name):
+            return None
+        return match
 
 
 class WikidataClient:
@@ -205,6 +223,29 @@ class WikidataClient:
                 None,
             )
         return results[0] if results else None
+
+    def identity(self, entity_id: str) -> dict[str, Any]:
+        payload = get_json_with_backoff(
+            self.session,
+            self.endpoint,
+            {
+                "action": "wbgetentities",
+                "ids": entity_id,
+                "props": "claims|sitelinks",
+                "sitefilter": "enwiki",
+                "format": "json",
+            },
+        )
+        entity = payload.get("entities", {}).get(entity_id, {})
+        artist_ids = [
+            statement.get("mainsnak", {}).get("datavalue", {}).get("value")
+            for statement in entity.get("claims", {}).get("P434", [])
+            if statement.get("rank") != "deprecated"
+        ]
+        return {
+            "musicbrainz_artist_ids": [value for value in artist_ids if isinstance(value, str)],
+            "wikipedia_title": entity.get("sitelinks", {}).get("enwiki", {}).get("title"),
+        }
 
 
 class WikipediaClient:
@@ -345,7 +386,7 @@ class WikipediaClient:
                 "format": "json",
                 "formatversion": 2,
                 "redirects": 1,
-                "prop": "extracts|pageimages|info|categories|links",
+                "prop": "extracts|pageimages|info|categories|links|pageprops",
                 "inprop": "url",
                 "exintro": 1,
                 "explaintext": 1,
@@ -369,6 +410,7 @@ class WikipediaClient:
             "extract": page.get("extract"),
             "pageimage": page.get("pageimage"),
             "thumbnail": page.get("thumbnail"),
+            "wikidata_id": page.get("pageprops", {}).get("wikibase_item"),
             "categories": [
                 category.get("title", "")
                 for category in page.get("categories", [])
@@ -381,17 +423,15 @@ class WikipediaClient:
             ],
         }
 
-    def page_for_seed(self, name: str, kind: str) -> dict[str, Any] | None:
+    def page_for_seed(self, name: str, kind: str, preferred_title: str | None = None) -> dict[str, Any] | None:
+        page = self.page(preferred_title) if preferred_title else None
+        if page and (kind not in {"band", "artist", "guitarist"} or wikipedia_matches_kind(page, kind)):
+            return page
         page = self.page(name)
         if kind not in {"band", "artist", "guitarist"}:
             return page
-        if page and normalize_text(page.get("title", "")) == normalize_text(name):
-            extract = page.get("extract") or ""
-            categories = page.get("categories") or []
-            if "may refer to" not in extract.lower() and not any(
-                "disambiguation" in category.lower() for category in categories
-            ):
-                return page
+        if page and wikipedia_matches_kind(page, kind):
+            return page
 
         suffixes = {
             "band": ["band"],
@@ -400,7 +440,7 @@ class WikipediaClient:
         }.get(kind, [])
         for suffix in suffixes:
             match = self.page(f"{name} ({suffix})")
-            if match and normalize_text(match.get("title", "")).startswith(normalize_text(name)):
+            if match and wikipedia_matches_kind(match, kind):
                 return match
         return None
 
@@ -430,24 +470,48 @@ def collect(seed_file: Path) -> list[Candidate]:
         wikidata_match = None
         wikipedia_page = None
 
-        if musicbrainz:
-            try:
-                musicbrainz_match = musicbrainz.search(name, kind)
-            except Exception as error:
-                source_errors.append({"source": "musicbrainz", "message": str(error)})
-                print(f"MusicBrainz lookup failed for {name}: {error}")
-
         try:
             wikidata_match = wikidata.search(name, kind)
         except Exception as error:
             source_errors.append({"source": "wikidata", "message": str(error)})
             print(f"Wikidata lookup failed for {name}: {error}")
 
+        if wikidata_match and kind in {"band", "artist", "guitarist"}:
+            try:
+                wikidata_match.update(wikidata.identity(wikidata_match["id"]))
+            except Exception as error:
+                source_errors.append({"source": "wikidata_identity", "message": str(error)})
+                print(f"Wikidata identity lookup failed for {name}: {error}")
+
         try:
-            wikipedia_page = wikipedia.page_for_seed(name, kind)
+            wikipedia_page = wikipedia.page_for_seed(
+                name, kind, (wikidata_match or {}).get("wikipedia_title")
+            )
         except Exception as error:
             source_errors.append({"source": "wikipedia", "message": str(error)})
             print(f"Wikipedia lookup failed for {name}: {error}")
+
+        wikipedia_id = (wikipedia_page or {}).get("wikidata_id")
+        if wikipedia_id and wikipedia_id != (wikidata_match or {}).get("id"):
+            try:
+                wikipedia_page.update(wikidata.identity(wikipedia_id))
+            except Exception as error:
+                source_errors.append({"source": "wikipedia_identity", "message": str(error)})
+                print(f"Wikipedia identity lookup failed for {name}: {error}")
+        elif wikipedia_page and wikidata_match:
+            wikipedia_page["musicbrainz_artist_ids"] = wikidata_match.get("musicbrainz_artist_ids", [])
+
+        if musicbrainz:
+            try:
+                linked_ids = (wikipedia_page or {}).get("musicbrainz_artist_ids") or (
+                    wikidata_match or {}).get("musicbrainz_artist_ids") or []
+                if linked_ids:
+                    musicbrainz_match = musicbrainz.lookup(linked_ids[0], name, kind)
+                if not musicbrainz_match:
+                    musicbrainz_match = musicbrainz.search(name, kind)
+            except Exception as error:
+                source_errors.append({"source": "musicbrainz", "message": str(error)})
+                print(f"MusicBrainz lookup failed for {name}: {error}")
 
         candidates.append(
             Candidate(
