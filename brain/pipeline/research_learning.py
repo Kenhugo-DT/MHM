@@ -84,6 +84,7 @@ def prepare_decisions(rows: list[dict[str, Any]], graph: dict[str, Any]) -> tupl
         weight = 1.0 if status != "rejected" or reason else 0.2
         decisions.append({
             "id": str(row.get("id") or ""),
+            "seedKey": f"{kind}:{normalize(name)}",
             "status": status,
             "positive": status in {"approved", "imported"},
             "kind": kind,
@@ -93,6 +94,11 @@ def prepare_decisions(rows: list[dict[str, Any]], graph: dict[str, Any]) -> tupl
             "reviewedAt": str(row.get("updated_at") or row.get("created_at") or ""),
         })
     decisions.sort(key=lambda item: (item["reviewedAt"], item["id"]))
+    seed_weights: Counter[str] = Counter()
+    for decision in decisions:
+        seed_weights[decision["seedKey"]] += decision["weight"]
+    for decision in decisions:
+        decision["learningWeight"] = decision["weight"] / seed_weights[decision["seedKey"]]
     return decisions, skipped
 
 
@@ -106,8 +112,8 @@ def counts_for(decisions: list[dict[str, Any]]) -> dict[str, Any]:
             groups["zone"][decision["zone"]].append(decision)
 
     def summary(items: list[dict[str, Any]]) -> dict[str, Any]:
-        positive = sum(item["weight"] for item in items if item["positive"])
-        negative = sum(item["weight"] for item in items if not item["positive"])
+        positive = sum(item["learningWeight"] for item in items if item["positive"])
+        negative = sum(item["learningWeight"] for item in items if not item["positive"])
         return {
             "approved": sum(item["positive"] for item in items),
             "rejected": sum(not item["positive"] for item in items),
@@ -169,9 +175,9 @@ def evaluate(train: list[dict[str, Any]], holdout: list[dict[str, Any]]) -> dict
         target = 1.0 if item["positive"] else 0.0
         adjustment = priority_adjustment(model, item["kind"], item["zone"])["score"]
         predicted = max(0.05, min(0.95, baseline + adjustment / 16))
-        base_error += item["weight"] * (baseline - target) ** 2
-        learned_error += item["weight"] * (predicted - target) ** 2
-        total_weight += item["weight"]
+        base_error += item["learningWeight"] * (baseline - target) ** 2
+        learned_error += item["learningWeight"] * (predicted - target) ** 2
+        total_weight += item["learningWeight"]
     return {
         "holdoutCount": len(holdout),
         "holdoutApproved": sum(item["positive"] for item in holdout),
@@ -181,24 +187,73 @@ def evaluate(train: list[dict[str, Any]], holdout: list[dict[str, Any]]) -> dict
     }
 
 
+def split_independent_seeds(decisions: list[dict[str, Any]]) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+    if len(decisions) < 20:
+        return decisions, []
+
+    by_seed: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    for decision in decisions:
+        by_seed[decision["seedKey"]].append(decision)
+    if len(by_seed) < 2:
+        return decisions, []
+
+    # Keep every review of a seed on one side, so validation tests unseen seeds.
+    seeds = sorted(by_seed, key=lambda key: (by_seed[key][-1]["reviewedAt"], key))
+    holdout_keys: set[str] = set()
+    holdout_size = 0
+    target = max(4, round(len(decisions) * 0.2))
+    for key in reversed(seeds[1:]):
+        if holdout_size >= target and len(holdout_keys) >= 4:
+            break
+        holdout_keys.add(key)
+        holdout_size += len(by_seed[key])
+    return (
+        [item for item in decisions if item["seedKey"] not in holdout_keys],
+        [item for item in decisions if item["seedKey"] in holdout_keys],
+    )
+
+
 def build_learning_model(rows: list[dict[str, Any]], graph: dict[str, Any]) -> dict[str, Any]:
     decisions, skipped = prepare_decisions(rows, graph)
-    validation_count = max(4, round(len(decisions) * 0.2)) if len(decisions) >= 20 else 0
-    train = decisions[:-validation_count] if validation_count else decisions
-    holdout = decisions[-validation_count:] if validation_count else []
+    all_rejection_reasons = Counter(
+        str(row.get("review_reason_code") or "unspecified").strip()
+        for row in rows if row.get("status") == "rejected"
+    )
+    train, holdout = split_independent_seeds(decisions)
+    training_seeds = {item["seedKey"] for item in train}
+    holdout_seeds = {item["seedKey"] for item in holdout}
     validation = evaluate(train, holdout) if holdout else {
         "holdoutCount": 0, "holdoutApproved": 0, "holdoutRejected": 0,
     }
+    validation.update({
+        "trainingSeedCount": len(training_seeds),
+        "holdoutSeedCount": len(holdout_seeds),
+        "sharedSeedCount": len(training_seeds & holdout_seeds),
+        "holdoutApprovedSeedCount": len({
+            item["seedKey"] for item in holdout if item["positive"]
+        }),
+        "holdoutRejectedSeedCount": len({
+            item["seedKey"] for item in holdout if not item["positive"]
+        }),
+    })
     clear_rejections = sum(
         not item["positive"] and item["reasonCode"] != "unspecified"
         for item in decisions
     )
+    explicit_rejection_seeds = len({
+        item["seedKey"] for item in decisions
+        if not item["positive"] and item["reasonCode"] != "unspecified"
+    })
     eligibility_checks = {
         "enoughTrainingDecisions": len(train) >= 40,
+        "enoughIndependentSeeds": len(training_seeds) >= 8 and len(holdout_seeds) >= 4,
         "enoughExplicitRejections": clear_rejections >= 10,
+        "enoughIndependentRejections": explicit_rejection_seeds >= 4,
         "enoughHoldoutDecisions": len(holdout) >= 8,
         "holdoutHasBothOutcomes": (
             validation["holdoutApproved"] >= 3 and validation["holdoutRejected"] >= 3
+            and validation["holdoutApprovedSeedCount"] >= 2
+            and validation["holdoutRejectedSeedCount"] >= 2
         ),
         "beatsBaseline": bool(holdout) and (
             validation["learnedBrier"] + 0.01 < validation["baselineBrier"]
@@ -212,9 +267,11 @@ def build_learning_model(rows: list[dict[str, Any]], graph: dict[str, Any]) -> d
         "reviewedRows": len(rows),
         "usableDecisions": len(decisions),
         "clearRejections": clear_rejections,
+        "explicitRejectionSeedCount": explicit_rejection_seeds,
         "rejectionReasons": dict(Counter(
             item["reasonCode"] for item in decisions if not item["positive"]
         )),
+        "allRejectionReasons": dict(sorted(all_rejection_reasons.items())),
         "skipped": dict(skipped),
         "training": counts_for(train),
         "validation": validation,

@@ -23,6 +23,10 @@ def graph():
         {"id": "rock-1", "label": "Rock One", "type": "band", "zone": "rock"},
         {"id": "rock-2", "label": "Rock Two", "type": "band", "zone": "rock"},
         {"id": "rock-3", "label": "Rock Three", "type": "band", "zone": "rock"},
+        *({"id": f"jazz-extra-{index}", "label": f"Jazz Seed {index}",
+           "type": "band", "zone": "jazz"} for index in range(6)),
+        *({"id": f"rock-extra-{index}", "label": f"Rock Seed {index}",
+           "type": "band", "zone": "rock"} for index in range(6)),
     ], "edges": []}
 
 
@@ -56,8 +60,8 @@ class ResearchLearningTests(unittest.TestCase):
 
     def test_review_outcomes_change_shadow_ranking_with_traceable_reasons(self):
         rows = [
-            row(index, "Rock One", "approved") if index % 2 == 0
-            else row(index, "Jazz One", "rejected", "not_relevant")
+            row(index, f"Rock Seed {(index // 2) % 6}", "approved") if index % 2 == 0
+            else row(index, f"Jazz Seed {(index // 2) % 6}", "rejected", "not_relevant")
             for index in range(60)
         ]
         model = build_learning_model(rows, graph())
@@ -66,7 +70,9 @@ class ResearchLearningTests(unittest.TestCase):
         self.assertGreater(rock["score"], 0)
         self.assertLess(jazz["score"], 0)
         self.assertTrue(rock["reasons"][0]["reviewExamples"])
-        self.assertEqual(model["validation"]["holdoutCount"], 12)
+        self.assertGreaterEqual(model["validation"]["holdoutCount"], 12)
+        self.assertEqual(model["validation"]["sharedSeedCount"], 0)
+        self.assertGreaterEqual(model["validation"]["holdoutSeedCount"], 4)
         self.assertGreaterEqual(model["validation"]["holdoutApproved"], 3)
         self.assertGreaterEqual(model["validation"]["holdoutRejected"], 3)
         self.assertLess(model["validation"]["learnedBrier"],
@@ -81,8 +87,8 @@ class ResearchLearningTests(unittest.TestCase):
 
         baseline = select_frontier_seeds(graph(), set(), set(), 3)
         learned = select_frontier_seeds(graph(), set(), set(), 3, model)
-        self.assertEqual(baseline[0]["name"], "Jazz One")
-        self.assertEqual(learned[0]["name"], "Rock One")
+        self.assertTrue(baseline[0]["name"].startswith("Jazz"))
+        self.assertTrue(learned[0]["name"].startswith("Rock"))
 
         recommendations = {"recommendedResearchRequests": [
             {"id": "jazz-request", "priority": 50,
@@ -101,6 +107,48 @@ class ResearchLearningTests(unittest.TestCase):
         self.assertFalse(model["activationEligible"])
         self.assertEqual(model["validation"]["holdoutCount"], 0)
         self.assertEqual(priority_adjustment(model, "band", "rock")["score"], 0)
+
+    def test_repeated_reviews_of_two_seeds_do_not_masquerade_as_learning(self):
+        rows = [
+            row(index, "Rock One", "approved") if index % 2 == 0
+            else row(index, "Jazz One", "rejected", "not_relevant")
+            for index in range(60)
+        ]
+        model = build_learning_model(rows, graph())
+        self.assertEqual(model["validation"]["sharedSeedCount"], 0)
+        self.assertEqual(model["allRejectionReasons"]["not_relevant"], 30)
+        self.assertFalse(model["eligibilityChecks"]["enoughIndependentSeeds"])
+        self.assertFalse(model["activationEligible"])
+
+    def test_each_seed_has_one_vote_despite_repeated_reviews(self):
+        rows = [row(index, "Rock One", "approved") for index in range(40)]
+        rows.append(row(40, "Jazz One", "rejected", "not_relevant"))
+        decisions, _ = prepare_decisions(rows, graph())
+        rock_weight = sum(item["learningWeight"] for item in decisions
+                          if item["seedKey"] == "band:rock one")
+        jazz_weight = sum(item["learningWeight"] for item in decisions
+                          if item["seedKey"] == "band:jazz one")
+        self.assertAlmostEqual(rock_weight, 1)
+        self.assertAlmostEqual(jazz_weight, 1)
+
+    def test_reversed_results_on_new_seeds_block_activation(self):
+        rows = [
+            row(index, f"Rock Seed {(index // 2) % 4}", "approved") if index % 2 == 0
+            else row(index, f"Jazz Seed {(index // 2) % 4}", "rejected", "not_relevant")
+            for index in range(40)
+        ]
+        rows.extend(
+            row(index, f"Rock Seed {4 + (index // 2) % 2}", "rejected", "not_relevant")
+            if index % 2 == 0
+            else row(index, f"Jazz Seed {4 + (index // 2) % 2}", "approved")
+            for index in range(40, 60)
+        )
+        model = build_learning_model(rows, graph())
+        self.assertEqual(model["validation"]["sharedSeedCount"], 0)
+        self.assertGreater(model["validation"]["learnedBrier"],
+                           model["validation"]["baselineBrier"])
+        self.assertFalse(model["eligibilityChecks"]["beatsBaseline"])
+        self.assertFalse(model["activationEligible"])
 
     def test_holdout_requires_both_outcomes(self):
         rows = [

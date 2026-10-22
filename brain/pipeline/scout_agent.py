@@ -553,7 +553,11 @@ def append_github_summary(summary: dict[str, Any]) -> None:
         f"- Mode: {learning.get('mode')}",
         f"- Reviewed decisions used: {learning.get('usableDecisions', 0)}",
         f"- Explicit rejected reasons: {learning.get('clearRejections', 0)}",
+        f"- All rejection reasons: {learning.get('allRejectionReasons', {})}",
         f"- Validation decisions: {validation.get('holdoutCount', 0)}",
+        f"- Independent seeds (training / validation): "
+        f"{validation.get('trainingSeedCount', 0)} / {validation.get('holdoutSeedCount', 0)}",
+        f"- Seeds shared across training and validation: {validation.get('sharedSeedCount', 0)}",
         f"- Holdout approved / rejected: {validation.get('holdoutApproved', 0)} / "
         f"{validation.get('holdoutRejected', 0)}",
         f"- Baseline / learned error: {validation.get('baselineBrier', 'not yet available')} / "
@@ -564,10 +568,12 @@ def append_github_summary(summary: dict[str, Any]) -> None:
     checks = learning.get("eligibilityChecks") or {}
     blocker_labels = {
         "enoughTrainingDecisions": "fewer than 40 training decisions",
+        "enoughIndependentSeeds": "too few independent training or validation seeds",
         "enoughExplicitRejections": "fewer than 10 reason-coded rejections",
+        "enoughIndependentRejections": "rejections cover fewer than 4 distinct seeds",
         "enoughHoldoutDecisions": "fewer than 8 validation decisions",
-        "holdoutHasBothOutcomes": "validation lacks recent approvals or rejections",
-        "beatsBaseline": "learned ranking does not beat the fixed ranking",
+        "holdoutHasBothOutcomes": "validation lacks approvals or rejections across distinct seeds",
+        "beatsBaseline": "learned ranking does not beat the global approval-rate baseline",
     }
     blockers = [blocker_labels.get(name, name) for name, passed in checks.items() if not passed]
     if blockers:
@@ -668,6 +674,7 @@ def main() -> None:
                 "mode": "shadow",
                 "usableDecisions": learning_model["usableDecisions"],
                 "clearRejections": learning_model["clearRejections"],
+                "allRejectionReasons": learning_model["allRejectionReasons"],
                 "validation": learning_model["validation"],
                 "eligibilityChecks": learning_model["eligibilityChecks"],
                 "activationEligible": learning_model["activationEligible"],

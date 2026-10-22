@@ -328,10 +328,13 @@ choice until the model passes every validation check and its snapshot is saved
 to Supabase. Set GitHub repository variable `BRAIN_LEARNING_MODE=shadow` to
 hold it in observation mode. Exact review IDs stay in the private Supabase
 snapshot, not the public GitHub workflow log. Activation requires at least 40
-training decisions, 10 explicitly reason-coded rejections, 8 holdout decisions
-including at least 3 approvals and 3 rejections, and a holdout error at least
-0.01 lower than the fixed ranking. Score changes are bounded. No candidate is
-auto-approved or published. The GitHub job summary names failed checks and
+training decisions across at least 8 distinct seeds, 10 explicitly reason-coded
+rejections across at least 4 seeds, and at least 8 holdout decisions from 4
+previously unseen seeds. The holdout needs at least 3 approvals and 3 rejections,
+each across at least 2 distinct seeds, and an error at least 0.01 lower than
+the global approval-rate baseline. Repeated reviews of one seed count as one
+effective vote, preventing a prolific seed from dominating the result. Score
+changes are bounded. No candidate is auto-approved or published. The GitHub job summary names failed checks and
 reports a snapshot error code if storage fails. The latest model is also
 written to `brain/data/runs/` in the workflow artifact.
 
