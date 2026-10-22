@@ -150,6 +150,12 @@ class SourceIdentityTests(unittest.TestCase):
             **correct, "wikipedia": {**correct["wikipedia"], "wikidata_id": "Q999"}
         }, set())["level"], "reject")
 
+    def test_quality_recognizes_musical_collective(self):
+        payload = {"name": "Outsidaz", "requested_kind": "band",
+                   "wikipedia": {"title": "Outsidaz",
+                                 "extract": "The Outsidaz were an American hip hop collective from Newark."}}
+        self.assertNotEqual(review_candidate_payload(payload, set())["level"], "reject")
+
     def test_collection_replaces_ambiguous_name_match_with_linked_id(self):
         class FakeMusicBrainz:
             def __init__(self, _contact):

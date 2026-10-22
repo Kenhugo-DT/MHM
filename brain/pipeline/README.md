@@ -87,6 +87,10 @@ identity or a non-music Wikipedia page blocks package promotion; a temporary
 source outage stays visible as a source error. Matching IDs verify the seed's
 identity, not its Wikipedia link/category leads. Those proposed connections
 still need relation-specific evidence and human review.
+Previously imported packages with conflicting source identities remain in the
+graph for separate correction, but they no longer count as positive examples in
+research-priority learning. The agent report counts these exclusions; it does
+not relax the independent validation gate for automatic ranking.
 
 Use `brain:promote:dry-run` after candidate rows are approved. It previews the
 concrete graph nodes and edges that would be created. `brain:promote` writes a

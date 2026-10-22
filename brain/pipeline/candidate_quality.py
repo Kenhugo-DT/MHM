@@ -163,7 +163,8 @@ def wikipedia_matches_kind(page: dict[str, Any], kind: str) -> bool:
     if "may refer to" in extract or "disambiguation" in categories:
         return False
     terms = {
-        "band": ("band", "musical group", "music group", "duo", "ensemble", "music project"),
+        "band": ("band", "musical group", "music group", "duo", "ensemble", "music project",
+                 "hip hop collective", "musical collective", "music collective"),
         "artist": ("musician", "guitarist", "singer", "rapper", "composer", "songwriter",
                    "keyboardist", "percussionist", "drummer", "bassist", "pianist", "vocalist"),
         "guitarist": ("guitarist", "musician", "singer", "songwriter"),

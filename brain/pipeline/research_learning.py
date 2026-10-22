@@ -6,6 +6,8 @@ from collections import Counter, defaultdict
 from datetime import UTC, datetime
 from typing import Any
 
+from candidate_quality import load_blocked_terms, review_candidate_payload
+
 FINAL_STATUSES = {"approved", "imported", "rejected"}
 SOURCE_OR_IDENTITY_REASONS = {
     "duplicate", "wrong_entity", "weak_source", "weak_connection", "incorrect_fact"
@@ -57,6 +59,7 @@ def fetch_review_rows(client: Any) -> list[dict[str, Any]]:
 
 def prepare_decisions(rows: list[dict[str, Any]], graph: dict[str, Any]) -> tuple[list[dict[str, Any]], Counter[str]]:
     index = graph_seed_index(graph)
+    blocked_terms = load_blocked_terms()
     skipped: Counter[str] = Counter()
     decisions = []
     for row in rows:
@@ -69,6 +72,12 @@ def prepare_decisions(rows: list[dict[str, Any]], graph: dict[str, Any]) -> tupl
             continue
         if payload.get("kind") == "typed_connection":
             skipped["connection_review"] += 1
+            continue
+        if status in {"approved", "imported"} and any(
+            item["code"] in {"wikipedia_subject_mismatch", "source_identity_conflict"}
+            for item in review_candidate_payload(payload, blocked_terms)["flags"]
+        ):
+            skipped["source_identity_conflict"] += 1
             continue
 
         zone = index.get((normalize(name), kind)) or ""
@@ -261,7 +270,7 @@ def build_learning_model(rows: list[dict[str, Any]], graph: dict[str, Any]) -> d
     }
     eligible = all(eligibility_checks.values())
     return {
-        "version": 1,
+        "version": 2,
         "createdAt": datetime.now(UTC).isoformat().replace("+00:00", "Z"),
         "source": "human research candidate reviews",
         "reviewedRows": len(rows),

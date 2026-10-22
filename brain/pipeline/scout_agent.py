@@ -552,6 +552,7 @@ def append_github_summary(summary: dict[str, Any]) -> None:
         "## Research learning",
         f"- Mode: {learning.get('mode')}",
         f"- Reviewed decisions used: {learning.get('usableDecisions', 0)}",
+        f"- Unsafe source identities excluded: {learning.get('excludedUnsafeSourceIdentities', 0)}",
         f"- Explicit rejected reasons: {learning.get('clearRejections', 0)}",
         f"- All rejection reasons: {learning.get('allRejectionReasons', {})}",
         f"- Validation decisions: {validation.get('holdoutCount', 0)}",
@@ -673,6 +674,9 @@ def main() -> None:
                 "requestedMode": args.learning_mode,
                 "mode": "shadow",
                 "usableDecisions": learning_model["usableDecisions"],
+                "excludedUnsafeSourceIdentities": learning_model["skipped"].get(
+                    "source_identity_conflict", 0
+                ),
                 "clearRejections": learning_model["clearRejections"],
                 "allRejectionReasons": learning_model["allRejectionReasons"],
                 "validation": learning_model["validation"],

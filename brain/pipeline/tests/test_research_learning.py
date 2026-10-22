@@ -40,6 +40,22 @@ def row(index, seed, status, reason=None, kind="band"):
 
 
 class ResearchLearningTests(unittest.TestCase):
+    def test_wrong_source_identity_cannot_train_as_positive_example(self):
+        rows = [
+            {**row(0, "Jazz One", "imported"), "payload": {
+                "name": "Jazz One", "requested_kind": "band",
+                "wikipedia": {"title": "Jazz One", "extract": "A city district"},
+            }},
+            {**row(1, "Rock One", "approved"), "payload": {
+                "name": "Rock One", "requested_kind": "band",
+                "wikipedia": {"title": "Rock One", "extract": "An American rock band"},
+            }},
+        ]
+
+        decisions, skipped = prepare_decisions(rows, graph())
+        self.assertEqual([item["id"] for item in decisions], ["candidate-001"])
+        self.assertEqual(skipped["source_identity_conflict"], 1)
+
     def test_duplicates_identity_failures_and_connection_reviews_do_not_penalize_zone(self):
         rows = [
             row(0, "Jazz One", "approved"),
