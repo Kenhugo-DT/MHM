@@ -15,6 +15,7 @@ export default defineConfig({
       input: {
         map: "site/index.html",
         playground: "site/playground.html",
+        globe: "site/globe.html",
       },
     },
   },

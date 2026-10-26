@@ -6,6 +6,7 @@ import {
   ExternalLink,
   FlaskConical,
   Focus,
+  Globe2,
   Home,
   LoaderCircle,
   Map as MapIcon,
@@ -592,6 +593,8 @@ export default function App() {
         </div>
 
         <div className="top-actions">
+          <button type="button" className="globe-action" onClick={() => { window.location.href = "./globe.html"; }}
+            title="Open globe view" aria-label="Open globe view"><Globe2 aria-hidden="true" size={18} /></button>
           <button type="button" className="lab-action" onClick={() => { window.location.href = "./playground.html"; }}
             title="Open layout lab" aria-label="Open layout lab"><FlaskConical aria-hidden="true" size={18} /></button>
           <label className="layout-control">

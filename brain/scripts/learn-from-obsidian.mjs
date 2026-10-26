@@ -20,6 +20,7 @@ const feedbackPath = path.join(brainRoot, "data", "approved", "curator-feedback.
 const factBatchRoot = path.join(brainRoot, "data", "fact-batches");
 const approvedFactEvidencePath = path.join(brainRoot, "data", "approved", "fact-evidence.json");
 const curatedFactsPath = path.resolve(brainRoot, "..", "shared", "facts", "curated.json");
+const geographyPath = path.resolve(brainRoot, "..", "site", "public", "data", "geography.json");
 const reportPath = path.join(brainRoot, "data", "runs", "learning-report.md");
 
 const STOP_WORDS = new Set([
@@ -330,7 +331,7 @@ function termSeeds(node, note, linkedGenres) {
   return [...terms];
 }
 
-function buildLearningModel(graph, notes, feedbackData, approvedEvidence, warnings) {
+function buildLearningModel(graph, notes, feedbackData, approvedEvidence, geographyEvidence, warnings) {
   const { nodeById, degree, genreLinks, zonesByNode } = graphMaps(graph);
   const zoneTerms = new Map();
   const zoneStats = new Map();
@@ -345,6 +346,9 @@ function buildLearningModel(graph, notes, feedbackData, approvedEvidence, warnin
     };
   });
   const factNotesByEntity = Map.groupBy(interpretedFactNotes, (item) => item.entityId);
+  const geographyByEntity = Map.groupBy(geographyEvidence.placements.filter((item) => nodeById.has(item.nodeId)), (item) => item.nodeId);
+  const geographicRelationNotes = geographyEvidence.bridgeNotes.filter((item) =>
+    nodeById.has(item.sourceId) && nodeById.has(item.targetId));
 
   for (const zone of new Set((graph.nodes ?? []).map((node) => node.zone).filter(Boolean))) {
     zoneTerms.set(zone, new Map());
@@ -420,6 +424,16 @@ function buildLearningModel(graph, notes, feedbackData, approvedEvidence, warnin
       ...(factNotesByEntity.has(node.id) ? { factNotes: factNotesByEntity.get(node.id) } : {}),
       ...(approvedEvidence.byEntity.has(node.id)
         ? { approvedFactCount: approvedEvidence.byEntity.get(node.id) }
+        : {}),
+      ...(geographyByEntity.has(node.id)
+        ? { geographyEvidence: geographyByEntity.get(node.id).map((entry) => ({
+          role: entry.role,
+          place: `${entry.place.name}, ${entry.place.country}`,
+          note: entry.note,
+          sourceUrl: entry.evidenceUrl,
+          coordinateSource: entry.coordinateSource,
+          ...(entry.identitySource ? { identitySource: entry.identitySource, identityNote: entry.identityNote } : {}),
+        })) }
         : {}),
       connectionCount: nodeDegree,
       linkedGenres: linkedGenreIds,
@@ -508,6 +522,8 @@ function buildLearningModel(graph, notes, feedbackData, approvedEvidence, warnin
       curatedFacts: approvedEvidence.curatedCount,
       approvedFactNodes: approvedEvidence.byEntity.size,
       approvedFactNotes: interpretedFactNotes.filter((note) => note.approvalAtLastSync === "approved").length,
+      geographicallyAnchoredNodes: geographyByEntity.size,
+      geographicRelationNotes: geographicRelationNotes.length,
       pinnedNotes: [...notes.values()].filter((note) => note.layoutPinned).length,
       notesWithEra: [...notes.values()].filter((note) => note.eraStart || note.eraPeak).length,
       notesWithPrimaryGenres: [...notes.values()].filter((note) => note.primaryGenres.length).length,
@@ -529,6 +545,12 @@ function buildLearningModel(graph, notes, feedbackData, approvedEvidence, warnin
       curatedFacts: approvedEvidence.curatedCount,
       factsTotal: approvedEvidence.byFingerprint.size + approvedEvidence.curatedCount,
       nodesCovered: approvedEvidence.byEntity.size,
+    },
+    geographyEvidence: {
+      source: "Wikidata P740/P19, MusicBrainz begin areas, and reviewed corrections; map points use Wikidata P625/P17",
+      nodesCovered: geographyByEntity.size,
+      relationNotes: geographicRelationNotes,
+      caution: "Birthplace and formation place are distinct from later residence, touring and collaboration locations. Geographic proximity alone does not create a graph edge.",
     },
     warnings,
   };
@@ -556,6 +578,8 @@ function writeReport(model) {
     `- Repository-curated facts: ${model.samples.curatedFacts}`,
     `- Nodes with approved facts: ${model.samples.approvedFactNodes}`,
     `- Approved fact interpretations: ${model.samples.approvedFactNotes}`,
+    `- Nodes with source-backed geography: ${model.samples.geographicallyAnchoredNodes}`,
+    `- Source-backed geographic relation notes: ${model.samples.geographicRelationNotes}`,
     `- Fact snapshot synced: ${model.approvedFactEvidence.syncedAt ?? "not available"}`,
     `- Pinned notes: ${model.samples.pinnedNotes}`,
     `- Notes with era data: ${model.samples.notesWithEra}`,
@@ -600,7 +624,10 @@ const graph = JSON.parse(fs.readFileSync(graphPath, "utf8"));
 const { notes, warnings } = frontmatterById();
 const feedbackData = feedbackById(graph);
 const approvedEvidence = approvedFactEvidence(graph);
-const model = buildLearningModel(graph, notes, feedbackData, approvedEvidence,
+const geographyEvidence = fs.existsSync(geographyPath)
+  ? JSON.parse(fs.readFileSync(geographyPath, "utf8"))
+  : { placements: [], bridgeNotes: [] };
+const model = buildLearningModel(graph, notes, feedbackData, approvedEvidence, geographyEvidence,
   [...warnings, ...feedbackData.warnings, ...approvedEvidence.warnings]);
 
 fs.writeFileSync(modelPath, `${JSON.stringify(model, null, 2)}\n`);
