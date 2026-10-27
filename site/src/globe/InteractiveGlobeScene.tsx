@@ -6,6 +6,7 @@ import world from "world-atlas/countries-50m.json";
 import type { Topology } from "topojson-specification";
 import type { GlobeEdge, GlobeNode } from "./data";
 import { connectionPath, nodeOffset } from "./node-layout.mjs";
+import { markerPlacements } from "./markers.mjs";
 
 export interface Place {
   id: string; name: string; country: string; lat: number; lon: number;
@@ -26,7 +27,6 @@ interface Props {
   placements: Placement[];
   selectedId?: string;
   homeSignal: number;
-  year: number;
   showAll: boolean;
   onPick: (nodeId: string) => void;
 }
@@ -139,7 +139,7 @@ function overlaps(a: { x: number; y: number; width: number; height: number }, b:
   return a.x < b.x + b.width && a.x + a.width > b.x && a.y < b.y + b.height && a.y + a.height > b.y;
 }
 
-export function GlobeScene({ nodes, edges, placements, selectedId, homeSignal, year, showAll, onPick }: Props) {
+export function GlobeScene({ nodes, edges, placements, selectedId, homeSignal, showAll, onPick }: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
   const runtimeRef = useRef<Runtime | null>(null);
   const onPickRef = useRef(onPick);
@@ -234,6 +234,9 @@ export function GlobeScene({ nodes, edges, placements, selectedId, homeSignal, y
       (minorGrid.material as THREE.LineBasicMaterial).opacity = Math.max(0, Math.min(0.26, (2.35 - distance) * 0.35));
       const width = host.clientWidth;
       const height = host.clientHeight;
+      const insideStage = (anchor: { x: number; y: number } | null) => Boolean(anchor
+        && anchor.x > 12 && anchor.x < width - 12 && anchor.y > 115
+        && anchor.y < height - (width < 600 ? 105 : 135));
       const labelBoxes: Array<{ x: number; y: number; width: number; height: number }> = [];
       const ordered = [...runtime.groups].sort((a, b) =>
         Number(b.markers.some((marker) => marker.node.id === runtime.selectedId))
@@ -246,7 +249,7 @@ export function GlobeScene({ nodes, edges, placements, selectedId, homeSignal, y
       for (const group of ordered) {
         const anchor = screenPoint(group.place, camera, width, height);
         anchors.set(group, anchor);
-        const visible = Boolean(anchor);
+        const visible = insideStage(anchor);
         const expanded = runtime.showAll || distance < 2.38
           || group.markers.some((marker) => marker.node.id === runtime.selectedId || runtime.relatedIds.has(marker.node.id));
         group.cluster.hidden = true;
@@ -292,7 +295,7 @@ export function GlobeScene({ nodes, edges, placements, selectedId, homeSignal, y
           || group.markers.some((marker) => marker.node.id === runtime.selectedId || runtime.relatedIds.has(marker.node.id));
         for (let index = 0; index < group.markers.length; index += 1) {
           const marker = group.markers[index];
-          marker.visible = Boolean(anchor && expanded);
+          marker.visible = insideStage(anchor ?? null) && expanded;
           marker.element.hidden = !marker.visible;
           if (!marker.visible || !anchor) continue;
           const offset = nodeOffset(index);
@@ -395,13 +398,7 @@ export function GlobeScene({ nodes, edges, placements, selectedId, homeSignal, y
       .map((edge) => edge.source === selectedId ? edge.target : edge.source));
     const byId = new Map(nodes.map((node) => [node.id, node]));
     const grouped = new Map<string, PlaceGroup>();
-    const primary = placements.filter((entry) => entry.role === "musical_base");
-    const primaryIds = new Set(primary.map((entry) => entry.nodeId));
-    const located = [...primary, ...placements.filter((entry) => entry.role === "birthplace" && !primaryIds.has(entry.nodeId))];
-    const birthplace = selectedId ? placements.find((entry) => entry.nodeId === selectedId && entry.role === "birthplace") : undefined;
-    const selectedBase = located.find((entry) => entry.nodeId === selectedId);
-    const active = birthplace && birthplace.placeId !== selectedBase?.placeId ? [...located, birthplace] : located;
-    for (const placement of active) {
+    for (const placement of markerPlacements(placements, selectedId)) {
       const node = byId.get(placement.nodeId);
       if (!node || (runtime.markers.has(node.id) && placement.role === "musical_base")) continue;
       let group = grouped.get(placement.placeId);
@@ -437,7 +434,6 @@ export function GlobeScene({ nodes, edges, placements, selectedId, homeSignal, y
       element.classList.toggle("is-related", runtime.relatedIds.has(node.id));
       element.classList.toggle("is-selected", node.id === selectedId);
       element.classList.toggle("is-birthplace", placement.role === "birthplace");
-      element.classList.toggle("is-year-muted", Boolean(node.eraStart && node.eraStart !== year && node.id !== selectedId));
       markerLayer.appendChild(element);
       const marker = { node, placement, element, x: 0, y: 0, visible: false };
       group.markers.push(marker);
@@ -459,7 +455,7 @@ export function GlobeScene({ nodes, edges, placements, selectedId, homeSignal, y
         runtime.wires.set(id, path);
       }
     }
-  }, [nodes, edges, placements, selectedId, year, showAll]);
+  }, [nodes, edges, placements, selectedId, showAll]);
 
   useEffect(() => {
     const runtime = runtimeRef.current;

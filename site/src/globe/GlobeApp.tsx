@@ -3,6 +3,8 @@ import { useEffect, useMemo, useState } from "react";
 import { GlobeScene, type Placement } from "./InteractiveGlobeScene";
 import { loadFacts, loadGlobeData, type GlobeData, type GlobeFact } from "./data";
 import { buildGeography } from "./geography.mjs";
+import { extendAtlas } from "./global-atlas.mjs";
+import { visibleInTimeline } from "./timeline.mjs";
 
 const typeLabels: Record<string, string> = {
   band: "Band", artist: "Artist", guitarist: "Guitarist", genre: "Genre",
@@ -25,6 +27,7 @@ export function GlobeApp() {
   const [showAll, setShowAll] = useState(false);
   const [homeSignal, setHomeSignal] = useState(0);
   const [year, setYear] = useState(1977);
+  const [timelineEnabled, setTimelineEnabled] = useState(false);
   const [facts, setFacts] = useState<GlobeFact[]>([]);
 
   const refresh = () => {
@@ -35,8 +38,9 @@ export function GlobeApp() {
       return (await response.json() as { placements: Placement[] }).placements;
     });
     void Promise.all([loadGlobeData(), geography]).then(([nextData, nextGeography]) => {
-      setData(nextData);
-      setSourceBacked(nextGeography);
+      const atlas = extendAtlas(nextData.nodes, nextGeography);
+      setData({ ...nextData, nodes: atlas.nodes });
+      setSourceBacked(atlas.placements);
     }).catch((reason: unknown) => {
       setError(reason instanceof Error ? reason.message : "Unable to load music history.");
     }).finally(() => setLoading(false));
@@ -54,6 +58,10 @@ export function GlobeApp() {
   const edges = data?.edges ?? [];
   const byId = useMemo(() => new Map(nodes.map((node) => [node.id, node])), [nodes]);
   const placements = useMemo(() => buildGeography(nodes, sourceBacked) as Placement[], [nodes, sourceBacked]);
+  const visibleNodes = useMemo(() => nodes.filter((node) => visibleInTimeline(node, timelineEnabled, year)), [nodes, timelineEnabled, year]);
+  const visibleIds = useMemo(() => new Set(visibleNodes.map((node) => node.id)), [visibleNodes]);
+  const visibleEdges = useMemo(() => edges.filter((edge) => visibleIds.has(edge.source) && visibleIds.has(edge.target)), [edges, visibleIds]);
+  const visiblePlacements = useMemo(() => placements.filter((entry) => visibleIds.has(entry.nodeId)), [placements, visibleIds]);
   const selected = selectedId ? byId.get(selectedId) : undefined;
   const primary = selectedId ? placements.find((entry) => entry.nodeId === selectedId && entry.role === "musical_base") : undefined;
   const birthplace = selectedId ? placements.find((entry) => entry.nodeId === selectedId && entry.role === "birthplace") : undefined;
@@ -65,11 +73,12 @@ export function GlobeApp() {
   const results = useMemo(() => {
     const term = query.trim().toLocaleLowerCase();
     if (term.length < 2) return [];
-    return nodes.filter((node) => [node.label, ...(node.aliases ?? [])].some((name) => name.toLocaleLowerCase().includes(term)))
+    return visibleNodes.filter((node) => [node.label, ...(node.aliases ?? [])].some((name) => name.toLocaleLowerCase().includes(term)))
       .sort((a, b) => Number(b.label.toLocaleLowerCase().startsWith(term)) - Number(a.label.toLocaleLowerCase().startsWith(term)) || a.label.localeCompare(b.label))
       .slice(0, 12);
-  }, [nodes, query]);
-  const mapped = new Set(placements.map((entry) => entry.nodeId)).size;
+  }, [visibleNodes, query]);
+  const mapped = new Set(visiblePlacements.filter((entry) => entry.role === "musical_base").map((entry) => entry.nodeId)).size;
+  const atlasOnlyCount = nodes.filter((node) => node.atlasOnly).length;
 
   const choose = (nodeId: string) => {
     setFacts([]);
@@ -98,15 +107,15 @@ export function GlobeApp() {
 
     <main className="globe-main">
       <section className="globe-stage" aria-label="Geographic map of music history">
-        <GlobeScene nodes={nodes} edges={edges} placements={placements} selectedId={selectedId} homeSignal={homeSignal} year={year} showAll={showAll} onPick={choose} />
+        <GlobeScene nodes={visibleNodes} edges={visibleEdges} placements={visiblePlacements} selectedId={selectedId} homeSignal={homeSignal} showAll={showAll} onPick={choose} />
         <div className="globe-stage-heading"><span>GLOBAL ATLAS</span><strong>{selected ? selected.label : "Music history"}</strong></div>
-        <div className="globe-stage-count">{mapped} placed · {nodes.length} in graph · {data?.source === "live" ? "live" : "published"}</div>
+        <div className="globe-stage-count"><span className="globe-count-wide">{mapped} bases · {visibleNodes.length} nodes{timelineEnabled ? ` started by ${year}` : ""} · {data?.source === "live" ? "live" : "published"}</span><span className="globe-count-small">{mapped} bases</span></div>
         {loading && !data && <div className="globe-loading">Loading geography...</div>}
         {error && <div className="globe-loading" role="alert">{error}</div>}
         <div className="globe-time">
-          <div><span>TIME / DOCUMENTED STARTS</span><output htmlFor="globe-year">{year}</output></div>
-          <input id="globe-year" aria-label="Highlight start year" type="range" min="1700" max="2026" step="1" value={year} onChange={(event) => setYear(Number(event.target.value))} />
-          <small>Start-year highlights only. Releases, charts and concerts need sourced event data.</small>
+          <div className="globe-time-head"><label><input type="checkbox" checked={timelineEnabled} onChange={(event) => { setTimelineEnabled(event.target.checked); setSelectedId(undefined); }} /><span>TIME / STARTED BY</span></label><output htmlFor="globe-year">{timelineEnabled ? year : "Off"}</output></div>
+          <input id="globe-year" aria-label="Show nodes started by year" type="range" min="1700" max="2026" step="1" value={year} disabled={!timelineEnabled} onChange={(event) => { setYear(Number(event.target.value)); setSelectedId(undefined); }} />
+          <small>{timelineEnabled ? "Documented starts through this year. Unknown starts are hidden." : "Turn on to browse documented starts over time."}</small>
         </div>
       </section>
 
@@ -114,7 +123,7 @@ export function GlobeApp() {
         {selected && <button className="globe-detail-close" type="button" title="Close details" aria-label="Close details" onClick={() => setSelectedId(undefined)}><X size={17} /></button>}
         {selected ? <>
           <div className="globe-detail-head">
-            <span>{typeLabels[selected.type] ?? selected.type}</span>
+            <span>{typeLabels[selected.type] ?? selected.type}{selected.atlasOnly ? " · Globe preview" : ""}</span>
             <h1>{selected.label}</h1>
             <p>{selected.summary || "No summary available."}</p>
           </div>
@@ -139,9 +148,9 @@ export function GlobeApp() {
           </div></div>
           <div className="globe-detail-section"><h2>Sources</h2><div className="globe-sources">{selected.sources.map(sourceLink)}</div></div>
         </> : <>
-          <div className="globe-detail-head"><span>MUSIC HISTORY MAP</span><h1>Geography</h1><p>{nodes.length} nodes share this atlas. {mapped} currently have a sourced geographic anchor; the rest remain available through search.</p></div>
+          <div className="globe-detail-head"><span>MUSIC HISTORY MAP</span><h1>Geography</h1><p>{mapped} documented musical bases are visible in this time view. {atlasOnlyCount} sourced bands are globe previews, separate from the main graph.</p></div>
           <div className="globe-detail-section"><h2>Coverage</h2><p className="globe-muted">Markers follow named source locations; precision varies. The globe does not infer birthplaces, recording locations or concerts from genre or proximity.</p></div>
-          <div className="globe-detail-section"><h2>In the graph</h2><div className="globe-type-list">{Object.entries(typeLabels).map(([type, label]) => <div key={type}><span>{label}</span><strong>{nodes.filter((node) => node.type === type).length}</strong></div>)}</div></div>
+          <div className="globe-detail-section"><h2>In the atlas</h2><div className="globe-type-list">{Object.entries(typeLabels).map(([type, label]) => <div key={type}><span>{label}</span><strong>{visibleNodes.filter((node) => node.type === type).length}</strong></div>)}</div></div>
         </>}
       </aside>
     </main>

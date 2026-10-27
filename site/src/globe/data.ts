@@ -11,6 +11,7 @@ export interface GlobeNode {
   roles: string[];
   metadata: string[];
   eraStart?: number;
+  atlasOnly?: boolean;
   image?: { url: string; alt: string; sourceUrl?: string };
   sources: Array<{ label: string; url: string }>;
 }

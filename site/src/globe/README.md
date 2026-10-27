@@ -16,9 +16,8 @@ invented coordinates.
 
 Geographic places are anchors, not graph nodes. Dense places show a count at
 wide zoom and expand into individually selectable, fixed-size entity markers
-as the camera approaches. If an artist has no documented musical base, a
-documented birthplace can anchor the marker but stays visibly labelled as a
-birthplace. Selecting an entity dims unrelated markers and draws only sourced
+as the camera approaches. Birthplace markers appear only for the selected
+person; they never inflate unselected clusters. Selecting an entity dims unrelated markers and draws only sourced
 graph connections to other visible entities. Screen-space routes use horizontal,
 vertical and 45-degree segments; they do not claim a historical travel route.
 
@@ -43,12 +42,20 @@ The ignored local `brain/data/runs/geography-unresolved-review.json` records why
 each remaining band/person could not be placed, so later source checks have a
 specific queue instead of a silent gap.
 
+`global-atlas.json` is an isolated set of 29 reviewed group entries from 26
+countries. Each entry has a MusicBrainz artist identity, documented formation
+year and city, and an approximate city-centre coordinate. An existing graph
+identity takes priority and gets a base placement if needed; other entries are
+marked as globe previews and have no invented graph connections. They are not
+unapproved research candidates or automatic promotions into the main graph.
+
 Geography remains incomplete. Some source locations are cities, others are
 regions or named buildings; marker precision varies and is not a verified
 performance venue. A birthplace is not automatically an artist's musical base;
-unknown locations remain unplaced and searchable. The year control highlights
-documented start years only. It must not be labelled as activity, releases or
-chart presence.
+unknown locations remain unplaced and searchable. The optional year control
+shows only nodes with documented start years at or before the selected year;
+unknown starts are hidden while it is on. This does not assert that a band was
+active, released music, or appeared on charts in that year.
 
 Future event layers should be separate, sourced records with their own entity
 identity, place role, date precision and review status:
