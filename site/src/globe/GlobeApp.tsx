@@ -1,7 +1,7 @@
 import { ArrowLeft, ExternalLink, Globe2, Home, MapPin, RefreshCw, Search, X } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
-import { GlobeScene, type Place, type Placement } from "./GlobeScene";
-import { loadFacts, loadGlobeData, type GlobeData, type GlobeFact, type GlobeNode } from "./data";
+import { GlobeScene, type Placement } from "./InteractiveGlobeScene";
+import { loadFacts, loadGlobeData, type GlobeData, type GlobeFact } from "./data";
 import { buildGeography } from "./geography.mjs";
 
 const typeLabels: Record<string, string> = {
@@ -22,7 +22,6 @@ export function GlobeApp() {
   const [loading, setLoading] = useState(false);
   const [query, setQuery] = useState("");
   const [selectedId, setSelectedId] = useState<string>();
-  const [selectedPlace, setSelectedPlace] = useState<Place>();
   const [showAll, setShowAll] = useState(false);
   const [homeSignal, setHomeSignal] = useState(0);
   const [year, setYear] = useState(1977);
@@ -58,11 +57,6 @@ export function GlobeApp() {
   const selected = selectedId ? byId.get(selectedId) : undefined;
   const primary = selectedId ? placements.find((entry) => entry.nodeId === selectedId && entry.role === "musical_base") : undefined;
   const birthplace = selectedId ? placements.find((entry) => entry.nodeId === selectedId && entry.role === "birthplace") : undefined;
-  const placeNodes = selectedPlace
-    ? placements.filter((entry) => entry.placeId === selectedPlace.id)
-      .map((entry) => ({ node: byId.get(entry.nodeId), role: entry.role }))
-      .filter((entry): entry is { node: GlobeNode; role: Placement["role"] } => Boolean(entry.node))
-    : [];
   const connections = selectedId
     ? edges.filter((edge) => edge.source === selectedId || edge.target === selectedId)
       .map((edge) => ({ edge, node: byId.get(edge.source === selectedId ? edge.target : edge.source) }))
@@ -78,8 +72,8 @@ export function GlobeApp() {
   const mapped = new Set(placements.map((entry) => entry.nodeId)).size;
 
   const choose = (nodeId: string) => {
+    setFacts([]);
     setSelectedId(nodeId);
-    setSelectedPlace(undefined);
     setQuery("");
   };
 
@@ -98,18 +92,14 @@ export function GlobeApp() {
         </div>}
       </div>
       <label className="globe-all-toggle"><input type="checkbox" aria-label="Show all nodes" checked={showAll} onChange={(event) => setShowAll(event.target.checked)} /><span>Show all</span></label>
-      <button className="globe-refresh" type="button" title="Show full globe" aria-label="Show full globe" onClick={() => { setSelectedId(undefined); setSelectedPlace(undefined); setHomeSignal((value) => value + 1); }}><Home size={17} /></button>
+      <button className="globe-refresh" type="button" title="Show full globe" aria-label="Show full globe" onClick={() => { setSelectedId(undefined); setHomeSignal((value) => value + 1); }}><Home size={17} /></button>
       <button className="globe-refresh" type="button" title="Refresh data" aria-label="Refresh data" onClick={refresh} disabled={loading}><RefreshCw size={17} /></button>
     </header>
 
     <main className="globe-main">
       <section className="globe-stage" aria-label="Geographic map of music history">
-        <GlobeScene nodes={nodes} edges={edges} placements={placements} selectedId={selectedId} homeSignal={homeSignal} year={year} showAll={showAll}
-          onPick={(marker) => {
-            if (marker.nodeIds.length === 1) choose(marker.nodeIds[0]);
-            else { setSelectedId(undefined); setSelectedPlace(marker.place); }
-          }} />
-        <div className="globe-stage-heading"><span>GLOBAL ATLAS</span><strong>{selected ? selected.label : selectedPlace ? selectedPlace.name : "Music history"}</strong></div>
+        <GlobeScene nodes={nodes} edges={edges} placements={placements} selectedId={selectedId} homeSignal={homeSignal} year={year} showAll={showAll} onPick={choose} />
+        <div className="globe-stage-heading"><span>GLOBAL ATLAS</span><strong>{selected ? selected.label : "Music history"}</strong></div>
         <div className="globe-stage-count">{mapped} placed · {nodes.length} in graph · {data?.source === "live" ? "live" : "published"}</div>
         {loading && !data && <div className="globe-loading">Loading geography...</div>}
         {error && <div className="globe-loading" role="alert">{error}</div>}
@@ -121,7 +111,7 @@ export function GlobeApp() {
       </section>
 
       <aside className="globe-detail" aria-label="Selection details">
-        {(selected || selectedPlace) && <button className="globe-detail-close" type="button" title="Close details" aria-label="Close details" onClick={() => { setSelectedId(undefined); setSelectedPlace(undefined); }}><X size={17} /></button>}
+        {selected && <button className="globe-detail-close" type="button" title="Close details" aria-label="Close details" onClick={() => setSelectedId(undefined)}><X size={17} /></button>}
         {selected ? <>
           <div className="globe-detail-head">
             <span>{typeLabels[selected.type] ?? selected.type}</span>
@@ -148,11 +138,6 @@ export function GlobeApp() {
             {connections.length === 0 && <p className="globe-muted">No documented connections yet.</p>}
           </div></div>
           <div className="globe-detail-section"><h2>Sources</h2><div className="globe-sources">{selected.sources.map(sourceLink)}</div></div>
-        </> : selectedPlace ? <>
-          <div className="globe-detail-head"><span>PLACE</span><h1>{selectedPlace.name}</h1><p>{selectedPlace.country}</p></div>
-          <div className="globe-detail-section"><h2>Music here <span>{placeNodes.length}</span></h2><div className="globe-relations">
-            {placeNodes.map(({ node, role }) => <button type="button" key={`${node.id}:${role}`} onClick={() => choose(node.id)}><span><strong>{node.label}</strong><small>{typeLabels[node.type] ?? node.type} · {role === "birthplace" ? "born here" : "formed here"}</small></span></button>)}
-          </div></div>
         </> : <>
           <div className="globe-detail-head"><span>MUSIC HISTORY MAP</span><h1>Geography</h1><p>{nodes.length} nodes share this atlas. {mapped} currently have a sourced geographic anchor; the rest remain available through search.</p></div>
           <div className="globe-detail-section"><h2>Coverage</h2><p className="globe-muted">Markers follow named source locations; precision varies. The globe does not infer birthplaces, recording locations or concerts from genre or proximity.</p></div>

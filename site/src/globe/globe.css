@@ -46,9 +46,25 @@ a { color: inherit; }
 .globe-all-toggle input { width: 16px; height: 16px; margin: 0; accent-color: #79b6a8; cursor: pointer; }
 .globe-main { flex: 1; min-height: 0; display: grid; grid-template-columns: minmax(0, 1fr) minmax(300px, 355px); }
 .globe-stage { position: relative; min-width: 0; overflow: hidden; background: #0d0d0b; }
-.globe-stage::before { content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none; background: linear-gradient(90deg, rgba(10,9,8,.38), transparent 22%, transparent 78%, rgba(10,9,8,.38)); }
+.globe-stage::before { content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none; background: linear-gradient(90deg, rgba(9,11,11,.18), transparent 18%, transparent 82%, rgba(9,11,11,.18)); }
 .globe-scene { position: absolute; inset: 0; overflow: hidden; touch-action: none; }
 .globe-scene canvas { display: block; width: 100%; height: 100%; }
+.globe-wire-layer { position: absolute; inset: 0; z-index: 2; width: 100%; height: 100%; overflow: hidden; pointer-events: none; }
+.globe-wire { fill: none; stroke: #e4c88f; stroke-width: 2.5; stroke-opacity: .95; vector-effect: non-scaling-stroke; }
+.globe-wire[hidden] { display: none; }
+.globe-marker-layer { position: absolute; inset: 0; z-index: 3; pointer-events: none; }
+.globe-node, .globe-cluster { position: absolute; top: 0; left: 0; display: block; padding: 0; border-radius: 50%; pointer-events: auto; cursor: pointer; }
+.globe-node { width: 14px; height: 14px; border: 1px solid var(--node-color); background: #121918; box-shadow: 0 0 0 2px #0b0e0ec9; color: var(--node-color); }
+.globe-node::before { content: ""; position: absolute; inset: 3px; border-radius: 50%; background: currentColor; }
+.globe-node:hover, .globe-node:focus-visible, .globe-node.is-selected { z-index: 5; outline: 0; box-shadow: 0 0 0 3px #0b0e0e, 0 0 0 5px currentColor; }
+.globe-node.is-muted { opacity: .16; }
+.globe-node.is-year-muted:not(.is-selected):not(.is-related):not(.is-muted) { opacity: .48; }
+.globe-node.is-birthplace { border-style: dashed; }
+.globe-node-name { position: absolute; top: -4px; left: 17px; display: none; width: max-content; max-width: 125px; overflow: hidden; color: #eee8dc; font-size: 10px; font-weight: 600; line-height: 18px; text-overflow: ellipsis; white-space: nowrap; text-shadow: 0 1px 3px #000, 0 0 8px #000; pointer-events: none; }
+.globe-node.has-name .globe-node-name, .globe-node:hover .globe-node-name, .globe-node:focus-visible .globe-node-name { display: block; }
+.globe-cluster { width: 24px; height: 24px; border: 1px solid #b5986f; background: #192322; color: #f1e7d4; font-size: 9px; font-weight: 700; box-shadow: 0 0 0 3px #0b0e0eb8; }
+.globe-cluster:hover, .globe-cluster:focus-visible { outline: 1px solid #e1c991; background: #354342; }
+.globe-node[hidden], .globe-cluster[hidden] { display: none; }
 .globe-stage-heading { position: absolute; top: 26px; left: 29px; z-index: 2; max-width: min(50%, 380px); display: flex; flex-direction: column; gap: 5px; pointer-events: none; }
 .globe-stage-heading span, .globe-time span { color: #c7a967; font-size: 10px; font-weight: 700; letter-spacing: 1.8px; }
 .globe-stage-heading strong { font-size: 21px; font-weight: 600; line-height: 1.12; }
@@ -58,8 +74,8 @@ a { color: inherit; }
 .globe-time output { color: #eee4d1; font-size: 22px; font-weight: 650; font-variant-numeric: tabular-nums; }
 .globe-time input { width: 100%; height: 24px; margin: 8px 0 2px; accent-color: #b8a35f; }
 .globe-time small { display: block; color: #9ea9a0; font-size: 10px; line-height: 1.4; }
-.globe-place-labels { position: absolute; inset: 0; pointer-events: none; }
-.globe-place-label { position: absolute; top: 0; left: 0; color: #b8aa99; opacity: .66; font-size: 9px; font-weight: 600; white-space: nowrap; text-shadow: 0 1px 4px #100e0b; pointer-events: none; }
+.globe-place-labels { position: absolute; inset: 0; z-index: 4; pointer-events: none; }
+.globe-place-label { position: absolute; top: 0; left: 0; color: #b8aa99; opacity: .95; font-size: 10px; font-weight: 600; white-space: nowrap; text-shadow: 0 1px 3px #000, 0 0 8px #000; pointer-events: none; }
 .globe-country-label { color: #b29b80; opacity: .38; font-size: 10px; font-weight: 750; letter-spacing: 1.1px; }
 .globe-place-label[hidden], .globe-tooltip[hidden] { display: none; }
 .globe-tooltip { position: absolute; z-index: 4; min-width: 110px; padding: 5px 8px; border: 1px solid #7c8b77; background: #17201e; color: #f3ebde; font-size: 11px; pointer-events: none; }
@@ -101,9 +117,10 @@ a { color: inherit; }
 .globe-type-list strong { color: #d8bd7b; font-variant-numeric: tabular-nums; }
 @media (max-width: 760px) {
   .globe-header { height: 54px; min-height: 54px; gap: 7px; padding: 6px 8px; }
+  .globe-header > .globe-back, .globe-header > .globe-refresh { flex: 0 0 32px; width: 32px; height: 36px; }
   .globe-brand { min-width: auto; padding-right: 7px; }
   .globe-brand small { display: none; }
-  .globe-search { max-width: none; }
+  .globe-search { min-width: 0; max-width: none; }
   .globe-all-toggle { gap: 4px; padding: 0 1px; }
   .globe-all-toggle span { display: none; }
   .globe-main { grid-template-columns: 1fr; grid-template-rows: minmax(0, 1fr) minmax(160px, 26vh); }
