@@ -7,6 +7,14 @@ export function nodeOffset(index) {
   return { x: Math.cos(angle) * radius, y: Math.sin(angle) * radius };
 }
 
+export function offsetPlace(place, index) {
+  if (index === 0) return place;
+  const offset = nodeOffset(index);
+  const latitude = Math.max(-89.9, Math.min(89.9, place.lat - offset.y * 0.007));
+  const longitude = place.lon + offset.x * 0.007 / Math.max(0.2, Math.cos(place.lat * Math.PI / 180));
+  return { ...place, lat: latitude, lon: ((longitude + 540) % 360) - 180 };
+}
+
 export const PLACE_PAGE_SIZE = 8;
 
 export function visiblePlaceIndices(count, page = 0, showAll = false, pinFirst = false) {

@@ -5,7 +5,7 @@ import { feature } from "topojson-client";
 import world from "world-atlas/countries-50m.json";
 import type { Topology } from "topojson-specification";
 import type { GlobeEdge, GlobeNode } from "./data";
-import { connectionPath, nodeOffset, PLACE_PAGE_SIZE, visiblePlaceIndices } from "./node-layout.mjs";
+import { connectionPath, offsetPlace, PLACE_PAGE_SIZE, visiblePlaceIndices } from "./node-layout.mjs";
 import { markerPlacements, samePlace } from "./markers.mjs";
 
 export interface Place {
@@ -34,6 +34,7 @@ interface Props {
 interface Marker {
   node: GlobeNode;
   placement: Placement;
+  displayPlace: Place;
   element: HTMLButtonElement;
   x: number;
   y: number;
@@ -62,6 +63,7 @@ interface Runtime {
 const colors: Record<string, number> = {
   band: 0xd47748, artist: 0xd99679, guitarist: 0xd7b765,
 };
+const MAP_RADIUS = 1.008;
 const countryLabels = [
   { id: "us", name: "UNITED STATES", country: "UNITED STATES", lat: 39, lon: -99 },
   { id: "ca", name: "CANADA", country: "CANADA", lat: 57, lon: -106 },
@@ -99,8 +101,7 @@ function gridGeometry(step: number): THREE.BufferGeometry {
   return geometry;
 }
 
-function countryGeometry(): THREE.BufferGeometry {
-  const topology = world as unknown as Topology;
+function countryGeometry(topology: Topology, viewDirection?: THREE.Vector3, minDot = 0.5, tolerance = 0.025): THREE.BufferGeometry {
   const countries = feature(topology, topology.objects.countries);
   const segments: number[] = [];
   if (countries.type !== "FeatureCollection") return new THREE.BufferGeometry();
@@ -111,13 +112,21 @@ function countryGeometry(): THREE.BufferGeometry {
       : shape.type === "MultiPolygon" ? shape.coordinates : [];
     for (const polygon of polygons) {
       for (const ring of polygon) {
+        let previous = ring[0];
         for (let i = 1; i < ring.length; i += 1) {
-          const previous = ring[i - 1];
           const current = ring[i];
-          if (Math.abs(previous[0] - current[0]) > 180) continue;
-          const a = point(previous[1], previous[0], 1.008);
-          const b = point(current[1], current[0], 1.008);
-          segments.push(a.x, a.y, a.z, b.x, b.y, b.z);
+          if (viewDirection && i < ring.length - 1
+            && Math.hypot((current[0] - previous[0]) * Math.cos(current[1] * Math.PI / 180), current[1] - previous[1]) < tolerance) continue;
+          if (Math.abs(previous[0] - current[0]) > 180) {
+            previous = current;
+            continue;
+          }
+          const a = point(previous[1], previous[0], MAP_RADIUS);
+          const b = point(current[1], current[0], MAP_RADIUS);
+          if (!viewDirection || a.dot(viewDirection) >= minDot || b.dot(viewDirection) >= minDot) {
+            segments.push(a.x, a.y, a.z, b.x, b.y, b.z);
+          }
+          previous = current;
         }
       }
     }
@@ -128,8 +137,8 @@ function countryGeometry(): THREE.BufferGeometry {
 }
 
 function screenPoint(place: Place, camera: THREE.PerspectiveCamera, width: number, height: number) {
-  const worldPoint = point(place.lat, place.lon, 1.02);
-  if (worldPoint.dot(camera.position) < 0.14 * camera.position.length()) return null;
+  const worldPoint = point(place.lat, place.lon, MAP_RADIUS);
+  if (worldPoint.dot(camera.position) < MAP_RADIUS * MAP_RADIUS) return null;
   const projected = worldPoint.project(camera);
   const x = (projected.x * 0.5 + 0.5) * width;
   const y = (-projected.y * 0.5 + 0.5) * height;
@@ -181,9 +190,16 @@ export function GlobeScene({ nodes, edges, placements, selectedId, homeSignal, s
     const minorGrid = new THREE.LineSegments(gridGeometry(5), new THREE.LineBasicMaterial({
       color: 0x4e7775, transparent: true, opacity: 0, depthWrite: false,
     }));
-    const borders = new THREE.LineSegments(countryGeometry(), new THREE.LineBasicMaterial({
+    const borders = new THREE.LineSegments(countryGeometry(world as unknown as Topology), new THREE.LineBasicMaterial({
       color: 0x9d8e79, transparent: true, opacity: 0.69, depthWrite: false,
     }));
+    let detailedBorders: THREE.LineSegments | null = null;
+    let detailedWorld: Topology | null = null;
+    let detailDirection: THREE.Vector3 | null = null;
+    let detailLevel = "mid";
+    let lastDetailBuild = 0;
+    let detailsRequested = false;
+    let disposed = false;
     scene.add(majorGrid, minorGrid, borders);
     const wireLayer = document.createElementNS("http://www.w3.org/2000/svg", "svg");
     wireLayer.classList.add("globe-wire-layer");
@@ -224,10 +240,14 @@ export function GlobeScene({ nodes, edges, placements, selectedId, homeSignal, s
       return { place, label };
     });
     let animation = 0;
+    let lastFrame = performance.now();
     const frame = () => {
       animation = requestAnimationFrame(frame);
+      const now = performance.now();
+      const elapsed = Math.min(0.1, (now - lastFrame) / 1000);
+      lastFrame = now;
       if (runtime.flyTo) {
-        camera.position.lerp(runtime.flyTo, 0.065);
+        camera.position.lerp(runtime.flyTo, 1 - Math.exp(-4 * elapsed));
         if (camera.position.distanceTo(runtime.flyTo) < 0.005) runtime.flyTo = null;
       }
       const zoomPercent = 100 * (controls.maxDistance - camera.position.length())
@@ -237,6 +257,40 @@ export function GlobeScene({ nodes, edges, placements, selectedId, homeSignal, s
       controls.rotateSpeed = 0.585 * (1 - 0.65 * easing);
       controls.update();
       const distance = camera.position.length();
+      const requestedLevel = distance < 1.32 ? "close" : "mid";
+      const detailCutoff = requestedLevel === "close" ? 0.75 : 0.5;
+      const detailTolerance = requestedLevel === "close" ? 0.012 : 0.025;
+      if (distance < 2.1 && !detailsRequested) {
+        detailsRequested = true;
+        void import("world-atlas/countries-10m.json").then(({ default: detailData }) => {
+          if (disposed) return;
+          const direction = camera.position.clone().normalize();
+          const topology = detailData as unknown as Topology;
+          detailedBorders = new THREE.LineSegments(
+            countryGeometry(topology, direction, detailCutoff, detailTolerance),
+            new THREE.LineBasicMaterial({ color: 0x9d8e79, transparent: true, opacity: 0, depthWrite: false }),
+          );
+          detailDirection = direction;
+          detailLevel = requestedLevel;
+          lastDetailBuild = performance.now();
+          detailedWorld = topology;
+          scene.add(detailedBorders);
+        }).catch(() => { /* The base coastline remains available. */ });
+      }
+      if (distance < 2.1 && detailedBorders && detailedWorld && detailDirection && now - lastDetailBuild > 300) {
+        const direction = camera.position.clone().normalize();
+        if (direction.dot(detailDirection) < 0.975 || requestedLevel !== detailLevel) {
+          const previous = detailedBorders.geometry;
+          detailedBorders.geometry = countryGeometry(detailedWorld, direction, detailCutoff, detailTolerance);
+          previous.dispose();
+          detailDirection = direction;
+          detailLevel = requestedLevel;
+          lastDetailBuild = now;
+        }
+      }
+      const detailMix = detailedBorders ? Math.max(0, Math.min(1, (2.1 - distance) / 0.5)) : 0;
+      (borders.material as THREE.LineBasicMaterial).opacity = 0.69 * (1 - 0.45 * detailMix);
+      if (detailedBorders) (detailedBorders.material as THREE.LineBasicMaterial).opacity = 0.55 * detailMix;
       (minorGrid.material as THREE.LineBasicMaterial).opacity = Math.max(0, Math.min(0.26, (2.35 - distance) * 0.35));
       const width = host.clientWidth;
       const height = host.clientHeight;
@@ -254,16 +308,19 @@ export function GlobeScene({ nodes, edges, placements, selectedId, homeSignal, s
       const anchors = new Map<PlaceGroup, { x: number; y: number } | null>();
       const collapsed = new Map<string, Array<{ group: PlaceGroup; x: number; y: number }>>();
       const visibleByGroup = new Map<PlaceGroup, number[]>();
+      const expandedByGroup = new Map<PlaceGroup, boolean>();
       for (const group of ordered) {
         const anchor = screenPoint(group.place, camera, width, height);
         anchors.set(group, anchor);
         const visible = insideStage(anchor);
-        const expanded = runtime.showAll || distance < 2
-          || group.markers.some((marker) => marker.node.id === runtime.selectedId || runtime.relatedIds.has(marker.node.id));
+        const featured = group.markers.filter((marker) => marker.node.id === runtime.selectedId
+          || runtime.relatedIds.has(marker.node.id));
+        const expanded = runtime.showAll || distance < 1.3
+          || (group.markers.length === 1 && (distance < 2 || featured.length > 0));
+        expandedByGroup.set(group, expanded);
         group.cluster.hidden = true;
-        group.cluster.classList.toggle("is-muted", Boolean(runtime.selectedId)
-          && !group.markers.some((marker) => marker.node.id === runtime.selectedId || runtime.relatedIds.has(marker.node.id)));
-        if (visible && !expanded && anchor) {
+        group.cluster.classList.toggle("is-muted", Boolean(runtime.selectedId) && featured.length === 0);
+        if (visible && !expanded && featured.length === 0 && anchor) {
           const key = `${Math.floor(anchor.x / 58)}:${Math.floor(anchor.y / 58)}`;
           const bucket = collapsed.get(key) ?? [];
           bucket.push({ group, x: anchor.x, y: anchor.y });
@@ -272,12 +329,13 @@ export function GlobeScene({ nodes, edges, placements, selectedId, homeSignal, s
         const pinned = group.markers[0]?.node.id === runtime.selectedId;
         const indices = visiblePlaceIndices(group.markers.length, group.page, runtime.showAll, pinned);
         visibleByGroup.set(group, indices);
-        if (visible && expanded && !runtime.showAll && group.markers.length > PLACE_PAGE_SIZE && anchor) {
-          const remaining = group.markers.length - indices.length;
+        if (visible && !runtime.showAll && anchor && group.markers.length > featured.length
+          && ((expanded && group.markers.length > PLACE_PAGE_SIZE) || (!expanded && featured.length > 0))) {
+          const remaining = group.markers.length - (expanded ? indices.length : featured.length);
           group.cluster.hidden = false;
           group.cluster.textContent = `+${remaining}`;
-          group.cluster.title = `Show more from ${group.place.name}`;
-          group.cluster.setAttribute("aria-label", `Show more nodes from ${group.place.name}`);
+          group.cluster.title = expanded ? `Show more from ${group.place.name}` : `Zoom to ${group.place.name}`;
+          group.cluster.setAttribute("aria-label", group.cluster.title);
           group.cluster.style.transform = `translate(${anchor.x - 12}px, ${anchor.y + 34}px)`;
         }
         const showPlace = visible && distance < 2.48 && anchor
@@ -315,15 +373,16 @@ export function GlobeScene({ nodes, edges, placements, selectedId, homeSignal, s
       for (const group of ordered) {
         const anchor = anchors.get(group);
         const visibleIndices = visibleByGroup.get(group) ?? [];
-        const expanded = runtime.showAll || distance < 2
-          || group.markers.some((marker) => marker.node.id === runtime.selectedId || runtime.relatedIds.has(marker.node.id));
+        const expanded = expandedByGroup.get(group);
         for (let index = 0; index < group.markers.length; index += 1) {
           const marker = group.markers[index];
           const slot = visibleIndices.indexOf(index);
-          const offset = nodeOffset(slot);
-          marker.x = (anchor?.x ?? 0) + offset.x;
-          marker.y = (anchor?.y ?? 0) + offset.y;
-          marker.visible = insideStage(anchor ?? null) && expanded && slot >= 0
+          const featured = marker.node.id === runtime.selectedId || runtime.relatedIds.has(marker.node.id);
+          const projected = insideStage(anchor ?? null) && (expanded ? slot >= 0 : featured)
+            ? screenPoint(marker.displayPlace, camera, width, height) : null;
+          marker.x = projected?.x ?? 0;
+          marker.y = projected?.y ?? 0;
+          marker.visible = Boolean(projected)
             && Math.hypot(marker.x - width / 2, marker.y - height / 2) < globeRadius - 8
             && marker.x > 8 && marker.x < width - 8 && marker.y > 100 && marker.y < height - 90;
           marker.element.hidden = !marker.visible;
@@ -374,12 +433,17 @@ export function GlobeScene({ nodes, edges, placements, selectedId, homeSignal, s
     frame();
     controls.addEventListener("start", () => { runtime.flyTo = null; });
     return () => {
+      disposed = true;
       cancelAnimationFrame(animation);
       observer.disconnect();
       controls.dispose();
       for (const item of [sphere, majorGrid, minorGrid, borders]) {
         item.geometry.dispose();
         (item.material as THREE.Material).dispose();
+      }
+      if (detailedBorders) {
+        detailedBorders.geometry.dispose();
+        (detailedBorders.material as THREE.Material).dispose();
       }
       renderer.dispose();
       host.replaceChildren();
@@ -417,10 +481,10 @@ export function GlobeScene({ nodes, edges, placements, selectedId, homeSignal, s
         cluster.title = placement.place.name;
         cluster.setAttribute("aria-label", `Zoom to ${placement.place.name}`);
         cluster.addEventListener("click", () => {
-          if (runtime.camera.position.length() < 2 && group && group.markers.length > PLACE_PAGE_SIZE && !runtime.showAll) {
+          if (runtime.camera.position.length() < 1.3 && group && group.markers.length > PLACE_PAGE_SIZE && !runtime.showAll) {
             const pinned = group.markers[0]?.node.id === runtime.selectedId;
             group.page = (group.page + 1) % Math.ceil((group.markers.length - Number(pinned)) / (PLACE_PAGE_SIZE - Number(pinned)));
-          } else runtime.flyTo = point(placement.place.lat, placement.place.lon, 1.62);
+          } else runtime.flyTo = point(placement.place.lat, placement.place.lon, 1.2);
         });
         markerLayer.appendChild(cluster);
         const label = document.createElement("div");
@@ -447,12 +511,15 @@ export function GlobeScene({ nodes, edges, placements, selectedId, homeSignal, s
       element.classList.toggle("is-selected", node.id === selectedId);
       element.classList.toggle("is-birthplace", placement.role === "birthplace");
       markerLayer.appendChild(element);
-      const marker = { node, placement, element, x: 0, y: 0, visible: false };
+      const marker = { node, placement, displayPlace: placement.place, element, x: 0, y: 0, visible: false };
       group.markers.push(marker);
       if (placement.role === "musical_base" || !runtime.markers.has(node.id)) runtime.markers.set(node.id, marker);
     }
     runtime.groups = groups;
     for (const group of runtime.groups) {
+      [...group.markers].sort((a, b) => a.node.id.localeCompare(b.node.id)).forEach((marker, index) => {
+        marker.displayPlace = offsetPlace(group.place, index);
+      });
       group.markers.sort((a, b) => Number(b.node.id === selectedId) - Number(a.node.id === selectedId)
         || Number(runtime.relatedIds.has(b.node.id)) - Number(runtime.relatedIds.has(a.node.id))
         || a.node.label.localeCompare(b.node.label));

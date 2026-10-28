@@ -4,7 +4,9 @@ export function markerPlacements(placements, selectedId) {
   const selectedBirthplace = placements.find((entry) => entry.nodeId === selectedId && entry.role === "birthplace");
   if (!selectedBirthplace) return bases;
   const selectedBase = bases.find((entry) => entry.nodeId === selectedId);
-  return selectedBirthplace.placeId === selectedBase?.placeId ? bases : [...bases, selectedBirthplace];
+  return selectedBirthplace.placeId === selectedBase?.placeId
+    || (selectedBase?.place && selectedBirthplace.place && samePlace(selectedBirthplace.place, selectedBase.place))
+    ? bases : [...bases, selectedBirthplace];
 }
 
 export function samePlace(a, b) {

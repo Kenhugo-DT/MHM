@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { connectionPath, nodeOffset, PLACE_PAGE_SIZE, visiblePlaceIndices } from "../site/src/globe/node-layout.mjs";
+import { connectionPath, nodeOffset, offsetPlace, PLACE_PAGE_SIZE, visiblePlaceIndices } from "../site/src/globe/node-layout.mjs";
 
 test("node offsets stay close to their geographic anchor", () => {
   const positions = Array.from({ length: PLACE_PAGE_SIZE }, (_, index) => nodeOffset(index));
@@ -24,6 +24,17 @@ test("dense locations page through nodes without sending them to other countries
   assert.deepEqual(visiblePlaceIndices(20, 2), [16, 17, 18, 19]);
   assert.equal(visiblePlaceIndices(20, 0, true).length, 20);
   assert.deepEqual(visiblePlaceIndices(20, 1, false, true), [0, 8, 9, 10, 11, 12, 13, 14]);
+});
+
+test("each city slot has a fixed nearby geographic position", () => {
+  const bergen = { name: "Bergen", lat: 60.39299, lon: 5.32415 };
+  assert.deepEqual(offsetPlace(bergen, 0), bergen);
+  for (let index = 1; index < 80; index += 1) {
+    const point = offsetPlace(bergen, index);
+    assert.deepEqual(point, offsetPlace(bergen, index));
+    const eastWest = (point.lon - bergen.lon) * Math.cos(bergen.lat * Math.PI / 180);
+    assert.ok(Math.hypot(point.lat - bergen.lat, eastWest) <= 0.267);
+  }
 });
 
 test("connection routes use only horizontal, vertical and 45-degree segments", () => {

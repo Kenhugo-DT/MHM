@@ -21,3 +21,12 @@ test("source IDs for the same city can share a globe cluster without merging dis
   assert.ok(!samePlace(london, { name: "London", country: "Canada", lat: 42.9849, lon: -81.2453 }));
   assert.ok(!samePlace(london, { name: "London", country: "United Kingdom", lat: 52, lon: -0.1275 }));
 });
+
+test("a selected birthplace does not duplicate a musical base in the same city", () => {
+  const london = { name: "London", country: "United Kingdom", lat: 51.5072, lon: -0.1275 };
+  const sameCity = [
+    { nodeId: "a", role: "musical_base", placeId: "wikidata:Q84", place: london },
+    { nodeId: "a", role: "birthplace", placeId: "atlas:london", place: { ...london, lat: 51.507 } },
+  ];
+  assert.deepEqual(markerPlacements(sameCity, "a"), sameCity.slice(0, 1));
+});
