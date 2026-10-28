@@ -1,13 +1,20 @@
 export function nodeOffset(index) {
-  let ring = 1;
-  let slot = index;
-  while (slot >= ring * 8) {
-    slot -= ring * 8;
-    ring += 1;
-  }
-  const angle = -Math.PI / 2 + (slot + (ring % 2) * 0.5) * Math.PI * 2 / (ring * 8);
-  const radius = 34 + (ring - 1) * 32;
+  if (index === 0) return { x: 0, y: 0 };
+  const ring = Math.floor((index - 1) / 7);
+  const slot = (index - 1) % 7;
+  const angle = -Math.PI / 2 + (slot + (ring % 2) * 0.5) * Math.PI * 2 / 7;
+  const radius = Math.min(38, 26 + ring * 6);
   return { x: Math.cos(angle) * radius, y: Math.sin(angle) * radius };
+}
+
+export const PLACE_PAGE_SIZE = 8;
+
+export function visiblePlaceIndices(count, page = 0, showAll = false, pinFirst = false) {
+  if (showAll || count <= PLACE_PAGE_SIZE) return Array.from({ length: count }, (_, index) => index);
+  const pageSize = PLACE_PAGE_SIZE - Number(pinFirst);
+  const start = Number(pinFirst) + page * pageSize;
+  const pageIndices = Array.from({ length: Math.min(pageSize, count - start) }, (_, index) => start + index);
+  return pinFirst ? [0, ...pageIndices] : pageIndices;
 }
 
 export function connectionPath(a, b) {

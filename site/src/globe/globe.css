@@ -60,9 +60,11 @@ a { color: inherit; }
 .globe-node.is-muted { opacity: .16; }
 .globe-node.is-birthplace { border-style: dashed; }
 .globe-node-name { position: absolute; top: -4px; left: 17px; display: none; width: max-content; max-width: 125px; overflow: hidden; color: #eee8dc; font-size: 10px; font-weight: 600; line-height: 18px; text-overflow: ellipsis; white-space: nowrap; text-shadow: 0 1px 3px #000, 0 0 8px #000; pointer-events: none; }
+.globe-node.is-selected .globe-node-name { padding: 0 4px; background: #101715e8; }
 .globe-node.has-name .globe-node-name, .globe-node:hover .globe-node-name, .globe-node:focus-visible .globe-node-name { display: block; }
 .globe-cluster { width: 24px; height: 24px; border: 1px solid #b5986f; background: #192322; color: #f1e7d4; font-size: 9px; font-weight: 700; box-shadow: 0 0 0 3px #0b0e0eb8; }
 .globe-cluster:hover, .globe-cluster:focus-visible { outline: 1px solid #e1c991; background: #354342; }
+.globe-cluster.is-muted { opacity: .14; }
 .globe-node[hidden], .globe-cluster[hidden] { display: none; }
 .globe-stage-heading { position: absolute; top: 26px; left: 29px; z-index: 2; max-width: min(50%, 380px); display: flex; flex-direction: column; gap: 5px; pointer-events: none; }
 .globe-stage-heading span, .globe-time span { color: #c7a967; font-size: 10px; font-weight: 700; letter-spacing: 1.8px; }
@@ -78,8 +80,8 @@ a { color: inherit; }
 .globe-time > input:disabled { opacity: .35; cursor: not-allowed; }
 .globe-time small { display: block; color: #9ea9a0; font-size: 10px; line-height: 1.4; }
 .globe-place-labels { position: absolute; inset: 0; z-index: 4; pointer-events: none; }
-.globe-place-label { position: absolute; top: 0; left: 0; color: #b8aa99; opacity: .95; font-size: 10px; font-weight: 600; white-space: nowrap; text-shadow: 0 1px 3px #000, 0 0 8px #000; pointer-events: none; }
-.globe-country-label { color: #b29b80; opacity: .38; font-size: 10px; font-weight: 750; letter-spacing: 1.1px; }
+.globe-place-label { position: absolute; top: 0; left: 0; color: #9ec9c3; opacity: .96; font-size: 12px; font-weight: 700; white-space: nowrap; text-shadow: 0 1px 3px #000, 0 0 9px #000; pointer-events: none; }
+.globe-country-label { color: #c7aa7c; opacity: .58; font-size: 13px; font-weight: 750; letter-spacing: 1.2px; }
 .globe-place-label[hidden], .globe-tooltip[hidden] { display: none; }
 .globe-tooltip { position: absolute; z-index: 4; min-width: 110px; padding: 5px 8px; border: 1px solid #7c8b77; background: #17201e; color: #f3ebde; font-size: 11px; pointer-events: none; }
 .globe-loading { position: absolute; z-index: 3; top: 75px; left: 29px; padding: 9px 12px; border: 1px solid #625340; background: #151a18; color: #f0d4a2; font-size: 12px; }

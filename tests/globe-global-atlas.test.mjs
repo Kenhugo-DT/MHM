@@ -6,6 +6,7 @@ import { extendAtlas } from "../site/src/globe/global-atlas.mjs";
 const entries = JSON.parse(readFileSync(new URL("../site/src/globe/global-atlas.json", import.meta.url), "utf8"));
 
 test("atlas additions have unique sourced identities, years and valid city centres", () => {
+  assert.ok(!entries.some((entry) => entry.label === "U2"));
   assert.ok(entries.length >= 25);
   assert.ok(new Set(entries.map((entry) => entry.country)).size >= 18);
   assert.equal(new Set(entries.map((entry) => entry.mbid)).size, entries.length);
@@ -15,6 +16,11 @@ test("atlas additions have unique sourced identities, years and valid city centr
     assert.ok(entry.lat >= -90 && entry.lat <= 90);
     assert.ok(entry.lon >= -180 && entry.lon <= 180);
   }
+});
+
+test("globe atlas never restores an entity blocked from the main graph", () => {
+  const atlas = extendAtlas([], []);
+  assert.ok(!atlas.nodes.some((node) => node.label === "U2"));
 });
 
 test("atlas adds only missing bands and preserves an existing graph identity", () => {

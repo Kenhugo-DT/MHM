@@ -42,12 +42,13 @@ export interface GlobeData {
 }
 
 const blockedIds = new Set([...blocked.entities.map((entry) => entry.id), ...globeExcluded]);
+const blockedNames = new Set(blocked.entities.flatMap((entry) => entry.labels.map((label) => label.toLocaleLowerCase())));
 const base = import.meta.env.BASE_URL;
 const url = import.meta.env.VITE_SUPABASE_URL?.trim();
 const key = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY?.trim();
 
 function included(data: { nodes: GlobeNode[]; edges: GlobeEdge[] }): GlobeData {
-  const nodes = data.nodes.filter((node) => !blockedIds.has(node.id));
+  const nodes = data.nodes.filter((node) => !blockedIds.has(node.id) && !blockedNames.has(node.label.toLocaleLowerCase()));
   const ids = new Set(nodes.map((node) => node.id));
   const isConnection = (edge: GlobeEdge) => !/^wikipedia (?:link|category) signal$/i.test(edge.label.trim())
     && !edge.context.some((item) => /^wikipedia (?:link|category):/i.test(item.trim()));

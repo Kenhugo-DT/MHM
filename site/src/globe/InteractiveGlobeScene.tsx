@@ -5,8 +5,8 @@ import { feature } from "topojson-client";
 import world from "world-atlas/countries-50m.json";
 import type { Topology } from "topojson-specification";
 import type { GlobeEdge, GlobeNode } from "./data";
-import { connectionPath, nodeOffset } from "./node-layout.mjs";
-import { markerPlacements } from "./markers.mjs";
+import { connectionPath, nodeOffset, PLACE_PAGE_SIZE, visiblePlaceIndices } from "./node-layout.mjs";
+import { markerPlacements, samePlace } from "./markers.mjs";
 
 export interface Place {
   id: string; name: string; country: string; lat: number; lon: number;
@@ -45,6 +45,7 @@ interface PlaceGroup {
   markers: Marker[];
   cluster: HTMLButtonElement;
   label: HTMLDivElement;
+  page: number;
 }
 
 interface Runtime {
@@ -168,7 +169,7 @@ export function GlobeScene({ nodes, edges, placements, selectedId, homeSignal, s
     controls.dampingFactor = 0.07;
     controls.minDistance = 1.12;
     controls.maxDistance = 5.4;
-    controls.rotateSpeed = 0.65;
+    controls.rotateSpeed = 0.585;
     const sphere = new THREE.Mesh(
       new THREE.SphereGeometry(1, 96, 64),
       new THREE.MeshBasicMaterial({ color: 0x101414 }),
@@ -229,11 +230,17 @@ export function GlobeScene({ nodes, edges, placements, selectedId, homeSignal, s
         camera.position.lerp(runtime.flyTo, 0.065);
         if (camera.position.distanceTo(runtime.flyTo) < 0.005) runtime.flyTo = null;
       }
+      const zoomPercent = 100 * (controls.maxDistance - camera.position.length())
+        / (controls.maxDistance - controls.minDistance);
+      const closeZoom = Math.max(0, Math.min(1, (zoomPercent - 50) / 50));
+      const easing = closeZoom * closeZoom * (3 - 2 * closeZoom);
+      controls.rotateSpeed = 0.585 * (1 - 0.65 * easing);
       controls.update();
       const distance = camera.position.length();
       (minorGrid.material as THREE.LineBasicMaterial).opacity = Math.max(0, Math.min(0.26, (2.35 - distance) * 0.35));
       const width = host.clientWidth;
       const height = host.clientHeight;
+      const globeRadius = height / (2 * Math.tan(camera.fov * Math.PI / 360) * Math.sqrt(distance * distance - 1));
       const insideStage = (anchor: { x: number; y: number } | null) => Boolean(anchor
         && anchor.x > 12 && anchor.x < width - 12 && anchor.y > 115
         && anchor.y < height - (width < 600 ? 105 : 135));
@@ -246,24 +253,40 @@ export function GlobeScene({ nodes, edges, placements, selectedId, homeSignal, s
         || b.markers.length - a.markers.length);
       const anchors = new Map<PlaceGroup, { x: number; y: number } | null>();
       const collapsed = new Map<string, Array<{ group: PlaceGroup; x: number; y: number }>>();
+      const visibleByGroup = new Map<PlaceGroup, number[]>();
       for (const group of ordered) {
         const anchor = screenPoint(group.place, camera, width, height);
         anchors.set(group, anchor);
         const visible = insideStage(anchor);
-        const expanded = runtime.showAll || distance < 2.38
+        const expanded = runtime.showAll || distance < 2
           || group.markers.some((marker) => marker.node.id === runtime.selectedId || runtime.relatedIds.has(marker.node.id));
         group.cluster.hidden = true;
+        group.cluster.classList.toggle("is-muted", Boolean(runtime.selectedId)
+          && !group.markers.some((marker) => marker.node.id === runtime.selectedId || runtime.relatedIds.has(marker.node.id)));
         if (visible && !expanded && anchor) {
           const key = `${Math.floor(anchor.x / 58)}:${Math.floor(anchor.y / 58)}`;
           const bucket = collapsed.get(key) ?? [];
           bucket.push({ group, x: anchor.x, y: anchor.y });
           collapsed.set(key, bucket);
         }
+        const pinned = group.markers[0]?.node.id === runtime.selectedId;
+        const indices = visiblePlaceIndices(group.markers.length, group.page, runtime.showAll, pinned);
+        visibleByGroup.set(group, indices);
+        if (visible && expanded && !runtime.showAll && group.markers.length > PLACE_PAGE_SIZE && anchor) {
+          const remaining = group.markers.length - indices.length;
+          group.cluster.hidden = false;
+          group.cluster.textContent = `+${remaining}`;
+          group.cluster.title = `Show more from ${group.place.name}`;
+          group.cluster.setAttribute("aria-label", `Show more nodes from ${group.place.name}`);
+          group.cluster.style.transform = `translate(${anchor.x - 12}px, ${anchor.y + 34}px)`;
+        }
         const showPlace = visible && distance < 2.48 && anchor
           && anchor.x > 10 && anchor.x < width - 110 && anchor.y > 110 && anchor.y < height - 110;
         group.label.hidden = !showPlace;
         if (showPlace && anchor) {
-          const box = { x: anchor.x + 6, y: anchor.y + 13, width: Math.max(48, group.place.name.length * 6), height: 14 };
+          const box = { x: anchor.x + (group.markers.length > 1 ? 15 : 10),
+            y: anchor.y + (group.markers.length > 1 ? 10 : 16),
+            width: Math.max(60, group.place.name.length * 7.4), height: 18 };
           if (labelBoxes.some((other) => overlaps(box, other))) group.label.hidden = true;
           else {
             labelBoxes.push(box);
@@ -280,7 +303,7 @@ export function GlobeScene({ nodes, edges, placements, selectedId, homeSignal, s
         representative.textContent = count > 1 ? String(count) : "";
         representative.title = `${count} mapped ${count === 1 ? "node" : "nodes"}`;
         representative.setAttribute("aria-label", `Zoom to ${count} mapped ${count === 1 ? "node" : "nodes"}`);
-        representative.style.transform = `translate(${x}px, ${y}px)`;
+        representative.style.transform = `translate(${x - 12}px, ${y - 12}px)`;
       }
       for (const { place, label } of countryElements) {
         const anchor = screenPoint(place, camera, width, height);
@@ -291,38 +314,21 @@ export function GlobeScene({ nodes, edges, placements, selectedId, homeSignal, s
       const dotBoxes: Array<{ x: number; y: number; width: number; height: number }> = [];
       for (const group of ordered) {
         const anchor = anchors.get(group);
-        const expanded = runtime.showAll || distance < 2.38
+        const visibleIndices = visibleByGroup.get(group) ?? [];
+        const expanded = runtime.showAll || distance < 2
           || group.markers.some((marker) => marker.node.id === runtime.selectedId || runtime.relatedIds.has(marker.node.id));
         for (let index = 0; index < group.markers.length; index += 1) {
           const marker = group.markers[index];
-          marker.visible = insideStage(anchor ?? null) && expanded;
+          const slot = visibleIndices.indexOf(index);
+          const offset = nodeOffset(slot);
+          marker.x = (anchor?.x ?? 0) + offset.x;
+          marker.y = (anchor?.y ?? 0) + offset.y;
+          marker.visible = insideStage(anchor ?? null) && expanded && slot >= 0
+            && Math.hypot(marker.x - width / 2, marker.y - height / 2) < globeRadius - 8
+            && marker.x > 8 && marker.x < width - 8 && marker.y > 100 && marker.y < height - 90;
           marker.element.hidden = !marker.visible;
-          if (!marker.visible || !anchor) continue;
-          const offset = nodeOffset(index);
-          const spread = group.markers.length === 1 ? 0.65
-            : distance < 2.38 ? Math.min(2.2, 0.8 + (2.38 - distance) * 1.1) : 0.85;
-          let baseX = anchor.x + offset.x * spread;
-          let baseY = anchor.y + offset.y * spread;
-          const focus = runtime.selectedId ? runtime.markers.get(runtime.selectedId) : undefined;
-          if (focus?.visible && runtime.relatedIds.has(marker.node.id)) {
-            const dx = baseX - focus.x;
-            const dy = baseY - focus.y;
-            const separation = Math.hypot(dx, dy);
-            if (separation < 72) {
-              const angle = separation > 1 ? Math.atan2(dy, dx) : -Math.PI / 4;
-              baseX = focus.x + Math.cos(angle) * 72;
-              baseY = focus.y + Math.sin(angle) * 72;
-            }
-          }
-          let box = { x: 0, y: 0, width: 19, height: 19 };
-          for (let attempt = 0; attempt < (group.markers.length === 1 ? 4 : 9); attempt += 1) {
-            const extra = attempt * 18;
-            marker.x = baseX + Math.sign(offset.x) * extra;
-            marker.y = baseY + Math.sign(offset.y) * extra;
-            box = { x: marker.x - 9, y: marker.y - 9, width: 19, height: 19 };
-            if (!labelBoxes.some((other) => overlaps(box, other)) && !dotBoxes.some((other) => overlaps(box, other))) break;
-          }
-          dotBoxes.push(box);
+          if (!marker.visible) continue;
+          dotBoxes.push({ x: marker.x - 9, y: marker.y - 9, width: 19, height: 19 });
           marker.element.style.transform = `translate(${marker.x - 7}px, ${marker.y - 7}px)`;
         }
       }
@@ -354,7 +360,8 @@ export function GlobeScene({ nodes, edges, placements, selectedId, homeSignal, s
             && !labelBoxes.some((other) => overlaps(box, other))
             && (important || !dotBoxes.some((other) => overlaps(box, other)
               && Math.hypot(other.x + 9 - marker.x, other.y + 9 - marker.y) > 10));
-        }) : undefined;
+        }) ?? (marker.node.id === runtime.selectedId ? options.find(({ x, y }) =>
+          x > 5 && x + labelWidth < width - 5 && y > 92 && y + 17 < height - 90) : undefined) : undefined;
         marker.element.classList.toggle("has-name", Boolean(chosen));
         if (chosen) {
           marker.element.firstElementChild!.setAttribute("style",
@@ -398,10 +405,11 @@ export function GlobeScene({ nodes, edges, placements, selectedId, homeSignal, s
       .map((edge) => edge.source === selectedId ? edge.target : edge.source));
     const byId = new Map(nodes.map((node) => [node.id, node]));
     const grouped = new Map<string, PlaceGroup>();
+    const groups: PlaceGroup[] = [];
     for (const placement of markerPlacements(placements, selectedId)) {
       const node = byId.get(placement.nodeId);
       if (!node || (runtime.markers.has(node.id) && placement.role === "musical_base")) continue;
-      let group = grouped.get(placement.placeId);
+      let group = grouped.get(placement.placeId) ?? groups.find((candidate) => samePlace(candidate.place, placement.place));
       if (!group) {
         const cluster = document.createElement("button");
         cluster.type = "button";
@@ -409,16 +417,20 @@ export function GlobeScene({ nodes, edges, placements, selectedId, homeSignal, s
         cluster.title = placement.place.name;
         cluster.setAttribute("aria-label", `Zoom to ${placement.place.name}`);
         cluster.addEventListener("click", () => {
-          runtime.flyTo = point(placement.place.lat, placement.place.lon, 1.62);
+          if (runtime.camera.position.length() < 2 && group && group.markers.length > PLACE_PAGE_SIZE && !runtime.showAll) {
+            const pinned = group.markers[0]?.node.id === runtime.selectedId;
+            group.page = (group.page + 1) % Math.ceil((group.markers.length - Number(pinned)) / (PLACE_PAGE_SIZE - Number(pinned)));
+          } else runtime.flyTo = point(placement.place.lat, placement.place.lon, 1.62);
         });
         markerLayer.appendChild(cluster);
         const label = document.createElement("div");
         label.className = "globe-place-label";
         label.textContent = placement.place.name;
         labelLayer.appendChild(label);
-        group = { place: placement.place, markers: [], cluster, label };
-        grouped.set(placement.placeId, group);
+        group = { place: placement.place, markers: [], cluster, label, page: 0 };
+        groups.push(group);
       }
+      grouped.set(placement.placeId, group);
       const element = document.createElement("button");
       element.type = "button";
       element.className = "globe-node";
@@ -439,7 +451,7 @@ export function GlobeScene({ nodes, edges, placements, selectedId, homeSignal, s
       group.markers.push(marker);
       if (placement.role === "musical_base" || !runtime.markers.has(node.id)) runtime.markers.set(node.id, marker);
     }
-    runtime.groups = [...grouped.values()];
+    runtime.groups = groups;
     for (const group of runtime.groups) {
       group.markers.sort((a, b) => Number(b.node.id === selectedId) - Number(a.node.id === selectedId)
         || Number(runtime.relatedIds.has(b.node.id)) - Number(runtime.relatedIds.has(a.node.id))

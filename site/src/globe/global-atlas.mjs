@@ -1,4 +1,8 @@
 import entries from "./global-atlas.json" with { type: "json" };
+import blocked from "../../../shared/graph-schema/blocked-entities.json" with { type: "json" };
+
+const blockedNames = new Set(blocked.entities.flatMap((entity) => entity.labels.map((label) => label.toLocaleLowerCase())));
+const blockedIds = new Set(blocked.entities.map((entity) => entity.id));
 
 export function extendAtlas(nodes, placements) {
   const nextNodes = [...nodes];
@@ -8,6 +12,7 @@ export function extendAtlas(nodes, placements) {
   const bySource = new Map(nodes.flatMap((node) => (node.sources ?? []).map((source) => [source.url, node])));
   const placed = new Set(placements.filter((entry) => entry.role === "musical_base").map((entry) => entry.nodeId));
   for (const entry of entries) {
+    if (blockedIds.has(entry.id) || blockedNames.has(entry.label.toLocaleLowerCase())) continue;
     const sourceUrl = `https://musicbrainz.org/artist/${entry.mbid}`;
     const sameName = byName.get(entry.label.toLocaleLowerCase());
     const conflictingIdentity = sameName?.sources?.some((source) =>
