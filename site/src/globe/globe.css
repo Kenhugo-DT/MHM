@@ -71,6 +71,9 @@ a { color: inherit; }
 .globe-stage-heading strong { font-size: 21px; font-weight: 600; line-height: 1.12; }
 .globe-stage-count { position: absolute; top: 29px; right: 22px; z-index: 2; max-width: 46%; color: #acb2a8; font-size: 11px; text-align: right; }
 .globe-count-small { display: none; }
+.globe-zoom-controls { position: absolute; top: 66px; right: 22px; z-index: 5; display: grid; gap: 4px; }
+.globe-zoom-controls button { width: 40px; height: 40px; display: grid; place-items: center; padding: 0; border: 1px solid #514f46; border-radius: 3px; background: #191a17e8; color: #d8cbb6; }
+.globe-zoom-controls button:hover, .globe-zoom-controls button:focus-visible { border-color: #b99d6b; background: #302b22; color: #f3e7d3; outline: none; }
 .globe-time { position: absolute; z-index: 2; bottom: 23px; left: 28px; width: min(440px, calc(100% - 56px)); padding: 14px 17px 12px; border-top: 1px solid #726347; border-bottom: 1px solid #3b3933; background: rgba(20, 19, 16, .94); }
 .globe-time-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
 .globe-time-head label { display: flex; align-items: center; gap: 9px; cursor: pointer; }
@@ -136,6 +139,8 @@ a { color: inherit; }
   .globe-stage-count { top: 17px; right: 12px; font-size: 9px; }
   .globe-count-wide { display: none; }
   .globe-count-small { display: inline; }
+  .globe-zoom-controls { top: 51px; right: 12px; }
+  .globe-zoom-controls button { width: 38px; height: 38px; }
   .globe-time { bottom: 9px; left: 12px; width: min(330px, calc(100% - 24px)); padding: 9px 11px; }
   .globe-time small { display: none; }
   .globe-detail-head { padding: 16px 18px; }

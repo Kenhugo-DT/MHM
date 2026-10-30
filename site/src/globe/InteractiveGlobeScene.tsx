@@ -27,6 +27,7 @@ interface Props {
   placements: Placement[];
   selectedId?: string;
   homeSignal: number;
+  zoomCommand?: { id: number; direction: "in" | "out" };
   showAll: boolean;
   onPick: (nodeId: string) => void;
 }
@@ -149,7 +150,7 @@ function overlaps(a: { x: number; y: number; width: number; height: number }, b:
   return a.x < b.x + b.width && a.x + a.width > b.x && a.y < b.y + b.height && a.y + a.height > b.y;
 }
 
-export function GlobeScene({ nodes, edges, placements, selectedId, homeSignal, showAll, onPick }: Props) {
+export function GlobeScene({ nodes, edges, placements, selectedId, homeSignal, zoomCommand, showAll, onPick }: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
   const runtimeRef = useRef<Runtime | null>(null);
   const onPickRef = useRef(onPick);
@@ -550,6 +551,15 @@ export function GlobeScene({ nodes, edges, placements, selectedId, homeSignal, s
       runtimeRef.current.flyTo = point(33, -35, width < 600 ? 4.8 : 3.25);
     }
   }, [homeSignal]);
+
+  useEffect(() => {
+    const runtime = runtimeRef.current;
+    if (!runtime || !zoomCommand) return;
+    const current = runtime.flyTo ?? runtime.camera.position;
+    const distance = Math.max(1.12, Math.min(5.4,
+      current.length() * (zoomCommand.direction === "in" ? 0.8 : 1.25)));
+    runtime.flyTo = current.clone().setLength(distance);
+  }, [zoomCommand]);
 
   return <div className="globe-scene" ref={containerRef} aria-label="Interactive music history globe" />;
 }

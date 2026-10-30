@@ -1,4 +1,4 @@
-import { ArrowLeft, ExternalLink, Globe2, Home, MapPin, RefreshCw, Search, X } from "lucide-react";
+import { ArrowLeft, ExternalLink, Globe2, Home, MapPin, RefreshCw, Search, X, ZoomIn, ZoomOut } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 import { GlobeScene, type Placement } from "./InteractiveGlobeScene";
 import { loadFacts, loadGlobeData, type GlobeData, type GlobeFact } from "./data";
@@ -26,6 +26,7 @@ export function GlobeApp() {
   const [selectedId, setSelectedId] = useState<string>();
   const [showAll, setShowAll] = useState(false);
   const [homeSignal, setHomeSignal] = useState(0);
+  const [zoomCommand, setZoomCommand] = useState<{ id: number; direction: "in" | "out" }>();
   const [year, setYear] = useState(1977);
   const [timelineEnabled, setTimelineEnabled] = useState(false);
   const [facts, setFacts] = useState<GlobeFact[]>([]);
@@ -107,9 +108,13 @@ export function GlobeApp() {
 
     <main className="globe-main">
       <section className="globe-stage" aria-label="Geographic map of music history">
-        <GlobeScene nodes={visibleNodes} edges={visibleEdges} placements={visiblePlacements} selectedId={selectedId} homeSignal={homeSignal} showAll={showAll} onPick={choose} />
+        <GlobeScene nodes={visibleNodes} edges={visibleEdges} placements={visiblePlacements} selectedId={selectedId} homeSignal={homeSignal} zoomCommand={zoomCommand} showAll={showAll} onPick={choose} />
         <div className="globe-stage-heading"><span>GLOBAL ATLAS</span><strong>{selected ? selected.label : "Music history"}</strong></div>
         <div className="globe-stage-count"><span className="globe-count-wide">{mapped} bases · {visibleNodes.length} nodes{timelineEnabled ? ` started by ${year}` : ""} · {data?.source === "live" ? "live" : "published"}</span><span className="globe-count-small">{mapped} bases</span></div>
+        <div className="globe-zoom-controls" aria-label="Globe zoom controls">
+          <button type="button" title="Zoom in" aria-label="Zoom in" onClick={() => setZoomCommand((current) => ({ id: (current?.id ?? 0) + 1, direction: "in" }))}><ZoomIn size={19} aria-hidden="true" /></button>
+          <button type="button" title="Zoom out" aria-label="Zoom out" onClick={() => setZoomCommand((current) => ({ id: (current?.id ?? 0) + 1, direction: "out" }))}><ZoomOut size={19} aria-hidden="true" /></button>
+        </div>
         {loading && !data && <div className="globe-loading">Loading geography...</div>}
         {error && <div className="globe-loading" role="alert">{error}</div>}
         <div className="globe-time">
