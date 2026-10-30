@@ -66,6 +66,8 @@ export function preserveIncrementalLayouts(layouts, previous, graph) {
   for (const [mode, layout] of Object.entries(layouts)) {
     if (mode === "alphabetic" || !previous.layouts[mode]?.nodes) continue;
     const old = previous.layouts[mode].nodes;
+    // A large history expansion needs a fresh timeline to keep crowded decades legible.
+    if (mode === "timeline" && Object.keys(layout.nodes).filter((id) => !old[id]).length > 32) continue;
     const occupied = [];
     for (const [id, point] of Object.entries(layout.nodes)) {
       if (!old[id] || !graphNodes.has(id)) continue;
@@ -86,9 +88,13 @@ export function preserveIncrementalLayouts(layouts, previous, graph) {
       const connectedId = connection?.source === id ? connection.target : connection?.source;
       const nearId = node?.layoutHints?.nearNode ?? connectedId;
       const anchor = mode === "timeline" ? undefined : layout.nodes[nearId];
-      const origin = anchor ? { x: anchor.x, y: anchor.y } : point;
+      const origin = mode === "organized" && Number.isFinite(node?.x) && Number.isFinite(node?.y)
+        ? { x: node.x, y: node.y } : anchor ? { x: anchor.x, y: anchor.y } : point;
+      const zone = mode === "organized" ? ORGANIZED_MAP_ZONES[node?.zone] : undefined;
+      const insideZone = zone && origin.x >= zone.x && origin.x <= zone.x + zone.width &&
+        origin.y >= zone.y && origin.y <= zone.y + zone.height;
       const placed = openPoint(origin.x, origin.y, occupied, mode === "timeline", node?.label,
-        mode === "organized" ? ORGANIZED_MAP_ZONES[node?.zone] : undefined);
+        insideZone ? zone : undefined);
       point.x = placed.x;
       point.y = placed.y;
       occupied.push({ ...point, label: node?.label, fresh: true });

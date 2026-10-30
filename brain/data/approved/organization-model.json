@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-20T09:16:24.937Z",
+  "generatedAt": "2026-10-30T11:43:40.698Z",
   "source": "approved graph + learning model + layout analysis",
   "graph": {
-    "nodes": 1017,
-    "edges": 1328,
-    "mapConnections": 896,
+    "nodes": 1146,
+    "edges": 1502,
+    "mapConnections": 1070,
     "generatedAt": "2026-10-20T09:16:24.754Z"
   },
   "layoutPolicy": {
@@ -19,7 +19,7 @@
   },
   "layoutIntelligence": {
     "version": 1,
-    "generatedAt": "2026-10-20T09:16:24.937Z",
+    "generatedAt": "2026-10-30T11:43:40.698Z",
     "intent": "organized chaos with readable labels and porous genre boundaries",
     "global": {
       "targetLabelState": "close-but-readable",
@@ -31,17 +31,17 @@
       "classical-history": {
         "zone": "classical-history",
         "label": "CLASSICAL / ROMANTIC",
-        "pressureScore": 0.346,
-        "density": 1.722,
-        "overlapPerNode": 0.791,
-        "bridgeRatio": 0.093,
-        "spacingMultiplier": 1.225,
+        "pressureScore": 0.687,
+        "density": 6.249,
+        "overlapPerNode": 0.218,
+        "bridgeRatio": 0.083,
+        "spacingMultiplier": 1.369,
         "expansion": {
-          "x": 247,
-          "y": 236
+          "x": 365,
+          "y": 344
         },
-        "bridgeBleed": 302,
-        "strategy": "preserve-loose-cluster",
+        "bridgeBleed": 355,
+        "strategy": "expand-and-relax",
         "bridgeTargets": [],
         "readableChaos": true
       },
@@ -49,15 +49,15 @@
         "zone": "pop-soul-disco",
         "label": "POP / SOUL / DISCO",
         "pressureScore": 1,
-        "density": 5.507,
-        "overlapPerNode": 1.658,
-        "bridgeRatio": 0.132,
+        "density": 5.978,
+        "overlapPerNode": 1.527,
+        "bridgeRatio": 0.121,
         "spacingMultiplier": 1.5,
         "expansion": {
           "x": 690,
           "y": 336
         },
-        "bridgeBleed": 453,
+        "bridgeBleed": 444,
         "strategy": "expand-and-relax",
         "bridgeTargets": [],
         "readableChaos": true
@@ -82,16 +82,16 @@
       "jazz": {
         "zone": "jazz",
         "label": "JAZZ",
-        "pressureScore": 0.702,
-        "density": 4.483,
-        "overlapPerNode": 1.493,
-        "bridgeRatio": 0.145,
-        "spacingMultiplier": 1.375,
+        "pressureScore": 0.725,
+        "density": 4.678,
+        "overlapPerNode": 1.431,
+        "bridgeRatio": 0.181,
+        "spacingMultiplier": 1.384,
         "expansion": {
-          "x": 347,
-          "y": 229
+          "x": 354,
+          "y": 234
         },
-        "bridgeBleed": 411,
+        "bridgeBleed": 446,
         "strategy": "expand-and-relax",
         "bridgeTargets": [],
         "readableChaos": true
@@ -241,11 +241,13 @@
         "pullZones": [
           "hard-rock-metal",
           "country-roots",
-          "folk-country-vise",
-          "rock-circuit"
+          "jazz",
+          "rock-circuit",
+          "psychedelia-prog",
+          "folk-country-vise"
         ],
         "pullStrength": 0.58,
-        "reason": "Bridge policy match: country-roots-to-rock."
+        "reason": "Bridge policy match: jazz-to-fusion, country-roots-to-rock."
       },
       "rock-and-roll": {
         "id": "rock-and-roll",
@@ -2492,6 +2494,81 @@
         ],
         "pullStrength": 0.366,
         "reason": "Connected to multiple zones."
+      },
+      "mykola-lysenko": {
+        "id": "mykola-lysenko",
+        "label": "Mykola Lysenko",
+        "sourceZone": "classical-history",
+        "pullZones": [
+          "folk-country-vise"
+        ],
+        "pullStrength": 0.415,
+        "reason": "Connected to multiple zones."
+      },
+      "al-jolson": {
+        "id": "al-jolson",
+        "label": "Al Jolson",
+        "sourceZone": "jazz",
+        "pullZones": [
+          "roots-blues",
+          "pop-soul-disco",
+          "rock-circuit",
+          "psychedelia-prog"
+        ],
+        "pullStrength": 0.58,
+        "reason": "Bridge policy match: jazz-to-fusion."
+      },
+      "glenn-miller": {
+        "id": "glenn-miller",
+        "label": "Glenn Miller",
+        "sourceZone": "jazz",
+        "pullZones": [
+          "roots-blues",
+          "rock-circuit",
+          "psychedelia-prog"
+        ],
+        "pullStrength": 0.531,
+        "reason": "Bridge policy match: jazz-to-fusion."
+      },
+      "astor-piazzolla": {
+        "id": "astor-piazzolla",
+        "label": "Astor Piazzolla",
+        "sourceZone": "pop-soul-disco",
+        "pullZones": [
+          "classical-history"
+        ],
+        "pullStrength": 0.415,
+        "reason": "Connected to multiple zones."
+      },
+      "charles-aznavour": {
+        "id": "charles-aznavour",
+        "label": "Charles Aznavour",
+        "sourceZone": "jazz",
+        "pullZones": [
+          "pop-soul-disco"
+        ],
+        "pullStrength": 0.514,
+        "reason": "Connected to multiple zones."
+      },
+      "lata-mangeshkar": {
+        "id": "lata-mangeshkar",
+        "label": "Lata Mangeshkar",
+        "sourceZone": "pop-soul-disco",
+        "pullZones": [
+          "classical-history"
+        ],
+        "pullStrength": 0.415,
+        "reason": "Connected to multiple zones."
+      },
+      "asha-bhosle": {
+        "id": "asha-bhosle",
+        "label": "Asha Bhosle",
+        "sourceZone": "pop-soul-disco",
+        "pullZones": [
+          "classical-history"
+        ],
+        "pullStrength": 0.465,
+        "reason": "Connected to multiple zones."
       }
     },
     "antiPatterns": [
@@ -2554,39 +2631,197 @@
         "steve-reich",
         "pauline-oliveros",
         "morton-subotnick",
-        "wendy-carlos"
+        "wendy-carlos",
+        "opera",
+        "oratorio",
+        "chamber-music",
+        "indian-classical-music",
+        "twentieth-century-classical-music",
+        "thomas-campion",
+        "orlando-gibbons",
+        "francesco-cavalli",
+        "tarquinio-merula",
+        "barbara-strozzi",
+        "jean-baptiste-lully",
+        "heinrich-biber",
+        "john-blow",
+        "arcangelo-corelli",
+        "gaetano-greco",
+        "henry-purcell",
+        "michel-richard-delalande",
+        "giovanni-bononcini",
+        "louis-de-la-coste",
+        "tomaso-albinoni",
+        "andre-campra",
+        "richard-leveridge",
+        "francesco-mancini",
+        "francesco-bartolomeo-conti",
+        "maria-margherita-grimani",
+        "francesco-geminiani",
+        "giovanni-battista-pergolesi",
+        "giovanni-battista-sammartini",
+        "maria-antonia-walpurgis-of-bavaria",
+        "baldassare-galuppi",
+        "christoph-willibald-von-gluck",
+        "niccolo-jommelli",
+        "michael-arne",
+        "jean-benjamin-de-la-borde",
+        "luigi-boccherini",
+        "antonio-soler",
+        "michael-haydn",
+        "johann-christian-bach",
+        "giovanni-paisiello",
+        "ivan-mane-jarnovic",
+        "wilhelm-friedemann-bach",
+        "ignaz-pleyel",
+        "micha-kleofas-oginski",
+        "johann-nepomuk-hummel",
+        "sophie-gail",
+        "domenico-dragonetti",
+        "antoine-de-lhoyer",
+        "johann-michael-vogl",
+        "louis-spohr",
+        "carl-maria-von-weber",
+        "anton-reicha",
+        "alexander-alyabyev",
+        "gioachino-rossini",
+        "francois-dauverne",
+        "hector-berlioz",
+        "thomas-taglichsbeck",
+        "johann-strauss-i",
+        "julius-benedict",
+        "sigismond-thalberg",
+        "felix-mendelssohn",
+        "giuseppe-verdi",
+        "richard-wagner",
+        "nikolay-afanas-yev",
+        "w-adys-aw-tarnowski",
+        "alexander-borodin",
+        "jacques-offenbach",
+        "leo-delibes",
+        "alexander-serov",
+        "modest-petrovich-mussorgsky",
+        "camille-saint-saens",
+        "joseph-strauss",
+        "eduard-strauss",
+        "christina-nilsson",
+        "pyotr-ilyich-tchaikovsky",
+        "gabriel-faure",
+        "ella-adayevskaya",
+        "teresa-carreno",
+        "hermann-levi",
+        "zdenek-fibich",
+        "aleksander-micha-owski",
+        "mykola-lysenko",
+        "josef-bayer",
+        "anatoly-lyadov",
+        "francisco-tarrega",
+        "vishnu-narayan-bhatkhande",
+        "giacomo-puccini",
+        "alexandre-levy",
+        "felix-mikhailovich-blumenfeld",
+        "anton-arensky",
+        "arturo-toscanini",
+        "carl-nielsen",
+        "enrique-granados",
+        "felix-von-weingartner",
+        "sergei-rachmaninoff",
+        "wilhelm-stenhammar",
+        "jean-sibelius",
+        "bronis-aw-huberman",
+        "henry-kimball-hadley",
+        "arnold-schoenberg",
+        "karl-straube",
+        "emile-waldteufel",
+        "karol-szymanowski",
+        "gustav-holst",
+        "alban-berg",
+        "arthur-honegger",
+        "dmitri-shostakovich",
+        "aram-khachaturian",
+        "john-cage",
+        "leonard-bernstein",
+        "mstislav-rostropovich",
+        "mikis-theodorakis",
+        "pierre-boulez",
+        "jerry-goldsmith"
       ],
-      "edgesInternal": 43,
-      "edgesCrossing": 6,
+      "edgesInternal": 192,
+      "edgesCrossing": 10,
       "isolatedNodes": [],
       "underConnectedImportantNodes": [
         "edvard-grieg",
         "claude-debussy",
+        "mykola-lysenko",
         "william-grant-still",
-        "film-score"
+        "film-score",
+        "oratorio"
       ],
       "bridgeNodes": [
         "classical-music",
         "edvard-grieg",
         "claude-debussy",
-        "william-grant-still"
+        "mykola-lysenko",
+        "william-grant-still",
+        "hector-berlioz",
+        "sigismond-thalberg",
+        "alexander-borodin",
+        "pyotr-ilyich-tchaikovsky",
+        "gabriel-faure",
+        "jean-sibelius",
+        "arnold-schoenberg",
+        "john-cage"
       ],
       "topHubs": [
         "classical-music",
-        "romantic-music",
         "baroque-music",
+        "romantic-music",
+        "opera",
         "classical-period",
         "ludwig-van-beethoven",
-        "film-score"
+        "chamber-music",
+        "indian-classical-music",
+        "twentieth-century-classical-music",
+        "hector-berlioz",
+        "sigismond-thalberg",
+        "alexander-borodin",
+        "pyotr-ilyich-tchaikovsky",
+        "gabriel-faure",
+        "jean-sibelius",
+        "arnold-schoenberg",
+        "john-cage",
+        "film-score",
+        "oratorio"
       ],
       "overlapRisk": 34,
-      "overflowNodes": [],
-      "eraMedian": 1908,
-      "averageDegree": 2.14,
-      "averageSourceQuality": 0.12,
+      "overflowNodes": [
+        "opera",
+        "thomas-campion",
+        "oratorio",
+        "orlando-gibbons",
+        "francesco-cavalli",
+        "tarquinio-merula",
+        "giovanni-bononcini",
+        "barbara-strozzi",
+        "chamber-music",
+        "jean-baptiste-lully",
+        "louis-de-la-coste",
+        "heinrich-biber",
+        "john-blow",
+        "tomaso-albinoni",
+        "arcangelo-corelli",
+        "gaetano-greco",
+        "andre-campra",
+        "baldassare-galuppi",
+        "henry-purcell",
+        "michel-richard-delalande"
+      ],
+      "eraMedian": 1849,
+      "averageDegree": 2.53,
+      "averageSourceQuality": 0.741,
       "approvedFactNodes": 0,
-      "needsAttentionScore": 38.7,
-      "nodeCount": 43,
+      "needsAttentionScore": 40.12,
+      "nodeCount": 156,
       "factCoverageRate": 0,
       "degreeP25": 1,
       "bridgePolicies": [],
@@ -2747,10 +2982,23 @@
         "al-mckay",
         "maurice-white",
         "brian-wilson",
-        "mike-love"
+        "mike-love",
+        "chanson",
+        "traditional-pop",
+        "tango",
+        "world-music",
+        "aristide-bruant",
+        "nora-bayes",
+        "carlos-gardel",
+        "astor-piazzolla",
+        "edith-piaf",
+        "lata-mangeshkar",
+        "asha-bhosle",
+        "yves-montand",
+        "p-ramlee"
       ],
-      "edgesInternal": 146,
-      "edgesCrossing": 38,
+      "edgesInternal": 156,
+      "edgesCrossing": 46,
       "isolatedNodes": [],
       "underConnectedImportantNodes": [
         "stevie-wonder",
@@ -2758,6 +3006,8 @@
         "solomon-burke",
         "irving-berlin",
         "hoagy-carmichael",
+        "astor-piazzolla",
+        "lata-mangeshkar",
         "parliament",
         "funkadelic",
         "james-reese-europe",
@@ -2770,13 +3020,13 @@
         "the-go-gos",
         "the-police",
         "tina-turner",
-        "bonnie-raitt",
-        "jackson-browne"
+        "bonnie-raitt"
       ],
       "bridgeNodes": [
         "aretha-franklin",
         "george-gershwin",
         "soul-music",
+        "asha-bhosle",
         "stevie-wonder",
         "david-bowie",
         "phil-collins",
@@ -2786,14 +3036,13 @@
         "irving-berlin",
         "will-marion-cook",
         "hoagy-carmichael",
+        "astor-piazzolla",
+        "lata-mangeshkar",
         "sly-and-the-family-stone",
         "parliament",
         "funkadelic",
         "james-reese-europe",
-        "noble-sissle",
-        "steve-miller-band",
-        "the-wild-tchoupitoulas",
-        "steely-dan"
+        "noble-sissle"
       ],
       "topHubs": [
         "pop-music",
@@ -2806,6 +3055,7 @@
         "latin-music",
         "phil-collins",
         "aretha-franklin",
+        "chanson",
         "synth-pop",
         "the-supremes",
         "michael-jackson",
@@ -2814,33 +3064,37 @@
         "sam-cooke",
         "george-gershwin",
         "will-marion-cook",
-        "the-beach-boys",
-        "earth-wind-and-fire"
+        "the-beach-boys"
       ],
       "overlapRisk": 252,
       "overflowNodes": [
+        "lata-mangeshkar",
+        "aristide-bruant",
+        "asha-bhosle",
+        "yves-montand",
+        "p-ramlee",
+        "nora-bayes",
+        "carlos-gardel",
+        "astor-piazzolla",
+        "edith-piaf",
+        "chanson",
+        "traditional-pop",
+        "tango",
+        "world-music",
         "george-gershwin",
         "steve-miller-band",
         "jackson-browne",
         "agnetha-faltskog",
         "aretha-franklin",
         "greg-hawkes",
-        "the-shirelles",
-        "the-cars",
-        "american-popular-song",
-        "bjorn-ulvaeus",
-        "will-marion-cook",
-        "norma-jean-wright",
-        "gloria-estefan",
-        "al-mckay",
-        "elliot-easton"
+        "the-shirelles"
       ],
-      "eraMedian": 1969,
+      "eraMedian": 1967,
       "averageDegree": 2.17,
-      "averageSourceQuality": 0.12,
+      "averageSourceQuality": 0.177,
       "approvedFactNodes": 0,
-      "needsAttentionScore": 110.43,
-      "nodeCount": 152,
+      "needsAttentionScore": 112.2,
+      "nodeCount": 165,
       "factCoverageRate": 0,
       "degreeP25": 1,
       "bridgePolicies": [
@@ -2944,7 +3198,7 @@
         "james-cleveland"
       ],
       "edgesInternal": 106,
-      "edgesCrossing": 78,
+      "edgesCrossing": 80,
       "isolatedNodes": [
         "38-special",
         "alan-wilson",
@@ -2963,6 +3217,7 @@
         "swamp-rock"
       ],
       "bridgeNodes": [
+        "blues",
         "rock-and-roll",
         "lead-belly",
         "eric-clapton",
@@ -2981,7 +3236,6 @@
         "cream",
         "the-rolling-stones",
         "slash",
-        "blues",
         "southern-rock"
       ],
       "topHubs": [
@@ -3030,7 +3284,7 @@
         "edith-wilson"
       ],
       "eraMedian": 1948,
-      "averageDegree": 3.22,
+      "averageDegree": 3.24,
       "averageSourceQuality": 0.354,
       "approvedFactNodes": 14,
       "needsAttentionScore": 84.67,
@@ -3119,13 +3373,17 @@
         "pat-metheny",
         "betty-carter",
         "art-tatum",
-        "the-dave-brubeck-quartet"
+        "the-dave-brubeck-quartet",
+        "al-jolson",
+        "glenn-miller",
+        "charles-aznavour"
       ],
-      "edgesInternal": 94,
-      "edgesCrossing": 23,
+      "edgesInternal": 98,
+      "edgesCrossing": 30,
       "isolatedNodes": [],
       "underConnectedImportantNodes": [
         "wes-montgomery",
+        "glenn-miller",
         "eubie-blake",
         "nina-simone",
         "django-reinhardt"
@@ -3135,8 +3393,11 @@
         "jazz",
         "john-mclaughlin",
         "ragtime",
+        "al-jolson",
         "swing-music",
         "wes-montgomery",
+        "charles-aznavour",
+        "glenn-miller",
         "miles-davis",
         "eubie-blake",
         "nina-simone",
@@ -3147,8 +3408,10 @@
         "jazz",
         "miles-davis",
         "ragtime",
+        "al-jolson",
         "john-coltrane",
         "swing-music",
+        "charles-aznavour",
         "john-mclaughlin",
         "louis-armstrong",
         "duke-ellington",
@@ -3163,16 +3426,19 @@
       ],
       "overlapRisk": 103,
       "overflowNodes": [
+        "al-jolson",
+        "glenn-miller",
+        "charles-aznavour",
         "chano-pozo",
         "antonio-carlos-jobim"
       ],
-      "eraMedian": 1947,
-      "averageDegree": 3.06,
-      "averageSourceQuality": 0.273,
+      "eraMedian": 1944,
+      "averageDegree": 3.14,
+      "averageSourceQuality": 0.303,
       "approvedFactNodes": 10,
-      "needsAttentionScore": 56.53,
-      "nodeCount": 69,
-      "factCoverageRate": 0.145,
+      "needsAttentionScore": 61.19,
+      "nodeCount": 72,
+      "factCoverageRate": 0.139,
       "degreeP25": 1,
       "bridgePolicies": [
         "western-swing-country-jazz",
@@ -4205,7 +4471,7 @@
         "crosby-stills-nash-and-young"
       ],
       "edgesInternal": 47,
-      "edgesCrossing": 16,
+      "edgesCrossing": 17,
       "isolatedNodes": [
         "billy-arnold"
       ],
@@ -4237,7 +4503,7 @@
         "singer-songwriter"
       ],
       "eraMedian": 1960,
-      "averageDegree": 2.75,
+      "averageDegree": 2.77,
       "averageSourceQuality": 0.259,
       "approvedFactNodes": 1,
       "needsAttentionScore": 34.68,
@@ -4658,18 +4924,33 @@
       "label": "Blues",
       "type": "genre",
       "zone": "roots-blues",
-      "degree": 28,
-      "weightedDegree": 21.18,
+      "degree": 30,
+      "weightedDegree": 22.62,
       "era": 1909,
       "sourceQuality": 0.62,
       "approvedFactCount": 1,
       "hubScore": 1,
-      "bridgeScore": 0.76,
+      "bridgeScore": 1,
       "secondaryZones": [
         "hard-rock-metal",
-        "country-roots"
+        "country-roots",
+        "jazz"
       ],
       "bridgePolicies": [
+        {
+          "id": "jazz-to-fusion",
+          "zones": [
+            "jazz",
+            "roots-blues",
+            "rock-circuit",
+            "psychedelia-prog"
+          ],
+          "anchor": false,
+          "feedbackCategories": [
+            "good_bridge",
+            "genre_transition_needed"
+          ]
+        },
         {
           "id": "country-roots-to-rock",
           "zones": [
@@ -5129,8 +5410,8 @@
       "label": "Folk",
       "type": "genre",
       "zone": "folk-country-vise",
-      "degree": 40,
-      "weightedDegree": 28.62,
+      "degree": 41,
+      "weightedDegree": 29.34,
       "sourceQuality": 0.5,
       "approvedFactCount": 0,
       "hubScore": 1,
@@ -8211,8 +8492,8 @@
       "label": "Jazz",
       "type": "genre",
       "zone": "jazz",
-      "degree": 66,
-      "weightedDegree": 49.24,
+      "degree": 69,
+      "weightedDegree": 51.4,
       "era": 1915,
       "sourceQuality": 0.62,
       "approvedFactCount": 1,
@@ -19993,8 +20274,8 @@
       "label": "Classical music",
       "type": "genre",
       "zone": "classical-history",
-      "degree": 29,
-      "weightedDegree": 21.72,
+      "degree": 84,
+      "weightedDegree": 61.32,
       "era": 1600,
       "sourceQuality": 0.12,
       "approvedFactCount": 0,
@@ -20020,12 +20301,12 @@
       "label": "Baroque music",
       "type": "genre",
       "zone": "classical-history",
-      "degree": 5,
-      "weightedDegree": 3.9,
+      "degree": 10,
+      "weightedDegree": 7.5,
       "era": 1600,
       "sourceQuality": 0.12,
       "approvedFactCount": 0,
-      "hubScore": 0.625,
+      "hubScore": 1,
       "bridgeScore": 0,
       "secondaryZones": [],
       "bridgePolicies": [],
@@ -20064,8 +20345,8 @@
       "label": "Romantic music",
       "type": "genre",
       "zone": "classical-history",
-      "degree": 8,
-      "weightedDegree": 6.24,
+      "degree": 17,
+      "weightedDegree": 12.72,
       "era": 1800,
       "sourceQuality": 0.12,
       "approvedFactCount": 0,
@@ -20254,19 +20535,22 @@
       "label": "Pop music",
       "type": "genre",
       "zone": "pop-soul-disco",
-      "degree": 45,
-      "weightedDegree": 33.06,
+      "degree": 49,
+      "weightedDegree": 35.94,
       "era": 1960,
       "sourceQuality": 0.12,
       "approvedFactCount": 0,
       "hubScore": 1,
-      "bridgeScore": 0,
-      "secondaryZones": [],
+      "bridgeScore": 0.32,
+      "secondaryZones": [
+        "jazz"
+      ],
       "bridgePolicies": [],
       "linkedGenres": [],
       "overlapCount": 4,
       "overflow": 0,
       "recommendedActions": [
+        "preserve-cross-zone-bridge",
         "spread-local-neighborhood",
         "improve-source-quality",
         "source-history-fact"
@@ -23372,8 +23656,8 @@
       "label": "Ragtime",
       "type": "genre",
       "zone": "jazz",
-      "degree": 14,
-      "weightedDegree": 10.92,
+      "degree": 15,
+      "weightedDegree": 11.64,
       "era": 1895,
       "sourceQuality": 0.12,
       "approvedFactCount": 0,
@@ -30688,6 +30972,3100 @@
       "recommendedActions": [
         "improve-source-quality"
       ]
+    },
+    "opera": {
+      "id": "opera",
+      "label": "Opera",
+      "type": "genre",
+      "zone": "classical-history",
+      "degree": 72,
+      "weightedDegree": 51.84,
+      "sourceQuality": 0.5,
+      "approvedFactCount": 0,
+      "hubScore": 1,
+      "bridgeScore": 0.32,
+      "secondaryZones": [
+        "pop-soul-disco"
+      ],
+      "bridgePolicies": [],
+      "linkedGenres": [],
+      "overlapCount": 0,
+      "overflow": 3016,
+      "recommendedActions": [
+        "preserve-cross-zone-bridge",
+        "review-zone-bleed",
+        "source-history-fact"
+      ]
+    },
+    "oratorio": {
+      "id": "oratorio",
+      "label": "Oratorio",
+      "type": "genre",
+      "zone": "classical-history",
+      "degree": 2,
+      "weightedDegree": 1.44,
+      "sourceQuality": 0.5,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [],
+      "overlapCount": 0,
+      "overflow": 2773,
+      "recommendedActions": [
+        "expand-important-node",
+        "review-zone-bleed",
+        "source-history-fact"
+      ]
+    },
+    "chamber-music": {
+      "id": "chamber-music",
+      "label": "Chamber music",
+      "type": "genre",
+      "zone": "classical-history",
+      "degree": 3,
+      "weightedDegree": 2.16,
+      "sourceQuality": 0.5,
+      "approvedFactCount": 0,
+      "hubScore": 0.375,
+      "bridgeScore": 0,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [],
+      "overlapCount": 0,
+      "overflow": 2552,
+      "recommendedActions": [
+        "review-zone-bleed",
+        "source-history-fact"
+      ]
+    },
+    "chanson": {
+      "id": "chanson",
+      "label": "Chanson",
+      "type": "genre",
+      "zone": "pop-soul-disco",
+      "degree": 4,
+      "weightedDegree": 2.88,
+      "sourceQuality": 0.5,
+      "approvedFactCount": 0,
+      "hubScore": 0.5,
+      "bridgeScore": 0.32,
+      "secondaryZones": [
+        "jazz"
+      ],
+      "bridgePolicies": [],
+      "linkedGenres": [],
+      "overlapCount": 0,
+      "overflow": 360,
+      "recommendedActions": [
+        "preserve-cross-zone-bridge",
+        "review-zone-bleed",
+        "source-history-fact"
+      ]
+    },
+    "indian-classical-music": {
+      "id": "indian-classical-music",
+      "label": "Indian classical music",
+      "type": "genre",
+      "zone": "classical-history",
+      "degree": 3,
+      "weightedDegree": 2.16,
+      "sourceQuality": 0.5,
+      "approvedFactCount": 0,
+      "hubScore": 0.375,
+      "bridgeScore": 0.32,
+      "secondaryZones": [
+        "pop-soul-disco"
+      ],
+      "bridgePolicies": [],
+      "linkedGenres": [],
+      "overlapCount": 0,
+      "overflow": 2203,
+      "recommendedActions": [
+        "preserve-cross-zone-bridge",
+        "review-zone-bleed",
+        "source-history-fact"
+      ]
+    },
+    "twentieth-century-classical-music": {
+      "id": "twentieth-century-classical-music",
+      "label": "20th-century classical music",
+      "type": "genre",
+      "zone": "classical-history",
+      "degree": 3,
+      "weightedDegree": 2.16,
+      "sourceQuality": 0.5,
+      "approvedFactCount": 0,
+      "hubScore": 0.375,
+      "bridgeScore": 0,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [],
+      "overlapCount": 0,
+      "overflow": 2227,
+      "recommendedActions": [
+        "review-zone-bleed",
+        "source-history-fact"
+      ]
+    },
+    "traditional-pop": {
+      "id": "traditional-pop",
+      "label": "Traditional pop",
+      "type": "genre",
+      "zone": "pop-soul-disco",
+      "degree": 2,
+      "weightedDegree": 1.44,
+      "sourceQuality": 0.5,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0.32,
+      "secondaryZones": [
+        "jazz"
+      ],
+      "bridgePolicies": [],
+      "linkedGenres": [],
+      "overlapCount": 0,
+      "overflow": 360,
+      "recommendedActions": [
+        "expand-important-node",
+        "preserve-cross-zone-bridge",
+        "review-zone-bleed",
+        "source-history-fact"
+      ]
+    },
+    "tango": {
+      "id": "tango",
+      "label": "Tango",
+      "type": "genre",
+      "zone": "pop-soul-disco",
+      "degree": 2,
+      "weightedDegree": 1.44,
+      "sourceQuality": 0.5,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [],
+      "overlapCount": 0,
+      "overflow": 360,
+      "recommendedActions": [
+        "expand-important-node",
+        "review-zone-bleed",
+        "source-history-fact"
+      ]
+    },
+    "world-music": {
+      "id": "world-music",
+      "label": "World music",
+      "type": "genre",
+      "zone": "pop-soul-disco",
+      "degree": 3,
+      "weightedDegree": 2.16,
+      "sourceQuality": 0.5,
+      "approvedFactCount": 0,
+      "hubScore": 0.375,
+      "bridgeScore": 0.32,
+      "secondaryZones": [
+        "jazz"
+      ],
+      "bridgePolicies": [],
+      "linkedGenres": [],
+      "overlapCount": 0,
+      "overflow": 360,
+      "recommendedActions": [
+        "preserve-cross-zone-bridge",
+        "review-zone-bleed",
+        "source-history-fact"
+      ]
+    },
+    "thomas-campion": {
+      "id": "thomas-campion",
+      "label": "Thomas Campion",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1601,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 2834,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "orlando-gibbons": {
+      "id": "orlando-gibbons",
+      "label": "Orlando Gibbons",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1611,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 2757,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "francesco-cavalli": {
+      "id": "francesco-cavalli",
+      "label": "Francesco Cavalli",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1616,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "opera"
+      ],
+      "overlapCount": 0,
+      "overflow": 2684,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "tarquinio-merula": {
+      "id": "tarquinio-merula",
+      "label": "Tarquinio Merula",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1628,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 2616,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "barbara-strozzi": {
+      "id": "barbara-strozzi",
+      "label": "Barbara Strozzi",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1644,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "baroque-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 2554,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "jean-baptiste-lully": {
+      "id": "jean-baptiste-lully",
+      "label": "Jean-Baptiste Lully",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 2,
+      "weightedDegree": 1.44,
+      "era": 1647,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0.26,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "opera",
+        "classical-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 2497,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "heinrich-biber": {
+      "id": "heinrich-biber",
+      "label": "Heinrich Biber",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1668,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "opera"
+      ],
+      "overlapCount": 0,
+      "overflow": 2446,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "john-blow": {
+      "id": "john-blow",
+      "label": "John Blow",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1670,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "opera"
+      ],
+      "overlapCount": 0,
+      "overflow": 2402,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "arcangelo-corelli": {
+      "id": "arcangelo-corelli",
+      "label": "Arcangelo Corelli",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 2,
+      "weightedDegree": 1.44,
+      "era": 1672,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0.26,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "baroque-music",
+        "classical-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 2365,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "gaetano-greco": {
+      "id": "gaetano-greco",
+      "label": "Gaetano Greco",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1678,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 2335,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "henry-purcell": {
+      "id": "henry-purcell",
+      "label": "Henry Purcell",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1679,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "opera"
+      ],
+      "overlapCount": 0,
+      "overflow": 2312,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "michel-richard-delalande": {
+      "id": "michel-richard-delalande",
+      "label": "Michel Richard Delalande",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 2,
+      "weightedDegree": 1.44,
+      "era": 1680,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0.26,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "classical-music",
+        "baroque-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 2297,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "giovanni-bononcini": {
+      "id": "giovanni-bononcini",
+      "label": "Giovanni Bononcini",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1685,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "opera"
+      ],
+      "overlapCount": 0,
+      "overflow": 2567,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "louis-de-la-coste": {
+      "id": "louis-de-la-coste",
+      "label": "Louis de La Coste",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1693,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "opera"
+      ],
+      "overlapCount": 0,
+      "overflow": 2482,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "tomaso-albinoni": {
+      "id": "tomaso-albinoni",
+      "label": "Tomaso Albinoni",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1694,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "opera"
+      ],
+      "overlapCount": 0,
+      "overflow": 2401,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "andre-campra": {
+      "id": "andre-campra",
+      "label": "André Campra",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1695,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "opera"
+      ],
+      "overlapCount": 0,
+      "overflow": 2324,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "richard-leveridge": {
+      "id": "richard-leveridge",
+      "label": "Richard Leveridge",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 2,
+      "weightedDegree": 1.44,
+      "era": 1695,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0.26,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "baroque-music",
+        "opera"
+      ],
+      "overlapCount": 0,
+      "overflow": 2254,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "francesco-mancini": {
+      "id": "francesco-mancini",
+      "label": "Francesco Mancini",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1696,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "opera"
+      ],
+      "overlapCount": 0,
+      "overflow": 2189,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "francesco-bartolomeo-conti": {
+      "id": "francesco-bartolomeo-conti",
+      "label": "Francesco Bartolomeo Conti",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 2,
+      "weightedDegree": 1.44,
+      "era": 1701,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0.26,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "opera",
+        "oratorio"
+      ],
+      "overlapCount": 0,
+      "overflow": 2063,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "maria-margherita-grimani": {
+      "id": "maria-margherita-grimani",
+      "label": "Maria Margherita Grimani",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1713,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "opera"
+      ],
+      "overlapCount": 0,
+      "overflow": 2080,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "francesco-geminiani": {
+      "id": "francesco-geminiani",
+      "label": "Francesco Geminiani",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1716,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "baroque-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 2037,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "giovanni-battista-pergolesi": {
+      "id": "giovanni-battista-pergolesi",
+      "label": "Giovanni Battista Pergolesi",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1731,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "opera"
+      ],
+      "overlapCount": 0,
+      "overflow": 1929,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "giovanni-battista-sammartini": {
+      "id": "giovanni-battista-sammartini",
+      "label": "Giovanni Battista Sammartini",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1732,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "opera"
+      ],
+      "overlapCount": 0,
+      "overflow": 1902,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "maria-antonia-walpurgis-of-bavaria": {
+      "id": "maria-antonia-walpurgis-of-bavaria",
+      "label": "Maria Antonia Walpurgis of Bavaria",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1739,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "opera"
+      ],
+      "overlapCount": 0,
+      "overflow": 2026,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "baldassare-galuppi": {
+      "id": "baldassare-galuppi",
+      "label": "Baldassare Galuppi",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1740,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "opera"
+      ],
+      "overlapCount": 0,
+      "overflow": 2320,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "christoph-willibald-von-gluck": {
+      "id": "christoph-willibald-von-gluck",
+      "label": "Christoph Willibald von Gluck",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 2,
+      "weightedDegree": 1.44,
+      "era": 1741,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0.26,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "opera",
+        "classical-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 2088,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "niccolo-jommelli": {
+      "id": "niccolo-jommelli",
+      "label": "Niccolò Jommelli",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1743,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "opera"
+      ],
+      "overlapCount": 0,
+      "overflow": 2057,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "michael-arne": {
+      "id": "michael-arne",
+      "label": "Michael Arne",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1750,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "opera"
+      ],
+      "overlapCount": 0,
+      "overflow": 1901,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "jean-benjamin-de-la-borde": {
+      "id": "jean-benjamin-de-la-borde",
+      "label": "Jean-Benjamin de La Borde",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1750,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "opera"
+      ],
+      "overlapCount": 0,
+      "overflow": 1915,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "luigi-boccherini": {
+      "id": "luigi-boccherini",
+      "label": "Luigi Boccherini",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1756,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 1704,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "antonio-soler": {
+      "id": "antonio-soler",
+      "label": "Antonio Soler",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1756,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 1702,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "michael-haydn": {
+      "id": "michael-haydn",
+      "label": "Michael Haydn",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1757,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "opera"
+      ],
+      "overlapCount": 0,
+      "overflow": 1720,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "johann-christian-bach": {
+      "id": "johann-christian-bach",
+      "label": "Johann Christian Bach",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1760,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "opera"
+      ],
+      "overlapCount": 0,
+      "overflow": 1463,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "giovanni-paisiello": {
+      "id": "giovanni-paisiello",
+      "label": "Giovanni Paisiello",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1763,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "opera"
+      ],
+      "overlapCount": 0,
+      "overflow": 1425,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "ivan-mane-jarnovic": {
+      "id": "ivan-mane-jarnovic",
+      "label": "Ivan Mane Jarnović",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1770,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 1697,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "wilhelm-friedemann-bach": {
+      "id": "wilhelm-friedemann-bach",
+      "label": "Wilhelm Friedemann Bach",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1773,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 1536,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "ignaz-pleyel": {
+      "id": "ignaz-pleyel",
+      "label": "Ignaz Pleyel",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 2,
+      "weightedDegree": 1.44,
+      "era": 1778,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0.26,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "opera",
+        "classical-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 2098,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "micha-kleofas-oginski": {
+      "id": "micha-kleofas-oginski",
+      "label": "Michał Kleofas Ogiński",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1788,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "opera"
+      ],
+      "overlapCount": 0,
+      "overflow": 1992,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "johann-nepomuk-hummel": {
+      "id": "johann-nepomuk-hummel",
+      "label": "Johann Nepomuk Hummel",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1789,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "opera"
+      ],
+      "overlapCount": 0,
+      "overflow": 1751,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "sophie-gail": {
+      "id": "sophie-gail",
+      "label": "Sophie Gail",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1790,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "opera"
+      ],
+      "overlapCount": 0,
+      "overflow": 1682,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "domenico-dragonetti": {
+      "id": "domenico-dragonetti",
+      "label": "Domenico Dragonetti",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1790,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 1602,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "antoine-de-lhoyer": {
+      "id": "antoine-de-lhoyer",
+      "label": "Antoine de Lhoyer",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 2,
+      "weightedDegree": 1.44,
+      "era": 1791,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0.26,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "classical-music",
+        "romantic-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 1421,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "johann-michael-vogl": {
+      "id": "johann-michael-vogl",
+      "label": "Johann Michael Vogl",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1794,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "opera"
+      ],
+      "overlapCount": 0,
+      "overflow": 1406,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "louis-spohr": {
+      "id": "louis-spohr",
+      "label": "Louis Spohr",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1797,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "opera"
+      ],
+      "overlapCount": 0,
+      "overflow": 1475,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "carl-maria-von-weber": {
+      "id": "carl-maria-von-weber",
+      "label": "Carl Maria von Weber",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 2,
+      "weightedDegree": 1.44,
+      "era": 1799,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0.26,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "classical-music",
+        "opera"
+      ],
+      "overlapCount": 0,
+      "overflow": 1200,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "anton-reicha": {
+      "id": "anton-reicha",
+      "label": "Anton Reicha",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1800,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "opera"
+      ],
+      "overlapCount": 0,
+      "overflow": 1362,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "alexander-alyabyev": {
+      "id": "alexander-alyabyev",
+      "label": "Alexander Alyabyev",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1810,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "opera"
+      ],
+      "overlapCount": 0,
+      "overflow": 1123,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "gioachino-rossini": {
+      "id": "gioachino-rossini",
+      "label": "Gioachino Rossini",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 2,
+      "weightedDegree": 1.44,
+      "era": 1810,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0.26,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "opera",
+        "classical-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 1420,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "francois-dauverne": {
+      "id": "francois-dauverne",
+      "label": "François Dauverné",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1814,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 1911,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "hector-berlioz": {
+      "id": "hector-berlioz",
+      "label": "Hector Berlioz",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 3,
+      "weightedDegree": 2.16,
+      "era": 1815,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.375,
+      "bridgeScore": 0.39,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "opera",
+        "classical-music",
+        "romantic-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 1795,
+      "recommendedActions": [
+        "review-zone-bleed",
+        "source-history-fact"
+      ]
+    },
+    "thomas-taglichsbeck": {
+      "id": "thomas-taglichsbeck",
+      "label": "Thomas Täglichsbeck",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1817,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "opera"
+      ],
+      "overlapCount": 0,
+      "overflow": 1681,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "johann-strauss-i": {
+      "id": "johann-strauss-i",
+      "label": "Johann Strauss I",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1819,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 1486,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "julius-benedict": {
+      "id": "julius-benedict",
+      "label": "Julius Benedict",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1824,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "opera"
+      ],
+      "overlapCount": 0,
+      "overflow": 1425,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "sigismond-thalberg": {
+      "id": "sigismond-thalberg",
+      "label": "Sigismond Thalberg",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 3,
+      "weightedDegree": 2.16,
+      "era": 1826,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.375,
+      "bridgeScore": 0.39,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "opera",
+        "classical-music",
+        "romantic-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 1075,
+      "recommendedActions": [
+        "review-zone-bleed",
+        "source-history-fact"
+      ]
+    },
+    "felix-mendelssohn": {
+      "id": "felix-mendelssohn",
+      "label": "Felix Mendelssohn",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 2,
+      "weightedDegree": 1.44,
+      "era": 1826,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0.26,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "opera",
+        "classical-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 1172,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "giuseppe-verdi": {
+      "id": "giuseppe-verdi",
+      "label": "Giuseppe Verdi",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 2,
+      "weightedDegree": 1.44,
+      "era": 1830,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0.26,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "classical-music",
+        "opera"
+      ],
+      "overlapCount": 0,
+      "overflow": 1294,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "richard-wagner": {
+      "id": "richard-wagner",
+      "label": "Richard Wagner",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 2,
+      "weightedDegree": 1.44,
+      "era": 1832,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0.26,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "opera",
+        "classical-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 1109,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "nikolay-afanas-yev": {
+      "id": "nikolay-afanas-yev",
+      "label": "Nikolay Afanas'yev",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1838,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "romantic-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 1059,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "w-adys-aw-tarnowski": {
+      "id": "w-adys-aw-tarnowski",
+      "label": "Władysław Tarnowski",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1844,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "romantic-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 1025,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "alexander-borodin": {
+      "id": "alexander-borodin",
+      "label": "Alexander Borodin",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 3,
+      "weightedDegree": 2.16,
+      "era": 1847,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.375,
+      "bridgeScore": 0.39,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "opera",
+        "classical-music",
+        "chamber-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 783,
+      "recommendedActions": [
+        "review-zone-bleed",
+        "source-history-fact"
+      ]
+    },
+    "jacques-offenbach": {
+      "id": "jacques-offenbach",
+      "label": "Jacques Offenbach",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 2,
+      "weightedDegree": 1.44,
+      "era": 1849,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0.26,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "opera",
+        "classical-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 1771,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "leo-delibes": {
+      "id": "leo-delibes",
+      "label": "Léo Delibes",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1850,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "opera"
+      ],
+      "overlapCount": 0,
+      "overflow": 1519,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "alexander-serov": {
+      "id": "alexander-serov",
+      "label": "Alexander Serov",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1850,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "opera"
+      ],
+      "overlapCount": 0,
+      "overflow": 1644,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "modest-petrovich-mussorgsky": {
+      "id": "modest-petrovich-mussorgsky",
+      "label": "Modest Petrovich Mussorgsky",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 2,
+      "weightedDegree": 1.44,
+      "era": 1852,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0.26,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "classical-music",
+        "opera"
+      ],
+      "overlapCount": 0,
+      "overflow": 1317,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "camille-saint-saens": {
+      "id": "camille-saint-saens",
+      "label": "Camille Saint-Saëns",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 2,
+      "weightedDegree": 1.44,
+      "era": 1853,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0.26,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "opera",
+        "classical-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 993,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "joseph-strauss": {
+      "id": "joseph-strauss",
+      "label": "Joseph Strauss",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1853,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 874,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "eduard-strauss": {
+      "id": "eduard-strauss",
+      "label": "Eduard Strauss",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1855,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 909,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "christina-nilsson": {
+      "id": "christina-nilsson",
+      "label": "Christina Nilsson",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1859,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "opera"
+      ],
+      "overlapCount": 0,
+      "overflow": 823,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "pyotr-ilyich-tchaikovsky": {
+      "id": "pyotr-ilyich-tchaikovsky",
+      "label": "Pyotr Ilyich Tchaikovsky",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 3,
+      "weightedDegree": 2.16,
+      "era": 1859,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.375,
+      "bridgeScore": 0.39,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "opera",
+        "classical-music",
+        "romantic-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 686,
+      "recommendedActions": [
+        "review-zone-bleed",
+        "source-history-fact"
+      ]
+    },
+    "gabriel-faure": {
+      "id": "gabriel-faure",
+      "label": "Gabriel Fauré",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 3,
+      "weightedDegree": 2.16,
+      "era": 1861,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.375,
+      "bridgeScore": 0.39,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "opera",
+        "romantic-music",
+        "classical-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 447,
+      "recommendedActions": [
+        "review-zone-bleed",
+        "source-history-fact"
+      ]
+    },
+    "ella-adayevskaya": {
+      "id": "ella-adayevskaya",
+      "label": "Ella Adayevskaya",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1861,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "opera"
+      ],
+      "overlapCount": 0,
+      "overflow": 699,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "aristide-bruant": {
+      "id": "aristide-bruant",
+      "label": "Aristide Bruant",
+      "type": "artist",
+      "zone": "pop-soul-disco",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1862,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "chanson"
+      ],
+      "overlapCount": 0,
+      "overflow": 877,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "teresa-carreno": {
+      "id": "teresa-carreno",
+      "label": "Teresa Carreño",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1863,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 1689,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "hermann-levi": {
+      "id": "hermann-levi",
+      "label": "Hermann Levi",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 2,
+      "weightedDegree": 1.44,
+      "era": 1863,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0.26,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "classical-music",
+        "opera"
+      ],
+      "overlapCount": 0,
+      "overflow": 740,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "zdenek-fibich": {
+      "id": "zdenek-fibich",
+      "label": "Zdeněk Fibich",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 2,
+      "weightedDegree": 1.44,
+      "era": 1864,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0.26,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "opera",
+        "classical-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 1555,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "aleksander-micha-owski": {
+      "id": "aleksander-micha-owski",
+      "label": "Aleksander Michałowski",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1869,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 1422,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "mykola-lysenko": {
+      "id": "mykola-lysenko",
+      "label": "Mykola Lysenko",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 2,
+      "weightedDegree": 1.44,
+      "era": 1869,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0.58,
+      "secondaryZones": [
+        "folk-country-vise"
+      ],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "opera",
+        "folk"
+      ],
+      "overlapCount": 0,
+      "overflow": 1190,
+      "recommendedActions": [
+        "expand-important-node",
+        "preserve-cross-zone-bridge",
+        "review-zone-bleed",
+        "source-history-fact"
+      ]
+    },
+    "josef-bayer": {
+      "id": "josef-bayer",
+      "label": "Josef Bayer",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1870,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "opera"
+      ],
+      "overlapCount": 0,
+      "overflow": 1061,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "anatoly-lyadov": {
+      "id": "anatoly-lyadov",
+      "label": "Anatoly Lyadov",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1873,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 881,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "francisco-tarrega": {
+      "id": "francisco-tarrega",
+      "label": "Francisco Tárrega",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1874,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "romantic-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 747,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "vishnu-narayan-bhatkhande": {
+      "id": "vishnu-narayan-bhatkhande",
+      "label": "Vishnu Narayan Bhatkhande",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1875,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "indian-classical-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 655,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "giacomo-puccini": {
+      "id": "giacomo-puccini",
+      "label": "Giacomo Puccini",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 2,
+      "weightedDegree": 1.44,
+      "era": 1876,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0.26,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "classical-music",
+        "opera"
+      ],
+      "overlapCount": 0,
+      "overflow": 571,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "alexandre-levy": {
+      "id": "alexandre-levy",
+      "label": "Alexandre Levy",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1880,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 378,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "felix-mikhailovich-blumenfeld": {
+      "id": "felix-mikhailovich-blumenfeld",
+      "label": "Felix Mikhailovich Blumenfeld",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1881,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 320,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "anton-arensky": {
+      "id": "anton-arensky",
+      "label": "Anton Arensky",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1882,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "opera"
+      ],
+      "overlapCount": 0,
+      "overflow": 187,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "arturo-toscanini": {
+      "id": "arturo-toscanini",
+      "label": "Arturo Toscanini",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1886,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 1670,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "carl-nielsen": {
+      "id": "carl-nielsen",
+      "label": "Carl Nielsen",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1888,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "opera"
+      ],
+      "overlapCount": 0,
+      "overflow": 1535,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "enrique-granados": {
+      "id": "enrique-granados",
+      "label": "Enrique Granados",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1889,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 1400,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "felix-von-weingartner": {
+      "id": "felix-von-weingartner",
+      "label": "Felix von Weingartner",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1891,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "opera"
+      ],
+      "overlapCount": 0,
+      "overflow": 1265,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "sergei-rachmaninoff": {
+      "id": "sergei-rachmaninoff",
+      "label": "Sergei Rachmaninoff",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 2,
+      "weightedDegree": 1.44,
+      "era": 1892,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0.26,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "opera",
+        "classical-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 995,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "wilhelm-stenhammar": {
+      "id": "wilhelm-stenhammar",
+      "label": "Wilhelm Stenhammar",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 2,
+      "weightedDegree": 1.44,
+      "era": 1892,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0.26,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "classical-music",
+        "opera"
+      ],
+      "overlapCount": 0,
+      "overflow": 860,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "jean-sibelius": {
+      "id": "jean-sibelius",
+      "label": "Jean Sibelius",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 3,
+      "weightedDegree": 2.16,
+      "era": 1892,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.375,
+      "bridgeScore": 0.39,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "classical-music",
+        "opera",
+        "twentieth-century-classical-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 1130,
+      "recommendedActions": [
+        "review-zone-bleed",
+        "source-history-fact"
+      ]
+    },
+    "bronis-aw-huberman": {
+      "id": "bronis-aw-huberman",
+      "label": "Bronisław Huberman",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1893,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 605,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "henry-kimball-hadley": {
+      "id": "henry-kimball-hadley",
+      "label": "Henry Kimball Hadley",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1893,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "opera"
+      ],
+      "overlapCount": 0,
+      "overflow": 470,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "al-jolson": {
+      "id": "al-jolson",
+      "label": "Al Jolson",
+      "type": "artist",
+      "zone": "jazz",
+      "degree": 5,
+      "weightedDegree": 3.6,
+      "era": 1897,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.625,
+      "bridgeScore": 1,
+      "secondaryZones": [
+        "roots-blues",
+        "pop-soul-disco"
+      ],
+      "bridgePolicies": [
+        {
+          "id": "jazz-to-fusion",
+          "zones": [
+            "jazz",
+            "roots-blues",
+            "rock-circuit",
+            "psychedelia-prog"
+          ],
+          "anchor": false,
+          "feedbackCategories": [
+            "good_bridge",
+            "genre_transition_needed"
+          ]
+        }
+      ],
+      "linkedGenres": [
+        "jazz",
+        "blues",
+        "ragtime",
+        "pop-music",
+        "traditional-pop"
+      ],
+      "overlapCount": 0,
+      "overflow": 412,
+      "recommendedActions": [
+        "preserve-cross-zone-bridge",
+        "train-bridge-policy",
+        "review-zone-bleed",
+        "source-history-fact"
+      ]
+    },
+    "arnold-schoenberg": {
+      "id": "arnold-schoenberg",
+      "label": "Arnold Schoenberg",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 3,
+      "weightedDegree": 2.16,
+      "era": 1897,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.375,
+      "bridgeScore": 0.39,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "twentieth-century-classical-music",
+        "opera",
+        "classical-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 335,
+      "recommendedActions": [
+        "review-zone-bleed",
+        "source-history-fact"
+      ]
+    },
+    "karl-straube": {
+      "id": "karl-straube",
+      "label": "Karl Straube",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1897,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 200,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "nora-bayes": {
+      "id": "nora-bayes",
+      "label": "Nora Bayes",
+      "type": "artist",
+      "zone": "pop-soul-disco",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1898,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "traditional-pop"
+      ],
+      "overlapCount": 0,
+      "overflow": 680,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "emile-waldteufel": {
+      "id": "emile-waldteufel",
+      "label": "Émile Waldteufel",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1899,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "romantic-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 65,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "karol-szymanowski": {
+      "id": "karol-szymanowski",
+      "label": "Karol Szymanowski",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 2,
+      "weightedDegree": 1.44,
+      "era": 1899,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0.26,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "opera",
+        "classical-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 1670,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "gustav-holst": {
+      "id": "gustav-holst",
+      "label": "Gustav Holst",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 2,
+      "weightedDegree": 1.44,
+      "era": 1904,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0.26,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "classical-music",
+        "opera"
+      ],
+      "overlapCount": 0,
+      "overflow": 1535,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "alban-berg": {
+      "id": "alban-berg",
+      "label": "Alban Berg",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1907,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "opera"
+      ],
+      "overlapCount": 0,
+      "overflow": 1400,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "arthur-honegger": {
+      "id": "arthur-honegger",
+      "label": "Arthur Honegger",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1912,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "oratorio"
+      ],
+      "overlapCount": 0,
+      "overflow": 1265,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "carlos-gardel": {
+      "id": "carlos-gardel",
+      "label": "Carlos Gardel",
+      "type": "artist",
+      "zone": "pop-soul-disco",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1917,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "tango"
+      ],
+      "overlapCount": 0,
+      "overflow": 610,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "dmitri-shostakovich": {
+      "id": "dmitri-shostakovich",
+      "label": "Dmitri Shostakovich",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 2,
+      "weightedDegree": 1.44,
+      "era": 1919,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0.26,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "chamber-music",
+        "opera"
+      ],
+      "overlapCount": 0,
+      "overflow": 1130,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "glenn-miller": {
+      "id": "glenn-miller",
+      "label": "Glenn Miller",
+      "type": "artist",
+      "zone": "jazz",
+      "degree": 2,
+      "weightedDegree": 1.44,
+      "era": 1923,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0.7,
+      "secondaryZones": [
+        "roots-blues"
+      ],
+      "bridgePolicies": [
+        {
+          "id": "jazz-to-fusion",
+          "zones": [
+            "jazz",
+            "roots-blues",
+            "rock-circuit",
+            "psychedelia-prog"
+          ],
+          "anchor": false,
+          "feedbackCategories": [
+            "good_bridge",
+            "genre_transition_needed"
+          ]
+        }
+      ],
+      "linkedGenres": [
+        "jazz",
+        "blues"
+      ],
+      "overlapCount": 0,
+      "overflow": 360,
+      "recommendedActions": [
+        "expand-important-node",
+        "preserve-cross-zone-bridge",
+        "train-bridge-policy",
+        "review-zone-bleed",
+        "source-history-fact"
+      ]
+    },
+    "aram-khachaturian": {
+      "id": "aram-khachaturian",
+      "label": "Aram Khachaturian",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1926,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "chamber-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 995,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "astor-piazzolla": {
+      "id": "astor-piazzolla",
+      "label": "Astor Piazzolla",
+      "type": "artist",
+      "zone": "pop-soul-disco",
+      "degree": 2,
+      "weightedDegree": 1.44,
+      "era": 1933,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0.58,
+      "secondaryZones": [
+        "classical-history"
+      ],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "opera",
+        "tango"
+      ],
+      "overlapCount": 0,
+      "overflow": 610,
+      "recommendedActions": [
+        "expand-important-node",
+        "preserve-cross-zone-bridge",
+        "review-zone-bleed",
+        "source-history-fact"
+      ]
+    },
+    "charles-aznavour": {
+      "id": "charles-aznavour",
+      "label": "Charles Aznavour",
+      "type": "artist",
+      "zone": "jazz",
+      "degree": 4,
+      "weightedDegree": 2.88,
+      "era": 1933,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.5,
+      "bridgeScore": 0.84,
+      "secondaryZones": [
+        "pop-soul-disco"
+      ],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "chanson",
+        "jazz",
+        "pop-music",
+        "world-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 360,
+      "recommendedActions": [
+        "preserve-cross-zone-bridge",
+        "review-zone-bleed",
+        "source-history-fact"
+      ]
+    },
+    "edith-piaf": {
+      "id": "edith-piaf",
+      "label": "Édith Piaf",
+      "type": "artist",
+      "zone": "pop-soul-disco",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1935,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "chanson"
+      ],
+      "overlapCount": 0,
+      "overflow": 610,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "john-cage": {
+      "id": "john-cage",
+      "label": "John Cage",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 3,
+      "weightedDegree": 2.16,
+      "era": 1938,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.375,
+      "bridgeScore": 0.39,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "opera",
+        "classical-music",
+        "twentieth-century-classical-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 740,
+      "recommendedActions": [
+        "review-zone-bleed",
+        "source-history-fact"
+      ]
+    },
+    "leonard-bernstein": {
+      "id": "leonard-bernstein",
+      "label": "Leonard Bernstein",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 2,
+      "weightedDegree": 1.44,
+      "era": 1940,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0.26,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "classical-music",
+        "opera"
+      ],
+      "overlapCount": 0,
+      "overflow": 605,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "mstislav-rostropovich": {
+      "id": "mstislav-rostropovich",
+      "label": "Mstislav Rostropovich",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1942,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 470,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "lata-mangeshkar": {
+      "id": "lata-mangeshkar",
+      "label": "Lata Mangeshkar",
+      "type": "artist",
+      "zone": "pop-soul-disco",
+      "degree": 2,
+      "weightedDegree": 1.44,
+      "era": 1942,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0.58,
+      "secondaryZones": [
+        "classical-history"
+      ],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "world-music",
+        "indian-classical-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 987,
+      "recommendedActions": [
+        "expand-important-node",
+        "preserve-cross-zone-bridge",
+        "review-zone-bleed",
+        "source-history-fact"
+      ]
+    },
+    "mikis-theodorakis": {
+      "id": "mikis-theodorakis",
+      "label": "Mikis Theodorakis",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1943,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "opera"
+      ],
+      "overlapCount": 0,
+      "overflow": 335,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "asha-bhosle": {
+      "id": "asha-bhosle",
+      "label": "Asha Bhosle",
+      "type": "artist",
+      "zone": "pop-soul-disco",
+      "degree": 3,
+      "weightedDegree": 2.16,
+      "era": 1943,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.375,
+      "bridgeScore": 0.71,
+      "secondaryZones": [
+        "classical-history"
+      ],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "world-music",
+        "indian-classical-music",
+        "pop-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 817,
+      "recommendedActions": [
+        "preserve-cross-zone-bridge",
+        "review-zone-bleed",
+        "source-history-fact"
+      ]
+    },
+    "yves-montand": {
+      "id": "yves-montand",
+      "label": "Yves Montand",
+      "type": "artist",
+      "zone": "pop-soul-disco",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1945,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "chanson"
+      ],
+      "overlapCount": 0,
+      "overflow": 760,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "pierre-boulez": {
+      "id": "pierre-boulez",
+      "label": "Pierre Boulez",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1945,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 200,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "p-ramlee": {
+      "id": "p-ramlee",
+      "label": "P. Ramlee",
+      "type": "artist",
+      "zone": "pop-soul-disco",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1945,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "pop-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 760,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
+    },
+    "jerry-goldsmith": {
+      "id": "jerry-goldsmith",
+      "label": "Jerry Goldsmith",
+      "type": "artist",
+      "zone": "classical-history",
+      "degree": 1,
+      "weightedDegree": 0.72,
+      "era": 1947,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0.13,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "overlapCount": 0,
+      "overflow": 65,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
     }
   },
   "issues": {
@@ -31509,6 +34887,7 @@
       "elvis-presley",
       "uncle-dave-macon",
       "mississippi-john-hurt",
+      "glenn-miller",
       "misfits",
       "ramones",
       "sex-pistols",
@@ -31521,6 +34900,9 @@
       "claude-debussy",
       "irving-berlin",
       "hoagy-carmichael",
+      "mykola-lysenko",
+      "astor-piazzolla",
+      "lata-mangeshkar",
       "ufo",
       "link-wray",
       "bill-haley-and-his-comets",
@@ -31569,23 +34951,19 @@
       "brian-may",
       "ritchie-blackmore",
       "angus-young",
+      "traditional-pop",
       "g-funk",
-      "django-reinhardt",
-      "robert-johnson",
-      "frankenstrat",
-      "roots-rock",
-      "metallica",
-      "megadeth"
+      "django-reinhardt"
     ]
   },
   "recommendedResearchRequests": [
     {
-      "id": "organization-rock-circuit-20261020",
+      "id": "organization-rock-circuit-20261030",
       "title": "Organize ROCK CIRCUIT frontier",
       "status": "queued",
       "priority": 90,
       "scope": "artist_network",
-      "createdAt": "2026-10-20T09:16:24.935Z",
+      "createdAt": "2026-10-30T11:43:40.696Z",
       "instructions": "Expand and clarify the ROCK CIRCUIT part of Music History Map. Current organization signal: rock, classic rock, glam, funk and broad band history. Prioritize documented music-related connections that help layout organization: associated genres, shared members, collaborations, influences, instruments and clear bridges to neighboring zones. Active bridge policies for this zone: gospel-rnb-soul-rock, rock-to-metal, punk-to-rock, hip-hop-crossovers, jazz-to-fusion, country-roots-to-rock, yardbirds-guitar-lineage, rickenbacker-recording-use, jazz-fusion-guitar. Prefer candidates that strengthen those transitions without turning category pages into nodes. Use albums, songs and releases only as context for edges. Do not create release/song nodes. Only propose node types allowed by MHM: band, guitarist, artist, guitar, guitar_brand and genre.",
       "seeds": [
         {
@@ -31628,12 +35006,12 @@
       "notes": "Generated by brain:organize. Needs-attention score 120.7. Active bridge policies: gospel-rnb-soul-rock, rock-to-metal, punk-to-rock, hip-hop-crossovers, jazz-to-fusion, country-roots-to-rock, yardbirds-guitar-lineage, rickenbacker-recording-use, jazz-fusion-guitar."
     },
     {
-      "id": "organization-punk-alt-20261020",
+      "id": "organization-punk-alt-20261030",
       "title": "Organize PUNK / ALTERNATIVE frontier",
       "status": "queued",
       "priority": 90,
       "scope": "artist_network",
-      "createdAt": "2026-10-20T09:16:24.936Z",
+      "createdAt": "2026-10-30T11:43:40.696Z",
       "instructions": "Expand and clarify the PUNK / ALTERNATIVE part of Music History Map. Current organization signal: punk, post-punk, alternative, indie, hardcore and adjacent scenes. Prioritize documented music-related connections that help layout organization: associated genres, shared members, collaborations, influences, instruments and clear bridges to neighboring zones. Active bridge policies for this zone: punk-to-rock, hip-hop-crossovers, jaguar-alternative-use. Prefer candidates that strengthen those transitions without turning category pages into nodes. Use albums, songs and releases only as context for edges. Do not create release/song nodes. Only propose node types allowed by MHM: band, guitarist, artist, guitar, guitar_brand and genre.",
       "seeds": [
         {
@@ -31676,20 +35054,16 @@
       "notes": "Generated by brain:organize. Needs-attention score 120.68. Active bridge policies: punk-to-rock, hip-hop-crossovers, jaguar-alternative-use."
     },
     {
-      "id": "organization-pop-soul-disco-20261020",
+      "id": "organization-pop-soul-disco-20261030",
       "title": "Organize POP / SOUL / DISCO frontier",
       "status": "queued",
       "priority": 90,
       "scope": "artist_network",
-      "createdAt": "2026-10-20T09:16:24.936Z",
+      "createdAt": "2026-10-30T11:43:40.696Z",
       "instructions": "Expand and clarify the POP / SOUL / DISCO part of Music History Map. Current organization signal: 1960s Motown, gospel-informed soul, 1970s disco and 1980s pop and synth-pop. Prioritize documented music-related connections that help layout organization: associated genres, shared members, collaborations, influences, instruments and clear bridges to neighboring zones. Active bridge policies for this zone: gospel-rnb-soul-rock. Prefer candidates that strengthen those transitions without turning category pages into nodes. Use albums, songs and releases only as context for edges. Do not create release/song nodes. Only propose node types allowed by MHM: band, guitarist, artist, guitar, guitar_brand and genre.",
       "seeds": [
         {
           "name": "Bonnie Raitt",
-          "kind": "artist"
-        },
-        {
-          "name": "Jackson Browne",
           "kind": "artist"
         },
         {
@@ -31715,21 +35089,25 @@
         {
           "name": "Stevie Wonder",
           "kind": "artist"
+        },
+        {
+          "name": "James Reese Europe",
+          "kind": "artist"
         }
       ],
       "limits": {
         "maxSeeds": 8,
         "maxCandidates": 70
       },
-      "notes": "Generated by brain:organize. Needs-attention score 110.43. Active bridge policies: gospel-rnb-soul-rock."
+      "notes": "Generated by brain:organize. Needs-attention score 112.2. Active bridge policies: gospel-rnb-soul-rock."
     },
     {
-      "id": "organization-hard-rock-metal-20261020",
+      "id": "organization-hard-rock-metal-20261030",
       "title": "Organize HARD ROCK / METAL frontier",
       "status": "queued",
       "priority": 90,
       "scope": "artist_network",
-      "createdAt": "2026-10-20T09:16:24.936Z",
+      "createdAt": "2026-10-30T11:43:40.696Z",
       "instructions": "Expand and clarify the HARD ROCK / METAL part of Music History Map. Current organization signal: hard rock, metal, riff culture, virtuoso guitar and heavier scenes. Prioritize documented music-related connections that help layout organization: associated genres, shared members, collaborations, influences, instruments and clear bridges to neighboring zones. Active bridge policies for this zone: rock-to-metal, hip-hop-crossovers, yardbirds-guitar-lineage. Prefer candidates that strengthen those transitions without turning category pages into nodes. Use albums, songs and releases only as context for edges. Do not create release/song nodes. Only propose node types allowed by MHM: band, guitarist, artist, guitar, guitar_brand and genre.",
       "seeds": [
         {
@@ -31772,12 +35150,12 @@
       "notes": "Generated by brain:organize. Needs-attention score 110.07. Active bridge policies: rock-to-metal, hip-hop-crossovers, yardbirds-guitar-lineage."
     },
     {
-      "id": "organization-guitar-workshop-20261020",
+      "id": "organization-guitar-workshop-20261030",
       "title": "Organize GUITAR WORKSHOP frontier",
       "status": "queued",
       "priority": 90,
       "scope": "guitar_history",
-      "createdAt": "2026-10-20T09:16:24.936Z",
+      "createdAt": "2026-10-30T11:43:40.696Z",
       "instructions": "Expand and clarify the GUITAR WORKSHOP part of Music History Map. Current organization signal: guitar models, guitar brands and instrument history. Prioritize documented music-related connections that help layout organization: associated genres, shared members, collaborations, influences, instruments and clear bridges to neighboring zones. Active bridge policies for this zone: esquire-country-use, jaguar-alternative-use, rickenbacker-recording-use, jem-virtuoso-design. Prefer candidates that strengthen those transitions without turning category pages into nodes. Use albums, songs and releases only as context for edges. Do not create release/song nodes. Only propose node types allowed by MHM: band, guitarist, artist, guitar, guitar_brand and genre.",
       "seeds": [
         {

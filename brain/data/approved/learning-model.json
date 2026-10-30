@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-26T16:04:39.433Z",
+  "generatedAt": "2026-10-30T11:43:30.109Z",
   "source": "graph + Obsidian frontmatter + curator feedback",
   "samples": {
-    "graphNodes": 1017,
-    "graphEdges": 1328,
-    "mapConnections": 896,
+    "graphNodes": 1146,
+    "graphEdges": 1502,
+    "mapConnections": 1070,
     "obsidianNotes": 1017,
     "feedbackNodes": 44,
     "feedbackZones": 6,
@@ -2344,21 +2344,21 @@
       ]
     },
     "jazz": {
-      "nodeCount": 69,
+      "nodeCount": 72,
       "pinnedCount": 0,
       "centroid": {
-        "x": -1513,
-        "y": -1269
+        "x": -1548,
+        "y": -1277
       },
       "eraMedian": 1947,
       "learnedTerms": [
         {
-          "term": "jazz lineage",
-          "weight": 110
+          "term": "jazz",
+          "weight": 112
         },
         {
-          "term": "jazz",
-          "weight": 109
+          "term": "jazz lineage",
+          "weight": 110
         },
         {
           "term": "jazz fusion",
@@ -2417,6 +2417,10 @@
           "weight": 9
         },
         {
+          "term": "ragtime",
+          "weight": 9
+        },
+        {
           "term": "django reinhardt",
           "weight": 8
         },
@@ -2426,10 +2430,6 @@
         },
         {
           "term": "modal jazz",
-          "weight": 8
-        },
-        {
-          "term": "ragtime",
           "weight": 8
         },
         {
@@ -2645,11 +2645,19 @@
           "weight": 2
         },
         {
+          "term": "blues",
+          "weight": 2
+        },
+        {
           "term": "brubeck",
           "weight": 2
         },
         {
           "term": "carter",
+          "weight": 2
+        },
+        {
+          "term": "charles",
           "weight": 2
         },
         {
@@ -2662,14 +2670,6 @@
         },
         {
           "term": "dave",
-          "weight": 2
-        },
-        {
-          "term": "django",
-          "weight": 2
-        },
-        {
-          "term": "evans",
           "weight": 2
         }
       ]
@@ -3337,45 +3337,101 @@
       ]
     },
     "classical-history": {
-      "nodeCount": 43,
+      "nodeCount": 156,
       "pinnedCount": 0,
       "centroid": {
-        "x": -3166,
-        "y": -1373
+        "x": -4235,
+        "y": -2470
       },
-      "eraMedian": 1908,
+      "eraMedian": 1931,
       "learnedTerms": [
         {
           "term": "classical",
-          "weight": 28
+          "weight": 86
         },
         {
           "term": "classical music",
-          "weight": 24
+          "weight": 79
+        },
+        {
+          "term": "opera",
+          "weight": 72
         },
         {
           "term": "romantic",
-          "weight": 8
+          "weight": 17
         },
         {
           "term": "romantic music",
-          "weight": 8
+          "weight": 17
         },
         {
           "term": "baroque",
-          "weight": 5
+          "weight": 10
         },
         {
           "term": "baroque music",
-          "weight": 5
+          "weight": 10
+        },
+        {
+          "term": "johann",
+          "weight": 6
+        },
+        {
+          "term": "20th",
+          "weight": 4
+        },
+        {
+          "term": "20th century classical music",
+          "weight": 4
+        },
+        {
+          "term": "century",
+          "weight": 4
+        },
+        {
+          "term": "chamber",
+          "weight": 4
+        },
+        {
+          "term": "chamber music",
+          "weight": 4
         },
         {
           "term": "classical period",
           "weight": 4
         },
         {
+          "term": "francesco",
+          "weight": 4
+        },
+        {
+          "term": "giovanni",
+          "weight": 4
+        },
+        {
+          "term": "louis",
+          "weight": 4
+        },
+        {
+          "term": "maria",
+          "weight": 4
+        },
+        {
           "term": "period",
           "weight": 4
+        },
+        {
+          "term": "alexander",
+          "weight": 3
+        },
+        {
+          "term": "bach",
+          "weight": 3
+        },
+        {
+          "term": "felix",
+          "weight": 3
         },
         {
           "term": "film",
@@ -3386,19 +3442,91 @@
           "weight": 3
         },
         {
+          "term": "jean",
+          "weight": 3
+        },
+        {
+          "term": "john",
+          "weight": 3
+        },
+        {
+          "term": "michael",
+          "weight": 3
+        },
+        {
+          "term": "oratorio",
+          "weight": 3
+        },
+        {
+          "term": "richard",
+          "weight": 3
+        },
+        {
           "term": "score",
           "weight": 3
+        },
+        {
+          "term": "strauss",
+          "weight": 3
+        },
+        {
+          "term": "von",
+          "weight": 3
+        },
+        {
+          "term": "anton",
+          "weight": 2
+        },
+        {
+          "term": "antonio",
+          "weight": 2
+        },
+        {
+          "term": "arthur",
+          "weight": 2
+        },
+        {
+          "term": "battista",
+          "weight": 2
+        },
+        {
+          "term": "benjamin",
+          "weight": 2
+        },
+        {
+          "term": "carl",
+          "weight": 2
+        },
+        {
+          "term": "folk",
+          "weight": 2
         },
         {
           "term": "franz",
           "weight": 2
         },
         {
-          "term": "johann",
+          "term": "haydn",
           "weight": 2
         },
         {
-          "term": "louis",
+          "term": "henry",
+          "weight": 2
+        },
+        {
+          "term": "indian",
+          "weight": 2
+        },
+        {
+          "term": "indian classical music",
+          "weight": 2
+        },
+        {
+          "term": "joseph",
+          "weight": 2
+        },
+        {
+          "term": "micha",
           "weight": 2
         },
         {
@@ -3406,8 +3534,56 @@
           "weight": 2
         },
         {
+          "term": "thomas",
+          "weight": 2
+        },
+        {
           "term": "van",
           "weight": 2
+        },
+        {
+          "term": "wagner",
+          "weight": 2
+        },
+        {
+          "term": "wilhelm",
+          "weight": 2
+        },
+        {
+          "term": "adayevskaya",
+          "weight": 1
+        },
+        {
+          "term": "adys",
+          "weight": 1
+        },
+        {
+          "term": "afanas",
+          "weight": 1
+        },
+        {
+          "term": "alban",
+          "weight": 1
+        },
+        {
+          "term": "alban berg",
+          "weight": 1
+        },
+        {
+          "term": "albinoni",
+          "weight": 1
+        },
+        {
+          "term": "aleksander",
+          "weight": 1
+        },
+        {
+          "term": "aleksander micha owski",
+          "weight": 1
+        },
+        {
+          "term": "aleksander michałowski",
+          "weight": 1
         },
         {
           "term": "alex",
@@ -3415,6 +3591,30 @@
         },
         {
           "term": "alex north",
+          "weight": 1
+        },
+        {
+          "term": "alexander alyabyev",
+          "weight": 1
+        },
+        {
+          "term": "alexander borodin",
+          "weight": 1
+        },
+        {
+          "term": "alexander serov",
+          "weight": 1
+        },
+        {
+          "term": "alexandre",
+          "weight": 1
+        },
+        {
+          "term": "alexandre levy",
+          "weight": 1
+        },
+        {
+          "term": "alyabyev",
           "weight": 1
         },
         {
@@ -3430,251 +3630,51 @@
           "weight": 1
         },
         {
-          "term": "antonin",
+          "term": "anatoly",
           "weight": 1
         },
         {
-          "term": "antonin dvorak",
+          "term": "anatoly lyadov",
           "weight": 1
         },
         {
-          "term": "antonio",
+          "term": "andre",
           "weight": 1
         },
         {
-          "term": "antonio vivaldi",
+          "term": "andre campra",
           "weight": 1
         },
         {
-          "term": "arthur",
+          "term": "antoine",
           "weight": 1
         },
         {
-          "term": "arthur rubinstein",
+          "term": "antoine de lhoyer",
           "weight": 1
         },
         {
-          "term": "bach",
+          "term": "anton arensky",
           "weight": 1
         },
         {
-          "term": "beethoven",
+          "term": "anton reicha",
           "weight": 1
         },
         {
-          "term": "benjamin",
-          "weight": 1
-        },
-        {
-          "term": "benjamin britten",
-          "weight": 1
-        },
-        {
-          "term": "brahms",
-          "weight": 1
-        },
-        {
-          "term": "britten",
-          "weight": 1
-        },
-        {
-          "term": "callas",
-          "weight": 1
-        },
-        {
-          "term": "carlos",
-          "weight": 1
-        },
-        {
-          "term": "chopin",
-          "weight": 1
-        },
-        {
-          "term": "chorale",
-          "weight": 1
-        },
-        {
-          "term": "claude",
-          "weight": 1
-        },
-        {
-          "term": "claude debussy",
-          "weight": 1
-        },
-        {
-          "term": "cliburn",
-          "weight": 1
-        },
-        {
-          "term": "coleridge",
-          "weight": 1
-        },
-        {
-          "term": "debussy",
-          "weight": 1
-        },
-        {
-          "term": "dvorak",
-          "weight": 1
-        },
-        {
-          "term": "edvard",
-          "weight": 1
-        },
-        {
-          "term": "edvard grieg",
-          "weight": 1
-        },
-        {
-          "term": "florence",
-          "weight": 1
-        },
-        {
-          "term": "florence price",
-          "weight": 1
-        },
-        {
-          "term": "folk",
-          "weight": 1
-        },
-        {
-          "term": "franz liszt",
-          "weight": 1
-        },
-        {
-          "term": "franz schubert",
-          "weight": 1
-        },
-        {
-          "term": "frederic",
-          "weight": 1
-        },
-        {
-          "term": "frederic chopin",
-          "weight": 1
-        },
-        {
-          "term": "frideric",
-          "weight": 1
-        },
-        {
-          "term": "george",
-          "weight": 1
-        },
-        {
-          "term": "george frideric handel",
-          "weight": 1
-        },
-        {
-          "term": "glass",
-          "weight": 1
-        },
-        {
-          "term": "gottschalk",
-          "weight": 1
-        },
-        {
-          "term": "grant",
-          "weight": 1
-        },
-        {
-          "term": "grieg",
-          "weight": 1
-        },
-        {
-          "term": "handel",
-          "weight": 1
-        },
-        {
-          "term": "haydn",
-          "weight": 1
-        },
-        {
-          "term": "igor",
-          "weight": 1
-        },
-        {
-          "term": "igor stravinsky",
-          "weight": 1
-        },
-        {
-          "term": "jessye",
-          "weight": 1
-        },
-        {
-          "term": "jessye norman",
-          "weight": 1
-        },
-        {
-          "term": "johann pachelbel",
-          "weight": 1
-        },
-        {
-          "term": "johann sebastian bach",
-          "weight": 1
-        },
-        {
-          "term": "johannes",
-          "weight": 1
-        },
-        {
-          "term": "johannes brahms",
-          "weight": 1
-        },
-        {
-          "term": "john",
-          "weight": 1
-        },
-        {
-          "term": "john williams",
-          "weight": 1
-        },
-        {
-          "term": "joseph",
-          "weight": 1
-        },
-        {
-          "term": "joseph haydn",
-          "weight": 1
-        },
-        {
-          "term": "kaufman",
-          "weight": 1
-        },
-        {
-          "term": "lang",
-          "weight": 1
-        },
-        {
-          "term": "leontyne",
-          "weight": 1
-        },
-        {
-          "term": "leontyne price",
-          "weight": 1
-        },
-        {
-          "term": "liszt",
-          "weight": 1
-        },
-        {
-          "term": "louis kaufman",
-          "weight": 1
-        },
-        {
-          "term": "louis moreau gottschalk",
+          "term": "antonia",
           "weight": 1
         }
       ]
     },
     "pop-soul-disco": {
-      "nodeCount": 152,
+      "nodeCount": 165,
       "pinnedCount": 0,
       "centroid": {
-        "x": -759,
-        "y": 2494
+        "x": -832,
+        "y": 2574
       },
-      "eraMedian": 1969,
+      "eraMedian": 1967,
       "learnedTerms": [
         {
           "term": "soul music lineage",
@@ -3682,11 +3682,11 @@
         },
         {
           "term": "pop",
-          "weight": 55
+          "weight": 59
         },
         {
           "term": "pop music",
-          "weight": 44
+          "weight": 46
         },
         {
           "term": "soul",
@@ -3801,6 +3801,10 @@
           "weight": 5
         },
         {
+          "term": "chanson",
+          "weight": 4
+        },
+        {
           "term": "franklin s gospel upbringing and r b recordings explain her soul and pop connections a gospel influence is not the same as a later secular genre label",
           "weight": 4
         },
@@ -3826,6 +3830,10 @@
         },
         {
           "term": "blues",
+          "weight": 3
+        },
+        {
+          "term": "classical",
           "weight": 3
         },
         {
@@ -3866,6 +3874,18 @@
         },
         {
           "term": "synth pop",
+          "weight": 3
+        },
+        {
+          "term": "tango",
+          "weight": 3
+        },
+        {
+          "term": "world",
+          "weight": 3
+        },
+        {
+          "term": "world music",
           "weight": 3
         },
         {
@@ -3921,6 +3941,14 @@
           "weight": 2
         },
         {
+          "term": "indian",
+          "weight": 2
+        },
+        {
+          "term": "indian classical music",
+          "weight": 2
+        },
+        {
           "term": "james",
           "weight": 2
         },
@@ -3957,44 +3985,16 @@
           "weight": 2
         },
         {
+          "term": "traditional",
+          "weight": 2
+        },
+        {
+          "term": "traditional pop",
+          "weight": 2
+        },
+        {
           "term": "voice",
           "weight": 2
-        },
-        {
-          "term": "williams",
-          "weight": 2
-        },
-        {
-          "term": "wilson",
-          "weight": 2
-        },
-        {
-          "term": "abba",
-          "weight": 1
-        },
-        {
-          "term": "agnetha",
-          "weight": 1
-        },
-        {
-          "term": "agnetha faltskog",
-          "weight": 1
-        },
-        {
-          "term": "al green",
-          "weight": 1
-        },
-        {
-          "term": "al mckay",
-          "weight": 1
-        },
-        {
-          "term": "alfa",
-          "weight": 1
-        },
-        {
-          "term": "alfa anderson",
-          "weight": 1
         }
       ]
     }
@@ -4088,7 +4088,8 @@
       "zone": "roots-blues",
       "secondaryZones": [
         "hard-rock-metal",
-        "country-roots"
+        "country-roots",
+        "jazz"
       ],
       "eraStart": 1909,
       "eraPeak": 1909,
@@ -4101,9 +4102,9 @@
         "electric blues"
       ],
       "approvedFactCount": 1,
-      "connectionCount": 28,
+      "connectionCount": 30,
       "linkedGenres": [],
-      "bridgeScore": 0.44,
+      "bridgeScore": 0.66,
       "hubScore": 1,
       "layoutHints": {
         "pinned": false
@@ -4347,7 +4348,7 @@
         "country",
         "folk"
       ],
-      "connectionCount": 40,
+      "connectionCount": 41,
       "linkedGenres": [],
       "bridgeScore": 0.88,
       "hubScore": 1,
@@ -6586,7 +6587,7 @@
         "jazz roots"
       ],
       "approvedFactCount": 1,
-      "connectionCount": 66,
+      "connectionCount": 69,
       "linkedGenres": [],
       "bridgeScore": 1,
       "hubScore": 1,
@@ -19905,7 +19906,7 @@
       "eraPeak": 1600,
       "primaryGenres": [],
       "curatorTags": [],
-      "connectionCount": 29,
+      "connectionCount": 84,
       "linkedGenres": [],
       "bridgeScore": 0.44,
       "hubScore": 1,
@@ -19920,10 +19921,10 @@
       "eraPeak": 1600,
       "primaryGenres": [],
       "curatorTags": [],
-      "connectionCount": 5,
+      "connectionCount": 10,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0.417,
+      "hubScore": 0.833,
       "layoutHints": {
         "pinned": false
       }
@@ -19950,10 +19951,10 @@
       "eraPeak": 1800,
       "primaryGenres": [],
       "curatorTags": [],
-      "connectionCount": 8,
+      "connectionCount": 17,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0.667,
+      "hubScore": 1,
       "layoutHints": {
         "pinned": false
       }
@@ -20160,14 +20161,16 @@
     },
     "pop-music": {
       "zone": "pop-soul-disco",
-      "secondaryZones": [],
+      "secondaryZones": [
+        "jazz"
+      ],
       "eraStart": 1960,
       "eraPeak": 1960,
       "primaryGenres": [],
       "curatorTags": [],
-      "connectionCount": 45,
+      "connectionCount": 49,
       "linkedGenres": [],
-      "bridgeScore": 0,
+      "bridgeScore": 0.22,
       "hubScore": 1,
       "layoutHints": {
         "pinned": false
@@ -23441,7 +23444,7 @@
       "eraPeak": 1895,
       "primaryGenres": [],
       "curatorTags": [],
-      "connectionCount": 14,
+      "connectionCount": 15,
       "linkedGenres": [],
       "bridgeScore": 0.66,
       "hubScore": 1,
@@ -31013,6 +31016,2082 @@
       "connectionCount": 1,
       "linkedGenres": [],
       "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "opera": {
+      "zone": "classical-history",
+      "secondaryZones": [
+        "pop-soul-disco"
+      ],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 72,
+      "linkedGenres": [],
+      "bridgeScore": 0.22,
+      "hubScore": 1,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "oratorio": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "chamber-music": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 3,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.25,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "chanson": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [
+        "jazz"
+      ],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 4,
+      "linkedGenres": [],
+      "bridgeScore": 0.22,
+      "hubScore": 0.333,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "indian-classical-music": {
+      "zone": "classical-history",
+      "secondaryZones": [
+        "pop-soul-disco"
+      ],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 3,
+      "linkedGenres": [],
+      "bridgeScore": 0.22,
+      "hubScore": 0.25,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "twentieth-century-classical-music": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 3,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.25,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "traditional-pop": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [
+        "jazz"
+      ],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [],
+      "bridgeScore": 0.22,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "tango": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "world-music": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [
+        "jazz"
+      ],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 3,
+      "linkedGenres": [],
+      "bridgeScore": 0.22,
+      "hubScore": 0.25,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "thomas-campion": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "orlando-gibbons": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "francesco-cavalli": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "opera"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "tarquinio-merula": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "barbara-strozzi": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "baroque-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "jean-baptiste-lully": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "opera",
+        "classical-music"
+      ],
+      "bridgeScore": 0.16,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "heinrich-biber": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "opera"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "john-blow": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "opera"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "arcangelo-corelli": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "baroque-music",
+        "classical-music"
+      ],
+      "bridgeScore": 0.16,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "gaetano-greco": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "henry-purcell": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "opera"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "michel-richard-delalande": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "classical-music",
+        "baroque-music"
+      ],
+      "bridgeScore": 0.16,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "giovanni-bononcini": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "opera"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "louis-de-la-coste": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "opera"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "tomaso-albinoni": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "opera"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "andre-campra": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "opera"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "richard-leveridge": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "baroque-music",
+        "opera"
+      ],
+      "bridgeScore": 0.16,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "francesco-mancini": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "opera"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "francesco-bartolomeo-conti": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "opera",
+        "oratorio"
+      ],
+      "bridgeScore": 0.16,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "maria-margherita-grimani": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "opera"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "francesco-geminiani": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "baroque-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "giovanni-battista-pergolesi": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "opera"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "giovanni-battista-sammartini": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "opera"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "maria-antonia-walpurgis-of-bavaria": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "opera"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "baldassare-galuppi": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "opera"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "christoph-willibald-von-gluck": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "opera",
+        "classical-music"
+      ],
+      "bridgeScore": 0.16,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "niccolo-jommelli": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "opera"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "michael-arne": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "opera"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "jean-benjamin-de-la-borde": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "opera"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "luigi-boccherini": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "antonio-soler": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "michael-haydn": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "opera"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "johann-christian-bach": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "opera"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "giovanni-paisiello": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "opera"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "ivan-mane-jarnovic": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "wilhelm-friedemann-bach": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "ignaz-pleyel": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "opera",
+        "classical-music"
+      ],
+      "bridgeScore": 0.16,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "micha-kleofas-oginski": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "opera"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "johann-nepomuk-hummel": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "opera"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "sophie-gail": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "opera"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "domenico-dragonetti": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "antoine-de-lhoyer": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "classical-music",
+        "romantic-music"
+      ],
+      "bridgeScore": 0.16,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "johann-michael-vogl": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "opera"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "louis-spohr": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "opera"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "carl-maria-von-weber": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "classical-music",
+        "opera"
+      ],
+      "bridgeScore": 0.16,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "anton-reicha": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "opera"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "alexander-alyabyev": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "opera"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "gioachino-rossini": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "opera",
+        "classical-music"
+      ],
+      "bridgeScore": 0.16,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "francois-dauverne": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "hector-berlioz": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 3,
+      "linkedGenres": [
+        "opera",
+        "classical-music",
+        "romantic-music"
+      ],
+      "bridgeScore": 0.24,
+      "hubScore": 0.25,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "thomas-taglichsbeck": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "opera"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "johann-strauss-i": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "julius-benedict": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "opera"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "sigismond-thalberg": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 3,
+      "linkedGenres": [
+        "opera",
+        "classical-music",
+        "romantic-music"
+      ],
+      "bridgeScore": 0.24,
+      "hubScore": 0.25,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "felix-mendelssohn": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "opera",
+        "classical-music"
+      ],
+      "bridgeScore": 0.16,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "giuseppe-verdi": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "classical-music",
+        "opera"
+      ],
+      "bridgeScore": 0.16,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "richard-wagner": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "opera",
+        "classical-music"
+      ],
+      "bridgeScore": 0.16,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "nikolay-afanas-yev": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "romantic-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "w-adys-aw-tarnowski": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "romantic-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "alexander-borodin": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 3,
+      "linkedGenres": [
+        "opera",
+        "classical-music",
+        "chamber-music"
+      ],
+      "bridgeScore": 0.24,
+      "hubScore": 0.25,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "jacques-offenbach": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "opera",
+        "classical-music"
+      ],
+      "bridgeScore": 0.16,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "leo-delibes": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "opera"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "alexander-serov": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "opera"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "modest-petrovich-mussorgsky": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "classical-music",
+        "opera"
+      ],
+      "bridgeScore": 0.16,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "camille-saint-saens": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "eraStart": 1921,
+      "eraPeak": 1921,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "opera",
+        "classical-music"
+      ],
+      "bridgeScore": 0.16,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "joseph-strauss": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "eduard-strauss": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "christina-nilsson": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "eraStart": 1921,
+      "eraPeak": 1921,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "opera"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "pyotr-ilyich-tchaikovsky": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 3,
+      "linkedGenres": [
+        "opera",
+        "classical-music",
+        "romantic-music"
+      ],
+      "bridgeScore": 0.24,
+      "hubScore": 0.25,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "gabriel-faure": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "eraStart": 1924,
+      "eraPeak": 1924,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 3,
+      "linkedGenres": [
+        "opera",
+        "romantic-music",
+        "classical-music"
+      ],
+      "bridgeScore": 0.24,
+      "hubScore": 0.25,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "ella-adayevskaya": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "eraStart": 1926,
+      "eraPeak": 1926,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "opera"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "aristide-bruant": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1925,
+      "eraPeak": 1925,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "chanson"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "teresa-carreno": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "hermann-levi": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "classical-music",
+        "opera"
+      ],
+      "bridgeScore": 0.16,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "zdenek-fibich": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "opera",
+        "classical-music"
+      ],
+      "bridgeScore": 0.16,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "aleksander-micha-owski": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "eraStart": 1938,
+      "eraPeak": 1938,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "mykola-lysenko": {
+      "zone": "classical-history",
+      "secondaryZones": [
+        "folk-country-vise"
+      ],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "opera",
+        "folk"
+      ],
+      "bridgeScore": 0.38,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "josef-bayer": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "opera"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "anatoly-lyadov": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "francisco-tarrega": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "romantic-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "vishnu-narayan-bhatkhande": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "eraStart": 1936,
+      "eraPeak": 1936,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "indian-classical-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "giacomo-puccini": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "eraStart": 1924,
+      "eraPeak": 1924,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "classical-music",
+        "opera"
+      ],
+      "bridgeScore": 0.16,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "alexandre-levy": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "felix-mikhailovich-blumenfeld": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "eraStart": 1931,
+      "eraPeak": 1931,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "anton-arensky": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "opera"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "arturo-toscanini": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "eraStart": 1957,
+      "eraPeak": 1957,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "carl-nielsen": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "eraStart": 1931,
+      "eraPeak": 1931,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "opera"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "enrique-granados": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "felix-von-weingartner": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "eraStart": 1942,
+      "eraPeak": 1942,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "opera"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "sergei-rachmaninoff": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "eraStart": 1943,
+      "eraPeak": 1943,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "opera",
+        "classical-music"
+      ],
+      "bridgeScore": 0.16,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "wilhelm-stenhammar": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "eraStart": 1927,
+      "eraPeak": 1927,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "classical-music",
+        "opera"
+      ],
+      "bridgeScore": 0.16,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "jean-sibelius": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "eraStart": 1957,
+      "eraPeak": 1957,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 3,
+      "linkedGenres": [
+        "classical-music",
+        "opera",
+        "twentieth-century-classical-music"
+      ],
+      "bridgeScore": 0.24,
+      "hubScore": 0.25,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "bronis-aw-huberman": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "eraStart": 1947,
+      "eraPeak": 1947,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "henry-kimball-hadley": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "eraStart": 1937,
+      "eraPeak": 1937,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "opera"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "al-jolson": {
+      "zone": "jazz",
+      "secondaryZones": [
+        "roots-blues",
+        "pop-soul-disco"
+      ],
+      "eraStart": 1950,
+      "eraPeak": 1950,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 5,
+      "linkedGenres": [
+        "jazz",
+        "blues",
+        "ragtime",
+        "pop-music",
+        "traditional-pop"
+      ],
+      "bridgeScore": 0.84,
+      "hubScore": 0.417,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "arnold-schoenberg": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "eraStart": 1951,
+      "eraPeak": 1951,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 3,
+      "linkedGenres": [
+        "twentieth-century-classical-music",
+        "opera",
+        "classical-music"
+      ],
+      "bridgeScore": 0.24,
+      "hubScore": 0.25,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "karl-straube": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "eraStart": 1950,
+      "eraPeak": 1950,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "nora-bayes": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1928,
+      "eraPeak": 1928,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "traditional-pop"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "emile-waldteufel": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "romantic-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "karol-szymanowski": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "eraStart": 1937,
+      "eraPeak": 1937,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "opera",
+        "classical-music"
+      ],
+      "bridgeScore": 0.16,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "gustav-holst": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "eraStart": 1934,
+      "eraPeak": 1934,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "classical-music",
+        "opera"
+      ],
+      "bridgeScore": 0.16,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "alban-berg": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "eraStart": 1935,
+      "eraPeak": 1935,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "opera"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "arthur-honegger": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "eraStart": 1955,
+      "eraPeak": 1955,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "oratorio"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "carlos-gardel": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "tango"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "dmitri-shostakovich": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "eraStart": 1975,
+      "eraPeak": 1975,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "chamber-music",
+        "opera"
+      ],
+      "bridgeScore": 0.16,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "glenn-miller": {
+      "zone": "jazz",
+      "secondaryZones": [
+        "roots-blues"
+      ],
+      "eraStart": 1944,
+      "eraPeak": 1944,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "jazz",
+        "blues"
+      ],
+      "bridgeScore": 0.38,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "aram-khachaturian": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "eraStart": 1978,
+      "eraPeak": 1978,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "chamber-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "astor-piazzolla": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [
+        "classical-history"
+      ],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "opera",
+        "tango"
+      ],
+      "bridgeScore": 0.38,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "charles-aznavour": {
+      "zone": "jazz",
+      "secondaryZones": [
+        "pop-soul-disco"
+      ],
+      "eraStart": 1924,
+      "eraPeak": 2018,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 4,
+      "linkedGenres": [
+        "chanson",
+        "jazz",
+        "pop-music",
+        "world-music"
+      ],
+      "bridgeScore": 0.54,
+      "hubScore": 0.333,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "edith-piaf": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1963,
+      "eraPeak": 1963,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "chanson"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "john-cage": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "eraStart": 1992,
+      "eraPeak": 1992,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 3,
+      "linkedGenres": [
+        "opera",
+        "classical-music",
+        "twentieth-century-classical-music"
+      ],
+      "bridgeScore": 0.24,
+      "hubScore": 0.25,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "leonard-bernstein": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "eraStart": 1990,
+      "eraPeak": 1990,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "classical-music",
+        "opera"
+      ],
+      "bridgeScore": 0.16,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "mstislav-rostropovich": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "eraStart": 1927,
+      "eraPeak": 2007,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "lata-mangeshkar": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [
+        "classical-history"
+      ],
+      "eraStart": 1929,
+      "eraPeak": 2022,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "world-music",
+        "indian-classical-music"
+      ],
+      "bridgeScore": 0.38,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "mikis-theodorakis": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "eraStart": 1925,
+      "eraPeak": 2021,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "opera"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "asha-bhosle": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [
+        "classical-history"
+      ],
+      "eraStart": 1933,
+      "eraPeak": 2026,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 3,
+      "linkedGenres": [
+        "world-music",
+        "indian-classical-music",
+        "pop-music"
+      ],
+      "bridgeScore": 0.46,
+      "hubScore": 0.25,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "yves-montand": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1921,
+      "eraPeak": 1991,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "chanson"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "pierre-boulez": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "eraStart": 1925,
+      "eraPeak": 2016,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "p-ramlee": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1929,
+      "eraPeak": 1973,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "pop-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "jerry-goldsmith": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "eraStart": 1929,
+      "eraPeak": 2004,
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "bridgeScore": 0.08,
       "hubScore": 0.083,
       "layoutHints": {
         "pinned": false

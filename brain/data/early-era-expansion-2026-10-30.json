@@ -1,0 +1,1517 @@
+{
+  "description": "1600-1950 source-checked musician expansion; work start uses Wikidata P2031, genre edges use P136.",
+  "edgePrefix": "early-era-20261030-",
+  "expectedEdges": 174,
+  "nodeIds": [
+    "opera",
+    "oratorio",
+    "chamber-music",
+    "chanson",
+    "indian-classical-music",
+    "twentieth-century-classical-music",
+    "traditional-pop",
+    "tango",
+    "world-music",
+    "thomas-campion",
+    "orlando-gibbons",
+    "francesco-cavalli",
+    "tarquinio-merula",
+    "barbara-strozzi",
+    "jean-baptiste-lully",
+    "heinrich-biber",
+    "john-blow",
+    "arcangelo-corelli",
+    "gaetano-greco",
+    "henry-purcell",
+    "michel-richard-delalande",
+    "giovanni-bononcini",
+    "louis-de-la-coste",
+    "tomaso-albinoni",
+    "andre-campra",
+    "richard-leveridge",
+    "francesco-mancini",
+    "francesco-bartolomeo-conti",
+    "maria-margherita-grimani",
+    "francesco-geminiani",
+    "giovanni-battista-pergolesi",
+    "giovanni-battista-sammartini",
+    "maria-antonia-walpurgis-of-bavaria",
+    "baldassare-galuppi",
+    "christoph-willibald-von-gluck",
+    "niccolo-jommelli",
+    "michael-arne",
+    "jean-benjamin-de-la-borde",
+    "luigi-boccherini",
+    "antonio-soler",
+    "michael-haydn",
+    "johann-christian-bach",
+    "giovanni-paisiello",
+    "ivan-mane-jarnovic",
+    "wilhelm-friedemann-bach",
+    "ignaz-pleyel",
+    "micha-kleofas-oginski",
+    "johann-nepomuk-hummel",
+    "sophie-gail",
+    "domenico-dragonetti",
+    "antoine-de-lhoyer",
+    "johann-michael-vogl",
+    "louis-spohr",
+    "carl-maria-von-weber",
+    "anton-reicha",
+    "alexander-alyabyev",
+    "gioachino-rossini",
+    "francois-dauverne",
+    "hector-berlioz",
+    "thomas-taglichsbeck",
+    "johann-strauss-i",
+    "julius-benedict",
+    "sigismond-thalberg",
+    "felix-mendelssohn",
+    "giuseppe-verdi",
+    "richard-wagner",
+    "nikolay-afanas-yev",
+    "w-adys-aw-tarnowski",
+    "alexander-borodin",
+    "jacques-offenbach",
+    "leo-delibes",
+    "alexander-serov",
+    "modest-petrovich-mussorgsky",
+    "camille-saint-saens",
+    "joseph-strauss",
+    "eduard-strauss",
+    "christina-nilsson",
+    "pyotr-ilyich-tchaikovsky",
+    "gabriel-faure",
+    "ella-adayevskaya",
+    "aristide-bruant",
+    "teresa-carreno",
+    "hermann-levi",
+    "zdenek-fibich",
+    "aleksander-micha-owski",
+    "mykola-lysenko",
+    "josef-bayer",
+    "anatoly-lyadov",
+    "francisco-tarrega",
+    "vishnu-narayan-bhatkhande",
+    "giacomo-puccini",
+    "alexandre-levy",
+    "felix-mikhailovich-blumenfeld",
+    "anton-arensky",
+    "arturo-toscanini",
+    "carl-nielsen",
+    "enrique-granados",
+    "felix-von-weingartner",
+    "sergei-rachmaninoff",
+    "wilhelm-stenhammar",
+    "jean-sibelius",
+    "bronis-aw-huberman",
+    "henry-kimball-hadley",
+    "al-jolson",
+    "arnold-schoenberg",
+    "karl-straube",
+    "nora-bayes",
+    "emile-waldteufel",
+    "karol-szymanowski",
+    "gustav-holst",
+    "alban-berg",
+    "arthur-honegger",
+    "carlos-gardel",
+    "dmitri-shostakovich",
+    "glenn-miller",
+    "aram-khachaturian",
+    "astor-piazzolla",
+    "charles-aznavour",
+    "edith-piaf",
+    "john-cage",
+    "leonard-bernstein",
+    "mstislav-rostropovich",
+    "lata-mangeshkar",
+    "mikis-theodorakis",
+    "asha-bhosle",
+    "yves-montand",
+    "pierre-boulez",
+    "p-ramlee",
+    "jerry-goldsmith"
+  ],
+  "allowedZones": [
+    "classical-history",
+    "jazz",
+    "pop-soul-disco"
+  ],
+  "evidence": [
+    {
+      "qid": "Q455618",
+      "name": "Thomas Campion",
+      "workStart": 1601,
+      "workStartReferences": 1,
+      "musicbrainzId": "b3b8940c-8490-4554-b248-28e9641ec8db",
+      "wikipedia": "https://en.wikipedia.org/wiki/Thomas_Campion",
+      "genreQids": [
+        "Q9730"
+      ]
+    },
+    {
+      "qid": "Q311913",
+      "name": "Orlando Gibbons",
+      "workStart": 1611,
+      "workStartReferences": 1,
+      "musicbrainzId": "50b144fd-2012-4cd9-be65-62a09c3ddb44",
+      "wikipedia": "https://en.wikipedia.org/wiki/Orlando_Gibbons",
+      "genreQids": [
+        "Q9730"
+      ]
+    },
+    {
+      "qid": "Q108062",
+      "name": "Francesco Cavalli",
+      "workStart": 1616,
+      "workStartReferences": 1,
+      "musicbrainzId": "2afb8d0b-50ff-43b0-8ab2-5471e66ea91c",
+      "wikipedia": "https://en.wikipedia.org/wiki/Francesco_Cavalli",
+      "genreQids": [
+        "Q1344"
+      ]
+    },
+    {
+      "qid": "Q1279875",
+      "name": "Tarquinio Merula",
+      "workStart": 1628,
+      "workStartReferences": 1,
+      "musicbrainzId": "62201c84-57c2-4cc6-b4ed-f6e54ae0bc91",
+      "wikipedia": "https://en.wikipedia.org/wiki/Tarquinio_Merula",
+      "genreQids": [
+        "Q9730"
+      ]
+    },
+    {
+      "qid": "Q232235",
+      "name": "Barbara Strozzi",
+      "workStart": 1644,
+      "workStartReferences": 0,
+      "musicbrainzId": "cbb8b66c-dab8-43dc-918e-b1af27d20e6f",
+      "wikipedia": "https://en.wikipedia.org/wiki/Barbara_Strozzi",
+      "genreQids": [
+        "Q8361"
+      ]
+    },
+    {
+      "qid": "Q1192",
+      "name": "Jean-Baptiste Lully",
+      "workStart": 1647,
+      "workStartReferences": 1,
+      "musicbrainzId": "7f9989b0-8f5e-41dd-bbab-1fff052609e3",
+      "wikipedia": "https://en.wikipedia.org/wiki/Jean-Baptiste_Lully",
+      "genreQids": [
+        "Q1344",
+        "Q9730"
+      ]
+    },
+    {
+      "qid": "Q153455",
+      "name": "Heinrich Biber",
+      "workStart": 1668,
+      "workStartReferences": 1,
+      "musicbrainzId": "66197dbc-c16b-4c95-9e1b-cc617783cb8c",
+      "wikipedia": "https://en.wikipedia.org/wiki/Heinrich_Ignaz_Franz_Biber",
+      "genreQids": [
+        "Q1344"
+      ]
+    },
+    {
+      "qid": "Q311110",
+      "name": "John Blow",
+      "workStart": 1670,
+      "workStartReferences": 1,
+      "musicbrainzId": "610df89b-e00e-4247-a3af-71b8531fa12b",
+      "wikipedia": "https://en.wikipedia.org/wiki/John_Blow",
+      "genreQids": [
+        "Q1344"
+      ]
+    },
+    {
+      "qid": "Q164475",
+      "name": "Arcangelo Corelli",
+      "workStart": 1672,
+      "workStartReferences": 1,
+      "musicbrainzId": "a3546087-fe59-47d3-a3a8-42d58e2573c7",
+      "wikipedia": "https://en.wikipedia.org/wiki/Arcangelo_Corelli",
+      "genreQids": [
+        "Q8361",
+        "Q9730"
+      ]
+    },
+    {
+      "qid": "Q1339827",
+      "name": "Gaetano Greco",
+      "workStart": 1678,
+      "workStartReferences": 1,
+      "musicbrainzId": "81ee89a7-d9ca-4c35-99be-ea1b6433d77d",
+      "wikipedia": "https://en.wikipedia.org/wiki/Gaetano_Greco",
+      "genreQids": [
+        "Q9730"
+      ]
+    },
+    {
+      "qid": "Q9695",
+      "name": "Henry Purcell",
+      "workStart": 1679,
+      "workStartReferences": 1,
+      "musicbrainzId": "ddea5540-2c7d-4266-8507-b367c2635d35",
+      "wikipedia": "https://en.wikipedia.org/wiki/Henry_Purcell",
+      "genreQids": [
+        "Q1344"
+      ]
+    },
+    {
+      "qid": "Q312979",
+      "name": "Michel Richard Delalande",
+      "workStart": 1680,
+      "workStartReferences": 1,
+      "musicbrainzId": "af403213-f910-4812-8520-6af768954921",
+      "wikipedia": "https://en.wikipedia.org/wiki/Michel_Richard_Delalande",
+      "genreQids": [
+        "Q9730",
+        "Q8361"
+      ]
+    },
+    {
+      "qid": "Q315241",
+      "name": "Giovanni Bononcini",
+      "workStart": 1685,
+      "workStartReferences": 1,
+      "musicbrainzId": "5deac8fb-b0a4-48dc-88ff-3bf92858a527",
+      "wikipedia": "https://en.wikipedia.org/wiki/Giovanni_Bononcini",
+      "genreQids": [
+        "Q1344"
+      ]
+    },
+    {
+      "qid": "Q3263492",
+      "name": "Louis de La Coste",
+      "workStart": 1693,
+      "workStartReferences": 0,
+      "musicbrainzId": "c98c66c9-f448-4020-8465-d88112e35428",
+      "wikipedia": "https://en.wikipedia.org/wiki/Louis_Lacoste_(composer)",
+      "genreQids": [
+        "Q1344"
+      ]
+    },
+    {
+      "qid": "Q174606",
+      "name": "Tomaso Albinoni",
+      "workStart": 1694,
+      "workStartReferences": 1,
+      "musicbrainzId": "83903121-f611-4875-984c-673ae7173e56",
+      "wikipedia": "https://en.wikipedia.org/wiki/Tomaso_Albinoni",
+      "genreQids": [
+        "Q1344"
+      ]
+    },
+    {
+      "qid": "Q313860",
+      "name": "André Campra",
+      "workStart": 1695,
+      "workStartReferences": 1,
+      "musicbrainzId": "1408119c-6a6d-480f-b401-633e6b231f35",
+      "wikipedia": "https://en.wikipedia.org/wiki/Andr%C3%A9_Campra",
+      "genreQids": [
+        "Q1344"
+      ]
+    },
+    {
+      "qid": "Q4256394",
+      "name": "Richard Leveridge",
+      "workStart": 1695,
+      "workStartReferences": 1,
+      "musicbrainzId": "37f3a123-ab07-4eaa-8b1e-365726ff362d",
+      "wikipedia": "https://en.wikipedia.org/wiki/Richard_Leveridge",
+      "genreQids": [
+        "Q8361",
+        "Q1344"
+      ]
+    },
+    {
+      "qid": "Q1356310",
+      "name": "Francesco Mancini",
+      "workStart": 1696,
+      "workStartReferences": 1,
+      "musicbrainzId": "8dfb957a-9c62-4e01-a629-4bc99ee29ef9",
+      "wikipedia": "https://en.wikipedia.org/wiki/Francesco_Mancini_(composer)",
+      "genreQids": [
+        "Q1344"
+      ]
+    },
+    {
+      "qid": "Q691763",
+      "name": "Francesco Bartolomeo Conti",
+      "workStart": 1701,
+      "workStartReferences": 1,
+      "musicbrainzId": "c6ef323a-faae-440f-8de5-4cdde4e55bf3",
+      "wikipedia": "https://en.wikipedia.org/wiki/Francesco_Bartolomeo_Conti",
+      "genreQids": [
+        "Q1344",
+        "Q85477"
+      ]
+    },
+    {
+      "qid": "Q6761400",
+      "name": "Maria Margherita Grimani",
+      "workStart": 1713,
+      "workStartReferences": 1,
+      "musicbrainzId": "bc5365a3-7920-4f06-94b7-b6e55bf6267f",
+      "wikipedia": "https://en.wikipedia.org/wiki/Maria_Margherita_Grimani",
+      "genreQids": [
+        "Q1344"
+      ]
+    },
+    {
+      "qid": "Q311625",
+      "name": "Francesco Geminiani",
+      "workStart": 1716,
+      "workStartReferences": 1,
+      "musicbrainzId": "8cb0e5cc-fdad-4836-8214-1a84566f75fc",
+      "wikipedia": "https://en.wikipedia.org/wiki/Francesco_Geminiani",
+      "genreQids": [
+        "Q8361"
+      ]
+    },
+    {
+      "qid": "Q185312",
+      "name": "Giovanni Battista Pergolesi",
+      "workStart": 1731,
+      "workStartReferences": 1,
+      "musicbrainzId": "7640225e-5758-40e2-a37b-971c2a7994b0",
+      "wikipedia": "https://en.wikipedia.org/wiki/Giovanni_Battista_Pergolesi",
+      "genreQids": [
+        "Q1344"
+      ]
+    },
+    {
+      "qid": "Q217435",
+      "name": "Giovanni Battista Sammartini",
+      "workStart": 1732,
+      "workStartReferences": 1,
+      "musicbrainzId": "02e8e355-70e6-4639-b907-213eeff015e7",
+      "wikipedia": "https://en.wikipedia.org/wiki/Giovanni_Battista_Sammartini",
+      "genreQids": [
+        "Q1344"
+      ]
+    },
+    {
+      "qid": "Q61649",
+      "name": "Maria Antonia Walpurgis of Bavaria",
+      "workStart": 1739,
+      "workStartReferences": 1,
+      "musicbrainzId": "b358ccaf-9810-446e-88d4-3d524a690b2f",
+      "wikipedia": "https://en.wikipedia.org/wiki/Duchess_Maria_Antonia_of_Bavaria",
+      "genreQids": [
+        "Q1344"
+      ]
+    },
+    {
+      "qid": "Q208338",
+      "name": "Baldassare Galuppi",
+      "workStart": 1740,
+      "workStartReferences": 1,
+      "musicbrainzId": "76d25975-0fc8-4709-abb5-0da114daf674",
+      "wikipedia": "https://en.wikipedia.org/wiki/Baldassare_Galuppi",
+      "genreQids": [
+        "Q1344"
+      ]
+    },
+    {
+      "qid": "Q130759",
+      "name": "Christoph Willibald von Gluck",
+      "workStart": 1741,
+      "workStartReferences": 1,
+      "musicbrainzId": "22790383-30ea-4dcc-a8d6-882fb1eb4669",
+      "wikipedia": "https://en.wikipedia.org/wiki/Christoph_Willibald_Gluck",
+      "genreQids": [
+        "Q1344",
+        "Q9730"
+      ]
+    },
+    {
+      "qid": "Q312891",
+      "name": "Niccolò Jommelli",
+      "workStart": 1743,
+      "workStartReferences": 1,
+      "musicbrainzId": "ddbea2a2-9424-4ee3-b14c-351f22f2c4d3",
+      "wikipedia": "https://en.wikipedia.org/wiki/Niccol%C3%B2_Jommelli",
+      "genreQids": [
+        "Q1344"
+      ]
+    },
+    {
+      "qid": "Q2059553",
+      "name": "Michael Arne",
+      "workStart": 1750,
+      "workStartReferences": 1,
+      "musicbrainzId": "906990d6-ba0e-4201-8c64-785b477afaae",
+      "wikipedia": "https://en.wikipedia.org/wiki/Michael_Arne",
+      "genreQids": [
+        "Q1344"
+      ]
+    },
+    {
+      "qid": "Q932694",
+      "name": "Jean-Benjamin de La Borde",
+      "workStart": 1750,
+      "workStartReferences": 1,
+      "musicbrainzId": "9ac0a8c4-588c-4df9-845f-a255f22fbdbe",
+      "wikipedia": "https://en.wikipedia.org/wiki/Jean-Benjamin_de_La_Borde",
+      "genreQids": [
+        "Q1344"
+      ]
+    },
+    {
+      "qid": "Q189766",
+      "name": "Luigi Boccherini",
+      "workStart": 1756,
+      "workStartReferences": 1,
+      "musicbrainzId": "5c1a3f8f-d5e5-4dcd-9e44-9443f06bb77d",
+      "wikipedia": "https://en.wikipedia.org/wiki/Luigi_Boccherini",
+      "genreQids": [
+        "Q9730"
+      ]
+    },
+    {
+      "qid": "Q314799",
+      "name": "Antonio Soler",
+      "workStart": 1756,
+      "workStartReferences": 1,
+      "musicbrainzId": "bc94f2e1-e6e8-4fce-a767-8c98e910fa3a",
+      "wikipedia": "https://en.wikipedia.org/wiki/Antonio_Soler_(composer)",
+      "genreQids": [
+        "Q9730"
+      ]
+    },
+    {
+      "qid": "Q490381",
+      "name": "Michael Haydn",
+      "workStart": 1757,
+      "workStartReferences": 1,
+      "musicbrainzId": "760357b4-37da-4271-8cb7-52786d335745",
+      "wikipedia": "https://en.wikipedia.org/wiki/Michael_Haydn",
+      "genreQids": [
+        "Q1344"
+      ]
+    },
+    {
+      "qid": "Q106641",
+      "name": "Johann Christian Bach",
+      "workStart": 1760,
+      "workStartReferences": 1,
+      "musicbrainzId": "470967b1-f9ef-4712-82df-6971b517ebdb",
+      "wikipedia": "https://en.wikipedia.org/wiki/Johann_Christian_Bach",
+      "genreQids": [
+        "Q1344"
+      ]
+    },
+    {
+      "qid": "Q202303",
+      "name": "Giovanni Paisiello",
+      "workStart": 1763,
+      "workStartReferences": 1,
+      "musicbrainzId": "253b7a54-38a2-41da-a075-7db61a01ab53",
+      "wikipedia": "https://en.wikipedia.org/wiki/Giovanni_Paisiello",
+      "genreQids": [
+        "Q1344"
+      ]
+    },
+    {
+      "qid": "Q1526160",
+      "name": "Ivan Mane Jarnović",
+      "workStart": 1770,
+      "workStartReferences": 1,
+      "musicbrainzId": "f98bac06-78e5-4a3f-8d4b-8c0915f89c0a",
+      "wikipedia": "https://en.wikipedia.org/wiki/Ivan_Mane_Jarnovi%C4%87",
+      "genreQids": [
+        "Q9730"
+      ]
+    },
+    {
+      "qid": "Q107277",
+      "name": "Wilhelm Friedemann Bach",
+      "workStart": 1773,
+      "workStartReferences": 1,
+      "musicbrainzId": "4af324c6-0a7c-4c84-b7ce-c60ffe4a8f33",
+      "wikipedia": "https://en.wikipedia.org/wiki/Wilhelm_Friedemann_Bach",
+      "genreQids": [
+        "Q9730"
+      ]
+    },
+    {
+      "qid": "Q314019",
+      "name": "Ignaz Pleyel",
+      "workStart": 1778,
+      "workStartReferences": 1,
+      "musicbrainzId": "9b937242-0492-4056-b430-137eff78f194",
+      "wikipedia": "https://en.wikipedia.org/wiki/Ignaz_Pleyel",
+      "genreQids": [
+        "Q1344",
+        "Q9730"
+      ]
+    },
+    {
+      "qid": "Q709977",
+      "name": "Michał Kleofas Ogiński",
+      "workStart": 1788,
+      "workStartReferences": 1,
+      "musicbrainzId": "aaec1c5c-45ff-48fb-9255-f6d162c4e916",
+      "wikipedia": "https://en.wikipedia.org/wiki/Micha%C5%82_Kleofas_Ogi%C5%84ski",
+      "genreQids": [
+        "Q1344"
+      ]
+    },
+    {
+      "qid": "Q151953",
+      "name": "Johann Nepomuk Hummel",
+      "workStart": 1789,
+      "workStartReferences": 1,
+      "musicbrainzId": "f7ef501b-2bc0-4083-ac52-3518255883a2",
+      "wikipedia": "https://en.wikipedia.org/wiki/Johann_Nepomuk_Hummel",
+      "genreQids": [
+        "Q1344"
+      ]
+    },
+    {
+      "qid": "Q3490938",
+      "name": "Sophie Gail",
+      "workStart": 1790,
+      "workStartReferences": 0,
+      "musicbrainzId": "8cc2742d-cb25-42f4-8555-4f44bd785d95",
+      "wikipedia": "https://en.wikipedia.org/wiki/Sophie_Gail",
+      "genreQids": [
+        "Q1344"
+      ]
+    },
+    {
+      "qid": "Q504490",
+      "name": "Domenico Dragonetti",
+      "workStart": 1790,
+      "workStartReferences": 1,
+      "musicbrainzId": "b0eeb8ca-534c-4afe-87db-e003f776704b",
+      "wikipedia": "https://en.wikipedia.org/wiki/Domenico_Dragonetti",
+      "genreQids": [
+        "Q9730"
+      ]
+    },
+    {
+      "qid": "Q432174",
+      "name": "Antoine de Lhoyer",
+      "workStart": 1791,
+      "workStartReferences": 0,
+      "musicbrainzId": "5004725e-8777-4ba7-b456-b94ecc17cfb7",
+      "wikipedia": "https://en.wikipedia.org/wiki/Antoine_de_Lhoyer",
+      "genreQids": [
+        "Q9730",
+        "Q207591"
+      ]
+    },
+    {
+      "qid": "Q78867",
+      "name": "Johann Michael Vogl",
+      "workStart": 1794,
+      "workStartReferences": 1,
+      "musicbrainzId": "1ac94d71-9261-4c85-86d4-6f0dfd1d1a6d",
+      "wikipedia": "https://en.wikipedia.org/wiki/Johann_Michael_Vogl",
+      "genreQids": [
+        "Q1344"
+      ]
+    },
+    {
+      "qid": "Q57226",
+      "name": "Louis Spohr",
+      "workStart": 1797,
+      "workStartReferences": 1,
+      "musicbrainzId": "328e23ea-d79c-4c58-bd20-bbdd3f64bb8e",
+      "wikipedia": "https://en.wikipedia.org/wiki/Louis_Spohr",
+      "genreQids": [
+        "Q1344"
+      ]
+    },
+    {
+      "qid": "Q154812",
+      "name": "Carl Maria von Weber",
+      "workStart": 1799,
+      "workStartReferences": 1,
+      "musicbrainzId": "c2d17829-1424-435b-9386-c77d3a920abe",
+      "wikipedia": "https://en.wikipedia.org/wiki/Carl_Maria_von_Weber",
+      "genreQids": [
+        "Q9730",
+        "Q1344"
+      ]
+    },
+    {
+      "qid": "Q311387",
+      "name": "Anton Reicha",
+      "workStart": 1800,
+      "workStartReferences": 1,
+      "musicbrainzId": "3903b08e-fc55-42f9-826c-f66faab3b98d",
+      "wikipedia": "https://en.wikipedia.org/wiki/Anton_Reicha",
+      "genreQids": [
+        "Q1344"
+      ]
+    },
+    {
+      "qid": "Q712094",
+      "name": "Alexander Alyabyev",
+      "workStart": 1810,
+      "workStartReferences": 1,
+      "musicbrainzId": "5390b083-ab88-4a2e-838e-ea5e76f923ea",
+      "wikipedia": "https://en.wikipedia.org/wiki/Alexander_Alyabyev",
+      "genreQids": [
+        "Q1344"
+      ]
+    },
+    {
+      "qid": "Q9726",
+      "name": "Gioachino Rossini",
+      "workStart": 1810,
+      "workStartReferences": 1,
+      "musicbrainzId": "846be3c9-5f94-46ab-97b9-531335dd3658",
+      "wikipedia": "https://en.wikipedia.org/wiki/Gioachino_Rossini",
+      "genreQids": [
+        "Q1344",
+        "Q9730"
+      ]
+    },
+    {
+      "qid": "Q967442",
+      "name": "François Dauverné",
+      "workStart": 1814,
+      "workStartReferences": 1,
+      "musicbrainzId": "5e11618c-4d1b-49f6-9ecc-9733f51958c5",
+      "wikipedia": "https://en.wikipedia.org/wiki/Fran%C3%A7ois_Dauvern%C3%A9",
+      "genreQids": [
+        "Q9730"
+      ]
+    },
+    {
+      "qid": "Q1151",
+      "name": "Hector Berlioz",
+      "workStart": 1815,
+      "workStartReferences": 0,
+      "musicbrainzId": "274774a7-1cde-486a-bc3d-375ec54d552d",
+      "wikipedia": "https://en.wikipedia.org/wiki/Hector_Berlioz",
+      "genreQids": [
+        "Q1344",
+        "Q9730",
+        "Q207591"
+      ]
+    },
+    {
+      "qid": "Q1711577",
+      "name": "Thomas Täglichsbeck",
+      "workStart": 1817,
+      "workStartReferences": 1,
+      "musicbrainzId": "d2624ae7-71a0-4346-ac0d-b7b964df92b5",
+      "wikipedia": "https://en.wikipedia.org/wiki/Thomas_T%C3%A4glichsbeck",
+      "genreQids": [
+        "Q1344"
+      ]
+    },
+    {
+      "qid": "Q184178",
+      "name": "Johann Strauss I",
+      "workStart": 1819,
+      "workStartReferences": 1,
+      "musicbrainzId": "725fb443-0a26-42f8-b4b7-5257b3a61eb5",
+      "wikipedia": "https://en.wikipedia.org/wiki/Johann_Strauss_I",
+      "genreQids": [
+        "Q9730"
+      ]
+    },
+    {
+      "qid": "Q510435",
+      "name": "Julius Benedict",
+      "workStart": 1824,
+      "workStartReferences": 1,
+      "musicbrainzId": "fa3a9b57-44bc-4c9b-9749-684f8792fdf7",
+      "wikipedia": "https://en.wikipedia.org/wiki/Julius_Benedict",
+      "genreQids": [
+        "Q1344"
+      ]
+    },
+    {
+      "qid": "Q347871",
+      "name": "Sigismond Thalberg",
+      "workStart": 1826,
+      "workStartReferences": 1,
+      "musicbrainzId": "480aa5f2-97e6-4e79-a364-6629d7b63b55",
+      "wikipedia": "https://en.wikipedia.org/wiki/Sigismond_Thalberg",
+      "genreQids": [
+        "Q1344",
+        "Q9730",
+        "Q207591"
+      ]
+    },
+    {
+      "qid": "Q46096",
+      "name": "Felix Mendelssohn",
+      "workStart": 1826,
+      "workStartReferences": 1,
+      "musicbrainzId": "0e85eb79-1c05-44ba-827c-7b259a3d941a",
+      "wikipedia": "https://en.wikipedia.org/wiki/Felix_Mendelssohn",
+      "genreQids": [
+        "Q1344",
+        "Q9730"
+      ]
+    },
+    {
+      "qid": "Q7317",
+      "name": "Giuseppe Verdi",
+      "workStart": 1830,
+      "workStartReferences": 1,
+      "musicbrainzId": "f1bedf1f-4445-4651-9c35-f4a3f3860a13",
+      "wikipedia": "https://en.wikipedia.org/wiki/Giuseppe_Verdi",
+      "genreQids": [
+        "Q9730",
+        "Q1344"
+      ]
+    },
+    {
+      "qid": "Q1511",
+      "name": "Richard Wagner",
+      "workStart": 1832,
+      "workStartReferences": 1,
+      "musicbrainzId": "eefd7c1e-abcf-4ccc-ba60-0fd435c9061f",
+      "wikipedia": "https://en.wikipedia.org/wiki/Richard_Wagner",
+      "genreQids": [
+        "Q1344",
+        "Q9730"
+      ]
+    },
+    {
+      "qid": "Q1346986",
+      "name": "Nikolay Afanas'yev",
+      "workStart": 1838,
+      "workStartReferences": 1,
+      "musicbrainzId": "92c12e38-7e01-43a5-9fdc-c6bb09a46d34",
+      "wikipedia": "https://en.wikipedia.org/wiki/Nikolay_Afanasyev_(composer)",
+      "genreQids": [
+        "Q207591"
+      ]
+    },
+    {
+      "qid": "Q93817",
+      "name": "Władysław Tarnowski",
+      "workStart": 1844,
+      "workStartReferences": 1,
+      "musicbrainzId": "487883b1-8132-43be-9d3e-579ee0b07acf",
+      "wikipedia": "https://en.wikipedia.org/wiki/W%C5%82adys%C5%82aw_Tarnowski",
+      "genreQids": [
+        "Q207591"
+      ]
+    },
+    {
+      "qid": "Q164004",
+      "name": "Alexander Borodin",
+      "workStart": 1847,
+      "workStartReferences": 1,
+      "musicbrainzId": "560b5e65-8d53-41b4-9913-83368f4721a0",
+      "wikipedia": "https://en.wikipedia.org/wiki/Alexander_Borodin",
+      "genreQids": [
+        "Q1344",
+        "Q9730",
+        "Q189201"
+      ]
+    },
+    {
+      "qid": "Q41555",
+      "name": "Jacques Offenbach",
+      "workStart": 1849,
+      "workStartReferences": 0,
+      "musicbrainzId": "27bc8cf5-72e1-4888-87de-259fbcaac3ff",
+      "wikipedia": "https://en.wikipedia.org/wiki/Jacques_Offenbach",
+      "genreQids": [
+        "Q1344",
+        "Q9730"
+      ]
+    },
+    {
+      "qid": "Q207951",
+      "name": "Léo Delibes",
+      "workStart": 1850,
+      "workStartReferences": 1,
+      "musicbrainzId": "a56056f7-4e47-4209-abdc-171331ff1089",
+      "wikipedia": "https://en.wikipedia.org/wiki/L%C3%A9o_Delibes",
+      "genreQids": [
+        "Q1344"
+      ]
+    },
+    {
+      "qid": "Q442978",
+      "name": "Alexander Serov",
+      "workStart": 1850,
+      "workStartReferences": 1,
+      "musicbrainzId": "0b2e2859-bb9c-45b5-90cf-9d52a66cbe6c",
+      "wikipedia": "https://en.wikipedia.org/wiki/Alexander_Serov",
+      "genreQids": [
+        "Q1344"
+      ]
+    },
+    {
+      "qid": "Q132682",
+      "name": "Modest Petrovich Mussorgsky",
+      "workStart": 1852,
+      "workStartReferences": 1,
+      "musicbrainzId": "c1380b12-3909-47d8-a5fd-d20e76123310",
+      "wikipedia": "https://en.wikipedia.org/wiki/Modest_Mussorgsky",
+      "genreQids": [
+        "Q9730",
+        "Q1344"
+      ]
+    },
+    {
+      "qid": "Q150445",
+      "name": "Camille Saint-Saëns",
+      "workStart": 1853,
+      "workStartReferences": 1,
+      "musicbrainzId": "4137c070-15b2-4d00-a9f0-3517d02a9ba8",
+      "wikipedia": "https://en.wikipedia.org/wiki/Camille_Saint-Sa%C3%ABns",
+      "genreQids": [
+        "Q1344",
+        "Q9730"
+      ]
+    },
+    {
+      "qid": "Q312941",
+      "name": "Joseph Strauss",
+      "workStart": 1853,
+      "workStartReferences": 1,
+      "musicbrainzId": "9942ef92-91a2-46f7-aff4-32389df33c9e",
+      "wikipedia": "https://en.wikipedia.org/wiki/Josef_Strauss",
+      "genreQids": [
+        "Q9730"
+      ]
+    },
+    {
+      "qid": "Q347030",
+      "name": "Eduard Strauss",
+      "workStart": 1855,
+      "workStartReferences": 1,
+      "musicbrainzId": "52773cf5-e25d-4865-841d-b8878c01c1fe",
+      "wikipedia": "https://en.wikipedia.org/wiki/Eduard_Strauss",
+      "genreQids": [
+        "Q9730"
+      ]
+    },
+    {
+      "qid": "Q269812",
+      "name": "Christina Nilsson",
+      "workStart": 1859,
+      "workStartReferences": 1,
+      "musicbrainzId": "99f728d5-ecea-49f2-928d-f8e2986f395b",
+      "wikipedia": "https://en.wikipedia.org/wiki/Christina_Nilsson",
+      "genreQids": [
+        "Q1344"
+      ]
+    },
+    {
+      "qid": "Q7315",
+      "name": "Pyotr Ilyich Tchaikovsky",
+      "workStart": 1859,
+      "workStartReferences": 1,
+      "musicbrainzId": "9ddd7abc-9e1b-471d-8031-583bc6bc8be9",
+      "wikipedia": "https://en.wikipedia.org/wiki/Pyotr_Ilyich_Tchaikovsky",
+      "genreQids": [
+        "Q1344",
+        "Q9730",
+        "Q207591"
+      ]
+    },
+    {
+      "qid": "Q104919",
+      "name": "Gabriel Fauré",
+      "workStart": 1861,
+      "workStartReferences": 1,
+      "musicbrainzId": "fa19a8b6-e7f4-40d4-af15-7a7c41ac7d8f",
+      "wikipedia": "https://en.wikipedia.org/wiki/Gabriel_Faur%C3%A9",
+      "genreQids": [
+        "Q1344",
+        "Q207591",
+        "Q9730"
+      ]
+    },
+    {
+      "qid": "Q112885",
+      "name": "Ella Adayevskaya",
+      "workStart": 1861,
+      "workStartReferences": 1,
+      "musicbrainzId": "e99a1f5d-725c-4b4b-999a-298d4e6d2096",
+      "wikipedia": "https://en.wikipedia.org/wiki/Ella_Adayevskaya",
+      "genreQids": [
+        "Q1344"
+      ]
+    },
+    {
+      "qid": "Q535188",
+      "name": "Aristide Bruant",
+      "workStart": 1862,
+      "workStartReferences": 1,
+      "musicbrainzId": "cd8667d3-ce8b-4a59-9a44-92e084a5a8a5",
+      "wikipedia": "https://en.wikipedia.org/wiki/Aristide_Bruant",
+      "genreQids": [
+        "Q1062400"
+      ]
+    },
+    {
+      "qid": "Q241494",
+      "name": "Teresa Carreño",
+      "workStart": 1863,
+      "workStartReferences": 1,
+      "musicbrainzId": "a6373dbb-5299-4e37-92f2-ece49eae237f",
+      "wikipedia": "https://en.wikipedia.org/wiki/Teresa_Carre%C3%B1o",
+      "genreQids": [
+        "Q9730"
+      ]
+    },
+    {
+      "qid": "Q61175",
+      "name": "Hermann Levi",
+      "workStart": 1863,
+      "workStartReferences": 1,
+      "musicbrainzId": "e83d75e0-c813-47a0-9eea-c171178b6ecf",
+      "wikipedia": "https://en.wikipedia.org/wiki/Hermann_Levi",
+      "genreQids": [
+        "Q9730",
+        "Q1344"
+      ]
+    },
+    {
+      "qid": "Q117110",
+      "name": "Zdeněk Fibich",
+      "workStart": 1864,
+      "workStartReferences": 1,
+      "musicbrainzId": "eabaac32-2625-446f-8663-b11ab9456cca",
+      "wikipedia": "https://en.wikipedia.org/wiki/Zden%C4%9Bk_Fibich",
+      "genreQids": [
+        "Q1344",
+        "Q9730"
+      ]
+    },
+    {
+      "qid": "Q1220637",
+      "name": "Aleksander Michałowski",
+      "workStart": 1869,
+      "workStartReferences": 1,
+      "musicbrainzId": "8af15dfb-2d72-4578-9165-464bc1479874",
+      "wikipedia": "https://en.wikipedia.org/wiki/Aleksander_Micha%C5%82owski",
+      "genreQids": [
+        "Q9730"
+      ]
+    },
+    {
+      "qid": "Q172425",
+      "name": "Mykola Lysenko",
+      "workStart": 1869,
+      "workStartReferences": 1,
+      "musicbrainzId": "5d9db0d9-89dc-407f-80fc-4b638a99c4a9",
+      "wikipedia": "https://en.wikipedia.org/wiki/Mykola_Lysenko",
+      "genreQids": [
+        "Q1344",
+        "Q43343"
+      ]
+    },
+    {
+      "qid": "Q668930",
+      "name": "Josef Bayer",
+      "workStart": 1870,
+      "workStartReferences": 1,
+      "musicbrainzId": "f139c412-10f9-484e-ab56-ae929aa23f7f",
+      "wikipedia": "https://en.wikipedia.org/wiki/Josef_Bayer",
+      "genreQids": [
+        "Q1344"
+      ]
+    },
+    {
+      "qid": "Q348282",
+      "name": "Anatoly Lyadov",
+      "workStart": 1873,
+      "workStartReferences": 1,
+      "musicbrainzId": "27870fb6-347c-48b1-adf4-c7bf0f71513e",
+      "wikipedia": "https://en.wikipedia.org/wiki/Anatoly_Lyadov",
+      "genreQids": [
+        "Q9730"
+      ]
+    },
+    {
+      "qid": "Q313372",
+      "name": "Francisco Tárrega",
+      "workStart": 1874,
+      "workStartReferences": 1,
+      "musicbrainzId": "59bdd84b-28dd-4aef-bb5b-2e2c98997b10",
+      "wikipedia": "https://en.wikipedia.org/wiki/Francisco_T%C3%A1rrega",
+      "genreQids": [
+        "Q207591"
+      ]
+    },
+    {
+      "qid": "Q1979771",
+      "name": "Vishnu Narayan Bhatkhande",
+      "workStart": 1875,
+      "workStartReferences": 1,
+      "musicbrainzId": null,
+      "wikipedia": "https://en.wikipedia.org/wiki/Vishnu_Narayan_Bhatkhande",
+      "genreQids": [
+        "Q1323698"
+      ]
+    },
+    {
+      "qid": "Q7311",
+      "name": "Giacomo Puccini",
+      "workStart": 1876,
+      "workStartReferences": 1,
+      "musicbrainzId": "a693df4a-8762-4a45-b7fd-6695b558385e",
+      "wikipedia": "https://en.wikipedia.org/wiki/Giacomo_Puccini",
+      "genreQids": [
+        "Q9730",
+        "Q1344"
+      ]
+    },
+    {
+      "qid": "Q1362619",
+      "name": "Alexandre Levy",
+      "workStart": 1880,
+      "workStartReferences": 1,
+      "musicbrainzId": "b27ac20f-28a4-4a62-ae58-87418acced9b",
+      "wikipedia": "https://en.wikipedia.org/wiki/Alexandre_Levy",
+      "genreQids": [
+        "Q9730"
+      ]
+    },
+    {
+      "qid": "Q1349550",
+      "name": "Felix Mikhailovich Blumenfeld",
+      "workStart": 1881,
+      "workStartReferences": 1,
+      "musicbrainzId": "9654ff1f-1d6d-4673-973e-a4b42c1e8469",
+      "wikipedia": "https://en.wikipedia.org/wiki/Felix_Blumenfeld",
+      "genreQids": [
+        "Q9730"
+      ]
+    },
+    {
+      "qid": "Q313970",
+      "name": "Anton Arensky",
+      "workStart": 1882,
+      "workStartReferences": 1,
+      "musicbrainzId": "bfe09fc5-c12a-413d-88bf-b40bea40bf4c",
+      "wikipedia": "https://en.wikipedia.org/wiki/Anton_Arensky",
+      "genreQids": [
+        "Q1344"
+      ]
+    },
+    {
+      "qid": "Q13003",
+      "name": "Arturo Toscanini",
+      "workStart": 1886,
+      "workStartReferences": 1,
+      "musicbrainzId": "da96be23-ef88-420e-8173-3efb7fd995cc",
+      "wikipedia": "https://en.wikipedia.org/wiki/Arturo_Toscanini",
+      "genreQids": [
+        "Q9730"
+      ]
+    },
+    {
+      "qid": "Q205139",
+      "name": "Carl Nielsen",
+      "workStart": 1888,
+      "workStartReferences": 1,
+      "musicbrainzId": "1be1367d-119f-4b08-bdfe-50b95043e544",
+      "wikipedia": "https://en.wikipedia.org/wiki/Carl_Nielsen",
+      "genreQids": [
+        "Q1344"
+      ]
+    },
+    {
+      "qid": "Q294225",
+      "name": "Enrique Granados",
+      "workStart": 1889,
+      "workStartReferences": 1,
+      "musicbrainzId": "e378c6b3-7d74-48b5-ab04-9aac0df7562c",
+      "wikipedia": "https://en.wikipedia.org/wiki/Enrique_Granados",
+      "genreQids": [
+        "Q9730"
+      ]
+    },
+    {
+      "qid": "Q316920",
+      "name": "Felix von Weingartner",
+      "workStart": 1891,
+      "workStartReferences": 1,
+      "musicbrainzId": "c63c08a5-b743-49cf-ab27-e4d68d0f2888",
+      "wikipedia": "https://en.wikipedia.org/wiki/Felix_Weingartner",
+      "genreQids": [
+        "Q1344"
+      ]
+    },
+    {
+      "qid": "Q131861",
+      "name": "Sergei Rachmaninoff",
+      "workStart": 1892,
+      "workStartReferences": 1,
+      "musicbrainzId": "44b16e44-da77-4580-b851-0d765904573e",
+      "wikipedia": "https://en.wikipedia.org/wiki/Sergei_Rachmaninoff",
+      "genreQids": [
+        "Q1344",
+        "Q9730"
+      ]
+    },
+    {
+      "qid": "Q435688",
+      "name": "Wilhelm Stenhammar",
+      "workStart": 1892,
+      "workStartReferences": 1,
+      "musicbrainzId": "46b1d2da-98a4-4ee2-9f21-17a9ca202cd1",
+      "wikipedia": "https://en.wikipedia.org/wiki/Wilhelm_Stenhammar",
+      "genreQids": [
+        "Q9730",
+        "Q1344"
+      ]
+    },
+    {
+      "qid": "Q45682",
+      "name": "Jean Sibelius",
+      "workStart": 1892,
+      "workStartReferences": 0,
+      "musicbrainzId": "691b0e9d-9e57-41cf-932d-a3d21b068e75",
+      "wikipedia": "https://en.wikipedia.org/wiki/Jean_Sibelius",
+      "genreQids": [
+        "Q9730",
+        "Q1344",
+        "Q1338153"
+      ]
+    },
+    {
+      "qid": "Q453138",
+      "name": "Bronisław Huberman",
+      "workStart": 1893,
+      "workStartReferences": 1,
+      "musicbrainzId": "5fc287ba-2332-4f28-a13e-00b265972e93",
+      "wikipedia": "https://en.wikipedia.org/wiki/Bronis%C5%82aw_Huberman",
+      "genreQids": [
+        "Q9730"
+      ]
+    },
+    {
+      "qid": "Q707340",
+      "name": "Henry Kimball Hadley",
+      "workStart": 1893,
+      "workStartReferences": 1,
+      "musicbrainzId": "d622a6fc-e05a-4e26-a535-68993f7dfb73",
+      "wikipedia": "https://en.wikipedia.org/wiki/Henry_Kimball_Hadley",
+      "genreQids": [
+        "Q1344"
+      ]
+    },
+    {
+      "qid": "Q128532",
+      "name": "Al Jolson",
+      "workStart": 1897,
+      "workStartReferences": 0,
+      "musicbrainzId": "5611a8e8-1521-4919-a531-2689bbb57ce4",
+      "wikipedia": "https://en.wikipedia.org/wiki/Al_Jolson",
+      "genreQids": [
+        "Q8341",
+        "Q9759",
+        "Q185652",
+        "Q37073",
+        "Q1196752"
+      ]
+    },
+    {
+      "qid": "Q154770",
+      "name": "Arnold Schoenberg",
+      "workStart": 1897,
+      "workStartReferences": 1,
+      "musicbrainzId": "9b490b96-ad82-4d7b-9055-f0a196ad64cc",
+      "wikipedia": "https://en.wikipedia.org/wiki/Arnold_Schoenberg",
+      "genreQids": [
+        "Q1338153",
+        "Q1344",
+        "Q9730"
+      ]
+    },
+    {
+      "qid": "Q61693",
+      "name": "Karl Straube",
+      "workStart": 1897,
+      "workStartReferences": 1,
+      "musicbrainzId": "d8019bc5-a396-4439-9bd1-f25597ce4422",
+      "wikipedia": "https://en.wikipedia.org/wiki/Karl_Straube",
+      "genreQids": [
+        "Q9730"
+      ]
+    },
+    {
+      "qid": "Q441730",
+      "name": "Nora Bayes",
+      "workStart": 1898,
+      "workStartReferences": 1,
+      "musicbrainzId": "a80c921e-32e1-4387-b427-d9bbb4bf7915",
+      "wikipedia": "https://en.wikipedia.org/wiki/Nora_Bayes",
+      "genreQids": [
+        "Q1196752"
+      ]
+    },
+    {
+      "qid": "Q286616",
+      "name": "Émile Waldteufel",
+      "workStart": 1899,
+      "workStartReferences": 1,
+      "musicbrainzId": "d3d25e43-a453-4caf-a382-a75732ec02a6",
+      "wikipedia": "https://en.wikipedia.org/wiki/%C3%89mile_Waldteufel",
+      "genreQids": [
+        "Q207591"
+      ]
+    },
+    {
+      "qid": "Q295400",
+      "name": "Karol Szymanowski",
+      "workStart": 1899,
+      "workStartReferences": 1,
+      "musicbrainzId": "e04ef24e-b64e-4ca5-a479-b6bc79042ff5",
+      "wikipedia": "https://en.wikipedia.org/wiki/Karol_Szymanowski",
+      "genreQids": [
+        "Q1344",
+        "Q9730"
+      ]
+    },
+    {
+      "qid": "Q200867",
+      "name": "Gustav Holst",
+      "workStart": 1904,
+      "workStartReferences": 1,
+      "musicbrainzId": "3ba68671-e3b5-4263-81dc-76b16b29bbc6",
+      "wikipedia": "https://en.wikipedia.org/wiki/Gustav_Holst",
+      "genreQids": [
+        "Q9730",
+        "Q1344"
+      ]
+    },
+    {
+      "qid": "Q78475",
+      "name": "Alban Berg",
+      "workStart": 1907,
+      "workStartReferences": 1,
+      "musicbrainzId": "f61c909a-db95-4a61-bc23-65a86e0d2907",
+      "wikipedia": "https://en.wikipedia.org/wiki/Alban_Berg",
+      "genreQids": [
+        "Q1344"
+      ]
+    },
+    {
+      "qid": "Q123164",
+      "name": "Arthur Honegger",
+      "workStart": 1912,
+      "workStartReferences": 1,
+      "musicbrainzId": "7bcfc64a-ce4a-4065-947c-d037bca1e230",
+      "wikipedia": "https://en.wikipedia.org/wiki/Arthur_Honegger",
+      "genreQids": [
+        "Q85477"
+      ]
+    },
+    {
+      "qid": "Q229613",
+      "name": "Carlos Gardel",
+      "workStart": 1917,
+      "workStartReferences": 1,
+      "musicbrainzId": "bb54817c-6829-4ccc-bc58-030abb85c583",
+      "wikipedia": "https://en.wikipedia.org/wiki/Carlos_Gardel",
+      "genreQids": [
+        "Q14390274"
+      ]
+    },
+    {
+      "qid": "Q80135",
+      "name": "Dmitri Shostakovich",
+      "workStart": 1919,
+      "workStartReferences": 1,
+      "musicbrainzId": "519dd32e-8f30-4380-8826-7aa99169e1bb",
+      "wikipedia": "https://en.wikipedia.org/wiki/Dmitri_Shostakovich",
+      "genreQids": [
+        "Q189201",
+        "Q1344"
+      ]
+    },
+    {
+      "qid": "Q103651",
+      "name": "Glenn Miller",
+      "workStart": 1923,
+      "workStartReferences": 0,
+      "musicbrainzId": "7b353d3c-2bd9-40e3-a21d-b7da3f941339",
+      "wikipedia": "https://en.wikipedia.org/wiki/Glenn_Miller",
+      "genreQids": [
+        "Q8341",
+        "Q9759"
+      ]
+    },
+    {
+      "qid": "Q152293",
+      "name": "Aram Khachaturian",
+      "workStart": 1926,
+      "workStartReferences": 1,
+      "musicbrainzId": "fa25cd1f-beeb-4718-b4bb-d3da4f53539f",
+      "wikipedia": "https://en.wikipedia.org/wiki/Aram_Khachaturian",
+      "genreQids": [
+        "Q189201"
+      ]
+    },
+    {
+      "qid": "Q172505",
+      "name": "Astor Piazzolla",
+      "workStart": 1933,
+      "workStartReferences": 1,
+      "musicbrainzId": "e280268a-a5ab-4bb0-be4d-ec470ca59131",
+      "wikipedia": "https://en.wikipedia.org/wiki/Astor_Piazzolla",
+      "genreQids": [
+        "Q1344",
+        "Q14390274"
+      ]
+    },
+    {
+      "qid": "Q1785",
+      "name": "Charles Aznavour",
+      "workStart": 1933,
+      "workStartReferences": 1,
+      "musicbrainzId": "5f264b87-d5f6-487d-aa3e-ae4c5f0c6fc9",
+      "wikipedia": "https://en.wikipedia.org/wiki/Charles_Aznavour",
+      "genreQids": [
+        "Q1062400",
+        "Q8341",
+        "Q37073",
+        "Q205049"
+      ]
+    },
+    {
+      "qid": "Q1631",
+      "name": "Édith Piaf",
+      "workStart": 1935,
+      "workStartReferences": 1,
+      "musicbrainzId": "4f8ef4a3-40fa-46b5-8773-97686a8424f4",
+      "wikipedia": "https://en.wikipedia.org/wiki/%C3%89dith_Piaf",
+      "genreQids": [
+        "Q1062400"
+      ]
+    },
+    {
+      "qid": "Q180727",
+      "name": "John Cage",
+      "workStart": 1938,
+      "workStartReferences": 1,
+      "musicbrainzId": "76325a9d-6c25-4649-96b1-84e9b99d6b4b",
+      "wikipedia": "https://en.wikipedia.org/wiki/John_Cage",
+      "genreQids": [
+        "Q1344",
+        "Q9730",
+        "Q1338153"
+      ]
+    },
+    {
+      "qid": "Q152505",
+      "name": "Leonard Bernstein",
+      "workStart": 1940,
+      "workStartReferences": 1,
+      "musicbrainzId": "fa39bc82-9b27-4bbb-9425-d719a72e09ac",
+      "wikipedia": "https://en.wikipedia.org/wiki/Leonard_Bernstein",
+      "genreQids": [
+        "Q9730",
+        "Q1344"
+      ]
+    },
+    {
+      "qid": "Q152043",
+      "name": "Mstislav Rostropovich",
+      "workStart": 1942,
+      "workStartReferences": 1,
+      "musicbrainzId": "e2b294b7-f705-4317-a96b-fd94da3719e5",
+      "wikipedia": "https://en.wikipedia.org/wiki/Mstislav_Rostropovich",
+      "genreQids": [
+        "Q9730"
+      ]
+    },
+    {
+      "qid": "Q156347",
+      "name": "Lata Mangeshkar",
+      "workStart": 1942,
+      "workStartReferences": 1,
+      "musicbrainzId": "aeb71bd8-447d-4415-8ea1-2b7d664f67e1",
+      "wikipedia": "https://en.wikipedia.org/wiki/Lata_Mangeshkar",
+      "genreQids": [
+        "Q205049",
+        "Q1323698"
+      ]
+    },
+    {
+      "qid": "Q151976",
+      "name": "Mikis Theodorakis",
+      "workStart": 1943,
+      "workStartReferences": 1,
+      "musicbrainzId": "83970769-d8ea-434b-8734-88899213c922",
+      "wikipedia": "https://en.wikipedia.org/wiki/Mikis_Theodorakis",
+      "genreQids": [
+        "Q1344"
+      ]
+    },
+    {
+      "qid": "Q38393",
+      "name": "Asha Bhosle",
+      "workStart": 1943,
+      "workStartReferences": 1,
+      "musicbrainzId": "79c5547a-e098-495c-8dac-7e99546aa46b",
+      "wikipedia": "https://en.wikipedia.org/wiki/Asha_Bhosle",
+      "genreQids": [
+        "Q205049",
+        "Q1323698",
+        "Q37073"
+      ]
+    },
+    {
+      "qid": "Q106057",
+      "name": "Yves Montand",
+      "workStart": 1945,
+      "workStartReferences": 1,
+      "musicbrainzId": "edd6a7c3-d174-4e5b-9134-0f0cc6e2b0a5",
+      "wikipedia": "https://en.wikipedia.org/wiki/Yves_Montand",
+      "genreQids": [
+        "Q1062400"
+      ]
+    },
+    {
+      "qid": "Q156193",
+      "name": "Pierre Boulez",
+      "workStart": 1945,
+      "workStartReferences": 1,
+      "musicbrainzId": "3bce590b-479f-42ca-b9e0-82883e0db9a2",
+      "wikipedia": "https://en.wikipedia.org/wiki/Pierre_Boulez",
+      "genreQids": [
+        "Q9730"
+      ]
+    },
+    {
+      "qid": "Q3058202",
+      "name": "P. Ramlee",
+      "workStart": 1945,
+      "workStartReferences": 0,
+      "musicbrainzId": "6b2f4412-a43f-4d3c-9ed2-43f6d4f153d0",
+      "wikipedia": "https://en.wikipedia.org/wiki/P._Ramlee",
+      "genreQids": [
+        "Q37073"
+      ]
+    },
+    {
+      "qid": "Q235077",
+      "name": "Jerry Goldsmith",
+      "workStart": 1947,
+      "workStartReferences": 1,
+      "musicbrainzId": "db403e3d-4753-45d6-8fcb-94db03e882e1",
+      "wikipedia": "https://en.wikipedia.org/wiki/Jerry_Goldsmith",
+      "genreQids": [
+        "Q9730"
+      ]
+    }
+  ]
+}

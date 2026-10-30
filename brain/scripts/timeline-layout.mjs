@@ -3,8 +3,7 @@ const LAST_DECADE = 2030;
 const START_X = -4800;
 const BODY_TOP = -1040;
 const ROW_GAP = 126;
-const MIN_NODE_GAP_X = 112;
-const MIN_NODE_GAP_Y = 112;
+const MIN_NODE_GAP_Y = 108;
 
 function decadeWidth(year) {
   if (year < 1900) return 140;
@@ -75,17 +74,19 @@ export function buildTimelineLayout(nodes, learningModel) {
       const x = marker.x + Math.max(18, (startYear - marker.year) * marker.width / 10);
       const preferredY = BODY_TOP + Math.round(stableFraction(node.id) * height);
       let y = preferredY;
+      const width = Math.min(540, Math.max(120, 32 + node.label.length * 16));
       for (let step = 0; ; step += 1) {
         const candidate = preferredY + (step % 2 === 0 ? 1 : -1) * Math.ceil(step / 2) * ROW_GAP;
         if (candidate < BODY_TOP) continue;
         if (occupied.every((item) =>
-          Math.abs(item.x - x) >= MIN_NODE_GAP_X || Math.abs(item.y - candidate) >= MIN_NODE_GAP_Y
+          Math.abs(item.x - x) >= (item.width + width) / 2 + 20 ||
+          Math.abs(item.y - candidate) >= MIN_NODE_GAP_Y
         )) {
           y = candidate;
           break;
         }
       }
-      occupied.push({ x, y });
+      occupied.push({ x, y, width });
       items.push({
         node,
         startYear,
@@ -100,7 +101,7 @@ export function buildTimelineLayout(nodes, learningModel) {
   const unknown = {
     left: START_X + 80,
     top: knownBottom + 470,
-    columns: Math.max(1, Math.floor((nextX - START_X - 160) / 164)),
+    columns: Math.max(1, Math.floor((nextX - START_X - 160) / 560)),
     rowGap: ROW_GAP,
     count: undated.length,
   };
