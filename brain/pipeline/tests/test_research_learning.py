@@ -9,7 +9,7 @@ from research_learning import (  # noqa: E402
     build_learning_model, fetch_review_rows, prepare_decisions, priority_adjustment,
 )
 from scout_agent import (  # noqa: E402
-    organization_frontier_request, public_priority_adjustment,
+    degree_by_node, existing_seed_keys, organization_frontier_request, public_priority_adjustment,
     select_frontier_seeds, should_activate_learning, snapshot_issue,
     write_learning_report,
 )
@@ -40,6 +40,30 @@ def row(index, seed, status, reason=None, kind="band"):
 
 
 class ResearchLearningTests(unittest.TestCase):
+    def test_failed_requests_can_be_rescouted_and_weak_links_do_not_count_as_coverage(self):
+        requests = [
+            {"status": "failed", "seeds": [{"name": "Example", "kind": "band"}]},
+            {"status": "processed", "seeds": [{"name": "Done", "kind": "band"}]},
+        ]
+        self.assertNotIn(("example", "band"), existing_seed_keys(requests))
+        self.assertIn(("done", "band"), existing_seed_keys(requests))
+        degrees = degree_by_node({"edges": [
+            {"source": "a", "target": "b", "label": "Wikipedia link signal"},
+            {"source": "a", "target": "d", "context": ["Wikipedia category: grouping"]},
+            {"source": "a", "target": "c", "label": "Documented collaboration"},
+        ]})
+        self.assertEqual(degrees["a"], 1)
+        self.assertEqual(degrees["b"], 0)
+
+    def test_organization_request_preserves_zone_for_new_seeds(self):
+        model = {"recommendedResearchRequests": [{
+            "id": "organization-pop-soul-disco-20261030", "priority": 80,
+            "seeds": [{"name": "Example Singer", "kind": "artist"}],
+        }]}
+        with patch("scout_agent.load_organization_model", return_value=model):
+            request = organization_frontier_request(set(), set())
+        self.assertEqual(request["seeds"][0]["zone"], "pop-soul-disco")
+
     def test_wrong_source_identity_cannot_train_as_positive_example(self):
         rows = [
             {**row(0, "Jazz One", "imported"), "payload": {

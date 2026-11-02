@@ -5,6 +5,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import re
 import time
 from dataclasses import asdict, dataclass
 from pathlib import Path
@@ -84,6 +85,7 @@ class Candidate:
     wikipedia: dict[str, Any] | None
     music_candidates: list[dict[str, Any]]
     source_errors: list[dict[str, str]]
+    suggested_zone: str | None = None
     status: str = "review"
 
 
@@ -247,6 +249,23 @@ class WikidataClient:
             "wikipedia_title": entity.get("sitelinks", {}).get("enwiki", {}).get("title"),
         }
 
+    def musicbrainz_ids(self, entity_ids: list[str]) -> dict[str, list[str]]:
+        if not entity_ids:
+            return {}
+        payload = get_json_with_backoff(self.session, self.endpoint, {
+            "action": "wbgetentities", "ids": "|".join(sorted(set(entity_ids))),
+            "props": "claims", "format": "json",
+        })
+        result: dict[str, list[str]] = {}
+        for entity_id, entity in payload.get("entities", {}).items():
+            result[entity_id] = [
+                value for statement in entity.get("claims", {}).get("P434", [])
+                if statement.get("rank") != "deprecated"
+                for value in [statement.get("mainsnak", {}).get("datavalue", {}).get("value")]
+                if isinstance(value, str)
+            ]
+        return result
+
 
 class WikipediaClient:
     endpoint = "https://en.wikipedia.org/w/api.php"
@@ -376,6 +395,35 @@ class WikipediaClient:
             if candidate:
                 candidates.setdefault(candidate["title"].lower(), candidate)
         return list(candidates.values())[:20]
+
+    def candidate_pages(self, candidates: list[dict[str, Any]]) -> dict[str, dict[str, Any]]:
+        titles = [item["title"] for item in candidates]
+        if not titles:
+            return {}
+        payload = get_json_with_backoff(self.session, self.endpoint, {
+            "action": "query", "format": "json", "formatversion": 2,
+            "redirects": 1, "prop": "extracts|pageprops", "exintro": 1,
+            "explaintext": 1, "titles": "|".join(titles),
+        })
+        query = payload.get("query", {})
+        redirects = {
+            normalize_text(item.get("from", "")): item.get("to", "")
+            for item in query.get("redirects", [])
+        }
+        pages = {
+            normalize_text(page["title"]): page
+            for page in query.get("pages", []) if page.get("title") and not page.get("missing")
+        }
+        verified: dict[str, dict[str, Any]] = {}
+        for title in titles:
+            resolved = redirects.get(normalize_text(title), title)
+            page = pages.get(normalize_text(resolved))
+            if page and page.get("pageprops", {}).get("wikibase_item"):
+                verified[title] = {
+                    "title": page["title"], "extract": page.get("extract"),
+                    "wikidata_id": page["pageprops"]["wikibase_item"],
+                }
+        return verified
 
     def page(self, title: str) -> dict[str, Any] | None:
         payload = get_json_with_backoff(
@@ -517,6 +565,43 @@ def collect(seed_file: Path) -> list[Candidate]:
                 source_errors.append({"source": "musicbrainz", "message": str(error)})
                 print(f"MusicBrainz lookup failed for {name}: {error}")
 
+        music_candidates = wikipedia.music_candidates(wikipedia_page)
+        related_pages: dict[str, dict[str, Any]] = {}
+        if music_candidates:
+            try:
+                related_pages = wikipedia.candidate_pages(music_candidates)
+            except Exception as error:
+                source_errors.append({"source": "related_wikipedia", "message": str(error)})
+
+        artist_ids: dict[str, list[str]] = {}
+        if related_pages:
+            try:
+                artist_ids = wikidata.musicbrainz_ids([
+                    page["wikidata_id"] for page in related_pages.values()
+                ])
+            except Exception as error:
+                source_errors.append({"source": "related_wikidata", "message": str(error)})
+        for item in music_candidates:
+            page = related_pages.get(item["title"])
+            if not page:
+                continue
+            page["musicbrainz_artist_ids"] = artist_ids.get(page["wikidata_id"], [])
+            item["title"] = page["title"]
+            item["wikipedia"] = page
+            if musicbrainz and item["kind"] in {"band", "artist", "guitarist"}:
+                lookup_name = re.sub(
+                    r" \((?:band|musician|singer|guitarist)\)$", "", item["title"], flags=re.I,
+                )
+                for artist_id in page["musicbrainz_artist_ids"][:2]:
+                    try:
+                        match = musicbrainz.lookup(artist_id, lookup_name, item["kind"])
+                    except Exception as error:
+                        source_errors.append({"source": "related_musicbrainz", "message": str(error)})
+                        break
+                    if match:
+                        item["musicbrainz"] = match
+                        break
+
         candidates.append(
             Candidate(
                 name=name,
@@ -524,8 +609,9 @@ def collect(seed_file: Path) -> list[Candidate]:
                 musicbrainz=musicbrainz_match,
                 wikidata=wikidata_match,
                 wikipedia=wikipedia_page,
-                music_candidates=wikipedia.music_candidates(wikipedia_page),
+                music_candidates=music_candidates,
                 source_errors=source_errors,
+                suggested_zone=seed.get("zone"),
             )
         )
 

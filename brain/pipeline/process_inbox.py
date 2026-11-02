@@ -156,7 +156,10 @@ def seeds_from_requests(requests: list[dict[str, Any]]) -> list[dict[str, str]]:
             if key in seen:
                 continue
             seen.add(key)
-            seeds.append({"name": seed["name"], "kind": seed["kind"]})
+            item = {"name": seed["name"], "kind": seed["kind"]}
+            if seed.get("zone"):
+                item["zone"] = str(seed["zone"])
+            seeds.append(item)
 
     return seeds
 
@@ -261,88 +264,80 @@ def main() -> None:
 
     from sync import collect
 
-    if db_client and publish_to_supabase:
-        supabase_helpers["mark_requests"](db_client, request_ids, "processing")
-        supabase_helpers["start_run"](db_client, summary)
-
-    try:
-        collected = collect(temp_seed_path)
-    except Exception as error:
-        if db_client and publish_to_supabase:
-            failed_summary = {**summary, "error": str(error)}
-            supabase_helpers["finish_run"](
-                db_client,
-                run_id,
-                "failed",
-                failed_summary,
-                candidate_count=0,
-                error=str(error),
-            )
-            supabase_helpers["mark_requests"](
-                db_client,
-                request_ids,
-                "failed",
-                error=str(error),
-            )
-        raise
-
+    run_started = False
+    run_finished = False
+    candidates_published = False
     output_path = args.output_dir / f"{run_id}.json"
-    candidate_payloads = [asdict(candidate) for candidate in collected]
-    for candidate_payload in candidate_payloads:
-        candidate_payload["review"] = review_candidate_payload(candidate_payload)
-    payload = {
-        **summary,
-        "dryRun": False,
-        "candidateCount": len(collected),
-        "requests": requests,
-        "seeds": seeds,
-        "candidates": candidate_payloads,
-        "nextStep": "Review candidates, then manually promote approved nodes and edges to the approved graph.",
-    }
-    output_path.write_text(
-        json.dumps(payload, ensure_ascii=False, indent=2),
-        encoding="utf-8",
-    )
+    try:
+        if db_client and publish_to_supabase:
+            supabase_helpers["mark_requests"](db_client, request_ids, "processing")
+            supabase_helpers["start_run"](db_client, summary)
+            run_started = True
 
-    run_summary_path = RUNS_DIR / f"{run_id}-summary.json"
-    run_summary_path.write_text(
-        json.dumps({**summary, "candidateOutput": str(output_path)}, ensure_ascii=False, indent=2),
-        encoding="utf-8",
-    )
+        collected = collect(temp_seed_path)
+        candidate_payloads = [asdict(candidate) for candidate in collected]
+        for candidate_payload in candidate_payloads:
+            candidate_payload["review"] = review_candidate_payload(candidate_payload)
+        payload = {
+            **summary,
+            "dryRun": False,
+            "candidateCount": len(collected),
+            "requests": requests,
+            "seeds": seeds,
+            "candidates": candidate_payloads,
+            "nextStep": "Review candidates, then manually promote approved nodes and edges to the approved graph.",
+        }
+        output_path.write_text(
+            json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8",
+        )
 
-    if args.mark_processed and args.source == "file":
-        updated = mark_processed(inbox, set(request_ids), output_path)
-        args.inbox.write_text(
-            json.dumps(updated, ensure_ascii=False, indent=2) + "\n",
+        run_summary_path = RUNS_DIR / f"{run_id}-summary.json"
+        run_summary_path.write_text(
+            json.dumps({**summary, "candidateOutput": str(output_path)}, ensure_ascii=False, indent=2),
             encoding="utf-8",
         )
 
-    if db_client and publish_to_supabase:
-        supabase_candidate_count = supabase_helpers["upsert_candidates"](
-            db_client,
-            run_id,
-            requests,
-            candidate_payloads,
-        )
-        supabase_payload = {
-            **payload,
-            "supabaseCandidateCount": supabase_candidate_count,
-        }
-        supabase_helpers["finish_run"](
-            db_client,
-            run_id,
-            "completed",
-            supabase_payload,
-            candidate_count=supabase_candidate_count,
-        )
-        supabase_helpers["mark_requests"](
-            db_client,
-            request_ids,
-            "processed",
-            processed_at=iso_now(),
-            candidate_output=display_path(output_path),
-            error=None,
-        )
+        if args.mark_processed and args.source == "file":
+            updated = mark_processed(inbox, set(request_ids), output_path)
+            args.inbox.write_text(
+                json.dumps(updated, ensure_ascii=False, indent=2) + "\n", encoding="utf-8",
+            )
+
+        if db_client and publish_to_supabase:
+            supabase_candidate_count = supabase_helpers["upsert_candidates"](
+                db_client, run_id, requests, candidate_payloads,
+            )
+            candidates_published = True
+            supabase_payload = {**payload, "supabaseCandidateCount": supabase_candidate_count}
+            supabase_helpers["finish_run"](
+                db_client, run_id, "completed", supabase_payload,
+                candidate_count=supabase_candidate_count,
+            )
+            run_finished = True
+            supabase_helpers["mark_requests"](
+                db_client, request_ids, "processed", processed_at=iso_now(),
+                candidate_output=display_path(output_path), error=None,
+            )
+    except Exception as error:
+        if db_client and publish_to_supabase:
+            failed_summary = {**summary, "error": str(error)}
+            if run_started and not run_finished:
+                try:
+                    supabase_helpers["finish_run"](
+                        db_client, run_id, "failed", failed_summary, error=str(error),
+                    )
+                except Exception as cleanup_error:
+                    print(f"Could not record failed run: {cleanup_error}")
+            try:
+                status = "processed" if candidates_published else "queued"
+                supabase_helpers["mark_requests"](
+                    db_client, request_ids, status, error=str(error),
+                )
+            except Exception as cleanup_error:
+                print(f"Could not restore research requests: {cleanup_error}")
+        raise
+    finally:
+        temp_seed_path.unlink(missing_ok=True)
 
     print(f"Wrote {len(collected)} candidate groups to {output_path}.")
 

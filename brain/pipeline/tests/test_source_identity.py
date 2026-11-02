@@ -238,6 +238,72 @@ class SourceIdentityTests(unittest.TestCase):
         self.assertEqual(review["level"], "reject")
         self.assertIn("source_identity_conflict", {item["code"] for item in review["flags"]})
 
+    def test_related_pages_and_musicbrainz_ids_are_checked_in_batches(self):
+        wikipedia = WikipediaClient.__new__(WikipediaClient)
+        wikipedia.session = object()
+        candidates = [{"title": "Example Band", "kind": "band", "source": "link"}]
+        wiki_response = {"query": {"pages": [{
+            "title": "Example Band", "extract": "Example Band is a band.",
+            "pageprops": {"wikibase_item": "Q123"},
+        }]}}
+        with patch("sync.get_json_with_backoff", return_value=wiki_response) as get_json:
+            pages = wikipedia.candidate_pages(candidates)
+        self.assertEqual(pages["Example Band"]["wikidata_id"], "Q123")
+        self.assertEqual(get_json.call_args.args[2]["titles"], "Example Band")
+
+        wikidata = WikidataClient.__new__(WikidataClient)
+        wikidata.session = object()
+        data_response = {"entities": {"Q123": {"claims": {"P434": [{
+            "mainsnak": {"datavalue": {"value": "mb-123"}},
+        }]}}}}
+        with patch("sync.get_json_with_backoff", return_value=data_response):
+            self.assertEqual(wikidata.musicbrainz_ids(["Q123"]), {"Q123": ["mb-123"]})
+
+    def test_collection_enriches_related_band_before_review(self):
+        class FakeMusicBrainz:
+            def __init__(self, _contact):
+                pass
+
+            def search(self, _name, _kind):
+                return None
+
+            def lookup(self, artist_id, name, _kind):
+                if name != "Example Band":
+                    raise AssertionError(f"Unexpected MusicBrainz name: {name}")
+                return {"id": artist_id, "type": "Group"}
+
+        class FakeWikidata:
+            def search(self, _name, _kind):
+                return None
+
+            def musicbrainz_ids(self, _ids):
+                return {"Q123": ["mb-123"]}
+
+        class FakeWikipedia:
+            def __init__(self, _blocked):
+                pass
+
+            def page_for_seed(self, _name, _kind, _preferred=None):
+                return {"title": "Seed", "extract": "Seed is a musician."}
+
+            def music_candidates(self, _page):
+                return [{"title": "Example Band", "kind": "band", "source": "link"}]
+
+            def candidate_pages(self, _candidates):
+                return {"Example Band": {"title": "Example Band (band)", "wikidata_id": "Q123",
+                                         "extract": "Example Band is a rock band."}}
+
+        seed = [{"name": "Seed", "kind": "artist", "zone": "pop-soul-disco"}]
+        with patch.object(Path, "read_text", return_value=json.dumps(seed)), \
+             patch("sync.MusicBrainzClient", FakeMusicBrainz), patch("sync.WikidataClient", FakeWikidata), \
+             patch("sync.WikipediaClient", FakeWikipedia), patch("sync.load_blocked_terms", return_value=set()), \
+             patch("sync.os.getenv", return_value="https://example.org"):
+            candidate = collect(Path("unused-seeds.json"))[0]
+
+        self.assertEqual(candidate.suggested_zone, "pop-soul-disco")
+        self.assertEqual(candidate.music_candidates[0]["musicbrainz"]["type"], "Group")
+        self.assertEqual(review_candidate_payload(candidate.__dict__, set())["candidateStats"]["publishable"], 1)
+
 
 class ResponseStub:
     status_code = 200

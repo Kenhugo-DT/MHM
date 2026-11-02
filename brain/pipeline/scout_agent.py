@@ -75,6 +75,7 @@ TYPE_PRIORITY = {
 }
 
 ZONE_HINTS = {
+    "classical-history": "classical music history and documented later influence",
     "roots-blues": "roots, blues and early amplified guitar history",
     "rock-circuit": "rock, blues-rock and classic band connections",
     "psychedelia-prog": "psychedelia, art rock and progressive guitar history",
@@ -83,6 +84,7 @@ ZONE_HINTS = {
     "folk-country-vise": "folk, country, singer-songwriter and Norwegian vise traditions",
     "country-roots": "early country, bluegrass, honky-tonk, western swing and documented links to blues and rockabilly",
     "jazz": "early jazz, swing, bebop, jazz guitar and documented links to blues, funk and jazz fusion",
+    "pop-soul-disco": "pop, soul, disco and their documented crossovers",
     "guitar-workshop": "guitar models, makers and instrument history",
     "guitar-genres": "genres connected to guitar models and brands",
 }
@@ -164,6 +166,8 @@ def is_actionable_seed(name: Any, kind: Any) -> bool:
 def existing_seed_keys(requests: list[dict[str, Any]]) -> set[tuple[str, str]]:
     keys: set[tuple[str, str]] = set()
     for request in requests:
+        if request.get("status") == "failed":
+            continue
         for seed in request.get("seeds", []) or []:
             if isinstance(seed, dict):
                 keys.add(seed_key(seed))
@@ -173,6 +177,13 @@ def existing_seed_keys(requests: list[dict[str, Any]]) -> set[tuple[str, str]]:
 def degree_by_node(graph: dict[str, Any]) -> Counter[str]:
     degrees: Counter[str] = Counter()
     for edge in graph.get("edges", []):
+        label = str(edge.get("label") or "").strip().casefold()
+        context = edge.get("context") or []
+        if label in {"wikipedia link signal", "wikipedia category signal"} or any(
+            str(item).strip().casefold().startswith(("wikipedia link:", "wikipedia category:"))
+            for item in context
+        ):
+            continue
         source = edge.get("source")
         target = edge.get("target")
         if source:
@@ -371,6 +382,10 @@ def organization_frontier_request(
         if not request_id or request_id in existing_ids:
             continue
 
+        request_zone = str(request_id).removeprefix("organization-").rsplit("-", 1)[0]
+        if request_zone not in ZONE_HINTS:
+            request_zone = ""
+
         seeds = [
             seed
             for seed in request.get("seeds", [])
@@ -387,7 +402,7 @@ def organization_frontier_request(
             **request,
             "status": "queued",
             "createdAt": iso_now(),
-            "seeds": seeds,
+            "seeds": [{**seed, "zone": request_zone} if request_zone else seed for seed in seeds],
             "notes": (
                 f"{request.get('notes', '').strip()} "
                 "Queued from brain/data/approved/organization-model.json."
@@ -415,6 +430,7 @@ def load_supabase_helpers() -> dict[str, Any]:
     try:
         from supabase_brain import (
             fetch_requests,
+            recover_stale_requests,
             request_to_row,
             require_client,
             row_to_request,
@@ -428,6 +444,7 @@ def load_supabase_helpers() -> dict[str, Any]:
 
     return {
         "fetch_requests": fetch_requests,
+        "recover_stale_requests": recover_stale_requests,
         "request_to_row": request_to_row,
         "require_client": require_client,
         "row_to_request": row_to_request,
@@ -446,7 +463,8 @@ def load_requests(source: str) -> tuple[list[dict[str, Any]], list[dict[str, Any
     if source == "supabase":
         helpers = load_supabase_helpers()
         client = helpers["require_client"]()
-        rows = helpers["fetch_requests"](client, status="all", limit=500)
+        helpers["recover_stale_requests"](client)
+        rows = helpers["fetch_requests"](client, status="all", limit=None)
         requests = [helpers["row_to_request"](row) for row in rows]
         queued = [request for request in requests if request.get("status") == "queued"]
         return requests, queued, client
@@ -462,7 +480,10 @@ def load_requests(source: str) -> tuple[list[dict[str, Any]], list[dict[str, Any
 def write_local_request(inbox: dict[str, Any], request: dict[str, Any]) -> None:
     inbox.setdefault("version", 1)
     inbox.setdefault("requests", [])
-    inbox["requests"].append(request)
+    inbox["requests"] = [
+        item for item in inbox["requests"]
+        if not isinstance(item, dict) or item.get("id") != request["id"]
+    ] + [request]
     INBOX_PATH.write_text(
         json.dumps(inbox, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
@@ -649,7 +670,10 @@ def main() -> None:
     graph = load_json(graph_path())
     blocked_terms = load_blocked_terms()
     all_requests, queued, state = load_requests(source)
-    existing_ids = {request.get("id") for request in all_requests}
+    existing_ids = {
+        request.get("id") for request in all_requests
+        if request.get("status") != "failed"
+    }
 
     summary: dict[str, Any] = {
         "version": 1,

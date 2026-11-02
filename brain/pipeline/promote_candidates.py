@@ -6,13 +6,14 @@ import argparse
 import json
 import math
 import re
+import statistics
 import unicodedata
 from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
 from urllib.parse import quote
 
-from candidate_quality import review_candidate_payload
+from candidate_quality import has_verified_candidate_identity, review_candidate_payload
 from process_inbox import CANDIDATES_DIR
 
 BRAIN_ROOT = Path(__file__).resolve().parents[1]
@@ -108,9 +109,11 @@ GENERIC_TOPIC_TERMS = {
     "backup band",
     "band",
     "band (rock and pop)",
+    "bandleader",
     "guitarist",
     "house band",
     "musician",
+    "military band",
     "one-man band",
     "tribute band",
 }
@@ -544,18 +547,32 @@ def seed_node(
     node_by_id: dict[str, dict[str, Any]],
     label_index: dict[str, str],
     blocked_terms: set[str],
+    occupied: set[tuple[int, int]],
 ) -> dict[str, Any] | None:
     name = payload.get("name") or payload.get("seed_name")
     kind = payload.get("requested_kind")
-    if not name or kind not in ALLOWED_KINDS or is_blocked(name, blocked_terms):
+    if (
+        not name or kind not in ALLOWED_KINDS or is_blocked(name, blocked_terms)
+        or out_of_scope_reason(str(name), kind) or not seed_sources(payload)
+    ):
         return None
 
     node_id = node_id_for_title(str(name), node_by_id, label_index)
     if node_id in node_by_id:
         return None
 
-    zone = zone_for(str(name), kind, None)
-    x, y = ZONE_CENTERS.get(zone, (0, 0))
+    suggested_zone = str(payload.get("suggested_zone") or "")
+    zone = suggested_zone if suggested_zone in known_zones(node_by_id) else zone_for(str(name), kind, None)
+    if not zone:
+        return None
+    zone_nodes = [node for node in node_by_id.values() if node.get("zone") == zone]
+    anchor = None
+    if zone_nodes:
+        anchor = {
+            "x": statistics.median(float(node.get("x", 0)) for node in zone_nodes),
+            "y": statistics.median(float(node.get("y", 0)) for node in zone_nodes),
+        }
+    x, y = placed_point(node_id, anchor, zone, len(zone_nodes), occupied)
     return {
         "id": node_id,
         "label": display_title(str(name)),
@@ -574,7 +591,13 @@ def seed_node(
     }
 
 
-def zone_for(title: str, kind: str, seed: dict[str, Any] | None) -> str:
+def known_zones(node_by_id: dict[str, dict[str, Any]]) -> set[str]:
+    return set(ZONE_CENTERS) | {
+        str(node.get("zone")) for node in node_by_id.values() if node.get("zone")
+    }
+
+
+def zone_for(title: str, kind: str, seed: dict[str, Any] | None) -> str | None:
     text = normalize_text(title)
     if kind in {"guitar", "guitar_brand"}:
         return "guitar-workshop"
@@ -606,7 +629,7 @@ def zone_for(title: str, kind: str, seed: dict[str, Any] | None) -> str:
         return "psychedelia-prog"
     if seed and seed.get("zone"):
         return str(seed["zone"])
-    return "rock-circuit"
+    return None
 
 
 def stable_number(value: str) -> int:
@@ -651,7 +674,9 @@ def candidate_rejection_reason(candidate: dict[str, Any], blocked_terms: set[str
 
     if not title or kind not in ALLOWED_KINDS or is_blocked(title, blocked_terms):
         return "blocked, empty or unsupported kind"
-    return out_of_scope_reason(title, kind, source)
+    return out_of_scope_reason(title, kind, source) or (
+        None if has_verified_candidate_identity(candidate) else "unverified candidate identity"
+    )
 
 
 def promoted_candidate_node(
@@ -670,6 +695,8 @@ def promoted_candidate_node(
 
     kind = str(candidate["kind"])
     zone = zone_for(title, kind, seed)
+    if not zone:
+        return None
     x, y = placed_point(node_id, seed, zone, offset_index, occupied)
     seed_name = seed_payload.get("name") or seed_payload.get("seed_name") or "an approved seed"
 
@@ -724,24 +751,23 @@ def promoted_edge(
 ) -> dict[str, Any] | None:
     if seed_id == target_id:
         return None
-    edge_type = relation_type(source_node, target_node)
-    signal = "category" if candidate.get("source") == "category" else "link"
-    seed_wiki = seed_payload.get("wikipedia") or {}
+    evidence = candidate.get("documented_relation") or {}
+    edge_type = evidence.get("type")
+    source_url = str(evidence.get("source_url") or "")
+    if edge_type not in {"member_of", "collaboration", "influenced_by", "associated_genre", "plays", "made_by", "signature_instrument", "related"}:
+        return None
+    if not source_url.startswith(("https://", "http://")) or not evidence.get("context"):
+        return None
     edge_id = f"brain-{seed_id}-{target_id}-{edge_type}"
     return {
         "id": edge_id,
         "source": seed_id,
         "target": target_id,
         "type": edge_type,
-        "label": f"Wikipedia {signal} signal",
-        "strength": 0.46 if signal == "link" else 0.38,
-        "context": [str(candidate.get("reason") or f"Approved from {seed_payload.get('name')} research.")],
-        "sources": [
-            wikipedia_source(
-                seed_wiki.get("title") or str(seed_payload.get("name") or ""),
-                seed_wiki.get("url"),
-            )
-        ],
+        "label": str(evidence.get("label") or edge_type.replace("_", " ")),
+        "strength": float(evidence.get("strength") or 0.6),
+        "context": [str(evidence["context"])],
+        "sources": [{"label": "Documented relation", "url": source_url}],
     }
 
 
@@ -828,6 +854,8 @@ def build_patch(
     consumed_rows: list[dict[str, Any]] = []
 
     for row in rows:
+        initial_node_count = len(nodes)
+        initial_edge_count = len(edges)
         row_id = str(row.get("id"))
         if row_id in imported_rows:
             skipped.append({"id": row_id, "reason": "already promoted"})
@@ -850,7 +878,7 @@ def build_patch(
 
         seed_label = str(payload.get("name") or row.get("seed_name") or "").strip()
         seed_id = node_id_for_title(seed_label, node_by_id, label_index)
-        created_seed = seed_node(payload, node_by_id, label_index, blocked_terms)
+        created_seed = seed_node(payload, node_by_id, label_index, blocked_terms, occupied)
         if created_seed:
             nodes.append(created_seed)
             add_node_to_indexes(created_seed, node_by_id, label_index)
@@ -906,6 +934,10 @@ def build_patch(
                 continue
             edges.append(edge)
             existing_edge_keys.add(key)
+
+        if len(nodes) == initial_node_count and len(edges) == initial_edge_count:
+            skipped.append({"id": row_id, "reason": "no independently verified additions"})
+            continue
 
         consumed_rows.append(
             {

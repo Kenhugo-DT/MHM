@@ -114,9 +114,11 @@ GENERIC_TOPIC_TERMS = {
     "backup band",
     "band",
     "band (rock and pop)",
+    "bandleader",
     "guitarist",
     "house band",
     "musician",
+    "military band",
     "one-man band",
     "tribute band",
 }
@@ -170,6 +172,30 @@ def wikipedia_matches_kind(page: dict[str, Any], kind: str) -> bool:
         "guitarist": ("guitarist", "musician", "singer", "songwriter"),
     }.get(kind, ())
     return any(term in extract or term in categories for term in terms)
+
+
+def has_verified_candidate_identity(candidate: dict[str, Any]) -> bool:
+    page = candidate.get("wikipedia") or {}
+    kind = str(candidate.get("kind") or "")
+    if not isinstance(page, dict) or not page.get("wikidata_id"):
+        return False
+    if normalize_text(page.get("title", "")) != normalize_text(candidate.get("title", "")):
+        return False
+    if kind in {"band", "artist", "guitarist"}:
+        musicbrainz = candidate.get("musicbrainz") or {}
+        expected_type = "Group" if kind == "band" else "Person"
+        return (
+            musicbrainz.get("type") == expected_type
+            and musicbrainz.get("id") in page.get("musicbrainz_artist_ids", [])
+            and wikipedia_matches_kind(page, kind)
+        )
+    extract = str(page.get("extract") or "").lower()[:600]
+    subject_terms = {
+        "genre": ("genre", "style of music", "musical style"),
+        "guitar": ("guitar",),
+        "guitar_brand": ("guitar manufacturer", "musical instrument manufacturer"),
+    }
+    return any(term in extract for term in subject_terms.get(kind, ()))
 
 
 def load_blocked_terms(path: Path = BLOCKED_ENTITIES_PATH) -> set[str]:
@@ -279,6 +305,11 @@ def review_music_candidate(
     scope_reason = out_of_scope_reason(title, kind, source)
     if scope_reason:
         issues.append(flag("reject", "out_of_scope_candidate", scope_reason, title))
+    elif not has_verified_candidate_identity(candidate):
+        issues.append(flag(
+            "reject", "unverified_candidate_identity",
+            "Wikipedia link/category is a research lead, not a verified map entity.", title,
+        ))
 
     if normalize_text(title) == normalize_text(seed_name):
         issues.append(flag("warning", "same_as_seed", "Candidate repeats the seed entity.", title))
@@ -304,10 +335,16 @@ def review_candidate_payload(
         flags.append(
             flag("reject", "unsupported_seed_kind", f"Unsupported seed kind: {requested_kind}.", seed_name)
         )
+    elif seed_name and out_of_scope_reason(seed_name, requested_kind):
+        flags.append(flag(
+            "reject", "out_of_scope_seed", "Seed is not a concrete map entity.", seed_name,
+        ))
 
     wikipedia = payload.get("wikipedia") or {}
     wikidata = payload.get("wikidata") or {}
     musicbrainz = payload.get("musicbrainz") or {}
+    if not (wikipedia or wikidata or musicbrainz):
+        flags.append(flag("reject", "missing_seed_evidence", "No source identifies this seed.", seed_name))
     if wikipedia and requested_kind in {"band", "artist", "guitarist"}:
         if not wikipedia_matches_kind(wikipedia, requested_kind):
             flags.append(flag(

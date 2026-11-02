@@ -101,6 +101,14 @@ links. Examples include music duos/trios/groups, people categories, magazines,
 databases, platforms, educational institutions, record labels, awards and
 reference works. These may be source context, but they are not public map nodes.
 
+Treat Wikipedia categories and outbound links as research leads only. A related
+band or person needs a matching entity page and a MusicBrainz identity of the
+correct type
+before promotion; a link alone does not establish a musical relationship.
+Create an edge only from an explicit, sourced relation, never from mere
+co-occurrence on a page. Preserve a documented zone hint for new seed nodes;
+leave an unplaced seed for review instead of defaulting it to rock.
+
 Prefer suggestions that improve the map structure, not just raw node count.
 Useful candidates usually do at least one of these:
 

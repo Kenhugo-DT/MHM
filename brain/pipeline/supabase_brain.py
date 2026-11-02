@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import os
-from datetime import UTC, datetime
+from datetime import UTC, datetime, timedelta
 from pathlib import Path
 from typing import Any
 
@@ -103,18 +103,29 @@ def upsert_inbox_requests(client: Client, inbox: dict[str, Any]) -> int:
 def fetch_requests(
     client: Client,
     status: str = "queued",
-    limit: int = 100,
+    limit: int | None = 100,
 ) -> list[dict[str, Any]]:
-    query = client.table("research_requests").select("*")
-    if status != "all":
-        query = query.eq("status", status)
-    response = (
-        query.order("priority", desc=True)
-        .order("created_at", desc=False)
-        .limit(limit)
-        .execute()
-    )
-    return list(response.data or [])
+    rows: list[dict[str, Any]] = []
+    page_size = 500
+    while True:
+        query = client.table("research_requests").select("*")
+        if status != "all":
+            query = query.eq("status", status)
+        page_limit = min(page_size, limit - len(rows)) if limit is not None else page_size
+        if page_limit <= 0:
+            break
+        response = (
+            query.order("priority", desc=True)
+            .order("created_at", desc=False)
+            .order("id", desc=False)
+            .range(len(rows), len(rows) + page_limit - 1)
+            .execute()
+        )
+        batch = list(response.data or [])
+        rows.extend(batch)
+        if len(batch) < page_limit:
+            break
+    return rows
 
 
 def fetch_candidates(
@@ -130,8 +141,17 @@ def fetch_candidates(
 
 
 def load_queued_requests(client: Client, limit: int | None = None) -> list[dict[str, Any]]:
+    recover_stale_requests(client)
     rows = fetch_requests(client, status="queued", limit=limit or 100)
     return [row_to_request(row) for row in rows]
+
+
+def recover_stale_requests(client: Client, age_hours: int = 12) -> None:
+    cutoff = (datetime.now(UTC) - timedelta(hours=age_hours)).isoformat()
+    client.table("research_requests").update({
+        "status": "queued",
+        "error": "Recovered after an interrupted research run.",
+    }).eq("status", "processing").lt("updated_at", cutoff).execute()
 
 
 def mark_requests(
