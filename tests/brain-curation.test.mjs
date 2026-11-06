@@ -5,6 +5,7 @@ import test from "node:test";
 import { fileURLToPath } from "node:url";
 import { isMapConnection } from "../shared/graph-schema/edge-evidence.mjs";
 import { frontmatterBlock, parseFrontmatter } from "../brain/scripts/obsidian-utils.mjs";
+import { registryGapLinks, registryGapNodes } from "../brain/scripts/curated-registry-gaps.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const readJson = (relativePath) => JSON.parse(fs.readFileSync(path.join(root, relativePath), "utf8"));
@@ -14,6 +15,41 @@ const organization = readJson("brain/data/approved/organization-model.json");
 const approvedFacts = readJson("brain/data/approved/fact-evidence.json");
 const curatedFacts = readJson("shared/facts/curated.json");
 const approvedGraph = readJson("brain/data/approved/graph.json");
+
+test("registry gap batch is sourced, distinct and reaches the learning model", () => {
+  const batch = readJson("brain/data/registry-gaps-batch.json");
+  const newIds = new Set(registryGapNodes.map((node) => node.id));
+  const graphIds = new Set(approvedGraph.nodes.map((node) => node.id));
+  const genreIds = new Set(approvedGraph.nodes.filter((node) => node.type === "genre").map((node) => node.id));
+
+  assert.equal(registryGapNodes.length, 55);
+  assert.equal(newIds.size, 55);
+  assert.deepEqual(new Set(batch.nodeIds), newIds);
+  assert.equal(registryGapLinks.length, batch.expectedEdges);
+  assert.equal(new Set(registryGapLinks.map((edge) => edge.id)).size, registryGapLinks.length);
+  assert.ok(registryGapNodes.every((node) => graphIds.has(node.id)));
+
+  for (const node of registryGapNodes) {
+    assert.ok(node.sources.every((source) => source.url.startsWith("https://www.loc.gov/")), node.id);
+    assert.match(node.summary, /recording-year anchor/);
+    assert.ok(Number.isInteger(node.eraStart));
+    assert.ok(learning.nodes[node.id], `Missing learning node ${node.id}`);
+    assert.equal(organization.nodes[node.id].zone, node.zone);
+    assert.ok(learning.nodes[node.id].primaryGenres.length, `Missing learned genre for ${node.id}`);
+    assert.ok(learning.nodes[node.id].curatorTags.includes("recording-year anchor"),
+      `Missing learned date distinction for ${node.id}`);
+  }
+  for (const edge of registryGapLinks) {
+    assert.ok(graphIds.has(edge.source) && graphIds.has(edge.target), edge.id);
+    assert.ok(approvedGraph.edges.some((item) => item.id === edge.id), edge.id);
+    assert.ok(edge.sources.every((source) => source.url.startsWith("https://www.loc.gov/")));
+    if (edge.type === "associated_genre") assert.ok(genreIds.has(edge.target), edge.id);
+    else assert.equal(edge.type, "collaboration");
+  }
+  for (const id of ["frankie-trumbauer", "charlie-christian", "mississippi-sheiks", "celia-cruz", "paul-whiteman-orchestra", "wu-tang-clan"]) {
+    assert.ok(learning.nodes[id].curatorFeedback, `Missing curator feedback for ${id}`);
+  }
+});
 
 test("empty Obsidian frontmatter stays parseable without trailing spaces", () => {
   const block = frontmatterBlock({ id: "example", eraPeak: "", secondaryZones: [] });

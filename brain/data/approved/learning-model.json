@@ -1,14 +1,14 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-30T11:43:30.109Z",
+  "generatedAt": "2026-11-06T12:19:46.715Z",
   "source": "graph + Obsidian frontmatter + curator feedback",
   "samples": {
-    "graphNodes": 1146,
-    "graphEdges": 1502,
-    "mapConnections": 1070,
-    "obsidianNotes": 1017,
-    "feedbackNodes": 44,
-    "feedbackZones": 6,
+    "graphNodes": 1201,
+    "graphEdges": 1560,
+    "mapConnections": 1128,
+    "obsidianNotes": 1072,
+    "feedbackNodes": 50,
+    "feedbackZones": 9,
     "feedbackRules": 5,
     "feedbackCategories": 8,
     "bridgePolicies": 13,
@@ -21,17 +21,17 @@
     "geographicallyAnchoredNodes": 692,
     "geographicRelationNotes": 80,
     "pinnedNotes": 0,
-    "notesWithEra": 589,
-    "notesWithPrimaryGenres": 484,
-    "notesWithCuratorTags": 658
+    "notesWithEra": 644,
+    "notesWithPrimaryGenres": 539,
+    "notesWithCuratorTags": 713
   },
   "zones": {
     "roots-blues": {
-      "nodeCount": 89,
+      "nodeCount": 95,
       "pinnedCount": 0,
       "centroid": {
-        "x": -1403,
-        "y": -199
+        "x": -1417,
+        "y": -198
       },
       "eraMedian": 1948,
       "learnedTerms": [
@@ -41,7 +41,7 @@
         },
         {
           "term": "blues",
-          "weight": 213
+          "weight": 219
         },
         {
           "term": "electric blues",
@@ -52,8 +52,20 @@
           "weight": 66
         },
         {
+          "term": "gospel music",
+          "weight": 57
+        },
+        {
           "term": "jazz fusion",
           "weight": 38
+        },
+        {
+          "term": "documented recording",
+          "weight": 36
+        },
+        {
+          "term": "recording year anchor",
+          "weight": 36
         },
         {
           "term": "country",
@@ -72,16 +84,16 @@
           "weight": 30
         },
         {
-          "term": "gospel music",
-          "weight": 27
+          "term": "gospel",
+          "weight": 29
+        },
+        {
+          "term": "jazz",
+          "weight": 28
         },
         {
           "term": "rockabilly",
           "weight": 27
-        },
-        {
-          "term": "jazz",
-          "weight": 25
         },
         {
           "term": "roots",
@@ -102,10 +114,6 @@
         {
           "term": "rock circuit",
           "weight": 20
-        },
-        {
-          "term": "gospel",
-          "weight": 19
         },
         {
           "term": "genre transition needed",
@@ -140,11 +148,35 @@
           "weight": 14
         },
         {
+          "term": "anchor",
+          "weight": 13
+        },
+        {
+          "term": "recording",
+          "weight": 13
+        },
+        {
+          "term": "documented",
+          "weight": 12
+        },
+        {
           "term": "john mclaughlin",
           "weight": 12
         },
         {
           "term": "psychedelia prog",
+          "weight": 12
+        },
+        {
+          "term": "spirituals",
+          "weight": 12
+        },
+        {
+          "term": "string band blues",
+          "weight": 12
+        },
+        {
+          "term": "year",
           "weight": 12
         },
         {
@@ -164,7 +196,15 @@
           "weight": 8
         },
         {
+          "term": "early blues",
+          "weight": 8
+        },
+        {
           "term": "eric clapton",
+          "weight": 8
+        },
+        {
+          "term": "gospel quartet",
           "weight": 8
         },
         {
@@ -184,11 +224,19 @@
           "weight": 8
         },
         {
+          "term": "folk country vise",
+          "weight": 7
+        },
+        {
           "term": "king",
           "weight": 7
         },
         {
           "term": "lineage",
+          "weight": 7
+        },
+        {
+          "term": "pop soul disco",
           "weight": 7
         },
         {
@@ -256,6 +304,10 @@
           "weight": 6
         },
         {
+          "term": "singers",
+          "weight": 6
+        },
+        {
           "term": "soul roots",
           "weight": 6
         },
@@ -302,58 +354,6 @@
         {
           "term": "sacred music",
           "weight": 5
-        },
-        {
-          "term": "1950s",
-          "weight": 4
-        },
-        {
-          "term": "ac dc",
-          "weight": 4
-        },
-        {
-          "term": "allman",
-          "weight": 4
-        },
-        {
-          "term": "blues guitar",
-          "weight": 4
-        },
-        {
-          "term": "bridge",
-          "weight": 4
-        },
-        {
-          "term": "british",
-          "weight": 4
-        },
-        {
-          "term": "british blues",
-          "weight": 4
-        },
-        {
-          "term": "british blues rock",
-          "weight": 4
-        },
-        {
-          "term": "charles is a documented bridge gospel phrasing entered r b and soul and he also recorded country keep influence genre and repertoire links distinct",
-          "weight": 4
-        },
-        {
-          "term": "chicago",
-          "weight": 4
-        },
-        {
-          "term": "chicago blues",
-          "weight": 4
-        },
-        {
-          "term": "connect the yardbirds and cream through verified membership with blues guitar as the musical center hall of fame inductions are career context not new collaborations",
-          "weight": 4
-        },
-        {
-          "term": "country recordings",
-          "weight": 4
         }
       ]
     },
@@ -1682,25 +1682,53 @@
       ]
     },
     "folk-country-vise": {
-      "nodeCount": 40,
+      "nodeCount": 51,
       "pinnedCount": 0,
       "centroid": {
-        "x": -1066,
-        "y": 1563
+        "x": -1181,
+        "y": 1533
       },
-      "eraMedian": 1960,
+      "eraMedian": 1957,
       "learnedTerms": [
         {
           "term": "folk",
-          "weight": 81
+          "weight": 135
         },
         {
           "term": "country",
           "weight": 70
         },
         {
+          "term": "documented recording",
+          "weight": 66
+        },
+        {
+          "term": "recording year anchor",
+          "weight": 66
+        },
+        {
           "term": "norwegian vise",
           "weight": 40
+        },
+        {
+          "term": "cajun music",
+          "weight": 23
+        },
+        {
+          "term": "anchor",
+          "weight": 22
+        },
+        {
+          "term": "documented",
+          "weight": 22
+        },
+        {
+          "term": "recording",
+          "weight": 22
+        },
+        {
+          "term": "year",
+          "weight": 22
         },
         {
           "term": "singer songwriter",
@@ -1717,6 +1745,34 @@
         {
           "term": "vise",
           "weight": 12
+        },
+        {
+          "term": "brazilian roots",
+          "weight": 8
+        },
+        {
+          "term": "field recording",
+          "weight": 8
+        },
+        {
+          "term": "irish fiddle",
+          "weight": 8
+        },
+        {
+          "term": "traditional folk",
+          "weight": 8
+        },
+        {
+          "term": "cajun",
+          "weight": 7
+        },
+        {
+          "term": "country roots",
+          "weight": 7
+        },
+        {
+          "term": "roots blues",
+          "weight": 7
         },
         {
           "term": "bluegrass",
@@ -1739,23 +1795,15 @@
           "weight": 6
         },
         {
-          "term": "country roots",
-          "weight": 4
-        },
-        {
           "term": "rock circuit",
           "weight": 4
         },
         {
-          "term": "roots blues",
-          "weight": 4
-        },
-        {
-          "term": "cajun",
+          "term": "early folk traditions from different places should not collapse into one undifferentiated cluster keep documented cajun irish ukrainian and brazilian roots readable with only supported links crossing toward country and blues",
           "weight": 3
         },
         {
-          "term": "cajun music",
+          "term": "frank",
           "weight": 3
         },
         {
@@ -1779,6 +1827,18 @@
           "weight": 3
         },
         {
+          "term": "abe",
+          "weight": 2
+        },
+        {
+          "term": "abe elenkrig s yidishe orchestra",
+          "weight": 2
+        },
+        {
+          "term": "abe elenkrigs yidishe orchestra",
+          "weight": 2
+        },
+        {
           "term": "acoustic",
           "weight": 2
         },
@@ -1792,6 +1852,18 @@
         },
         {
           "term": "alf cranner",
+          "weight": 2
+        },
+        {
+          "term": "amade",
+          "weight": 2
+        },
+        {
+          "term": "amade ardoin",
+          "weight": 2
+        },
+        {
+          "term": "ardoin",
           "weight": 2
         },
         {
@@ -1811,7 +1883,35 @@
           "weight": 2
         },
         {
+          "term": "cartola",
+          "weight": 2
+        },
+        {
+          "term": "coleman",
+          "weight": 2
+        },
+        {
           "term": "cranner",
+          "weight": 2
+        },
+        {
+          "term": "dennis",
+          "weight": 2
+        },
+        {
+          "term": "dennis mcgee",
+          "weight": 2
+        },
+        {
+          "term": "elenkrig",
+          "weight": 2
+        },
+        {
+          "term": "elenkrigs",
+          "weight": 2
+        },
+        {
+          "term": "frank proffitt",
           "weight": 2
         },
         {
@@ -1824,6 +1924,22 @@
         },
         {
           "term": "halvdan sivertsen",
+          "weight": 2
+        },
+        {
+          "term": "hoopii",
+          "weight": 2
+        },
+        {
+          "term": "humeniuk",
+          "weight": 2
+        },
+        {
+          "term": "jararaca",
+          "weight": 2
+        },
+        {
+          "term": "jararaca and ratinho",
           "weight": 2
         },
         {
@@ -1847,11 +1963,31 @@
           "weight": 2
         },
         {
+          "term": "mcgee",
+          "weight": 2
+        },
+        {
+          "term": "michael",
+          "weight": 2
+        },
+        {
+          "term": "michael coleman",
+          "weight": 2
+        },
+        {
           "term": "nilsen",
           "weight": 2
         },
         {
           "term": "note",
+          "weight": 2
+        },
+        {
+          "term": "odetta",
+          "weight": 2
+        },
+        {
+          "term": "orchestra",
           "weight": 2
         },
         {
@@ -1873,142 +2009,6 @@
         {
           "term": "paco",
           "weight": 2
-        },
-        {
-          "term": "paco de lucia",
-          "weight": 2
-        },
-        {
-          "term": "shape",
-          "weight": 2
-        },
-        {
-          "term": "shape note singing",
-          "weight": 2
-        },
-        {
-          "term": "singing",
-          "weight": 2
-        },
-        {
-          "term": "sivertsen",
-          "weight": 2
-        },
-        {
-          "term": "songcraft",
-          "weight": 2
-        },
-        {
-          "term": "spanish",
-          "weight": 2
-        },
-        {
-          "term": "spanish guitar",
-          "weight": 2
-        },
-        {
-          "term": "sunde",
-          "weight": 2
-        },
-        {
-          "term": "tradition",
-          "weight": 2
-        },
-        {
-          "term": "almanac",
-          "weight": 1
-        },
-        {
-          "term": "arlo",
-          "weight": 1
-        },
-        {
-          "term": "arlo guthrie",
-          "weight": 1
-        },
-        {
-          "term": "ashley",
-          "weight": 1
-        },
-        {
-          "term": "baez",
-          "weight": 1
-        },
-        {
-          "term": "belle",
-          "weight": 1
-        },
-        {
-          "term": "billings",
-          "weight": 1
-        },
-        {
-          "term": "breaux",
-          "weight": 1
-        },
-        {
-          "term": "buffy",
-          "weight": 1
-        },
-        {
-          "term": "buffy sainte marie",
-          "weight": 1
-        },
-        {
-          "term": "byrds",
-          "weight": 1
-        },
-        {
-          "term": "chapman",
-          "weight": 1
-        },
-        {
-          "term": "chenier",
-          "weight": 1
-        },
-        {
-          "term": "choates",
-          "weight": 1
-        },
-        {
-          "term": "clarence",
-          "weight": 1
-        },
-        {
-          "term": "clarence ashley",
-          "weight": 1
-        },
-        {
-          "term": "cleoma",
-          "weight": 1
-        },
-        {
-          "term": "cleoma breaux",
-          "weight": 1
-        },
-        {
-          "term": "clifton",
-          "weight": 1
-        },
-        {
-          "term": "clifton chenier",
-          "weight": 1
-        },
-        {
-          "term": "collins",
-          "weight": 1
-        },
-        {
-          "term": "cotten",
-          "weight": 1
-        },
-        {
-          "term": "crosby",
-          "weight": 1
-        },
-        {
-          "term": "crosby stills nash and young",
-          "weight": 1
         }
       ]
     },
@@ -2344,25 +2344,49 @@
       ]
     },
     "jazz": {
-      "nodeCount": 72,
+      "nodeCount": 88,
       "pinnedCount": 0,
       "centroid": {
-        "x": -1548,
-        "y": -1277
+        "x": -1513,
+        "y": -1282
       },
-      "eraMedian": 1947,
+      "eraMedian": 1943,
       "learnedTerms": [
         {
           "term": "jazz",
-          "weight": 112
+          "weight": 208
         },
         {
           "term": "jazz lineage",
           "weight": 110
         },
         {
+          "term": "documented recording",
+          "weight": 96
+        },
+        {
+          "term": "recording year anchor",
+          "weight": 96
+        },
+        {
           "term": "jazz fusion",
           "weight": 49
+        },
+        {
+          "term": "anchor",
+          "weight": 32
+        },
+        {
+          "term": "documented",
+          "weight": 32
+        },
+        {
+          "term": "recording",
+          "weight": 32
+        },
+        {
+          "term": "year",
+          "weight": 32
         },
         {
           "term": "lineage",
@@ -2517,11 +2541,23 @@
           "weight": 5
         },
         {
+          "term": "1927 recording",
+          "weight": 4
+        },
+        {
+          "term": "1939 recording",
+          "weight": 4
+        },
+        {
           "term": "acoustic swing",
           "weight": 4
         },
         {
           "term": "birth of the cool is a specific davis led jazz phase keep it within jazz and distinct from his later modal and electric phases",
+          "weight": 4
+        },
+        {
+          "term": "blue",
           "weight": 4
         },
         {
@@ -2538,6 +2574,10 @@
         },
         {
           "term": "electric jazz fusion",
+          "weight": 4
+        },
+        {
+          "term": "electric jazz guitar",
           "weight": 4
         },
         {
@@ -2585,12 +2625,36 @@
           "weight": 4
         },
         {
+          "term": "rose room documents christian s electric guitar within the benny goodman sextet keep him near jazz and jazz guitar history instrument technique alone is not a rock collaboration source https www loc gov static programs national recording preservation board documents rose room rubin pdf",
+          "weight": 4
+        },
+        {
+          "term": "shared performance",
+          "weight": 4
+        },
+        {
           "term": "solo jazz guitar",
+          "weight": 4
+        },
+        {
+          "term": "the registry credits trumbauer bix beiderbecke and eddie lang on singin the blues keep the jazz group together through the documented recording but do not treat 1927 as any player s career start source https www loc gov static programs national recording preservation board documents registry by artist pdf",
           "weight": 4
         },
         {
           "term": "thumb picking",
           "weight": 4
+        },
+        {
+          "term": "williams",
+          "weight": 4
+        },
+        {
+          "term": "charlie",
+          "weight": 3
+        },
+        {
+          "term": "coleman",
+          "weight": 3
         },
         {
           "term": "davis",
@@ -2607,70 +2671,6 @@
         {
           "term": "jazz needs a readable center and historically supported transitions keep early jazz and jazz guitar together while allowing fusion and crossover artists to drift toward rock and prog",
           "weight": 3
-        },
-        {
-          "term": "joe",
-          "weight": 3
-        },
-        {
-          "term": "john",
-          "weight": 3
-        },
-        {
-          "term": "miles",
-          "weight": 3
-        },
-        {
-          "term": "western swing combines country dance music with jazz and blues bakersfield inherits selected elements keep the country center legible while these documented anchors lean outward",
-          "weight": 3
-        },
-        {
-          "term": "acoustic",
-          "weight": 2
-        },
-        {
-          "term": "arranged",
-          "weight": 2
-        },
-        {
-          "term": "art",
-          "weight": 2
-        },
-        {
-          "term": "based",
-          "weight": 2
-        },
-        {
-          "term": "blue",
-          "weight": 2
-        },
-        {
-          "term": "blues",
-          "weight": 2
-        },
-        {
-          "term": "brubeck",
-          "weight": 2
-        },
-        {
-          "term": "carter",
-          "weight": 2
-        },
-        {
-          "term": "charles",
-          "weight": 2
-        },
-        {
-          "term": "chord",
-          "weight": 2
-        },
-        {
-          "term": "classic",
-          "weight": 2
-        },
-        {
-          "term": "dave",
-          "weight": 2
         }
       ]
     },
@@ -3006,17 +3006,17 @@
       ]
     },
     "hip-hop-rap": {
-      "nodeCount": 35,
+      "nodeCount": 41,
       "pinnedCount": 0,
       "centroid": {
-        "x": 3536,
+        "x": 3454,
         "y": 1505
       },
-      "eraMedian": 1982,
+      "eraMedian": 1985,
       "learnedTerms": [
         {
           "term": "hip hop",
-          "weight": 149
+          "weight": 185
         },
         {
           "term": "rap",
@@ -3027,16 +3027,24 @@
           "weight": 84
         },
         {
+          "term": "hip",
+          "weight": 65
+        },
+        {
+          "term": "hop",
+          "weight": 65
+        },
+        {
           "term": "gangsta rap",
           "weight": 64
         },
         {
-          "term": "hip",
-          "weight": 53
+          "term": "documented recording",
+          "weight": 36
         },
         {
-          "term": "hop",
-          "weight": 53
+          "term": "recording year anchor",
+          "weight": 36
         },
         {
           "term": "funk",
@@ -3063,7 +3071,15 @@
           "weight": 14
         },
         {
+          "term": "anchor",
+          "weight": 12
+        },
+        {
           "term": "detroit hip hop",
+          "weight": 12
+        },
+        {
+          "term": "documented",
           "weight": 12
         },
         {
@@ -3079,7 +3095,15 @@
           "weight": 12
         },
         {
+          "term": "recording",
+          "weight": 12
+        },
+        {
           "term": "tupac connection",
+          "weight": 12
+        },
+        {
+          "term": "year",
           "weight": 12
         },
         {
@@ -3183,6 +3207,10 @@
           "weight": 4
         },
         {
+          "term": "1993 album",
+          "weight": 4
+        },
+        {
           "term": "a funk sample or stylistic debt explains musical lineage keep g funk in hip hop do not treat every funk influence as a direct artist to artist collaboration",
           "weight": 4
         },
@@ -3200,6 +3228,10 @@
         },
         {
           "term": "east",
+          "weight": 4
+        },
+        {
+          "term": "enter the wu tang 36 chambers is a 1993 registry anchor not the group s formation date keep the act in hip hop geographic or stylistic similarity alone does not prove collaboration source https www loc gov programs national recording preservation board recording registry registry by induction years 2022",
           "weight": 4
         },
         {
@@ -3224,6 +3256,10 @@
         },
         {
           "term": "metal and hip hop bridge",
+          "weight": 4
+        },
+        {
+          "term": "new york hip hop",
           "weight": 4
         },
         {
@@ -3255,6 +3291,10 @@
           "weight": 3
         },
         {
+          "term": "a tribe called quest",
+          "weight": 2
+        },
+        {
           "term": "alternative",
           "weight": 2
         },
@@ -3264,6 +3304,10 @@
         },
         {
           "term": "bandleader",
+          "weight": 2
+        },
+        {
+          "term": "big",
           "weight": 2
         },
         {
@@ -3289,55 +3333,11 @@
         {
           "term": "california",
           "weight": 2
-        },
-        {
-          "term": "chicago",
-          "weight": 2
-        },
-        {
-          "term": "clinton",
-          "weight": 2
-        },
-        {
-          "term": "count",
-          "weight": 2
-        },
-        {
-          "term": "cube",
-          "weight": 2
-        },
-        {
-          "term": "d12",
-          "weight": 2
-        },
-        {
-          "term": "digital",
-          "weight": 2
-        },
-        {
-          "term": "digital underground",
-          "weight": 2
-        },
-        {
-          "term": "dr dre",
-          "weight": 2
-        },
-        {
-          "term": "drake",
-          "weight": 2
-        },
-        {
-          "term": "eazy",
-          "weight": 2
-        },
-        {
-          "term": "eazy e",
-          "weight": 2
         }
       ]
     },
     "classical-history": {
-      "nodeCount": 156,
+      "nodeCount": 157,
       "pinnedCount": 0,
       "centroid": {
         "x": -4235,
@@ -3347,11 +3347,11 @@
       "learnedTerms": [
         {
           "term": "classical",
-          "weight": 86
+          "weight": 88
         },
         {
           "term": "classical music",
-          "weight": 79
+          "weight": 85
         },
         {
           "term": "opera",
@@ -3374,8 +3374,20 @@
           "weight": 10
         },
         {
+          "term": "documented recording",
+          "weight": 6
+        },
+        {
           "term": "johann",
           "weight": 6
+        },
+        {
+          "term": "recording year anchor",
+          "weight": 6
+        },
+        {
+          "term": "1924 recording",
+          "weight": 4
         },
         {
           "term": "20th",
@@ -3402,6 +3414,10 @@
           "weight": 4
         },
         {
+          "term": "cross tradition performance",
+          "weight": 4
+        },
+        {
           "term": "francesco",
           "weight": 4
         },
@@ -3419,6 +3435,10 @@
         },
         {
           "term": "period",
+          "weight": 4
+        },
+        {
+          "term": "the classical placement concerns the registry s rhapsody in blue performance not a claim that the orchestra s whole catalogue was classical preserve this distinction and do not infer direct ties to unrelated jazz performers source https www loc gov static programs national recording preservation board documents registry by genre pdf",
           "weight": 4
         },
         {
@@ -3474,6 +3494,10 @@
           "weight": 3
         },
         {
+          "term": "anchor",
+          "weight": 2
+        },
+        {
           "term": "anton",
           "weight": 2
         },
@@ -3495,6 +3519,10 @@
         },
         {
           "term": "carl",
+          "weight": 2
+        },
+        {
+          "term": "documented",
           "weight": 2
         },
         {
@@ -3530,7 +3558,23 @@
           "weight": 2
         },
         {
+          "term": "orchestra",
+          "weight": 2
+        },
+        {
+          "term": "paul",
+          "weight": 2
+        },
+        {
+          "term": "paul whiteman orchestra",
+          "weight": 2
+        },
+        {
           "term": "price",
+          "weight": 2
+        },
+        {
+          "term": "recording",
           "weight": 2
         },
         {
@@ -3546,7 +3590,15 @@
           "weight": 2
         },
         {
+          "term": "whiteman",
+          "weight": 2
+        },
+        {
           "term": "wilhelm",
+          "weight": 2
+        },
+        {
+          "term": "year",
           "weight": 2
         },
         {
@@ -3612,70 +3664,30 @@
         {
           "term": "alexandre levy",
           "weight": 1
-        },
-        {
-          "term": "alyabyev",
-          "weight": 1
-        },
-        {
-          "term": "amadeus",
-          "weight": 1
-        },
-        {
-          "term": "amanda",
-          "weight": 1
-        },
-        {
-          "term": "amanda maier",
-          "weight": 1
-        },
-        {
-          "term": "anatoly",
-          "weight": 1
-        },
-        {
-          "term": "anatoly lyadov",
-          "weight": 1
-        },
-        {
-          "term": "andre",
-          "weight": 1
-        },
-        {
-          "term": "andre campra",
-          "weight": 1
-        },
-        {
-          "term": "antoine",
-          "weight": 1
-        },
-        {
-          "term": "antoine de lhoyer",
-          "weight": 1
-        },
-        {
-          "term": "anton arensky",
-          "weight": 1
-        },
-        {
-          "term": "anton reicha",
-          "weight": 1
-        },
-        {
-          "term": "antonia",
-          "weight": 1
         }
       ]
     },
     "pop-soul-disco": {
-      "nodeCount": 165,
+      "nodeCount": 180,
       "pinnedCount": 0,
       "centroid": {
-        "x": -832,
-        "y": 2574
+        "x": -838,
+        "y": 2592
       },
-      "eraMedian": 1967,
+      "eraMedian": 1966,
       "learnedTerms": [
+        {
+          "term": "documented recording",
+          "weight": 90
+        },
+        {
+          "term": "recording year anchor",
+          "weight": 90
+        },
+        {
+          "term": "latin music",
+          "weight": 78
+        },
         {
           "term": "soul music lineage",
           "weight": 60
@@ -3685,8 +3697,24 @@
           "weight": 59
         },
         {
+          "term": "american popular song",
+          "weight": 55
+        },
+        {
           "term": "pop music",
           "weight": 46
+        },
+        {
+          "term": "american",
+          "weight": 35
+        },
+        {
+          "term": "popular",
+          "weight": 35
+        },
+        {
+          "term": "song",
+          "weight": 35
         },
         {
           "term": "soul",
@@ -3697,20 +3725,24 @@
           "weight": 31
         },
         {
-          "term": "american",
-          "weight": 25
+          "term": "anchor",
+          "weight": 30
         },
         {
-          "term": "american popular song",
-          "weight": 25
+          "term": "documented",
+          "weight": 30
         },
         {
-          "term": "popular",
-          "weight": 25
+          "term": "recording",
+          "weight": 30
         },
         {
-          "term": "song",
-          "weight": 25
+          "term": "year",
+          "weight": 30
+        },
+        {
+          "term": "latin",
+          "weight": 26
         },
         {
           "term": "funk lineage",
@@ -3741,15 +3773,27 @@
           "weight": 8
         },
         {
+          "term": "mambo",
+          "weight": 8
+        },
+        {
+          "term": "pre 1955 popular song",
+          "weight": 8
+        },
+        {
+          "term": "salsa",
+          "weight": 8
+        },
+        {
+          "term": "vocal groups",
+          "weight": 8
+        },
+        {
+          "term": "roots blues",
+          "weight": 7
+        },
+        {
           "term": "gospel voice",
-          "weight": 6
-        },
-        {
-          "term": "latin",
-          "weight": 6
-        },
-        {
-          "term": "latin music",
           "weight": 6
         },
         {
@@ -3781,6 +3825,10 @@
           "weight": 5
         },
         {
+          "term": "jazz",
+          "weight": 5
+        },
+        {
           "term": "rhythm innovation",
           "weight": 5
         },
@@ -3801,7 +3849,19 @@
           "weight": 5
         },
         {
+          "term": "1974 recording",
+          "weight": 4
+        },
+        {
+          "term": "celia johnny documents cruz and johnny pacheco together the current broad zone is a layout address not a claim that salsa is pop or disco preserve a distinct latin cluster within it source https www loc gov static programs national recording preservation board documents registry by artist pdf",
+          "weight": 4
+        },
+        {
           "term": "chanson",
+          "weight": 4
+        },
+        {
+          "term": "documented collaboration",
           "weight": 4
         },
         {
@@ -3817,6 +3877,10 @@
           "weight": 4
         },
         {
+          "term": "johnny",
+          "weight": 4
+        },
+        {
           "term": "rhythm",
           "weight": 4
         },
@@ -3825,8 +3889,12 @@
           "weight": 4
         },
         {
-          "term": "roots blues",
+          "term": "sisters",
           "weight": 4
+        },
+        {
+          "term": "all",
+          "weight": 3
         },
         {
           "term": "blues",
@@ -3834,6 +3902,10 @@
         },
         {
           "term": "classical",
+          "weight": 3
+        },
+        {
+          "term": "fania",
           "weight": 3
         },
         {
@@ -3853,6 +3925,10 @@
           "weight": 3
         },
         {
+          "term": "his",
+          "weight": 3
+        },
+        {
           "term": "john",
           "weight": 3
         },
@@ -3861,11 +3937,19 @@
           "weight": 3
         },
         {
+          "term": "orchestra",
+          "weight": 3
+        },
+        {
           "term": "paul",
           "weight": 3
         },
         {
           "term": "ragtime",
+          "weight": 3
+        },
+        {
+          "term": "stars",
           "weight": 3
         },
         {
@@ -3881,6 +3965,10 @@
           "weight": 3
         },
         {
+          "term": "this broad legacy zone also contains latin and early popular music distinct latin clusters need their own breathing room adjacency is not a claim that these traditions are pop or disco",
+          "weight": 3
+        },
+        {
           "term": "world",
           "weight": 3
         },
@@ -3889,7 +3977,15 @@
           "weight": 3
         },
         {
+          "term": "andrews",
+          "weight": 2
+        },
+        {
           "term": "aretha",
+          "weight": 2
+        },
+        {
+          "term": "azpiazu",
           "weight": 2
         },
         {
@@ -3897,103 +3993,7 @@
           "weight": 2
         },
         {
-          "term": "brothers",
-          "weight": 2
-        },
-        {
-          "term": "cars",
-          "weight": 2
-        },
-        {
-          "term": "chic",
-          "weight": 2
-        },
-        {
-          "term": "crossover",
-          "weight": 2
-        },
-        {
-          "term": "dave",
-          "weight": 2
-        },
-        {
-          "term": "david",
-          "weight": 2
-        },
-        {
-          "term": "four",
-          "weight": 2
-        },
-        {
-          "term": "franklin",
-          "weight": 2
-        },
-        {
-          "term": "george",
-          "weight": 2
-        },
-        {
-          "term": "gloria",
-          "weight": 2
-        },
-        {
-          "term": "harry",
-          "weight": 2
-        },
-        {
-          "term": "indian",
-          "weight": 2
-        },
-        {
-          "term": "indian classical music",
-          "weight": 2
-        },
-        {
-          "term": "james",
-          "weight": 2
-        },
-        {
-          "term": "jazz",
-          "weight": 2
-        },
-        {
-          "term": "jimmy",
-          "weight": 2
-        },
-        {
-          "term": "johnny",
-          "weight": 2
-        },
-        {
-          "term": "mcvie",
-          "weight": 2
-        },
-        {
-          "term": "robinson",
-          "weight": 2
-        },
-        {
-          "term": "sam",
-          "weight": 2
-        },
-        {
-          "term": "stevie",
-          "weight": 2
-        },
-        {
-          "term": "tony",
-          "weight": 2
-        },
-        {
-          "term": "traditional",
-          "weight": 2
-        },
-        {
-          "term": "traditional pop",
-          "weight": 2
-        },
-        {
-          "term": "voice",
+          "term": "boswell",
           "weight": 2
         }
       ]
@@ -4102,7 +4102,7 @@
         "electric blues"
       ],
       "approvedFactCount": 1,
-      "connectionCount": 30,
+      "connectionCount": 31,
       "linkedGenres": [],
       "bridgeScore": 0.66,
       "hubScore": 1,
@@ -4348,7 +4348,7 @@
         "country",
         "folk"
       ],
-      "connectionCount": 41,
+      "connectionCount": 50,
       "linkedGenres": [],
       "bridgeScore": 0.88,
       "hubScore": 1,
@@ -6587,7 +6587,7 @@
         "jazz roots"
       ],
       "approvedFactCount": 1,
-      "connectionCount": 69,
+      "connectionCount": 85,
       "linkedGenres": [],
       "bridgeScore": 1,
       "hubScore": 1,
@@ -19906,7 +19906,7 @@
       "eraPeak": 1600,
       "primaryGenres": [],
       "curatorTags": [],
-      "connectionCount": 84,
+      "connectionCount": 85,
       "linkedGenres": [],
       "bridgeScore": 0.44,
       "hubScore": 1,
@@ -20512,7 +20512,7 @@
         "soul roots"
       ],
       "curatorFeedback": "Keep gospel a distinct sacred tradition. Its documented influence on R&B and soul is a historical bridge, not evidence that the genres are interchangeable.",
-      "connectionCount": 20,
+      "connectionCount": 25,
       "linkedGenres": [],
       "bridgeScore": 0.64,
       "hubScore": 1,
@@ -23742,7 +23742,7 @@
       "eraPeak": 1847,
       "primaryGenres": [],
       "curatorTags": [],
-      "connectionCount": 25,
+      "connectionCount": 30,
       "linkedGenres": [],
       "bridgeScore": 0.22,
       "hubScore": 1,
@@ -24919,10 +24919,10 @@
       "eraPeak": 1928,
       "primaryGenres": [],
       "curatorTags": [],
-      "connectionCount": 3,
+      "connectionCount": 5,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0.25,
+      "hubScore": 0.417,
       "layoutHints": {
         "pinned": false
       }
@@ -24934,10 +24934,10 @@
       "eraPeak": 1950,
       "primaryGenres": [],
       "curatorTags": [],
-      "connectionCount": 5,
+      "connectionCount": 15,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0.417,
+      "hubScore": 1,
       "layoutHints": {
         "pinned": false
       }
@@ -24979,10 +24979,10 @@
       "eraPeak": 1979,
       "primaryGenres": [],
       "curatorTags": [],
-      "connectionCount": 6,
+      "connectionCount": 12,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0.5,
+      "hubScore": 1,
       "layoutHints": {
         "pinned": false
       }
@@ -33096,10 +33096,1239 @@
       "layoutHints": {
         "pinned": false
       }
+    },
+    "king-oliver": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1923,
+      "eraPeak": 1923,
+      "primaryGenres": [
+        "Jazz"
+      ],
+      "curatorTags": [
+        "documented recording",
+        "recording-year anchor"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "jazz"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "frankie-trumbauer": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1927,
+      "eraPeak": 1927,
+      "primaryGenres": [
+        "jazz"
+      ],
+      "curatorTags": [
+        "1927 recording",
+        "shared performance",
+        "documented recording",
+        "recording-year anchor"
+      ],
+      "curatorFeedback": "The registry credits Trumbauer, Bix Beiderbecke and Eddie Lang on Singin' the Blues. Keep the jazz group together through the documented recording, but do not treat 1927 as any player's career start. Source: https://www.loc.gov/static/programs/national-recording-preservation-board/documents/registry-by-artist.pdf.",
+      "connectionCount": 2,
+      "linkedGenres": [
+        "jazz"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "bix-beiderbecke": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1927,
+      "eraPeak": 1927,
+      "primaryGenres": [
+        "Jazz"
+      ],
+      "curatorTags": [
+        "documented recording",
+        "recording-year anchor"
+      ],
+      "connectionCount": 3,
+      "linkedGenres": [
+        "jazz"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.25,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "mary-lou-williams": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1930,
+      "eraPeak": 1930,
+      "primaryGenres": [
+        "Jazz"
+      ],
+      "curatorTags": [
+        "documented recording",
+        "recording-year anchor"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "jazz"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "coleman-hawkins": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1939,
+      "eraPeak": 1939,
+      "primaryGenres": [
+        "Jazz"
+      ],
+      "curatorTags": [
+        "documented recording",
+        "recording-year anchor"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "jazz"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "cab-calloway": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1931,
+      "eraPeak": 1931,
+      "primaryGenres": [
+        "Jazz"
+      ],
+      "curatorTags": [
+        "documented recording",
+        "recording-year anchor"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "jazz"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "kid-ory": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1922,
+      "eraPeak": 1922,
+      "primaryGenres": [
+        "Jazz"
+      ],
+      "curatorTags": [
+        "documented recording",
+        "recording-year anchor"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "jazz"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "original-dixieland-jazz-band": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1918,
+      "eraPeak": 1918,
+      "primaryGenres": [
+        "Jazz"
+      ],
+      "curatorTags": [
+        "documented recording",
+        "recording-year anchor"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "jazz"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "clarence-williams-blue-five": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1923,
+      "eraPeak": 1923,
+      "primaryGenres": [
+        "Jazz"
+      ],
+      "curatorTags": [
+        "documented recording",
+        "recording-year anchor"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "jazz"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "illinois-jacquet": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1944,
+      "eraPeak": 1944,
+      "primaryGenres": [
+        "Jazz"
+      ],
+      "curatorTags": [
+        "documented recording",
+        "recording-year anchor"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "jazz"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "buddy-rich": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1944,
+      "eraPeak": 1944,
+      "primaryGenres": [
+        "Jazz"
+      ],
+      "curatorTags": [
+        "documented recording",
+        "recording-year anchor"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "jazz"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "bud-powell": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1949,
+      "eraPeak": 1949,
+      "primaryGenres": [
+        "Jazz"
+      ],
+      "curatorTags": [
+        "documented recording",
+        "recording-year anchor"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "jazz"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "eddie-lang": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1927,
+      "eraPeak": 1927,
+      "primaryGenres": [
+        "Jazz"
+      ],
+      "curatorTags": [
+        "documented recording",
+        "recording-year anchor"
+      ],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "jazz"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "charlie-christian": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1939,
+      "eraPeak": 1939,
+      "primaryGenres": [
+        "jazz"
+      ],
+      "curatorTags": [
+        "electric jazz guitar",
+        "1939 recording",
+        "documented recording",
+        "recording-year anchor"
+      ],
+      "curatorFeedback": "Rose Room documents Christian's electric guitar within the Benny Goodman Sextet. Keep him near jazz and jazz guitar history; instrument technique alone is not a rock collaboration. Source: https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Rose-Room_Rubin.pdf.",
+      "connectionCount": 1,
+      "linkedGenres": [
+        "jazz"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "sweet-emma-barrett": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1964,
+      "eraPeak": 1964,
+      "primaryGenres": [
+        "Jazz"
+      ],
+      "curatorTags": [
+        "documented recording",
+        "recording-year anchor"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "jazz"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "mississippi-sheiks": {
+      "zone": "roots-blues",
+      "secondaryZones": [],
+      "eraStart": 1930,
+      "eraPeak": 1930,
+      "primaryGenres": [
+        "blues"
+      ],
+      "curatorTags": [
+        "1930 recording",
+        "string-band blues",
+        "documented recording",
+        "recording-year anchor"
+      ],
+      "curatorFeedback": "Sitting on Top of the World documents the group's guitar-and-violin blues. Keep the blues center and allow proximity to acoustic roots, but do not infer a direct link to every folk artist. Source: https://www.loc.gov/static/programs/national-recording-preservation-board/documents/SittingOnTopOfTheWorld.pdf.",
+      "connectionCount": 1,
+      "linkedGenres": [
+        "blues"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "machito": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "eraStart": 1949,
+      "eraPeak": 1949,
+      "primaryGenres": [
+        "Jazz"
+      ],
+      "curatorTags": [
+        "documented recording",
+        "recording-year anchor"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "jazz"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "michael-coleman": {
+      "zone": "folk-country-vise",
+      "secondaryZones": [],
+      "eraStart": 1922,
+      "eraPeak": 1922,
+      "primaryGenres": [
+        "Folk"
+      ],
+      "curatorTags": [
+        "documented recording",
+        "recording-year anchor"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "folk"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "sol-hoopii": {
+      "zone": "folk-country-vise",
+      "secondaryZones": [],
+      "eraStart": 1938,
+      "eraPeak": 1938,
+      "primaryGenres": [
+        "Folk"
+      ],
+      "curatorTags": [
+        "documented recording",
+        "recording-year anchor"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "folk"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "abe-elenkrigs-yidishe-orchestra": {
+      "zone": "folk-country-vise",
+      "secondaryZones": [],
+      "eraStart": 1913,
+      "eraPeak": 1913,
+      "primaryGenres": [
+        "Folk"
+      ],
+      "curatorTags": [
+        "documented recording",
+        "recording-year anchor"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "folk"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "pawlo-humeniuk": {
+      "zone": "folk-country-vise",
+      "secondaryZones": [],
+      "eraStart": 1926,
+      "eraPeak": 1926,
+      "primaryGenres": [
+        "Folk"
+      ],
+      "curatorTags": [
+        "documented recording",
+        "recording-year anchor"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "folk"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "frank-proffitt": {
+      "zone": "folk-country-vise",
+      "secondaryZones": [],
+      "eraStart": 1940,
+      "eraPeak": 1940,
+      "primaryGenres": [
+        "Folk"
+      ],
+      "curatorTags": [
+        "documented recording",
+        "recording-year anchor"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "folk"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "jararaca-and-ratinho": {
+      "zone": "folk-country-vise",
+      "secondaryZones": [],
+      "eraStart": 1942,
+      "eraPeak": 1942,
+      "primaryGenres": [
+        "Folk"
+      ],
+      "curatorTags": [
+        "documented recording",
+        "recording-year anchor"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "folk"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "amade-ardoin": {
+      "zone": "folk-country-vise",
+      "secondaryZones": [],
+      "eraStart": 1929,
+      "eraPeak": 1929,
+      "primaryGenres": [
+        "Cajun music"
+      ],
+      "curatorTags": [
+        "documented recording",
+        "recording-year anchor"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "cajun-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "dennis-mcgee": {
+      "zone": "folk-country-vise",
+      "secondaryZones": [],
+      "eraStart": 1929,
+      "eraPeak": 1929,
+      "primaryGenres": [
+        "Cajun music"
+      ],
+      "curatorTags": [
+        "documented recording",
+        "recording-year anchor"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "cajun-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "pixinguinha": {
+      "zone": "folk-country-vise",
+      "secondaryZones": [],
+      "eraStart": 1942,
+      "eraPeak": 1942,
+      "primaryGenres": [
+        "Folk"
+      ],
+      "curatorTags": [
+        "documented recording",
+        "recording-year anchor"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "folk"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "cartola": {
+      "zone": "folk-country-vise",
+      "secondaryZones": [],
+      "eraStart": 1942,
+      "eraPeak": 1942,
+      "primaryGenres": [
+        "Folk"
+      ],
+      "curatorTags": [
+        "documented recording",
+        "recording-year anchor"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "folk"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "odetta": {
+      "zone": "folk-country-vise",
+      "secondaryZones": [],
+      "eraStart": 1957,
+      "eraPeak": 1957,
+      "primaryGenres": [
+        "Folk"
+      ],
+      "curatorTags": [
+        "documented recording",
+        "recording-year anchor"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "folk"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "don-azpiazu-havana-casino-orchestra": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1930,
+      "eraPeak": 1930,
+      "primaryGenres": [
+        "Latin music"
+      ],
+      "curatorTags": [
+        "documented recording",
+        "recording-year anchor"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "latin-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "canario-y-su-grupo": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1930,
+      "eraPeak": 1930,
+      "primaryGenres": [
+        "Latin music"
+      ],
+      "curatorTags": [
+        "documented recording",
+        "recording-year anchor"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "latin-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "rita-montaner": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1927,
+      "eraPeak": 1927,
+      "primaryGenres": [
+        "Latin music"
+      ],
+      "curatorTags": [
+        "documented recording",
+        "recording-year anchor"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "latin-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "lydia-mendoza": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1934,
+      "eraPeak": 1934,
+      "primaryGenres": [
+        "Latin music"
+      ],
+      "curatorTags": [
+        "documented recording",
+        "recording-year anchor"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "latin-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "carmen-miranda": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1939,
+      "eraPeak": 1939,
+      "primaryGenres": [
+        "Latin music"
+      ],
+      "curatorTags": [
+        "documented recording",
+        "recording-year anchor"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "latin-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "cachao-y-su-ritmo-caliente": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1957,
+      "eraPeak": 1957,
+      "primaryGenres": [
+        "Latin music"
+      ],
+      "curatorTags": [
+        "documented recording",
+        "recording-year anchor"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "latin-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "celia-cruz": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1974,
+      "eraPeak": 1974,
+      "primaryGenres": [
+        "latin music"
+      ],
+      "curatorTags": [
+        "1974 recording",
+        "Latin music",
+        "documented collaboration",
+        "documented recording",
+        "recording-year anchor"
+      ],
+      "curatorFeedback": "Celia & Johnny documents Cruz and Johnny Pacheco together. The current broad zone is a layout address, not a claim that salsa is pop or disco; preserve a distinct Latin cluster within it. Source: https://www.loc.gov/static/programs/national-recording-preservation-board/documents/registry-by-artist.pdf.",
+      "connectionCount": 2,
+      "linkedGenres": [
+        "latin-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "johnny-pacheco": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1974,
+      "eraPeak": 1974,
+      "primaryGenres": [
+        "Latin music"
+      ],
+      "curatorTags": [
+        "documented recording",
+        "recording-year anchor"
+      ],
+      "connectionCount": 2,
+      "linkedGenres": [
+        "latin-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.167,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "tito-puente": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1958,
+      "eraPeak": 1958,
+      "primaryGenres": [
+        "Latin music"
+      ],
+      "curatorTags": [
+        "documented recording",
+        "recording-year anchor"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "latin-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "fania-all-stars": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1975,
+      "eraPeak": 1975,
+      "primaryGenres": [
+        "Latin music"
+      ],
+      "curatorTags": [
+        "documented recording",
+        "recording-year anchor"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "latin-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "chuck-wagon-gang": {
+      "zone": "roots-blues",
+      "secondaryZones": [],
+      "eraStart": 1948,
+      "eraPeak": 1948,
+      "primaryGenres": [
+        "Gospel music"
+      ],
+      "curatorTags": [
+        "documented recording",
+        "recording-year anchor"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "gospel-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "golden-gate-quartet": {
+      "zone": "roots-blues",
+      "secondaryZones": [],
+      "eraStart": 1938,
+      "eraPeak": 1938,
+      "primaryGenres": [
+        "Gospel music"
+      ],
+      "curatorTags": [
+        "documented recording",
+        "recording-year anchor"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "gospel-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "hampton-quartette": {
+      "zone": "roots-blues",
+      "secondaryZones": [],
+      "eraStart": 1917,
+      "eraPeak": 1917,
+      "primaryGenres": [
+        "Gospel music"
+      ],
+      "curatorTags": [
+        "documented recording",
+        "recording-year anchor"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "gospel-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "swan-silvertones": {
+      "zone": "roots-blues",
+      "secondaryZones": [],
+      "eraStart": 1959,
+      "eraPeak": 1959,
+      "primaryGenres": [
+        "Gospel music"
+      ],
+      "curatorTags": [
+        "documented recording",
+        "recording-year anchor"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "gospel-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "edwin-hawkins-singers": {
+      "zone": "roots-blues",
+      "secondaryZones": [],
+      "eraStart": 1969,
+      "eraPeak": 1969,
+      "primaryGenres": [
+        "Gospel music"
+      ],
+      "curatorTags": [
+        "documented recording",
+        "recording-year anchor"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "gospel-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "the-boswell-sisters": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1931,
+      "eraPeak": 1931,
+      "primaryGenres": [
+        "American popular song"
+      ],
+      "curatorTags": [
+        "documented recording",
+        "recording-year anchor"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "american-popular-song"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "the-ink-spots": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1939,
+      "eraPeak": 1939,
+      "primaryGenres": [
+        "American popular song"
+      ],
+      "curatorTags": [
+        "documented recording",
+        "recording-year anchor"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "american-popular-song"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "the-andrews-sisters": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1938,
+      "eraPeak": 1938,
+      "primaryGenres": [
+        "American popular song"
+      ],
+      "curatorTags": [
+        "documented recording",
+        "recording-year anchor"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "american-popular-song"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "ruth-etting": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1930,
+      "eraPeak": 1930,
+      "primaryGenres": [
+        "American popular song"
+      ],
+      "curatorTags": [
+        "documented recording",
+        "recording-year anchor"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "american-popular-song"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "ethel-waters": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "eraStart": 1933,
+      "eraPeak": 1933,
+      "primaryGenres": [
+        "American popular song"
+      ],
+      "curatorTags": [
+        "documented recording",
+        "recording-year anchor"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "american-popular-song"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "paul-whiteman-orchestra": {
+      "zone": "classical-history",
+      "secondaryZones": [],
+      "eraStart": 1924,
+      "eraPeak": 1924,
+      "primaryGenres": [
+        "classical music"
+      ],
+      "curatorTags": [
+        "1924 recording",
+        "cross-tradition performance",
+        "documented recording",
+        "recording-year anchor"
+      ],
+      "curatorFeedback": "The classical placement concerns the registry's Rhapsody in Blue performance, not a claim that the orchestra's whole catalogue was classical. Preserve this distinction and do not infer direct ties to unrelated jazz performers. Source: https://www.loc.gov/static/programs/national-recording-preservation-board/documents/registry-by-genre.pdf.",
+      "connectionCount": 1,
+      "linkedGenres": [
+        "classical-music"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "jay-z": {
+      "zone": "hip-hop-rap",
+      "secondaryZones": [],
+      "eraStart": 2001,
+      "eraPeak": 2001,
+      "primaryGenres": [
+        "Hip-hop"
+      ],
+      "curatorTags": [
+        "documented recording",
+        "recording-year anchor"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "hip-hop"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "wu-tang-clan": {
+      "zone": "hip-hop-rap",
+      "secondaryZones": [],
+      "eraStart": 1993,
+      "eraPeak": 1993,
+      "primaryGenres": [
+        "hip-hop"
+      ],
+      "curatorTags": [
+        "1993 album",
+        "New York hip-hop",
+        "documented recording",
+        "recording-year anchor"
+      ],
+      "curatorFeedback": "Enter the Wu-Tang (36 Chambers) is a 1993 registry anchor, not the group's formation date. Keep the act in hip-hop; geographic or stylistic similarity alone does not prove collaboration. Source: https://www.loc.gov/programs/national-recording-preservation-board/recording-registry/registry-by-induction-years/2022/.",
+      "connectionCount": 1,
+      "linkedGenres": [
+        "hip-hop"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "nas": {
+      "zone": "hip-hop-rap",
+      "secondaryZones": [],
+      "eraStart": 1994,
+      "eraPeak": 1994,
+      "primaryGenres": [
+        "Hip-hop"
+      ],
+      "curatorTags": [
+        "documented recording",
+        "recording-year anchor"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "hip-hop"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "a-tribe-called-quest": {
+      "zone": "hip-hop-rap",
+      "secondaryZones": [],
+      "eraStart": 1991,
+      "eraPeak": 1991,
+      "primaryGenres": [
+        "Hip-hop"
+      ],
+      "curatorTags": [
+        "documented recording",
+        "recording-year anchor"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "hip-hop"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "lauryn-hill": {
+      "zone": "hip-hop-rap",
+      "secondaryZones": [],
+      "eraStart": 1998,
+      "eraPeak": 1998,
+      "primaryGenres": [
+        "Hip-hop"
+      ],
+      "curatorTags": [
+        "documented recording",
+        "recording-year anchor"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "hip-hop"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "the-notorious-big": {
+      "zone": "hip-hop-rap",
+      "secondaryZones": [],
+      "eraStart": 1994,
+      "eraPeak": 1994,
+      "primaryGenres": [
+        "Hip-hop"
+      ],
+      "curatorTags": [
+        "documented recording",
+        "recording-year anchor"
+      ],
+      "connectionCount": 1,
+      "linkedGenres": [
+        "hip-hop"
+      ],
+      "bridgeScore": 0.08,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
     }
   },
   "curatorFeedback": {
-    "updatedAt": "2026-09-30T11:27:57.000Z",
+    "updatedAt": "2026-11-06T00:00:00.000Z",
     "rules": [
       {
         "id": "zones-are-guides-not-cages",
@@ -33575,12 +34804,15 @@
       "bob-wills",
       "body-count",
       "buck-owens",
+      "celia-cruz",
+      "charlie-christian",
       "cool-jazz",
       "courtney-cox",
       "cream",
       "django-reinhardt",
       "eric-clapton",
       "fender-esquire",
+      "frankie-trumbauer",
       "g-funk",
       "gospel-music",
       "jazz-fusion",
@@ -33593,8 +34825,10 @@
       "led-zeppelin",
       "merle-haggard",
       "misfits",
+      "mississippi-sheiks",
       "modal-jazz",
       "outlaw-country",
+      "paul-whiteman-orchestra",
       "public-enemy",
       "rage-against-the-machine",
       "ramones",
@@ -33610,7 +34844,8 @@
       "ufo",
       "waylon-jennings",
       "wes-montgomery",
-      "western-swing"
+      "western-swing",
+      "wu-tang-clan"
     ]
   },
   "approvedFactEvidence": {

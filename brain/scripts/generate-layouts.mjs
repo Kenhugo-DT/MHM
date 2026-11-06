@@ -7,6 +7,7 @@ import { ORGANIZED_MAP_ZONES } from "./organize-graph-layout.mjs";
 import { buildTimelineLayout } from "./timeline-layout.mjs";
 import { preserveIncrementalLayouts } from "./incremental-layout.mjs";
 import { repairIncrementalLayouts } from "./adaptive-incremental-layout.mjs";
+import { polishFreshLabels } from "./polish-fresh-labels.mjs";
 import { appendLayoutExperience, EMPTY_LAYOUT_EXPERIENCE } from "./layout-experience.mjs";
 import { validateLayoutConstraints } from "../../shared/layout-playground/constraints.mjs";
 
@@ -554,11 +555,15 @@ const incrementalRepair = preserveExistingLayout
     zoneGeometry, layoutFeedback.reviews, pinnedIds,
     { experience: layoutExperience, practice: layoutPractice, constraints: layoutConstraints, captureTrials: true })
   : undefined;
+const labelPolish = preserveExistingLayout
+  ? polishFreshLabels(layouts, previousLayouts, graph)
+  : undefined;
 const updatedExperience = incrementalRepair?.freshNodes
   ? appendLayoutExperience(layoutExperience, graph, previousLayouts, incrementalRepair)
   : layoutExperience;
 const publicRepair = incrementalRepair && {
   ...incrementalRepair,
+  labelPolish,
   trials: incrementalRepair.trials.map(({ candidates, focusBefore, ...trial }) => trial),
 };
 

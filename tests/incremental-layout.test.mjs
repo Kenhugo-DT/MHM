@@ -2,6 +2,28 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { preserveIncrementalLayouts } from "../brain/scripts/incremental-layout.mjs";
 import { repairIncrementalLayouts } from "../brain/scripts/adaptive-incremental-layout.mjs";
+import { polishFreshLabels } from "../brain/scripts/polish-fresh-labels.mjs";
+import { evaluateNodeLegibility } from "../shared/layout-playground/experiment.mjs";
+
+test("fresh-label polish clears new collisions without moving established nodes", () => {
+  const graph = { nodes: [
+    { id: "old", label: "Established musician" },
+    { id: "new-a", label: "New musician A" },
+    { id: "new-b", label: "New musician B" },
+  ] };
+  const previous = { layouts: { organized: { nodes: { old: { x: 0, y: 0 } } } } };
+  const layouts = { organized: { nodes: {
+    old: { x: 0, y: 0 },
+    "new-a": { x: 0, y: 0 },
+    "new-b": { x: 0, y: 0 },
+  } } };
+  const result = polishFreshLabels(layouts, previous, graph);
+  assert.deepEqual(layouts.organized.nodes.old, { x: 0, y: 0 });
+  assert.equal(result.organized.fresh, 2);
+  assert.equal(result.organized.remaining, 0);
+  assert.equal(evaluateNodeLegibility(graph, layouts.organized.nodes,
+    new Set(["new-a", "new-b"])).overlapPairs, 0);
+});
 
 test("incremental layouts keep existing nodes and place discoveries near a reviewed member", () => {
   const previous = { layouts: {

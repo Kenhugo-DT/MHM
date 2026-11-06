@@ -10,6 +10,7 @@ import { reviewedBridgeLinks, reviewedBridgeNodes } from "./curated-reviewed-bri
 import { genreDepthLinks, genreDepthNodes } from "./curated-genre-depth.mjs";
 import { earlyEraCorrections, earlyRootLinks, earlyRootNodes } from "./curated-early-roots.mjs";
 import { midcenturyLinks, midcenturyNodes } from "./curated-midcentury.mjs";
+import { registryGapLinks, registryGapNodes } from "./curated-registry-gaps.mjs";
 import { thousandLinks, thousandNodes } from "./curated-thousand.mjs";
 import { organizeGraphLayout } from "./organize-graph-layout.mjs";
 
@@ -21,6 +22,7 @@ const legacyAppPath = path.join(scriptDir, "app.js");
 const browserOutputPath = path.join(repoRoot, "site", "public", "data", "graph.json");
 const approvedOutputPath = path.join(brainRoot, "data", "approved", "graph.json");
 const promotionsPath = path.join(brainRoot, "data", "approved", "promotions.json");
+const stagedEarlyEraPath = path.join(brainRoot, "data", "approved", "early-era-staged.json");
 const obsidianOverridesPath = path.join(brainRoot, "data", "approved", "obsidian-overrides.json");
 const curatedStartYearsPath = path.join(brainRoot, "data", "curated-start-years.json");
 const learningModelPath = path.join(brainRoot, "data", "approved", "learning-model.json");
@@ -267,6 +269,7 @@ function applyObsidianOverrides(nodes) {
 }
 
 const promotionData = loadPromotions();
+const stagedEarlyEra = JSON.parse(fs.readFileSync(stagedEarlyEraPath, "utf8"));
 const nodeIds = new Set(nodes.map((node) => node.id));
 
 for (const node of promotionData.nodes) {
@@ -290,7 +293,7 @@ for (const node of promotionData.nodes) {
   nodeIds.add(node.id);
 }
 
-for (const node of [...curatedEraNodes, ...curatedGenreNodes, ...reviewedBridgeNodes, ...genreDepthNodes, ...earlyRootNodes, ...midcenturyNodes, ...thousandNodes]) {
+for (const node of [...curatedEraNodes, ...curatedGenreNodes, ...reviewedBridgeNodes, ...genreDepthNodes, ...earlyRootNodes, ...midcenturyNodes, ...thousandNodes, ...stagedEarlyEra.nodes, ...registryGapNodes]) {
   if (hasBlockedTerm(node.id, node.label)) throw new Error(`Curated node is blocked: ${node.id}`);
   if (nodeIds.has(node.id)) throw new Error(`Curated node already exists: ${node.id}`);
   nodes.push({ ...node, sources: normalizeSources(node.sources) });
@@ -375,7 +378,7 @@ for (const release of releaseNodes) {
   }
 }
 
-for (const edge of [...curatedEraLinks, ...curatedGenreLinks, ...reviewedBridgeLinks, ...genreDepthLinks, ...earlyRootLinks, ...midcenturyLinks, ...thousandLinks]) {
+for (const edge of [...curatedEraLinks, ...curatedGenreLinks, ...reviewedBridgeLinks, ...genreDepthLinks, ...earlyRootLinks, ...midcenturyLinks, ...thousandLinks, ...stagedEarlyEra.edges, ...registryGapLinks]) {
   appendCuratedEdge(edge);
 }
 

@@ -7,7 +7,7 @@
     "dev": "vite --config site/vite.config.ts",
     "build": "npm run facts:validate && tsc -b site/tsconfig.json && vite build --config site/vite.config.ts",
     "preview": "vite preview --config site/vite.config.ts",
-    "migrate:data": "node brain/scripts/learn-from-obsidian.mjs && node brain/scripts/migrate-graph-data.mjs && node brain/scripts/analyze-organization.mjs --quiet && node brain/scripts/generate-layouts.mjs",
+    "migrate:data": "node brain/scripts/migrate-graph-data.mjs --preserve-existing-layout && node brain/scripts/learn-from-obsidian.mjs && node brain/scripts/migrate-graph-data.mjs --preserve-existing-layout && node brain/scripts/analyze-organization.mjs --quiet && node brain/scripts/generate-layouts.mjs --preserve-existing-layout",
     "migrate:data:expand": "node brain/scripts/migrate-graph-data.mjs --preserve-existing-layout && node brain/scripts/learn-from-obsidian.mjs && node brain/scripts/migrate-graph-data.mjs --preserve-existing-layout && node brain/scripts/analyze-organization.mjs --quiet && node brain/scripts/generate-layouts.mjs --preserve-existing-layout && npm run brain:layouts:practice",
     "check": "tsc -b site/tsconfig.json --pretty false",
     "test": "node --test tests/graph-data.test.mjs tests/facts.test.mjs tests/brain-curation.test.mjs tests/connection-evidence.test.mjs tests/connection-batch.test.mjs tests/early-era-expansion.test.mjs tests/incremental-layout.test.mjs tests/layout-playground.test.mjs tests/layout-growth.test.mjs tests/globe-geography.test.mjs tests/globe-node-layout.test.mjs tests/globe-timeline.test.mjs tests/globe-markers.test.mjs tests/globe-global-atlas.test.mjs",

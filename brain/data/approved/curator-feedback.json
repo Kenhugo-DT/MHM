@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-30T11:27:57.000Z",
+  "updatedAt": "2026-11-06T00:00:00.000Z",
   "notes": [
     "Human feedback for the MHM learning layer.",
     "Use this for taste, placement and organization signals after reviewing the live map.",
@@ -530,6 +530,48 @@
       "curatorTags": ["West Coast production", "1970s funk source"],
       "bridgeBoost": 0.12,
       "feedback": "A funk sample or stylistic debt explains musical lineage. Keep G-funk in hip-hop; do not treat every funk influence as a direct artist-to-artist collaboration."
+    },
+    {
+      "id": "frankie-trumbauer",
+      "zone": "jazz",
+      "primaryGenres": ["jazz"],
+      "curatorTags": ["1927 recording", "shared performance"],
+      "feedback": "The registry credits Trumbauer, Bix Beiderbecke and Eddie Lang on Singin' the Blues. Keep the jazz group together through the documented recording, but do not treat 1927 as any player's career start. Source: https://www.loc.gov/static/programs/national-recording-preservation-board/documents/registry-by-artist.pdf."
+    },
+    {
+      "id": "charlie-christian",
+      "zone": "jazz",
+      "primaryGenres": ["jazz"],
+      "curatorTags": ["electric jazz guitar", "1939 recording"],
+      "feedback": "Rose Room documents Christian's electric guitar within the Benny Goodman Sextet. Keep him near jazz and jazz guitar history; instrument technique alone is not a rock collaboration. Source: https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Rose-Room_Rubin.pdf."
+    },
+    {
+      "id": "mississippi-sheiks",
+      "zone": "roots-blues",
+      "primaryGenres": ["blues"],
+      "curatorTags": ["1930 recording", "string-band blues"],
+      "feedback": "Sitting on Top of the World documents the group's guitar-and-violin blues. Keep the blues center and allow proximity to acoustic roots, but do not infer a direct link to every folk artist. Source: https://www.loc.gov/static/programs/national-recording-preservation-board/documents/SittingOnTopOfTheWorld.pdf."
+    },
+    {
+      "id": "celia-cruz",
+      "zone": "pop-soul-disco",
+      "primaryGenres": ["latin music"],
+      "curatorTags": ["1974 recording", "Latin music", "documented collaboration"],
+      "feedback": "Celia & Johnny documents Cruz and Johnny Pacheco together. The current broad zone is a layout address, not a claim that salsa is pop or disco; preserve a distinct Latin cluster within it. Source: https://www.loc.gov/static/programs/national-recording-preservation-board/documents/registry-by-artist.pdf."
+    },
+    {
+      "id": "paul-whiteman-orchestra",
+      "zone": "classical-history",
+      "primaryGenres": ["classical music"],
+      "curatorTags": ["1924 recording", "cross-tradition performance"],
+      "feedback": "The classical placement concerns the registry's Rhapsody in Blue performance, not a claim that the orchestra's whole catalogue was classical. Preserve this distinction and do not infer direct ties to unrelated jazz performers. Source: https://www.loc.gov/static/programs/national-recording-preservation-board/documents/registry-by-genre.pdf."
+    },
+    {
+      "id": "wu-tang-clan",
+      "zone": "hip-hop-rap",
+      "primaryGenres": ["hip-hop"],
+      "curatorTags": ["1993 album", "New York hip-hop"],
+      "feedback": "Enter the Wu-Tang (36 Chambers) is a 1993 registry anchor, not the group's formation date. Keep the act in hip-hop; geographic or stylistic similarity alone does not prove collaboration. Source: https://www.loc.gov/programs/national-recording-preservation-board/recording-registry/registry-by-induction-years/2022/."
     }
   ],
   "factFeedback": [
@@ -600,6 +642,24 @@
       "terms": ["early jazz", "swing", "bebop", "jazz guitar", "improvisation", "jazz fusion"],
       "bridgeToZones": ["roots-blues", "rock-circuit", "psychedelia-prog"],
       "feedback": "Jazz needs a readable center and historically supported transitions. Keep early jazz and jazz guitar together while allowing fusion and crossover artists to drift toward rock and prog."
+    },
+    {
+      "zone": "folk-country-vise",
+      "terms": ["traditional folk", "Irish fiddle", "Cajun music", "Brazilian roots", "field recording"],
+      "bridgeToZones": ["country-roots", "roots-blues"],
+      "feedback": "Early folk traditions from different places should not collapse into one undifferentiated cluster. Keep documented Cajun, Irish, Ukrainian and Brazilian roots readable, with only supported links crossing toward country and blues."
+    },
+    {
+      "zone": "pop-soul-disco",
+      "terms": ["Latin music", "salsa", "mambo", "pre-1955 popular song", "vocal groups"],
+      "bridgeToZones": ["jazz", "roots-blues"],
+      "feedback": "This broad legacy zone also contains Latin and early popular music. Distinct Latin clusters need their own breathing room; adjacency is not a claim that these traditions are pop or disco."
+    },
+    {
+      "zone": "roots-blues",
+      "terms": ["early blues", "gospel quartet", "spirituals", "string-band blues"],
+      "bridgeToZones": ["jazz", "folk-country-vise", "pop-soul-disco"],
+      "feedback": "Keep gospel and blues legible as related but distinct roots. Share historical space where evidence supports it; never turn a common recording date or source collection into a collaboration edge."
     },
     {
       "zone": "country-roots",
