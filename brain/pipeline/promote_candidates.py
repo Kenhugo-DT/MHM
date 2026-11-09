@@ -699,6 +699,8 @@ def promoted_candidate_node(
         return None
     x, y = placed_point(node_id, seed, zone, offset_index, occupied)
     seed_name = seed_payload.get("name") or seed_payload.get("seed_name") or "an approved seed"
+    musicbrainz_id = (candidate.get("musicbrainz") or {}).get("id")
+    relation_source = candidate.get("source") == "musicbrainz_relation" and musicbrainz_id
 
     return {
         "id": node_id,
@@ -707,6 +709,9 @@ def promoted_candidate_node(
         "roles": kind_roles(kind),
         "summary": (
             f"{article_for(NODE_LABELS[kind].lower())} {NODE_LABELS[kind].lower()} "
+            f"with a documented MusicBrainz band-membership connection to {seed_name}."
+            if relation_source else
+            f"{article_for(NODE_LABELS[kind].lower())} {NODE_LABELS[kind].lower()} "
             f"found while researching Wikipedia signals around {seed_name}."
         ),
         "metadata": [NODE_LABELS[kind]],
@@ -714,7 +719,8 @@ def promoted_candidate_node(
         "y": y,
         "zone": zone,
         "starter": False,
-        "sources": [wikipedia_source(title)],
+        "sources": ([{"label": "MusicBrainz", "url": f"https://musicbrainz.org/artist/{musicbrainz_id}"}]
+                    if relation_source else [wikipedia_source(title)]),
     }
 
 
@@ -758,6 +764,8 @@ def promoted_edge(
         return None
     if not source_url.startswith(("https://", "http://")) or not evidence.get("context"):
         return None
+    if edge_type == "member_of" and evidence.get("seed_is_band"):
+        seed_id, target_id = target_id, seed_id
     edge_id = f"brain-{seed_id}-{target_id}-{edge_type}"
     return {
         "id": edge_id,

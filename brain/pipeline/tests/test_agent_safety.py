@@ -43,6 +43,22 @@ class CandidateSafetyTests(unittest.TestCase):
             )
         })
 
+    def test_documented_band_membership_points_from_person_to_band(self):
+        candidate = {
+            "title": "Bill Stevenson", "kind": "artist", "source": "musicbrainz_relation",
+            "musicbrainz": {"id": "person-id", "name": "Bill Stevenson", "type": "Person"},
+            "documented_relation": {
+                "type": "member_of", "label": "member of", "seed_mb_id": "band-id",
+                "seed_is_band": True,
+                "source_url": "https://musicbrainz.org/artist/band-id",
+                "context": "MusicBrainz documents Bill Stevenson as a member of Descendents.",
+            },
+        }
+        self.assertEqual(review_music_candidate(candidate, "Descendents", set()), [])
+        edge = promoted_edge("descendents", "bill-stevenson", {}, {}, candidate, {})
+        self.assertEqual((edge["source"], edge["target"]), ("bill-stevenson", "descendents"))
+        self.assertEqual(edge["type"], "member_of")
+
     def test_seed_requires_source_and_relevant_zone(self):
         existing = {
             "bach": {"id": "bach", "zone": "classical-history", "x": -1000, "y": -900},

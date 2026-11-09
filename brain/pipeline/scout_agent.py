@@ -333,7 +333,8 @@ def build_frontier_request(graph: dict[str, Any], seeds: list[dict[str, str]]) -
     seed_names = ", ".join(seed["name"] for seed in seeds)
     instructions = (
         f"Read the current approved graph context, then expand the thin map frontier around {seed_names}. "
-        "Find documented music-related connections from Wikipedia, Wikidata, Wikimedia Commons and MusicBrainz. "
+        "Prioritize explicit MusicBrainz band-membership relations with named participants and source URLs. "
+        "Use Wikipedia and Wikidata for identity and context; links and categories alone are research leads, not connections. "
         "Use GND for identity checks and Internet Archive audio records as research leads only; "
         "an archive mention does not establish a connection. "
         "Only propose bands, guitarists, artists, guitars, guitar brands and music genres as nodes. "

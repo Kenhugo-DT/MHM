@@ -14,7 +14,7 @@ from typing import Any
 import requests
 from dotenv import load_dotenv
 
-from candidate_quality import wikipedia_matches_kind
+from candidate_quality import out_of_scope_reason, wikipedia_matches_kind
 from source_enrichment import PublicSourceClient, SOURCE_LOOKUP_LIMIT
 
 BRAIN_ROOT = Path(__file__).resolve().parents[1]
@@ -91,6 +91,7 @@ class Candidate:
     authority_checks: list[dict[str, str]] = field(default_factory=list)
     archive_leads: list[dict[str, str]] = field(default_factory=list)
     source_lookup_errors: list[dict[str, str]] = field(default_factory=list)
+    link_leads: list[dict[str, Any]] = field(default_factory=list)
 
 
 def normalize_text(text: str) -> str:
@@ -191,6 +192,56 @@ class MusicBrainzClient:
         if match.get("type") != expected_type or normalize_text(match.get("name", "")) != normalize_text(name):
             return None
         return match
+
+    def artist_relations(self, artist_id: str) -> list[dict[str, Any]]:
+        return self._get(f"artist/{artist_id}", {"inc": "artist-rels"}).get("relations", [])
+
+
+def membership_candidates(
+    seed_name: str, seed_kind: str, seed_mb_id: str,
+    relations: list[dict[str, Any]], blocked_terms: set[str],
+) -> list[dict[str, Any]]:
+    candidates: list[dict[str, Any]] = []
+    seen: set[str] = set()
+    seed_is_band = seed_kind == "band"
+    expected_direction = "backward" if seed_is_band else "forward"
+    expected_type = "Person" if seed_is_band else "Group"
+    for relation in relations:
+        if relation.get("type") != "member of band" or relation.get("direction") != expected_direction:
+            continue
+        artist = relation.get("artist") or {}
+        name = artist.get("name")
+        artist_id = artist.get("id")
+        if (artist.get("type") != expected_type or not isinstance(name, str)
+                or not isinstance(artist_id, str) or not artist_id
+                or normalize_text(name) == normalize_text(seed_name)
+                or is_blocked_name(name, blocked_terms)
+                or out_of_scope_reason(name, "artist" if seed_is_band else "band")
+                or artist_id in seen):
+            continue
+        seen.add(artist_id)
+        member, band = (name, seed_name) if seed_is_band else (seed_name, name)
+        period = ""
+        if relation.get("begin") or relation.get("end"):
+            period = f" ({relation.get('begin') or '?'} to {relation.get('end') or '?'})"
+        candidates.append({
+            "title": name,
+            "kind": "artist" if seed_is_band else "band",
+            "source": "musicbrainz_relation",
+            "reason": f"MusicBrainz member of band: {member} / {band}{period}",
+            "musicbrainz": artist,
+            "documented_relation": {
+                "type": "member_of",
+                "label": "member of",
+                "context": f"MusicBrainz documents {member} as a member of {band}{period}.",
+                "source_url": f"https://musicbrainz.org/artist/{seed_mb_id}",
+                "seed_mb_id": seed_mb_id,
+                "seed_is_band": seed_is_band,
+            },
+        })
+        if len(candidates) >= 12:
+            break
+    return candidates
 
 
 class WikidataClient:
@@ -396,10 +447,6 @@ class WikipediaClient:
             return []
 
         candidates: dict[str, dict[str, Any]] = {}
-        for category in page.get("categories", []):
-            candidate = self._candidate(category, "category")
-            if candidate:
-                candidates[candidate["title"].lower()] = candidate
         for link in page.get("links", []):
             candidate = self._candidate(link, "link")
             if candidate:
@@ -582,42 +629,16 @@ def collect(seed_file: Path) -> list[Candidate]:
                 source_errors.append({"source": "musicbrainz", "message": str(error)})
                 print(f"MusicBrainz lookup failed for {name}: {error}")
 
-        music_candidates = wikipedia.music_candidates(wikipedia_page)
-        related_pages: dict[str, dict[str, Any]] = {}
-        if music_candidates:
+        link_leads = wikipedia.music_candidates(wikipedia_page)
+        music_candidates: list[dict[str, Any]] = []
+        if musicbrainz and musicbrainz_match and kind in {"band", "artist", "guitarist"}:
             try:
-                related_pages = wikipedia.candidate_pages(music_candidates)
-            except Exception as error:
-                source_errors.append({"source": "related_wikipedia", "message": str(error)})
-
-        artist_ids: dict[str, list[str]] = {}
-        if related_pages:
-            try:
-                artist_ids = wikidata.musicbrainz_ids([
-                    page["wikidata_id"] for page in related_pages.values()
-                ])
-            except Exception as error:
-                source_errors.append({"source": "related_wikidata", "message": str(error)})
-        for item in music_candidates:
-            page = related_pages.get(item["title"])
-            if not page:
-                continue
-            page["musicbrainz_artist_ids"] = artist_ids.get(page["wikidata_id"], [])
-            item["title"] = page["title"]
-            item["wikipedia"] = page
-            if musicbrainz and item["kind"] in {"band", "artist", "guitarist"}:
-                lookup_name = re.sub(
-                    r" \((?:band|musician|singer|guitarist)\)$", "", item["title"], flags=re.I,
+                relations = musicbrainz.artist_relations(musicbrainz_match["id"])
+                music_candidates = membership_candidates(
+                    name, kind, musicbrainz_match["id"], relations, blocked_terms,
                 )
-                for artist_id in page["musicbrainz_artist_ids"][:2]:
-                    try:
-                        match = musicbrainz.lookup(artist_id, lookup_name, item["kind"])
-                    except Exception as error:
-                        source_errors.append({"source": "related_musicbrainz", "message": str(error)})
-                        break
-                    if match:
-                        item["musicbrainz"] = match
-                        break
+            except Exception as error:
+                source_errors.append({"source": "musicbrainz_relations", "message": str(error)})
 
         authority_checks: list[dict[str, str]] = []
         archive_leads: list[dict[str, str]] = []
@@ -661,6 +682,7 @@ def collect(seed_file: Path) -> list[Candidate]:
                 authority_checks=authority_checks,
                 archive_leads=archive_leads,
                 source_lookup_errors=source_lookup_errors,
+                link_leads=link_leads,
             )
         )
 

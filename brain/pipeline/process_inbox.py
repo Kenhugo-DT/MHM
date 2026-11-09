@@ -282,6 +282,11 @@ def main() -> None:
             "authorityCheckCount": sum(len(row.get("authority_checks") or []) for row in candidate_payloads),
             "archiveLeadCount": sum(len(row.get("archive_leads") or []) for row in candidate_payloads),
             "sourceLookupErrorCount": sum(len(row.get("source_lookup_errors") or []) for row in candidate_payloads),
+            "linkLeadCount": sum(len(row.get("link_leads") or []) for row in candidate_payloads),
+            "documentedRelationCount": sum(
+                bool(item.get("documented_relation"))
+                for row in candidate_payloads for item in row.get("music_candidates") or []
+            ),
         }
         payload = {
             **summary,

@@ -117,6 +117,7 @@ def candidate_summary(row: dict[str, Any]) -> dict[str, Any]:
         "reviewReasonCode": row.get("review_reason_code"),
         "reviewNote": row.get("review_note"),
         "musicCandidateCount": len(payload.get("music_candidates") or []),
+        "linkLeadCount": len(payload.get("link_leads") or []),
         "authorityChecks": payload.get("authority_checks") or [],
         "archiveLeads": payload.get("archive_leads") or [],
         "sourceLookupErrors": payload.get("source_lookup_errors") or [],

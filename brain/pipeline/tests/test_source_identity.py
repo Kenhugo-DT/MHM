@@ -7,7 +7,7 @@ from unittest.mock import patch
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from candidate_quality import review_candidate_payload
-from sync import MusicBrainzClient, WikidataClient, WikipediaClient, collect
+from sync import MusicBrainzClient, WikidataClient, WikipediaClient, collect, membership_candidates
 
 
 class SourceIdentityTests(unittest.TestCase):
@@ -53,6 +53,32 @@ class SourceIdentityTests(unittest.TestCase):
 
         self.assertEqual(get.call_count, 2)
         self.assertTrue(any(call.args[0] >= 6 for call in sleep.call_args_list))
+
+    def test_membership_candidates_have_explicit_source_and_direction(self):
+        relation = {"type": "member of band", "direction": "forward", "begin": "1978",
+                    "artist": {"id": "band-id", "name": "Descendents", "type": "Group"}}
+        result = membership_candidates("Bill Stevenson", "artist", "person-id", [relation], set())
+        self.assertEqual(len(result), 1)
+        self.assertEqual(result[0]["kind"], "band")
+        self.assertEqual(result[0]["documented_relation"]["type"], "member_of")
+        self.assertEqual(result[0]["documented_relation"]["source_url"],
+                         "https://musicbrainz.org/artist/person-id")
+        self.assertTrue(review_candidate_payload({"name": "Bill Stevenson", "requested_kind": "artist",
+                     "musicbrainz": {"id": "person-id"}, "music_candidates": result}, set())
+                        ["candidateStats"]["publishable"])
+        self.assertEqual(membership_candidates("Bill Stevenson", "artist", "person-id",
+                         [{**relation, "direction": "backward"}], set()), [])
+
+    def test_membership_candidates_block_unrelated_and_duplicate_targets(self):
+        relation = {"type": "member of band", "direction": "backward",
+                    "artist": {"id": "person-id", "name": "Bill Stevenson", "type": "Person"}}
+        results = membership_candidates("Descendents", "band", "band-id",
+                                        [relation, relation], set())
+        self.assertEqual(len(results), 1)
+        self.assertEqual(results[0]["kind"], "artist")
+        self.assertTrue(results[0]["documented_relation"]["seed_is_band"])
+        self.assertEqual(membership_candidates("Descendents", "band", "band-id",
+                         [relation], {"bill stevenson"}), [])
 
     def test_wikidata_skips_nonmusic_name_collision(self):
         client = WikidataClient()
@@ -317,18 +343,20 @@ class SourceIdentityTests(unittest.TestCase):
         self.assertEqual(candidate.archive_leads[0]["provider"], "internet_archive")
         self.assertEqual(candidate.music_candidates, [])
 
-    def test_collection_enriches_related_band_before_review(self):
+    def test_collection_keeps_links_as_leads_and_memberships_as_candidates(self):
         class FakeMusicBrainz:
             def __init__(self, _contact):
                 pass
 
             def search(self, _name, _kind):
-                return None
+                return {"id": "seed-mb", "name": "Seed", "type": "Person"}
 
             def lookup(self, artist_id, name, _kind):
-                if name != "Example Band":
-                    raise AssertionError(f"Unexpected MusicBrainz name: {name}")
-                return {"id": artist_id, "type": "Group"}
+                return {"id": artist_id, "name": name, "type": "Person"}
+
+            def artist_relations(self, _artist_id):
+                return [{"type": "member of band", "direction": "forward",
+                         "artist": {"id": "mb-123", "name": "Example Band", "type": "Group"}}]
 
         class FakeWikidata:
             def search(self, _name, _kind):
@@ -342,14 +370,11 @@ class SourceIdentityTests(unittest.TestCase):
                 pass
 
             def page_for_seed(self, _name, _kind, _preferred=None):
-                return {"title": "Seed", "extract": "Seed is a musician."}
+                return {"title": "Seed", "extract": "Seed is a musician.",
+                        "wikidata_id": "Q999", "musicbrainz_artist_ids": ["seed-mb"]}
 
             def music_candidates(self, _page):
                 return [{"title": "Example Band", "kind": "band", "source": "link"}]
-
-            def candidate_pages(self, _candidates):
-                return {"Example Band": {"title": "Example Band (band)", "wikidata_id": "Q123",
-                                         "extract": "Example Band is a rock band."}}
 
         seed = [{"name": "Seed", "kind": "artist", "zone": "pop-soul-disco"}]
         with patch.object(Path, "read_text", return_value=json.dumps(seed)), \
@@ -360,6 +385,7 @@ class SourceIdentityTests(unittest.TestCase):
 
         self.assertEqual(candidate.suggested_zone, "pop-soul-disco")
         self.assertEqual(candidate.music_candidates[0]["musicbrainz"]["type"], "Group")
+        self.assertEqual(candidate.link_leads[0]["source"], "link")
         self.assertEqual(review_candidate_payload(candidate.__dict__, set())["candidateStats"]["publishable"], 1)
 
 

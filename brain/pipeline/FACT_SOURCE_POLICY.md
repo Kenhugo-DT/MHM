@@ -23,6 +23,16 @@ non-commercial share-alike license](https://musicbrainz.org/doc/About/Data_Licen
 Check the field's license before reuse. Wikipedia and catalogue metadata may
 contain errors; prefer a primary institutional or artist source for final review.
 
+The scheduled research collector now asks MusicBrainz for explicit `member of band`
+artist relationships in both directions. Each proposed person-band connection
+retains the seed MBID, target MBID, relation direction and MusicBrainz URL.
+Wikipedia links are retained separately as `link_leads`: sharing a page is not
+evidence of a relationship. A MusicBrainz relationship is still one catalogue
+assertion, not independent historical corroboration. Human reviewers must check
+unusual, disputed or short-lived memberships before approving a candidate group.
+The ten-run benchmark is `brain/pipeline/benchmark_research_agent.py`; it only
+queues review work and never publishes nodes or edges.
+
 ## Guinness World Records
 
 No public, documented record-data API was found. Its [site terms](https://www.guinnessworldrecords.com/using-this-website/terms-and-conditions)

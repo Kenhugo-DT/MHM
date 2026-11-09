@@ -177,6 +177,20 @@ def wikipedia_matches_kind(page: dict[str, Any], kind: str) -> bool:
 def has_verified_candidate_identity(candidate: dict[str, Any]) -> bool:
     page = candidate.get("wikipedia") or {}
     kind = str(candidate.get("kind") or "")
+    if candidate.get("source") == "musicbrainz_relation":
+        musicbrainz = candidate.get("musicbrainz") or {}
+        relation = candidate.get("documented_relation") or {}
+        expected_type = "Group" if kind == "band" else "Person" if kind in {"artist", "guitarist"} else ""
+        seed_id = relation.get("seed_mb_id")
+        return bool(
+            expected_type and musicbrainz.get("type") == expected_type
+            and isinstance(musicbrainz.get("id"), str) and musicbrainz["id"]
+            and normalize_text(musicbrainz.get("name", "")) == normalize_text(candidate.get("title", ""))
+            and relation.get("type") == "member_of"
+            and isinstance(seed_id, str) and seed_id
+            and relation.get("source_url") == f"https://musicbrainz.org/artist/{seed_id}"
+            and isinstance(relation.get("context"), str) and relation["context"]
+        )
     if not isinstance(page, dict) or not page.get("wikidata_id"):
         return False
     if normalize_text(page.get("title", "")) != normalize_text(candidate.get("title", "")):
@@ -418,7 +432,7 @@ def review_candidate_payload(
         publishable_count += 1
 
     if not candidates:
-        flags.append(flag("warning", "no_music_candidates", "No related music candidates were collected.", seed_name))
+        flags.append(flag("warning", "no_music_candidates", "No documented related music candidates were collected.", seed_name))
     elif publishable_count == 0:
         flags.append(
             flag(
