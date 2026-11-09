@@ -70,6 +70,8 @@ class SourceIdentityTests(unittest.TestCase):
                 "claims": {"P434": [
                     {"rank": "normal", "mainsnak": {"datavalue": {"value": "correct-band"}}},
                     {"rank": "deprecated", "mainsnak": {"datavalue": {"value": "old-id"}}},
+                ], "P227": [
+                    {"rank": "normal", "mainsnak": {"datavalue": {"value": "118741713"}}},
                 ]},
                 "sitelinks": {"enwiki": {"title": "Angel Dust (German band)"}},
             }
@@ -77,6 +79,7 @@ class SourceIdentityTests(unittest.TestCase):
 
         self.assertEqual(client.identity("Q531613"), {
             "musicbrainz_artist_ids": ["correct-band"],
+            "gnd_ids": ["118741713"],
             "wikipedia_title": "Angel Dust (German band)",
         })
 
@@ -155,6 +158,15 @@ class SourceIdentityTests(unittest.TestCase):
                    "wikipedia": {"title": "Outsidaz",
                                  "extract": "The Outsidaz were an American hip hop collective from Newark."}}
         self.assertNotEqual(review_candidate_payload(payload, set())["level"], "reject")
+
+    def test_optional_archive_failure_does_not_lower_core_review_score(self):
+        payload = {"name": "Michael Praetorius", "requested_kind": "artist",
+                   "wikipedia": {"title": "Michael Praetorius", "extract": "German composer"}}
+        baseline = review_candidate_payload(payload, set())
+        with_optional_error = review_candidate_payload({
+            **payload, "source_lookup_errors": [{"source": "loc", "message": "HTTP 403"}],
+        }, set())
+        self.assertEqual(with_optional_error["score"], baseline["score"])
 
     def test_collection_replaces_ambiguous_name_match_with_linked_id(self):
         class FakeMusicBrainz:
@@ -258,6 +270,52 @@ class SourceIdentityTests(unittest.TestCase):
         }]}}}}
         with patch("sync.get_json_with_backoff", return_value=data_response):
             self.assertEqual(wikidata.musicbrainz_ids(["Q123"]), {"Q123": ["mb-123"]})
+
+    def test_collection_keeps_public_archive_sources_in_review_payload_only(self):
+        class FakeWikidata:
+            def search(self, _name, _kind):
+                return {"id": "Q108278"}
+
+            def identity(self, _entity_id):
+                return {"musicbrainz_artist_ids": [], "gnd_ids": ["118741713"],
+                        "wikipedia_title": "Michael Praetorius"}
+
+        class FakeWikipedia:
+            def __init__(self, _blocked):
+                pass
+
+            def page_for_seed(self, _name, _kind, _title=None):
+                return {"title": "Michael Praetorius", "wikidata_id": "Q108278",
+                        "extract": "German composer"}
+
+            def music_candidates(self, _page):
+                return []
+
+        class FakeSources:
+            def gnd_identity(self, gnd_id, name):
+                self.gnd_call = (gnd_id, name)
+                return {"provider": "gnd", "id": gnd_id, "url": "https://d-nb.info/gnd/118741713"}
+
+            def archive_audio(self, name):
+                self.archive_call = name
+                return [{"provider": "internet_archive", "url": "https://archive.org/details/score"}]
+
+        source = FakeSources()
+        settings = {"MUSICBRAINZ_CONTACT": "", "MHM_ENABLE_GND": "1",
+                    "MHM_ENABLE_ARCHIVE_SOURCES": "1", "MHM_ENABLE_LOC": "0"}
+        with patch.object(Path, "read_text", return_value=json.dumps([
+            {"name": "Michael Praetorius", "kind": "artist"}
+        ])), patch("sync.load_blocked_terms", return_value=set()), \
+             patch("sync.WikidataClient", FakeWikidata), patch("sync.WikipediaClient", FakeWikipedia), \
+             patch("sync.PublicSourceClient", return_value=source), \
+             patch("sync.os.getenv", side_effect=lambda key, default="": settings.get(key, default)):
+            candidate = collect(Path("unused-seeds.json"))[0]
+
+        self.assertEqual(source.gnd_call, ("118741713", "Michael Praetorius"))
+        self.assertEqual(source.archive_call, "Michael Praetorius")
+        self.assertEqual(candidate.authority_checks[0]["provider"], "gnd")
+        self.assertEqual(candidate.archive_leads[0]["provider"], "internet_archive")
+        self.assertEqual(candidate.music_candidates, [])
 
     def test_collection_enriches_related_band_before_review(self):
         class FakeMusicBrainz:

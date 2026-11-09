@@ -7,7 +7,7 @@ import json
 import os
 import re
 import time
-from dataclasses import asdict, dataclass
+from dataclasses import asdict, dataclass, field
 from pathlib import Path
 from typing import Any
 
@@ -15,6 +15,7 @@ import requests
 from dotenv import load_dotenv
 
 from candidate_quality import wikipedia_matches_kind
+from source_enrichment import PublicSourceClient, SOURCE_LOOKUP_LIMIT
 
 BRAIN_ROOT = Path(__file__).resolve().parents[1]
 REPO_ROOT = BRAIN_ROOT.parent
@@ -87,6 +88,9 @@ class Candidate:
     source_errors: list[dict[str, str]]
     suggested_zone: str | None = None
     status: str = "review"
+    authority_checks: list[dict[str, str]] = field(default_factory=list)
+    archive_leads: list[dict[str, str]] = field(default_factory=list)
+    source_lookup_errors: list[dict[str, str]] = field(default_factory=list)
 
 
 def normalize_text(text: str) -> str:
@@ -244,8 +248,14 @@ class WikidataClient:
             for statement in entity.get("claims", {}).get("P434", [])
             if statement.get("rank") != "deprecated"
         ]
+        gnd_ids = [
+            statement.get("mainsnak", {}).get("datavalue", {}).get("value")
+            for statement in entity.get("claims", {}).get("P227", [])
+            if statement.get("rank") != "deprecated"
+        ]
         return {
             "musicbrainz_artist_ids": [value for value in artist_ids if isinstance(value, str)],
+            "gnd_ids": [value for value in gnd_ids if isinstance(value, str)],
             "wikipedia_title": entity.get("sitelinks", {}).get("enwiki", {}).get("title"),
         }
 
@@ -503,6 +513,11 @@ def collect(seed_file: Path) -> list[Candidate]:
     wikidata = WikidataClient()
     wikipedia = WikipediaClient(blocked_terms)
     candidates: list[Candidate] = []
+    archive_enabled = os.getenv("MHM_ENABLE_ARCHIVE_SOURCES", "1") == "1"
+    gnd_enabled = os.getenv("MHM_ENABLE_GND", "1") == "1"
+    loc_enabled = os.getenv("MHM_ENABLE_LOC", "0") == "1"
+    source_client = PublicSourceClient() if archive_enabled or gnd_enabled or loc_enabled else None
+    source_lookups = 0
 
     for seed in seeds:
         if candidates:
@@ -514,6 +529,7 @@ def collect(seed_file: Path) -> list[Candidate]:
             continue
         print(f"Collecting source candidates for {name}...")
         source_errors: list[dict[str, str]] = []
+        source_lookup_errors: list[dict[str, str]] = []
         musicbrainz_match = None
         wikidata_match = None
         wikipedia_page = None
@@ -552,6 +568,7 @@ def collect(seed_file: Path) -> list[Candidate]:
                 print(f"Wikipedia identity lookup failed for {name}: {error}")
         elif wikipedia_page and wikidata_match:
             wikipedia_page["musicbrainz_artist_ids"] = wikidata_match.get("musicbrainz_artist_ids", [])
+            wikipedia_page["gnd_ids"] = wikidata_match.get("gnd_ids", [])
 
         if musicbrainz:
             try:
@@ -602,6 +619,35 @@ def collect(seed_file: Path) -> list[Candidate]:
                         item["musicbrainz"] = match
                         break
 
+        authority_checks: list[dict[str, str]] = []
+        archive_leads: list[dict[str, str]] = []
+        if source_client and gnd_enabled and kind in {"artist", "guitarist"}:
+            gnd_ids = (wikipedia_page or {}).get("gnd_ids") or (wikidata_match or {}).get("gnd_ids") or []
+            if gnd_ids and source_lookups < SOURCE_LOOKUP_LIMIT:
+                source_lookups += 1
+                try:
+                    match = source_client.gnd_identity(gnd_ids[0], name)
+                    if match:
+                        authority_checks.append(match)
+                except Exception as error:
+                    source_lookup_errors.append({"source": "gnd", "message": str(error)})
+
+        if source_client and archive_enabled and kind in {"band", "artist", "guitarist"}:
+            if source_lookups < SOURCE_LOOKUP_LIMIT:
+                source_lookups += 1
+                try:
+                    archive_leads.extend(source_client.archive_audio(name))
+                except Exception as error:
+                    source_lookup_errors.append({"source": "internet_archive", "message": str(error)})
+
+        if source_client and loc_enabled and kind in {"band", "artist", "guitarist"}:
+            if source_lookups < SOURCE_LOOKUP_LIMIT:
+                source_lookups += 1
+                try:
+                    archive_leads.extend(source_client.loc_items(name))
+                except Exception as error:
+                    source_lookup_errors.append({"source": "loc", "message": str(error)})
+
         candidates.append(
             Candidate(
                 name=name,
@@ -612,6 +658,9 @@ def collect(seed_file: Path) -> list[Candidate]:
                 music_candidates=music_candidates,
                 source_errors=source_errors,
                 suggested_zone=seed.get("zone"),
+                authority_checks=authority_checks,
+                archive_leads=archive_leads,
+                source_lookup_errors=source_lookup_errors,
             )
         )
 

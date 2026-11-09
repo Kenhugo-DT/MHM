@@ -94,7 +94,12 @@ export function connectionCandidate(proposal, graph) {
     !period || !validPeriod(period.begin) || !validPeriod(period.end))) {
     throw new Error(`Invalid membership dates: ${proposal.id}`);
   }
-  const dates = periods.map((period) => `${period.begin ?? "unknown"} to ${period.end ?? "present"}`);
+  const dates = periods.map((period) => {
+    if (!period.begin && !period.end) return "dates not specified";
+    if (!period.begin) return `start not recorded to ${period.end}`;
+    if (!period.end) return `${period.begin} onward (end not recorded)`;
+    return `${period.begin} to ${period.end}`;
+  });
   return {
     id: `mb-member-${person.id}-${band.id}`,
     source: person.id,

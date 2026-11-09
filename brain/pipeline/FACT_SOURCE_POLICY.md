@@ -12,7 +12,9 @@ and topic labels are the feedback the scout can use.
 | [Wikipedia API](https://www.mediawiki.org/wiki/API:Main_page) | Public API; identify the client and respect throttling | Lead discovery, never the only approval source | Existing pattern scout |
 | [Wikidata](https://www.wikidata.org/wiki/Wikidata:Licensing) | Public API; structured data is CC0 | Entity identity, dates, relationships and claim references | Bounded, opt-in name-origin and birth-name pilot; not scheduled |
 | [MusicBrainz](https://musicbrainz.org/doc/MusicBrainz_API) | Non-commercial API use is free without a key; at most one request per second with a meaningful User-Agent | Credits, membership, recordings and cross-source IDs | Existing graph collector; eligible nodes now counted in the coverage report |
-| [Library of Congress](https://www.loc.gov/apis/json-and-yaml/working-within-limits/) | Public JSON API without a key; limit 20 requests per minute | Historical recordings and archival evidence | Candidate for a bounded pilot, not yet connected |
+| [Library of Congress](https://www.loc.gov/apis/json-and-yaml/working-within-limits/) | Public JSON API without a key; limit 20 requests per minute | Historical recordings and archival evidence | Opt-in review-only lookup, disabled after local HTTP 403 |
+| [GND via lobid](https://lobid.org/gnd) | Public CC0 authority data; exact GND-ID lookup | Independent person-identity check, especially historical composers | Connected to scheduled research as review-only evidence |
+| [Internet Archive Advanced Search](https://archivesupport.zendesk.com/hc/en-us/articles/360018359991-Search-A-Basic-Guide) | Public metadata search | Audio-recording leads with exact creator metadata | Connected to scheduled research as review-only leads |
 | [Smithsonian Open Access](https://www.si.edu/openaccess/faq) | CC0 collections; API needs an api.data.gov key | Instrument and music-history collection objects | Defer until the owner wants another key |
 | [Europeana](https://pro.europeana.eu/page/get-api) | Free API key with an account | European music and instrument archives | Defer until the owner wants another key |
 
@@ -47,6 +49,24 @@ historical record into a claim that it still stands today.
 No paid model calls, new credentials or automatic approval are part of this
 source policy. New integrations must have explicit per-run lookup limits,
 timeouts, rate-limit handling and a dry-run before scheduled use.
+GND is looked up only from Wikidata property P227 and accepted only when its
+authority ID and preferred person name match. Archive search reads at most five
+results and retains at most two exact-creator audio leads per seed. Neither
+source creates nodes, edges, facts, or dates automatically. Internet Archive
+item dates may reflect digitization or upload, not original release.
+
+The three optional lookup paths share a limit of 12 requests per research run.
+`MHM_ENABLE_GND=1` and `MHM_ENABLE_ARCHIVE_SOURCES=1` are enabled by default.
+`MHM_ENABLE_LOC=0` keeps Library of Congress disabled until its API can be
+reached from the scheduled environment: local smoke requests returned HTTP 403
+on 2026-11-09. If enabled, LOC contributes only exact-contributor item leads,
+with at least 3.5 seconds between requests. Failures are recorded as optional
+lookup errors; they neither lower the core-source score nor approve a claim.
+Each run summary records authority-check, archive-lead and optional-source
+error counts so the value of these lookups can be audited before expansion.
+Smithsonian, Europeana, setlist.fm, and
+Discogs remain outside the scheduled scout because they need keys or have
+access/use conditions that warrant a separate review.
 The Wikidata pilot checks the English Wikipedia sitelink against the map node's
 existing Wikipedia URL. A QID alone is not sufficient: the map contains at
 least one QID for a band's discography rather than the band. Claims without a

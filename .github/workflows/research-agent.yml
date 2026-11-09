@@ -98,6 +98,9 @@ jobs:
         env:
           AGENT_LIMIT: ${{ github.event.inputs.limit || '2' }}
           BRAIN_LEARNING_MODE: ${{ vars.BRAIN_LEARNING_MODE || 'auto' }}
+          MHM_ENABLE_GND: ${{ vars.MHM_ENABLE_GND || '1' }}
+          MHM_ENABLE_ARCHIVE_SOURCES: ${{ vars.MHM_ENABLE_ARCHIVE_SOURCES || '1' }}
+          MHM_ENABLE_LOC: ${{ vars.MHM_ENABLE_LOC || '0' }}
           MUSICBRAINZ_CONTACT: ${{ secrets.MUSICBRAINZ_CONTACT || 'https://github.com/Kenhugo-DT/MHM' }}
           SUPABASE_URL: ${{ vars.SUPABASE_URL }}
           SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}

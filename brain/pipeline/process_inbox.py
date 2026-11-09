@@ -278,8 +278,14 @@ def main() -> None:
         candidate_payloads = [asdict(candidate) for candidate in collected]
         for candidate_payload in candidate_payloads:
             candidate_payload["review"] = review_candidate_payload(candidate_payload)
+        source_metrics = {
+            "authorityCheckCount": sum(len(row.get("authority_checks") or []) for row in candidate_payloads),
+            "archiveLeadCount": sum(len(row.get("archive_leads") or []) for row in candidate_payloads),
+            "sourceLookupErrorCount": sum(len(row.get("source_lookup_errors") or []) for row in candidate_payloads),
+        }
         payload = {
             **summary,
+            **source_metrics,
             "dryRun": False,
             "candidateCount": len(collected),
             "requests": requests,
@@ -293,7 +299,8 @@ def main() -> None:
 
         run_summary_path = RUNS_DIR / f"{run_id}-summary.json"
         run_summary_path.write_text(
-            json.dumps({**summary, "candidateOutput": str(output_path)}, ensure_ascii=False, indent=2),
+            json.dumps({**summary, **source_metrics, "candidateOutput": str(output_path)},
+                       ensure_ascii=False, indent=2),
             encoding="utf-8",
         )
 

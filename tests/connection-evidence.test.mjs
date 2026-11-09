@@ -142,7 +142,10 @@ test("only approved, identity-matched memberships can be staged", () => {
   assert.equal(staged.edges.length, 1);
   assert.deepEqual(staged.candidateRows.map((row) => row.id), ["approved"]);
   assert.deepEqual(staged.edges[0].sources.map((source) => source.provider), ["musicbrainz"]);
-  assert.match(staged.edges[0].context[1], /1985 to present/);
+  assert.match(staged.edges[0].context[1], /1985 onward \(end not recorded\)/);
+  assert.match(connectionCandidate({ ...proposal, evidence: {
+    ...proposal.evidence, periods: [{ begin: null, end: null }],
+  } }, graph).context[1], /dates not specified/);
   assert.equal(hasMusicBrainzMembership(artist, personId, bandId), true);
   assert.equal(hasMusicBrainzMembership(artist, personId, bandId,
     [{ begin: "1985", end: null }]), true);
