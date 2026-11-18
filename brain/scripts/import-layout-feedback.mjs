@@ -18,7 +18,8 @@ export function validateLayoutReport(report, graph, layouts) {
     throw new Error("Layout feedback is stale or has an unsupported format.");
   }
   const { mode, zone, current } = report;
-  if (!MODES.has(mode) || !graph.nodes.some((node) => node.zone === zone)) {
+  const wholeMap = zone === "all" && mode === "organized" && report.trialKind === "whole-map";
+  if (!MODES.has(mode) || (!wholeMap && !graph.nodes.some((node) => node.zone === zone))) {
     throw new Error("Unknown layout mode or zone.");
   }
   const review = current?.review;
@@ -54,8 +55,9 @@ export function validateLayoutReport(report, graph, layouts) {
   }
   const note = String(review.note ?? "").trim().slice(0, 500);
   const id = createHash("sha256").update(JSON.stringify({ graph: graph.generatedAt, layout: layouts.generatedAt,
-    mode, zone, parameters, verdict: review.verdict, score: after.score, note })).digest("hex").slice(0, 20);
-  return { id, mode, zone, verdict: review.verdict, parameters, note,
+    mode, zone, trialKind: wholeMap ? "whole-map" : "standard", parameters,
+    verdict: review.verdict, score: after.score, note })).digest("hex").slice(0, 20);
+  return { id, mode, zone, trialKind: wholeMap ? "whole-map" : "standard", verdict: review.verdict, parameters, note,
     graphGeneratedAt: graph.generatedAt, layoutGeneratedAt: layouts.generatedAt,
     before, after, importedAt: new Date().toISOString() };
 }

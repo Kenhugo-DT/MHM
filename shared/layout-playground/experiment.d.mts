@@ -30,3 +30,4 @@ export function evaluateLayout(graph: unknown, baseline: Record<string, { x: num
 export function classifyOutcome(before: PlaygroundMetrics, after: PlaygroundMetrics): PlaygroundResult["outcome"];
 export function runLayoutExperiment(graph: unknown, baseline: Record<string, { x: number; y: number }>, guidance: unknown, zones: unknown[], parameters?: Partial<PlaygroundParameters>, scopeZone?: string, movementPolicy?: Record<string, { weight: number; maxDistance: number }>): PlaygroundResult;
 export function autoTuneLayout(graph: unknown, baseline: Record<string, { x: number; y: number }>, guidance: unknown, zones: unknown[], scopeZone?: string, feedback?: Array<{ verdict: string; parameters: PlaygroundParameters }>): PlaygroundResult;
+export function runWholeMapPilot(graph: unknown, baseline: Record<string, { x: number; y: number }>, guidance: unknown, zones: unknown[], feedback?: Array<{ verdict: string; parameters: PlaygroundParameters }>): PlaygroundResult;

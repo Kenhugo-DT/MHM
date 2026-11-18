@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { readFileSync } from "node:fs";
-import { autoTuneLayout, classifyOutcome, evaluateLayout, runLayoutExperiment } from "../shared/layout-playground/experiment.mjs";
+import { autoTuneLayout, classifyOutcome, evaluateLayout, runLayoutExperiment, runWholeMapPilot } from "../shared/layout-playground/experiment.mjs";
 import { ORGANIZED_MAP_ZONES } from "../brain/scripts/organize-graph-layout.mjs";
 import { validateLayoutReport } from "../brain/scripts/import-layout-feedback.mjs";
 import { deriveGrowthConstraints, evaluateLayoutConstraints, validateLayoutConstraints } from "../shared/layout-playground/constraints.mjs";
@@ -72,6 +72,52 @@ test("approved rock-circuit snapshot gets a measurable sandbox improvement", () 
   assert.equal(JSON.stringify(layout), original);
 });
 
+test("whole-map pilot reflows the approved graph without changing the published layout", () => {
+  const approvedGraph = JSON.parse(readFileSync("brain/data/approved/graph.json", "utf8"));
+  const layout = JSON.parse(readFileSync("brain/data/approved/layouts.json", "utf8")).layouts.organized.nodes;
+  const guidance = JSON.parse(readFileSync("brain/data/approved/organization-model.json", "utf8")).layoutIntelligence;
+  const zones = Object.entries(ORGANIZED_MAP_ZONES).map(([id, zone]) => ({ ...zone, id }));
+  const original = JSON.stringify(layout);
+  const trial = runWholeMapPilot(approvedGraph, layout, guidance, zones);
+  assert.equal(trial.before.nodes, approvedGraph.nodes.length);
+  assert.equal(Object.keys(trial.positions).length, approvedGraph.nodes.length);
+  assert.equal(trial.trials.length, 4);
+  assert.equal(trial.outcome, "improved");
+  assert.ok(trial.after.overlaps < trial.before.overlaps);
+  assert.ok(trial.after.severeOverlaps < trial.before.severeOverlaps);
+  assert.ok(trial.after.meanEdge < trial.before.meanEdge);
+  assert.ok(approvedGraph.nodes.filter((node) =>
+    Math.hypot(trial.positions[node.id].x - layout[node.id].x,
+      trial.positions[node.id].y - layout[node.id].y) > 1).length > approvedGraph.nodes.length * 0.9);
+  assert.equal(JSON.stringify(layout), original);
+});
+
+test("whole-map pilot reduces collisions after a sourced candidate batch is added", () => {
+  const approvedGraph = JSON.parse(readFileSync("brain/data/approved/graph.json", "utf8"));
+  const current = JSON.parse(readFileSync("brain/data/approved/layouts.json", "utf8")).layouts.organized.nodes;
+  const guidance = JSON.parse(readFileSync("brain/data/approved/organization-model.json", "utf8")).layoutIntelligence;
+  const zones = Object.entries(ORGANIZED_MAP_ZONES).map(([id, zone]) => ({ ...zone, id }));
+  const anchor = approvedGraph.nodes.find((node) => node.id === "led-zeppelin");
+  assert.ok(anchor);
+  const additions = Array.from({ length: 12 }, (_, index) => ({
+    id: `test-candidate-${index}`, label: `Test candidate ${index}`, type: "artist",
+    zone: anchor.zone, x: current[anchor.id].x + index * 3, y: current[anchor.id].y,
+  }));
+  const graphWithCandidates = { ...approvedGraph,
+    nodes: [...approvedGraph.nodes, ...additions],
+    edges: [...approvedGraph.edges, ...additions.map((node) => ({
+      source: node.id, target: anchor.id, type: "member_of", strength: 0.8,
+      sources: [{ url: "https://example.org/test-only" }],
+    }))] };
+  const baseline = { ...current, ...Object.fromEntries(additions.map((node) => [node.id,
+    { x: node.x, y: node.y, zone: node.zone }])) };
+  const trial = runWholeMapPilot(graphWithCandidates, baseline, guidance, zones);
+  assert.equal(trial.before.nodes, graphWithCandidates.nodes.length);
+  assert.equal(trial.after.nodes, graphWithCandidates.nodes.length);
+  assert.ok(trial.after.severeOverlaps < trial.before.severeOverlaps);
+  assert.ok(additions.every((node) => Number.isFinite(trial.positions[node.id].x)));
+});
+
 test("review import reproduces metrics and rejects stale or embellished experiments", () => {
   const source = { ...graph, generatedAt: "graph-1", nodes: graph.nodes.slice(0, 2), edges: [] };
   const original = { a: { x: 0, y: 0 }, b: { x: 8, y: 3 } };
@@ -92,6 +138,24 @@ test("review import reproduces metrics and rejects stale or embellished experime
     after: { ...after, score: 0 } } }, source, layouts), /cannot be reproduced/);
   assert.throws(() => validateLayoutReport({ ...report, current: { ...report.current,
     review: { ...report.current.review, verdict: "unsure" } } }, source, layouts), /Mark the current/);
+});
+
+test("whole-map feedback can be reviewed without accepting an arbitrary all-zone report", () => {
+  const approvedGraph = JSON.parse(readFileSync("brain/data/approved/graph.json", "utf8"));
+  const layouts = JSON.parse(readFileSync("brain/data/approved/layouts.json", "utf8"));
+  const guidance = JSON.parse(readFileSync("brain/data/approved/organization-model.json", "utf8")).layoutIntelligence;
+  const zones = Object.entries(ORGANIZED_MAP_ZONES).map(([id, zone]) => ({ ...zone, id }));
+  const trial = runWholeMapPilot(approvedGraph, layouts.layouts.organized.nodes, guidance, zones);
+  const report = { version: 1, graphGeneratedAt: approvedGraph.generatedAt,
+    layoutGeneratedAt: layouts.generatedAt, mode: "organized", zone: "all", trialKind: "whole-map",
+    current: { ...trial, review: { mode: "organized", zone: "all", verdict: "better",
+      parameters: trial.parameters, before: trial.before, after: trial.after, note: "Whole map is clearer" } } };
+  const accepted = validateLayoutReport(report, approvedGraph, layouts);
+  assert.equal(accepted.zone, "all");
+  assert.equal(accepted.trialKind, "whole-map");
+  assert.throws(() => validateLayoutReport({ ...report, trialKind: "standard" }, approvedGraph, layouts), /Unknown/);
+  assert.throws(() => validateLayoutReport({ ...report, current: { ...report.current,
+    after: { ...trial.after, overlaps: 0 } } }, approvedGraph, layouts), /cannot be reproduced/);
 });
 
 test("curated pair hints require a real sourced edge and display-only separation", () => {

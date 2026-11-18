@@ -36,6 +36,9 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 .lab-field { display: grid; gap: 7px; margin-top: 17px; color: #b3b9af; font-size: 12px; }
 .lab-field select, .lab-feedback textarea { width: 100%; min-height: 35px; padding: 7px 9px; border: 1px solid #44443d; border-radius: 3px; outline: none; background: #101211; color: #e7e6de; }
 .lab-field select:focus, .lab-feedback textarea:focus, .lab-search input:focus { border-color: #82b8a9; }
+.lab-whole-map { width: 100%; min-height: 37px; display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 12px; padding: 7px 10px; border: 1px solid #a58a54; border-radius: 3px; background: #342c1d; color: #f1e4c4; font-size: 12px; font-weight: 600; }
+.lab-whole-map:hover:not(:disabled) { background: #443925; border-color: #d2b06e; }
+.lab-whole-map:disabled { opacity: .5; cursor: not-allowed; }
 .lab-slider { display: grid; gap: 7px; margin: 17px 0; color: #c6c8c0; font-size: 12px; }
 .lab-slider > span { display: flex; justify-content: space-between; gap: 12px; }
 .lab-slider output { color: #c7d9d1; font-variant-numeric: tabular-nums; }

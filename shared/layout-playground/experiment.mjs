@@ -317,3 +317,27 @@ export function autoTuneLayout(graph, baseline, guidance, zones, scopeZone = "al
   const best = (eligible.length ? eligible : trials).sort((a, b) => a.after.score - b.after.score)[0];
   return { ...best, trials: trials.map(({ parameters, after, outcome }) => ({ parameters, after, outcome })) };
 }
+
+export function runWholeMapPilot(graph, baseline, guidance, zones, feedback = []) {
+  const presets = [
+    { spacing: 1.15, connectionPull: 0.3, zoneFreedom: 0.65, iterations: 80 },
+    { spacing: 1.4, connectionPull: 0.55, zoneFreedom: 1, iterations: 80 },
+    { spacing: 1.65, connectionPull: 0.25, zoneFreedom: 0.8, iterations: 80 },
+    { spacing: 1.35, connectionPull: 0.7, zoneFreedom: 0.9, iterations: 96 },
+  ];
+  const key = (item) => [item.spacing, item.connectionPull, item.zoneFreedom, item.iterations].join(":");
+  const disliked = new Set(feedback.filter((item) => item.verdict === "worse" && item.parameters)
+    .map((item) => key(item.parameters)));
+  const liked = feedback.filter((item) => item.verdict === "better" && item.parameters)
+    .map((item) => item.parameters);
+  const profiles = [...liked, ...presets]
+    .filter((item, index, items) => items.findIndex((other) => key(other) === key(item)) === index)
+    .filter((item) => !disliked.has(key(item)))
+    .slice(0, 6);
+  if (!profiles.length) throw new Error("No whole-map profiles remain after feedback.");
+  const trials = profiles.map((parameters) => runLayoutExperiment(graph, baseline, guidance, zones,
+    parameters, "all"));
+  const eligible = trials.filter((trial) => trial.outcome !== "regression");
+  const best = (eligible.length ? eligible : trials).sort((a, b) => a.after.score - b.after.score)[0];
+  return { ...best, trials: trials.map(({ parameters, after, outcome }) => ({ parameters, after, outcome })) };
+}

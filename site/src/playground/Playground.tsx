@@ -1,4 +1,4 @@
-import { ArrowLeft, Download, Focus, FlaskConical, Play, RotateCcw, Search, Sparkles, ThumbsDown, ThumbsUp, ZoomIn, ZoomOut } from "lucide-react";
+import { ArrowLeft, Download, Focus, FlaskConical, Network, Play, RotateCcw, Search, Sparkles, ThumbsDown, ThumbsUp, ZoomIn, ZoomOut } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { DEFAULT_PARAMETERS, evaluateLayout } from "../../../shared/layout-playground/experiment.mjs";
 import type { PlaygroundMetrics, PlaygroundParameters, PlaygroundResult } from "../../../shared/layout-playground/experiment.mjs";
@@ -19,6 +19,7 @@ interface FeedbackRecord {
   before: PlaygroundMetrics;
   after: PlaygroundMetrics;
   note: string;
+  trialKind?: "whole-map" | "standard";
 }
 
 const STORAGE_KEY = "mhm-layout-playground-feedback-v1";
@@ -52,7 +53,7 @@ function fitCamera(graph: GraphDataset, positions: Record<string, LayoutNodePosi
   return {
     x: (minX + maxX) / 2,
     y: (minY + maxY) / 2,
-    scale: Math.min(0.95, Math.max(0.06, Math.min(paneWidth / (maxX - minX + 300),
+    scale: Math.min(0.95, Math.max(0.012, Math.min(paneWidth / (maxX - minX + 300),
       paneHeight / (maxY - minY + 230)))),
   };
 }
@@ -92,6 +93,7 @@ export function Playground() {
   const [zone, setZone] = useState("rock-circuit");
   const [parameters, setParameters] = useState<PlaygroundParameters>({ ...DEFAULT_PARAMETERS });
   const [result, setResult] = useState<PlaygroundResult>();
+  const [trialKind, setTrialKind] = useState<"whole-map" | "standard">("standard");
   const [camera, setCamera] = useState<Camera>({ x: 0, y: 0, scale: 0.25 });
   const [search, setSearch] = useState("");
   const [selectedId, setSelectedId] = useState<string>();
@@ -142,6 +144,8 @@ export function Playground() {
     requestId.current += 1;
     setMode(next);
     setResult(undefined);
+    setTrialKind("standard");
+    setBusy(false);
     setCamera(readingCamera(graph, layouts.layouts[next].nodes, zone));
   }
 
@@ -150,6 +154,8 @@ export function Playground() {
     requestId.current += 1;
     setZone(next);
     setResult(undefined);
+    setTrialKind("standard");
+    setBusy(false);
     setCamera(readingCamera(graph, baseline, next));
   }
 
@@ -158,10 +164,29 @@ export function Playground() {
     requestId.current += 1;
     setError("");
     setBusy(true);
+    setTrialKind("standard");
     worker.current.postMessage({ id: requestId.current, graph, baseline, scopeZone: zone,
       parameters: selectedParameters, auto,
       feedback: history.filter((item) => item.mode === mode && item.zone === zone)
         .map((item) => ({ verdict: item.verdict, parameters: item.parameters })),
+    });
+  }
+
+  function runWholeMap() {
+    if (!graph || !layouts || !worker.current) return;
+    const organized = layouts.layouts.organized.nodes;
+    requestId.current += 1;
+    setMode("organized");
+    setZone("all");
+    setResult(undefined);
+    setTrialKind("whole-map");
+    setError("");
+    setBusy(true);
+    setCamera(fitCamera(graph, organized, "all"));
+    worker.current.postMessage({ id: requestId.current, graph, baseline: organized, scopeZone: "all",
+      parameters, auto: false, wholeMap: true,
+      feedback: history.filter((item) => item.mode === "organized" && item.zone === "all" &&
+        item.trialKind === "whole-map").map((item) => ({ verdict: item.verdict, parameters: item.parameters })),
     });
   }
 
@@ -186,7 +211,7 @@ export function Playground() {
     const entry: FeedbackRecord = {
       id: crypto.randomUUID(),
       createdAt: new Date().toISOString(), mode, zone, verdict,
-      parameters: result.parameters, before: result.before, after: result.after, note: note.trim(),
+      parameters: result.parameters, before: result.before, after: result.after, note: note.trim(), trialKind,
     };
     const next = [entry, ...history.filter((item) => item.id !== entry.id)].slice(0, 30);
     setHistory(next);
@@ -195,11 +220,12 @@ export function Playground() {
 
   function exportReport() {
     const currentReview = result && history.find((item) => item.mode === mode && item.zone === zone &&
+      (item.trialKind ?? "standard") === trialKind &&
       item.after.score === result.after.score && item.before.score === result.before.score &&
       JSON.stringify(item.parameters) === JSON.stringify(result.parameters));
     const payload = { version: 1, exportedAt: new Date().toISOString(), graphGeneratedAt: graph?.generatedAt,
       layoutGeneratedAt: layouts?.generatedAt,
-      mode, zone, current: result ? { parameters: result.parameters, before: result.before,
+      mode, zone, trialKind, current: result ? { parameters: result.parameters, before: result.before,
         after: result.after, outcome: result.outcome, positions: result.positions, trials: result.trials,
         review: currentReview ?? null } : null,
       feedback: history };
@@ -235,6 +261,9 @@ export function Playground() {
               {MAP_ZONES.map((item) => <option key={item.id} value={item.id}>{item.label}</option>)}
             </select>
           </label>
+          <button type="button" className="lab-whole-map" disabled={!graph || !layouts || busy} onClick={runWholeMap}>
+            <Network size={16} aria-hidden="true" /> Reflow whole map
+          </button>
         </div>
         <div className="lab-section lab-parameters"><h2>Brain rules</h2>
           <Slider label="Label spacing" min={0.5} max={2} step={0.05} value={parameters.spacing}
@@ -249,7 +278,7 @@ export function Playground() {
             <button type="button" className="lab-primary" disabled={!graph || busy} onClick={() => run(false)}><Play size={16} /> Run</button>
             <button type="button" disabled={!graph || busy} onClick={() => run(true)}><Sparkles size={16} /> Auto tune</button>
           </div>
-          <button type="button" className="lab-reset" onClick={() => { setParameters({ ...DEFAULT_PARAMETERS }); setResult(undefined); }}><RotateCcw size={14} /> Reset trial</button>
+          <button type="button" className="lab-reset" onClick={() => { requestId.current += 1; setBusy(false); setParameters({ ...DEFAULT_PARAMETERS }); setResult(undefined); setTrialKind("standard"); }}><RotateCcw size={14} /> Reset trial</button>
         </div>
         <div className="lab-section lab-feedback"><h2>Human feedback</h2>
           <div className="lab-verdicts">
@@ -266,6 +295,7 @@ export function Playground() {
               setMode(item.mode);
               setZone(item.zone);
               setResult(undefined);
+              setTrialKind(item.trialKind ?? "standard");
               setParameters(item.parameters);
             }}>
             <span>{item.verdict === "better" ? "↑" : item.verdict === "worse" ? "↓" : "·"} {item.zone}</span>
@@ -282,7 +312,7 @@ export function Playground() {
             <button type="button" onClick={focusSearch}>Find</button></div>
           <div className="lab-zoom">
             <button type="button" title="Fit focus zone" aria-label="Fit focus zone" onClick={() => { if (graph && baseline) setCamera(fitCamera(graph, baseline, zone)); }}><Focus size={17} /></button>
-            <button type="button" title="Zoom out" aria-label="Zoom out" onClick={() => setCamera({ ...camera, scale: Math.max(0.06, camera.scale * 0.8) })}><ZoomOut size={17} /></button>
+            <button type="button" title="Zoom out" aria-label="Zoom out" onClick={() => setCamera({ ...camera, scale: Math.max(0.012, camera.scale * 0.8) })}><ZoomOut size={17} /></button>
             <button type="button" title="Zoom in" aria-label="Zoom in" onClick={() => setCamera({ ...camera, scale: Math.min(1.8, camera.scale * 1.25) })}><ZoomIn size={17} /></button>
           </div>
         </div>
@@ -291,7 +321,7 @@ export function Playground() {
           <div className="lab-map-panel"><div className="lab-panel-title"><strong>Current</strong><span>{mode === "organized" ? "Map" : mode === "genre" ? "Genres" : "Chaos"}</span></div>
             {graph && baseline && <MapCanvas graph={graph} positions={baseline} camera={camera} selectedId={selectedId}
               scopeZone={zone} onCamera={setCamera} onSelect={setSelectedId} />}</div>
-          <div className="lab-map-panel"><div className="lab-panel-title"><strong>Experiment</strong><span>{busy ? "Computing" : result?.outcome ?? "Ready"}</span></div>
+          <div className="lab-map-panel"><div className="lab-panel-title"><strong>{trialKind === "whole-map" ? "Whole-map trial" : "Experiment"}</strong><span>{busy ? "Computing" : result?.outcome ?? "Ready"}</span></div>
             {graph && baseline && <MapCanvas graph={graph} positions={result?.positions ?? baseline} camera={camera}
               selectedId={selectedId} scopeZone={zone} onCamera={setCamera} onSelect={setSelectedId} />}</div>
         </div>
@@ -306,7 +336,7 @@ export function Playground() {
             <Metric label="Score" before={before.score} after={result?.after.score} />
           </div>}
           {result?.trials && <div className="lab-trials">{result.trials.map((trial, index) => <span key={index}
-            className={trial.parameters.spacing === result.parameters.spacing && trial.parameters.connectionPull === result.parameters.connectionPull ? "chosen" : ""}
+            className={JSON.stringify(trial.parameters) === JSON.stringify(result.parameters) ? "chosen" : ""}
             title={`Spacing ${trial.parameters.spacing}, pull ${trial.parameters.connectionPull}, freedom ${trial.parameters.zoneFreedom}`}>
             {index + 1}: {trial.after.score.toFixed(1)}
           </span>)}</div>}

@@ -154,7 +154,7 @@ export function MapCanvas({ graph, positions, camera, selectedId, scopeZone, onC
       drag.current = undefined;
     }}
     onWheel={(event) => {
-      const scale = Math.min(1.8, Math.max(0.06, camera.scale * (event.deltaY > 0 ? 0.88 : 1.12)));
+      const scale = Math.min(1.8, Math.max(0.012, camera.scale * (event.deltaY > 0 ? 0.88 : 1.12)));
       onCamera({ ...camera, scale });
     }}
   />;

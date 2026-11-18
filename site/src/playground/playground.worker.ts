@@ -1,5 +1,5 @@
 import organization from "../../../brain/data/approved/organization-model.json";
-import { autoTuneLayout, runLayoutExperiment } from "../../../shared/layout-playground/experiment.mjs";
+import { autoTuneLayout, runLayoutExperiment, runWholeMapPilot } from "../../../shared/layout-playground/experiment.mjs";
 import type { GraphDataset, LayoutNodePosition } from "../types/graph";
 import type { PlaygroundParameters } from "../../../shared/layout-playground/experiment.mjs";
 import { MAP_ZONES } from "../lib/graph-config";
@@ -11,17 +11,20 @@ interface Request {
   scopeZone: string;
   parameters: PlaygroundParameters;
   auto: boolean;
+  wholeMap?: boolean;
   feedback: Array<{ verdict: string; parameters: PlaygroundParameters }>;
 }
 
 self.onmessage = (event: MessageEvent<Request>) => {
-  const { id, graph, baseline, scopeZone, parameters, auto, feedback } = event.data;
+  const { id, graph, baseline, scopeZone, parameters, auto, wholeMap, feedback } = event.data;
   try {
     if (organization.graph.nodes !== graph.nodes.length) {
       throw new Error("Brain guidance and graph snapshots differ. Reload after deployment.");
     }
     const guidance = organization.layoutIntelligence;
-    const result = auto
+    const result = wholeMap
+      ? runWholeMapPilot(graph, baseline, guidance, MAP_ZONES, feedback)
+      : auto
       ? autoTuneLayout(graph, baseline, guidance, MAP_ZONES, scopeZone, feedback)
       : runLayoutExperiment(graph, baseline, guidance, MAP_ZONES, parameters, scopeZone);
     self.postMessage({ id, result });
