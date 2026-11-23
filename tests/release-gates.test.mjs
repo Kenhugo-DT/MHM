@@ -93,8 +93,10 @@ test("editing curator input invalidates the learning signature", () => {
     const approved = path.join(directory, "brain", "data", "approved");
     mkdirSync(approved, { recursive: true });
     const feedback = path.join(approved, "curator-feedback.json");
-    writeFileSync(feedback, '{"nodeFeedback":[]}');
+    writeFileSync(feedback, '{\r\n"nodeFeedback":[]\r\n}');
     const before = learningInputSignature(directory);
+    writeFileSync(feedback, '{\n"nodeFeedback":[]\n}');
+    assert.equal(learningInputSignature(directory), before);
     writeFileSync(feedback, '{"nodeFeedback":[{"id":"changed"}]}');
     assert.notEqual(learningInputSignature(directory), before);
   } finally {

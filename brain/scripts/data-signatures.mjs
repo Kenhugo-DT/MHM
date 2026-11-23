@@ -29,7 +29,7 @@ export function learningInputSignature(repoRoot) {
   ].filter((file) => fs.existsSync(file));
   const inputs = files.map((file) => [
     path.relative(repoRoot, file).split(path.sep).join("/"),
-    createHash("sha256").update(fs.readFileSync(file)).digest("hex"),
+    createHash("sha256").update(fs.readFileSync(file, "utf8").replaceAll("\r\n", "\n")).digest("hex"),
   ]).sort((a, b) => Buffer.compare(Buffer.from(a[0]), Buffer.from(b[0])));
   return jsonSignature(inputs);
 }
