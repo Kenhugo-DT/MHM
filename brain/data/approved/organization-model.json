@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-06T12:19:58.898Z",
+  "generatedAt": "2026-11-18T08:16:01.631Z",
   "source": "approved graph + learning model + layout analysis",
   "graph": {
-    "nodes": 1201,
-    "edges": 1560,
-    "mapConnections": 1128,
-    "generatedAt": "2026-11-06T12:19:58.581Z"
+    "nodes": 1203,
+    "edges": 1563,
+    "mapConnections": 1131,
+    "generatedAt": "2026-11-18T08:16:01.428Z"
   },
   "layoutPolicy": {
     "target": "organized chaos",
@@ -19,7 +19,7 @@
   },
   "layoutIntelligence": {
     "version": 1,
-    "generatedAt": "2026-11-06T12:19:58.898Z",
+    "generatedAt": "2026-11-18T08:16:01.631Z",
     "intent": "organized chaos with readable labels and porous genre boundaries",
     "global": {
       "targetLabelState": "close-but-readable",
@@ -82,16 +82,16 @@
       "jazz": {
         "zone": "jazz",
         "label": "JAZZ",
-        "pressureScore": 0.857,
-        "density": 5.717,
-        "overlapPerNode": 1.67,
-        "bridgeRatio": 0.148,
-        "spacingMultiplier": 1.44,
+        "pressureScore": 0.86,
+        "density": 5.782,
+        "overlapPerNode": 1.652,
+        "bridgeRatio": 0.146,
+        "spacingMultiplier": 1.441,
         "expansion": {
-          "x": 397,
-          "y": 261
+          "x": 398,
+          "y": 262
         },
-        "bridgeBleed": 441,
+        "bridgeBleed": 440,
         "strategy": "expand-and-relax",
         "bridgeTargets": [],
         "readableChaos": true
@@ -201,16 +201,16 @@
       "country-roots": {
         "zone": "country-roots",
         "label": "COUNTRY ROOTS",
-        "pressureScore": 0.529,
-        "density": 3.434,
-        "overlapPerNode": 0.907,
-        "bridgeRatio": 0.2,
-        "spacingMultiplier": 1.302,
+        "pressureScore": 0.516,
+        "density": 3.48,
+        "overlapPerNode": 0.895,
+        "bridgeRatio": 0.197,
+        "spacingMultiplier": 1.297,
         "expansion": {
-          "x": 306,
-          "y": 260
+          "x": 302,
+          "y": 257
         },
-        "bridgeBleed": 427,
+        "bridgeBleed": 423,
         "strategy": "preserve-loose-cluster",
         "bridgeTargets": [],
         "readableChaos": true
@@ -3340,6 +3340,7 @@
         "john-coltrane",
         "swing-music",
         "bebop",
+        "mb-band-7e5fd719-c158-4219-9ac4-fbe1ad794f42",
         "cool-jazz",
         "modal-jazz",
         "dave-brubeck",
@@ -3416,7 +3417,7 @@
         "sweet-emma-barrett",
         "machito"
       ],
-      "edgesInternal": 116,
+      "edgesInternal": 117,
       "edgesCrossing": 30,
       "isolatedNodes": [],
       "underConnectedImportantNodes": [
@@ -3447,10 +3448,10 @@
         "miles-davis",
         "ragtime",
         "al-jolson",
+        "john-mclaughlin",
         "john-coltrane",
         "swing-music",
         "charles-aznavour",
-        "john-mclaughlin",
         "louis-armstrong",
         "duke-ellington",
         "bebop",
@@ -3475,12 +3476,12 @@
         "antonio-carlos-jobim"
       ],
       "eraMedian": 1943,
-      "averageDegree": 2.98,
-      "averageSourceQuality": 0.27,
+      "averageDegree": 2.97,
+      "averageSourceQuality": 0.278,
       "approvedFactNodes": 10,
-      "needsAttentionScore": 61.78,
-      "nodeCount": 88,
-      "factCoverageRate": 0.114,
+      "needsAttentionScore": 61.64,
+      "nodeCount": 89,
+      "factCoverageRate": 0.112,
       "degreeP25": 1,
       "bridgePolicies": [
         "western-swing-country-jazz",
@@ -4592,6 +4593,7 @@
         "patsy-cline",
         "merle-haggard",
         "honky-tonk",
+        "mb-band-c685765c-b778-4ed6-9035-8f7088431765",
         "western-swing",
         "bakersfield-sound",
         "outlaw-country",
@@ -4654,14 +4656,13 @@
         "bobbie-gentry",
         "glen-campbell"
       ],
-      "edgesInternal": 96,
+      "edgesInternal": 98,
       "edgesCrossing": 26,
       "isolatedNodes": [
         "jerry-reed"
       ],
       "underConnectedImportantNodes": [
         "bob-wills",
-        "johnny-cash",
         "chet-atkins",
         "uncle-dave-macon",
         "red-foley"
@@ -4687,14 +4688,15 @@
         "country",
         "western-swing",
         "bakersfield-sound",
+        "willie-nelson",
         "bluegrass",
         "jimmie-rodgers",
-        "willie-nelson",
         "the-carter-family",
         "merle-haggard",
         "honky-tonk",
         "buck-owens",
         "emmylou-harris",
+        "johnny-cash",
         "country-rock",
         "outlaw-country",
         "waylon-jennings",
@@ -4703,6 +4705,7 @@
       ],
       "overlapRisk": 68,
       "overflowNodes": [
+        "mb-band-c685765c-b778-4ed6-9035-8f7088431765",
         "country",
         "johnny-cash",
         "chet-atkins",
@@ -4710,12 +4713,12 @@
         "merle-haggard"
       ],
       "eraMedian": 1952,
-      "averageDegree": 2.91,
-      "averageSourceQuality": 0.246,
+      "averageDegree": 2.92,
+      "averageSourceQuality": 0.256,
       "approvedFactNodes": 11,
-      "needsAttentionScore": 61.85,
-      "nodeCount": 75,
-      "factCoverageRate": 0.147,
+      "needsAttentionScore": 58.87,
+      "nodeCount": 76,
+      "factCoverageRate": 0.145,
       "degreeP25": 1,
       "bridgePolicies": [
         "western-swing-country-jazz",
@@ -6423,11 +6426,11 @@
       "label": "Johnny Cash",
       "type": "artist",
       "zone": "country-roots",
-      "degree": 2,
-      "weightedDegree": 1.32,
+      "degree": 3,
+      "weightedDegree": 2.22,
       "sourceQuality": 0.5,
       "approvedFactCount": 1,
-      "hubScore": 0.25,
+      "hubScore": 0.375,
       "bridgeScore": 0.73,
       "secondaryZones": [
         "guitar-workshop"
@@ -6454,7 +6457,6 @@
       "overlapCount": 0,
       "overflow": 208,
       "recommendedActions": [
-        "expand-important-node",
         "preserve-cross-zone-bridge",
         "train-bridge-policy",
         "review-zone-bleed"
@@ -6465,11 +6467,11 @@
       "label": "Willie Nelson",
       "type": "artist",
       "zone": "country-roots",
-      "degree": 5,
-      "weightedDegree": 4.18,
+      "degree": 6,
+      "weightedDegree": 5.08,
       "sourceQuality": 0.5,
       "approvedFactCount": 1,
-      "hubScore": 0.625,
+      "hubScore": 0.75,
       "bridgeScore": 0.58,
       "secondaryZones": [
         "guitar-workshop"
@@ -9658,11 +9660,11 @@
       "label": "John McLaughlin",
       "type": "guitarist",
       "zone": "jazz",
-      "degree": 3,
-      "weightedDegree": 1.94,
+      "degree": 4,
+      "weightedDegree": 2.84,
       "sourceQuality": 1,
       "approvedFactCount": 1,
-      "hubScore": 0.375,
+      "hubScore": 0.5,
       "bridgeScore": 1,
       "secondaryZones": [
         "rock-circuit",
@@ -20329,6 +20331,46 @@
       "overlapCount": 1,
       "overflow": 0,
       "recommendedActions": []
+    },
+    "mb-band-7e5fd719-c158-4219-9ac4-fbe1ad794f42": {
+      "id": "mb-band-7e5fd719-c158-4219-9ac4-fbe1ad794f42",
+      "label": "Five Peace Band",
+      "type": "band",
+      "zone": "jazz",
+      "degree": 1,
+      "weightedDegree": 0.9,
+      "era": 2008,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.125,
+      "bridgeScore": 0,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [],
+      "overlapCount": 0,
+      "overflow": 0,
+      "recommendedActions": []
+    },
+    "mb-band-c685765c-b778-4ed6-9035-8f7088431765": {
+      "id": "mb-band-c685765c-b778-4ed6-9035-8f7088431765",
+      "label": "The Highwaymen",
+      "type": "band",
+      "zone": "country-roots",
+      "degree": 2,
+      "weightedDegree": 1.8,
+      "era": 1984,
+      "sourceQuality": 1,
+      "approvedFactCount": 0,
+      "hubScore": 0.25,
+      "bridgeScore": 0,
+      "secondaryZones": [],
+      "bridgePolicies": [],
+      "linkedGenres": [],
+      "overlapCount": 0,
+      "overflow": 388,
+      "recommendedActions": [
+        "review-zone-bleed"
+      ]
     },
     "classical-music": {
       "id": "classical-music",
@@ -36232,7 +36274,6 @@
       "cream",
       "body-count",
       "public-enemy",
-      "johnny-cash",
       "chet-atkins",
       "elvis-presley",
       "uncle-dave-macon",
@@ -36303,17 +36344,18 @@
       "angus-young",
       "traditional-pop",
       "g-funk",
-      "django-reinhardt"
+      "django-reinhardt",
+      "robert-johnson"
     ]
   },
   "recommendedResearchRequests": [
     {
-      "id": "organization-rock-circuit-20261106",
+      "id": "organization-rock-circuit-20261118",
       "title": "Organize ROCK CIRCUIT frontier",
       "status": "queued",
       "priority": 90,
       "scope": "artist_network",
-      "createdAt": "2026-11-06T12:19:58.895Z",
+      "createdAt": "2026-11-18T08:16:01.629Z",
       "instructions": "Expand and clarify the ROCK CIRCUIT part of Music History Map. Current organization signal: rock, classic rock, glam, funk and broad band history. Prioritize documented music-related connections that help layout organization: associated genres, shared members, collaborations, influences, instruments and clear bridges to neighboring zones. Active bridge policies for this zone: gospel-rnb-soul-rock, rock-to-metal, punk-to-rock, hip-hop-crossovers, jazz-to-fusion, country-roots-to-rock, yardbirds-guitar-lineage, rickenbacker-recording-use, jazz-fusion-guitar. Prefer candidates that strengthen those transitions without turning category pages into nodes. Use albums, songs and releases only as context for edges. Do not create release/song nodes. Only propose node types allowed by MHM: band, guitarist, artist, guitar, guitar_brand and genre.",
       "seeds": [
         {
@@ -36356,12 +36398,12 @@
       "notes": "Generated by brain:organize. Needs-attention score 122.22. Active bridge policies: gospel-rnb-soul-rock, rock-to-metal, punk-to-rock, hip-hop-crossovers, jazz-to-fusion, country-roots-to-rock, yardbirds-guitar-lineage, rickenbacker-recording-use, jazz-fusion-guitar."
     },
     {
-      "id": "organization-punk-alt-20261106",
+      "id": "organization-punk-alt-20261118",
       "title": "Organize PUNK / ALTERNATIVE frontier",
       "status": "queued",
       "priority": 90,
       "scope": "artist_network",
-      "createdAt": "2026-11-06T12:19:58.895Z",
+      "createdAt": "2026-11-18T08:16:01.629Z",
       "instructions": "Expand and clarify the PUNK / ALTERNATIVE part of Music History Map. Current organization signal: punk, post-punk, alternative, indie, hardcore and adjacent scenes. Prioritize documented music-related connections that help layout organization: associated genres, shared members, collaborations, influences, instruments and clear bridges to neighboring zones. Active bridge policies for this zone: punk-to-rock, hip-hop-crossovers, jaguar-alternative-use. Prefer candidates that strengthen those transitions without turning category pages into nodes. Use albums, songs and releases only as context for edges. Do not create release/song nodes. Only propose node types allowed by MHM: band, guitarist, artist, guitar, guitar_brand and genre.",
       "seeds": [
         {
@@ -36404,12 +36446,12 @@
       "notes": "Generated by brain:organize. Needs-attention score 120.68. Active bridge policies: punk-to-rock, hip-hop-crossovers, jaguar-alternative-use."
     },
     {
-      "id": "organization-pop-soul-disco-20261106",
+      "id": "organization-pop-soul-disco-20261118",
       "title": "Organize POP / SOUL / DISCO frontier",
       "status": "queued",
       "priority": 90,
       "scope": "artist_network",
-      "createdAt": "2026-11-06T12:19:58.895Z",
+      "createdAt": "2026-11-18T08:16:01.629Z",
       "instructions": "Expand and clarify the POP / SOUL / DISCO part of Music History Map. Current organization signal: 1960s Motown, gospel-informed soul, 1970s disco and 1980s pop and synth-pop. Prioritize documented music-related connections that help layout organization: associated genres, shared members, collaborations, influences, instruments and clear bridges to neighboring zones. Active bridge policies for this zone: gospel-rnb-soul-rock. Prefer candidates that strengthen those transitions without turning category pages into nodes. Use albums, songs and releases only as context for edges. Do not create release/song nodes. Only propose node types allowed by MHM: band, guitarist, artist, guitar, guitar_brand and genre.",
       "seeds": [
         {
@@ -36452,12 +36494,12 @@
       "notes": "Generated by brain:organize. Needs-attention score 112.29. Active bridge policies: gospel-rnb-soul-rock."
     },
     {
-      "id": "organization-hard-rock-metal-20261106",
+      "id": "organization-hard-rock-metal-20261118",
       "title": "Organize HARD ROCK / METAL frontier",
       "status": "queued",
       "priority": 90,
       "scope": "artist_network",
-      "createdAt": "2026-11-06T12:19:58.895Z",
+      "createdAt": "2026-11-18T08:16:01.630Z",
       "instructions": "Expand and clarify the HARD ROCK / METAL part of Music History Map. Current organization signal: hard rock, metal, riff culture, virtuoso guitar and heavier scenes. Prioritize documented music-related connections that help layout organization: associated genres, shared members, collaborations, influences, instruments and clear bridges to neighboring zones. Active bridge policies for this zone: rock-to-metal, hip-hop-crossovers, yardbirds-guitar-lineage. Prefer candidates that strengthen those transitions without turning category pages into nodes. Use albums, songs and releases only as context for edges. Do not create release/song nodes. Only propose node types allowed by MHM: band, guitarist, artist, guitar, guitar_brand and genre.",
       "seeds": [
         {
@@ -36500,12 +36542,12 @@
       "notes": "Generated by brain:organize. Needs-attention score 110.07. Active bridge policies: rock-to-metal, hip-hop-crossovers, yardbirds-guitar-lineage."
     },
     {
-      "id": "organization-guitar-workshop-20261106",
+      "id": "organization-guitar-workshop-20261118",
       "title": "Organize GUITAR WORKSHOP frontier",
       "status": "queued",
       "priority": 90,
       "scope": "guitar_history",
-      "createdAt": "2026-11-06T12:19:58.895Z",
+      "createdAt": "2026-11-18T08:16:01.630Z",
       "instructions": "Expand and clarify the GUITAR WORKSHOP part of Music History Map. Current organization signal: guitar models, guitar brands and instrument history. Prioritize documented music-related connections that help layout organization: associated genres, shared members, collaborations, influences, instruments and clear bridges to neighboring zones. Active bridge policies for this zone: esquire-country-use, jaguar-alternative-use, rickenbacker-recording-use, jem-virtuoso-design. Prefer candidates that strengthen those transitions without turning category pages into nodes. Use albums, songs and releases only as context for edges. Do not create release/song nodes. Only propose node types allowed by MHM: band, guitarist, artist, guitar, guitar_brand and genre.",
       "seeds": [
         {

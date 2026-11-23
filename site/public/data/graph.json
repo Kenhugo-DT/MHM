@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-06T12:19:58.581Z",
+  "generatedAt": "2026-11-18T08:16:01.428Z",
   "nodes": [
     {
       "id": "blues",
@@ -23372,6 +23372,103 @@
       "curatorTags": []
     },
     {
+      "id": "mb-band-7e5fd719-c158-4219-9ac4-fbe1ad794f42",
+      "label": "Five Peace Band",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "Band with a documented membership connection to John McLaughlin.",
+      "metadata": [
+        "Band"
+      ],
+      "x": -891,
+      "y": -693,
+      "zone": "jazz",
+      "starter": false,
+      "sources": [
+        {
+          "label": "MusicBrainz: artist identity",
+          "url": "https://musicbrainz.org/artist/7e5fd719-c158-4219-9ac4-fbe1ad794f42",
+          "provider": "musicbrainz"
+        },
+        {
+          "label": "MusicBrainz: group begin",
+          "url": "https://musicbrainz.org/artist/7e5fd719-c158-4219-9ac4-fbe1ad794f42",
+          "provider": "musicbrainz"
+        },
+        {
+          "label": "John McLaughlin: Five Peace Band tour",
+          "url": "https://www.johnmclaughlin.com/2008/08/five-peace-band/",
+          "provider": "artist"
+        }
+      ],
+      "eraStart": 2008,
+      "eraStartEvidence": {
+        "basis": "group_formation",
+        "note": "MusicBrainz group begin date; the artist's site documents the band and its 2008 tour.",
+        "sources": [
+          {
+            "label": "MusicBrainz: group begin",
+            "url": "https://musicbrainz.org/artist/7e5fd719-c158-4219-9ac4-fbe1ad794f42",
+            "provider": "musicbrainz"
+          },
+          {
+            "label": "John McLaughlin: Five Peace Band tour",
+            "url": "https://www.johnmclaughlin.com/2008/08/five-peace-band/",
+            "provider": "artist"
+          }
+        ]
+      },
+      "curatorTags": []
+    },
+    {
+      "id": "mb-band-c685765c-b778-4ed6-9035-8f7088431765",
+      "label": "The Highwaymen",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "Band with a documented membership connection to Johnny Cash.",
+      "metadata": [
+        "Band"
+      ],
+      "x": -1512,
+      "y": 806,
+      "zone": "country-roots",
+      "starter": false,
+      "sources": [
+        {
+          "label": "MusicBrainz: artist identity",
+          "url": "https://musicbrainz.org/artist/c685765c-b778-4ed6-9035-8f7088431765",
+          "provider": "musicbrainz"
+        },
+        {
+          "label": "MusicBrainz: group begin",
+          "url": "https://musicbrainz.org/artist/c685765c-b778-4ed6-9035-8f7088431765",
+          "provider": "musicbrainz"
+        },
+        {
+          "label": "Johnny Cash estate: The Highwaymen lineup",
+          "url": "https://www.johnnycash.com/music/the-highwaymen-live-american-outlaws/",
+          "provider": "artist"
+        }
+      ],
+      "eraStart": 1984,
+      "eraStartEvidence": {
+        "basis": "group_formation",
+        "note": "The Johnny Cash estate dates the group's formation to 1984; MusicBrainz lists 1985.",
+        "sources": [
+          {
+            "label": "Johnny Cash estate: group formation",
+            "url": "https://www.johnnycash.com/columbia-legacy-recordings-set-to-release-johnny-cash-and-the-royal-philharmonic-orchestra-on-friday-november-13-2020/",
+            "provider": "artist"
+          }
+        ]
+      },
+      "curatorTags": []
+    },
+    {
       "id": "classical-music",
       "label": "Classical music",
       "type": "genre",
@@ -40044,8 +40141,16 @@
       "type": "member_of",
       "label": "member",
       "strength": 0.84,
-      "context": [],
-      "sources": []
+      "context": [
+        "The Rock Hall identifies Clapton as inducted with the Yardbirds."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame: Eric Clapton",
+          "url": "https://rockhall.com/inductees/eric-clapton/",
+          "provider": "rockhall"
+        }
+      ]
     },
     {
       "id": "legacy-33-eric-clapton-cream",
@@ -40054,8 +40159,16 @@
       "type": "member_of",
       "label": "member",
       "strength": 0.86,
-      "context": [],
-      "sources": []
+      "context": [
+        "The Rock Hall identifies Clapton as inducted with Cream."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame: Cream",
+          "url": "https://rockhall.com/inductees/cream/",
+          "provider": "rockhall"
+        }
+      ]
     },
     {
       "id": "legacy-34-eric-clapton-electric-blues",
@@ -40130,8 +40243,16 @@
       "type": "member_of",
       "label": "guitarist",
       "strength": 0.95,
-      "context": [],
-      "sources": []
+      "context": [
+        "The Rock Hall lists Gilmour among Pink Floyd's inducted members."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame: Pink Floyd",
+          "url": "https://rockhall.com/inductees/pink-floyd/",
+          "provider": "rockhall"
+        }
+      ]
     },
     {
       "id": "legacy-40-pink-floyd-progressive-rock",
@@ -40396,8 +40517,16 @@
       "type": "member_of",
       "label": "guitarist / producer",
       "strength": 0.96,
-      "context": [],
-      "sources": []
+      "context": [
+        "The Rock Hall names Page as Led Zeppelin's guitarist and producer."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame: Led Zeppelin",
+          "url": "https://rockhall.com/inductees/led-zeppelin/",
+          "provider": "rockhall"
+        }
+      ]
     },
     {
       "id": "legacy-65-led-zeppelin-hard-rock",
@@ -42018,8 +42147,16 @@
       "type": "member_of",
       "label": "guitarist",
       "strength": 0.96,
-      "context": [],
-      "sources": []
+      "context": [
+        "The Rock Hall lists May among Queen's inducted members."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame: Queen",
+          "url": "https://rockhall.com/inductees/queen/",
+          "provider": "rockhall"
+        }
+      ]
     },
     {
       "id": "legacy-195-brian-may-brian-may-red-special",
@@ -51410,6 +51547,78 @@
           "label": "MusicBrainz: member of band relationship",
           "url": "https://musicbrainz.org/artist/ed1c0daa-9cdb-4bd8-8f46-794ec0783544/relationships",
           "provider": "musicbrainz"
+        }
+      ]
+    },
+    {
+      "id": "mb-member-john-mclaughlin-mb-band-7e5fd719-c158-4219-9ac4-fbe1ad794f42",
+      "source": "john-mclaughlin",
+      "target": "mb-band-7e5fd719-c158-4219-9ac4-fbe1ad794f42",
+      "type": "member_of",
+      "label": "Member of",
+      "strength": 0.9,
+      "context": [
+        "MusicBrainz records John McLaughlin as a member of Five Peace Band.",
+        "Documented period: dates not specified."
+      ],
+      "sources": [
+        {
+          "label": "MusicBrainz: member of band relationship",
+          "url": "https://musicbrainz.org/artist/fcbc2086-5863-4659-b03d-44be704697d2/relationships",
+          "provider": "musicbrainz"
+        },
+        {
+          "label": "John McLaughlin: Five Peace Band tour",
+          "url": "https://www.johnmclaughlin.com/2008/08/five-peace-band/",
+          "provider": "artist"
+        }
+      ]
+    },
+    {
+      "id": "mb-member-johnny-cash-mb-band-c685765c-b778-4ed6-9035-8f7088431765",
+      "source": "johnny-cash",
+      "target": "mb-band-c685765c-b778-4ed6-9035-8f7088431765",
+      "type": "member_of",
+      "label": "Member of",
+      "strength": 0.9,
+      "context": [
+        "MusicBrainz records Johnny Cash as a member of The Highwaymen.",
+        "Documented period: dates not specified."
+      ],
+      "sources": [
+        {
+          "label": "MusicBrainz: member of band relationship",
+          "url": "https://musicbrainz.org/artist/d43d12a1-2dc9-4257-a2fd-0a3bb1081b86/relationships",
+          "provider": "musicbrainz"
+        },
+        {
+          "label": "Johnny Cash estate: The Highwaymen lineup",
+          "url": "https://www.johnnycash.com/music/the-highwaymen-live-american-outlaws/",
+          "provider": "artist"
+        }
+      ]
+    },
+    {
+      "id": "mb-member-willie-nelson-mb-band-c685765c-b778-4ed6-9035-8f7088431765",
+      "source": "willie-nelson",
+      "target": "mb-band-c685765c-b778-4ed6-9035-8f7088431765",
+      "type": "member_of",
+      "label": "Member of",
+      "strength": 0.9,
+      "context": [
+        "MusicBrainz records Willie Nelson as a member of The Highwaymen.",
+        "Documented period: dates not specified."
+      ],
+      "sources": [
+        {
+          "label": "MusicBrainz: member of band relationship",
+          "url": "https://musicbrainz.org/artist/668fd73c-bf54-4310-a139-305517f05311/relationships",
+          "provider": "musicbrainz"
+        },
+        {
+          "label": "Johnny Cash estate: The Highwaymen lineup",
+          "url": "https://www.johnnycash.com/music/the-highwaymen-live-american-outlaws/",
+          "provider": "artist"
         }
       ]
     },

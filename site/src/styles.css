@@ -939,6 +939,8 @@ button {
   color: var(--faint);
 }
 
+.connection-evidence { display: block; width: fit-content; margin-top: 3px; color: #d6b85d; font-size: 10px; }
+
 .wiki-signal-list {
   display: grid;
   gap: 6px;

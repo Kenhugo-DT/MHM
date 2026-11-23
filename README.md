@@ -5,7 +5,7 @@ Names keep their original Unicode characters, including `æ`, `ø` and `å`.
 
 ## Graph scope
 
-Only these entities become map nodes:
+The main map currently uses these node types:
 
 - bands
 - guitarists
@@ -14,13 +14,14 @@ Only these entities become map nodes:
 - guitar brands
 - music genres
 
-Albums, songs and releases are stored as context on a relationship. They never
-become map nodes.
+Albums, songs and releases currently remain context on relationships. The
+separate globe view can evolve independently of the main map.
 
 ## Architecture
 
 - `site/` contains the Vite, React and TypeScript interface
 - PixiJS for the map renderer
+- Three.js for the separate geographic globe view
 - `brain/` contains the private research, audit and import tools
 - `shared/` contains graph schema and project-wide exclusions
 - local curated JSON as the development and offline fallback
@@ -38,17 +39,18 @@ Supabase or the local fallback. The graph itself stays lightweight: nodes store
 labels, types, positions, relationships and source links, while longer detail
 copy can remain with Wikipedia until it is requested.
 
-For the first public version, a curated graph of a few hundred nodes can stay as
-static JSON. Around 200 artists/bands, 150 genres and 100 guitars is small for a
-modern browser as long as summaries stay short and albums/songs are not stored as
-nodes. A shared cache server becomes useful later for heavy discovery jobs, not
-because this graph size is too large.
+The checked-in graph currently has over 1,200 nodes and 1,500 connections.
+`brain/data/approved/` is the reviewed snapshot; `site/public/data/` contains
+the byte-identical browser copies. Measure load and interaction performance
+before assuming this approach will scale unchanged to much larger graphs.
 
 ## Development
 
 ```bash
 npm install
 npm run migrate:data
+npm run brain:verify-snapshots
+npm run brain:verify-edge-evidence
 npm run brain:audit
 npm run dev
 ```
@@ -58,7 +60,16 @@ The application automatically uses local data unless `VITE_SUPABASE_URL` and
 
 `npm run migrate:data` writes the approved graph to
 `brain/data/approved/graph.json` and the browser copy to
-`site/public/data/graph.json`.
+`site/public/data/graph.json`, and regenerates the learning and layout models.
+Commit the reviewed snapshots together. `brain:verify-snapshots` catches missing
+or divergent browser copies. `brain:verify-edge-evidence` rejects any new map
+connection without sources; the exact set of older unsourced connections is
+tracked in `brain/data/approved/unsourced-legacy-edges.json`. These older links
+are labelled unverified in the interface until individually sourced.
+
+The searchable, keyboard-accessible node directory is at `/directory.html`.
+`/globe.html` is the independent geographic view and `/playground.html` is for
+layout experiments. Fun facts are reviewed separately from map connections.
 
 `brain/obsidian/` can be opened directly as an Obsidian vault. Generate or
 refresh the notes with:
@@ -112,17 +123,24 @@ Sunday at 03:17 UTC once the project is pushed to GitHub.
 
 ## GitHub Actions
 
-`validate.yml` runs the local safety checks on every push:
+`validate.yml` runs the safety checks on every push and pull request, including
+all Python tests, graph/snapshot checks, unit tests and browser smoke tests:
 
 ```bash
 npm run brain:example-inbox
 npm run brain:python-check
+npm run brain:verify-snapshots
+npm run brain:verify-edge-evidence
 npm run brain:audit
+npm test
 npm run check
 npm run build
+npm run test:e2e
 ```
 
-`deploy-pages.yml` builds the static site for GitHub Pages. In GitHub, enable
+`deploy-pages.yml` starts only after a successful validation of a push to
+`main`. It builds the exact validated commit and does not regenerate graph data
+during deployment. In GitHub, enable
 Pages with `Settings -> Pages -> Build and deployment -> Source -> GitHub Actions`.
 
 ## Database

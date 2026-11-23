@@ -18,7 +18,8 @@ const scriptDir = path.dirname(fileURLToPath(import.meta.url));
 const brainRoot = path.resolve(scriptDir, "..");
 const repoRoot = path.resolve(brainRoot, "..");
 const legacyDataPath = path.join(scriptDir, "graph-data.js");
-const legacyAppPath = path.join(scriptDir, "app.js");
+const legacyPositionsPath = path.join(brainRoot, "data", "legacy-structured-positions.json");
+const legacyEvidencePath = path.join(brainRoot, "data", "curated-legacy-edge-evidence.json");
 const browserOutputPath = path.join(repoRoot, "site", "public", "data", "graph.json");
 const approvedOutputPath = path.join(brainRoot, "data", "approved", "graph.json");
 const promotionsPath = path.join(brainRoot, "data", "approved", "promotions.json");
@@ -45,16 +46,17 @@ const sandbox = { window: {} };
 vm.runInNewContext(fs.readFileSync(legacyDataPath, "utf8"), sandbox);
 const legacy = sandbox.window.GUITAR_GRAPH_DATA;
 
-const appSource = fs.readFileSync(legacyAppPath, "utf8");
-const positionMatch = appSource.match(
-  /const STRUCTURED_POSITIONS = (\{[\s\S]*?\n  \});\n\n  const MAP_ZONES/,
-);
-
-if (!legacy || !positionMatch) {
-  throw new Error("Could not read the legacy graph or structured positions.");
+const positions = JSON.parse(fs.readFileSync(legacyPositionsPath, "utf8"));
+const legacyEvidence = JSON.parse(fs.readFileSync(legacyEvidencePath, "utf8"));
+if (!legacy || !positions || legacyEvidence.version !== 1 || !Array.isArray(legacyEvidence.entries)) {
+  throw new Error("Could not read the legacy graph, positions or edge evidence.");
 }
-
-const positions = vm.runInNewContext(`(${positionMatch[1]})`);
+const legacyEvidenceById = new Map(legacyEvidence.entries.map((entry) => [entry.id, entry]));
+if (legacyEvidenceById.size !== legacyEvidence.entries.length ||
+    legacyEvidence.entries.some((entry) => !entry.id?.startsWith("legacy-") || !entry.note ||
+      !entry.sources?.length || entry.sources.some((source) => !source.url?.startsWith("https://")))) {
+  throw new Error("Invalid curated legacy edge evidence.");
+}
 const supportedTypes = new Set(["artist", "band", "genre", "maker", "guitar"]);
 const artistOnly = new Set([
   "bob-dylan",
@@ -316,6 +318,17 @@ const edges = graphEdges
       sources: normalizeSources(edge.sources),
     };
   });
+
+for (const edge of edges) {
+  const evidence = legacyEvidenceById.get(edge.id);
+  if (!evidence) continue;
+  if (edge.sources.length) throw new Error(`Curated evidence duplicates existing sources: ${edge.id}`);
+  edge.sources = normalizeSources(evidence.sources);
+  edge.context = [...edge.context, evidence.note];
+}
+if (legacyEvidence.entries.some((entry) => !edges.some((edge) => edge.id === entry.id))) {
+  throw new Error("Curated legacy evidence references a missing edge.");
+}
 
 const edgeIds = new Set(edges.map((edge) => edge.id));
 const edgeKeys = new Set(

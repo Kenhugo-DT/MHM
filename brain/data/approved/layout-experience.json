@@ -1696,6 +1696,598 @@
           "pairExcessAfter": 0
         }
       ]
+    },
+    {
+      "id": "e9af0c36912f462146d2",
+      "graphGeneratedAt": "2026-11-18T07:58:33.820Z",
+      "freshNodes": 2,
+      "trials": [
+        {
+          "mode": "organized",
+          "zone": "country-roots",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "arm": "hinted",
+          "hintCount": 2,
+          "hintIds": [
+            "growth-mb-member-johnny-cash-mb-band-c685765c-b778-4ed6-9035-8f7088431765",
+            "growth-mb-member-willie-nelson-mb-band-c685765c-b778-4ed6-9035-8f7088431765"
+          ],
+          "reason": "new-node-legibility-regression",
+          "selected": false,
+          "severeNewLabels": 0,
+          "newLabelPairs": 2,
+          "meanNewConnection": 880,
+          "pairExcessBefore": 554,
+          "pairExcessAfter": 359
+        },
+        {
+          "mode": "organized",
+          "zone": "country-roots",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "arm": "hinted",
+          "hintCount": 2,
+          "hintIds": [
+            "growth-mb-member-johnny-cash-mb-band-c685765c-b778-4ed6-9035-8f7088431765",
+            "growth-mb-member-willie-nelson-mb-band-c685765c-b778-4ed6-9035-8f7088431765"
+          ],
+          "reason": "new-node-legibility-regression",
+          "selected": false,
+          "severeNewLabels": 0,
+          "newLabelPairs": 2,
+          "meanNewConnection": 917,
+          "pairExcessBefore": 554,
+          "pairExcessAfter": 435
+        },
+        {
+          "mode": "organized",
+          "zone": "country-roots",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "arm": "hinted",
+          "hintCount": 2,
+          "hintIds": [
+            "growth-mb-member-johnny-cash-mb-band-c685765c-b778-4ed6-9035-8f7088431765",
+            "growth-mb-member-willie-nelson-mb-band-c685765c-b778-4ed6-9035-8f7088431765"
+          ],
+          "reason": "safe",
+          "selected": false,
+          "severeNewLabels": 0,
+          "newLabelPairs": 1,
+          "meanNewConnection": 903,
+          "pairExcessBefore": 554,
+          "pairExcessAfter": 405
+        },
+        {
+          "mode": "organized",
+          "zone": "country-roots",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "arm": "plain",
+          "hintCount": 0,
+          "hintIds": [],
+          "reason": "new-node-legibility-regression",
+          "selected": false,
+          "severeNewLabels": 0,
+          "newLabelPairs": 2,
+          "meanNewConnection": 1023,
+          "pairExcessBefore": 554,
+          "pairExcessAfter": 646
+        },
+        {
+          "mode": "organized",
+          "zone": "country-roots",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "arm": "plain",
+          "hintCount": 0,
+          "hintIds": [],
+          "reason": "safe",
+          "selected": true,
+          "severeNewLabels": 0,
+          "newLabelPairs": 0,
+          "meanNewConnection": 1001,
+          "pairExcessBefore": 554,
+          "pairExcessAfter": 603
+        },
+        {
+          "mode": "organized",
+          "zone": "country-roots",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "arm": "plain",
+          "hintCount": 0,
+          "hintIds": [],
+          "reason": "safe",
+          "selected": false,
+          "severeNewLabels": 0,
+          "newLabelPairs": 1,
+          "meanNewConnection": 1026,
+          "pairExcessBefore": 554,
+          "pairExcessAfter": 651
+        },
+        {
+          "mode": "organized",
+          "zone": "jazz",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "arm": "hinted",
+          "hintCount": 1,
+          "hintIds": [
+            "growth-mb-member-john-mclaughlin-mb-band-7e5fd719-c158-4219-9ac4-fbe1ad794f42"
+          ],
+          "reason": "no-local-improvement",
+          "selected": false,
+          "severeNewLabels": 0,
+          "newLabelPairs": 0,
+          "meanNewConnection": 1054,
+          "pairExcessBefore": 447,
+          "pairExcessAfter": 354
+        },
+        {
+          "mode": "organized",
+          "zone": "jazz",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "arm": "hinted",
+          "hintCount": 1,
+          "hintIds": [
+            "growth-mb-member-john-mclaughlin-mb-band-7e5fd719-c158-4219-9ac4-fbe1ad794f42"
+          ],
+          "reason": "no-local-improvement",
+          "selected": false,
+          "severeNewLabels": 0,
+          "newLabelPairs": 0,
+          "meanNewConnection": 1050,
+          "pairExcessBefore": 447,
+          "pairExcessAfter": 350
+        },
+        {
+          "mode": "organized",
+          "zone": "jazz",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "arm": "hinted",
+          "hintCount": 1,
+          "hintIds": [
+            "growth-mb-member-john-mclaughlin-mb-band-7e5fd719-c158-4219-9ac4-fbe1ad794f42"
+          ],
+          "reason": "no-local-improvement",
+          "selected": false,
+          "severeNewLabels": 0,
+          "newLabelPairs": 0,
+          "meanNewConnection": 1065,
+          "pairExcessBefore": 447,
+          "pairExcessAfter": 365
+        },
+        {
+          "mode": "organized",
+          "zone": "jazz",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "arm": "plain",
+          "hintCount": 0,
+          "hintIds": [],
+          "reason": "no-local-improvement",
+          "selected": false,
+          "severeNewLabels": 0,
+          "newLabelPairs": 0,
+          "meanNewConnection": 1127,
+          "pairExcessBefore": 447,
+          "pairExcessAfter": 427
+        },
+        {
+          "mode": "organized",
+          "zone": "jazz",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "arm": "plain",
+          "hintCount": 0,
+          "hintIds": [],
+          "reason": "no-local-improvement",
+          "selected": false,
+          "severeNewLabels": 0,
+          "newLabelPairs": 0,
+          "meanNewConnection": 1108,
+          "pairExcessBefore": 447,
+          "pairExcessAfter": 408
+        },
+        {
+          "mode": "organized",
+          "zone": "jazz",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "arm": "plain",
+          "hintCount": 0,
+          "hintIds": [],
+          "reason": "no-local-improvement",
+          "selected": false,
+          "severeNewLabels": 0,
+          "newLabelPairs": 0,
+          "meanNewConnection": 1132,
+          "pairExcessBefore": 447,
+          "pairExcessAfter": 432
+        },
+        {
+          "mode": "genre",
+          "zone": "country-roots",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "arm": "hinted",
+          "hintCount": 2,
+          "hintIds": [
+            "growth-mb-member-johnny-cash-mb-band-c685765c-b778-4ed6-9035-8f7088431765",
+            "growth-mb-member-willie-nelson-mb-band-c685765c-b778-4ed6-9035-8f7088431765"
+          ],
+          "reason": "no-local-improvement",
+          "selected": false,
+          "severeNewLabels": 1,
+          "newLabelPairs": 2,
+          "meanNewConnection": 892,
+          "pairExcessBefore": 477,
+          "pairExcessAfter": 384
+        },
+        {
+          "mode": "genre",
+          "zone": "country-roots",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "arm": "hinted",
+          "hintCount": 2,
+          "hintIds": [
+            "growth-mb-member-johnny-cash-mb-band-c685765c-b778-4ed6-9035-8f7088431765",
+            "growth-mb-member-willie-nelson-mb-band-c685765c-b778-4ed6-9035-8f7088431765"
+          ],
+          "reason": "no-local-improvement",
+          "selected": false,
+          "severeNewLabels": 1,
+          "newLabelPairs": 1,
+          "meanNewConnection": 889,
+          "pairExcessBefore": 477,
+          "pairExcessAfter": 378
+        },
+        {
+          "mode": "genre",
+          "zone": "country-roots",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "arm": "hinted",
+          "hintCount": 2,
+          "hintIds": [
+            "growth-mb-member-johnny-cash-mb-band-c685765c-b778-4ed6-9035-8f7088431765",
+            "growth-mb-member-willie-nelson-mb-band-c685765c-b778-4ed6-9035-8f7088431765"
+          ],
+          "reason": "new-node-legibility-regression",
+          "selected": false,
+          "severeNewLabels": 1,
+          "newLabelPairs": 1,
+          "meanNewConnection": 896,
+          "pairExcessBefore": 477,
+          "pairExcessAfter": 392
+        },
+        {
+          "mode": "genre",
+          "zone": "country-roots",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "arm": "plain",
+          "hintCount": 0,
+          "hintIds": [],
+          "reason": "no-local-improvement",
+          "selected": false,
+          "severeNewLabels": 1,
+          "newLabelPairs": 3,
+          "meanNewConnection": 928,
+          "pairExcessBefore": 477,
+          "pairExcessAfter": 457
+        },
+        {
+          "mode": "genre",
+          "zone": "country-roots",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "arm": "plain",
+          "hintCount": 0,
+          "hintIds": [],
+          "reason": "no-local-improvement",
+          "selected": false,
+          "severeNewLabels": 1,
+          "newLabelPairs": 2,
+          "meanNewConnection": 926,
+          "pairExcessBefore": 477,
+          "pairExcessAfter": 452
+        },
+        {
+          "mode": "genre",
+          "zone": "country-roots",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "arm": "plain",
+          "hintCount": 0,
+          "hintIds": [],
+          "reason": "new-node-legibility-regression",
+          "selected": false,
+          "severeNewLabels": 1,
+          "newLabelPairs": 2,
+          "meanNewConnection": 920,
+          "pairExcessBefore": 477,
+          "pairExcessAfter": 440
+        },
+        {
+          "mode": "genre",
+          "zone": "jazz",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "arm": "hinted",
+          "hintCount": 1,
+          "hintIds": [
+            "growth-mb-member-john-mclaughlin-mb-band-7e5fd719-c158-4219-9ac4-fbe1ad794f42"
+          ],
+          "reason": "no-local-improvement",
+          "selected": false,
+          "severeNewLabels": 0,
+          "newLabelPairs": 0,
+          "meanNewConnection": 750,
+          "pairExcessBefore": 77,
+          "pairExcessAfter": 50
+        },
+        {
+          "mode": "genre",
+          "zone": "jazz",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "arm": "hinted",
+          "hintCount": 1,
+          "hintIds": [
+            "growth-mb-member-john-mclaughlin-mb-band-7e5fd719-c158-4219-9ac4-fbe1ad794f42"
+          ],
+          "reason": "no-local-improvement",
+          "selected": false,
+          "severeNewLabels": 0,
+          "newLabelPairs": 0,
+          "meanNewConnection": 696,
+          "pairExcessBefore": 77,
+          "pairExcessAfter": 0
+        },
+        {
+          "mode": "genre",
+          "zone": "jazz",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "arm": "hinted",
+          "hintCount": 1,
+          "hintIds": [
+            "growth-mb-member-john-mclaughlin-mb-band-7e5fd719-c158-4219-9ac4-fbe1ad794f42"
+          ],
+          "reason": "no-local-improvement",
+          "selected": false,
+          "severeNewLabels": 0,
+          "newLabelPairs": 0,
+          "meanNewConnection": 704,
+          "pairExcessBefore": 77,
+          "pairExcessAfter": 4
+        },
+        {
+          "mode": "genre",
+          "zone": "jazz",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "arm": "plain",
+          "hintCount": 0,
+          "hintIds": [],
+          "reason": "no-local-improvement",
+          "selected": false,
+          "severeNewLabels": 0,
+          "newLabelPairs": 0,
+          "meanNewConnection": 782,
+          "pairExcessBefore": 77,
+          "pairExcessAfter": 82
+        },
+        {
+          "mode": "genre",
+          "zone": "jazz",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "arm": "plain",
+          "hintCount": 0,
+          "hintIds": [],
+          "reason": "no-local-improvement",
+          "selected": false,
+          "severeNewLabels": 0,
+          "newLabelPairs": 0,
+          "meanNewConnection": 711,
+          "pairExcessBefore": 77,
+          "pairExcessAfter": 11
+        },
+        {
+          "mode": "genre",
+          "zone": "jazz",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "arm": "plain",
+          "hintCount": 0,
+          "hintIds": [],
+          "reason": "no-local-improvement",
+          "selected": false,
+          "severeNewLabels": 0,
+          "newLabelPairs": 0,
+          "meanNewConnection": 723,
+          "pairExcessBefore": 77,
+          "pairExcessAfter": 23
+        },
+        {
+          "mode": "chaos",
+          "zone": "country-roots",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "arm": "hinted",
+          "hintCount": 2,
+          "hintIds": [
+            "growth-mb-member-johnny-cash-mb-band-c685765c-b778-4ed6-9035-8f7088431765",
+            "growth-mb-member-willie-nelson-mb-band-c685765c-b778-4ed6-9035-8f7088431765"
+          ],
+          "reason": "safe",
+          "selected": false,
+          "severeNewLabels": 0,
+          "newLabelPairs": 0,
+          "meanNewConnection": 409,
+          "pairExcessBefore": 0,
+          "pairExcessAfter": 0
+        },
+        {
+          "mode": "chaos",
+          "zone": "country-roots",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "arm": "hinted",
+          "hintCount": 2,
+          "hintIds": [
+            "growth-mb-member-johnny-cash-mb-band-c685765c-b778-4ed6-9035-8f7088431765",
+            "growth-mb-member-willie-nelson-mb-band-c685765c-b778-4ed6-9035-8f7088431765"
+          ],
+          "reason": "safe",
+          "selected": false,
+          "severeNewLabels": 0,
+          "newLabelPairs": 0,
+          "meanNewConnection": 403,
+          "pairExcessBefore": 0,
+          "pairExcessAfter": 0
+        },
+        {
+          "mode": "chaos",
+          "zone": "country-roots",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "arm": "hinted",
+          "hintCount": 2,
+          "hintIds": [
+            "growth-mb-member-johnny-cash-mb-band-c685765c-b778-4ed6-9035-8f7088431765",
+            "growth-mb-member-willie-nelson-mb-band-c685765c-b778-4ed6-9035-8f7088431765"
+          ],
+          "reason": "safe",
+          "selected": false,
+          "severeNewLabels": 0,
+          "newLabelPairs": 0,
+          "meanNewConnection": 397,
+          "pairExcessBefore": 0,
+          "pairExcessAfter": 0
+        },
+        {
+          "mode": "chaos",
+          "zone": "country-roots",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "arm": "plain",
+          "hintCount": 0,
+          "hintIds": [],
+          "reason": "safe",
+          "selected": false,
+          "severeNewLabels": 0,
+          "newLabelPairs": 0,
+          "meanNewConnection": 409,
+          "pairExcessBefore": 0,
+          "pairExcessAfter": 0
+        },
+        {
+          "mode": "chaos",
+          "zone": "country-roots",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "arm": "plain",
+          "hintCount": 0,
+          "hintIds": [],
+          "reason": "safe",
+          "selected": false,
+          "severeNewLabels": 0,
+          "newLabelPairs": 0,
+          "meanNewConnection": 403,
+          "pairExcessBefore": 0,
+          "pairExcessAfter": 0
+        },
+        {
+          "mode": "chaos",
+          "zone": "country-roots",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "arm": "plain",
+          "hintCount": 0,
+          "hintIds": [],
+          "reason": "safe",
+          "selected": true,
+          "severeNewLabels": 0,
+          "newLabelPairs": 0,
+          "meanNewConnection": 397,
+          "pairExcessBefore": 0,
+          "pairExcessAfter": 0
+        },
+        {
+          "mode": "chaos",
+          "zone": "jazz",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "arm": "hinted",
+          "hintCount": 1,
+          "hintIds": [
+            "growth-mb-member-john-mclaughlin-mb-band-7e5fd719-c158-4219-9ac4-fbe1ad794f42"
+          ],
+          "reason": "no-local-improvement",
+          "selected": false,
+          "severeNewLabels": 0,
+          "newLabelPairs": 0,
+          "meanNewConnection": 463,
+          "pairExcessBefore": 0,
+          "pairExcessAfter": 0
+        },
+        {
+          "mode": "chaos",
+          "zone": "jazz",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "arm": "hinted",
+          "hintCount": 1,
+          "hintIds": [
+            "growth-mb-member-john-mclaughlin-mb-band-7e5fd719-c158-4219-9ac4-fbe1ad794f42"
+          ],
+          "reason": "no-local-improvement",
+          "selected": false,
+          "severeNewLabels": 0,
+          "newLabelPairs": 0,
+          "meanNewConnection": 458,
+          "pairExcessBefore": 0,
+          "pairExcessAfter": 0
+        },
+        {
+          "mode": "chaos",
+          "zone": "jazz",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "arm": "hinted",
+          "hintCount": 1,
+          "hintIds": [
+            "growth-mb-member-john-mclaughlin-mb-band-7e5fd719-c158-4219-9ac4-fbe1ad794f42"
+          ],
+          "reason": "no-local-improvement",
+          "selected": false,
+          "severeNewLabels": 0,
+          "newLabelPairs": 0,
+          "meanNewConnection": 463,
+          "pairExcessBefore": 0,
+          "pairExcessAfter": 0
+        },
+        {
+          "mode": "chaos",
+          "zone": "jazz",
+          "parameters": "1.10:0.20:0.35:24.00",
+          "arm": "plain",
+          "hintCount": 0,
+          "hintIds": [],
+          "reason": "no-local-improvement",
+          "selected": false,
+          "severeNewLabels": 0,
+          "newLabelPairs": 0,
+          "meanNewConnection": 463,
+          "pairExcessBefore": 0,
+          "pairExcessAfter": 0
+        },
+        {
+          "mode": "chaos",
+          "zone": "jazz",
+          "parameters": "1.40:0.30:0.60:32.00",
+          "arm": "plain",
+          "hintCount": 0,
+          "hintIds": [],
+          "reason": "no-local-improvement",
+          "selected": false,
+          "severeNewLabels": 0,
+          "newLabelPairs": 0,
+          "meanNewConnection": 458,
+          "pairExcessBefore": 0,
+          "pairExcessAfter": 0
+        },
+        {
+          "mode": "chaos",
+          "zone": "jazz",
+          "parameters": "1.65:0.15:0.80:36.00",
+          "arm": "plain",
+          "hintCount": 0,
+          "hintIds": [],
+          "reason": "no-local-improvement",
+          "selected": false,
+          "severeNewLabels": 0,
+          "newLabelPairs": 0,
+          "meanNewConnection": 463,
+          "pairExcessBefore": 0,
+          "pairExcessAfter": 0
+        }
+      ]
     }
   ]
 }

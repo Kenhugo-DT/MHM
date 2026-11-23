@@ -9,8 +9,11 @@
     "preview": "vite preview --config site/vite.config.ts",
     "migrate:data": "node brain/scripts/migrate-graph-data.mjs --preserve-existing-layout && node brain/scripts/learn-from-obsidian.mjs && node brain/scripts/migrate-graph-data.mjs --preserve-existing-layout && node brain/scripts/analyze-organization.mjs --quiet && node brain/scripts/generate-layouts.mjs --preserve-existing-layout",
     "migrate:data:expand": "node brain/scripts/migrate-graph-data.mjs --preserve-existing-layout && node brain/scripts/learn-from-obsidian.mjs && node brain/scripts/migrate-graph-data.mjs --preserve-existing-layout && node brain/scripts/analyze-organization.mjs --quiet && node brain/scripts/generate-layouts.mjs --preserve-existing-layout && npm run brain:layouts:practice",
+    "brain:verify-snapshots": "node brain/scripts/verify-published-snapshots.mjs",
+    "brain:verify-edge-evidence": "node brain/scripts/verify-edge-evidence.mjs",
     "check": "tsc -b site/tsconfig.json --pretty false",
-    "test": "node --test tests/graph-data.test.mjs tests/facts.test.mjs tests/brain-curation.test.mjs tests/connection-evidence.test.mjs tests/connection-batch.test.mjs tests/early-era-expansion.test.mjs tests/incremental-layout.test.mjs tests/layout-playground.test.mjs tests/layout-growth.test.mjs tests/globe-geography.test.mjs tests/globe-node-layout.test.mjs tests/globe-timeline.test.mjs tests/globe-markers.test.mjs tests/globe-global-atlas.test.mjs",
+    "test": "node --test tests/graph-data.test.mjs tests/facts.test.mjs tests/brain-curation.test.mjs tests/connection-evidence.test.mjs tests/connection-batch.test.mjs tests/early-era-expansion.test.mjs tests/incremental-layout.test.mjs tests/layout-playground.test.mjs tests/layout-growth.test.mjs tests/globe-geography.test.mjs tests/globe-node-layout.test.mjs tests/globe-timeline.test.mjs tests/globe-markers.test.mjs tests/globe-global-atlas.test.mjs tests/release-gates.test.mjs",
+    "test:e2e": "playwright test",
     "facts:validate": "node shared/facts/validate.mjs",
     "facts:coverage": "node brain/scripts/run-python.mjs brain/pipeline/fact_coverage.py",
     "brain:facts:sync-approved": "node brain/scripts/run-python.mjs brain/pipeline/sync_approved_fact_evidence.py",
@@ -85,6 +88,7 @@
     "world-atlas": "^2.0.2"
   },
   "devDependencies": {
+    "@playwright/test": "^1.65.1",
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
     "@types/three": "^0.186.0",

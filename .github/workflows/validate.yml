@@ -25,11 +25,12 @@ jobs:
       - run: pip install -r brain/pipeline/requirements.txt
       - run: npm run brain:example-inbox
       - run: npm run brain:python-check
-      - run: npm run brain:import:test
-      - run: node brain/scripts/run-python.mjs -m unittest discover -s brain/pipeline/tests -p test_publish_connection_candidates.py
-      - run: node brain/scripts/run-python.mjs -m unittest discover -s brain/pipeline/tests -p test_connection_promotion_isolation.py
-      - run: node brain/scripts/run-python.mjs -m unittest discover -s brain/pipeline/tests -p test_finalize_connection_candidates.py
+      - run: node brain/scripts/run-python.mjs -m unittest discover -s brain/pipeline/tests -p 'test_*.py'
+      - run: npm run brain:verify-snapshots
+      - run: npm run brain:verify-edge-evidence
       - run: npm run brain:audit
       - run: npm test
       - run: npm run check
       - run: npm run build
+      - run: npx playwright install --with-deps chromium
+      - run: npm run test:e2e

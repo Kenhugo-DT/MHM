@@ -1,0 +1,48 @@
+:root { font-family: Inter, "Segoe UI", sans-serif; color: #e9e4db; background: #101311; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+button, input, select { font: inherit; }
+a { color: inherit; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; }
+.directory-shell { min-height: 100vh; }
+.directory-topbar { min-height: 54px; display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 0 max(20px, calc((100vw - 1120px) / 2)); border-bottom: 1px solid #383a34; background: #171b18; }
+.directory-back { display: inline-flex; align-items: center; gap: 8px; font-size: 12px; text-decoration: none; }
+.directory-back:hover, .directory-back:focus-visible { color: #dfc47b; }
+.directory-brand { display: flex; align-items: baseline; gap: 8px; font-size: 12px; }
+.directory-brand strong { color: #d8bf7c; }
+.directory-brand span { color: #a9afa7; }
+.directory-content { max-width: 1160px; margin: 0 auto; padding: 28px 20px 50px; }
+.directory-heading { display: flex; align-items: end; justify-content: space-between; gap: 20px; border-bottom: 1px solid #3a403b; padding-bottom: 18px; }
+.directory-heading span { color: #89b8ae; font-size: 11px; font-weight: 700; text-transform: uppercase; }
+.directory-heading h1 { margin: 5px 0 0; font-size: 28px; line-height: 1.1; }
+.directory-heading output { color: #b8beb5; font-size: 12px; font-variant-numeric: tabular-nums; }
+.directory-toolbar { display: grid; grid-template-columns: minmax(0, 1fr) 180px; gap: 12px; align-items: end; padding: 18px 0; }
+.directory-search { height: 40px; display: flex; align-items: center; gap: 9px; padding: 0 10px; border: 1px solid #525851; color: #98ada5; background: #191f1c; }
+.directory-search input { width: 100%; min-width: 0; height: 100%; border: 0; outline: 0; color: #eee9df; background: transparent; }
+.directory-type { display: grid; gap: 4px; color: #aeb7ad; font-size: 11px; }
+.directory-type select { height: 40px; padding: 0 9px; border: 1px solid #525851; color: #eee9df; background: #191f1c; }
+.directory-search:focus-within, .directory-type select:focus-visible { outline: 2px solid #d0b773; outline-offset: 2px; }
+.directory-list { list-style: none; margin: 0; padding: 0; border-top: 1px solid #343a35; }
+.directory-list li { border-bottom: 1px solid #343a35; }
+.directory-list a { min-height: 62px; display: grid; grid-template-columns: 8px minmax(0, 1fr) 110px; align-items: center; gap: 14px; padding: 10px; text-decoration: none; }
+.directory-list a:hover, .directory-list a:focus-visible { background: #24312b; outline: 2px solid #d0b773; outline-offset: -2px; }
+.directory-dot { width: 7px; height: 7px; border-radius: 50%; }
+.directory-entry { min-width: 0; display: grid; gap: 3px; }
+.directory-entry strong { font-size: 13px; }
+.directory-entry > span { overflow: hidden; color: #aeb6ad; font-size: 11px; text-overflow: ellipsis; white-space: nowrap; }
+.directory-meta { display: grid; justify-items: end; gap: 3px; color: #c5ad79; font-size: 11px; }
+.directory-meta span + span { color: #89988d; font-variant-numeric: tabular-nums; }
+.directory-pagination { display: flex; align-items: center; justify-content: center; gap: 18px; margin-top: 22px; color: #b6bfb4; font-size: 12px; }
+.directory-pagination button { width: 34px; height: 34px; display: grid; place-items: center; border: 1px solid #515950; color: #e6e2d9; background: #1c231e; }
+.directory-pagination button:disabled { opacity: .4; }
+.directory-error { color: #f1b5a5; }
+.directory-empty { padding: 30px 10px; color: #b6bfb4; }
+@media (max-width: 620px) {
+  .directory-topbar { padding: 0 16px; }
+  .directory-brand span { display: none; }
+  .directory-content { padding: 20px 14px 40px; }
+  .directory-heading h1 { font-size: 23px; }
+  .directory-toolbar { grid-template-columns: 1fr; }
+  .directory-list a { grid-template-columns: 8px minmax(0, 1fr); }
+  .directory-meta { grid-column: 2; display: flex; justify-content: start; gap: 9px; }
+}

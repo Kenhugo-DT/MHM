@@ -5,6 +5,7 @@ import { loadFacts, loadGlobeData, type GlobeData, type GlobeFact } from "./data
 import { buildGeography } from "./geography.mjs";
 import { extendAtlas } from "./global-atlas.mjs";
 import { visibleInTimeline } from "./timeline.mjs";
+import { edgeEvidenceTier } from "../../../shared/graph-schema/edge-evidence.mjs";
 
 const typeLabels: Record<string, string> = {
   band: "Band", artist: "Artist", guitarist: "Guitarist", genre: "Genre",
@@ -148,7 +149,7 @@ export function GlobeApp() {
           </div>
           {facts.length > 0 && <div className="globe-detail-section"><h2>Did you know</h2>{facts.map((fact) => <div key={fact.id} className="globe-fact"><p>{fact.text}</p><div className="globe-sources">{fact.sources.map(sourceLink)}</div></div>)}</div>}
           <div className="globe-detail-section"><h2>Connections <span>{connections.length}</span></h2><div className="globe-relations">
-            {connections.map(({ edge, node }) => <button type="button" key={edge.id} onClick={() => choose(node!.id)}><span><strong>{node!.label}</strong><small>{edge.label || edge.type.replaceAll("_", " ")}</small></span><span className={placements.some((entry) => entry.nodeId === node!.id) ? "on-globe" : "off-globe"}>{placements.some((entry) => entry.nodeId === node!.id) ? "●" : "○"}</span></button>)}
+            {connections.map(({ edge, node }) => <button type="button" key={edge.id} onClick={() => choose(node!.id)}><span><strong>{node!.label}</strong><small>{edge.label || edge.type.replaceAll("_", " ")}</small>{edgeEvidenceTier(edge) === "curated_unsourced" && <small className="globe-unverified" title="No source documents this specific connection yet">Unverified link</small>}</span><span className={placements.some((entry) => entry.nodeId === node!.id) ? "on-globe" : "off-globe"}>{placements.some((entry) => entry.nodeId === node!.id) ? "●" : "○"}</span></button>)}
             {connections.length === 0 && <p className="globe-muted">No documented connections yet.</p>}
           </div></div>
           <div className="globe-detail-section"><h2>Sources</h2><div className="globe-sources">{selected.sources.map(sourceLink)}</div></div>

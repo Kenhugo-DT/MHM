@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-06T12:19:46.715Z",
+  "generatedAt": "2026-11-18T08:15:51.508Z",
   "source": "graph + Obsidian frontmatter + curator feedback",
   "samples": {
-    "graphNodes": 1201,
-    "graphEdges": 1560,
-    "mapConnections": 1128,
+    "graphNodes": 1203,
+    "graphEdges": 1563,
+    "mapConnections": 1131,
     "obsidianNotes": 1072,
     "feedbackNodes": 50,
     "feedbackZones": 9,
@@ -2013,10 +2013,10 @@
       ]
     },
     "country-roots": {
-      "nodeCount": 75,
+      "nodeCount": 76,
       "pinnedCount": 0,
       "centroid": {
-        "x": -2790,
+        "x": -2764,
         "y": 860
       },
       "eraMedian": 1952,
@@ -2344,7 +2344,7 @@
       ]
     },
     "jazz": {
-      "nodeCount": 88,
+      "nodeCount": 89,
       "pinnedCount": 0,
       "centroid": {
         "x": -1513,
@@ -2661,15 +2661,15 @@
           "weight": 3
         },
         {
+          "term": "five",
+          "weight": 3
+        },
+        {
           "term": "give jazz its own readable center let documented blues fusion funk and progressive connections pull bridge nodes outward",
           "weight": 3
         },
         {
           "term": "jazz fusion is a transition not a sealed genre island preserve jazz as the center and let documented electric guitar rock and funk relationships form its outward paths",
-          "weight": 3
-        },
-        {
-          "term": "jazz needs a readable center and historically supported transitions keep early jazz and jazz guitar together while allowing fusion and crossover artists to drift toward rock and prog",
           "weight": 3
         }
       ]
@@ -5039,12 +5039,12 @@
           "coordinateSource": "https://www.wikidata.org/wiki/Q79417#P625"
         }
       ],
-      "connectionCount": 2,
+      "connectionCount": 3,
       "linkedGenres": [
         "country"
       ],
       "bridgeScore": 0.3,
-      "hubScore": 0.167,
+      "hubScore": 0.25,
       "layoutHints": {
         "pinned": false
       }
@@ -5071,13 +5071,13 @@
           "coordinateSource": "https://www.wikidata.org/wiki/Q306757#P625"
         }
       ],
-      "connectionCount": 5,
+      "connectionCount": 6,
       "linkedGenres": [
         "country",
         "outlaw-country"
       ],
       "bridgeScore": 0.38,
-      "hubScore": 0.417,
+      "hubScore": 0.5,
       "layoutHints": {
         "pinned": false
       }
@@ -7686,14 +7686,14 @@
           "coordinateSource": "https://www.wikidata.org/wiki/Q58900#P625"
         }
       ],
-      "connectionCount": 3,
+      "connectionCount": 4,
       "linkedGenres": [
         "jazz-fusion",
         "jazz",
         "progressive-rock"
       ],
       "bridgeScore": 0.88,
-      "hubScore": 0.25,
+      "hubScore": 0.333,
       "layoutHints": {
         "pinned": false
       }
@@ -19892,6 +19892,32 @@
       "linkedGenres": [],
       "bridgeScore": 0,
       "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "mb-band-7e5fd719-c158-4219-9ac4-fbe1ad794f42": {
+      "zone": "jazz",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "mb-band-c685765c-b778-4ed6-9035-8f7088431765": {
+      "zone": "country-roots",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 2,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.167,
       "layoutHints": {
         "pinned": false
       }

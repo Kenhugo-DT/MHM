@@ -9,6 +9,7 @@ import {
   Globe2,
   Home,
   LoaderCircle,
+  List,
   Map as MapIcon,
   Search,
   Shuffle,
@@ -30,7 +31,7 @@ import { FactSpotlight } from "./components/FactSpotlight";
 import { factsForEntity } from "./data/facts";
 import type { EntityFact } from "./data/facts";
 import { createGraphRepository } from "./data/repository";
-import { isMapConnection } from "../../shared/graph-schema/edge-evidence.mjs";
+import { edgeEvidenceTier, isMapConnection } from "../../shared/graph-schema/edge-evidence.mjs";
 import {
   fetchWikiActionContextForNode,
   type WikiActionContext,
@@ -593,6 +594,8 @@ export default function App() {
         </div>
 
         <div className="top-actions">
+          <button type="button" className="directory-action" onClick={() => { window.location.href = "./directory.html"; }}
+            title="Browse nodes" aria-label="Browse nodes"><List aria-hidden="true" size={18} /></button>
           <button type="button" className="globe-action" onClick={() => { window.location.href = "./globe.html"; }}
             title="Open globe view" aria-label="Open globe view"><Globe2 aria-hidden="true" size={18} /></button>
           <button type="button" className="lab-action" onClick={() => { window.location.href = "./playground.html"; }}
@@ -908,6 +911,8 @@ export default function App() {
                       <small>
                         {edge.label}
                         {edge.context.length ? ` · ${edge.context.join(", ")}` : ""}
+                        {edgeEvidenceTier(edge) === "curated_unsourced" &&
+                          <span className="connection-evidence" title="No source documents this specific connection yet">Unverified link</span>}
                       </small>
                     </span>
                     <ChevronRight aria-hidden="true" size={16} />
