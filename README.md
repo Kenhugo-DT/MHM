@@ -46,10 +46,14 @@ before assuming this approach will scale unchanged to much larger graphs.
 
 ## Development
 
+For the common research, review, rebuild and publish steps, see
+[`docs/RUNBOOK.md`](docs/RUNBOOK.md).
+
 ```bash
 npm install
 npm run migrate:data
 npm run brain:verify-snapshots
+npm run brain:verify-models
 npm run brain:verify-edge-evidence
 npm run brain:audit
 npm run dev

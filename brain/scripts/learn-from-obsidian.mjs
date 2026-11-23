@@ -3,6 +3,7 @@ import { createHash } from "node:crypto";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { isMapConnection } from "../../shared/graph-schema/edge-evidence.mjs";
+import { graphDataSignature, learningInputSignature } from "./data-signatures.mjs";
 import {
   ALLOWED_NODE_TYPES,
   coerceOptionalNumber,
@@ -506,6 +507,8 @@ function buildLearningModel(graph, notes, feedbackData, approvedEvidence, geogra
     version: 1,
     generatedAt: new Date().toISOString(),
     source: "graph + Obsidian frontmatter + curator feedback",
+    graphDataSignature: graphDataSignature(graph),
+    inputSignature: learningInputSignature(path.resolve(brainRoot, "..")),
     samples: {
       graphNodes: graph.nodes?.length ?? 0,
       graphEdges: graph.edges?.length ?? 0,

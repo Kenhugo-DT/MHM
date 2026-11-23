@@ -15,6 +15,8 @@ The brain should propose changes. It should not silently publish them.
 - `data/candidates/` stores proposed additions for review.
 - `data/rejected/` stores rejected or out-of-scope suggestions.
 - `data/runs/` is local run output and is ignored by git.
+- `data/legacy-graph.json` is the structured, reviewed legacy seed. The graph
+  migration reads it as JSON; it does not execute legacy frontend code.
 - `obsidian/` is an Obsidian vault generated from the graph for curation,
   era notes, zone hints and future layout-brain work.
 - `supabase/` contains database migrations and setup notes for the hosted brain.
@@ -59,6 +61,8 @@ npm run brain:import
 and curator feedback, migrates the approved graph, analyzes organization
 pressure, then regenerates public layout JSON. It writes both
 `brain/data/approved/graph.json` and `site/public/data/graph.json`.
+See `docs/RUNBOOK.md` for the distinction between curated inputs, generated
+models and browser copies, plus the checks to run before committing.
 
 `brain:install-python` installs the Python packages used by the source
 collectors and Supabase brain scripts.

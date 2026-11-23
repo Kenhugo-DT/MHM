@@ -1,6 +1,5 @@
 import fs from "node:fs";
 import path from "node:path";
-import vm from "node:vm";
 import { fileURLToPath } from "node:url";
 import { extraEdges, extraNodes } from "./graph-expansion.mjs";
 import { curatedHistoryLinks } from "./curated-history-links.mjs";
@@ -17,7 +16,7 @@ import { organizeGraphLayout } from "./organize-graph-layout.mjs";
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
 const brainRoot = path.resolve(scriptDir, "..");
 const repoRoot = path.resolve(brainRoot, "..");
-const legacyDataPath = path.join(scriptDir, "graph-data.js");
+const legacyDataPath = path.join(brainRoot, "data", "legacy-graph.json");
 const legacyPositionsPath = path.join(brainRoot, "data", "legacy-structured-positions.json");
 const legacyEvidencePath = path.join(brainRoot, "data", "curated-legacy-edge-evidence.json");
 const browserOutputPath = path.join(repoRoot, "site", "public", "data", "graph.json");
@@ -42,13 +41,12 @@ const excludedTerms = blockedEntities.entities.flatMap((entity) => [
   ...(entity.labels ?? []),
 ]);
 
-const sandbox = { window: {} };
-vm.runInNewContext(fs.readFileSync(legacyDataPath, "utf8"), sandbox);
-const legacy = sandbox.window.GUITAR_GRAPH_DATA;
+const legacy = JSON.parse(fs.readFileSync(legacyDataPath, "utf8"));
 
 const positions = JSON.parse(fs.readFileSync(legacyPositionsPath, "utf8"));
 const legacyEvidence = JSON.parse(fs.readFileSync(legacyEvidencePath, "utf8"));
-if (!legacy || !positions || legacyEvidence.version !== 1 || !Array.isArray(legacyEvidence.entries)) {
+if (!Array.isArray(legacy.nodes) || !Array.isArray(legacy.edges) || !positions ||
+    legacyEvidence.version !== 1 || !Array.isArray(legacyEvidence.entries)) {
   throw new Error("Could not read the legacy graph, positions or edge evidence.");
 }
 const legacyEvidenceById = new Map(legacyEvidence.entries.map((entry) => [entry.id, entry]));

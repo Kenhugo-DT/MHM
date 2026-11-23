@@ -3,6 +3,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { isMapConnection } from "../../shared/graph-schema/edge-evidence.mjs";
 import { graphFingerprint, MODE_NODE_TYPES } from "../../shared/graph-schema/graph-snapshot.mjs";
+import { jsonSignature } from "./data-signatures.mjs";
 import { ORGANIZED_MAP_ZONES } from "./organize-graph-layout.mjs";
 import { buildTimelineLayout } from "./timeline-layout.mjs";
 import { preserveIncrementalLayouts } from "./incremental-layout.mjs";
@@ -575,6 +576,10 @@ const dataset = {
     learningModel ? "learning model" : undefined,
     organizationModel ? "organization model" : undefined,
   ].filter(Boolean).join(" + "),
+  inputSignatures: {
+    learningModel: learningModel ? jsonSignature(learningModel) : null,
+    organizationModel: organizationModel ? jsonSignature(organizationModel) : null,
+  },
   graphFingerprints: Object.fromEntries(
     await Promise.all(
       Object.keys(MODE_NODE_TYPES).map(async (mode) => [mode, await graphFingerprint(graph, mode)]),

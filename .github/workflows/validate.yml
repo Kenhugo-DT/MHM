@@ -27,6 +27,7 @@ jobs:
       - run: npm run brain:python-check
       - run: node brain/scripts/run-python.mjs -m unittest discover -s brain/pipeline/tests -p 'test_*.py'
       - run: npm run brain:verify-snapshots
+      - run: npm run brain:verify-models
       - run: npm run brain:verify-edge-evidence
       - run: npm run brain:audit
       - run: npm test

@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { isMapConnection } from "../../shared/graph-schema/edge-evidence.mjs";
+import { graphDataSignature, jsonSignature } from "./data-signatures.mjs";
 import { ORGANIZED_MAP_ZONES } from "./organize-graph-layout.mjs";
 
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
@@ -536,6 +537,8 @@ function analyzeGraph(graph, learningModel) {
     version: 1,
     generatedAt: new Date().toISOString(),
     source: "approved graph + learning model + layout analysis",
+    graphDataSignature: graphDataSignature(graph),
+    learningModelSignature: jsonSignature(learningModel),
     graph: {
       nodes: nodes.length,
       edges: edges.length,
