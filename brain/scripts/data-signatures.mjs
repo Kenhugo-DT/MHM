@@ -30,6 +30,6 @@ export function learningInputSignature(repoRoot) {
   const inputs = files.map((file) => [
     path.relative(repoRoot, file).split(path.sep).join("/"),
     createHash("sha256").update(fs.readFileSync(file)).digest("hex"),
-  ]).sort((a, b) => a[0].localeCompare(b[0], "en"));
+  ]).sort((a, b) => Buffer.compare(Buffer.from(a[0]), Buffer.from(b[0])));
   return jsonSignature(inputs);
 }

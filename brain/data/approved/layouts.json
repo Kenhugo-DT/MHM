@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-23T11:22:43.259Z",
+  "generatedAt": "2026-11-23T11:29:58.142Z",
   "source": "approved graph + learning model + organization model",
   "inputSignatures": {
-    "learningModel": "7a12d63dd828123886893b314c232767c3d2cd9461a1dbd204866f487567ad76",
-    "organizationModel": "48a693086719e4861ac7e38599fff55f8d8383ef2a674cb70009fd383d71511b"
+    "learningModel": "5cf5b5718723c4366eb18ed1ded60ab755ea0bb99559c2467be41feb06394f6f",
+    "organizationModel": "69967c588a9d27957d119a91b5b312639a110d288f028f41f075398fa8942e66"
   },
   "graphFingerprints": {
     "artists": "3410078da0ba51a12a834f7f31817ecd7e7ca2fe6f3a1af00d61c91051e03f9d",
@@ -15,7 +15,7 @@
       "id": "organized",
       "label": "Map",
       "description": "Current brain-organized map positions.",
-      "generatedAt": "2026-11-23T11:22:43.259Z",
+      "generatedAt": "2026-11-23T11:29:58.142Z",
       "nodes": {
         "3": {
           "x": -688,
@@ -7241,7 +7241,7 @@
       "id": "genre",
       "label": "Genres",
       "description": "Genre-led clusters with bridge nodes pulled toward related scenes.",
-      "generatedAt": "2026-11-23T11:22:43.259Z",
+      "generatedAt": "2026-11-23T11:29:58.142Z",
       "nodes": {
         "3": {
           "x": 1007,
@@ -14467,7 +14467,7 @@
       "id": "timeline",
       "label": "Timeline",
       "description": "First documented active year within each decade, with unknown start years kept separate.",
-      "generatedAt": "2026-11-23T11:22:43.259Z",
+      "generatedAt": "2026-11-23T11:29:58.142Z",
       "guide": {
         "markers": [
           {
@@ -24018,7 +24018,7 @@
       "id": "alphabetic",
       "label": "A-Z",
       "description": "A simple training layout sorted by label.",
-      "generatedAt": "2026-11-23T11:22:43.259Z",
+      "generatedAt": "2026-11-23T11:29:58.142Z",
       "nodes": {
         "3": {
           "x": -511,
@@ -31244,7 +31244,7 @@
       "id": "chaos",
       "label": "Chaos",
       "description": "Seeded loose layout for stress-testing readable disorder.",
-      "generatedAt": "2026-11-23T11:22:43.259Z",
+      "generatedAt": "2026-11-23T11:29:58.142Z",
       "nodes": {
         "3": {
           "x": -57,

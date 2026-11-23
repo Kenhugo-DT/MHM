@@ -8,9 +8,11 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..")
 
 export async function verifyApprovedModels(graph, learning, organization, layouts, basePath = root) {
   const signature = graphDataSignature(graph);
-  if (learning.graphDataSignature !== signature ||
-      learning.inputSignature !== learningInputSignature(basePath)) {
-    throw new Error("Learning model is stale for the approved graph or research inputs.");
+  if (learning.graphDataSignature !== signature) {
+    throw new Error("Learning model is stale for the approved graph data.");
+  }
+  if (learning.inputSignature !== learningInputSignature(basePath)) {
+    throw new Error("Learning model is stale for the research inputs.");
   }
   if (organization.graphDataSignature !== signature ||
       organization.graph?.generatedAt !== graph.generatedAt) {
