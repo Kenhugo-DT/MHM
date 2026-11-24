@@ -1,13 +1,13 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-24T15:24:29.464Z",
+  "generatedAt": "2026-11-24T15:30:37.186Z",
   "source": "graph + Obsidian frontmatter + curator feedback",
-  "graphDataSignature": "b7a958fc646ba78fb9eb39e07cfef7e4593261615780ccb9f8f7d1eae7696f22",
+  "graphDataSignature": "0265bf504630b3e30185ca673de4f1d66eec3286943ea81d208c8bdcda67e4e0",
   "inputSignature": "f69ca60a1ec92b57b6ce1eab615dcd1474c9e7eb2e1e1b64987274c24e6fda5d",
   "samples": {
     "graphNodes": 1218,
-    "graphEdges": 1580,
-    "mapConnections": 1148,
+    "graphEdges": 1586,
+    "mapConnections": 1154,
     "obsidianNotes": 1072,
     "feedbackNodes": 50,
     "feedbackZones": 9,
@@ -11229,10 +11229,10 @@
         "hardcore punk",
         "melodic punk"
       ],
-      "connectionCount": 0,
+      "connectionCount": 1,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0,
+      "hubScore": 0.083,
       "layoutHints": {
         "pinned": false
       }
@@ -11270,7 +11270,9 @@
     },
     "black-flag": {
       "zone": "punk-alt",
-      "secondaryZones": [],
+      "secondaryZones": [
+        "psychedelia-prog"
+      ],
       "eraStart": 1976,
       "eraPeak": 1976,
       "primaryGenres": [
@@ -11294,10 +11296,10 @@
           "coordinateSource": "https://www.wikidata.org/wiki/Q828712#P625"
         }
       ],
-      "connectionCount": 0,
+      "connectionCount": 1,
       "linkedGenres": [],
-      "bridgeScore": 0,
-      "hubScore": 0,
+      "bridgeScore": 0.22,
+      "hubScore": 0.083,
       "layoutHints": {
         "pinned": false
       }
@@ -11348,10 +11350,10 @@
           "coordinateSource": "https://www.wikidata.org/wiki/Q1166#P625"
         }
       ],
-      "connectionCount": 0,
+      "connectionCount": 2,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0,
+      "hubScore": 0.167,
       "layoutHints": {
         "pinned": false
       }
@@ -12589,7 +12591,9 @@
     },
     "magnus-karlsson": {
       "zone": "rock-circuit",
-      "secondaryZones": [],
+      "secondaryZones": [
+        "hard-rock-metal"
+      ],
       "primaryGenres": [
         "rock"
       ],
@@ -12598,10 +12602,10 @@
         "classic rock",
         "rock"
       ],
-      "connectionCount": 0,
+      "connectionCount": 1,
       "linkedGenres": [],
-      "bridgeScore": 0,
-      "hubScore": 0,
+      "bridgeScore": 0.22,
+      "hubScore": 0.083,
       "layoutHints": {
         "pinned": false
       }
@@ -12668,7 +12672,9 @@
     },
     "primal-fear": {
       "zone": "hard-rock-metal",
-      "secondaryZones": [],
+      "secondaryZones": [
+        "rock-circuit"
+      ],
       "eraStart": 1997,
       "eraPeak": 1997,
       "primaryGenres": [
@@ -12688,10 +12694,10 @@
           "coordinateSource": "https://www.wikidata.org/wiki/Q183#P625"
         }
       ],
-      "connectionCount": 0,
+      "connectionCount": 1,
       "linkedGenres": [],
-      "bridgeScore": 0,
-      "hubScore": 0,
+      "bridgeScore": 0.22,
+      "hubScore": 0.083,
       "layoutHints": {
         "pinned": false
       }
@@ -14934,7 +14940,9 @@
     },
     "bill-stevenson": {
       "zone": "psychedelia-prog",
-      "secondaryZones": [],
+      "secondaryZones": [
+        "punk-alt"
+      ],
       "primaryGenres": [],
       "curatorTags": [
         "artist",
@@ -14950,10 +14958,10 @@
           "coordinateSource": "https://www.wikidata.org/wiki/Q489197#P625"
         }
       ],
-      "connectionCount": 0,
+      "connectionCount": 2,
       "linkedGenres": [],
-      "bridgeScore": 0,
-      "hubScore": 0,
+      "bridgeScore": 0.22,
+      "hubScore": 0.167,
       "layoutHints": {
         "pinned": false
       }
@@ -15097,10 +15105,10 @@
           "coordinateSource": "https://www.wikidata.org/wiki/Q61#P625"
         }
       ],
-      "connectionCount": 0,
+      "connectionCount": 1,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0,
+      "hubScore": 0.083,
       "layoutHints": {
         "pinned": false
       }
@@ -15473,7 +15481,9 @@
     },
     "descendents": {
       "zone": "punk-alt",
-      "secondaryZones": [],
+      "secondaryZones": [
+        "psychedelia-prog"
+      ],
       "eraStart": 1977,
       "eraPeak": 1979,
       "primaryGenres": [
@@ -15494,10 +15504,10 @@
           "coordinateSource": "https://www.wikidata.org/wiki/Q568610#P625"
         }
       ],
-      "connectionCount": 0,
+      "connectionCount": 1,
       "linkedGenres": [],
-      "bridgeScore": 0,
-      "hubScore": 0,
+      "bridgeScore": 0.22,
+      "hubScore": 0.083,
       "layoutHints": {
         "pinned": false
       }
@@ -17306,7 +17316,9 @@
     },
     "iced-earth": {
       "zone": "hard-rock-metal",
-      "secondaryZones": [],
+      "secondaryZones": [
+        "psychedelia-prog"
+      ],
       "eraStart": 1984,
       "eraPeak": 1984,
       "primaryGenres": [
@@ -17318,10 +17330,10 @@
         "band",
         "hard rock"
       ],
-      "connectionCount": 0,
+      "connectionCount": 1,
       "linkedGenres": [],
-      "bridgeScore": 0,
-      "hubScore": 0,
+      "bridgeScore": 0.22,
+      "hubScore": 0.083,
       "layoutHints": {
         "pinned": false
       }
@@ -17347,17 +17359,19 @@
     },
     "dennis-hayes": {
       "zone": "psychedelia-prog",
-      "secondaryZones": [],
+      "secondaryZones": [
+        "hard-rock-metal"
+      ],
       "primaryGenres": [],
       "curatorTags": [
         "artist",
         "progressive",
         "psychedelic"
       ],
-      "connectionCount": 0,
+      "connectionCount": 1,
       "linkedGenres": [],
-      "bridgeScore": 0,
-      "hubScore": 0,
+      "bridgeScore": 0.22,
+      "hubScore": 0.083,
       "layoutHints": {
         "pinned": false
       }

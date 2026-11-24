@@ -1,14 +1,14 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-24T15:24:39.958Z",
+  "generatedAt": "2026-11-24T15:30:47.582Z",
   "source": "approved graph + learning model + layout analysis",
-  "graphDataSignature": "b7a958fc646ba78fb9eb39e07cfef7e4593261615780ccb9f8f7d1eae7696f22",
-  "learningModelSignature": "d1556578b373beb1cc7added53689318bf1f4054cfc115ca6a2fdecc234ad8c7",
+  "graphDataSignature": "0265bf504630b3e30185ca673de4f1d66eec3286943ea81d208c8bdcda67e4e0",
+  "learningModelSignature": "d222dd0969421474d0e829d5bd7f65d64ca52eb2ae33edd48c9e4ff7447b2db5",
   "graph": {
     "nodes": 1218,
-    "edges": 1580,
-    "mapConnections": 1148,
-    "generatedAt": "2026-11-24T15:24:39.766Z"
+    "edges": 1586,
+    "mapConnections": 1154,
+    "generatedAt": "2026-11-24T15:30:47.392Z"
   },
   "layoutPolicy": {
     "target": "organized chaos",
@@ -21,7 +21,7 @@
   },
   "layoutIntelligence": {
     "version": 1,
-    "generatedAt": "2026-11-24T15:24:39.958Z",
+    "generatedAt": "2026-11-24T15:30:47.582Z",
     "intent": "organized chaos with readable labels and porous genre boundaries",
     "global": {
       "targetLabelState": "close-but-readable",
@@ -101,16 +101,16 @@
       "rock-circuit": {
         "zone": "rock-circuit",
         "label": "ROCK CIRCUIT",
-        "pressureScore": 0.683,
+        "pressureScore": 0.698,
         "density": 3.373,
         "overlapPerNode": 0.251,
         "bridgeRatio": 0.114,
-        "spacingMultiplier": 1.367,
+        "spacingMultiplier": 1.373,
         "expansion": {
-          "x": 548,
-          "y": 472
+          "x": 556,
+          "y": 479
         },
-        "bridgeBleed": 381,
+        "bridgeBleed": 384,
         "strategy": "expand-and-relax",
         "bridgeTargets": [],
         "readableChaos": true
@@ -118,16 +118,16 @@
       "psychedelia-prog": {
         "zone": "psychedelia-prog",
         "label": "PSYCHEDELIA / PROG",
-        "pressureScore": 0.398,
+        "pressureScore": 0.393,
         "density": 2.543,
         "overlapPerNode": 0.468,
         "bridgeRatio": 0.234,
-        "spacingMultiplier": 1.247,
+        "spacingMultiplier": 1.245,
         "expansion": {
-          "x": 352,
+          "x": 350,
           "y": 140
         },
-        "bridgeBleed": 433,
+        "bridgeBleed": 432,
         "strategy": "soft-overlap-bridges",
         "bridgeTargets": [],
         "readableChaos": true
@@ -135,16 +135,16 @@
       "hard-rock-metal": {
         "zone": "hard-rock-metal",
         "label": "HARD ROCK / METAL",
-        "pressureScore": 0.565,
+        "pressureScore": 0.579,
         "density": 2.143,
         "overlapPerNode": 0.185,
-        "bridgeRatio": 0.119,
-        "spacingMultiplier": 1.317,
+        "bridgeRatio": 0.126,
+        "spacingMultiplier": 1.323,
         "expansion": {
-          "x": 613,
-          "y": 405
+          "x": 622,
+          "y": 411
         },
-        "bridgeBleed": 364,
+        "bridgeBleed": 373,
         "strategy": "preserve-loose-cluster",
         "bridgeTargets": [],
         "readableChaos": true
@@ -152,16 +152,16 @@
       "punk-alt": {
         "zone": "punk-alt",
         "label": "PUNK / ALTERNATIVE",
-        "pressureScore": 0.707,
+        "pressureScore": 0.702,
         "density": 2.982,
         "overlapPerNode": 0.379,
         "bridgeRatio": 0.084,
-        "spacingMultiplier": 1.377,
+        "spacingMultiplier": 1.375,
         "expansion": {
-          "x": 636,
-          "y": 261
+          "x": 633,
+          "y": 260
         },
-        "bridgeBleed": 360,
+        "bridgeBleed": 359,
         "strategy": "expand-and-relax",
         "bridgeTargets": [],
         "readableChaos": true
@@ -1714,6 +1714,30 @@
         ],
         "pullStrength": 0.58,
         "reason": "Bridge policy match: punk-to-rock, hip-hop-crossovers."
+      },
+      "magnus-karlsson": {
+        "id": "magnus-karlsson",
+        "label": "Magnus Karlsson",
+        "sourceZone": "rock-circuit",
+        "pullZones": [
+          "hard-rock-metal",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
+      },
+      "primal-fear": {
+        "id": "primal-fear",
+        "label": "Primal Fear",
+        "sourceZone": "hard-rock-metal",
+        "pullZones": [
+          "rock-circuit",
+          "hip-hop-rap",
+          "punk-alt"
+        ],
+        "pullStrength": 0.478,
+        "reason": "Bridge policy match: rock-to-metal, hip-hop-crossovers."
       },
       "ufo": {
         "id": "ufo",
@@ -3705,7 +3729,7 @@
         "chubby-checker"
       ],
       "edgesInternal": 17,
-      "edgesCrossing": 69,
+      "edgesCrossing": 70,
       "isolatedNodes": [
         "311",
         "999",
@@ -3736,6 +3760,7 @@
         "the-crickets",
         "chubby-checker",
         "dick-dale",
+        "magnus-karlsson",
         "joe-perry",
         "stone-sour",
         "dave-murray",
@@ -3762,9 +3787,9 @@
         "chubby-checker",
         "prince",
         "surf-rock",
+        "magnus-karlsson",
         "joe-perry",
-        "stone-sour",
-        "dave-murray"
+        "stone-sour"
       ],
       "topHubs": [
         "rock",
@@ -3811,7 +3836,7 @@
       "averageDegree": 0.59,
       "averageSourceQuality": 0.751,
       "approvedFactNodes": 8,
-      "needsAttentionScore": 124.97,
+      "needsAttentionScore": 127.77,
       "nodeCount": 175,
       "factCoverageRate": 0.046,
       "degreeP25": 0,
@@ -3881,15 +3906,13 @@
         "spencer-dryden"
       ],
       "edgesInternal": 32,
-      "edgesCrossing": 28,
+      "edgesCrossing": 31,
       "isolatedNodes": [
         "3",
         "archive",
         "atheist",
         "beardfish",
-        "bill-stevenson",
         "camel",
-        "dennis-hayes",
         "disturbed",
         "dream-theater",
         "history-of-rock-music",
@@ -3949,10 +3972,10 @@
         "steve-vai"
       ],
       "eraMedian": 1967,
-      "averageDegree": 1.96,
+      "averageDegree": 2.02,
       "averageSourceQuality": 0.563,
       "approvedFactNodes": 9,
-      "needsAttentionScore": 68.47,
+      "needsAttentionScore": 63.77,
       "nodeCount": 47,
       "factCoverageRate": 0.191,
       "degreeP25": 0,
@@ -4106,7 +4129,7 @@
         "rick-dufay"
       ],
       "edgesInternal": 42,
-      "edgesCrossing": 40,
+      "edgesCrossing": 42,
       "isolatedNodes": [
         "a-wake-in-providence",
         "absu",
@@ -4133,6 +4156,7 @@
         "black-sabbath",
         "yngwie-malmsteen",
         "judas-priest",
+        "primal-fear",
         "corey-taylor",
         "van-halen",
         "tony-iommi",
@@ -4155,6 +4179,7 @@
         "guns-n-roses",
         "iron-maiden",
         "heavy-metal",
+        "primal-fear",
         "corey-taylor",
         "aerosmith",
         "deep-purple",
@@ -4205,10 +4230,10 @@
         "corey-taylor"
       ],
       "eraMedian": 1981,
-      "averageDegree": 0.92,
+      "averageDegree": 0.93,
       "averageSourceQuality": 0.785,
       "approvedFactNodes": 17,
-      "needsAttentionScore": 118.5,
+      "needsAttentionScore": 122.05,
       "nodeCount": 135,
       "factCoverageRate": 0.126,
       "degreeP25": 0,
@@ -4319,8 +4344,8 @@
         "sterling-morrison",
         "maureen-tucker"
       ],
-      "edgesInternal": 27,
-      "edgesCrossing": 9,
+      "edgesInternal": 29,
+      "edgesCrossing": 11,
       "isolatedNodes": [
         "2-tone-music-genre",
         "23-skidoo",
@@ -4338,10 +4363,10 @@
         "alternative-metal",
         "andy-bell",
         "bad-brains",
-        "bad-religion",
         "battery",
         "beartooth",
-        "black-flag"
+        "black-president",
+        "bleed"
       ],
       "underConnectedImportantNodes": [
         "rage-against-the-machine",
@@ -4399,10 +4424,10 @@
         "ramones"
       ],
       "eraMedian": 1980,
-      "averageDegree": 0.66,
+      "averageDegree": 0.73,
       "averageSourceQuality": 0.669,
       "approvedFactNodes": 11,
-      "needsAttentionScore": 120.58,
+      "needsAttentionScore": 120.23,
       "nodeCount": 95,
       "factCoverageRate": 0.116,
       "degreeP25": 0,
@@ -13050,12 +13075,12 @@
       "label": "Bad Religion",
       "type": "band",
       "zone": "punk-alt",
-      "degree": 0,
-      "weightedDegree": 0,
+      "degree": 1,
+      "weightedDegree": 0.9,
       "era": 1980,
       "sourceQuality": 1,
       "approvedFactCount": 0,
-      "hubScore": 0,
+      "hubScore": 0.125,
       "bridgeScore": 0.28,
       "secondaryZones": [],
       "bridgePolicies": [
@@ -13076,7 +13101,6 @@
       "overlapCount": 1,
       "overflow": 0,
       "recommendedActions": [
-        "research-first-connections",
         "train-bridge-policy"
       ]
     },
@@ -13106,20 +13130,22 @@
       "label": "Black Flag",
       "type": "band",
       "zone": "punk-alt",
-      "degree": 0,
-      "weightedDegree": 0,
+      "degree": 1,
+      "weightedDegree": 0.9,
       "era": 1976,
       "sourceQuality": 1,
       "approvedFactCount": 0,
-      "hubScore": 0,
-      "bridgeScore": 0,
-      "secondaryZones": [],
+      "hubScore": 0.125,
+      "bridgeScore": 0.32,
+      "secondaryZones": [
+        "psychedelia-prog"
+      ],
       "bridgePolicies": [],
       "linkedGenres": [],
       "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "research-first-connections"
+        "preserve-cross-zone-bridge"
       ]
     },
     "black-president": {
@@ -13148,20 +13174,18 @@
       "label": "Brian Baker",
       "type": "artist",
       "zone": "punk-alt",
-      "degree": 0,
-      "weightedDegree": 0,
+      "degree": 2,
+      "weightedDegree": 1.8,
       "sourceQuality": 0.5,
       "approvedFactCount": 0,
-      "hubScore": 0,
+      "hubScore": 0.25,
       "bridgeScore": 0,
       "secondaryZones": [],
       "bridgePolicies": [],
       "linkedGenres": [],
       "overlapCount": 1,
       "overflow": 0,
-      "recommendedActions": [
-        "research-first-connections"
-      ]
+      "recommendedActions": []
     },
     "germs": {
       "id": "germs",
@@ -14162,19 +14186,51 @@
       "label": "Magnus Karlsson",
       "type": "artist",
       "zone": "rock-circuit",
-      "degree": 0,
-      "weightedDegree": 0,
+      "degree": 1,
+      "weightedDegree": 0.9,
       "sourceQuality": 0.5,
       "approvedFactCount": 0,
-      "hubScore": 0,
-      "bridgeScore": 0,
-      "secondaryZones": [],
-      "bridgePolicies": [],
+      "hubScore": 0.125,
+      "bridgeScore": 0.56,
+      "secondaryZones": [
+        "hard-rock-metal"
+      ],
+      "bridgePolicies": [
+        {
+          "id": "rock-to-metal",
+          "zones": [
+            "rock-circuit",
+            "hard-rock-metal"
+          ],
+          "anchor": false,
+          "feedbackCategories": [
+            "good_bridge",
+            "genre_transition_needed"
+          ]
+        },
+        {
+          "id": "hip-hop-crossovers",
+          "zones": [
+            "hip-hop-rap",
+            "punk-alt",
+            "hard-rock-metal",
+            "rock-circuit"
+          ],
+          "anchor": false,
+          "feedbackCategories": [
+            "good_bridge",
+            "genre_transition_needed"
+          ]
+        }
+      ],
       "linkedGenres": [],
       "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "research-first-connections"
+        "expand-important-node",
+        "preserve-cross-zone-bridge",
+        "train-bridge-policy",
+        "source-history-fact"
       ]
     },
     "masterplan": {
@@ -14224,20 +14280,52 @@
       "label": "Primal Fear",
       "type": "band",
       "zone": "hard-rock-metal",
-      "degree": 0,
-      "weightedDegree": 0,
+      "degree": 1,
+      "weightedDegree": 0.9,
       "era": 1997,
       "sourceQuality": 1,
       "approvedFactCount": 0,
-      "hubScore": 0,
-      "bridgeScore": 0,
-      "secondaryZones": [],
-      "bridgePolicies": [],
+      "hubScore": 0.125,
+      "bridgeScore": 0.56,
+      "secondaryZones": [
+        "rock-circuit"
+      ],
+      "bridgePolicies": [
+        {
+          "id": "rock-to-metal",
+          "zones": [
+            "rock-circuit",
+            "hard-rock-metal"
+          ],
+          "anchor": false,
+          "feedbackCategories": [
+            "good_bridge",
+            "genre_transition_needed"
+          ]
+        },
+        {
+          "id": "hip-hop-crossovers",
+          "zones": [
+            "hip-hop-rap",
+            "punk-alt",
+            "hard-rock-metal",
+            "rock-circuit"
+          ],
+          "anchor": false,
+          "feedbackCategories": [
+            "good_bridge",
+            "genre_transition_needed"
+          ]
+        }
+      ],
       "linkedGenres": [],
       "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "research-first-connections"
+        "expand-important-node",
+        "preserve-cross-zone-bridge",
+        "train-bridge-policy",
+        "source-history-fact"
       ]
     },
     "sinner": {
@@ -16075,19 +16163,21 @@
       "label": "Bill Stevenson",
       "type": "artist",
       "zone": "psychedelia-prog",
-      "degree": 0,
-      "weightedDegree": 0,
+      "degree": 2,
+      "weightedDegree": 1.8,
       "sourceQuality": 0.5,
       "approvedFactCount": 0,
-      "hubScore": 0,
-      "bridgeScore": 0,
-      "secondaryZones": [],
+      "hubScore": 0.25,
+      "bridgeScore": 0.32,
+      "secondaryZones": [
+        "punk-alt"
+      ],
       "bridgePolicies": [],
       "linkedGenres": [],
       "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "research-first-connections"
+        "preserve-cross-zone-bridge"
       ]
     },
     "classical-guitar": {
@@ -16197,21 +16287,19 @@
       "label": "Minor Threat",
       "type": "band",
       "zone": "punk-alt",
-      "degree": 0,
-      "weightedDegree": 0,
+      "degree": 1,
+      "weightedDegree": 0.9,
       "era": 1980,
       "sourceQuality": 1,
       "approvedFactCount": 0,
-      "hubScore": 0,
+      "hubScore": 0.125,
       "bridgeScore": 0,
       "secondaryZones": [],
       "bridgePolicies": [],
       "linkedGenres": [],
       "overlapCount": 0,
       "overflow": 0,
-      "recommendedActions": [
-        "research-first-connections"
-      ]
+      "recommendedActions": []
     },
     "big-boys": {
       "id": "big-boys",
@@ -16561,20 +16649,22 @@
       "label": "Descendents",
       "type": "band",
       "zone": "punk-alt",
-      "degree": 0,
-      "weightedDegree": 0,
+      "degree": 1,
+      "weightedDegree": 0.9,
       "era": 1977,
       "sourceQuality": 1,
       "approvedFactCount": 0,
-      "hubScore": 0,
-      "bridgeScore": 0,
-      "secondaryZones": [],
+      "hubScore": 0.125,
+      "bridgeScore": 0.32,
+      "secondaryZones": [
+        "psychedelia-prog"
+      ],
       "bridgePolicies": [],
       "linkedGenres": [],
       "overlapCount": 1,
       "overflow": 0,
       "recommendedActions": [
-        "research-first-connections"
+        "preserve-cross-zone-bridge"
       ]
     },
     "acoustic-guitar": {
@@ -18083,20 +18173,22 @@
       "label": "Iced Earth",
       "type": "band",
       "zone": "hard-rock-metal",
-      "degree": 0,
-      "weightedDegree": 0,
+      "degree": 1,
+      "weightedDegree": 0.9,
       "era": 1984,
       "sourceQuality": 1,
       "approvedFactCount": 0,
-      "hubScore": 0,
-      "bridgeScore": 0,
-      "secondaryZones": [],
+      "hubScore": 0.125,
+      "bridgeScore": 0.32,
+      "secondaryZones": [
+        "psychedelia-prog"
+      ],
       "bridgePolicies": [],
       "linkedGenres": [],
       "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "research-first-connections"
+        "preserve-cross-zone-bridge"
       ]
     },
     "demons-wizards": {
@@ -18124,19 +18216,21 @@
       "label": "Dennis Hayes",
       "type": "artist",
       "zone": "psychedelia-prog",
-      "degree": 0,
-      "weightedDegree": 0,
+      "degree": 1,
+      "weightedDegree": 0.9,
       "sourceQuality": 0.5,
       "approvedFactCount": 0,
-      "hubScore": 0,
-      "bridgeScore": 0,
-      "secondaryZones": [],
+      "hubScore": 0.125,
+      "bridgeScore": 0.32,
+      "secondaryZones": [
+        "hard-rock-metal"
+      ],
       "bridgePolicies": [],
       "linkedGenres": [],
       "overlapCount": 0,
       "overflow": 0,
       "recommendedActions": [
-        "research-first-connections"
+        "preserve-cross-zone-bridge"
       ]
     },
     "into-eternity": {
@@ -36609,7 +36703,6 @@
       "sex-pistols",
       "ufo",
       "g-funk",
-      "bad-religion",
       "the-clash",
       "beastie-boys",
       "run-dmc",
@@ -36681,7 +36774,8 @@
       "pain",
       "nightwish",
       "aqua",
-      "tony-kakko"
+      "tony-kakko",
+      "avalon"
     ],
     "underConnectedImportantNodes": [
       "black-sabbath",
@@ -36738,6 +36832,8 @@
       "noble-sissle",
       "eubie-blake",
       "red-foley",
+      "magnus-karlsson",
+      "primal-fear",
       "joe-perry",
       "corey-taylor",
       "stone-sour",
@@ -36761,9 +36857,7 @@
       "brian-may",
       "ritchie-blackmore",
       "angus-young",
-      "traditional-pop",
-      "g-funk",
-      "django-reinhardt"
+      "traditional-pop"
     ]
   },
   "recommendedResearchRequests": [
@@ -36773,7 +36867,7 @@
       "status": "queued",
       "priority": 90,
       "scope": "artist_network",
-      "createdAt": "2026-11-24T15:24:39.956Z",
+      "createdAt": "2026-11-24T15:30:47.580Z",
       "instructions": "Expand and clarify the ROCK CIRCUIT part of Music History Map. Current organization signal: rock, classic rock, glam, funk and broad band history. Prioritize documented music-related connections that help layout organization: associated genres, shared members, collaborations, influences, instruments and clear bridges to neighboring zones. Active bridge policies for this zone: gospel-rnb-soul-rock, rock-to-metal, punk-to-rock, hip-hop-crossovers, jazz-to-fusion, country-roots-to-rock, yardbirds-guitar-lineage, rickenbacker-recording-use, jazz-fusion-guitar. Prefer candidates that strengthen those transitions without turning category pages into nodes. Use albums, songs and releases only as context for edges. Do not create release/song nodes. Only propose node types allowed by MHM: band, guitarist, artist, guitar, guitar_brand and genre.",
       "seeds": [
         {
@@ -36813,55 +36907,7 @@
         "maxSeeds": 8,
         "maxCandidates": 70
       },
-      "notes": "Generated by brain:organize. Needs-attention score 124.97. Active bridge policies: gospel-rnb-soul-rock, rock-to-metal, punk-to-rock, hip-hop-crossovers, jazz-to-fusion, country-roots-to-rock, yardbirds-guitar-lineage, rickenbacker-recording-use, jazz-fusion-guitar."
-    },
-    {
-      "id": "organization-punk-alt-20261124",
-      "title": "Organize PUNK / ALTERNATIVE frontier",
-      "status": "queued",
-      "priority": 90,
-      "scope": "artist_network",
-      "createdAt": "2026-11-24T15:24:39.956Z",
-      "instructions": "Expand and clarify the PUNK / ALTERNATIVE part of Music History Map. Current organization signal: punk, post-punk, alternative, indie, hardcore and adjacent scenes. Prioritize documented music-related connections that help layout organization: associated genres, shared members, collaborations, influences, instruments and clear bridges to neighboring zones. Active bridge policies for this zone: punk-to-rock, hip-hop-crossovers, jaguar-alternative-use. Prefer candidates that strengthen those transitions without turning category pages into nodes. Use albums, songs and releases only as context for edges. Do not create release/song nodes. Only propose node types allowed by MHM: band, guitarist, artist, guitar, guitar_brand and genre.",
-      "seeds": [
-        {
-          "name": "2 Tone (music genre)",
-          "kind": "genre"
-        },
-        {
-          "name": "alternative metal",
-          "kind": "genre"
-        },
-        {
-          "name": "gothic rock",
-          "kind": "genre"
-        },
-        {
-          "name": "hardcore punk",
-          "kind": "genre"
-        },
-        {
-          "name": "Horror punk",
-          "kind": "genre"
-        },
-        {
-          "name": "industrial rock",
-          "kind": "genre"
-        },
-        {
-          "name": "pop-punk",
-          "kind": "genre"
-        },
-        {
-          "name": "post-grunge",
-          "kind": "genre"
-        }
-      ],
-      "limits": {
-        "maxSeeds": 8,
-        "maxCandidates": 70
-      },
-      "notes": "Generated by brain:organize. Needs-attention score 120.58. Active bridge policies: punk-to-rock, hip-hop-crossovers, jaguar-alternative-use."
+      "notes": "Generated by brain:organize. Needs-attention score 127.77. Active bridge policies: gospel-rnb-soul-rock, rock-to-metal, punk-to-rock, hip-hop-crossovers, jazz-to-fusion, country-roots-to-rock, yardbirds-guitar-lineage, rickenbacker-recording-use, jazz-fusion-guitar."
     },
     {
       "id": "organization-hard-rock-metal-20261124",
@@ -36869,7 +36915,7 @@
       "status": "queued",
       "priority": 90,
       "scope": "artist_network",
-      "createdAt": "2026-11-24T15:24:39.956Z",
+      "createdAt": "2026-11-24T15:30:47.581Z",
       "instructions": "Expand and clarify the HARD ROCK / METAL part of Music History Map. Current organization signal: hard rock, metal, riff culture, virtuoso guitar and heavier scenes. Prioritize documented music-related connections that help layout organization: associated genres, shared members, collaborations, influences, instruments and clear bridges to neighboring zones. Active bridge policies for this zone: rock-to-metal, hip-hop-crossovers, yardbirds-guitar-lineage. Prefer candidates that strengthen those transitions without turning category pages into nodes. Use albums, songs and releases only as context for edges. Do not create release/song nodes. Only propose node types allowed by MHM: band, guitarist, artist, guitar, guitar_brand and genre.",
       "seeds": [
         {
@@ -36909,7 +36955,55 @@
         "maxSeeds": 8,
         "maxCandidates": 70
       },
-      "notes": "Generated by brain:organize. Needs-attention score 118.5. Active bridge policies: rock-to-metal, hip-hop-crossovers, yardbirds-guitar-lineage."
+      "notes": "Generated by brain:organize. Needs-attention score 122.05. Active bridge policies: rock-to-metal, hip-hop-crossovers, yardbirds-guitar-lineage."
+    },
+    {
+      "id": "organization-punk-alt-20261124",
+      "title": "Organize PUNK / ALTERNATIVE frontier",
+      "status": "queued",
+      "priority": 90,
+      "scope": "artist_network",
+      "createdAt": "2026-11-24T15:30:47.581Z",
+      "instructions": "Expand and clarify the PUNK / ALTERNATIVE part of Music History Map. Current organization signal: punk, post-punk, alternative, indie, hardcore and adjacent scenes. Prioritize documented music-related connections that help layout organization: associated genres, shared members, collaborations, influences, instruments and clear bridges to neighboring zones. Active bridge policies for this zone: punk-to-rock, hip-hop-crossovers, jaguar-alternative-use. Prefer candidates that strengthen those transitions without turning category pages into nodes. Use albums, songs and releases only as context for edges. Do not create release/song nodes. Only propose node types allowed by MHM: band, guitarist, artist, guitar, guitar_brand and genre.",
+      "seeds": [
+        {
+          "name": "2 Tone (music genre)",
+          "kind": "genre"
+        },
+        {
+          "name": "alternative metal",
+          "kind": "genre"
+        },
+        {
+          "name": "gothic rock",
+          "kind": "genre"
+        },
+        {
+          "name": "hardcore punk",
+          "kind": "genre"
+        },
+        {
+          "name": "Horror punk",
+          "kind": "genre"
+        },
+        {
+          "name": "industrial rock",
+          "kind": "genre"
+        },
+        {
+          "name": "pop-punk",
+          "kind": "genre"
+        },
+        {
+          "name": "post-grunge",
+          "kind": "genre"
+        }
+      ],
+      "limits": {
+        "maxSeeds": 8,
+        "maxCandidates": 70
+      },
+      "notes": "Generated by brain:organize. Needs-attention score 120.23. Active bridge policies: punk-to-rock, hip-hop-crossovers, jaguar-alternative-use."
     },
     {
       "id": "organization-pop-soul-disco-20261124",
@@ -36917,7 +37011,7 @@
       "status": "queued",
       "priority": 90,
       "scope": "artist_network",
-      "createdAt": "2026-11-24T15:24:39.956Z",
+      "createdAt": "2026-11-24T15:30:47.581Z",
       "instructions": "Expand and clarify the POP / SOUL / DISCO part of Music History Map. Current organization signal: 1960s Motown, gospel-informed soul, 1970s disco and 1980s pop and synth-pop. Prioritize documented music-related connections that help layout organization: associated genres, shared members, collaborations, influences, instruments and clear bridges to neighboring zones. Active bridge policies for this zone: gospel-rnb-soul-rock. Prefer candidates that strengthen those transitions without turning category pages into nodes. Use albums, songs and releases only as context for edges. Do not create release/song nodes. Only propose node types allowed by MHM: band, guitarist, artist, guitar, guitar_brand and genre.",
       "seeds": [
         {
@@ -36965,7 +37059,7 @@
       "status": "queued",
       "priority": 90,
       "scope": "guitar_history",
-      "createdAt": "2026-11-24T15:24:39.957Z",
+      "createdAt": "2026-11-24T15:30:47.581Z",
       "instructions": "Expand and clarify the GUITAR WORKSHOP part of Music History Map. Current organization signal: guitar models, guitar brands and instrument history. Prioritize documented music-related connections that help layout organization: associated genres, shared members, collaborations, influences, instruments and clear bridges to neighboring zones. Active bridge policies for this zone: esquire-country-use, jaguar-alternative-use, rickenbacker-recording-use, jem-virtuoso-design. Prefer candidates that strengthen those transitions without turning category pages into nodes. Use albums, songs and releases only as context for edges. Do not create release/song nodes. Only propose node types allowed by MHM: band, guitarist, artist, guitar, guitar_brand and genre.",
       "seeds": [
         {

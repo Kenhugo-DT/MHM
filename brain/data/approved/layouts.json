@@ -1,13 +1,13 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-24T15:24:40.058Z",
+  "generatedAt": "2026-11-24T15:30:47.684Z",
   "source": "approved graph + learning model + organization model",
   "inputSignatures": {
-    "learningModel": "d1556578b373beb1cc7added53689318bf1f4054cfc115ca6a2fdecc234ad8c7",
-    "organizationModel": "54acea162204ab05ef8d34eeb985bb750a8e60ae12c5633c05818619308436a4"
+    "learningModel": "d222dd0969421474d0e829d5bd7f65d64ca52eb2ae33edd48c9e4ff7447b2db5",
+    "organizationModel": "75f563181c05afcd985570b0b0a26243a240f3a95f2002daecd8bee7747a35ff"
   },
   "graphFingerprints": {
-    "artists": "e3e81b1b6c76c6b1153deb661f31d5d313dc7c149097d189bb74f36b623224a5",
+    "artists": "dd287f6caeea03c0be5373aafe7207619587f644a521f34256d3c17728f596f2",
     "guitars": "d2e6555f2ffcac0665903a8355ccc718a52c48b364e20a449f37dc64d2f0996d"
   },
   "layouts": {
@@ -15,7 +15,7 @@
       "id": "organized",
       "label": "Map",
       "description": "Current brain-organized map positions.",
-      "generatedAt": "2026-11-24T15:24:40.058Z",
+      "generatedAt": "2026-11-24T15:30:47.684Z",
       "nodes": {
         "3": {
           "x": -688,
@@ -1575,7 +1575,7 @@
           "x": 1726,
           "y": 1026,
           "zone": "punk-alt",
-          "priority": 0.42
+          "priority": 0.465
         },
         "afi": {
           "x": 2678,
@@ -1587,7 +1587,7 @@
           "x": 1910,
           "y": 1549,
           "zone": "punk-alt",
-          "priority": 0.42
+          "priority": 0.465
         },
         "black-president": {
           "x": 2454,
@@ -1599,7 +1599,7 @@
           "x": 2314,
           "y": 1299,
           "zone": "punk-alt",
-          "priority": 0.42
+          "priority": 0.51
         },
         "germs": {
           "x": 1050,
@@ -1875,7 +1875,7 @@
           "x": -137,
           "y": 537,
           "zone": "rock-circuit",
-          "priority": 0.42
+          "priority": 0.465
         },
         "masterplan": {
           "x": -1273,
@@ -1893,7 +1893,7 @@
           "x": 2958,
           "y": -267,
           "zone": "hard-rock-metal",
-          "priority": 0.42
+          "priority": 0.465
         },
         "sinner": {
           "x": -58,
@@ -2391,7 +2391,7 @@
           "x": -209,
           "y": -783,
           "zone": "psychedelia-prog",
-          "priority": 0.42
+          "priority": 0.51
         },
         "classical-guitar": {
           "x": 3996,
@@ -2427,7 +2427,7 @@
           "x": 983,
           "y": 1070,
           "zone": "punk-alt",
-          "priority": 0.42
+          "priority": 0.465
         },
         "big-boys": {
           "x": -1256,
@@ -2511,7 +2511,7 @@
           "x": 1714,
           "y": 863,
           "zone": "punk-alt",
-          "priority": 0.42
+          "priority": 0.465
         },
         "acoustic-guitar": {
           "x": 3864,
@@ -2931,7 +2931,7 @@
           "x": 2951,
           "y": 73,
           "zone": "hard-rock-metal",
-          "priority": 0.42
+          "priority": 0.465
         },
         "demons-wizards": {
           "x": 78,
@@ -2943,7 +2943,7 @@
           "x": -300,
           "y": -944,
           "zone": "psychedelia-prog",
-          "priority": 0.42
+          "priority": 0.465
         },
         "into-eternity": {
           "x": -703,
@@ -7331,7 +7331,7 @@
       "id": "genre",
       "label": "Genres",
       "description": "Genre-led clusters with bridge nodes pulled toward related scenes.",
-      "generatedAt": "2026-11-24T15:24:40.058Z",
+      "generatedAt": "2026-11-24T15:30:47.684Z",
       "nodes": {
         "3": {
           "x": 1007,
@@ -10865,7 +10865,7 @@
           "x": -656,
           "y": 117,
           "zone": "rock-circuit",
-          "priority": 0.42
+          "priority": 0.465
         },
         "mark-cross": {
           "x": -525,
@@ -11711,13 +11711,13 @@
           "x": 335,
           "y": -994,
           "zone": "psychedelia-prog",
-          "priority": 0.42
+          "priority": 0.51
         },
         "dennis-hayes": {
           "x": 527,
           "y": -995,
           "zone": "psychedelia-prog",
-          "priority": 0.42
+          "priority": 0.465
         },
         "jack-black": {
           "x": 771,
@@ -12437,7 +12437,7 @@
           "x": 1056,
           "y": 755,
           "zone": "hard-rock-metal",
-          "priority": 0.42
+          "priority": 0.465
         },
         "carcass": {
           "x": 1224,
@@ -12587,7 +12587,7 @@
           "x": 2871,
           "y": 928,
           "zone": "hard-rock-metal",
-          "priority": 0.42
+          "priority": 0.465
         },
         "steel-panther": {
           "x": 3045,
@@ -12803,7 +12803,7 @@
           "x": 2331,
           "y": 1256,
           "zone": "punk-alt",
-          "priority": 0.42
+          "priority": 0.51
         },
         "chris-frantz": {
           "x": 2481,
@@ -12911,7 +12911,7 @@
           "x": 765,
           "y": 1539,
           "zone": "punk-alt",
-          "priority": 0.42
+          "priority": 0.465
         },
         "chelsea": {
           "x": 890,
@@ -12947,7 +12947,7 @@
           "x": 1826,
           "y": 1530,
           "zone": "punk-alt",
-          "priority": 0.42
+          "priority": 0.465
         },
         "misfits": {
           "x": 929,
@@ -13067,13 +13067,13 @@
           "x": 703,
           "y": 1848,
           "zone": "punk-alt",
-          "priority": 0.42
+          "priority": 0.465
         },
         "minor-threat": {
           "x": 854,
           "y": 1782,
           "zone": "punk-alt",
-          "priority": 0.42
+          "priority": 0.465
         },
         "suicidal-tendencies": {
           "x": 1101,
@@ -14647,7 +14647,7 @@
       "id": "timeline",
       "label": "Timeline",
       "description": "First documented active year within each decade, with unknown start years kept separate.",
-      "generatedAt": "2026-11-24T15:24:40.058Z",
+      "generatedAt": "2026-11-24T15:30:47.684Z",
       "guide": {
         "markers": [
           {
@@ -19966,7 +19966,7 @@
           "x": 3084,
           "y": 559,
           "zone": "punk-alt",
-          "priority": 0.42,
+          "priority": 0.465,
           "decade": 1970,
           "startYear": 1976
         },
@@ -20110,7 +20110,7 @@
           "x": 3148,
           "y": -989,
           "zone": "punk-alt",
-          "priority": 0.42,
+          "priority": 0.465,
           "decade": 1970,
           "startYear": 1977
         },
@@ -20518,7 +20518,7 @@
           "x": 3358,
           "y": -235,
           "zone": "punk-alt",
-          "priority": 0.42,
+          "priority": 0.465,
           "decade": 1980,
           "startYear": 1980
         },
@@ -20550,7 +20550,7 @@
           "x": 3358,
           "y": 2218,
           "zone": "punk-alt",
-          "priority": 0.42,
+          "priority": 0.465,
           "decade": 1980,
           "startYear": 1980
         },
@@ -20830,7 +20830,7 @@
           "x": 3596,
           "y": 249,
           "zone": "hard-rock-metal",
-          "priority": 0.42,
+          "priority": 0.465,
           "decade": 1980,
           "startYear": 1984
         },
@@ -21606,7 +21606,7 @@
           "x": 4428,
           "y": 1063,
           "zone": "hard-rock-metal",
-          "priority": 0.42,
+          "priority": 0.465,
           "decade": 1990,
           "startYear": 1997
         },
@@ -23118,7 +23118,7 @@
           "x": 6819,
           "y": 11982,
           "zone": "psychedelia-prog",
-          "priority": 0.42,
+          "priority": 0.51,
           "decade": null
         },
         "david-gilmour": {
@@ -23132,7 +23132,7 @@
           "x": -3876,
           "y": 12108,
           "zone": "psychedelia-prog",
-          "priority": 0.42,
+          "priority": 0.465,
           "decade": null
         },
         "disturbed": {
@@ -23342,7 +23342,7 @@
           "x": 1190,
           "y": 12234,
           "zone": "punk-alt",
-          "priority": 0.42,
+          "priority": 0.51,
           "decade": null
         },
         "brian-cook": {
@@ -23965,7 +23965,7 @@
           "x": 4567,
           "y": 12738,
           "zone": "rock-circuit",
-          "priority": 0.42,
+          "priority": 0.465,
           "decade": null
         },
         "mark-cross": {
@@ -24303,7 +24303,7 @@
       "id": "alphabetic",
       "label": "A-Z",
       "description": "A simple training layout sorted by label.",
-      "generatedAt": "2026-11-24T15:24:40.058Z",
+      "generatedAt": "2026-11-24T15:30:47.684Z",
       "nodes": {
         "3": {
           "x": -511,
@@ -25155,7 +25155,7 @@
           "x": 3425,
           "y": -324,
           "zone": "punk-alt",
-          "priority": 0.42
+          "priority": 0.465
         },
         "badlands-american-band": {
           "x": 3863,
@@ -25425,7 +25425,7 @@
           "x": 2113,
           "y": 12,
           "zone": "psychedelia-prog",
-          "priority": 0.42
+          "priority": 0.51
         },
         "bill-withers": {
           "x": 2551,
@@ -25491,7 +25491,7 @@
           "x": -73,
           "y": 124,
           "zone": "punk-alt",
-          "priority": 0.42
+          "priority": 0.465
         },
         "black-president": {
           "x": 364,
@@ -25659,7 +25659,7 @@
           "x": -1823,
           "y": 348,
           "zone": "punk-alt",
-          "priority": 0.42
+          "priority": 0.51
         },
         "brian-cook": {
           "x": -1385,
@@ -26517,7 +26517,7 @@
           "x": -2260,
           "y": 1364,
           "zone": "psychedelia-prog",
-          "priority": 0.42
+          "priority": 0.465
         },
         "dennis-mcgee": {
           "x": -1823,
@@ -26541,7 +26541,7 @@
           "x": -511,
           "y": 1364,
           "zone": "punk-alt",
-          "priority": 0.42
+          "priority": 0.465
         },
         "dexter-gordon": {
           "x": -73,
@@ -28083,7 +28083,7 @@
           "x": -73,
           "y": 3148,
           "zone": "hard-rock-metal",
-          "priority": 0.42
+          "priority": 0.465
         },
         "iggy-pop": {
           "x": 364,
@@ -29115,7 +29115,7 @@
           "x": -1823,
           "y": 4396,
           "zone": "rock-circuit",
-          "priority": 0.42
+          "priority": 0.465
         },
         "mahalia-jackson": {
           "x": -1385,
@@ -29415,7 +29415,7 @@
           "x": -948,
           "y": 4732,
           "zone": "punk-alt",
-          "priority": 0.42
+          "priority": 0.465
         },
         "misfits": {
           "x": -511,
@@ -29937,7 +29937,7 @@
           "x": 2113,
           "y": 5276,
           "zone": "hard-rock-metal",
-          "priority": 0.42
+          "priority": 0.465
         },
         "prince": {
           "x": 2551,
@@ -31619,7 +31619,7 @@
       "id": "chaos",
       "label": "Chaos",
       "description": "Seeded loose layout for stress-testing readable disorder.",
-      "generatedAt": "2026-11-24T15:24:40.058Z",
+      "generatedAt": "2026-11-24T15:30:47.684Z",
       "nodes": {
         "3": {
           "x": -57,
@@ -35153,7 +35153,7 @@
           "x": 1072,
           "y": 74,
           "zone": "rock-circuit",
-          "priority": 0.42
+          "priority": 0.465
         },
         "mark-cross": {
           "x": -1115,
@@ -35999,13 +35999,13 @@
           "x": 1026,
           "y": -993,
           "zone": "psychedelia-prog",
-          "priority": 0.42
+          "priority": 0.51
         },
         "dennis-hayes": {
           "x": -535,
           "y": -873,
           "zone": "psychedelia-prog",
-          "priority": 0.42
+          "priority": 0.465
         },
         "jack-black": {
           "x": -656,
@@ -36725,7 +36725,7 @@
           "x": 2613,
           "y": 661,
           "zone": "hard-rock-metal",
-          "priority": 0.42
+          "priority": 0.465
         },
         "carcass": {
           "x": 2851,
@@ -36875,7 +36875,7 @@
           "x": 2679,
           "y": 1025,
           "zone": "hard-rock-metal",
-          "priority": 0.42
+          "priority": 0.465
         },
         "steel-panther": {
           "x": 2934,
@@ -37091,7 +37091,7 @@
           "x": 662,
           "y": 1366,
           "zone": "punk-alt",
-          "priority": 0.42
+          "priority": 0.51
         },
         "chris-frantz": {
           "x": 862,
@@ -37199,7 +37199,7 @@
           "x": 2328,
           "y": 1517,
           "zone": "punk-alt",
-          "priority": 0.42
+          "priority": 0.465
         },
         "chelsea": {
           "x": 2351,
@@ -37235,7 +37235,7 @@
           "x": 981,
           "y": 1579,
           "zone": "punk-alt",
-          "priority": 0.42
+          "priority": 0.465
         },
         "misfits": {
           "x": 658,
@@ -37355,13 +37355,13 @@
           "x": 524,
           "y": 1765,
           "zone": "punk-alt",
-          "priority": 0.42
+          "priority": 0.465
         },
         "minor-threat": {
           "x": 808,
           "y": 1844,
           "zone": "punk-alt",
-          "priority": 0.42
+          "priority": 0.465
         },
         "suicidal-tendencies": {
           "x": 1106,

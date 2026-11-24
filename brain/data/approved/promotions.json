@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-24T15:07:40.839Z",
+  "generatedAt": "2026-11-24T15:30:22.358Z",
   "source": "MHM research brain promotions",
   "candidateRows": [
     {
@@ -1675,6 +1675,48 @@
       "requestId": "manual-evidence-20261109113826516403-the-supremes",
       "seedName": "The Supremes",
       "requestedKind": "band"
+    },
+    {
+      "id": "209a249e-8f82-4c07-976d-efd0a76ed047",
+      "kind": "typed_connection",
+      "edgeId": "mb-member-dennis-hayes-iced-earth",
+      "source": "dennis-hayes",
+      "target": "iced-earth"
+    },
+    {
+      "id": "2f4ba68c-438b-4c0d-afd0-b69490260cce",
+      "kind": "typed_connection",
+      "edgeId": "mb-member-brian-baker-minor-threat",
+      "source": "brian-baker",
+      "target": "minor-threat"
+    },
+    {
+      "id": "54dd534d-1089-4b54-a35f-0867fb700b34",
+      "kind": "typed_connection",
+      "edgeId": "mb-member-brian-baker-bad-religion",
+      "source": "brian-baker",
+      "target": "bad-religion"
+    },
+    {
+      "id": "9ed6e3a6-2060-4eab-b285-29795075f3d0",
+      "kind": "typed_connection",
+      "edgeId": "mb-member-magnus-karlsson-primal-fear",
+      "source": "magnus-karlsson",
+      "target": "primal-fear"
+    },
+    {
+      "id": "befa83bd-dc0e-4afd-9cbd-f6401ecfc726",
+      "kind": "typed_connection",
+      "edgeId": "mb-member-bill-stevenson-black-flag",
+      "source": "bill-stevenson",
+      "target": "black-flag"
+    },
+    {
+      "id": "df72b625-5169-4907-b9f1-632a7a1bf8c9",
+      "kind": "typed_connection",
+      "edgeId": "mb-member-bill-stevenson-descendents",
+      "source": "bill-stevenson",
+      "target": "descendents"
     }
   ],
   "nodes": [
@@ -21808,6 +21850,120 @@
         {
           "label": "Documented relation",
           "url": "https://musicbrainz.org/artist/c1aa2ec9-53e7-4d90-8d36-bac75832e986"
+        }
+      ]
+    },
+    {
+      "id": "mb-member-dennis-hayes-iced-earth",
+      "source": "dennis-hayes",
+      "target": "iced-earth",
+      "type": "member_of",
+      "label": "Member of",
+      "strength": 0.9,
+      "context": [
+        "MusicBrainz records Dennis Hayes as a member of Iced Earth.",
+        "Documented period: 2007 to 2007."
+      ],
+      "sources": [
+        {
+          "label": "MusicBrainz: member of band relationship",
+          "url": "https://musicbrainz.org/artist/1255f821-515d-4807-a933-53ee121f0d38/relationships",
+          "provider": "musicbrainz"
+        }
+      ]
+    },
+    {
+      "id": "mb-member-brian-baker-minor-threat",
+      "source": "brian-baker",
+      "target": "minor-threat",
+      "type": "member_of",
+      "label": "Member of",
+      "strength": 0.9,
+      "context": [
+        "MusicBrainz records Brian Baker as a member of Minor Threat.",
+        "Documented periods: 1980 to 1982; 1982 to 1983; 1983 to 1983."
+      ],
+      "sources": [
+        {
+          "label": "MusicBrainz: member of band relationship",
+          "url": "https://musicbrainz.org/artist/1fd36abf-e43c-4b01-820b-d7280cc27ea5/relationships",
+          "provider": "musicbrainz"
+        }
+      ]
+    },
+    {
+      "id": "mb-member-brian-baker-bad-religion",
+      "source": "brian-baker",
+      "target": "bad-religion",
+      "type": "member_of",
+      "label": "Member of",
+      "strength": 0.9,
+      "context": [
+        "MusicBrainz records Brian Baker as a member of Bad Religion.",
+        "Documented period: 1994 onward (end not recorded)."
+      ],
+      "sources": [
+        {
+          "label": "MusicBrainz: member of band relationship",
+          "url": "https://musicbrainz.org/artist/1fd36abf-e43c-4b01-820b-d7280cc27ea5/relationships",
+          "provider": "musicbrainz"
+        }
+      ]
+    },
+    {
+      "id": "mb-member-magnus-karlsson-primal-fear",
+      "source": "magnus-karlsson",
+      "target": "primal-fear",
+      "type": "member_of",
+      "label": "Member of",
+      "strength": 0.9,
+      "context": [
+        "MusicBrainz records Magnus Karlsson as a member of Primal Fear.",
+        "Documented period: 2008 onward (end not recorded)."
+      ],
+      "sources": [
+        {
+          "label": "MusicBrainz: member of band relationship",
+          "url": "https://musicbrainz.org/artist/0ddb9102-0db0-46c4-86ad-982a1ff54ddb/relationships",
+          "provider": "musicbrainz"
+        }
+      ]
+    },
+    {
+      "id": "mb-member-bill-stevenson-black-flag",
+      "source": "bill-stevenson",
+      "target": "black-flag",
+      "type": "member_of",
+      "label": "Member of",
+      "strength": 0.9,
+      "context": [
+        "MusicBrainz records Bill Stevenson as a member of Black Flag.",
+        "Documented period: 1983 to 1985."
+      ],
+      "sources": [
+        {
+          "label": "MusicBrainz: member of band relationship",
+          "url": "https://musicbrainz.org/artist/328e3ae5-7d8c-4a01-b2b3-b8f41fb7bb23/relationships",
+          "provider": "musicbrainz"
+        }
+      ]
+    },
+    {
+      "id": "mb-member-bill-stevenson-descendents",
+      "source": "bill-stevenson",
+      "target": "descendents",
+      "type": "member_of",
+      "label": "Member of",
+      "strength": 0.9,
+      "context": [
+        "MusicBrainz records Bill Stevenson as a member of Descendents.",
+        "Documented period: 1978 onward (end not recorded)."
+      ],
+      "sources": [
+        {
+          "label": "MusicBrainz: member of band relationship",
+          "url": "https://musicbrainz.org/artist/328e3ae5-7d8c-4a01-b2b3-b8f41fb7bb23/relationships",
+          "provider": "musicbrainz"
         }
       ]
     }
