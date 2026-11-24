@@ -860,6 +860,7 @@ def build_patch(
     edges: list[dict[str, Any]] = []
     skipped: list[dict[str, str]] = []
     consumed_rows: list[dict[str, Any]] = []
+    deferred_rows: list[dict[str, str]] = []
 
     for row in rows:
         initial_node_count = len(nodes)
@@ -898,10 +899,13 @@ def build_patch(
             continue
 
         per_seed_count = 0
+        truncated = False
         for candidate in payload.get("music_candidates", []):
             if len(nodes) >= max_new_nodes:
+                truncated = True
                 break
             if per_seed_count >= max_per_seed:
+                truncated = True
                 break
             rejection_reason = candidate_rejection_reason(candidate, blocked_terms)
             if rejection_reason:
@@ -943,19 +947,26 @@ def build_patch(
             edges.append(edge)
             existing_edge_keys.add(key)
 
+        if truncated:
+            deferred_rows.append({
+                "id": row_id,
+                "reason": "Candidate limit reached; remaining leads need another pass.",
+            })
+
         if len(nodes) == initial_node_count and len(edges) == initial_edge_count:
             skipped.append({"id": row_id, "reason": "no independently verified additions"})
             continue
 
-        consumed_rows.append(
-            {
-                "id": row_id,
-                "runId": row.get("run_id"),
-                "requestId": row.get("request_id"),
-                "seedName": row.get("seed_name"),
-                "requestedKind": row.get("requested_kind"),
-            }
-        )
+        if not truncated:
+            consumed_rows.append(
+                {
+                    "id": row_id,
+                    "runId": row.get("run_id"),
+                    "requestId": row.get("request_id"),
+                    "seedName": row.get("seed_name"),
+                    "requestedKind": row.get("requested_kind"),
+                }
+            )
 
     return {
         "version": 1,
@@ -964,6 +975,7 @@ def build_patch(
         "nodes": nodes,
         "edges": edges,
         "skipped": skipped,
+        "deferredRows": deferred_rows,
     }
 
 
@@ -1014,6 +1026,7 @@ def patch_summary(patch: dict[str, Any], source: str, status: str) -> dict[str, 
         "newNodes": len(patch.get("nodes", [])),
         "newEdges": len(patch.get("edges", [])),
         "skippedRows": patch.get("skipped", []),
+        "deferredRows": patch.get("deferredRows", []),
         "nodePreview": [
             {
                 "id": node["id"],

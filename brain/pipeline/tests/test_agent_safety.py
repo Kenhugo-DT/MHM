@@ -8,11 +8,45 @@ from unittest.mock import patch
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from candidate_quality import review_candidate_payload, review_music_candidate  # noqa: E402
+from brain_db import candidate_summary  # noqa: E402
 from process_inbox import main as process_inbox_main  # noqa: E402
 from promote_candidates import build_patch, promoted_edge, seed_node  # noqa: E402
 
 
 class CandidateSafetyTests(unittest.TestCase):
+    def test_typed_connection_does_not_receive_research_rejection(self):
+        result = candidate_summary({
+            "id": "connection-1",
+            "payload": {"kind": "typed_connection", "connection": {"type": "member_of"}},
+        })
+        self.assertEqual(result["reviewLevel"], "connection")
+        self.assertIsNone(result["reviewScore"])
+
+    def test_limited_promotion_keeps_row_pending(self):
+        graph = {"nodes": [{"id": "seed", "label": "Seed", "type": "artist",
+                            "zone": "jazz", "x": 0, "y": 0}], "edges": []}
+        candidates = [
+            {"title": name, "kind": "band", "source": "musicbrainz_relation",
+             "musicbrainz": {"id": f"band-{name}", "name": name, "type": "Group"},
+             "documented_relation": {
+                 "type": "member_of", "seed_mb_id": "seed-id", "seed_is_band": False,
+                 "source_url": "https://musicbrainz.org/artist/seed-id",
+                 "context": f"Seed is a member of {name}."}}
+            for name in ("First Band", "Second Band")
+        ]
+        row = {"id": "row-1", "payload": {
+            "name": "Seed", "requested_kind": "artist",
+            "wikipedia": {"title": "Seed", "extract": "Seed is a musician."},
+            "music_candidates": candidates,
+        }}
+        with patch("promote_candidates.existing_graph", return_value=graph), patch(
+            "promote_candidates.load_json", return_value={"candidateRows": [], "nodes": [], "edges": []}
+        ), patch("promote_candidates.load_blocked_terms", return_value=set()):
+            result = build_patch([row], max_new_nodes=1, max_per_seed=1)
+        self.assertEqual(len(result["nodes"]), 1)
+        self.assertEqual(result["candidateRows"], [])
+        self.assertEqual(result["deferredRows"][0]["id"], "row-1")
+
     def test_generic_wikipedia_topics_are_not_map_entities(self):
         for title in ("Bandleader", "Military band"):
             candidate = {"title": title, "kind": "band", "source": "link"}

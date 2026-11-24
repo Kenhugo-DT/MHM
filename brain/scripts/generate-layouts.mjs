@@ -25,6 +25,14 @@ const layoutConstraintsPath = path.join(brainRoot, "data", "approved", "layout-c
 const approvedOutputPath = path.join(brainRoot, "data", "approved", "layouts.json");
 const browserOutputPath = path.join(repoRoot, "site", "public", "data", "layouts.json");
 const preserveExistingLayout = process.argv.includes("--preserve-existing-layout");
+const repolishIds = new Set();
+for (let i = 2; i < process.argv.length; i += 1) {
+  if (process.argv[i] === "--polish-node") {
+    const id = process.argv[++i];
+    if (!id || id.startsWith("--")) throw new Error("--polish-node requires a node ID.");
+    repolishIds.add(id);
+  }
+}
 const previousLayouts = preserveExistingLayout ? readJson(approvedOutputPath, undefined) : undefined;
 
 const LAYOUTS = {
@@ -557,7 +565,7 @@ const incrementalRepair = preserveExistingLayout
     { experience: layoutExperience, practice: layoutPractice, constraints: layoutConstraints, captureTrials: true })
   : undefined;
 const labelPolish = preserveExistingLayout
-  ? polishFreshLabels(layouts, previousLayouts, graph)
+  ? polishFreshLabels(layouts, previousLayouts, graph, repolishIds)
   : undefined;
 const updatedExperience = incrementalRepair?.freshNodes
   ? appendLayoutExperience(layoutExperience, graph, previousLayouts, incrementalRepair)

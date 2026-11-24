@@ -1,13 +1,13 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-23T11:33:36.682Z",
+  "generatedAt": "2026-11-24T15:24:29.464Z",
   "source": "graph + Obsidian frontmatter + curator feedback",
-  "graphDataSignature": "68da809b3fdbcb277c68fcda3ba2caaa1fb2761f1a6b36a6b77859094dee2b65",
+  "graphDataSignature": "b7a958fc646ba78fb9eb39e07cfef7e4593261615780ccb9f8f7d1eae7696f22",
   "inputSignature": "f69ca60a1ec92b57b6ce1eab615dcd1474c9e7eb2e1e1b64987274c24e6fda5d",
   "samples": {
-    "graphNodes": 1203,
-    "graphEdges": 1563,
-    "mapConnections": 1131,
+    "graphNodes": 1218,
+    "graphEdges": 1580,
+    "mapConnections": 1148,
     "obsidianNotes": 1072,
     "feedbackNodes": 50,
     "feedbackZones": 9,
@@ -1022,11 +1022,11 @@
       ]
     },
     "hard-rock-metal": {
-      "nodeCount": 130,
+      "nodeCount": 137,
       "pinnedCount": 0,
       "centroid": {
         "x": 2854,
-        "y": 72
+        "y": 50
       },
       "eraMedian": 1981,
       "learnedTerms": [
@@ -3338,6 +3338,337 @@
         }
       ]
     },
+    "pop-soul-disco": {
+      "nodeCount": 188,
+      "pinnedCount": 0,
+      "centroid": {
+        "x": -843,
+        "y": 2554
+      },
+      "eraMedian": 1966,
+      "learnedTerms": [
+        {
+          "term": "documented recording",
+          "weight": 90
+        },
+        {
+          "term": "recording year anchor",
+          "weight": 90
+        },
+        {
+          "term": "latin music",
+          "weight": 78
+        },
+        {
+          "term": "soul music lineage",
+          "weight": 60
+        },
+        {
+          "term": "pop",
+          "weight": 59
+        },
+        {
+          "term": "american popular song",
+          "weight": 55
+        },
+        {
+          "term": "pop music",
+          "weight": 46
+        },
+        {
+          "term": "american",
+          "weight": 35
+        },
+        {
+          "term": "popular",
+          "weight": 35
+        },
+        {
+          "term": "song",
+          "weight": 35
+        },
+        {
+          "term": "soul",
+          "weight": 35
+        },
+        {
+          "term": "soul music",
+          "weight": 31
+        },
+        {
+          "term": "anchor",
+          "weight": 30
+        },
+        {
+          "term": "documented",
+          "weight": 30
+        },
+        {
+          "term": "recording",
+          "weight": 30
+        },
+        {
+          "term": "year",
+          "weight": 30
+        },
+        {
+          "term": "latin",
+          "weight": 26
+        },
+        {
+          "term": "funk lineage",
+          "weight": 15
+        },
+        {
+          "term": "lineage",
+          "weight": 15
+        },
+        {
+          "term": "disco",
+          "weight": 13
+        },
+        {
+          "term": "rhythm and blues",
+          "weight": 13
+        },
+        {
+          "term": "gospel music",
+          "weight": 9
+        },
+        {
+          "term": "pop rock",
+          "weight": 9
+        },
+        {
+          "term": "aretha franklin",
+          "weight": 8
+        },
+        {
+          "term": "mambo",
+          "weight": 8
+        },
+        {
+          "term": "pre 1955 popular song",
+          "weight": 8
+        },
+        {
+          "term": "salsa",
+          "weight": 8
+        },
+        {
+          "term": "vocal groups",
+          "weight": 8
+        },
+        {
+          "term": "roots blues",
+          "weight": 7
+        },
+        {
+          "term": "gospel voice",
+          "weight": 6
+        },
+        {
+          "term": "ray charles",
+          "weight": 6
+        },
+        {
+          "term": "sister rosetta tharpe",
+          "weight": 6
+        },
+        {
+          "term": "soul crossover",
+          "weight": 6
+        },
+        {
+          "term": "country influenced soul",
+          "weight": 5
+        },
+        {
+          "term": "cross zone bridge",
+          "weight": 5
+        },
+        {
+          "term": "funk",
+          "weight": 5
+        },
+        {
+          "term": "gospel to soul",
+          "weight": 5
+        },
+        {
+          "term": "jazz",
+          "weight": 5
+        },
+        {
+          "term": "rhythm innovation",
+          "weight": 5
+        },
+        {
+          "term": "soul to funk",
+          "weight": 5
+        },
+        {
+          "term": "southern soul",
+          "weight": 5
+        },
+        {
+          "term": "stax scene",
+          "weight": 5
+        },
+        {
+          "term": "vocal transition",
+          "weight": 5
+        },
+        {
+          "term": "1974 recording",
+          "weight": 4
+        },
+        {
+          "term": "celia johnny documents cruz and johnny pacheco together the current broad zone is a layout address not a claim that salsa is pop or disco preserve a distinct latin cluster within it source https www loc gov static programs national recording preservation board documents registry by artist pdf",
+          "weight": 4
+        },
+        {
+          "term": "chanson",
+          "weight": 4
+        },
+        {
+          "term": "documented collaboration",
+          "weight": 4
+        },
+        {
+          "term": "franklin s gospel upbringing and r b recordings explain her soul and pop connections a gospel influence is not the same as a later secular genre label",
+          "weight": 4
+        },
+        {
+          "term": "gospel vocal roots",
+          "weight": 4
+        },
+        {
+          "term": "jackson",
+          "weight": 4
+        },
+        {
+          "term": "johnny",
+          "weight": 4
+        },
+        {
+          "term": "rhythm",
+          "weight": 4
+        },
+        {
+          "term": "rock circuit",
+          "weight": 4
+        },
+        {
+          "term": "sisters",
+          "weight": 4
+        },
+        {
+          "term": "all",
+          "weight": 3
+        },
+        {
+          "term": "blues",
+          "weight": 3
+        },
+        {
+          "term": "classical",
+          "weight": 3
+        },
+        {
+          "term": "fania",
+          "weight": 3
+        },
+        {
+          "term": "genre transition needed",
+          "weight": 3
+        },
+        {
+          "term": "good bridge",
+          "weight": 3
+        },
+        {
+          "term": "gospel",
+          "weight": 3
+        },
+        {
+          "term": "gospel blues and swing feed r b r b and gospel feed soul and early rock preserve the distinct traditions and let only documented anchors create cross zone pull",
+          "weight": 3
+        },
+        {
+          "term": "his",
+          "weight": 3
+        },
+        {
+          "term": "john",
+          "weight": 3
+        },
+        {
+          "term": "king",
+          "weight": 3
+        },
+        {
+          "term": "orchestra",
+          "weight": 3
+        },
+        {
+          "term": "paul",
+          "weight": 3
+        },
+        {
+          "term": "ragtime",
+          "weight": 3
+        },
+        {
+          "term": "stars",
+          "weight": 3
+        },
+        {
+          "term": "synth",
+          "weight": 3
+        },
+        {
+          "term": "synth pop",
+          "weight": 3
+        },
+        {
+          "term": "tango",
+          "weight": 3
+        },
+        {
+          "term": "this broad legacy zone also contains latin and early popular music distinct latin clusters need their own breathing room adjacency is not a claim that these traditions are pop or disco",
+          "weight": 3
+        },
+        {
+          "term": "wilson",
+          "weight": 3
+        },
+        {
+          "term": "world",
+          "weight": 3
+        },
+        {
+          "term": "world music",
+          "weight": 3
+        },
+        {
+          "term": "andrews",
+          "weight": 2
+        },
+        {
+          "term": "aretha",
+          "weight": 2
+        },
+        {
+          "term": "azpiazu",
+          "weight": 2
+        },
+        {
+          "term": "ballard",
+          "weight": 2
+        }
+      ]
+    },
     "classical-history": {
       "nodeCount": 157,
       "pinnedCount": 0,
@@ -3666,337 +3997,6 @@
         {
           "term": "alexandre levy",
           "weight": 1
-        }
-      ]
-    },
-    "pop-soul-disco": {
-      "nodeCount": 180,
-      "pinnedCount": 0,
-      "centroid": {
-        "x": -838,
-        "y": 2592
-      },
-      "eraMedian": 1966,
-      "learnedTerms": [
-        {
-          "term": "documented recording",
-          "weight": 90
-        },
-        {
-          "term": "recording year anchor",
-          "weight": 90
-        },
-        {
-          "term": "latin music",
-          "weight": 78
-        },
-        {
-          "term": "soul music lineage",
-          "weight": 60
-        },
-        {
-          "term": "pop",
-          "weight": 59
-        },
-        {
-          "term": "american popular song",
-          "weight": 55
-        },
-        {
-          "term": "pop music",
-          "weight": 46
-        },
-        {
-          "term": "american",
-          "weight": 35
-        },
-        {
-          "term": "popular",
-          "weight": 35
-        },
-        {
-          "term": "song",
-          "weight": 35
-        },
-        {
-          "term": "soul",
-          "weight": 35
-        },
-        {
-          "term": "soul music",
-          "weight": 31
-        },
-        {
-          "term": "anchor",
-          "weight": 30
-        },
-        {
-          "term": "documented",
-          "weight": 30
-        },
-        {
-          "term": "recording",
-          "weight": 30
-        },
-        {
-          "term": "year",
-          "weight": 30
-        },
-        {
-          "term": "latin",
-          "weight": 26
-        },
-        {
-          "term": "funk lineage",
-          "weight": 15
-        },
-        {
-          "term": "lineage",
-          "weight": 15
-        },
-        {
-          "term": "disco",
-          "weight": 13
-        },
-        {
-          "term": "rhythm and blues",
-          "weight": 13
-        },
-        {
-          "term": "gospel music",
-          "weight": 9
-        },
-        {
-          "term": "pop rock",
-          "weight": 9
-        },
-        {
-          "term": "aretha franklin",
-          "weight": 8
-        },
-        {
-          "term": "mambo",
-          "weight": 8
-        },
-        {
-          "term": "pre 1955 popular song",
-          "weight": 8
-        },
-        {
-          "term": "salsa",
-          "weight": 8
-        },
-        {
-          "term": "vocal groups",
-          "weight": 8
-        },
-        {
-          "term": "roots blues",
-          "weight": 7
-        },
-        {
-          "term": "gospel voice",
-          "weight": 6
-        },
-        {
-          "term": "ray charles",
-          "weight": 6
-        },
-        {
-          "term": "sister rosetta tharpe",
-          "weight": 6
-        },
-        {
-          "term": "soul crossover",
-          "weight": 6
-        },
-        {
-          "term": "country influenced soul",
-          "weight": 5
-        },
-        {
-          "term": "cross zone bridge",
-          "weight": 5
-        },
-        {
-          "term": "funk",
-          "weight": 5
-        },
-        {
-          "term": "gospel to soul",
-          "weight": 5
-        },
-        {
-          "term": "jazz",
-          "weight": 5
-        },
-        {
-          "term": "rhythm innovation",
-          "weight": 5
-        },
-        {
-          "term": "soul to funk",
-          "weight": 5
-        },
-        {
-          "term": "southern soul",
-          "weight": 5
-        },
-        {
-          "term": "stax scene",
-          "weight": 5
-        },
-        {
-          "term": "vocal transition",
-          "weight": 5
-        },
-        {
-          "term": "1974 recording",
-          "weight": 4
-        },
-        {
-          "term": "celia johnny documents cruz and johnny pacheco together the current broad zone is a layout address not a claim that salsa is pop or disco preserve a distinct latin cluster within it source https www loc gov static programs national recording preservation board documents registry by artist pdf",
-          "weight": 4
-        },
-        {
-          "term": "chanson",
-          "weight": 4
-        },
-        {
-          "term": "documented collaboration",
-          "weight": 4
-        },
-        {
-          "term": "franklin s gospel upbringing and r b recordings explain her soul and pop connections a gospel influence is not the same as a later secular genre label",
-          "weight": 4
-        },
-        {
-          "term": "gospel vocal roots",
-          "weight": 4
-        },
-        {
-          "term": "jackson",
-          "weight": 4
-        },
-        {
-          "term": "johnny",
-          "weight": 4
-        },
-        {
-          "term": "rhythm",
-          "weight": 4
-        },
-        {
-          "term": "rock circuit",
-          "weight": 4
-        },
-        {
-          "term": "sisters",
-          "weight": 4
-        },
-        {
-          "term": "all",
-          "weight": 3
-        },
-        {
-          "term": "blues",
-          "weight": 3
-        },
-        {
-          "term": "classical",
-          "weight": 3
-        },
-        {
-          "term": "fania",
-          "weight": 3
-        },
-        {
-          "term": "genre transition needed",
-          "weight": 3
-        },
-        {
-          "term": "good bridge",
-          "weight": 3
-        },
-        {
-          "term": "gospel",
-          "weight": 3
-        },
-        {
-          "term": "gospel blues and swing feed r b r b and gospel feed soul and early rock preserve the distinct traditions and let only documented anchors create cross zone pull",
-          "weight": 3
-        },
-        {
-          "term": "his",
-          "weight": 3
-        },
-        {
-          "term": "john",
-          "weight": 3
-        },
-        {
-          "term": "king",
-          "weight": 3
-        },
-        {
-          "term": "orchestra",
-          "weight": 3
-        },
-        {
-          "term": "paul",
-          "weight": 3
-        },
-        {
-          "term": "ragtime",
-          "weight": 3
-        },
-        {
-          "term": "stars",
-          "weight": 3
-        },
-        {
-          "term": "synth",
-          "weight": 3
-        },
-        {
-          "term": "synth pop",
-          "weight": 3
-        },
-        {
-          "term": "tango",
-          "weight": 3
-        },
-        {
-          "term": "this broad legacy zone also contains latin and early popular music distinct latin clusters need their own breathing room adjacency is not a claim that these traditions are pop or disco",
-          "weight": 3
-        },
-        {
-          "term": "world",
-          "weight": 3
-        },
-        {
-          "term": "world music",
-          "weight": 3
-        },
-        {
-          "term": "andrews",
-          "weight": 2
-        },
-        {
-          "term": "aretha",
-          "weight": 2
-        },
-        {
-          "term": "azpiazu",
-          "weight": 2
-        },
-        {
-          "term": "bobby",
-          "weight": 2
-        },
-        {
-          "term": "boswell",
-          "weight": 2
         }
       ]
     }
@@ -13485,7 +13485,9 @@
     },
     "joe-perry": {
       "zone": "rock-circuit",
-      "secondaryZones": [],
+      "secondaryZones": [
+        "hard-rock-metal"
+      ],
       "primaryGenres": [
         "rock"
       ],
@@ -13503,10 +13505,10 @@
           "coordinateSource": "https://www.wikidata.org/wiki/Q49163#P625"
         }
       ],
-      "connectionCount": 0,
+      "connectionCount": 1,
       "linkedGenres": [],
-      "bridgeScore": 0,
-      "hubScore": 0,
+      "bridgeScore": 0.22,
+      "hubScore": 0.083,
       "layoutHints": {
         "pinned": false
       }
@@ -17963,7 +17965,9 @@
     },
     "aerosmith": {
       "zone": "hard-rock-metal",
-      "secondaryZones": [],
+      "secondaryZones": [
+        "rock-circuit"
+      ],
       "primaryGenres": [
         "hard rock"
       ],
@@ -17982,10 +17986,10 @@
           "coordinateSource": "https://www.wikidata.org/wiki/Q100#P625"
         }
       ],
-      "connectionCount": 0,
+      "connectionCount": 8,
       "linkedGenres": [],
-      "bridgeScore": 0,
-      "hubScore": 0,
+      "bridgeScore": 0.22,
+      "hubScore": 0.667,
       "layoutHints": {
         "pinned": false
       }
@@ -19924,6 +19928,201 @@
         "pinned": false
       }
     },
+    "ray-tabano": {
+      "zone": "hard-rock-metal",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "tom-hamilton": {
+      "zone": "hard-rock-metal",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "joey-kramer": {
+      "zone": "hard-rock-metal",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "steven-tyler": {
+      "zone": "hard-rock-metal",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "brad-whitford": {
+      "zone": "hard-rock-metal",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "jimmy-crespo": {
+      "zone": "hard-rock-metal",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "jean-terrell": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "mary-wilson": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "lynda-laurence": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "scherrie-payne": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "susaye-greene": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "barbara-martin": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "rick-dufay": {
+      "zone": "hard-rock-metal",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "florence-ballard": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "diana-ross": {
+      "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
     "classical-music": {
       "zone": "classical-history",
       "secondaryZones": [
@@ -20270,13 +20469,13 @@
           "identityNote": "Identity resolved by exact Wikipedia title, matching Wikidata label and music-specific type; review if a namesake is suspected."
         }
       ],
-      "connectionCount": 3,
+      "connectionCount": 11,
       "linkedGenres": [
         "soul-music",
         "pop-music"
       ],
       "bridgeScore": 0.16,
-      "hubScore": 0.25,
+      "hubScore": 0.917,
       "layoutHints": {
         "pinned": false
       }
@@ -29778,12 +29977,12 @@
           "identityNote": "Identity resolved by exact Wikipedia title, matching Wikidata label and music-specific type; review if a namesake is suspected."
         }
       ],
-      "connectionCount": 5,
+      "connectionCount": 6,
       "linkedGenres": [
         "alternative-rock"
       ],
       "bridgeScore": 0.08,
-      "hubScore": 0.417,
+      "hubScore": 0.5,
       "layoutHints": {
         "pinned": false
       }
@@ -31015,10 +31214,10 @@
           "identityNote": "Identity resolved by exact Wikipedia title, matching Wikidata label and music-specific type; review if a namesake is suspected."
         }
       ],
-      "connectionCount": 1,
+      "connectionCount": 2,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0.083,
+      "hubScore": 0.167,
       "layoutHints": {
         "pinned": false
       }

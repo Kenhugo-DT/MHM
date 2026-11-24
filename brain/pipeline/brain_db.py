@@ -106,7 +106,8 @@ def command_list_requests(args: argparse.Namespace) -> None:
 
 def candidate_summary(row: dict[str, Any]) -> dict[str, Any]:
     payload = row.get("payload") or {}
-    review = payload.get("review") or review_candidate_payload(payload)
+    typed_connection = payload.get("kind") == "typed_connection"
+    review = ({} if typed_connection else payload.get("review") or review_candidate_payload(payload))
     return {
         "id": row.get("id"),
         "runId": row.get("run_id"),
@@ -114,6 +115,7 @@ def candidate_summary(row: dict[str, Any]) -> dict[str, Any]:
         "seedName": row.get("seed_name"),
         "requestedKind": row.get("requested_kind"),
         "status": row.get("status"),
+        "kind": payload.get("kind") or "research",
         "reviewReasonCode": row.get("review_reason_code"),
         "reviewNote": row.get("review_note"),
         "musicCandidateCount": len(payload.get("music_candidates") or []),
@@ -121,9 +123,12 @@ def candidate_summary(row: dict[str, Any]) -> dict[str, Any]:
         "authorityChecks": payload.get("authority_checks") or [],
         "archiveLeads": payload.get("archive_leads") or [],
         "sourceLookupErrors": payload.get("source_lookup_errors") or [],
-        "reviewLevel": review.get("level"),
+        "reviewLevel": "connection" if typed_connection else review.get("level"),
         "reviewScore": review.get("score"),
-        "reviewSummary": review.get("summary"),
+        "reviewSummary": (
+            "Typed connection: review the relationship evidence and endpoints."
+            if typed_connection else review.get("summary")
+        ),
         "reviewFlags": [
             f"{item.get('severity')}:{item.get('code')}:{item.get('target') or '-'}"
             for item in review.get("flags", [])

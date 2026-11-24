@@ -140,7 +140,18 @@ test("only approved, identity-matched memberships can be staged", () => {
   ];
   const staged = stageConnectionRows(rows, graph, { edges: [], candidateRows: [] });
   assert.equal(staged.edges.length, 1);
+  assert.equal(stageConnectionRows(rows, graph, {
+    nodes: [{ ...band, sources: [] }], edges: [], candidateRows: [],
+  }).edges.length, 1);
   assert.deepEqual(staged.candidateRows.map((row) => row.id), ["approved"]);
+  const skipped = stageConnectionRows([
+    { id: "bad", status: "approved", payload: { kind: "typed_connection", connection: {
+      ...proposal, evidence: { ...proposal.evidence, artistIds: [bandId, personId] },
+    } } },
+    rows[2],
+  ], graph, { edges: [], candidateRows: [] }, 1, { skipInvalid: true });
+  assert.deepEqual(skipped.candidateRows.map((row) => row.id), ["approved"]);
+  assert.deepEqual(skipped.invalid.map((item) => item.id), ["bad"]);
   assert.deepEqual(staged.edges[0].sources.map((source) => source.provider), ["musicbrainz"]);
   assert.match(staged.edges[0].context[1], /1985 onward \(end not recorded\)/);
   assert.match(connectionCandidate({ ...proposal, evidence: {
@@ -151,6 +162,8 @@ test("only approved, identity-matched memberships can be staged", () => {
     [{ begin: "1985", end: null }]), true);
   assert.equal(hasMusicBrainzMembership(artist, personId, bandId,
     [{ begin: "1986", end: null }]), false);
+  assert.equal(hasMusicBrainzMembership({ ...artist, name: "Wrong Person" }, personId, bandId,
+    [{ begin: "1985", end: null }], person.label), false);
   assert.equal(hasMusicBrainzMembership({ ...artist, type: "Group" }, personId, bandId), false);
   assert.deepEqual(stageConnectionRows(rows, graph, {
     edges: staged.edges, candidateRows: staged.candidateRows,

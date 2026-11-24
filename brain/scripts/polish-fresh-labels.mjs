@@ -1,4 +1,4 @@
-const MODES = ["organized", "genre", "chaos"];
+const MODES = ["organized", "genre", "chaos", "timeline"];
 const RADII = [96, 144, 192, 256, 320, 400, 480, 576, 672, 768,
   864, 960, 1088, 1216, 1408, 1600, 1800];
 const DIRECTIONS = [
@@ -30,13 +30,14 @@ function collisionCost(node, point, graphNodes, positions) {
   return { count, severe };
 }
 
-export function polishFreshLabels(layouts, previousLayouts, graph) {
+export function polishFreshLabels(layouts, previousLayouts, graph, repolishIds = new Set()) {
   const report = {};
   for (const mode of MODES) {
     const positions = layouts[mode]?.nodes;
     const previous = previousLayouts?.layouts?.[mode]?.nodes;
     if (!positions || !previous) continue;
-    const fresh = graph.nodes.filter((node) => positions[node.id] && !previous[node.id]);
+    const fresh = graph.nodes.filter((node) => positions[node.id] &&
+      (!previous[node.id] || repolishIds.has(node.id)));
     let moved = 0;
     let remaining = 0;
     let maxShift = 0;
@@ -46,9 +47,15 @@ export function polishFreshLabels(layouts, previousLayouts, graph) {
         edge.type === "associated_genre" && positions[edge.target]);
       const anchor = genreEdge && mode !== "chaos" ? positions[genreEdge.target] : undefined;
       const before = collisionCost(node, original, graph.nodes, positions);
-      if (!before.count) continue;
+      const outsideUnknown = mode === "timeline" && original.decade === null &&
+        original.y < (layouts.timeline.guide?.unknown?.top ?? Number.NEGATIVE_INFINITY);
+      if (!before.count && !outsideUnknown) continue;
       let choice = original;
       const scoreFor = (point) => {
+        if (mode === "timeline" && original.decade === null &&
+            point.y < (layouts.timeline.guide?.unknown?.top ?? Number.NEGATIVE_INFINITY)) {
+          return Number.POSITIVE_INFINITY;
+        }
         const hit = collisionCost(node, point, graph.nodes, positions);
         const shift = Math.hypot(point.x - original.x, point.y - original.y);
         if (shift > 1800) return Number.POSITIVE_INFINITY;
@@ -56,9 +63,10 @@ export function polishFreshLabels(layouts, previousLayouts, graph) {
         return hit.count * 100_000 + hit.severe * 50_000 + shift * 0.4 + anchorDistance * 0.6;
       };
       let best = scoreFor(original);
+      const directions = mode === "timeline" ? [[0, -1], [0, 1]] : DIRECTIONS;
       for (const origin of [original, anchor].filter(Boolean)) {
         for (const radius of [0, ...RADII]) {
-          for (const [vx, vy] of DIRECTIONS) {
+          for (const [vx, vy] of directions) {
             const length = Math.hypot(vx, vy);
             const point = { x: Math.round(origin.x + radius * vx / length),
               y: Math.round(origin.y + radius * vy / length) };

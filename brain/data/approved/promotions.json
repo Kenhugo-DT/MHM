@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-09T10:52:45.678Z",
+  "generatedAt": "2026-11-24T15:07:40.839Z",
   "source": "MHM research brain promotions",
   "candidateRows": [
     {
@@ -1654,6 +1654,27 @@
       "edgeId": "mb-member-willie-nelson-mb-band-c685765c-b778-4ed6-9035-8f7088431765",
       "source": "willie-nelson",
       "target": "mb-band-c685765c-b778-4ed6-9035-8f7088431765"
+    },
+    {
+      "id": "eafd0713-346a-479c-a890-49fc5c06125b",
+      "runId": "inbox-20261119-090540-frontier-2026-w47-brian-cook",
+      "requestId": "frontier-2026-w47-brian-cook",
+      "seedName": "Sterling Morrison",
+      "requestedKind": "guitarist"
+    },
+    {
+      "id": "57a26773-c503-43e0-a3c0-b83e47c43f7d",
+      "runId": "inbox-20261123-090538-frontier-2026-w48-acid-king-band",
+      "requestId": "frontier-2026-w48-acid-king-band",
+      "seedName": "Aerosmith",
+      "requestedKind": "band"
+    },
+    {
+      "id": "60dbe87b-44c8-4b08-b1ba-bb3087621f9c",
+      "runId": "inbox-20261109-113831-manual-evidence-20261109113826516403-the-supremes",
+      "requestId": "manual-evidence-20261109113826516403-the-supremes",
+      "seedName": "The Supremes",
+      "requestedKind": "band"
     }
   ],
   "nodes": [
@@ -12749,6 +12770,336 @@
           }
         ]
       }
+    },
+    {
+      "id": "ray-tabano",
+      "label": "Ray Tabano",
+      "type": "artist",
+      "roles": [
+        "artist"
+      ],
+      "summary": "An artist with a documented MusicBrainz band-membership connection to Aerosmith.",
+      "metadata": [
+        "Artist"
+      ],
+      "x": 898.6,
+      "y": -230.1,
+      "zone": "hard-rock-metal",
+      "starter": false,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/ba1336e5-d144-4ee5-a0fc-1e12aa41bceb"
+        }
+      ]
+    },
+    {
+      "id": "tom-hamilton",
+      "label": "Tom Hamilton",
+      "type": "artist",
+      "roles": [
+        "artist"
+      ],
+      "summary": "An artist with a documented MusicBrainz band-membership connection to Aerosmith.",
+      "metadata": [
+        "Artist"
+      ],
+      "x": 1060.5,
+      "y": -420.3,
+      "zone": "hard-rock-metal",
+      "starter": false,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/9fc37bbf-c2a4-4ac9-95de-255e93fc6758"
+        }
+      ]
+    },
+    {
+      "id": "joey-kramer",
+      "label": "Joey Kramer",
+      "type": "artist",
+      "roles": [
+        "artist"
+      ],
+      "summary": "An artist with a documented MusicBrainz band-membership connection to Aerosmith.",
+      "metadata": [
+        "Artist"
+      ],
+      "x": 1089.5,
+      "y": -524.6,
+      "zone": "hard-rock-metal",
+      "starter": false,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/4b289467-0bc9-4e6a-aea6-b42247c89756"
+        }
+      ]
+    },
+    {
+      "id": "steven-tyler",
+      "label": "Steven Tyler",
+      "type": "artist",
+      "roles": [
+        "artist"
+      ],
+      "summary": "An artist with a documented MusicBrainz band-membership connection to Aerosmith.",
+      "metadata": [
+        "Artist"
+      ],
+      "x": 1148.8,
+      "y": -449.4,
+      "zone": "hard-rock-metal",
+      "starter": false,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/7d3f7aed-fb9c-4e80-b198-64cd6ae31cb8"
+        }
+      ]
+    },
+    {
+      "id": "brad-whitford",
+      "label": "Brad Whitford",
+      "type": "artist",
+      "roles": [
+        "artist"
+      ],
+      "summary": "An artist with a documented MusicBrainz band-membership connection to Aerosmith.",
+      "metadata": [
+        "Artist"
+      ],
+      "x": 920.7,
+      "y": -43.2,
+      "zone": "hard-rock-metal",
+      "starter": false,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/31a619cb-ffed-4a15-ac2b-0934f40a82ce"
+        }
+      ]
+    },
+    {
+      "id": "jimmy-crespo",
+      "label": "Jimmy Crespo",
+      "type": "artist",
+      "roles": [
+        "artist"
+      ],
+      "summary": "An artist with a documented MusicBrainz band-membership connection to Aerosmith.",
+      "metadata": [
+        "Artist"
+      ],
+      "x": 943.8,
+      "y": -265.9,
+      "zone": "hard-rock-metal",
+      "starter": false,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/74e6ede3-b7c3-4331-b5de-75e1a819673e"
+        }
+      ]
+    },
+    {
+      "id": "jean-terrell",
+      "label": "Jean Terrell",
+      "type": "artist",
+      "roles": [
+        "artist"
+      ],
+      "summary": "An artist with a documented MusicBrainz band-membership connection to The Supremes.",
+      "metadata": [
+        "Artist"
+      ],
+      "x": -728.4,
+      "y": 2208.9,
+      "zone": "pop-soul-disco",
+      "starter": false,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/3b46aa0e-3b25-4b47-96c4-4b0cf3f99392"
+        }
+      ]
+    },
+    {
+      "id": "mary-wilson",
+      "label": "Mary Wilson",
+      "type": "artist",
+      "roles": [
+        "artist"
+      ],
+      "summary": "An artist with a documented MusicBrainz band-membership connection to The Supremes.",
+      "metadata": [
+        "Artist"
+      ],
+      "x": -455.9,
+      "y": 2312.4,
+      "zone": "pop-soul-disco",
+      "starter": false,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/197ed4d5-fe91-430b-8899-f26dcd1e2bba"
+        }
+      ]
+    },
+    {
+      "id": "lynda-laurence",
+      "label": "Lynda Laurence",
+      "type": "artist",
+      "roles": [
+        "artist"
+      ],
+      "summary": "An artist with a documented MusicBrainz band-membership connection to The Supremes.",
+      "metadata": [
+        "Artist"
+      ],
+      "x": -590,
+      "y": 2706.7,
+      "zone": "pop-soul-disco",
+      "starter": false,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/2f8d1411-4737-4993-9d2e-8b78e68e7aee"
+        }
+      ]
+    },
+    {
+      "id": "scherrie-payne",
+      "label": "Scherrie Payne",
+      "type": "artist",
+      "roles": [
+        "artist"
+      ],
+      "summary": "An artist with a documented MusicBrainz band-membership connection to The Supremes.",
+      "metadata": [
+        "Artist"
+      ],
+      "x": -823.9,
+      "y": 2076,
+      "zone": "pop-soul-disco",
+      "starter": false,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/b731d33e-0cf7-46af-a68e-8ad31c9dc004"
+        }
+      ]
+    },
+    {
+      "id": "susaye-greene",
+      "label": "Susaye Greene",
+      "type": "artist",
+      "roles": [
+        "artist"
+      ],
+      "summary": "An artist with a documented MusicBrainz band-membership connection to The Supremes.",
+      "metadata": [
+        "Artist"
+      ],
+      "x": -681.3,
+      "y": 2598,
+      "zone": "pop-soul-disco",
+      "starter": false,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/1f1505bb-3765-4a36-a377-b0ea76a054b2"
+        }
+      ]
+    },
+    {
+      "id": "barbara-martin",
+      "label": "Barbara Martin",
+      "type": "artist",
+      "roles": [
+        "artist"
+      ],
+      "summary": "An artist with a documented MusicBrainz band-membership connection to The Supremes.",
+      "metadata": [
+        "Artist"
+      ],
+      "x": -751.1,
+      "y": 2164,
+      "zone": "pop-soul-disco",
+      "starter": false,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/f3583ee6-729c-4a60-8833-f998391ae13a"
+        }
+      ]
+    },
+    {
+      "id": "rick-dufay",
+      "label": "Rick Dufay",
+      "type": "artist",
+      "roles": [
+        "artist"
+      ],
+      "summary": "An artist with a documented MusicBrainz band-membership connection to Aerosmith.",
+      "metadata": [
+        "Artist"
+      ],
+      "x": 792.9,
+      "y": -249.5,
+      "zone": "hard-rock-metal",
+      "starter": false,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/ff16339e-a212-4261-8771-2717bef9103c"
+        }
+      ]
+    },
+    {
+      "id": "florence-ballard",
+      "label": "Florence Ballard",
+      "type": "artist",
+      "roles": [
+        "artist"
+      ],
+      "summary": "An artist with a documented MusicBrainz band-membership connection to The Supremes.",
+      "metadata": [
+        "Artist"
+      ],
+      "x": -966.4,
+      "y": 2508.2,
+      "zone": "pop-soul-disco",
+      "starter": false,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/16bc6335-efa5-43ee-9b2d-08c743a995c2"
+        }
+      ]
+    },
+    {
+      "id": "diana-ross",
+      "label": "Diana Ross",
+      "type": "artist",
+      "roles": [
+        "artist"
+      ],
+      "summary": "An artist with a documented MusicBrainz band-membership connection to The Supremes.",
+      "metadata": [
+        "Artist"
+      ],
+      "x": -788.4,
+      "y": 2123.6,
+      "zone": "pop-soul-disco",
+      "starter": false,
+      "sources": [
+        {
+          "label": "MusicBrainz",
+          "url": "https://musicbrainz.org/artist/60d41417-feda-4734-bbbf-7dcc30e08a83"
+        }
+      ]
     }
   ],
   "edges": [
@@ -21168,6 +21519,295 @@
           "label": "Johnny Cash estate: The Highwaymen lineup",
           "url": "https://www.johnnycash.com/music/the-highwaymen-live-american-outlaws/",
           "provider": "artist"
+        }
+      ]
+    },
+    {
+      "id": "brain-ray-tabano-aerosmith-member_of",
+      "source": "ray-tabano",
+      "target": "aerosmith",
+      "type": "member_of",
+      "label": "member of",
+      "strength": 0.6,
+      "context": [
+        "MusicBrainz documents Ray Tabano as a member of Aerosmith (1970-10 to 1971-04)."
+      ],
+      "sources": [
+        {
+          "label": "Documented relation",
+          "url": "https://musicbrainz.org/artist/3d2b98e5-556f-4451-a3ff-c50ea18d57cb"
+        }
+      ]
+    },
+    {
+      "id": "brain-joe-perry-aerosmith-member_of",
+      "source": "joe-perry",
+      "target": "aerosmith",
+      "type": "member_of",
+      "label": "member of",
+      "strength": 0.6,
+      "context": [
+        "MusicBrainz documents Joe Perry as a member of Aerosmith (1970-10 to 1979-07)."
+      ],
+      "sources": [
+        {
+          "label": "Documented relation",
+          "url": "https://musicbrainz.org/artist/3d2b98e5-556f-4451-a3ff-c50ea18d57cb"
+        }
+      ]
+    },
+    {
+      "id": "brain-tom-hamilton-aerosmith-member_of",
+      "source": "tom-hamilton",
+      "target": "aerosmith",
+      "type": "member_of",
+      "label": "member of",
+      "strength": 0.6,
+      "context": [
+        "MusicBrainz documents Tom Hamilton as a member of Aerosmith (1970-10 to ?)."
+      ],
+      "sources": [
+        {
+          "label": "Documented relation",
+          "url": "https://musicbrainz.org/artist/3d2b98e5-556f-4451-a3ff-c50ea18d57cb"
+        }
+      ]
+    },
+    {
+      "id": "brain-joey-kramer-aerosmith-member_of",
+      "source": "joey-kramer",
+      "target": "aerosmith",
+      "type": "member_of",
+      "label": "member of",
+      "strength": 0.6,
+      "context": [
+        "MusicBrainz documents Joey Kramer as a member of Aerosmith (1970-10 to ?)."
+      ],
+      "sources": [
+        {
+          "label": "Documented relation",
+          "url": "https://musicbrainz.org/artist/3d2b98e5-556f-4451-a3ff-c50ea18d57cb"
+        }
+      ]
+    },
+    {
+      "id": "brain-steven-tyler-aerosmith-member_of",
+      "source": "steven-tyler",
+      "target": "aerosmith",
+      "type": "member_of",
+      "label": "member of",
+      "strength": 0.6,
+      "context": [
+        "MusicBrainz documents Steven Tyler as a member of Aerosmith (1970-10 to ?)."
+      ],
+      "sources": [
+        {
+          "label": "Documented relation",
+          "url": "https://musicbrainz.org/artist/3d2b98e5-556f-4451-a3ff-c50ea18d57cb"
+        }
+      ]
+    },
+    {
+      "id": "brain-brad-whitford-aerosmith-member_of",
+      "source": "brad-whitford",
+      "target": "aerosmith",
+      "type": "member_of",
+      "label": "member of",
+      "strength": 0.6,
+      "context": [
+        "MusicBrainz documents Brad Whitford as a member of Aerosmith (1971-04 to 1981-07)."
+      ],
+      "sources": [
+        {
+          "label": "Documented relation",
+          "url": "https://musicbrainz.org/artist/3d2b98e5-556f-4451-a3ff-c50ea18d57cb"
+        }
+      ]
+    },
+    {
+      "id": "brain-jimmy-crespo-aerosmith-member_of",
+      "source": "jimmy-crespo",
+      "target": "aerosmith",
+      "type": "member_of",
+      "label": "member of",
+      "strength": 0.6,
+      "context": [
+        "MusicBrainz documents Jimmy Crespo as a member of Aerosmith (1979-07 to 1984-04)."
+      ],
+      "sources": [
+        {
+          "label": "Documented relation",
+          "url": "https://musicbrainz.org/artist/3d2b98e5-556f-4451-a3ff-c50ea18d57cb"
+        }
+      ]
+    },
+    {
+      "id": "brain-sterling-morrison-the-velvet-underground-member_of",
+      "source": "sterling-morrison",
+      "target": "the-velvet-underground",
+      "type": "member_of",
+      "label": "member of",
+      "strength": 0.6,
+      "context": [
+        "MusicBrainz documents Sterling Morrison as a member of The Velvet Underground (1965 to 1971)."
+      ],
+      "sources": [
+        {
+          "label": "Documented relation",
+          "url": "https://musicbrainz.org/artist/af1b9cbb-bba5-4601-b4e3-9b06617ace21"
+        }
+      ]
+    },
+    {
+      "id": "brain-jean-terrell-the-supremes-member_of",
+      "source": "jean-terrell",
+      "target": "the-supremes",
+      "type": "member_of",
+      "label": "member of",
+      "strength": 0.6,
+      "context": [
+        "MusicBrainz documents Jean Terrell as a member of The Supremes (1970-01-14 to 1973)."
+      ],
+      "sources": [
+        {
+          "label": "Documented relation",
+          "url": "https://musicbrainz.org/artist/c1aa2ec9-53e7-4d90-8d36-bac75832e986"
+        }
+      ]
+    },
+    {
+      "id": "brain-mary-wilson-the-supremes-member_of",
+      "source": "mary-wilson",
+      "target": "the-supremes",
+      "type": "member_of",
+      "label": "member of",
+      "strength": 0.6,
+      "context": [
+        "MusicBrainz documents Mary Wilson as a member of The Supremes (1970-01-14 to 2021-02-08)."
+      ],
+      "sources": [
+        {
+          "label": "Documented relation",
+          "url": "https://musicbrainz.org/artist/c1aa2ec9-53e7-4d90-8d36-bac75832e986"
+        }
+      ]
+    },
+    {
+      "id": "brain-lynda-laurence-the-supremes-member_of",
+      "source": "lynda-laurence",
+      "target": "the-supremes",
+      "type": "member_of",
+      "label": "member of",
+      "strength": 0.6,
+      "context": [
+        "MusicBrainz documents Lynda Laurence as a member of The Supremes (1972-04 to 1973)."
+      ],
+      "sources": [
+        {
+          "label": "Documented relation",
+          "url": "https://musicbrainz.org/artist/c1aa2ec9-53e7-4d90-8d36-bac75832e986"
+        }
+      ]
+    },
+    {
+      "id": "brain-scherrie-payne-the-supremes-member_of",
+      "source": "scherrie-payne",
+      "target": "the-supremes",
+      "type": "member_of",
+      "label": "member of",
+      "strength": 0.6,
+      "context": [
+        "MusicBrainz documents Scherrie Payne as a member of The Supremes (1973 to ?)."
+      ],
+      "sources": [
+        {
+          "label": "Documented relation",
+          "url": "https://musicbrainz.org/artist/c1aa2ec9-53e7-4d90-8d36-bac75832e986"
+        }
+      ]
+    },
+    {
+      "id": "brain-susaye-greene-the-supremes-member_of",
+      "source": "susaye-greene",
+      "target": "the-supremes",
+      "type": "member_of",
+      "label": "member of",
+      "strength": 0.6,
+      "context": [
+        "MusicBrainz documents Susaye Greene as a member of The Supremes (1976 to ?)."
+      ],
+      "sources": [
+        {
+          "label": "Documented relation",
+          "url": "https://musicbrainz.org/artist/c1aa2ec9-53e7-4d90-8d36-bac75832e986"
+        }
+      ]
+    },
+    {
+      "id": "brain-barbara-martin-the-supremes-member_of",
+      "source": "barbara-martin",
+      "target": "the-supremes",
+      "type": "member_of",
+      "label": "member of",
+      "strength": 0.6,
+      "context": [
+        "MusicBrainz documents Barbara Martin as a member of The Supremes (? to 1961)."
+      ],
+      "sources": [
+        {
+          "label": "Documented relation",
+          "url": "https://musicbrainz.org/artist/c1aa2ec9-53e7-4d90-8d36-bac75832e986"
+        }
+      ]
+    },
+    {
+      "id": "brain-rick-dufay-aerosmith-member_of",
+      "source": "rick-dufay",
+      "target": "aerosmith",
+      "type": "member_of",
+      "label": "member of",
+      "strength": 0.6,
+      "context": [
+        "MusicBrainz documents Rick Dufay as a member of Aerosmith (1981-12 to 1984-04)."
+      ],
+      "sources": [
+        {
+          "label": "Documented relation",
+          "url": "https://musicbrainz.org/artist/3d2b98e5-556f-4451-a3ff-c50ea18d57cb"
+        }
+      ]
+    },
+    {
+      "id": "brain-florence-ballard-the-supremes-member_of",
+      "source": "florence-ballard",
+      "target": "the-supremes",
+      "type": "member_of",
+      "label": "member of",
+      "strength": 0.6,
+      "context": [
+        "MusicBrainz documents Florence Ballard as a member of The Supremes (? to 1967-06-28)."
+      ],
+      "sources": [
+        {
+          "label": "Documented relation",
+          "url": "https://musicbrainz.org/artist/c1aa2ec9-53e7-4d90-8d36-bac75832e986"
+        }
+      ]
+    },
+    {
+      "id": "brain-diana-ross-the-supremes-member_of",
+      "source": "diana-ross",
+      "target": "the-supremes",
+      "type": "member_of",
+      "label": "member of",
+      "strength": 0.6,
+      "context": [
+        "MusicBrainz documents Diana Ross as a member of The Supremes (? to 1967-06-28)."
+      ],
+      "sources": [
+        {
+          "label": "Documented relation",
+          "url": "https://musicbrainz.org/artist/c1aa2ec9-53e7-4d90-8d36-bac75832e986"
         }
       ]
     }

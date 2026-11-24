@@ -72,7 +72,9 @@ export function connectionCandidate(proposal, graph) {
   if (!person || !band || !["artist", "guitarist"].includes(person.type) || band.type !== "band") {
     throw new Error(`Invalid member nodes: ${proposal?.id ?? "unknown"}`);
   }
-  const personMbid = musicBrainzArtistId(person) ?? (proposal.discovery ? proposal.evidence?.artistIds?.[0] : undefined);
+  // Feedback seeds may have a reviewed MusicBrainz identity not yet stored on the legacy node.
+  // The apply step must verify its name and membership against the live artist record.
+  const personMbid = musicBrainzArtistId(person) ?? proposal.evidence?.artistIds?.[0];
   const bandMbid = musicBrainzArtistId(band);
   if (!personMbid || !bandMbid || proposal.id !== `mb-member-${person.id}-${band.id}` ||
       proposal.type !== "member_of" ||
@@ -119,7 +121,7 @@ export function connectionCandidate(proposal, graph) {
   };
 }
 
-export function stageConnectionRows(rows, graph, promotions, limit = 12) {
+export function stageConnectionRows(rows, graph, promotions, limit = 12, { skipInvalid = false } = {}) {
   if (!Number.isInteger(limit) || limit < 1 || limit > 25) {
     throw new Error("Connection batch limit must be 1..25.");
   }
@@ -129,15 +131,28 @@ export function stageConnectionRows(rows, graph, promotions, limit = 12) {
   const recorded = new Set((promotions.candidateRows ?? []).map((row) => String(row.id)));
   const eligible = rows.filter((row) => row.status === "approved" &&
     row.payload?.kind === CONNECTION_CANDIDATE_KIND && !recorded.has(String(row.id)));
-  const selected = eligible.slice(0, limit);
   const edges = [];
   const nodes = [];
   const candidateRows = [];
   const alreadyPresent = [];
-  for (const row of selected) {
-    const stageGraph = { ...graph, nodes: [...graph.nodes, ...(promotions.nodes ?? []), ...nodes] };
-    const newBand = discoveredBandNode(row.payload.connection, stageGraph);
-    const edge = connectionCandidate(row.payload.connection, stageGraph);
+  const invalid = [];
+  let inspected = 0;
+  for (const row of eligible) {
+    if (candidateRows.length >= limit) break;
+    inspected += 1;
+    const stageNodes = new Map([...(promotions.nodes ?? []), ...graph.nodes, ...nodes]
+      .map((node) => [node.id, node]));
+    const stageGraph = { ...graph, nodes: [...stageNodes.values()] };
+    let newBand;
+    let edge;
+    try {
+      newBand = discoveredBandNode(row.payload.connection, stageGraph);
+      edge = connectionCandidate(row.payload.connection, stageGraph);
+    } catch (error) {
+      if (!skipInvalid) throw error;
+      invalid.push({ id: String(row.id), reason: String(error.message ?? error) });
+      continue;
+    }
     if (newBand) nodes.push(newBand);
     const key = membershipKey(edge);
     candidateRows.push({ id: String(row.id), kind: CONNECTION_CANDIDATE_KIND,
@@ -154,11 +169,12 @@ export function stageConnectionRows(rows, graph, promotions, limit = 12) {
     edges.push(edge);
     existing.set(key, edge);
   }
-  return { nodes, edges, candidateRows, alreadyPresent, deferred: eligible.length - selected.length };
+  return { nodes, edges, candidateRows, alreadyPresent, invalid, deferred: eligible.length - inspected };
 }
 
-export function hasMusicBrainzMembership(artist, personMbid, bandMbid, expectedPeriods = []) {
-  if (artist?.id?.toLowerCase() !== personMbid || artist.type !== "Person") return false;
+export function hasMusicBrainzMembership(artist, personMbid, bandMbid, expectedPeriods = [], expectedName) {
+  if (artist?.id?.toLowerCase() !== personMbid || artist.type !== "Person" ||
+      (expectedName && artist.name?.trim() !== expectedName)) return false;
   const matching = (artist.relations ?? []).filter((relation) =>
       relation["type-id"] === MEMBER_OF_BAND_TYPE_ID &&
       relation.artist?.id?.toLowerCase() === bandMbid &&

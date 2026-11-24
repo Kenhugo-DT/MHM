@@ -25,6 +25,30 @@ test("fresh-label polish clears new collisions without moving established nodes"
     new Set(["new-a", "new-b"])).overlapPairs, 0);
 });
 
+test("timeline label polish preserves the time coordinate", () => {
+  const graph = { nodes: [
+    { id: "old", label: "Established musician" },
+    { id: "new", label: "New musician" },
+  ] };
+  const previous = { layouts: { timeline: { nodes: { old: { x: 1970, y: 0 } } } } };
+  const layouts = { timeline: { nodes: {
+    old: { x: 1970, y: 0 }, new: { x: 1970, y: 10 },
+  } } };
+  const result = polishFreshLabels(layouts, previous, graph);
+  assert.equal(result.timeline.remaining, 0);
+  assert.equal(layouts.timeline.nodes.new.x, 1970);
+  assert.equal(layouts.timeline.nodes.old.y, 0);
+  const repolish = { layouts: { timeline: { nodes: {
+    old: { x: 1970, y: 0 }, new: { x: 1970, y: 10 },
+  } } } };
+  const current = { timeline: { guide: { unknown: { top: 0 } }, nodes: {
+    old: { x: 1970, y: 0 }, new: { x: 1970, y: 10 },
+  } } };
+  polishFreshLabels(current, repolish, graph, new Set(["new"]));
+  assert.notEqual(current.timeline.nodes.new.y, 10);
+  assert.equal(current.timeline.nodes.new.x, 1970);
+});
+
 test("incremental layouts keep existing nodes and place discoveries near a reviewed member", () => {
   const previous = { layouts: {
     organized: { nodes: { person: { x: 100, y: 200, zone: "rock-circuit" } } },

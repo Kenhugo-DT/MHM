@@ -15,8 +15,31 @@ permissions:
   contents: read
 
 jobs:
+  preflight:
+    runs-on: ubuntu-latest
+    outputs:
+      connection_batch: ${{ steps.detect.outputs.connection_batch }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - id: detect
+        name: Detect newly reviewed connection rows
+        run: |
+          git show HEAD^:brain/data/approved/promotions.json > "$RUNNER_TEMP/before-promotions.json"
+          node --input-type=module -e '
+            import fs from "node:fs";
+            const before = JSON.parse(fs.readFileSync(process.argv[1], "utf8"));
+            const after = JSON.parse(fs.readFileSync("brain/data/approved/promotions.json", "utf8"));
+            const known = new Set((before.candidateRows ?? []).map((row) => String(row.id)));
+            const added = (after.candidateRows ?? []).filter((row) =>
+              row.kind === "typed_connection" && !known.has(String(row.id)));
+            fs.appendFileSync(process.env.GITHUB_OUTPUT,
+              `connection_batch=${added.length > 0}\n`);
+          ' "$RUNNER_TEMP/before-promotions.json"
   publish:
-    if: vars.BRAIN_IMPORT_ENABLED == 'true'
+    needs: preflight
+    if: vars.BRAIN_IMPORT_ENABLED == 'true' && needs.preflight.outputs.connection_batch == 'true'
     runs-on: ubuntu-latest
     env:
       SUPABASE_URL: ${{ vars.SUPABASE_URL }}

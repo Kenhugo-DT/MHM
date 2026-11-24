@@ -65,8 +65,9 @@ const rows = candidateIds.size ? approved.filter((row) => candidateIds.has(Strin
 if (candidateIds.size && rows.length !== candidateIds.size) {
   throw new Error("Every requested candidate must exist and be approved before staging.");
 }
-const staged = stageConnectionRows(rows, graph, promotions, limit);
-const byId = new Map([...graph.nodes, ...(promotions.nodes ?? []), ...staged.nodes].map((node) => [node.id, node]));
+const staged = stageConnectionRows(rows, graph, promotions, limit, { skipInvalid: true });
+const byId = new Map([...(promotions.nodes ?? []), ...graph.nodes, ...staged.nodes]
+  .map((node) => [node.id, node]));
 const rowById = new Map(rows.map((row) => [String(row.id), row]));
 const report = [
   "# Reviewed connection batch",
@@ -76,12 +77,17 @@ const report = [
   `- New band nodes: ${staged.nodes.length}`,
   `- Already present: ${staged.alreadyPresent.length}`,
   `- Deferred to later batches: ${staged.deferred}`,
+  `- Blocked by identity/evidence checks: ${staged.invalid.length}`,
   `- Graph before: ${graph.nodes.length} nodes, ${graph.edges.length} edges`,
   "",
   "## New connections",
   "",
   ...staged.edges.map((edge) =>
     `- ${byId.get(edge.source).label} -> ${byId.get(edge.target).label}: ${edge.sources[0].url}`),
+  "",
+  "## Blocked proposals",
+  "",
+  ...staged.invalid.map((item) => `- ${item.id}: ${item.reason}`),
   "",
   "Human review and passing CI are required before merging. This step does not write to the live map.",
   "",
@@ -93,8 +99,7 @@ if (apply && staged.edges.length) {
   for (const edge of staged.edges) {
     const stagedRow = staged.candidateRows.find((row) => row.edgeId === edge.id);
     const reviewed = rowById.get(stagedRow.id).payload.connection;
-    const personMbid = musicBrainzArtistId(byId.get(edge.source)) ??
-      (reviewed.discovery ? reviewed.evidence.artistIds[0] : undefined);
+    const personMbid = musicBrainzArtistId(byId.get(edge.source)) ?? reviewed.evidence.artistIds[0];
     const bandMbid = musicBrainzArtistId(byId.get(edge.target));
     if (personMbid !== previousMbid) {
       if (previousMbid) await new Promise((resolve) => setTimeout(resolve, 1250));
@@ -102,7 +107,8 @@ if (apply && staged.edges.length) {
       previousMbid = personMbid;
     }
     const periods = reviewed.evidence.periods;
-    if (!hasMusicBrainzMembership(previousLookup, personMbid, bandMbid, periods)) {
+    if (!hasMusicBrainzMembership(previousLookup, personMbid, bandMbid, periods,
+      byId.get(edge.source).label)) {
       throw new Error(`Live MusicBrainz membership check failed: ${edge.id}`);
     }
   }
@@ -131,4 +137,5 @@ if (apply && staged.candidateRows.length) {
 console.log(JSON.stringify({ approvedConnectionRows: staged.candidateRows.length,
   newNodes: staged.nodes.length, newEdges: staged.edges.length, alreadyPresent: staged.alreadyPresent,
   deferred: staged.deferred,
+  invalid: staged.invalid,
   applied: apply && staged.candidateRows.length > 0, report: apply ? path.relative(root, reportPath) : report }, null, 2));
