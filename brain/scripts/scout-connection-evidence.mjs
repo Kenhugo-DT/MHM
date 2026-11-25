@@ -11,11 +11,13 @@ const args = process.argv.slice(2);
 const requestedIds = [];
 let limit = 12;
 let dryRun = false;
+let existingOnly = false;
 let outputPath;
 for (let index = 0; index < args.length; index += 1) {
   if (args[index] === "--node") requestedIds.push(args[++index]);
   else if (args[index] === "--limit") limit = Number(args[++index]);
   else if (args[index] === "--dry-run") dryRun = true;
+  else if (args[index] === "--existing-only") existingOnly = true;
   else if (args[index] === "--output") outputPath = args[++index];
   else throw new Error(`Unknown argument: ${args[index]}`);
 }
@@ -111,6 +113,10 @@ for (const seed of seeds) {
 }
 
 const generatedAt = new Date().toISOString();
+const selectedProposals = [...proposals.values()]
+  .filter((proposal) => !existingOnly || !proposal.discovery)
+  .slice(0, 25)
+  .sort((a, b) => a.id.localeCompare(b.id, "en"));
 const output = outputPath ? path.resolve(outputPath) : path.join(root, "brain/data/candidates", `connection-evidence-${generatedAt.replace(/[-:.]/g, "").slice(0, 15)}Z.json`);
 fs.mkdirSync(path.dirname(output), { recursive: true });
 fs.writeFileSync(output, `${JSON.stringify({
@@ -122,8 +128,9 @@ fs.writeFileSync(output, `${JSON.stringify({
   feedbackSeeds: feedback.map((item) => item.node.id),
   feedbackResolved: [...resolved.keys()],
   feedbackError,
-  proposals: [...proposals.values()].slice(0, 25).sort((a, b) => a.id.localeCompare(b.id, "en")),
+  proposals: selectedProposals,
 }, null, 2)}\n`);
 console.log(JSON.stringify({ output: path.relative(root, output), checked: checked.length,
-  proposals: Math.min(proposals.size, 25), feedbackSeeds: feedback.length, feedbackResolved: resolved.size,
+  proposals: selectedProposals.length,
+  feedbackSeeds: feedback.length, feedbackResolved: resolved.size,
   feedbackError, errors }, null, 2));

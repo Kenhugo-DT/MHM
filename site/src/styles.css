@@ -919,6 +919,14 @@ button {
   gap: 6px;
 }
 
+.connection-item {
+  min-width: 0;
+}
+
+.connection-item > button {
+  width: 100%;
+}
+
 .connection-list button,
 .wiki-signal-list a {
   min-height: 49px;
@@ -940,6 +948,32 @@ button {
 }
 
 .connection-evidence { display: block; width: fit-content; margin-top: 3px; color: #d6b85d; font-size: 10px; }
+
+.connection-sources {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  padding: 5px 9px 6px 26px;
+}
+
+.connection-sources a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  max-width: 100%;
+  color: var(--gold);
+  font-size: 0.68rem;
+  text-decoration: none;
+}
+
+.connection-sources a span {
+  overflow-wrap: anywhere;
+}
+
+.connection-sources a:hover {
+  color: var(--text);
+  text-decoration: underline;
+}
 
 .wiki-signal-list {
   display: grid;

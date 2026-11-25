@@ -1,13 +1,13 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-24T15:30:37.186Z",
+  "generatedAt": "2026-11-25T12:42:20.999Z",
   "source": "graph + Obsidian frontmatter + curator feedback",
-  "graphDataSignature": "0265bf504630b3e30185ca673de4f1d66eec3286943ea81d208c8bdcda67e4e0",
+  "graphDataSignature": "cb290dbff222bf213bdbfb286f4c6593753081bca3bbf0b5d803758bfd1a2d8c",
   "inputSignature": "f69ca60a1ec92b57b6ce1eab615dcd1474c9e7eb2e1e1b64987274c24e6fda5d",
   "samples": {
-    "graphNodes": 1218,
-    "graphEdges": 1586,
-    "mapConnections": 1154,
+    "graphNodes": 1222,
+    "graphEdges": 1596,
+    "mapConnections": 1164,
     "obsidianNotes": 1072,
     "feedbackNodes": 50,
     "feedbackZones": 9,
@@ -29,11 +29,11 @@
   },
   "zones": {
     "roots-blues": {
-      "nodeCount": 95,
+      "nodeCount": 96,
       "pinnedCount": 0,
       "centroid": {
-        "x": -1417,
-        "y": -198
+        "x": -1412,
+        "y": -184
       },
       "eraMedian": 1948,
       "learnedTerms": [
@@ -360,10 +360,10 @@
       ]
     },
     "rock-circuit": {
-      "nodeCount": 174,
+      "nodeCount": 175,
       "pinnedCount": 0,
       "centroid": {
-        "x": -520,
+        "x": -532,
         "y": 325
       },
       "eraMedian": 1990,
@@ -1022,11 +1022,11 @@
       ]
     },
     "hard-rock-metal": {
-      "nodeCount": 137,
+      "nodeCount": 138,
       "pinnedCount": 0,
       "centroid": {
-        "x": 2854,
-        "y": 50
+        "x": 2867,
+        "y": 66
       },
       "eraMedian": 1981,
       "learnedTerms": [
@@ -2015,7 +2015,7 @@
       ]
     },
     "country-roots": {
-      "nodeCount": 76,
+      "nodeCount": 77,
       "pinnedCount": 0,
       "centroid": {
         "x": -2764,
@@ -8568,12 +8568,12 @@
           "coordinateSource": "https://www.wikidata.org/wiki/Q2750829#P625"
         }
       ],
-      "connectionCount": 3,
+      "connectionCount": 4,
       "linkedGenres": [
         "heavy-metal"
       ],
       "bridgeScore": 0.3,
-      "hubScore": 0.25,
+      "hubScore": 0.333,
       "layoutHints": {
         "pinned": false
       }
@@ -10073,10 +10073,10 @@
           "coordinateSource": "https://www.wikidata.org/wiki/Q491603#P625"
         }
       ],
-      "connectionCount": 0,
+      "connectionCount": 1,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0,
+      "hubScore": 0.083,
       "layoutHints": {
         "pinned": false
       }
@@ -10626,7 +10626,9 @@
     },
     "marko-hietala": {
       "zone": "hard-rock-metal",
-      "secondaryZones": [],
+      "secondaryZones": [
+        "rock-circuit"
+      ],
       "eraStart": 1966,
       "eraPeak": 1966,
       "primaryGenres": [
@@ -10647,10 +10649,10 @@
           "coordinateSource": "https://www.wikidata.org/wiki/Q1009142#P625"
         }
       ],
-      "connectionCount": 0,
+      "connectionCount": 2,
       "linkedGenres": [],
-      "bridgeScore": 0,
-      "hubScore": 0,
+      "bridgeScore": 0.22,
+      "hubScore": 0.167,
       "layoutHints": {
         "pinned": false
       }
@@ -11020,10 +11022,10 @@
           "coordinateSource": "https://www.wikidata.org/wiki/Q491603#P625"
         }
       ],
-      "connectionCount": 0,
+      "connectionCount": 2,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0,
+      "hubScore": 0.167,
       "layoutHints": {
         "pinned": false
       }
@@ -11137,7 +11139,9 @@
     },
     "tarot": {
       "zone": "rock-circuit",
-      "secondaryZones": [],
+      "secondaryZones": [
+        "hard-rock-metal"
+      ],
       "eraStart": 1985,
       "eraPeak": 1985,
       "primaryGenres": [
@@ -11157,10 +11161,10 @@
           "coordinateSource": "https://www.wikidata.org/wiki/Q162279#P625"
         }
       ],
-      "connectionCount": 0,
+      "connectionCount": 1,
       "linkedGenres": [],
-      "bridgeScore": 0,
-      "hubScore": 0,
+      "bridgeScore": 0.22,
+      "hubScore": 0.083,
       "layoutHints": {
         "pinned": false
       }
@@ -13060,10 +13064,10 @@
           "coordinateSource": "https://www.wikidata.org/wiki/Q1055#P625"
         }
       ],
-      "connectionCount": 0,
+      "connectionCount": 1,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0,
+      "hubScore": 0.083,
       "layoutHints": {
         "pinned": false
       }
@@ -14665,10 +14669,10 @@
         "rock",
         "artist"
       ],
-      "connectionCount": 0,
+      "connectionCount": 1,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0,
+      "hubScore": 0.083,
       "layoutHints": {
         "pinned": false
       }
@@ -14687,10 +14691,10 @@
         "artist",
         "folk"
       ],
-      "connectionCount": 0,
+      "connectionCount": 1,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0,
+      "hubScore": 0.083,
       "layoutHints": {
         "pinned": false
       }
@@ -14749,10 +14753,10 @@
           "coordinateSource": "https://www.wikidata.org/wiki/Q219656#P625"
         }
       ],
-      "connectionCount": 0,
+      "connectionCount": 1,
       "linkedGenres": [],
       "bridgeScore": 0,
-      "hubScore": 0,
+      "hubScore": 0.083,
       "layoutHints": {
         "pinned": false
       }
@@ -17592,7 +17596,9 @@
     },
     "janick-gers": {
       "zone": "hard-rock-metal",
-      "secondaryZones": [],
+      "secondaryZones": [
+        "rock-circuit"
+      ],
       "eraStart": 1957,
       "eraPeak": 1990,
       "primaryGenres": [
@@ -17613,17 +17619,19 @@
           "coordinateSource": "https://www.wikidata.org/wiki/Q215752#P625"
         }
       ],
-      "connectionCount": 0,
+      "connectionCount": 2,
       "linkedGenres": [],
-      "bridgeScore": 0,
-      "hubScore": 0,
+      "bridgeScore": 0.22,
+      "hubScore": 0.167,
       "layoutHints": {
         "pinned": false
       }
     },
     "gillan": {
       "zone": "rock-circuit",
-      "secondaryZones": [],
+      "secondaryZones": [
+        "hard-rock-metal"
+      ],
       "eraStart": 1978,
       "eraPeak": 1978,
       "primaryGenres": [
@@ -17643,10 +17651,10 @@
           "coordinateSource": "https://www.wikidata.org/wiki/Q84#P625"
         }
       ],
-      "connectionCount": 0,
+      "connectionCount": 1,
       "linkedGenres": [],
-      "bridgeScore": 0,
-      "hubScore": 0,
+      "bridgeScore": 0.22,
+      "hubScore": 0.083,
       "layoutHints": {
         "pinned": false
       }
@@ -18745,7 +18753,9 @@
     },
     "tenacious-d": {
       "zone": "rock-circuit",
-      "secondaryZones": [],
+      "secondaryZones": [
+        "psychedelia-prog"
+      ],
       "eraStart": 1994,
       "eraPeak": 1994,
       "primaryGenres": [
@@ -18756,10 +18766,10 @@
         "rock",
         "band"
       ],
-      "connectionCount": 0,
+      "connectionCount": 1,
       "linkedGenres": [],
-      "bridgeScore": 0,
-      "hubScore": 0,
+      "bridgeScore": 0.22,
+      "hubScore": 0.083,
       "layoutHints": {
         "pinned": false
       }
@@ -18928,7 +18938,9 @@
     },
     "jack-black": {
       "zone": "psychedelia-prog",
-      "secondaryZones": [],
+      "secondaryZones": [
+        "rock-circuit"
+      ],
       "eraStart": 1969,
       "eraPeak": 1969,
       "primaryGenres": [],
@@ -18946,10 +18958,10 @@
           "coordinateSource": "https://www.wikidata.org/wiki/Q47164#P625"
         }
       ],
-      "connectionCount": 0,
+      "connectionCount": 1,
       "linkedGenres": [],
-      "bridgeScore": 0,
-      "hubScore": 0,
+      "bridgeScore": 0.22,
+      "hubScore": 0.083,
       "layoutHints": {
         "pinned": false
       }
@@ -20126,6 +20138,58 @@
     },
     "diana-ross": {
       "zone": "pop-soul-disco",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "mb-band-9cfe894e-9fbf-4d24-a8fb-2b0164d0a7cc": {
+      "zone": "rock-circuit",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "mb-band-6ed2f24c-f205-4add-8477-aa000934c073": {
+      "zone": "country-roots",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "mb-band-765774a0-2060-469b-8b7d-612eea48579b": {
+      "zone": "hard-rock-metal",
+      "secondaryZones": [],
+      "primaryGenres": [],
+      "curatorTags": [],
+      "connectionCount": 1,
+      "linkedGenres": [],
+      "bridgeScore": 0,
+      "hubScore": 0.083,
+      "layoutHints": {
+        "pinned": false
+      }
+    },
+    "mb-band-de0e1877-ca20-414e-8d08-6eef9c696055": {
+      "zone": "roots-blues",
       "secondaryZones": [],
       "primaryGenres": [],
       "curatorTags": [],

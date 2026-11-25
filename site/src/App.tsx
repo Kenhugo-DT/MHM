@@ -161,6 +161,8 @@ export default function App() {
   const [edges, setEdges] = useState<GraphEdge[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
+  const [dataSource, setDataSource] = useState(repository.source);
+  const [sourceEpoch, setSourceEpoch] = useState(0);
   const [selected, setSelected] = useState<GraphNode>();
   const [loadedFacts, setLoadedFacts] = useState<{ entityId: string; facts: readonly EntityFact[] }>();
   const [wikiDetail, setWikiDetail] = useState<WikiDetail>();
@@ -225,6 +227,31 @@ export default function App() {
     [mode, nodeById],
   );
 
+  useEffect(() => repository.subscribeSourceChange?.(() => {
+    setDataSource(repository.source);
+    setSourceEpoch((epoch) => epoch + 1);
+    setSearchResults([]);
+  }), []);
+
+  useEffect(() => {
+    if (dataSource !== "fallback" || !selected) return;
+    let cancelled = false;
+    repository.loadNeighborhood(selected.id).then((graph) => {
+      if (cancelled) return;
+      const center = graph.nodes.find((node) => node.id === selected.id);
+      setSelected(center);
+      setDetailNodes(graph.nodes);
+      setDetailEdges(graph.edges.filter(isMapConnection));
+    }).catch(() => {
+      if (!cancelled) {
+        setSelected(undefined);
+        setDetailNodes([]);
+        setDetailEdges([]);
+      }
+    });
+    return () => { cancelled = true; };
+  }, [dataSource, selected?.id]);
+
   useEffect(() => {
     let cancelled = false;
     setLoading(true);
@@ -254,7 +281,7 @@ export default function App() {
     return () => {
       cancelled = true;
     };
-  }, [mode]);
+  }, [mode, sourceEpoch]);
 
   useEffect(() => {
     const query = searchQuery.trim();
@@ -265,9 +292,13 @@ export default function App() {
 
     let cancelled = false;
     const timer = window.setTimeout(() => {
-      repository.search(query).then((results) => {
-        if (!cancelled) setSearchResults(results);
-      });
+      repository.search(query)
+        .then((results) => {
+          if (!cancelled) setSearchResults(results);
+        })
+        .catch(() => {
+          if (!cancelled) setSearchResults([]);
+        });
     }, 140);
 
     return () => {
@@ -314,10 +345,12 @@ export default function App() {
       return;
     }
 
-    repository.loadNeighborhood(nodeId).then((graph) => {
-      const center = graph.nodes.find((node) => node.id === nodeId);
-      if (center) void selectNode(center);
-    });
+    repository.loadNeighborhood(nodeId)
+      .then((graph) => {
+        const center = graph.nodes.find((node) => node.id === nodeId);
+        if (center) void selectNode(center);
+      })
+      .catch(() => {});
   }, [nodes, selectNode, selected]);
 
   useEffect(() => {
@@ -897,26 +930,34 @@ export default function App() {
             <div className="connection-list">
               {selectedConnections.length ? (
                 selectedConnections.slice(0, 14).map(({ edge, node }) => (
-                  <button
-                    key={edge.id}
-                    type="button"
-                    onClick={() => void selectNode(node)}
-                  >
-                    <span
-                      className="type-dot"
-                      style={{ background: colorToCss(NODE_COLORS[node.type]) }}
-                    />
-                    <span>
-                      <strong>{node.label}</strong>
-                      <small>
-                        {edge.label}
-                        {edge.context.length ? ` · ${edge.context.join(", ")}` : ""}
-                        {edgeEvidenceTier(edge) === "curated_unsourced" &&
-                          <span className="connection-evidence" title="No source documents this specific connection yet">Unverified link</span>}
-                      </small>
-                    </span>
-                    <ChevronRight aria-hidden="true" size={16} />
-                  </button>
+                  <div className="connection-item" key={edge.id}>
+                    <button type="button" onClick={() => void selectNode(node)}>
+                      <span
+                        className="type-dot"
+                        style={{ background: colorToCss(NODE_COLORS[node.type]) }}
+                      />
+                      <span>
+                        <strong>{node.label}</strong>
+                        <small>
+                          {edge.label}
+                          {edge.context.length ? ` · ${edge.context.join(", ")}` : ""}
+                          {edgeEvidenceTier(edge) === "curated_unsourced" &&
+                            <span className="connection-evidence" title="No source documents this specific connection yet">Unverified link</span>}
+                        </small>
+                      </span>
+                      <ChevronRight aria-hidden="true" size={16} />
+                    </button>
+                    {edge.sources.filter((source) => /^https?:\/\//i.test(source.url)).length > 0 && (
+                      <div className="connection-sources">
+                        {edge.sources.filter((source) => /^https?:\/\//i.test(source.url)).map((source) => (
+                          <a key={source.url} href={source.url} target="_blank" rel="noopener noreferrer">
+                            <ExternalLink aria-hidden="true" size={12} />
+                            <span>Source: {source.label}</span>
+                          </a>
+                        ))}
+                      </div>
+                    )}
+                  </div>
                 ))
               ) : (
                 <p className="empty-copy">No curated connections yet.</p>
@@ -978,7 +1019,7 @@ export default function App() {
       <footer className="map-status">
         <span>{nodes.length} nodes</span>
         <span>{edges.length} curated connections</span>
-        <span>{repository.source === "local" ? "Curated preview data" : "Live database"}</span>
+        <span>{dataSource === "fallback" ? "Published snapshot (database unavailable)" : dataSource === "local" ? "Curated preview data" : "Live database"}</span>
       </footer>
     </main>
   );

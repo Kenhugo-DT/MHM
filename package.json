@@ -15,6 +15,7 @@
     "check": "tsc -b site/tsconfig.json --pretty false",
     "test": "node --test tests/graph-data.test.mjs tests/facts.test.mjs tests/brain-curation.test.mjs tests/connection-evidence.test.mjs tests/connection-batch.test.mjs tests/early-era-expansion.test.mjs tests/incremental-layout.test.mjs tests/layout-playground.test.mjs tests/layout-growth.test.mjs tests/globe-geography.test.mjs tests/globe-node-layout.test.mjs tests/globe-timeline.test.mjs tests/globe-markers.test.mjs tests/globe-global-atlas.test.mjs tests/release-gates.test.mjs",
     "test:e2e": "playwright test",
+    "test:e2e:fallback": "playwright test --config playwright.fallback.config.ts",
     "facts:validate": "node shared/facts/validate.mjs",
     "facts:coverage": "node brain/scripts/run-python.mjs brain/pipeline/fact_coverage.py",
     "brain:facts:sync-approved": "node brain/scripts/run-python.mjs brain/pipeline/sync_approved_fact_evidence.py",

@@ -16,7 +16,8 @@ import { loadAllRows } from "./load-all-rows.mjs";
 import { factsForEntity, mergeFacts, type EntityFact } from "./facts";
 
 export interface GraphRepository {
-  readonly source: "local" | "supabase";
+  readonly source: "local" | "supabase" | "fallback";
+  subscribeSourceChange?(listener: () => void): () => void;
   loadMap(mode: MapMode): Promise<GraphMapSnapshot>;
   loadNeighborhood(nodeId: string, depth?: number): Promise<GraphNeighborhood>;
   search(query: string, limit?: number): Promise<GraphNode[]>;
@@ -35,7 +36,10 @@ function loadLocalDataset(): Promise<GraphDataset> {
         }
         return (await response.json()) as GraphDataset;
       },
-    );
+    ).catch((error: unknown) => {
+      localDatasetPromise = undefined;
+      throw error;
+    });
   }
   return localDatasetPromise;
 }
@@ -50,7 +54,10 @@ function loadLocalLayouts(): Promise<GraphLayoutDataset | undefined> {
         }
         return (await response.json()) as GraphLayoutDataset;
       },
-    );
+    ).catch((error: unknown) => {
+      localLayoutsPromise = undefined;
+      throw error;
+    });
   }
   return localLayoutsPromise;
 }
@@ -313,12 +320,77 @@ class SupabaseGraphRepository implements GraphRepository {
   }
 }
 
+const LIVE_TIMEOUT_MS = 12000;
+
+class ResilientGraphRepository implements GraphRepository {
+  private fallback = false;
+  private readonly listeners = new Set<() => void>();
+
+  constructor(
+    private readonly live: GraphRepository,
+    private readonly local: GraphRepository,
+  ) {}
+
+  get source(): GraphRepository["source"] {
+    return this.fallback ? "fallback" : "supabase";
+  }
+
+  subscribeSourceChange(listener: () => void): () => void {
+    this.listeners.add(listener);
+    return () => this.listeners.delete(listener);
+  }
+
+  private async run<T>(live: () => Promise<T>, local: () => Promise<T>): Promise<T> {
+    if (this.fallback) return local();
+    let timer: ReturnType<typeof setTimeout> | undefined;
+    try {
+      const result = await Promise.race([
+        live(),
+        new Promise<never>((_, reject) => {
+          timer = setTimeout(() => reject(new Error("Live database timed out.")), LIVE_TIMEOUT_MS);
+        }),
+      ]);
+      return this.fallback ? local() : result;
+    } catch {
+      if (!this.fallback) {
+        this.fallback = true;
+        this.listeners.forEach((listener) => listener());
+      }
+      return local();
+    } finally {
+      if (timer) clearTimeout(timer);
+    }
+  }
+
+  loadMap(mode: MapMode): Promise<GraphMapSnapshot> {
+    return this.run(() => this.live.loadMap(mode), () => this.local.loadMap(mode));
+  }
+
+  loadNeighborhood(nodeId: string, depth?: number): Promise<GraphNeighborhood> {
+    return this.run(
+      () => this.live.loadNeighborhood(nodeId, depth),
+      () => this.local.loadNeighborhood(nodeId, depth),
+    );
+  }
+
+  search(query: string, limit?: number): Promise<GraphNode[]> {
+    return this.run(() => this.live.search(query, limit), () => this.local.search(query, limit));
+  }
+
+  loadFacts(entityId: string): Promise<readonly EntityFact[]> {
+    return this.run(() => this.live.loadFacts(entityId), () => this.local.loadFacts(entityId));
+  }
+}
+
 export function createGraphRepository(): GraphRepository {
   const url = import.meta.env.VITE_SUPABASE_URL?.trim();
   const key = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY?.trim();
 
   if (url && key) {
-    return new SupabaseGraphRepository(url, key);
+    return new ResilientGraphRepository(
+      new SupabaseGraphRepository(url, key),
+      new LocalGraphRepository(),
+    );
   }
 
   return new LocalGraphRepository();

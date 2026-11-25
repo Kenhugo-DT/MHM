@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-24T15:30:22.358Z",
+  "generatedAt": "2026-11-25T12:42:02.007Z",
   "source": "MHM research brain promotions",
   "candidateRows": [
     {
@@ -1717,6 +1717,76 @@
       "edgeId": "mb-member-bill-stevenson-descendents",
       "source": "bill-stevenson",
       "target": "descendents"
+    },
+    {
+      "id": "300fd5d9-0cda-4339-a50e-c4ae1891add3",
+      "kind": "typed_connection",
+      "edgeId": "mb-member-jukka-nevalainen-nightwish",
+      "source": "jukka-nevalainen",
+      "target": "nightwish"
+    },
+    {
+      "id": "46c59a23-83ae-4782-b4f0-d63b8673fe1f",
+      "kind": "typed_connection",
+      "edgeId": "mb-member-janick-gers-gillan",
+      "source": "janick-gers",
+      "target": "gillan"
+    },
+    {
+      "id": "485f7595-2786-4652-abf7-67dcc0208171",
+      "kind": "typed_connection",
+      "edgeId": "mb-member-jack-black-tenacious-d",
+      "source": "jack-black",
+      "target": "tenacious-d"
+    },
+    {
+      "id": "c2537bda-4f2a-42e9-a25c-71a9406fb300",
+      "kind": "typed_connection",
+      "edgeId": "mb-member-marko-hietala-nightwish",
+      "source": "marko-hietala",
+      "target": "nightwish"
+    },
+    {
+      "id": "c8fc2fae-3e0d-434a-9fab-fca369615e4f",
+      "kind": "typed_connection",
+      "edgeId": "mb-member-janick-gers-iron-maiden",
+      "source": "janick-gers",
+      "target": "iron-maiden"
+    },
+    {
+      "id": "dccc44ed-41fa-4779-a606-5e311f1b177e",
+      "kind": "typed_connection",
+      "edgeId": "mb-member-marko-hietala-tarot",
+      "source": "marko-hietala",
+      "target": "tarot"
+    },
+    {
+      "id": "0d4176a9-5e38-4686-88f4-ba724101a1cc",
+      "kind": "typed_connection",
+      "edgeId": "mb-member-john-fogerty-mb-band-9cfe894e-9fbf-4d24-a8fb-2b0164d0a7cc",
+      "source": "john-fogerty",
+      "target": "mb-band-9cfe894e-9fbf-4d24-a8fb-2b0164d0a7cc"
+    },
+    {
+      "id": "59e50fbf-5439-4b11-81e9-dda568debf79",
+      "kind": "typed_connection",
+      "edgeId": "mb-member-jerry-reed-mb-band-6ed2f24c-f205-4add-8477-aa000934c073",
+      "source": "jerry-reed",
+      "target": "mb-band-6ed2f24c-f205-4add-8477-aa000934c073"
+    },
+    {
+      "id": "6c53622b-5258-4549-9aae-9ac233920320",
+      "kind": "typed_connection",
+      "edgeId": "mb-member-ingo-schwichtenberg-mb-band-765774a0-2060-469b-8b7d-612eea48579b",
+      "source": "ingo-schwichtenberg",
+      "target": "mb-band-765774a0-2060-469b-8b7d-612eea48579b"
+    },
+    {
+      "id": "d3049d90-5b0a-4c0c-b980-061f42f182eb",
+      "kind": "typed_connection",
+      "edgeId": "mb-member-little-richard-mb-band-de0e1877-ca20-414e-8d08-6eef9c696055",
+      "source": "little-richard",
+      "target": "mb-band-de0e1877-ca20-414e-8d08-6eef9c696055"
     }
   ],
   "nodes": [
@@ -13142,6 +13212,182 @@
           "url": "https://musicbrainz.org/artist/60d41417-feda-4734-bbbf-7dcc30e08a83"
         }
       ]
+    },
+    {
+      "id": "mb-band-9cfe894e-9fbf-4d24-a8fb-2b0164d0a7cc",
+      "label": "The Golliwogs",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "Band with a documented membership connection to John Fogerty.",
+      "metadata": [
+        "Band"
+      ],
+      "x": -743,
+      "y": 599,
+      "zone": "rock-circuit",
+      "starter": false,
+      "layoutHints": {
+        "preferredZone": "rock-circuit",
+        "nearNode": "john-fogerty"
+      },
+      "sources": [
+        {
+          "label": "MusicBrainz: artist identity",
+          "url": "https://musicbrainz.org/artist/9cfe894e-9fbf-4d24-a8fb-2b0164d0a7cc",
+          "provider": "musicbrainz"
+        },
+        {
+          "label": "MusicBrainz: group begin",
+          "url": "https://musicbrainz.org/artist/9cfe894e-9fbf-4d24-a8fb-2b0164d0a7cc",
+          "provider": "musicbrainz"
+        }
+      ],
+      "eraStart": 1964,
+      "eraStartEvidence": {
+        "basis": "group_formation",
+        "note": "MusicBrainz group begin date.",
+        "sources": [
+          {
+            "label": "MusicBrainz: group begin",
+            "url": "https://musicbrainz.org/artist/9cfe894e-9fbf-4d24-a8fb-2b0164d0a7cc",
+            "provider": "musicbrainz"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mb-band-6ed2f24c-f205-4add-8477-aa000934c073",
+      "label": "Old Dogs",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "Band with a documented membership connection to Jerry Reed.",
+      "metadata": [
+        "Band"
+      ],
+      "x": -2316,
+      "y": 1201,
+      "zone": "country-roots",
+      "starter": false,
+      "layoutHints": {
+        "preferredZone": "country-roots",
+        "nearNode": "jerry-reed"
+      },
+      "sources": [
+        {
+          "label": "MusicBrainz: artist identity",
+          "url": "https://musicbrainz.org/artist/6ed2f24c-f205-4add-8477-aa000934c073",
+          "provider": "musicbrainz"
+        },
+        {
+          "label": "MusicBrainz: group begin",
+          "url": "https://musicbrainz.org/artist/6ed2f24c-f205-4add-8477-aa000934c073",
+          "provider": "musicbrainz"
+        }
+      ],
+      "eraStart": 1998,
+      "eraStartEvidence": {
+        "basis": "group_formation",
+        "note": "MusicBrainz group begin date.",
+        "sources": [
+          {
+            "label": "MusicBrainz: group begin",
+            "url": "https://musicbrainz.org/artist/6ed2f24c-f205-4add-8477-aa000934c073",
+            "provider": "musicbrainz"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mb-band-765774a0-2060-469b-8b7d-612eea48579b",
+      "label": "Helloween",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "Band with a documented membership connection to Ingo Schwichtenberg.",
+      "metadata": [
+        "Band"
+      ],
+      "x": 3731,
+      "y": 1279,
+      "zone": "hard-rock-metal",
+      "starter": false,
+      "layoutHints": {
+        "preferredZone": "hard-rock-metal",
+        "nearNode": "ingo-schwichtenberg"
+      },
+      "sources": [
+        {
+          "label": "MusicBrainz: artist identity",
+          "url": "https://musicbrainz.org/artist/765774a0-2060-469b-8b7d-612eea48579b",
+          "provider": "musicbrainz"
+        },
+        {
+          "label": "MusicBrainz: group begin",
+          "url": "https://musicbrainz.org/artist/765774a0-2060-469b-8b7d-612eea48579b",
+          "provider": "musicbrainz"
+        }
+      ],
+      "eraStart": 1984,
+      "eraStartEvidence": {
+        "basis": "group_formation",
+        "note": "MusicBrainz group begin date.",
+        "sources": [
+          {
+            "label": "MusicBrainz: group begin",
+            "url": "https://musicbrainz.org/artist/765774a0-2060-469b-8b7d-612eea48579b",
+            "provider": "musicbrainz"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mb-band-de0e1877-ca20-414e-8d08-6eef9c696055",
+      "label": "Little Richard and His Band",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "Band with a documented membership connection to Little Richard.",
+      "metadata": [
+        "Band"
+      ],
+      "x": -1272,
+      "y": 481,
+      "zone": "roots-blues",
+      "starter": false,
+      "layoutHints": {
+        "preferredZone": "roots-blues",
+        "nearNode": "little-richard"
+      },
+      "sources": [
+        {
+          "label": "MusicBrainz: artist identity",
+          "url": "https://musicbrainz.org/artist/de0e1877-ca20-414e-8d08-6eef9c696055",
+          "provider": "musicbrainz"
+        },
+        {
+          "label": "MusicBrainz: group begin",
+          "url": "https://musicbrainz.org/artist/de0e1877-ca20-414e-8d08-6eef9c696055",
+          "provider": "musicbrainz"
+        }
+      ],
+      "eraStart": 1955,
+      "eraStartEvidence": {
+        "basis": "group_formation",
+        "note": "MusicBrainz group begin date.",
+        "sources": [
+          {
+            "label": "MusicBrainz: group begin",
+            "url": "https://musicbrainz.org/artist/de0e1877-ca20-414e-8d08-6eef9c696055",
+            "provider": "musicbrainz"
+          }
+        ]
+      }
     }
   ],
   "edges": [
@@ -21963,6 +22209,196 @@
         {
           "label": "MusicBrainz: member of band relationship",
           "url": "https://musicbrainz.org/artist/328e3ae5-7d8c-4a01-b2b3-b8f41fb7bb23/relationships",
+          "provider": "musicbrainz"
+        }
+      ]
+    },
+    {
+      "id": "mb-member-jukka-nevalainen-nightwish",
+      "source": "jukka-nevalainen",
+      "target": "nightwish",
+      "type": "member_of",
+      "label": "Member of",
+      "strength": 0.9,
+      "context": [
+        "MusicBrainz records Jukka Nevalainen as a member of Nightwish.",
+        "Documented period: 1997 to 2019-07."
+      ],
+      "sources": [
+        {
+          "label": "MusicBrainz: member of band relationship",
+          "url": "https://musicbrainz.org/artist/9a0696d6-d4cd-4d00-9d70-61a79aceb3ff/relationships",
+          "provider": "musicbrainz"
+        }
+      ]
+    },
+    {
+      "id": "mb-member-janick-gers-gillan",
+      "source": "janick-gers",
+      "target": "gillan",
+      "type": "member_of",
+      "label": "Member of",
+      "strength": 0.9,
+      "context": [
+        "MusicBrainz records Janick Gers as a member of Gillan.",
+        "Documented period: 1981-06 to 1982-12."
+      ],
+      "sources": [
+        {
+          "label": "MusicBrainz: member of band relationship",
+          "url": "https://musicbrainz.org/artist/d883f57b-9696-4273-9272-150a8df82360/relationships",
+          "provider": "musicbrainz"
+        }
+      ]
+    },
+    {
+      "id": "mb-member-jack-black-tenacious-d",
+      "source": "jack-black",
+      "target": "tenacious-d",
+      "type": "member_of",
+      "label": "Member of",
+      "strength": 0.9,
+      "context": [
+        "MusicBrainz records Jack Black as a member of Tenacious D.",
+        "Documented period: dates not specified."
+      ],
+      "sources": [
+        {
+          "label": "MusicBrainz: member of band relationship",
+          "url": "https://musicbrainz.org/artist/caf8a53e-7f43-4be4-95d6-18d55e1f6e18/relationships",
+          "provider": "musicbrainz"
+        }
+      ]
+    },
+    {
+      "id": "mb-member-marko-hietala-nightwish",
+      "source": "marko-hietala",
+      "target": "nightwish",
+      "type": "member_of",
+      "label": "Member of",
+      "strength": 0.9,
+      "context": [
+        "MusicBrainz records Marko Hietala as a member of Nightwish.",
+        "Documented period: 2001-10 to 2021-01-12."
+      ],
+      "sources": [
+        {
+          "label": "MusicBrainz: member of band relationship",
+          "url": "https://musicbrainz.org/artist/7244f99c-e056-412c-836d-b3933bb51229/relationships",
+          "provider": "musicbrainz"
+        }
+      ]
+    },
+    {
+      "id": "mb-member-janick-gers-iron-maiden",
+      "source": "janick-gers",
+      "target": "iron-maiden",
+      "type": "member_of",
+      "label": "Member of",
+      "strength": 0.9,
+      "context": [
+        "MusicBrainz records Janick Gers as a member of Iron Maiden.",
+        "Documented period: 1990 onward (end not recorded)."
+      ],
+      "sources": [
+        {
+          "label": "MusicBrainz: member of band relationship",
+          "url": "https://musicbrainz.org/artist/d883f57b-9696-4273-9272-150a8df82360/relationships",
+          "provider": "musicbrainz"
+        }
+      ]
+    },
+    {
+      "id": "mb-member-marko-hietala-tarot",
+      "source": "marko-hietala",
+      "target": "tarot",
+      "type": "member_of",
+      "label": "Member of",
+      "strength": 0.9,
+      "context": [
+        "MusicBrainz records Marko Hietala as a member of Tarot.",
+        "Documented period: dates not specified."
+      ],
+      "sources": [
+        {
+          "label": "MusicBrainz: member of band relationship",
+          "url": "https://musicbrainz.org/artist/7244f99c-e056-412c-836d-b3933bb51229/relationships",
+          "provider": "musicbrainz"
+        }
+      ]
+    },
+    {
+      "id": "mb-member-john-fogerty-mb-band-9cfe894e-9fbf-4d24-a8fb-2b0164d0a7cc",
+      "source": "john-fogerty",
+      "target": "mb-band-9cfe894e-9fbf-4d24-a8fb-2b0164d0a7cc",
+      "type": "member_of",
+      "label": "Member of",
+      "strength": 0.9,
+      "context": [
+        "MusicBrainz records John Fogerty as a member of The Golliwogs.",
+        "Documented period: dates not specified."
+      ],
+      "sources": [
+        {
+          "label": "MusicBrainz: member of band relationship",
+          "url": "https://musicbrainz.org/artist/c3649208-0ebe-449b-b1d7-4bd6c560f109/relationships",
+          "provider": "musicbrainz"
+        }
+      ]
+    },
+    {
+      "id": "mb-member-jerry-reed-mb-band-6ed2f24c-f205-4add-8477-aa000934c073",
+      "source": "jerry-reed",
+      "target": "mb-band-6ed2f24c-f205-4add-8477-aa000934c073",
+      "type": "member_of",
+      "label": "Member of",
+      "strength": 0.9,
+      "context": [
+        "MusicBrainz records Jerry Reed as a member of Old Dogs.",
+        "Documented period: dates not specified."
+      ],
+      "sources": [
+        {
+          "label": "MusicBrainz: member of band relationship",
+          "url": "https://musicbrainz.org/artist/44419ff2-0251-49ba-933b-b09733ff9adb/relationships",
+          "provider": "musicbrainz"
+        }
+      ]
+    },
+    {
+      "id": "mb-member-ingo-schwichtenberg-mb-band-765774a0-2060-469b-8b7d-612eea48579b",
+      "source": "ingo-schwichtenberg",
+      "target": "mb-band-765774a0-2060-469b-8b7d-612eea48579b",
+      "type": "member_of",
+      "label": "Member of",
+      "strength": 0.9,
+      "context": [
+        "MusicBrainz records Ingo Schwichtenberg as a member of Helloween.",
+        "Documented period: 1984 to 1993."
+      ],
+      "sources": [
+        {
+          "label": "MusicBrainz: member of band relationship",
+          "url": "https://musicbrainz.org/artist/c5c03ade-85ca-484c-a77d-25cbccd7f6d4/relationships",
+          "provider": "musicbrainz"
+        }
+      ]
+    },
+    {
+      "id": "mb-member-little-richard-mb-band-de0e1877-ca20-414e-8d08-6eef9c696055",
+      "source": "little-richard",
+      "target": "mb-band-de0e1877-ca20-414e-8d08-6eef9c696055",
+      "type": "member_of",
+      "label": "Member of",
+      "strength": 0.9,
+      "context": [
+        "MusicBrainz records Little Richard as a member of Little Richard and His Band.",
+        "Documented period: 1955-09-13 to 1956-10-16."
+      ],
+      "sources": [
+        {
+          "label": "MusicBrainz: member of band relationship",
+          "url": "https://musicbrainz.org/artist/95c2339b-8277-49a6-9aaf-08d8eeeaa0be/relationships",
           "provider": "musicbrainz"
         }
       ]

@@ -30,6 +30,34 @@ test("legacy connections without evidence are identified in details", async ({ p
   await page.goto("/?node=blues");
   await expect(page.locator(".detail-heading h2")).toHaveText("Blues");
   await expect(page.locator(".connection-evidence").first()).toHaveText("Unverified link");
+  const sourcedConnection = page.locator(".connection-item").filter({ hasText: "Blues rock" });
+  await expect(sourcedConnection.getByRole("link", { name: "Source: Rock & Roll Hall of Fame" })).toHaveAttribute(
+    "href",
+    "https://rockhall.com/inductees/john-mayall/",
+  );
+});
+
+test("a reviewed instrument connection shows its own source", async ({ page }) => {
+  await page.goto("/?node=jimi-hendrix");
+  await expect(page.locator(".detail-heading h2")).toHaveText("Jimi Hendrix");
+  const instrument = page.locator(".connection-item").filter({ hasText: "Fender Stratocaster" });
+  await expect(instrument.getByRole("link", { name: "Source: Fender: Jimi Hendrix Stratocaster" })).toHaveAttribute(
+    "href",
+    "https://www.fender.com/articles/instruments/artist-signature-specs-jimi-hendrix-stratocaster",
+  );
+  await expect(instrument.locator(".connection-evidence")).toHaveCount(0);
+});
+
+test("a newly connected artist exposes the reviewed band membership", async ({ page }) => {
+  await page.goto("/?node=jack-black");
+  await expect(page.locator(".detail-heading h2")).toHaveText("Jack Black");
+  const membership = page.locator(".connection-item").filter({ hasText: "Tenacious D" });
+  await expect(membership).toBeVisible();
+  await expect(membership.getByRole("link", { name: "Source: MusicBrainz: member of band relationship" })).toHaveAttribute(
+    "href",
+    "https://musicbrainz.org/artist/caf8a53e-7f43-4be4-95d6-18d55e1f6e18/relationships",
+  );
+  await expect(membership.locator(".connection-evidence")).toHaveCount(0);
 });
 
 test("the text directory finds a node and opens it on the map", async ({ page }) => {

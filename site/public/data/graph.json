@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-24T15:30:47.392Z",
+  "generatedAt": "2026-11-25T12:42:32.198Z",
   "nodes": [
     {
       "id": "blues",
@@ -23829,6 +23829,170 @@
       "curatorTags": []
     },
     {
+      "id": "mb-band-9cfe894e-9fbf-4d24-a8fb-2b0164d0a7cc",
+      "label": "The Golliwogs",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "Band with a documented membership connection to John Fogerty.",
+      "metadata": [
+        "Band"
+      ],
+      "x": -1063,
+      "y": 519,
+      "zone": "rock-circuit",
+      "starter": false,
+      "sources": [
+        {
+          "label": "MusicBrainz: artist identity",
+          "url": "https://musicbrainz.org/artist/9cfe894e-9fbf-4d24-a8fb-2b0164d0a7cc",
+          "provider": "musicbrainz"
+        },
+        {
+          "label": "MusicBrainz: group begin",
+          "url": "https://musicbrainz.org/artist/9cfe894e-9fbf-4d24-a8fb-2b0164d0a7cc",
+          "provider": "musicbrainz"
+        }
+      ],
+      "eraStart": 1964,
+      "eraStartEvidence": {
+        "basis": "group_formation",
+        "note": "MusicBrainz group begin date.",
+        "sources": [
+          {
+            "label": "MusicBrainz: group begin",
+            "url": "https://musicbrainz.org/artist/9cfe894e-9fbf-4d24-a8fb-2b0164d0a7cc",
+            "provider": "musicbrainz"
+          }
+        ]
+      },
+      "curatorTags": []
+    },
+    {
+      "id": "mb-band-6ed2f24c-f205-4add-8477-aa000934c073",
+      "label": "Old Dogs",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "Band with a documented membership connection to Jerry Reed.",
+      "metadata": [
+        "Band"
+      ],
+      "x": -2306,
+      "y": 1271,
+      "zone": "country-roots",
+      "starter": false,
+      "sources": [
+        {
+          "label": "MusicBrainz: artist identity",
+          "url": "https://musicbrainz.org/artist/6ed2f24c-f205-4add-8477-aa000934c073",
+          "provider": "musicbrainz"
+        },
+        {
+          "label": "MusicBrainz: group begin",
+          "url": "https://musicbrainz.org/artist/6ed2f24c-f205-4add-8477-aa000934c073",
+          "provider": "musicbrainz"
+        }
+      ],
+      "eraStart": 1998,
+      "eraStartEvidence": {
+        "basis": "group_formation",
+        "note": "MusicBrainz group begin date.",
+        "sources": [
+          {
+            "label": "MusicBrainz: group begin",
+            "url": "https://musicbrainz.org/artist/6ed2f24c-f205-4add-8477-aa000934c073",
+            "provider": "musicbrainz"
+          }
+        ]
+      },
+      "curatorTags": []
+    },
+    {
+      "id": "mb-band-765774a0-2060-469b-8b7d-612eea48579b",
+      "label": "Helloween",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "Band with a documented membership connection to Ingo Schwichtenberg.",
+      "metadata": [
+        "Band"
+      ],
+      "x": 3741,
+      "y": 1049,
+      "zone": "hard-rock-metal",
+      "starter": false,
+      "sources": [
+        {
+          "label": "MusicBrainz: artist identity",
+          "url": "https://musicbrainz.org/artist/765774a0-2060-469b-8b7d-612eea48579b",
+          "provider": "musicbrainz"
+        },
+        {
+          "label": "MusicBrainz: group begin",
+          "url": "https://musicbrainz.org/artist/765774a0-2060-469b-8b7d-612eea48579b",
+          "provider": "musicbrainz"
+        }
+      ],
+      "eraStart": 1984,
+      "eraStartEvidence": {
+        "basis": "group_formation",
+        "note": "MusicBrainz group begin date.",
+        "sources": [
+          {
+            "label": "MusicBrainz: group begin",
+            "url": "https://musicbrainz.org/artist/765774a0-2060-469b-8b7d-612eea48579b",
+            "provider": "musicbrainz"
+          }
+        ]
+      },
+      "curatorTags": []
+    },
+    {
+      "id": "mb-band-de0e1877-ca20-414e-8d08-6eef9c696055",
+      "label": "Little Richard and His Band",
+      "type": "band",
+      "roles": [
+        "band"
+      ],
+      "summary": "Band with a documented membership connection to Little Richard.",
+      "metadata": [
+        "Band"
+      ],
+      "x": -1412,
+      "y": 581,
+      "zone": "roots-blues",
+      "starter": false,
+      "sources": [
+        {
+          "label": "MusicBrainz: artist identity",
+          "url": "https://musicbrainz.org/artist/de0e1877-ca20-414e-8d08-6eef9c696055",
+          "provider": "musicbrainz"
+        },
+        {
+          "label": "MusicBrainz: group begin",
+          "url": "https://musicbrainz.org/artist/de0e1877-ca20-414e-8d08-6eef9c696055",
+          "provider": "musicbrainz"
+        }
+      ],
+      "eraStart": 1955,
+      "eraStartEvidence": {
+        "basis": "group_formation",
+        "note": "MusicBrainz group begin date.",
+        "sources": [
+          {
+            "label": "MusicBrainz: group begin",
+            "url": "https://musicbrainz.org/artist/de0e1877-ca20-414e-8d08-6eef9c696055",
+            "provider": "musicbrainz"
+          }
+        ]
+      },
+      "curatorTags": []
+    },
+    {
       "id": "classical-music",
       "label": "Classical music",
       "type": "genre",
@@ -40423,8 +40587,16 @@
       "type": "signature_instrument",
       "label": "iconic instrument",
       "strength": 0.96,
-      "context": [],
-      "sources": []
+      "context": [
+        "Fender identifies the Stratocaster as Hendrix's frequent guitar of choice, supporting this signature-instrument connection."
+      ],
+      "sources": [
+        {
+          "label": "Fender: Jimi Hendrix Stratocaster",
+          "url": "https://www.fender.com/articles/instruments/artist-signature-specs-jimi-hendrix-stratocaster",
+          "provider": "other"
+        }
+      ]
     },
     {
       "id": "legacy-26-stevie-ray-vaughan-electric-blues",
@@ -40651,8 +40823,16 @@
       "type": "member_of",
       "label": "frontman",
       "strength": 0.95,
-      "context": [],
-      "sources": []
+      "context": [
+        "The Rock Hall lists Mark Knopfler among Dire Straits' inducted members and describes him as the band's lead guitarist."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame: Dire Straits",
+          "url": "https://rockhall.com/inductees/dire-straits/",
+          "provider": "other"
+        }
+      ]
     },
     {
       "id": "legacy-44-dire-straits-rock",
@@ -40681,8 +40861,16 @@
       "type": "member_of",
       "label": "guitarist",
       "strength": 0.96,
-      "context": [],
-      "sources": []
+      "context": [
+        "The Rock Hall identifies Eddie Van Halen as a member and guitarist of Van Halen."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame: Van Halen",
+          "url": "https://rockhall.com/inductees/van-halen/",
+          "provider": "other"
+        }
+      ]
     },
     {
       "id": "legacy-47-van-halen-hard-rock",
@@ -40847,8 +41035,16 @@
       "type": "member_of",
       "label": "guitarist",
       "strength": 0.96,
-      "context": [],
-      "sources": []
+      "context": [
+        "The Rock Hall's Black Sabbath research guide lists Tony Iommi as the band's guitarist."
+      ],
+      "sources": [
+        {
+          "label": "Rock Hall Library: Black Sabbath",
+          "url": "https://library.rockhall.com/black_sabbath",
+          "provider": "other"
+        }
+      ]
     },
     {
       "id": "legacy-62-black-sabbath-heavy-metal",
@@ -42130,8 +42326,16 @@
       "type": "member_of",
       "label": "member",
       "strength": 0.96,
-      "context": [],
-      "sources": []
+      "context": [
+        "The Rock Hall archive credits Duane Allman on lead and slide guitar in the Allman Brothers Band."
+      ],
+      "sources": [
+        {
+          "label": "Rock Hall Archive: Allman Brothers Band",
+          "url": "https://catalog.rockhall.com/rrhof-ais/Details/fullCatalogue/200000797",
+          "provider": "other"
+        }
+      ]
     },
     {
       "id": "legacy-165-duane-allman-southern-rock",
@@ -42178,8 +42382,16 @@
       "type": "member_of",
       "label": "member",
       "strength": 0.9,
-      "context": [],
-      "sources": []
+      "context": [
+        "The Rock Hall lists Dickey Betts among the Allman Brothers Band's inducted members."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame: Allman Brothers Band",
+          "url": "https://rockhall.com/inductees/allman-brothers-band/",
+          "provider": "other"
+        }
+      ]
     },
     {
       "id": "legacy-169-dickey-betts-southern-rock",
@@ -42238,8 +42450,16 @@
       "type": "member_of",
       "label": "founding guitarist",
       "strength": 0.96,
-      "context": [],
-      "sources": []
+      "context": [
+        "The Rock Hall lists Peter Green among Fleetwood Mac's inducted members and traces the band's British blues beginnings."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame: Fleetwood Mac",
+          "url": "https://rockhall.com/inductees/fleetwood-mac/",
+          "provider": "other"
+        }
+      ]
     },
     {
       "id": "legacy-175-peter-green-blues-rock",
@@ -42393,8 +42613,16 @@
       "type": "member_of",
       "label": "member",
       "strength": 0.88,
-      "context": [],
-      "sources": []
+      "context": [
+        "The Rock Hall lists Jeff Beck among the Yardbirds' inducted members."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame: The Yardbirds",
+          "url": "https://rockhall.com/inductees/yardbirds/",
+          "provider": "other"
+        }
+      ]
     },
     {
       "id": "legacy-186-jeff-beck-blues-rock",
@@ -42591,8 +42819,16 @@
       "type": "member_of",
       "label": "guitarist",
       "strength": 0.96,
-      "context": [],
-      "sources": []
+      "context": [
+        "The Rock Hall lists Ritchie Blackmore among Deep Purple's inducted members."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame: Deep Purple",
+          "url": "https://rockhall.com/inductees/deep-purple/",
+          "provider": "other"
+        }
+      ]
     },
     {
       "id": "legacy-201-ritchie-blackmore-fender-stratocaster",
@@ -42900,8 +43136,16 @@
       "type": "member_of",
       "label": "guitarist",
       "strength": 0.96,
-      "context": [],
-      "sources": []
+      "context": [
+        "The Rock Hall lists Angus Young among AC/DC's inducted members."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame: AC/DC",
+          "url": "https://rockhall.com/inductees/acdc/",
+          "provider": "other"
+        }
+      ]
     },
     {
       "id": "legacy-229-angus-young-gibson-sg",
@@ -43216,8 +43460,16 @@
       "type": "member_of",
       "label": "guitarist",
       "strength": 0.96,
-      "context": [],
-      "sources": []
+      "context": [
+        "The Rock Hall lists Steve Howe among Yes's inducted members."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame: Yes",
+          "url": "https://rockhall.com/inductees/yes/",
+          "provider": "other"
+        }
+      ]
     },
     {
       "id": "legacy-259-yes-progressive-rock",
@@ -43236,8 +43488,16 @@
       "type": "member_of",
       "label": "guitarist",
       "strength": 0.96,
-      "context": [],
-      "sources": []
+      "context": [
+        "The Rock Hall lists Alex Lifeson among Rush's inducted members."
+      ],
+      "sources": [
+        {
+          "label": "Rock & Roll Hall of Fame: Rush",
+          "url": "https://rockhall.com/inductees/rush/",
+          "provider": "other"
+        }
+      ]
     },
     {
       "id": "legacy-261-rush-progressive-rock",
@@ -43434,8 +43694,16 @@
       "type": "made_by",
       "label": "made",
       "strength": 0.96,
-      "context": [],
-      "sources": []
+      "context": [
+        "Fender's history identifies the Esquire as its original single-pickup guitar."
+      ],
+      "sources": [
+        {
+          "label": "Fender: 70th Anniversary Esquire",
+          "url": "https://www.fender.com/articles/instruments/70th-anniversary-esquire",
+          "provider": "other"
+        }
+      ]
     },
     {
       "id": "legacy-280-fender-fender-mustang",
@@ -43444,8 +43712,16 @@
       "type": "made_by",
       "label": "made",
       "strength": 0.94,
-      "context": [],
-      "sources": []
+      "context": [
+        "Fender's model history identifies the Mustang as a Fender guitar introduced in 1964."
+      ],
+      "sources": [
+        {
+          "label": "Fender: Mustang Story",
+          "url": "https://www.fender.com/articles/behind-the-scenes/short-scale-big-noise-the-mustang-story",
+          "provider": "other"
+        }
+      ]
     },
     {
       "id": "legacy-281-gibson-gibson-es-335",
@@ -43454,8 +43730,16 @@
       "type": "made_by",
       "label": "made",
       "strength": 0.98,
-      "context": [],
-      "sources": []
+      "context": [
+        "Gibson presents the ES-335 as a guitar in its own model line."
+      ],
+      "sources": [
+        {
+          "label": "Gibson: ES-335 Models",
+          "url": "https://www.gibson.com/blogs/gibson-gazette/gibson-introduces-new-es-335-50s-and-60s-models",
+          "provider": "other"
+        }
+      ]
     },
     {
       "id": "legacy-282-gibson-gibson-explorer",
@@ -43464,8 +43748,16 @@
       "type": "made_by",
       "label": "made",
       "strength": 0.96,
-      "context": [],
-      "sources": []
+      "context": [
+        "Gibson's product sheet identifies its Explorer model."
+      ],
+      "sources": [
+        {
+          "label": "Gibson: Explorer Product Sheet",
+          "url": "https://images.gibson.com/Products/Electric-Guitars/2018/USA/Explorer-2018/Press/Documents/Explorer-2018_One-Sheet.pdf",
+          "provider": "other"
+        }
+      ]
     },
     {
       "id": "legacy-283-gibson-gibson-firebird",
@@ -43474,8 +43766,16 @@
       "type": "made_by",
       "label": "made",
       "strength": 0.94,
-      "context": [],
-      "sources": []
+      "context": [
+        "Gibson's product sheet identifies its Firebird model."
+      ],
+      "sources": [
+        {
+          "label": "Gibson: Firebird Product Sheet",
+          "url": "https://images.gibson.com/Products/Electric-Guitars/2018/USA/Firebird-2018/Press/Documents/Firebird-2018_One-Sheet.pdf",
+          "provider": "other"
+        }
+      ]
     },
     {
       "id": "legacy-284-gibson-gibson-eds-1275",
@@ -43484,8 +43784,16 @@
       "type": "made_by",
       "label": "made",
       "strength": 0.9,
-      "context": [],
-      "sources": []
+      "context": [
+        "Gibson documents its EDS-1275 doubleneck through a certified vintage instrument."
+      ],
+      "sources": [
+        {
+          "label": "Gibson: EDS-1275",
+          "url": "https://www.gibson.com/products/gibson-certified-vintage-1986-eds-1275-alpine-white",
+          "provider": "other"
+        }
+      ]
     },
     {
       "id": "legacy-285-ibanez-ibanez-jem",
@@ -43494,8 +43802,16 @@
       "type": "made_by",
       "label": "made",
       "strength": 0.98,
-      "context": [],
-      "sources": []
+      "context": [
+        "Ibanez lists the JEM as a model in its own electric-guitar range."
+      ],
+      "sources": [
+        {
+          "label": "Ibanez: JEM Series",
+          "url": "https://www.ibanez.com/usa/products/model/jem_uv/",
+          "provider": "other"
+        }
+      ]
     },
     {
       "id": "legacy-286-ibanez-ibanez-rg",
@@ -43504,8 +43820,16 @@
       "type": "made_by",
       "label": "made",
       "strength": 0.96,
-      "context": [],
-      "sources": []
+      "context": [
+        "Ibanez identifies the RG as one of its electric-guitar series."
+      ],
+      "sources": [
+        {
+          "label": "Ibanez: RG Series",
+          "url": "https://www.ibanez.com/usa/products/model/rg/",
+          "provider": "other"
+        }
+      ]
     },
     {
       "id": "legacy-287-ibanez-ibanez-js",
@@ -43514,8 +43838,16 @@
       "type": "made_by",
       "label": "made",
       "strength": 0.96,
-      "context": [],
-      "sources": []
+      "context": [
+        "Ibanez identifies the JS as one of its electric-guitar series."
+      ],
+      "sources": [
+        {
+          "label": "Ibanez: JS Series",
+          "url": "https://www.ibanez.com/usa/products/model/js/",
+          "provider": "other"
+        }
+      ]
     },
     {
       "id": "legacy-288-prs-prs-custom-24",
@@ -43524,8 +43856,16 @@
       "type": "made_by",
       "label": "made",
       "strength": 0.96,
-      "context": [],
-      "sources": []
+      "context": [
+        "PRS lists the Custom 24 in its own Custom guitar family."
+      ],
+      "sources": [
+        {
+          "label": "PRS Guitars: Custom 24",
+          "url": "https://prsguitars.com/products/custom",
+          "provider": "other"
+        }
+      ]
     },
     {
       "id": "legacy-289-prs-prs-santana",
@@ -43534,8 +43874,16 @@
       "type": "made_by",
       "label": "made",
       "strength": 0.96,
-      "context": [],
-      "sources": []
+      "context": [
+        "PRS documents the Santana Retro as a model developed through its partnership with Carlos Santana."
+      ],
+      "sources": [
+        {
+          "label": "PRS Guitars: Santana Retro",
+          "url": "https://prsguitars.com/electrics/model/santana_retro_2021",
+          "provider": "other"
+        }
+      ]
     },
     {
       "id": "legacy-290-jackson-jackson-rhoads",
@@ -43544,8 +43892,16 @@
       "type": "made_by",
       "label": "made",
       "strength": 0.96,
-      "context": [],
-      "sources": []
+      "context": [
+        "Jackson lists Rhoads guitars in its own model range."
+      ],
+      "sources": [
+        {
+          "label": "Jackson Guitars: Rhoads",
+          "url": "https://www.jacksonguitars.com/collections/rhoads",
+          "provider": "other"
+        }
+      ]
     },
     {
       "id": "legacy-291-jackson-jackson-soloist",
@@ -43554,8 +43910,16 @@
       "type": "made_by",
       "label": "made",
       "strength": 0.94,
-      "context": [],
-      "sources": []
+      "context": [
+        "Jackson lists Soloist guitars in its own model range."
+      ],
+      "sources": [
+        {
+          "label": "Jackson Guitars: Soloist",
+          "url": "https://www.jacksonguitars.com/collections/soloist",
+          "provider": "other"
+        }
+      ]
     },
     {
       "id": "legacy-292-charvel-charvel-san-dimas",
@@ -52398,6 +52762,196 @@
         {
           "label": "MusicBrainz: member of band relationship",
           "url": "https://musicbrainz.org/artist/328e3ae5-7d8c-4a01-b2b3-b8f41fb7bb23/relationships",
+          "provider": "musicbrainz"
+        }
+      ]
+    },
+    {
+      "id": "mb-member-jukka-nevalainen-nightwish",
+      "source": "jukka-nevalainen",
+      "target": "nightwish",
+      "type": "member_of",
+      "label": "Member of",
+      "strength": 0.9,
+      "context": [
+        "MusicBrainz records Jukka Nevalainen as a member of Nightwish.",
+        "Documented period: 1997 to 2019-07."
+      ],
+      "sources": [
+        {
+          "label": "MusicBrainz: member of band relationship",
+          "url": "https://musicbrainz.org/artist/9a0696d6-d4cd-4d00-9d70-61a79aceb3ff/relationships",
+          "provider": "musicbrainz"
+        }
+      ]
+    },
+    {
+      "id": "mb-member-janick-gers-gillan",
+      "source": "janick-gers",
+      "target": "gillan",
+      "type": "member_of",
+      "label": "Member of",
+      "strength": 0.9,
+      "context": [
+        "MusicBrainz records Janick Gers as a member of Gillan.",
+        "Documented period: 1981-06 to 1982-12."
+      ],
+      "sources": [
+        {
+          "label": "MusicBrainz: member of band relationship",
+          "url": "https://musicbrainz.org/artist/d883f57b-9696-4273-9272-150a8df82360/relationships",
+          "provider": "musicbrainz"
+        }
+      ]
+    },
+    {
+      "id": "mb-member-jack-black-tenacious-d",
+      "source": "jack-black",
+      "target": "tenacious-d",
+      "type": "member_of",
+      "label": "Member of",
+      "strength": 0.9,
+      "context": [
+        "MusicBrainz records Jack Black as a member of Tenacious D.",
+        "Documented period: dates not specified."
+      ],
+      "sources": [
+        {
+          "label": "MusicBrainz: member of band relationship",
+          "url": "https://musicbrainz.org/artist/caf8a53e-7f43-4be4-95d6-18d55e1f6e18/relationships",
+          "provider": "musicbrainz"
+        }
+      ]
+    },
+    {
+      "id": "mb-member-marko-hietala-nightwish",
+      "source": "marko-hietala",
+      "target": "nightwish",
+      "type": "member_of",
+      "label": "Member of",
+      "strength": 0.9,
+      "context": [
+        "MusicBrainz records Marko Hietala as a member of Nightwish.",
+        "Documented period: 2001-10 to 2021-01-12."
+      ],
+      "sources": [
+        {
+          "label": "MusicBrainz: member of band relationship",
+          "url": "https://musicbrainz.org/artist/7244f99c-e056-412c-836d-b3933bb51229/relationships",
+          "provider": "musicbrainz"
+        }
+      ]
+    },
+    {
+      "id": "mb-member-janick-gers-iron-maiden",
+      "source": "janick-gers",
+      "target": "iron-maiden",
+      "type": "member_of",
+      "label": "Member of",
+      "strength": 0.9,
+      "context": [
+        "MusicBrainz records Janick Gers as a member of Iron Maiden.",
+        "Documented period: 1990 onward (end not recorded)."
+      ],
+      "sources": [
+        {
+          "label": "MusicBrainz: member of band relationship",
+          "url": "https://musicbrainz.org/artist/d883f57b-9696-4273-9272-150a8df82360/relationships",
+          "provider": "musicbrainz"
+        }
+      ]
+    },
+    {
+      "id": "mb-member-marko-hietala-tarot",
+      "source": "marko-hietala",
+      "target": "tarot",
+      "type": "member_of",
+      "label": "Member of",
+      "strength": 0.9,
+      "context": [
+        "MusicBrainz records Marko Hietala as a member of Tarot.",
+        "Documented period: dates not specified."
+      ],
+      "sources": [
+        {
+          "label": "MusicBrainz: member of band relationship",
+          "url": "https://musicbrainz.org/artist/7244f99c-e056-412c-836d-b3933bb51229/relationships",
+          "provider": "musicbrainz"
+        }
+      ]
+    },
+    {
+      "id": "mb-member-john-fogerty-mb-band-9cfe894e-9fbf-4d24-a8fb-2b0164d0a7cc",
+      "source": "john-fogerty",
+      "target": "mb-band-9cfe894e-9fbf-4d24-a8fb-2b0164d0a7cc",
+      "type": "member_of",
+      "label": "Member of",
+      "strength": 0.9,
+      "context": [
+        "MusicBrainz records John Fogerty as a member of The Golliwogs.",
+        "Documented period: dates not specified."
+      ],
+      "sources": [
+        {
+          "label": "MusicBrainz: member of band relationship",
+          "url": "https://musicbrainz.org/artist/c3649208-0ebe-449b-b1d7-4bd6c560f109/relationships",
+          "provider": "musicbrainz"
+        }
+      ]
+    },
+    {
+      "id": "mb-member-jerry-reed-mb-band-6ed2f24c-f205-4add-8477-aa000934c073",
+      "source": "jerry-reed",
+      "target": "mb-band-6ed2f24c-f205-4add-8477-aa000934c073",
+      "type": "member_of",
+      "label": "Member of",
+      "strength": 0.9,
+      "context": [
+        "MusicBrainz records Jerry Reed as a member of Old Dogs.",
+        "Documented period: dates not specified."
+      ],
+      "sources": [
+        {
+          "label": "MusicBrainz: member of band relationship",
+          "url": "https://musicbrainz.org/artist/44419ff2-0251-49ba-933b-b09733ff9adb/relationships",
+          "provider": "musicbrainz"
+        }
+      ]
+    },
+    {
+      "id": "mb-member-ingo-schwichtenberg-mb-band-765774a0-2060-469b-8b7d-612eea48579b",
+      "source": "ingo-schwichtenberg",
+      "target": "mb-band-765774a0-2060-469b-8b7d-612eea48579b",
+      "type": "member_of",
+      "label": "Member of",
+      "strength": 0.9,
+      "context": [
+        "MusicBrainz records Ingo Schwichtenberg as a member of Helloween.",
+        "Documented period: 1984 to 1993."
+      ],
+      "sources": [
+        {
+          "label": "MusicBrainz: member of band relationship",
+          "url": "https://musicbrainz.org/artist/c5c03ade-85ca-484c-a77d-25cbccd7f6d4/relationships",
+          "provider": "musicbrainz"
+        }
+      ]
+    },
+    {
+      "id": "mb-member-little-richard-mb-band-de0e1877-ca20-414e-8d08-6eef9c696055",
+      "source": "little-richard",
+      "target": "mb-band-de0e1877-ca20-414e-8d08-6eef9c696055",
+      "type": "member_of",
+      "label": "Member of",
+      "strength": 0.9,
+      "context": [
+        "MusicBrainz records Little Richard as a member of Little Richard and His Band.",
+        "Documented period: 1955-09-13 to 1956-10-16."
+      ],
+      "sources": [
+        {
+          "label": "MusicBrainz: member of band relationship",
+          "url": "https://musicbrainz.org/artist/95c2339b-8277-49a6-9aaf-08d8eeeaa0be/relationships",
           "provider": "musicbrainz"
         }
       ]

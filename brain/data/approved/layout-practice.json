@@ -1,65 +1,15 @@
 {
   "version": 1,
-  "enabled": true,
+  "enabled": false,
   "source": "approved-node-replay",
   "parametersByModeZone": {
-    "organized": {
-      "folk-country-vise": [
-        {
-          "spacing": 1.9,
-          "connectionPull": 0.1,
-          "zoneFreedom": 0.9,
-          "iterations": 44
-        }
-      ],
-      "punk-alt": [
-        {
-          "spacing": 1.9,
-          "connectionPull": 0.1,
-          "zoneFreedom": 0.9,
-          "iterations": 44
-        }
-      ],
-      "hard-rock-metal": [
-        {
-          "spacing": 1.6,
-          "connectionPull": 0.35,
-          "zoneFreedom": 0.55,
-          "iterations": 36
-        }
-      ]
-    },
     "genre": {
-      "pop-soul-disco": [
+      "jazz": [
         {
-          "spacing": 1.3,
-          "connectionPull": 0.2,
-          "zoneFreedom": 0.6,
-          "iterations": 36
-        }
-      ],
-      "classical-history": [
-        {
-          "spacing": 1.6,
-          "connectionPull": 0.35,
-          "zoneFreedom": 0.55,
-          "iterations": 36
-        }
-      ],
-      "folk-country-vise": [
-        {
-          "spacing": 1.9,
-          "connectionPull": 0.1,
-          "zoneFreedom": 0.9,
-          "iterations": 44
-        }
-      ],
-      "psychedelia-prog": [
-        {
-          "spacing": 1.2,
-          "connectionPull": 0.3,
-          "zoneFreedom": 0.5,
-          "iterations": 32
+          "spacing": 1.5,
+          "connectionPull": 0.25,
+          "zoneFreedom": 0.7,
+          "iterations": 40
         }
       ],
       "hip-hop-rap": [
@@ -72,11 +22,53 @@
       ]
     },
     "chaos": {
-      "classical-history": [
+      "roots-blues": [
         {
-          "spacing": 1.75,
-          "connectionPull": 0.2,
-          "zoneFreedom": 0.8,
+          "spacing": 1.9,
+          "connectionPull": 0.1,
+          "zoneFreedom": 0.9,
+          "iterations": 44
+        }
+      ],
+      "guitar-workshop": [
+        {
+          "spacing": 1.9,
+          "connectionPull": 0.1,
+          "zoneFreedom": 0.9,
+          "iterations": 44
+        }
+      ],
+      "hip-hop-rap": [
+        {
+          "spacing": 1.9,
+          "connectionPull": 0.1,
+          "zoneFreedom": 0.9,
+          "iterations": 44
+        }
+      ]
+    },
+    "organized": {
+      "folk-country-vise": [
+        {
+          "spacing": 1.9,
+          "connectionPull": 0.1,
+          "zoneFreedom": 0.9,
+          "iterations": 44
+        }
+      ],
+      "hard-rock-metal": [
+        {
+          "spacing": 1.2,
+          "connectionPull": 0.3,
+          "zoneFreedom": 0.5,
+          "iterations": 32
+        }
+      ],
+      "rock-circuit": [
+        {
+          "spacing": 1.5,
+          "connectionPull": 0.25,
+          "zoneFreedom": 0.7,
           "iterations": 40
         }
       ]
@@ -89,28 +81,12 @@
       "parameters": "1.10:0.20:0.35:24.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 1
-    },
-    {
-      "mode": "chaos",
-      "zone": "classical-history",
-      "parameters": "1.20:0.30:0.50:32.00",
-      "hintCount": 0,
-      "samples": 4,
       "safe": 0
     },
     {
       "mode": "chaos",
       "zone": "classical-history",
-      "parameters": "1.30:0.20:0.60:36.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 1
-    },
-    {
-      "mode": "chaos",
-      "zone": "classical-history",
-      "parameters": "1.40:0.30:0.60:32.00",
+      "parameters": "1.20:0.30:0.50:32.00",
       "hintCount": 0,
       "samples": 4,
       "safe": 0
@@ -118,10 +94,26 @@
     {
       "mode": "chaos",
       "zone": "classical-history",
+      "parameters": "1.30:0.20:0.60:36.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "classical-history",
+      "parameters": "1.40:0.30:0.60:32.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "classical-history",
       "parameters": "1.50:0.25:0.70:40.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 2
+      "safe": 0
     },
     {
       "mode": "chaos",
@@ -129,7 +121,7 @@
       "parameters": "1.60:0.35:0.55:36.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 3
+      "safe": 0
     },
     {
       "mode": "chaos",
@@ -137,7 +129,7 @@
       "parameters": "1.65:0.15:0.80:36.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 3
+      "safe": 0
     },
     {
       "mode": "chaos",
@@ -145,7 +137,7 @@
       "parameters": "1.75:0.20:0.80:40.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 4
+      "safe": 0
     },
     {
       "mode": "chaos",
@@ -153,7 +145,7 @@
       "parameters": "1.90:0.10:0.90:44.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 4
+      "safe": 0
     },
     {
       "mode": "chaos",
@@ -169,90 +161,90 @@
       "parameters": "1.20:0.30:0.50:32.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 2
+      "safe": 1
     },
     {
       "mode": "chaos",
       "zone": "country-roots",
       "parameters": "1.30:0.20:0.60:36.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 3
-    },
-    {
-      "mode": "chaos",
-      "zone": "country-roots",
-      "parameters": "1.40:0.30:0.60:32.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 3
-    },
-    {
-      "mode": "chaos",
-      "zone": "country-roots",
-      "parameters": "1.50:0.25:0.70:40.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 3
-    },
-    {
-      "mode": "chaos",
-      "zone": "country-roots",
-      "parameters": "1.60:0.35:0.55:36.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 3
-    },
-    {
-      "mode": "chaos",
-      "zone": "country-roots",
-      "parameters": "1.65:0.15:0.80:36.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 4
-    },
-    {
-      "mode": "chaos",
-      "zone": "country-roots",
-      "parameters": "1.75:0.20:0.80:40.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 3
-    },
-    {
-      "mode": "chaos",
-      "zone": "country-roots",
-      "parameters": "1.90:0.10:0.90:44.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 4
-    },
-    {
-      "mode": "chaos",
-      "zone": "folk-country-vise",
-      "parameters": "1.10:0.20:0.35:24.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 2
-    },
-    {
-      "mode": "chaos",
-      "zone": "folk-country-vise",
-      "parameters": "1.10:0.20:0.35:24.00",
-      "hintCount": 1,
-      "samples": 1,
-      "safe": 0
-    },
-    {
-      "mode": "chaos",
-      "zone": "folk-country-vise",
-      "parameters": "1.20:0.30:0.50:32.00",
       "hintCount": 0,
       "samples": 4,
       "safe": 1
     },
     {
       "mode": "chaos",
+      "zone": "country-roots",
+      "parameters": "1.40:0.30:0.60:32.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 1
+    },
+    {
+      "mode": "chaos",
+      "zone": "country-roots",
+      "parameters": "1.50:0.25:0.70:40.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 1
+    },
+    {
+      "mode": "chaos",
+      "zone": "country-roots",
+      "parameters": "1.60:0.35:0.55:36.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 1
+    },
+    {
+      "mode": "chaos",
+      "zone": "country-roots",
+      "parameters": "1.65:0.15:0.80:36.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 2
+    },
+    {
+      "mode": "chaos",
+      "zone": "country-roots",
+      "parameters": "1.75:0.20:0.80:40.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 1
+    },
+    {
+      "mode": "chaos",
+      "zone": "country-roots",
+      "parameters": "1.90:0.10:0.90:44.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 3
+    },
+    {
+      "mode": "chaos",
+      "zone": "folk-country-vise",
+      "parameters": "1.10:0.20:0.35:24.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "folk-country-vise",
+      "parameters": "1.10:0.20:0.35:24.00",
+      "hintCount": 1,
+      "samples": 1,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "folk-country-vise",
+      "parameters": "1.20:0.30:0.50:32.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 3
+    },
+    {
+      "mode": "chaos",
       "zone": "folk-country-vise",
       "parameters": "1.20:0.30:0.50:32.00",
       "hintCount": 1,
@@ -281,7 +273,7 @@
       "parameters": "1.40:0.30:0.60:32.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 2
+      "safe": 3
     },
     {
       "mode": "chaos",
@@ -297,7 +289,7 @@
       "parameters": "1.50:0.25:0.70:40.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 2
+      "safe": 3
     },
     {
       "mode": "chaos",
@@ -313,7 +305,7 @@
       "parameters": "1.60:0.35:0.55:36.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 2
+      "safe": 3
     },
     {
       "mode": "chaos",
@@ -345,7 +337,7 @@
       "parameters": "1.75:0.20:0.80:40.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 2
+      "safe": 3
     },
     {
       "mode": "chaos",
@@ -361,7 +353,7 @@
       "parameters": "1.90:0.10:0.90:44.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 2
+      "safe": 1
     },
     {
       "mode": "chaos",
@@ -385,7 +377,7 @@
       "parameters": "1.20:0.30:0.50:32.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 1
+      "safe": 0
     },
     {
       "mode": "chaos",
@@ -401,7 +393,7 @@
       "parameters": "1.40:0.30:0.60:32.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 1
+      "safe": 0
     },
     {
       "mode": "chaos",
@@ -417,7 +409,7 @@
       "parameters": "1.60:0.35:0.55:36.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 1
+      "safe": 0
     },
     {
       "mode": "chaos",
@@ -425,1135 +417,991 @@
       "parameters": "1.65:0.15:0.80:36.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 1
+      "safe": 3
     },
     {
       "mode": "chaos",
       "zone": "guitar-workshop",
       "parameters": "1.75:0.20:0.80:40.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 1
-    },
-    {
-      "mode": "chaos",
-      "zone": "guitar-workshop",
-      "parameters": "1.90:0.10:0.90:44.00",
       "hintCount": 0,
       "samples": 4,
       "safe": 2
     },
     {
       "mode": "chaos",
+      "zone": "guitar-workshop",
+      "parameters": "1.90:0.10:0.90:44.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 3
+    },
+    {
+      "mode": "chaos",
       "zone": "hard-rock-metal",
       "parameters": "1.10:0.20:0.35:24.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "hard-rock-metal",
+      "parameters": "1.10:0.20:0.35:24.00",
+      "hintCount": 1,
+      "samples": 4,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "hard-rock-metal",
+      "parameters": "1.20:0.30:0.50:32.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "hard-rock-metal",
+      "parameters": "1.20:0.30:0.50:32.00",
+      "hintCount": 1,
+      "samples": 4,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "hard-rock-metal",
+      "parameters": "1.30:0.20:0.60:36.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "hard-rock-metal",
+      "parameters": "1.30:0.20:0.60:36.00",
+      "hintCount": 1,
+      "samples": 4,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "hard-rock-metal",
+      "parameters": "1.40:0.30:0.60:32.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "hard-rock-metal",
+      "parameters": "1.40:0.30:0.60:32.00",
+      "hintCount": 1,
+      "samples": 4,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "hard-rock-metal",
+      "parameters": "1.50:0.25:0.70:40.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "hard-rock-metal",
+      "parameters": "1.50:0.25:0.70:40.00",
+      "hintCount": 1,
+      "samples": 4,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "hard-rock-metal",
+      "parameters": "1.60:0.35:0.55:36.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "hard-rock-metal",
+      "parameters": "1.60:0.35:0.55:36.00",
+      "hintCount": 1,
+      "samples": 4,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "hard-rock-metal",
+      "parameters": "1.65:0.15:0.80:36.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "hard-rock-metal",
+      "parameters": "1.65:0.15:0.80:36.00",
+      "hintCount": 1,
+      "samples": 4,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "hard-rock-metal",
+      "parameters": "1.75:0.20:0.80:40.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "hard-rock-metal",
+      "parameters": "1.75:0.20:0.80:40.00",
+      "hintCount": 1,
+      "samples": 4,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "hard-rock-metal",
+      "parameters": "1.90:0.10:0.90:44.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "hard-rock-metal",
+      "parameters": "1.90:0.10:0.90:44.00",
+      "hintCount": 1,
+      "samples": 4,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "hip-hop-rap",
+      "parameters": "1.10:0.20:0.35:24.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "hip-hop-rap",
+      "parameters": "1.20:0.30:0.50:32.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "hip-hop-rap",
+      "parameters": "1.30:0.20:0.60:36.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "hip-hop-rap",
+      "parameters": "1.40:0.30:0.60:32.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "hip-hop-rap",
+      "parameters": "1.50:0.25:0.70:40.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "hip-hop-rap",
+      "parameters": "1.60:0.35:0.55:36.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "hip-hop-rap",
+      "parameters": "1.65:0.15:0.80:36.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "hip-hop-rap",
+      "parameters": "1.75:0.20:0.80:40.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "hip-hop-rap",
+      "parameters": "1.90:0.10:0.90:44.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 3
+    },
+    {
+      "mode": "chaos",
+      "zone": "jazz",
+      "parameters": "1.10:0.20:0.35:24.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "jazz",
+      "parameters": "1.20:0.30:0.50:32.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "jazz",
+      "parameters": "1.30:0.20:0.60:36.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "jazz",
+      "parameters": "1.40:0.30:0.60:32.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "jazz",
+      "parameters": "1.50:0.25:0.70:40.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "jazz",
+      "parameters": "1.60:0.35:0.55:36.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "jazz",
+      "parameters": "1.65:0.15:0.80:36.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "jazz",
+      "parameters": "1.75:0.20:0.80:40.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "jazz",
+      "parameters": "1.90:0.10:0.90:44.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "pop-soul-disco",
+      "parameters": "1.10:0.20:0.35:24.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "pop-soul-disco",
+      "parameters": "1.10:0.20:0.35:24.00",
+      "hintCount": 1,
+      "samples": 1,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "pop-soul-disco",
+      "parameters": "1.20:0.30:0.50:32.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "pop-soul-disco",
+      "parameters": "1.20:0.30:0.50:32.00",
+      "hintCount": 1,
+      "samples": 1,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "pop-soul-disco",
+      "parameters": "1.30:0.20:0.60:36.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "pop-soul-disco",
+      "parameters": "1.30:0.20:0.60:36.00",
+      "hintCount": 1,
+      "samples": 1,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "pop-soul-disco",
+      "parameters": "1.40:0.30:0.60:32.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "pop-soul-disco",
+      "parameters": "1.40:0.30:0.60:32.00",
+      "hintCount": 1,
+      "samples": 1,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "pop-soul-disco",
+      "parameters": "1.50:0.25:0.70:40.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "pop-soul-disco",
+      "parameters": "1.50:0.25:0.70:40.00",
+      "hintCount": 1,
+      "samples": 1,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "pop-soul-disco",
+      "parameters": "1.60:0.35:0.55:36.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "pop-soul-disco",
+      "parameters": "1.60:0.35:0.55:36.00",
+      "hintCount": 1,
+      "samples": 1,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "pop-soul-disco",
+      "parameters": "1.65:0.15:0.80:36.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "pop-soul-disco",
+      "parameters": "1.65:0.15:0.80:36.00",
+      "hintCount": 1,
+      "samples": 1,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "pop-soul-disco",
+      "parameters": "1.75:0.20:0.80:40.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "pop-soul-disco",
+      "parameters": "1.75:0.20:0.80:40.00",
+      "hintCount": 1,
+      "samples": 1,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "pop-soul-disco",
+      "parameters": "1.90:0.10:0.90:44.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 1
+    },
+    {
+      "mode": "chaos",
+      "zone": "pop-soul-disco",
+      "parameters": "1.90:0.10:0.90:44.00",
+      "hintCount": 1,
+      "samples": 1,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "psychedelia-prog",
+      "parameters": "1.10:0.20:0.35:24.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 4
+    },
+    {
+      "mode": "chaos",
+      "zone": "psychedelia-prog",
+      "parameters": "1.10:0.20:0.35:24.00",
+      "hintCount": 1,
+      "samples": 4,
+      "safe": 4
+    },
+    {
+      "mode": "chaos",
+      "zone": "psychedelia-prog",
+      "parameters": "1.20:0.30:0.50:32.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 3
+    },
+    {
+      "mode": "chaos",
+      "zone": "psychedelia-prog",
+      "parameters": "1.20:0.30:0.50:32.00",
+      "hintCount": 1,
+      "samples": 4,
+      "safe": 3
+    },
+    {
+      "mode": "chaos",
+      "zone": "psychedelia-prog",
+      "parameters": "1.30:0.20:0.60:36.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 4
+    },
+    {
+      "mode": "chaos",
+      "zone": "psychedelia-prog",
+      "parameters": "1.30:0.20:0.60:36.00",
+      "hintCount": 1,
+      "samples": 4,
+      "safe": 4
+    },
+    {
+      "mode": "chaos",
+      "zone": "psychedelia-prog",
+      "parameters": "1.40:0.30:0.60:32.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 4
+    },
+    {
+      "mode": "chaos",
+      "zone": "psychedelia-prog",
+      "parameters": "1.40:0.30:0.60:32.00",
+      "hintCount": 1,
+      "samples": 4,
+      "safe": 4
+    },
+    {
+      "mode": "chaos",
+      "zone": "psychedelia-prog",
+      "parameters": "1.50:0.25:0.70:40.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 4
+    },
+    {
+      "mode": "chaos",
+      "zone": "psychedelia-prog",
+      "parameters": "1.50:0.25:0.70:40.00",
+      "hintCount": 1,
+      "samples": 4,
+      "safe": 4
+    },
+    {
+      "mode": "chaos",
+      "zone": "psychedelia-prog",
+      "parameters": "1.60:0.35:0.55:36.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 4
+    },
+    {
+      "mode": "chaos",
+      "zone": "psychedelia-prog",
+      "parameters": "1.60:0.35:0.55:36.00",
+      "hintCount": 1,
+      "samples": 4,
+      "safe": 4
+    },
+    {
+      "mode": "chaos",
+      "zone": "psychedelia-prog",
+      "parameters": "1.65:0.15:0.80:36.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 4
+    },
+    {
+      "mode": "chaos",
+      "zone": "psychedelia-prog",
+      "parameters": "1.65:0.15:0.80:36.00",
+      "hintCount": 1,
+      "samples": 4,
+      "safe": 4
+    },
+    {
+      "mode": "chaos",
+      "zone": "psychedelia-prog",
+      "parameters": "1.75:0.20:0.80:40.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 4
+    },
+    {
+      "mode": "chaos",
+      "zone": "psychedelia-prog",
+      "parameters": "1.75:0.20:0.80:40.00",
+      "hintCount": 1,
+      "samples": 4,
+      "safe": 4
+    },
+    {
+      "mode": "chaos",
+      "zone": "psychedelia-prog",
+      "parameters": "1.90:0.10:0.90:44.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 3
+    },
+    {
+      "mode": "chaos",
+      "zone": "psychedelia-prog",
+      "parameters": "1.90:0.10:0.90:44.00",
+      "hintCount": 1,
+      "samples": 4,
+      "safe": 3
+    },
+    {
+      "mode": "chaos",
+      "zone": "punk-alt",
+      "parameters": "1.10:0.20:0.35:24.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 3
+    },
+    {
+      "mode": "chaos",
+      "zone": "punk-alt",
+      "parameters": "1.10:0.20:0.35:24.00",
+      "hintCount": 1,
+      "samples": 3,
+      "safe": 3
+    },
+    {
+      "mode": "chaos",
+      "zone": "punk-alt",
+      "parameters": "1.20:0.30:0.50:32.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 3
+    },
+    {
+      "mode": "chaos",
+      "zone": "punk-alt",
+      "parameters": "1.20:0.30:0.50:32.00",
+      "hintCount": 1,
+      "samples": 3,
+      "safe": 3
+    },
+    {
+      "mode": "chaos",
+      "zone": "punk-alt",
+      "parameters": "1.30:0.20:0.60:36.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 4
+    },
+    {
+      "mode": "chaos",
+      "zone": "punk-alt",
+      "parameters": "1.30:0.20:0.60:36.00",
+      "hintCount": 1,
+      "samples": 3,
+      "safe": 3
+    },
+    {
+      "mode": "chaos",
+      "zone": "punk-alt",
+      "parameters": "1.40:0.30:0.60:32.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 3
+    },
+    {
+      "mode": "chaos",
+      "zone": "punk-alt",
+      "parameters": "1.40:0.30:0.60:32.00",
+      "hintCount": 1,
+      "samples": 3,
+      "safe": 3
+    },
+    {
+      "mode": "chaos",
+      "zone": "punk-alt",
+      "parameters": "1.50:0.25:0.70:40.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 4
+    },
+    {
+      "mode": "chaos",
+      "zone": "punk-alt",
+      "parameters": "1.50:0.25:0.70:40.00",
+      "hintCount": 1,
+      "samples": 3,
+      "safe": 3
+    },
+    {
+      "mode": "chaos",
+      "zone": "punk-alt",
+      "parameters": "1.60:0.35:0.55:36.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 3
+    },
+    {
+      "mode": "chaos",
+      "zone": "punk-alt",
+      "parameters": "1.60:0.35:0.55:36.00",
+      "hintCount": 1,
+      "samples": 3,
+      "safe": 3
+    },
+    {
+      "mode": "chaos",
+      "zone": "punk-alt",
+      "parameters": "1.65:0.15:0.80:36.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 4
+    },
+    {
+      "mode": "chaos",
+      "zone": "punk-alt",
+      "parameters": "1.65:0.15:0.80:36.00",
+      "hintCount": 1,
+      "samples": 3,
+      "safe": 3
+    },
+    {
+      "mode": "chaos",
+      "zone": "punk-alt",
+      "parameters": "1.75:0.20:0.80:40.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 4
+    },
+    {
+      "mode": "chaos",
+      "zone": "punk-alt",
+      "parameters": "1.75:0.20:0.80:40.00",
+      "hintCount": 1,
+      "samples": 3,
+      "safe": 3
+    },
+    {
+      "mode": "chaos",
+      "zone": "punk-alt",
+      "parameters": "1.90:0.10:0.90:44.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 4
+    },
+    {
+      "mode": "chaos",
+      "zone": "punk-alt",
+      "parameters": "1.90:0.10:0.90:44.00",
+      "hintCount": 1,
+      "samples": 3,
+      "safe": 3
+    },
+    {
+      "mode": "chaos",
+      "zone": "rock-circuit",
+      "parameters": "1.10:0.20:0.35:24.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 1
+    },
+    {
+      "mode": "chaos",
+      "zone": "rock-circuit",
+      "parameters": "1.10:0.20:0.35:24.00",
+      "hintCount": 1,
+      "samples": 3,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "rock-circuit",
+      "parameters": "1.20:0.30:0.50:32.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 1
+    },
+    {
+      "mode": "chaos",
+      "zone": "rock-circuit",
+      "parameters": "1.20:0.30:0.50:32.00",
+      "hintCount": 1,
+      "samples": 3,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "rock-circuit",
+      "parameters": "1.30:0.20:0.60:36.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 1
+    },
+    {
+      "mode": "chaos",
+      "zone": "rock-circuit",
+      "parameters": "1.30:0.20:0.60:36.00",
+      "hintCount": 1,
+      "samples": 3,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "rock-circuit",
+      "parameters": "1.40:0.30:0.60:32.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 1
+    },
+    {
+      "mode": "chaos",
+      "zone": "rock-circuit",
+      "parameters": "1.40:0.30:0.60:32.00",
+      "hintCount": 1,
+      "samples": 3,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "rock-circuit",
+      "parameters": "1.50:0.25:0.70:40.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 1
+    },
+    {
+      "mode": "chaos",
+      "zone": "rock-circuit",
+      "parameters": "1.50:0.25:0.70:40.00",
+      "hintCount": 1,
+      "samples": 3,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "rock-circuit",
+      "parameters": "1.60:0.35:0.55:36.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 1
+    },
+    {
+      "mode": "chaos",
+      "zone": "rock-circuit",
+      "parameters": "1.60:0.35:0.55:36.00",
+      "hintCount": 1,
+      "samples": 3,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "rock-circuit",
+      "parameters": "1.65:0.15:0.80:36.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 1
+    },
+    {
+      "mode": "chaos",
+      "zone": "rock-circuit",
+      "parameters": "1.65:0.15:0.80:36.00",
+      "hintCount": 1,
+      "samples": 3,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "rock-circuit",
+      "parameters": "1.75:0.20:0.80:40.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 1
+    },
+    {
+      "mode": "chaos",
+      "zone": "rock-circuit",
+      "parameters": "1.75:0.20:0.80:40.00",
+      "hintCount": 1,
+      "samples": 3,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "rock-circuit",
+      "parameters": "1.90:0.10:0.90:44.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 1
+    },
+    {
+      "mode": "chaos",
+      "zone": "rock-circuit",
+      "parameters": "1.90:0.10:0.90:44.00",
+      "hintCount": 1,
+      "samples": 3,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "roots-blues",
+      "parameters": "1.10:0.20:0.35:24.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 1
+    },
+    {
+      "mode": "chaos",
+      "zone": "roots-blues",
+      "parameters": "1.10:0.20:0.35:24.00",
+      "hintCount": 1,
+      "samples": 3,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "roots-blues",
+      "parameters": "1.20:0.30:0.50:32.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 1
+    },
+    {
+      "mode": "chaos",
+      "zone": "roots-blues",
+      "parameters": "1.20:0.30:0.50:32.00",
+      "hintCount": 1,
+      "samples": 3,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "roots-blues",
+      "parameters": "1.30:0.20:0.60:36.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 1
+    },
+    {
+      "mode": "chaos",
+      "zone": "roots-blues",
+      "parameters": "1.30:0.20:0.60:36.00",
+      "hintCount": 1,
+      "samples": 3,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "roots-blues",
+      "parameters": "1.40:0.30:0.60:32.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 1
+    },
+    {
+      "mode": "chaos",
+      "zone": "roots-blues",
+      "parameters": "1.40:0.30:0.60:32.00",
+      "hintCount": 1,
+      "samples": 3,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "roots-blues",
+      "parameters": "1.50:0.25:0.70:40.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 1
+    },
+    {
+      "mode": "chaos",
+      "zone": "roots-blues",
+      "parameters": "1.50:0.25:0.70:40.00",
+      "hintCount": 1,
+      "samples": 3,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "roots-blues",
+      "parameters": "1.60:0.35:0.55:36.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 1
+    },
+    {
+      "mode": "chaos",
+      "zone": "roots-blues",
+      "parameters": "1.60:0.35:0.55:36.00",
+      "hintCount": 1,
+      "samples": 3,
+      "safe": 0
+    },
+    {
+      "mode": "chaos",
+      "zone": "roots-blues",
+      "parameters": "1.65:0.15:0.80:36.00",
       "hintCount": 0,
       "samples": 4,
       "safe": 2
-    },
-    {
-      "mode": "chaos",
-      "zone": "hard-rock-metal",
-      "parameters": "1.10:0.20:0.35:24.00",
-      "hintCount": 1,
-      "samples": 1,
-      "safe": 1
-    },
-    {
-      "mode": "chaos",
-      "zone": "hard-rock-metal",
-      "parameters": "1.10:0.20:0.35:24.00",
-      "hintCount": 3,
-      "samples": 2,
-      "safe": 0
-    },
-    {
-      "mode": "chaos",
-      "zone": "hard-rock-metal",
-      "parameters": "1.20:0.30:0.50:32.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 3
-    },
-    {
-      "mode": "chaos",
-      "zone": "hard-rock-metal",
-      "parameters": "1.20:0.30:0.50:32.00",
-      "hintCount": 1,
-      "samples": 1,
-      "safe": 1
-    },
-    {
-      "mode": "chaos",
-      "zone": "hard-rock-metal",
-      "parameters": "1.20:0.30:0.50:32.00",
-      "hintCount": 3,
-      "samples": 2,
-      "safe": 1
-    },
-    {
-      "mode": "chaos",
-      "zone": "hard-rock-metal",
-      "parameters": "1.30:0.20:0.60:36.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 2
-    },
-    {
-      "mode": "chaos",
-      "zone": "hard-rock-metal",
-      "parameters": "1.30:0.20:0.60:36.00",
-      "hintCount": 1,
-      "samples": 1,
-      "safe": 1
-    },
-    {
-      "mode": "chaos",
-      "zone": "hard-rock-metal",
-      "parameters": "1.30:0.20:0.60:36.00",
-      "hintCount": 3,
-      "samples": 2,
-      "safe": 1
-    },
-    {
-      "mode": "chaos",
-      "zone": "hard-rock-metal",
-      "parameters": "1.40:0.30:0.60:32.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 3
-    },
-    {
-      "mode": "chaos",
-      "zone": "hard-rock-metal",
-      "parameters": "1.40:0.30:0.60:32.00",
-      "hintCount": 1,
-      "samples": 1,
-      "safe": 1
-    },
-    {
-      "mode": "chaos",
-      "zone": "hard-rock-metal",
-      "parameters": "1.40:0.30:0.60:32.00",
-      "hintCount": 3,
-      "samples": 2,
-      "safe": 1
-    },
-    {
-      "mode": "chaos",
-      "zone": "hard-rock-metal",
-      "parameters": "1.50:0.25:0.70:40.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 3
-    },
-    {
-      "mode": "chaos",
-      "zone": "hard-rock-metal",
-      "parameters": "1.50:0.25:0.70:40.00",
-      "hintCount": 1,
-      "samples": 1,
-      "safe": 1
-    },
-    {
-      "mode": "chaos",
-      "zone": "hard-rock-metal",
-      "parameters": "1.50:0.25:0.70:40.00",
-      "hintCount": 3,
-      "samples": 2,
-      "safe": 1
-    },
-    {
-      "mode": "chaos",
-      "zone": "hard-rock-metal",
-      "parameters": "1.60:0.35:0.55:36.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 3
-    },
-    {
-      "mode": "chaos",
-      "zone": "hard-rock-metal",
-      "parameters": "1.60:0.35:0.55:36.00",
-      "hintCount": 1,
-      "samples": 1,
-      "safe": 1
-    },
-    {
-      "mode": "chaos",
-      "zone": "hard-rock-metal",
-      "parameters": "1.60:0.35:0.55:36.00",
-      "hintCount": 3,
-      "samples": 2,
-      "safe": 1
-    },
-    {
-      "mode": "chaos",
-      "zone": "hard-rock-metal",
-      "parameters": "1.65:0.15:0.80:36.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 4
-    },
-    {
-      "mode": "chaos",
-      "zone": "hard-rock-metal",
-      "parameters": "1.65:0.15:0.80:36.00",
-      "hintCount": 1,
-      "samples": 1,
-      "safe": 1
-    },
-    {
-      "mode": "chaos",
-      "zone": "hard-rock-metal",
-      "parameters": "1.65:0.15:0.80:36.00",
-      "hintCount": 3,
-      "samples": 2,
-      "safe": 1
-    },
-    {
-      "mode": "chaos",
-      "zone": "hard-rock-metal",
-      "parameters": "1.75:0.20:0.80:40.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 3
-    },
-    {
-      "mode": "chaos",
-      "zone": "hard-rock-metal",
-      "parameters": "1.75:0.20:0.80:40.00",
-      "hintCount": 1,
-      "samples": 1,
-      "safe": 1
-    },
-    {
-      "mode": "chaos",
-      "zone": "hard-rock-metal",
-      "parameters": "1.75:0.20:0.80:40.00",
-      "hintCount": 3,
-      "samples": 2,
-      "safe": 1
-    },
-    {
-      "mode": "chaos",
-      "zone": "hard-rock-metal",
-      "parameters": "1.90:0.10:0.90:44.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 3
-    },
-    {
-      "mode": "chaos",
-      "zone": "hard-rock-metal",
-      "parameters": "1.90:0.10:0.90:44.00",
-      "hintCount": 1,
-      "samples": 1,
-      "safe": 1
-    },
-    {
-      "mode": "chaos",
-      "zone": "hard-rock-metal",
-      "parameters": "1.90:0.10:0.90:44.00",
-      "hintCount": 3,
-      "samples": 2,
-      "safe": 1
-    },
-    {
-      "mode": "chaos",
-      "zone": "hip-hop-rap",
-      "parameters": "1.10:0.20:0.35:24.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 4
-    },
-    {
-      "mode": "chaos",
-      "zone": "hip-hop-rap",
-      "parameters": "1.10:0.20:0.35:24.00",
-      "hintCount": 1,
-      "samples": 1,
-      "safe": 1
-    },
-    {
-      "mode": "chaos",
-      "zone": "hip-hop-rap",
-      "parameters": "1.20:0.30:0.50:32.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 4
-    },
-    {
-      "mode": "chaos",
-      "zone": "hip-hop-rap",
-      "parameters": "1.20:0.30:0.50:32.00",
-      "hintCount": 1,
-      "samples": 1,
-      "safe": 1
-    },
-    {
-      "mode": "chaos",
-      "zone": "hip-hop-rap",
-      "parameters": "1.30:0.20:0.60:36.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 4
-    },
-    {
-      "mode": "chaos",
-      "zone": "hip-hop-rap",
-      "parameters": "1.30:0.20:0.60:36.00",
-      "hintCount": 1,
-      "samples": 1,
-      "safe": 1
-    },
-    {
-      "mode": "chaos",
-      "zone": "hip-hop-rap",
-      "parameters": "1.40:0.30:0.60:32.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 4
-    },
-    {
-      "mode": "chaos",
-      "zone": "hip-hop-rap",
-      "parameters": "1.40:0.30:0.60:32.00",
-      "hintCount": 1,
-      "samples": 1,
-      "safe": 1
-    },
-    {
-      "mode": "chaos",
-      "zone": "hip-hop-rap",
-      "parameters": "1.50:0.25:0.70:40.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 4
-    },
-    {
-      "mode": "chaos",
-      "zone": "hip-hop-rap",
-      "parameters": "1.50:0.25:0.70:40.00",
-      "hintCount": 1,
-      "samples": 1,
-      "safe": 1
-    },
-    {
-      "mode": "chaos",
-      "zone": "hip-hop-rap",
-      "parameters": "1.60:0.35:0.55:36.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 4
-    },
-    {
-      "mode": "chaos",
-      "zone": "hip-hop-rap",
-      "parameters": "1.60:0.35:0.55:36.00",
-      "hintCount": 1,
-      "samples": 1,
-      "safe": 1
-    },
-    {
-      "mode": "chaos",
-      "zone": "hip-hop-rap",
-      "parameters": "1.65:0.15:0.80:36.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 4
-    },
-    {
-      "mode": "chaos",
-      "zone": "hip-hop-rap",
-      "parameters": "1.65:0.15:0.80:36.00",
-      "hintCount": 1,
-      "samples": 1,
-      "safe": 1
-    },
-    {
-      "mode": "chaos",
-      "zone": "hip-hop-rap",
-      "parameters": "1.75:0.20:0.80:40.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 4
-    },
-    {
-      "mode": "chaos",
-      "zone": "hip-hop-rap",
-      "parameters": "1.75:0.20:0.80:40.00",
-      "hintCount": 1,
-      "samples": 1,
-      "safe": 1
-    },
-    {
-      "mode": "chaos",
-      "zone": "hip-hop-rap",
-      "parameters": "1.90:0.10:0.90:44.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 4
-    },
-    {
-      "mode": "chaos",
-      "zone": "hip-hop-rap",
-      "parameters": "1.90:0.10:0.90:44.00",
-      "hintCount": 1,
-      "samples": 1,
-      "safe": 1
-    },
-    {
-      "mode": "chaos",
-      "zone": "jazz",
-      "parameters": "1.10:0.20:0.35:24.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 4
-    },
-    {
-      "mode": "chaos",
-      "zone": "jazz",
-      "parameters": "1.20:0.30:0.50:32.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 4
-    },
-    {
-      "mode": "chaos",
-      "zone": "jazz",
-      "parameters": "1.30:0.20:0.60:36.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 4
-    },
-    {
-      "mode": "chaos",
-      "zone": "jazz",
-      "parameters": "1.40:0.30:0.60:32.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 4
-    },
-    {
-      "mode": "chaos",
-      "zone": "jazz",
-      "parameters": "1.50:0.25:0.70:40.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 4
-    },
-    {
-      "mode": "chaos",
-      "zone": "jazz",
-      "parameters": "1.60:0.35:0.55:36.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 4
-    },
-    {
-      "mode": "chaos",
-      "zone": "jazz",
-      "parameters": "1.65:0.15:0.80:36.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 4
-    },
-    {
-      "mode": "chaos",
-      "zone": "jazz",
-      "parameters": "1.75:0.20:0.80:40.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 4
-    },
-    {
-      "mode": "chaos",
-      "zone": "jazz",
-      "parameters": "1.90:0.10:0.90:44.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 4
-    },
-    {
-      "mode": "chaos",
-      "zone": "pop-soul-disco",
-      "parameters": "1.10:0.20:0.35:24.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 3
-    },
-    {
-      "mode": "chaos",
-      "zone": "pop-soul-disco",
-      "parameters": "1.10:0.20:0.35:24.00",
-      "hintCount": 1,
-      "samples": 1,
-      "safe": 0
-    },
-    {
-      "mode": "chaos",
-      "zone": "pop-soul-disco",
-      "parameters": "1.20:0.30:0.50:32.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 3
-    },
-    {
-      "mode": "chaos",
-      "zone": "pop-soul-disco",
-      "parameters": "1.20:0.30:0.50:32.00",
-      "hintCount": 1,
-      "samples": 1,
-      "safe": 0
-    },
-    {
-      "mode": "chaos",
-      "zone": "pop-soul-disco",
-      "parameters": "1.30:0.20:0.60:36.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 4
-    },
-    {
-      "mode": "chaos",
-      "zone": "pop-soul-disco",
-      "parameters": "1.30:0.20:0.60:36.00",
-      "hintCount": 1,
-      "samples": 1,
-      "safe": 1
-    },
-    {
-      "mode": "chaos",
-      "zone": "pop-soul-disco",
-      "parameters": "1.40:0.30:0.60:32.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 3
-    },
-    {
-      "mode": "chaos",
-      "zone": "pop-soul-disco",
-      "parameters": "1.40:0.30:0.60:32.00",
-      "hintCount": 1,
-      "samples": 1,
-      "safe": 0
-    },
-    {
-      "mode": "chaos",
-      "zone": "pop-soul-disco",
-      "parameters": "1.50:0.25:0.70:40.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 4
-    },
-    {
-      "mode": "chaos",
-      "zone": "pop-soul-disco",
-      "parameters": "1.50:0.25:0.70:40.00",
-      "hintCount": 1,
-      "samples": 1,
-      "safe": 1
-    },
-    {
-      "mode": "chaos",
-      "zone": "pop-soul-disco",
-      "parameters": "1.60:0.35:0.55:36.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 3
-    },
-    {
-      "mode": "chaos",
-      "zone": "pop-soul-disco",
-      "parameters": "1.60:0.35:0.55:36.00",
-      "hintCount": 1,
-      "samples": 1,
-      "safe": 0
-    },
-    {
-      "mode": "chaos",
-      "zone": "pop-soul-disco",
-      "parameters": "1.65:0.15:0.80:36.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 4
-    },
-    {
-      "mode": "chaos",
-      "zone": "pop-soul-disco",
-      "parameters": "1.65:0.15:0.80:36.00",
-      "hintCount": 1,
-      "samples": 1,
-      "safe": 1
-    },
-    {
-      "mode": "chaos",
-      "zone": "pop-soul-disco",
-      "parameters": "1.75:0.20:0.80:40.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 4
-    },
-    {
-      "mode": "chaos",
-      "zone": "pop-soul-disco",
-      "parameters": "1.75:0.20:0.80:40.00",
-      "hintCount": 1,
-      "samples": 1,
-      "safe": 1
-    },
-    {
-      "mode": "chaos",
-      "zone": "pop-soul-disco",
-      "parameters": "1.90:0.10:0.90:44.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 4
-    },
-    {
-      "mode": "chaos",
-      "zone": "pop-soul-disco",
-      "parameters": "1.90:0.10:0.90:44.00",
-      "hintCount": 1,
-      "samples": 1,
-      "safe": 1
-    },
-    {
-      "mode": "chaos",
-      "zone": "psychedelia-prog",
-      "parameters": "1.10:0.20:0.35:24.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 4
-    },
-    {
-      "mode": "chaos",
-      "zone": "psychedelia-prog",
-      "parameters": "1.10:0.20:0.35:24.00",
-      "hintCount": 1,
-      "samples": 3,
-      "safe": 3
-    },
-    {
-      "mode": "chaos",
-      "zone": "psychedelia-prog",
-      "parameters": "1.20:0.30:0.50:32.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 4
-    },
-    {
-      "mode": "chaos",
-      "zone": "psychedelia-prog",
-      "parameters": "1.20:0.30:0.50:32.00",
-      "hintCount": 1,
-      "samples": 3,
-      "safe": 3
-    },
-    {
-      "mode": "chaos",
-      "zone": "psychedelia-prog",
-      "parameters": "1.30:0.20:0.60:36.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 4
-    },
-    {
-      "mode": "chaos",
-      "zone": "psychedelia-prog",
-      "parameters": "1.30:0.20:0.60:36.00",
-      "hintCount": 1,
-      "samples": 3,
-      "safe": 3
-    },
-    {
-      "mode": "chaos",
-      "zone": "psychedelia-prog",
-      "parameters": "1.40:0.30:0.60:32.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 4
-    },
-    {
-      "mode": "chaos",
-      "zone": "psychedelia-prog",
-      "parameters": "1.40:0.30:0.60:32.00",
-      "hintCount": 1,
-      "samples": 3,
-      "safe": 3
-    },
-    {
-      "mode": "chaos",
-      "zone": "psychedelia-prog",
-      "parameters": "1.50:0.25:0.70:40.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 4
-    },
-    {
-      "mode": "chaos",
-      "zone": "psychedelia-prog",
-      "parameters": "1.50:0.25:0.70:40.00",
-      "hintCount": 1,
-      "samples": 3,
-      "safe": 3
-    },
-    {
-      "mode": "chaos",
-      "zone": "psychedelia-prog",
-      "parameters": "1.60:0.35:0.55:36.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 4
-    },
-    {
-      "mode": "chaos",
-      "zone": "psychedelia-prog",
-      "parameters": "1.60:0.35:0.55:36.00",
-      "hintCount": 1,
-      "samples": 3,
-      "safe": 3
-    },
-    {
-      "mode": "chaos",
-      "zone": "psychedelia-prog",
-      "parameters": "1.65:0.15:0.80:36.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 4
-    },
-    {
-      "mode": "chaos",
-      "zone": "psychedelia-prog",
-      "parameters": "1.65:0.15:0.80:36.00",
-      "hintCount": 1,
-      "samples": 3,
-      "safe": 3
-    },
-    {
-      "mode": "chaos",
-      "zone": "psychedelia-prog",
-      "parameters": "1.75:0.20:0.80:40.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 4
-    },
-    {
-      "mode": "chaos",
-      "zone": "psychedelia-prog",
-      "parameters": "1.75:0.20:0.80:40.00",
-      "hintCount": 1,
-      "samples": 3,
-      "safe": 3
-    },
-    {
-      "mode": "chaos",
-      "zone": "psychedelia-prog",
-      "parameters": "1.90:0.10:0.90:44.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 4
-    },
-    {
-      "mode": "chaos",
-      "zone": "psychedelia-prog",
-      "parameters": "1.90:0.10:0.90:44.00",
-      "hintCount": 1,
-      "samples": 3,
-      "safe": 3
-    },
-    {
-      "mode": "chaos",
-      "zone": "punk-alt",
-      "parameters": "1.10:0.20:0.35:24.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 3
-    },
-    {
-      "mode": "chaos",
-      "zone": "punk-alt",
-      "parameters": "1.10:0.20:0.35:24.00",
-      "hintCount": 1,
-      "samples": 3,
-      "safe": 3
-    },
-    {
-      "mode": "chaos",
-      "zone": "punk-alt",
-      "parameters": "1.20:0.30:0.50:32.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 3
-    },
-    {
-      "mode": "chaos",
-      "zone": "punk-alt",
-      "parameters": "1.20:0.30:0.50:32.00",
-      "hintCount": 1,
-      "samples": 3,
-      "safe": 3
-    },
-    {
-      "mode": "chaos",
-      "zone": "punk-alt",
-      "parameters": "1.30:0.20:0.60:36.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 4
-    },
-    {
-      "mode": "chaos",
-      "zone": "punk-alt",
-      "parameters": "1.30:0.20:0.60:36.00",
-      "hintCount": 1,
-      "samples": 3,
-      "safe": 3
-    },
-    {
-      "mode": "chaos",
-      "zone": "punk-alt",
-      "parameters": "1.40:0.30:0.60:32.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 3
-    },
-    {
-      "mode": "chaos",
-      "zone": "punk-alt",
-      "parameters": "1.40:0.30:0.60:32.00",
-      "hintCount": 1,
-      "samples": 3,
-      "safe": 3
-    },
-    {
-      "mode": "chaos",
-      "zone": "punk-alt",
-      "parameters": "1.50:0.25:0.70:40.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 4
-    },
-    {
-      "mode": "chaos",
-      "zone": "punk-alt",
-      "parameters": "1.50:0.25:0.70:40.00",
-      "hintCount": 1,
-      "samples": 3,
-      "safe": 3
-    },
-    {
-      "mode": "chaos",
-      "zone": "punk-alt",
-      "parameters": "1.60:0.35:0.55:36.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 3
-    },
-    {
-      "mode": "chaos",
-      "zone": "punk-alt",
-      "parameters": "1.60:0.35:0.55:36.00",
-      "hintCount": 1,
-      "samples": 3,
-      "safe": 3
-    },
-    {
-      "mode": "chaos",
-      "zone": "punk-alt",
-      "parameters": "1.65:0.15:0.80:36.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 4
-    },
-    {
-      "mode": "chaos",
-      "zone": "punk-alt",
-      "parameters": "1.65:0.15:0.80:36.00",
-      "hintCount": 1,
-      "samples": 3,
-      "safe": 3
-    },
-    {
-      "mode": "chaos",
-      "zone": "punk-alt",
-      "parameters": "1.75:0.20:0.80:40.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 4
-    },
-    {
-      "mode": "chaos",
-      "zone": "punk-alt",
-      "parameters": "1.75:0.20:0.80:40.00",
-      "hintCount": 1,
-      "samples": 3,
-      "safe": 3
-    },
-    {
-      "mode": "chaos",
-      "zone": "punk-alt",
-      "parameters": "1.90:0.10:0.90:44.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 4
-    },
-    {
-      "mode": "chaos",
-      "zone": "punk-alt",
-      "parameters": "1.90:0.10:0.90:44.00",
-      "hintCount": 1,
-      "samples": 3,
-      "safe": 3
-    },
-    {
-      "mode": "chaos",
-      "zone": "rock-circuit",
-      "parameters": "1.10:0.20:0.35:24.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 1
-    },
-    {
-      "mode": "chaos",
-      "zone": "rock-circuit",
-      "parameters": "1.10:0.20:0.35:24.00",
-      "hintCount": 1,
-      "samples": 3,
-      "safe": 0
-    },
-    {
-      "mode": "chaos",
-      "zone": "rock-circuit",
-      "parameters": "1.20:0.30:0.50:32.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 1
-    },
-    {
-      "mode": "chaos",
-      "zone": "rock-circuit",
-      "parameters": "1.20:0.30:0.50:32.00",
-      "hintCount": 1,
-      "samples": 3,
-      "safe": 0
-    },
-    {
-      "mode": "chaos",
-      "zone": "rock-circuit",
-      "parameters": "1.30:0.20:0.60:36.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 1
-    },
-    {
-      "mode": "chaos",
-      "zone": "rock-circuit",
-      "parameters": "1.30:0.20:0.60:36.00",
-      "hintCount": 1,
-      "samples": 3,
-      "safe": 0
-    },
-    {
-      "mode": "chaos",
-      "zone": "rock-circuit",
-      "parameters": "1.40:0.30:0.60:32.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 1
-    },
-    {
-      "mode": "chaos",
-      "zone": "rock-circuit",
-      "parameters": "1.40:0.30:0.60:32.00",
-      "hintCount": 1,
-      "samples": 3,
-      "safe": 0
-    },
-    {
-      "mode": "chaos",
-      "zone": "rock-circuit",
-      "parameters": "1.50:0.25:0.70:40.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 1
-    },
-    {
-      "mode": "chaos",
-      "zone": "rock-circuit",
-      "parameters": "1.50:0.25:0.70:40.00",
-      "hintCount": 1,
-      "samples": 3,
-      "safe": 0
-    },
-    {
-      "mode": "chaos",
-      "zone": "rock-circuit",
-      "parameters": "1.60:0.35:0.55:36.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 1
-    },
-    {
-      "mode": "chaos",
-      "zone": "rock-circuit",
-      "parameters": "1.60:0.35:0.55:36.00",
-      "hintCount": 1,
-      "samples": 3,
-      "safe": 0
-    },
-    {
-      "mode": "chaos",
-      "zone": "rock-circuit",
-      "parameters": "1.65:0.15:0.80:36.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 1
-    },
-    {
-      "mode": "chaos",
-      "zone": "rock-circuit",
-      "parameters": "1.65:0.15:0.80:36.00",
-      "hintCount": 1,
-      "samples": 3,
-      "safe": 0
-    },
-    {
-      "mode": "chaos",
-      "zone": "rock-circuit",
-      "parameters": "1.75:0.20:0.80:40.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 1
-    },
-    {
-      "mode": "chaos",
-      "zone": "rock-circuit",
-      "parameters": "1.75:0.20:0.80:40.00",
-      "hintCount": 1,
-      "samples": 3,
-      "safe": 0
-    },
-    {
-      "mode": "chaos",
-      "zone": "rock-circuit",
-      "parameters": "1.90:0.10:0.90:44.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 1
-    },
-    {
-      "mode": "chaos",
-      "zone": "rock-circuit",
-      "parameters": "1.90:0.10:0.90:44.00",
-      "hintCount": 1,
-      "samples": 3,
-      "safe": 0
-    },
-    {
-      "mode": "chaos",
-      "zone": "roots-blues",
-      "parameters": "1.10:0.20:0.35:24.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 1
-    },
-    {
-      "mode": "chaos",
-      "zone": "roots-blues",
-      "parameters": "1.10:0.20:0.35:24.00",
-      "hintCount": 1,
-      "samples": 3,
-      "safe": 0
-    },
-    {
-      "mode": "chaos",
-      "zone": "roots-blues",
-      "parameters": "1.20:0.30:0.50:32.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 1
-    },
-    {
-      "mode": "chaos",
-      "zone": "roots-blues",
-      "parameters": "1.20:0.30:0.50:32.00",
-      "hintCount": 1,
-      "samples": 3,
-      "safe": 0
-    },
-    {
-      "mode": "chaos",
-      "zone": "roots-blues",
-      "parameters": "1.30:0.20:0.60:36.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 1
-    },
-    {
-      "mode": "chaos",
-      "zone": "roots-blues",
-      "parameters": "1.30:0.20:0.60:36.00",
-      "hintCount": 1,
-      "samples": 3,
-      "safe": 0
-    },
-    {
-      "mode": "chaos",
-      "zone": "roots-blues",
-      "parameters": "1.40:0.30:0.60:32.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 1
-    },
-    {
-      "mode": "chaos",
-      "zone": "roots-blues",
-      "parameters": "1.40:0.30:0.60:32.00",
-      "hintCount": 1,
-      "samples": 3,
-      "safe": 0
-    },
-    {
-      "mode": "chaos",
-      "zone": "roots-blues",
-      "parameters": "1.50:0.25:0.70:40.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 1
-    },
-    {
-      "mode": "chaos",
-      "zone": "roots-blues",
-      "parameters": "1.50:0.25:0.70:40.00",
-      "hintCount": 1,
-      "samples": 3,
-      "safe": 0
-    },
-    {
-      "mode": "chaos",
-      "zone": "roots-blues",
-      "parameters": "1.60:0.35:0.55:36.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 1
-    },
-    {
-      "mode": "chaos",
-      "zone": "roots-blues",
-      "parameters": "1.60:0.35:0.55:36.00",
-      "hintCount": 1,
-      "samples": 3,
-      "safe": 0
-    },
-    {
-      "mode": "chaos",
-      "zone": "roots-blues",
-      "parameters": "1.65:0.15:0.80:36.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 1
     },
     {
       "mode": "chaos",
@@ -1593,7 +1441,7 @@
       "parameters": "1.90:0.10:0.90:44.00",
       "hintCount": 1,
       "samples": 3,
-      "safe": 1
+      "safe": 2
     },
     {
       "mode": "genre",
@@ -1601,7 +1449,7 @@
       "parameters": "1.10:0.20:0.35:24.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 4
+      "safe": 0
     },
     {
       "mode": "genre",
@@ -1609,7 +1457,7 @@
       "parameters": "1.20:0.30:0.50:32.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 4
+      "safe": 0
     },
     {
       "mode": "genre",
@@ -1617,7 +1465,7 @@
       "parameters": "1.30:0.20:0.60:36.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 4
+      "safe": 0
     },
     {
       "mode": "genre",
@@ -1625,7 +1473,7 @@
       "parameters": "1.40:0.30:0.60:32.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 4
+      "safe": 0
     },
     {
       "mode": "genre",
@@ -1633,7 +1481,7 @@
       "parameters": "1.50:0.25:0.70:40.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 4
+      "safe": 0
     },
     {
       "mode": "genre",
@@ -1641,7 +1489,7 @@
       "parameters": "1.60:0.35:0.55:36.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 4
+      "safe": 0
     },
     {
       "mode": "genre",
@@ -1649,7 +1497,7 @@
       "parameters": "1.65:0.15:0.80:36.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 4
+      "safe": 0
     },
     {
       "mode": "genre",
@@ -1657,7 +1505,7 @@
       "parameters": "1.75:0.20:0.80:40.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 4
+      "safe": 0
     },
     {
       "mode": "genre",
@@ -1665,7 +1513,7 @@
       "parameters": "1.90:0.10:0.90:44.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 4
+      "safe": 0
     },
     {
       "mode": "genre",
@@ -1673,7 +1521,7 @@
       "parameters": "1.10:0.20:0.35:24.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 2
+      "safe": 0
     },
     {
       "mode": "genre",
@@ -1681,7 +1529,7 @@
       "parameters": "1.20:0.30:0.50:32.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 3
+      "safe": 0
     },
     {
       "mode": "genre",
@@ -1689,7 +1537,7 @@
       "parameters": "1.30:0.20:0.60:36.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 3
+      "safe": 0
     },
     {
       "mode": "genre",
@@ -1697,7 +1545,7 @@
       "parameters": "1.40:0.30:0.60:32.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 2
+      "safe": 0
     },
     {
       "mode": "genre",
@@ -1705,7 +1553,7 @@
       "parameters": "1.50:0.25:0.70:40.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 3
+      "safe": 0
     },
     {
       "mode": "genre",
@@ -1713,7 +1561,7 @@
       "parameters": "1.60:0.35:0.55:36.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 3
+      "safe": 0
     },
     {
       "mode": "genre",
@@ -1721,7 +1569,7 @@
       "parameters": "1.65:0.15:0.80:36.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 3
+      "safe": 1
     },
     {
       "mode": "genre",
@@ -1729,7 +1577,7 @@
       "parameters": "1.75:0.20:0.80:40.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 3
+      "safe": 1
     },
     {
       "mode": "genre",
@@ -1737,7 +1585,7 @@
       "parameters": "1.90:0.10:0.90:44.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 2
+      "safe": 0
     },
     {
       "mode": "genre",
@@ -1753,7 +1601,7 @@
       "parameters": "1.10:0.20:0.35:24.00",
       "hintCount": 1,
       "samples": 1,
-      "safe": 1
+      "safe": 0
     },
     {
       "mode": "genre",
@@ -1769,7 +1617,7 @@
       "parameters": "1.20:0.30:0.50:32.00",
       "hintCount": 1,
       "samples": 1,
-      "safe": 1
+      "safe": 0
     },
     {
       "mode": "genre",
@@ -1873,7 +1721,7 @@
       "parameters": "1.90:0.10:0.90:44.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 4
+      "safe": 3
     },
     {
       "mode": "genre",
@@ -1889,7 +1737,7 @@
       "parameters": "1.10:0.20:0.35:24.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 2
+      "safe": 1
     },
     {
       "mode": "genre",
@@ -1897,7 +1745,7 @@
       "parameters": "1.20:0.30:0.50:32.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 3
+      "safe": 0
     },
     {
       "mode": "genre",
@@ -1905,7 +1753,7 @@
       "parameters": "1.30:0.20:0.60:36.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 2
+      "safe": 1
     },
     {
       "mode": "genre",
@@ -1913,7 +1761,7 @@
       "parameters": "1.40:0.30:0.60:32.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 3
+      "safe": 0
     },
     {
       "mode": "genre",
@@ -1921,7 +1769,7 @@
       "parameters": "1.50:0.25:0.70:40.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 3
+      "safe": 1
     },
     {
       "mode": "genre",
@@ -1929,7 +1777,7 @@
       "parameters": "1.60:0.35:0.55:36.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 3
+      "safe": 1
     },
     {
       "mode": "genre",
@@ -1937,7 +1785,7 @@
       "parameters": "1.65:0.15:0.80:36.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 2
+      "safe": 3
     },
     {
       "mode": "genre",
@@ -1953,7 +1801,7 @@
       "parameters": "1.90:0.10:0.90:44.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 3
+      "safe": 4
     },
     {
       "mode": "genre",
@@ -1961,23 +1809,15 @@
       "parameters": "1.10:0.20:0.35:24.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 3
-    },
-    {
-      "mode": "genre",
-      "zone": "hard-rock-metal",
-      "parameters": "1.10:0.20:0.35:24.00",
-      "hintCount": 1,
-      "samples": 1,
       "safe": 0
     },
     {
       "mode": "genre",
       "zone": "hard-rock-metal",
       "parameters": "1.10:0.20:0.35:24.00",
-      "hintCount": 3,
-      "samples": 2,
-      "safe": 1
+      "hintCount": 1,
+      "samples": 4,
+      "safe": 0
     },
     {
       "mode": "genre",
@@ -1985,23 +1825,15 @@
       "parameters": "1.20:0.30:0.50:32.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 2
+      "safe": 1
     },
     {
       "mode": "genre",
       "zone": "hard-rock-metal",
       "parameters": "1.20:0.30:0.50:32.00",
       "hintCount": 1,
-      "samples": 1,
+      "samples": 4,
       "safe": 0
-    },
-    {
-      "mode": "genre",
-      "zone": "hard-rock-metal",
-      "parameters": "1.20:0.30:0.50:32.00",
-      "hintCount": 3,
-      "samples": 2,
-      "safe": 1
     },
     {
       "mode": "genre",
@@ -2009,23 +1841,15 @@
       "parameters": "1.30:0.20:0.60:36.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 3
+      "safe": 1
     },
     {
       "mode": "genre",
       "zone": "hard-rock-metal",
       "parameters": "1.30:0.20:0.60:36.00",
       "hintCount": 1,
-      "samples": 1,
-      "safe": 0
-    },
-    {
-      "mode": "genre",
-      "zone": "hard-rock-metal",
-      "parameters": "1.30:0.20:0.60:36.00",
-      "hintCount": 3,
-      "samples": 2,
-      "safe": 2
+      "samples": 4,
+      "safe": 1
     },
     {
       "mode": "genre",
@@ -2033,46 +1857,30 @@
       "parameters": "1.40:0.30:0.60:32.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 2
+      "safe": 1
     },
     {
       "mode": "genre",
       "zone": "hard-rock-metal",
       "parameters": "1.40:0.30:0.60:32.00",
       "hintCount": 1,
-      "samples": 1,
+      "samples": 4,
       "safe": 0
     },
     {
       "mode": "genre",
       "zone": "hard-rock-metal",
-      "parameters": "1.40:0.30:0.60:32.00",
-      "hintCount": 3,
-      "samples": 2,
+      "parameters": "1.50:0.25:0.70:40.00",
+      "hintCount": 0,
+      "samples": 4,
       "safe": 1
     },
     {
       "mode": "genre",
       "zone": "hard-rock-metal",
       "parameters": "1.50:0.25:0.70:40.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 2
-    },
-    {
-      "mode": "genre",
-      "zone": "hard-rock-metal",
-      "parameters": "1.50:0.25:0.70:40.00",
       "hintCount": 1,
-      "samples": 1,
-      "safe": 0
-    },
-    {
-      "mode": "genre",
-      "zone": "hard-rock-metal",
-      "parameters": "1.50:0.25:0.70:40.00",
-      "hintCount": 3,
-      "samples": 2,
+      "samples": 4,
       "safe": 1
     },
     {
@@ -2081,23 +1889,15 @@
       "parameters": "1.60:0.35:0.55:36.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 2
+      "safe": 1
     },
     {
       "mode": "genre",
       "zone": "hard-rock-metal",
       "parameters": "1.60:0.35:0.55:36.00",
       "hintCount": 1,
-      "samples": 1,
+      "samples": 4,
       "safe": 0
-    },
-    {
-      "mode": "genre",
-      "zone": "hard-rock-metal",
-      "parameters": "1.60:0.35:0.55:36.00",
-      "hintCount": 3,
-      "samples": 2,
-      "safe": 1
     },
     {
       "mode": "genre",
@@ -2105,23 +1905,15 @@
       "parameters": "1.65:0.15:0.80:36.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 3
+      "safe": 1
     },
     {
       "mode": "genre",
       "zone": "hard-rock-metal",
       "parameters": "1.65:0.15:0.80:36.00",
       "hintCount": 1,
-      "samples": 1,
+      "samples": 4,
       "safe": 0
-    },
-    {
-      "mode": "genre",
-      "zone": "hard-rock-metal",
-      "parameters": "1.65:0.15:0.80:36.00",
-      "hintCount": 3,
-      "samples": 2,
-      "safe": 1
     },
     {
       "mode": "genre",
@@ -2129,23 +1921,15 @@
       "parameters": "1.75:0.20:0.80:40.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 3
+      "safe": 1
     },
     {
       "mode": "genre",
       "zone": "hard-rock-metal",
       "parameters": "1.75:0.20:0.80:40.00",
       "hintCount": 1,
-      "samples": 1,
+      "samples": 4,
       "safe": 0
-    },
-    {
-      "mode": "genre",
-      "zone": "hard-rock-metal",
-      "parameters": "1.75:0.20:0.80:40.00",
-      "hintCount": 3,
-      "samples": 2,
-      "safe": 1
     },
     {
       "mode": "genre",
@@ -2153,23 +1937,15 @@
       "parameters": "1.90:0.10:0.90:44.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 3
+      "safe": 1
     },
     {
       "mode": "genre",
       "zone": "hard-rock-metal",
       "parameters": "1.90:0.10:0.90:44.00",
       "hintCount": 1,
-      "samples": 1,
+      "samples": 4,
       "safe": 0
-    },
-    {
-      "mode": "genre",
-      "zone": "hard-rock-metal",
-      "parameters": "1.90:0.10:0.90:44.00",
-      "hintCount": 3,
-      "samples": 2,
-      "safe": 1
     },
     {
       "mode": "genre",
@@ -2177,15 +1953,7 @@
       "parameters": "1.10:0.20:0.35:24.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 4
-    },
-    {
-      "mode": "genre",
-      "zone": "hip-hop-rap",
-      "parameters": "1.10:0.20:0.35:24.00",
-      "hintCount": 1,
-      "samples": 1,
-      "safe": 1
+      "safe": 3
     },
     {
       "mode": "genre",
@@ -2193,15 +1961,7 @@
       "parameters": "1.20:0.30:0.50:32.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 4
-    },
-    {
-      "mode": "genre",
-      "zone": "hip-hop-rap",
-      "parameters": "1.20:0.30:0.50:32.00",
-      "hintCount": 1,
-      "samples": 1,
-      "safe": 1
+      "safe": 3
     },
     {
       "mode": "genre",
@@ -2209,15 +1969,7 @@
       "parameters": "1.30:0.20:0.60:36.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 4
-    },
-    {
-      "mode": "genre",
-      "zone": "hip-hop-rap",
-      "parameters": "1.30:0.20:0.60:36.00",
-      "hintCount": 1,
-      "samples": 1,
-      "safe": 1
+      "safe": 3
     },
     {
       "mode": "genre",
@@ -2225,15 +1977,7 @@
       "parameters": "1.40:0.30:0.60:32.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 4
-    },
-    {
-      "mode": "genre",
-      "zone": "hip-hop-rap",
-      "parameters": "1.40:0.30:0.60:32.00",
-      "hintCount": 1,
-      "samples": 1,
-      "safe": 1
+      "safe": 3
     },
     {
       "mode": "genre",
@@ -2241,15 +1985,7 @@
       "parameters": "1.50:0.25:0.70:40.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 4
-    },
-    {
-      "mode": "genre",
-      "zone": "hip-hop-rap",
-      "parameters": "1.50:0.25:0.70:40.00",
-      "hintCount": 1,
-      "samples": 1,
-      "safe": 1
+      "safe": 3
     },
     {
       "mode": "genre",
@@ -2257,15 +1993,7 @@
       "parameters": "1.60:0.35:0.55:36.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 4
-    },
-    {
-      "mode": "genre",
-      "zone": "hip-hop-rap",
-      "parameters": "1.60:0.35:0.55:36.00",
-      "hintCount": 1,
-      "samples": 1,
-      "safe": 1
+      "safe": 3
     },
     {
       "mode": "genre",
@@ -2273,15 +2001,7 @@
       "parameters": "1.65:0.15:0.80:36.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 4
-    },
-    {
-      "mode": "genre",
-      "zone": "hip-hop-rap",
-      "parameters": "1.65:0.15:0.80:36.00",
-      "hintCount": 1,
-      "samples": 1,
-      "safe": 1
+      "safe": 3
     },
     {
       "mode": "genre",
@@ -2289,15 +2009,7 @@
       "parameters": "1.75:0.20:0.80:40.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 4
-    },
-    {
-      "mode": "genre",
-      "zone": "hip-hop-rap",
-      "parameters": "1.75:0.20:0.80:40.00",
-      "hintCount": 1,
-      "samples": 1,
-      "safe": 1
+      "safe": 3
     },
     {
       "mode": "genre",
@@ -2305,15 +2017,7 @@
       "parameters": "1.90:0.10:0.90:44.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 4
-    },
-    {
-      "mode": "genre",
-      "zone": "hip-hop-rap",
-      "parameters": "1.90:0.10:0.90:44.00",
-      "hintCount": 1,
-      "samples": 1,
-      "safe": 1
+      "safe": 3
     },
     {
       "mode": "genre",
@@ -2321,7 +2025,7 @@
       "parameters": "1.10:0.20:0.35:24.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 4
+      "safe": 3
     },
     {
       "mode": "genre",
@@ -2329,7 +2033,7 @@
       "parameters": "1.20:0.30:0.50:32.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 4
+      "safe": 1
     },
     {
       "mode": "genre",
@@ -2345,7 +2049,7 @@
       "parameters": "1.40:0.30:0.60:32.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 4
+      "safe": 1
     },
     {
       "mode": "genre",
@@ -2361,7 +2065,7 @@
       "parameters": "1.60:0.35:0.55:36.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 4
+      "safe": 3
     },
     {
       "mode": "genre",
@@ -2393,7 +2097,7 @@
       "parameters": "1.10:0.20:0.35:24.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 4
+      "safe": 3
     },
     {
       "mode": "genre",
@@ -2401,7 +2105,7 @@
       "parameters": "1.10:0.20:0.35:24.00",
       "hintCount": 1,
       "samples": 1,
-      "safe": 1
+      "safe": 0
     },
     {
       "mode": "genre",
@@ -2409,7 +2113,7 @@
       "parameters": "1.20:0.30:0.50:32.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 4
+      "safe": 1
     },
     {
       "mode": "genre",
@@ -2425,7 +2129,7 @@
       "parameters": "1.30:0.20:0.60:36.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 4
+      "safe": 3
     },
     {
       "mode": "genre",
@@ -2433,7 +2137,7 @@
       "parameters": "1.30:0.20:0.60:36.00",
       "hintCount": 1,
       "samples": 1,
-      "safe": 1
+      "safe": 0
     },
     {
       "mode": "genre",
@@ -2441,7 +2145,7 @@
       "parameters": "1.40:0.30:0.60:32.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 4
+      "safe": 1
     },
     {
       "mode": "genre",
@@ -2457,7 +2161,7 @@
       "parameters": "1.50:0.25:0.70:40.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 4
+      "safe": 3
     },
     {
       "mode": "genre",
@@ -2465,7 +2169,7 @@
       "parameters": "1.50:0.25:0.70:40.00",
       "hintCount": 1,
       "samples": 1,
-      "safe": 1
+      "safe": 0
     },
     {
       "mode": "genre",
@@ -2473,7 +2177,7 @@
       "parameters": "1.60:0.35:0.55:36.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 4
+      "safe": 2
     },
     {
       "mode": "genre",
@@ -2489,7 +2193,7 @@
       "parameters": "1.65:0.15:0.80:36.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 4
+      "safe": 3
     },
     {
       "mode": "genre",
@@ -2497,7 +2201,7 @@
       "parameters": "1.65:0.15:0.80:36.00",
       "hintCount": 1,
       "samples": 1,
-      "safe": 1
+      "safe": 0
     },
     {
       "mode": "genre",
@@ -2505,7 +2209,7 @@
       "parameters": "1.75:0.20:0.80:40.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 4
+      "safe": 3
     },
     {
       "mode": "genre",
@@ -2521,7 +2225,7 @@
       "parameters": "1.90:0.10:0.90:44.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 4
+      "safe": 3
     },
     {
       "mode": "genre",
@@ -2529,7 +2233,7 @@
       "parameters": "1.90:0.10:0.90:44.00",
       "hintCount": 1,
       "samples": 1,
-      "safe": 1
+      "safe": 0
     },
     {
       "mode": "genre",
@@ -2544,7 +2248,7 @@
       "zone": "psychedelia-prog",
       "parameters": "1.10:0.20:0.35:24.00",
       "hintCount": 1,
-      "samples": 3,
+      "samples": 4,
       "safe": 3
     },
     {
@@ -2560,8 +2264,8 @@
       "zone": "psychedelia-prog",
       "parameters": "1.20:0.30:0.50:32.00",
       "hintCount": 1,
-      "samples": 3,
-      "safe": 3
+      "samples": 4,
+      "safe": 4
     },
     {
       "mode": "genre",
@@ -2569,15 +2273,15 @@
       "parameters": "1.30:0.20:0.60:36.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 3
+      "safe": 4
     },
     {
       "mode": "genre",
       "zone": "psychedelia-prog",
       "parameters": "1.30:0.20:0.60:36.00",
       "hintCount": 1,
-      "samples": 3,
-      "safe": 2
+      "samples": 4,
+      "safe": 4
     },
     {
       "mode": "genre",
@@ -2585,15 +2289,15 @@
       "parameters": "1.40:0.30:0.60:32.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 3
+      "safe": 4
     },
     {
       "mode": "genre",
       "zone": "psychedelia-prog",
       "parameters": "1.40:0.30:0.60:32.00",
       "hintCount": 1,
-      "samples": 3,
-      "safe": 2
+      "samples": 4,
+      "safe": 4
     },
     {
       "mode": "genre",
@@ -2601,15 +2305,15 @@
       "parameters": "1.50:0.25:0.70:40.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 3
+      "safe": 4
     },
     {
       "mode": "genre",
       "zone": "psychedelia-prog",
       "parameters": "1.50:0.25:0.70:40.00",
       "hintCount": 1,
-      "samples": 3,
-      "safe": 2
+      "samples": 4,
+      "safe": 4
     },
     {
       "mode": "genre",
@@ -2617,15 +2321,15 @@
       "parameters": "1.60:0.35:0.55:36.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 3
+      "safe": 4
     },
     {
       "mode": "genre",
       "zone": "psychedelia-prog",
       "parameters": "1.60:0.35:0.55:36.00",
       "hintCount": 1,
-      "samples": 3,
-      "safe": 2
+      "samples": 4,
+      "safe": 4
     },
     {
       "mode": "genre",
@@ -2633,15 +2337,15 @@
       "parameters": "1.65:0.15:0.80:36.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 3
+      "safe": 4
     },
     {
       "mode": "genre",
       "zone": "psychedelia-prog",
       "parameters": "1.65:0.15:0.80:36.00",
       "hintCount": 1,
-      "samples": 3,
-      "safe": 2
+      "samples": 4,
+      "safe": 4
     },
     {
       "mode": "genre",
@@ -2656,8 +2360,8 @@
       "zone": "psychedelia-prog",
       "parameters": "1.75:0.20:0.80:40.00",
       "hintCount": 1,
-      "samples": 3,
-      "safe": 2
+      "samples": 4,
+      "safe": 3
     },
     {
       "mode": "genre",
@@ -2672,8 +2376,8 @@
       "zone": "psychedelia-prog",
       "parameters": "1.90:0.10:0.90:44.00",
       "hintCount": 1,
-      "samples": 3,
-      "safe": 2
+      "samples": 4,
+      "safe": 3
     },
     {
       "mode": "genre",
@@ -2681,7 +2385,7 @@
       "parameters": "1.10:0.20:0.35:24.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 2
+      "safe": 1
     },
     {
       "mode": "genre",
@@ -2721,7 +2425,7 @@
       "parameters": "1.30:0.20:0.60:36.00",
       "hintCount": 1,
       "samples": 3,
-      "safe": 1
+      "safe": 2
     },
     {
       "mode": "genre",
@@ -2729,7 +2433,7 @@
       "parameters": "1.40:0.30:0.60:32.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 2
+      "safe": 1
     },
     {
       "mode": "genre",
@@ -2745,7 +2449,7 @@
       "parameters": "1.50:0.25:0.70:40.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 3
+      "safe": 2
     },
     {
       "mode": "genre",
@@ -2761,7 +2465,7 @@
       "parameters": "1.60:0.35:0.55:36.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 3
+      "safe": 2
     },
     {
       "mode": "genre",
@@ -2825,11 +2529,155 @@
       "parameters": "1.10:0.20:0.35:24.00",
       "hintCount": 0,
       "samples": 4,
+      "safe": 2
+    },
+    {
+      "mode": "genre",
+      "zone": "rock-circuit",
+      "parameters": "1.10:0.20:0.35:24.00",
+      "hintCount": 1,
+      "samples": 3,
       "safe": 1
     },
     {
       "mode": "genre",
       "zone": "rock-circuit",
+      "parameters": "1.20:0.30:0.50:32.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 2
+    },
+    {
+      "mode": "genre",
+      "zone": "rock-circuit",
+      "parameters": "1.20:0.30:0.50:32.00",
+      "hintCount": 1,
+      "samples": 3,
+      "safe": 1
+    },
+    {
+      "mode": "genre",
+      "zone": "rock-circuit",
+      "parameters": "1.30:0.20:0.60:36.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 2
+    },
+    {
+      "mode": "genre",
+      "zone": "rock-circuit",
+      "parameters": "1.30:0.20:0.60:36.00",
+      "hintCount": 1,
+      "samples": 3,
+      "safe": 1
+    },
+    {
+      "mode": "genre",
+      "zone": "rock-circuit",
+      "parameters": "1.40:0.30:0.60:32.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 2
+    },
+    {
+      "mode": "genre",
+      "zone": "rock-circuit",
+      "parameters": "1.40:0.30:0.60:32.00",
+      "hintCount": 1,
+      "samples": 3,
+      "safe": 1
+    },
+    {
+      "mode": "genre",
+      "zone": "rock-circuit",
+      "parameters": "1.50:0.25:0.70:40.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 2
+    },
+    {
+      "mode": "genre",
+      "zone": "rock-circuit",
+      "parameters": "1.50:0.25:0.70:40.00",
+      "hintCount": 1,
+      "samples": 3,
+      "safe": 1
+    },
+    {
+      "mode": "genre",
+      "zone": "rock-circuit",
+      "parameters": "1.60:0.35:0.55:36.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 2
+    },
+    {
+      "mode": "genre",
+      "zone": "rock-circuit",
+      "parameters": "1.60:0.35:0.55:36.00",
+      "hintCount": 1,
+      "samples": 3,
+      "safe": 1
+    },
+    {
+      "mode": "genre",
+      "zone": "rock-circuit",
+      "parameters": "1.65:0.15:0.80:36.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 2
+    },
+    {
+      "mode": "genre",
+      "zone": "rock-circuit",
+      "parameters": "1.65:0.15:0.80:36.00",
+      "hintCount": 1,
+      "samples": 3,
+      "safe": 1
+    },
+    {
+      "mode": "genre",
+      "zone": "rock-circuit",
+      "parameters": "1.75:0.20:0.80:40.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 2
+    },
+    {
+      "mode": "genre",
+      "zone": "rock-circuit",
+      "parameters": "1.75:0.20:0.80:40.00",
+      "hintCount": 1,
+      "samples": 3,
+      "safe": 1
+    },
+    {
+      "mode": "genre",
+      "zone": "rock-circuit",
+      "parameters": "1.90:0.10:0.90:44.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 2
+    },
+    {
+      "mode": "genre",
+      "zone": "rock-circuit",
+      "parameters": "1.90:0.10:0.90:44.00",
+      "hintCount": 1,
+      "samples": 3,
+      "safe": 1
+    },
+    {
+      "mode": "genre",
+      "zone": "roots-blues",
+      "parameters": "1.10:0.20:0.35:24.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 2
+    },
+    {
+      "mode": "genre",
+      "zone": "roots-blues",
       "parameters": "1.10:0.20:0.35:24.00",
       "hintCount": 1,
       "samples": 3,
@@ -2837,15 +2685,15 @@
     },
     {
       "mode": "genre",
-      "zone": "rock-circuit",
+      "zone": "roots-blues",
       "parameters": "1.20:0.30:0.50:32.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 1
+      "safe": 2
     },
     {
       "mode": "genre",
-      "zone": "rock-circuit",
+      "zone": "roots-blues",
       "parameters": "1.20:0.30:0.50:32.00",
       "hintCount": 1,
       "samples": 3,
@@ -2853,150 +2701,6 @@
     },
     {
       "mode": "genre",
-      "zone": "rock-circuit",
-      "parameters": "1.30:0.20:0.60:36.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 1
-    },
-    {
-      "mode": "genre",
-      "zone": "rock-circuit",
-      "parameters": "1.30:0.20:0.60:36.00",
-      "hintCount": 1,
-      "samples": 3,
-      "safe": 0
-    },
-    {
-      "mode": "genre",
-      "zone": "rock-circuit",
-      "parameters": "1.40:0.30:0.60:32.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 2
-    },
-    {
-      "mode": "genre",
-      "zone": "rock-circuit",
-      "parameters": "1.40:0.30:0.60:32.00",
-      "hintCount": 1,
-      "samples": 3,
-      "safe": 1
-    },
-    {
-      "mode": "genre",
-      "zone": "rock-circuit",
-      "parameters": "1.50:0.25:0.70:40.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 2
-    },
-    {
-      "mode": "genre",
-      "zone": "rock-circuit",
-      "parameters": "1.50:0.25:0.70:40.00",
-      "hintCount": 1,
-      "samples": 3,
-      "safe": 1
-    },
-    {
-      "mode": "genre",
-      "zone": "rock-circuit",
-      "parameters": "1.60:0.35:0.55:36.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 2
-    },
-    {
-      "mode": "genre",
-      "zone": "rock-circuit",
-      "parameters": "1.60:0.35:0.55:36.00",
-      "hintCount": 1,
-      "samples": 3,
-      "safe": 1
-    },
-    {
-      "mode": "genre",
-      "zone": "rock-circuit",
-      "parameters": "1.65:0.15:0.80:36.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 2
-    },
-    {
-      "mode": "genre",
-      "zone": "rock-circuit",
-      "parameters": "1.65:0.15:0.80:36.00",
-      "hintCount": 1,
-      "samples": 3,
-      "safe": 1
-    },
-    {
-      "mode": "genre",
-      "zone": "rock-circuit",
-      "parameters": "1.75:0.20:0.80:40.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 2
-    },
-    {
-      "mode": "genre",
-      "zone": "rock-circuit",
-      "parameters": "1.75:0.20:0.80:40.00",
-      "hintCount": 1,
-      "samples": 3,
-      "safe": 1
-    },
-    {
-      "mode": "genre",
-      "zone": "rock-circuit",
-      "parameters": "1.90:0.10:0.90:44.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 2
-    },
-    {
-      "mode": "genre",
-      "zone": "rock-circuit",
-      "parameters": "1.90:0.10:0.90:44.00",
-      "hintCount": 1,
-      "samples": 3,
-      "safe": 1
-    },
-    {
-      "mode": "genre",
-      "zone": "roots-blues",
-      "parameters": "1.10:0.20:0.35:24.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 2
-    },
-    {
-      "mode": "genre",
-      "zone": "roots-blues",
-      "parameters": "1.10:0.20:0.35:24.00",
-      "hintCount": 1,
-      "samples": 3,
-      "safe": 2
-    },
-    {
-      "mode": "genre",
-      "zone": "roots-blues",
-      "parameters": "1.20:0.30:0.50:32.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 2
-    },
-    {
-      "mode": "genre",
-      "zone": "roots-blues",
-      "parameters": "1.20:0.30:0.50:32.00",
-      "hintCount": 1,
-      "samples": 3,
-      "safe": 2
-    },
-    {
-      "mode": "genre",
       "zone": "roots-blues",
       "parameters": "1.30:0.20:0.60:36.00",
       "hintCount": 0,
@@ -3009,7 +2713,7 @@
       "parameters": "1.30:0.20:0.60:36.00",
       "hintCount": 1,
       "samples": 3,
-      "safe": 2
+      "safe": 1
     },
     {
       "mode": "genre",
@@ -3025,7 +2729,7 @@
       "parameters": "1.40:0.30:0.60:32.00",
       "hintCount": 1,
       "samples": 3,
-      "safe": 2
+      "safe": 1
     },
     {
       "mode": "genre",
@@ -3041,7 +2745,7 @@
       "parameters": "1.50:0.25:0.70:40.00",
       "hintCount": 1,
       "samples": 3,
-      "safe": 2
+      "safe": 1
     },
     {
       "mode": "genre",
@@ -3049,7 +2753,7 @@
       "parameters": "1.60:0.35:0.55:36.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 3
+      "safe": 2
     },
     {
       "mode": "genre",
@@ -3057,7 +2761,7 @@
       "parameters": "1.60:0.35:0.55:36.00",
       "hintCount": 1,
       "samples": 3,
-      "safe": 3
+      "safe": 1
     },
     {
       "mode": "genre",
@@ -3073,23 +2777,23 @@
       "parameters": "1.65:0.15:0.80:36.00",
       "hintCount": 1,
       "samples": 3,
+      "safe": 1
+    },
+    {
+      "mode": "genre",
+      "zone": "roots-blues",
+      "parameters": "1.75:0.20:0.80:40.00",
+      "hintCount": 0,
+      "samples": 4,
       "safe": 2
     },
     {
       "mode": "genre",
       "zone": "roots-blues",
       "parameters": "1.75:0.20:0.80:40.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 3
-    },
-    {
-      "mode": "genre",
-      "zone": "roots-blues",
-      "parameters": "1.75:0.20:0.80:40.00",
       "hintCount": 1,
       "samples": 3,
-      "safe": 3
+      "safe": 1
     },
     {
       "mode": "genre",
@@ -3097,7 +2801,7 @@
       "parameters": "1.90:0.10:0.90:44.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 3
+      "safe": 2
     },
     {
       "mode": "genre",
@@ -3105,7 +2809,7 @@
       "parameters": "1.90:0.10:0.90:44.00",
       "hintCount": 1,
       "samples": 3,
-      "safe": 3
+      "safe": 1
     },
     {
       "mode": "organized",
@@ -3113,7 +2817,7 @@
       "parameters": "1.10:0.20:0.35:24.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 4
+      "safe": 0
     },
     {
       "mode": "organized",
@@ -3121,7 +2825,7 @@
       "parameters": "1.20:0.30:0.50:32.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 4
+      "safe": 0
     },
     {
       "mode": "organized",
@@ -3129,7 +2833,7 @@
       "parameters": "1.30:0.20:0.60:36.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 4
+      "safe": 0
     },
     {
       "mode": "organized",
@@ -3137,7 +2841,7 @@
       "parameters": "1.40:0.30:0.60:32.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 4
+      "safe": 0
     },
     {
       "mode": "organized",
@@ -3145,7 +2849,7 @@
       "parameters": "1.50:0.25:0.70:40.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 4
+      "safe": 0
     },
     {
       "mode": "organized",
@@ -3153,7 +2857,7 @@
       "parameters": "1.60:0.35:0.55:36.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 4
+      "safe": 0
     },
     {
       "mode": "organized",
@@ -3161,7 +2865,7 @@
       "parameters": "1.65:0.15:0.80:36.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 4
+      "safe": 0
     },
     {
       "mode": "organized",
@@ -3169,7 +2873,7 @@
       "parameters": "1.75:0.20:0.80:40.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 4
+      "safe": 0
     },
     {
       "mode": "organized",
@@ -3177,7 +2881,7 @@
       "parameters": "1.90:0.10:0.90:44.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 4
+      "safe": 0
     },
     {
       "mode": "organized",
@@ -3185,7 +2889,7 @@
       "parameters": "1.10:0.20:0.35:24.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 2
+      "safe": 3
     },
     {
       "mode": "organized",
@@ -3193,7 +2897,7 @@
       "parameters": "1.20:0.30:0.50:32.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 2
+      "safe": 4
     },
     {
       "mode": "organized",
@@ -3201,7 +2905,7 @@
       "parameters": "1.30:0.20:0.60:36.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 2
+      "safe": 3
     },
     {
       "mode": "organized",
@@ -3209,7 +2913,7 @@
       "parameters": "1.40:0.30:0.60:32.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 3
+      "safe": 4
     },
     {
       "mode": "organized",
@@ -3217,7 +2921,7 @@
       "parameters": "1.50:0.25:0.70:40.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 3
+      "safe": 4
     },
     {
       "mode": "organized",
@@ -3225,7 +2929,7 @@
       "parameters": "1.60:0.35:0.55:36.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 3
+      "safe": 4
     },
     {
       "mode": "organized",
@@ -3233,7 +2937,7 @@
       "parameters": "1.65:0.15:0.80:36.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 3
+      "safe": 4
     },
     {
       "mode": "organized",
@@ -3241,7 +2945,7 @@
       "parameters": "1.75:0.20:0.80:40.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 3
+      "safe": 4
     },
     {
       "mode": "organized",
@@ -3249,7 +2953,7 @@
       "parameters": "1.90:0.10:0.90:44.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 3
+      "safe": 4
     },
     {
       "mode": "organized",
@@ -3257,7 +2961,7 @@
       "parameters": "1.10:0.20:0.35:24.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 2
+      "safe": 0
     },
     {
       "mode": "organized",
@@ -3265,7 +2969,7 @@
       "parameters": "1.10:0.20:0.35:24.00",
       "hintCount": 1,
       "samples": 1,
-      "safe": 1
+      "safe": 0
     },
     {
       "mode": "organized",
@@ -3273,7 +2977,7 @@
       "parameters": "1.20:0.30:0.50:32.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 2
+      "safe": 0
     },
     {
       "mode": "organized",
@@ -3281,7 +2985,7 @@
       "parameters": "1.20:0.30:0.50:32.00",
       "hintCount": 1,
       "samples": 1,
-      "safe": 1
+      "safe": 0
     },
     {
       "mode": "organized",
@@ -3289,7 +2993,7 @@
       "parameters": "1.30:0.20:0.60:36.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 2
+      "safe": 0
     },
     {
       "mode": "organized",
@@ -3297,7 +3001,7 @@
       "parameters": "1.30:0.20:0.60:36.00",
       "hintCount": 1,
       "samples": 1,
-      "safe": 1
+      "safe": 0
     },
     {
       "mode": "organized",
@@ -3305,7 +3009,7 @@
       "parameters": "1.40:0.30:0.60:32.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 2
+      "safe": 0
     },
     {
       "mode": "organized",
@@ -3313,7 +3017,7 @@
       "parameters": "1.40:0.30:0.60:32.00",
       "hintCount": 1,
       "samples": 1,
-      "safe": 1
+      "safe": 0
     },
     {
       "mode": "organized",
@@ -3321,7 +3025,7 @@
       "parameters": "1.50:0.25:0.70:40.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 2
+      "safe": 0
     },
     {
       "mode": "organized",
@@ -3329,7 +3033,7 @@
       "parameters": "1.50:0.25:0.70:40.00",
       "hintCount": 1,
       "samples": 1,
-      "safe": 1
+      "safe": 0
     },
     {
       "mode": "organized",
@@ -3337,7 +3041,7 @@
       "parameters": "1.60:0.35:0.55:36.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 3
+      "safe": 0
     },
     {
       "mode": "organized",
@@ -3345,7 +3049,7 @@
       "parameters": "1.60:0.35:0.55:36.00",
       "hintCount": 1,
       "samples": 1,
-      "safe": 1
+      "safe": 0
     },
     {
       "mode": "organized",
@@ -3353,7 +3057,7 @@
       "parameters": "1.65:0.15:0.80:36.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 3
+      "safe": 0
     },
     {
       "mode": "organized",
@@ -3361,7 +3065,7 @@
       "parameters": "1.65:0.15:0.80:36.00",
       "hintCount": 1,
       "samples": 1,
-      "safe": 1
+      "safe": 0
     },
     {
       "mode": "organized",
@@ -3369,7 +3073,7 @@
       "parameters": "1.75:0.20:0.80:40.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 2
+      "safe": 1
     },
     {
       "mode": "organized",
@@ -3377,7 +3081,7 @@
       "parameters": "1.75:0.20:0.80:40.00",
       "hintCount": 1,
       "samples": 1,
-      "safe": 1
+      "safe": 0
     },
     {
       "mode": "organized",
@@ -3385,7 +3089,7 @@
       "parameters": "1.90:0.10:0.90:44.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 4
+      "safe": 3
     },
     {
       "mode": "organized",
@@ -3409,52 +3113,12 @@
       "parameters": "1.20:0.30:0.50:32.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 0
+      "safe": 1
     },
     {
       "mode": "organized",
       "zone": "guitar-workshop",
       "parameters": "1.30:0.20:0.60:36.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 0
-    },
-    {
-      "mode": "organized",
-      "zone": "guitar-workshop",
-      "parameters": "1.40:0.30:0.60:32.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 0
-    },
-    {
-      "mode": "organized",
-      "zone": "guitar-workshop",
-      "parameters": "1.50:0.25:0.70:40.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 0
-    },
-    {
-      "mode": "organized",
-      "zone": "guitar-workshop",
-      "parameters": "1.60:0.35:0.55:36.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 0
-    },
-    {
-      "mode": "organized",
-      "zone": "guitar-workshop",
-      "parameters": "1.65:0.15:0.80:36.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 2
-    },
-    {
-      "mode": "organized",
-      "zone": "guitar-workshop",
-      "parameters": "1.75:0.20:0.80:40.00",
       "hintCount": 0,
       "samples": 4,
       "safe": 1
@@ -3462,6 +3126,182 @@
     {
       "mode": "organized",
       "zone": "guitar-workshop",
+      "parameters": "1.40:0.30:0.60:32.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 1
+    },
+    {
+      "mode": "organized",
+      "zone": "guitar-workshop",
+      "parameters": "1.50:0.25:0.70:40.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 1
+    },
+    {
+      "mode": "organized",
+      "zone": "guitar-workshop",
+      "parameters": "1.60:0.35:0.55:36.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 1
+    },
+    {
+      "mode": "organized",
+      "zone": "guitar-workshop",
+      "parameters": "1.65:0.15:0.80:36.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 3
+    },
+    {
+      "mode": "organized",
+      "zone": "guitar-workshop",
+      "parameters": "1.75:0.20:0.80:40.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 2
+    },
+    {
+      "mode": "organized",
+      "zone": "guitar-workshop",
+      "parameters": "1.90:0.10:0.90:44.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 3
+    },
+    {
+      "mode": "organized",
+      "zone": "hard-rock-metal",
+      "parameters": "1.10:0.20:0.35:24.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 3
+    },
+    {
+      "mode": "organized",
+      "zone": "hard-rock-metal",
+      "parameters": "1.10:0.20:0.35:24.00",
+      "hintCount": 1,
+      "samples": 4,
+      "safe": 0
+    },
+    {
+      "mode": "organized",
+      "zone": "hard-rock-metal",
+      "parameters": "1.20:0.30:0.50:32.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 3
+    },
+    {
+      "mode": "organized",
+      "zone": "hard-rock-metal",
+      "parameters": "1.20:0.30:0.50:32.00",
+      "hintCount": 1,
+      "samples": 4,
+      "safe": 0
+    },
+    {
+      "mode": "organized",
+      "zone": "hard-rock-metal",
+      "parameters": "1.30:0.20:0.60:36.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 3
+    },
+    {
+      "mode": "organized",
+      "zone": "hard-rock-metal",
+      "parameters": "1.30:0.20:0.60:36.00",
+      "hintCount": 1,
+      "samples": 4,
+      "safe": 0
+    },
+    {
+      "mode": "organized",
+      "zone": "hard-rock-metal",
+      "parameters": "1.40:0.30:0.60:32.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 2
+    },
+    {
+      "mode": "organized",
+      "zone": "hard-rock-metal",
+      "parameters": "1.40:0.30:0.60:32.00",
+      "hintCount": 1,
+      "samples": 4,
+      "safe": 0
+    },
+    {
+      "mode": "organized",
+      "zone": "hard-rock-metal",
+      "parameters": "1.50:0.25:0.70:40.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 2
+    },
+    {
+      "mode": "organized",
+      "zone": "hard-rock-metal",
+      "parameters": "1.50:0.25:0.70:40.00",
+      "hintCount": 1,
+      "samples": 4,
+      "safe": 0
+    },
+    {
+      "mode": "organized",
+      "zone": "hard-rock-metal",
+      "parameters": "1.60:0.35:0.55:36.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 2
+    },
+    {
+      "mode": "organized",
+      "zone": "hard-rock-metal",
+      "parameters": "1.60:0.35:0.55:36.00",
+      "hintCount": 1,
+      "samples": 4,
+      "safe": 0
+    },
+    {
+      "mode": "organized",
+      "zone": "hard-rock-metal",
+      "parameters": "1.65:0.15:0.80:36.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 2
+    },
+    {
+      "mode": "organized",
+      "zone": "hard-rock-metal",
+      "parameters": "1.65:0.15:0.80:36.00",
+      "hintCount": 1,
+      "samples": 4,
+      "safe": 1
+    },
+    {
+      "mode": "organized",
+      "zone": "hard-rock-metal",
+      "parameters": "1.75:0.20:0.80:40.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 2
+    },
+    {
+      "mode": "organized",
+      "zone": "hard-rock-metal",
+      "parameters": "1.75:0.20:0.80:40.00",
+      "hintCount": 1,
+      "samples": 4,
+      "safe": 1
+    },
+    {
+      "mode": "organized",
+      "zone": "hard-rock-metal",
       "parameters": "1.90:0.10:0.90:44.00",
       "hintCount": 0,
       "samples": 4,
@@ -3470,218 +3310,10 @@
     {
       "mode": "organized",
       "zone": "hard-rock-metal",
-      "parameters": "1.10:0.20:0.35:24.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 3
-    },
-    {
-      "mode": "organized",
-      "zone": "hard-rock-metal",
-      "parameters": "1.10:0.20:0.35:24.00",
-      "hintCount": 1,
-      "samples": 1,
-      "safe": 0
-    },
-    {
-      "mode": "organized",
-      "zone": "hard-rock-metal",
-      "parameters": "1.10:0.20:0.35:24.00",
-      "hintCount": 3,
-      "samples": 2,
-      "safe": 0
-    },
-    {
-      "mode": "organized",
-      "zone": "hard-rock-metal",
-      "parameters": "1.20:0.30:0.50:32.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 2
-    },
-    {
-      "mode": "organized",
-      "zone": "hard-rock-metal",
-      "parameters": "1.20:0.30:0.50:32.00",
-      "hintCount": 1,
-      "samples": 1,
-      "safe": 0
-    },
-    {
-      "mode": "organized",
-      "zone": "hard-rock-metal",
-      "parameters": "1.20:0.30:0.50:32.00",
-      "hintCount": 3,
-      "samples": 2,
-      "safe": 0
-    },
-    {
-      "mode": "organized",
-      "zone": "hard-rock-metal",
-      "parameters": "1.30:0.20:0.60:36.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 3
-    },
-    {
-      "mode": "organized",
-      "zone": "hard-rock-metal",
-      "parameters": "1.30:0.20:0.60:36.00",
-      "hintCount": 1,
-      "samples": 1,
-      "safe": 0
-    },
-    {
-      "mode": "organized",
-      "zone": "hard-rock-metal",
-      "parameters": "1.30:0.20:0.60:36.00",
-      "hintCount": 3,
-      "samples": 2,
-      "safe": 0
-    },
-    {
-      "mode": "organized",
-      "zone": "hard-rock-metal",
-      "parameters": "1.40:0.30:0.60:32.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 3
-    },
-    {
-      "mode": "organized",
-      "zone": "hard-rock-metal",
-      "parameters": "1.40:0.30:0.60:32.00",
-      "hintCount": 1,
-      "samples": 1,
-      "safe": 0
-    },
-    {
-      "mode": "organized",
-      "zone": "hard-rock-metal",
-      "parameters": "1.40:0.30:0.60:32.00",
-      "hintCount": 3,
-      "samples": 2,
-      "safe": 0
-    },
-    {
-      "mode": "organized",
-      "zone": "hard-rock-metal",
-      "parameters": "1.50:0.25:0.70:40.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 3
-    },
-    {
-      "mode": "organized",
-      "zone": "hard-rock-metal",
-      "parameters": "1.50:0.25:0.70:40.00",
-      "hintCount": 1,
-      "samples": 1,
-      "safe": 0
-    },
-    {
-      "mode": "organized",
-      "zone": "hard-rock-metal",
-      "parameters": "1.50:0.25:0.70:40.00",
-      "hintCount": 3,
-      "samples": 2,
-      "safe": 0
-    },
-    {
-      "mode": "organized",
-      "zone": "hard-rock-metal",
-      "parameters": "1.60:0.35:0.55:36.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 3
-    },
-    {
-      "mode": "organized",
-      "zone": "hard-rock-metal",
-      "parameters": "1.60:0.35:0.55:36.00",
-      "hintCount": 1,
-      "samples": 1,
-      "safe": 0
-    },
-    {
-      "mode": "organized",
-      "zone": "hard-rock-metal",
-      "parameters": "1.60:0.35:0.55:36.00",
-      "hintCount": 3,
-      "samples": 2,
-      "safe": 0
-    },
-    {
-      "mode": "organized",
-      "zone": "hard-rock-metal",
-      "parameters": "1.65:0.15:0.80:36.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 3
-    },
-    {
-      "mode": "organized",
-      "zone": "hard-rock-metal",
-      "parameters": "1.65:0.15:0.80:36.00",
-      "hintCount": 1,
-      "samples": 1,
-      "safe": 0
-    },
-    {
-      "mode": "organized",
-      "zone": "hard-rock-metal",
-      "parameters": "1.65:0.15:0.80:36.00",
-      "hintCount": 3,
-      "samples": 2,
-      "safe": 0
-    },
-    {
-      "mode": "organized",
-      "zone": "hard-rock-metal",
-      "parameters": "1.75:0.20:0.80:40.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 3
-    },
-    {
-      "mode": "organized",
-      "zone": "hard-rock-metal",
-      "parameters": "1.75:0.20:0.80:40.00",
-      "hintCount": 1,
-      "samples": 1,
-      "safe": 0
-    },
-    {
-      "mode": "organized",
-      "zone": "hard-rock-metal",
-      "parameters": "1.75:0.20:0.80:40.00",
-      "hintCount": 3,
-      "samples": 2,
-      "safe": 0
-    },
-    {
-      "mode": "organized",
-      "zone": "hard-rock-metal",
-      "parameters": "1.90:0.10:0.90:44.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 3
-    },
-    {
-      "mode": "organized",
-      "zone": "hard-rock-metal",
       "parameters": "1.90:0.10:0.90:44.00",
       "hintCount": 1,
-      "samples": 1,
-      "safe": 0
-    },
-    {
-      "mode": "organized",
-      "zone": "hard-rock-metal",
-      "parameters": "1.90:0.10:0.90:44.00",
-      "hintCount": 3,
-      "samples": 2,
-      "safe": 0
+      "samples": 4,
+      "safe": 1
     },
     {
       "mode": "organized",
@@ -3689,14 +3321,6 @@
       "parameters": "1.10:0.20:0.35:24.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 4
-    },
-    {
-      "mode": "organized",
-      "zone": "hip-hop-rap",
-      "parameters": "1.10:0.20:0.35:24.00",
-      "hintCount": 1,
-      "samples": 1,
       "safe": 1
     },
     {
@@ -3705,14 +3329,6 @@
       "parameters": "1.20:0.30:0.50:32.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 4
-    },
-    {
-      "mode": "organized",
-      "zone": "hip-hop-rap",
-      "parameters": "1.20:0.30:0.50:32.00",
-      "hintCount": 1,
-      "samples": 1,
       "safe": 1
     },
     {
@@ -3721,14 +3337,6 @@
       "parameters": "1.30:0.20:0.60:36.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 4
-    },
-    {
-      "mode": "organized",
-      "zone": "hip-hop-rap",
-      "parameters": "1.30:0.20:0.60:36.00",
-      "hintCount": 1,
-      "samples": 1,
       "safe": 1
     },
     {
@@ -3737,14 +3345,6 @@
       "parameters": "1.40:0.30:0.60:32.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 4
-    },
-    {
-      "mode": "organized",
-      "zone": "hip-hop-rap",
-      "parameters": "1.40:0.30:0.60:32.00",
-      "hintCount": 1,
-      "samples": 1,
       "safe": 1
     },
     {
@@ -3753,14 +3353,6 @@
       "parameters": "1.50:0.25:0.70:40.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 4
-    },
-    {
-      "mode": "organized",
-      "zone": "hip-hop-rap",
-      "parameters": "1.50:0.25:0.70:40.00",
-      "hintCount": 1,
-      "samples": 1,
       "safe": 1
     },
     {
@@ -3769,14 +3361,6 @@
       "parameters": "1.60:0.35:0.55:36.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 4
-    },
-    {
-      "mode": "organized",
-      "zone": "hip-hop-rap",
-      "parameters": "1.60:0.35:0.55:36.00",
-      "hintCount": 1,
-      "samples": 1,
       "safe": 1
     },
     {
@@ -3785,14 +3369,6 @@
       "parameters": "1.65:0.15:0.80:36.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 4
-    },
-    {
-      "mode": "organized",
-      "zone": "hip-hop-rap",
-      "parameters": "1.65:0.15:0.80:36.00",
-      "hintCount": 1,
-      "samples": 1,
       "safe": 1
     },
     {
@@ -3801,14 +3377,6 @@
       "parameters": "1.75:0.20:0.80:40.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 4
-    },
-    {
-      "mode": "organized",
-      "zone": "hip-hop-rap",
-      "parameters": "1.75:0.20:0.80:40.00",
-      "hintCount": 1,
-      "samples": 1,
       "safe": 1
     },
     {
@@ -3817,14 +3385,6 @@
       "parameters": "1.90:0.10:0.90:44.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 4
-    },
-    {
-      "mode": "organized",
-      "zone": "hip-hop-rap",
-      "parameters": "1.90:0.10:0.90:44.00",
-      "hintCount": 1,
-      "samples": 1,
       "safe": 1
     },
     {
@@ -3833,7 +3393,7 @@
       "parameters": "1.10:0.20:0.35:24.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 1
+      "safe": 0
     },
     {
       "mode": "organized",
@@ -3841,7 +3401,7 @@
       "parameters": "1.20:0.30:0.50:32.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 1
+      "safe": 0
     },
     {
       "mode": "organized",
@@ -3849,7 +3409,7 @@
       "parameters": "1.30:0.20:0.60:36.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 1
+      "safe": 0
     },
     {
       "mode": "organized",
@@ -3857,7 +3417,7 @@
       "parameters": "1.40:0.30:0.60:32.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 1
+      "safe": 0
     },
     {
       "mode": "organized",
@@ -3865,7 +3425,7 @@
       "parameters": "1.50:0.25:0.70:40.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 1
+      "safe": 0
     },
     {
       "mode": "organized",
@@ -3873,7 +3433,7 @@
       "parameters": "1.60:0.35:0.55:36.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 1
+      "safe": 0
     },
     {
       "mode": "organized",
@@ -3881,7 +3441,7 @@
       "parameters": "1.65:0.15:0.80:36.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 2
+      "safe": 1
     },
     {
       "mode": "organized",
@@ -3889,7 +3449,7 @@
       "parameters": "1.75:0.20:0.80:40.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 3
+      "safe": 0
     },
     {
       "mode": "organized",
@@ -3897,7 +3457,7 @@
       "parameters": "1.90:0.10:0.90:44.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 4
+      "safe": 1
     },
     {
       "mode": "organized",
@@ -3905,7 +3465,7 @@
       "parameters": "1.10:0.20:0.35:24.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 4
+      "safe": 1
     },
     {
       "mode": "organized",
@@ -3913,7 +3473,7 @@
       "parameters": "1.10:0.20:0.35:24.00",
       "hintCount": 1,
       "samples": 1,
-      "safe": 1
+      "safe": 0
     },
     {
       "mode": "organized",
@@ -3921,7 +3481,7 @@
       "parameters": "1.20:0.30:0.50:32.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 3
+      "safe": 1
     },
     {
       "mode": "organized",
@@ -3929,7 +3489,7 @@
       "parameters": "1.20:0.30:0.50:32.00",
       "hintCount": 1,
       "samples": 1,
-      "safe": 1
+      "safe": 0
     },
     {
       "mode": "organized",
@@ -3937,7 +3497,7 @@
       "parameters": "1.30:0.20:0.60:36.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 4
+      "safe": 1
     },
     {
       "mode": "organized",
@@ -3945,7 +3505,7 @@
       "parameters": "1.30:0.20:0.60:36.00",
       "hintCount": 1,
       "samples": 1,
-      "safe": 1
+      "safe": 0
     },
     {
       "mode": "organized",
@@ -3953,7 +3513,7 @@
       "parameters": "1.40:0.30:0.60:32.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 4
+      "safe": 1
     },
     {
       "mode": "organized",
@@ -3961,7 +3521,7 @@
       "parameters": "1.40:0.30:0.60:32.00",
       "hintCount": 1,
       "samples": 1,
-      "safe": 1
+      "safe": 0
     },
     {
       "mode": "organized",
@@ -3969,7 +3529,7 @@
       "parameters": "1.50:0.25:0.70:40.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 4
+      "safe": 1
     },
     {
       "mode": "organized",
@@ -3977,7 +3537,7 @@
       "parameters": "1.50:0.25:0.70:40.00",
       "hintCount": 1,
       "samples": 1,
-      "safe": 1
+      "safe": 0
     },
     {
       "mode": "organized",
@@ -3985,7 +3545,7 @@
       "parameters": "1.60:0.35:0.55:36.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 3
+      "safe": 1
     },
     {
       "mode": "organized",
@@ -3993,28 +3553,12 @@
       "parameters": "1.60:0.35:0.55:36.00",
       "hintCount": 1,
       "samples": 1,
-      "safe": 1
+      "safe": 0
     },
     {
       "mode": "organized",
       "zone": "pop-soul-disco",
       "parameters": "1.65:0.15:0.80:36.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 4
-    },
-    {
-      "mode": "organized",
-      "zone": "pop-soul-disco",
-      "parameters": "1.65:0.15:0.80:36.00",
-      "hintCount": 1,
-      "samples": 1,
-      "safe": 1
-    },
-    {
-      "mode": "organized",
-      "zone": "pop-soul-disco",
-      "parameters": "1.75:0.20:0.80:40.00",
       "hintCount": 0,
       "samples": 4,
       "safe": 2
@@ -4022,10 +3566,26 @@
     {
       "mode": "organized",
       "zone": "pop-soul-disco",
+      "parameters": "1.65:0.15:0.80:36.00",
+      "hintCount": 1,
+      "samples": 1,
+      "safe": 0
+    },
+    {
+      "mode": "organized",
+      "zone": "pop-soul-disco",
+      "parameters": "1.75:0.20:0.80:40.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 1
+    },
+    {
+      "mode": "organized",
+      "zone": "pop-soul-disco",
       "parameters": "1.75:0.20:0.80:40.00",
       "hintCount": 1,
       "samples": 1,
-      "safe": 1
+      "safe": 0
     },
     {
       "mode": "organized",
@@ -4041,7 +3601,7 @@
       "parameters": "1.90:0.10:0.90:44.00",
       "hintCount": 1,
       "samples": 1,
-      "safe": 1
+      "safe": 0
     },
     {
       "mode": "organized",
@@ -4056,7 +3616,7 @@
       "zone": "psychedelia-prog",
       "parameters": "1.10:0.20:0.35:24.00",
       "hintCount": 1,
-      "samples": 3,
+      "samples": 4,
       "safe": 2
     },
     {
@@ -4072,7 +3632,7 @@
       "zone": "psychedelia-prog",
       "parameters": "1.20:0.30:0.50:32.00",
       "hintCount": 1,
-      "samples": 3,
+      "samples": 4,
       "safe": 2
     },
     {
@@ -4088,7 +3648,7 @@
       "zone": "psychedelia-prog",
       "parameters": "1.30:0.20:0.60:36.00",
       "hintCount": 1,
-      "samples": 3,
+      "samples": 4,
       "safe": 2
     },
     {
@@ -4104,7 +3664,7 @@
       "zone": "psychedelia-prog",
       "parameters": "1.40:0.30:0.60:32.00",
       "hintCount": 1,
-      "samples": 3,
+      "samples": 4,
       "safe": 2
     },
     {
@@ -4120,7 +3680,7 @@
       "zone": "psychedelia-prog",
       "parameters": "1.50:0.25:0.70:40.00",
       "hintCount": 1,
-      "samples": 3,
+      "samples": 4,
       "safe": 2
     },
     {
@@ -4136,7 +3696,7 @@
       "zone": "psychedelia-prog",
       "parameters": "1.60:0.35:0.55:36.00",
       "hintCount": 1,
-      "samples": 3,
+      "samples": 4,
       "safe": 2
     },
     {
@@ -4152,7 +3712,7 @@
       "zone": "psychedelia-prog",
       "parameters": "1.65:0.15:0.80:36.00",
       "hintCount": 1,
-      "samples": 3,
+      "samples": 4,
       "safe": 2
     },
     {
@@ -4168,7 +3728,7 @@
       "zone": "psychedelia-prog",
       "parameters": "1.75:0.20:0.80:40.00",
       "hintCount": 1,
-      "samples": 3,
+      "samples": 4,
       "safe": 2
     },
     {
@@ -4184,7 +3744,7 @@
       "zone": "psychedelia-prog",
       "parameters": "1.90:0.10:0.90:44.00",
       "hintCount": 1,
-      "samples": 3,
+      "samples": 4,
       "safe": 2
     },
     {
@@ -4193,7 +3753,7 @@
       "parameters": "1.10:0.20:0.35:24.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 3
+      "safe": 1
     },
     {
       "mode": "organized",
@@ -4201,7 +3761,7 @@
       "parameters": "1.10:0.20:0.35:24.00",
       "hintCount": 1,
       "samples": 3,
-      "safe": 2
+      "safe": 0
     },
     {
       "mode": "organized",
@@ -4209,7 +3769,7 @@
       "parameters": "1.20:0.30:0.50:32.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 3
+      "safe": 1
     },
     {
       "mode": "organized",
@@ -4217,7 +3777,7 @@
       "parameters": "1.20:0.30:0.50:32.00",
       "hintCount": 1,
       "samples": 3,
-      "safe": 2
+      "safe": 0
     },
     {
       "mode": "organized",
@@ -4225,7 +3785,7 @@
       "parameters": "1.30:0.20:0.60:36.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 3
+      "safe": 1
     },
     {
       "mode": "organized",
@@ -4233,7 +3793,7 @@
       "parameters": "1.30:0.20:0.60:36.00",
       "hintCount": 1,
       "samples": 3,
-      "safe": 2
+      "safe": 0
     },
     {
       "mode": "organized",
@@ -4241,7 +3801,7 @@
       "parameters": "1.40:0.30:0.60:32.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 3
+      "safe": 0
     },
     {
       "mode": "organized",
@@ -4249,7 +3809,7 @@
       "parameters": "1.40:0.30:0.60:32.00",
       "hintCount": 1,
       "samples": 3,
-      "safe": 2
+      "safe": 0
     },
     {
       "mode": "organized",
@@ -4257,7 +3817,7 @@
       "parameters": "1.50:0.25:0.70:40.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 3
+      "safe": 0
     },
     {
       "mode": "organized",
@@ -4265,7 +3825,7 @@
       "parameters": "1.50:0.25:0.70:40.00",
       "hintCount": 1,
       "samples": 3,
-      "safe": 2
+      "safe": 0
     },
     {
       "mode": "organized",
@@ -4273,7 +3833,7 @@
       "parameters": "1.60:0.35:0.55:36.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 3
+      "safe": 1
     },
     {
       "mode": "organized",
@@ -4281,7 +3841,7 @@
       "parameters": "1.60:0.35:0.55:36.00",
       "hintCount": 1,
       "samples": 3,
-      "safe": 2
+      "safe": 0
     },
     {
       "mode": "organized",
@@ -4289,7 +3849,7 @@
       "parameters": "1.65:0.15:0.80:36.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 3
+      "safe": 2
     },
     {
       "mode": "organized",
@@ -4297,7 +3857,7 @@
       "parameters": "1.65:0.15:0.80:36.00",
       "hintCount": 1,
       "samples": 3,
-      "safe": 2
+      "safe": 0
     },
     {
       "mode": "organized",
@@ -4305,7 +3865,7 @@
       "parameters": "1.75:0.20:0.80:40.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 3
+      "safe": 2
     },
     {
       "mode": "organized",
@@ -4313,7 +3873,7 @@
       "parameters": "1.75:0.20:0.80:40.00",
       "hintCount": 1,
       "samples": 3,
-      "safe": 2
+      "safe": 0
     },
     {
       "mode": "organized",
@@ -4321,7 +3881,7 @@
       "parameters": "1.90:0.10:0.90:44.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 3
+      "safe": 2
     },
     {
       "mode": "organized",
@@ -4329,23 +3889,23 @@
       "parameters": "1.90:0.10:0.90:44.00",
       "hintCount": 1,
       "samples": 3,
+      "safe": 1
+    },
+    {
+      "mode": "organized",
+      "zone": "rock-circuit",
+      "parameters": "1.10:0.20:0.35:24.00",
+      "hintCount": 0,
+      "samples": 4,
       "safe": 2
     },
     {
       "mode": "organized",
       "zone": "rock-circuit",
       "parameters": "1.10:0.20:0.35:24.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 3
-    },
-    {
-      "mode": "organized",
-      "zone": "rock-circuit",
-      "parameters": "1.10:0.20:0.35:24.00",
       "hintCount": 1,
       "samples": 3,
-      "safe": 1
+      "safe": 0
     },
     {
       "mode": "organized",
@@ -4361,7 +3921,7 @@
       "parameters": "1.20:0.30:0.50:32.00",
       "hintCount": 1,
       "samples": 3,
-      "safe": 1
+      "safe": 0
     },
     {
       "mode": "organized",
@@ -4377,7 +3937,7 @@
       "parameters": "1.30:0.20:0.60:36.00",
       "hintCount": 1,
       "samples": 3,
-      "safe": 1
+      "safe": 0
     },
     {
       "mode": "organized",
@@ -4393,7 +3953,7 @@
       "parameters": "1.40:0.30:0.60:32.00",
       "hintCount": 1,
       "samples": 3,
-      "safe": 1
+      "safe": 0
     },
     {
       "mode": "organized",
@@ -4409,7 +3969,7 @@
       "parameters": "1.50:0.25:0.70:40.00",
       "hintCount": 1,
       "samples": 3,
-      "safe": 1
+      "safe": 0
     },
     {
       "mode": "organized",
@@ -4425,7 +3985,7 @@
       "parameters": "1.60:0.35:0.55:36.00",
       "hintCount": 1,
       "samples": 3,
-      "safe": 1
+      "safe": 0
     },
     {
       "mode": "organized",
@@ -4433,7 +3993,7 @@
       "parameters": "1.65:0.15:0.80:36.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 3
+      "safe": 2
     },
     {
       "mode": "organized",
@@ -4441,7 +4001,7 @@
       "parameters": "1.65:0.15:0.80:36.00",
       "hintCount": 1,
       "samples": 3,
-      "safe": 1
+      "safe": 0
     },
     {
       "mode": "organized",
@@ -4457,7 +4017,7 @@
       "parameters": "1.75:0.20:0.80:40.00",
       "hintCount": 1,
       "samples": 3,
-      "safe": 1
+      "safe": 0
     },
     {
       "mode": "organized",
@@ -4481,7 +4041,7 @@
       "parameters": "1.10:0.20:0.35:24.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 3
+      "safe": 1
     },
     {
       "mode": "organized",
@@ -4489,7 +4049,7 @@
       "parameters": "1.10:0.20:0.35:24.00",
       "hintCount": 1,
       "samples": 3,
-      "safe": 2
+      "safe": 1
     },
     {
       "mode": "organized",
@@ -4505,31 +4065,31 @@
       "parameters": "1.20:0.30:0.50:32.00",
       "hintCount": 1,
       "samples": 3,
+      "safe": 0
+    },
+    {
+      "mode": "organized",
+      "zone": "roots-blues",
+      "parameters": "1.30:0.20:0.60:36.00",
+      "hintCount": 0,
+      "samples": 4,
+      "safe": 2
+    },
+    {
+      "mode": "organized",
+      "zone": "roots-blues",
+      "parameters": "1.30:0.20:0.60:36.00",
+      "hintCount": 1,
+      "samples": 3,
       "safe": 1
     },
     {
       "mode": "organized",
       "zone": "roots-blues",
-      "parameters": "1.30:0.20:0.60:36.00",
-      "hintCount": 0,
-      "samples": 4,
-      "safe": 3
-    },
-    {
-      "mode": "organized",
-      "zone": "roots-blues",
-      "parameters": "1.30:0.20:0.60:36.00",
-      "hintCount": 1,
-      "samples": 3,
-      "safe": 2
-    },
-    {
-      "mode": "organized",
-      "zone": "roots-blues",
       "parameters": "1.40:0.30:0.60:32.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 3
+      "safe": 1
     },
     {
       "mode": "organized",
@@ -4537,7 +4097,7 @@
       "parameters": "1.40:0.30:0.60:32.00",
       "hintCount": 1,
       "samples": 3,
-      "safe": 2
+      "safe": 0
     },
     {
       "mode": "organized",
@@ -4545,7 +4105,7 @@
       "parameters": "1.50:0.25:0.70:40.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 3
+      "safe": 2
     },
     {
       "mode": "organized",
@@ -4561,7 +4121,7 @@
       "parameters": "1.60:0.35:0.55:36.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 3
+      "safe": 1
     },
     {
       "mode": "organized",
@@ -4569,7 +4129,7 @@
       "parameters": "1.60:0.35:0.55:36.00",
       "hintCount": 1,
       "samples": 3,
-      "safe": 2
+      "safe": 1
     },
     {
       "mode": "organized",
@@ -4577,7 +4137,7 @@
       "parameters": "1.65:0.15:0.80:36.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 3
+      "safe": 2
     },
     {
       "mode": "organized",
@@ -4585,7 +4145,7 @@
       "parameters": "1.65:0.15:0.80:36.00",
       "hintCount": 1,
       "samples": 3,
-      "safe": 2
+      "safe": 1
     },
     {
       "mode": "organized",
@@ -4593,7 +4153,7 @@
       "parameters": "1.75:0.20:0.80:40.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 3
+      "safe": 2
     },
     {
       "mode": "organized",
@@ -4601,7 +4161,7 @@
       "parameters": "1.75:0.20:0.80:40.00",
       "hintCount": 1,
       "samples": 3,
-      "safe": 2
+      "safe": 1
     },
     {
       "mode": "organized",
@@ -4609,7 +4169,7 @@
       "parameters": "1.90:0.10:0.90:44.00",
       "hintCount": 0,
       "samples": 4,
-      "safe": 3
+      "safe": 2
     },
     {
       "mode": "organized",
@@ -4625,102 +4185,102 @@
     "greg-hawkes",
     "wilson-pickett",
     "dusty-springfield",
-    "the-charlie-daniels-band",
-    "jim-reeves",
-    "uncle-dave-macon",
-    "outlaw-country",
-    "the-soul-stirrers",
-    "slash",
-    "mavis-staples",
-    "bessie-smith",
+    "sergei-rachmaninoff",
+    "camille-saint-saens",
+    "pierre-boulez",
+    "niccolo-jommelli",
     "betty-carter",
     "cecil-taylor",
     "cannonball-adderley",
     "james-scott-ragtime",
-    "arthur-rubinstein",
-    "george-frideric-handel",
-    "franz-schubert",
-    "the-roger-wagner-chorale",
+    "the-soul-stirrers",
+    "slash",
+    "mavis-staples",
+    "bessie-smith",
+    "the-charlie-daniels-band",
+    "jim-reeves",
+    "uncle-dave-macon",
+    "outlaw-country",
+    "amade-ardoin",
     "cleoma-breaux",
     "folk",
     "william-billings",
-    "tracy-chapman",
+    "gibson-firebird",
+    "trigger",
+    "gibson-explorer",
+    "ibanez-js",
+    "tom-hamilton",
+    "ray-tabano",
+    "iced-earth",
+    "jimmy-crespo",
+    "joe-perry",
     "link-wray",
     "george-harrison",
     "stone-temple-pilots",
-    "dave-murray",
     "the-who",
     "grace-slick",
     "pink-floyd",
-    "love",
+    "steve-howe",
     "alternative-rock",
     "chris-frantz",
     "bill-berry-rem",
     "iggy-pop",
-    "trigger",
-    "gibson-es-355-lucille",
-    "gibson-les-paul",
-    "fender",
-    "heavy-metal",
-    "duff-mckagan",
-    "jimmy-page",
-    "iron-maiden",
     "gil-scott-heron",
-    "the-sugarhill-gang",
-    "de-la-soul",
-    "doug-e-fresh"
+    "nas",
+    "wu-tang-clan",
+    "the-notorious-big"
   ],
   "validationNodes": [
+    "mary-wilson",
     "parliament",
-    "al-green",
-    "bobbie-gentry",
-    "charlie-poole",
+    "henry-kimball-hadley",
+    "baldassare-galuppi",
+    "gerry-mulligan",
+    "mary-lou-williams",
     "john-lee-hooker",
     "elvis-presley",
-    "gerry-mulligan",
-    "art-blakey",
-    "maria-callas",
-    "philip-glass",
-    "joan-baez",
-    "pete-seeger",
+    "bobbie-gentry",
+    "charlie-poole",
+    "tracy-chapman",
+    "jararaca-and-ratinho",
+    "gibson-es-355-lucille",
+    "gibson-les-paul",
+    "joey-kramer",
+    "heavy-metal",
+    "dave-murray",
     "keith-richards",
-    "chi-cheng",
+    "love",
     "spencer-dryden",
-    "jack-casady",
-    "lou-reed",
-    "the-velvet-underground",
-    "gibson",
-    "gretsch",
-    "savatage",
-    "corey-taylor",
-    "spoken-word",
-    "queen-latifah"
+    "brian-baker",
+    "black-flag",
+    "the-sugarhill-gang",
+    "de-la-soul"
   ],
   "testNodes": [
-    "the-police",
-    "harry-von-tilzer",
-    "hank-williams",
-    "floyd-cramer",
+    "al-green",
+    "florence-ballard",
+    "arthur-rubinstein",
+    "vishnu-narayan-bhatkhande",
+    "eddie-lang",
+    "art-blakey",
     "sister-rosetta-tharpe",
     "w-c-handy",
-    "ron-carter",
-    "clifford-brown",
-    "morton-subotnick",
-    "pauline-oliveros",
-    "arlo-guthrie",
-    "judy-collins",
+    "hank-williams",
+    "floyd-cramer",
+    "joan-baez",
+    "pete-seeger",
+    "gibson-es-335",
+    "jackson",
+    "tony-iommi",
+    "deep-purple",
+    "chi-cheng",
     "chubby-checker",
-    "pete-townshend",
-    "jorma-kaukonen",
-    "jimi-hendrix",
-    "peter-buck",
-    "sonic-youth",
-    "fender-jazzmaster",
-    "fender-telecaster",
-    "led-zeppelin",
-    "children-of-bodom",
-    "grandmaster-flash-and-the-furious-five",
-    "hip-hop"
+    "jack-casady",
+    "alex-lifeson",
+    "lou-reed",
+    "minor-threat",
+    "doug-e-fresh",
+    "spoken-word"
   ],
-  "trainedGraphNodes": 1017
+  "trainedGraphNodes": 1218
 }

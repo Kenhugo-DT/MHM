@@ -36,7 +36,7 @@ test("publishing rejects a browser copy that differs from the approved snapshot"
 });
 
 test("only the documented legacy edges may lack relation sources", () => {
-  assert.deepEqual(verifyEdgeEvidence(graph, manifest), { unsourcedLegacyEdges: 259 });
+  assert.deepEqual(verifyEdgeEvidence(graph, manifest), { unsourcedLegacyEdges: 234 });
   const newEdge = { id: "new-unsourced-edge", source: "blues", target: "rock", type: "influenced_by",
     label: "influenced", sources: [] };
   assert.throws(() => verifyEdgeEvidence({ ...graph, edges: [...graph.edges, newEdge] }, manifest),

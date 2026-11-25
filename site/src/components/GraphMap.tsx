@@ -793,6 +793,10 @@ export const GraphMap = forwardRef<GraphMapHandle, GraphMapProps>(
       const world = worldRef.current;
       if (!app || !world) return;
 
+      if (layoutFrameRef.current !== null) {
+        window.cancelAnimationFrame(layoutFrameRef.current);
+        layoutFrameRef.current = null;
+      }
       destroyChildren(world);
       selectionLayerRef.current = null;
       zoneLayerRef.current = null;
